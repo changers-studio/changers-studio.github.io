@@ -66,7 +66,7 @@
 
             <div class="header-menu_mobile">
 
-                <a href="#" class="logo_mob"><img src="img/logo.png" alt="logo"></a>
+                <div class="logo_mob"><img src="img/logo.png" alt="logo"></div>
 
                 <ul class="menu_mob">
                     <li><a href="#program">Программа обучения</a></li>
@@ -92,7 +92,7 @@
                         <div class="header-top flex-wrap aligncenter space-between">
 
                             <div>
-                                <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+                                <a><img src="img/logo.png" alt="logo" class="logo"></a>
                             </div>
 
                             <ul class="menu menu-scroll space-around">
@@ -249,11 +249,11 @@
                                 <a href="img/work_07.jpg" data-fancybox="gallery" data-caption="Caption #7" class="item">
                                     <img src="img/work_07.jpg" alt="work_07" />
                                 </a>
-                                <a href="img/work_08.jpg" data-fancybox="gallery" data-caption="Caption #8" class="item">
-                                    <img src="img/work_08.jpg" alt="work_08" />
+                                <a href="img/work_09.jpg" data-fancybox="gallery" data-caption="Caption #8" class="item">
+                                    <img src="img/work_09.jpg" alt="work_08" />
                                 </a>
-                                <a href="img/work_09.jpg" data-fancybox="gallery" data-caption="Caption #9" class="item">
-                                    <img src="img/work_09.jpg" alt="work_09" />
+                                <a href="img/work_08.jpg" data-fancybox="gallery" data-caption="Caption #9" class="item">
+                                    <img src="img/work_08.jpg" alt="work_09" />
                                 </a>
                             </div>
                         </div>
@@ -470,10 +470,6 @@
                                             <li> - Cхемы укладки волосков</li>
                                             <li> - Отработка техник на бумаге и тренировочном коврике</li>
                                             <li> - Постановка рук</li>
-                                            <li> - Показ процедуры на модели</li>
-                                            <li> - Отработка на моделях.</li>
-                                            <li> - Ответы на вопросы.</li>
-                                            <li> - Разбор ошибок.</li>  
                                         </ul>
                                     </div>
                                     
@@ -488,7 +484,9 @@
                                     <div class="panel-collapse">
                                         <ul>
                                             <li> - Показ процедуры на модели</li>
-                                            <li> - Отработка на модели</li> 
+                                            <li> - Отработка на моделях.</li>
+                                            <li> - Ответы на вопросы</li>
+                                            <li> - Разбор ошибок</li>  
                                         </ul>
                                     </div>
                                     
@@ -504,6 +502,7 @@
                                         <ul>
                                             <li> - Отработка на моделях</li>
                                             <li> - Разбор ошибок</li>
+                                            <li> - Вручение диплома</li>
                                         </ul>
                                     </div>
                                     
@@ -574,7 +573,7 @@
                         </div>
                         <div class="col-md-4">
                             <p>Рабочих дней в месяц</p>
-                            <input type="range" min="1" max="6" value="20" id="score3">
+                            <input type="range" min="1" max="31" value="20" id="score3">
                             <p id="score__three"></p>
                         </div>
                     </div>
@@ -627,21 +626,29 @@
             <!-- form -->
 
             <div class="forms" id="forms">
-                <div class="container">
-                    <p class="title">Оставьте заявку, чтобы узнать цену и получите <br>видео-бонус: «как проверить симметрию бровей»</p>
-                    <form action="form.php" method="POST">
-                        <div class="flex-wrap">
-                            <div class="col-lg-4"><input type="text" placeholder="Ваше Имя" name="name"></div>
-                            <div class="col-lg-4"><input type="text" id="phone" placeholder="+380-(ХХ)-ХХ-ХХ-ХХХ" name="tele" required></div>
-                            <input type="hidden" name="utm_source" value="">
-                            <input type="hidden" name="utm_medium" value="">
-                            <input type="hidden" name="utm_content" value="">
-                            <input type="hidden" name="utm_term" value="">
-                            <input type="hidden" name="utm_campaign" value="">
-                            <div class="col-lg-4"><button class="btn btn-g" type="submit">Оставить заявку</button></div>
+                        <div class="container">
+                            <div class="row">
+                                <p class="title">Оставьте заявку, чтобы узнать цену и получите <br>видео-бонус: «как проверить симметрию бровей»</p>
+                            </div>
                         </div>
-                    </form>
-                </div>
+                        
+                        <form action="form.php" method="POST">
+                            <div class="container">
+                                <div class="row">
+                                        
+                                    <div class="col-lg-4"><input type="text" placeholder="Ваше Имя" name="name"></div>
+                                    <div class="col-lg-4"><input type="text" id="phone" placeholder="+380-(ХХ)-ХХ-ХХ-ХХХ" name="tele" required></div>
+                                    <input type="hidden" name="utm_source" value="">
+                                    <input type="hidden" name="utm_medium" value="">
+                                    <input type="hidden" name="utm_content" value="">
+                                    <input type="hidden" name="utm_term" value="">
+                                    <input type="hidden" name="utm_campaign" value="">
+                                    <div class="col-lg-4"><button class="btn btn-g" type="submit">Оставить заявку</button></div>
+                                </div>
+                            </div>
+                        
+                        </form>
+                    
             </div>
         
         </main>
@@ -649,31 +656,31 @@
         <footer id="cont">
             <div class="container">
                 <div class="row">
-                    <div class="footer__flex">
+                        <div class="footer__flex">
 
-                        <a href="index.html" class="footer__logo"><img src="img/logo.png" alt="footer_logo"></a>
-        
+                            <a class="footer__logo"><img src="img/logo.png" alt="footer_logo"></a>
+            
 
-                        <ul class="footer__menu">
-                            <li><a href="#program">Программа обучения</a></li>
-                            <li><a href="#why">Почему выбирают нас</a></li>
-                            <li><a href="#reviews">Отзывы</a></li>
-                        </ul>
+                            <ul class="footer__menu">
+                                <li><a href="#program">Программа обучения</a></li>
+                                <li><a href="#why">Почему выбирают нас</a></li>
+                                <li><a href="#reviews">Отзывы</a></li>
+                            </ul>
 
-                        <p class="footer__address">
-                            Киев, Большая Васильковская 66, <br>(1 мин. от метро Олимпийская) 
-                        </p>
+                            <p class="footer__address">
+                                Киев, Большая Васильковская 66, <br>(1 мин. от метро Олимпийская) 
+                            </p>
 
-                        <div class="footer__contacts">
-                            <a href="tel:+380637189522">+38 (063) 718 95 22</a>
-                            <a href="mailto: browbar.info.dp@gmail.com">browbar.info.dp@gmail.com</a>        
+                            <div class="footer__contacts">
+                                <a href="tel:+380637189522">+38 (063) 718 95 22</a>
+                                <a href="mailto: browbar.info.dp@gmail.com">browbar.info.dp@gmail.com</a>        
+                            </div>
+
+                            <ul class="footer__social">
+                                <li><a href="https://www.facebook.com/olyaraybb/" target="_blank"><img src="img/facebook_mob.png" alt="facebook"></a></li>
+                                <li><a href="https://www.instagram.com/olyaray_bb/" target="_blank"><img src="img/instagram_mob.png" alt="instagram"></a></li>
+                            </ul>
                         </div>
-
-                        <ul class="footer__social">
-                            <li><a href="https://www.instagram.com/olyaray_bb/" target="_blank"><img src="img/instagram_mob.png" alt="instagram"></a></li>
-                            <li><a href="https://www.facebook.com/olyaraybb/" target="_blank"><img src="img/facebook_mob.png" alt="facebook"></a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </footer> 

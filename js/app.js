@@ -140,7 +140,6 @@ $('.photo-slides, .video-slides').slick({
         }
     ]
 
-
 });
 
 $('[data-fancybox="gallery"]').fancybox();
