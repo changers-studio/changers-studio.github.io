@@ -775,32 +775,56 @@ img[alt~=gerl] {
 .cardslider__nav-next,
 .cardslider__nav-prev {
     left: 0;
-    background: url(../img/right-arrow-b.png) no-repeat;
-    width: 52px;
-    height: 22px;
     border: none;
     border-radius: 0;
-    top: 50%;
+    top: 60%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%)
+    transform: translateY(-50%);
 }
 
 .cardslider__direction-nav {
     position: static
 }
 
+.slick-prev, .slick-next{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 100%;
+    z-index: 30;
+    top: 50%;
+    position: absolute;
+    box-shadow: 0px 0px 20px #FCF0FC;
+}
+
+.slick-prev .fas, .slick-next .fas{
+    color: #F16EF0;
+    z-index: 100;
+    font-size: 24px;
+}
+
 .cardslider__nav-next {
     position: absolute;
     right: 100px;
     left: unset;
-    background: url(../img/right.png) no-repeat;
+    background: url('../img/right-arrow.png') no-repeat;
+    background-position: 100% 0;
+    width: 35px!important;
+    height: 35px!important;
+    -webkit-background-size: contain;
+    background-size: contain;
     margin: 0
 }
 
 .cardslider__nav-prev {
     position: absolute;
-    left: 100px
+    width: 35px!important;
+    height: 35px!important;
+    background: url('../img/left-arrow.png') no-repeat;
+    left: 100px;
+    -webkit-background-size: contain;
+    background-size: contain;
 }
 
 .cardslider__card {
@@ -1520,6 +1544,124 @@ footer .footer__menu li a{
     padding: 0 15px;
 }
 
+
+section.program{
+    padding: 50px 0;
+}
+
+.program__title{
+    font-family: 'Conv_GothamProBold';
+    font-size: 45px;
+}
+
+.program__title span{
+    display: block;
+}
+
+.program__tabs .panel .panel-collapse{
+    display: none;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 0px 17.1px 0.9px rgba(158, 140, 200, 0.15);
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+.program__tabs .panel .panel-collapse p{
+    margin: 0;
+}
+
+.panel-collapse ul{
+    padding: 20px 30px;
+}
+
+.panel-collapse ul li{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.program__tabs .panel .panel-heading{
+    margin-top: 25px;
+}
+
+.tab__title_2{
+    margin-top: 60px;
+}
+
+.panel-collapse5 .bottom_content{
+    background-color: rgba(196, 196, 196, 0.24);
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 14px;
+    color: #636363;
+}
+
+.program__tabs .panel .panel-heading a{
+    background-color: #fff;
+    padding: 35px 45px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    box-shadow: 0px 0px 20px #FCF0FC;
+    color: #24282b;
+    font-size: 15px;
+    position: relative;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    position: relative;
+}
+
+.program__tabs .panel .panel-heading a span{
+    position: relative;
+    font-size: 18px;
+}
+
+.panel-heading__title{
+    font-family: 'Conv_GothamProBold';
+}
+
+.program__tabs .panel .panel-heading a span::first-child{
+    font-size: 24px;
+}
+
+.program__tabs .panel .panel-heading:hover{
+    cursor: pointer;
+}
+
+.program__tabs .panel .panel-heading a .fas{
+    color: #F790F6;
+    width: 15px;
+    height: 15px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.program__tabs .panel .panel-heading.in{
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.program__tabs .panel .panel-heading a:hover{
+    background-color: #FEF1FF;
+}
+
+.program__tabs .panel .panel-heading.in a{
+    color: #000;
+    background-color: #FEF1FF;
+}
+
+.program__tabs .panel .panel-heading.in a .fas{
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
 @media only screen and (max-width : 1200px){
 
     .advantages_box{
@@ -1925,6 +2067,22 @@ footer .footer__menu li a{
 
 @media only screen and (max-width : 768px){
 
+    .program__title{
+        font-size: 31px;
+    }
+
+    .program__tabs .panel .panel-heading a{
+        padding: 20px 30px;
+    }
+
+    .panel-collapse5 .bottom_content{
+        font-size: 12px;
+    }
+
+    .panel-collapse ul li{
+        font-size: 14px;
+    }
+
     .footer__address{
         display: none;
     }
@@ -2040,6 +2198,18 @@ footer .footer__menu li a{
 
 @media only screen and (max-width : 576px){
     
+    .program__title{
+        font-size: 25px;
+    }
+
+    .tab__title{
+        font-size: 15px;
+    }
+
+    .tab__title_2 span{
+        display: block;
+    }
+
     .cardslider__card{
         padding: 50px;
     }
@@ -2108,6 +2278,18 @@ footer .footer__menu li a{
 }
 
 @media only screen and (max-width : 480px){
+
+    .program__tabs .panel .panel-heading a{
+        padding: 15px;
+    }
+    
+    .tab__title_2{
+        margin-top: 30px;
+    }
+
+    .panel-collapse ul{
+        padding: 15px;
+    }
 
     .advantages_box{
         width: 100%;

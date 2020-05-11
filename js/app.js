@@ -104,6 +104,8 @@ $('.lavel-sliders').slick({
     slidesToShow: 3,
     slidesToScroll: 3,
     arrows: true,
+    prevArrow:"<button class='slick-prev slick-arrow' aria-label='Next' type='button' style=''><i class='fas fa-angle-left'></i></button>",
+    nextArrow:"<button class='slick-next slick-arrow' aria-label='Next' type='button' style=''><i class='fas fa-angle-right'></i></button>",
     responsive: [{
             breakpoint: 1024,
             settings: {
@@ -124,7 +126,7 @@ $('.lavel-sliders').slick({
 
 $('.photo-slides, .video-slides').slick({
     slidesToShow: 3,
-    infinite: false,
+    infinite: true,
     arrows: false,
     responsive: [
         {
@@ -155,12 +157,17 @@ $('.my-slider').cardslider({
     nav: true,
     swipe: true,
     dots: false,
-    loop: false,
+    loop: true,
     beforeCardChange: null,
     afterCardChange: null
 
 });
 
+
+$('.panel-heading').click(function () {
+    $(this).toggleClass('in').next().slideToggle();
+    $('.panel-heading').not(this).removeClass('in').next().slideUp();
+});
 
 $(document).ready(function() {
     for (var i = 0; i < $('.my-slider ul li').length; i++) {
