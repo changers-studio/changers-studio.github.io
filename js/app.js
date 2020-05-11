@@ -126,7 +126,7 @@ $('.lavel-sliders').slick({
 
 $('.photo-slides, .video-slides').slick({
     slidesToShow: 3,
-    infinite: true,
+    infinite: false,
     arrows: false,
     responsive: [
         {
