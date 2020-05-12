@@ -1253,6 +1253,7 @@ footer {
     justify-content: space-between;
     -ms-align-items: center;
     align-items: center;
+    padding: 0 15px;
 }
 
 .footer__address{
@@ -1786,6 +1787,10 @@ section.program{
 }
 
 @media only screen and (max-width : 992px){
+
+    .footer__flex{
+        padding: 0;
+    }
 
     .advantages_box:nth-child(1), .advantages_box:nth-child(2){
         margin-top: 15px;
