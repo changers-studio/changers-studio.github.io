@@ -1,0 +1,180 @@
+.sertificate {
+    display: flex;
+    padding-bottom: 65px;
+    padding-top: 144px;
+    &-left {
+        margin-top: -2px;
+        padding-right: 30px;
+        width: 60%
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-top: 67px;
+        width: calc(66.66% + 15px);
+    }
+    &__thumb {
+        width: 50%;
+        padding: 0 15px 15px;
+        margin-bottom: 30px;
+    }
+
+    &__elem {
+        cursor: pointer;
+        overflow: hidden;
+        height: 200px;
+        img {
+            transition: transform .3s ease-out;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            position: relative;
+        }
+        &:hover img {
+            transform: scale(1.05) translate(-50%,-50%);
+        }
+    }
+    &-main {
+        width: 40%;
+        text-align: right;
+        &__elem {
+            height: calc(100vh - 209px);
+            img {
+                max-height: 100%;
+                vertical-align: top
+            }
+        }
+    }
+}
+.show-mob {
+    display: none;
+}
+@media screen and (max-width: 1366px) {
+    .sertificate-main {
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .sertificate-left {
+        width: 50%
+    }
+    .sertificate__list {
+        width: calc(100% + 30px)
+    }
+    .sertificate-main {
+        text-align: center;
+        justify-content: center;
+        width: 50%
+    }
+    .ios .sertificate-main__elem {
+        height: calc(100vh - 329px);
+    }
+}
+@media screen and (max-width: 1040px) {
+
+    .sertificate-main {
+        display: block;
+        padding-top: 11.4vw;
+    }
+}
+@media screen and (max-height: 840px) {
+    .sertificate__list {
+        margin-top: 40px;
+    }
+
+    .sertificate__elem {
+        height: 150px
+    }
+}
+@media screen and (max-height: 768px) {
+    .sertificate {
+        padding-top: 110px
+    }
+}
+
+@media screen and (max-width: 767px) , (max-height: 669px) {
+    .sertificate {
+        padding-bottom: 20px;
+        padding-top: 90px;
+    }
+    .sertificate-main__elem {
+        height: auto
+    }
+}
+@media screen and (max-width: 767px) {
+    .sertificate {
+        flex-direction: column-reverse;
+        padding-bottom: 10px;
+        padding-top: 60px;
+        .h2 {
+            display: none;
+        }
+        .show-mob {
+            display: block;
+            margin-bottom: 25px;
+        }
+    }
+    .sertificate-main {
+        width: 100%;
+        padding-top: 19px
+    }
+    .sertificate-left {
+        padding-right: 0;
+        width: 100%
+    }
+    .sertificate__list {
+        margin: 0 -10px;
+        padding-top: 10px;
+        width: calc(100% + 20px)
+    }
+    .sertificate__thumb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sertificate__elem {
+        height: 98px;
+    }
+    .sertificate-main__elem,
+    .ios .sertificate-main__elem {
+        height: auto;
+    }
+    .sertificate-main {
+        padding-top: 12.2vw;
+    }
+}
+@media screen and (max-width: 480px) {
+    .sertificate__list {
+        margin: 0 -7px;
+        width: calc(100% + 14px)
+    }
+    .sertificate__thumb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .sertificate__elem {
+        height: 62px;
+    }
+}
+
+@media screen and (min-width: 1480px) { 
+    .sertificate-left {
+        width: 40%
+    }
+    .sertificate-main {
+        text-align: center;
+        width: 60%
+    }
+    .sertificate__list {
+        width: calc(100% + 30px)
+    }
+}

@@ -1,0 +1,27 @@
+/* reset */
+$min-width: 320px; 
+$maxWidth: 1920px; 
+$base-bg: #FFF; 
+$base-font-size: 14px; 
+$base-line-height: 1.25; 
+$base-font-family: Rubik, arial, sans-serif; 
+$custom-font-family: $base-font-family; 
+$default-transition:all 0.4s ease-in;
+
+/* main variables */
+
+//text, titles
+$text-color: #000;
+$title-color: #040404;
+$title-font-family: $custom-font-family;
+$color-active: #F90;
+$link-color: $color-active;
+
+
+$font-size-h1: 36px;
+$line-height-h1: 42px;
+$font-size-h2: 32px;
+$line-height-h2: 37px;
+$font-size-h3: 28px;
+$line-height-h3: 32px;
+

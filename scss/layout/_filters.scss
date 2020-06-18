@@ -1,0 +1,108 @@
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: -50px;
+    &__item {
+        margin-right: 50px;
+    }
+    &__elem {
+        color: $text-color;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        input {
+            position: absolute;
+            left: 0;
+            top:0;
+        }
+    }
+    &__checkbox {
+        padding-left: 33px;
+        font-size: 18px;
+        text-transform: uppercase;
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            height: 13px;
+            width: 13px;
+            border: 1px solid $color-active;
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+    }
+    input:checked + .filters__checkbox:after, .filters__check:checked + .filters__checkbox:after, .active .filters__checkbox:after  {
+        @extend .icon-check:before;
+        font-family: icomoon;
+        position: absolute;
+        font-size: 6px;
+        left: 2px;
+        top: 7px;
+    }
+    &__radio {
+        padding-left: 33px;
+        font-size: 18px;
+        text-transform: uppercase;
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            height: 13px;
+            width: 13px;
+            border: 1px solid $color-active;
+            position: absolute;
+            border-radius: 50%;
+            left: 0;
+            top: 4px;
+        }
+    }
+    .active .filters__radio:after {
+            content: '';
+            display: block;
+            height: 9px;
+            width: 9px;
+            background:  $color-active;
+            position: absolute;
+            border-radius: 50%;
+            left: 2px;
+            top: 6px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .filters {
+        justify-content: center;
+    }
+    .filters__item {
+        margin-bottom: 18px;
+    }
+    .blog-top {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .blog-top {
+        margin-bottom: 20px;
+    }
+    .filters__checkbox, .filters__radio {
+        font-size: 16px
+    }
+    .filters__checkbox:before, .filters__radio:before  {
+        top: 3px;
+    }
+    .filters input:checked + .filters__checkbox:after, .filters .filters__check:checked + .filters__checkbox:after, .filters .active .filters__checkbox:after  {
+        top: 6px;
+    }
+    .filters .active .filters__radio:after {
+        top: 5px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .filters__item {
+        width: 100%
+    }
+    .map {
+        margin-top: 10px
+    }
+}
