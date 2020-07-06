@@ -1,0 +1,119 @@
+.section-blog {
+    .fp-tableCell {
+        vertical-align: top
+    }
+}
+.wrapper-blog {
+    padding-top: 122px;
+    padding-bottom: 20px;
+}
+.blog-top {
+    margin-bottom: 7.8vh
+}
+.blog {
+    overflow: hidden;
+    &-list {
+        margin-left: -20%;
+    }
+    &__item {
+        padding-left: 33.33%;
+    }
+    &__elem {
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 431px;
+        display: flex;
+        align-items: flex-end;
+    }
+    &__title {
+        background: $color-active;
+        color: #fff;
+        min-height: 125px;
+        display: flex;
+        text-transform: uppercase;
+        align-items: center;
+        padding: 20px 40px 23px; 
+        .anim-w:before {
+            color: #fff;
+        }
+    }
+    .slick-list  {
+        padding-bottom: 92px;
+    }
+}
+@media screen and (max-width: 1366px)  {
+    .wrapper-blog {
+        padding-top: 100px
+    }
+}
+@media screen and (max-width: 1200px) {
+    .blog {
+        &-list {
+            margin-left: -40px;
+        }
+        &__item {
+            padding-left: 40px;
+        }
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .blog .slick-list {
+        padding-bottom: 62px;
+    }
+}
+@media screen and (max-height: 880px) {
+    .blog__elem {
+        height: 400px
+    }
+    .blog__title {
+        min-height: 100px;
+        padding-top: 15px;
+        padding-bottom: 18px
+    }
+}
+@media screen and (max-height: 800px) {
+    .blog__elem {
+        height: 373px
+    }
+    .blog-top {
+        margin-bottom: 6.8vh;
+    }
+    .blog__title {
+        min-height: 90px;
+    }
+}
+@media screen and (max-height: 768px) {
+    .blog-top {
+        margin-bottom: 1.8vh;
+    }
+    .blog__elem {
+        height: 335px
+    }
+    .wrapper-blog {
+        padding-top: 90px
+    }
+}
+@media screen and (max-width: 767px) {
+    .blog__elem {
+        height: 405px
+    }
+
+}
+@media screen and (min-width: 768px) and (min-height: 670px) {
+    .section-blog .fp-scroller {
+        align-items: flex-start;
+    }    
+}
+@media screen and (max-width: 767px) , (max-height: 669px) {
+    .wrapper-blog {
+        padding-top: 60px
+    }
+}
+@media screen and (max-width: 489px) {
+    .blog__elem {
+        height: 375px
+    }
+
+}
