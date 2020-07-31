@@ -21,7 +21,7 @@
 
 	<body>
 
-		<div class="preloader">
+		<!-- <div class="preloader">
 			<div class="frame">
 		    <div class="center">
 		      <div class="dot-1"></div>
@@ -29,7 +29,34 @@
 		      <div class="dot-3"></div>
 		    </div>
 		  </div>
-		</div>
+		</div> -->
+
+		<form class="form form_pop-up mfp-hide">
+
+			<div class="success">
+				<img src="img/development__bot.svg" alt="Form bot icon">
+				<p><span>Спасибо за заявку!</span>Наш менеджер свяжется с Вами в течении 15 минут</p>
+			</div>
+			
+			<h5 class="h5">Оставьте заявку в форме ниже, чтобы <span>получить индивидуальное решение</span> под специфику вашего бизнеса</h5>
+
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Smart process">
+			<input type="hidden" name="admin_email" value="nikita.tytskyi@gmail.com">
+			<input type="hidden" name="form_subject" value="Получить консультацию">
+			<!-- END Hidden Required Fields -->
+
+			<input type="text" name="Имя" placeholder="*Ваше имя" required>
+			<input type="text" class="input-phone" name="Телефон" placeholder="*Телефон" required>
+			<input type="text" name="Почта" placeholder="E-mail">
+
+			<label>
+        <input class="checkbox_input" type="checkbox" required>
+        <p class="checkbox_text" >Я соглашаюсь с политикой конфиденциальности</p>
+      </label>
+
+			<button class="button">Получить консультацию</button>
+		</form>
 	
 		<header class="header">
 
@@ -39,9 +66,10 @@
 				<div class="row">
 
 						<div class="col-12">
+
 							<div class="header__top-line top-line">
 
-								<a class="top-line__logo" href="index.html"><img src="img/logo.png" alt="Logo Smart Process"></a>
+								<a class="top-line__logo" href="index.html"><img src="img/logo.svg" alt="Logo Smart Process"></a>
 
 								<nav class="top-line__menu">
 									<ul>
@@ -51,13 +79,13 @@
 										<li><a class="menu-move" href="#portfolio">Портфолио</a></li>
 										<li><a class="menu-move" href="#reviews">Отзывы</a></li>
 										<li><a class="menu-move" href="#faq">FAQ</a></li>
-										<li><a class="menu-move" href="#">Заказать чат-бот</a></li>
+										<li><a class="pop-up" href=".form_pop-up">Заказать чат-бот</a></li>
 									</ul>
 								</nav>
 
 								<div class="top-line__callback">
 									<span><a href="tel:380937899988">+38 093-789-99-88</a></span>
-									<a href="" class="top-line__button button dark">Обратный звонок</a>
+									<a href=".form_pop-up" class="top-line__button button dark pop-up">Обратный звонок</a>
 								</div>
 
 								<nav class="top-line__menu_mobile">
@@ -75,17 +103,18 @@
 										<li><a class="menu-move" href="#portfolio">Портфолио</a></li>
 										<li><a class="menu-move" href="#reviews">Отзывы</a></li>
 										<li><a class="menu-move" href="#faq">FAQ</a></li>
-										<li><a class="menu-move" href="#" class="button">Заказать чат-бот</a></li>
+										<li><a class="button pop-up" href=".form_pop-up">Заказать чат-бот</a></li>
 									</ul>
 
 								</nav>
 
 								<div class="top-line__callback_mobile">
 									<span><a href="tel:380937899988">+38 093-789-99-88</a></span>
-									<a href="" class="top-line__button button dark">Обратный звонок</a>
+									<a href=".form_pop-up" class="top-line__button button dark pop-up">Обратный звонок</a>
 								</div>
 
 							</div>
+
 						</div>
 						
 						<div class="col-xl-6 col-lg-5 col-md-6">
@@ -102,7 +131,7 @@
 
 										<h2 class="h2">Для автоматизации <br> бизнес-процессов</h2>
 
-										<a href="" class="button">Получить просчет</a>
+										<a href=".form_pop-up" class="button pop-up">Получить просчет</a>
 
 									</div>
 
@@ -114,31 +143,31 @@
 							<div class="header-flex header-illustration">
 								<div class="flex-center">
 
-									<img src="img/header-mobile.png" alt="Mobile illustration" class="_tablet">
+									<img src="img/header-mobile.svg" alt="Mobile illustration" class="_tablet">
 
 									<div class="wrapper-image">
 
-										<img class="laptop" src="img/header__laptop.png" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="2200" alt="Laptop">
+										<img class="laptop" src="img/header__laptop.svg" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="2200" alt="Laptop">
 
-										<img class="laptop__bot" src="img/laptop__bot.png" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="4450" alt="Bot">
+										<img class="laptop__bot" src="img/laptop__bot.svg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="4450" alt="Bot">
 
-										<img class="laptop__sky" src="img/header__laptop_sky-top.png" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="3200" alt="Sky">
+										<img class="laptop__sky" src="img/header__laptop_sky-top.svg" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="3200" alt="Sky">
 
-										<img class="laptop__docs" src="img/header__laptop_docs-top.png" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="3200" alt="Documents">
+										<img class="laptop__docs" src="img/header__laptop_docs-top.svg" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="3200" alt="Documents">
 
-										<img class="laptop__man_left" src="img/header__laptop_man-left.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="4200" alt="Man left-side">
+										<img class="laptop__man_left" src="img/header__laptop_man-left.svg" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="4200" alt="Man left-side">
 
-										<img class="laptop__man_right" src="img/header__laptop_man-right.png" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="3700" alt="Man right-side">
+										<img class="laptop__man_right" src="img/header__laptop_man-right.svg" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="3700" alt="Man right-side">
 
-										<img class="laptop__php-icon" src="img/header__laptop_php-top.png" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="4700" alt="PHP-icon">
-										<img class="laptop__api-icon" src="img/header__laptop_api-top.png" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="4700" alt="API-icon">
-										<img class="laptop__js-icon" src="img/header__laptop_js-top.png" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="4700" alt="Js-icon">
+										<img class="laptop__php-icon" src="img/header__laptop_php-top.svg" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="4700" alt="PHP-icon">
+										<img class="laptop__api-icon" src="img/header__laptop_api-top.svg" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="4700" alt="API-icon">
+										<img class="laptop__js-icon" src="img/header__laptop_js-top.svg" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="4700" alt="Js-icon">
 
-										<img class="laptop__gear laptop__gear-big" src="img/header__laptop_gear1.png" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="4200" alt="Gear-big">
+										<img class="laptop__gear laptop__gear-big" src="img/header__laptop_gear1.svg" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="4200" alt="Gear-big">
 
-										<img class="laptop__gear laptop__gear-medium" src="img/header__laptop_gear2.png" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="4450" alt="Gear-medium">
+										<img class="laptop__gear laptop__gear-medium" src="img/header__laptop_gear2.svg" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="4450" alt="Gear-medium">
 
-										<img class="laptop__gear laptop__gear-small" src="img/header__laptop_gear3.png" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="4700" alt="Gear-small">
+										<img class="laptop__gear laptop__gear-small" src="img/header__laptop_gear3.svg" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="4700" alt="Gear-small">
 										
 									</div>
 
@@ -148,10 +177,10 @@
 
 						<div class="col-12">
 							<ul class="header__advantages">
-								<li><img src="img/communication.png" alt="Communication"><span>Коммуникацияс <br> клиентами 24/7</span></li>
-								<li><img src="img/cheaper.png" alt="Cheaper"><span>Стоит дешевле, <br> чем мобильное <br> приложение</span></li>
-								<li><img src="img/universal.png" alt="Universal"><span>Работает во всех <br> нишах: от интернет- <br> магазинов до служб <br> доставки</span></li>
-								<li><img src="img/time.png" alt="Time"><span>Экономит до 80% рабочего <br> времени сотрудников</span></li>
+								<li><img src="img/communication.svg" alt="Communication"><span>Коммуникация с <br> клиентами <span>24/7</span></span></li>
+								<li><img src="img/cheaper.svg" alt="Cheaper"><span>Стоит <span>дешевле</span>, <br> чем мобильное <br> приложение</span></li>
+								<li><img src="img/universal.svg" alt="Universal"><span>Работает <span>во всех <br> нишах</span>: от интернет- <br> магазинов до служб <br> доставки</span></li>
+								<li><img src="img/time.svg" alt="Time"><span>Экономит до <span>80%</span> рабочего <br> времени сотрудников</span></li>
 							</ul>
 						</div>
 
@@ -186,12 +215,12 @@
 								<div class="skill">
 
 									<div class="front">
-										<img src="img/skills/skill1.png" alt="Skill">
+										<img src="img/skills/skill1.svg" alt="Skill">
 										<p>Выстраивать диалог с клиентом</p>
 									</div>
 
 									<div class="back">
-										<img src="img/skills/skill1.png" alt="Skill">
+										<img src="img/skills/skill1.svg" alt="Skill">
 										<p>У чат-ботов есть ответы на стандартные вопросы, чтобы клиент не ждал, пока менеджер обработает его сообщение. Потребителя ведут по определенному сценарию, приближая к конечной цели, например, переходу по ссылке для регистрации на вебинар.</p>
 									</div>
 									
@@ -200,12 +229,12 @@
 								<div class="skill">
 
 									<div class="front">
-										<img src="img/skills/skill2.png" alt="Skill">
+										<img src="img/skills/skill2.svg" alt="Skill">
 										<p>Устранять неполадки</p>
 									</div>
 
 									<div class="back">
-										<img src="img/skills/skill2.png" alt="Skill">
+										<img src="img/skills/skill2.svg" alt="Skill">
 										<p>Согласно данным Invesp, вместе с чат-ботами предприятия на 30% снижают затраты на клиентскую поддержку. Боты помогают восстановить пароль от личного кабинета и изменить настройки. Причем работает инструмент в режиме 24/7.</p>
 									</div>
 									
@@ -214,12 +243,12 @@
 								<div class="skill">
 
 									<div class="front">
-										<img src="img/skills/skill3.png" alt="Skill">
+										<img src="img/skills/skill3.svg" alt="Skill">
 										<p>Принимать заказы</p>
 									</div>
 
 									<div class="back">
-										<img src="img/skills/skill3.png" alt="Skill">
+										<img src="img/skills/skill3.svg" alt="Skill">
 										<p>Чат-боты можно настроить так, чтобы они помогали потребителям совершить целевое действие. Например, заказать пиццу или купить новые джинсы. Пользователям не нужно дополнительно устанавливать приложение или разбираться с незнакомым интерфейсом. А владелец бизнеса не переплачивает за разработку мобильного приложения.</p>
 									</div>
 									
@@ -228,12 +257,12 @@
 								<div class="skill">
 
 									<div class="front">
-										<img src="img/skills/skill4.png" alt="Skill">
+										<img src="img/skills/skill4.svg" alt="Skill">
 										<p>Записывать к специалисту</p>
 									</div>
 
 									<div class="back">
-										<img src="img/skills/skill4.png" alt="Skill">
+										<img src="img/skills/skill4.svg" alt="Skill">
 										<p>Через чат-бота клиенты могут записаться на прием к врачу, парикмахеру, массажисту. Благодаря технологиям, у инструмента есть доступ к календарю, поэтому не будет путаницы в расписании. Также чат-бот умеет рассылать напоминания о визите и собирать фидбеки.</p>
 									</div>
 									
@@ -242,12 +271,12 @@
 								<div class="skill">
 
 									<div class="front">
-										<img src="img/skills/skill5.png" alt="Skill">
+										<img src="img/skills/skill5.svg" alt="Skill">
 										<p>Проводить опросы</p>
 									</div>
 
 									<div class="back">
-										<img src="img/skills/skill5.png" alt="Skill">
+										<img src="img/skills/skill5.svg" alt="Skill">
 										<p>Чтобы узнать, какие продукты или услуги нужны клиентам, спросите у них напрямую. Подготовьте ряд вопросов, которые помогут лучше узнать аудиторию и сегментировать ее. А результаты анкетирования скачайте в нужном формате. </p>
 									</div>
 									
@@ -256,12 +285,12 @@
 								<div class="skill">
 
 									<div class="front">
-										<img src="img/skills/skill6.png" alt="Skill">
+										<img src="img/skills/skill6.svg" alt="Skill">
 										<p>Бронировать билеты, номера и столики</p>
 									</div>
 
 									<div class="back">
-										<img src="img/skills/skill6.png" alt="Skill">
+										<img src="img/skills/skill6.svg" alt="Skill">
 										<p>Гостиницы, авиакомпании, кафе и рестораны подключают виртуальных собеседников, чтобы упростить процедуру бронирования. Например, клиенты отеля смогут выбрать тип номера, забронировать его и оплатить в удобном для них формате — через мессенджер.</p>
 									</div>
 									
@@ -270,12 +299,12 @@
 								<div class="skill">
 
 									<div class="front">
-										<img src="img/skills/skill7.png" alt="Skill">
+										<img src="img/skills/skill7.svg" alt="Skill">
 										<p>Делиться полезной информацией</p>
 									</div>
 
 									<div class="back">
-										<img src="img/skills/skill7.png" alt="Skill">
+										<img src="img/skills/skill7.svg" alt="Skill">
 										<p>Средний показатель открываемости сообщений от чат-бота — 80%. С помощью этого инструмента можно рассылать контент с блога и социальных сетей, запускать индивидуальные рассылки под каждый сегмент аудитории, а также завлекать потенциальных клиентов.</p>
 									</div>
 									
@@ -284,12 +313,12 @@
 								<div class="skill">
 
 									<div class="front">
-										<img src="img/skills/skill8.png" alt="Skill">
+										<img src="img/skills/skill8.svg" alt="Skill">
 										<p>Выполнять функции HR-менеджера</p>
 									</div>
 
 									<div class="back">
-										<img src="img/skills/skill8.png" alt="Skill">
+										<img src="img/skills/skill8.svg" alt="Skill">
 										<p>Чат-боты помогут обучить новых сотрудников и выстроить с ними коммуникацию. А также будут регулярно собирать данные о настрое команды и уровне работоспособности. Вы даже можете внедрить чат-бота, который будет заниматься подбором персонала, чтобы ваши менеджеры не тратили время на обработку десятков резюме.</p>
 									</div>
 									
@@ -304,7 +333,7 @@
 			</section>
 
 
-			<section class="advantages" id="advantages">
+			<!-- <section class="advantages" id="advantages">
 				<div class="container">
 					<div class="row">
 
@@ -383,20 +412,20 @@
 							</div>
 							
 							<div class="advantages__image_mobile">
-								<img src="img/advantages__image.png" data-aos="zoom-in" alt="Advantages illustration">
+								<img src="img/advantages__image.svg" data-aos="zoom-in" alt="Advantages illustration">
 							</div>
 
 							<div class="advantages__wrapper-image">
 								<div class="box-center">
-									<img class="advantages__wrapper-image1" src="img/advantages__image_middle.png" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000" alt="Advantages image">
-									<img class="advantages__wrapper-image2" src="img/advantages__image_left.png" data-aos="zoom-in-right" data-aos-delay="500" data-aos-duration="1500" alt="Advantages image">
-									<img class="advantages__wrapper-image3" src="img/advantages__image_top.png" data-aos="zoom-in-down" data-aos-delay="500" data-aos-duration="1000" alt="Advantages image">					
-									<img class="advantages__wrapper-image4" src="img/advantages__image_right.png" data-aos="zoom-in-left" data-aos-delay="500" data-aos-duration="1000" alt="Advantages image">
+									<img class="advantages__wrapper-image1" src="img/advantages__image_middle.svg" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000" alt="Advantages image">
+									<img class="advantages__wrapper-image2" src="img/advantages__image_left.svg" data-aos="zoom-in-right" data-aos-delay="500" data-aos-duration="1500" alt="Advantages image">
+									<img class="advantages__wrapper-image3" src="img/advantages__image_top.svg" data-aos="zoom-in-down" data-aos-delay="500" data-aos-duration="1000" alt="Advantages image">					
+									<img class="advantages__wrapper-image4" src="img/advantages__image_right.svg" data-aos="zoom-in-left" data-aos-delay="500" data-aos-duration="1000" alt="Advantages image">
 								</div>
 							</div>
 
 							<div class="advantages__button">
-								<a href="" class="button">Заказать чат-бот</a>
+								<a href=".form_pop-up" class="button pop-up">Заказать чат-бот</a>
 							</div>
 
 							<div class="advantages__right-side">
@@ -465,7 +494,7 @@
 
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<section class="work-in" id="work-in">
 				<div class="container">
@@ -490,35 +519,35 @@
 									
 									<div class="box box1">
 										<div class="plug"></div>
-										<img src="img/work-in/work-in__icon1.png" alt="Work-in icon">
+										<img src="img/work-in/work-in__icon1.svg" alt="Work-in icon">
 										<h5 class="h5">Интернет-магазины</h5>
 										<p>Бот расскажет о магазине, предоставит полную информацию об интересующем товаре и поможет быстро оформить заказ. А после покупки вежливо попросит оставить отзыв и будет регулярно отправлять уведомления с акционными предложениями.</p>
 									</div>
 
 									<div class="box box2">
 										<div class="plug"></div>
-										<img src="img/work-in/work-in__icon2.png" alt="Work-in icon">
+										<img src="img/work-in/work-in__icon2.svg" alt="Work-in icon">
 										<h5 class="h5">Заведения <br> общественного питания</h5>
 										<p>Посетители ресторана или кафе смогут забронировать столик или посмотреть меню при помощи чат-бота. Кроме этого, виртуальный «собеседник» подскажет пароль от Wi-Fi и поделится самыми «вкусными» предложениями.</p>
 									</div>
 
 									<div class="box box3">
 										<div class="plug"></div>
-										<img src="img/work-in/work-in__icon3.png" alt="Work-in icon">
+										<img src="img/work-in/work-in__icon3.svg" alt="Work-in icon">
 										<h5 class="h5">Салоны красоты</h5>
 										<p>Ваши клиенты будут всегда в курсе новых услуг и цен, а для записи к мастеру им нужно будет лишь написать пожелания в чат. Администратору не придется по несколько раз отвечать на одинаковые вопросы, за него это сделать бот.</p>
 									</div>
 
 									<div class="box box4">
 										<div class="plug"></div>
-										<img src="img/work-in/work-in__icon4.png" alt="Work-in icon">
+										<img src="img/work-in/work-in__icon4.svg" alt="Work-in icon">
 										<h5 class="h5">Службы доставки</h5>
 										<p>Чат-бот поможет выбрать подходящий товар, подскажет, как оплатить и когда ждать доставку. А еще расскажет о Топовых продуктах и новинках в меню.</p>
 									</div>
 
 									<div class="box box5">
 										<div class="plug"></div>
-										<img src="img/work-in/work-in__icon5.png" alt="Work-in icon">
+										<img src="img/work-in/work-in__icon5.svg" alt="Work-in icon">
 										<h5 class="h5">Офлайн и онлайн <br> мероприятия</h5>
 										<p>Регистрация на вебинар, просмотр программы мероприятия, заказ билетов — все эти действия можно перенести в чат-бот. А по окончанию события клиенты смогут восстановить в памяти самые важные моменты выступлений спикеров, ведь бот пришлет видео и выжимки из докладов.</p>
 									</div>
@@ -526,7 +555,7 @@
 									<div class="box box6">
 										<h5 class="h5">И это далеко <br> не полный список <br> возможных «маршрутов» <br> чат-ботов</h5>
 										<p>Узнайте подробнее, как можно применить чат-бот в вашей сфере</p>
-										<a href="" class="button">Получить консультацию</a>
+										<a href=".form_pop-up" class="button pop-up">Получить консультацию</a>
 									</div>
 
 								</div>
@@ -559,16 +588,16 @@
 							<h5 class="h5_mobile">Разработка чат-бота для <br> продажи авиабилетов<span>авиа</span></h5>
 
 							<div class="portfolio__slider">
-								<div class="slide"><img src="img/portfolio/portfolio__slide.jpg" alt="Portfolio example"></div>
-								<div class="slide"><img src="img/portfolio/portfolio__slide.jpg" alt="Portfolio example"></div>
-								<div class="slide"><img src="img/portfolio/portfolio__slide.jpg" alt="Portfolio example"></div>
-								<div class="slide"><img src="img/portfolio/portfolio__slide.jpg" alt="Portfolio example"></div>
+								<div class="slide"><img src="img/portfolio/portfolio__slide.svg" alt="Portfolio example"></div>
+								<div class="slide"><img src="img/portfolio/portfolio__slide.svg" alt="Portfolio example"></div>
+								<div class="slide"><img src="img/portfolio/portfolio__slide.svg" alt="Portfolio example"></div>
+								<div class="slide"><img src="img/portfolio/portfolio__slide.svg" alt="Portfolio example"></div>
 							</div>
 						</div>
 
 						<div class="col-lg-6 order-lg-2 order-2 portfolio__margin-top">
 
-							<h5 class="h5">Разработка чат-бота для <br> продажи авиабилетов <img src="img/portfolio__title_right.png" alt="Portfolio decor"></h5>
+							<h5 class="h5">Разработка чат-бота для <br> продажи авиабилетов <img src="img/portfolio__title_right.svg" alt="Portfolio decor"></h5>
 
 							<ul>
 
@@ -611,7 +640,7 @@
 
 						<div class="col-lg-6 order-lg-3 order-4 portfolio__margin-top">
 
-							<h5 class="h5">Разработка чат-бота для <br> продажи авиабилетов <img src="img/portfolio__title_right.png" alt="Portfolio decor"></h5>
+							<h5 class="h5">Разработка чат-бота для <br> продажи авиабилетов <img src="img/portfolio__title_right.svg" alt="Portfolio decor"></h5>
 
 							<ul>
 
@@ -657,10 +686,10 @@
 							<h5 class="h5_mobile">Разработка чат-бота для <br> продажи авиабилетов <span>авиа</span></h5>
 
 							<div class="portfolio__slider">
-								<div class="slide"><img src="img/portfolio/portfolio__slide.jpg" alt="Portfolio example"></div>
-								<div class="slide"><img src="img/portfolio/portfolio__slide.jpg" alt="Portfolio example"></div>
-								<div class="slide"><img src="img/portfolio/portfolio__slide.jpg" alt="Portfolio example"></div>
-								<div class="slide"><img src="img/portfolio/portfolio__slide.jpg" alt="Portfolio example"></div>
+								<div class="slide"><img src="img/portfolio/portfolio__slide.svg" alt="Portfolio example"></div>
+								<div class="slide"><img src="img/portfolio/portfolio__slide.svg" alt="Portfolio example"></div>
+								<div class="slide"><img src="img/portfolio/portfolio__slide.svg" alt="Portfolio example"></div>
+								<div class="slide"><img src="img/portfolio/portfolio__slide.svg" alt="Portfolio example"></div>
 							</div>
 						</div>
 
@@ -670,16 +699,16 @@
 							<h5 class="h5_mobile">Разработка чат-бота для <br> продажи авиабилетов<span>авиа</span></h5>
 
 							<div class="portfolio__slider">
-								<div class="slide"><img src="img/portfolio/portfolio__slide.jpg" alt="Portfolio example"></div>
-								<div class="slide"><img src="img/portfolio/portfolio__slide.jpg" alt="Portfolio example"></div>
-								<div class="slide"><img src="img/portfolio/portfolio__slide.jpg" alt="Portfolio example"></div>
-								<div class="slide"><img src="img/portfolio/portfolio__slide.jpg" alt="Portfolio example"></div>
+								<div class="slide"><img src="img/portfolio/portfolio__slide.svg" alt="Portfolio example"></div>
+								<div class="slide"><img src="img/portfolio/portfolio__slide.svg" alt="Portfolio example"></div>
+								<div class="slide"><img src="img/portfolio/portfolio__slide.svg" alt="Portfolio example"></div>
+								<div class="slide"><img src="img/portfolio/portfolio__slide.svg" alt="Portfolio example"></div>
 							</div>
 						</div>
 
 						<div class="col-lg-6 order-lg-6 order-6 portfolio__margin-top">
 
-							<h5 class="h5">Разработка чат-бота для <br> продажи авиабилетов <img src="img/portfolio__title_right.png" alt="Portfolio decor"></h5>
+							<h5 class="h5">Разработка чат-бота для <br> продажи авиабилетов <img src="img/portfolio__title_right.svg" alt="Portfolio decor"></h5>
 
 							<ul>
 
@@ -734,8 +763,8 @@
 							<h4 class="h4">Или хотите что-то совершенно уникальное?</h4>
 
 							<div class="wrapper-image">
-								<img class="contact-form__image_in" src="img/form__illustration_in.png" data-aos="fade-zoom-in" data-aos-duration="500" alt="Illustration form">
-								<img class="contact-form__image_out" src="img/form__illustration_out.png" data-aos="fade-up" data-aos-duration="1500" alt="Illustration form">
+								<img class="contact-form__image_in" src="img/form__illustration_in.svg" data-aos="fade-zoom-in" data-aos-duration="500" alt="Illustration form">
+								<img class="contact-form__image_out" src="img/form__illustration_out.svg" data-aos="fade-up" data-aos-duration="1500" alt="Illustration form">
 							</div>
 
 						</div>
@@ -745,11 +774,11 @@
 							<form class="form">
 
 								<div class="success">
-									<img src="img/development__bot.png" alt="Form bot icon">
+									<img src="img/development__bot.svg" alt="Form bot icon">
 									<p><span>Спасибо за заявку!</span>Наш менеджер свяжется с Вами в течении 15 минут</p>
 								</div>
 								
-								<h5 class="h5">Оставьте заявку в форме ниже, чтобы получить индивидуальное решение под специфику вашего бизнеса</h5>
+								<h5 class="h5">Оставьте заявку в форме ниже, чтобы <span>получить индивидуальное решение</span> под специфику вашего бизнеса</h5>
 
 								<!-- Hidden Required Fields -->
 								<input type="hidden" name="project_name" value="Smart process">
@@ -770,7 +799,7 @@
 							</form>
 
 							<div class="wrapper-image_mobile">
-								<img src="img/form__illustration.png" data-aos="zoom-in" data-aos-duration="500" alt="Illustration question-form">
+								<img src="img/form__illustration.svg" data-aos="zoom-in" data-aos-duration="500" alt="Illustration question-form">
 							</div>
 
 						</div>
@@ -802,42 +831,42 @@
 
 								<div class="box" data-aos="zoom-out">
 									<div class="circle-wrapper">
-										<img src="img/reasons/reason_image1.png" alt="Reason icon">
+										<img src="img/reasons/reason_image1.svg" alt="Reason icon">
 									</div>
 									<p>Разработали 58 проектов за <br> 5 лет</p>
 								</div>
 
 								<div class="box" data-aos="zoom-out">
 									<div class="circle-wrapper">
-										<img src="img/reasons/reason_image2.png" alt="Reason icon">
+										<img src="img/reasons/reason_image2.svg" alt="Reason icon">
 									</div>
 									<p>Протестировали 46 ниш: от инфобизнеса до службы доставки еды</p>
 								</div>
 
 								<div class="box" data-aos="zoom-out">
 									<div class="circle-wrapper">
-										<img src="img/reasons/reason_image3.png" alt="Reason icon">
+										<img src="img/reasons/reason_image3.svg" alt="Reason icon">
 									</div>
 									<p>Предлагаем нешаблонные решения, которые понравятся аудитории</p>
 								</div>
 
 								<div class="box" data-aos="zoom-out">
 									<div class="circle-wrapper">
-										<img src="img/reasons/reason_image4.png" alt="Reason icon">
+										<img src="img/reasons/reason_image4.svg" alt="Reason icon">
 									</div>
 									<p>Не пропадаем с радаров даже после окончания работы</p>
 								</div>
 
 								<div class="box" data-aos="zoom-out">
 									<div class="circle-wrapper">
-										<img src="img/reasons/reason_image5.png" alt="Reason icon">
+										<img src="img/reasons/reason_image5.svg" alt="Reason icon">
 									</div>
 									<p>Предоставляем статистику по вашему чат-боту</p>
 								</div>
 
 								<div class="box" data-aos="zoom-out">
 									<div class="circle-wrapper">
-										<img src="img/reasons/reason_image6.png" alt="Reason icon">
+										<img src="img/reasons/reason_image6.svg" alt="Reason icon">
 									</div>
 									<p>Работаем с современными технологиями: Node, Dialogflow, Botpress и прочие</p>
 								</div>
@@ -861,7 +890,7 @@
 								<div class="reviews__slider">
 
 									<div class="slide">
-										<img src="img/reviews/reviews__avatar1.png" alt="Reviews avatar" class="reviews__avatar">
+										<img src="img/reviews/reviews__avatar1.svg" alt="Reviews avatar" class="reviews__avatar">
 										<h5 class="h5">Анатолий Петров</h5>
 										<h6 class="h6">разработка чат-бота для магазина игрушек</h6>
 										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</p>	
@@ -871,7 +900,7 @@
 									</div>
 
 									<div class="slide">
-										<img src="img/reviews/reviews__avatar1.png" alt="Reviews avatar" class="reviews__avatar">
+										<img src="img/reviews/reviews__avatar1.svg" alt="Reviews avatar" class="reviews__avatar">
 										<h5 class="h5">Анатолий Петров</h5>
 										<h6 class="h6">разработка чат-бота для магазина игрушек</h6>
 										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>				
@@ -881,7 +910,7 @@
 									</div>
 
 									<div class="slide">
-										<img src="img/reviews/reviews__avatar1.png" alt="Reviews avatar" class="reviews__avatar">
+										<img src="img/reviews/reviews__avatar1.svg" alt="Reviews avatar" class="reviews__avatar">
 										<h5 class="h5">Анатолий Петров</h5>
 										<h6 class="h6">разработка чат-бота для магазина игрушек</h6>
 										<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>		
@@ -891,7 +920,7 @@
 									</div>
 
 									<div class="slide">
-										<img src="img/reviews/reviews__avatar1.png" alt="Reviews avatar" class="reviews__avatar">
+										<img src="img/reviews/reviews__avatar1.svg" alt="Reviews avatar" class="reviews__avatar">
 										<h5 class="h5">Анатолий Петров</h5>
 										<h6 class="h6">разработка чат-бота для магазина игрушек</h6>
 										<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
@@ -901,7 +930,7 @@
 									</div>
 
 									<div class="slide">
-										<img src="img/reviews/reviews__avatar1.png" alt="Reviews avatar" class="reviews__avatar">
+										<img src="img/reviews/reviews__avatar1.svg" alt="Reviews avatar" class="reviews__avatar">
 										<h5 class="h5">Анатолий Петров</h5>
 										<h6 class="h6">разработка чат-бота для магазина игрушек</h6>
 										<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
@@ -919,7 +948,7 @@
 				</div>
 			</section>
 
-			<section class="development" id="development">
+			<!-- <section class="development" id="development">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
@@ -928,36 +957,36 @@
 							<div class="development__stages">
 
 								<div class="stage" data-aos="zoom-out">
-									<p><span>1</span>Вы оставляете заявку, мы анализируем бизнес</p>
+									<p><span class="shadow">1</span><span>1</span>Вы оставляете заявку, мы анализируем бизнес<span class="line"></span></p>
 								</div>
 
 								<div class="stage" data-aos="zoom-out">
-									<p><span>2</span>Формулируем задачу, подбираем площадки и продумываем функционал бота</p>
+									<p><span class="shadow">2</span><span>2</span>Формулируем задачу, подбираем площадки и продумываем функционал бота<span class="line"></span></p>
 								</div>
 
 								<div class="stage" data-aos="zoom-out">
-									<p><span>3</span>Пишем ТЗ, составляем пользовательские сценарии и подбираем стиль общения</p>
+									<p><span class="shadow">3</span><span>3</span>Пишем ТЗ, составляем пользовательские сценарии и подбираем стиль общения<span class="line"></span></p>
 								</div>
 
 								<div class="stage" data-aos="zoom-out">
-									<p><span>4</span>Занимаемся разработкой проекта</p>
+									<p><span class="shadow">4</span><span>4</span>Занимаемся разработкой проекта<span class="line"></span></p>
 								</div>
 
 								<div class="stage" data-aos="zoom-out">
-									<p><span>5</span>Тестируем чат-бота на всевозможных сценариях</p>
+									<p><span class="shadow">5</span><span>5</span>Тестируем чат-бота на всевозможных сценариях<span class="line"></span></p>
 								</div>
 
 								<div class="stage" data-aos="zoom-out">
-									<p><span>6</span>По необходимости дорабатываем инструмент</p>
+									<p><span class="shadow">6</span><span>6</span>По необходимости дорабатываем инструмент<span class="line"></span></p>
 								</div>
 
 								<div class="stage" data-aos="zoom-out">
-									<p><span>7</span>Запускаем чат-бота</p>
+									<p><span class="shadow">7</span><span>7</span>Запускаем чат-бота<span class="line"></span></p>
 								</div>
 
 								<div class="stage" data-aos="zoom-out">
-									<img src="img/development__bot.png" alt="Bot image">
-									<a href="" class="button">Заказать чат-бот</a>
+									<img src="img/development__bot.svg" alt="Bot image">
+									<a href=".form_pop-up" class="button pop-up">Заказать чат-бот</a>
 								</div>
 
 							</div>
@@ -973,14 +1002,14 @@
 
 								<div class="option">
 									<div class="plug"></div>
-									<img src="img/development__option-icon1.png" alt="Development option icon">
+									<img src="img/development__option-icon1.svg" alt="Development option icon">
 									<h5 class="h5">Работаем по договору</h5>
 									<p>С клиентом заключаем договор в качестве гарантии, что наши сотрудники выполнят все работы в срок и по ТЗ</p>
 								</div>
 
 								<div class="option">
 									<div class="plug"></div>
-									<img src="img/development__option-icon2.png" alt="Development option icon">
+									<img src="img/development__option-icon2.svg" alt="Development option icon">
 									<h5 class="h5">Обеспечиваем техническую поддержку</h5>
 									<p>Консультируем по любым вопросам 7 дней в неделю с <br> ___ до ___.</p>
 								</div>
@@ -990,7 +1019,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<section class="faq" id="faq">
 				<div class="container">
@@ -1065,7 +1094,7 @@
 							<h4 class="h4">Ответим в течение __ минут.</h4>
 
 							<div class="wrapper-image">
-								<img class="question-form__image_in" src="img/question-form__image.png" data-aos="zoom-in" data-aos-duration="500" alt="Illustration question-form">
+								<img class="question-form__image_in" src="img/question-form__image.svg" data-aos="zoom-in" data-aos-duration="500" alt="Illustration question-form">
 							</div>
 
 						</div>
@@ -1075,7 +1104,7 @@
 							<form class="form">
 
 								<div class="success">
-									<img src="img/development__bot.png" alt="Form bot icon">
+									<img src="img/development__bot.svg" alt="Form bot icon">
 									<p><span>Спасибо за заявку!</span>Наш менеджер свяжется с Вами в течении 15 минут</p>
 								</div>
 
@@ -1099,7 +1128,7 @@
 							</form>
 
 							<div class="wrapper-image_mobile">
-								<img src="img/question-form__image.png" data-aos="zoom-in" data-aos-duration="500" alt="Illustration question-form">
+								<img src="img/question-form__image.svg" data-aos="zoom-in" data-aos-duration="500" alt="Illustration question-form">
 							</div>
 
 						</div>
@@ -1120,7 +1149,7 @@
 
 							<div class="footer__left-side">
 
-								<img src="img/footer__logo.png" alt="Smart process logo" class="footer__logo">
+								<img src="img/logo.svg" alt="Smart process logo" class="footer__logo">
 								<a href="" class="button dark">Заполнить бриф</a>
 
 								<nav class="footer__menu">
@@ -1140,7 +1169,7 @@
 							<div class="footer__left-side_mobile">
 
 								<a href="" class="button dark">Заполнить бриф</a>
-								<img src="img/footer__logo.png" alt="Smart process logo" class="footer__logo">
+								<img src="img/logo.svg" alt="Smart process logo" class="footer__logo">
 								
 							</div>
 
