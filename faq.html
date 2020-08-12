@@ -21,6 +21,59 @@
 
 	<body class="isnohome isnohome-faq">
 
+		<div class="pop-up__authorization mfp-hide">
+			<form class="form">
+
+				<p class="form__title">Вход</p>
+				<p class="form__subtitle">Нет аккаунта? <span>Зарегистрируйтесь</span></p>
+
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Site Name">
+				<input type="hidden" name="admin_email" value="admin@mail.com">
+				<input type="hidden" name="form_subject" value="Form Subject">
+				<!-- END Hidden Required Fields -->
+
+				<input type="text" name="Логин" placeholder="*Логин" required>
+				<input type="password" name="Пароль" placeholder="*Пароль" required>
+
+				<button class="button">Войти</button>
+
+				<p class="form__subbutton">Забыл логин или пароль?</p>
+
+				<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+
+			</form>
+		</div>
+
+		<div class="pop-up__check-in mfp-hide">
+			<form class="form">
+
+				<p class="form__title">Регистрация</p>
+				<p class="form__subtitle">Есть аккаунт? <span>Войти</span></p>
+
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Site Name">
+				<input type="hidden" name="admin_email" value="admin@mail.com">
+				<input type="hidden" name="form_subject" value="Form Subject">
+				<!-- END Hidden Required Fields -->
+
+				<input type="text" name="Логин" placeholder="*Логин" required>
+				<input type="password" name="Пароль" placeholder="*Пароль" required>
+				<input type="password" name="Пароль" placeholder="*Повторный пароль" required>
+				<input type="tel" name="Номер телефона" placeholder="*Номер телефона" required>
+				<input type="text" name="Имя" placeholder="*Ваше имя" required>
+				<input type="text" name="Фамилия" placeholder="*Фамилия" required>
+				<input type="text" name="Дата рождения" placeholder="*Дата рождения" required>
+				<input type="text" name="Telegram" placeholder="Telegram">
+				<input type="text" name="Skype" placeholder="Skype">
+
+				<button class="button">Зарегистрироваться</button>
+
+				<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+
+			</form>
+		</div>
+
 		<div class="header__sidebar-plug close-sidebar"></div>
 
 		<header class="header">
@@ -216,20 +269,20 @@
 
 				<nav class="header__sidebar-menu">
 					<ul>
-						<li><a href="index.html" class="close-sidebar">Главная <span class="line"></span></a></li>
-						<li><a href="#" class="close-sidebar">О нас <span class="line"></span></a></li>
-						<li><a href="#" class="close-sidebar">Отзывы <span class="line"></span></a></li>
-						<li><a href="#" class="close-sidebar">Новости <span class="line"></span></a></li>
-						<li><a href="#" class="close-sidebar">Бонусы <span class="line"></span></a></li>
-						<li><a href="#" class="close-sidebar">Инвестору <span class="line"></span></a></li>
-						<li><a href="#" class="close-sidebar">Партнеры <span class="line"></span></a></li>
-						<li><a href="#" class="close-sidebar">Контакты <span class="line"></span></a></li>
+						<li><a href="about.html" class="close-sidebar">О нас <span class="line"></span></a></li>
+						<li><a href="reviews.html" class="close-sidebar">Отзывы <span class="line"></span></a></li>
+						<li><a href="news.html" class="close-sidebar">Новости <span class="line"></span></a></li>
+						<li><a href="bonus.html" class="close-sidebar">Бонусы <span class="line"></span></a></li>
+						<li><a href="investor.html" class="close-sidebar">Инвестору <span class="line"></span></a></li>
+						<li><a href="partnership.html" class="close-sidebar">Партнеры <span class="line"></span></a></li>
+						<li><a href="faq.html" class="close-sidebar">FAQ <span class="line"></span></a></li>
+						<li><a href="contacts.html" class="close-sidebar">Контакты <span class="line"></span></a></li>
 					</ul>
 				</nav>
 
 				<div class="header__sidebar-sign">
-					<a href="#" class="button">Войти</a>
-					<a href="#" class="sign">Регистрация</a>
+					<a href=".pop-up__authorization" class="button show-authorization close-sidebar">Войти</a>
+					<a href=".pop-up__check-in" class="sign show-check-in close-sidebar">Регистрация</a>
 				</div>
 
 				<ul class="header__sidebar-contacts">
@@ -256,21 +309,22 @@
 							
 							<nav class="header__menu">
 								<ul>
-									<li><a href="index.html">Главная <span class="line"></span></a></li>
-									<li><a href="#">О нас <span class="line"></span></a></li>
-									<li><a href="#">Отзывы <span class="line"></span></a></li>
-									<li><a href="#">Новости <span class="line"></span></a></li>
-									<li><a href="#">Бонусы <span class="line"></span></a></li>
-									<li><a href="#">Инвестору <span class="line"></span></a></li>
-									<li><a href="#">Партнеры <span class="line"></span></a></li>
-									<li><a href="#">Контакты <span class="line"></span></a></li>
+									<!-- <li><a class="active">Главная <span class="line"></span></a></li> -->
+									<li><a href="about.html">О нас <span class="line"></span></a></li>
+									<li><a href="reviews.html">Отзывы <span class="line"></span></a></li>
+									<li><a href="news.html">Новости <span class="line"></span></a></li>
+									<li><a href="bonus.html">Бонусы <span class="line"></span></a></li>
+									<li><a href="investor.html">Инвестору <span class="line"></span></a></li>
+									<li><a href="partnership.html">Партнеры <span class="line"></span></a></li>
+									<li><a href="faq.html" class="active">FAQ <span class="line"></span></a></li>
+									<li><a href="contacts.html">Контакты <span class="line"></span></a></li>
 								</ul>
 							</nav>
 
 							<div class="header__sign">
-								<a href="#" class="sign">Регистрация</a>
-								<a href="#" class="button">Войти</a>
-								<a href="#" class="sign_mobile"><img src="img/user-icon.svg" alt="User icon"></a>
+								<a href=".pop-up__check-in" class="sign show-check-in">Регистрация</a>
+								<a href=".pop-up__authorization" class="button show-authorization">Войти</a>
+								<a href=".pop-up__check-in" class="sign_mobile show-authorization"><img src="img/user-icon.svg" alt="User icon"></a>
 							</div>
 
 						</div>
@@ -773,24 +827,24 @@
 						<div class="col-12">
 							
 							<div class="footer-wrap">
-								<a href="#" class="footer__logo"><img src="img/logo.svg" alt="Logo"></a>
+								<a href="index.html" class="footer__logo"><img src="img/logo-dark.svg" alt="Logo"></a>
 							
 								<nav class="footer__menu">
 									<ul>
-										<li><a href="#">Главная <span class="line"></span></a></li>
-										<li><a href="#">О нас <span class="line"></span></a></li>
-										<li><a href="#">Отзывы <span class="line"></span></a></li>
-										<li><a href="#">Новости <span class="line"></span></a></li>
-										<li><a href="#">Бонусы <span class="line"></span></a></li>
-										<li><a href="#">Инвестору <span class="line"></span></a></li>
-										<li><a href="#">Партнеры <span class="line"></span></a></li>
-										<li><a href="#">Контакты <span class="line"></span></a></li>
+										<li><a href="about.html">О нас <span class="line"></span></a></li>
+										<li><a href="reviews.html">Отзывы <span class="line"></span></a></li>
+										<li><a href="news.html">Новости <span class="line"></span></a></li>
+										<li><a href="bonus.html">Бонусы <span class="line"></span></a></li>
+										<li><a href="investor.html">Инвестору <span class="line"></span></a></li>
+										<li><a href="partnership.html">Партнеры <span class="line"></span></a></li>
+										<li><a href="faq.html" class="active">FAQ <span class="line"></span></a></li>
+										<li><a href="contacts.html">Контакты <span class="line"></span></a></li>
 									</ul>
 								</nav>
 
 								<div class="footer__sign">
-									<a href="#" class="sign">Регистрация</a>
-									<a href="#" class="button">Войти</a>
+									<a href=".pop-up__check-in" class="sign show-check-in">Регистрация</a>
+									<a href=".pop-up__authorization" class="button show-authorization">Войти</a>
 								</div>
 							</div>
 
@@ -830,6 +884,8 @@
 					<div class="row">
 						<div class="col-12">
 							<div class="footer__bottom">
+
+								<a href="privacy.html" class="privacy">Пользовательское соглашение</a>
 
 								<span>Copyright. 2014 - 2020. All rights reserved.</span>
 
