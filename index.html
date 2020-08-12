@@ -21,6 +21,79 @@
 
 	<body>
 
+		<div class="pop-up__authorization mfp-hide">
+			<form class="form">
+
+				<p class="form__title">Вход</p>
+				<p class="form__subtitle">Нет аккаунта? <span>Зарегистрируйтесь</span></p>
+
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Site Name">
+				<input type="hidden" name="admin_email" value="admin@mail.com">
+				<input type="hidden" name="form_subject" value="Form Subject">
+				<!-- END Hidden Required Fields -->
+
+				<input type="text" name="Логин" placeholder="*Логин" required>
+				<input type="password" name="Пароль" placeholder="*Пароль" required>
+
+				<button class="button">Войти</button>
+
+				<p class="form__subbutton">Забыл логин или пароль?</p>
+
+				<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+
+			</form>
+		</div>
+
+		<div class="pop-up__check-in mfp-hide">
+			<form class="form">
+
+				<p class="form__title">Регистрация</p>
+				<p class="form__subtitle">Есть аккаунт? <span>Войти</span></p>
+
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Site Name">
+				<input type="hidden" name="admin_email" value="admin@mail.com">
+				<input type="hidden" name="form_subject" value="Form Subject">
+				<!-- END Hidden Required Fields -->
+
+				<input type="text" name="Логин" placeholder="*Логин" required>
+				<input type="password" name="Пароль" placeholder="*Пароль" required>
+				<input type="password" name="Пароль" placeholder="*Повторный пароль" required>
+				<input type="tel" name="Номер телефона" placeholder="*Номер телефона" required>
+				<input type="text" name="Имя" placeholder="*Ваше имя" required>
+				<input type="text" name="Фамилия" placeholder="*Фамилия" required>
+				<input type="text" name="Дата рождения" placeholder="*Дата рождения" required>
+				<input type="text" name="Telegram" placeholder="Telegram">
+				<input type="text" name="Skype" placeholder="Skype">
+
+				<button class="button">Зарегистрироваться</button>
+
+				<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+
+			</form>
+		</div>
+
+		<div class="pop-up__deposit mfp-hide">
+			<form class="form">
+
+				<p class="form__title">Открыть депозит</p>
+				<p class="form__subtitle">Тарифный план - <span>Trial</span></p>
+
+				<div class="button-wrap">
+					<a href="" class="button active">USD</a>
+					<a href="" class="button">USD</a>
+				</div>
+
+				<input type="text" name="Сумма вклада" placeholder="Сумма вклада" required>
+
+				<button class="button">Открыть депозит</button>
+
+				<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+
+			</form>
+		</div>
+
 		<div class="header__sidebar-plug close-sidebar"></div>
 
 		<img class="top-bg" src="img/top-bg.jpg" alt="Top background">
@@ -215,22 +288,24 @@
 
 				<div class="header__sidebar-close close-sidebar"><img src="img/sidebar_close.svg" alt="Close icon"></div>
 
-				<a href="#" class="header__sidebar-logo close-sidebar"><img src="img/logo.svg" alt="Logo"></a>
+				<a class="header__sidebar-logo close-sidebar"><img src="img/logo.svg" alt="Logo"></a>
 
 				<nav class="header__sidebar-menu">
 					<ul>
-						<li><a href="#" class="close-sidebar">Главная <span class="line"></span></a></li>
-						<li><a href="#" class="close-sidebar">О нас <span class="line"></span></a></li>
-						<li><a href="#" class="close-sidebar">Бонусы <span class="line"></span></a></li>
-						<li><a href="#" class="close-sidebar">Инвестору <span class="line"></span></a></li>
-						<li><a href="#" class="close-sidebar">Партнеры <span class="line"></span></a></li>
-						<li><a href="#" class="close-sidebar">Контакты <span class="line"></span></a></li>
+						<li><a href="index.html" class="close-sidebar">Главная <span class="line"></span></a></li>
+						<li><a href="about.html" class="close-sidebar">О нас <span class="line"></span></a></li>
+						<li><a href="reviews.html" class="close-sidebar">Отзывы <span class="line"></span></a></li>
+						<li><a href="news.html" class="close-sidebar">Новости <span class="line"></span></a></li>
+						<li><a href="bonus.html" class="close-sidebar">Бонусы <span class="line"></span></a></li>
+						<li><a href="investor.html" class="close-sidebar">Инвестору <span class="line"></span></a></li>
+						<li><a href="partnership.html" class="close-sidebar">Партнеры <span class="line"></span></a></li>
+						<li><a href="contacts.html" class="close-sidebar">Контакты <span class="line"></span></a></li>
 					</ul>
 				</nav>
 
 				<div class="header__sidebar-sign">
-					<a href="#" class="button">Войти</a>
-					<a href="#" class="sign">Регистрация</a>
+					<a href=".pop-up__authorization" class="button show-authorization close-sidebar">Войти</a>
+					<a href=".pop-up__check-in" class="sign show-check-in close-sidebar">Регистрация</a>
 				</div>
 
 				<ul class="header__sidebar-contacts">
@@ -247,29 +322,31 @@
 
 						<div class="header-wrapper">
 
-							<div href="#" class="header__hamburger">
+							<div class="header__hamburger">
 								<span class="line"></span>
 								<span class="line short"></span>
 								<span class="line"></span>
 							</div>
 
-							<a href="#" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
+							<a href="index.html" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
 							
 							<nav class="header__menu">
 								<ul>
-									<li><a href="#">Главная <span class="line"></span></a></li>
-									<li><a href="#">О нас <span class="line"></span></a></li>
-									<li><a href="#">Бонусы <span class="line"></span></a></li>
-									<li><a href="#">Инвестору <span class="line"></span></a></li>
-									<li><a href="#">Партнеры <span class="line"></span></a></li>
-									<li><a href="#">Контакты <span class="line"></span></a></li>
+									<li><a href="index.html" class="active">Главная <span class="line"></span></a></li>
+									<li><a href="about.html">О нас <span class="line"></span></a></li>
+									<li><a href="reviews.html">Отзывы <span class="line"></span></a></li>
+									<li><a href="news.html">Новости <span class="line"></span></a></li>
+									<li><a href="bonus.html">Бонусы <span class="line"></span></a></li>
+									<li><a href="investor.html">Инвестору <span class="line"></span></a></li>
+									<li><a href="partnership.html">Партнеры <span class="line"></span></a></li>
+									<li><a href="contacts.html">Контакты <span class="line"></span></a></li>
 								</ul>
 							</nav>
 
 							<div class="header__sign">
-								<a href="#" class="sign">Регистрация</a>
-								<a href="#" class="button">Войти</a>
-								<a href="#" class="sign_mobile"><img src="img/user-icon.svg" alt="User icon"></a>
+								<a href=".pop-up__check-in" class="sign show-check-in">Регистрация</a>
+								<a href=".pop-up__authorization" class="button show-authorization">Войти</a>
+								<a href=".pop-up__check-in" class="sign_mobile show-authorization"><img src="img/user-icon.svg" alt="User icon"></a>
 							</div>
 
 						</div>
@@ -292,8 +369,8 @@
 								<div class="flex-center">	
 									<h1 class="h1">Инвестируй с умом</h1>
 									<h2 class="h2">Инвестируй в нашу платформу и получай пассивный доход <br> на протяжении всего срока вклада</h2>
-									<a href="#" class="button intro__start-partnership">Начать партнерство</a>
-									<a href="" class="button intro__sign-in">Войти</a>
+									<a href=".pop-up__check-in" class="button intro__start-partnership show-check-in">Начать партнерство</a>
+									<a href=".pop-up__authorization" class="button intro__sign-in show-authorization">Войти</a>
 								</div>
 							</div>
 
@@ -412,12 +489,12 @@
 
 									<div class="table-row__item _left">
 										<span class="_left">Trial</span>
-										<p>0,8% на 5 дней</p>
+										<p>до 1% на 5 дней</p>
 									</div>
 
 									<div class="table-row__item _right">
 										<p>10 - 100 $</p>
-										<a href="#" class="link">
+										<a href=".pop-up__deposit" class="link show-deposit">
 											<p class="checkout">Оформить</p>
 											<span class="_right">
 												<i class="fas fa-plus"></i>
@@ -430,13 +507,13 @@
 								<div class="table-row table-row_bottom">
 
 									<div class="table-row__item _left">
-										<span class="_left">Trial</span>
-										<p>0,8% на 5 дней</p>
+										<span class="_left">Start</span>
+										<p>до 0,7% на 21 дней</p>
 									</div>
 
 									<div class="table-row__item _right">
-										<p>10 - 100 $</p>
-										<a href="#" class="link">
+										<p>50 - 499  $</p>
+										<a href=".pop-up__deposit" class="link show-deposit">
 											<p class="checkout">Оформить</p>
 											<span class="_right">
 												<i class="fas fa-plus"></i>
@@ -449,13 +526,13 @@
 								<div class="table-row">
 
 									<div class="table-row__item _left">
-										<span class="_left">Trial</span>
-										<p>0,8% на 5 дней</p>
+										<span class="_left">Prime</span>
+										<p>до 1% на 35 дней</p>
 									</div>
 
 									<div class="table-row__item _right">
-										<p>10 - 100 $</p>
-										<a href="#" class="link">
+										<p>500 - 1999 $</p>
+										<a href=".pop-up__deposit" class="link show-deposit">
 											<p class="checkout">Оформить</p>
 											<span class="_right">
 												<i class="fas fa-plus"></i>
@@ -468,13 +545,13 @@
 								<div class="table-row">
 
 									<div class="table-row__item _left">
-										<span class="_left">Trial</span>
-										<p>0,8% на 5 дней</p>
+										<span class="_left">Profit</span>
+										<p>до 1,3% на 56 дней</p>
 									</div>
 
 									<div class="table-row__item _right">
-										<p>10 - 100 $</p>
-										<a href="#" class="link">
+										<p>2000 - 4999  $</p>
+										<a href=".pop-up__deposit" class="link show-deposit">
 											<p class="checkout">Оформить</p>
 											<span class="_right">
 												<i class="fas fa-plus"></i>
@@ -487,13 +564,13 @@
 								<div class="table-row">
 
 									<div class="table-row__item _left">
-										<span class="_left">Trial</span>
-										<p>0,8% на 5 дней</p>
+										<span class="_left">Diamond</span>
+										<p>до 1,7% на 70 дней</p>
 									</div>
 
 									<div class="table-row__item _right">
-										<p>10 - 100 $</p>
-										<a href="#" class="link">
+										<p>5000 - 49 999 $</p>
+										<a href=".pop-up__deposit" class="link show-deposit">
 											<p class="checkout">Оформить</p>
 											<span class="_right">
 												<i class="fas fa-plus"></i>
@@ -506,13 +583,13 @@
 								<div class="table-row">
 
 									<div class="table-row__item _left">
-										<span class="_left">Trial</span>
-										<p>0,8% на 5 дней</p>
+										<span class="_left">Vip</span>
+										<p>до 1,35% на 130 дней</p>
 									</div>
 
 									<div class="table-row__item _right">
-										<p>10 - 100 $</p>
-										<a href="#" class="link">
+										<p>100 - 2999 $</p>
+										<a href=".pop-up__deposit" class="link show-deposit">
 											<p class="checkout">Оформить</p>
 											<span class="_right">
 												<i class="fas fa-plus"></i>
@@ -525,13 +602,13 @@
 								<div class="table-row table-row_top">
 
 									<div class="table-row__item _left">
-										<span class="_left">Trial</span>
-										<p>0,8% на 5 дней</p>
+										<span class="_left">Vip+</span>
+										<p>до 1,95% на 90 дней</p>
 									</div>
 
 									<div class="table-row__item _right">
-										<p>10 - 100 $</p>
-										<a href="#" class="link">
+										<p>3000 - 100 000 $</p>
+										<a href=".pop-up__deposit" class="link show-deposit">
 											<p class="checkout">Оформить</p>
 											<span class="_right">
 												<i class="fas fa-plus"></i>
@@ -544,13 +621,13 @@
 								<div class="table-row table-row_bottom">
 
 									<div class="table-row__item _left">
-										<span class="_left">Trial</span>
-										<p>0,8% на 5 дней</p>
+										<span class="_left">Vip Gold</span>
+										<p>до 2,2% на 180 дней</p>
 									</div>
 
 									<div class="table-row__item _right">
-										<p>10 - 100 $</p>
-										<a href="#" class="link">
+										<p>1000 - 100 000 $</p>
+										<a href=".pop-up__deposit" class="link show-deposit">
 											<p class="checkout">Оформить</p>
 											<span class="_right">
 												<i class="fas fa-plus"></i>
@@ -562,7 +639,7 @@
 
 							</div>
 
-							<a href="#" class="button">Начать партнерство</a>
+							<a href=".pop-up__check-in" class="button show-check-in">Начать партнерство</a>
 
 						</div>
 
@@ -573,7 +650,7 @@
 			<section class="cash-out">
 				<div class="container">
 					<div class="row">
-						<div class="col-xl-8 col-lg-10 offset-xl-2 offset-lg-1 scroll-x">
+						<div class="col-xl-8 col-lg-10 offset-xl-2 offset-lg-1">
 						
 							<h3 class="h3">Максимально удобный вывод стредств</h3>
 							<h4 class="h4">Выводите средства на любой кошелек или счёт</h4>
@@ -690,7 +767,7 @@
 
 								<p>Воспользуйся лучшими предложениями для инвесторов</p>
 
-								<a href="#" class="button">Начать партнерство</a>
+								<a href=".pop-up__check-in" class="button show-check-in">Начать партнерство</a>
 
 								<img class="advantages__inner-bg" src="img/advantages/advantage_8.svg" alt="Advantage background">
 
@@ -706,7 +783,7 @@
 			<section class="reviews">
 				<div class="container">
 					<div class="row">
-						<div class="col-12 scroll-x">
+						<div class="col-12">
 							<h3 class="h3">Наши клиенты со всего мира</h3>
 							<h4 class="h4">Цель нашего сервиса - дать возможность людям зарабатывать на инвестициях</h4>
 							
@@ -771,6 +848,8 @@
 								</div>
 								
 							</div>
+
+							<a href="reviews.html" class="button">Посмотреть все отзывы</a>
 							
 						</div>
 					</div>
@@ -786,22 +865,24 @@
 						<div class="col-12">
 							
 							<div class="footer-wrap">
-								<a href="#" class="footer__logo"><img src="img/logo.svg" alt="Logo"></a>
+								<a href="index.html" class="footer__logo"><img src="img/logo.svg" alt="Logo"></a>
 							
 								<nav class="footer__menu">
 									<ul>
-										<li><a href="#">Главная <span class="line"></span></a></li>
-										<li><a href="#">О нас <span class="line"></span></a></li>
-										<li><a href="#">Бонусы <span class="line"></span></a></li>
-										<li><a href="#">Инвестору <span class="line"></span></a></li>
-										<li><a href="#">Партнеры <span class="line"></span></a></li>
-										<li><a href="#">Контакты <span class="line"></span></a></li>
+										<li><a href="index.html" class="active">Главная <span class="line"></span></a></li>
+										<li><a href="about.html">О нас <span class="line"></span></a></li>
+										<li><a href="reviews.html">Отзывы <span class="line"></span></a></li>
+										<li><a href="news.html">Новости <span class="line"></span></a></li>
+										<li><a href="bonus.html">Бонусы <span class="line"></span></a></li>
+										<li><a href="investor.html">Инвестору <span class="line"></span></a></li>
+										<li><a href="partnership.html">Партнеры <span class="line"></span></a></li>
+										<li><a href="contacts.html">Контакты <span class="line"></span></a></li>
 									</ul>
 								</nav>
 
 								<div class="footer__sign">
-									<a href="#" class="sign">Регистрация</a>
-									<a href="#" class="button">Войти</a>
+									<a href=".pop-up__check-in" class="sign show-check-in">Регистрация</a>
+									<a href=".pop-up__authorization" class="button show-authorization">Войти</a>
 								</div>
 							</div>
 
