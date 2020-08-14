@@ -5,7 +5,7 @@
 
 		<meta charset="utf-8">
 
-		<title>AUB | Контакты</title>
+		<title>AUB | Персональные данные</title>
 		<!-- <meta name="description" content=""> -->
 
 		<meta name="viewport" content="width=device-width">
@@ -19,62 +19,9 @@
 
 	</head>
 
-	<body class="isnohome isnohome-contacts">
+	<body class="cabinet cabinet-data">
 
-		<div class="pop-up__authorization mfp-hide">
-			<form class="form">
-
-				<p class="form__title">Вход</p>
-				<p class="form__subtitle">Нет аккаунта? <span>Зарегистрируйтесь</span></p>
-
-				<!-- Hidden Required Fields -->
-				<input type="hidden" name="project_name" value="Site Name">
-				<input type="hidden" name="admin_email" value="admin@mail.com">
-				<input type="hidden" name="form_subject" value="Form Subject">
-				<!-- END Hidden Required Fields -->
-
-				<input type="text" name="Логин" placeholder="*Логин" required>
-				<input type="password" name="Пароль" placeholder="*Пароль" required>
-
-				<button class="button">Войти</button>
-
-				<p class="form__subbutton">Забыл логин или пароль?</p>
-
-				<button title="Close (Esc)" type="button" class="mfp-close">×</button>
-
-			</form>
-		</div>
-
-		<div class="pop-up__check-in mfp-hide">
-			<form class="form">
-
-				<p class="form__title">Регистрация</p>
-				<p class="form__subtitle">Есть аккаунт? <span>Войти</span></p>
-
-				<!-- Hidden Required Fields -->
-				<input type="hidden" name="project_name" value="Site Name">
-				<input type="hidden" name="admin_email" value="admin@mail.com">
-				<input type="hidden" name="form_subject" value="Form Subject">
-				<!-- END Hidden Required Fields -->
-
-				<input type="text" name="Логин" placeholder="*Логин" required>
-				<input type="password" name="Пароль" placeholder="*Пароль" required>
-				<input type="password" name="Пароль" placeholder="*Повторный пароль" required>
-				<input type="tel" name="Номер телефона" placeholder="*Номер телефона" required>
-				<input type="text" name="Имя" placeholder="*Ваше имя" required>
-				<input type="text" name="Фамилия" placeholder="*Фамилия" required>
-				<input type="text" name="Дата рождения" placeholder="*Дата рождения" required>
-				<input type="text" name="Telegram" placeholder="Telegram">
-				<input type="text" name="Skype" placeholder="Skype">
-
-				<button class="button">Зарегистрироваться</button>
-
-				<button title="Close (Esc)" type="button" class="mfp-close">×</button>
-
-			</form>
-		</div>
-
-		<div class="header__sidebar-plug close-sidebar"></div>
+		<div class="header__sidebar-plug close-sidebar _dark"></div>
 
 		<header class="header">
 
@@ -261,14 +208,17 @@
 				0.00000034 ATMCASH_BTC 0.00000001 /  -->
 			</marquee>
 
-			<div class="header__sidebar">
+			<div class="header__sidebar _dark">
 
 				<div class="header__sidebar-close close-sidebar"><img src="img/sidebar_close.svg" alt="Close icon"></div>
 
 				<a href="index.html" class="header__sidebar-logo close-sidebar"><img src="img/logo.svg" alt="Logo"></a>
 
 				<nav class="header__sidebar-menu">
+
+
 					<ul>
+						<li><a href="index.html" class="close-sidebar">Главная <span class="line"></span></a></li>
 						<li><a href="about.html" class="close-sidebar">О нас <span class="line"></span></a></li>
 						<li><a href="reviews.html" class="close-sidebar">Отзывы <span class="line"></span></a></li>
 						<li><a href="news.html" class="close-sidebar">Новости <span class="line"></span></a></li>
@@ -278,28 +228,48 @@
 						<li><a href="faq.html" class="close-sidebar">FAQ <span class="line"></span></a></li>
 						<li><a href="contacts.html" class="close-sidebar">Контакты <span class="line"></span></a></li>
 					</ul>
+
 				</nav>
 
 				<div class="line"></div>
 
-				<div class="header__sidebar-sign">
-					<a href=".pop-up__authorization" class="button show-authorization close-sidebar">Войти</a>
-					<a href=".pop-up__check-in" class="sign show-check-in close-sidebar">Регистрация</a>
-				</div>
+				<nav class="header__sidebar-menu-cabinet">
+
+					<ul>
+						<li><a href="cabinet-statistics.html"><img src="img/cabinet/sidebar-cabinet__icon_1.svg" alt="Sidebar-cabinet icon">Моя статистика</a></li>
+						<li><a href="cabinet-investments.html"><img src="img/cabinet/sidebar-cabinet__icon_2.svg" alt="Sidebar-cabinet icon">Инвестиции</a></li>
+						<li><a href="cabinet-refill.html"><img src="img/cabinet/sidebar-cabinet__icon_3.svg" alt="Sidebar-cabinet icon">Пополнение счёта</a></li>
+						<li><a href="cabinet-cash_out.html"><img src="img/cabinet/sidebar-cabinet__icon_4.svg" alt="Sidebar-cabinet icon">Вывод средств</a></li>
+						<li><a href="cabinet-currency.html"><img src="img/cabinet/sidebar-cabinet__icon_5.svg" alt="Sidebar-cabinet icon">Валюта Kong</a></li>
+						<li><a href="cabinet-trading_robot.html"><img src="img/cabinet/sidebar-cabinet__icon_6.svg" alt="Sidebar-cabinet icon">Торговый робот</a></li>
+						<li><a href="cabinet-referrals.html"><img src="img/cabinet/sidebar-cabinet__icon_7.svg" alt="Sidebar-cabinet icon">Рефералы</a></li>
+					</ul>
+
+				</nav>
 
 				<div class="line"></div>
 
-				<ul class="header__sidebar-contacts">
-					<li><img src="img/sidebar__tel-icon.svg" alt="Telephone icon"> +8 800 555 3535</li>
-					<li><img src="img/sidebar__mail-icon.svg" alt="E-mail icon"> info@service.com</li>
-					<li><img src="img/sidebar__location-icon.svg" alt="Location icon"> 7898 Central st. 39/34, Russia</li>
-				</ul>
+				<a href="#" class="header__sidebar-menu-cabinet__exit"><img src="img/cabinet/sidebar-cabinet__icon_8.svg" alt="Sidebar-cabinet icon">Выход</a>
 
 			</div>
+
+			<nav class="sidebar-cabinet">
+				<a href="index.html" class="logo"><img src="img/logo.svg" alt="Logo"></a>
+				<ul>
+					<li><a href="cabinet-statistics.html"><img src="img/cabinet/sidebar-cabinet__icon_1.svg" alt="Sidebar-cabinet icon">Моя статистика</a></li>
+					<li><a href="cabinet-investments.html"><img src="img/cabinet/sidebar-cabinet__icon_2.svg" alt="Sidebar-cabinet icon">Инвестиции</a></li>
+					<li><a href="cabinet-refill.html"><img src="img/cabinet/sidebar-cabinet__icon_3.svg" alt="Sidebar-cabinet icon">Пополнение счёта</a></li>
+					<li><a href="cabinet-cash_out.html"><img src="img/cabinet/sidebar-cabinet__icon_4.svg" alt="Sidebar-cabinet icon">Вывод средств</a></li>
+					<li><a href="cabinet-currency.html"><img src="img/cabinet/sidebar-cabinet__icon_5.svg" alt="Sidebar-cabinet icon">Валюта Kong</a></li>
+					<li><a href="cabinet-trading_robot.html"><img src="img/cabinet/sidebar-cabinet__icon_6.svg" alt="Sidebar-cabinet icon">Торговый робот</a></li>
+					<li><a href="cabinet-referrals.html"><img src="img/cabinet/sidebar-cabinet__icon_7.svg" alt="Sidebar-cabinet icon">Рефералы</a></li>
+				</ul>
+				<a href="#" class="sidebar-cabinet__exit"><img src="img/cabinet/sidebar-cabinet__icon_8.svg" alt="Sidebar-cabinet icon">Выход</a>
+			</nav>
 			
 			<div class="container">
 				<div class="row">
-					<div class="col-12">
+					<div class="col-xl-10 offset-xl-2 col-lg-11 offset-lg-1">
 
 						<div class="header-wrapper">
 
@@ -313,7 +283,7 @@
 							
 							<nav class="header__menu">
 								<ul>
-									<!-- <li><a class="active">Главная <span class="line"></span></a></li> -->
+									<li><a href="index.html">Главная <span class="line"></span></a></li>
 									<li><a href="about.html">О нас <span class="line"></span></a></li>
 									<li><a href="reviews.html">Отзывы <span class="line"></span></a></li>
 									<li><a href="news.html">Новости <span class="line"></span></a></li>
@@ -321,18 +291,27 @@
 									<li><a href="investor.html">Инвестору <span class="line"></span></a></li>
 									<li><a href="partnership.html">Партнеры <span class="line"></span></a></li>
 									<li><a href="faq.html">FAQ <span class="line"></span></a></li>
-									<li><a href="contacts.html" class="active">Контакты <span class="line"></span></a></li>
+									<li><a href="contacts.html">Контакты <span class="line"></span></a></li>
 								</ul>
 							</nav>
 
 							<div class="header__sign">
-								<a href=".pop-up__check-in" class="sign show-check-in">Регистрация</a>
-								<a href=".pop-up__authorization" class="button show-authorization">Войти</a>
-								<a href=".pop-up__check-in" class="sign_mobile show-authorization"><img src="img/user-icon.svg" alt="User icon"></a>
-								<a href="cabinet-statistics.html" class="authorized-user">
+
+								<div class="header__sign-cabinet">
 									<img src="img/cabinet/user-avatar.png" alt="User avatar">
-									<p>Личный кабинет</p>
-								</a>
+									<p>Мой профиль</p>
+									<i class="fas fa-chevron-down"></i>
+								</div>
+
+							</div>
+
+							<div class="header__sign-cabinet_nav">
+								<ul>
+									<li><a href="cabinet-data.html">Персональные <br> данные</a></li>
+									<li><a href="cabinet-data.html">Реквизиты</a></li>
+									<li><a href="cabinet-data.html">Сменить пароль</a></li>
+									<li><a href="cabinet-data.html">Выход</a></li>
+								</ul>
 							</div>
 
 						</div>
@@ -343,35 +322,110 @@
 
 		</header>
 
-		<h1 class="h1">Контакты<span>Нужна помощь или совет? Свяжитесь с нами в любое время</span></h1>
-
 		<main>
-
+			
 			<div class="container">
 				<div class="row">
-
-					<div class="col-lg-6">
+					<div class="col-xl-10 offset-xl-2 col-lg-11 offset-lg-1">
 						
-						<h3 class="h3">Наши контакты</h3>
+						<h2 class="h2">Персональные данные</h2>
 
-						<nav class="footer__contacts">
-							<ul>
-								<li>
-									<div class="footer__contacts-icon"><img src="img/sidebar__tel-icon.svg" alt="Telephone icon"></div>
-									<p>+8 800 555 3535</p>
-								</li>
-								<li>
-									<div class="footer__contacts-icon"><img src="img/sidebar__mail-icon.svg" alt="E-mail icon"></div>
-									<p>info@service.com</p>
-								</li>
-								<li>
-									<div class="footer__contacts-icon"><img src="img/sidebar__location-icon.svg" alt="Location icon"></div>
-									<p>7898 Central st. <br> 39/34, Russia</p>
-								</li>
-							</ul>
-						</nav>
+						<form class="form">
 
-						<h3 class="h3">Написать нам</h3>
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Site Name">
+							<input type="hidden" name="admin_email" value="admin@mail.com">
+							<input type="hidden" name="form_subject" value="Form Subject">
+							<!-- END Hidden Required Fields -->
+							
+							<div class="input-wrap _offset-none">
+								<p>Имя</p>
+								<input type="text" name="Имя" value="инфо" required>
+							</div>
+
+							<div class="input-wrap _offset-none">
+								<p>Фамилия</p>
+								<input type="text" name="Фамилия" value="инфо" required>
+							</div>
+							
+							<div class="input-wrap _offset-none">
+								<p>Логин</p>
+								<input type="text" name="Логин" value="инфо" required>
+							</div>
+
+							<div class="input-wrap">
+								<p>Почта</p>
+								<input type="email" name="Почта" value="info@gmail.com" required>
+							</div>
+							
+							<div class="input-wrap">
+								<p>Телефон</p>
+								<input type="tel" name="Номер телефона" value="+312458275817" required>
+							</div>
+							
+							<div class="input-wrap">
+								<p>Дата рождения</p>
+								<input type="text" name="Дата рождения" value="23.01.1987" required>
+							</div>
+							
+							<div class="input-wrap">
+								<p>Telegram</p>
+								<input type="text" name="Telegram" value="Ввдетисе свой телеграм">
+							</div>
+
+							<div class="input-wrap">
+								<p>Skype</p>
+								<input type="text" name="Skype" value="Ввдетисе свой вайбер">
+							</div>
+
+
+							<button class="button">Сохранить</button>
+
+
+						</form>
+
+						<h2 class="h2">Реквизиты</h2>
+
+						<form class="form">
+
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Site Name">
+							<input type="hidden" name="admin_email" value="admin@mail.com">
+							<input type="hidden" name="form_subject" value="Form Subject">
+							<!-- END Hidden Required Fields -->
+							
+							<div class="input-wrap _offset-none">
+								<p>Perfect Money</p>
+								<input type="text" name="Perfect Money" value="info" required>
+							</div>
+
+							<div class="input-wrap _offset-none">
+								<p>Advanced Cash</p>
+								<input type="text" name=">Advanced Cash" value="info" required>
+							</div>
+							
+							<div class="input-wrap _offset-none">
+								<p>Payeer</p>
+								<input type="text" name="Payeer" value="info" required>
+							</div>
+
+							<div class="input-wrap">
+								<p>Yandex Money</p>
+								<input type="text" name="Yandex Money" value="info" required>
+							</div>
+
+							<div class="input-wrap">
+								<p>Qiwi</p>
+								<input type="text" name="Qiwi" value="info" required>
+							</div>
+
+
+							<button class="button">Сохранить</button>
+
+
+						</form>
+
+						<h2 class="h2">Персональные данные</h2>
 
 						<form class="form">
 
@@ -381,111 +435,66 @@
 							<input type="hidden" name="form_subject" value="Form Subject">
 							<!-- END Hidden Required Fields -->
 
-							<div class="input-wrap">
-								<input class="input-login" type="text" name="Логин" placeholder="*Логин" required>
-								<input class="input-mail" type="email" name="E-mail" placeholder="*E-mail" required>
+							<div class="input-wrap _offset-none">
+								<p>Старый пароль</p>
+								<input type="password" name="Старый пароль" value="info" required>
 							</div>
-							<textarea name="Сообщение" cols="80" rows="4" placeholder="Сообщение"></textarea>
 
-							<button class="button">Отправить</button>
+							<div class="input-wrap _offset-none">
+								<p>Новый пароль</p>
+								<input type="password" name="Новый пароль" value="info" required>
+							</div>
+
+							<div class="input-wrap _offset-none">
+								<p>Повторите новый пароль</p>
+								<input type="password" name="Повторите новый пароль" value="info" required>
+							</div>
+
+							<div class="input-wrap input-wrap__checkbox">
+								<label class="switch">
+								  <input type="checkbox">
+								  <span class="slider"></span>
+								</label>
+								<p>Двухфакторная аутентификация</p>
+							</div>
+
+							<button class="button _offset-short">Сохранить</button>
+
 
 						</form>
-						
+					
 					</div>
-
-					<div class="col-lg-6">
-						
-						<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577325.3464555088!2d36.825138985066985!3d55.581524476867195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sua!4v1597166737596!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-						
-					</div>
-
 				</div>
 			</div>
 
 		</main>
-		
 
 		<footer class="footer">
+
 			<div class="container">
-					<div class="row">
+				<div class="row">
+					<div class="col-xl-10 offset-xl-2 col-lg-11 offset-lg-1">
+						<div class="footer__bottom">
 
-						<div class="col-12">
-							
-							<div class="footer-wrap">
-								<a href="index.html" class="footer__logo"><img src="img/logo-dark.svg" alt="Logo"></a>
-							
-								<nav class="footer__menu">
-									<ul>
-										<li><a href="about.html">О нас <span class="line"></span></a></li>
-										<li><a href="reviews.html">Отзывы <span class="line"></span></a></li>
-										<li><a href="news.html">Новости <span class="line"></span></a></li>
-										<li><a href="bonus.html">Бонусы <span class="line"></span></a></li>
-										<li><a href="investor.html">Инвестору <span class="line"></span></a></li>
-										<li><a href="partnership.html">Партнеры <span class="line"></span></a></li>
-										<li><a href="faq.html">FAQ <span class="line"></span></a></li>
-										<li><a href="contacts.html" class="active">Контакты <span class="line"></span></a></li>
-									</ul>
-								</nav>
+							<a href="privacy.html" class="privacy">Пользовательское соглашение</a>
 
-								<div class="footer__sign">
-									<a href=".pop-up__check-in" class="sign show-check-in">Регистрация</a>
-									<a href=".pop-up__authorization" class="button show-authorization">Войти</a>
-								</div>
-							</div>
+							<span>Copyright. 2014 - 2020. All rights reserved.</span>
 
-						</div>
-
-					</div>
-				</div>	
-
-				<div class="footer_nav-wrap">
-					<div class="container">
-						<div class="row">
-							
-							<div class="col-12">
-								<nav class="footer__contacts">
-									<ul>
-										<li>
-											<div class="footer__contacts-icon"><img src="img/sidebar__tel-icon.svg" alt="Telephone icon"></div>
-											<p>+8 800 555 3535</p>
-										</li>
-										<li>
-											<div class="footer__contacts-icon"><img src="img/sidebar__mail-icon.svg" alt="E-mail icon"></div>
-											<p>info@service.com</p>
-										</li>
-										<li>
-											<div class="footer__contacts-icon"><img src="img/sidebar__location-icon.svg" alt="Location icon"></div>
-											<p>7898 Central st. <br> 39/34, Russia</p>
-										</li>
-									</ul>
-								</nav>
-							</div>
+							<ul class="footer__bottom-language">
+								<li><a href="" class="active"><img src="img/cabinet/language__rus.svg" alt="Russia flag"></a></li>
+								<li><a href=""><img src="img/cabinet/language__eng.svg" alt="Britain flag"></a></li>
+								<li><a href=""><img src="img/cabinet/language__china.svg" alt="China flag"></a></li>
+								<li><a href=""><img src="img/cabinet/language__france.svg" alt="France flag"></a></li>
+								<li><a href=""><img src="img/cabinet/language__spain.svg" alt="Spain flag"></a></li>
+							</ul>
 
 						</div>
 					</div>
 				</div>
-
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<div class="footer__bottom">
-
-								<a href="privacy.html" class="privacy">Пользовательское соглашение</a>
-
-								<span>Copyright. 2014 - 2020. All rights reserved.</span>
-
-								<ul class="footer__bottom-soc">
-									<li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
-									<li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
-								</ul>
-
-							</div>
-						</div>
-					</div>
-				</div>
+			</div>
 
 		</footer>
+
 
 	</body>
 
