@@ -21,8 +21,6 @@
 
 	<body class="cabinet cabinet-statistics cabinet-trading_robot-work">
 
-		<div class="header__sidebar-plug close-sidebar _dark"></div>
-
 		<header class="header">
 
 			<marquee class="header__top-line" loop="1000" width="100000%">
@@ -208,6 +206,8 @@
 				0.00000034 ATMCASH_BTC 0.00000001 /  -->
 			</marquee>
 
+			<div class="header__sidebar-plug close-sidebar _dark"></div>
+
 			<div class="header__sidebar _dark">
 
 				<div class="header__sidebar-close close-sidebar"><img src="img/sidebar_close.svg" alt="Close icon"></div>
@@ -236,13 +236,14 @@
 				<nav class="header__sidebar-menu-cabinet">
 
 					<ul>
-						<li><a href="cabinet-statistics.html" class="active"><img src="img/cabinet/sidebar-cabinet__icon_1.svg" alt="Sidebar-cabinet icon">Моя статистика</a></li>
+						<li><a href="cabinet-statistics.html"><img src="img/cabinet/sidebar-cabinet__icon_1.svg" alt="Sidebar-cabinet icon">Моя статистика</a></li>
 						<li><a href="cabinet-investments.html"><img src="img/cabinet/sidebar-cabinet__icon_2.svg" alt="Sidebar-cabinet icon">Инвестиции</a></li>
 						<li><a href="cabinet-refill.html"><img src="img/cabinet/sidebar-cabinet__icon_3.svg" alt="Sidebar-cabinet icon">Пополнение счёта</a></li>
 						<li><a href="cabinet-cash_out.html"><img src="img/cabinet/sidebar-cabinet__icon_4.svg" alt="Sidebar-cabinet icon">Вывод средств</a></li>
 						<li><a href="cabinet-currency.html"><img src="img/cabinet/sidebar-cabinet__icon_5.svg" alt="Sidebar-cabinet icon">Валюта Kong</a></li>
 						<li><a href="cabinet-trading_robot.html"><img src="img/cabinet/sidebar-cabinet__icon_6.svg" alt="Sidebar-cabinet icon">Торговый робот</a></li>
 						<li><a href="cabinet-referrals.html"><img src="img/cabinet/sidebar-cabinet__icon_7.svg" alt="Sidebar-cabinet icon">Рефералы</a></li>
+						<li><a href="cabinet-bonus.html"><img src="img/cabinet/sidebar-cabinet__icon_9.svg" alt="Sidebar-cabinet icon">Бонусы</a></li>
 					</ul>
 
 				</nav>
@@ -263,6 +264,7 @@
 					<li><a href="cabinet-currency.html"><img src="img/cabinet/sidebar-cabinet__icon_5.svg" alt="Sidebar-cabinet icon">Валюта Kong</a></li>
 					<li><a href="cabinet-trading_robot.html" class="active"><img src="img/cabinet/sidebar-cabinet__icon_6.svg" alt="Sidebar-cabinet icon">Торговый робот</a></li>
 					<li><a href="cabinet-referrals.html"><img src="img/cabinet/sidebar-cabinet__icon_7.svg" alt="Sidebar-cabinet icon">Рефералы</a></li>
+					<li><a href="cabinet-bonus.html"><img src="img/cabinet/sidebar-cabinet__icon_9.svg" alt="Sidebar-cabinet icon">Бонусы</a></li>
 				</ul>
 				<a href="#" class="sidebar-cabinet__exit"><img src="img/cabinet/sidebar-cabinet__icon_8.svg" alt="Sidebar-cabinet icon">Выход</a>
 			</nav>
@@ -334,7 +336,7 @@
 
 							<div class="statistics-wrap">
 
-								<div class="statistics-box">
+								<div class="statistics-box statistics-box__balance">
 
 									<h3 class="h3">Баланс робота</h3>
 									
@@ -350,13 +352,26 @@
 
 									</div>
 		
-									<a href="" class="button">Пополнить робота</a>
+									<a class="button refill-robot">Пополнить робота</a>
+
+								</div>
+
+								<div class="statistics-box statistics-box__refill hidden">
+
+									<h3 class="h3">Пополнить робота</h3>
+									
+									<div class="input-wrap">
+										<input type="text" value="" placeholder="Сумма">
+										<a class="button"><i class="fas fa-long-arrow-alt-right"></i></a>
+									</div>
 
 								</div>
 
 							</div>
 
 							<div class="range">
+
+								<h4 class="h4">Мощность робота <span><i class="fas fa-info-circle"></i> info</span></h4>
 							
 								<div class="scale__marks_mobile">
 									<span>1</span>
@@ -387,11 +402,11 @@
 									<div class="payment_systems">
 
 										<div class="input-wrap">
-											<input class="payment_system" type="text" value="Платежная система">
+											<input class="payment_system buy-sold__input" type="text" value="Платежная система">
 											<i class="fas fa-chevron-down"></i>
 										</div>
 										
-										<ul class="payment_systems-list">
+										<ul class="payment_systems-list buy-sold">
 											<li>Payeer</li>
 											<li>Qiwi</li>
 											<li>Advcash</li>
@@ -425,80 +440,124 @@
 								<span>Дата окончания</span>
 							</div>
 
-							<div class="spreadsheet__row _red">
-								<span class="sum">100 $</span>
-								<span class="profit">-0,3 %</span>
-								<span class="date">13.06.2020</span>
-							</div>
+							<div class="spreadsheet__row-wrap table-scrollbar">
 
-							<div class="spreadsheet__row _green">
-								<span class="sum">100 $</span>
-								<span class="profit">1,3 %</span>
-								<span class="date">13.06.2020</span>
-							</div>
+								<div class="spreadsheet__row _red">
+									<span class="sum">100 $</span>
+									<span class="profit">-0,3 %</span>
+									<span class="date">13.06.2020</span>
+								</div>
 
-							<div class="spreadsheet__row _grey">
-								<span class="sum">100 $</span>
-								<span class="profit">0 %</span>
-								<span class="date">--.--.----</span>
-							</div>
+								<div class="spreadsheet__row _green">
+									<span class="sum">100 $</span>
+									<span class="profit">1,3 %</span>
+									<span class="date">13.06.2020</span>
+								</div>
 
-							<div class="spreadsheet__row _red">
-								<span class="sum">100 $</span>
-								<span class="profit">-0,3 %</span>
-								<span class="date">13.06.2020</span>
-							</div>
+								<div class="spreadsheet__row _grey">
+									<span class="sum">100 $</span>
+									<span class="profit">0 %</span>
+									<span class="date">--.--.----</span>
+								</div>
 
-							<div class="spreadsheet__row _green">
-								<span class="sum">100 $</span>
-								<span class="profit">1,3 %</span>
-								<span class="date">13.06.2020</span>
-							</div>
+								<div class="spreadsheet__row _red">
+									<span class="sum">100 $</span>
+									<span class="profit">-0,3 %</span>
+									<span class="date">13.06.2020</span>
+								</div>
 
-							<div class="spreadsheet__row _grey">
-								<span class="sum">100 $</span>
-								<span class="profit">0 %</span>
-								<span class="date">--.--.----</span>
+								<div class="spreadsheet__row _green">
+									<span class="sum">100 $</span>
+									<span class="profit">1,3 %</span>
+									<span class="date">13.06.2020</span>
+								</div>
+
+								<div class="spreadsheet__row _grey">
+									<span class="sum">100 $</span>
+									<span class="profit">0 %</span>
+									<span class="date">--.--.----</span>
+								</div>
+
+								<div class="spreadsheet__row _red">
+									<span class="sum">100 $</span>
+									<span class="profit">-0,3 %</span>
+									<span class="date">13.06.2020</span>
+								</div>
+
+								<div class="spreadsheet__row _green">
+									<span class="sum">100 $</span>
+									<span class="profit">1,3 %</span>
+									<span class="date">13.06.2020</span>
+								</div>
+
+								<div class="spreadsheet__row _grey">
+									<span class="sum">100 $</span>
+									<span class="profit">0 %</span>
+									<span class="date">--.--.----</span>
+								</div>
+
+								<div class="spreadsheet__row _red">
+									<span class="sum">100 $</span>
+									<span class="profit">-0,3 %</span>
+									<span class="date">13.06.2020</span>
+								</div>
+
+								<div class="spreadsheet__row _green">
+									<span class="sum">100 $</span>
+									<span class="profit">1,3 %</span>
+									<span class="date">13.06.2020</span>
+								</div>
+
+								<div class="spreadsheet__row _grey">
+									<span class="sum">100 $</span>
+									<span class="profit">0 %</span>
+									<span class="date">--.--.----</span>
+								</div>
+
 							</div>
 
 						</div>
 
 						<div class="spreadsheet _mobile">
 
-							<div class="spreadsheet__row _red">
-								<span class="title">Сумма транзакции</span><span class="sum">100 $</span>
-								<span class="title">Процент дохода</span><span class="profit">-0,3 %</span>
-								<span class="title">Дата окончания</span><span class="date title">13.06.2020</span>
-							</div>
+							<div class="spreadsheet__row-wrap">
 
-							<div class="spreadsheet__row _green">
-								<span class="title">Сумма транзакции</span><span class="sum">10 $</span>
-								<span class="title">Процент дохода</span><span class="profit">2,3 %</span>
-								<span class="title">Дата окончания</span><span class="date title">13.06.2020</span>
-							</div>
+								<div class="spreadsheet__row _red">
+									<span class="title">Сумма транзакции</span><span class="sum">100 $</span>
+									<span class="title">Процент дохода</span><span class="profit">-0,3 %</span>
+									<span class="title">Дата окончания</span><span class="date title">13.06.2020</span>
+								</div>
 
-							<div class="spreadsheet__row _grey">
-								<span class="title">Сумма транзакции</span><span class="sum">1000 $</span>
-								<span class="title">Процент дохода</span><span class="profit">0 %</span>
-								<span class="title">Дата окончания</span><span class="date title">--.--.----</span>
-							</div>
+								<div class="spreadsheet__row _green">
+									<span class="title">Сумма транзакции</span><span class="sum">10 $</span>
+									<span class="title">Процент дохода</span><span class="profit">2,3 %</span>
+									<span class="title">Дата окончания</span><span class="date title">13.06.2020</span>
+								</div>
 
-							<div class="spreadsheet__row _red">
-								<span class="title">Сумма транзакции</span><span class="sum">100 $</span>
-								<span class="title">Процент дохода</span><span class="profit">-0,3 %</span>
-								<span class="title">Дата окончания</span><span class="date title">13.06.2020</span>
-							</div>
+								<div class="spreadsheet__row _grey">
+									<span class="title">Сумма транзакции</span><span class="sum">1000 $</span>
+									<span class="title">Процент дохода</span><span class="profit">0 %</span>
+									<span class="title">Дата окончания</span><span class="date title">--.--.----</span>
+								</div>
 
-							<div class="spreadsheet__row _green">
-								<span class="title">Сумма транзакции</span><span class="sum">10 $</span>
-								<span class="title">Процент дохода</span><span class="profit">2,3 %</span>
-								<span class="title">Дата окончания</span><span class="date title">13.06.2020</span>
-							</div>
+								<div class="spreadsheet__row _red">
+									<span class="title">Сумма транзакции</span><span class="sum">100 $</span>
+									<span class="title">Процент дохода</span><span class="profit">-0,3 %</span>
+									<span class="title">Дата окончания</span><span class="date title">13.06.2020</span>
+								</div>
 
-							<div class="spreadsheet__row _grey">
-								<span class="title">Сумма транзакции</span><span class="sum">1000 $</span>
-								<span class="title">Процент дохода</span><span class="profit">0 %</span>
-								<span class="title">Дата окончания</span><span class="date title">--.--.----</span>
+								<div class="spreadsheet__row _green">
+									<span class="title">Сумма транзакции</span><span class="sum">10 $</span>
+									<span class="title">Процент дохода</span><span class="profit">2,3 %</span>
+									<span class="title">Дата окончания</span><span class="date title">13.06.2020</span>
+								</div>
+
+								<div class="spreadsheet__row _grey">
+									<span class="title">Сумма транзакции</span><span class="sum">1000 $</span>
+									<span class="title">Процент дохода</span><span class="profit">0 %</span>
+									<span class="title">Дата окончания</span><span class="date title">--.--.----</span>
+								</div>
+
 							</div>
 
 						</div>

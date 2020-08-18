@@ -38,11 +38,42 @@
 
 				<button class="button">Войти</button>
 
-				<p class="form__subbutton">Забыл логин или пароль?</p>
+				<a href=".pop-up__miss-data" class="form__subbutton show-miss-data">Забыл логин или пароль?</a>
 
 				<button title="Close (Esc)" type="button" class="mfp-close">×</button>
 
 			</form>
+
+
+		</div>
+
+		<div class="pop-up__miss-data mfp-hide">
+			<form class="form">
+
+				<p class="form__title">Забыл логин или пароль</p>
+
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Site Name">
+				<input type="hidden" name="admin_email" value="admin@mail.com">
+				<input type="hidden" name="form_subject" value="Form Subject">
+				<!-- END Hidden Required Fields -->
+
+				<div class="button-wrap">
+					<a class="button active">Логин</a>
+					<a class="button">Пароль</a>
+				</div>
+
+				<input type="text" name="Почта" placeholder="Ваша почта" required>
+
+				<button class="button">Восстановить</button>
+
+				<a href=".pop-up__authorization" class="form__subbutton show-authorization">Вернуться назад</a>
+
+				<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+
+			</form>
+
+			
 		</div>
 
 		<div class="pop-up__check-in mfp-hide">
@@ -57,17 +88,27 @@
 				<input type="hidden" name="form_subject" value="Form Subject">
 				<!-- END Hidden Required Fields -->
 
-				<input type="text" name="Логин" placeholder="*Логин" required>
-				<input type="password" name="Пароль" placeholder="*Пароль" required>
-				<input type="password" name="Пароль" placeholder="*Повторный пароль" required>
-				<input type="tel" name="Номер телефона" placeholder="*Номер телефона" required>
-				<input type="text" name="Имя" placeholder="*Ваше имя" required>
-				<input type="text" name="Фамилия" placeholder="*Фамилия" required>
-				<input type="text" name="Дата рождения" placeholder="*Дата рождения" required>
-				<input type="text" name="Telegram" placeholder="Telegram">
-				<input type="text" name="Skype" placeholder="Skype">
+				<div class="inputs-wrap table-scrollbar">
+					
+					<input type="text" name="Логин" placeholder="*Логин" required>
+					<p class="invalid _login"><img src="img/info-icon.svg" alt="Info icon">Такой логин уже есть в базе</p>
+					<input type="password" name="Пароль" placeholder="*Пароль" required>
+					<input type="password" name="Пароль" placeholder="*Повторный пароль" required>
+					<input type="tel" name="Номер телефона" placeholder="*Номер телефона" required>
+					<p class="invalid _tel"><img src="img/info-icon.svg" alt="Info icon">Такой телефон уже есть в базе</p>
+					<input type="tel" name="Почта" placeholder="*Почта" required>
+					<p class="invalid _email"><img src="img/info-icon.svg" alt="Info icon">Такой Email уже есть в базе</p>
+					<input type="text" name="Имя" placeholder="*Ваше имя" required>
+					<input type="text" name="Фамилия" placeholder="*Фамилия" required>
+					<input type="text" name="Дата рождения" placeholder="*Дата рождения" required>
+					<input type="text" name="Telegram" placeholder="Telegram">
+					<input type="text" name="Skype" placeholder="Skype">
 
-				<button class="button">Зарегистрироваться</button>
+					<button class="button">Зарегистрироваться</button>
+
+				</div>
+
+				<p class="subbutton">Нажимая кнопку “Зарегистрироваться” я соглашаюсь с политикой конфинденциальности и условиями использования сайта</p>
 
 				<button title="Close (Esc)" type="button" class="mfp-close">×</button>
 
@@ -81,8 +122,8 @@
 				<p class="form__subtitle">Тарифный план - <span>Trial</span></p>
 
 				<div class="button-wrap">
-					<a href="" class="button active">USD</a>
-					<a href="" class="button">USD</a>
+					<a class="button active">USD</a>
+					<a class="button">USD</a>
 				</div>
 
 				<input type="text" name="Сумма вклада" placeholder="Сумма вклада" required>
@@ -94,8 +135,6 @@
 			</form>
 		</div>
 
-
-		<div class="header__sidebar-plug close-sidebar"></div>
 
 		<header class="header">
 
@@ -281,6 +320,8 @@
 				74.21039999 EXM_BTC 0.00000033 / 
 				0.00000034 ATMCASH_BTC 0.00000001 /  -->
 			</marquee>
+
+			<div class="header__sidebar-plug close-sidebar"></div>
 
 			<div class="header__sidebar">
 
