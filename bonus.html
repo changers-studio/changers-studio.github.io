@@ -89,19 +89,20 @@
 
 				<div class="inputs-wrap table-scrollbar">
 					
-					<input type="text" name="Логин" placeholder="*Логин" required>
+					<input class="invalid" type="text" name="Логин" placeholder="*Логин" required>
 					<p class="invalid _login"><img src="img/info-icon.svg" alt="Info icon">Такой логин уже есть в базе</p>
 					<input type="password" name="Пароль" placeholder="*Пароль" required>
 					<input type="password" name="Пароль" placeholder="*Повторный пароль" required>
-					<input type="tel" name="Номер телефона" placeholder="*Номер телефона" required>
-					<p class="invalid _tel"><img src="img/info-icon.svg" alt="Info icon">Такой телефон уже есть в базе</p>
-					<input type="tel" name="Почта" placeholder="*Почта" required>
+					<input class="invalid" type="tel" name="Номер телефона" placeholder="*Номер телефона" required>
+					<p class="invalid _tel"><img src="img/info-icon.svg" alt="Info icon">Заполните это поле</p>
+					<input class="invalid" type="tel" name="Почта" placeholder="*Почта" required>
 					<p class="invalid _email"><img src="img/info-icon.svg" alt="Info icon">Такой Email уже есть в базе</p>
 					<input type="text" name="Имя" placeholder="*Ваше имя" required>
 					<input type="text" name="Фамилия" placeholder="*Фамилия" required>
 					<input type="text" name="Дата рождения" placeholder="*Дата рождения" required>
 					<input type="text" name="Telegram" placeholder="Telegram">
 					<input type="text" name="Skype" placeholder="Skype">
+					<input type="text" name="Пригласитель" placeholder="Пригласитель">
 
 					<button class="button">Зарегистрироваться</button>
 
@@ -368,9 +369,9 @@
 							<div class="header__sign">
 								<a href=".pop-up__check-in" class="sign show-check-in">Регистрация</a>
 								<a href=".pop-up__authorization" class="button show-authorization">Войти</a>
-								<a href=".pop-up__check-in" class="sign_mobile show-authorization"><img src="img/user-icon.svg" alt="User icon"></a>
+								<a href=".pop-up__check-in" class="sign_mobile show-authorization"><i class="far fa-user"></i></a>
 								<a href="cabinet-statistics.html" class="authorized-user">
-									<img src="img/cabinet/user-avatar.png" alt="User avatar">
+									<span class="wrapper-icon"><i class="far fa-user"></i></span>
 									<p>Личный кабинет</p>
 								</a>
 							</div>
