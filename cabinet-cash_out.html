@@ -5,7 +5,7 @@
 
 		<meta charset="utf-8">
 
-		<title>AUB | Вывод средств</title>
+		<title>Zhongrong | Вывод средств</title>
 		<!-- <meta name="description" content=""> -->
 
 		<meta name="viewport" content="width=device-width">
@@ -332,146 +332,273 @@
 						
 						<h2 class="h2">Вывод средств</h2>
 
-						<form class="form">
+						<div class="paysystems-wrap">
 
-							<div class="input-wrap sum">
-								<input type="text" name="Сумма" placeholder="Сумма">
-							</div>
+							<form class="form">
 
-							<div class="payment_systems">
+								<div class="title-paysystem">
+									<img src="img/wallet/perfect_money-cabinet.png" alt="Perfect Money logo">
+								</div>
 
-								<div class="input-wrap">
-									<input class="payment_system buy-sold__input" type="text" value="Платежная система">
-									<i class="fas fa-chevron-down"></i>
+								<div class="input-wrap sum">
+									<input type="text" name="Сумма" placeholder="Сумма">
 								</div>
 								
-								<ul class="payment_systems-list buy-sold">
-									<li>Payeer</li>
-									<li>Qiwi</li>
-									<li>Advcash</li>
-									<li>Яндекс.деньги</li>
-									<li>Perfect Money</li>
-									<li>Bitcoin</li>
-									<li>Visa</li>
-									<li>Mastercard</li>
-								</ul>
+								<button class="button">Вывести</button>
+							</form>
 
-							</div>
-							
-							<button class="button">Вывести</button>
-						</form>
+							<form class="form">
+
+								<div class="title-paysystem">
+									<img src="img/wallet/payeer-cabinet.png" alt="Payeer logo">
+								</div>
+
+								<div class="input-wrap sum">
+									<input type="text" name="Сумма" placeholder="Сумма">
+								</div>
+								
+								<button class="button">Вывести</button>
+							</form>
+
+							<form class="form">
+
+								<div class="title-paysystem">
+									<img src="img/wallet/bitcoin-cabinet.png" alt="Bitcoin logo">
+								</div>
+
+								<div class="input-wrap sum">
+									<input type="text" name="Сумма" placeholder="Сумма">
+								</div>
+								
+								<button class="button">Вывести</button>
+							</form>
+
+							<form class="form">
+
+								<div class="title-paysystem">
+									<img src="img/wallet/advcash-cabinet.png" alt="Advcash logo">
+								</div>
+
+								<div class="input-wrap sum">
+									<input type="text" name="Сумма" placeholder="Сумма">
+								</div>
+								
+								<button class="button">Вывести</button>
+							</form>
+
+							<form class="form">
+
+								<div class="title-paysystem">
+									<img src="img/wallet/qiwi-cabinet.png" alt="Qiwi logo">
+								</div>
+
+								<div class="input-wrap sum">
+									<input type="text" name="Сумма" placeholder="Сумма">
+								</div>
+								
+								<button class="button">Вывести</button> 
+							</form>
+
+							<form class="form">
+
+								<div class="title-paysystem">
+									<img src="img/wallet/mastercard-visa-cabinet.png" alt="Mastercard-visa logo">
+								</div>
+
+								<div class="input-wrap sum">
+									<input type="text" name="Сумма" placeholder="Сумма">
+								</div>
+								
+								<button class="button">Вывести</button>
+							</form>
+
+							<form class="form">
+
+								<div class="title-paysystem">
+									<img src="img/wallet/yandex-cabinet.png" alt="Yandex logo">
+								</div>
+
+								<div class="input-wrap sum">
+									<input type="text" name="Сумма" placeholder="Сумма">
+								</div>
+								
+								<button class="button">Вывести</button>
+							</form>
+
+						</div>
+
+						<p class="notice">При выводе средств, компания удерживает 1 % от любой суммы заявки на вывод. Вывод средств осуществляется от 1 часа до 48 часов в будние дни.</p>
 
 						<h2 class="h2">История транзакций</h2>
 
 						<div class="spreadsheet">
 
 							<div class="spreadsheet__row heading">
-								<span>Название</span>
-								<span>Процент и срок</span>
+								<span>Дата, транзакции</span>
 								<span>Сумма</span>
-								<span>Статус 1</span>
-								<span>Дата, например</span>
+								<span>Реквизиты</span>
+								<span>Платежная система</span>
+								<span>Статус</span>
 							</div>
 
 							<div class="spreadsheet__row-wrap table-scrollbar">
 
 								<div class="spreadsheet__row">
-									<span class="name">Trial</span>
-									<span class="plug-mobile"> </span>
-									<span class="percent-term">0,8% на 5 дней</span>
-									<span class="sum">100 $</span>
-									<span class="status _green">Успешно</span>
 									<span class="date">13.06.2020</span>
+									<span class="sum">100 $</span>
+									<span class="requisites">85445 495464 44 69</span>
+									<span class="paysystem">Qiwi</span>
+									<span class="status _green">Успешно</span>
 								</div>
 
 								<div class="spreadsheet__row">
-									<span class="name">Vip gold</span>
-									<span class="plug-mobile"> </span>
-									<span class="percent-term">0,8% на 5 дней</span>
+									<span class="date">--.--.----</span>
 									<span class="sum">1 $</span>
-									<span class="status _orange">В процессе</span>
-									<span class="date">--.--.----</span>
-								</div>
-
-								<div class="spreadsheet__row">
-									<span class="name">Vip gold</span>
-									<span class="plug-mobile"> </span>
-									<span class="percent-term">0,8% на 5 дней</span>
-									<span class="sum">1000 $</span>
+									<span class="requisites">85445 495464 44 69</span>
+									<span class="paysystem">Perfect money</span>
 									<span class="status _red">Неудачно</span>
+								</div>
+
+								<div class="spreadsheet__row">
 									<span class="date">--.--.----</span>
-								</div>
-
-								<div class="spreadsheet__row">
-									<span class="name">Vip gold</span>
-									<span class="plug-mobile"> </span>
-									<span class="percent-term">0,8% на 5 дней</span>
-									<span class="sum">100 000$</span>
-									<span class="status _green">Успешно</span>
-									<span class="date">13.06.2020</span>
-								</div>
-
-								<div class="spreadsheet__row">
-									<span class="name">Vip gold</span>
-									<span class="plug-mobile"> </span>
-									<span class="percent-term">0,8% на 5 дней</span>
-									<span class="sum">1000 $</span>
-									<span class="status _green">Успешно</span>
-									<span class="date">13.06.2020</span>
-								</div>
-
-								<div class="spreadsheet__row">
-									<span class="name">Vip gold</span>
-									<span class="plug-mobile"> </span>
-									<span class="percent-term">0,8% на 5 дней</span>
-									<span class="sum">100 $</span>
-									<span class="status _green">Успешно</span>
-									<span class="date">13.06.2020</span>
-								</div>
-
-								<div class="spreadsheet__row">
-									<span class="name">Vip gold</span>
-									<span class="plug-mobile"> </span>
-									<span class="percent-term">0,8% на 5 дней</span>
 									<span class="sum">10 $</span>
-									<span class="status _green">Успешно</span>
-									<span class="date">13.06.2020</span>
+									<span class="requisites">85445 495464 44 69</span>
+									<span class="paysystem">Яндекс.деньги</span>
+									<span class="status _orange">В процессе</span>
 								</div>
 
 								<div class="spreadsheet__row">
-									<span class="name">Vip gold</span>
-									<span class="plug-mobile"> </span>
-									<span class="percent-term">0,8% на 5 дней</span>
-									<span class="sum">100 $</span>
-									<span class="status _green">Успешно</span>
 									<span class="date">13.06.2020</span>
+									<span class="sum">100 $</span>
+									<span class="requisites">85445 495464 44 69</span>
+									<span class="paysystem">Qiwi</span>
+									<span class="status _green">Успешно</span>
 								</div>
 
 								<div class="spreadsheet__row">
-									<span class="name">Vip gold</span>
-									<span class="plug-mobile"> </span>
-									<span class="percent-term">0,8% на 5 дней</span>
-									<span class="sum">100 $</span>
-									<span class="status _green">Успешно</span>
-									<span class="date">13.06.2020</span>
+									<span class="date">--.--.----</span>
+									<span class="sum">1 $</span>
+									<span class="requisites">85445 495464 44 69</span>
+									<span class="paysystem">Perfect money</span>
+									<span class="status _red">Неудачно</span>
 								</div>
 
 								<div class="spreadsheet__row">
-									<span class="name">Vip gold</span>
-									<span class="plug-mobile"> </span>
-									<span class="percent-term">0,8% на 5 дней</span>
-									<span class="sum">100 $</span>
-									<span class="status _green">Успешно</span>
-									<span class="date">13.06.2020</span>
+									<span class="date">--.--.----</span>
+									<span class="sum">10 $</span>
+									<span class="requisites">85445 495464 44 69</span>
+									<span class="paysystem">Яндекс.деньги</span>
+									<span class="status _orange">В процессе</span>
 								</div>
 
 								<div class="spreadsheet__row">
-									<span class="name">Vip gold</span>
-									<span class="plug-mobile"> </span>
-									<span class="percent-term">0,8% на 5 дней</span>
-									<span class="sum">100 $</span>
-									<span class="status _green">Успешно</span>
 									<span class="date">13.06.2020</span>
+									<span class="sum">100 $</span>
+									<span class="requisites">85445 495464 44 69</span>
+									<span class="paysystem">Qiwi</span>
+									<span class="status _green">Успешно</span>
+								</div>
+
+								<div class="spreadsheet__row">
+									<span class="date">--.--.----</span>
+									<span class="sum">1 $</span>
+									<span class="requisites">85445 495464 44 69</span>
+									<span class="paysystem">Perfect money</span>
+									<span class="status _red">Неудачно</span>
+								</div>
+
+								<div class="spreadsheet__row">
+									<span class="date">--.--.----</span>
+									<span class="sum">10 $</span>
+									<span class="requisites">85445 495464 44 69</span>
+									<span class="paysystem">Яндекс.деньги</span>
+									<span class="status _orange">В процессе</span>
+								</div>
+
+								<div class="spreadsheet__row">
+									<span class="date">13.06.2020</span>
+									<span class="sum">100 $</span>
+									<span class="requisites">85445 495464 44 69</span>
+									<span class="paysystem">Qiwi</span>
+									<span class="status _green">Успешно</span>
+								</div>
+
+								<div class="spreadsheet__row">
+									<span class="date">--.--.----</span>
+									<span class="sum">1 $</span>
+									<span class="requisites">85445 495464 44 69</span>
+									<span class="paysystem">Perfect money</span>
+									<span class="status _red">Неудачно</span>
+								</div>
+
+								<div class="spreadsheet__row">
+									<span class="date">--.--.----</span>
+									<span class="sum">10 $</span>
+									<span class="requisites">85445 495464 44 69</span>
+									<span class="paysystem">Яндекс.деньги</span>
+									<span class="status _orange">В процессе</span>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="spreadsheet spreadsheet_mobile">
+
+							<div class="spreadsheet__row-wrap table-scrollbar">
+
+								<div class="spreadsheet__row">
+									
+									<span class="paysystem">Qiwi</span><span class="sum">100 $</span>
+									<span>Реквизиты</span><span class="requisites">85445 495464 44 69</span>
+									<span>Статус</span><span class="status _green">Успешно</span>
+									<span>Дата</span><span class="date">13.06.2020</span>
+									
+								</div>
+
+								<div class="spreadsheet__row">
+									
+									<span class="paysystem">Qiwi</span><span class="sum">100 $</span>
+									<span>Реквизиты</span><span class="requisites">85445 495464 44 69</span>
+									<span>Статус</span><span class="status _red">Неудачно</span>
+									<span>Дата</span><span class="date">--.--.----</span>
+									
+								</div>
+
+								<div class="spreadsheet__row">
+									
+									<span class="paysystem">Qiwi</span><span class="sum">100 $</span>
+									<span>Реквизиты</span><span class="requisites">85445 495464 44 69</span>
+									<span>Статус</span><span class="status _orange">В процессе</span>
+									<span>Дата</span><span class="date">--.--.----</span>
+									
+								</div>
+
+								<div class="spreadsheet__row">
+									
+									<span class="paysystem">Qiwi</span><span class="sum">100 $</span>
+									<span>Реквизиты</span><span class="requisites">85445 495464 44 69</span>
+									<span>Статус</span><span class="status _green">Успешно</span>
+									<span>Дата</span><span class="date">13.06.2020</span>
+									
+								</div>
+
+								<div class="spreadsheet__row">
+									
+									<span class="paysystem">Qiwi</span><span class="sum">100 $</span>
+									<span>Реквизиты</span><span class="requisites">85445 495464 44 69</span>
+									<span>Статус</span><span class="status _red">Неудачно</span>
+									<span>Дата</span><span class="date">--.--.----</span>
+									
+								</div>
+
+								<div class="spreadsheet__row">
+									
+									<span class="paysystem">Qiwi</span><span class="sum">100 $</span>
+									<span>Реквизиты</span><span class="requisites">85445 495464 44 69</span>
+									<span>Статус</span><span class="status _orange">В процессе</span>
+									<span>Дата</span><span class="date">--.--.----</span>
+									
 								</div>
 
 							</div>
