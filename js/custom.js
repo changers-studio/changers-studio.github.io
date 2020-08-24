@@ -366,18 +366,6 @@ var $win = $(window),
         },200);
     });
 
-    /* custom  scroll */
-    if($('.js-scroll').length) {
-        $(".js-scroll").mCustomScrollbar({
-            axis:"y",
-            margin: 0,
-            theme:"dark-thin",
-            autoExpandScrollbar:true,
-            advanced:{autoExpandHorizontalScroll:true},
-            mouseWheel:{ preventDefault: true }
-        });
-    };
-
 
 $('.gifs').slick({
     dots: false,

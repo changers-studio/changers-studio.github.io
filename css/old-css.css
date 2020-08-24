@@ -40,8 +40,8 @@ body {
 }
 
 .order{
-    z-index: 100!important;
-    background-color: #F90!important;
+	z-index: 100!important;
+	background-color: #F90!important;
 }
 
 .form__pop-up{
@@ -144,57 +144,57 @@ body {
 }
 
 .fullpage__soc_fixed{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    -ms-align-items: center;
-    align-items: center;
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    -o-flex-direction: row;
-    flex-direction: row;
-    z-index: 3;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	z-index: 3;
 }
 
 .fullpage__soc_fixed a{
-    display: inline-block;
-    width: 61px;
-    height: 60px;
-    text-align: center;
-    position: relative;
-    background-color: #F90;
-    transition: all .3s ease-in;
+	display: inline-block;
+	width: 61px;
+	height: 60px;
+	text-align: center;
+	position: relative;
+	background-color: #F90;
+	transition: all .3s ease-in;
 }
 
 .fullpage__soc_fixed a:first-child{
-    border-right: 2px solid #fff;
+	border-right: 2px solid #fff;
 }
 
 .fullpage__soc_fixed a:hover{
-    background-color: #e68a00;
+	background-color: #e68a00;
 }
 
 .fullpage__soc_fixed a img{
-    position: relative;
-    top: 18px;
-    width: 35px;
+	position: relative;
+	top: 18px;
+	width: 35px;
 }
 
 .fullpage__soc_fixed a:first-child img{
-    position: relative;
-    top: 20px;
+	position: relative;
+	top: 20px;
 }
 
 .block-form{
-    width: 200px;
-    height: 50px;
-    background-color: #F90;
-    position: absolute;
-    bottom: 0;
-    left: 123px;
+	width: 200px;
+	height: 50px;
+	background-color: #F90;
+	position: absolute;
+	bottom: 0;
+	left: 123px;
 }
 
 .how-work-section .wrapper{
@@ -3390,9 +3390,9 @@ html.fp-enabled {
 }
 
 /*@media screen and (max-height: 669px) {
-    .section:last-child {
-        padding-bottom: 80px
-    }
+ 	.section:last-child {
+ 		padding-bottom: 80px
+ 	}
 }*/
 /* Slider */
 /* reset */
@@ -4772,7 +4772,7 @@ h1,
 }
 
 .header-phone li:nth-child(1){
-    margin-top: 0px;
+	margin-top: 0px;
 }
 
 .header-phone li a{
