@@ -69,13 +69,7 @@ $('.callback, .partnership-section .video_waw a, .pop-up').magnificPopup({
 
 var $win = $(window),
     $body = $('body')
-    $orderBtn = $('.js-btn-text'); 
 
-
-
-    
-
-    var animArrow, sheet11, sheet12, sheet21, sheet22, sheet31, sheet32;
     $('#fullpage').fullpage({
         //Navigation
         slidesNavigation: false,
@@ -238,21 +232,6 @@ var $win = $(window),
         // onSlideLeave: function(section, origin, destination, direction){}
     });
 
-        
-        function heightForm() {
-            $('.js-long-form').each(function() {
-               var $el = $(this);;
-                $el.css({'height':  window.innerHeight - $('.js-form-btn').outerHeight()});
-            })
-        }
-        
-        heightForm();
-
-        $win.resize(function() {
-            heightArrow();
-            heightForm();
-        })
-
         // animations
         function heightArrow() {
             $('.js-list-wrap').each(function() {
@@ -292,16 +271,6 @@ var $win = $(window),
             $('.js-form-wrap').addClass('open');
         }
     });
-    // open form
-
-
-    // change sertificate
-    $('.js-sertificate').on('click',function(){
-        var $href = $(this).attr('data-href');
-        $('#sertificateMain').attr('src', $href);
-    });
-    // change sertificate
-
 
 
     /* filters*/
@@ -367,25 +336,6 @@ var $win = $(window),
     });
     /* eof filters*/
 
-
-    /* placeholder*/
-    $(".form-control").each(function(){
-        if ($(this).val() == "")        {
-            $(this).closest('.box-field__input').removeClass("filled");
-        }
-        else {
-            $(this).closest('.box-field__input').addClass("filled");
-        }
-    });
-    $(".form-control").focus(function(){
-        $(this).closest('.box-field__input').addClass("filled");
-    });
-    $(".form-control").blur(function(){
-        if ($(this).val() == "")        {
-            $(this).closest('.box-field__input').removeClass("filled");
-        }
-    });
-    /* placeholder*/
 
     if ($('.js-gallery').length) {
         $('.js-gallery').slick({
@@ -558,10 +508,10 @@ $(document).click(function(event) {
 //     this.pause();
 // });
 
-// $('.gifs-desktop .gif__item video').mousemove(function() {
-//     this.play();
-// });
+$('.gifs-desktop .gif__item video').mousemove(function() {
+    this.play();
+});
 
-// $('.gifs-desktop .gif__item video').mouseleave(function() {
-//     this.pause();
-// });
+$('.gifs-desktop .gif__item video').mouseleave(function() {
+    this.pause();
+});
