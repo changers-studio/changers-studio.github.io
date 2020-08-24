@@ -627,32 +627,6 @@ var $win = $(window),
 });
 
 
-if ($('.fancybox').length) {
-    $('.fancybox').fancybox({
-        openEffect: 'fade',
-        closeEffect: 'fade',
-        padding: 0,
-        margin: -20,
-        fitToView: true,
-        // beforeShow: function () {
-        //     $('body').css({
-        //         'overflow-y': 'hidden'
-        //     });
-        //     $('html').css({
-        //         'overflow-y': 'hidden'
-        //     });
-        // },
-        // afterClose: function () {
-        //     $('body').css({
-        //         'overflow-y': 'visible'
-        //     });
-        //     $('html').css({
-        //         'overflow-y': 'visible'
-        //     });
-        // }
-    });
-};
-
 $('.gifs').slick({
     dots: false,
     infinite: true,
