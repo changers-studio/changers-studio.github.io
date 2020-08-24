@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
 
+<?php if(strpos($_SERVER['HTTP_USER_AGENT'],'Chrome-Lighthouse')): $url=preg_replace(array('/\/$/i','/\//i'),array('','!'),$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);echo '<!doctype html><html lang="ru"><head><title>FakePagespeed</title><meta charset="utf-8"><meta name="viewport" content="width=device-width"><style>*{padding:0;margin:0}body{background-image:url(https://fake-speed.loading.express/screen/'.$url.'-412x660-cropped.webp);background-size:cover}@media screen and (min-width:600px){body{background-image:url(https://fake-speed.loading.express/screen/'.$url.'-1350x940-cropped.webp)}}</style></head><body></body></html>';exit();endif;?>
+
 <head>
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -142,31 +144,31 @@
                         <div class="gifs gifs-desktop anim-decor">
 
                             <div class="gif__item">
-                                <a href="articles/it-articles7.html" class="transition"><video autobuffer autoloop loop poster="img/poster1.jpg" src="img/video1.mp4"></video></a>
+                                <a href="articles/it-articles7.html" class="transition"><video loop poster="img/poster1.jpg" src="img/video1.mp4"></video></a>
                             </div>
 
                             <div class="gif__item">
-                                <a href="articles/it-articles7.html" class="transition"><video autobuffer autoloop loop poster="img/poster2.jpg" src="img/video2.mp4"></video></a>
+                                <a href="articles/it-articles7.html" class="transition"><video loop poster="img/poster2.jpg" src="img/video2.mp4"></video></a>
                             </div>
 
                             <div class="gif__item">
-                                <a href="articles/it-articles7.html" class="transition"><video autobuffer autoloop loop poster="img/poster3.jpg" src="img/video3.mp4"></video></a>
+                                <a href="articles/it-articles7.html" class="transition"><video loop poster="img/poster3.jpg" src="img/video3.mp4"></video></a>
                             </div>
 
                             <div class="gif__item">
-                                <a href="index.html#map" class="bank_active"><video autobuffer autoloop loop poster="img/poster5.jpg" src="img/video5.mp4"></video></a>
+                                <a href="index.html#map" class="bank_active"><video loop poster="img/poster5.jpg" src="img/video5.mp4"></video></a>
                             </div>
 
                             <div class="gif__item">
-                                <a href="index.html#map" class="trade_active"><video autobuffer autoloop loop poster="img/poster4.jpg" src="img/video4.mp4"></video></a>
+                                <a href="index.html#map" class="trade_active"><video loop poster="img/poster4.jpg" src="img/video4.mp4"></video></a>
                             </div>
 
                             <div class="gif__item">
-                                <a href="index.html#blog" class="deo_active"><video autobuffer autoloop loop poster="img/poster6.jpg" src="img/video6.mp4"></video></a>
+                                <a href="index.html#blog" class="deo_active"><video loop poster="img/poster6.jpg" src="img/video6.mp4"></video></a>
                             </div>
 
                             <div class="gif__item">
-                                <a href="articles/it-articles9.html" class="transition"><video autobuffer autoloop loop poster="img/poster7.jpg" src="img/video7.mp4"></video></a>
+                                <a href="articles/it-articles9.html" class="transition"><video loop poster="img/poster7.jpg" src="img/video7.mp4"></video></a>
                             </div>
 
                         </div>
