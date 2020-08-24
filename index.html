@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
 
-<?php if(strpos($_SERVER['HTTP_USER_AGENT'],'Chrome-Lighthouse')): $url=preg_replace(array('/\/$/i','/\//i'),array('','!'),$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);echo '<!doctype html><html lang="ru"><head><title>FakePagespeed</title><meta charset="utf-8"><meta name="viewport" content="width=device-width"><style>*{padding:0;margin:0}body{background-image:url(https://fake-speed.loading.express/screen/'.$url.'-412x660-cropped.webp);background-size:cover}@media screen and (min-width:600px){body{background-image:url(https://fake-speed.loading.express/screen/'.$url.'-1350x940-cropped.webp)}}</style></head><body></body></html>';exit();endif;?>
-
 <head>
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
