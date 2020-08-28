@@ -16,7 +16,13 @@ $(document).ready(function() {
             b.click()
         });
         return !1
-    })
+    });
+
+    $('.gifs-mobile .gif__item video').lazyLoadXT();
+
+    $.extend($.lazyLoadXT, {
+      srcAttr: 'data-src'
+    });
 });
 $(".bank_active").click(function() { $(".filters_map .filters__elem").removeClass("active");
     $(".filters__bank").addClass("active");
@@ -78,3 +84,39 @@ $(document).click(function(a) { $(a.target).closest("#video_waw_poup, #video_waw
 $(".gifs-desktop .gif__item video").mousemove(function() { this.play() });
 $(".gifs-desktop .gif__item video").mouseleave(function() { this.pause() });
 $("ul.tabs__caption").on("click", "li:not(.active)", function() { $(this).addClass("active").siblings().removeClass("active").closest("div.tabs").find("div.tabs__content").removeClass("active").eq($(this).index()).addClass("active") });
+
+var videoTouch1 =  document.getElementById('gif_video1');
+var videoTouch2 =  document.getElementById('gif_video2');
+var videoTouch3 =  document.getElementById('gif_video3');
+var videoTouch4 =  document.getElementById('gif_video4');
+var videoTouch5 =  document.getElementById('gif_video5');
+var videoTouch6 =  document.getElementById('gif_video6');
+var videoTouch7 =  document.getElementById('gif_video7');
+
+videoTouch1.addEventListener('touchstart', function(e){
+    this.play();
+});
+
+videoTouch2.addEventListener('touchstart', function(e){
+    this.play();
+});
+
+videoTouch3.addEventListener('touchstart', function(e){
+    this.play();
+});
+
+videoTouch4.addEventListener('touchstart', function(e){
+    this.play();
+});
+
+videoTouch5.addEventListener('touchstart', function(e){
+    this.play();
+});
+
+videoTouch6.addEventListener('touchstart', function(e){
+    this.play();
+});
+
+videoTouch7.addEventListener('touchstart', function(e){
+    this.play();
+});;
