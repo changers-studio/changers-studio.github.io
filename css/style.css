@@ -4337,6 +4337,10 @@ textarea.form-control {
 		width: 100%;
 	}
 
+	.gifs .gif__item{
+		height: auto;
+	}
+
     .h2 {
         font-size: 20px
     }
