@@ -89,7 +89,7 @@ $(".js-filter2").on("click", function() {
     $(".js-gallery").slick("reinit");
     return !1
 });
-$(".js-gallery").length && $(".js-gallery").slick({ dots: !1, infinite: !0, speed: 500, arrows: !0, autoplay: !0, autoplaySpeed: 5E3, slidesToShow: 1, slidesToScroll: 1, prevArrow: '<button class="slick-prev slick-arrow"><i class="icon-arrow-prev"></i></button>', nextArrow: '<button class="slick-next slick-arrow"><i class="icon-arrow-next"></button>', responsive: [{ breakpoint: 700, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
+$(".js-gallery").length && $(".js-gallery").slick({ dots: !1, infinite: !0, speed: 500, arrows: !0, autoplay: !0, autoplaySpeed: 5E3, slidesToShow: 1, slidesToScroll: 1, lazyLoad: 'ondemand', prevArrow: '<button class="slick-prev slick-arrow"><i class="icon-arrow-prev"></i></button>', nextArrow: '<button class="slick-next slick-arrow"><i class="icon-arrow-next"></button>', responsive: [{ breakpoint: 700, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
 $(".js-menu-nav").on("click", function() { setTimeout(function() { $(".js-nav-menu").trigger("click") }, 200) });
 $(".gifs").slick({ dots: !1, infinite: !0, speed: 300, arrows: !0, slidesToShow: 3, slidesToScroll: 3, prevArrow: '<button class="slick-prev slick-arrow"><i class="icon-arrow-prev"></i></button>', nextArrow: '<button class="slick-next slick-arrow"><i class="icon-arrow-next"></button>', responsive: [{ breakpoint: 700, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
 $(".panel-heading").click(function() {
