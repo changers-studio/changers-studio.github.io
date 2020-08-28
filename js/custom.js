@@ -18,7 +18,7 @@ $(document).ready(function() {
         return !1
     });
 
-    $('.gifs-mobile .gif__item video').lazyLoadXT();
+    $('body').lazyLoadXT();
 
     $.extend($.lazyLoadXT, {
       srcAttr: 'data-src'
