@@ -17,8 +17,8 @@
 
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/preloader.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
 
     <script async defer src="https://kit.fontawesome.com/a77af3a9ba.js" crossorigin="anonymous"></script>
@@ -29,14 +29,14 @@
 
 <body class="overflow-hidden">
 
-    <div class="loader">
+    <!-- <div class="loader">
         <div class="l_main">
           <div class="l_square"><span></span><span></span><span></span></div>
           <div class="l_square"><span></span><span></span><span></span></div>
           <div class="l_square"><span></span><span></span><span></span></div>
           <div class="l_square"><span></span><span></span><span></span></div>
         </div>
-    </div>
+    </div> -->
     
     <div class="map_popup">
         <img src="img/map_popup.jpg" alt="Попап 'Информация появится позже'">
@@ -150,44 +150,48 @@
                 <div class="wrapper">
                     
                     <div class="box-gifs">
+                        
                         <p class="h2 js-word">НАША ЦЕЛЕВАЯ АУДИТОРИЯ</p>
-                        <!-- <div class="gifs gifs-desktop">
+
+                        <div class="gifs gifs-desktop">
 
                             <div class="gif__item">
-                                <a href="articles/it-articles7.html" class="transition"><video loop poster="img/poster1.jpg" src="img/video1.mp4"></video></a>
+                                <a href="articles/it-articles7.html" class="transition"><video preload="none" loop poster="img/poster1.jpg" src="img/video1.mp4"></video></a>
+                            </div>
+
+                            <!-- <div class="gif__item" onmousemove="$(this).replaceWith('<iframe width=\'100%\' height=\'450\' src=\'https://www.youtube.com/embed/jD7ZeDveVUY?autoplay=1&amp;rel=0\' frameborder=\'0\' allowfullscreen></iframe><br/>');"><img alt="poster video1" src="img/poster1.jpg" /></div> -->
+
+                            <div class="gif__item">
+                                <a href="articles/it-articles7.html" class="transition"><video preload="none" loop poster="img/poster2.jpg" src="img/video2.mp4"></video></a>
                             </div>
 
                             <div class="gif__item">
-                                <a href="articles/it-articles7.html" class="transition"><video loop poster="img/poster2.jpg" src="img/video2.mp4"></video></a>
+                                <a href="articles/it-articles7.html" class="transition"><video preload="none" loop poster="img/poster3.jpg" src="img/video3.mp4"></video></a>
                             </div>
 
                             <div class="gif__item">
-                                <a href="articles/it-articles7.html" class="transition"><video loop poster="img/poster3.jpg" src="img/video3.mp4"></video></a>
-                            </div>
-
-                            <div class="gif__item">
-                                <a href="index.html#map" class="bank_active"><video loop poster="img/poster5.jpg" src="img/video5.mp4"></video></a>
+                                <a href="index.html#map" class="bank_active"><video preload="none" loop poster="img/poster5.jpg" src="img/video5.mp4"></video></a>
                                 
                             </div>
 
                             <div class="gif__item">
-                                <a href="index.html#map" class="trade_active"><video loop poster="img/poster4.jpg" src="img/video4.mp4"></video></a>
+                                <a href="index.html#map" class="trade_active"><video preload="none" loop poster="img/poster4.jpg" src="img/video4.mp4"></video></a>
                                 
                             </div>
 
                             <div class="gif__item">
-                                <a href="index.html#blog" class="deo_active"><video loop poster="img/poster6.jpg" src="img/video6.mp4"></video></a>
+                                <a href="index.html#blog" class="deo_active"><video preload="none" loop poster="img/poster6.jpg" src="img/video6.mp4"></video></a>
                                 
                             </div>
 
                             <div class="gif__item">
-                                <a href="articles/it-articles9.html" class="transition"><video loop poster="img/poster7.jpg" src="img/video7.mp4"></video></a>
+                                <a href="articles/it-articles9.html" class="transition"><video preload="none" loop poster="img/poster7.jpg" src="img/video7.mp4"></video></a>
                                 
                             </div>
 
-                        </div> -->
+                        </div>
 
-                        <!-- <div class="gifs gifs-mobile">
+                        <div class="gifs gifs-mobile">
 
                             <div class="gif__item">
                                 <video poster="img/poster1.jpg" muted src="img/video1.mp4" id="gif_video1"></video>
@@ -217,7 +221,7 @@
                                 <video poster="img/poster7.jpg" muted src="img/video7.mp4" id="gif_video7"></video>
                             </div>
 
-                        </div> -->
+                        </div>
 
                         <p class="click_video">*Нажмите чтобы <br> просмотреть видео</p>   
 
@@ -1440,10 +1444,10 @@
 			</span>
 
             <ul class="header-phone">
-                <li><a href="tel:+3694884055"><img src="img/flag-hungary.jpg" alt="flag hungary">+36 94 884 055 (Венгрия)</a></li> 
-                <li><a href="tel:+6531594805"><img src="img/flag-singapore.jpg" alt="flag singapore">+65 3159 4805 (Сингапур)</a></li> 
-                <li><a href="tel:+13239166022"><img src="img/flag-usa.jpg" alt="flag usa">+1 323 916 6022 (США)</a></li> 
-                <li><a href="tel:+380672400454"><img src="img/flag-ukraine.jpg" alt="flag ukraine">+38 067 240 0454 (Украина)</a></li>
+                <li><a href="tel:+3694884055">+36 94 884 055 (Венгрия)</a></li> 
+                <li><a href="tel:+6531594805">+65 3159 4805 (Сингапур)</a></li> 
+                <li><a href="tel:+13239166022">+1 323 916 6022 (США)</a></li> 
+                <li><a href="tel:+380672400454">+38 067 240 0454 (Украина)</a></li>
             </ul>
 
         </div>
