@@ -17,12 +17,6 @@ $(document).ready(function() {
         });
         return !1
     });
-
-    $('body').lazyLoadXT();
-
-    $.extend($.lazyLoadXT, {
-      srcAttr: 'data-src'
-    });
 });
 $(".bank_active").click(function() { $(".filters_map .filters__elem").removeClass("active");
     $(".filters__bank").addClass("active");
