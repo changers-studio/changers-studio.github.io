@@ -1,11 +1,11 @@
-.loader{height:100vh;width:100vw; z-index: 1000000; position: absolute;top: 0;bottom: 0;right: 0;left: 0; background: #f90;}
+.loader{height:100vh;width:100vw; z-index: 1000000; position: absolute;top: 0;bottom: 0;right: 0;left: 0; background: #fff;}
 .loader .l_main{position:absolute;top:50%;left:50%;width:172px;height:128px;margin:0;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
 .l_square{position:relative}
 .l_square:nth-child(1){margin-left:0px}
 .l_square:nth-child(2){margin-left:44px}
 .l_square:nth-child(3){margin-left:88px}
 .l_square:nth-child(4){margin-left:132px}
-.l_square span{position:absolute;top:0px;left:20px;height:36px;width:36px;border-radius:2px;background-color:#FFFFFF}
+.l_square span{position:absolute;top:0px;left:20px;height:36px;width:36px;border-radius:2px;background-color:#f90}
 .l_square span:nth-child(1){top:0px}
 .l_square span:nth-child(2){top:44px}
 .l_square span:nth-child(3){top:88px}
