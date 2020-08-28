@@ -3689,6 +3689,10 @@ textarea.form-control {
 }
 
 @media screen and (max-width:1400px) {
+		.h1, h1{
+			font-size: 60px;
+		}
+
     .h2 {
         font-size: 36px
     }
@@ -4592,7 +4596,7 @@ textarea.form-control {
     }
 }
 
-@media screen and (max-height:850px) and (min-width:1000px) {
+@media screen and (max-height:850px) and (min-width:1400px) {
     .main-decor__bg {
         right: 10%;
         left: auto;
@@ -4626,7 +4630,7 @@ textarea.form-control {
     }
 }
 
-@media screen and (max-height:750px) and (min-width:1000px) {
+@media screen and (max-height:750px) and (min-width:1400px) {
     .main-decor__bg {
         right: 15%;
         width: 80%
@@ -4759,7 +4763,7 @@ textarea.form-control {
     }
 
     .header .header-phone {
-        margin: 7px 70px 0 0
+        margin: 7px 60px 0 0
     }
 }
 
