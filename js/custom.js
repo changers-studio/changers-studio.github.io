@@ -45,7 +45,27 @@ $(".deo_active").click(function() {
 $(".callback, .partnership-section .video_waw a, .pop-up").magnificPopup({ removalDelay: 350, mainClass: "mfp-fade" });
 var $win = $(window),
     $body = $("body");
-$("#fullpage").fullpage({ slidesNavigation: !1, menu: "#menu", css3: !0, scrollingSpeed: 500, fitToSectionDelay: 300, scrollBar: !1, easing: "easeInOutCubic", easingcss3: "ease", loopHorizontal: !1, continuousHorizontal: !0, controlArrows: !1, responsiveWidth: 1E3, responsiveHeight: 670, responsiveSlides: !0, scrollOverflow: !0, resetSliders: !0, fadingEffect: !0, sectionSelector: ".section", slideSelector: ".slide", lazyLoading: !0 });
+$("#fullpage").fullpage({ 
+    slidesNavigation: !1,
+    menu: "#menu", 
+    css3: !0, 
+    scrollingSpeed: 500, 
+    fitToSectionDelay: 300, 
+    scrollBar: !1, 
+    easing: "easeInOutCubic", 
+    easingcss3: "ease", 
+    loopHorizontal: !1, 
+    continuousHorizontal: !0, 
+    controlArrows: !1, 
+    responsiveWidth: 1E3, 
+    responsiveHeight: 670, 
+    responsiveSlides: !0, 
+    scrollOverflow: !0, 
+    resetSliders: !0, 
+    fadingEffect: !0, 
+    sectionSelector: ".section", 
+    slideSelector: ".slide", 
+    lazyLoading: true });
 
 function heightArrow() {
     $(".js-list-wrap").each(function() {
