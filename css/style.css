@@ -3721,6 +3721,10 @@ textarea.form-control {
 }
 
 @media screen and (max-width:1500px) {
+		.last-order .form-title{
+			font-size: 16px;
+		}
+
     .order-form {
         padding: 20px 20px
     }
