@@ -2589,7 +2589,7 @@ textarea.form-control {
 }
 
 .why-block__item {
-    font-size: 20px;
+    font-size: 18px;
     pointer-events: none;
     text-transform: uppercase;
     position: relative;
@@ -2779,7 +2779,7 @@ textarea.form-control {
     }
 
     .why-block__item {
-        font-size: 19px
+        font-size: 17px
     }
 }
 
@@ -2793,7 +2793,7 @@ textarea.form-control {
     }
 
     .why-block__item {
-        font-size: 18px
+        font-size: 16px
     }
 
     .why-block__list {
