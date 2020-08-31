@@ -4380,6 +4380,10 @@ textarea.form-control {
 
 @media screen and (max-width:500px) {
 
+	.section-map .fp-scrollable{
+		height: auto!important;
+	}
+
 	.blog__item_new a img{
 		height: auto;
 		width: 100%;
