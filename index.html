@@ -27,14 +27,14 @@
 
 <body class="overflow-hidden">
 
-    <div class="loader">
+    <!-- <div class="loader">
         <div class="l_main">
           <div class="l_square"><span></span><span></span><span></span></div>
           <div class="l_square"><span></span><span></span><span></span></div>
           <div class="l_square"><span></span><span></span><span></span></div>
           <div class="l_square"><span></span><span></span><span></span></div>
         </div>
-    </div>
+    </div> -->
     
     <div class="map_popup">
         <img data-src="img/map_popup.jpg" alt="Попап 'Информация появится позже'">
@@ -78,7 +78,7 @@
                 <div class="wrapper">
                     <div class="main-block">
                         <div class="main-heading">
-                            <h1 class="h1">ИНОСТРАННЫЕ КОМПАНИИ </h1>
+                            <h1 class="h1">ИНОСТРАННЫЕ КОМПАНИИ</h1>
                             <div class="heading-subtitle">ДЛЯ IT-БИЗНЕСА, МЕЖДУНАРОДНОЙ ТОРГОВЛИ И ЗАЩИТЫ АКТИВОВ. С БАНКОВСКИМ СЧЕТОМ. В ПРАВИЛЬНЫХ СТРАНАХ. С НЕБОЛЬШИМИ НАЛОГАМИ</div>
                         </div>
                         <div class="main-decor anim-decor">
@@ -106,7 +106,6 @@
 
                         <div class="order-nav js-form-btn">
                             <div class="form-title js-btn-text">Рассказать детальнее?</div>
-                            <div class="form-btn"><i class="form-icon close-icon"></i></div>
                         </div>
 
                     </div>
@@ -374,7 +373,6 @@
 
                         <div class="order-nav js-form-btn">
                             <div class="form-title js-btn-text">Помочь в выборе компании?</div>
-                            <div class="form-btn"><i class="form-icon close-icon"></i></div>
                         </div>
 
                     </div>
@@ -1236,26 +1234,39 @@
                         <div class="order-block form-page wrapper-final-form anim-decor last-order">
 
                             <div class="order-form">
-                                <form class="forms final-form">
+                                <form class="forms">
 
                                     <div class="form-title">Мы поможем вам подобрать компанию</div>
-                                    <div class="form-subtitle">Заполните форму и мы свяжемся с Вами</div>
+                                    <!-- <div class="form-subtitle">Заполните форму и мы свяжемся с Вами</div> -->
                             
                                     <input type="hidden" name="project_name" value="Yutland">
                                     <input type="hidden" name="admin_email" value="yeahh@yutland.com">
                                     <input type="hidden" name="form_subject" value="Хотите что-то уточнить?">
 
-                                    <input type="text" name="Имя" placeholder="*Ваше имя" required>
-                                    <input type="text" name="Почта" placeholder="*Ваш E-mail" required>
-                                    <input type="text" name="Телефон" placeholder="*Ваш телефон" required>
-                                    
+                                    <div class="box-field">
+                                        <div class="box-field__input">
+                                            <input type="text" class="form-control" name="Имя" autocomplete="off" required>
+                                            <label class="label-placeholder">Ваше имя?</label>
+                                        </div>
+                                    </div>
 
-                                    <label>
-                                        <input class="checkbox_input" type="checkbox" required>
-                                        <p class="checkbox_text" >Я соглашаюсь с политикой конфиденциальности</p>
-                                      </label>
+                                    <div class="box-field">
+                                        <div class="box-field__input">
+                                            <input type="email" class="form-control" name="e-mail" autocomplete="off" required>
+                                            <label class="label-placeholder">Ваш e-mail?</label>
+                                        </div>
+                                    </div>
 
-                                    <button class="button">Отправить</button>
+                                    <div class="box-field">
+                                        <div class="box-field__input">
+                                            <input type="text" class="form-control" name="телефон" autocomplete="off" required>
+                                            <label class="label-placeholder">Ваш телефон?</label>
+                                        </div>
+                                    </div>
+                      
+                                    <div class="box-field__button">
+                                        <button class="btn-order">отправить</button>
+                                    </div>
 
                                 </form>
                             </div>
