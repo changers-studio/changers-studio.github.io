@@ -206,3 +206,14 @@ var $win = $(window),
                 $listWrap.find('.js-arrow').css({'top': $el.position().top, 'height':  $el.outerHeight()});
             })
         }
+
+var scrollHeight = Math.max(
+  document.body.scrollHeight, document.documentElement.scrollHeight,
+  document.body.offsetHeight, document.documentElement.offsetHeight,
+  document.body.clientHeight, document.documentElement.clientHeight
+)
+
+
+$('.button_under_slider-mob a').click(function(){
+    window.scrollTo(0, scrollHeight);
+})
