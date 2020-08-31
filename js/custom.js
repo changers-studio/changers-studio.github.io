@@ -133,7 +133,6 @@ var $win = $(window),
         easingcss3: 'ease',
         loopHorizontal: false,
         continuousHorizontal: true,
-        lazyLoading: true,
 
         //Design
         controlArrows: false,
