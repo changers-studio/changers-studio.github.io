@@ -1,0 +1,199 @@
+.why-block {
+    display: flex;
+    padding-top: 144px;
+    padding-bottom: 45px;
+    width: 100%;
+    &__heading {
+        width: 65%;
+        padding-top: 3vh
+    }
+    &__decor {
+        transform: translate(122px,-14px);
+        margin-left: -17.5%;
+        width: 52.5%;
+    }
+    &__list {
+        position: relative;
+        margin-top: 4.3vh;
+        max-width: 80%;
+    }
+    &__item {
+        font-size: 18px;
+        pointer-events: none;
+        font-size: 18px;
+        text-transform: uppercase;
+        position: relative;
+        padding: 2vh 0;
+        letter-spacing: 0.012em;
+        margin-bottom: -10px;
+        line-height: 1.2;
+        z-index: 1;
+        transition: transform .3s ease-out;
+        &.active {
+            transform: translateX(26px);
+        }
+    }
+    &__bg {
+        position: relative;
+    }
+    &__decor_1 {
+        height: calc(100vh - 189px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            max-height: 100%
+        }
+    }
+    &__decor_2 {
+        position: absolute;
+        left: 22%;
+        bottom: -.5%;
+        width: 54.5%;
+        height: 74.8%;
+    }
+    &__arrow {
+        background: $color-active;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        width: 75px;
+        height: 75px;
+        z-index: 0;
+        transition: top .3s ease-out;
+    }
+}
+.bg_why {
+    height: 100%;
+    width: 100%;
+    .st0{fill:#34394D;}
+    .st1{fill:#A09A2A;}
+    .st2{fill:#FF8A64;}
+    .st3{opacity:0.14;}
+    .st4{opacity:0.14;fill:#D84472;enable-background:new    ;}
+    .st5{fill:#E2C9A6;}
+    .st6{fill:#87304B;}
+    .st7{fill:#465689;}
+    .st8{fill:#F6A821;}
+    .st9{fill:#F4C222;}
+    .st10{fill:#F47C5D;}
+    .st11{fill:#C9831C;}
+    .st12{fill:#6D223D;}
+}
+.section.active .hand {
+    transform-origin: center top;
+    animation: animHand 5.2s ease-out infinite;
+}
+@keyframes animHand {
+  from {
+    transform: translate(0,0) rotate(0deg);
+  }
+  25% {
+    transform: translate(7.5%,0.3%) rotate(10deg);
+  }
+
+  75% {
+    transform: translate(-8.5%,0.8%) rotate(-10deg);
+  }
+  to {
+    transform: translate(0,0) rotate(0deg);
+  }
+}
+.ios .hand {
+    animation: none
+}
+@media screen and (max-height: 915px) {
+    .why-block__heading {
+        padding-top: 0.5vh
+    }
+    .why-block__item {
+        font-size: 17px
+    }
+}
+@media screen and (max-height: 860px) {
+    .why-block__heading {
+        padding-top: 10px
+    }
+    .why-block__list {
+       /* max-width: 66%*/
+    }
+    .why-block__heading {
+        padding-top: 0
+    }
+    .why-block__item {
+        font-size: 16px
+    }
+
+    .why-block__list {
+        margin-top: 3vh
+    }
+}
+@media screen and (max-height: 768px) {
+    .why-block {
+        padding-top: 100px
+    }
+    .why-block__item {
+        font-size: 16px
+    }
+    .why-block__arrow {
+        height: 63px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .why-block {
+        padding-top: 100px;
+        padding-bottom: 60px
+    }
+}
+@media screen and (max-width: 1065px) {
+    .why-block__list {
+        max-width: 90%;
+    }
+    .why-block__item {
+        font-size: 15px
+    }
+    .why-block__heading {
+        padding-top: 0
+    }
+    .why-block {
+        padding-top: 90px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .why-block {
+        display: block;
+    }
+    .why-block__decor {
+        transform: none;
+        margin: 15px auto 0;
+        width: 60%;
+    }
+    .why-block__heading {
+        width: 100%;
+    }
+    .why-block__item.active {
+        transform: translate(15px,0);
+    }
+}
+@media screen and (max-width: 767px) , (max-height: 669px) {
+    .why-block__list {
+        margin: 30px auto 0;
+        max-width: 450px;
+    }
+    .why-block__item {
+        padding-top: 18px;
+        padding-bottom: 15px;
+    }
+    .why-block__item {
+        font-size: 15px
+    }
+    .why-block__decor_1, .ios .why-block__decor_1 {
+        height: auto;
+    }
+    .why-block {
+        padding-top: 60px;
+    }
+}
