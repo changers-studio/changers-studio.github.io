@@ -16,10 +16,6 @@ body {
     overflow-y: hidden !important
 }
 
-i {
-	font-family: fontawesome !important;
-}
-
 .mfp-fade.mfp-bg {
     opacity: 0;
     -webkit-transition: all .35s ease-out;
@@ -3461,7 +3457,7 @@ textarea.form-control {
 }
 
 .panel .panel-heading a::after {
-		font-family: "fontawesome";
+		font-family: fontawesome !important;
     content: '\f107';
     position: absolute;
     border-radius: 10em;
@@ -3958,7 +3954,7 @@ textarea.form-control {
     }
 
     .fp-tableCell {
-        height: auto !important
+        height: auto!important
     }
 
     .section-main .wrapper {
@@ -4191,9 +4187,6 @@ textarea.form-control {
 }
 
 @media screen and (max-width:800px) {
-    .countries {
-        width: 230px
-    }
 
     .why-block__decor {
         width: 100%;
@@ -4384,6 +4377,15 @@ textarea.form-control {
 
 @media screen and (max-width:500px) {
 
+	.section-map .fp-tableCell{
+		height: 700px!important;
+		display: block;
+	}
+
+	.order-block{
+		margin-top: 30px;
+	}
+
 	.blog__item_new a .blog__title{
 		padding: 10px 20px;
 		min-height: 50px;
@@ -4524,7 +4526,7 @@ textarea.form-control {
     }
 
     .map {
-        height: 430px
+        height: 400px
     }
 
     .why-block {
