@@ -17,17 +17,27 @@
 
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
+    <link rel="stylesheet" type="text/css" href="css/preloader.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
 
-    <script async defer src="https://kit.fontawesome.com/a77af3a9ba.js" crossorigin="anonymous"></script>
-
 </head>
 
-<body class="loaded overflow-hidden">
+
+
+<body class="overflow-hidden">
+
+    <!-- <div class="loader">
+        <div class="l_main">
+          <div class="l_square"><span></span><span></span><span></span></div>
+          <div class="l_square"><span></span><span></span><span></span></div>
+          <div class="l_square"><span></span><span></span><span></span></div>
+          <div class="l_square"><span></span><span></span><span></span></div>
+        </div>
+    </div> -->
     
     <div class="map_popup">
-        <img src="img/map_popup.jpg" alt="Попап 'Информация появится позже'">
+        <img data-src="img/map_popup.jpg" alt="Попап 'Информация появится позже'">
     </div>
 
     <!-- BEGIN BODY -->
@@ -68,137 +78,114 @@
                 <div class="wrapper">
                     <div class="main-block">
                         <div class="main-heading">
-                            <h1 class="h1 js-word">ИНОСТРАННЫЕ КОМПАНИИ </h1>
-                            <div class="heading-subtitle js-word">ДЛЯ IT-БИЗНЕСА, МЕЖДУНАРОДНОЙ ТОРГОВЛИ И ЗАЩИТЫ АКТИВОВ. С БАНКОВСКИМ СЧЕТОМ. В ПРАВИЛЬНЫХ СТРАНАХ. С НЕБОЛЬШИМИ НАЛОГАМИ</div>
+                            <h1 class="h1">ИНОСТРАННЫЕ КОМПАНИИ</h1>
+                            <div class="heading-subtitle">ДЛЯ IT-БИЗНЕСА, МЕЖДУНАРОДНОЙ ТОРГОВЛИ И ЗАЩИТЫ АКТИВОВ. С БАНКОВСКИМ СЧЕТОМ. В ПРАВИЛЬНЫХ СТРАНАХ. С НЕБОЛЬШИМИ НАЛОГАМИ</div>
                         </div>
                         <div class="main-decor anim-decor">
                             <div class="main-decor__bg">
                                 <div class="main-bg-1">
-                                    <img src="img/bg/city.svg" alt="">
+                                    <img data-src="img/bg/city.svg" alt="">
                                 </div>
                                 <div class="main-bg-2">
-                                    <img src="img/bg/city_shadow.svg" alt="">
+                                    <img data-src="img/bg/city_shadow.svg" alt="">
                                 </div>
                                 <div class="main-bg-3">
-                                    <img src="img/bg/people.svg" alt="">
+                                    <img data-src="img/bg/people.svg" alt="">
                                 </div>
                                 <div class="main-bg-4">
-                                    <img src="img/bg/sine.svg" alt="">
-                                    <img src="img/bg/rays.svg" alt="" class="bg-rays">
+                                    <img data-src="img/bg/sine.svg" alt="">
+                                    <img data-src="img/bg/rays.svg" alt="" class="bg-rays">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="order-block order js-form-wrap" id="order">
+                <a class="site-links" href="index.html#target-audience">
+                    <div class="order-block order js-form-wrap" >
 
-                    <div class="order-nav js-form-btn">
-                        <div class="form-title js-btn-text">Рассказать детальнее?</div>
-                        <div class="form-btn"><i class="form-icon close-icon"></i></div>
-                    </div>
-                    <div class="order-form js-form" id="feedBack">
-                        <form class="forms">
-                            
-                            <input type="hidden" name="project_name" value="Yutland">
-                            <input type="hidden" name="admin_email" value="yeahh@yutland.com">
-                            <input type="hidden" name="form_subject" value="Наш ответ Керзону">
+                        <div class="order-nav js-form-btn">
+                            <div class="form-title js-btn-text">Рассказать детальнее?</div>
+                        </div>
 
-                            <div class="box-field">
-                                <div class="box-field__input">
-                                    <input type="text" class="form-control" name="Ваше имя?" autocomplete="off" required>
-                                    <label class="label-placeholder">Ваше имя?</label>
-                                </div>
-                            </div>
-                            <div class="box-field">
-                                <div class="box-field__input">
-                                    <input type="email" class="form-control" name="Ваш e-mail?" autocomplete="off" required>
-                                    <label class="label-placeholder">Ваш e-mail?</label>
-                                </div>
-                            </div>
-                            <div class="box-field">
-                                <div class="box-field__input">
-                                    <input type="tel" class="form-control" name="Что интересует?" autocomplete="off">
-                                    <label class="label-placeholder">Что интересует?</label>
-                                </div>
-                            </div>
-              
-                            <div class="box-field__button">
-                                <button class="btn-order">отправить</button>
-                             
-                            </div>
-                        </form>
                     </div>
-                </div>
+                </a>
+
 
             </div>
 
-            <div class="section how-work-section" data-anchor="how-work">
+            <div class="section how-work-section" data-anchor="target-audience">
                 
                 <div class="wrapper">
                     
                     <div class="box-gifs">
-                        <p class="h2 js-word">НАША ЦЕЛЕВАЯ АУДИТОРИЯ</p>
-                        <div class="gifs gifs-desktop anim-decor">
+                        
+                        <p class="h2">НАША ЦЕЛЕВАЯ АУДИТОРИЯ</p>
+
+                        <div class="gifs gifs-desktop">
 
                             <div class="gif__item">
-                                <a href="articles/it-articles7.html" class="transition"><video autobuffer autoloop loop poster="img/poster1.jpg" src="img/video1.mp4"></video></a>
+                                <a href="articles/it-articles7.html" class="transition"><video preload="none" loop poster="img/poster1.jpg" data-src="img/video1.mp4"></video></a>
                             </div>
 
                             <div class="gif__item">
-                                <a href="articles/it-articles7.html" class="transition"><video autobuffer autoloop loop poster="img/poster2.jpg" src="img/video2.mp4"></video></a>
+                                <a href="articles/it-articles7.html" class="transition"><video preload="none" loop poster="img/poster2.jpg" data-src="img/video2.mp4"></video></a>
                             </div>
 
                             <div class="gif__item">
-                                <a href="articles/it-articles7.html" class="transition"><video autobuffer autoloop loop poster="img/poster3.jpg" src="img/video3.mp4"></video></a>
+                                <a href="articles/it-articles7.html" class="transition"><video preload="none" loop poster="img/poster3.jpg" data-src="img/video3.mp4"></video></a>
                             </div>
 
                             <div class="gif__item">
-                                <a href="index.html#map" class="bank_active"><video autobuffer autoloop loop poster="img/poster5.jpg" src="img/video5.mp4"></video></a>
+                                <a href="index.html#map" class="bank_active"><video preload="none" loop poster="img/poster4.jpg" data-src="img/video5.mp4"></video></a>
+                                
                             </div>
 
                             <div class="gif__item">
-                                <a href="index.html#map" class="trade_active"><video autobuffer autoloop loop poster="img/poster4.jpg" src="img/video4.mp4"></video></a>
+                                <a href="index.html#map" class="trade_active"><video preload="none" loop poster="img/poster5.jpg" data-src="img/video4.mp4"></video></a>
+                                
                             </div>
 
                             <div class="gif__item">
-                                <a href="index.html#blog" class="deo_active"><video autobuffer autoloop loop poster="img/poster6.jpg" src="img/video6.mp4"></video></a>
+                                <a href="index.html#blog" class="deo_active"><video preload="none" loop poster="img/poster6.jpg" data-src="img/video6.mp4"></video></a>
+                                
                             </div>
 
                             <div class="gif__item">
-                                <a href="articles/it-articles9.html" class="transition"><video autobuffer autoloop loop poster="img/poster7.jpg" src="img/video7.mp4"></video></a>
+                                <a href="articles/it-articles9.html" class="transition"><video preload="none" loop poster="img/poster7.jpg" data-src="img/video7.mp4"></video></a>
+                                
                             </div>
 
                         </div>
 
-                        <div class="gifs gifs-mobile anim-decor">
+                        <div class="gifs gifs-mobile">
 
                             <div class="gif__item">
-                                <video poster="img/poster1.jpg" muted src="img/video1.mp4" id="gif_video1"></video>
+                                <video preload="none" poster="img/poster1.jpg"  muted data-src="img/video1.mp4" id="gif_video1"></video>
                             </div>
 
                             <div class="gif__item">
-                                <video poster="img/poster2.jpg" muted src="img/video2.mp4" id="gif_video2"></video>
+                                <video preload="none" poster="img/poster2.jpg" muted data-src="img/video2.mp4" id="gif_video2"></video>
                             </div>
 
                             <div class="gif__item">
-                                <video poster="img/poster3.jpg" muted src="img/video3.mp4" id="gif_video3"></video>
+                                <video preload="none" poster="img/poster3.jpg" muted data-src="img/video3.mp4" id="gif_video3"></video>
                             </div>
 
                             <div class="gif__item">
-                                <video poster="img/poster4.jpg" muted src="img/video4.mp4" id="gif_video4"></video>
+                                <video preload="none" poster="img/poster4.jpg" muted data-src="img/video5.mp4" id="gif_video4"></video>
                             </div>
 
                             <div class="gif__item">
-                                <video poster="img/poster5.jpg" muted src="img/video5.mp4" id="gif_video5"></video>
+                                <video preload="none" poster="img/poster5.jpg" muted data-src="img/video4.mp4" id="gif_video5"></video>
                             </div>
 
                             <div class="gif__item">
-                                <video poster="img/poster6.jpg" muted src="img/video6.mp4" id="gif_video6"></video>
+                                <video preload="none" poster="img/poster6.jpg"  muted data-src="img/video6.mp4" id="gif_video6"></video>
                             </div>
 
                             <div class="gif__item">
-                                <video poster="img/poster7.jpg" muted src="img/video7.mp4" id="gif_video7"></video>
+                                <video preload="none" poster="img/poster7.jpg"  muted data-src="img/video7.mp4" id="gif_video7"></video>
                             </div>
 
                         </div>
@@ -219,56 +206,15 @@
 
                 </div>
 
-                <div class="order-block order js-form-wrap" id="order">
-                    <div class="order-nav js-form-btn">
-                        <div class="form-title js-btn-text">Рассказать детальнее?</div>
-                        <div class="form-btn"><i class="form-icon close-icon"></i></div>
-                    </div>
-                    <div class="order-form js-form" id="feedBack">
-                        <form class="forms">
-                            
-                            <input type="hidden" name="project_name" value="Yutland">
-                            <input type="hidden" name="admin_email" value="yeahh@yutland.com">
-                            <input type="hidden" name="form_subject" value="Наш ответ Керзону">
-
-                            <div class="box-field">
-                                <div class="box-field__input">
-                                    <input type="text" class="form-control" name="Ваше имя?" autocomplete="off" require>
-                                    <label class="label-placeholder">Ваше имя?</label>
-                                </div>
-                            </div>
-                            <div class="box-field">
-                                <div class="box-field__input">
-                                    <input type="email" class="form-control" name="Ваш e-mail?" autocomplete="off" require>
-                                    <label class="label-placeholder">Ваш e-mail?</label>
-                                </div>
-                            </div>
-                            <div class="box-field">
-                                <div class="box-field__input">
-                                    <input type="tel" class="form-control" name="Что интересует?" autocomplete="off">
-                                    <label class="label-placeholder">Что интересует?</label>
-                                </div>
-                            </div>
-              
-                            <div class="box-field__button">
-                                <button class="btn-order">отправить</button>
-                             
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
             </div>
-
-           <!--  Проблема в блоке с анимацией -->
          
             <div class="section section-map" data-anchor="map">
 
                 <div class="wrapper wrapper-map">
 
                     <div class="map-top">
-                        <h2 class="h2 js-word">МЫ СОЗДАЕМ КОМПАНИИ В СТРАНАХ</h2>
-                        <div class="subtitle js-word">С НЕБОЛЬШИМИ НАЛОГАМИ. ОТЛИЧНОЙ РЕПУТАЦИЕЙ. ЛОЯЛЬНЫМИ БАНКАМИ. НАДОЛГО</div>
+                        <h2 class="h2">МЫ СОЗДАЕМ КОМПАНИИ В СТРАНАХ</h2>
+                        <div class="subtitle">С НЕБОЛЬШИМИ НАЛОГАМИ. ОТЛИЧНОЙ РЕПУТАЦИЕЙ. ЛОЯЛЬНЫМИ БАНКАМИ. НАДОЛГО</div>
                         <div class="filters filters_map">
 
                             <div class="filters__item">
@@ -422,44 +368,15 @@
 
                 </div>
 
-                <div class="order-block order js-form-wrap" id="order">
-                    <div class="order-nav js-form-btn">
-                        <div class="form-title js-btn-text">Заказать консультацию</div>
-                        <div class="form-btn"><i class="form-icon close-icon"></i></div>
-                    </div>
-                    <div class="order-form js-form" id="feedBack">
-                        <form class="forms">
-                            
-                            <input type="hidden" name="project_name" value="Yutland">
-                            <input type="hidden" name="admin_email" value="yeahh@yutland.com">
-                            <input type="hidden" name="form_subject" value="Заказать консультации">
+                <a class="site-links" href="index.html#contacts">
+                    <div class="order-block order js-form-wrap" >
 
-                            <div class="box-field">
-                                <div class="box-field__input">
-                                    <input type="text" class="form-control" name="Ваше имя?" autocomplete="off" required> 
-                                    <label class="label-placeholder">Ваше имя?</label>
-                                </div>
-                            </div>
-                            <div class="box-field">
-                                <div class="box-field__input">
-                                    <input type="email" class="form-control" name="Ваш e-mail?" autocomplete="off" required>
-                                    <label class="label-placeholder">Ваш e-mail?</label>
-                                </div>
-                            </div>
-                            <div class="box-field">
-                                <div class="box-field__input">
-                                    <input type="tel" class="form-control" name="Что интересует?" autocomplete="off">
-                                    <label class="label-placeholder">Что интересует?</label>
-                                </div>
-                            </div>
-              
-                            <div class="box-field__button">
-                                <button class="btn-order">отправить</button>
-                             
-                            </div>
-                        </form>
+                        <div class="order-nav js-form-btn">
+                            <div class="form-title js-btn-text">Помочь в выборе компании?</div>
+                        </div>
+
                     </div>
-                </div>
+                </a>
 
             </div>
             
@@ -467,7 +384,7 @@
                 <div class="wrapper wrapper-blog">
 
                     <div class="blog-top">
-                        <h2 class="h2 js-word">ИНТЕРЕСНОЕ ЧТИВО</h2>
+                        <h2 class="h2">ИНТЕРЕСНОЕ ЧТИВО</h2>
                         <div class="filters filters_map">
 
                             <div class="filters__item">
@@ -516,89 +433,103 @@
                             <li><a href="articles/it-articles14.html" class="transition">Сингапурские компании в международном налоговом планировании</a></li>
                         </ul>
 
-                        <div class="blog-list js-gallery">
+                        <div class="blog-list_new js-gallery">
 
-                            <div class="blog__item">
-                                <a href="articles/it-articles1.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-5.jpg);">
-                                    <div class="blog__title js-word">2020. БОЛГАРИЯ КАК ЮРИСДИКЦИЯ С ТОЧКИ ЗРЕНИЯ КОРПОРАТИВНОЙ СТРУКТУРЫ И НАЛОГООБЛОЖЕНИЯ</div>
+                            <div class="blog__item_new">
+                                <a href="articles/it-articles1.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-1.jpg" alt="blog slide 1.1">
+                                    <div class="blog__title">2020. БОЛГАРИЯ КАК ЮРИСДИКЦИЯ С ТОЧКИ ЗРЕНИЯ КОРПОРАТИВНОЙ СТРУКТУРЫ И НАЛОГООБЛОЖЕНИЯ</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/it-articles2.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-2.jpg);">
-                                    <div class="blog__title js-word">2020. венгрия КАК ЮРИСДИКЦИЯ С ТОЧКИ ЗРЕНИЯ КОРПОРАТИВНОЙ СТРУКТУРЫ И НАЛОГООБЛОЖЕНИЯ</div>
+                            <div class="blog__item_new">
+                                <a href="articles/it-articles2.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-2.jpg" alt="blog slide 1.2">
+                                    <div class="blog__title">2020. венгрия КАК ЮРИСДИКЦИЯ С ТОЧКИ ЗРЕНИЯ КОРПОРАТИВНОЙ СТРУКТУРЫ И НАЛОГООБЛОЖЕНИЯ</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/it-articles3.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-3.jpg);">
-                                    <div class="blog__title js-word">2020. гонконг КАК ЮРИСДИКЦИЯ С ТОЧКИ ЗРЕНИЯ КОРПОРАТИВНОЙ СТРУКТУРЫ И НАЛОГООБЛОЖЕНИЯ</div>
+                            <div class="blog__item_new">
+                                <a href="articles/it-articles3.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-3.jpg" alt="blog slide 1.3">
+                                    <div class="blog__title">2020. гонконг КАК ЮРИСДИКЦИЯ С ТОЧКИ ЗРЕНИЯ КОРПОРАТИВНОЙ СТРУКТУРЫ И НАЛОГООБЛОЖЕНИЯ</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/it-articles4.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-4.jpg);">
-                                    <div class="blog__title js-word title_one-string">2020. Офшоры?! Забудьте!</div>
+                            <div class="blog__item_new">
+                                <a href="articles/it-articles4.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-4.jpg" alt="blog slide 1.4">
+                                    <div class="blog__title">2020. Офшоры?! Забудьте!</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/it-articles5.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-5.jpg);">
-                                    <div class="blog__title js-word title_one-string">2020. сингапур КАК ЮРИСДИКЦИЯ С ТОЧКИ ЗРЕНИЯ КОРПОРАТИВНОЙ СТРУКТУРЫ И НАЛОГООБЛОЖЕНИЯ</div>
+                            <div class="blog__item_new">
+                                <a href="articles/it-articles5.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-5.jpg" alt="blog slide 1.5">
+                                    <div class="blog__title">2020. сингапур КАК ЮРИСДИКЦИЯ С ТОЧКИ ЗРЕНИЯ КОРПОРАТИВНОЙ СТРУКТУРЫ И НАЛОГООБЛОЖЕНИЯ</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/it-articles6.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-6.jpg);">
-                                    <div class="blog__title js-word title_one-string">2020. сша КАК ЮРИСДИКЦИЯ С ТОЧКИ ЗРЕНИЯ КОРПОРАТИВНОЙ СТРУКТУРЫ И НАЛОГООБЛОЖЕНИЯ</div>
+                            <div class="blog__item_new">
+                                <a href="articles/it-articles6.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-6.jpg" alt="blog slide 1.6">
+                                    <div class="blog__title">2020. сша КАК ЮРИСДИКЦИЯ С ТОЧКИ ЗРЕНИЯ КОРПОРАТИВНОЙ СТРУКТУРЫ И НАЛОГООБЛОЖЕНИЯ</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/it-articles7.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-7.jpg);">
-                                    <div class="blog__title js-word title_one-string">2020. Иностранная компания для IT-бизнеса. Чем она интересна и где выгодно ее создать?</div>
+                            <div class="blog__item_new">
+                                <a href="articles/it-articles7.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-7.jpg" alt="blog slide 1.7">
+                                    <div class="blog__title">2020. Иностранная компания для IT-бизнеса. Чем она интересна и где выгодно ее создать?</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/it-articles8.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-8.jpg);">
-                                    <div class="blog__title js-word title_one-string">2020. Что делать после того, как офшоры и партнерства вымерли?</div>
+                            <div class="blog__item_new">
+                                <a href="articles/it-articles8.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-8.jpg" alt="blog slide 1.8">
+                                    <div class="blog__title">2020. Что делать после того, как офшоры и партнерства вымерли?</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/it-articles9.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-9.jpg);">
-                                    <div class="blog__title js-word title_one-string">Американские компании в международном налоговом планировании</div>
+                            <div class="blog__item_new">
+                                <a href="articles/it-articles9.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-9.jpg" alt="blog slide 1.9">
+                                    <div class="blog__title">Американские компании в международном налоговом планировании</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/it-articles10.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-10.jpg);">
-                                    <div class="blog__title js-word title_one-string">Болгарские компании в международном налоговом планировании</div>
+                            <div class="blog__item_new">
+                                <a href="articles/it-articles10.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-10.jpg" alt="blog slide 1.10">
+                                    <div class="blog__title">Болгарские компании в международном налоговом планировании</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/it-articles11.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-11.jpg);">
-                                    <div class="blog__title js-word title_one-string">Венгерские компании в международном налоговом планировании</div>
+                            <div class="blog__item_new">
+                                <a href="articles/it-articles11.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-11.jpg" alt="blog slide 1.11">
+                                    <div class="blog__title">Венгерские компании в международном налоговом планировании</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/it-articles12.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-12.jpg);">
-                                    <div class="blog__title js-word title_one-string">гонконские компании в международном налоговом планировании</div>
+                            <div class="blog__item_new">
+                                <a href="articles/it-articles12.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-12.jpg" alt="blog slide 1.12">
+                                    <div class="blog__title">гонконские компании в международном налоговом планировании</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/it-articles13.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-8.jpg);">
-                                    <div class="blog__title js-word title_one-string">Иностранная компания для IP и интернет-проектов. Выгода и риски</div>
+                            <div class="blog__item_new">
+                                <a href="articles/it-articles13.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-13.jpg" alt="blog slide 1.13">
+                                    <div class="blog__title">Иностранная компания для IP и интернет-проектов. Выгода и риски</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/it-articles14.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-4.jpg);">
-                                    <div class="blog__title js-word title_one-string">Сингапурские компании в международном налоговом планировании</div>
+                            <div class="blog__item_new">
+                                <a href="articles/it-articles14.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-14.jpg" alt="blog slide 1.14">
+                                    <div class="blog__title">Сингапурские компании в международном налоговом планировании</div>
                                 </a>
                             </div>
 
@@ -606,9 +537,7 @@
 
                     </div>
 
-                    <div class="blog js-item2" data-title="blog2">
-
-                    </div>
+                    <div class="blog js-item2" data-title="blog2"></div>
 
                     <div class="blog js-item2" data-title="blog3">
 
@@ -617,19 +546,22 @@
                             <li><a href="articles/bank-article2.html" class="transition">2020. Банковское болото для иностранных компаний</a></li>
                         </ul>
 
-                        <div class="blog-list js-gallery">
-                            
-                            <div class="blog__item">
-                                <a href="articles/bank-article1.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-8.jpg);">
-                                    <div class="blog__title js-word title_one-string">21 лучшая альтернатива PayPal: обзор платежных систем</div>
+                        <div class="blog-list_new js-gallery">
+
+                            <div class="blog__item_new">
+                                <a href="articles/bank-article1.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-3_1.jpg" alt="blog slide 3.1">
+                                    <div class="blog__title">21 лучшая альтернатива PayPal: обзор платежных систем</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/bank-article2.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-12.jpg);">
-                                    <div class="blog__title js-word title_one-string">2020. Банковское болото для иностранных компаний</div>
+                            <div class="blog__item_new">
+                                <a href="articles/bank-article2.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-3_2.jpg" alt="blog slide 3.2">
+                                    <div class="blog__title">2020. Банковское болото для иностранных компаний</div>
                                 </a>
                             </div>
+
                         </div>
 
                     </div>
@@ -661,47 +593,53 @@
 
                         </ul>
 
-                        <div class="blog-list js-gallery">
-                            
-                            <div class="blog__item">
-                                <a href="articles/deo-articles1.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-3.jpg);">
-                                    <div class="blog__title js-word title_one-string">КИК. Какие изменения ожидают...</div>
+                        <div class="blog-list_new js-gallery">
+
+                            <div class="blog__item_new">
+                                <a href="articles/deo-articles1.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-4_1.jpg" alt="blog slide 4.1">
+                                    <div class="blog__title">КИК. Какие изменения ожидают...</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/deo-articles2.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-6.jpg);">
-                                    <div class="blog__title js-word title_one-string">Что такое MLI-конвенция и как ее введение влияет на украинский бизнес?</div>
+                            <div class="blog__item_new">
+                                <a href="articles/deo-articles2.html" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-4_2.jpg" alt="blog slide 4.2">
+                                    <div class="blog__title">Что такое MLI-конвенция и как ее введение влияет на украинский бизнес?</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/deo-articles2.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-2.jpg);">
-                                    <div class="blog__title js-word title_one-string">Принятия правил КИК: чего ожидать от нового закона?</div>
+                            <div class="blog__item_new">
+                                <a href="articles/articles_docs/Деофшоризация/Презентация КИК.pdf" class="blog__elem anim-decor transition" target="_blank">
+                                    <img data-lazy="img/slides/slide-4_1_powerpoint.jpg" alt="blog slide 4.3">
+                                    <div class="blog__title">Принятия правил КИК: чего ожидать от нового закона? (презентация)</div>
                                 </a>
                             </div>
 
-                            <div class="blog__item">
-                                <a href="articles/deo-articles2.html" class="blog__elem anim-decor transition" style="background-image: url(img/slides/slide-8.jpg);">
-                                    <div class="blog__title js-word title_one-string">Что такое MLI-конвенция и как ее введение влияет на украинский бизнес?</div>
+                            <div class="blog__item_new">
+                                <a href="articles/articles_docs/Деофшоризация/Презентация MLI.pdf" target="_blank" class="blog__elem anim-decor transition">
+                                    <img data-lazy="img/slides/slide-4_2_powerpoint.jpg" alt="blog slide 4.4">
+                                    <div class="blog__title">Что такое MLI-конвенция и как ее введение влияет на украинский бизнес? (презентация)</div>
                                 </a>
                             </div>
+
                         </div>
 
                     </div>
 
+
                 </div>
             </div>
 
-            <div class="section why-section" data-anchor="why">
+            <div class="section why-setion" data-anchor="why">
                 <div class="wrapper">
 
                     <div class="why-block">
 
                         <div class="why-block__heading">
-                            <h2 class="h2 heading-left js-word">ПОЧЕМУ НАС ВЫБИРАЮТ?</h2>
+                            <h2 class="h2 heading-left">ПОЧЕМУ НАС ВЫБИРАЮТ?</h2>
                             <div class="why-block__list js-list-wrap">
-                                <div class="why-block__item js-list-anim active">Мы не продаем бесполезные структуры, это дорого</div>
+                                <div class="why-block__item js-list-anim active">Мы не продаем бесполезые структуры, это дорого</div>
                                 <div class="why-block__item js-list-anim">Мы не врем уже 9 лет. Раньше врали, но теперь нет. Ведь мы развиваемся</div>
                             
                                 <div class="why-block__item js-list-anim">Мы не продаем классические оффшоры, это бесполезно (кроме случаев защиты активов)</div>
@@ -715,7 +653,7 @@
                         <div class="why-block__decor">
                             <div class="why-block__bg anim-decor">
                                 <div class="why-block__decor_1">
-                                    <img src="img/bg/05.svg" alt="">
+                                    <img data-src="img/bg/05.svg" alt="">
                                 </div>
                                 <div class="why-block__decor_2">
                                     <svg class="bg_why" viewBox="0 0 344 528.5" style="enable-background:new 0 0 344 528.5;">
@@ -851,543 +789,386 @@
                     </div>
                 </div>
 
-                <div class="order-block order js-form-wrap" id="order">
-                    <div class="order-nav js-form-btn">
-                        <div class="form-title js-btn-text">Согласитесь, мы отличаемся</div>
-                        <div class="form-btn"><i class="form-icon close-icon"></i></div>
-                    </div>
-                    <div class="order-form js-form" id="feedBack">
-                        <form class="forms">
-                            
-                            <input type="hidden" name="project_name" value="Yutland">
-                            <input type="hidden" name="admin_email" value="yeahh@yutland.com">
-                            <input type="hidden" name="form_subject" value="Согласитесь, мы отличаемся">
+            </div>
 
-                            <p style="text-align: center; font-size: 30px; font-weight: bold">Да, Вы такие!</p>
+            <div class="section guide-section" data-anchor="partnership">
+                
+                <div class="wrapper">
 
-                            <div class="box-field">
-                                <div class="box-field__input">
-                                    <input type="hidden" class="form-control" name="Согласитесь, мы отличаемся" value="ДА" autocomplete="off">
+                    <h2 class="h2">ГАЙД ПО НАЧАЛУ СОТРУДНИЧЕСТВА</h2>
+
+                    <div class="tabs">
+
+                        <ul class="tabs__caption">
+
+                            <li class="active">
+
+                                <div class="img-wrap">
+                                    <img data-src="img/tab1.svg" alt="Tab1 img">
                                 </div>
-                            </div>
 
-                            <div class="box-field__button">
+                                <div class="caption-content">
+                                    <p class="tab-title">Описание регистрационного процесса</p>
+                                    <p class="tab-description">Вы можете прочитать на нашем сайте или скачать документ с <br> описанием регистрационного процесса в разных странах</p>
+                                    <a class="btn active">Перейти</a>
+                                    <a class="btn">Перейти</a>
+                                </div>
+                            </li>
 
-                                <button class="btn-order" style="margin: 0 auto;">отправить</button>
+                            <li>
 
-                            </div>
+                                <div class="img-wrap">
+                                    <img data-src="img/tab2.svg" alt="Tab2 img">
+                                </div>
 
-                        </form>
+                                <div class="caption-content">
+                                    <p class="tab-title">Анкеты для регистрации компании/открытия счета</p>
+                                    <p class="tab-description">Вы можете заполнить анкеты на нашем сайте или скачать и после <br> заполнения отправить их нам на почту</p>
+                                    <a class="btn active">Перейти</a>
+                                    <a class="btn">Перейти</a>
+                                </div>
+                            </li>
+
+                            <li>
+
+                                <div class="img-wrap">
+                                    <img data-src="img/tab3.svg" alt="Tab3 img">
+                                </div>
+
+                                <div class="caption-content">
+                                    <p class="tab-title">FAQ ПО РЕГИСТРАЦИИ КОМПАНИИ</p>
+                                    <p class="tab-description">Вы можете прочитать на нашем сайте или скачать документ с <br> ответами на основные вопросы по регистрации компаний</p>
+                                    <a class="btn active">Перейти</a>
+                                    <a class="btn">Перейти</a>
+                                </div>
+                            </li>
+
+                            <li>
+
+                                <div class="img-wrap">
+                                    <img data-src="img/tab4.svg" alt="Tab4 img">
+                                </div>
+
+                                <div class="caption-content">
+                                    <p class="tab-title">Анкеты упц и налоговой службы</p>
+                                    <p class="tab-description">Вы так же можете заполнить анкеты украинской православной церкви <br> и налоговой службы, если вам это необходимо</p>
+                                    <a class="btn active">Перейти</a>
+                                    <a class="btn">Перейти</a>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                        <div class="tabs__content active">
+                            <ul>
+                                <li>
+                                    <p>Описание регистрационного процесса в Сингапуре</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/process/Y_SNG_inc process2020.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/Process-Singapore.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Описание регистрационного процесса в Венгрии</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/process/Y_HU_inc process2020.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/Process-Hungury.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Описание регистрационного процесса в Болгарии</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/process/Y_BG_inc process2020.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/Process-Bulgaria.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Описание регистрационного процесса в Гонконге</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/process/Y_HK_inc process2020.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/Process-Hongkong.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Описание регистрационного процесса в США</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/process/Y_US_inc process2020.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/Process-USA.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </div>
+
+                        <div class="tabs__content">
+                            <ul>
+                                <li>
+                                    <p>DD-форма</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/Анкеты/Y_DDform_2020.pptx" class="btn download" download>Скачать</a>
+                                        <a href="forms/guid-form2.html" class="btn transition">Заполнить</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Анкета для регистрации компании</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/Анкеты/Y_Appendix2_2020.pptx" class="btn download" download>Скачать</a>
+                                        <a href="forms/guid-form1.html" class="btn transition">Заполнить</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Анкета для открытия банковского счета</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/Анкеты/Y_Bank Questionnaire.docx" class="btn download" download>Скачать</a>
+                                        <a href="forms/guid-form3.html" class="btn transition">Заполнить</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Анкета для открытия счета в платежной системе</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/Анкеты/Y_Payment Systems Questionnaire.docx" class="btn download" download>Скачать</a>
+                                        <a href="forms/guid-form4.html" class="btn transition">Заполнить</a>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </div>
+
+                        <div class="tabs__content">
+                            <ul>
+                                <li>
+                                    <p>FAQ по регистрации компаний в Сингапуре</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/FAQ/Y_FAQ по регистрации сингапурской компании PTE LTD.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/FAQ-Singapore.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>FAQ по регистрации компаний в Венгрии</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/FAQ/Y_FAQ по регистрации венгерской компании KFT.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/FAQ-Hungury.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>FAQ по регистрации компаний в Болгарии</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/FAQ/Y_FAQ по регистрации болгарской компании ООД_ЕООД.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/FAQ-Bulgaria.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>FAQ по регистрации компаний в Гонконге</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/FAQ/Y_FAQ по регистрации гонконгской компании LTD.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/FAQ-Hongkong.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>FAQ по регистрации компаний в США</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/FAQ/Y_FAQ по регистрации американской компании LLC_C-Corp.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/FAQ-USA.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </div>
+
+                        <div class="tabs__content">
+                            <ul>
+
+                                <li>
+                                    <p>Анкета налоговой службы (мало ли)</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/Анкеты/Y Анкета ГНС.docx" class="btn download">Скачать</a>
+                                        <a href="forms/guid-form5.html" class="btn transition">Заполнить</a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <p>Анкета украинской православной <br> церкви (IN GOD WE TRUST)</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/Анкеты/Y Анкета УПЦ.docx" class="btn download">Скачать</a>
+                                        <a href="forms/guid-form6.html" class="btn transition">Заполнить</a>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </div>
+
                     </div>
+
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a>Описание регистрационного процесса</a>
+                        </div>
+
+                        <div class="panel-collapse">
+                            <ul>
+                                <li>
+                                    <p>Описание регистрационного процесса в Сингапуре</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/process/Y_SNG_inc process2020.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/Process-Singapore.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Описание регистрационного процесса в Венгрии</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/process/Y_HU_inc process2020.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/Process-Hungury.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Описание регистрационного процесса в Болгарии</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/process/Y_BG_inc process2020.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/Process-Bulgaria.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Описание регистрационного процесса в Гонконге</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/process/Y_HK_inc process2020.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/Process-Hongkong.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Описание регистрационного процесса в США</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/process/Y_US_inc process2020.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/Process-USA.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a>FAQ по регистрации компании</a>
+                        </div>
+
+                        <div class="panel-collapse">
+                            <ul>
+                                <li>
+                                    <p>FAQ по регистрации компаний в Сингапуре</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/FAQ/Y_FAQ по регистрации сингапурской компании PTE LTD.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/FAQ-Singapore.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>FAQ по регистрации компаний в Венгрии</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/FAQ/Y_FAQ по регистрации венгерской компании KFT.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/FAQ-Hungury.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>FAQ по регистрации компаний в Болгарии</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/FAQ/Y_FAQ по регистрации болгарской компании ООД_ЕООД.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/FAQ-Bulgaria.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>FAQ по регистрации компаний в Гонконге</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/FAQ/Y_FAQ по регистрации гонконгской компании LTD.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/FAQ-Hongkong.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>FAQ по регистрации компаний в США</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/FAQ/Y_FAQ по регистрации американской компании LLC_C-Corp.pdf" class="btn download">Скачать</a>
+                                        <a href="forms/FAQ-USA.html" class="btn transition">Прочитать</a>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a>Анкеты для регистрации компании/открытия счета</a>
+                        </div>
+
+                        <div class="panel-collapse">
+                            <ul>
+                                <li>
+                                    <p>DD-форма</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/Анкеты/Y_DDform_2020.pptx" class="btn download" download>Скачать</a>
+                                        <a href="forms/guid-form2.html" class="btn transition">Заполнить</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Анкета для регистрации компании</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/Анкеты/Y_Appendix2_2020.pptx" class="btn download" download>Скачать</a>
+                                        <a href="forms/guid-form1.html" class="btn transition">Заполнить</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Анкета для открытия банковского счета</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/Анкеты/Y_Bank Questionnaire.docx" class="btn download" download>Скачать</a>
+                                        <a href="forms/guid-form3.html" class="btn transition">Заполнить</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Анкета для открытия счета в платежной системе</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/Анкеты/Y_Payment Systems Questionnaire.docx" class="btn download" download>Скачать</a>
+                                        <a href="forms/guid-form4.html" class="btn transition">Заполнить</a>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a>Анкеты упц и налоговой службы</a>
+                        </div>
+
+                        <div class="panel-collapse">
+                            <ul>
+
+                                <li>
+                                    <p>Анкета налоговой службы (мало ли)</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/Анкеты/Y Анкета ГНС.docx" class="btn download">Скачать</a>
+                                        <a href="forms/guid-form5.html" class="btn transition">Заполнить</a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <p>Анкета украинской православной <br> церкви (IN GOD WE TRUST)</p>
+                                    <div class="button-wrap">
+                                        <a href="forms/Анкеты/Y Анкета УПЦ.docx" class="btn download">Скачать</a>
+                                        <a href="forms/guid-form6.html" class="btn transition">Заполнить</a>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
 
-
-            <!-- <div class="section partnership-section guide-section" data-anchor="partnership">
-                <div class="wrapper">
-                    <div class="partnership-wrap">
-                        <h2 class="h2 heading-left js-word">ГАЙД ПО НАЧАЛУ СОТРУДНИЧЕСТВА</h2>
-
-                        <div class="guide-wrap">
-
-                            <div class="box-guide">
-                                <img src="img/guide1.png" alt="Гайд изображение">
-
-                                <p>DD-форма
-                                    <span>
-                                        <a href="forms/Анкеты/Y_DDform_2020.pptx" download>Скачать </a>/<a href="forms/guid-form2.html" class="transition"> Заполнить</a>
-                                    </span>
-                                </p>
-
-                                <p>Анкета для регистрации компании
-                                    <span>
-                                        <a href="forms/Анкеты/Y_Appendix2_2020.pptx" download>Скачать </a>/<a href="forms/guid-form1.html" class="transition"> Заполнить</a>
-                                    </span>
-                                </p>
-
-                                <p>Анкета для открытия банковского счета 
-                                    <span>
-                                        <a href="forms/Анкеты/Y_Bank Questionnaire.docx" download>Скачать </a>/<a href="forms/guid-form3.html" class="transition"> Заполнить</a>
-                                    </span>
-                                </p>
-
-                                <p>Анкета для открытия счета в платежной системе 
-                                    <span>
-                                        <a href="forms/Анкеты/Y_Payment Systems Questionnaire.docx" download>Скачать </a>/<a href="forms/guid-form4.html" class="transition"> Заполнить</a>
-                                    </span>
-                                </p>
-                            </div>
-
-                            <div class="box-guide">
-                                <img src="img/guide2.png" alt="Гайд изображение">       
-
-                                <p>Описание регистрационного процесса в Сингапуре
-                                    <span>
-                                        <a href="forms/process/Y_SNG_inc process2020.pdf" download>Скачать </a>/<a href="forms/Process-Singapore.html" class="transition"> Прочитать</a>
-                                    </span>
-                                </p>
-
-                                <p>Описание регистрационного процесса в Венгрии
-                                    <span>
-                                        <a href="forms/process/Y_HU_inc process2020.pdf" download>Скачать </a>/<a href="forms/Process-Hungury.html" class="transition"> Прочитать</a>
-                                    </span>
-                                </p>
-
-                                <p>Описание регистрационного процесса в Болгарии
-                                    <span>
-                                        <a href="forms/process/Y_BG_inc process2020.pdf" download>Скачать </a>/<a href="forms/Process-Bulgaria.html" class="transition"> Прочитать</a>
-                                    </span>
-                                </p>
-
-                                <p>Описание регистрационного процесса в Гонконг
-                                    <span>
-                                        <a href="forms/process/Y_HK_inc process2020.pdf" download>Скачать </a>/<a href="forms/Process-Hongkong.html" class="transition"> Прочитать</a>
-                                    </span>
-                                </p>
-
-                                <p>Описание регистрационного процесса в США
-                                    <span>
-                                        <a href="forms/process/Y_US_inc process2020.pdf" download>Скачать </a>/<a href="forms/Process-USA.html" class="transition"> Прочитать</a>
-                                    </span>
-                                </p>
-                            </div>
-
-                            <div class="box-guide">
-                                <img src="img/guide3.png" alt="Гайд изображение">       
-
-                                <p>FAQ по регистрации компаний в Сингапуре
-                                    <span>
-                                        <a href="forms/FAQ/Y_FAQ по регистрации сингапурской компании PTE LTD.pdf" download>Скачать </a>/<a href="forms/FAQ-Singapore.html" class="transition"> Прочитать</a>
-                                    </span>
-                                </p>
-
-                                <p>FAQ по регистрации компаний в Венгрии
-                                    <span>
-                                        <a href="forms/FAQ/Y_FAQ по регистрации венгерской компании KFT.pdf" download>Скачать </a>/<a href="forms/FAQ-Hungury.html" class="transition"> Прочитать</a>
-                                    </span>
-                                </p>
-
-                                <p>FAQ по регистрации компаний в Болгарии
-                                    <span>
-                                        <a href="forms/FAQ/Y_FAQ по регистрации болгарской компании ООД_ЕООД.pdf" download>Скачать </a>/<a href="forms/FAQ-Bulgaria.html" class="transition"> Прочитать</a>
-                                    </span>
-                                </p>
-
-                                <p>FAQ по регистрации компаний в Гонконге
-                                    <span>
-                                        <a href="forms/FAQ/Y_FAQ по регистрации гонконгской компании LTD.pdf" download>Скачать </a>/<a href="forms/FAQ-Hongkong.html" class="transition"> Прочитать</a>
-                                    </span>
-                                </p>
-
-                                <p>FAQ по регистрации компаний в США
-                                    <span>
-                                        <a href="forms/FAQ/Y_FAQ по регистрации американской компании LLC_C-Corp.pdf" download>Скачать </a>/<a href="forms/FAQ-USA.html" class="transition"> Прочитать</a>
-                                    </span>
-                                </p>
-
-                            </div>
-
-                            <div class="box-guide">
-                                <img src="img/guide4.png" alt="Гайд изображение">       
-
-                                <p>Анкета налоговой службы (мало ли)
-                                    <span>
-                                        <a href="forms/Анкеты/Y Анкета ГНС.docx" download>Скачать</a>/<a href="forms/guid-form5.html" class="transition"> Заполнить</a>
-                                    </span>
-                                </p>
-
-                            </div>
-
-                            <div class="box-guide">
-                                <img src="img/guide5.png" alt="Гайд изображение">       
-
-                                <p>Анкета украинской православной <br> церкви (In God We Trust)
-                                    <span>
-                                        <a href="forms/Анкеты/Y Анкета УПЦ.docx" download>Скачать </a>/<a href="forms/guid-form6.html" class="transition"> Заполнить</a>
-                                    </span>
-                                </p>
-                            </div>
-
-                        </div>
-                        
-                        
-
-                    </div>
-                </div>
-
-                <div class="order-block order js-form-wrap" id="order">
-                    <div class="order-nav js-form-btn">
-                        <div class="form-title js-btn-text">ХОТИТЕ В ЧЕМ-ТО ПРИЗНАТЬСЯ?</div>
-                        <div class="form-btn"><i class="form-icon close-icon"></i></div>
-                    </div>
-                    <div class="order-form js-form" id="feedBack">
-                        <form class="forms">
-                            
-                            <input type="hidden" name="project_name" value="Yutland">
-                            <input type="hidden" name="admin_email" value="yeahh@yutland.com">
-                            <input type="hidden" name="form_subject" value="ХОТИТЕ В ЧЕМ-ТО ПРИЗНАТЬСЯ?">
-
-
-                            <p style="text-align: center; font-size: 30px; font-weight: bold">Да!</p>
-
-                            <div class="box-field">
-                                <div class="box-field__input">
-                                    <input type="hidden" value="Да" class="form-control" autocomplete="off">
-                                </div>
-                            </div>
-              
-                            <div class="box-field__button">
-                                <button class="btn-order" style="margin: 0 auto;">отправить</button>
-                             
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="how-work-decor anim-decor" style="background-image: url(img/bg/07.svg);">
-                    <svg width="851" height="186" viewBox="0 0 851 186" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="car2" class="car-2">
-                            <path opacity="0.1"
-                                  d="M457.525 166.244C457.525 166.995 476.96 167.639 501.012 167.639C524.956 167.639 544.499 166.995 544.499 166.244C544.499 165.493 525.064 164.849 501.012 164.849C476.96 164.849 457.525 165.493 457.525 166.244Z"
-                                  fill="#1D1D1B"/>
-                            <path d="M517.87 151.217L526.352 151.539L527.319 149.5L519.266 149.822C518.514 149.822 517.87 150.466 517.87 151.217Z"
-                                  fill="#C44645"/>
-                            <path d="M458.599 150.895L458.706 151.647V151.969L459.028 155.189V155.511L459.243 157.228V157.335L459.458 159.053C459.565 160.555 460.639 161.843 462.142 162.38L466.115 163.668L466.544 163.775H543.532L544.499 160.663C543.318 155.94 537.412 152.183 529.574 151.217C528.178 151.003 526.674 150.895 525.171 150.895L515.937 150.466L508.85 146.173C506.058 144.455 502.837 143.597 499.616 143.597H491.455C488.878 143.597 486.301 144.133 483.939 145.099L476.745 148.105L460.102 149.285C459.136 149.178 458.491 150.037 458.599 150.895Z"
-                                  fill="#F9B659"/>
-                            <path d="M534.728 152.935C538.7 154.223 541.707 156.369 543.103 158.945C541.17 158.838 539.237 158.301 537.197 157.55C536.016 156.691 534.405 154.652 534.728 152.935Z"
-                                  fill="#FDFDFD"/>
-                            <path d="M491.026 144.348C491.133 144.348 494.462 144.348 492.959 144.348H499.509C502.622 144.348 505.629 145.207 508.313 146.817L515.4 151.11L515.185 160.877C515.185 161.951 514.326 162.809 513.253 162.809H491.026C486.946 162.809 483.51 159.804 482.973 155.725L482.329 149.071C482.329 149.071 486.194 144.348 491.026 144.348Z"
-                                  fill="#FDFDFD"/>
-                            <path d="M482.865 149.071L483.51 155.403C483.939 159.16 487.16 161.951 490.919 161.951H513.145C513.897 161.951 514.541 161.414 514.541 160.555L514.756 151.217L507.991 147.139C505.414 145.529 502.515 144.777 499.509 144.777H492.959C492.529 144.777 491.885 144.777 491.026 144.777C487.053 144.777 483.617 148.319 482.865 149.071Z"
-                                  fill="#C44645"/>
-                            <path d="M513.36 150.895L507.884 147.568C505.414 146.065 502.515 145.207 499.509 145.207H492.959C492.744 145.207 492.529 145.207 492.207 145.207H491.026C487.268 145.207 484.046 148.427 483.188 149.393L513.36 150.895Z"
-                                  fill="#403430"/>
-                            <path d="M520.769 160.126V163.668H535.587V160.126C535.587 156.477 532.902 153.364 529.359 152.827C529.037 152.827 528.607 152.72 528.285 152.72C523.99 152.827 520.769 156.047 520.769 160.126Z"
-                                  fill="#403430"/>
-                            <path d="M466.974 160.126V163.668H481.792V160.126C481.792 156.477 479.107 153.364 475.564 152.827C475.242 152.827 474.812 152.72 474.49 152.72C470.195 152.827 466.974 156.047 466.974 160.126Z"
-                                  fill="#403430"/>
-                            <path d="M483.724 151.539C483.724 151.969 484.047 152.291 484.476 152.291L487.268 152.398C487.697 152.398 488.019 152.076 488.019 151.647C488.019 151.217 487.697 150.895 487.268 150.895L484.476 150.788C484.154 150.895 483.724 151.217 483.724 151.539Z"
-                                  fill="#403430"/>
-                            <path d="M540.74 160.555H544.391L543.425 163.668H538.378L538.915 161.843C539.237 161.092 539.989 160.555 540.74 160.555Z"
-                                  fill="#C44645"/>
-                            <path d="M542.673 162.487L542.888 161.736H540.848C540.526 161.736 540.311 161.951 540.204 162.165L540.096 162.487H542.673Z"
-                                  fill="white"/>
-                            <path d="M459.243 157.228L459.458 158.945C459.565 160.448 460.639 161.736 462.142 162.273L466.115 163.561L465.363 159.589C465.149 158.301 463.967 157.335 462.679 157.335H459.243V157.228Z"
-                                  fill="#C44645"/>
-                            <path d="M481.792 155.403L481.577 153.364C481.469 151.969 480.288 151.003 478.892 151.003H470.195C478.248 151.217 480.396 152.505 481.792 155.403Z"
-                                  fill="#D69943"/>
-                            <path d="M519.695 159.697C520.554 153.686 522.809 152.613 526.138 152.076H524.312C518.621 152.398 519.695 159.697 519.695 159.697Z"
-                                  fill="#D69943"/>
-                            <path d="M465.149 148.856L468.799 148.749L466.974 143.489H464.612L465.149 148.856Z"
-                                  fill="#D69943"/>
-                            <path d="M458.706 151.647V151.969L459.028 155.189V155.511H460.317C460.746 155.511 461.068 155.296 461.39 154.974C461.605 154.652 461.713 154.223 461.713 153.901L461.498 152.72C461.39 152.076 460.854 151.647 460.209 151.647H458.706Z"
-                                  fill="white"/>
-                            <path d="M469.336 142.738H460.639C460.424 142.738 460.317 143.06 460.639 143.167L465.256 144.133C466.759 144.455 469.551 144.241 469.336 142.738Z"
-                                  fill="#C44645"/>
-                            <path d="M458.706 151.969L459.028 155.189H460.317C460.961 155.189 461.498 154.545 461.283 153.901L461.068 152.827C460.961 152.291 460.531 151.969 460.102 151.969H458.706Z"
-                                  fill="#C44645"/>
-                            <path d="M513.575 151.003C513.682 151.861 512.823 151.969 512.179 152.076C512.071 152.076 511.964 152.076 511.964 152.076L512.394 148.963C512.93 149.071 513.467 150.251 513.575 151.003Z"
-                                  fill="#D69943"/>
-                            <path opacity="0.1"
-                                  d="M459.243 157.228L459.458 158.945C459.565 160.448 460.639 161.736 462.142 162.273L466.115 163.561L466.544 163.668H543.532L544.499 160.555L459.243 157.228Z"
-                                  fill="#1D1D1B"/>
-                            <path d="M522.057 160.448C522.057 160.555 522.057 160.663 522.057 160.77H521.735C521.735 160.77 521.628 160.877 521.52 160.985C521.52 161.199 521.628 161.414 521.628 161.521V161.629C521.628 161.629 521.628 161.629 521.628 161.521C521.735 161.414 521.735 161.414 521.735 161.414L522.165 161.307C522.165 161.414 522.165 161.521 522.272 161.629L522.057 161.736C522.057 161.736 522.057 161.736 521.95 161.843L521.842 161.951C521.95 162.165 521.95 162.38 522.057 162.595C522.057 162.595 522.057 162.595 522.057 162.487C522.165 162.38 522.165 162.38 522.165 162.38L522.594 162.165C522.594 162.273 522.701 162.38 522.701 162.487L522.379 162.595C522.379 162.595 522.272 162.702 522.272 162.809C522.379 163.024 522.487 163.239 522.594 163.453C522.594 163.453 522.594 163.453 522.594 163.346C522.594 163.239 522.701 163.239 522.701 163.239L523.024 163.024C523.131 163.131 523.131 163.239 523.238 163.346L523.024 163.561C523.024 163.561 522.916 163.668 522.916 163.883C523.024 164.097 523.238 164.205 523.346 164.419V164.312C523.346 164.205 523.346 164.097 523.346 164.097L523.668 163.775C523.775 163.883 523.775 163.99 523.883 163.99L523.668 164.205C523.668 164.205 523.668 164.312 523.56 164.527C523.775 164.634 523.883 164.849 524.097 164.956V164.849C524.097 164.741 524.097 164.634 524.097 164.634L524.312 164.312C524.419 164.419 524.527 164.419 524.634 164.527L524.419 164.741C524.419 164.741 524.419 164.849 524.419 165.063C524.634 165.171 524.849 165.278 525.064 165.385V165.278C525.064 165.171 525.064 165.063 525.064 165.063L525.279 164.634C525.386 164.741 525.493 164.741 525.601 164.741L525.493 165.063C525.493 165.063 525.493 165.063 525.493 165.171C525.493 165.171 525.493 165.278 525.493 165.385C525.708 165.493 525.923 165.6 526.137 165.6V165.493C526.137 165.385 526.137 165.278 526.137 165.278L526.245 164.849C526.352 164.849 526.46 164.956 526.567 164.956L526.46 165.278C526.46 165.278 526.46 165.385 526.567 165.6C526.782 165.6 526.996 165.707 527.211 165.707C527.211 165.707 527.211 165.707 527.211 165.6C527.211 165.493 527.104 165.493 527.104 165.493L527.211 165.063C527.319 165.063 527.426 165.063 527.533 165.063V165.385C527.533 165.385 527.641 165.493 527.641 165.707C527.641 165.707 527.748 165.707 527.855 165.707C528.07 165.707 528.178 165.707 528.392 165.707C528.392 165.707 528.392 165.707 528.392 165.6C528.285 165.493 528.285 165.493 528.285 165.493V165.063C528.392 165.063 528.5 165.063 528.607 165.063V165.385C528.607 165.385 528.714 165.493 528.822 165.6C529.037 165.6 529.251 165.493 529.466 165.493C529.466 165.493 529.466 165.493 529.359 165.385C529.251 165.278 529.251 165.278 529.251 165.278L529.144 164.849C529.251 164.849 529.359 164.849 529.466 164.741L529.573 165.063C529.573 165.063 529.573 165.063 529.681 165.171L529.788 165.278C530.003 165.171 530.218 165.171 530.432 165.063C530.432 165.063 530.432 165.063 530.325 165.063C530.218 164.956 530.218 164.956 530.218 164.956L530.003 164.527C530.11 164.527 530.218 164.419 530.325 164.419L530.432 164.741C530.432 164.741 530.54 164.849 530.647 164.849C530.862 164.741 531.077 164.634 531.291 164.527C531.291 164.527 531.291 164.527 531.184 164.527C531.077 164.527 531.077 164.419 531.077 164.419L530.862 164.097C530.969 163.99 531.077 163.99 531.184 163.883L531.399 164.097C531.399 164.097 531.506 164.205 531.721 164.205C531.828 164.097 531.936 163.99 532.043 163.883C532.15 163.775 532.15 163.775 532.258 163.668C532.258 163.668 532.258 163.668 532.15 163.668C532.043 163.668 531.936 163.668 531.936 163.668L531.614 163.346C531.721 163.239 531.828 163.239 531.828 163.131L532.043 163.346C532.043 163.346 532.15 163.346 532.365 163.453C532.473 163.239 532.687 163.131 532.795 162.917H532.687C532.58 162.917 532.473 162.917 532.473 162.917L532.15 162.702C532.258 162.595 532.258 162.487 532.365 162.38L532.58 162.595C532.58 162.595 532.687 162.595 532.902 162.595C533.009 162.38 533.117 162.165 533.224 161.951H533.117C533.009 161.951 532.902 161.951 532.902 161.951L532.473 161.736C532.58 161.629 532.58 161.521 532.58 161.414L532.902 161.521C532.902 161.521 532.902 161.521 533.009 161.521C533.009 161.521 533.117 161.521 533.224 161.521C533.332 161.307 533.439 161.092 533.439 160.877H533.332C533.224 160.877 533.117 160.877 533.117 160.877L532.687 160.77C532.687 160.663 532.795 160.555 532.795 160.448L533.117 160.555C533.117 160.555 533.224 160.555 533.439 160.448C533.439 160.233 533.546 160.019 533.546 159.804C533.546 159.804 533.546 159.804 533.439 159.804C533.332 159.804 533.332 159.911 533.332 159.911L532.902 159.804C532.902 159.697 532.902 159.589 532.902 159.482H533.224C533.224 159.482 533.332 159.375 533.546 159.375C533.546 159.375 533.546 159.267 533.546 159.16C533.546 158.945 533.546 158.838 533.546 158.623C533.546 158.623 533.546 158.623 533.439 158.623C533.332 158.731 533.332 158.731 533.332 158.731H532.902C532.902 158.623 532.902 158.516 532.902 158.409H533.224C533.224 158.409 533.332 158.301 533.439 158.194C533.439 157.979 533.332 157.765 533.332 157.55C533.332 157.55 533.332 157.55 533.224 157.657C533.117 157.765 533.117 157.765 533.117 157.765L532.687 157.872C532.687 157.765 532.687 157.657 532.58 157.55L532.902 157.443C532.902 157.443 532.902 157.443 533.009 157.335L533.117 157.228C533.009 157.013 533.009 156.799 532.902 156.584C532.902 156.584 532.902 156.584 532.902 156.691C532.795 156.799 532.795 156.799 532.795 156.799L533.654 158.087C533.654 157.979 533.546 157.872 533.546 157.765L533.868 157.657C533.868 157.657 533.976 157.55 533.976 157.443C533.868 157.228 533.761 157.013 533.654 156.799C533.654 156.799 533.654 156.799 533.654 156.906C533.654 157.013 533.546 157.013 533.546 157.013L533.224 157.228C533.117 157.121 533.117 157.013 533.009 156.906L533.224 156.691C533.224 156.691 533.332 156.584 533.332 156.369C533.224 156.155 533.009 156.047 532.902 155.833C532.902 155.94 532.902 156.047 532.902 156.047L532.58 156.369C532.473 156.262 532.473 156.155 532.365 156.155L532.58 155.94C532.58 155.94 532.58 155.833 532.687 155.618C532.473 155.511 532.365 155.296 532.15 155.189V155.296C532.15 155.403 532.15 155.511 532.15 155.511L531.936 155.833C531.828 155.725 531.721 155.725 531.614 155.618L531.828 155.403C531.828 155.403 531.828 155.296 531.828 155.081C531.614 154.974 531.399 154.867 531.184 154.759V154.867C531.184 154.974 531.184 155.081 531.184 155.081L530.969 155.511C530.862 155.403 530.755 155.403 530.647 155.403L530.755 155.081C530.755 155.081 530.755 155.081 530.755 154.974C530.755 154.867 530.755 154.867 530.755 154.759C530.54 154.652 530.325 154.545 530.11 154.545V154.652C530.11 154.759 530.11 154.867 530.11 154.867L530.003 155.296C529.896 155.296 529.788 155.189 529.681 155.189L529.788 154.867C529.788 154.867 529.788 154.759 529.681 154.545C529.466 154.545 529.251 154.437 529.037 154.437C529.037 154.437 529.037 154.437 529.037 154.545C529.037 154.652 529.144 154.652 529.144 154.652L529.037 155.081C528.929 155.081 528.822 155.081 528.714 155.081V154.759C528.714 154.759 528.607 154.652 528.607 154.437C528.607 154.437 528.5 154.437 528.392 154.437C528.178 154.437 528.07 154.437 527.855 154.437C527.855 154.437 527.855 154.437 527.855 154.545C527.963 154.652 527.963 154.652 527.963 154.652V155.081C527.855 155.081 527.748 155.081 527.641 155.081V154.759C527.641 154.759 527.533 154.652 527.426 154.545C527.211 154.545 526.996 154.652 526.782 154.652C526.782 154.652 526.782 154.652 526.889 154.759C526.996 154.867 526.996 154.867 526.996 154.867L527.104 155.296C526.996 155.296 526.889 155.296 526.782 155.403L526.674 155.081C526.674 155.081 526.674 155.081 526.567 154.974L526.46 154.867C526.245 154.974 526.03 154.974 525.815 155.081C525.815 155.081 525.815 155.081 525.923 155.081C526.03 155.189 526.03 155.189 526.03 155.189L526.245 155.618C526.137 155.618 526.03 155.725 525.923 155.725L525.815 155.403C525.815 155.403 525.708 155.296 525.601 155.296C525.386 155.403 525.171 155.511 524.956 155.618C524.956 155.618 524.956 155.618 525.064 155.618C525.171 155.618 525.171 155.725 525.171 155.725L525.386 156.047C525.278 156.155 525.171 156.155 525.064 156.262L524.849 156.047C524.849 156.047 524.742 155.94 524.527 155.94C524.312 156.047 524.205 156.155 524.097 156.369C524.097 156.369 524.097 156.369 524.205 156.369C524.312 156.369 524.419 156.369 524.419 156.369L524.742 156.691C524.634 156.799 524.527 156.799 524.527 156.906L524.312 156.691C524.312 156.691 524.205 156.691 523.99 156.584C523.883 156.799 523.668 156.906 523.56 157.121H523.668C523.775 157.121 523.883 157.121 523.883 157.121L524.205 157.335C524.097 157.443 524.097 157.55 523.99 157.657L523.775 157.443C523.775 157.443 523.668 157.443 523.453 157.443C523.346 157.657 523.238 157.872 523.131 158.087H523.238C523.346 158.087 523.453 158.087 523.453 158.087L523.883 158.301C523.775 158.409 523.775 158.516 523.775 158.623L523.453 158.516C523.453 158.516 523.453 158.516 523.346 158.516C523.238 158.516 523.238 158.516 523.131 158.516C523.024 158.731 522.916 158.945 522.916 159.16H523.024C523.131 159.16 523.238 159.16 523.238 159.16L523.668 159.267C523.668 159.375 523.56 159.482 523.56 159.589L523.238 159.482C523.238 159.482 523.131 159.482 522.916 159.589C522.916 159.804 522.809 160.019 522.809 160.233C522.809 160.233 522.809 160.233 522.916 160.233C523.024 160.233 523.024 160.126 523.024 160.126L523.453 160.233C523.453 160.341 523.453 160.448 523.453 160.555H523.131C523.131 160.555 523.024 160.663 522.809 160.663C522.809 160.663 522.809 160.77 522.809 160.877C522.809 161.092 522.809 161.199 522.809 161.414C522.809 161.414 522.809 161.414 522.916 161.414C523.024 161.307 523.024 161.307 523.024 161.307L522.057 160.448Z"
-                                  fill="#1D1715"/>
-                            <path d="M533.01 156.799C533.117 156.906 533.117 157.013 533.224 157.121L533.546 156.906C533.546 156.906 533.546 156.906 533.654 156.799C533.546 156.691 533.439 156.584 533.439 156.369C533.332 156.477 533.332 156.691 533.332 156.691L533.01 156.799Z"
-                                  fill="#403430"/>
-                            <path d="M522.809 160.126C522.916 157.228 525.278 154.867 528.178 154.974C531.077 155.081 533.439 157.443 533.332 160.341C533.224 163.239 530.862 165.6 527.963 165.493C525.064 165.493 522.809 163.024 522.809 160.126Z"
-                                  fill="#403430"/>
-                            <path d="M522.272 160.126C522.379 156.906 525.064 154.33 528.285 154.437C531.506 154.545 534.083 157.228 533.976 160.448C533.869 163.668 531.184 166.244 527.963 166.137C524.742 166.029 522.165 163.346 522.272 160.126ZM522.272 160.126C522.165 163.346 524.742 166.029 527.963 166.029C531.184 166.137 533.869 163.561 533.869 160.341C533.976 157.121 531.399 154.437 528.178 154.437C525.064 154.437 522.379 156.906 522.272 160.126Z"
-                                  fill="#403430"/>
-                            <path d="M532.151 164.741L532.473 165.063C532.473 165.063 532.58 165.063 532.687 165.063C532.795 164.956 532.902 164.849 533.01 164.741C532.902 164.741 532.687 164.634 532.687 164.634L532.473 164.419C532.365 164.634 532.258 164.634 532.151 164.741Z"
-                                  fill="#403430"/>
-                            <path d="M532.902 163.99L533.224 164.205C533.224 164.205 533.332 164.205 533.439 164.205C533.546 164.097 533.654 163.99 533.761 163.775C533.654 163.775 533.439 163.775 533.439 163.775L533.224 163.561C533.009 163.775 532.902 163.883 532.902 163.99Z"
-                                  fill="#403430"/>
-                            <path d="M530.325 165.922C530.432 165.922 530.54 165.815 530.647 165.815L530.755 166.137C530.755 166.137 530.862 166.244 530.969 166.244C530.862 166.351 530.647 166.351 530.54 166.459C530.432 166.351 530.432 166.351 530.432 166.351L530.325 165.922Z"
-                                  fill="#403430"/>
-                            <path d="M531.506 165.815L531.292 165.493C531.399 165.385 531.506 165.385 531.614 165.278L531.828 165.493C531.828 165.493 531.936 165.6 532.151 165.6C532.043 165.707 531.936 165.815 531.721 165.815C531.614 165.815 531.506 165.815 531.506 165.815Z"
-                                  fill="#403430"/>
-                            <path d="M533.439 163.131L533.868 163.346C533.868 163.346 533.976 163.346 534.083 163.346C534.191 163.239 534.191 163.024 534.298 162.917C534.191 162.917 534.191 162.917 534.083 162.917C533.976 162.917 533.976 162.917 533.976 162.917L533.654 162.809C533.546 162.917 533.439 163.024 533.439 163.131Z"
-                                  fill="#403430"/>
-                            <path d="M534.083 159.697C534.083 159.804 534.083 159.911 534.083 160.019H534.513C534.513 160.019 534.62 160.019 534.62 159.911C534.62 159.804 534.62 159.589 534.62 159.482C534.513 159.589 534.405 159.697 534.405 159.697H534.083Z"
-                                  fill="#403430"/>
-                            <path d="M529.359 166.137C529.466 166.137 529.574 166.137 529.681 166.029L529.788 166.351C529.788 166.351 529.788 166.351 529.896 166.459L530.003 166.566C529.896 166.566 529.681 166.673 529.574 166.673C529.466 166.566 529.466 166.566 529.466 166.566L529.359 166.137Z"
-                                  fill="#403430"/>
-                            <path d="M533.869 162.165L534.298 162.273C534.298 162.273 534.405 162.273 534.513 162.273C534.513 162.165 534.62 161.951 534.62 161.843C534.513 161.951 534.298 161.951 534.298 161.951L533.976 161.843C533.869 161.951 533.869 162.058 533.869 162.165Z"
-                                  fill="#403430"/>
-                            <path d="M533.976 158.731C533.976 158.838 534.083 158.945 534.083 159.053L534.513 158.945C534.513 158.945 534.513 158.945 534.62 158.838C534.62 158.731 534.513 158.516 534.513 158.409C534.513 158.516 534.405 158.516 534.405 158.516L534.298 158.623L533.976 158.731Z"
-                                  fill="#403430"/>
-                            <path d="M533.546 157.765C533.546 157.872 533.654 157.979 533.654 158.087L534.083 157.872C534.083 157.872 534.083 157.765 534.191 157.765C534.083 157.657 534.083 157.443 533.976 157.335C533.868 157.443 533.868 157.55 533.868 157.55L533.546 157.765Z"
-                                  fill="#403430"/>
-                            <path d="M534.083 161.092L534.513 161.199C534.513 161.199 534.62 161.199 534.62 161.092C534.62 160.985 534.62 160.77 534.62 160.663C534.513 160.77 534.298 160.77 534.298 160.77H533.976C534.083 160.877 534.083 160.985 534.083 161.092Z"
-                                  fill="#403430"/>
-                            <path d="M522.594 163.668L522.916 163.453C523.024 163.561 523.024 163.668 523.131 163.775L522.916 163.99C522.916 163.99 522.809 164.097 522.809 164.312C522.701 164.205 522.594 164.097 522.594 163.883C522.594 163.775 522.594 163.668 522.594 163.668Z"
-                                  fill="#403430"/>
-                            <path d="M522.487 162.487C522.487 162.595 522.594 162.702 522.594 162.809L522.272 162.917C522.272 162.917 522.165 163.024 522.165 163.131C522.057 163.024 522.057 162.809 521.95 162.702C522.057 162.595 522.057 162.595 522.057 162.595L522.487 162.487Z"
-                                  fill="#403430"/>
-                            <path d="M528.285 166.351C528.392 166.351 528.5 166.351 528.607 166.351V166.673C528.607 166.673 528.715 166.781 528.822 166.888C528.715 166.888 528.5 166.888 528.392 166.888C528.285 166.781 528.285 166.781 528.285 166.781V166.351Z"
-                                  fill="#403430"/>
-                            <path d="M523.668 164.312C523.775 164.419 523.775 164.527 523.883 164.527L523.668 164.741C523.668 164.741 523.668 164.849 523.56 165.063C523.453 164.956 523.346 164.849 523.238 164.741C523.238 164.634 523.238 164.527 523.238 164.527L523.668 164.312Z"
-                                  fill="#403430"/>
-                            <path d="M521.628 160.555H522.057C522.057 160.663 522.057 160.77 522.057 160.877H521.735C521.735 160.877 521.628 160.985 521.52 161.092C521.52 160.985 521.52 160.77 521.52 160.663C521.628 160.555 521.628 160.555 521.628 160.555Z"
-                                  fill="#403430"/>
-                            <path d="M522.272 161.521C522.272 161.629 522.272 161.736 522.379 161.843L522.057 161.951C522.057 161.951 522.057 161.951 521.95 162.058L521.842 162.165C521.842 162.058 521.735 161.843 521.735 161.736C521.842 161.629 521.842 161.629 521.842 161.629L522.272 161.521Z"
-                                  fill="#403430"/>
-                            <path d="M526.245 166.029C526.352 166.029 526.46 166.137 526.567 166.137L526.46 166.459C526.46 166.459 526.46 166.566 526.567 166.781C526.46 166.781 526.245 166.673 526.137 166.673C526.137 166.566 526.137 166.459 526.137 166.459L526.245 166.029Z"
-                                  fill="#403430"/>
-                            <path d="M527.319 166.244C527.426 166.244 527.533 166.244 527.641 166.244V166.566C527.641 166.566 527.748 166.673 527.748 166.888C527.641 166.888 527.426 166.888 527.319 166.888C527.319 166.781 527.211 166.781 527.211 166.781L527.319 166.244Z"
-                                  fill="#403430"/>
-                            <path d="M525.279 165.6C525.386 165.707 525.493 165.707 525.601 165.707L525.493 166.029C525.493 166.029 525.493 166.029 525.493 166.137C525.493 166.137 525.493 166.244 525.493 166.351C525.386 166.244 525.171 166.244 525.064 166.137C525.064 166.029 525.064 165.922 525.064 165.922L525.279 165.6Z"
-                                  fill="#403430"/>
-                            <path d="M524.42 165.063C524.527 165.171 524.634 165.171 524.742 165.278L524.527 165.493C524.527 165.493 524.527 165.6 524.527 165.815C524.42 165.707 524.312 165.6 524.097 165.6C524.097 165.493 524.097 165.385 524.097 165.385L524.42 165.063Z"
-                                  fill="#403430"/>
-                            <path d="M524.205 154.974C524.312 155.081 524.527 155.081 524.527 155.081L524.742 155.296C524.849 155.189 524.956 155.189 525.064 155.081L524.849 154.759C524.849 154.759 524.849 154.759 524.742 154.652C524.42 154.867 524.312 154.867 524.205 154.974Z"
-                                  fill="#403430"/>
-                            <path d="M528.607 154.008V154.33C528.714 154.33 528.822 154.33 528.929 154.33L529.037 153.901C529.037 153.901 529.037 153.793 528.929 153.793C528.822 153.793 528.607 153.793 528.5 153.793C528.607 153.901 528.607 154.008 528.607 154.008Z"
-                                  fill="#403430"/>
-                            <path d="M530.647 154.867C530.755 154.867 530.862 154.974 530.969 154.974L531.184 154.545C531.184 154.545 531.184 154.437 531.184 154.33C531.077 154.223 530.862 154.223 530.755 154.115C530.755 154.223 530.755 154.223 530.755 154.33C530.755 154.437 530.755 154.437 530.755 154.437L530.647 154.867Z"
-                                  fill="#403430"/>
-                            <path d="M529.681 154.115L529.573 154.437C529.681 154.437 529.788 154.545 529.896 154.545L530.003 154.115C530.003 154.115 530.003 154.008 530.003 153.901C529.896 153.901 529.681 153.793 529.573 153.793C529.681 154.008 529.681 154.115 529.681 154.115Z"
-                                  fill="#403430"/>
-                            <path d="M526.245 154.008C526.352 154.008 526.352 154.115 526.352 154.115L526.46 154.223L526.567 154.545C526.674 154.545 526.782 154.437 526.889 154.437L526.782 154.008C526.782 154.008 526.782 154.008 526.674 153.901C526.46 153.901 526.352 153.901 526.245 154.008Z"
-                                  fill="#403430"/>
-                            <path d="M523.346 156.584C523.238 156.691 523.238 156.799 523.131 156.906L522.916 156.691C522.916 156.691 522.809 156.691 522.594 156.691C522.701 156.584 522.809 156.477 522.809 156.262C522.916 156.262 523.024 156.262 523.024 156.262L523.346 156.584Z"
-                                  fill="#403430"/>
-                            <path d="M522.379 158.409C522.379 158.516 522.272 158.623 522.272 158.731L521.95 158.623C521.95 158.623 521.842 158.623 521.628 158.731C521.628 158.623 521.735 158.409 521.735 158.301C521.842 158.301 521.95 158.301 521.95 158.301L522.379 158.409Z"
-                                  fill="#403430"/>
-                            <path d="M527.319 153.793C527.426 153.901 527.533 154.008 527.533 154.008V154.33C527.641 154.33 527.748 154.33 527.855 154.33V153.901C527.855 153.901 527.855 153.793 527.748 153.793C527.641 153.686 527.533 153.686 527.319 153.793Z"
-                                  fill="#403430"/>
-                            <path d="M525.171 154.437C525.279 154.545 525.386 154.545 525.386 154.545L525.493 154.867C525.601 154.867 525.708 154.759 525.815 154.759L525.601 154.33C525.601 154.33 525.493 154.33 525.493 154.223C525.386 154.223 525.279 154.33 525.171 154.437Z"
-                                  fill="#403430"/>
-                            <path d="M522.809 157.443C522.701 157.55 522.701 157.657 522.701 157.765L522.379 157.657C522.379 157.657 522.379 157.657 522.272 157.657C522.272 157.657 522.165 157.657 522.057 157.657C522.165 157.55 522.165 157.335 522.272 157.228C522.379 157.228 522.487 157.228 522.487 157.228L522.809 157.443Z"
-                                  fill="#403430"/>
-                            <path d="M522.165 159.482C522.165 159.589 522.165 159.697 522.165 159.804H521.842C521.842 159.804 521.735 159.911 521.52 159.911C521.52 159.804 521.52 159.589 521.52 159.482C521.628 159.482 521.628 159.375 521.628 159.375L522.165 159.482Z"
-                                  fill="#403430"/>
-                            <path d="M531.506 155.296C531.614 155.403 531.721 155.403 531.828 155.511L532.043 155.189C532.043 155.189 532.043 155.081 532.043 154.974C531.936 154.867 531.828 154.759 531.614 154.652C531.614 154.759 531.614 154.974 531.614 154.974L531.506 155.296Z"
-                                  fill="#403430"/>
-                            <path d="M524.097 155.833C523.99 155.94 523.883 155.94 523.883 156.047L523.668 155.833C523.668 155.833 523.56 155.833 523.346 155.725C523.453 155.618 523.56 155.511 523.668 155.403C523.775 155.403 523.883 155.403 523.883 155.403L524.097 155.833Z"
-                                  fill="#403430"/>
-                            <path d="M532.365 156.047C532.473 156.155 532.58 156.262 532.58 156.262L532.902 155.94C532.902 155.94 532.902 155.833 532.902 155.725C532.795 155.618 532.687 155.511 532.58 155.403C532.58 155.511 532.473 155.725 532.473 155.725L532.365 156.047Z"
-                                  fill="#403430"/>
-                            <path opacity="0.1"
-                                  d="M532.365 156.047C532.473 156.155 532.58 156.262 532.58 156.262L532.902 155.94C532.902 155.94 532.902 155.833 532.902 155.725C532.795 155.618 532.687 155.511 532.58 155.403C532.58 155.511 532.473 155.725 532.473 155.725L532.365 156.047Z"
-                                  fill="#1D1D1B"/>
-                            <path d="M528.07 165.278C530.798 165.278 533.009 163.067 533.009 160.341C533.009 157.614 530.798 155.403 528.07 155.403C525.342 155.403 523.131 157.614 523.131 160.341C523.131 163.067 525.342 165.278 528.07 165.278Z"
-                                  fill="#FDFDFD"/>
-                            <path d="M523.99 160.341C523.99 162.595 525.815 164.419 528.07 164.419C530.325 164.419 532.151 162.595 532.151 160.341C532.151 158.087 530.325 156.262 528.07 156.262C525.815 156.155 523.99 157.979 523.99 160.341Z"
-                                  fill="#403430"/>
-                            <path d="M527.855 160.985L528.392 159.589L524.097 158.516L523.775 159.375L527.855 160.985Z"
-                                  fill="#DAD1D1"/>
-                            <path d="M528.714 160.663L527.533 159.804L525.171 163.561L525.923 164.097L528.714 160.663Z"
-                                  fill="#DAD1D1"/>
-                            <path d="M528.714 159.804L527.533 160.663L530.325 164.097L531.077 163.561L528.714 159.804Z"
-                                  fill="#DAD1D1"/>
-                            <path d="M527.855 159.589L528.392 160.985L532.473 159.375L532.151 158.516L527.855 159.589Z"
-                                  fill="#DAD1D1"/>
-                            <path d="M527.426 160.233H528.822L528.607 155.833H527.641L527.426 160.233Z" fill="#DAD1D1"/>
-                            <path d="M526.567 160.341C526.567 161.199 527.211 161.843 528.07 161.843C528.929 161.843 529.573 161.199 529.573 160.341C529.573 159.482 528.929 158.838 528.07 158.838C527.319 158.838 526.567 159.482 526.567 160.341Z"
-                                  fill="#FDFDFD"/>
-                            <path d="M468.262 160.448C468.262 160.555 468.262 160.663 468.262 160.77H467.94C467.94 160.77 467.833 160.877 467.726 160.985C467.726 161.199 467.833 161.414 467.833 161.521V161.629C467.833 161.629 467.833 161.629 467.833 161.521C467.94 161.414 467.94 161.414 467.94 161.414L468.37 161.307C468.37 161.414 468.37 161.521 468.477 161.629L468.262 161.736C468.262 161.736 468.262 161.736 468.155 161.843L468.048 161.951C468.155 162.165 468.155 162.38 468.262 162.595C468.262 162.595 468.262 162.595 468.262 162.487C468.37 162.38 468.37 162.38 468.37 162.38L468.799 162.165C468.799 162.273 468.907 162.38 468.907 162.487L468.585 162.595C468.585 162.595 468.477 162.702 468.477 162.809C468.585 163.024 468.692 163.239 468.799 163.453C468.799 163.453 468.799 163.453 468.799 163.346C468.799 163.239 468.907 163.239 468.907 163.239L469.229 163.024C469.336 163.131 469.336 163.239 469.444 163.346L469.229 163.561C469.229 163.561 469.121 163.668 469.121 163.883C469.229 164.097 469.444 164.205 469.551 164.419V164.312C469.551 164.205 469.551 164.097 469.551 164.097L469.873 163.775C469.98 163.883 469.98 163.99 470.088 163.99L469.873 164.205C469.873 164.205 469.873 164.312 469.766 164.527C469.98 164.634 470.088 164.849 470.303 164.956V164.849C470.303 164.741 470.303 164.634 470.303 164.634L470.517 164.312C470.625 164.419 470.732 164.419 470.839 164.527L470.625 164.741C470.625 164.741 470.625 164.849 470.625 165.063C470.839 165.171 471.054 165.278 471.269 165.385V165.278C471.269 165.171 471.269 165.063 471.269 165.063L471.484 164.634C471.591 164.741 471.698 164.741 471.806 164.741L471.698 165.063C471.698 165.063 471.698 165.063 471.698 165.171C471.698 165.171 471.698 165.278 471.698 165.385C471.913 165.493 472.128 165.6 472.343 165.6V165.493C472.343 165.385 472.343 165.278 472.343 165.278L472.45 164.849C472.557 164.849 472.665 164.956 472.772 164.956L472.665 165.278C472.665 165.278 472.665 165.385 472.772 165.6C472.987 165.6 473.202 165.707 473.416 165.707C473.416 165.707 473.416 165.707 473.416 165.6C473.416 165.493 473.309 165.493 473.309 165.493L473.416 165.063C473.524 165.063 473.631 165.063 473.739 165.063V165.385C473.739 165.385 473.846 165.493 473.846 165.707C473.846 165.707 473.953 165.707 474.061 165.707C474.275 165.707 474.383 165.707 474.598 165.707C474.598 165.707 474.598 165.707 474.598 165.6C474.49 165.493 474.49 165.493 474.49 165.493V165.063C474.598 165.063 474.705 165.063 474.812 165.063V165.385C474.812 165.385 474.92 165.493 475.027 165.6C475.242 165.6 475.457 165.493 475.671 165.493C475.671 165.493 475.671 165.493 475.564 165.385C475.457 165.278 475.457 165.278 475.457 165.278L475.349 164.849C475.457 164.849 475.564 164.849 475.671 164.741L475.779 165.063C475.779 165.063 475.779 165.063 475.886 165.171L475.993 165.278C476.208 165.171 476.423 165.171 476.638 165.063C476.638 165.063 476.638 165.063 476.53 165.063C476.423 164.956 476.423 164.956 476.423 164.956L476.208 164.527C476.316 164.527 476.423 164.419 476.53 164.419L476.638 164.741C476.638 164.741 476.745 164.849 476.852 164.849C477.067 164.741 477.282 164.634 477.497 164.527C477.497 164.527 477.497 164.527 477.389 164.527C477.282 164.527 477.282 164.419 477.282 164.419L477.067 164.097C477.175 163.99 477.282 163.99 477.389 163.883L477.604 164.097C477.604 164.097 477.711 164.205 477.926 164.205C478.034 164.097 478.141 163.99 478.248 163.883C478.356 163.775 478.356 163.775 478.463 163.668C478.463 163.668 478.463 163.668 478.356 163.668C478.248 163.668 478.141 163.668 478.141 163.668L477.819 163.346C477.926 163.239 478.034 163.239 478.034 163.131L478.248 163.346C478.248 163.346 478.356 163.346 478.57 163.453C478.678 163.239 478.893 163.131 479 162.917H478.893C478.785 162.917 478.678 162.917 478.678 162.917L478.356 162.702C478.463 162.595 478.463 162.487 478.57 162.38L478.785 162.595C478.785 162.595 478.893 162.595 479.107 162.595C479.215 162.38 479.322 162.165 479.429 161.951H479.322C479.215 161.951 479.107 161.951 479.107 161.951L478.678 161.736C478.785 161.629 478.785 161.521 478.785 161.414L479.107 161.521C479.107 161.521 479.107 161.521 479.215 161.521C479.215 161.521 479.322 161.521 479.429 161.521C479.537 161.307 479.644 161.092 479.644 160.877H479.537C479.429 160.877 479.322 160.877 479.322 160.877L478.893 160.77C478.893 160.663 479 160.555 479 160.448L479.322 160.555C479.322 160.555 479.429 160.555 479.644 160.448C479.644 160.233 479.752 160.019 479.752 159.804C479.752 159.804 479.752 159.804 479.644 159.804C479.537 159.804 479.537 159.911 479.537 159.911L479.107 159.804C479.107 159.697 479.107 159.589 479.107 159.482H479.429C479.429 159.482 479.537 159.375 479.752 159.375C479.752 159.375 479.752 159.267 479.752 159.16C479.752 158.945 479.752 158.838 479.752 158.623C479.752 158.623 479.752 158.623 479.644 158.623C479.537 158.731 479.537 158.731 479.537 158.731H479.107C479.107 158.623 479.107 158.516 479.107 158.409H479.429C479.429 158.409 479.537 158.301 479.644 158.194C479.644 157.979 479.537 157.765 479.537 157.55C479.537 157.55 479.537 157.55 479.429 157.657C479.322 157.765 479.322 157.765 479.322 157.765L478.893 157.872C478.893 157.765 478.893 157.657 478.785 157.55L479.107 157.443C479.107 157.443 479.107 157.443 479.215 157.335L479.322 157.228C479.215 157.013 479.215 156.799 479.107 156.584C479.107 156.584 479.107 156.584 479.107 156.691C479 156.799 479 156.799 479 156.799L478.57 157.013C478.57 156.906 478.463 156.799 478.463 156.691L478.785 156.584C478.785 156.584 478.893 156.477 478.893 156.369C478.785 156.155 478.678 155.94 478.57 155.725C478.57 155.725 478.57 155.725 478.57 155.833C478.57 155.94 478.463 155.94 478.463 155.94L478.141 156.155C478.034 156.047 478.034 155.94 477.926 155.833L478.141 155.618C478.141 155.618 478.248 155.511 478.248 155.296C478.141 155.081 477.926 154.974 477.819 154.759C477.819 154.867 477.819 154.974 477.819 154.974L477.497 155.296C477.389 155.189 477.389 155.081 477.282 155.081L477.497 154.867C477.497 154.867 477.497 154.759 477.604 154.545C477.389 154.437 477.282 154.223 477.067 154.115V154.223C477.067 154.33 477.067 154.437 477.067 154.437L476.852 154.759C476.745 154.652 476.638 154.652 476.53 154.545L476.745 154.33C476.745 154.33 476.745 154.223 476.745 154.008C476.53 153.901 476.316 153.793 476.101 153.686V153.793C476.101 153.901 476.101 154.008 476.101 154.008L475.886 154.437C475.779 154.33 475.671 154.33 475.564 154.33L475.671 154.008C475.671 154.008 475.671 154.008 475.671 153.901C475.671 153.793 475.671 153.793 475.671 153.686C475.457 153.579 475.242 153.471 475.027 153.471V153.579C475.027 153.686 475.027 153.793 475.027 153.793L474.92 154.223C474.812 154.223 474.705 154.115 474.598 154.115L474.705 153.793C474.705 153.793 474.705 153.686 474.598 153.471C474.383 153.471 474.168 153.364 473.953 153.364C473.953 153.364 473.953 153.364 473.953 153.471C473.953 153.579 474.061 153.579 474.061 153.579L473.953 154.008C473.846 154.008 473.739 154.008 473.631 154.008V153.686C473.631 153.686 473.524 153.579 473.524 153.364C473.524 153.364 473.416 153.364 473.309 153.364C473.094 153.364 472.987 153.364 472.772 153.364C472.772 153.364 472.772 153.364 472.772 153.471C472.88 153.579 472.88 153.579 472.88 153.579V154.008C472.772 154.008 472.665 154.008 472.557 154.008V153.686C472.557 153.686 472.45 153.579 472.343 153.471C472.128 153.471 471.913 153.579 471.698 153.579C471.698 153.579 471.698 153.579 471.806 153.686C471.913 153.793 471.913 153.793 471.913 153.793L472.021 154.223C471.913 154.223 471.806 154.223 471.698 154.33L471.591 154.008C471.591 154.008 471.591 154.008 471.484 153.901L471.376 153.793C471.162 153.901 470.947 153.901 470.732 154.008C470.732 154.008 470.732 154.008 470.839 154.008C470.947 154.115 470.947 154.115 470.947 154.115L471.162 154.545C471.054 154.545 470.947 154.652 470.839 154.652L470.732 154.33C470.732 154.33 470.625 154.223 470.517 154.223C470.303 154.33 470.088 154.437 469.873 154.545C469.873 154.545 469.873 154.545 469.98 154.545C470.088 154.545 470.088 154.652 470.088 154.652L470.303 154.974C470.195 155.081 470.088 155.081 469.98 155.189L469.766 154.974C469.766 154.974 469.658 154.867 469.444 154.867C469.229 154.974 469.121 155.081 469.014 155.296C469.014 155.296 469.014 155.296 469.121 155.296C469.229 155.296 469.336 155.296 469.336 155.296L469.658 155.618C469.551 155.725 469.444 155.725 469.444 155.833L469.229 155.618C469.229 155.618 469.121 155.618 468.907 155.511C468.799 155.725 468.585 155.833 468.477 156.047H468.585C468.692 156.047 468.799 156.047 468.799 156.047L469.121 156.262C469.014 156.369 469.014 156.477 468.907 156.584L468.692 156.369C468.692 156.369 468.585 156.369 468.37 156.369C468.262 156.584 468.155 156.799 468.048 157.013H468.155C468.262 157.013 468.37 157.013 468.37 157.013L468.799 157.228C468.692 157.335 468.692 157.443 468.692 157.55L468.37 157.443C468.37 157.443 468.37 157.443 468.262 157.443C468.262 157.443 468.155 157.443 468.048 157.443C467.94 157.657 467.833 157.872 467.833 158.087H467.94C468.048 158.087 468.155 158.087 468.155 158.087L468.585 158.194C468.585 158.301 468.477 158.409 468.477 158.516L468.155 158.409C468.155 158.409 468.048 158.409 467.833 158.516C467.833 158.731 467.726 158.945 467.726 159.16C467.726 159.16 467.726 159.16 467.833 159.16C467.94 159.16 467.94 159.053 467.94 159.053L468.37 159.16C468.37 159.267 468.37 159.375 468.37 159.482H468.048C468.048 159.482 467.94 159.589 467.726 159.589C467.726 159.589 467.726 159.697 467.726 159.804C467.726 160.019 467.726 160.126 467.726 160.341C467.726 160.341 467.726 160.341 467.833 160.341C467.94 160.233 467.94 160.233 467.94 160.233L468.262 160.448Z"
-                                  fill="#1D1715"/>
-                            <path d="M479.215 156.799C479.322 156.906 479.322 157.013 479.429 157.121L479.752 156.906C479.752 156.906 479.752 156.906 479.859 156.799C479.752 156.691 479.644 156.584 479.644 156.369C479.537 156.477 479.537 156.691 479.537 156.691L479.215 156.799Z"
-                                  fill="#403430"/>
-                            <path d="M469.014 160.126C469.122 157.228 471.484 154.867 474.383 154.974C477.282 155.081 479.644 157.443 479.537 160.341C479.43 163.239 477.067 165.6 474.168 165.493C471.269 165.493 469.014 163.024 469.014 160.126Z"
-                                  fill="#403430"/>
-                            <path d="M468.477 160.126C468.584 156.906 471.269 154.33 474.49 154.437C477.711 154.545 480.288 157.228 480.181 160.448C480.074 163.668 477.389 166.244 474.168 166.137C470.947 166.029 468.37 163.346 468.477 160.126ZM468.477 160.126C468.37 163.346 470.947 166.029 474.168 166.029C477.389 166.137 480.074 163.561 480.074 160.341C480.181 157.121 477.604 154.437 474.383 154.437C471.269 154.437 468.584 156.906 468.477 160.126Z"
-                                  fill="#403430"/>
-                            <path d="M478.356 164.741L478.678 165.063C478.678 165.063 478.785 165.063 478.893 165.063C479 164.956 479.107 164.849 479.215 164.741C479.107 164.741 478.893 164.634 478.893 164.634L478.678 164.419C478.57 164.634 478.463 164.634 478.356 164.741Z"
-                                  fill="#403430"/>
-                            <path d="M479.107 163.99L479.429 164.205C479.429 164.205 479.537 164.205 479.644 164.205C479.752 164.097 479.859 163.99 479.859 163.775C479.752 163.775 479.537 163.775 479.537 163.775L479.322 163.561C479.215 163.775 479.107 163.883 479.107 163.99Z"
-                                  fill="#403430"/>
-                            <path d="M476.53 165.922C476.638 165.922 476.745 165.815 476.852 165.815L476.96 166.137C476.96 166.137 477.067 166.244 477.175 166.244C477.067 166.351 476.852 166.351 476.745 166.459C476.638 166.351 476.638 166.351 476.638 166.351L476.53 165.922Z"
-                                  fill="#403430"/>
-                            <path d="M477.711 165.815L477.497 165.493C477.604 165.385 477.711 165.385 477.819 165.278L478.034 165.493C478.034 165.493 478.141 165.6 478.356 165.6C478.248 165.707 478.141 165.815 477.926 165.815C477.819 165.815 477.711 165.815 477.711 165.815Z"
-                                  fill="#403430"/>
-                            <path d="M479.644 163.131L480.074 163.346C480.074 163.346 480.181 163.346 480.289 163.346C480.396 163.239 480.396 163.024 480.503 162.917C480.396 162.917 480.396 162.917 480.289 162.917C480.181 162.917 480.181 162.917 480.181 162.917L479.859 162.809C479.752 162.917 479.644 163.024 479.644 163.131Z"
-                                  fill="#403430"/>
-                            <path d="M480.288 159.697C480.288 159.804 480.288 159.911 480.288 160.019H480.718C480.718 160.019 480.825 160.019 480.825 159.911C480.825 159.804 480.825 159.589 480.825 159.482C480.718 159.589 480.611 159.697 480.611 159.697H480.288Z"
-                                  fill="#403430"/>
-                            <path d="M475.564 166.137C475.671 166.137 475.779 166.137 475.886 166.029L475.993 166.351C475.993 166.351 475.993 166.351 476.101 166.459L476.208 166.566C476.101 166.566 475.886 166.673 475.779 166.673C475.671 166.566 475.671 166.566 475.671 166.566L475.564 166.137Z"
-                                  fill="#403430"/>
-                            <path d="M480.074 162.165L480.503 162.273C480.503 162.273 480.611 162.273 480.718 162.273C480.718 162.165 480.825 161.951 480.825 161.843C480.718 161.951 480.503 161.951 480.503 161.951L480.181 161.843C480.074 161.951 480.074 162.058 480.074 162.165Z"
-                                  fill="#403430"/>
-                            <path d="M480.181 158.731C480.181 158.838 480.288 158.945 480.288 159.053L480.718 158.945C480.718 158.945 480.718 158.945 480.825 158.838C480.825 158.731 480.718 158.516 480.718 158.409C480.718 158.516 480.611 158.516 480.611 158.516L480.503 158.623L480.181 158.731Z"
-                                  fill="#403430"/>
-                            <path d="M479.752 157.765C479.752 157.872 479.859 157.979 479.859 158.087L480.288 157.872C480.288 157.872 480.288 157.765 480.396 157.765C480.288 157.657 480.288 157.443 480.181 157.335C480.074 157.443 480.074 157.55 480.074 157.55L479.752 157.765Z"
-                                  fill="#403430"/>
-                            <path d="M480.288 161.092L480.718 161.199C480.718 161.199 480.825 161.199 480.825 161.092C480.825 160.985 480.825 160.77 480.825 160.663C480.718 160.77 480.503 160.77 480.503 160.77H480.181C480.289 160.877 480.288 160.985 480.288 161.092Z"
-                                  fill="#403430"/>
-                            <path d="M468.799 163.668L469.121 163.453C469.229 163.561 469.229 163.668 469.336 163.775L469.121 163.99C469.121 163.99 469.014 164.097 469.014 164.312C468.907 164.205 468.799 164.097 468.799 163.883C468.799 163.775 468.799 163.668 468.799 163.668Z"
-                                  fill="#403430"/>
-                            <path d="M468.692 162.487C468.692 162.595 468.799 162.702 468.799 162.809L468.477 162.917C468.477 162.917 468.37 163.024 468.37 163.131C468.263 163.024 468.263 162.809 468.155 162.702C468.263 162.595 468.263 162.595 468.263 162.595L468.692 162.487Z"
-                                  fill="#403430"/>
-                            <path d="M474.49 166.351C474.598 166.351 474.705 166.351 474.812 166.351V166.673C474.812 166.673 474.92 166.781 475.027 166.888C474.92 166.888 474.705 166.888 474.598 166.888C474.49 166.781 474.49 166.781 474.49 166.781V166.351Z"
-                                  fill="#403430"/>
-                            <path d="M469.873 164.312C469.98 164.419 469.98 164.527 470.088 164.527L469.873 164.741C469.873 164.741 469.873 164.849 469.766 165.063C469.658 164.956 469.551 164.849 469.444 164.741C469.444 164.634 469.444 164.527 469.444 164.527L469.873 164.312Z"
-                                  fill="#403430"/>
-                            <path d="M467.833 160.555H468.262C468.262 160.663 468.262 160.77 468.262 160.877H467.94C467.94 160.877 467.833 160.985 467.726 161.092C467.726 160.985 467.726 160.77 467.726 160.663C467.833 160.555 467.833 160.555 467.833 160.555Z"
-                                  fill="#403430"/>
-                            <path d="M468.477 161.521C468.477 161.629 468.477 161.736 468.585 161.843L468.262 161.951C468.262 161.951 468.262 161.951 468.155 162.058L468.048 162.165C468.048 162.058 467.94 161.843 467.94 161.736C468.048 161.629 468.048 161.629 468.048 161.629L468.477 161.521Z"
-                                  fill="#403430"/>
-                            <path d="M472.45 166.029C472.557 166.029 472.665 166.137 472.772 166.137L472.665 166.459C472.665 166.459 472.665 166.566 472.772 166.781C472.665 166.781 472.45 166.673 472.343 166.673C472.343 166.566 472.343 166.459 472.343 166.459L472.45 166.029Z"
-                                  fill="#403430"/>
-                            <path d="M473.524 166.244C473.631 166.244 473.739 166.244 473.846 166.244V166.566C473.846 166.566 473.953 166.673 473.953 166.888C473.846 166.888 473.631 166.888 473.524 166.888C473.524 166.781 473.417 166.781 473.417 166.781L473.524 166.244Z"
-                                  fill="#403430"/>
-                            <path d="M471.484 165.6C471.591 165.707 471.698 165.707 471.806 165.707L471.698 166.029C471.698 166.029 471.698 166.029 471.698 166.137C471.698 166.137 471.698 166.244 471.698 166.351C471.591 166.244 471.376 166.244 471.269 166.137C471.269 166.029 471.269 165.922 471.269 165.922L471.484 165.6Z"
-                                  fill="#403430"/>
-                            <path d="M470.625 165.063C470.732 165.171 470.839 165.171 470.947 165.278L470.732 165.493C470.732 165.493 470.732 165.6 470.732 165.815C470.625 165.707 470.517 165.6 470.303 165.6C470.303 165.493 470.303 165.385 470.303 165.385L470.625 165.063Z"
-                                  fill="#403430"/>
-                            <path d="M470.41 154.974C470.517 155.081 470.732 155.081 470.732 155.081L470.947 155.296C471.054 155.189 471.162 155.189 471.269 155.081L471.054 154.759C471.054 154.759 471.054 154.759 470.947 154.652C470.625 154.867 470.517 154.867 470.41 154.974Z"
-                                  fill="#403430"/>
-                            <path d="M474.812 154.008V154.33C474.92 154.33 475.027 154.33 475.134 154.33L475.242 153.901C475.242 153.901 475.242 153.793 475.134 153.793C475.027 153.793 474.812 153.793 474.705 153.793C474.812 153.901 474.812 154.008 474.812 154.008Z"
-                                  fill="#403430"/>
-                            <path d="M476.853 154.867C476.96 154.867 477.067 154.974 477.175 154.974L477.389 154.545C477.389 154.545 477.389 154.437 477.389 154.33C477.282 154.223 477.067 154.223 476.96 154.115C476.96 154.223 476.96 154.223 476.96 154.33C476.96 154.437 476.96 154.437 476.96 154.437L476.853 154.867Z"
-                                  fill="#403430"/>
-                            <path d="M475.886 154.115L475.779 154.437C475.886 154.437 475.993 154.545 476.101 154.545L476.208 154.115C476.208 154.115 476.208 154.008 476.208 153.901C476.101 153.901 475.886 153.793 475.779 153.793C475.886 154.008 475.886 154.115 475.886 154.115Z"
-                                  fill="#403430"/>
-                            <path d="M472.45 154.008C472.557 154.008 472.557 154.115 472.557 154.115L472.665 154.223L472.772 154.545C472.88 154.545 472.987 154.437 473.094 154.437L472.987 154.008C472.987 154.008 472.987 154.008 472.88 153.901C472.665 153.901 472.557 153.901 472.45 154.008Z"
-                                  fill="#403430"/>
-                            <path d="M469.551 156.584C469.444 156.691 469.444 156.799 469.336 156.906L469.121 156.691C469.121 156.691 469.014 156.691 468.799 156.691C468.907 156.584 469.014 156.477 469.014 156.262C469.121 156.262 469.229 156.262 469.229 156.262L469.551 156.584Z"
-                                  fill="#403430"/>
-                            <path d="M468.585 158.409C468.585 158.516 468.477 158.623 468.477 158.731L468.155 158.623C468.155 158.623 468.048 158.623 467.833 158.731C467.833 158.623 467.94 158.409 467.94 158.301C468.048 158.301 468.155 158.301 468.155 158.301L468.585 158.409Z"
-                                  fill="#403430"/>
-                            <path d="M473.524 153.793C473.631 153.901 473.739 154.008 473.739 154.008V154.33C473.846 154.33 473.953 154.33 474.061 154.33V153.901C474.061 153.901 474.061 153.793 473.953 153.793C473.846 153.686 473.739 153.686 473.524 153.793Z"
-                                  fill="#403430"/>
-                            <path d="M471.376 154.437C471.484 154.545 471.591 154.545 471.591 154.545L471.698 154.867C471.806 154.867 471.913 154.759 472.021 154.759L471.806 154.33C471.806 154.33 471.698 154.33 471.698 154.223C471.591 154.223 471.484 154.33 471.376 154.437Z"
-                                  fill="#403430"/>
-                            <path d="M469.014 157.443C468.907 157.55 468.907 157.657 468.907 157.765L468.585 157.657C468.585 157.657 468.585 157.657 468.477 157.657C468.477 157.657 468.37 157.657 468.262 157.657C468.37 157.55 468.37 157.335 468.477 157.228C468.585 157.228 468.692 157.228 468.692 157.228L469.014 157.443Z"
-                                  fill="#403430"/>
-                            <path d="M468.37 159.482C468.37 159.589 468.37 159.697 468.37 159.804H468.048C468.048 159.804 467.94 159.911 467.726 159.911C467.726 159.804 467.726 159.589 467.726 159.482C467.833 159.482 467.833 159.375 467.833 159.375L468.37 159.482Z"
-                                  fill="#403430"/>
-                            <path d="M477.711 155.296C477.819 155.403 477.926 155.403 478.034 155.511L478.248 155.189C478.248 155.189 478.248 155.081 478.248 154.974C478.141 154.867 478.034 154.759 477.819 154.652C477.819 154.759 477.819 154.974 477.819 154.974L477.711 155.296Z"
-                                  fill="#403430"/>
-                            <path d="M470.303 155.833C470.195 155.94 470.088 155.94 470.088 156.047L469.873 155.833C469.873 155.833 469.766 155.833 469.551 155.725C469.658 155.618 469.766 155.511 469.873 155.403C469.98 155.403 470.088 155.403 470.088 155.403L470.303 155.833Z"
-                                  fill="#403430"/>
-                            <path d="M478.571 156.047C478.678 156.155 478.785 156.262 478.785 156.262L479.107 155.94C479.107 155.94 479.107 155.833 479.107 155.725C479 155.618 478.893 155.511 478.785 155.403C478.785 155.511 478.678 155.725 478.678 155.725L478.571 156.047Z"
-                                  fill="#403430"/>
-                            <path opacity="0.1"
-                                  d="M478.571 156.047C478.678 156.155 478.785 156.262 478.785 156.262L479.107 155.94C479.107 155.94 479.107 155.833 479.107 155.725C479 155.618 478.893 155.511 478.785 155.403C478.785 155.511 478.678 155.725 478.678 155.725L478.571 156.047Z"
-                                  fill="#1D1D1B"/>
-                            <path d="M469.336 160.341C469.336 163.131 471.591 165.278 474.275 165.278C476.96 165.278 479.215 163.024 479.215 160.341C479.215 157.657 476.96 155.403 474.275 155.403C471.591 155.403 469.336 157.55 469.336 160.341Z"
-                                  fill="#FDFDFD"/>
-                            <path d="M470.195 160.341C470.195 162.595 472.021 164.419 474.275 164.419C476.53 164.419 478.356 162.595 478.356 160.341C478.356 158.087 476.53 156.262 474.275 156.262C472.021 156.155 470.195 157.979 470.195 160.341Z"
-                                  fill="#403430"/>
-                            <path d="M474.061 160.985L474.598 159.589L470.303 158.516L469.98 159.375L474.061 160.985Z"
-                                  fill="#DAD1D1"/>
-                            <path d="M474.92 160.663L473.739 159.804L471.376 163.561L472.128 164.097L474.92 160.663Z"
-                                  fill="#DAD1D1"/>
-                            <path d="M474.92 159.804L473.739 160.663L476.53 164.097L477.282 163.561L474.92 159.804Z"
-                                  fill="#DAD1D1"/>
-                            <path d="M474.061 159.589L474.598 160.985L478.678 159.375L478.356 158.516L474.061 159.589Z"
-                                  fill="#DAD1D1"/>
-                            <path d="M473.631 160.233H475.027L474.812 155.833H473.846L473.631 160.233Z" fill="#DAD1D1"/>
-                            <path d="M472.772 160.341C472.772 161.199 473.416 161.843 474.275 161.843C475.134 161.843 475.779 161.199 475.779 160.341C475.779 159.482 475.134 158.838 474.275 158.838C473.524 158.838 472.772 159.482 472.772 160.341Z"
-                                  fill="#FDFDFD"/>
-                            <path opacity="0.15"
-                                  d="M493.603 145.529L496.824 149.715L501.119 150.037L497.791 145.529H493.603Z"
-                                  fill="white"/>
-                            <path opacity="0.15" d="M498.327 145.529L501.656 150.037H503.159L499.723 145.529H498.327Z"
-                                  fill="white"/>
-                        </g>
-                        <g id="car1" class="car-1">
-                            <path d="M170.834 172.469H171.048C171.263 172.469 171.478 172.147 171.478 171.718L171.8 169.142C171.8 168.713 171.693 168.283 171.478 168.176H171.37C171.156 168.176 170.941 168.498 170.941 168.927L170.619 171.503C170.404 172.04 170.619 172.469 170.834 172.469Z"
-                                  fill="#E94E1B"/>
-                            <path d="M276.491 173.328L277.242 173.221C277.672 173.221 278.101 172.791 278.101 172.255L278.423 168.713C278.423 168.176 278.209 167.747 277.672 167.639L277.242 167.532L276.491 173.328Z"
-                                  fill="#F9B659"/>
-                            <path d="M276.169 173.543L277.242 173.435L277.887 167.425L276.598 167.317L276.169 173.543Z"
-                                  fill="#122237"/>
-                            <path opacity="0.1"
-                                  d="M169.223 183.525C169.223 184.598 193.382 185.564 223.233 185.564C253.083 185.564 277.242 184.598 277.242 183.525C277.242 182.451 253.083 181.485 223.233 181.485C193.382 181.485 169.223 182.451 169.223 183.525Z"
-                                  fill="#1D1D1B"/>
-                            <path d="M276.276 177.085H277.457C277.779 177.085 277.994 176.87 278.101 176.548L278.423 174.616C278.531 174.294 278.209 173.865 277.779 173.865H276.169L275.846 176.441C275.846 176.763 276.061 177.085 276.276 177.085Z"
-                                  fill="#DAD1D1"/>
-                            <path d="M174.699 177.514L186.188 178.265H186.832L188.228 178.373H267.256L273.914 177.514C275.309 177.299 276.491 176.226 276.705 174.723L277.457 167.639C277.672 165.815 276.383 165.493 274.558 165.385L244.6 163.883C243.526 163.775 242.453 163.453 241.486 162.702L232.682 155.94C232.037 155.511 231.393 155.189 230.641 155.189H204.764C202.294 155.189 199.825 156.155 197.999 157.979L194.134 161.736C193.704 162.165 193.06 162.487 192.416 162.595L173.196 166.566C172.229 166.781 171.585 167.532 171.478 168.498L170.941 172.899C170.619 175.26 172.337 177.299 174.699 177.514Z"
-                                  fill="#22395A"/>
-                            <path opacity="0.2"
-                                  d="M246.211 164.956L274.343 166.351C274.987 166.351 276.705 166.459 276.491 167.854L275.739 174.723C276.169 166.888 275.31 167.317 271.981 167.103L246.211 164.956Z"
-                                  fill="#F6F6F6"/>
-                            <path opacity="0.2"
-                                  d="M171.8 173.113L172.337 168.713C172.444 168.176 172.766 167.747 173.411 167.532L192.416 163.346C192.523 163.346 192.738 163.453 192.738 163.453C174.162 167.854 173.303 167.532 171.8 173.113Z"
-                                  fill="#F6F6F6"/>
-                            <path d="M230.427 156.262C230.964 156.262 231.501 156.477 231.93 156.799L240.735 163.561C241.164 163.883 241.486 164.097 241.916 164.312L243.097 169.142L241.916 177.621H218.508L219.367 168.82L218.508 156.369H230.427V156.262Z"
-                                  fill="#122237"/>
-                            <path d="M219.582 157.121H230.534C230.856 157.121 231.286 157.228 231.501 157.443L240.305 164.205C240.413 164.205 240.413 164.312 240.52 164.312H220.119L219.582 157.121Z"
-                                  fill="#ABEDE3"/>
-                            <path d="M201.972 157.55C202.509 156.691 203.476 156.262 204.549 156.262H217.756L218.615 168.713L217.756 177.514H203.905C203.583 173.757 200.899 170.645 197.355 169.464V165.278C197.355 164.527 197.57 163.883 197.999 163.346L201.972 157.55Z"
-                                  fill="#122237"/>
-                            <path d="M202.724 158.087C203.154 157.443 203.798 157.121 204.549 157.121H216.898L217.434 164.419H198.322L202.724 158.087Z"
-                                  fill="#ABEDE3"/>
-                            <path d="M224.521 165.6H220.656V166.888H224.521V165.6Z" fill="#DAD1D1"/>
-                            <path d="M202.187 165.6H198.322V166.888H202.187V165.6Z" fill="#DAD1D1"/>
-                            <path d="M170.941 173.006V173.543H173.303C174.484 173.543 175.451 174.509 175.451 175.689L170.297 175.475C169.76 175.475 169.116 174.938 169.223 174.401C169.223 174.294 169.223 174.187 169.223 174.079C169.33 173.435 169.76 173.006 170.404 173.006H170.941Z"
-                                  fill="#DAD1D1"/>
-                            <path d="M274.128 176.548H277.242C277.564 176.548 277.779 176.333 277.779 176.119L277.994 175.26C278.101 174.938 277.779 174.509 277.457 174.509H274.343C274.021 174.509 273.806 174.723 273.806 174.938L273.592 175.797C273.484 176.226 273.699 176.548 274.128 176.548Z"
-                                  fill="#DAD1D1"/>
-                            <path d="M236.977 164.741L238.802 165.6L238.909 164.634L237.299 163.131L236.977 164.741Z"
-                                  fill="#22395A"/>
-                            <path d="M236.44 161.951H236.547C236.977 162.058 237.406 162.38 237.513 162.809L237.728 163.775C237.943 164.741 237.084 165.707 236.118 165.6H235.903L236.44 161.951Z"
-                                  fill="#22395A"/>
-                            <path d="M249.647 178.373H265.431L265.002 175.904C264.679 174.294 263.713 173.113 262.424 172.362C261.78 172.04 260.921 171.825 260.17 171.825H255.445C254.371 171.825 253.405 172.147 252.546 172.684C251.365 173.435 250.398 174.723 250.184 176.226L249.647 178.373Z"
-                                  fill="#403430"/>
-                            <path d="M186.081 178.265H186.725H187.262L188.121 178.373H201.865L201.436 175.904C201.113 174.401 200.147 173.113 198.859 172.362C198.214 172.04 197.355 171.825 196.496 171.825H191.772C190.698 171.825 189.732 172.147 188.873 172.684C187.584 173.435 186.725 174.723 186.51 176.333L186.081 178.265Z"
-                                  fill="#403430"/>
-                            <g opacity="0.75">
-                                <path opacity="0.75" d="M226.991 157.443L232.037 164.205H228.065L222.911 157.443H226.991Z"
-                                      fill="white"/>
-                                <path opacity="0.75" d="M228.816 157.443L233.863 164.205H232.574L227.528 157.443H228.816Z"
-                                      fill="white"/>
-                            </g>
-                            <g opacity="0.75">
-                                <path opacity="0.75" d="M209.167 157.443L214.321 164.205H210.24L205.086 157.443H209.167Z"
-                                      fill="white"/>
-                                <path opacity="0.75" d="M211.099 157.443L216.146 164.205H214.857L209.703 157.443H211.099Z"
-                                      fill="white"/>
-                            </g>
-                            <path opacity="0.2"
-                                  d="M169.223 174.079C169.223 174.187 169.223 174.294 169.223 174.401C169.223 174.938 169.76 175.475 170.297 175.475L171.478 175.582C172.122 176.655 173.303 177.407 174.592 177.407L186.081 178.158H186.725L188.121 178.265H201.865H249.647H265.431H267.256L273.914 177.407C274.665 177.299 275.417 176.977 275.846 176.333H275.954C275.954 176.655 276.169 176.87 276.383 176.87H277.564C277.887 176.87 278.101 176.655 278.209 176.333L278.531 174.401C278.531 174.294 278.531 174.294 278.531 174.187L170.726 169.679L170.512 171.503C170.404 172.04 170.619 172.469 170.834 172.469H170.941V172.899H170.512C169.867 173.006 169.33 173.435 169.223 174.079Z"
-                                  fill="black"/>
-                            <path d="M253.19 177.085C253.19 179.446 255.123 181.378 257.485 181.378C259.848 181.378 261.78 179.446 261.78 177.085C261.78 174.723 259.848 172.791 257.485 172.791C255.123 172.791 253.19 174.723 253.19 177.085Z"
-                                  fill="#DAD1D1"/>
-                            <path d="M250.721 177.192C250.721 177.621 250.721 178.051 250.828 178.48C251.472 181.593 254.157 183.954 257.485 183.954C260.814 183.954 263.498 181.593 264.143 178.48C264.25 178.051 264.25 177.621 264.25 177.192C264.25 175.367 263.498 173.65 262.317 172.469C261.673 172.147 260.814 171.933 260.062 171.933H255.338C254.264 171.933 253.298 172.255 252.439 172.791C251.365 173.865 250.721 175.475 250.721 177.192ZM257.485 181.271C255.66 181.271 254.049 180.09 253.512 178.373C253.405 177.943 253.298 177.514 253.298 177.085C253.298 174.831 255.123 172.899 257.485 172.899C259.74 172.899 261.673 174.723 261.673 177.085C261.673 177.514 261.566 177.943 261.458 178.373C260.921 180.09 259.418 181.271 257.485 181.271Z"
-                                  fill="#1D1715"/>
-                            <path d="M254.371 177.085C254.371 178.802 255.767 180.197 257.485 180.197C259.203 180.197 260.599 178.802 260.599 177.085C260.599 175.367 259.203 173.972 257.485 173.972C255.767 173.972 254.371 175.367 254.371 177.085Z"
-                                  fill="white"/>
-                            <path d="M255.66 177.085C255.66 178.158 256.519 179.017 257.593 179.017C258.666 179.017 259.525 178.158 259.525 177.085C259.525 176.011 258.666 175.153 257.593 175.153C256.412 175.26 255.66 176.119 255.66 177.085Z"
-                                  fill="#DAD1D1"/>
-                            <path opacity="0.5"
-                                  d="M259.203 173.757C259.848 174.079 260.384 174.616 260.814 175.153L257.593 177.085L259.203 173.757Z"
-                                  fill="white"/>
-                            <path opacity="0.5"
-                                  d="M257.485 177.085L255.767 180.519C255.123 180.197 254.586 179.661 254.157 179.017L257.485 177.085Z"
-                                  fill="white"/>
-                            <path d="M189.624 177.085C189.624 179.446 191.557 181.378 193.919 181.378C196.282 181.378 198.214 179.446 198.214 177.085C198.214 174.723 196.282 172.791 193.919 172.791C191.557 172.791 189.624 174.723 189.624 177.085Z"
-                                  fill="#DAD1D1"/>
-                            <path d="M187.155 177.192C187.155 177.621 187.155 178.051 187.262 178.373C187.799 181.485 190.591 183.954 193.919 183.954C197.248 183.954 199.932 181.593 200.577 178.48C200.684 178.051 200.684 177.621 200.684 177.192C200.684 175.367 199.932 173.65 198.751 172.469C198.107 172.147 197.248 171.933 196.389 171.933H191.664C190.591 171.933 189.624 172.255 188.765 172.791C187.799 173.865 187.155 175.475 187.155 177.192ZM194.027 181.271C192.201 181.271 190.591 180.09 190.054 178.373C189.946 177.943 189.839 177.514 189.839 177.085C189.839 174.831 191.664 172.899 194.027 172.899C196.282 172.899 198.214 174.723 198.214 177.085C198.214 177.514 198.107 177.943 198 178.373C197.355 180.09 195.852 181.271 194.027 181.271Z"
-                                  fill="#1D1715"/>
-                            <path d="M190.805 177.085C190.805 178.802 192.201 180.197 193.919 180.197C195.637 180.197 197.033 178.802 197.033 177.085C197.033 175.367 195.637 173.972 193.919 173.972C192.201 173.972 190.805 175.367 190.805 177.085Z"
-                                  fill="white"/>
-                            <path d="M192.094 177.085C192.094 178.158 192.953 179.017 194.027 179.017C195.1 179.017 195.959 178.158 195.959 177.085C195.959 176.011 195.1 175.153 194.027 175.153C192.953 175.26 192.094 176.119 192.094 177.085Z"
-                                  fill="#DAD1D1"/>
-                            <path opacity="0.5"
-                                  d="M195.637 173.757C196.281 174.079 196.818 174.616 197.248 175.153L194.027 177.085L195.637 173.757Z"
-                                  fill="white"/>
-                            <path opacity="0.5"
-                                  d="M194.027 177.085L192.309 180.519C191.664 180.197 191.127 179.661 190.698 179.017L194.027 177.085Z"
-                                  fill="white"/>
-                        </g>
-                    </svg>
-                </div>
-
-            </div> -->
-
-            <!-- Переверстать -->
-
-
             <div class="section partnership-section waw-section" data-anchor="who_we_are">
                 <div class="wrapper">
                     <div class="waw-wrap">
-                        <h2 class="h2 heading-left js-word">WHO ARE WE?</h2>
+                        <h2 class="h2 heading-left">WHO ARE WE?</h2>
                         <p class="text">
                             <span class="accent bold_text">Yutland</span> – это интересная профессиональная команда профессиональных интересных профессионалов, с интересом работающая в сфере международного налогового и корпоративного планирования с 2011 года. В течение 9 лет мы вели свою деятельность в рамках нескольких крупных проектов, и, наконец, в 2020, вобрав в себя <span class="bold_text">все самое лучшее</span> и приняв во внимание все самое худшее из нашего предыдущего опыта, решили вывести проект в люди. 
                             <br>
@@ -1405,11 +1186,11 @@
 
 
                         <div class="video_waw">
-                            <a href=".video_popup" id="video_waw2"><img src="img/poster_waw.jpg"></a>
+                            <a href=".video_popup" id="video_waw2"><img data-src="img/poster_waw.jpg"></a>
                         </div>
 
                         <div class="video_popup mfp-hide">
-                            <video id="video_waw_poup" src="img/yutland.mp4" controls></video>
+                            <video preload="none" id="video_waw_poup" data-src="img/yutland.mp4" controls></video>
                             <button title="Close (Esc)" type="button" id="video_pause" class="mfp-close"><i class="form-icon close-icon"></i></button>
                         </div>
 
@@ -1418,9 +1199,9 @@
 
             </div>
            
-            <div class="section section-contacts" data-anchor="contacts">
+            <div class="section section-contacts" data-anchor="contacts" id="contacts">
                 <div class="wrapper wrapper-contacts">
-                    <h2 class="h2 heading-left js-word heading-desktop">НАШИ КОНТАКТЫ</h2>
+                    <h2 class="h2 heading-left heading-desktop">НАШИ КОНТАКТЫ</h2>
                     <h2 class="h2 heading-left heading-mobile">НАШИ КОНТАКТЫ</h2>
 
                     <div class="contacts">
@@ -1453,7 +1234,7 @@
                         <div class="order-block form-page wrapper-final-form anim-decor last-order">
 
                             <div class="order-form">
-                                <form class="forms final-form">
+                                <form class="forms">
 
                                     <div class="form-title">Мы поможем вам подобрать компанию</div>
                                     <div class="form-subtitle">Заполните форму и мы свяжемся с Вами</div>
@@ -1462,17 +1243,30 @@
                                     <input type="hidden" name="admin_email" value="yeahh@yutland.com">
                                     <input type="hidden" name="form_subject" value="Хотите что-то уточнить?">
 
-                                    <input type="text" name="Имя" placeholder="*Ваше имя" required>
-                                    <input type="text" name="Почта" placeholder="*Ваш E-mail" required>
-                                    <input type="text" name="Телефон" placeholder="*Ваш телефон" required>
-                                    
+                                    <div class="box-field">
+                                        <div class="box-field__input">
+                                            <input type="text" class="form-control" name="Имя" autocomplete="off" required>
+                                            <label class="label-placeholder">Ваше имя?</label>
+                                        </div>
+                                    </div>
 
-                                    <label>
-                                        <input class="checkbox_input" type="checkbox" required>
-                                        <p class="checkbox_text" >Я соглашаюсь с политикой конфиденциальности</p>
-                                      </label>
+                                    <div class="box-field">
+                                        <div class="box-field__input">
+                                            <input type="email" class="form-control" name="e-mail" autocomplete="off" required>
+                                            <label class="label-placeholder">Ваш e-mail?</label>
+                                        </div>
+                                    </div>
 
-                                    <button class="button">Отправить</button>
+                                    <div class="box-field">
+                                        <div class="box-field__input">
+                                            <input type="text" class="form-control" name="телефон" autocomplete="off" required>
+                                            <label class="label-placeholder">Ваш телефон?</label>
+                                        </div>
+                                    </div>
+                      
+                                    <div class="box-field__button">
+                                        <button class="btn-order">отправить</button>
+                                    </div>
 
                                 </form>
                             </div>
@@ -1481,7 +1275,7 @@
                     </div>
 
                     <div class="contacts-decor">
-                        <img src="img/bg/10.svg">
+                        <img data-src="img/bg/10.svg">
                         <div class="decor-top">
                             <svg width="111" height="109" viewBox="0 0 111 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="111" height="109" fill="white"/>
@@ -1544,9 +1338,6 @@
 
     </div>
 
-    <!-- CONTENT EOF   -->
-
-    <!-- BEGIN HEADER -->
 
     <header class="header">
         <div class="wrapper header-wrapper">
@@ -1579,7 +1370,7 @@
         <nav>
             <ul id="menu">
                 <li><a href="#main" data-menuanchor="main" class="active js-menu-nav">Главная</a></li>
-                <li><a href="#how-work" data-menuanchor="how-work" class="js-menu-nav">Наша ЦА</a></li>
+                <li><a href="#target-audience" data-menuanchor="target-audience" class="js-menu-nav">Наша ЦА</a></li>
                 <li><a href="#map" data-menuanchor="map" class="js-menu-nav">СТРАНЫ. КОМПАНИИ. СЧЕТА</a></li>
                 <li><a href="#blog" data-menuanchor="blog" class="js-menu-nav">ИНТЕРЕСНОЕ ЧТИВО</a></li>
                 <li><a href="#why" data-menuanchor="why" class="js-menu-nav">МЫ ОТЛИЧАЕМСЯ</a></li>
@@ -1591,7 +1382,6 @@
     </div>
 
 
-    <!-- HEADER EOF   -->
 
     <div class="lds-ellipsis">
         <div></div>
@@ -1600,20 +1390,19 @@
         <div></div>
     </div>
 
-    <!-- BODY EOF   -->
 
+    <script defer src="https://kit.fontawesome.com/a77af3a9ba.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.0.0.min.js" defer></script>
+
     <script src="js/components/jquery.magnific-popup.min.js" defer></script>
-    <script src="js/jquery-migrate-1.4.1.min.js" defer></script>
-    <script src="js/components/scrolloverflow.min.js" defer></script>
+
     <script src="js/components/fullpage.min.js" defer></script>
+    <script src="js/components/scrolloverflow.min.js" defer></script>
+    
     <script src="js/components/slick.js" defer></script>
-    <script src="js/components/jquery.mCustomScrollbar.js" defer></script>
-    <script src="js/components/jquery.lettering.js" defer></script>
-    <script src="js/components/jquery.textillate.js" defer></script>
-    <script src="js/components/anime.min.js" defer></script>
-    <script src="js/components/jquery.fancybox.js" defer></script>
+
     <script src="js/custom.js" defer></script>
+    <script src="js/fade.js" defer></script>
 
 </body>
 

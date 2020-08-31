@@ -1,3 +1,10 @@
 $(document).ready(function() {
-    $(".fade-animation").fadeOut(800);
+
+  $(".js-scroll").mCustomScrollbar({
+      axis: "y",
+      margin: 0,
+      theme: "dark-thin"
+  });
+
 });
+
