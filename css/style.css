@@ -16,6 +16,10 @@ body {
     overflow-y: hidden !important
 }
 
+i {
+	font-family: fontawesome !important;
+}
+
 .mfp-fade.mfp-bg {
     opacity: 0;
     -webkit-transition: all .35s ease-out;
@@ -3457,8 +3461,8 @@ textarea.form-control {
 }
 
 .panel .panel-heading a::after {
+		font-family: "fontawesome";
     content: '\f107';
-    font-family: "fontawesome";
     position: absolute;
     border-radius: 10em;
     width: 26px;
@@ -4379,6 +4383,11 @@ textarea.form-control {
 }
 
 @media screen and (max-width:500px) {
+
+	.blog__item_new a .blog__title{
+		padding: 10px 20px;
+		min-height: 50px;
+	}
 
 	.section-map .fp-scrollable{
 		height: auto!important;
