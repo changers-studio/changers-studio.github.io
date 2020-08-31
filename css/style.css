@@ -3458,7 +3458,7 @@ textarea.form-control {
 
 .panel .panel-heading a::after {
     content: '\f107';
-    font-family: fontawesome;
+    font-family: "fontawesome";
     position: absolute;
     border-radius: 10em;
     width: 26px;

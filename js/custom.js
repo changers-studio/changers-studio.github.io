@@ -207,9 +207,7 @@ var $win = $(window),
             })
         }
 
-var scrollHeight = Math.max(
-  document.body.scrollHeight
-)
+var scrollHeight = Math.max(document.body.scrollHeight)
 
 
 $('.button_under_slider-mob a').click(function(){
