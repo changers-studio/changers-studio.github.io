@@ -4549,8 +4549,16 @@ textarea.form-control {
 			margin-bottom: 0;
 		}
 
+		.why-block__decor{
+			margin-top: 30px;
+		}
+
 		.why-block__list{
 			margin-top: 0;
+		}
+
+		.filters_map{
+			margin-bottom: 20px;
 		}
 
 		.partnership-section .text{
