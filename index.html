@@ -3,20 +3,10 @@
 
 	<head>
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166755442-3"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-166755442-3');
-		</script>
-
 		<meta charset="utf-8">
 
-		<title>Crypton</title>
-		<meta name="description" content="Take a chance to invest in Crypton and the Utopia P2P project!">
+		<title>Артлайт | якість легкість досвід</title>
+		<!-- <meta name="description" content=""> -->
 
 		<meta name="viewport" content="width=device-width">
 		<meta name="format-detection" content="telephone=no">
@@ -24,377 +14,1237 @@
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 		
 		<link rel="stylesheet" href="css/styles.min.css">
-		<script async defer src="https://kit.fontawesome.com/a77af3a9ba.js" crossorigin="anonymous"></script>
 		<script defer src="js/scripts.min.js"></script>
 
 	</head>
 
 	<body>
 
-		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript" >
-		   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-		   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-		   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-		   ym(66991381, "init", {
-		        clickmap:true,
-		        trackLinks:true,
-		        accurateTrackBounce:true,
-		        webvisor:true
-		   });
-		</script>
-		<noscript><div><img src="https://mc.yandex.ru/watch/66991381" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-		<!-- /Yandex.Metrika counter -->
-
-
-		<div class="preloader">
-			<img src="img/logo.svg" alt="Site logo">
-		</div>
-
-		<div class="container_fixed-bg">
-			<div class="container _fixed">
+		<header class="header">
+			<div class="container">
 				<div class="row">
 					<div class="col-12">
-
+						
 						<div class="header__top-line top-line">
 
-							<div class="top-line__logo"><img src="img/logo.svg" alt="Site logo"><span>Crypton</span></div>
+							<div class="top-line__leftSide-wrapper">
 
-							<div class="top-line__right-side">
-								
-								<nav>
-									<ul class="top-line__menu">
-										<li><a href=".about" class="menu-move">About</a></li>
-										<li><a href=".investing" class="menu-move">Why to invest</a></li>
-										<li><a href=".dialog" class="menu-move">FAQ</a></li>
-										<li><a href=".roadmap" class="menu-move">Roadmap</a></li>
-										<li><a href=".features" class="menu-move">Features</a></li>
-										<li><a href=".where-buy" class="menu-move">Where to buy</a></li>
-										<li><a href=".footer" class="menu-move">Pay with CRP</a></li>
+								<select id="headerSelect-cities" data-placeholder="Міста">
+									<option label="text"></option>
+									<option value="Луцьк" >Луцьк</option>
+									<option value="Дніпро">Дніпро</option>
+									<option value="Львів">Львів</option>
+									<option value="Запоріжжя">Запоріжжя</option>
+									<option value="Рівне">Рівне</option>
+									<option value="Краматорськ">Краматорськ</option>
+									<option value="Вінниця">Вінниця</option>
+									<option value="Чернігів">Чернігів</option>
+									<option value="Чернівці">Чернівці</option>
+									<option value="Черкаси">Черкаси</option>
+									<option value="Івано-франківськ">Івано-франківськ</option>
+									<option value="Херсон">Херсон</option>
+									<option value="Хмельницький">Хмельницький</option>
+									<option value="Харків">Харків</option>
+									<option value="Київ">Київ</option>
+									<option value="Суми">Суми</option>
+									<option value="Тернопіль">Тернопіль</option>
+									<option value="Полтава">Полтава</option>
+									<option value="Ужгород">Ужгород</option>
+									<option value="Миколаїв">Миколаїв</option>
+									<option value="Житомир">Житомир</option>
+									<option value="Кропивницький">Кропивницький</option>
+									<option value="Одеса">Одеса</option>
+									<option value="Сєвєродонецьк">Сєвєродонецьк</option>
+								</select>
+
+								<select id="headerSelect-languages">
+									<option value="Українська">Українська</option>
+									<option value="Русский">Русский</option>
+								</select>
+
+								<ul class="top-line__social-links">
+									<li><a href=""><i class="fab fa-instagram"></i></a></li>
+									<li><a href=""><i class="fab fa-facebook"></i></a></li>
+									<li><a href=""><i class="fab fa-telegram-plane"></i></a></li>
+									<li><a href=""><i class="fab fa-youtube"></i></a></li>
+								</ul>
+
+								<nav class="top-line__menu">
+									<ul>
+										<li><a href="">Про компанію</a></li>
+										<li><a href="">Як замовити</a></li>
+										<li><a href="">Портфоліо</a></li>
+										<li><a href="">База знань</a></li>
+										<li><a href="">Допомога</a></li>
 									</ul>
 								</nav>
 
-								<a href="https://www.zg.com/exchange/737/CRP/USDT" target="_blank" class="button top-line__button" onclick="gtag('event', 'menu_dwn', {'event_category': 'download', 'event_label': 'menu'});">buy it now</a>
+							</div>
 
-								<div class="hamburger">
-									<div class="line"></div>
-									<div class="line _short"></div>
-									<div class="line _medium"></div>
-								</div>
+							<div class="top-line__rightSide-wrapper">
+
+								<select id="headerSelect-bookmarks" data-placeholder="Закладки (0)">
+									<option label="text"></option>
+									<option value="Закладка 1">Закладка 1</option>
+									<option value="Закладка 2">Закладка 2</option>
+									<option value="Закладка 3">Закладка 3</option>
+									<option value="Закладка 4">Закладка 4</option>
+								</select>
+
+								<select id="headerSelect-cabinet" data-placeholder="Ввійти в кабінет">
+									<option label="text"></option>
+									<option value="Ввійти">Ввійти</option>
+									<option value="Вийти">Вийти</option>
+								</select>
 
 							</div>
 
 						</div>
 
-					</div>
-				</div>
-			</div>
-		</div>
+						<div class="header__middle-line middle-line">
+							
+							<a href="index.html" class="logo"><img src="img/logo.svg" alt="Site logo"></a>
 
-		<div class="sidebar-menu__plug"></div>
+							<div class="middle-line__search-bar">
 
-		<nav class="sidebar-menu">
-
-			<img class="sidebar-menu__bg" src="img/sidebar-menu__diamond.svg" alt="Sidebar diamond">
-
-			<div class="hamburger">
-				<i class="fas fa-times"></i>
-			</div>
-
-			<ul>
-				<li><a href=".about" class="menu-move">About</a></li>
-				<li><a href=".investing" class="menu-move">Why to invest</a></li>
-				<li><a href=".dialog" class="menu-move">FAQ</a></li>
-				<li><a href=".roadmap" class="menu-move">Roadmap</a></li>
-				<li><a href=".features" class="menu-move">Features</a></li>
-				<li><a href=".where-buy" class="menu-move">Where to buy</a></li>
-				<li><a href=".footer" class="menu-move">Pay with CRP</a></li>
-			</ul>
-
-			<a href="https://www.zg.com/exchange/737/CRP/USDT" target="_blank" class="button __diamond" onclick="gtag('event', 'menu_dwn', {'event_category': 'download', 'event_label': 'menu'});">buy coin now <img src="img/button__diamond.svg" alt="Diamond"></a>
-
-		</nav>
-
-		<header class="header header_height" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1000">
-
-			<div class="container"> 
-				<div class="row">
-					<div class="col-12">
-
-						<div class="header__top-line top-line">
-
-							<div class="top-line__logo"><img src="img/logo.svg" alt="Site logo"><span>Crypton</span></div>
-
-							<div class="top-line__right-side">
-
-								<nav>
-									<ul class="top-line__menu">
-										<li><a href=".about" class="menu-move">About</a></li>
-										<li><a href=".investing" class="menu-move">Why to invest</a></li>
-										<li><a href=".dialog" class="menu-move">FAQ</a></li>
-										<li><a href=".roadmap" class="menu-move">Roadmap</a></li>
-										<li><a href=".features" class="menu-move">Features</a></li>
-										<li><a href=".where-buy" class="menu-move">Where to buy</a></li>
-										<li><a href=".footer" class="menu-move">Pay with CRP</a></li>
-									</ul>
-								</nav>
-
-								<a href="https://www.zg.com/exchange/737/CRP/USDT" target="_blank" class="button top-line__button" onclick="gtag('event', 'menu_dwn', {'event_category': 'download', 'event_label': 'menu'});">buy it now</a>
-
-								<div class="hamburger">
-									<div class="line"></div>
-									<div class="line _short"></div>
-									<div class="line _medium"></div>
+								<div class="middle-line__search-bar-wrapper">
+									<input type="text" name="header-search" id="header__search-bar" placeholder="Пошук товару">
+									<button class="button">Шукати</button>
 								</div>
 
+								<ul class="often-lookingFor">
+									<li class="often-lookingFor__heading">Часто шукають:</li>
+									<li><a href="">Світлодіодна панель</a></li>
+									<li><a href="">Об’ємні букви</a></li>
+									<li><a href="">Вивіски</a></li>
+								</ul>
+
+							</div>
+
+							<div class="middle-line__contacts">
+								<div class="panel">
+
+									<div class="panel-heading">
+										<p>(098) 800-80-30</p>
+										<p>(095) 280-80-30</p>
+									</div>
+
+									<div class="panel-collapse">
+
+										<div class="address">
+											<p class="heading">Адреса</p>
+											<p><img src="img/icons/location-icon.svg" alt="Location icon">35360, Україна, Рівненська обл. с. Велика Омеляна, <br>ул. Шевченка, 28</p>
+										</div>
+
+										<div class="post">
+											<p class="heading">Електронна пошта</p>
+											<p><img src="img/icons/mail-icon.svg" alt="Mail icon">sales@art-light.com.ua</p>
+										</div>
+
+										<div class="schedule">
+											<p class="heading">Графік роботи</p>
+											<p><img src="img/icons/clock-icon.svg" alt="Clock icon">пн - пт: с 10:00 по 17:00 <br> сб - нд: вихідні</p>			
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class="middle-line__basket">
+								<div class="middle-line__basket-icon">
+									<img src="img/icons/cart-icon.svg" alt="Cart icon">
+									<div class="basket-counter">0</div>
+								</div>
+								<p>Корзина <br> <span>0 товаров</span></p>
 							</div>
 
 						</div>
 
-					</div>
-				</div>
-			</div>
+						<div class="header__bottom-line bottom-line">
+							
+							<ul class="bottom-line__lists">
 
-			<div class="header__main" data-aos="zoom-out" data-aos-delay="1500" data-aos-duration="1000">
+								<li>
+									<span class="heading">Вивіски</span>
+									<ul class="bottom-line__lists_level1">
+										<li>
+											<a class="heading">Брендування</a>
+											<ul class="bottom-line__lists_level2">
+												<li><a>Обклеювання авто захисною плівкою</a></li>
+												<li><a>Обклеювання плівкою карбон</a></li>
+											</ul>
+										</li>
+										<li><a href="">Широкоформатний друк</a></li>
+										<li><a href="">Дизайн реклами</a></li>
+										<li><a href="">Автостайлінг</a></li>
+										<li><a href="">Рекламно виставкова продукція</a></li>
+										<li><a href="">Додаткова продукція</a></li>
+										<li><a href="">Реклама на транспорті</a></li>
+									</ul>
+								</li>
 
-				<div class="container">
-					<div class="row">
-						<div class="col-md-7 col-sm-8">
+								<li>
+									<span class="heading">Окремостоячі рекламні <br> консультації</span>
+									<ul class="bottom-line__lists_level1">
+										<li>
+											<a class="heading">Брендування</a>
+											<ul class="bottom-line__lists_level2">
+												<li><a>Обклеювання авто захисною плівкою</a></li>
+												<li><a>Обклеювання плівкою карбон</a></li>
+											</ul>
+										</li>
+										<li><a href="">Широкоформатний друк</a></li>
+										<li><a href="">Дизайн реклами</a></li>
+										<li><a href="">Автостайлінг</a></li>
+										<li><a href="">Рекламно виставкова продукція</a></li>
+										<li><a href="">Додаткова продукція</a></li>
+										<li><a href="">Реклама на транспорті</a></li>
+									</ul>
+								</li>
 
-							<h3 class="h3">Didn't have time to buy Bitcoin in 2009 <br> and become wealthy?</h3>
-							<h1 class="h1">Take a chance to invest in <span>Crypton</span> and the Utopia <br> P2P project!</h1>
-							<a href="https://www.zg.com/exchange/737/CRP/USDT" target="_blank" class="button __diamond" onclick="gtag('event', 'header_dwn', {'event_category': 'download', 'event_label': 'heder'});">buy coin now <img src="img/button__diamond.svg" alt="Diamond"></a>
+								<li>
+									<span class="heading">Виносні <br> консультації</span>
+									<ul class="bottom-line__lists_level1">
+										<li>
+											<a class="heading">Брендування</a>
+											<ul class="bottom-line__lists_level2">
+												<li><a>Обклеювання авто захисною плівкою</a></li>
+												<li><a>Обклеювання плівкою карбон</a></li>
+											</ul>
+										</li>
+										<li><a href="">Широкоформатний друк</a></li>
+										<li><a href="">Дизайн реклами</a></li>
+										<li><a href="">Автостайлінг</a></li>
+										<li><a href="">Рекламно виставкова продукція</a></li>
+										<li><a href="">Додаткова продукція</a></li>
+										<li><a href="">Реклама на транспорті</a></li>
+									</ul>
+								</li>
+
+								<li>
+									<span class="heading">Світлодіоні <br> LED табло</span>
+									<ul class="bottom-line__lists_level1">
+										<li>
+											<a class="heading">Брендування</a>
+											<ul class="bottom-line__lists_level2">
+												<li><a>Обклеювання авто захисною плівкою</a></li>
+												<li><a>Обклеювання плівкою карбон</a></li>
+											</ul>
+										</li>
+										<li><a href="">Широкоформатний друк</a></li>
+										<li><a href="">Дизайн реклами</a></li>
+										<li><a href="">Автостайлінг</a></li>
+										<li><a href="">Рекламно виставкова продукція</a></li>
+										<li><a href="">Додаткова продукція</a></li>
+										<li><a href="">Реклама на транспорті</a></li>
+									</ul>
+								</li>
+
+								<li>
+									<span class="heading">Світлодіодні <br> екрани</span>
+									<ul class="bottom-line__lists_level1">
+										<li>
+											<a class="heading">Брендування</a>
+											<ul class="bottom-line__lists_level2">
+												<li><a>Обклеювання авто захисною плівкою</a></li>
+												<li><a>Обклеювання плівкою карбон</a></li>
+											</ul>
+										</li>
+										<li><a href="">Широкоформатний друк</a></li>
+										<li><a href="">Дизайн реклами</a></li>
+										<li><a href="">Автостайлінг</a></li>
+										<li><a href="">Рекламно виставкова продукція</a></li>
+										<li><a href="">Додаткова продукція</a></li>
+										<li><a href="">Реклама на транспорті</a></li>
+									</ul>
+								</li>
+
+								<li>
+									<span class="heading">Таблички</span>
+									<ul class="bottom-line__lists_level1">
+										<li>
+											<a class="heading">Брендування</a>
+											<ul class="bottom-line__lists_level2">
+												<li><a>Обклеювання авто захисною плівкою</a></li>
+												<li><a>Обклеювання плівкою карбон</a></li>
+											</ul>
+										</li>
+										<li><a href="">Широкоформатний друк</a></li>
+										<li><a href="">Дизайн реклами</a></li>
+										<li><a href="">Автостайлінг</a></li>
+										<li><a href="">Рекламно виставкова продукція</a></li>
+										<li><a href="">Додаткова продукція</a></li>
+										<li><a href="">Реклама на транспорті</a></li>
+									</ul>
+								</li>
+
+								<li>
+									<span class="heading">Рамки та рамочні <br> консультації</span>
+									<ul class="bottom-line__lists_level1">
+										<li>
+											<a class="heading">Брендування</a>
+											<ul class="bottom-line__lists_level2">
+												<li><a>Обклеювання авто захисною плівкою</a></li>
+												<li><a>Обклеювання плівкою карбон</a></li>
+											</ul>
+										</li>
+										<li><a href="">Широкоформатний друк</a></li>
+										<li><a href="">Дизайн реклами</a></li>
+										<li><a href="">Автостайлінг</a></li>
+										<li><a href="">Рекламно виставкова продукція</a></li>
+										<li><a href="">Додаткова продукція</a></li>
+										<li><a href="">Реклама на транспорті</a></li>
+									</ul>
+								</li>
+
+								<li>
+									<span class="heading">Флагштоки та <br> прапори</span>
+									<ul class="bottom-line__lists_level1">
+										<li>
+											<a class="heading">Брендування</a>
+											<ul class="bottom-line__lists_level2">
+												<li><a>Обклеювання авто захисною плівкою</a></li>
+												<li><a>Обклеювання плівкою карбон</a></li>
+											</ul>
+										</li>
+										<li><a href="">Широкоформатний друк</a></li>
+										<li><a href="">Дизайн реклами</a></li>
+										<li><a href="">Автостайлінг</a></li>
+										<li><a href="">Рекламно виставкова продукція</a></li>
+										<li><a href="">Додаткова продукція</a></li>
+										<li><a href="">Реклама на транспорті</a></li>
+									</ul>
+								</li>
+
+								<li>
+									<span class="heading">Інформаційні <br> стенди</span>
+									<ul class="bottom-line__lists_level1">
+										<li>
+											<a class="heading">Брендування</a>
+											<ul class="bottom-line__lists_level2">
+												<li><a>Обклеювання авто захисною плівкою</a></li>
+												<li><a>Обклеювання плівкою карбон</a></li>
+											</ul>
+										</li>
+										<li><a href="">Широкоформатний друк</a></li>
+										<li><a href="">Дизайн реклами</a></li>
+										<li><a href="">Автостайлінг</a></li>
+										<li><a href="">Рекламно виставкова продукція</a></li>
+										<li><a href="">Додаткова продукція</a></li>
+										<li><a href="">Реклама на транспорті</a></li>
+									</ul>
+								</li>
+
+								<li>
+									<span class="heading">Вироби з <br> оргскла</span>
+									<ul class="bottom-line__lists_level1">
+										<li>
+											<a class="heading">Брендування</a>
+											<ul class="bottom-line__lists_level2">
+												<li><a>Обклеювання авто захисною плівкою</a></li>
+												<li><a>Обклеювання плівкою карбон</a></li>
+											</ul>
+										</li>
+										<li><a href="">Широкоформатний друк</a></li>
+										<li><a href="">Дизайн реклами</a></li>
+										<li><a href="">Автостайлінг</a></li>
+										<li><a href="">Рекламно виставкова продукція</a></li>
+										<li><a href="">Додаткова продукція</a></li>
+										<li><a href="">Реклама на транспорті</a></li>
+									</ul>
+								</li>
+
+								<li>
+									<span class="heading">Інше</span>
+									<ul class="bottom-line__lists_level1">
+										<li>
+											<a class="heading">Брендування</a>
+											<ul class="bottom-line__lists_level2">
+												<li><a>Обклеювання авто захисною плівкою</a></li>
+												<li><a>Обклеювання плівкою карбон</a></li>
+											</ul>
+										</li>
+										<li><a href="">Широкоформатний друк</a></li>
+										<li><a href="">Дизайн реклами</a></li>
+										<li><a href="">Автостайлінг</a></li>
+										<li><a href="">Рекламно виставкова продукція</a></li>
+										<li><a href="">Додаткова продукція</a></li>
+										<li><a href="">Реклама на транспорті</a></li>
+									</ul>
+								</li>
+
+							</ul>
 
 						</div>
+
 					</div>
 				</div>
-
 			</div>
-			
 		</header>
 
 		<main>
 			
-			<section class="about">
-				<p class="about__bg-name">Crypton</p>
-
-				<div class="container">
-					<div class="row">
-
-						<div class="col-lg-5 order-lg-1 order-2 _img-center"><img class="about__img" src="img/man.png" alt="Man" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="500"></div>
-
-						<div class="col-lg-7 order-lg-2 order-1">
-
-							<h2 class="h2 _line" data-aos="zoom-in-up" data-aos-duration="600">What are <span>Crypton</span> and <br> Utopia P2P?</h2>
-
-							<p class="content" data-aos="zoom-in-up" data-aos-duration="600">Crypton is a truly breakthrough cryptocurrency that guarantees complete privacy protection. It is fully protected from any regularly-related risks, unlike any other cryptocurrency launched by any world-famous or even just public company. No government authority of any country can influence Crypton’s market rate or its fate. As well as there is no way to take control of Crypton or the entire Utopia ecosystem and its team that stays and will always stay anonymous.</p>
-
-							<h3 class="h3" data-aos="zoom-in-up" data-aos-duration="600">Why is it important to become an early adopter?</h3>
-
-							<p class="content _bold" data-aos="zoom-in-up" data-aos-duration="600">People who first realized how important new communication technologies like bitcoin, the Internet, and so on are, in a few years, became fabulously wealthy. Crypton is your ticket to the bright future of early adopters.</p>
-
-						</div>
-
-					</div>
-				</div>
-
-			</section>
-
-			<section class="investing">
-
-				<div class="investing__graph" data-aos="flip-up" data-aos-duration="2000">
-					<img src="img/investing-bg_graph.svg" alt="Investing graph">
-					<img class="investing__graph_mobile" src="img/investing-bg_graph-mobile.svg" alt="Investing graph mobile">
-				</div>
-
-				<div class="container">
-					<div class="row">
-
-						<div class="col-lg-6">
-
-							<h3 class="h3 _top" data-aos="zoom-in-up" data-aos-duration="600">Why are more and more people investing in</h3>
-							<h2 class="h2 _line" data-aos="zoom-in-up" data-aos-duration="600"><span>Crypton</span> and Utopia P2P?</h2>
-
-							<p class="content" data-aos="zoom-in-up" data-aos-duration="600">Unlike 99% of the entire crypto industry, Crypton is supplemented by a multi-functional and secure project for daily use.<br> <br>
-							And what could be more in demand in the modern world of information than an anonymous messenger, a secure email, a network for hosting websites, and storage of encrypted data? All this is collected on a single platform — Utopia P2P Ecosystem.</p>
-
-							<a href="https://www.zg.com/exchange/737/CRP/USDT" target="_blank" class="button" onclick="gtag('event', 'market_dwn', {'event_category': 'download', 'event_label': 'market'});">buy coin now</a>
-
-						</div>
-
-						<div class="col-lg-6">
-							<div class="investing__rombo-wrap">
-
-								<div class="romb" data-aos="fade-up-left" data-aos-delay="1300" data-aos-duration="700">
-									<div class="romb__content">
-										<p class="number">+400</p>
-										<p class="text">new users are signed <br> daily</p>
-									</div>
-								</div>
-
-								<div class="romb" data-aos="fade-up-right" data-aos-delay="1300" data-aos-duration="700">
-									<div class="romb__content">
-										<p class="number">200K+</p>
-										<p class="text">clients already use Utopia and Crypton</p>
-									</div>
-								</div>
-
-								<div class="romb" data-aos="fade-down-left" data-aos-delay="1000" data-aos-duration="700">
-									<div class="romb__content">
-										<p class="number">200GB</p>
-										<p class="text">is transmitted over <br> the network per hour</p>
-									</div>
-								</div>
-
-								<div class="romb" data-aos="fade-down-right" data-aos-delay="1000" data-aos-duration="700">
-									<div class="romb__content">
-										<img src="img/logo.svg" alt="Site logo">
-									</div>
-								</div>
-
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-			</section>
-
-			<section class="unlimited-sphere">
-				<div class="container">
-					<div class="row">
-
-						<div class="col-lg-4">
-							<div class="unlimited-sphere__img">
-								<img src="img/woman.png" alt="Woman" data-aos="zoom-in-up" data-aos-duration="600">
-							</div>
-						</div>
-
-						<div class="col-lg-8">
-							<h2 class="h2 _line" data-aos="zoom-in-up" data-aos-duration="600">Unlimited sphere of application</h2>
-
-							<p class="content" data-aos="zoom-in-up" data-aos-duration="600">Wide functionality, significantly expands the scope of the ecosystem and Crypton. Every user can find what he is looking for and use it completely confidential and secure.<br> <br>
-							In addition, a convenient investment of Crypton will help to become richer several times over a short period.</p>
-
-							<a href="https://www.zg.com/exchange/737/CRP/USDT" target="_blank" class="button" onclick="gtag('event', 'application_dwn', {'event_category': 'download', 'event_label': 'app'});">buy coin now</a>
-						</div>
-
-					</div>
-				</div>
-			</section>
-
-			<section class="dialog">
+			<section class="main-screen">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
+							<div class="main-screen-wrapper">
 
-							<div class="dialog-wrapper" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
-								
-								<div class="dialog-inner">
-									
-									<div class="dialog-inner__top">
-										<span>back</span>
-										<span>today</span>
-										<span>close</span>
-									</div>
-
-									<div class="dialog-inner__modal">
-
-										<div class="dialog-inner__modal-row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1000">
-											<p>
-												<svg>
-													<polygon points="0,0 0,16 16,16" fill="#F1F3FF" />
-												</svg>
-												Is there a project that looks like Utopia P2P?
-											</p>
-											<img src="img/dialog__icon-client.png" alt="Dialog client avatar">
-										</div>
-
-										<div class="dialog-inner__modal-row _admin" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1000">
-											<img src="img/dialog__icon.png" alt="Dialog admin avatar">
-											<p>
-												<svg>
-													<polygon points="0,16 16,0 16,16" fill="#E64DD6" />
-												</svg>
-												The only project that would be even slightly similar to Utopia P2P and Crypton is the TON project by Pavel Durov. But due to bureaucratic delays, it wasn't implemented. That's why Crypton and Utopia P2P's creators have remained anonymous and released the project what others could not. In this respect, Crypton is also similar to Bitcoin.
-											</p>
-										</div>
-
-										<div class="dialog-inner__modal-row" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1000">
-											<p>
-												<svg>
-													<polygon points="0,0 0,16 16,16" fill="#F1F3FF" />
-												</svg>
-												Why should I be sure that the project will get more popularity and a significant increase in price?
-											</p>
-											<img src="img/dialog__icon-client.png" alt="Dialog client avatar">
-										</div>
-
-										<div class="dialog-inner__modal-row _admin" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1000">
-											<img src="img/dialog__icon.png" alt="Dialog admin avatar">
-											<p>
-												<svg>
-													<polygon points="0,16 16,0 16,16" fill="#E64DD6" />
-												</svg>
-												In the modern world, projects aimed at private and secure data transfer and their clarification attract special attention. And given the high degree of development and the uniqueness of the project, you do not need to be a visionary to understand that you will get a considerable profit in a few years.
-											</p>
-										</div>
-
-										<a href="https://www.zg.com/exchange/737/CRP/USDT" target="_blank" class="button" onclick="gtag('event', 'faq_dwn', {'event_category': 'download', 'event_label': 'faq'});">buy coin now</a>
-
-									</div>
-
+								<div class="main-screen__leftSide-wrapper">
+									<h1 class="h1">Чому наші клієнти <br> постійно повертаються</h1>
+									<ul class="main-screen__advantages">
+										<li><img src="img/icons/clock-icon.svg" alt="Clock icon">Швидкий розрахунок вартості</li>
+										<li><img src="img/icons/diamond-icon.svg" alt="Diamond icon">Продукція преміум якості за доступною ціною</li>
+										<li><img src="img/icons/user-icon.svg" alt="User icon">Сервіс орієнтований на клієнта</li>
+										<li><img src="img/icons/progress-icon.svg" alt="Progress icon">Наші вивіски допомагають продати</li>
+									</ul>
+									<a href="" class="button">Розрахувати ціну</a>
+									<a href="" class="button _transparent"><i class="fas fa-play"></i>Дивіться наше відео</a>
 								</div>
+
+								<div class="main-screen__rightSide-wrapper">
+									<img src="img/main-screen__img.png" alt="Main-screen image">
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="products">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+								
+							<h2 class="h2">Онлайн розрахунок, вартості зовнішньої реклами</h2>
+							<h5 class="h5">Натисніть будь ласка на продукт нище що б отримати миттєву ціну і замовити онлайн</h5>
+
+							<div class="products-wrapper">
+
+								<a href="" class="products__box">
+
+									<div class="products__box-top box-top">
+
+										<div class="box-top__flag">
+											<img class="flag" src="img/icons/uaflag-icon.svg" alt="UA flag">
+											<img class="table" src="img/products/made-in.svg" alt="UA table">
+										</div>
+										
+										<div class="box-top__image">
+											<img src="img/products/product_1.png" alt="Product image">
+											<div class="box-top__image-plug">
+												<img src="img/icons/calculator-icon.svg" alt="Calculator icon">
+												<p>Розрахувати вартість</p>
+											</div>
+										</div>
+										
+
+										<div class="box-top__production-time"><img src="img/icons/clock-icon_white.svg" alt="White clock icon">
+											<svg><polyline points="0,0 15,0 15,30 0,30 15,15" fill="#FF7700"/></svg>
+											Термін виготовлення 5 днів</div>
+									</div>
+
+									<div class="products__box-bottom box-bottom">
+
+										<h3 class="h3">Вивіски</h3>
+										<div class="box-bottom__price-size">
+											<p class="price">від ₴ 3 000 з ПДВ</p>
+											<p class="size">81 М²</p>
+										</div>
+
+										<div class="box-bottom__stars">
+
+											<div class="stars">
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star half"></span>
+											</div>
+
+											<span class="score">4.5</span>
+
+										</div>
+
+									</div>
+
+								</a>
+
+								<a href="" class="products__box">
+
+									<div class="products__box-top box-top">
+
+										<div class="box-top__flag">
+											<img class="flag" src="img/icons/uaflag-icon.svg" alt="UA flag">
+											<img class="table" src="img/products/made-in.svg" alt="UA table">
+										</div>
+										
+										<div class="box-top__image">
+											<img src="img/products/product_2.png" alt="Product image">
+											<div class="box-top__image-plug">
+												<img src="img/icons/calculator-icon.svg" alt="Calculator icon">
+												<p>Розрахувати вартість</p>
+											</div>
+										</div>
+										
+
+										<div class="box-top__production-time"><img src="img/icons/clock-icon_white.svg" alt="White clock icon">
+											<svg><polyline points="0,0 15,0 15,30 0,30 15,15" fill="#FF7700"/></svg>
+											Термін виготовлення 5 днів</div>
+									</div>
+
+									<div class="products__box-bottom box-bottom">
+
+										<h3 class="h3">Окремостоячі конструкції</h3>
+										<div class="box-bottom__price-size">
+											<p class="price">від ₴ 3 000 з ПДВ</p>
+											<p class="size">81 М²</p>
+										</div>
+
+										<div class="box-bottom__stars">
+
+											<div class="stars">
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star half"></span>
+											</div>
+
+											<span class="score">4.5</span>
+
+										</div>
+
+									</div>
+
+								</a>
+
+								<a href="" class="products__box">
+
+									<div class="products__box-top box-top">
+
+										<div class="box-top__flag">
+											<img class="flag" src="img/icons/uaflag-icon.svg" alt="UA flag">
+											<img class="table" src="img/products/made-in.svg" alt="UA table">
+										</div>
+										
+										<div class="box-top__image">
+											<img src="img/products/product_3.png" alt="Product image">
+											<div class="box-top__image-plug">
+												<img src="img/icons/calculator-icon.svg" alt="Calculator icon">
+												<p>Розрахувати вартість</p>
+											</div>
+										</div>
+										
+
+										<div class="box-top__production-time"><img src="img/icons/clock-icon_white.svg" alt="White clock icon">
+											<svg><polyline points="0,0 15,0 15,30 0,30 15,15" fill="#FF7700"/></svg>
+											Термін виготовлення 5 днів</div>
+									</div>
+
+									<div class="products__box-bottom box-bottom">
+
+										<h3 class="h3">Виносні конструкції</h3>
+										<div class="box-bottom__price-size">
+											<p class="price">від ₴ 3 000 з ПДВ</p>
+											<p class="size">81 М²</p>
+										</div>
+
+										<div class="box-bottom__stars">
+
+											<div class="stars">
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star half"></span>
+											</div>
+
+											<span class="score">4.5</span>
+
+										</div>
+
+									</div>
+
+								</a>
+
+								<a href="" class="products__box">
+
+									<div class="products__box-top box-top">
+
+										<div class="box-top__flag">
+											<img class="flag" src="img/icons/uaflag-icon.svg" alt="UA flag">
+											<img class="table" src="img/products/made-in.svg" alt="UA table">
+										</div>
+										
+										<div class="box-top__image">
+											<img src="img/products/product_4.png" alt="Product image">
+											<div class="box-top__image-plug">
+												<img src="img/icons/calculator-icon.svg" alt="Calculator icon">
+												<p>Розрахувати вартість</p>
+											</div>
+										</div>
+										
+
+										<div class="box-top__production-time"><img src="img/icons/clock-icon_white.svg" alt="White clock icon">
+											<svg><polyline points="0,0 15,0 15,30 0,30 15,15" fill="#FF7700"/></svg>
+											Термін виготовлення 5 днів</div>
+									</div>
+
+									<div class="products__box-bottom box-bottom">
+
+										<h3 class="h3">Світлодіодні Led табло</h3>
+										<div class="box-bottom__price-size">
+											<p class="price">від ₴ 3 000 з ПДВ</p>
+											<p class="size">81 М²</p>
+										</div>
+
+										<div class="box-bottom__stars">
+
+											<div class="stars">
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star half"></span>
+											</div>
+
+											<span class="score">4.5</span>
+
+										</div>
+
+									</div>
+
+								</a>
+
+								<a href="" class="products__box">
+
+									<div class="products__box-top box-top">
+
+										<div class="box-top__flag">
+											<img class="flag" src="img/icons/uaflag-icon.svg" alt="UA flag">
+											<img class="table" src="img/products/made-in.svg" alt="UA table">
+										</div>
+										
+										<div class="box-top__image">
+											<img src="img/products/product_5.png" alt="Product image">
+											<div class="box-top__image-plug">
+												<img src="img/icons/calculator-icon.svg" alt="Calculator icon">
+												<p>Розрахувати вартість</p>
+											</div>
+										</div>
+										
+
+										<div class="box-top__production-time"><img src="img/icons/clock-icon_white.svg" alt="White clock icon">
+											<svg><polyline points="0,0 15,0 15,30 0,30 15,15" fill="#FF7700"/></svg>
+											Термін виготовлення 5 днів</div>
+									</div>
+
+									<div class="products__box-bottom box-bottom">
+
+										<h3 class="h3">Світлодіодні екрани</h3>
+										<div class="box-bottom__price-size">
+											<p class="price">від ₴ 3 000 з ПДВ</p>
+											<p class="size">81 М²</p>
+										</div>
+
+										<div class="box-bottom__stars">
+
+											<div class="stars">
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star half"></span>
+											</div>
+
+											<span class="score">4.5</span>
+
+										</div>
+
+									</div>
+
+								</a>
+
+								<a href="" class="products__box">
+
+									<div class="products__box-top box-top">
+
+										<div class="box-top__flag">
+											<img class="flag" src="img/icons/uaflag-icon.svg" alt="UA flag">
+											<img class="table" src="img/products/made-in.svg" alt="UA table">
+										</div>
+										
+										<div class="box-top__image">
+											<img src="img/products/product_6.png" alt="Product image">
+											<div class="box-top__image-plug">
+												<img src="img/icons/calculator-icon.svg" alt="Calculator icon">
+												<p>Розрахувати вартість</p>
+											</div>
+										</div>
+										
+
+										<div class="box-top__production-time"><img src="img/icons/clock-icon_white.svg" alt="White clock icon">
+											<svg><polyline points="0,0 15,0 15,30 0,30 15,15" fill="#FF7700"/></svg>
+											Термін виготовлення 5 днів</div>
+									</div>
+
+									<div class="products__box-bottom box-bottom">
+
+										<h3 class="h3">Таблички</h3>
+										<div class="box-bottom__price-size">
+											<p class="price">від ₴ 3 000 з ПДВ</p>
+											<p class="size">81 М²</p>
+										</div>
+
+										<div class="box-bottom__stars">
+
+											<div class="stars">
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star half"></span>
+											</div>
+
+											<span class="score">4.5</span>
+
+										</div>
+
+									</div>
+
+								</a>
+
+								<a href="" class="products__box">
+
+									<div class="products__box-top box-top">
+
+										<div class="box-top__flag">
+											<img class="flag" src="img/icons/uaflag-icon.svg" alt="UA flag">
+											<img class="table" src="img/products/made-in.svg" alt="UA table">
+										</div>
+										
+										<div class="box-top__image">
+											<img src="img/products/product_7.png" alt="Product image">
+											<div class="box-top__image-plug">
+												<img src="img/icons/calculator-icon.svg" alt="Calculator icon">
+												<p>Розрахувати вартість</p>
+											</div>
+										</div>
+										
+
+										<div class="box-top__production-time"><img src="img/icons/clock-icon_white.svg" alt="White clock icon">
+											<svg><polyline points="0,0 15,0 15,30 0,30 15,15" fill="#FF7700"/></svg>
+											Термін виготовлення 5 днів</div>
+									</div>
+
+									<div class="products__box-bottom box-bottom">
+
+										<h3 class="h3">Рамки та рамочні конструкції</h3>
+										<div class="box-bottom__price-size">
+											<p class="price">від ₴ 3 000 з ПДВ</p>
+											<p class="size">81 М²</p>
+										</div>
+
+										<div class="box-bottom__stars">
+
+											<div class="stars">
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star half"></span>
+											</div>
+
+											<span class="score">4.5</span>
+
+										</div>
+
+									</div>
+
+								</a>
+
+								<a href="" class="products__box">
+
+									<div class="products__box-top box-top">
+
+										<div class="box-top__flag">
+											<img class="flag" src="img/icons/uaflag-icon.svg" alt="UA flag">
+											<img class="table" src="img/products/made-in.svg" alt="UA table">
+										</div>
+										
+										<div class="box-top__image">
+											<img src="img/products/product_8.png" alt="Product image">
+											<div class="box-top__image-plug">
+												<img src="img/icons/calculator-icon.svg" alt="Calculator icon">
+												<p>Розрахувати вартість</p>
+											</div>
+										</div>
+										
+
+										<div class="box-top__production-time"><img src="img/icons/clock-icon_white.svg" alt="White clock icon">
+											<svg><polyline points="0,0 15,0 15,30 0,30 15,15" fill="#FF7700"/></svg>
+											Термін виготовлення 5 днів</div>
+									</div>
+
+									<div class="products__box-bottom box-bottom">
+
+										<h3 class="h3">Флагштоки та прапори</h3>
+										<div class="box-bottom__price-size">
+											<p class="price">від ₴ 3 000 з ПДВ</p>
+											<p class="size">81 М²</p>
+										</div>
+
+										<div class="box-bottom__stars">
+
+											<div class="stars">
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star half"></span>
+											</div>
+
+											<span class="score">4.5</span>
+
+										</div>
+
+									</div>
+
+								</a>
+
+								<a href="" class="products__box">
+
+									<div class="products__box-top box-top">
+
+										<div class="box-top__flag">
+											<img class="flag" src="img/icons/uaflag-icon.svg" alt="UA flag">
+											<img class="table" src="img/products/made-in.svg" alt="UA table">
+										</div>
+										
+										<div class="box-top__image">
+											<img src="img/products/product_9.png" alt="Product image">
+											<div class="box-top__image-plug">
+												<img src="img/icons/calculator-icon.svg" alt="Calculator icon">
+												<p>Розрахувати вартість</p>
+											</div>
+										</div>
+										
+
+										<div class="box-top__production-time"><img src="img/icons/clock-icon_white.svg" alt="White clock icon">
+											<svg><polyline points="0,0 15,0 15,30 0,30 15,15" fill="#FF7700"/></svg>
+											Термін виготовлення 5 днів</div>
+									</div>
+
+									<div class="products__box-bottom box-bottom">
+
+										<h3 class="h3">Інформаційні стенди</h3>
+										<div class="box-bottom__price-size">
+											<p class="price">від ₴ 3 000 з ПДВ</p>
+											<p class="size">81 М²</p>
+										</div>
+
+										<div class="box-bottom__stars">
+
+											<div class="stars">
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star half"></span>
+											</div>
+
+											<span class="score">4.5</span>
+
+										</div>
+
+									</div>
+
+								</a>
+
+								<a href="" class="products__box">
+
+									<div class="products__box-top box-top">
+
+										<div class="box-top__flag">
+											<img class="flag" src="img/icons/uaflag-icon.svg" alt="UA flag">
+											<img class="table" src="img/products/made-in.svg" alt="UA table">
+										</div>
+										
+										<div class="box-top__image">
+											<img src="img/products/product_10.png" alt="Product image">
+											<div class="box-top__image-plug">
+												<img src="img/icons/calculator-icon.svg" alt="Calculator icon">
+												<p>Розрахувати вартість</p>
+											</div>
+										</div>
+										
+
+										<div class="box-top__production-time"><img src="img/icons/clock-icon_white.svg" alt="White clock icon">
+											<svg><polyline points="0,0 15,0 15,30 0,30 15,15" fill="#FF7700"/></svg>
+											Термін виготовлення 5 днів</div>
+									</div>
+
+									<div class="products__box-bottom box-bottom">
+
+										<h3 class="h3">Вироби з оргскла</h3>
+										<div class="box-bottom__price-size">
+											<p class="price">від ₴ 3 000 з ПДВ</p>
+											<p class="size">81 М²</p>
+										</div>
+
+										<div class="box-bottom__stars">
+
+											<div class="stars">
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star half"></span>
+											</div>
+
+											<span class="score">4.5</span>
+
+										</div>
+
+									</div>
+
+								</a>
+
+								<a href="" class="products__box">
+
+									<div class="products__box-top box-top">
+
+										<div class="box-top__flag">
+											<img class="flag" src="img/icons/uaflag-icon.svg" alt="UA flag">
+											<img class="table" src="img/products/made-in.svg" alt="UA table">
+										</div>
+										
+										<div class="box-top__image">
+											<img src="img/products/product_11.png" alt="Product image">
+											<div class="box-top__image-plug">
+												<img src="img/icons/calculator-icon.svg" alt="Calculator icon">
+												<p>Розрахувати вартість</p>
+											</div>
+										</div>
+										
+
+										<div class="box-top__production-time"><img src="img/icons/clock-icon_white.svg" alt="White clock icon">
+											<svg><polyline points="0,0 15,0 15,30 0,30 15,15" fill="#FF7700"/></svg>
+											Термін виготовлення 5 днів</div>
+									</div>
+
+									<div class="products__box-bottom box-bottom">
+
+										<h3 class="h3">Широкоформатний друк</h3>
+										<div class="box-bottom__price-size">
+											<p class="price">від ₴ 3 000 з ПДВ</p>
+											<p class="size">81 М²</p>
+										</div>
+
+										<div class="box-bottom__stars">
+
+											<div class="stars">
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star half"></span>
+											</div>
+
+											<span class="score">4.5</span>
+
+										</div>
+
+									</div>
+
+								</a>
+
+								<a href="" class="products__box">
+
+									<div class="products__box-top box-top">
+
+										<div class="box-top__flag">
+											<img class="flag" src="img/icons/uaflag-icon.svg" alt="UA flag">
+											<img class="table" src="img/products/made-in.svg" alt="UA table">
+										</div>
+										
+										<div class="box-top__image">
+											<img src="img/products/product_12.png" alt="Product image">
+											<div class="box-top__image-plug">
+												<img src="img/icons/calculator-icon.svg" alt="Calculator icon">
+												<p>Розрахувати вартість</p>
+											</div>
+										</div>
+										
+
+										<div class="box-top__production-time"><img src="img/icons/clock-icon_white.svg" alt="White clock icon">
+											<svg><polyline points="0,0 15,0 15,30 0,30 15,15" fill="#FF7700"/></svg>
+											Термін виготовлення 5 днів</div>
+									</div>
+
+									<div class="products__box-bottom box-bottom">
+
+										<h3 class="h3">Брендування</h3>
+										<div class="box-bottom__price-size">
+											<p class="price">від ₴ 3 000 з ПДВ</p>
+											<p class="size">81 М²</p>
+										</div>
+
+										<div class="box-bottom__stars">
+
+											<div class="stars">
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star half"></span>
+											</div>
+
+											<span class="score">4.5</span>
+
+										</div>
+
+									</div>
+
+								</a>
+
+								<a href="" class="products__box">
+
+									<div class="products__box-top box-top">
+
+										<div class="box-top__flag">
+											<img class="flag" src="img/icons/uaflag-icon.svg" alt="UA flag">
+											<img class="table" src="img/products/made-in.svg" alt="UA table">
+										</div>
+										
+										<div class="box-top__image">
+											<img src="img/products/product_13.png" alt="Product image">
+											<div class="box-top__image-plug">
+												<img src="img/icons/calculator-icon.svg" alt="Calculator icon">
+												<p>Розрахувати вартість</p>
+											</div>
+										</div>
+										
+
+										<div class="box-top__production-time"><img src="img/icons/clock-icon_white.svg" alt="White clock icon">
+											<svg><polyline points="0,0 15,0 15,30 0,30 15,15" fill="#FF7700"/></svg>
+											Термін виготовлення 5 днів</div>
+									</div>
+
+									<div class="products__box-bottom box-bottom">
+
+										<h3 class="h3">Дизайн реклами</h3>
+										<div class="box-bottom__price-size">
+											<p class="price">від ₴ 3 000 з ПДВ</p>
+											<p class="size">81 М²</p>
+										</div>
+
+										<div class="box-bottom__stars">
+
+											<div class="stars">
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star half"></span>
+											</div>
+
+											<span class="score">4.5</span>
+
+										</div>
+
+									</div>
+
+								</a>
+
+								<a href="" class="products__box">
+
+									<div class="products__box-top box-top">
+
+										<div class="box-top__flag">
+											<img class="flag" src="img/icons/uaflag-icon.svg" alt="UA flag">
+											<img class="table" src="img/products/made-in.svg" alt="UA table">
+										</div>
+										
+										<div class="box-top__image">
+											<img src="img/products/product_14.png" alt="Product image">
+											<div class="box-top__image-plug">
+												<img src="img/icons/calculator-icon.svg" alt="Calculator icon">
+												<p>Розрахувати вартість</p>
+											</div>
+										</div>
+										
+
+										<div class="box-top__production-time"><img src="img/icons/clock-icon_white.svg" alt="White clock icon">
+											<svg><polyline points="0,0 15,0 15,30 0,30 15,15" fill="#FF7700"/></svg>
+											Термін виготовлення 5 днів</div>
+									</div>
+
+									<div class="products__box-bottom box-bottom">
+
+										<h3 class="h3">Автостайлінг</h3>
+										<div class="box-bottom__price-size">
+											<p class="price">від ₴ 3 000 з ПДВ</p>
+											<p class="size">81 М²</p>
+										</div>
+
+										<div class="box-bottom__stars">
+
+											<div class="stars">
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star half"></span>
+											</div>
+
+											<span class="score">4.5</span>
+
+										</div>
+
+									</div>
+
+								</a>
+
+								<a href="" class="products__box">
+
+									<div class="products__box-top box-top">
+
+										<div class="box-top__flag">
+											<img class="flag" src="img/icons/uaflag-icon.svg" alt="UA flag">
+											<img class="table" src="img/products/made-in.svg" alt="UA table">
+										</div>
+										
+										<div class="box-top__image">
+											<img src="img/products/product_15.png" alt="Product image">
+											<div class="box-top__image-plug">
+												<img src="img/icons/calculator-icon.svg" alt="Calculator icon">
+												<p>Розрахувати вартість</p>
+											</div>
+										</div>
+										
+
+										<div class="box-top__production-time"><img src="img/icons/clock-icon_white.svg" alt="White clock icon">
+											<svg><polyline points="0,0 15,0 15,30 0,30 15,15" fill="#FF7700"/></svg>
+											Термін виготовлення 5 днів</div>
+									</div>
+
+									<div class="products__box-bottom box-bottom">
+
+										<h3 class="h3">Рекламно виставкова проду...</h3>
+										<div class="box-bottom__price-size">
+											<p class="price">від ₴ 3 000 з ПДВ</p>
+											<p class="size">81 М²</p>
+										</div>
+
+										<div class="box-bottom__stars">
+
+											<div class="stars">
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star half"></span>
+											</div>
+
+											<span class="score">4.5</span>
+
+										</div>
+
+									</div>
+
+								</a>
+
+								<a href="" class="products__box">
+
+									<div class="products__box-top box-top">
+
+										<div class="box-top__flag">
+											<img class="flag" src="img/icons/uaflag-icon.svg" alt="UA flag">
+											<img class="table" src="img/products/made-in.svg" alt="UA table">
+										</div>
+										
+										<div class="box-top__image">
+											<img src="img/products/product_16.png" alt="Product image">
+											<div class="box-top__image-plug">
+												<img src="img/icons/calculator-icon.svg" alt="Calculator icon">
+												<p>Розрахувати вартість</p>
+											</div>
+										</div>
+										
+
+										<div class="box-top__production-time"><img src="img/icons/clock-icon_white.svg" alt="White clock icon">
+											<svg><polyline points="0,0 15,0 15,30 0,30 15,15" fill="#FF7700"/></svg>
+											Термін виготовлення 5 днів</div>
+									</div>
+
+									<div class="products__box-bottom box-bottom">
+
+										<h3 class="h3">Реклама на транспорті</h3>
+										<div class="box-bottom__price-size">
+											<p class="price">від ₴ 3 000 з ПДВ</p>
+											<p class="size">81 М²</p>
+										</div>
+
+										<div class="box-bottom__stars">
+
+											<div class="stars">
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star on"></span>
+											  <span class="star half"></span>
+											</div>
+
+											<span class="score">4.5</span>
+
+										</div>
+
+									</div>
+
+								</a>
 
 							</div>
 
 						</div>
 					</div>
 				</div>
-
-				<div class="dialog-city_mobile" data-aos="fade-down" data-aos-duration="800" data-aos-delay="1000"></div>
-
 			</section>
 
 			<section class="advantages">
-
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
 
-							<div class="advantages-wrapper" data-aos="fade-up">
-								
-								<div class="advantages-inner">
-									<h2 class="h2 _line" data-aos="zoom-in-up" data-aos-duration="600">Breakthrough technology</h2>
+							<h2 class="h2">Якість без компромісів</h2>
 
-									<p class="content" data-aos="zoom-in-up" data-aos-duration="600">No one has ever been able to combine so many features in a single product and a high degree of personal data protection. Thanks to the latest security technology, your data is stored in encrypted form.<br> <br>
-									Moreover, technology is reliably protected from external <br class="br-none"> interference. No one can steal it or your investment.</p>
+							<div class="advantages-wrapper">
 
-									<a href="https://www.zg.com/exchange/737/CRP/USDT" target="_blank" class="button" onclick="gtag('event', 'tech_dwn', {'event_category': 'download', 'event_label': 'tech'});">buy coin now</a>
+								<div class="advantages-wrapper__leftSide">
+
+									<div class="advantage">
+										<p><span>1</span>Використання кращих європейських пластиків: Ongrofoam, <br> Plexiglas, Vekaplan</p>
+									</div>
+
+									<div class="advantage">
+										<p><span>2</span>Використання плівок найкращих світових виробників <br> У наших вивісках світлодіоди: Rishang, Elf</p>
+									</div>
+
+									<div class="advantage">
+										<p><span>3</span>Наші фахівці на ти з металообробкою (металокаркаси будь-якої <br> складності).</p>
+									</div>
+
+									<div class="advantage">
+										<p><span>4</span>При необхідності порошкова покраска. <br> Для кожного виду робіт є своє технічне завдання.</p>
+									</div>
+
 								</div>
 
-								<div class="advantages-inner _img" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
-									<img src="img/shield-coins.png" alt="Shield & Coins">
-									<a href="https://www.zg.com/exchange/737/CRP/USDT" target="_blank" class="button _mobile" onclick="gtag('event', 'tech_dwn', {'event_category': 'download', 'event_label': 'tech'});">buy coin now</a>
-								</div>
-
-							</div>
-
-							<div class="advantages-wrapper" data-aos="fade-up">
-
-								<div class="advantages-inner _img" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
-									<img src="img/gears.png" alt="Gears">
-									<a href="https://www.zg.com/exchange/737/CRP/USDT" target="_blank" class="button _mobile" onclick="gtag('event', '3d_dwn', {'event_category': 'download', 'event_label': '3dparty'});">buy coin now</a>
-								</div>
-								
-								<div class="advantages-inner">
-									<h2 class="h2 _line" data-aos="zoom-in-up" data-aos-duration="600">Third-party intervention</h2>
-
-									<p class="content" data-aos="zoom-in-up" data-aos-duration="600">Over the past 2 months, the project has attracted several crypto exchanges that have expressed a desire to host Crypton on a free basis.<br> <br>
-									What does it mean? Cryptocurrency exchanges see potential in Crypton, as they have once seen the future in Bitcoin. Now, they are trying to buy Cryptons at a low price to provide a stable income in the future.</p>
-
-									<a href="https://www.zg.com/exchange/737/CRP/USDT" target="_blank" class="button" onclick="gtag('event', '3d_dwn', {'event_category': 'download', 'event_label': '3dparty'});">buy coin now</a>
+								<div class="advantages-wrapper__rightSide">
+									<iframe width="100%" height="100%" src="https://www.youtube.com/embed/l0U7SxXHkPY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 
 							</div>
@@ -402,138 +1252,423 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="advantages__graph" data-aos="flip-up" data-aos-duration="2000">
-					<img src="img/advantages-bg_graph.svg" alt="Advantages graph">
-					<img class="_mobile" src="img/advantages-bg_graph-mobile.svg" alt="Advantages graph">
-					<div class="advantages__graph-plug"></div>
-				</div>
-
 			</section>
 
-			<section class="roadmap">
-
-				<img src="img/worst-bg__diamond.svg" alt="Diamond" class="roadmap-bg__diamond" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">
-
+			<section class="portfolio">
 				<div class="container">
 					<div class="row">
-						<div class="col-12 col-lg-10 offset-lg-1">
+						<div class="col-12">
+							<div class="portfolio-wrapper">
+
+								<div class="swiper-container slider-portfolio">
+
+									<h2 class="h2">Наші роботи</h2>
+									<h5 class="h5">Роботи зроблені з любов’ю</h5>
+
+								  <div class="swiper-wrapper">
+
+								    <div class="swiper-slide">
+								    	<a data-fancybox="gallery" href="img/portfolio/work_1.png" class="img-wrap"><img src="img/portfolio/work_1.png" alt="Portfolio work"></a>
+								    	<a data-fancybox="gallery" href="img/portfolio/work_2.png" class="img-wrap"><img src="img/portfolio/work_2.png" alt="Portfolio work"></a>
+								    	<a data-fancybox="gallery" href="img/portfolio/work_3.png" class="img-wrap"><img src="img/portfolio/work_3.png" alt="Portfolio work"></a>
+								    	<a data-fancybox="gallery" href="img/portfolio/work_4.png" class="img-wrap"><img src="img/portfolio/work_4.png" alt="Portfolio work"></a>
+								    	<a data-fancybox="gallery" href="img/portfolio/work_5.png" class="img-wrap"><img src="img/portfolio/work_5.png" alt="Portfolio work"></a>
+								    	<a data-fancybox="gallery" href="img/portfolio/work_6.png" class="img-wrap"><img src="img/portfolio/work_6.png" alt="Portfolio work"></a>
+								    	<a data-fancybox="gallery" href="img/portfolio/work_7.png" class="img-wrap"><img src="img/portfolio/work_7.png" alt="Portfolio work"></a>
+								    	<a data-fancybox="gallery" href="img/portfolio/work_8.png" class="img-wrap"><img src="img/portfolio/work_8.png" alt="Portfolio work"></a>
+								    </div>
+
+								    <div class="swiper-slide">
+								    	<a data-fancybox="gallery" href="img/portfolio/work_1.png" class="img-wrap"><img src="img/portfolio/work_1.png" alt="Portfolio work"></a>
+								    	<a data-fancybox="gallery" href="img/portfolio/work_2.png" class="img-wrap"><img src="img/portfolio/work_2.png" alt="Portfolio work"></a>
+								    	<a data-fancybox="gallery" href="img/portfolio/work_3.png" class="img-wrap"><img src="img/portfolio/work_3.png" alt="Portfolio work"></a>
+								    	<a data-fancybox="gallery" href="img/portfolio/work_4.png" class="img-wrap"><img src="img/portfolio/work_4.png" alt="Portfolio work"></a>
+								    	<a data-fancybox="gallery" href="img/portfolio/work_5.png" class="img-wrap"><img src="img/portfolio/work_5.png" alt="Portfolio work"></a>
+								    	<a data-fancybox="gallery" href="img/portfolio/work_6.png" class="img-wrap"><img src="img/portfolio/work_6.png" alt="Portfolio work"></a>
+								    	<a data-fancybox="gallery" href="img/portfolio/work_7.png" class="img-wrap"><img src="img/portfolio/work_7.png" alt="Portfolio work"></a>
+								    	<a data-fancybox="gallery" href="img/portfolio/work_8.png" class="img-wrap"><img src="img/portfolio/work_8.png" alt="Portfolio work"></a>
+								    </div>
+
+								  </div>
+
+								  <div class="bottom-nav">
+									  <div class="swiper-button-prev-custom"><i class="fas fa-chevron-left"></i></div>
+									  <div class="swiperSlide-current"></div>
+									  <div class="swiper-pagination"></div>
+										<div class="swiperSlide-total"></div>
+										<div class="swiper-button-next-custom"><i class="fas fa-chevron-right"></i></div>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="description">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="description-wrapper">
+								
+								<div class="description-wrapper__leftSide">
+									<div class="content">
+										<h2 class="h2">Вам потрібна допомога в дизайні?</h2>
+										<p>Наша досвідчена команда з графічного дизайну може допомогти вам у вирішенні всіх ваших потреб у дизайні вивісок. </p>
+										<br>
+										<p>Від підготовки готового файлу до друку для простого текстового знаку, до складного дизайну. У нас є 3 пакети залежно від рівня необхідних проектних робіт.</p>
+										<a href="" class="button">Дизайнерські пакети</a>
+									</div>
+									<img src="img/description__color-cards.png" alt="Color cards">
+								</div>
+
+								<div class="description-wrapper__rightSide">
+									<div class="content">
+										<h2 class="h2">Наш простий процес замовлення</h2>
+										<p>Замовити у нас просто і легко! Просто розмістіть замовлення та завантажте свої дизайн макети.</p>
+										<br>
+										<p>Ми зв’яжемося з вами, щоб обговорити деталі замовлення, варіанти оформлення, встановлення та доставки.</p>
+										<a href="" class="button">Вивчайте більше</a>
+									</div>
+									<img src="img/description__woman.png" alt="Woman">
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="workers">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="h2">Хто працює над вашою рекламою</h2>
+
+							<div class="workers-wrapper">
+								<div class="workers-wrapper__box">
+									<img src="img/workers/worker_1.png" alt="Worker">
+									<h3 class="h3">Микола Шершун</h3>
+									<h5 class="h5">Керівник та одночасно головний інженер</h5>
+									<p>За 11-ть років роботи ми виготовили 1000 - чі вивісок, та вирішили багато складних технічних завдань. Монтуємо якісно та надійно, одним словом - як для себе.</p>
+								</div>
+								<div class="workers-wrapper__box">
+									<img src="img/workers/worker_2.png" alt="Worker">
+									<h3 class="h3">Ольга Шершун</h3>
+									<h5 class="h5">Художній керівник та директор</h5>
+									<p>Опираючись на свій 11-літній управлінський та інженерний, дизайнерський та художній досвід ми можемо запропонувати оптимальні рішення для Вашого бізнесу. Для того щоб Ваші вивіски служили довго та якісно, ми підберемо необхідні параметри та кращі комплектуючі до них.</p>
+								</div>
+								<div class="workers-wrapper__box">
+									<img src="img/workers/worker_3.png" alt="Worker">
+									<h3 class="h3">Олена Нестерук</h3>
+									<h5 class="h5">Менеджер</h5>
+									<p>Кожні півроку проходимо навчання в школах УАВІ. Дізнаємося про новинки і досягнення в галузі виробництва вивісок. Отримуємо корисної інформації більше ніж достатньо. Готові відповісти на всі Ваші питання про візуальну рекламу.</p>
+								</div>
+								<div class="workers-wrapper__box">
+									<img src="img/workers/worker_4.png" alt="Worker">
+									<h3 class="h3">Віталій Савчук</h3>
+									<h5 class="h5">Менеджер</h5>
+									<p>Кожна конструкція до запуску у виробництво проходить ретельну перевірку по всіх необхідних допусках і нормах. Ми завжди дотримуємося рекомендацій виробників освітлення, пластиків, плівок... Гарантія для нас - не просто слова!</p>
+								</div>
+							</div>
+
+							<a href="" class="button _transparent">Переглянути</a>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="blog">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
 							
-							<h2 class="h2 _text-center" data-aos="zoom-in-up" data-aos-duration="600">The worst is ahead</h2>
-							<h3 class="h3 _text-center" data-aos="zoom-in-up" data-aos-duration="600">Soon, we will add a lot of interesting features that will attract even more attention to the Utopia project and the Crypton coin.</h3>
+							<h2 class="h2">Новини та статті</h2>
 
-							<div class="roadmap-wrapper">
+							<div class="blog-wrapper">
+								
+								<div class="blog-box">
 
-								<img class="roadmap__vertical-line" src="img/worst__vertical-line.svg" alt="Vertical line" data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">
-
-								<div class="roadmap-inner">
-
-									<div class="roadmap-inner__img" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
-										<img src="img/worst__poker.png" alt="Poker">
+									<div class="blog-box__top">
+										<img src="img/blog/blog-image_1.png" alt="Blog image">
 									</div>
 
-									<div class="roadmap-inner__description" data-aos="zoom-in" data-aos-duration="600">
-										<h3 class="h3">Poker and other Crypton's games</h3>
-										<p class="content">As you know, the gaming industry is one of the largest in terms of cash turnover. Attracting a gaming audience will significantly increase the demand for Crypton.</p>
-									</div>
-
-								</div>
-
-								<div class="roadmap-inner">
-
-									<div class="roadmap-inner__img" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
-										<img src="img/worst__app.png" alt="Applications">
-									</div>
-
-									<div class="roadmap-inner__description" data-aos="zoom-in" data-aos-duration="600">
-										<h3 class="h3">Mobile application</h3>
-										<p class="content">At the moment, the project is only available for desktop devices. But as soon as it appears in the form of a mobile application, it will be a huge impetus for Crypton's growth rates.</p>
+									<div class="blog-box__bottom">
+										<p class="category">Новини</p>
+										<h5 class="h5">Стела для АЗС з led-цінами на пальне</h5>
+										<p class="content">Стела для АЗСє своєрідною візитною карткою автозаправної станції та світловим орієнтиром для водіїв....</p>
+										<a href="" class="open-blog">Читати далі <i class="fas fa-long-arrow-alt-right"></i></a>
 									</div>
 
 								</div>
 
-								<div class="roadmap-inner">
+								<div class="blog-box">
 
-									<div class="roadmap-inner__img" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
-										<img src="img/worst__commerce.png" alt="E-commerce">
+									<div class="blog-box__top">
+										<img src="img/blog/blog-image_2.png" alt="Blog image">
 									</div>
 
-									<div class="roadmap-inner__description" data-aos="zoom-in" data-aos-duration="600">
-										<h3 class="h3">Implementation of CRP in e-commerce</h3>
-										<p class="content">The project already allows you to invest Cryptons in online stores. At this stage, work will be carried out on transferring large online stores to the Utopia project and settlement in Cryptons.</p>
+									<div class="blog-box__bottom">
+										<p class="category">Статті</p>
+										<h5 class="h5">Світлодіодний екран для храму</h5>
+										<p class="content">Відмінним рішенням в умовах карантину стало замовлення вуличного світлодіодного екрану на ...</p>
+										<a href="" class="open-blog">Читати далі <i class="fas fa-long-arrow-alt-right"></i></a>
+									</div>
+
+								</div>
+
+								<div class="blog-box">
+
+									<div class="blog-box__top">
+										<img src="img/blog/blog-image_3.png" alt="Blog image">
+									</div>
+
+									<div class="blog-box__bottom">
+										<p class="category">Новини</p>
+										<h5 class="h5">Кована кухня «Металеве серце»</h5>
+										<p class="content">Ковані меблі для кухні - це аристократична класика, яка зачаровує естетикою та привносить ...</p>
+										<a href="" class="open-blog">Читати далі <i class="fas fa-long-arrow-alt-right"></i></a>
+									</div>
+
+								</div>
+
+								<div class="blog-box new">
+
+									<div class="blog-box__top">
+										<h3 class="h3">Свіжі статті</h3> 
+										<a href="">Показати всі</a>
+									</div>
+
+									<div class="blog-box__bottom">
+										<h5 class="h5">Світлова реклама – яскраве рішення вашого бізнесу!</h5>
+										<p class="content">Стела для АЗСє своєрідною візитною карткою автозаправної станції та світловим орієнтиром для водіїв....</p>
+										<a href="" class="open-blog">Читати далі <i class="fas fa-long-arrow-alt-right"></i></a>
+									</div>
+
+									<div class="blog-box__bottom">
+										<h5 class="h5">Як давно ви оновлювали зовнішню вивіску?</h5>
+										<p class="content">"Старе деренчить, а нове дзвенить" - цю приказку можна з легкістю застосувати до рекламної вивіски...</p>
+										<a href="" class="open-blog">Читати далі <i class="fas fa-long-arrow-alt-right"></i></a>
 									</div>
 
 								</div>
 
 							</div>
 
-							<a href="https://www.zg.com/exchange/737/CRP/USDT" target="_blank" class="button __diamond" onclick="gtag('event', 'road_dwn', {'event_category': 'download', 'event_label': 'roadman'});">buy crypton now<img src="img/button__diamond.svg" alt="Diamond"></a>
+							<a href="" class="button _transparent">Всі новини та статті</a>
 
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="features">
-
-				<img src="img/features-bg_left.svg" alt="Features decor" class="features-bg _left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-				<img src="img/features-bg_right.svg" alt="Features decor" class="features-bg _right" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-
-				<div class="container _border-bottom">
-					<div class="row">
-						<div class="col-12">
-							<h2 class="h2" data-aos="zoom-in-down" data-aos-duration="600">There's something else you should know</h2>
-
-							<div class="features__wrapper">
-
-								<div class="features__boxs" data-aos="zoom-in-down" data-aos-duration="600">
-									<img src="img/features__box-img_1.svg" alt="Blockchain">
-									<h3 class="h3">100% decentralization</h3>
-									<p class="content">Crypton is the only currency like bitcoin that has full independence. It does not have an owner, and the creators are as ghostly as the creator of bitcoin <span class="_bold">Satoshi Nakamoto</span>. Therefore, no one can prohibit or manipulate the network at will.</p>
-								</div>
-
-								<div class="features__boxs" data-aos="zoom-in-down" data-aos-duration="600">
-									<img src="img/features__box-img_2.svg" alt="Spyware">
-									<h3 class="h3">Absolute privacy</h3>
-									<p class="content">A cryptographic signature links the transfer of transactions to the blockchain. And the transaction itself is also encrypted. No one will ever know from whom, to whom, and how much money you transferred. Moreover, nobody can link your transaction to your IP.</p>
-								</div>
-
-								<div class="features__boxs" data-aos="zoom-in-down" data-aos-duration="600">
-									<img src="img/features__box-img_3.svg" alt="Purse">
-									<h3 class="h3">Secure e-wallet</h3>
-									<p class="content">All your assets are stored in an ultra-secure cryptographic container. Even if a hacker has huge computing power, it will not allow them to hack your wallet. Crypto container is highly encrypted and protected by multi-level encryption methods.</p>
-								</div>
-
-								<div class="features__boxs" data-aos="zoom-in-down" data-aos-duration="600">
-									<img src="img/features__box-img_4.svg" alt="Coin up">
-									<h3 class="h3">Self-regulated system</h3>
-									<p class="content">The Utopia adjusts the Proof-of-State (PoS) rate to alter the supply of Cryptons to make Cryptons the most stable currency's lowest volatility. All holders of Cryptons are eligible to receive PoS rewards according to the current rate and distribution schedule.</p>
-								</div>
-
-							</div>
-
-							<a href="https://www.zg.com/exchange/737/CRP/USDT" target="_blank" class="button" onclick="gtag('event', 'features_dwn', {'event_category': 'download', 'event_label': 'features'});">buy crypton now</a>
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="where-buy">
+			<section class="reviews">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-4">
-							<div class="where-buy__wrapper-h2" data-aos="zoom-in-up" data-aos-duration="600">
-								<h2 class="h2">Where can you buy a <span>Crypton?</span></h2>
+						<div class="col-12">
+							
+							<h2 class="h2">Відгуки</h2>
+
+							<div class="reviews-wrapper">
+
+								<div class="fixed-box__overall">
+						  		<div class="stars">
+									  <span class="star on"></span>
+									  <span class="star on"></span>
+									  <span class="star on"></span>
+									  <span class="star on"></span>
+									  <span class="star half"></span>
+									</div>
+
+									<span class="score">Загальна оцінка 4.5</span>
+									<span class="number-reviews">базована на 45 відгуках</span>
+									<a href="" class="button">Додати відгук</a>
+						  	</div>
+
+								<div class="swiper-container slider-reviews">
+								  <div class="swiper-wrapper">
+								    <div class="swiper-slide">
+								    	<div class="leftSide">
+								    		<img src="img/reviews/review_1.png" alt="Аватар пользователя" class="avatar">
+								    		<div class="leftSide__top">
+									    		<h3 class="h3">Бугайчук Віктор</h3>
+									    		<div class="stars">
+													  <span class="star on"></span>
+													  <span class="star on"></span>
+													  <span class="star on"></span>
+													  <span class="star on"></span>
+													  <span class="star half"></span>
+													</div>
+													<span class="score">4.5</span>
+												</div>
+												<h5 class="h5">Директор магазинів Твоя підлога</h5>
+												<p class="content">Як у будь-якої компанії, у нас є потреба в залученні нових клієнтів, збільшення продажів. Поставити світлодіодну стрічку - це була наша мрія. Боялися трохи за якість, був досвід установки неякісних рекламних конструкцій. Тому в цей раз вирішили звернутися в компанію «РВК Артлайт», яка знаходиться в місті Рівне і працює не перший рік. Як і очікували, яскравий екран привертав відвідувачів і вдень, і вночі. В результаті у нас зросли продажі, після установки рядка. Обов'язково рекомендую цю компанію.</p>
+								    	</div>
+								    	<div class="rightSide">
+								    		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/l0U7SxXHkPY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								    	</div>
+								    </div>
+
+								    <div class="swiper-slide">
+								    	<div class="leftSide">
+								    		<img src="img/reviews/review_1.png" alt="Аватар пользователя" class="avatar">
+								    		<div class="leftSide__top">
+									    		<h3 class="h3">Бугайчук Віктор</h3>
+									    		<div class="stars">
+													  <span class="star on"></span>
+													  <span class="star on"></span>
+													  <span class="star on"></span>
+													  <span class="star on"></span>
+													  <span class="star half"></span>
+													</div>
+													<span class="score">4.5</span>
+												</div>
+												<h5 class="h5">Директор магазинів Твоя підлога</h5>
+												<p class="content">Як у будь-якої компанії, у нас є потреба в залученні нових клієнтів, збільшення продажів. Поставити світлодіодну стрічку - це була наша мрія. Боялися трохи за якість, був досвід установки неякісних рекламних конструкцій. Тому в цей раз вирішили звернутися в компанію «РВК Артлайт», яка знаходиться в місті Рівне і працює не перший рік. Як і очікували, яскравий екран привертав відвідувачів і вдень, і вночі. В результаті у нас зросли продажі, після установки рядка. Обов'язково рекомендую цю компанію.</p>
+								    	</div>
+								    	<div class="rightSide">
+								    		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/l0U7SxXHkPY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								    	</div>
+								    </div>
+
+								    <div class="swiper-slide">
+								    	<div class="leftSide">
+								    		<img src="img/reviews/review_1.png" alt="Аватар пользователя" class="avatar">
+								    		<div class="leftSide__top">
+									    		<h3 class="h3">Бугайчук Віктор</h3>
+									    		<div class="stars">
+													  <span class="star on"></span>
+													  <span class="star on"></span>
+													  <span class="star on"></span>
+													  <span class="star on"></span>
+													  <span class="star half"></span>
+													</div>
+													<span class="score">4.5</span>
+												</div>
+												<h5 class="h5">Директор магазинів Твоя підлога</h5>
+												<p class="content">Як у будь-якої компанії, у нас є потреба в залученні нових клієнтів, збільшення продажів. Поставити світлодіодну стрічку - це була наша мрія. Боялися трохи за якість, був досвід установки неякісних рекламних конструкцій. Тому в цей раз вирішили звернутися в компанію «РВК Артлайт», яка знаходиться в місті Рівне і працює не перший рік. Як і очікували, яскравий екран привертав відвідувачів і вдень, і вночі. В результаті у нас зросли продажі, після установки рядка. Обов'язково рекомендую цю компанію.</p>
+								    	</div>
+								    	<div class="rightSide">
+								    		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/l0U7SxXHkPY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								    	</div>
+								    </div>
+
+								    <div class="swiper-slide">
+								    	<div class="leftSide">
+								    		<img src="img/reviews/review_1.png" alt="Аватар пользователя" class="avatar">
+								    		<div class="leftSide__top">
+									    		<h3 class="h3">Бугайчук Віктор</h3>
+									    		<div class="stars">
+													  <span class="star on"></span>
+													  <span class="star on"></span>
+													  <span class="star on"></span>
+													  <span class="star on"></span>
+													  <span class="star half"></span>
+													</div>
+													<span class="score">4.5</span>
+												</div>
+												<h5 class="h5">Директор магазинів Твоя підлога</h5>
+												<p class="content">Як у будь-якої компанії, у нас є потреба в залученні нових клієнтів, збільшення продажів. Поставити світлодіодну стрічку - це була наша мрія. Боялися трохи за якість, був досвід установки неякісних рекламних конструкцій. Тому в цей раз вирішили звернутися в компанію «РВК Артлайт», яка знаходиться в місті Рівне і працює не перший рік. Як і очікували, яскравий екран привертав відвідувачів і вдень, і вночі. В результаті у нас зросли продажі, після установки рядка. Обов'язково рекомендую цю компанію.</p>
+								    	</div>
+								    	<div class="rightSide">
+								    		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/l0U7SxXHkPY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								    	</div>
+								    </div>
+
+								  </div>
+
+								  <div class="bottom-nav">
+									  <div class="swiper-button-prev-custom"><i class="fas fa-chevron-left"></i></div>
+									  <div class="swiperSlide-current"></div>
+									  <div class="swiper-pagination"></div>
+										<div class="swiperSlide-total"></div>
+										<div class="swiper-button-next-custom"><i class="fas fa-chevron-right"></i></div>
+									</div>
+
+								</div>
+
 							</div>
+
 						</div>
-						<div class="col-lg-8">
-							<div class="where-buy__slider">
-								<div class="item"><div class="img-wrapper"><img src="img/zg.png" alt="ZG.com"></div></div>
-								<div class="item"><div class="img-wrapper"><img src="img/latoken.png" alt="Latoken"></div></div>
-								<div class="item"><div class="img-wrapper"><img src="img/zg.png" alt="ZG.com"></div></div>
-								<div class="item"><div class="img-wrapper"><img src="img/latoken.png" alt="Latoken"></div></div>
-								<div class="item"><div class="img-wrapper"><img src="img/zg.png" alt="ZG.com"></div></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="calculator">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="h2">Калькулятор</h2>
+							<h5 class="h5">Якщо вам потрібно розрахувати вартість для вашої реклами тистіть на кнопку</h5>
+							<a href="" class="button">Розрахувати</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="clients">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="h2">Наші клієнти</h2>
+							<div class="clients-wrapper">
+								
+								<div class="swiper-container slider-clients">
+								  <div class="swiper-wrapper">
+
+								    <div class="swiper-slide">
+								    	<img src="img/clients/client_1.png" alt="Client logo">
+								    	<img src="img/clients/client_2.png" alt="Client logo">
+								    	<img src="img/clients/client_3.png" alt="Client logo">
+								    	<img src="img/clients/client_4.png" alt="Client logo">
+								    	<img src="img/clients/client_5.png" alt="Client logo">
+								    	<img src="img/clients/client_6.png" alt="Client logo">
+								    </div>
+
+								    <div class="swiper-slide">
+								    	<img src="img/clients/client_1.png" alt="Client logo">
+								    	<img src="img/clients/client_2.png" alt="Client logo">
+								    	<img src="img/clients/client_3.png" alt="Client logo">
+								    	<img src="img/clients/client_4.png" alt="Client logo">
+								    	<img src="img/clients/client_5.png" alt="Client logo">
+								    	<img src="img/clients/client_6.png" alt="Client logo">
+								    </div>
+
+								    <div class="swiper-slide">
+								    	<img src="img/clients/client_1.png" alt="Client logo">
+								    	<img src="img/clients/client_2.png" alt="Client logo">
+								    	<img src="img/clients/client_3.png" alt="Client logo">
+								    	<img src="img/clients/client_4.png" alt="Client logo">
+								    	<img src="img/clients/client_5.png" alt="Client logo">
+								    	<img src="img/clients/client_6.png" alt="Client logo">
+								    </div>
+
+								    <div class="swiper-slide">
+								    	<img src="img/clients/client_1.png" alt="Client logo">
+								    	<img src="img/clients/client_2.png" alt="Client logo">
+								    	<img src="img/clients/client_3.png" alt="Client logo">
+								    	<img src="img/clients/client_4.png" alt="Client logo">
+								    	<img src="img/clients/client_5.png" alt="Client logo">
+								    	<img src="img/clients/client_6.png" alt="Client logo">
+								    </div>
+
+								   
+
+								  </div>
+
+								  <div class="bottom-nav">
+									  <div class="swiper-button-prev-custom"><i class="fas fa-chevron-left"></i></div>
+									  <div class="swiperSlide-current"></div>
+									  <div class="swiper-pagination"></div>
+										<div class="swiperSlide-total"></div>
+										<div class="swiper-button-next-custom"><i class="fas fa-chevron-right"></i></div>
+									</div>
+
+								</div>
+
 							</div>
 						</div>
 					</div>
@@ -545,21 +1680,105 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="row">
-
-					<div class="col-xl-10 offset-xl-1">
+					<div class="col-12">
 						<div class="footer-wrapper">
-							<h2 class="h2">Don't forget — <span>Crypton</span> is the best coin for <br> conducting fast and 100% confidential <br> financial transactions.</h2>
-							<a href="https://www.zg.com/exchange/737/CRP/USDT" target="_blank" class="button __diamond" onclick="gtag('event', 'footer_dwn', {'event_category': 'download', 'event_label': 'footer'});">get into big money<img src="img/button__diamond.svg" alt="Diamond"></a>
+
+							<div class="footer__column">
+								<img src="img/logo.svg" alt="Site logo">
+								<div class="social-links">
+									<p class="heading">Ми всоціальних мережах</p>
+									<ul>
+										<li><a href=""><i class="fab fa-instagram"></i></a></li>
+										<li><a href=""><i class="fab fa-facebook"></i></a></li>
+										<li><a href=""><i class="fab fa-telegram-plane"></i></a></li>
+										<li><a href=""><i class="fab fa-youtube"></i></a></li>
+									</ul>
+								</div>
+								<img src="img/footer__abb.png" alt="УАВІ">
+							</div>
+
+							<nav class="footer__column">
+								<h4 class="h4">Замовнику</h4>
+
+								<ul class="list">
+									<li><a href="">Гарантії</a></li>
+									<li><a href="">Розрахунковий час виробництва</a></li>
+									<li><a href="">Контроль якості</a></li>
+									<li><a href="">Художнє оформлення</a></li>
+									<li><a href="">Наші переваги</a></li>
+									<li><a href="">Вимоги до макетів</a></li>
+									<li><a href="">Монтаж своїми руками</a></li>
+									<li><a href="">Монтаж фахівцями РВК Артлайт</a></li>
+									<li><a href="">Оплата та доставка</a></li>
+								</ul>
+							</nav>
+
+							<nav class="footer__column">
+								<h4 class="h4">Меню</h4>
+
+								<ul class="list">
+									<li><a href="">Компанія</a></li>
+									<li><a href="">Контакти</a></li>
+									<li><a href="">Виробництво</a></li>
+									<li><a href="">Новини</a></li>
+									<li><a href="">Співпраця</a></li>
+									<li><a href="">Вакансії</a></li>
+									<li><a href="">Нагороди та подяки</a></li>
+									<li><a href="">Завантаження</a></li>
+								</ul>
+							</nav>
+
+							<nav class="footer__column">
+								<h4 class="h4">Допомога</h4>
+
+								<ul class="list">
+									<li><a href="">База знань</a></li>
+									<li><a href="">Вимоги до дизайну макетів</a></li>
+									<li><a href="">Кольорова гамма алюмінієвого <br> композиту</a></li>
+									<li><a href="">Правила погодження макетів</a></li>
+									<li><a href="">Кольорова плівка Ral</a></li>
+									<li><a href="">Кольорова шкала Pantone</a></li>
+									<li><a href="">Кольорова гамма Oracal</a></li>
+									<li><a href="">Плівка кольорова акрилу</a></li>
+									<li><a href="">Палітра двошарового пластику</a></li>
+								</ul>
+							</nav>
+
+							<div class="footer__column">
+
+
+								<div class="contact-box">
+									<p class="heading">Телефон</p>
+									<div class="phone-box">
+										<p class="_dark">(098) 800-80-30</p>
+										<p class="_dark">(095) 280-80-30</p>
+									</div>
+								</div>
+
+								<div class="contact-box">
+									<p class="heading">Адреса</p>
+									<address class="contact address _dark">35360, Україна, Рівненська обл. <br> с. Велика Омеляна, ул. Шевченка, 28</address>
+								</div>
+
+								<div class="contact-box">
+									<p class="heading">Електронна пошта</p>
+									<p class="contact mail _dark">sales@art-light.com.ua</p>
+								</div>
+
+								<div class="contact-box">
+									<p class="heading">Графік роботи</p>
+									<p class="contact schedule _dark">пн - пт: с 10:00 по 17:00 <br>сб - нд: вихідні</p>
+								</div>
+
+							</div>
+
 						</div>
 					</div>
-
-					<div class="col-12 copyrights">
-						<p>Copyright © 2020. Crypton</p>
-					</div>
-
 				</div>
 			</div>
 		</footer>
+
+		<div class="copyrights">РВК Артлайт ©2007-2020 | Вся інформація захищена</div>
 
 	</body>
 
