@@ -20,12 +20,18 @@
 
 	<body class="isnohome registration-page payment-page">
 
+		<div class="preloader">
+			<div class="preloader__content">Onling <div class="plug"></div></div>
+		</div>
+
 		<form class="pop-up pop-up__authorization mfp-hide">
 
 			<img src="img/logo.png" alt="Site logo">
 
 			<input type="email" name="Электронная почта" placeholder="Электронная почта*" required>
 			<input type="password" name="Пароль" placeholder="Пароль*" required>
+
+			<a href="registration-page.html" class="registration-link">Регистрация</a>
 
 			<button class="button">Готово</button>
 		</form>
@@ -126,14 +132,14 @@
 
 		<section class="registration payment">
 
-			<img class="registration-stage_payment__pattern registration-stage_payment__pattern_left" src="img/registration-stage_payment__pattern_left.svg" alt="Pattern" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
-			<img class="registration-stage_payment__pattern registration-stage_payment__pattern_right" src="img/registration-stage_payment__pattern_right.svg" alt="Pattern" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+			<img class="registration-stage_payment__pattern registration-stage_payment__pattern_left" src="img/registration-stage_payment__pattern_left.svg" alt="Pattern" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1500">
+			<img class="registration-stage_payment__pattern registration-stage_payment__pattern_right" src="img/registration-stage_payment__pattern_right.svg" alt="Pattern" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1500">
 
 			<div class="container">
 				<div class="row">
 					<div class="col">
 
-						<a href="" class="back-link">Назад</a>
+						<a href="registration-page.html" class="back-link transition">Назад</a>
 
 						<ul class="registration-stages white-bg">
 							<li class="stage active">
