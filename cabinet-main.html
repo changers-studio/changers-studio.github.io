@@ -20,16 +20,6 @@
 
 	<body class="isnohome cabinet_main-page">
 
-		<form class="pop-up pop-up__authorization mfp-hide">
-
-			<img src="img/logo.png" alt="Site logo">
-
-			<input type="email" name="Электронная почта" placeholder="Электронная почта*" required>
-			<input type="password" name="Пароль" placeholder="Пароль*" required>
-
-			<button class="button">Готово</button>
-		</form>
-
 		<header class="header">
 
 			<div class="top-line__hamburger-menu">
@@ -131,32 +121,32 @@
 		<img class="cabinet__pattern cabinet__pattern_left" src="img/cabinet__pattern_left.svg" alt="Pattern" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
 		<img class="cabinet__pattern cabinet__pattern_right" src="img/cabinet__pattern_right.svg" alt="Pattern" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
 
-		<section class="cabinet-main">
+		<section class="cabinet-main tabs">
 
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-2">
 						<nav class="cabinet__nav-menu">
-							<ul>
+							<ul class="tabs__caption">
 
-								<li data-aos="fade-right" data-aos-duration="700" data-aos-once="true" data-aos-delay="200">
+								<li class="active" data-aos="fade-right" data-aos-duration="700" data-aos-once="true" data-aos-delay="200">
 									<a class="active"><span class="link-wrap">Личный кабинет<span class="underline"></span></span></a>
 								</li>
 
 								<li data-aos="fade-right" data-aos-duration="700" data-aos-once="true" data-aos-delay="400">
-									<a class="transition" href="cabinet-platform.html"><span class="link-wrap">Платформа<span class="underline"></span></span></a>
+									<a><span class="link-wrap">Платформа<span class="underline"></span></span></a>
 								</li>
 
 								<li data-aos="fade-right" data-aos-duration="700" data-aos-once="true" data-aos-delay="600">
-									<a class="transition" href="cabinet-courses_history.html"><span class="link-wrap">История курсов<span class="underline"></span></span></a>
+									<a><span class="link-wrap">История курсов<span class="underline"></span></span></a>
 								</li>
 
 								<li data-aos="fade-right" data-aos-duration="700" data-aos-once="true" data-aos-delay="800">
-									<a class="transition" href="cabinet-payment_history.html"><span class="link-wrap">История платежей<span class="underline"></span></span></a>
+									<a><span class="link-wrap">История платежей<span class="underline"></span></span></a>
 								</li>
 
 								<li data-aos="fade-right" data-aos-duration="700" data-aos-once="true" data-aos-delay="1000">
-									<a class="transition" href="cabinet-settings.html"><span class="link-wrap">Настройка аккаунта<span class="underline"></span></span></a>
+									<a><span class="link-wrap">Настройка аккаунта<span class="underline"></span></span></a>
 								</li>
 
 							</ul>
@@ -165,7 +155,7 @@
 
 					<div class="col-lg-9 offset-lg-1">
 
-						<div class="cabinet_info-wrapper">
+						<div class="cabinet_info-wrapper tabs__content active">
 
 							<ul class="user-info">
 
@@ -204,6 +194,151 @@
 							<img class="user-photo" src="img/cabinet_main-photo.png" alt="User photo" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1000">
 
 						</div>
+
+						<div class="cabinet_info-wrapper tabs__content">
+
+							<ul class="platform-link">
+								<p>Переход на платформу iSpring . . .</p>
+								<a href="" class="button">Перейти</a>
+							</ul>
+
+							<img class="platform-image" src="img/cabinet__platfrom-image.png" alt="Platform image">
+
+						</div>
+
+						<div class="cabinet_info-wrapper tabs__content _flex-column">
+
+							<h2 class="h2">История пройденный курсов</h2>
+
+							<div class="courses_history-table">
+								<div class="table">
+
+									<div class="table__row heading-row">
+										<div class="table__section">Название курса</div>
+										<div class="table__section">Пройденные уроки</div>
+										<div class="table__section">Уровень знаний (%)</div>
+										<div class="table__section">Посещение занятий</div>
+									</div>
+
+									<div class="table-wrapper customScroll">
+
+										<div class="table__row">
+											<div class="table__section">English B1</div>
+											<div class="table__section">12</div>
+											<div class="table__section">12%</div>
+											<div class="table__section">(12) отличное</div>
+										</div>
+
+										<div class="table__row">
+											<div class="table__section">English B1</div>
+											<div class="table__section">12</div>
+											<div class="table__section">12%</div>
+											<div class="table__section">(12) отличное</div>
+										</div>
+
+										<div class="table__row">
+											<div class="table__section">English B1</div>
+											<div class="table__section">12</div>
+											<div class="table__section">12%</div>
+											<div class="table__section">(12) отличное</div>
+										</div>
+
+										<div class="table__row">
+											<div class="table__section">English B1</div>
+											<div class="table__section">12</div>
+											<div class="table__section">12%</div>
+											<div class="table__section">(12) отличное</div>
+										</div>
+
+										<div class="table__row">
+											<div class="table__section">English B1</div>
+											<div class="table__section">12</div>
+											<div class="table__section">12%</div>
+											<div class="table__section">(12) отличное</div>
+										</div>
+
+										<div class="table__row">
+											<div class="table__section">English B1</div>
+											<div class="table__section">12</div>
+											<div class="table__section">12%</div>
+											<div class="table__section">(12) отличное</div>
+										</div>
+
+										<div class="table__row">
+											<div class="table__section">English B1</div>
+											<div class="table__section">12</div>
+											<div class="table__section">12%</div>
+											<div class="table__section">(12) отличное</div>
+										</div>
+
+									</div>
+								
+								</div>
+							</div>
+
+						</div>
+
+						<div class="cabinet_info-wrapper tabs__content _flex-column">
+
+							<h2 class="h2">История платежей</h2>
+
+							<div class="payment-history customScroll">
+								<div class="payment"><span class="naming">Английский Intermediate</span><span class="price">400 000 UZB</span></div>
+								<div class="payment"><span class="naming">Английский Intermediate</span><span class="price">400 000 UZB</span></div>
+								<div class="payment"><span class="naming">Английский Intermediate</span><span class="price">400 000 UZB</span></div>
+								<div class="payment"><span class="naming">Английский Intermediate</span><span class="price">400 000 UZB</span></div>
+								<div class="payment"><span class="naming">Английский Intermediate</span><span class="price">400 000 UZB</span></div>
+								<div class="payment"><span class="naming">Английский Intermediate</span><span class="price">400 000 UZB</span></div>
+								<div class="payment"><span class="naming">Английский Intermediate</span><span class="price">400 000 UZB</span></div>
+								<div class="payment"><span class="naming">Английский Intermediate</span><span class="price">400 000 UZB</span></div>
+							</div>
+
+						</div>
+
+						<div class="cabinet_info-wrapper tabs__content _flex-column">
+
+							<h2 class="h2">Настройки личного кабинета</h2>
+
+							<div class="tabs">
+
+								<ul class="tabs__caption">
+									<li class="active"><span>Смена электронной почты</span></li>
+									<li><span>Смена пароля</span></li>
+									<li><span>Смена номера телефона</span></li>
+								</ul>
+
+								<div class="tabs__content active">
+									<form>
+										<input type="email" name="Старая эл.почта" placeholder="Старая эл.почта*" required>
+										<input type="email" name="Новая эл.почта" placeholder="Новая эл.почта*" required>
+
+										<button class="button">Обновить почту</button>
+									</form>
+								</div>
+
+								<div class="tabs__content">
+									<form>
+										<input type="text" name="Старый пароль" placeholder="Старый пароль*" required>
+										<input type="text" name="Новый пароль" placeholder="Новый пароль*" required>
+
+										<button class="button">Обновить пароль</button>
+									</form>
+								</div>
+
+								<div class="tabs__content">
+									<form>
+										<input type="text" name="Старый номера телефона" placeholder="Старый номера телефона*" required>
+										<input type="text" name="Новый номера телефона" placeholder="Новый номера телефона*" required>
+
+										<button class="button">Обновить номера телефона</button>
+									</form>
+								</div>
+
+							</div>
+
+						</div>
+
+
 					</div>
 					
 				</div>
