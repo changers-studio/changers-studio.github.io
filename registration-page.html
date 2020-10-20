@@ -131,10 +131,10 @@
 
 		</header>
 
-		<section class="registration registration-stage_1">
+		<section class="registration registration-stage_1 tabs">
 
-			<img class="registration-stage_1__pattern registration-stage_1__pattern_left" src="img/registration-stage_1__pattern_left.svg" alt="Pattern" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" data-aos-delay="3000">
-			<img class="registration-stage_1__pattern registration-stage_1__pattern_right" src="img/registration-stage_1__pattern_right.svg" alt="Pattern" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" data-aos-delay="3000">
+			<img class="registration-stage_1__pattern registration-stage_1__pattern_left" src="img/registration-stage_1__pattern_left.svg" alt="Pattern" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" data-aos-delay="3000" data-aos-offset="0">
+			<img class="registration-stage_1__pattern registration-stage_1__pattern_right" src="img/registration-stage_1__pattern_right.svg" alt="Pattern" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" data-aos-delay="3000" data-aos-offset="0">
 
 			<div class="container">
 				<div class="row">
@@ -174,45 +174,71 @@
 							</li>
 						</ul>
 
-						<form class="registration__form-wrapper">
+						<div class="registration-stage_1__heading">
+							<h2 class="h2">Присоединись к нам!</h2>
+							<h4 class="h4">Регистрация</h4>
+
+							<ul class="tabs__captions">
+								<li class="active">Физ.лицо</li>
+								<li>Юр.лицо</li>
+							</ul>
+						</div>
+
+						<form class="registration__form-wrapper active">
 
 							<div class="_left-side">
 
-								<h2 class="h2">Присоединись к нам!</h2>
-								<h4 class="h4">Регистрация</h4>
-
-								<ul>
-									<li data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1700"><a class="active">Физ.лицо</a></li>
-									<li data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1900"><a href="registration_entity-page.html">Юр.лицо</a></li>
-								</ul>
-
 								<div class="inputs-wrapper">
-									<input type="text" name="Имя" placeholder="Имя*" required data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="2100">
-									<input type="text" name="Фамилия" placeholder="Фамилия*" required data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="2300">
-									<input type="text" name="Отчество" placeholder="Отчество" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="2500">
+									<input type="text" name="Имя" placeholder="Имя*" required data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="2100" data-aos-offset="0">
+									<input type="text" name="Фамилия" placeholder="Фамилия*" required data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="2300" data-aos-offset="0">
+									<input type="text" name="Отчество" placeholder="Отчество" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="2500" data-aos-offset="0">
 								</div>
 
 							</div>
 
 							<div class="_right-side">
 								<div class="inputs-wrapper">
-									<input type="email" name="Электронная почта" placeholder="Электронная почта*" required  data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1700">
-									<input type="tel" name="Контактный номер" placeholder="Контактный номер*" required  data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1900">
-									<div class="input-wrapper" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="2100">
+									<input type="email" name="Электронная почта" placeholder="Электронная почта*" required  data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1700" data-aos-offset="0">
+									<input type="tel" name="Контактный номер" placeholder="Контактный номер*" required  data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1900" data-aos-offset="0">
+									<div class="input-wrapper" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="2100" data-aos-offset="0">
 										<input type="text" name="Подтвердите код" placeholder="Подтвердите код*" required>
-										<button class="button">Отправить</button>
+										<button class="button"><span>Отправить</span></button>
 									</div>
-									<input type="password" name="Пароль" placeholder="Пароль*" required data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="2300">
-									<input type="password" name="Повторите пароль*" placeholder="Повторите пароль*" required data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="2500">
+									<input type="password" name="Пароль" placeholder="Пароль*" required data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="2300" data-aos-offset="0">
+									<input type="password" name="Повторите пароль*" placeholder="Повторите пароль*" required data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="2500" data-aos-offset="0">
 
-									<label class="checkbox" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="2700">
+									<label class="checkbox" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="2700" data-aos-offset="0">
 						        <input class="checkbox__input" type="checkbox" required>
 						        <p class="checkbox__text" >Я согласен(-а) с политикой конфиденциальности</p>
 						      </label>
 								</div>
 							</div>
 
-							<button class="button form-button stage-1__button" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="2900">Продолжить</button>
+							<button class="button form-button stage-1__button" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="2900" data-aos-offset="0"><span>Продолжить</span></button>
+
+						</form>
+
+						<form class="registration__form-wrapper _entity">
+
+							<div class="_left-side">
+
+								<div class="inputs-wrapper">
+									<input type="text" name="Наименование организации" placeholder="Наименование организации*" required>
+									<input type="text" name="Имя контактного лица" placeholder="Имя контактного лица*" required>
+									<input type="text" name="Фамилия контактного лица*" placeholder="Фамилия контактного лица*">
+								</div>
+
+							</div>
+
+							<div class="_right-side">
+								<div class="inputs-wrapper">
+									<input type="text" name="Отчество" placeholder="Отчество">
+									<input type="tel" name="Контактный телефона" placeholder="Контактный телефона*" required>
+									<input type="e-mail" name="Электронная почта организации*" placeholder="Электронная почта организации*">
+								</div>
+							</div>
+
+							<button class="button form-button stage-1__button"><span>Свяжитесь со мной</span></button>
 
 						</form>
 
@@ -359,7 +385,7 @@
 								<div class="choose_teacher__slider">
 
 									<div class="choose_teacher__slide">
-										<p class="name">Ms. Jane</p>
+										<p class="name"><span>Ms. Jane</span></p>
 										<img src="img/course-teachers/teacher.png" alt="Teacher photo">
 										<label class="radio-button">
 											<span>Выбрать</span>
@@ -368,7 +394,7 @@
 									</div>
 
 									<div class="choose_teacher__slide">
-										<p class="name">Ms. Jane</p>
+										<p class="name"><span>Ms. Jane</span></p>
 										<img src="img/course-teachers/teacher.png" alt="Teacher photo">
 										<label class="radio-button">
 											<span>Выбрать</span>
@@ -377,7 +403,7 @@
 									</div>
 
 									<div class="choose_teacher__slide">
-										<p class="name">Ms. Jane</p>
+										<p class="name"><span>Ms. Jane</span></p>
 										<img src="img/course-teachers/teacher.png" alt="Teacher photo">
 										<label class="radio-button">
 											<span>Выбрать</span>
@@ -386,7 +412,7 @@
 									</div>
 
 									<div class="choose_teacher__slide">
-										<p class="name">Ms. Jane</p>
+										<p class="name"><span>Ms. Jane</span></p>
 										<img src="img/course-teachers/teacher.png" alt="Teacher photo">
 										<label class="radio-button">
 											<span>Выбрать</span>
@@ -403,7 +429,7 @@
 
 							</div>
 
-							<a href="registration_payment-page.html" class="button transition">Продолжить</a>
+							<a href="registration_payment-page.html" class="button transition"><span>Продолжить</span></a>
 
 						</div>
 
