@@ -5,733 +5,1006 @@
 
 		<meta charset="utf-8">
 
-		<title>Utopia</title>
+		<title>Zhongrong | Инвестируй с умом</title>
 		<!-- <meta name="description" content=""> -->
 
 		<meta name="viewport" content="width=device-width">
 		<meta name="format-detection" content="telephone=no">
 
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
 		
 		<link rel="stylesheet" href="css/styles.min.css">
+		<script async defer src="https://kit.fontawesome.com/a77af3a9ba.js" crossorigin="anonymous"></script>
 		<script defer src="js/scripts.min.js"></script>
-
-		<script async defer src="https://kit.fontawesome.com/55e0136003.js" crossorigin="anonymous"></script>
-
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-166755442-2"></script>
-			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'UA-166755442-2');
-		</script>
 
 	</head>
 
-	<body class="ishome">
+	<body>
 
 		<div class="preloader">
-			<img src="img/logo.svg" alt="Logo">
+			<div class="frame">
+		    <div class="center">
+		      <div class="dot-1"></div>
+		      <div class="dot-2"></div>
+		      <div class="dot-3"></div>
+		    </div>
+		  </div>
 		</div>
 
-		<div class="container_fixed-bg">
-			<div class="container _fixed">
-				<div class="row">
-					<div class="col-12">
+		<div class="pop-up__authorization mfp-hide">
+			<form class="form">
 
-						<div class="header__top-line top-line">
+				<p class="form__title">Вход</p>
+				<p class="form__subtitle">Нет аккаунта? <span>Зарегистрируйтесь</span></p>
 
-							<img class="top-line__logo" src="img/logo.svg" alt="Site logo">
-								
-							<nav>
-								<ul class="top-line__menu">
-									<li><a href="#s-header" class="menu-move">About</a><div class="underline"></div></li>
-									<li><a href="#s-benefits" class="menu-move">Benefits</a><div class="underline"></div></li>
-									<li><a href="#s-need" class="menu-move">Usage Examples</a><div class="underline"></div></li>
-									<li><a href="#s-capability" class="menu-move">Features</a><div class="underline"></div></li>
-									<li><a href="#s-faq" class="menu-move">F.A.Q</a><div class="underline"></div></li>
-									<li><a href="#s-possibilities" class="menu-move">Play&Earn</a><div class="underline"></div></li>
-									<li><a href="#s-reviews" class="menu-move">Reviews</a><div class="underline"></div></li>
-								</ul>
-							</nav>
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Site Name">
+				<input type="hidden" name="admin_email" value="admin@mail.com">
+				<input type="hidden" name="form_subject" value="Form Subject">
+				<!-- END Hidden Required Fields -->
 
-							<a href="https://u.is/en/download.html" target="_blank" class="button top-line__button _white" onclick="gtag('event', 'menu_dwn', {'event_category': 'download', 'event_label': 'menu'});">download</a>
+				<input type="text" name="Логин" placeholder="*Логин" required>
+				<input type="password" name="Пароль" placeholder="*Пароль" required>
 
-							<div class="hamburger">
-								<div class="line"></div>
-								<div class="line _short"></div>
-								<div class="line"></div>
-							</div>
+				<button class="button">Войти</button>
 
-						</div>
+				<a href=".pop-up__miss-data" class="form__subbutton show-miss-data">Забыл логин или пароль?</a>
 
-					</div>
-				</div>
-			</div>
+				<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+
+			</form>
+
 		</div>
 
-		<div class="sidebar-menu__plug"></div>
+		<div class="pop-up__miss-data mfp-hide">
+			<form class="form">
 
-		<nav class="sidebar-menu">
+				<p class="form__title">Забыл логин или пароль</p>
 
-			<div class="hamburger">
-				<i class="fas fa-times"></i>
-			</div>
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Site Name">
+				<input type="hidden" name="admin_email" value="admin@mail.com">
+				<input type="hidden" name="form_subject" value="Form Subject">
+				<!-- END Hidden Required Fields -->
 
-			<ul>
-				<li><a href="#s-header" class="menu-move">About</a></li>
-				<li><a href="#s-benefits" class="menu-move">Benefits</a></li>
-				<li><a href="#s-need" class="menu-move">Usage Examples</a></li>
-				<li><a href="#s-capability" class="menu-move">Features</a></li>
-				<li><a href="#s-faq" class="menu-move">F.A.Q</a></li>
-				<li><a href="#s-possibilities" class="menu-move">Play&Earn</a></li>
-				<li><a href="#s-reviews" class="menu-move">Reviews</a></li>
-			</ul>
-
-		</nav>
-
-		<header class="header header_height" id="s-header">
-
-			<div class="container"> 
-				<div class="row">
-					<div class="col-12">
-
-						<div class="header__top-line top-line" data-aos="fade-down" data-aos-delay="2600">
-
-							<img class="top-line__logo" src="img/logo.svg" alt="Site logo">
-
-							<nav>
-								<ul class="top-line__menu">
-									<li><a href="#s-header" class="menu-move">About</a><div class="underline"></div></li>
-									<li><a href="#s-benefits" class="menu-move">Benefits</a><div class="underline"></div></li>
-									<li><a href="#s-need" class="menu-move">Usage Examples</a><div class="underline"></div></li>
-									<li><a href="#s-capability" class="menu-move">Features</a><div class="underline"></div></li>
-									<li><a href="#s-faq" class="menu-move">F.A.Q</a><div class="underline"></div></li>
-									<li><a href="#s-possibilities" class="menu-move">Play&Earn</a><div class="underline"></div></li>
-									<li><a href="#s-reviews" class="menu-move">Reviews</a><div class="underline"></div></li>
-								</ul>
-							</nav>
-
-							<a href="https://u.is/en/download.html" target="_blank" class="button top-line__button _white" onclick="gtag('event', 'menu_dwn', {'event_category': 'download', 'event_label': 'phone'});">download</a>
-
-							<div class="hamburger">
-								<div class="line"></div>
-								<div class="line _short"></div>
-								<div class="line _medium"></div>
-							</div>
-
-						</div>
-
-					</div>
+				<div class="button-wrap">
+					<a class="button active">Логин</a>
+					<a class="button">Пароль</a>
 				</div>
-			</div>
 
-			<div class="header__main">
+				<input type="text" name="Почта" placeholder="Ваша почта" required>
 
-				<div class="container">
-					<div class="row">
+				<button class="button">Восстановить</button>
 
-						<div class="col-lg-6 col-md-9">
+				<a href=".pop-up__authorization" class="form__subbutton show-authorization">Вернуться назад</a>
 
-							<h1 class="h1" data-aos="fade-right" data-aos-delay="2600">Utopia P2P — a completely anonymous messenger that cannot be hacked</h1>
-							<h4 class="h4" data-aos="fade-right" data-aos-delay="2800">No phone number. No surveillance. No censorship. <br> 5 tools for secure communication and data transfer. <br>All data is protected in a crypto container</h4>
-							<a href="https://u.is/en/download.html" target="_blank" class="button _transparent" onclick="gtag('event', 'header_dwn', {'event_category': 'download', 'event_label': 'header'});" data-aos="fade-right" data-aos-delay="3000">Start Secure Chat</a>
+				<button title="Close (Esc)" type="button" class="mfp-close">×</button>
 
-						</div>
+			</form>
 
-						<div class="header__image" data-aos="zoom-in" data-aos-delay="2600">
-							<img src="img/header__image.png" alt="Header image">
-						</div>
+			
+		</div>
 
-						<div class="header__image_mobile" data-aos="zoom-in" data-aos-delay="2600">
-							<img src="img/header__image_mobile.png" alt="Header image mobile">
-						</div>
+		<div class="pop-up__check-in mfp-hide">
+			<form class="form">
 
-					</div>
+				<p class="form__title">Регистрация</p>
+				<p class="form__subtitle">Есть аккаунт? <span>Войти</span></p>
+
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Site Name">
+				<input type="hidden" name="admin_email" value="admin@mail.com">
+				<input type="hidden" name="form_subject" value="Form Subject">
+				<!-- END Hidden Required Fields -->
+
+				<div class="inputs-wrap table-scrollbar">
+					
+					<input class="invalid" type="text" name="Логин" placeholder="*Логин" required>
+					<p class="invalid _login"><img src="img/info-icon.svg" alt="Info icon">Такой логин уже есть в базе</p>
+					<input type="password" name="Пароль" placeholder="*Пароль" required>
+					<input type="password" name="Пароль" placeholder="*Повторный пароль" required>
+					<input class="invalid" type="tel" name="Номер телефона" placeholder="*Номер телефона" required>
+					<p class="invalid _tel"><img src="img/info-icon.svg" alt="Info icon">Заполните это поле</p>
+					<input class="invalid" type="tel" name="Почта" placeholder="*Почта" required>
+					<p class="invalid _email"><img src="img/info-icon.svg" alt="Info icon">Такой Email уже есть в базе</p>
+					<input type="text" name="Имя" placeholder="*Ваше имя" required>
+					<input type="text" name="Фамилия" placeholder="*Фамилия" required>
+					<input type="text" name="Дата рождения" placeholder="*Дата рождения" required>
+					<input type="text" name="Telegram" placeholder="Telegram">
+					<input type="text" name="Skype" placeholder="Skype">
+					<input type="text" name="Пригласитель" placeholder="Пригласитель">
+
+					<button class="button">Зарегистрироваться</button>
+
 				</div>
+
+				<p class="subbutton">Нажимая кнопку “Зарегистрироваться” я соглашаюсь с политикой конфинденциальности и условиями использования сайта</p>
+
+				<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+
+			</form>
+		</div>
+
+		<div class="pop-up__deposit mfp-hide">
+			<form class="form">
+
+				<p class="form__title">Открыть депозит</p>
+				<p class="form__subtitle">Тарифный план - <span>Trial</span></p>
+
+				<div class="button-wrap">
+					<a class="button active">USD</a>
+					<a class="button">USD</a>
+				</div>
+
+				<input type="text" name="Сумма вклада" placeholder="Сумма вклада" required>
+
+				<button class="button">Открыть депозит</button>
+
+				<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+
+			</form>
+		</div>
+
+
+		<img class="top-bg" src="img/top-bg.png" alt="Top background">
+		<img class="top-bg_mobile" src="img/top-bg_mobile.png" alt="Top background mobile">
+
+		<header class="header">
+
+			<marquee class="header__top-line" loop="1000" width="100000%">
+
+				0.00000002 <span>ALGO_BTC</span> 0.00002586 / 
+				0.00002607 <span>ALGO_EXM</span> 77.777777 / 
+				80.8 <span>BTC_USD</span> 7330.00000004 / 
+				7337.90359697 <span>BTC_RUB</span> 541839.01 / 
+				543663.57 <span>BTC_EUR</span> 6505.6593215 / 
+				6524.03749999 <span>BTC_UAH</span> 190919 / 
+				191105.96 <span>ETH_KZT</span> 71000.99999997 / 
+				76999.99999913 <span>ETH_BTC</span> 0.02298201 / 
+				0.02302795 <span>ETH_USD</span> 168.51619502 / 
+				169.41185891 <span>ETH_RUB</span> 12486.18 / 
+				12525.16341432 <span>ETH_EUR</span> 149.27153585 / 
+				150.16309577 <span>ETH_UAH</span> 4294.37 / 
+				4407.22 <span>ETH_LTC</span> 3.74 / 
+				3.795 <span>LTC_RUB</span> 3305 / 
+				3325.22909838 <span>LTC_USD</span> 44.65800001 / 
+				45.03798007 <span>LTC_EUR</span> 39.53813488 / 
+				39.90727005 <span>LTC_UAH</span> 1150 / 
+				1215.55 <span>LTC_BTC</span> 0.006083 / 
+				0.0060988 <span>BTC_PLN</span> 29296.3182149 / 
+				32035.61289101 <span>BTC_TRY</span> 48293.00000111 / 
+				50998.99999998 <span>BTC_USDT</span> 7072.30001708 / 
+				7125.86799799 <span>XRP_BTC</span> 0.00002719 / 
+				0.00002731 <span>XRP_USD</span> 0.19980001 / 
+				0.20052854 <span>XRP_RUB</span> 14.75690251 / 
+				14.806 <span>ADA_BTC</span> 0.00000484 / 
+				0.00000487 <span>ADA_ETH</span> 0.00021045 / 
+				0.00021199 <span>ADA_USD</span> 0.03577994 / 
+				0.03578362 <span>ALGO_USDT</span> 0.177 / 
+				0.185 <span>ALGO_RUB</span> 13.6 / 
+				15.19959999 <span>BCH_USD</span> 247.51565107 / 
+				249.82199629 <span>BCH_RUB</span> 18210.86724732 / 
+				18499.99999999 <span>BCH_EUR</span> 218.22948804 / 
+				224.55625475 <span>BCH_UAH</span> 6278.00000043 / 
+				6499 <span>BCH_BTC</span> 0.03372949 / 
+				0.033854 <span>BCH_ETH </span>1.46 / 
+				1.47 <span>BCH_USDT</span> 238.856072 / 
+				240.3993 <span>BTCZ_BTC</span> 0.00000001 / 
+				0.00000002 <span>BTG_USD</span> 10.61 / 
+				10.7 <span>BTG_BT</span>C 0.0014576 / 
+				0.0014704 <span>BTG_ETH</span> 0.06290037 / 
+				0.069979 <span>BTT_RUB</span> 0.01830001 / 
+				0.0188 <span>BTT_UAH</span> 0.0062 / 
+				0.00655 <span>BTT_BTC</span> 0.00000003 / 
+				0.00000004 <span>CRON_BTC</span> 0.0000193 / 
+				0.00001981 <span>CRON_ETH</span> 0.00084142 / 
+				0.00085776 <span>CRON_USDT</span> 0.135 / 
+				0.14388655 <span>CRON_EXM</span> 57.59 / 
+				60.000066 <span>DAI_USD</span> 1.0469377 / 
+				1.05540647 <span>DAI_RUB</span> 76.55230227 / 
+				78.55 <span>DAI_BTC</span> 0.00014188 / 
+				0.00014463 <span>DAI_ETH</span> 0.00615807 / 
+				0.00633691 <span>DASH_USD</span> 79.48000001 / 
+				80.6799985 <span>DASH_RUB</span> 5815.36068842 / 
+				6099.99999771 <span>DASH_UAH</span> 2050.651 / 
+				2120.00008 <span>DASH_BTC</span> 0.010864 / 
+				0.01093 <span>DASH_USDT</span> 76.965 / 
+				77.916 <span>DCR_RUB</span> 920.00000011 / 
+				950 <span>DCR_UAH</span> 326.68352539 / 
+				334.49999999 <span>DCR_BTC</span> 0.001733 / 
+				0.0017471 <span>DOGE_USD</span> 0.0020597 / 
+				0.00207 <span>DOGE_BTC</span> 0.00000028 / 
+				0.00000029 <span>DXT_USD</span> 0.00066501 / 
+				0.00077701 <span>DXT_BTC</span> 0.0000001 / 
+				0.00000012 <span>EOS_USD</span> 2.64520001 / 
+				2.68019999 <span>EOS_EUR</span> 2.35473076 / 
+				2.4137911 <span>EOS_BTC</span> 0.000361 / 
+				0.000363 <span>ETC_USD</span> 5.59 / 
+				5.62177951 <span>ETH_PLN</span> 667.82811139 / 
+				710.35999999 <span>ETH_TRY</span> 1101.00003054 / 
+				1139.9828 <span>ETH_USDT</span> 163.27960406 / 
+				163.85 <span>ETZ_ETH</span> 0.0000562 / 
+				0.00006 <span>ETZ_USDT</span> 0.00945685 / 
+				0.009711 <span>EXM_USDT</span> 0.00228 / 
+				0.00238782 <span>EXM_ETH</span> 0.0000145 / 
+				0.00001502 <span>GAS_USD</span> 1.15000001 / 
+				1.19370799 <span>GAS_BTC</span> 0.00015981 / 
+				0.00016275 <span>GNT_BTC</span> 0.00000538 / 
+				0.00000582 <span>GNT_ETH</span> 0.00023401 / 
+				0.00025399 <span>GUSD_USD</span> 1.00000201 / 
+				1.04999999 <span>GUSD_RUB</span> 75 / 
+				84.96999999 <span>GUSD_BTC</span> 0.00013696 / 
+				0.00015 <span>HP_BTC</span> 0.00000034 / 
+				0.00000035 <span>HB_BTC</span> 0.00000012 / 
+				0.00000014 <span>INK_USD</span> 0.00162 / 
+				0.00194997 <span>INK_BTC</span> 0.00000021 / 
+				0.00000028 <span>INK_ETH</span> 0.00001151 / 
+				0.00001555 <span>KICK_RUB</span> 0.011 / 
+				0.0129 <span>KICK_USDT</span> 0.0001451 / 
+				0.0003 <span>KICK_BTC</span> 0.00000001 / 
+				0.00000003 <span>KICK_ETH</span> 0.000001 / 
+				0.00000117 <span>LSK_USD</span> 1.01781671 / 
+				1.046 <span>LSK_RUB</span> 76.33300001 / 
+				78.49999999 <span>LSK_BTC</span> 0.00014 / 
+				0.0001413 <span>MKR_BTC</span> 0.0415 / 
+				0.0422199 <span>MKR_DAI</span> 297.07061569 / 
+				298.47567 <span>MNC_USD</span> 0.00129111 / 
+				0.001349 <span>MNC_BTC</span> 0.00000017 / 
+				<!-- 0.00000018 MNC_ETH 0.00000769 / 
+				0.0000087 MNX_USD 0.0289 / 
+				0.03052999 MNX_BTC 0.00000389 / 
+				0.00000402 MNX_ETH 0.00016759 / 
+				0.00017498 NEO_USD 7.76413278 / 
+				7.92590861 NEO_RUB 570.47629687 / 
+				590 NEO_BTC 0.0010693 / 
+				0.0010766 OMG_USD 0.58381127 / 
+				0.61499999 OMG_BTC 0.00008149 / 
+				0.00008211 OMG_ETH 0.0035341 / 
+				0.0035803 ONG_EXM 35.999 / 
+				36.35 ONG_BTC 0.00001148 / 
+				0.00001251 ONG_RUB 6.2 / 
+				7.3 ONG_UAH 1.834433 / 
+				2.54433 ONT_EXM 159 / 
+				183.99999999 ONT_BTC 0.00005782 / 
+				0.00005915 ONT_RUB 31 / 
+				31.99999999 ONT_UAH 10.601 / 
+				11.401 PTI_RUB 0.17199999 / 
+				0.172 PTI_BTC 0.0000003 / 
+				0.00000032 PTI_EOS 0.00085752 / 
+				0.00092 PTI_USDT 0.00217 / 
+				0.00233999 QTUM_USD 1.44886679 / 
+				1.46742399 QTUM_BTC 0.00019597 / 
+				0.0001973 QTUM_ETH 0.0085234 / 
+				0.0085977 ROOBEE_BTC 0.00000034 / 
+				0.00000036 SMART_USD 0.00230013 / 
+				0.00241898 SMART_RUB 0.17187375 / 
+				0.1795 SMART_EUR 0.00210037 / 
+				0.00211821 SMART_BTC 0.00000031 / 
+				0.00000033 TRX_USD 0.01342319 / 
+				0.01358639 TRX_RUB 0.998 / 
+				1 TRX_UAH 0.34160949 / 
+				0.356 TRX_BTC 0.00000183 / 
+				0.00000184 USDC_USD 1.02940709 / 
+				1.03299999 USDC_BTC 0.00013881 / 
+				0.00014132 USDC_ETH 0.00604475 / 
+				0.00617887 USDC_USDT 0.997 / 
+				1.00239299 USDT_USD 1.03100001 / 
+				1.03899987 USDT_RUB 76.15218642 / 
+				76.99755 USDT_EUR 0.913 / 
+				0.923 USDT_UAH 26.66 / 
+				26.95 USDT_KZT 448.2 / 
+				467.78133856 VLX_BTC 0.00000307 / 
+				0.00000309 WAVES_USD 1.052 / 
+				1.06499999 WAVES_RUB 78.3 / 
+				79 WAVES_BTC 0.0001441 / 
+				0.0001448 WAVES_ETH 0.0062502 / 
+				0.0063025 XEM_USD 0.03728563 / 
+				0.03929979 XEM_EUR 0.03190516 / 
+				0.03532714 XEM_UAH 1 / 
+				1.02 XEM_BTC 0.00000526 / 
+				0.0000053 XLM_USD 0.0514 / 
+				0.05199999 XLM_RUB 3.84210432 / 
+				3.90747762 XLM_TRY 0.3277 / 
+				0.359 XLM_BTC 0.00000701 / 
+				0.00000706 XMR_USD 56.53854851 / 
+				57.19297433 XMR_RUB 4151.4566329 / 
+				4350 XMR_EUR 47.76000047 / 
+				52.19999999 XMR_UAH 1444.87932943 / 
+				1528.815125 XMR_BTC 0.007759 / 
+				0.007787 XMR_ETH 0.33665 / 
+				0.33881 XRP_EUR 0.17400559 / 
+				0.18148075 XRP_TRY 1.30729799 / 
+				1.38 XRP_UAH 5.22 / 
+				5.25 XRP_USDT 0.19281 / 
+				0.19409 XRP_ETH 0.001181 / 
+				0.001189 XTZ_USD 0.0001 / 
+				1000 XTZ_RUB 0.1 / 
+				100000 XTZ_BTC 0.0000001 / 
+				1 XTZ_ETH 0.0000001 / 
+				10 ZEC_USD 38.40279437 / 
+				38.59899997 ZEC_RUB 2850 / 
+				2871.71279991 ZEC_EUR 33.77095787 / 
+				34.42493391 ZEC_BTC 0.005232 / 
+				0.005253 ZRX_USD 0.17551765 / 
+				0.18 ZRX_BTC 0.00002437 / 
+				0.00002456 ZRX_ETH 0.0010572 / 
+				0.0010724 ZAG_BTC 0.0000262 / 
+				0.00002856 USD_RUB 74.024091 / 
+				74.21039999 EXM_BTC 0.00000033 / 
+				0.00000034 ATMCASH_BTC 0.00000001 /  -->
+			</marquee>
+
+			<div class="header__sidebar-plug close-sidebar"></div>
+
+			<div class="header__sidebar">
+
+				<div class="header__sidebar-close close-sidebar"><img src="img/sidebar_close.svg" alt="Close icon"></div>
+
+				<a href="index.html" class="header__sidebar-logo close-sidebar"><img src="img/logo.svg" alt="Logo"></a>
+
+				<nav class="header__sidebar-menu">
+					<ul>
+						<li><a href="about.html" class="close-sidebar">О нас <span class="line"></span></a></li>
+						<li><a href="reviews.html" class="close-sidebar">Отзывы <span class="line"></span></a></li>
+						<li><a href="news.html" class="close-sidebar">Новости <span class="line"></span></a></li>
+						<li><a href="bonus.html" class="close-sidebar">Бонусы <span class="line"></span></a></li>
+						<li><a href="investor.html" class="close-sidebar">Инвестору <span class="line"></span></a></li>
+						<li><a href="partnership.html" class="close-sidebar">Партнеры <span class="line"></span></a></li>
+						<li><a href="faq.html" class="close-sidebar">FAQ <span class="line"></span></a></li>
+						<li><a href="contacts.html" class="close-sidebar">Контакты <span class="line"></span></a></li>
+					</ul>
+				</nav>
+
+				<div class="line"></div>
+
+				<div class="header__sidebar-sign">
+					<a href=".pop-up__authorization" class="button show-authorization close-sidebar">Войти</a>
+					<a href=".pop-up__check-in" class="sign show-check-in close-sidebar">Регистрация</a>
+				</div>
+
+				<div class="line"></div>
+
+				<ul class="header__sidebar-contacts">
+					<li><img src="img/sidebar__tel-icon.svg" alt="Telephone icon"> +8 800 555 3535</li>
+					<li><img src="img/sidebar__mail-icon.svg" alt="E-mail icon"> info@service.com</li>
+					<li><img src="img/sidebar__location-icon.svg" alt="Location icon"> 7898 Central st. 39/34, Russia</li>
+				</ul>
 
 			</div>
 			
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+
+						<div class="header-wrapper">
+
+							<div class="header__hamburger">
+								<span class="line"></span>
+								<span class="line short"></span>
+								<span class="line"></span>
+							</div>
+
+							<a href="index.html" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
+							
+							<nav class="header__menu">
+								<ul>
+									<!-- <li><a class="active">Главная <span class="line"></span></a></li> -->
+									<li><a href="about.html">О нас <span class="line"></span></a></li>
+									<li><a href="reviews.html">Отзывы <span class="line"></span></a></li>
+									<li><a href="news.html">Новости <span class="line"></span></a></li>
+									<li><a href="bonus.html">Бонусы <span class="line"></span></a></li>
+									<li><a href="investor.html">Инвестору <span class="line"></span></a></li>
+									<li><a href="partnership.html">Партнеры <span class="line"></span></a></li>
+									<li><a href="faq.html">FAQ <span class="line"></span></a></li>
+									<li><a href="contacts.html">Контакты <span class="line"></span></a></li>
+								</ul>
+							</nav>
+
+							<div class="header__sign">
+								<a href=".pop-up__check-in" class="sign show-check-in">Регистрация</a>
+								<a href=".pop-up__authorization" class="button show-authorization">Войти</a>
+								<a href=".pop-up__check-in" class="sign_mobile show-authorization"><i class="far fa-user"></i></a>
+								<a href="cabinet-statistics.html" class="authorized-user">
+									<span class="wrapper-icon"><i class="far fa-user"></i></span>
+									<p>Личный кабинет</p>
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
 		</header>
 
-		<main class="main-page">
+		<main>
 			
-			<section class="benefits" id="s-benefits">
-				<div class="container">
-
-					<h2 class="h2" data-aos="zoom-in-down">Main Benefits</h2>
-
+			<section class="intro">
+				<div class="container intro__container">
 					<div class="row">
 
-						<div class="col-lg-4 col-md-6">
-							<div class="benefits-box" data-aos="fade-down">
-								<img src="img/benefits/benefit_1.svg" alt="benefit image">
-								<h3 class="h3">Use it - Earn money</h3>
-								<p>Earn cryptocurrency fast and easy. The built-in mining bot earns Utopia’s cryptocurrency for each internet session.</p>
-							</div>
-						</div>
+						<div class="col-lg-7">
 
-						<div class="col-lg-4 col-md-6">
-							<div class="benefits-box" data-aos="fade-down" data-aos-delay="200">
-								<img src="img/benefits/benefit_2.svg" alt="benefit image">
-								<h3 class="h3">No phone number</h3>
-								<p>Use the messenger anonymously. No need to enter the phone number to start using the messenger.</p>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6">
-							<div class="benefits-box" data-aos="fade-down" data-aos-delay="400">
-								<img src="img/benefits/benefit_3.svg" alt="benefit image">
-								<h3 class="h3">Unhackable crypto container</h3>
-								<p>Nobody can hack into the server with data. It is built on the multi-level encryption method based on Elliptic Curve25519 and 256-bit AES.</p>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6">
-							<div class="benefits-box" data-aos="fade-down">
-								<img src="img/benefits/benefit_4.svg" alt="benefit image">
-								<h3 class="h3">Absolutely free</h3>
-								<p>The system works for free. Everything you need is to download and start using Utopia.</p>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6">
-							<div class="benefits-box" data-aos="fade-down" data-aos-delay="200">
-								<img src="img/benefits/benefit_5.svg" alt="benefit image">
-								<h3 class="h3">Powerful and fast</h3>
-								<p>Send and receive encrypted text and voice messages. Use 5 unique features that are available for free usage only here.</p>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6">
-							<div class="benefits-box" data-aos="fade-down" data-aos-delay="400">
-								<img src="img/benefits/benefit_6.svg" alt="benefit image">
-								<h3 class="h3">No spam or ads</h3>
-								<p>The service free from spam messages and target ads. Nobody can control your desires</p>
-							</div>
-						</div>
-
-					</div>
-					<a href="https://u.is/en/download.html" target="_blank" class="button" onclick="gtag('event', 'benefits_dwn', {'event_category': 'download', 'event_label': 'benefit'});" data-aos="zoom-in-down">download now</a>
-				</div>
-			</section>
-
-			<section class="need" id="s-need">
-				<div class="container">
-					<div class="row">
-
-						<div class="col-lg-7 order-lg-1 order-2">
-							<div class="swiper-container need__slider">
-								<div class="swiper-wrapper">
-									<div class="need__slide swiper-slide">
-										<h3 class="h3">Secure chatting</h3>
-										<p>If you need to communicate with someone anonymously, so that the correspondence does not leak anywhere, use protected uMessenger. Send text and voice messages. Add stickers and emojis to your messages.</p>
-									</div>
-									<div class="need__slide swiper-slide">
-										<h3 class="h3">Private chats and channels</h3>
-										<p>Create encrypted secret chats and channels for your subscribers. Use them anonymously and without censorship. It works as a closed circle where each user has private access to it.</p>
-									</div>
-									<div class="need__slide swiper-slide">
-										<h3 class="h3">Free mining</h3>
-										<p>Enable the built-in Mining bot to earn cryptocurrency. It works automatically and charges cryptocurrency for internet sessions via Utopia.</p>
-									</div>
-									<div class="need__slide swiper-slide">
-										<h3 class="h3">Decentralized P2P Network</h3>
-										<p>Such type of network provides a higher security level. It doesn’t presuppose the absence of a single point of failure. To hack the data, third parties need to take control of all peers. It is simple impossible.</p>
-									</div>
-									<div class="need__slide swiper-slide">
-										<h3 class="h3">Completely anonymous</h3>
-										<p>To start using it, you don’t need to enter your personal data. Just write your nickname and Utopia generates a private key that will open the free access to the usage.</p>
-									</div>
-									<div class="need__slide swiper-slide">
-										<h3 class="h3">Safe file sharing</h3>
-										<p>Send and receive confidential files and documents. The ecosystem highly encrypts each transmitted message. No one can access it.</p>
-									</div>
-									<div class="need__slide swiper-slide">
-										<h3 class="h3">Secure storage server </h3>
-										<p>It doesn’t use a single server. Utopia creates a personal server for each user. Now, each user is a client and a server at the same time.</p>
-									</div>
-									<div class="need__slide swiper-slide">
-										<h3 class="h3">Without censorship</h3>
-										<p>The ecosystem is built under the principles of freedom of speech. You are free in your words and actions. No one can dictate to you what to do.</p>
-									</div>
+							<div class="header-flex">
+								<div class="flex-center">	
+									<h1 class="h1">Инвестируй с умом</h1>
+									<h2 class="h2">Инвестируй в нашу платформу и получай пассивный доход <br> на протяжении всего срока вклада</h2>
+									<a href=".pop-up__check-in" class="button intro__start-partnership show-check-in">Начать партнерство</a>
+									<a href=".pop-up__authorization" class="button intro__sign-in show-authorization">Войти</a>
 								</div>
-
-								<div class="swiper-nav">
-									<a class="swiper-button-prev"></a>
-									<div class="swiper-pagination"></div>
-									<a class="swiper-button-next"></a>
-								</div>
-
 							</div>
-
-							<a href="https://u.is/en/download.html" target="_blank" class="button _mobile" onclick="gtag('event', 'examples_dwn', {'event_category': 'download', 'event_label': 'slide'});"><span>Don’t waste time</span>Try it Now</a>
 
 						</div>
 
-						<div class="col-lg-5 order-lg-2 order-1">
-							<h2 class="h2" data-aos="fade-right">Why should you switch to Utopia p2p?</h2>
-							<p data-aos="fade-right" data-aos-delay="200">Simple way to protect your internet activity. Now, you can use a range of privacy tools to ensure your data security. 5 built-in functional tools to fill your needs using an anonymous and encrypted way.</p>
-							<a href="https://u.is/en/download.html" target="_blank" class="button" onclick="gtag('event', 'examples_dwn', {'event_category': 'download', 'event_label': 'slide'});" data-aos="fade-right" data-aos-delay="400"><span>Don’t waste time</span>Try it Now</a>
+						<div class="col-lg-5">
+							<div class="header-flex">
+								<div class="flex-center">	
+									<img class="intro__image" src="img/intro__image.svg" alt="Intro image">
+								</div>
+							</div>
 						</div>
 
 					</div>
 				</div>
 			</section>
 
-			<section class="roadmap" id="s-roadmap">
+			<section class="project-description">
 				<div class="container">
 					<div class="row">
-						<div class="col">
+
+						<div class="col-lg-6">
 							
-							<div class="roadmap__wrapper">
+							<h3 class="h3">Стремимся быть №1</h3>
 
-								<div class="roadmap__box" data-aos="fade-right">
-									<img src="img/icons/download-icon.svg" alt="Download">
-									<span class="number">01</span>
-									<h3 class="h3">Download the client</h3>
-									<p>Download and install the client from the official site. No personal data, such as phone number or email address.</p>
-								</div>
+							<p class="project-description__content">Компания Zhongrong Capital занимается приумножением личного капитала и капитала своих клиентов уже более шести лет. За это время было проанализировано сотни различных стратегий, инструментов и сервисов, которые позволяют получать пассивный доход. На данный момент, мы разработали свои личные и уникальные инструменты для автоторговли на рынке FOREX и на рынке КРИПТОВАЛЮТ.
+							<br>
+							<br>
+							В нашей команде работают специалисты разных направлений (профессиональные трейдеры FOREX, КРИПТОВАЛЮТЫ, разработчики новых, актуальных на данный момент, стратегий для торговли). Используя именно такую совокупность инструментов, знаний и правильное распределение средств, нам удалось добиться прекрасных результатов, при этом риски стремятся к нулю. Компания строго соблюдает стандарты финансовой стабильности, а также обеспечивает надёжное управление капиталом и безопасность среди клиентов.  Каждый день мы работаем над тем, чтобы наши клиенты зарабатывали ещё больше и делать это было ещё проще.</p>
 
-								<img class="roadmap__arrow" src="img/icons/next-icon.svg" alt="Next" data-aos="fade-right" data-aos-delay="200">
-
-								<div class="roadmap__box" data-aos="fade-right" data-aos-delay="400">
-									<img src="img/icons/login-icon.svg" alt="Login">
-									<span class="number">02</span>
-									<h3 class="h3">Create crypto container</h3>
-									<p>Launch the system and create an account’s crypto container. You can create several containers for each user</p>
-								</div>
-
-								<img class="roadmap__arrow" src="img/icons/next-icon.svg" alt="Next" data-aos="fade-right" data-aos-delay="600">
-
-								<div class="roadmap__box" data-aos="fade-right" data-aos-delay="800">
-									<img src="img/icons/shield-icon.svg" alt="Shield">
-									<span class="number">03</span>
-									<h3 class="h3">Become a part of a team</h3>
-									<p>Simple connection to the network and instant usage start. Implement Utopia and appreciate its abilities</p>
-								</div>
-
-							</div>
-
-							<a href="https://u.is/en/download.html" target="_blank" class="button _white" onclick="gtag('event', 'road_dwn', {'event_category': 'download', 'event_label': 'should'});">Try it Now</a>
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="capability" id="s-capability">
-
-				<img class="capability__decor _left" src="img/bg-decor/decor-1_left.svg" alt="Decor circle">
-				<img class="capability__decor _right" src="img/bg-decor/decor-2_right.svg" alt="Decor circle">
-
-				<div class="container">
-
-					<h2 class="h2" data-aos="zoom-in-down">What can you do with Utopia P2P</h2>
-
-					<div class="row">
-
-						<div class="col-lg-6 capability__image">
-							<img data-aos="zoom-in" src="img/capability__image.png" alt="Wooman">
 						</div>
 
 						<div class="col-lg-6">
+							
+							<div class="scales">
 
-							<div class="capability__text">
-								<svg>
-									<polygon points="0,20 40,0 40,40" fill="#F4F8FB" />
-								</svg>
-								<h2 class="h2" data-aos="fade-right" data-aos-delay="200">Secure messaging</h2>
-								<p data-aos="fade-right" data-aos-delay="400">Convenient and secure instant messenger transmits any encrypted text or voice message. Only the sender and recipient have access to it.</p>
-							</div>
-
-						</div>
-
-						<div class="col">
-							<div class="capability__advantages">
-
-								<div class="capability__advantages-box" data-aos="fade-down">
-									<img src="img/icons/megaphone-icon.svg" alt="Megaphone">
-									<h3 class="h3">No spam or ads</h3>
-									<p>Forget about annoying built-in ads and spam messages. Utopia is a completely free zone</p>
-								</div>
-
-								<div class="capability__advantages-box" data-aos="fade-down" data-aos-delay="200">
-									<img src="img/icons/cat-icon.svg" alt="Sticker cat">
-									<h3 class="h3">Colorful stickers</h3>
-									<p>Add cool and bright stickers to messages. A great scope of them can help you with it</p>
-								</div>
-
-								<div class="capability__advantages-box" data-aos="fade-down" data-aos-delay="400">
-									<img src="img/icons/mes-icon.svg" alt="Messege">
-									<h3 class="h3">Chats and channels</h3>
-									<p>Create private chats for secret communication. Invite your subscribers to follow your channel</p>
-								</div>
-
-							</div>
-
-							<div class="capability__slider swiper-container">
-								<div class="swiper-wrapper">
-
-									<div class="capability__advantages-box swiper-slide">
-										<img src="img/icons/megaphone-icon.svg" alt="Megaphone">
-										<h3 class="h3">No spam or ads</h3>
-										<p>Forget about annoying built-in ads and spam messages. Utopia is a completely free zone</p>
+								<div class="scale scale_1">
+									<h4 class="h4">Автоторговля на рынке FOREX</h4>
+									<div class="scale__box">
+										<span class="scale__percent">22%</span>
+										<div class="scale__wrap"><div class="scale__fullness _purple"></div></div>
 									</div>
-
-									<div class="capability__advantages-box swiper-slide">
-										<img src="img/icons/cat-icon.svg" alt="Sticker cat">
-										<h3 class="h3">Colorful stickers</h3>
-										<p>Add cool and bright stickers to messages. A great scope of them can help you with it</p>
-									</div>
-
-									<div class="capability__advantages-box swiper-slide">
-										<img src="img/icons/mes-icon.svg" alt="Messege">
-										<h3 class="h3">Chats and channels</h3>
-										<p>Create private chats for secret communication. Invite your subscribers to follow your channel</p>
-									</div>
-									
 								</div>
 
-								<div class="swiper-nav">
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-pagination"></div>
-									<div class="swiper-button-next"></div>
+								<div class="scale scale_2">
+									<h4 class="h4">Автоторговля на рынке FOREX</h4>
+									<div class="scale__box">
+										<span class="scale__percent">22%</span>
+										<div class="scale__wrap"><div class="scale__fullness _blue"></div></div>
+									</div>
+								</div>
+
+								<div class="scale scale_3">
+									<h4 class="h4">Автоторговля на рынке FOREX</h4>
+									<div class="scale__box">
+										<span class="scale__percent">22%</span>
+										<div class="scale__wrap"><div class="scale__fullness _purple"></div></div>
+									</div>
+								</div>
+
+								<div class="scale scale_4">
+									<h4 class="h4">Автоторговля на рынке FOREX</h4>
+									<div class="scale__box">
+										<span class="scale__percent">22%</span>
+										<div class="scale__wrap"><div class="scale__fullness _blue"></div></div>
+									</div>
+								</div>
+
+								<div class="scale scale_5">
+									<h4 class="h4">Автоторговля на рынке FOREX</h4>
+									<div class="scale__box">
+										<span class="scale__percent">22%</span>
+										<div class="scale__wrap"><div class="scale__fullness _purple"></div></div>
+									</div>
+								</div>
+
+								<div class="scale scale_6">
+									<h4 class="h4">Автоторговля на рынке FOREX</h4>
+									<div class="scale__box">
+										<span class="scale__percent">22%</span>
+										<div class="scale__wrap"><div class="scale__fullness _blue"></div></div>
+									</div>
 								</div>
 
 							</div>
 
-							<a href="https://u.is/en/download.html" target="_blank" class="button" onclick="gtag('event', 'message_dnw', {'event_category': 'download', 'event_label': 'security'});" data-aos="zoom-in-down">Start Secure Chat</a>
-
-						</div>
-
-					</div>
-
-				</div>
-			</section>
-
-			<section class="advantages" id="s-advantages">
-
-				<img class="advantages__decor" src="img/bg-decor/decor-3_left.svg" alt="Decor circle">
-
-				<div class="container">
-					<div class="row">
-
-						<div class="col-lg-6 order-2 order-lg-1 _offset">
-							<div class="advantages__content">
-								<svg>
-									<polygon points="0,20 40,0 40,40" fill="#F4F8FB" />
-								</svg>
-								<h2 class="h2" data-aos="fade-right">Use cryptographic container for storing important data or files</h2>
-								<p data-aos="fade-right" data-aos-delay="200">Store all transmitted and other data in a special encrypted container for safekeeping. Such a container cannot be hacked due to the complex encryption method.</p>
-								<a href="https://u.is/en/download.html" target="_blank" class="button" onclick="gtag('event', 'container_dwn', {'event_category': 'download', 'event_label': 'contain'});" data-aos="fade-right" data-aos-delay="400">Try it now</a>
-							</div>
-						</div>
-
-						<div class="col-lg-6 order-1 order-lg-2 _offset">
-							<img class="advantages__image _right" src="img/advantages__image-1.png" alt="Angel" data-aos="zoom-in">
-						</div>
-
-						<div class="col-lg-6 order-3 _offset">
-							<img class="advantages__image _left" src="img/advantages__image-2.png" alt="Smarty" data-aos="zoom-in">
-						</div>
-
-						<div class="col-lg-6 order-4 _offset">
-							<div class="advantages__content _reverse">
-								<svg>
-									<polygon points="0,20 40,0 40,40" fill="#F4F8FB" />
-								</svg>
-								<h2 class="h2" data-aos="fade-right">Protected correspondence without prying eyes</h2>
-								<p data-aos="fade-right" data-aos-delay="200">Use encrypted file sharing to transfer all confidential files and documents. Each message is more encrypted than in traditional email. Only the sender and recipient have access to it.</p>
-								<a href="https://u.is/en/download.html" target="_blank" class="button" onclick="gtag('event', 'mail_dwn', {'event_category': 'download', 'event_label': 'mail'});" data-aos="fade-right" data-aos-delay="400">Try it now</a>
-							</div>
 						</div>
 
 					</div>
 				</div>
 			</section>
 
-			<section class="faq" id="s-faq">
+			<section class="invest">
+				
+				<img class="invest__bg" src="img/invest-bg.jpg" alt="Invest background">
+
 				<div class="container">
 					<div class="row">
-						<div class="col">
 
-							<div class="faq__container" data-aos="zoom-in">
-								<img src="img/avatars/avatar-1.png" alt="Avatar">
-								<p>
-									<svg>
-										<polygon points="0,12 24,0 24,24" fill="#fff" />
-									</svg>
-									Why should I use Utopia when I can chat using traditional messenger apps?
-								</p>
+						<div class="col-lg-10 offset-lg-1">
+
+							<div class="h3">Инвестируем в Zhongrong Capital</div>
+							<div class="h4">Станьте частью перспективной, ответственной, инновационной компании.</div>
+
+							<div class="table">
+
+								<img src="img/invest__decor_1.svg" alt="Decor circle" class="invest__decor invest__decor_1">
+								<img src="img/invest__decor_2.svg" alt="Decor circle" class="invest__decor invest__decor_2">
+								<img src="img/invest__decor_3.svg" alt="Decor circle" class="invest__decor invest__decor_3">
+
+								<div class="table__logo">
+									<img src="img/logo-big.svg" alt="Table Logo">
+								</div>
+
+								<div class="table-row table-row_top">
+
+									<div class="table-row__item _left">
+										<span class="_left">Trial</span>
+										<p>до 1% на 5 дней</p>
+									</div>
+
+									<div class="table-row__item _right">
+										<p>10 - 100 $</p>
+										<a href=".pop-up__deposit" class="link show-deposit">
+											<p class="checkout">Оформить</p>
+											<span class="_right">
+												<i class="fas fa-plus"></i>
+											</span>
+										</a>
+									</div>
+
+								</div>
+
+								<div class="table-row table-row_bottom">
+
+									<div class="table-row__item _left">
+										<span class="_left">Start</span>
+										<p>до 0,7% на 21 дней</p>
+									</div>
+
+									<div class="table-row__item _right">
+										<p>50 - 499  $</p>
+										<a href=".pop-up__deposit" class="link show-deposit">
+											<p class="checkout">Оформить</p>
+											<span class="_right">
+												<i class="fas fa-plus"></i>
+											</span>
+										</a>
+									</div>
+
+								</div>
+
+								<div class="table-row">
+
+									<div class="table-row__item _left">
+										<span class="_left">Prime</span>
+										<p>до 1% на 35 дней</p>
+									</div>
+
+									<div class="table-row__item _right">
+										<p>500 - 1999 $</p>
+										<a href=".pop-up__deposit" class="link show-deposit">
+											<p class="checkout">Оформить</p>
+											<span class="_right">
+												<i class="fas fa-plus"></i>
+											</span>
+										</a>
+									</div>
+
+								</div>
+
+								<div class="table-row">
+
+									<div class="table-row__item _left">
+										<span class="_left">Profit</span>
+										<p>до 1,3% на 56 дней</p>
+									</div>
+
+									<div class="table-row__item _right">
+										<p>2000 - 4999  $</p>
+										<a href=".pop-up__deposit" class="link show-deposit">
+											<p class="checkout">Оформить</p>
+											<span class="_right">
+												<i class="fas fa-plus"></i>
+											</span>
+										</a>
+									</div>
+
+								</div>
+
+								<div class="table-row">
+
+									<div class="table-row__item _left">
+										<span class="_left">Diamond</span>
+										<p>до 1,7% на 70 дней</p>
+									</div>
+
+									<div class="table-row__item _right">
+										<p>5000 - 49 999 $</p>
+										<a href=".pop-up__deposit" class="link show-deposit">
+											<p class="checkout">Оформить</p>
+											<span class="_right">
+												<i class="fas fa-plus"></i>
+											</span>
+										</a>
+									</div>
+
+								</div>
+
+								<div class="table-row">
+
+									<div class="table-row__item _left">
+										<span class="_left">Vip</span>
+										<p>до 1,35% на 130 дней</p>
+									</div>
+
+									<div class="table-row__item _right">
+										<p>100 - 2999 $</p>
+										<a href=".pop-up__deposit" class="link show-deposit">
+											<p class="checkout">Оформить</p>
+											<span class="_right">
+												<i class="fas fa-plus"></i>
+											</span>
+										</a>
+									</div>
+
+								</div>
+
+								<div class="table-row table-row_top">
+
+									<div class="table-row__item _left">
+										<span class="_left">Vip+</span>
+										<p>до 1,95% на 90 дней</p>
+									</div>
+
+									<div class="table-row__item _right">
+										<p>3000 - 100 000 $</p>
+										<a href=".pop-up__deposit" class="link show-deposit">
+											<p class="checkout">Оформить</p>
+											<span class="_right">
+												<i class="fas fa-plus"></i>
+											</span>
+										</a>
+									</div>
+
+								</div>
+
+								<div class="table-row table-row_bottom">
+
+									<div class="table-row__item _left">
+										<span class="_left">Vip Gold</span>
+										<p>до 2,2% на 180 дней</p>
+									</div>
+
+									<div class="table-row__item _right">
+										<p>1000 - 100 000 $</p>
+										<a href=".pop-up__deposit" class="link show-deposit">
+											<p class="checkout">Оформить</p>
+											<span class="_right">
+												<i class="fas fa-plus"></i>
+											</span>
+										</a>
+									</div>
+
+								</div>
+
 							</div>
 
-							<div class="faq__container _reverse" data-aos="zoom-in" data-aos-delay="100">
-								<p>
-									<svg>
-										<polygon points="0,12 24,0 24,24" fill="#D4F5FC" />
-									</svg>
-									First, Utopia is an anonymous messenger. You do not need to disclose your identity during the registration process. Second, it is free of charge. You do not need to pay for functionality usage. Finally, Utopia is a censorship-free zone.
-								</p>
-								<img src="img/avatars/avatar-2.png" alt="Avatar">
+							<a href=".pop-up__check-in" class="button show-check-in">Начать партнерство</a>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="cash-out">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-8 col-lg-10 offset-xl-2 offset-lg-1">
+						
+							<h3 class="h3">Максимально удобный вывод стредств</h3>
+							<h4 class="h4">Выводите средства на любой кошелек или счёт</h4>
+
+							<div class="wallet">
+								<div class="withdrawal"><span class="helper"></span><img src="img/wallet/payeer.svg" alt="Payeer"></div>
+								<div class="withdrawal"><span class="helper"></span><img src="img/wallet/qiwi.svg" alt="Qiwi"></div>
+								<div class="withdrawal"><span class="helper"></span><img src="img/wallet/advcash.svg" alt="Advcash"></div>
+								<div class="withdrawal"><span class="helper"></span><img src="img/wallet/yandex.svg" alt="Yandex"></div>
+								<div class="withdrawal"><span class="helper"></span><img src="img/wallet/perfect_money.svg" alt="Perfect money"></div>
+								<div class="withdrawal"><span class="helper"></span><img src="img/wallet/bitcoin.svg" alt="bitcoin"></div>
+								<div class="withdrawal"><span class="helper"></span><img src="img/wallet/mastercard-visa.svg" alt="Mastercard and Visa"></div>
 							</div>
-
-							<div class="faq__container" data-aos="zoom-in" data-aos-delay="200">
-								<img src="img/avatars/avatar-3.png" alt="Avatar">
-								<p>
-									<svg>
-										<polygon points="0,12 24,0 24,24" fill="#fff" />
-									</svg>
-									Where are the guarantees that my data will not be stolen?
-								</p>
-							</div>
-
-							<div class="faq__container _reverse" data-aos="zoom-in" data-aos-delay="300">
-								<p>
-									<svg>
-										<polygon points="0,12 24,0 24,24" fill="#D4F5FC" />
-									</svg>
-									All user data is stored on your own cryptocontainer that Utopia creates during the registration. A personal key opens unique access to it. For data protection, there are several sophisticated encryption methods that no one can hack.
-								</p>
-								<img src="img/avatars/avatar-4.png" alt="Avatar">
-							</div>
-
-							<div class="faq__container" data-aos="zoom-in" data-aos-delay="400">
-								<img src="img/avatars/avatar-5.png" alt="Avatar">
-								<p>
-									<svg>
-										<polygon points="0,12 24,0 24,24" fill="#fff" />
-									</svg>
-									Why is Utopia free of charge?
-								</p>
-							</div>
-
-							<div class="faq__container _reverse" data-aos="zoom-in" data-aos-delay="500">
-								<p>
-									<svg>
-										<polygon points="0,12 24,0 24,24" fill="#D4F5FC" />
-									</svg>
-									The team of developers is enthusiasts who created Utopia using their own funds. The main goal was to provide users with secure and anonymous tools for free chatting and working on the net. Therefore, the entire ecosystem exists on enthusiasm.
-								</p>
-								<img src="img/avatars/avatar-6.png" alt="Avatar">
-							</div>
-
-							<a href="https://u.is/en/download.html" target="_blank" class="button" onclick="gtag('event', 'faq_dwn', {'event_category': 'download', 'event_label': 'faq'});" data-aos="zoom-in-down">try it now</a>
-
+							
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="possibilities" id="s-possibilities">
+			<section class="advantages">
+				
+				<img class="advantages__bg" src="img/advantages/advantages-bg.jpg" alt="Advantages background">
+				<img class="advantages__bg_mobile" src="img/advantages/advantages-bg_mobile.png" alt="Advantages background mobile">
+
 				<div class="container">
-
-					<h2 class="h2" data-aos="zoom-in-down">Are there any other <br> possibilities?</h2>
-
 					<div class="row">
+						
+						<h3 class="h3">Наши преимущества</h3>
 
-						<div class="col-md-6">
-							<div class="possibilities__box _left" data-aos="fade-up">
-								<img src="img/possibilities__image_left.png" alt="Woman" data-aos="zoom-in" data-aos-delay="400">
-								<h2 class="h2" data-aos="zoom-in-down" data-aos-delay="400">Play and win</h2>
-								<p data-aos="zoom-in-down" data-aos-delay="400">Increase your revenue. Play poker and earn cryptocurrency at the same time. Turn on the mining bot and play built-in games with your friends.</p>
-								<a href="https://u.is/en/download.html" target="_blank" class="button" onclick="gtag('event', 'play_dnw', {'event_category': 'download', 'event_label': 'play'})" data-aos="zoom-in-down" data-aos-delay="400">Have Good Time</a>
-							</div>
-						</div>
+						<div class="advantages-wrap">
 
-						<div class="col-md-6">
-							<div class="possibilities__box _right" data-aos="fade-up">
-								<img src="img/possibilities__image_right.png" alt="Man" data-aos="zoom-in" data-aos-delay="400">
-								<h2 class="h2" data-aos="zoom-in-down" data-aos-delay="400">Earn money using <br> Utopia p2p</h2>
-								<p data-aos="zoom-in-down" data-aos-delay="400">Activate a built-in mining function and collect cryptocurrency for each internet session. You can use it for payment or exchange them on the exchange.</p>
-								<a href="https://u.is/en/download.html" target="_blank" class="button" onclick="gtag('event', 'earn_dwn', {'event_category': 'download', 'event_label': 'earn'});" data-aos="zoom-in-down" data-aos-delay="400">earn money</a>
-							</div>
-						</div>
+							<div class="advantages__inner">
 
-						<div class="col">
-							<img src="img/statistic-bg.svg" alt="Decor circle" class="statistic__decor">
-							<div class="statistic">
-
-								<div class="statistic__box" data-aos="zoom-in">
-									<span class="number">100 000</span>
-									<p>Users already work with the ecosystem daily</p>
+								<div class="advantages__inner_top">
+									<div class="advantages__inner-icon _purple"><img src="img/advantages/advantage_1.svg" alt="Advantage icon"></div>
+									<h4 class="h4">Покупка робота</h4>
 								</div>
 
-								<div class="statistic__box" data-aos="zoom-in" data-aos-delay="200">
-									<span class="number">40 000</span>
-									<p>Users already earn cryptocurrency via Mining</p>
-								</div>
-
-								<div class="statistic__box" data-aos="zoom-in" data-aos-delay="400">
-									<span class="number">40 000</span>
-									<p>Channels have already been created</p>
-								</div>
+								<p>Мы предоставляем услуги алгоритма, который автоматизировано торгует на бирже.</p>
 
 							</div>
+
+							<div class="advantages__inner">
+								
+								<div class="advantages__inner_top">
+									<div class="advantages__inner-icon _blue"><img src="img/advantages/advantage_2.svg" alt="Advantage icon"></div>
+									<h4 class="h4">Лицензия</h4>
+								</div>
+
+								<p>Лицензия от государственного  регулятора Гонконга - SFC (Securities and Futures Commission).</p>
+
+							</div>
+
+							<div class="advantages__inner">
+								
+								<div class="advantages__inner_top">
+									<div class="advantages__inner-icon _purple"><img src="img/advantages/advantage_3.svg" alt="Advantage icon"></div>
+									<h4 class="h4">Быстрая скорость <br> денежных переводов</h4>
+								</div>
+
+								<p>Максимально быстрое пополнение и вывод ваших средств из любой точки мира.</p>
+
+							</div>
+
+							<div class="advantages__inner">
+								
+								<div class="advantages__inner_top">
+									<div class="advantages__inner-icon _blue"><img src="img/advantages/advantage_4.svg" alt="Advantage icon"></div>
+									<h4 class="h4">Реферальная программа</h4>
+								</div>
+
+								<p>Выгодные тарифы и бонусы для каждого инвестора.</p>
+
+							</div>
+
+							<div class="advantages__inner">
+								
+								<div class="advantages__inner_top">
+									<div class="advantages__inner-icon _purple"><img src="img/advantages/advantage_5.svg" alt="Advantage icon"></div>
+									<h4 class="h4">Безопасность</h4>
+								</div>
+
+								<p>Мы надежно защищаем данные каждого клиента, поэтому с нами хотят сотрудничать.</p>
+
+							</div>
+
+							<div class="advantages__inner">
+								
+								<div class="advantages__inner_top">
+									<div class="advantages__inner-icon _blue"><img src="img/advantages/advantage_6.svg" alt="Advantage icon"></div>
+									<h4 class="h4">Делимся опытом</h4>
+								</div>
+
+								<p>Помогаем инвесторам получать лучшую прибыль более 6 лет. Опыт работы на рынке forex с 2014 г.</p>
+
+							</div>
+
+							<div class="advantages__inner">
+								
+								<div class="advantages__inner_top">
+									<div class="advantages__inner-icon _purple"><img src="img/advantages/advantage_7.svg" alt="Advantage icon"></div>
+									<h4 class="h4">Команда профессионалов</h4>
+								</div>
+
+								<p>В нашем штате работают только профессиональные трейдеры с большим багажом опыта.</p>
+
+							</div>
+
+							<div class="advantages__inner _long">
+								
+								<div class="advantages__inner_top">
+									<h4 class="h4 _bold">Начни сотрудничать с нами прямо сейчас!</h4>
+								</div>
+
+								<p>Воспользуйся лучшими предложениями для инвесторов</p>
+
+								<a href=".pop-up__check-in" class="button show-check-in">Начать партнерство</a>
+
+								<img class="advantages__inner-bg" src="img/advantages/advantage_8.svg" alt="Advantage background">
+
+							</div>
+
 						</div>
 
 					</div>
 				</div>
+
 			</section>
 
-			<section class="reviews" id="s-reviews">
-
-				<div class="reviews__baby">
-					<img src="img/reviews__baby.png" alt="Baby" data-aos="fade">
-				</div>
-
+			<section class="reviews">
 				<div class="container">
 					<div class="row">
-						<div class="col">
-							<h2 class="h2" data-aos="zoom-in-down">Feedback from our users from Trustpilot</h2>
+						<div class="col-12">
+							<h3 class="h3">Наши клиенты со всего мира</h3>
+							<h4 class="h4">Цель нашего сервиса - дать возможность людям зарабатывать на инвестициях</h4>
+							
+							<div class="reviews__map">
 
-							<div class="swiper-container reviews__slider">
+								<img class="reviews__map-image" src="img/reviews__map.svg" alt="Reviews map">
 
-								<div class="swiper-wrapper">
+								<div class="reviews__map-locate locate_1 active">
 
-									<div class="swiper-slide reviews__slide">
-										<a href="https://www.trustpilot.com/review/u.is" class="reviews__slide-wrapper" target="_blank">
-											<h3 class="h3">The program allows you to communicate…</h3>
-											<p>The program allows you to communicate completely anonymously, because it is built on a p2p system! There is its own cryptocurrency, which, in my opinion, is very promising - it can easily replace bitcoin in the foreseeable future. Of course, as with any newcomers, there are some problems, but they are quickly solved by developers.</p>
-											<p class="user-name">James Williams</p>
-										</a>
+									<div class="dot-box">
+										<img class="close-review" src="img/reviews_close.svg" alt="Reviews close-icon">
+										<div class="dot"><div class="dot-inner"></div></div>
 									</div>
 
-									<div class="swiper-slide reviews__slide">
-										<a href="https://www.trustpilot.com/review/u.is" class="reviews__slide-wrapper" target="_blank">
-											<h3 class="h3">Utopia is the most secure platform with…</h3>
-											<p>Utopia is the most secure platform with user-friendly design. It contains a ton of apps including messenger, email, browser, and ooh la la e-wallet. Utopia allows me (and my team) communicate and share information easily and securely - text and voice messages, media files, conference calls or private conversations. What’s more, Utopia is available on any operating system (but it’s not available on a smartphone 😞) - so you can collaborate whether on the Windows or on the Linux/MacOS. It’s ideal for business.</p>
-											<span class="user-name">Harold Horton</span>
-										</a>
+									<div class="review">
+										<h5 class="h5">Юркевич И.В.</h5>
+										<h6 class="h6">Инвестор</h6>
+										<p>Сервис Zhongrong Capital один из немногих, который может похвастаться удобным функционалом и хорошими условиями.</p>
 									</div>
-
-									<div class="swiper-slide reviews__slide">
-										<a href="https://www.trustpilot.com/review/u.is" class="reviews__slide-wrapper" target="_blank">
-											<h3 class="h3">I’m really conscious about my privacy…</h3>
-											<p>I’m really conscious about my privacy and I always use a different app to chat online. After extensive research, I tried Utopia. First of all, I want to notice that it is more than a messenger. It’s an all-in-one kit for private and secure messaging, email, browsing, and payment processes. I’m content. It’s use-friendly.</p>
-											<span class="user-name">Zhury Barboza</span>
-										</a>
-									</div>
-
-									<div class="swiper-slide reviews__slide">
-										<a href="https://www.trustpilot.com/review/u.is" class="reviews__slide-wrapper" target="_blank">
-											<h3 class="h3">Magic will happens again!</h3>
-											<p>Do u remember 2012 when the price of bitcoin was about 1$. Welcome back to the Future. Magic will happens again! Awesome ecosystem with great community and immense opportunities! All in one app, any wishes will come true with Utopia! Don't waste your time with no future projects - u have to try Utopia... right now! With Utopia your life will never be the same! Cryptons, Domains, Channels, Mining, Community and many others...Welcome to UTOPIA! The new era of Internet!</p>
-											<span class="user-name">Adams Jarway</span>
-										</a>
-									</div>
-
-									<div class="swiper-slide reviews__slide">
-										<a href="https://www.trustpilot.com/review/u.is" class="reviews__slide-wrapper" target="_blank">
-											<h3 class="h3">Real privacy based software</h3>
-											<p>To be honest. I believe in privacy and it was always questioned in my mind that we should be able to use the internet with freedom. so I was looking for such a platform where I can easily do my stuff without any surveillance. Suddenly by googling it I came to know this Utopia software and i tried it. I just wanted some private Mail and chat functionality and i got it in the Utopia network. I have been using this software now without any hurdles. Looking for some more great features in the ecosystem.</p>
-											<span class="user-name">Jigs</span>
-										</a>
-									</div>
-
-									<div class="swiper-slide reviews__slide">
-										<a href="https://www.trustpilot.com/review/u.is" class="reviews__slide-wrapper" target="_blank">
-											<h3 class="h3">Utopia is unique in every way...</h3>
-											<p>Utopia is unique in every way and it's secure than any other software. it has P2P network that make users data secure and reliable and it has every feature at one software it has feature like email,chatting,browsing and most lovable is it's Crypton (CRP).</p>
-											<span class="user-name">Mihir Parmar</span>
-										</a>
-									</div>
-
 								</div>
 
-								<div class="swiper-nav">
-									<a class="swiper-button-prev"></a>
-									<div class="swiper-pagination"></div>
-									<a class="swiper-button-next"></a>
+								<div class="reviews__map-locate locate_2">
+
+									<div class="dot-box">
+										<img class="close-review" src="img/reviews_close.svg" alt="Reviews close-icon">
+										<div class="dot"><div class="dot-inner"></div></div>
+									</div>
+
+									<div class="review">
+										<h5 class="h5">Юркевич И.В.</h5>
+										<h6 class="h6">Инвестор</h6>
+										<p>Сервис Zhongrong Capital один из немногих, который может похвастаться удобным функционалом и хорошими условиями.</p>
+									</div>
 								</div>
 
+								<div class="reviews__map-locate locate_3">
+
+									<div class="dot-box">
+										<img class="close-review" src="img/reviews_close.svg" alt="Reviews close-icon">
+										<div class="dot"><div class="dot-inner"></div></div>
+									</div>
+
+									<div class="review">
+										<h5 class="h5">Юркевич И.В.</h5>
+										<h6 class="h6">Инвестор</h6>
+										<p>Сервис Zhongrong Capital один из немногих, который может похвастаться удобным функционалом и хорошими условиями.</p>
+									</div>
+								</div>
+
+								<div class="reviews__map-locate locate_4">
+
+									<div class="dot-box">
+										<img class="close-review" src="img/reviews_close.svg" alt="Reviews close-icon">
+										<div class="dot"><div class="dot-inner"></div></div>
+									</div>
+
+									<div class="review">
+										<h5 class="h5">Юркевич И.В.</h5>
+										<h6 class="h6">Инвестор</h6>
+										<p>Сервис Zhongrong Capital один из немногих, который может похвастаться удобным функционалом и хорошими условиями.</p>
+									</div>
+								</div>
+								
 							</div>
 
+							<a href="reviews.html" class="button">Посмотреть все отзывы</a>
+							
 						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="rating" id="s-rating">
-				<div class="container">
-					<h2 class="h2" data-aos="zoom-in-down">User rating</h2>
-					<div class="row">
-
-						<div class="col-lg-4 _offset">
-							<a href="https://www.trustpilot.com/review/u.is" class="rating__wrapper" target="_blank" data-aos="fade-down">
-								<div class="rating__wrapper-image">
-									<img src="img/trustpilot-logo.svg" alt="Trustpilot">
-								</div>
-								<p>Rating:</p>
-								<div class="stars">
-					  			<span data-aos="zoom-in" data-aos-delay="500" class="star on"></span>
-								  <span data-aos="zoom-in" data-aos-delay="600" class="star on"></span>
-								  <span data-aos="zoom-in" data-aos-delay="700" class="star on"></span>
-								  <span data-aos="zoom-in" data-aos-delay="800" class="star on"></span>
-								  <span data-aos="zoom-in" data-aos-delay="900" class="star half"></span>
-								</div>
-							</a>
-						</div>
-
-						<div class="col-lg-4 _offset">
-							<a href="https://www.macupdate.com/app/mac/61802/utopia" class="rating__wrapper" target="_blank" data-aos="fade-down" data-aos-delay="200">
-								<div class="rating__wrapper-image">
-									<img src="img/macupdate-logo.svg" alt="Macupdate">
-								</div>
-								<p>Rating:</p>
-								<div class="stars">
-					  			<span data-aos="zoom-in" data-aos-delay="500" class="star on"></span>
-								  <span data-aos="zoom-in" data-aos-delay="600" class="star on"></span>
-								  <span data-aos="zoom-in" data-aos-delay="700" class="star on"></span>
-								  <span data-aos="zoom-in" data-aos-delay="800" class="star on"></span>
-								  <span data-aos="zoom-in" data-aos-delay="900" class="star on"></span>
-								</div>
-							</a>
-						</div>
-
-						<div class="col-lg-4 _offset">
-							<a href="https://www.softpedia.com/get/Internet/Chat/Other-Chat-Tools/Utopia.shtml" class="rating__wrapper" target="_blank" data-aos="fade-down" data-aos-delay="400">								
-								<div class="rating__wrapper-image">
-									<img src="img/softpedia-logo.svg" alt="Softpedia">
-								</div>
-								<p>Rating:</p>
-								<div class="stars">
-					  			<span data-aos="zoom-in" data-aos-delay="500" class="star on"></span>
-								  <span data-aos="zoom-in" data-aos-delay="600" class="star on"></span>
-								  <span data-aos="zoom-in" data-aos-delay="700" class="star on"></span>
-								  <span data-aos="zoom-in" data-aos-delay="800" class="star on"></span>
-								  <span data-aos="zoom-in" data-aos-delay="900" class="star on"></span>
-								</div>
-							</a>
-						</div>
-
 					</div>
 				</div>
 			</section>
 
 		</main>
 
-		<footer class="footer" id="s-footer">
+		<footer class="footer">
 			<div class="container">
-				<div class="row">
+					<div class="row">
 
-					<div class="col-lg-6 col-xl-5 offset-xl-1">
-						<div class="footer__text">
-							<h2 class="h2" data-aos="fade-right" data-aos-delay="200">Start your protection now</h2>
-							<p data-aos="fade-right" data-aos-delay="400">Take care of your data security on the internet. Use only privacy tools to ensure reliable online safety. Be under protection from the first moment.</p>
-							<a href="https://u.is/en/download.html" target="_blank" class="button _white" onclick="gtag('event', 'final_dnw', {'event_category': 'download', 'event_label': 'final'});" data-aos="fade-right" data-aos-delay="600">hide you data</a>
+						<div class="col-12">
+							
+							<div class="footer-wrap">
+								<a href="index.html" class="footer__logo"><img src="img/logo-dark.svg" alt="Logo"></a>
+							
+								<nav class="footer__menu">
+									<ul>
+										<li><a href="about.html">О нас <span class="line"></span></a></li>
+										<li><a href="reviews.html">Отзывы <span class="line"></span></a></li>
+										<li><a href="news.html">Новости <span class="line"></span></a></li>
+										<li><a href="bonus.html">Бонусы <span class="line"></span></a></li>
+										<li><a href="investor.html">Инвестору <span class="line"></span></a></li>
+										<li><a href="partnership.html">Партнеры <span class="line"></span></a></li>
+										<li><a href="faq.html">FAQ <span class="line"></span></a></li>
+										<li><a href="contacts.html">Контакты <span class="line"></span></a></li>
+									</ul>
+								</nav>
+
+								<div class="footer__sign">
+									<a href=".pop-up__check-in" class="sign show-check-in">Регистрация</a>
+									<a href=".pop-up__authorization" class="button show-authorization">Войти</a>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>	
+
+				<div class="footer_nav-wrap">
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-12">
+								<nav class="footer__contacts">
+									<ul>
+										<li>
+											<div class="footer__contacts-icon"><img src="img/sidebar__tel-icon.svg" alt="Telephone icon"></div>
+											<p>+8 800 555 3535</p>
+										</li>
+										<li>
+											<div class="footer__contacts-icon"><img src="img/sidebar__mail-icon.svg" alt="E-mail icon"></div>
+											<p>info@service.com</p>
+										</li>
+										<li>
+											<div class="footer__contacts-icon"><img src="img/sidebar__location-icon.svg" alt="Location icon"></div>
+											<p>7898 Central st. <br> 39/34, Russia</p>
+										</li>
+										<li>
+											<div class="footer__contacts-icon"><img src="img/telegram-icon.svg" alt="Location icon"></div>
+											<p>@yourtgchannel</p>
+										</li>
+									</ul>
+								</nav>
+							</div>
+
 						</div>
 					</div>
-
-					<div class="col-lg-6 _text-center">
-						<img src="img/footer__image.png" alt="Boy" data-aos="zoom-in">
-					</div>
-
 				</div>
-			</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="footer__bottom">
+
+								<a href="privacy.html" class="privacy">Пользовательское соглашение</a>
+
+								<span>Copyright. 2014 - 2020. All rights reserved.</span>
+
+								<ul class="footer__bottom-language">
+									<li><a href="" title="Russian" class="active"><img src="img/cabinet/language__rus.svg" alt="Russia flag"></a></li>
+									<li><a href="" title="English"><img src="img/cabinet/language__eng.svg" alt="Britain flag"></a></li>
+									<li><a href="" title="Chinese"><img src="img/cabinet/language__china.svg" alt="China flag"></a></li>
+									<li><a href="" title="French"><img src="img/cabinet/language__france.svg" alt="France flag"></a></li>
+									<li><a href="" title="Spanish"><img src="img/cabinet/language__spain.svg" alt="Spain flag"></a></li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
 		</footer>
 
 	</body>
