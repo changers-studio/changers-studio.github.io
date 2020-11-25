@@ -5,7 +5,7 @@
 
 		<meta charset="utf-8">
 
-		<title>Utopia | Poker</title>
+		<title>Smart trek | Главная</title>
 		<!-- <meta name="description" content=""> -->
 
 		<meta name="viewport" content="width=device-width">
@@ -16,555 +16,822 @@
 		
 		<link rel="stylesheet" href="css/styles.min.css">
 		<script defer src="js/scripts.min.js"></script>
-		<script defer src="js/preloader.js"></script>
 
 		<script async defer src="https://kit.fontawesome.com/55e0136003.js" crossorigin="anonymous"></script>
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-T6J9511MS0"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-T6J9511MS0');
-		</script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	</head>
 
 	<body class="ishome">
 
-		<div class="preloader">
-			<object id="animated-logo" type="image/svg+xml" data="img/preloader-logo.svg"></object>
-			<img class="preloader__logo" src="img/after-preloader-logo.svg" alt="Logo">
-		</div>
-
-		<div class="header_fixed">
-			<div class="container _fixed">
-				<div class="row">
-					<div class="col-12">
-
-						<div class="header__top-line top-line">
-
-							<img class="top-line__logo" src="img/logo.svg" alt="Site logo">
-								
-							<nav>
-								<ul class="top-line__menu">
-									<li><a href="#s-header" class="menu-move">About</a></li>
-									<li><a href="#s-about" class="menu-move">Features</a></li>
-									<li><a href="#s-start" class="menu-move">How to Start</a></li>
-									<li><a href="#s-receive" class="menu-move">How to get coins</a></li>
-									<li><a href="#s-shares" class="menu-move">Benefits</a></li>
-									<li><a href="#s-faq" class="menu-move">F.A.Q.</a></li>
-									<li><a href="article-how_to_buy.html" class="transition">Guides</a></li>
-								</ul>
-							</nav>
-
-							<a href="http://u.is/" target="_blank" class="button top-line__button _transparent" onclick="gtag('event', 'menu', {'event_category': 'download', 'event_label': 'menu_play'});">Play Now</a>
-
-							<div class="hamburger">
-								<div class="line"></div>
-								<div class="line _short"></div>
-								<div class="line"></div>
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div class="sidebar__plug"></div>
 
 		<nav class="sidebar">
 
+			<img src="img/logo.svg" alt="Logo" class="sidebar__logo">
+
 			<div class="hamburger"></div>
 
 			<ul class="sidebar__menu">
-				<li><a href="#s-header" class="menu-move">About</a></li>
-				<li><a href="#s-about" class="menu-move">Features</a></li>
-				<li><a href="#s-start" class="menu-move">How to Start</a></li>
-				<li><a href="#s-receive" class="menu-move">How to get coins</a></li>
-				<li><a href="#s-shares" class="menu-move">Benefits</a></li>
-				<li><a href="#s-faq" class="menu-move">F.A.Q.</a></li>
-				<li><a href="article-how_to_buy.html" class="transition">Guides</a></li>
+				<li><a href="">Главная</a></li>
+				<li><a href="">Услуги</a></li>
+				<li><a href="">Каталог</a></li>
+				<li><a href="">О компании</a></li>
+				<li><a href="">Контакты</a></li>
+			</ul>
+
+			<ul class="sidebar__phone-number">
+				<li><a href="tel:380663938888">+38 (066)39 38 888</a></li>
+				<li><a href="tel:380663938888">+38 (066)39 38 888</a></li>
+				<li><a href="tel:380663938888">+38 (066)39 38 888</a></li>
 			</ul>
 
 			<ul class="sidebar__social-links">
-				<li><a href=""><i class="fab fa-twitter"></i>Twitter</a></li>
-				<li><a href=""><i class="fab fa-telegram-plane"></i>Telegram</a></li>
+				<li><a href=""><img src="img/icons/telegram.svg" alt="Telegram"></a></li>
+				<li><a href=""><img src="img/icons/viber.svg" alt="Viber"></a></li>
+			</ul>
+
+			<ul class="sidebar__buttons">
+				<li><a href="" class="button">Рассчитать стоимость</a></li>
+				<li><a href="" class="button">Личный кабинет</a></li>
+				<li><a href="" class="button">Заказать обратный звонок</a></li>
 			</ul>
 
 		</nav>
 
-		<header class="header header_height" id="s-header">
+		<header class="header">
 
-			<div class="header__bg_parallax" id="parallax" data-aos="zoom-in" data-aos-delay="3700"></div>
-
-			<div class="container"> 
+			<div class="container">
 				<div class="row">
-					<div class="col-12">
+					<div class="col">
+						<div class="header__top-line top-line">
 
-						<div class="header__top-line top-line" data-aos="fade-down"  data-aos-delay="2500">
+							<img src="img/logo.svg" alt="Logo" class="top-line__logo">
 
-							<img class="top-line__logo" src="img/logo.svg" alt="Site logo">
+							<ul class="top-line__menu">
+								<li><a href="">Главная</a></li>
+								<li>
+									<div class="panel">
+										<div class="panel-heading">Услуги</div>
+										<div class="panel-collapse">
+											<object data="img/icons/triangle.svg" type="image/svg+xml"></object>
+											<a href="">Доставка морем</a>
+											<a href="">Авиадоставка</a>
+											<a href="">Таможенное оформление</a>
+											<a href="">Перевод денег в Китай</a>
+											<a href="">Растаможка авто</a>
+										</div>
+									</div>
+								</li>
+								<li><a href="">Каталог</a></li>
+								<li><a href="">О компании</a></li>
+								<li><a href="">Контакты</a></li>
+							</ul>
 
-							<nav>
-								<ul class="top-line__menu">
-									<li><a href="#s-header" class="menu-move">About</a></li>
-									<li><a href="#s-about" class="menu-move">Features</a></li>
-									<li><a href="#s-start" class="menu-move">How to Start</a></li>
-									<li><a href="#s-receive" class="menu-move">How to get coins</a></li>
-									<li><a href="#s-shares" class="menu-move">Benefits</a></li>
-									<li><a href="#s-faq" class="menu-move">F.A.Q.</a></li>
-									<li><a href="article-how_to_buy.html" class="transition">Guides</a></li>
-								</ul>
-							</nav>
+							<div class="top-line__search-phone">
 
-							<a href="http://u.is/" target="_blank" class="button top-line__button _transparent" onclick="gtag('event', 'menu', {'event_category': 'download', 'event_label': 'menu_play'});">Play Now</a>
+								<label class="search">
+									<a href="#" class="search-icon"><img src="img/icons/search.svg" alt="Search"></a>
+									<input type="search" placeholder="Поиск...">
+								</label>
 
-							<div class="hamburger">
+								<div class="phone-number">
+									<div class="panel-heading"><p>+38 (066)39 38 888</p></div>
+									<div class="panel-collapse">
+										<a href="tel:380663938888">+38 (066)39 38 111</a>
+										<a href="tel:380663938888">+38 (066)39 38 222</a>
+										<a href="tel:380663938888">+38 (066)39 38 333</a>
+									</div>
+								</div>
+
+							</div>
+
+							<ul class="top-line__social-links">
+								<li><a href=""><img src="img/icons/telegram.svg" alt="Telegram"></a></li>
+								<li><a href=""><img src="img/icons/viber.svg" alt="Viber"></a></li>
+							</ul>
+
+							<div class="top-line__buttons">
+								<a href="" class="button">Рассчитать стоимость</a>
+								<a href="" class="button _transparent cabinet">Личный кабинет</a>
+							</div>
+
+							<div class="top-line__hamburger hamburger">
 								<div class="line"></div>
 								<div class="line"></div>
 								<div class="line"></div>
 							</div>
 
 						</div>
-
 					</div>
 				</div>
 			</div>
 
-			<div class="header__main">
-
-				<div class="container">
-
-					<div class="header__bg_huge-desktop" data-aos="zoom-in" data-aos-delay="3700"></div>
-
-					<div class="row">
-
-						<div class="col-lg-6">
-
-							<h2 class="h5" data-aos="zoom-in-down" data-aos-delay="2700">CRP Cryptocurrency-Based <br> Online Poker</h2>
-							<h1 class="h1" data-aos="zoom-in-down" data-aos-delay="2900">Private Texas <br> Holdem in <span>Utopia</span> <br> P2P Ecosystem</h1>
-							<img class="header__image_mobile" src="img/header__image.png" alt="Header image mobile" data-aos="zoom-in-down" data-aos-delay="3000">
-							<h4 class="h4" data-aos="zoom-in-down" data-aos-delay="3100">You are only minutes away from <br> playing the next big thing!</h4>
-							<div class="button-wrap" data-aos="zoom-in-down" data-aos-delay="3300">
-								<a href="http://u.is/" target="_blank" class="button" onclick="gtag('event', 'header', {'event_category': 'download', 'event_label': 'menu_play'});">Play Now</a>
-							</div>
-
-						</div>
-
-						<div class="header__image" data-aos="zoom-in" data-aos-delay="3000">
-							<img src="img/header__image.png" alt="Header image">
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-			
 		</header>
 
-		<div class="top-background" data-aos="fade-up">
-		
-			<section class="advantages" id="s-advantages">
+		<main>
+			
+			<section class="main" id="s-main">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-lg-6 main__wrapper">
+							<img src="img/logo_white.svg" alt="Logo" class="main__logo">
+
+							<h1 class="h1 _brackets">Доставка грузов из Китая</h1>
+
+							<ul class="main__services">
+								<li>Помощь с выкупом груза</li>
+								<li>Проверка и переупаковка</li>
+								<li>Страховка и доставка</li>
+								<li>Таможеное оформление и выдача в Украине</li>
+							</ul>
+
+							<ul class="main__trading-platforms">
+								<p>Выкуп с торговых площадок:</p>
+								<li><img src="img/trading-platforms/platform-logo_1.png" alt="Platform logo"></li>
+								<li><img src="img/trading-platforms/platform-logo_2.png" alt="Platform logo"></li>
+								<li><img src="img/trading-platforms/platform-logo_3.png" alt="Platform logo"></li>
+								<li><img src="img/trading-platforms/platform-logo_4.png" alt="Platform logo"></li>
+							</ul>
+
+						</div>
+
+						<div class="main__calculation calculation">
+							<h5 class="h5">Быстрый расчёт стоимости</h5>
+							<ul class="calculation__boxs">
+								<li>
+									<a href="">
+										<img src="img/calculation-icons/ship.svg" alt="Ship">
+										<h6 class="h6">Море</h6>
+										<p>45-60 дней, <br> от 1.5$/кг</p>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/calculation-icons/plane.svg" alt="Plane">
+										<h6 class="h6">Авиа</h6>
+										<p>10-16 раб.дней, <br> от 11.5$/кг</p>
+									</a>
+								</li>
+								<li class="_offset-top">
+									<a href="">
+										<img src="img/calculation-icons/stack.svg" alt="Stack">
+										<h6 class="h6">Догруз (Фрахтование) </h6>
+										<p>45-60 дней, <br> от 1.5$/кг</p>
+									</a>
+								</li>
+								<li class="_offset-top">
+									<a href="">
+										<img src="img/calculation-icons/notebook.svg" alt="Notebook">
+										<h6 class="h6">Таможенное Оформление</h6>
+										<p>45-60 дней, <br> от 1.5$/кг</p>
+									</a>
+								</li>
+							</ul>
+
+							<form class="calculation__form form">
+
+								<div class="form__inputs-wrapper">
+									<input type="tel" placeholder="Ваш телефон">
+									<input type="text" placeholder="Комментарий">
+								</div>
+
+								<div class="form__buttons">
+									<button class="button">Отправить</button>
+									<a href="" class="button _transparent">Забрать груз из Китая</a>
+								</div>
+							</form>
+						</div>
+
+						<div class="main__trading-platforms _mobile">
+							<p>Выкуп с торговых площадок:</p>
+							<ul>
+								<li><img src="img/trading-platforms/platform-logo_1.png" alt="Platform logo"></li>
+								<li><img src="img/trading-platforms/platform-logo_2.png" alt="Platform logo"></li>
+								<li><img src="img/trading-platforms/platform-logo_3.png" alt="Platform logo"></li>
+								<li><img src="img/trading-platforms/platform-logo_4.png" alt="Platform logo"></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="stages" id="s-stages">
 				<div class="container">
 					<div class="row">
 						<div class="col">
-							<div class="advantages__wrapper" data-aos="fade-up">
 
-								<div class="advantages__box">
-									<img src="img/advantages-laptop.png" alt="Laptop" data-aos="zoom-in" data-aos-delay="600">
-									<div class="advantages__box-text" data-aos="zoom-in" data-aos-delay="800">
-										<h5 class="h5">No KYC</h5>
-										<p>You do not need to enter personal data or provide identification documents to start the game or withdraw the money won.</p>
+							<h2 class="h2 _brackets">Мы предоставим Вам склад в Китае</h2>
+
+							<div class="stages__wrapper">
+
+								<div class="stages__item stage">
+									<div class="stage__img">
+										<img src="img/stages/stage_1.png" alt="Containers">
+										<div class="stage__number">1</div>
 									</div>
-									<div class="advantages__box-number"><span>01</span></div>
+									<p><span>Безопасное</span> получение грузов</p>
 								</div>
 
-								<div class="advantages__box">
-									<img src="img/advantages-robot.png" alt="Robot" data-aos="zoom-in" data-aos-delay="600">
-									<div class="advantages__box-text" data-aos="zoom-in" data-aos-delay="800">
-										<h5 class="h5">Mineable cryptocurrency</h5>
-										<p>You can start winning Cryptons without any initial investment. Run a mining bot that automatically earns Cryptons for the game.</p>
+								<div class="stages__item stage">
+									<div class="stage__img">
+										<img src="img/stages/stage_2.png" alt="Port">
+										<div class="stage__number">2</div>
 									</div>
-									<div class="advantages__box-number"><span>02</span></div>
+									<p><span>Фотоотчет</span> до отправки груза в Украину</p>
 								</div>
 
-								<div class="advantages__box">
-									<img src="img/advantages-cash.png" alt="Cash" data-aos="zoom-in" data-aos-delay="600">
-									<div class="advantages__box-text" data-aos="zoom-in" data-aos-delay="800">
-										<h5 class="h5">0 Rake</h5>
-										<p>Utopia does not take any monetary commissions for winning any amount of Cryptons or for making a bet in the game.</p>
+								<div class="stages__item stage">
+									<div class="stage__img">
+										<img src="img/stages/stage_3.png" alt="Ship">
+										<div class="stage__number">3</div>
 									</div>
-									<div class="advantages__box-number"><span>03</span></div>
+									<p><span>Еженедельные</span> выходы контейнеров из Китая</p>
+								</div>
+
+								<div class="stages__item stage">
+									<div class="stage__img">
+										<img src="img/stages/stage_4.png" alt="Storage">
+										<div class="stage__number">4</div>
+									</div>
+									<p><span>Собственная</span> консолидация и переупаковка груза</p>
 								</div>
 
 							</div>
+
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="about" id="s-about">
+			<section class="customs-clearance" id="s-customs-clearance">
+				<div class="container">
+					<div class="row">
+
+						<h2 class="h2 _brackets">Мы предоставим Вам склад в Китае</h2>
+
+						<div class="col-lg-8">
+							<iframe class="customs-clearance__video" src="https://www.youtube.com/embed/lTRiuFIWV54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						<div class="col-lg-4">
+							<h5 class="h5 _brackets">Оставьте заявку и мы с вами свяжемся</h5>
+							<form>
+								<input type="text" name="Name" placeholder="Имя...">
+								<input type="text" name="Telephone number" placeholder="Номер телефона...">
+								<input type="tel" name="Telephone" placeholder="Телефон...">
+								<textarea name="comment" id="" cols="30" rows="10" placeholder="Комментарий..."></textarea>
+								<button class="button">Отправить</button>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="roadmap" id="s-roadmap">
 				<div class="container">
 					<div class="row">
 						<div class="col">
-							<div class="about__wrapper" data-aos="fade-up">
 
-								<div class="about__text">
-									<h3 class="h3" data-aos="zoom-in" data-aos-delay="300">About Utopia P2P Poker game</h3>
-									<p data-aos="zoom-in" data-aos-delay="400">Utopia P2P is a decentralized and anonymous ecosystem that gives users a secure and uncensored space for daily messaging, net surfing, online payment, and even more. It has a built-in Poker Game. Everybody can start playing Texas hold ’em poker without additional downloading. It is a good way of getting Cryptons (internal ecosystem’s cryptocurrency) and having fun with friends enjoying the game.</p>
-									<div class="button-wrapper" data-aos="zoom-in" data-aos-delay="500"><a href="http://u.is/" target="_blank" class="button" onclick="gtag('event', 'about', {'event_category': 'download', 'event_label': 'about_play'});">Play Now</a></div>
-								</div>
+							<h2 class="h2 _brackets">Мы можем взять все хлопоты по работе с вашим поставщиком на себя:</h2>
 
-								<img src="img/about__image.png" alt="Woman&coins" class="about__image">
+							<div class="roadmap__wrapper">
+
+								<object class="roadmap__stages" data="img/roadmap/roadmap.svg" type="image/svg+xml"></object>
+								<object class="roadmap__stages _mobile" data="img/roadmap/roadmap_mobile.svg" type="image/svg+xml"></object>
 
 							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="question" id="s-question">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-xl-10 offset-xl-1">
+
+							<h2 class="h2 _brackets">Нашли товар на Alibaba, 1688, Taobao и хотите узнать стоимость доставки?</h2>
+
+							<h4 class="h4">Оставьте ссылку и свой контакт и мы просчитаем стоимость!</h4>
+
+							<div class="question__wrapper">
+
+								<form>
+									<input type="text" name="Ссылка" placeholder="Ссылка:">
+									<input type="text" name="Количество" placeholder="Количество:">
+									<input type="text" name="Телефон" placeholder="Телефон:">
+									<button class="button">Отправить</button>
+								</form>
+
+								<div class="platforms">
+									<img src="img/trading-platforms/platform-colorful-logo_1.png" alt="Platform logo">
+									<img src="img/trading-platforms/platform-colorful-logo_2.png" alt="Platform logo">
+									<img src="img/trading-platforms/platform-colorful-logo_3.png" alt="Platform logo">
+									<img src="img/trading-platforms/platform-colorful-logo_4.png" alt="Platform logo">
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="search-product" id="s-search-product">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-lg-6 col-8">
+							<div class="search-product__text">
+								<h3 class="h3">Может Вам нужно найти какой-то <span>товар в Китае? Мы поможем!</span></h3>
+								<h5 class="h5">Оставьте ссылку и свой контакт и <br> мы просчитаем стоимость!</h5>
+								<a href="" class="button">Произвести поиск</a>
+								<object class="pointer" data="img/pointer.svg" type="image/svg+xml"></object>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-4 search-product__image">
+							<img src="img/boxs.png" alt="Boxs">
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="delivery" id="s-delivery">
+
+				<div class="delivery__wagon"></div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-10 offset-xl-1">
+
+							<h2 class="h2 _brackets">Нужно забрать товар у вашего поставщика?</h2>
+
+							<div class="delivery__wagon _mobile"></div>
+
+							<div class="delivery__wrapper">
+
+								<form class="deliver__form form">
+									<input type="text" name="Название товара" placeholder="Название товара:">
+									<input type="text" name="Количество" placeholder="Количество:">
+									<input type="text" name="Номер телефона" placeholder="Номер телефона:">
+									<textarea name="" id="" cols="30" rows="5" placeholder="Коментарий:"></textarea>
+									<div class="form__buttons">
+										<button class="button">Просчитать стоимость доставки</button>
+										<a href="" class="button _transparent">Забрать у поставщика</a>
+									</div>
+								</form>
+
+							</div>
+
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<section class="features" id="s-features">
+		    <div class="container">
+		        <div class="row">
+		            <div class="col-lg-12">
+
+		            		<h2 class="h2 _brackets">Особенности нашей работы</h2>
+
+		                <div class="carousel-wrap">
+		                    <ul class="carousel">
+
+		                        <li class="items main-pos" id="1">
+		                        	<iframe class="customs-clearance__video" src="https://www.youtube.com/embed/lTRiuFIWV54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		                        	<p>Загрузка на склад</p>
+		                        </li>
+
+		                        <li class="items right-pos" id="2">
+		                        	<iframe class="customs-clearance__video" src="https://www.youtube.com/embed/lTRiuFIWV54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		                        	<p>Упаковка товара</p>
+		                        </li>
+
+		                        <li class="items back-pos" id="3">
+		                        	<iframe class="customs-clearance__video" src="https://www.youtube.com/embed/lTRiuFIWV54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		                        	<p>Загрузка на склад</p>
+		                        </li>
+
+		                        <li class="items left-pos" id="4">
+		                        	<iframe class="customs-clearance__video" src="https://www.youtube.com/embed/lTRiuFIWV54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		                        	<p>Выдача клиентам</p>
+		                        </li>
+
+		                    </ul>
+		                    <span class="slider">
+		                      <a href="javascript:void(0);" value="Prev" id="prev"></a>
+		                      <a href="javascript:void(0);" value="Next" id="next"></a>
+
+		                    </span>
+		                </div>
+
+		            </div>
+		        </div>
+		    </div>
+			</section>
+
+			<section class="reviews" id="s-reviews">
 				<div class="container">
 					<div class="row">
-						<div class="col">
-							<div class="features__wrapper" data-aos="fade-up">
+						<div class="col-xl-10 offset-xl-1">
 
-								<div class="features__text">
-									<h3 class="h3" data-aos="zoom-in" data-aos-delay="300">Poker Gameplay features</h3>
-									<p data-aos="zoom-in" data-aos-delay="400">Poker gameplay in Utopia is a no-limit Texas hold 'em game where everyone can relax, have fun, and take risks playing with their friends or matched opponents. Here are some features:</p>
-									<ul>
-										<li data-aos="zoom-in" data-aos-delay="500">A wide variety of tables for playing – private and public.</li>
-										<li data-aos="zoom-in" data-aos-delay="500">Selection of the number of opponents: from 2 to 8 players.</li>
-										<li data-aos="zoom-in" data-aos-delay="500">Online chat during the game.</li>
-										<li data-aos="zoom-in" data-aos-delay="500">Possibility to join poker tournaments and gain money.</li>
-										<li data-aos="zoom-in" data-aos-delay="500">Wide range of Blinds.</li>
-										<li data-aos="zoom-in" data-aos-delay="500">No ante and low rake.</li>
-									</ul>
-									<div class="button-wrapper" data-aos="zoom-in" data-aos-delay="600"><a href="http://u.is/" target="_blank" class="button" onclick="gtag('event', 'features', {'event_category': 'download', 'event_label': 'features_play'});">Play Now</a></div>
+							<h2 class="h2 _brackets">Отзывы наших клиентов</h2>
+
+							<div class="reviews__slider">
+
+								<div class="reviews__slide">
+									<iframe src="https://www.youtube.com/embed/lTRiuFIWV54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<div class="review">
+										<img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
+										<p class="name">Александр Владимирович</p>
+										<p class="city">г.Киев</p>
+										<p class="topic">Доставка электроники из китая</p>
+										<p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae metus varius, fermentum metus non, gravida dolor. Nullam et lectus ac velit varius bibendum sed et felis. Phasellus ut consequat lacus. Fusce in est eu nisi imperdiet tristique.</p>
+										<div class="stars">
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+										</div>
+									</div>
 								</div>
 
-								<img src="img/features__image.png" alt="Cards" class="features__image">
+								<div class="reviews__slide">
+									<iframe src="https://www.youtube.com/embed/lTRiuFIWV54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<div class="review">
+										<img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
+										<p class="name">Александр Владимирович</p>
+										<p class="city">г.Киев</p>
+										<p class="topic">Доставка электроники из китая</p>
+										<p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae metus varius, fermentum metus non, gravida dolor. Nullam et lectus ac velit varius bibendum sed et felis. Phasellus ut consequat lacus. Fusce in est eu nisi imperdiet tristique.</p>
+										<div class="stars">
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="reviews__slide">
+									<iframe src="https://www.youtube.com/embed/lTRiuFIWV54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<div class="review">
+										<img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
+										<p class="name">Александр Владимирович</p>
+										<p class="city">г.Киев</p>
+										<p class="topic">Доставка электроники из китая</p>
+										<p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae metus varius, fermentum metus non, gravida dolor. Nullam et lectus ac velit varius bibendum sed et felis. Phasellus ut consequat lacus. Fusce in est eu nisi imperdiet tristique.</p>
+										<div class="stars">
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="reviews__slide">
+									<iframe src="https://www.youtube.com/embed/lTRiuFIWV54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<div class="review">
+										<img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
+										<p class="name">Александр Владимирович</p>
+										<p class="city">г.Киев</p>
+										<p class="topic">Доставка электроники из китая</p>
+										<p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae metus varius, fermentum metus non, gravida dolor. Nullam et lectus ac velit varius bibendum sed et felis. Phasellus ut consequat lacus. Fusce in est eu nisi imperdiet tristique.</p>
+										<div class="stars">
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+											<div class="star"></div>
+										</div>
+									</div>
+								</div>
 
 							</div>
+
 						</div>
 					</div>
 				</div>
 			</section>
 
-		</div>
-
-		<section class="start" id="s-start">
-			<div class="inner-box">
+			<section class="redemption" id="s-redemption">
 				<div class="container">
 					<div class="row">
+						<div class="col-xl-10 offset-xl-1">
 
-						<div class="col-lg-4">
-							<h2 class="h2" data-aos="zoom-in"><span>3</span>easy steps to start playing and win</h2>
-							<div class="button-wrap">
-								<div class="button-wrap" data-aos="zoom-in">
-									<a href="http://u.is/" class="button" target="_blank" onclick="gtag('event', 'steps', {'event_category': 'download', 'event_label': 'steps_play'});">Play Now</a>
+							<h2 class="h2 _brackets">Выкупили и доставили</h2>
+
+							<div class="redemption__slider">
+
+								<div class="redemption__slide">
+									<img src="img/product-image.png" alt="Product" class="slide-image">
+									<div class="redemption">
+										<img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
+										<p class="name">Александр Владимирович</p>
+										<p class="city">г.Киев</p>
+										<p class="topic">Доставка электроники из китая</p>
+										<p class="redemption__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius, fermentum metus non, gravida dolor. Nullam....</p>
+										<a href="" class="button">Подробнее</a>
+									</div>
+								</div>
+
+								<div class="redemption__slide">
+									<img src="img/product-image.png" alt="Product" class="slide-image">
+									<div class="redemption">
+										<img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
+										<p class="name">Александр Владимирович</p>
+										<p class="city">г.Киев</p>
+										<p class="topic">Доставка электроники из китая</p>
+										<p class="redemption__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius, fermentum metus non, gravida dolor. Nullam....</p>
+										<a href="" class="button">Подробнее</a>
+									</div>
+								</div>
+
+								<div class="redemption__slide">
+									<img src="img/product-image.png" alt="Product" class="slide-image">
+									<div class="redemption">
+										<img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
+										<p class="name">Александр Владимирович</p>
+										<p class="city">г.Киев</p>
+										<p class="topic">Доставка электроники из китая</p>
+										<p class="redemption__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius, fermentum metus non, gravida dolor. Nullam....</p>
+										<a href="" class="button">Подробнее</a>
+									</div>
+								</div>
+
+								<div class="redemption__slide">
+									<img src="img/product-image.png" alt="Product" class="slide-image">
+									<div class="redemption">
+										<img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
+										<p class="name">Александр Владимирович</p>
+										<p class="city">г.Киев</p>
+										<p class="topic">Доставка электроники из китая</p>
+										<p class="redemption__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius, fermentum metus non, gravida dolor. Nullam....</p>
+										<a href="" class="button">Подробнее</a>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="catalog" id="s-catalog">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+
+							<h2 class="h2 _brackets">Каталог популярных товаров, которые можно купить у нас</h2>
+
+							<div class="catalog__wrapper">
+
+								<div class="catalog__product product">
+									<div class="product__preview"><img src="img/product-images/product_1.png" alt="product"></div>
+
+									<p class="product__title">Кроксы</p>
+									<div class="product__price">
+										<p class="price">999.99 грн</p>
+										<a href="" class="button">Детальнее</a>
+									</div>
+									<div class="product__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius.</div>
+									<a href="" class="product__buy button">Купить за 999.99 грн</a>
+
+								</div>
+
+								<div class="catalog__product product">
+									<div class="product__preview"><img src="img/product-images/product_2.png" alt="product"></div>
+									<p class="product__title">Кроксы</p>
+									<div class="product__price">
+										<p class="price">999.99 грн</p>
+										<a href="" class="button">Детальнее</a>
+									</div>
+									<div class="product__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius.</div>
+									<a href="" class="product__buy button">Купить за 999.99 грн</a>
+								</div>
+
+								<div class="catalog__product product">
+									<div class="product__preview"><img src="img/product-images/product_3.png" alt="product"></div>
+									<p class="product__title">Кроксы</p>
+									<div class="product__price">
+										<p class="price">999.99 грн</p>
+										<a href="" class="button">Детальнее</a>
+									</div>
+									<div class="product__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius.</div>
+									<a href="" class="product__buy button">Купить за 999.99 грн</a>
+								</div>
+
+								<div class="catalog__product product">
+									<div class="product__preview"><img src="img/product-images/product_4.png" alt="product"></div>
+									<p class="product__title">Кроксы</p>
+									<div class="product__price">
+										<p class="price">999.99 грн</p>
+										<a href="" class="button">Детальнее</a>
+									</div>
+									<div class="product__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius.</div>
+									<a href="" class="product__buy button">Купить за 999.99 грн</a>
+								</div>
+
+								<div class="catalog__product product _hidden">
+									<div class="product__preview"><img src="img/product-images/product_3.png" alt="product"></div>
+									<p class="product__title">Кроксы</p>
+									<div class="product__price">
+										<p class="price">999.99 грн</p>
+										<a href="" class="button">Детальнее</a>
+									</div>
+									<div class="product__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius.</div>
+									<a href="" class="product__buy button">Купить за 999.99 грн</a>
+								</div>
+
+								<div class="catalog__product product _hidden">
+									<div class="product__preview"><img src="img/product-images/product_4.png" alt="product"></div>
+									<p class="product__title">Кроксы</p>
+									<div class="product__price">
+										<p class="price">999.99 грн</p>
+										<a href="" class="button">Детальнее</a>
+									</div>
+									<div class="product__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius.</div>
+									<a href="" class="product__buy button">Купить за 999.99 грн</a>
+								</div>
+
+								<div class="catalog__product product _hidden">
+									<div class="product__preview"><img src="img/product-images/product_2.png" alt="product"></div>
+									<p class="product__title">Кроксы</p>
+									<div class="product__price">
+										<p class="price">999.99 грн</p>
+										<a href="" class="button">Детальнее</a>
+									</div>
+									<div class="product__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius.</div>
+									<a href="" class="product__buy button">Купить за 999.99 грн</a>
+								</div>
+
+								<div class="catalog__product product _hidden">
+									<div class="product__preview"><img src="img/product-images/product_1.png" alt="product"></div>
+									<p class="product__title">Кроксы</p>
+									<div class="product__price">
+										<p class="price">999.99 грн</p>
+										<a href="" class="button">Детальнее</a>
+									</div>
+									<div class="product__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius.</div>
+									<a href="" class="product__buy button">Купить за 999.99 грн</a>
+								</div>
+
+							</div>
+
+							<a href="" class="button catalog__all-products">Смотреть всё</a>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="target" id="s-target">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+
+							<img class="target__bg" src="img/target__bg.svg" alt="Logo">
+
+							<div class="target__wrapper">
+
+								<h2 class="h2">Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение</h2>
+
+								<p>существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт реализация намеченных плановых заданий влечет за собой процесс внедрения</p>
+
+								<h3 class="h3">И модернизации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянный количественный</h3>
+
+								<p>рост и сфера нашей активности представляет собой интересный эксперимент проверки модели развития. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Равным образом рамки и место</p>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-10 offset-xl-1">
+						<div class="footer__wrapper">
+
+							<div class="footer__inner _left">
+
+								<div class="logo">
+									<img src="img/logo.svg" alt="Logo">
+									<p>Полный комплекс услуг по работе с китаем</p>
+								</div>
+
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at erat sit amet libero euismod dapibus. Quisque erat erat, lobortis at eleifend</p>
+
+								<p class="copyrights">
+									2020 (с) Smart Trek <br> все права защищены
+								</p>
+
+							</div>
+
+							<div class="footer__inner _right">
+
+								<div class="footer__menu">
+
+									<ul class="list footer__contacts _mobile">
+										<h5 class="h5">Контакты</h5>
+
+										<li class="address-mail"><span class="address">Одесса, Военный спуск, 9. Оф. 23 </span> <span class="mail">smarttrek@gmail.com</span></li>
+
+										<li class="phones">
+											<div>
+												<a href="tel:">+38 (066)39 38 888</a>
+												<a href="tel:">+38 (066)39 38 888</a>
+												<a href="tel:">+38 (066)39 38 888</a>
+											</div>
+										</li>
+
+										<li>
+											<a href=""><img src="img/icons/telegram.svg" alt="telegram"></a>
+											<a href=""><img src="img/icons/viber.svg" alt="viber"></a>
+										</li>
+
+									</ul>
+
+									<ul class="list list-1">
+										<h5 class="h5">О товаре</h5>
+										<li><a href="">Поиск товара</a></li>
+										<li><a href="">Выкуп товара</a></li>
+										<li><a href="">Доставка товара</a></li>
+										<li><a href="">Оплата товара</a></li>
+										<li><a href="">Оплата товара</a></li>
+										<li><a href="">Оплата товара</a></li>
+									</ul>
+
+									<ul class="list list-2">
+										<h5 class="h5">Информация</h5>
+										<li><a href="">Главная</a></li>
+										<li><a href="">О нас</a></li>
+										<li><a href="">Контакты</a></li>
+										<li><a href="">Контакты</a></li>
+										<li><a href="">Контакты</a></li>
+										<li><a href="">Контакты</a></li>
+									</ul>
+
+									<ul class="list list-3">
+										<h5 class="h5">Заказ</h5>
+										<li><a href="">Оформить заказ</a></li>
+										<li><a href="">Оформить заказ</a></li>
+										<li><a href="">Оформить заказ</a></li>
+										<li><a href="">Оформить заказ</a></li>
+										<li><a href="">Оформить заказ</a></li>
+										<li><a href="">Оформить заказ</a></li>
+									</ul>
+
+									<ul class="list footer__contacts">
+										<h5 class="h5">Контакты</h5>
+										<li><a href="tel:">+38 (066)39 38 888</a></li>
+										<li><a href="tel:">+38 (066)39 38 888</a></li>
+										<li><a href="tel:">+38 (066)39 38 888</a></li>
+										<li>smarttrek@gmail.com</li>
+										<li>Одесса, Военный спуск, <br> 9. Оф. 23 </li>
+										<li>
+											<a href=""><img src="img/icons/telegram.svg" alt="telegram"></a>
+											<a href=""><img src="img/icons/viber.svg" alt="viber"></a>
+										</li>
+									</ul>
+
+									<div class="footer__addition">
+										<img src="img/cards.png" alt="Cards">
+										<a href="" class="button">Обратный звонок</a>
+									</div>
+
 								</div>
 							</div>
-						</div>
-
-						<div class="col-lg-8">
-
-							<div class="slider slider_hiw">
-
-	              <div class="circle circle_1 _first">
-	                <svg viewBox="0 0 540 540">
-	                  <circle cx="270" cy="270" r="268.5" fill="none" stroke="#E9EAF2" stroke-width="3" />
-	                  <circle id="slider-path" cx="270" cy="270" r="268.5" fill="none" stroke="#B71F8E" stroke-width="3" stroke-dasharray="1686.18" stroke-dashoffset="1686.18" />
-	                </svg>
-	              </div>
-
-	              <div class="swiper-container">
-	                <div class="swiper-wrapper">
-
-	                  <div class="swiper-slide">
-	                    <div class="hiw-block">
-	                    	<div class="img-wrapper">
-	                    		<img src="img/icons/eye.svg" alt="Eye">
-	                    	</div>
-	                      <h3 class="h3">Downloading the client</h3>
-	                      <p>Download Utopia to your computer. Supported operating systems: Windows, iOS, Linux.</p>
-	                      <p class="slide-number">01</p>
-	                    </div>
-	                  </div>
-	                  <div class="swiper-slide">
-	                    <div class="hiw-block">
-	                    	<div class="img-wrapper">
-	                    		<img src="img/icons/eye.svg" alt="Eye">
-	                    	</div>
-	                      <h3 class="h3">Make a deposit or mining</h3>
-	                      <p>Buy or exchange Cryptons on exchanges or run a Mining bot to get them for free in the ecosystem.</p>
-	                      <p class="slide-number">02</p>
-	                    </div>
-	                  </div>
-
-	                  <div class="swiper-slide">
-	                    <div class="hiw-block">
-	                    	<div class="img-wrapper">
-	                    		<img src="img/icons/eye.svg" alt="Eye">
-	                    	</div>
-	                      <h3 class="h3">Start the game</h3>
-	                      <p>Start winning and earning Cryptons, and withdraw them to your internal uWallet.</p>
-	                      <p class="slide-number">03</p>
-	                    </div>
-	                  </div>
-
-	                </div>
-	                <div class="swiper-pagination"></div>
-	              </div>
-
-	            </div>
-
-	            <div class="decor-circle _small"></div>
-	            <div class="decor-circle _big"></div>
 
 						</div>
-
-						<div class="button-wrap" data-aos="zoom-in">
-							<a href="http://u.is/" class="button button_mobile" target="_blank" onclick="gtag('event', 'steps', {'event_category': 'download', 'event_label': 'steps_play'});">Play Now</a>
-						</div>
-
+						<p class="copyrights _mobile">
+							<img src="img/logo.svg" alt="Logo">
+							<span>©2020 <br> все права защищены</span>
+						</p>
 					</div>
 				</div>
 			</div>
-		</section>
-
-		<div class="middle-background">
-
-			<section class="receive" id="s-receive">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-
-							<h2 class="h2" data-aos="fade-up">How to get <span class="_accent">coins and <br> start</span> the game? <span class="h2__bg">How to...</span></h2>
-
-							<div class="receive__wrapper">
-								<div class="receive__box _first">
-									<div class="receive__box-text">
-										<h3 class="h3" data-aos="zoom-in">You earn Cryptons even <br> when you don't play</h3>
-										<p data-aos="zoom-in">You can get Cryptons for free using a built-in mining bot. Just run a bot that will earn CRP in your account for sessions in Utopia P2P. No harm to your software or environment.</p>
-										<div class="button-wrap" data-aos="zoom-in"><a href="http://u.is/" class="button" target="_blank" onclick="gtag('event', 'earn', {'event_category': 'download', 'event_label': 'earn_play'});">Play Now</a></div>
-									</div>
-									<div class="receive__box-image _first" data-aos="zoom-in">
-										<img src="img/receive__image_first.png" alt="Chill man">
-										<div class="circles">
-											<div class="circle circle-1"></div>
-											<div class="circle circle-2"></div>
-											<div class="circle circle-3"></div>
-										</div>
-									</div>
-								</div>
-
-								<div class="receive__box _second">
-
-									<div class="receive__box-image _second" data-aos="zoom-in">
-										<img src="img/receive__image_second.png" alt="City">
-										<div class="circles">
-											<div class="circle circle-1"></div>
-											<div class="circle circle-2"></div>
-											<div class="circle circle-3"></div>
-										</div>
-									</div>
-
-									<div class="receive__box-text">
-										<h3 class="h3" data-aos="zoom-in">You can buy or exchange <br> Cryptons on the exchanges</h3>
-										<p data-aos="zoom-in">If you don't want to wait for the Mining bot to collect Cryptons, there is a simple way of getting Cryptons. You can always buy CRPs on one of the available cryptocurrency exchanges.</p>
-										<div class="button-wrap" data-aos="zoom-in"><a href="http://u.is/" class="button" target="_blank" onclick="gtag('event', 'exchange', {'event_category': 'download', 'event_label': 'exchange_play'});">Play Now</a></div>
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</section>
-		
-			<section class="rialtos" id="s-rialtos" data-aos="fade-up">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-							<div class="rialtos__slider">
-								<div class="rialtos__slide"><a href="https://www.zg.com/exchange/737/CRP/USDT" target="_blank"><img src="img/rialtos/zg.png" alt="Zg.com"></a></div>
-								<div class="rialtos__slide"><a href="https://latoken.com/exchange/CRP-USDT" target="_blank"><img src="img/rialtos/latoken.png" alt="Latoken"></a></div>
-								<div class="rialtos__slide"><a href="https://coinmarketcap.com/currencies/utopia/" target="_blank">More <br> exchanges <br> soon</a></div>
-								<div class="rialtos__slide"><a href="https://www.zg.com/exchange/737/CRP/USDT" target="_blank"><img src="img/rialtos/zg.png" alt="Zg.com"></a></div>
-								<div class="rialtos__slide"><a href="https://latoken.com/exchange/CRP-USDT" target="_blank"><img src="img/rialtos/latoken.png" alt="Latoken"></a></div>
-								<div class="rialtos__slide"><a href="https://coinmarketcap.com/currencies/utopia/" target="_blank">More <br> exchanges <br> soon</a></div>
-							</div>
-							<nav class="rialtos__arrows">
-								<div class="rialtos__arrows-prev"><i class="fas fa-chevron-left"></i></div>
-								<div class="rialtos__arrows-next"><i class="fas fa-chevron-right"></i></div>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</div>
-
-		<div class="faq-background" data-aos="fade-up">
-
-			<section class="shares" id="s-shares">
-				<div class="container">
-					<div class="row _flex">
-						<div class="col-lg-6">
-							<img class="shares__image" src="img/shares__image.png" alt="Man & Cards" data-aos="zoom-in-up" data-aos-offset="0">
-						</div>
-						<div class="col-lg-6">
-							<h2 class="h2" data-aos="zoom-in-up" data-aos-offset="0">Participate in promotions</h2>
-							<p data-aos="zoom-in-up" data-aos-offset="0">Another easy way to earn coins is to participate in our promotions. It’s simple to participate and does not require any investment from you. All you need to do is follow the Utopia news on social networks and take part in contests when they are announced.</p>
-							<img class="shares__image_mobile" src="img/shares__image.png" alt="Man & Cards" data-aos="zoom-in-up" data-aos-offset="0">
-							<div class="button-wrap" data-aos="zoom-in-up" data-aos-offset="0"><a href="http://u.is/" class="button" target="_blank" onclick="gtag('event', 'promotions', {'event_category': 'download', 'event_label': 'promotions_play'});">Play Now</a></div>
-							<img class="shares__diamonds" src="img/shares__diamonds.svg" alt="Diamonds" data-aos="zoom-in-up" data-aos-offset="0">
-						</div>
-					</div>
-				</div>
-
-				<div class="container">
-					<div class="row">
-						<div class="col">
-
-							<div class="shares__boxs">
-
-								<div class="shares__box" data-aos="fade-up">
-									<img src="img/icons/protection.svg" alt="Protection">
-									<h5 class="h5">Fair and Transparent</h5>
-									<p>The game has a simple dealing mechanism and cheating prevention.</p>
-								</div>
-
-								<div class="shares__box" data-aos="fade-up" data-aos-delay="300">
-									<img src="img/icons/hacker.svg" alt="Hacker">
-									<h5 class="h5">Private and Secure</h5>
-									<p>Your personal privacy in the digital age is our priority.</p>
-								</div>
-
-								<div class="shares__box" data-aos="fade-up" data-aos-delay="600">
-									<img src="img/icons/discount.svg" alt="Discount">
-									<h5 class="h5">Low fees for deposits and withdrawals</h5>
-									<p>Utopia has low commissions for both depositing funds and withdrawing won Cryptons.</p>
-								</div>
-
-								<div class="shares__box" data-aos="fade-up" data-aos-delay="900">
-									<img src="img/icons/wallet.svg" alt="Wallet">
-									<h5 class="h5">Reliable wallet for Cryptons storage</h5>
-									<p>You do not need to enter personal data to start playing, deposit funds or withdraw them to your uWallet.</p>
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-			</section>
-
-			<section class="faq" id="s-faq">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-							<h2 class="h2" data-aos="zoom-in">F.A.Q.</h2>
-
-							<div class="panel" data-aos="zoom-in" data-aos-delay="100">
-								<div class="panel-heading">
-									<p>What is the cryptocurrency used in the game?</p>
-									<div class="icon-plus"></div>
-								</div>
-								<div class="panel-collapse">
-									<p>The one cryptocurrency used in the game is Crypton (CRP). Cryptons are the internal cryptocurrency of the Utopia P2P ecosystem. It provides a strong level of privacy, guaranteed by various technologies behind the complete anonymity of transactions. CRP is reliably protected from any internal or external risks, thanks to the use of encryption.</p>
-								</div>
-							</div>
-
-							<div class="panel" data-aos="zoom-in" data-aos-delay="200">
-								<div class="panel-heading">
-									<p>Why can't I use other cryptocurrencies for this game?</p>
-									<div class="icon-plus"></div>
-								</div>
-								<div class="panel-collapse">
-									<p>Poker club is an internal game of the ecosystem. To start the game, you don't need to download or install anything else if you are already a client of the ecosystem. Accordingly, all bets are made using an internal Crypton cryptocurrency, which can then be exchanged, sold, or withdrawn to your internal crypto wallet or crypto exchanges. Find out why Crypton is an interesting cryptocurrency by following the <a href="https://cryptoncoin.cash/" target="_blank">link</a>.</p>
-								</div>
-							</div>
-
-							<div class="panel" data-aos="zoom-in" data-aos-delay="300">
-								<div class="panel-heading">
-									<p>How can I withdraw coins?</p>
-									<div class="icon-plus"></div>
-								</div>
-								<div class="panel-collapse">
-									<p>The process of withdrawing coins won't take long. You can use a step-by-step guide for buying, making a deposit and withdrawing coins by following this <a href="article-how_to_transfer.html">link</a>.</p>
-								</div>
-							</div>
-
-							<div class="panel" data-aos="zoom-in" data-aos-delay="400">
-								<div class="panel-heading">
-									<p>How can I deposit a coin?</p>
-									<div class="icon-plus"></div>
-								</div>
-								<div class="panel-collapse">
-									<p>The process of making a deposit won't take long. You can use a step-by-step guide for buying, making a deposit and withdrawing coins by following this <a href="article-how_to_store.html">link</a>.</p>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<footer class="footer" id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-
-							<img class="footer__image footer__image-chips" src="img/footer__chips.png" alt="Chips" data-aos="zoom-in">
-							<div class="footer__wrapper">
-								<h2 class="h2" data-aos="zoom-in">Join our community</h2>
-								<div class="footer__links" data-aos="zoom-in">
-									<a href="" class="footer__link _hidden"><i class="fab fa-twitter"></i>Twitter</a>
-									<a href="" class="footer__link _hidden"><i class="fab fa-telegram-plane"></i>Telegram</a>
-								</div>
-							</div>
-							<img class="footer__image footer__image-cards" src="img/footer__cards.png" alt="Cards" data-aos="zoom-in">
-							
-							<p class="copyrights">Copyright © 2020 Utopia. All rights reserved.</p>
-
-						</div>
-					</div>
-				</div>
-			</footer>
-
-		</div>
-
-		<script>
-			(function() {
-			  // Add event listener
-			  document.addEventListener("mousemove", parallax);
-			  const elem = document.querySelector("#parallax");
-			  // Magic happens here
-			  function parallax(e) {
-			      let _w = window.innerWidth/2;
-			      let _h = window.innerHeight/2;
-			      let _mouseX = e.clientX;
-			      let _mouseY = e.clientY;
-			      let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
-			      let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
-			      let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
-			      let x = `${_depth3}, ${_depth2}, ${_depth1}`;
-			      elem.style.backgroundPosition = x;
-			  }
-
-			})();
-
-		</script>
+		</footer>
 
 	</body>
 
