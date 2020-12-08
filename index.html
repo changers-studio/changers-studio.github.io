@@ -25,6 +25,18 @@
 
 	<body class="ishome">
 
+		<div class="pop-up pop-up__callback mfp-hide">
+			<h5 class="h5 _brackets">Заказать обратный звонок</h5>
+			<form>
+				<input type="text" name="Имя" placeholder="Имя:">
+				<input type="tel" name="Телефон" placeholder="Телефон:">
+				<textarea name="Комментарий:" cols="30" rows="10" placeholder="Комментарий:"></textarea>
+
+				<button class="button _bd-radius">Отправить</button>
+			</form>
+		</div>
+
+
 		<div class="preloader"></div>
 
 		<div class="sidebar__plug"></div>
@@ -46,11 +58,11 @@
 						<div class="panel-heading"><a>Услуги</a></div>
 						<div class="panel-collapse">
 							<ul>
-								<li><a href="">Услуга 1</a></li>
-								<li><a href="">Услуга 2</a></li>
-								<li><a href="">Услуга 3</a></li>
-								<li><a href="">Услуга 4</a></li>
-								<li><a href="">Услуга 5</a></li>
+								<li><a href="sea-delivery.html">Доставка морем</a></li>
+								<li><a href="air-delivery.html">Авиадоставка</a></li>
+								<li><a href="broker.html">Таможенное оформление</a></li>
+								<li><a href="providers-buyout.html">Перевод денег в Китай</a></li>
+								<li><a href="buy-auto.html">Растаможка авто</a></li>
 							</ul>
 						</div>
 					</div>
@@ -83,7 +95,7 @@
 						</div>
 					</div>
 				</li>
-				<li><a href="">Контакты</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
 
 			<ul class="sidebar__phone-number">
@@ -98,9 +110,9 @@
 			</ul>
 
 			<ul class="sidebar__buttons">
-				<li><a href="" class="button">Рассчитать стоимость</a></li>
+				<li><a href="delivery.html#s-count-price" class="button">Рассчитать стоимость</a></li>
 				<li><a href="" class="button">Личный кабинет</a></li>
-				<li><a href="" class="button">Заказать обратный звонок</a></li>
+				<li><a href=".pop-up__callback" class="button magnific-popup">Заказать обратный звонок</a></li>
 			</ul>
 
 		</nav>
@@ -121,16 +133,16 @@
 										<div class="panel_down-heading">Услуги</div>
 										<div class="panel_down-collapse">
 											<object data="img/icons/triangle.svg" type="image/svg+xml"></object>
-											<a href="delivery.html">Доставка морем</a>
-											<a href="delivery.html">Авиадоставка</a>
+											<a href="sea-delivery.html">Доставка морем</a>
+											<a href="air-delivery.html">Авиадоставка</a>
 											<a href="broker.html">Таможенное оформление</a>
-											<a href="">Перевод денег в Китай</a>
-											<a href="">Растаможка авто</a>
+											<a href="providers-buyout.html">Перевод денег в Китай</a>
+											<a href="buy-auto.html">Растаможка авто</a>
 										</div>
 									</div>
 								</li>
 								<li><a href="">Каталог</a></li>
-								<li><a href="providers-buyout.html">О компании</a></li>
+								<li><a href="text-page.html">О компании</a></li>
 								<li><a href="contacts.html">Контакты</a></li>
 							</ul>
 
@@ -158,7 +170,7 @@
 							</ul>
 
 							<div class="top-line__buttons">
-								<a href="" class="button">Рассчитать стоимость</a>
+								<a href="delivery.html#s-count-price" class="button">Рассчитать стоимость</a>
 								<a href="" class="button _transparent cabinet">Личный кабинет</a>
 							</div>
 							<!-- hamburger hamburger--elastic -->
@@ -192,6 +204,8 @@
 								<li><a href="">Страховка и доставка</a></li>
 								<li><a href="">Таможеное оформление <br> и выдача в Украине</a></li>
 							</ul>
+
+							<img src="img/logo_mobile.svg" alt="logo" class="logo_mobile">
 
 							<ul class="main__trading-platforms">
 								<p>Выкуп с торговых площадок:</p>
@@ -336,7 +350,7 @@
 							<form>
 								<input type="text" name="Name" placeholder="Имя...">
 								<input type="text" name="Telephone number" placeholder="Номер телефона...">
-								<input type="tel" name="Telephone" placeholder="Телефон...">
+								<input type="mail" name="Эмейл" placeholder="Эмейл...">
 								<textarea name="comment" id="" cols="30" rows="10" placeholder="Комментарий..."></textarea>
 								<button class="button">Отправить</button>
 							</form>
@@ -443,10 +457,13 @@
 									<div class="arrows arrows_bottom"></div>
 									<div class="arrows arrows_top"></div>
 
-									<input type="text" name="Название товара" placeholder="Название товара:">
-									<input type="text" name="Количество" placeholder="Количество:">
-									<input type="text" name="Номер телефона" placeholder="Номер телефона:">
-									<textarea name="" id="" cols="30" rows="5" placeholder="Коментарий:"></textarea>
+									<input type="text" name="Имя" placeholder="Имя:">
+									<input type="tel" name="Номер телефона" placeholder="Номер телефона:">
+									<input type="text" name="Наименование товара" placeholder="Наименование товара:">
+									<input type="text" name="Вес" placeholder="Вес:">
+									<input type="text" name="Объем" placeholder="Объем:">
+									<input type="text" name="Адрес поставщика (на китайском)" placeholder="Адрес поставщика (на китайском):">
+									<textarea name="Коментарий" id="" cols="30" rows="5" placeholder="Коментарий:"></textarea>
 									<div class="form__buttons">
 										<button class="button">Просчитать стоимость доставки</button>
 										<a href="" class="button">Забрать у поставщика</a>
@@ -937,7 +954,7 @@
 
 									<div class="footer__addition">
 										<img src="img/cards.png" alt="Cards">
-										<a href="" class="button">Обратный звонок</a>
+										<a href=".pop-up__callback" class="button magnific-popup">Обратный звонок</a>
 									</div>
 
 								</div>
