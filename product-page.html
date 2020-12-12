@@ -23,8 +23,8 @@
 		<link rel="stylesheet" href="libs/slick/slick.css">
 		<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="libs/css-hamburgers/hamburgers.css">
-		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
 		<link rel="stylesheet" href="libs/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
 		<link rel="stylesheet" href="css/styles.min.css">
 
 		<script async defer src="https://kit.fontawesome.com/55e0136003.js" crossorigin="anonymous"></script>
@@ -32,6 +32,17 @@
 	</head>
 
 	<body class="isnohome product-page">
+
+		<div class="pop-up pop-up__callback mfp-hide">
+			<h5 class="h5 _brackets">Заказать обратный звонок</h5>
+			<form>
+				<input type="text" name="Имя" placeholder="Имя:">
+				<input type="tel" name="Телефон" placeholder="Телефон:">
+				<textarea name="Комментарий:" cols="30" rows="10" placeholder="Комментарий:"></textarea>
+
+				<button class="button _bd-radius">Отправить</button>
+			</form>
+		</div>
 
 		<div class="sidebar__plug"></div>
 
@@ -340,7 +351,7 @@
 
 									<div class="footer__addition">
 										<img src="img/cards.png" alt="Cards">
-										<a href="" class="button">Обратный звонок</a>
+										<a href=".pop-up__callback" class="button magnific-popup">Обратный звонок</a>
 									</div>
 
 								</div>
