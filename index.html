@@ -5,7 +5,7 @@
 
 		<meta charset="utf-8">
 
-		<title>Smart trek | Главная</title>
+		<title>Happytel | Главная</title>
 		<!-- <meta name="description" content=""> -->
 
 		<meta name="viewport" content="width=device-width">
@@ -14,982 +14,309 @@
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 		
-		<link rel="stylesheet" href="libs/bootstrap/scss/bootstrap-reboot.scss">
-		<link rel="stylesheet" href="libs/bootstrap/scss/mixins/_breakpoints.scss">
-		<link rel="stylesheet" href="libs/bootstrap/scss/bootstrap-grid.scss">
-		<link rel="stylesheet" href="libs/bootstrap/scss/utilities/_sizing.scss">
-		<link rel="stylesheet" href="/libs/aos-master/aos.css">
-		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
-		<link rel="stylesheet" href="libs/slick/slick-theme.css">
-		<link rel="stylesheet" href="libs/slick/slick.css">
-		<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="libs/css-hamburgers/hamburgers.css">
-		<link rel="stylesheet" href="libs/custom-scrollbar/jquery.mCustomScrollbar.min.css">
 		<link rel="stylesheet" href="css/styles.min.css">
+		<script defer src="js/scripts.min.js"></script>
 
 		<script async defer src="https://kit.fontawesome.com/55e0136003.js" crossorigin="anonymous"></script>
-
 
 	</head>
 
 	<body class="ishome">
 
-		<div class="pop-up pop-up__callback mfp-hide">
-			<h5 class="h5 _brackets">Заказать обратный звонок</h5>
-			<form>
-				<input type="text" name="Имя" placeholder="Имя:">
-				<input type="tel" name="Телефон" placeholder="Телефон:">
-				<textarea name="Комментарий:" cols="30" rows="10" placeholder="Комментарий:"></textarea>
+		<header class="header _main">
 
-				<button class="button _bd-radius">Отправить</button>
-			</form>
-		</div>
+			<div class="header__bg_left"></div>
 
+			<div class="container _space-between">
 
-		<div class="preloader"></div>
+				<a href="index.html" class="header__logo"><img src="img/logo.svg" alt="Happytel"></a>
 
-		<div class="sidebar__plug"></div>
+				<div class="header__links _align-center">
 
-		<nav class="sidebar">
+					<ul class="_direction-row">
+						<li><a href="#" class="header__social-links"><img src="img/icons/instagram.svg" alt="Instagram"></a></li>
+						<li><a href="#" class="header__social-links"><img src="img/icons/facebook.svg" alt="facebook"></a></li>
+						<li><a href="#" class="header__social-links"><img src="img/icons/telegram.svg" alt="telegram"></a></li>
+					</ul>
 
-			<img src="img/logo.svg" alt="Logo" class="sidebar__logo">
+					<div class="lang">
+						<div class="lang-heading">Ru <img src="img/icons/down-arrow.svg" alt="Arrow icon"></div>
+						<ul class="lang-collapse">
+							<li><a href="">Eng</a></li>
+							<li><a href="">De</a></li>
+						</ul>
+					</div>
 
-			<div class="top-line__hamburger hamburger hamburger--elastic">
-				<div class="hamburger-box">
-					<span class="hamburger-inner"></span>
 				</div>
+
+				<div class="header__hamburger"><img src="img/header/hamburger.svg" alt="Hamburger"></div>
+
 			</div>
 
-			<ul class="sidebar__menu">
-				<li><a>Главная</a></li>
-				<li>
-					<div class="panel">
-						<div class="panel-heading"><a>Услуги</a></div>
-						<div class="panel-collapse">
-							<ul>
-								<li><a href="sea-delivery.html">Доставка морем</a></li>
-								<li><a href="air-delivery.html">Авиадоставка</a></li>
-								<li><a href="broker.html">Таможенное оформление</a></li>
-								<li><a href="providers-buyout.html">Перевод денег в Китай</a></li>
-								<li><a href="buy-auto.html">Растаможка авто</a></li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li>					
-					<div class="panel">
-						<div class="panel-heading"><a>Каталог</a></div>
-						<div class="panel-collapse">
-							<ul>
-								<li><a href="">Каталог 1</a></li>
-								<li><a href="">Каталог 2</a></li>
-								<li><a href="">Каталог 3</a></li>
-								<li><a href="">Каталог 4</a></li>
-								<li><a href="">Каталог 5</a></li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="panel">
-						<div class="panel-heading"><a>О компании</a></div>
-						<div class="panel-collapse">
-							<ul>
-								<li><a href="">О компании 1</a></li>
-								<li><a href="">О компании 2</a></li>
-								<li><a href="">О компании 3</a></li>
-								<li><a href="">О компании 4</a></li>
-								<li><a href="">О компании 5</a></li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li><a href="contacts.html">Контакты</a></li>
+			<ul class="header__menu">
+
+				<div class="header__menu-close"><img src="img/icons/close-button.svg" alt="Close"></div>
+
+				<li><a class="header__menu-link active" href="">О компании</a></li>
+				<li><a class="header__menu-link" href="">Как пользоваться</a></li>
+				<li><a class="header__menu-link" href="">Купить тариф</a></li>
+				<li><a class="header__menu-link" href="">Условия</a></li>
+				<li><a class="header__menu-link" href="">Контакты</a></li>
 			</ul>
 
-			<ul class="sidebar__phone-number">
-				<li><a href="tel:380663938888">+38 (066)39 38 888</a></li>
-				<li><a href="tel:380663938888">+38 (066)39 38 888</a></li>
-				<li><a href="tel:380663938888">+38 (066)39 38 888</a></li>
-			</ul>
+			<img src="img/main-page/main-screen__card.svg" alt="Card" class="header__image">
 
-			<ul class="sidebar__social-links">
-				<li><a href=""><img src="img/icons/telegram.svg" alt="Telegram"></a></li>
-				<li><a href=""><img src="img/icons/viber.svg" alt="Viber"></a></li>
-			</ul>
+			<div class="header__content">
 
-			<ul class="sidebar__buttons">
-				<li><a href="delivery.html#s-count-price" class="button">Рассчитать стоимость</a></li>
-				<li><a href="" class="button">Личный кабинет</a></li>
-				<li><a href=".pop-up__callback" class="button magnific-popup">Заказать обратный звонок</a></li>
-			</ul>
+				<p class="header__question">Летите в другую страну <span class="_bold">но не знаете как быть на связи?</span></p>
+				<p class="header__question _bottom">Не хотите тратить время <span class="_bold">на поиски местной симкарты?</span></p>
 
-		</nav>
+				<div class="wrapper">
 
-		<header class="header" data-aos="fade-down">
+					<img src="img/main-page/main-screen__card_mobile.svg" alt="Card" class="header__image _mobile">
 
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="header__top-line top-line">
+					<h1 class="h1">Тогда Вас <br> выручит <br> <span class="_bold _black">Happy<span class="_accent">tel</span></span></h1>
 
-							<img src="img/logo.svg" alt="Logo" class="top-line__logo">
+					<a href="" class="button">Я лечу в ...</a>
 
-							<ul class="top-line__menu">
-								<li class="active"><a>Главная</a></li>
-								<li>
-									<div class="panel_down">
-										<div class="panel_down-heading">Услуги</div>
-										<div class="panel_down-collapse">
-											<object data="img/icons/triangle.svg" type="image/svg+xml"></object>
-											<a href="sea-delivery.html">Доставка морем</a>
-											<a href="air-delivery.html">Авиадоставка</a>
-											<a href="broker.html">Таможенное оформление</a>
-											<a href="providers-buyout.html">Перевод денег в Китай</a>
-											<a href="buy-auto.html">Растаможка авто</a>
-										</div>
-									</div>
-								</li>
-								<li><a href="">Каталог</a></li>
-								<li><a href="text-page.html">О компании</a></li>
-								<li><a href="contacts.html">Контакты</a></li>
-							</ul>
-
-							<div class="top-line__search-phone">
-
-								<label class="search">
-									<a href="#" class="search-icon"><img src="img/icons/search.svg" alt="Search"></a>
-									<input type="search" placeholder="Поиск...">
-								</label>
-
-								<div class="phone-number hidden_items">
-									<div class="panel-heading"><a href="tel:380663938888">+38 (066)39 38 888</a></div>
-									<div class="panel-collapse">
-										<a href="tel:380663938888">+38 (066)39 38 111</a>
-										<a href="tel:380663938888">+38 (066)39 38 222</a>
-										<a href="tel:380663938888">+38 (066)39 38 333</a>
-									</div>
-								</div>
-
-							</div>
-
-							<ul class="top-line__social-links hidden_items">
-								<li><a href=""><img src="img/icons/telegram.svg" alt="Telegram"></a></li>
-								<li><a href=""><img src="img/icons/viber.svg" alt="Viber"></a></li>
-							</ul>
-
-							<div class="top-line__buttons hidden_items">
-								<a href="delivery.html#s-count-price" class="button">Рассчитать стоимость</a>
-								<a href="" class="button _transparent cabinet">Личный кабинет</a>
-							</div>
-							<!-- hamburger hamburger--elastic -->
-							<div class="top-line__hamburger hamburger hamburger--elastic">
-								<div class="hamburger-box">
-									<span class="hamburger-inner"></span>
-								</div>
-							</div>
-
-						</div>
-					</div>
 				</div>
+
 			</div>
 
 		</header>
 
-		<main>
-			
-			<section class="main" id="s-main">
-				<div class="container">
-					<div class="row">
+		<section class="capabilities" id="s-capabilities">
+			<div class="container">
 
-						<div class="col-lg-6 main__wrapper" data-aos="fade-right" data-aos-delay="300">
-							<img src="img/logo_white.svg" alt="Logo" class="main__logo">
+				<div class="capabilities__boxs">
 
-							<h1 class="h1 _brackets">Доставка грузов из Китая</h1>
+					<div class="capabilities__box">
+						<img src="img/icons/bags.svg" alt="bags">
+						<p>Чемоданы <br> собраны</p>
+					</div>
 
-							<ul class="main__services">
-								<li><a href="">Помощь с выкупом груза</a></li>
-								<li><a href="">Проверка и переупаковка</a></li>
-								<li><a href="">Страховка и доставка</a></li>
-								<li><a href="">Таможеное оформление <br> и выдача в Украине</a></li>
-							</ul>
+					<div class="capabilities__box">
+						<img src="img/icons/plane-tickets.svg" alt="plane tickets">
+						<p>Билеты <br> куплены</p>
+					</div>
 
-							<img src="img/logo_mobile.svg" alt="logo" class="logo_mobile">
+					<div class="capabilities__box">
+						<img src="img/icons/money.svg" alt="money">
+						<p>Бюджет <br> рассчитан</p>
+					</div>
 
-							<ul class="main__trading-platforms">
-								<p>Выкуп с торговых площадок:</p>
-								<li><img class="lazy" data-src="img/trading-platforms/platform-logo_1.png" alt="Platform logo"></li>
-								<li><img class="lazy" data-src="img/trading-platforms/platform-logo_2.png" alt="Platform logo"></li>
-								<li><img class="lazy" data-src="img/trading-platforms/platform-logo_3.png" alt="Platform logo"></li>
-								<li><img class="lazy" data-src="img/trading-platforms/platform-logo_4.png" alt="Platform logo"></li>
-							</ul>
+					<div class="capabilities__box">
+						<img src="img/icons/sim.svg" alt="sim">
+						<p>Но забыли о связи <br> в роуминге?</p>
+					</div>
 
-						</div>
+				</div>
 
-						<div class="main__calculation calculation">
-							<div class="wrapper" data-aos="fade-right" data-aos-delay="600">
-								<h5 class="h5">Быстрый расчёт стоимости</h5>
-								<ul class="calculation__boxs">
-									<li class="active">
-										<a>
-											<img src="img/calculation-icons/ship.svg" alt="Ship">
-											<h6 class="h6">Море</h6>
-											<p>45-60 дней, <br> от 1.5$/кг</p>
-										</a>
-									</li>
-									<li>
-										<a>
-											<img src="img/calculation-icons/plane.svg" alt="Plane">
-											<h6 class="h6">Авиа</h6>
-											<p>10-16 раб.дней, <br> от 11.5$/кг</p>
-										</a>
-									</li>
-									<li class="_offset-top">
-										<a>
-											<img src="img/calculation-icons/stack.svg" alt="Stack">
-											<h6 class="h6">Догруз (Фрахтование) </h6>
-											<p>45-60 дней, <br> от 1.5$/кг</p>
-										</a>
-									</li>
-									<li class="_offset-top">
-										<a>
-											<img src="img/calculation-icons/notebook.svg" alt="Notebook">
-											<h6 class="h6">Таможенное Оформление</h6>
-											<p>45-60 дней, <br> от 1.5$/кг</p>
-										</a>
-									</li>
+				<div class="capabilities__text">
+					<h2 class="h2">Нет <br> проблем</h2>
+					<p><span class="_bold">Happy Tel</span> - дает возможность осуществить покупку роуминговых сим-карт в Узбекистане</p>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="offers" id="s-offers">
+			<div class="container">
+				
+				<p class="offers__title">Лучшие предложения <span class="_accent _bold">для вас</span></p>
+
+			</div>
+
+			<div class="container _space-between">
+
+				<div class="offers__slider">
+
+					<div class="offers__slide">
+
+						<div class="flex-wrapper">
+
+							<div class="offers__price">
+								<img src="img/offers/flag.svg" alt="Flag">
+								<div class="wrapper">
+									<span class="price">30$</span><span class="price_old">35$</span>
+								</div>
+							</div>
+
+							<div class="offers__about">
+								<p class="offers__country">Турция</p>
+
+								<ul>
+									<li class="offers__about-item"><img src="img/icons/calendar.svg" alt="Icon"><span>30 дней</span></li>
+									<li class="offers__about-item"><img src="img/icons/email.svg" alt="Icon"><span>500 смс</span></li>
+									<li class="offers__about-item"><img src="img/icons/sd-card.svg" alt="Icon"><span>4GB</span></li>
+									<li class="offers__about-item"><img src="img/icons/phone-call.svg" alt="Icon"><span>500 мин звонков</span></li>
 								</ul>
 
-									<form class="calculation__form form">
-
-										<div class="form__inputs-wrapper">
-											<input type="tel" placeholder="Ваш телефон">
-											<input type="text" placeholder="Комментарий">
-										</div>
-
-										<div class="form__buttons">
-											<button class="button">Отправить</button>
-											<a href="" class="button _transparent">Забрать груз из Китая</a>
-										</div>
-									</form>
 							</div>
-						</div>
 
-						<div class="main__trading-platforms _mobile" data-aos="fade-right" data-aos-delay="600">
-							<p>Выкуп с торговых площадок:</p>
-							<ul>
-								<li><img class="lazy" data-src="img/trading-platforms/platform-logo_1.png" alt="Platform logo"></li>
-								<li><img class="lazy" data-src="img/trading-platforms/platform-logo_2.png" alt="Platform logo"></li>
-								<li><img class="lazy" data-src="img/trading-platforms/platform-logo_3.png" alt="Platform logo"></li>
-								<li><img class="lazy" data-src="img/trading-platforms/platform-logo_4.png" alt="Platform logo"></li>
-							</ul>
+							<a href="" class="button offers__button">Купить</a>
+
 						</div>
 
 					</div>
-				</div>
-			</section>
 
-			<section class="stages" id="s-stages" data-aos="fade-up">
-				<div class="container">
-					<div class="row">
-						<div class="col">
+					<div class="offers__slide">
 
-							<h2 class="h2 _brackets">Мы предоставим Вам склад в Китае</h2>
+						<div class="flex-wrapper">
 
-							<div class="stages__wrapper">
-
-								<div class="stages__item stage" data-aos="fade-down" data-aos-delay="100">
-									<div class="stage__img">
-										<img class="lazy" data-src="img/stages/stage_1.png" alt="Containers">
-										<div class="stage__number">1</div>
-									</div>
-									<p><span>Безопасное</span> получение грузов</p>
+							<div class="offers__price">
+								<img src="img/offers/flag.svg" alt="Flag">
+								<div class="wrapper">
+									<span class="price">30$</span><span class="price_old">35$</span>
 								</div>
+							</div>
 
-								<div class="stages__item stage" data-aos="fade-down" data-aos-delay="200">
-									<div class="stage__img">
-										<img class="lazy" data-src="img/stages/stage_2.png" alt="Port">
-										<div class="stage__number">2</div>
-									</div>
-									<p><span>Фотоотчет</span> до отправки груза в Украину</p>
-								</div>
+							<div class="offers__about">
+								<p class="offers__country">Турция</p>
 
-								<div class="stages__item stage" data-aos="fade-down" data-aos-delay="300">
-									<div class="stage__img">
-										<img class="lazy" data-src="img/stages/stage_3.png" alt="Ship">
-										<div class="stage__number">3</div>
-									</div>
-									<p><span>Еженедельные</span> выходы контейнеров из Китая</p>
-								</div>
-
-								<div class="stages__item stage" data-aos="fade-down" data-aos-delay="400">
-									<div class="stage__img">
-										<img class="lazy" data-src="img/stages/stage_4.png" alt="Storage">
-										<div class="stage__number">4</div>
-									</div>
-									<p><span>Собственная</span> консолидация и переупаковка груза</p>
-								</div>
+								<ul>
+									<li class="offers__about-item"><img src="img/icons/calendar.svg" alt="Icon"><span>30 дней</span></li>
+									<li class="offers__about-item"><img src="img/icons/email.svg" alt="Icon"><span>500 смс</span></li>
+									<li class="offers__about-item"><img src="img/icons/sd-card.svg" alt="Icon"><span>4GB</span></li>
+									<li class="offers__about-item"><img src="img/icons/phone-call.svg" alt="Icon"><span>500 мин звонков</span></li>
+								</ul>
 
 							</div>
 
-						</div>
-					</div>
-				</div>
-			</section>
+							<a href="" class="button offers__button">Купить</a>
 
-			<section class="customs-clearance" id="s-customs-clearance" data-aos="fade-up">
-				<div class="container">
-					<div class="row">
-
-						<h2 class="h2 _brackets">Мы предоставим Вам склад в Китае</h2>
-
-						<div class="col-lg-8">
-							<iframe 
-								class="customs-clearance__video"
-							  src="https://www.youtube.com/embed/lTRiuFIWV54"
-							  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/lTRiuFIWV54?autoplay=1><img src=../img/video-plug.png alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
-							  frameborder="0"
-							  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							  allowfullscreen
-							></iframe>
-						</div>
-
-						<div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-							<h5 class="h5 _brackets">Оставьте заявку и мы с вами свяжемся</h5>
-							<form>
-								<input type="text" name="Name" placeholder="Имя...">
-								<input type="text" name="Telephone number" placeholder="Номер телефона...">
-								<input type="mail" name="Эмейл" placeholder="Эмейл...">
-								<textarea name="comment" id="" cols="30" rows="10" placeholder="Комментарий..."></textarea>
-								<button class="button">Отправить</button>
-							</form>
 						</div>
 
 					</div>
-				</div>
-			</section>
 
-			<section class="roadmap" id="s-roadmap" data-aos="fade-up">
-				<div class="container">
-					<div class="row">
-						<div class="col">
+					<div class="offers__slide">
 
-							<h2 class="h2 _brackets">Мы можем взять все хлопоты по работе с вашим поставщиком на себя:</h2>
+						<div class="flex-wrapper">
 
-							<div class="roadmap__wrapper" data-aos="fade-up" data-aos-delay="200">
+							<div class="offers__price">
+								<img src="img/offers/flag.svg" alt="Flag">
+								<div class="wrapper">
+									<span class="price">30$</span><span class="price_old">35$</span>
+								</div>
+							</div>
 
-								<object class="roadmap__stages" data="img/roadmap/roadmap.svg" type="image/svg+xml"></object>
-								<object class="roadmap__stages _mobile" data="img/roadmap/roadmap_mobile.svg" type="image/svg+xml"></object>
+							<div class="offers__about">
+								<p class="offers__country">Турция</p>
+
+								<ul>
+									<li class="offers__about-item"><img src="img/icons/calendar.svg" alt="Icon"><span>30 дней</span></li>
+									<li class="offers__about-item"><img src="img/icons/email.svg" alt="Icon"><span>500 смс</span></li>
+									<li class="offers__about-item"><img src="img/icons/sd-card.svg" alt="Icon"><span>4GB</span></li>
+									<li class="offers__about-item"><img src="img/icons/phone-call.svg" alt="Icon"><span>500 мин звонков</span></li>
+								</ul>
 
 							</div>
 
+							<a href="" class="button offers__button">Купить</a>
+
 						</div>
+
 					</div>
-				</div>
-			</section>
 
-			<section class="question" id="s-question" data-aos="fade-up">
-				<div class="container">
-					<div class="row">
+					<div class="offers__slide">
 
-						<div class="col-xl-10 offset-xl-1">
+						<div class="flex-wrapper">
 
-							<h2 class="h2 _brackets">Нашли товар на Alibaba, 1688, Taobao и хотите узнать стоимость доставки?</h2>
-
-							<h4 class="h4">Оставьте ссылку и свой контакт и мы просчитаем стоимость!</h4>
-
-							<div class="question__wrapper" data-aos="fade-up" data-aos-delay="200">
-
-								<form>
-
-									<div class="arrows arrows_bottom"></div>
-									<div class="arrows arrows_top"></div>
-
-									<input type="text" name="Ссылка" placeholder="Ссылка:">
-									<input type="text" name="Количество" placeholder="Количество:">
-									<input type="text" name="Телефон" placeholder="Телефон:">
-									<button class="button">Отправить</button>
-								</form>
-
-								<div class="platforms">
-									<img class="lazy" data-src="img/trading-platforms/platform-colorful-logo_1.png" alt="Platform logo">
-									<img class="lazy" data-src="img/trading-platforms/platform-colorful-logo_2.png" alt="Platform logo">
-									<img class="lazy" data-src="img/trading-platforms/platform-colorful-logo_3.png" alt="Platform logo">
-									<img class="lazy" data-src="img/trading-platforms/platform-colorful-logo_4.png" alt="Platform logo">
+							<div class="offers__price">
+								<img src="img/offers/flag.svg" alt="Flag">
+								<div class="wrapper">
+									<span class="price">30$</span><span class="price_old">35$</span>
 								</div>
+							</div>
+
+							<div class="offers__about">
+								<p class="offers__country">Турция</p>
+
+								<ul>
+									<li class="offers__about-item"><img src="img/icons/calendar.svg" alt="Icon"><span>30 дней</span></li>
+									<li class="offers__about-item"><img src="img/icons/email.svg" alt="Icon"><span>500 смс</span></li>
+									<li class="offers__about-item"><img src="img/icons/sd-card.svg" alt="Icon"><span>4GB</span></li>
+									<li class="offers__about-item"><img src="img/icons/phone-call.svg" alt="Icon"><span>500 мин звонков</span></li>
+								</ul>
 
 							</div>
 
+							<a href="" class="button offers__button">Купить</a>
+
 						</div>
 
 					</div>
-				</div>
-			</section>
 
-			<section class="search-product" id="s-search-product" data-aos="fade-up">
-				<div class="container">
-					<div class="row">
-
-						<div class="col-lg-6 col-7">
-							<div class="search-product__text" data-aos="fade-right" data-aos-delay="100">
-								<h3 class="h3">Может Вам нужно найти какой-то <span>товар в Китае? Мы поможем!</span></h3>
-								<h5 class="h5">Оставьте ссылку и свой контакт и <br> мы просчитаем стоимость!</h5>
-								<a href="" class="button">Произвести поиск</a>
-								<object class="pointer" data="img/pointer.svg" type="image/svg+xml"></object>
-							</div>
-						</div>
-
-						<div class="col-lg-6 col-5 search-product__image" data-aos="zoom-in" data-aos-delay="200">
-							<img class="lazy" data-src="img/boxs.png" alt="Boxs">
-						</div>
-
-					</div>
-				</div>
-			</section>
-
-			<section class="delivery" id="s-delivery" data-aos="fade-up">
-
-				<div class="delivery__wagon" data-aos="fade-up" data-aos-delay="300"></div>
-
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-10 offset-xl-1">
-
-							<h2 class="h2 _brackets">Нужно забрать товар у вашего поставщика?</h2>
-
-							<div class="delivery__wagon _mobile" data-aos="fade-up"></div>
-
-							<div class="delivery__wrapper" data-aos="fade-up" data-aos-delay="150">
-
-								<form class="deliver__form form">
-
-									<div class="arrows arrows_bottom"></div>
-									<div class="arrows arrows_top"></div>
-
-									<input type="text" name="Имя" placeholder="Имя:">
-									<input type="tel" name="Номер телефона" placeholder="Номер телефона:">
-									<input type="text" name="Наименование товара" placeholder="Наименование товара:">
-									<input type="text" name="Вес" placeholder="Вес:">
-									<input type="text" name="Объем" placeholder="Объем:">
-									<input type="text" name="Адрес поставщика (на китайском)" placeholder="Адрес поставщика (на китайском):">
-									<textarea name="Коментарий" id="" cols="30" rows="5" placeholder="Коментарий:"></textarea>
-									<div class="form__buttons">
-										<button class="button">Просчитать стоимость доставки</button>
-										<a href="" class="button">Забрать у поставщика</a>
-									</div>
-								</form>
-
-							</div>
-
-						</div>
-					</div>
 				</div>
 
-			</section>
-
-			<section class="features" id="s-features" data-aos="fade-up">
-
-		    <div class="container">
-		        <div class="row">
-		            <div class="col">
-
-		            	<h2 class="h2 _brackets">Особенности нашей работы</h2>
-
-		            </div>
-		        </div>
-		    </div>
-
-		    <div class="custom-wrapper">
-		    	<div class="features__slider">
-
-		    		<div class="features__slide">
-		    			<iframe 
-							  src="https://www.youtube.com/embed/lTRiuFIWV54"
-							  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/lTRiuFIWV54?autoplay=1><img src=../img/video-plug.png alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
-							  frameborder="0"
-							  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							  allowfullscreen
-							></iframe>
-							<p>Загрузка на склад</p>
-						</div>
-
-		    		<div class="features__slide">
-		    			<iframe 
-							  src="https://www.youtube.com/embed/lTRiuFIWV54"
-							  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/lTRiuFIWV54?autoplay=1><img src=../img/video-plug.png alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
-							  frameborder="0"
-							  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							  allowfullscreen
-							></iframe>
-							<p>Упаковка товара</p>
-						</div>
-
-		    		<div class="features__slide">
-		    			<iframe 
-							  src="https://www.youtube.com/embed/lTRiuFIWV54"
-							  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/lTRiuFIWV54?autoplay=1><img src=../img/video-plug.png alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
-							  frameborder="0"
-							  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							  allowfullscreen
-							></iframe>
-							<p>Выдача клиентам</p>
-						</div>
-
-		    		<div class="features__slide">
-		    			<iframe 
-							  src="https://www.youtube.com/embed/lTRiuFIWV54"
-							  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/lTRiuFIWV54?autoplay=1><img src=../img/video-plug.png alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
-							  frameborder="0"
-							  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							  allowfullscreen
-							></iframe>
-							<p>Загрузка на склад</p>
-						</div>
-
-		    	</div>
-		    </div>
-
-			</section>
-
-			<section class="reviews" id="s-reviews">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-10 offset-xl-1">
-
-							<h2 class="h2 _brackets">Отзывы наших клиентов</h2>
-
-							<div class="reviews__slider">
-
-								<div class="reviews__slide">
-									<iframe 
-									  src="https://www.youtube.com/embed/lTRiuFIWV54"
-									  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/lTRiuFIWV54?autoplay=1><img src=../img/video-plug.png alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
-									  frameborder="0"
-									  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-									  allowfullscreen
-									></iframe>
-									<div class="review">
-										<img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
-										<p class="name">Александр Владимирович</p>
-										<p class="city">г.Киев</p>
-										<p class="topic">Доставка электроники из китая</p>
-										<p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae metus varius, fermentum metus non, gravida dolor. Nullam et lectus ac velit varius bibendum sed et felis. Phasellus ut consequat lacus. Fusce in est eu nisi imperdiet tristique.</p>
-										<div class="stars">
-											<div class="star"></div>
-											<div class="star"></div>
-											<div class="star"></div>
-											<div class="star"></div>
-											<div class="star"></div>
-										</div>
-									</div>
-								</div>
-
-								<div class="reviews__slide">
-									<iframe 
-									  src="https://www.youtube.com/embed/lTRiuFIWV54"
-									  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/lTRiuFIWV54?autoplay=1><img src=../img/video-plug.png alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
-									  frameborder="0"
-									  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-									  allowfullscreen
-									></iframe>
-									<div class="review">
-										<img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
-										<p class="name">Александр Владимирович</p>
-										<p class="city">г.Киев</p>
-										<p class="topic">Доставка электроники из китая</p>
-										<p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae metus varius, fermentum metus non, gravida dolor. Nullam et lectus ac velit varius bibendum sed et felis. Phasellus ut consequat lacus. Fusce in est eu nisi imperdiet tristique.</p>
-										<div class="stars">
-											<div class="star"></div>
-											<div class="star"></div>
-											<div class="star"></div>
-											<div class="star"></div>
-											<div class="star"></div>
-										</div>
-									</div>
-								</div>
-
-								<div class="reviews__slide">
-									<iframe 
-									  src="https://www.youtube.com/embed/lTRiuFIWV54"
-									  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/lTRiuFIWV54?autoplay=1><img src=../img/video-plug.png alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
-									  frameborder="0"
-									  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-									  allowfullscreen
-									></iframe>
-									<div class="review">
-										<img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
-										<p class="name">Александр Владимирович</p>
-										<p class="city">г.Киев</p>
-										<p class="topic">Доставка электроники из китая</p>
-										<p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae metus varius, fermentum metus non, gravida dolor. Nullam et lectus ac velit varius bibendum sed et felis. Phasellus ut consequat lacus. Fusce in est eu nisi imperdiet tristique.</p>
-										<div class="stars">
-											<div class="star"></div>
-											<div class="star"></div>
-											<div class="star"></div>
-											<div class="star"></div>
-											<div class="star"></div>
-										</div>
-									</div>
-								</div>
-
-								<div class="reviews__slide">
-									<iframe 
-									  src="https://www.youtube.com/embed/lTRiuFIWV54"
-									  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/lTRiuFIWV54?autoplay=1><img src=../img/video-plug.png alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
-									  frameborder="0"
-									  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-									  allowfullscreen
-									></iframe>
-									<div class="review">
-										<img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
-										<p class="name">Александр Владимирович</p>
-										<p class="city">г.Киев</p>
-										<p class="topic">Доставка электроники из китая</p>
-										<p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae metus varius, fermentum metus non, gravida dolor. Nullam et lectus ac velit varius bibendum sed et felis. Phasellus ut consequat lacus. Fusce in est eu nisi imperdiet tristique.</p>
-										<div class="stars">
-											<div class="star"></div>
-											<div class="star"></div>
-											<div class="star"></div>
-											<div class="star"></div>
-											<div class="star"></div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-					</div>
+				<div class="offers__choose">
+					<a href="" class="button">Выберите свой тариф</a>
 				</div>
-			</section>
 
-			<section class="redemption" id="s-redemption">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-10 offset-xl-1">
+			</div>
+		</section>
 
-							<h2 class="h2 _brackets">Выкупили и доставили</h2>
-
-							<div class="redemption__slider">
-
-								<div class="redemption__slide">
-									<img src="img/product-image.png" alt="Product" class="slide-image">
-									<div class="redemption">
-										<img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
-										<p class="name">Александр Владимирович</p>
-										<p class="city">г.Киев</p>
-										<p class="topic">Доставка электроники из китая</p>
-										<p class="redemption__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius, fermentum metus non, gravida dolor. Nullam....</p>
-										<a href="" class="button">Подробнее</a>
-									</div>
-								</div>
-
-								<div class="redemption__slide">
-									<img src="img/product-image.png" alt="Product" class="slide-image">
-									<div class="redemption">
-										<img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
-										<p class="name">Александр Владимирович</p>
-										<p class="city">г.Киев</p>
-										<p class="topic">Доставка электроники из китая</p>
-										<p class="redemption__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius, fermentum metus non, gravida dolor. Nullam....</p>
-										<a href="" class="button">Подробнее</a>
-									</div>
-								</div>
-
-								<div class="redemption__slide">
-									<img src="img/product-image.png" alt="Product" class="slide-image">
-									<div class="redemption">
-										<img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
-										<p class="name">Александр Владимирович</p>
-										<p class="city">г.Киев</p>
-										<p class="topic">Доставка электроники из китая</p>
-										<p class="redemption__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius, fermentum metus non, gravida dolor. Nullam....</p>
-										<a href="" class="button">Подробнее</a>
-									</div>
-								</div>
-
-								<div class="redemption__slide">
-									<img src="img/product-image.png" alt="Product" class="slide-image">
-									<div class="redemption">
-										<img src="img/user-avatar.png" alt="Avatar" class="user-avatar">
-										<p class="name">Александр Владимирович</p>
-										<p class="city">г.Киев</p>
-										<p class="topic">Доставка электроники из китая</p>
-										<p class="redemption__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius, fermentum metus non, gravida dolor. Nullam....</p>
-										<a href="" class="button">Подробнее</a>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="catalog" id="s-catalog">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-
-							<h2 class="h2 _brackets">Каталог популярных товаров, которые можно купить у нас</h2>
-
-							<div class="catalog__wrapper">
-
-								<div class="catalog__product product">
-									<div class="product__preview"><img class="lazy" data-src="img/product-images/product_1.png" alt="product"></div>
-
-									<p class="product__title">Кроксы</p>
-									<div class="product__price">
-										<p class="price">999.99 грн</p>
-										<a href="" class="button">Детальнее</a>
-									</div>
-									<div class="product__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius.</div>
-									<a href="" class="product__buy button">Купить за 999.99 грн</a>
-
-								</div>
-
-								<div class="catalog__product product">
-									<div class="product__preview"><img class="lazy" data-src="img/product-images/product_2.png" alt="product"></div>
-									<p class="product__title">Кроксы</p>
-									<div class="product__price">
-										<p class="price">999.99 грн</p>
-										<a href="" class="button">Детальнее</a>
-									</div>
-									<div class="product__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius.</div>
-									<a href="" class="product__buy button">Купить за 999.99 грн</a>
-								</div>
-
-								<div class="catalog__product product">
-									<div class="product__preview"><img class="lazy" data-src="img/product-images/product_3.png" alt="product"></div>
-									<p class="product__title">Кроксы</p>
-									<div class="product__price">
-										<p class="price">999.99 грн</p>
-										<a href="" class="button">Детальнее</a>
-									</div>
-									<div class="product__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius.</div>
-									<a href="" class="product__buy button">Купить за 999.99 грн</a>
-								</div>
-
-								<div class="catalog__product product">
-									<div class="product__preview"><img class="lazy" data-src="img/product-images/product_4.png" alt="product"></div>
-									<p class="product__title">Кроксы</p>
-									<div class="product__price">
-										<p class="price">999.99 грн</p>
-										<a href="" class="button">Детальнее</a>
-									</div>
-									<div class="product__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius.</div>
-									<a href="" class="product__buy button">Купить за 999.99 грн</a>
-								</div>
-
-								<div class="catalog__product product _hidden">
-									<div class="product__preview"><img class="lazy" data-src="img/product-images/product_3.png" alt="product"></div>
-									<p class="product__title">Кроксы</p>
-									<div class="product__price">
-										<p class="price">999.99 грн</p>
-										<a href="" class="button">Детальнее</a>
-									</div>
-									<div class="product__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius.</div>
-									<a href="" class="product__buy button">Купить за 999.99 грн</a>
-								</div>
-
-								<div class="catalog__product product _hidden">
-									<div class="product__preview"><img class="lazy" data-src="img/product-images/product_4.png" alt="product"></div>
-									<p class="product__title">Кроксы</p>
-									<div class="product__price">
-										<p class="price">999.99 грн</p>
-										<a href="" class="button">Детальнее</a>
-									</div>
-									<div class="product__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius.</div>
-									<a href="" class="product__buy button">Купить за 999.99 грн</a>
-								</div>
-
-								<div class="catalog__product product _hidden">
-									<div class="product__preview"><img class="lazy" data-src="img/product-images/product_2.png" alt="product"></div>
-									<p class="product__title">Кроксы</p>
-									<div class="product__price">
-										<p class="price">999.99 грн</p>
-										<a href="" class="button">Детальнее</a>
-									</div>
-									<div class="product__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius.</div>
-									<a href="" class="product__buy button">Купить за 999.99 грн</a>
-								</div>
-
-								<div class="catalog__product product _hidden">
-									<div class="product__preview"><img class="lazy" data-src="img/product-images/product_1.png" alt="product"></div>
-									<p class="product__title">Кроксы</p>
-									<div class="product__price">
-										<p class="price">999.99 грн</p>
-										<a href="" class="button">Детальнее</a>
-									</div>
-									<div class="product__text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Paesent vitae metus varius.</div>
-									<a href="" class="product__buy button">Купить за 999.99 грн</a>
-								</div>
-
-							</div>
-
-							<a href="" class="button catalog__all-products">Смотреть всё</a>
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="target" id="s-target">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-
-							<img class="target__bg lazy" data-src="img/target__bg.svg" alt="Logo">
-
-							<div class="target__wrapper">
-
-								<h2 class="h2">Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение</h2>
-
-								<p>существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт реализация намеченных плановых заданий влечет за собой процесс внедрения</p>
-
-								<h3 class="h3">И модернизации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянный количественный</h3>
-
-								<p>рост и сфера нашей активности представляет собой интересный эксперимент проверки модели развития. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Равным образом рамки и место</p>
-
-								<p>существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт реализация намеченных плановых заданий влечет за собой процесс внедрения</p>
-
-								<h3 class="h3">И модернизации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянный количественный</h3>
-
-								<p>рост и сфера нашей активности представляет собой интересный эксперимент проверки модели развития. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Равным образом рамки и место</p>
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</main>
+		<section class="support" id="s-support">
+			<div class="container">
+				<p class="support__title">
+					Специалисты техподдержки <span class="_bold">Happy<span class="_red">Tel рады вам помочь 24/7</span></span>
+				</p>
+			</div>
+		</section>
 
 		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-10 offset-xl-1">
-						<div class="footer__wrapper">
 
-							<div class="footer__inner _left">
+			<object data="img/footer/footer__bg.svg" type="image/svg+xml" class="footer__bg"></object>
 
-								<div class="logo">
-									<img src="img/logo.svg" alt="Logo">
-									<p>Полный комплекс услуг по работе с китаем</p>
-								</div>
+			<div class="container _space-between">
 
-								<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at erat sit amet libero euismod dapibus. Quisque erat erat, lobortis at eleifend</p>
-
-								<p class="copyrights">
-									2020 (с) Smart Trek <br> все права защищены
-								</p>
-
-							</div>
-
-							<div class="footer__inner _right">
-
-								<div class="footer__menu">
-
-									<ul class="list footer__contacts _mobile">
-										<h5 class="h5">Контакты</h5>
-										<div class="_border-left">
-											<li class="address-mail"><span class="address">Одесса, Военный спуск, 9. Оф. 23 </span> <span class="mail">smarttrek@gmail.com</span></li>
-
-											<li class="phones">
-												<div>
-													<a href="tel:">+38 (066)39 38 888</a>
-													<a href="tel:">+38 (066)39 38 888</a>
-													<a href="tel:">+38 (066)39 38 888</a>
-												</div>
-											</li>
-
-											<li>
-												<a href=""><img src="img/icons/telegram.svg" alt="telegram"></a>
-												<a href=""><img src="img/icons/viber.svg" alt="viber"></a>
-											</li>
-										</div>
-									</ul>
-
-									<ul class="list list-1">
-										<h5 class="h5">О товаре</h5>
-										<div class="_border-left">
-											<li><a href="">Поиск товара</a></li>
-											<li><a href="">Выкуп товара</a></li>
-											<li><a href="">Доставка товара</a></li>
-											<li><a href="">Оплата товара</a></li>
-											<li><a href="">Оплата товара</a></li>
-											<li><a href="">Оплата товара</a></li>
-										</div>
-									</ul>
-
-									<ul class="list list-2">
-										<h5 class="h5">Информация</h5>
-										<div class="_border-left">
-											<li><a href="">Главная</a></li>
-											<li><a href="">О нас</a></li>
-											<li><a href="">Контакты</a></li>
-											<li><a href="">Контакты</a></li>
-											<li><a href="">Контакты</a></li>
-											<li><a href="">Контакты</a></li>
-										</div>
-									</ul>
-
-									<ul class="list list-3">
-										<h5 class="h5">Заказ</h5>
-										<div class="_border-left">
-											<li><a href="">Оформить заказ</a></li>
-											<li><a href="">Оформить заказ</a></li>
-											<li><a href="">Оформить заказ</a></li>
-											<li><a href="">Оформить заказ</a></li>
-											<li><a href="">Оформить заказ</a></li>
-											<li><a href="">Оформить заказ</a></li>
-										</div>
-									</ul>
-
-									<ul class="list footer__contacts">
-										<h5 class="h5">Контакты</h5>
-										<li><a href="tel:">+38 (066)39 38 888</a></li>
-										<li><a href="tel:">+38 (066)39 38 888</a></li>
-										<li><a href="tel:">+38 (066)39 38 888</a></li>
-										<li>smarttrek@gmail.com</li>
-										<li>Одесса, Военный спуск, <br> 9. Оф. 23 </li>
-										<li>
-											<a href=""><img src="img/icons/telegram.svg" alt="telegram"></a>
-											<a href=""><img src="img/icons/viber.svg" alt="viber"></a>
-										</li>
-									</ul>
-
-									<div class="footer__addition">
-										<img src="img/cards.png" alt="Cards">
-										<a href=".pop-up__callback" class="button magnific-popup">Обратный звонок</a>
-									</div>
-
-								</div>
-							</div>
-
-						</div>
-						<p class="copyrights _mobile">
-							<img src="img/logo.svg" alt="Logo">
-							<span>©2020 <br> все права защищены</span>
-						</p>
-					</div>
+				<div class="col">
+					<a href="" class="footer__logo"><img src="img/logo_white.svg" alt="Logo"></a>
+					<a href="" class="footer__logo _mobile"><img src="img/logo_white_2.svg" alt="Logo"></a>
 				</div>
+
+				<div class="col">
+					<ul class="footer__menu">
+						<li><a class="footer__text" href="">О компании</a></li>
+						<li><a class="footer__text" href="">Условия</a></li>
+						<li><a class="footer__text" href="">Как пользоваться</a></li>
+						<li><a class="footer__text" href="">Контакты</a></li>
+						<li><a class="footer__text" href="">Тарифы</a></li>
+					</ul>
+				</div>
+
+				<div class="col">
+					<p class="footer__heading">Мы в социальных сетях</p>
+					<ul class="_direction-row">
+						<li><a href="#" class="header__social-links"><img src="img/icons/instagram.svg" alt="Instagram"></a></li>
+						<li><a href="#" class="header__social-links"><img src="img/icons/facebook.svg" alt="facebook"></a></li>
+						<li><a href="#" class="header__social-links"><img src="img/icons/telegram.svg" alt="telegram"></a></li>
+					</ul>
+				</div>
+
+				<div class="col">
+					<p class="footer__heading">Оплата</p>
+					<ul class="_direction-row footer__payment">
+						<li><a href="#"><img src="img/footer/payme.png" alt="payme"></a></li>
+						<li><a href="#"><img src="img/footer/Oclick.png" alt="Oclick"></a></li>
+						<li><a href="#"><img src="img/footer/visa.png" alt="visa"></a></li>
+						<li><a href="#"><img src="img/footer/master.png" alt="master"></a></li>
+					</ul>
+				</div>
+
+				<div class="col">
+					<p class="footer__heading">Контакты</p>
+					<ul class="footer__contacts">
+						<li><img src="img/footer/phone.png" alt="phone"><span class="footer__text">+99899 999 99 99</span></li>
+						<li><img src="img/footer/location.svg" alt="location"><span class="footer__text">Адрес офиса</span></li>
+						<li><img src="img/footer/email.svg" alt="email"><span class="footer__text">Эл.почта</span></li>
+					</ul>
+				</div>
+
 			</div>
 		</footer>
-
-		<script src="libs/jquery/dist/jquery.min.js"></script>
-		<script src="libs/touch-swipe-jquery/jquery.touchSwipe.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="libs/magnific-popup/jquery.magnific-popup.js"></script>
-		<script src="libs/aos-master/aos.js"></script>
-		<script src="libs/slick/slick.min.js"></script>
-		<script src="libs/readmore/readmore.min.js"></script>
-		<script src="libs/custom-scrollbar/jquery.mCustomScrollbar.js"></script>
-		<script src="js/lazyload.min.js"></script>
-		<script src="js/scripts.min.js"></script>
-
+		
+<!-- <div style="height: 1000px;"></div> -->
 
 	</body>
 
