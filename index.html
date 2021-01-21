@@ -16,6 +16,8 @@
 		
 		<link rel="stylesheet" href="css/styles.min.css">
 		<script defer src="js/scripts.min.js"></script>
+		<script defer src="js/preloader.js"></script>
+		
 
 		<script async defer src="https://kit.fontawesome.com/55e0136003.js" crossorigin="anonymous"></script>
 
@@ -24,15 +26,44 @@
 
 	<body class="ishome">
 
+		<div class="preloader">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-8 -8 64 84" shape-rendering="crispEdges">
+	  
+			  <defs>
+			    <pattern id="pattern" width="8" height="8" patternUnits="userSpaceOnUse" x="-4" y="-4">
+			      <path d="M 0 0 L8 0 8 8 0 8 z" fill="none"></path>
+			    </pattern>
+			  </defs>
+			    
+			  <g 
+			     class="snake-group"
+			     stroke-linejoin="miter" 
+			     stroke-linecap="square" 
+			     stroke-width="8"
+			     fill="none">
+			    
+			    <path class="dot dot-1" d="M28,48 l8,0z" />
+			    <path class="dot dot-2" d="M-4,48 l8,0z" />
+			    <path class="dot dot-3" d="M4,16 l8,0z" />
+			    
+			    <path class="snake"
+			          d="M0 16 h48 v16 H32 v32 H0 V48 h16 V0 H0 v16"/>
+			    
+			  </g>
+			  
+			  <rect x="-4.5" y="-4.5" width="57" height="73" fill="url(#pattern)"></rect>
+			</svg>
+		</div>
+
 		<div class="main-screen__background">
 
-			<div class="main-screen__background-image"></div>
+			<div class="main-screen__background-image" data-aos="fade-up" data-aos-delay="2200" data-aos-duration="3000"></div>
 
 			<div class="main-screen__image">
-				<img src="img/main-page/joystick.png" alt="Joystick">
+				<img src="img/main-page/joystick.png" alt="Joystick" data-aos="zoom-in" data-aos-delay="2800">
 			</div>
 
-			<header class="header">
+			<header class="header" data-aos="fade-down" data-aos-delay="2200">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 header__wrapper">
@@ -51,10 +82,10 @@
 
 									<div class="close-menu _rotate"><img src="img/icons/close-menu.svg" alt="X"></div>
 
-									<li><a href="#">Services</a></li>
-									<li><a href="#">Projects</a></li>
-									<li><a href="#">Join Us</a></li>
-									<li><a href="#">Contact Us</a></li>
+									<li><a href="about_us.html">About Us</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="works.html">Projects</a></li>
+									<li><a href="join_us.html">Join Us</a></li>
 
 									<ul class="header__social-links">
 
@@ -89,7 +120,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-12">
-								<div class="main-screen__wrapper">
+								<div class="main-screen__wrapper" data-aos="fade-down" data-aos-delay="2400">
 
 									<h1 class="h1">
 										<div class="glitch _top">Creating game<span>play</span></div> 
@@ -99,12 +130,12 @@
 
 									<div class="main-screen__buttons">
 										<a href="#" class="button"><span>Contact Us</span></a>
-										<a href="#" class="button _transparent"><span>See projects <img src="img/icons/main-screen__eye.png" alt="Eye"></span></a>
+										<a href="works.html" class="button _transparent"><span>See projects <img src="img/icons/main-screen__eye.png" alt="Eye"></span></a>
 									</div>
 
 									<div class="main-screen__benefits">
 
-										<div class="benefit">
+										<div class="benefit" data-aos="fade-right" data-aos-delay="2600">
 											<img src="img/icons/main-screen__rocket.png" alt="Rocket" class="benefit__image rockat">
 											<div class="benefit__text">
 												<h5 class="h5">INNOVATIVE IDEAS</h5>
@@ -112,7 +143,7 @@
 											</div>
 										</div>
 
-										<div class="benefit">
+										<div class="benefit" data-aos="fade-right" data-aos-delay="2800">
 											<img src="img/icons/main-screen__tech-support.png" alt="Tech support" class="benefit__image tech">
 											<div class="benefit__text">
 												<h5 class="h5">DIVERSITY & VERSATILITY</h5>
@@ -133,7 +164,7 @@
 
 		</div>
 
-		<section class="wwa">
+		<section class="wwa" data-aos="fade-up">
 
 			<div class="wwa__line-wrapper line-animation">
 				<img src="img/main-page/wwa__line.png" alt="Line" class="wwa__line">
@@ -174,12 +205,12 @@
 			</div>
 		</section>
 
-		<!-- <section class="services">
+		<section class="tabs-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
 
-						<div class="services__tabs tabs">
+						<div class="tabs" data-aos="zoom-in-up">
 
 							<ul class="tabs__caption">
 								<li class="active">Capacities</li>
@@ -187,20 +218,195 @@
 								<li>Work models</li>
 							</ul>
 
-							<div class="tabs__content active">1</div>
+							<div class="tabs__content active">
+								<div class="tabs__slider tabs__slider-services">
 
-							<div class="tabs__content">2</div>
+									<div class="slide">
 
-							<div class="tabs__content">3</div>
+										<div class="img-container">
+											<img src="img/main-page/tabs__services-dev.png" alt="Image">
+										</div>
 
+										<h4 class="h4">Development</h4>
+
+										<p>Mobile Development</p>
+										<p>Web Development</p>
+										<p>Backend development</p>
+
+									</div>
+
+									<div class="slide">
+
+										<div class="img-container">
+											<img src="img/main-page/tabs__services-des.png" alt="Image">
+										</div>
+
+										<h4 class="h4">Design</h4>
+
+										<p>Game Design</p>
+										<p>Level Design</p>
+
+									</div>
+
+									<div class="slide">
+
+										<div class="img-container">
+											<img src="img/main-page/tabs__services-growth.png" alt="Image">
+										</div>
+
+										<h4 class="h4">Growth</h4>
+
+										<p>Game Economy & Analytics</p>
+										<p>Game Porting</p>
+										<p>Localization</p>
+
+									</div>
+
+									<div class="slide">
+										
+										<div class="img-container">
+											<img src="img/main-page/tabs__services-dev.png" alt="Image">
+										</div>
+
+										<h4 class="h4">Development</h4>
+
+										<p>Mobile Development</p>
+										<p>Web Development</p>
+										<p>Backend development</p>
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class="tabs__content">
+								<div class="tabs__slider tabs__slider-services">
+
+									<div class="slide">
+
+										<div class="img-container">
+											<img src="img/main-page/tabs__services-dev.png" alt="Image">
+										</div>
+
+										<h4 class="h4">Development</h4>
+
+										<p>Mobile Development</p>
+										<p>Web Development</p>
+										<p>Backend development</p>
+
+									</div>
+
+									<div class="slide">
+
+										<div class="img-container">
+											<img src="img/main-page/tabs__services-des.png" alt="Image">
+										</div>
+
+										<h4 class="h4">Design</h4>
+
+										<p>Game Design</p>
+										<p>Level Design</p>
+
+									</div>
+
+									<div class="slide">
+
+										<div class="img-container">
+											<img src="img/main-page/tabs__services-growth.png" alt="Image">
+										</div>
+
+										<h4 class="h4">Growth</h4>
+
+										<p>Game Economy & Analytics</p>
+										<p>Game Porting</p>
+										<p>Localization</p>
+
+									</div>
+
+									<div class="slide">
+
+										<div class="img-container">
+											<img src="img/main-page/tabs__services-dev.png" alt="Image">
+										</div>
+
+										<h4 class="h4">Development</h4>
+
+										<p>Mobile Development</p>
+										<p>Web Development</p>
+										<p>Backend development</p>
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class="tabs__content">
+								<div class="tabs__slider tabs__slider-services">
+
+									<div class="slide work">
+
+										<div class="img-container">
+											<img src="img/main-page/tabs__works-dollar.png" alt="Image">
+										</div>
+
+										<h4 class="h4">Fixed price</h4>
+
+										<p>Fixed Price Projects are planned and delivered over multiple milestones, taking advantage of all our time-tested proven development, communication & management methods, tools and experience from 10+ years</p>
+
+									</div>
+
+									<div class="slide work">
+
+										<div class="img-container">
+											<img src="img/main-page/tabs__works-group.png" alt="Image">
+										</div>
+
+										<h4 class="h4">Dedicated team</h4>
+
+										<p>Setup and manage the remote team that will fully cover your needs within game development. We guarantee best talents that match your business needs.</p>
+
+									</div>
+
+									<div class="slide work">
+
+										<div class="img-container">
+											<img src="img/main-page/tabs__works-growth.png" alt="Image">
+										</div>
+
+										<h4 class="h4">Revenue share</h4>
+
+										<p>Want to save time and cost? Select the Revenue Share option to share the possible risks and gains with our team. This could be a good option for developing</p>
+
+									</div>
+
+									<div class="slide work">
+
+										<div class="img-container">
+											<img src="img/main-page/tabs__works-group.png" alt="Image">
+										</div>
+
+										<h4 class="h4">Dedicated team</h4>
+
+										<p>Setup and manage the remote team that will fully cover your needs within game development. We guarantee best talents that match your business needs.</p>
+
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+						<div class="tabs-section__buttons">
+							<a href="#" class="button"><span>Contacts Us</span></a>
+							<a href="#" class="button _transparent"><span>Learn more</span></a>
 						</div>
 
 					</div>
 				</div>
 			</div>
-		</section> -->
+		</section>
 
-		<section class="works">
+		<section class="works" data-aos="fade-up">
 
 			<div class="works__line-wrapper line-animation">
 				<img src="img/main-page/works__line.png" alt="Line" class="works__line">
@@ -249,11 +455,12 @@
 		</section>
 
 		<section class="our-clients">
-			<div class="container">
+
+			<div class="container" data-aos="zoom-in-up">
 				<div class="row">
 					<div class="col-12">
 						
-						<h2 class="h2 glitch_2" data-text="our clients">our clients</h2>
+						<h2 class="h2 glitch_2 _center" data-text="our clients">our clients</h2>
 
 						<div class="our-clients__slider">
 							<div class="our-clients__slide"><img src="img/our_clients/logo_1.png" alt="Our client logo"></div>
@@ -268,6 +475,14 @@
 							<div class="our-clients__slide"><img src="img/our_clients/logo_4.png" alt="Our client logo"></div>
 							<div class="our-clients__slide"><img src="img/our_clients/logo_5.png" alt="Our client logo"></div>
 						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="container review__container" data-aos="zoom-in-up">
+				<div class="row">
+					<div class="col-12">
 
 						<div class="review__slider">
 
@@ -332,13 +547,41 @@
 					</div>
 				</div>
 			</div>
+
 		</section>
 
-		<section class="contact-link">
-			<div class="contact-link__image"></div>
+		<section class="tech" data-aos="zoom-in-up">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 contact-link__wrapper">
+					<div class="col-12">
+
+						<h2 class="h2 glitch_2 _center" data-text="Technologies">Technologies</h2>
+
+						<div class="tech__slider">
+							<div class="tech__slide"><img src="img/technologies/logo_1.png" alt="Technology logo"></div>
+							<div class="tech__slide"><img src="img/technologies/logo_2.png" alt="Technology logo"></div>
+							<div class="tech__slide"><img src="img/technologies/logo_3.png" alt="Technology logo"></div>
+							<div class="tech__slide"><img src="img/technologies/logo_4.png" alt="Technology logo"></div>
+							<div class="tech__slide"><img src="img/technologies/logo_5.png" alt="Technology logo"></div>
+
+							<div class="tech__slide"><img src="img/technologies/logo_1.png" alt="Technology logo"></div>
+							<div class="tech__slide"><img src="img/technologies/logo_2.png" alt="Technology logo"></div>
+							<div class="tech__slide"><img src="img/technologies/logo_3.png" alt="Technology logo"></div>
+							<div class="tech__slide"><img src="img/technologies/logo_4.png" alt="Technology logo"></div>
+							<div class="tech__slide"><img src="img/technologies/logo_5.png" alt="Technology logo"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="contact-link">
+			<div class="contact-link__image" data-aos="zoom-in"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 contact-link__wrapper" data-aos="zoom-in">
 						<h2 class="h2">Lets talk about your project</h2>
 						<a href="#" class="button"><span>Contact Us</span></a>
 					</div>
@@ -357,10 +600,10 @@
 
 							<ul class="footer__menu">
 
-								<li><a href="#">Services</a></li>
-								<li><a href="#">Projects</a></li>
-								<li><a href="#">Join Us</a></li>
-								<li><a href="#">Contact Us</a></li>
+								<li><a href="about_us.html">About Us</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="works.html">Projects</a></li>
+								<li><a href="join_us.html">Join Us</a></li>
 								<li><a href="#">Privacy Policy</a></li>
 
 								<ul class="footer__social-links">
