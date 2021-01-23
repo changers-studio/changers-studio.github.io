@@ -24,22 +24,39 @@
 
 	<body class="isnohome work-page">
 
+		<div class="contacts-form mfp-hide">
+
+			<h2 class="h2">Contact Us</h2>
+			<h5 class="h5">Leave us your message, we wil contact you shortly</h5>
+
+			<form class="form">
+
+      	<input type="text" class="form__item" name="Name" placeholder="Name..." autocomplete="off" required>
+      	<input type="email" class="form__item" name="Email" placeholder="Email..." autocomplete="off" required>
+
+      	<textarea name="Message" class="form__item" cols="30" rows="10" placeholder="Leave your message:" autocomplete="off"></textarea>
+
+      	<button class="button"><span>Submit</span></button>
+      	
+      </form>
+		</div>
+
 		<header class="header">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 header__wrapper">
 
-						<a href="index.html" class="header__logo"><img src="img/logo.png" alt="PlayJoy"></a>
+						<a href="index.html" class="header__logo"><img src="img/logo.png" alt="PlayJoy" data-aos="zoom-in"></a>
 							
 						<nav>
 
-							<div class="header__hamburger">
+							<div class="header__hamburger" data-aos="zoom-in">
 								<div class="line"></div>
 								<div class="line _short"></div>
 								<div class="line"></div>
 							</div>
 
-							<ul class="header__menu">
+							<ul class="header__menu" data-aos="zoom-in">
 
 								<div class="close-menu _rotate"><img src="img/icons/close-menu.svg" alt="X"></div>
 
@@ -47,6 +64,7 @@
 								<li><a href="services.html">Services</a></li>
 								<li><a href="works.html">Projects</a></li>
 								<li><a href="join_us.html">Join Us</a></li>
+								<li><a href=".contacts-form" class="button mafnific-popup"><span>Contact Us</span></a></li>
 
 								<ul class="header__social-links">
 
