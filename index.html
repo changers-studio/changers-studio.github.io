@@ -1,623 +1,951 @@
 <!DOCTYPE html>
-<html lang="en">
-
-	<head>
-
-		<meta charset="utf-8">
-
-		<title>PlayJoy | Home</title>
-		<meta name="description" content="PlayJoy - Your Reliable  Outsource Team">
-
-		<meta name="viewport" content="width=device-width">
-		<meta name="format-detection" content="telephone=no">
-
-		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-		
-		<link rel="stylesheet" href="css/styles.min.css">
-		<script defer src="js/scripts.min.js"></script>
-		<script defer src="js/preloader.js"></script>
-		
-
-		<script async defer src="https://kit.fontawesome.com/55e0136003.js" crossorigin="anonymous"></script>
-
-
-	</head>
-
-	<body class="ishome">
-
-		<div class="preloader">
-			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-8 -8 64 84" shape-rendering="crispEdges">
-	  
-			  <defs>
-			    <pattern id="pattern" width="8" height="8" patternUnits="userSpaceOnUse" x="-4" y="-4">
-			      <path d="M 0 0 L8 0 8 8 0 8 z" fill="none"></path>
-			    </pattern>
-			  </defs>
-			    
-			  <g 
-			     class="snake-group"
-			     stroke-linejoin="miter" 
-			     stroke-linecap="square" 
-			     stroke-width="8"
-			     fill="none">
-			    
-			    <path class="dot dot-1" d="M28,48 l8,0z" />
-			    <path class="dot dot-2" d="M-4,48 l8,0z" />
-			    <path class="dot dot-3" d="M4,16 l8,0z" />
-			    
-			    <path class="snake"
-			          d="M0 16 h48 v16 H32 v32 H0 V48 h16 V0 H0 v16"/>
-			    
-			  </g>
-			  
-			  <rect x="-4.5" y="-4.5" width="57" height="73" fill="url(#pattern)"></rect>
-			</svg>
-		</div>
-
-		<div class="contacts-form mfp-hide">
-
-			<h2 class="h2">Contact Us</h2>
-			<h5 class="h5">Leave us your message, we wil contact you shortly</h5>
-
-			<form class="form">
-
-      	<input type="text" class="form__item" name="Name" placeholder="Name..." autocomplete="off" required>
-      	<input type="email" class="form__item" name="Email" placeholder="Email..." autocomplete="off" required>
-
-      	<textarea name="Message" class="form__item" cols="30" rows="10" placeholder="Leave your message:" autocomplete="off"></textarea>
-
-      	<button class="button"><span>Submit</span></button>
-      	
-      </form>
-		</div>
-
-		<div class="main-screen__background">
-
-			<div class="main-screen__background-image" data-aos="fade-down" data-aos-delay="2200" data-aos-duration="3000"></div>
-
-			<div class="main-screen__image">
-				<img src="img/main-page/joystick.png" alt="Joystick" data-aos="zoom-in" data-aos-delay="2800">
-			</div>
-
-			<header class="header">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 header__wrapper">
-
-							<img src="img/logo.png" alt="PlayJoy" class="header__logo" data-aos="zoom-in" data-aos-delay="2200">
-								
-							<nav>
-
-								<div class="header__hamburger" data-aos="zoom-in" data-aos-delay="2400">
-									<div class="line"></div>
-									<div class="line _short"></div>
-									<div class="line"></div>
-								</div>
-
-								<ul class="header__menu" data-aos="zoom-in" data-aos-delay="2400">
-
-									<div class="close-menu _rotate"><img src="img/icons/close-menu.svg" alt="X"></div>
-
-									<li><a href="about_us.html">About Us</a></li>
-									<li><a href="services.html">Services</a></li>
-									<li><a href="works.html">Projects</a></li>
-									<li><a href="join_us.html">Join Us</a></li>
-									<li><a href=".contacts-form" class="button magnific-popup"><span>Contact Us</span></a></li>
-
-									<ul class="header__social-links">
-
-										<li>
-											<a href="#">
-												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m512 256c0-141.4-114.6-256-256-256s-256 114.6-256 256 114.6 256 256 256c1.5 0 3 0 4.5-.1v-199.2h-55v-64.1h55v-47.2c0-54.7 33.4-84.5 82.2-84.5 23.4 0 43.5 1.7 49.3 2.5v57.2h-33.6c-26.5 0-31.7 12.6-31.7 31.1v40.8h63.5l-8.3 64.1h-55.2v189.5c107-30.7 185.3-129.2 185.3-246.1z"/></g></svg>
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g>
-												<path xmlns="http://www.w3.org/2000/svg" d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm-74.390625 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0"/></g></svg>
-											</a>
-										</li>
-
-									</ul>
-
-								</ul>
-
-							</nav>
-
-						</div>
-					</div>
-				</div>
-			</header>
-
-			<section class="main-screen">
-
-				<div class="_flex-center">
-
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<div class="main-screen__wrapper" data-aos="fade-up" data-aos-delay="2400">
-
-									<h1 class="h1">
-										<div class="glitch _top">Creating game<span>play</span></div> 
-										<div class="glitch _bottom"> You En<span>joy</span></div>
-									</h1>
-
-
-									<div class="main-screen__buttons">
-										<a href=".contacts-form" class="button magnific-popup"><span>Contact Us</span></a>
-										<a href="works.html" class="button _transparent"><span>See projects <img src="img/icons/main-screen__eye.png" alt="Eye"></span></a>
-									</div>
-
-									<div class="main-screen__benefits">
-
-										<div class="benefit" data-aos="fade-right" data-aos-delay="2600">
-											<img src="img/icons/main-screen__rocket.png" alt="Rocket" class="benefit__image rockat">
-											<div class="benefit__text">
-												<h5 class="h5">INNOVATIVE IDEAS</h5>
-												<p>We come up with ideas for any genre and platform, with a development team ready to jump onboard and develop the game from scratch.</p>
-											</div>
-										</div>
-
-										<div class="benefit" data-aos="fade-right" data-aos-delay="2800">
-											<img src="img/icons/main-screen__tech-support.png" alt="Tech support" class="benefit__image tech">
-											<div class="benefit__text">
-												<h5 class="h5">DIVERSITY & VERSATILITY</h5>
-												<p>Engage our experience across tech stacks and development approaches, as well as game design and economy expertise.</p>
-											</div>
-										</div>
-
-									</div>
-
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-			</section>
-
-		</div>
-
-		<section class="wwa" data-aos="fade-up">
-
-			<div class="wwa__line-wrapper line-animation">
-				<img src="img/main-page/wwa__line.png" alt="Line" class="wwa__line">
-			</div>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-
-						<h2 class="h2 glitch_2" data-text="who we are">who we are</h2>
-
-						<p class="wwa__text"><span>PlayJoy Studios</span> is a rapidly growing software and game development company based in Kiev. Our team of experienced specialists excels at providing high quality game development services to publishers and game developers across the globe. We are always focused on delivering incredible products strictly on time. Our goal is making your vision a reality and building a strong long-term partnership.</p>
-
-						<div class="wwa__wrapper">
-							
-							<div class="wwa__box _bottom" data-aos="zoom-in">
-								<img src="img/main-page/wwa__publish.png" alt="Game programmer">
-								<h4 class="h4">publish more games</h4>
-								<p>Product mindset of our team combined with Agile processes is a perfect fit for swift kick-off & successful launch of new games in time</p>
-							</div>
-
-							<div class="wwa__box _middle" data-aos="zoom-in">
-								<img src="img/main-page/wwa__risks.png" alt="Brain storm">
-								<h4 class="h4">risks mitigation</h4>
-								<p>No worries: we’ll deliver a working game in time for you to test out the idea & mechanics live</p>
-							</div>
-
-							<div class="wwa__box _top" data-aos="zoom-in">
-								<img src="img/main-page/wwa__team.png" alt="People">
-								<h4 class="h4">creative team</h4>
-								<p>We are the team of experienced designers and developers, working to be in trend with latests updates and upgrades</p>
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="tabs-section">
-
-			<div class="bg-grad">
-				<div class="bg-grad_top"></div>
-				<div class="bg-grad_bottom"></div>
-			</div>
-
-			<div class="tabs-section__bg-image"></div>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-
-						<div class="tabs" data-aos="zoom-in-up">
-
-							<ul class="tabs__caption">
-								<li class="active">Capacities</li>
-								<li>Services</li>
-								<li>Work models</li>
-							</ul>
-
-							<div class="tabs__content active">
-								<div class="tabs__slider tabs__slider-services">
-
-									<div class="slide" data-aos="fade-up" data-aos-duration="1000">
-
-										<div class="img-container">
-											<img src="img/main-page/tabs__services-dev.png" alt="Image">
-										</div>
-
-										<h4 class="h4">Development</h4>
-
-										<p>Mobile Development</p>
-										<p>Web Development</p>
-										<p>Backend development</p>
-
-									</div>
-
-									<div class="slide" data-aos="fade-down" data-aos-duration="1000">
-
-										<div class="img-container">
-											<img src="img/main-page/tabs__services-des.png" alt="Image">
-										</div>
-
-										<h4 class="h4">Design</h4>
-
-										<p>Game Design</p>
-										<p>Level Design</p>
-
-									</div>
-
-									<div class="slide" data-aos="fade-up" data-aos-duration="1000">
-
-										<div class="img-container">
-											<img src="img/main-page/tabs__services-growth.png" alt="Image">
-										</div>
-
-										<h4 class="h4">Growth</h4>
-
-										<p>Game Economy & Analytics</p>
-										<p>Game Porting</p>
-										<p>Localization</p>
-
-									</div>
-
-								</div>
-							</div>
-
-							<div class="tabs__content">
-								<div class="tabs__slider tabs__slider-services">
-
-									<div class="slide">
-
-										<div class="img-container">
-											<img src="img/main-page/tabs__services-dev.png" alt="Image">
-										</div>
-
-										<h4 class="h4">Development</h4>
-
-										<p>Mobile Development</p>
-										<p>Web Development</p>
-										<p>Backend development</p>
-
-									</div>
-
-									<div class="slide">
-
-										<div class="img-container">
-											<img src="img/main-page/tabs__services-des.png" alt="Image">
-										</div>
-
-										<h4 class="h4">Design</h4>
-
-										<p>Game Design</p>
-										<p>Level Design</p>
-
-									</div>
-
-									<div class="slide">
-
-										<div class="img-container">
-											<img src="img/main-page/tabs__services-growth.png" alt="Image">
-										</div>
-
-										<h4 class="h4">Growth</h4>
-
-										<p>Game Economy & Analytics</p>
-										<p>Game Porting</p>
-										<p>Localization</p>
-
-									</div>
-
-								</div>
-							</div>
-
-							<div class="tabs__content">
-								<div class="tabs__slider tabs__slider-services">
-
-									<div class="slide work">
-
-										<div class="img-container">
-											<img src="img/main-page/tabs__works-dollar.png" alt="Image">
-										</div>
-
-										<h4 class="h4">Fixed price</h4>
-
-										<p>Fixed Price Projects are planned and delivered over multiple milestones, taking advantage of all our time-tested proven development, communication & management methods, tools and experience from 10+ years</p>
-
-									</div>
-
-									<div class="slide work">
-
-										<div class="img-container">
-											<img src="img/main-page/tabs__works-group.png" alt="Image">
-										</div>
-
-										<h4 class="h4">Dedicated team</h4>
-
-										<p>Setup and manage the remote team that will fully cover your needs within game development. We guarantee best talents that match your business needs.</p>
-
-									</div>
-
-									<div class="slide work">
-
-										<div class="img-container">
-											<img src="img/main-page/tabs__works-growth.png" alt="Image">
-										</div>
-
-										<h4 class="h4">Revenue share</h4>
-
-										<p>Want to save time and cost? Select the Revenue Share option to share the possible risks and gains with our team. This could be a good option for developing</p>
-
-									</div>
-
-								</div>
-							</div>
-
-						</div>
-
-						<div class="tabs-section__buttons" data-aos="zoom-in-up">
-							<a href=".contacts-form" class="button magnific-popup"><span>Contacts Us</span></a>
-							<a href="#" class="button _transparent"><span>Learn more</span></a>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="works" data-aos="fade-up">
-
-			<div class="works__line-wrapper line-animation">
-				<img src="img/main-page/works__line.png" alt="Line" class="works__line">
-			</div>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-
-						<div class="works__title">
-							<h2 class="h2 glitch_2" data-text="works">works</h2>
-						</div>
-
-						<p class="works__text">Check out our portfolio made with love and cookies</p>
-
-						<div class="works__wrapper">
-
-							<div class="works__diamonds" data-aos="zoom-in" data-aos-delay="1000">
-								<img src="img/main-page/works__diamonds.png" alt="Diamonds">
-							</div>
-							
-							<a href="works.html" class="works__box _1" data-aos="zoom-in">
-								<img src="img/main-page/works__game_1.png" alt="Game">
-							</a>
-
-							<a href="works.html" class="works__box _2" data-aos="zoom-in">
-								<img src="img/main-page/works__game_2.png" alt="Game">
-							</a>
-
-							<a href="works.html" class="works__box _3" data-aos="zoom-in">
-								<img src="img/main-page/works__game_3.png" alt="Game">
-							</a>
-
-							<a href="works.html" class="works__box _4" data-aos="zoom-in">
-								<img src="img/main-page/works__game_1.png" alt="Game">
-							</a>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<a href="#" class="button _transparent"><span>See projects <img src="img/icons/main-screen__eye.png" alt="Eye"></span></a>
-
-		</section>
-
-		<section class="our-clients">
-
-			<div class="container" data-aos="zoom-in-up">
-				<div class="row">
-					<div class="col-12">
-						
-						<h2 class="h2 glitch_2 _center" data-text="our clients">our clients</h2>
-
-						<div class="our-clients__slider">
-							<div class="our-clients__slide"><img src="img/our_clients/logo_1.png" alt="Our client logo"></div>
-							<div class="our-clients__slide"><img src="img/our_clients/logo_2.png" alt="Our client logo"></div>
-							<div class="our-clients__slide"><img src="img/our_clients/logo_3.png" alt="Our client logo"></div>
-							<div class="our-clients__slide"><img src="img/our_clients/logo_4.png" alt="Our client logo"></div>
-							<div class="our-clients__slide"><img src="img/our_clients/logo_5.png" alt="Our client logo"></div>
-
-							<div class="our-clients__slide"><img src="img/our_clients/logo_1.png" alt="Our client logo"></div>
-							<div class="our-clients__slide"><img src="img/our_clients/logo_2.png" alt="Our client logo"></div>
-							<div class="our-clients__slide"><img src="img/our_clients/logo_3.png" alt="Our client logo"></div>
-							<div class="our-clients__slide"><img src="img/our_clients/logo_4.png" alt="Our client logo"></div>
-							<div class="our-clients__slide"><img src="img/our_clients/logo_5.png" alt="Our client logo"></div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div class="container review__container" data-aos="zoom-in-up">
-				<div class="row">
-					<div class="col-12">
-
-						<div class="review__slider">
-
-							<div class="review">
-
-								<div class="review__top">
-									<span class="review__name">Pier Gameman</span>
-									<img src="img/our_clients/review__avatar.png" alt="Avatar" class="review__image">
-									<span class="review__position">CEO of Game Design studio Brasil</span>
-								</div>
-
-								<blockquote class="review__text">
-									Guys did a great job in developing a website for my studio! Everything was delivered according to the deadines. Communication went smoothly , me and my team were impressed by the energy and hign proffesionalism of the team. Highly reccomending PlayJoy studio for your project!
-								</blockquote>
-
-							</div>
-
-							<div class="review">
-
-								<div class="review__top">
-									<span class="review__name">Pier Gameman</span>
-									<img src="img/our_clients/review__avatar.png" alt="Avatar" class="review__image">
-									<span class="review__position">CEO of Game Design studio Brasil</span>
-								</div>
-
-								<blockquote class="review__text">
-									Guys did a great job in developing a website for my studio! Everything was delivered according to the deadines. Communication went smoothly , me and my team were impressed by the energy and hign proffesionalism of the team. Highly reccomending PlayJoy studio for your project!
-								</blockquote>
-
-							</div>
-
-							<div class="review">
-
-								<div class="review__top">
-									<span class="review__name">Pier Gameman</span>
-									<img src="img/our_clients/review__avatar.png" alt="Avatar" class="review__image">
-									<span class="review__position">CEO of Game Design studio Brasil</span>
-								</div>
-
-								<blockquote class="review__text">
-									Guys did a great job in developing a website for my studio! Everything was delivered according to the deadines. Communication went smoothly , me and my team were impressed by the energy and hign proffesionalism of the team. Highly reccomending PlayJoy studio for your project!
-								</blockquote>
-
-							</div>
-
-							<div class="review">
-
-								<div class="review__top">
-									<span class="review__name">Pier Gameman</span>
-									<img src="img/our_clients/review__avatar.png" alt="Avatar" class="review__image">
-									<span class="review__position">CEO of Game Design studio Brasil</span>
-								</div>
-
-								<blockquote class="review__text">
-									Guys did a great job in developing a website for my studio! Everything was delivered according to the deadines. Communication went smoothly , me and my team were impressed by the energy and hign proffesionalism of the team. Highly reccomending PlayJoy studio for your project!
-								</blockquote>
-
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-		</section>
-
-		<section class="tech" data-aos="zoom-in-up">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-
-						<h2 class="h2 glitch_2 _center" data-text="Technologies">Technologies</h2>
-
-						<div class="tech__slider">
-							<div class="tech__slide"><img src="img/technologies/logo_1.png" alt="Technology logo"></div>
-							<div class="tech__slide"><img src="img/technologies/logo_2.png" alt="Technology logo"></div>
-							<div class="tech__slide"><img src="img/technologies/logo_3.png" alt="Technology logo"></div>
-							<div class="tech__slide"><img src="img/technologies/logo_4.png" alt="Technology logo"></div>
-							<div class="tech__slide"><img src="img/technologies/logo_5.png" alt="Technology logo"></div>
-
-							<div class="tech__slide"><img src="img/technologies/logo_1.png" alt="Technology logo"></div>
-							<div class="tech__slide"><img src="img/technologies/logo_2.png" alt="Technology logo"></div>
-							<div class="tech__slide"><img src="img/technologies/logo_3.png" alt="Technology logo"></div>
-							<div class="tech__slide"><img src="img/technologies/logo_4.png" alt="Technology logo"></div>
-							<div class="tech__slide"><img src="img/technologies/logo_5.png" alt="Technology logo"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-
-		<section class="contact-link">
-			<div class="contact-link__image" data-aos="zoom-in"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-12 contact-link__wrapper" data-aos="zoom-in">
-						<h2 class="h2">Lets talk about your project</h2>
-						<a href=".contacts-form" class="button magnific-popup"><span>Contact Us</span></a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 footer__wrapper">
-						
-						<p class="footer__rights">Al rights reserved: <a href="#" target="_blank">contact@playjoystudios.com</a></p>
-
-						<nav>
-
-							<ul class="footer__menu">
-
-								<li><a href="about_us.html">About Us</a></li>
-								<li><a href="services.html">Services</a></li>
-								<li><a href="works.html">Projects</a></li>
-								<li><a href="join_us.html">Join Us</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-
-								<ul class="footer__social-links">
-
-									<li>
-										<a href="#">
-											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m512 256c0-141.4-114.6-256-256-256s-256 114.6-256 256 114.6 256 256 256c1.5 0 3 0 4.5-.1v-199.2h-55v-64.1h55v-47.2c0-54.7 33.4-84.5 82.2-84.5 23.4 0 43.5 1.7 49.3 2.5v57.2h-33.6c-26.5 0-31.7 12.6-31.7 31.1v40.8h63.5l-8.3 64.1h-55.2v189.5c107-30.7 185.3-129.2 185.3-246.1z"/></g></svg>
-										</a>
-									</li>
-
-									<li>
-										<a href="#">
-											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g>
-											<path xmlns="http://www.w3.org/2000/svg" d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm-74.390625 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0"/></g></svg>
-										</a>
-									</li>
-
-								</ul>
-
-							</ul>
-
-						</nav>
-
-					</div>
-				</div>
-			</div>
-		</footer>
-
-	</body>
-
+<html lang="eu">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-166755442-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-166755442-3');
+    </script>
+
+    <meta charset="utf-8" />
+
+    <title>Utopia | Mining</title>
+    <meta
+      name="description"
+      content="The easiest way to make money using mining! If you dream of stable earnings online, then CRP mining is what you need! This secure and well-trusted mining solution provides you with a simple way of earning money."
+    />
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/styles.min.css" />
+
+    <script
+      async
+      defer
+      src="https://kit.fontawesome.com/55e0136003.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- <div class="preloader">
+      <div class="preloader__box">
+        <img src="img/preloader.png" alt="logo" />
+        <div class="pulse"></div>
+      </div>
+    </div> -->
+
+    <div class="pop-up pop-up_download mfp-hide">
+      <h2 class="h2">download &lt;Utopia&gt;</h2>
+      <h3 class="h3">platform:</h3>
+
+      <div class="tabs">
+        <ul class="tabs__caption">
+          <li class="active">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.875966 3.0155C0.375537 3.07806 0 3.50346 0 4.00778V8.375C0 8.92728 0.447715 9.375 1 9.375H7.75C8.30229 9.375 8.75 8.92728 8.75 8.375V3.16403C8.75 2.56253 8.22282 2.09715 7.62597 2.17175L0.875966 3.0155Z"
+                fill="white"
+              />
+              <path
+                d="M10.876 1.7655C10.3755 1.82806 10 2.25346 10 2.75778V8.375C10 8.92729 10.4477 9.375 11 9.375H19C19.5523 9.375 20 8.92729 20 8.375V1.75778C20 1.15628 19.4728 0.690898 18.876 0.765504L10.876 1.7655Z"
+                fill="white"
+              />
+              <path
+                d="M11 10.625C10.4477 10.625 10 11.0727 10 11.625V17.2422C10 17.7465 10.3755 18.1719 10.876 18.2345L18.876 19.2345C19.4728 19.3091 20 18.8437 20 18.2422V11.625C20 11.0727 19.5523 10.625 19 10.625H11Z"
+                fill="white"
+              />
+              <path
+                d="M1 10.625C0.447715 10.625 0 11.0727 0 11.625V15.9922C0 16.4965 0.375536 16.9219 0.875965 16.9845L7.62597 17.8282C8.22282 17.9029 8.75 17.4375 8.75 16.836V11.625C8.75 11.0727 8.30229 10.625 7.75 10.625H1Z"
+                fill="white"
+              />
+            </svg>
+            <span>Windows</span>
+          </li>
+
+          <li>
+            <svg
+              width="18"
+              height="20"
+              viewBox="0 0 18 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.849 0C12.8956 0 12.9421 0 12.9913 0C13.1055 1.41044 12.5671 2.46432 11.9128 3.22751C11.2708 3.98542 10.3917 4.7205 8.96985 4.60897C8.875 3.21872 9.41424 2.24301 10.0676 1.48158C10.6736 0.771967 11.7846 0.140517 12.849 0Z"
+                fill="#AAAAAA"
+              />
+              <path
+                d="M17.1532 14.6806C17.1532 14.6947 17.1532 14.707 17.1532 14.7201C16.7536 15.9303 16.1836 16.9675 15.488 17.9301C14.8531 18.8039 14.075 19.9799 12.6856 19.9799C11.4851 19.9799 10.6876 19.2079 9.45722 19.1868C8.15568 19.1657 7.43992 19.8323 6.24991 20.0001C6.11379 20.0001 5.97766 20.0001 5.84417 20.0001C4.97033 19.8736 4.2651 19.1815 3.75134 18.558C2.23639 16.7155 1.0657 14.3355 0.8479 11.2897C0.8479 10.9911 0.8479 10.6934 0.8479 10.3948C0.940115 8.21505 1.99926 6.44278 3.40707 5.58387C4.15006 5.12719 5.17144 4.73813 6.30875 4.91202C6.79617 4.98755 7.29413 5.15441 7.73061 5.31952C8.14426 5.47848 8.66154 5.76039 9.15159 5.74546C9.48357 5.7358 9.81378 5.56279 10.1484 5.44072C11.1285 5.08679 12.0893 4.68104 13.3557 4.87162C14.8777 5.10172 15.9579 5.77796 16.6254 6.8213C15.3379 7.64069 14.32 8.87548 14.4939 10.9841C14.6485 12.8995 15.7621 14.0202 17.1532 14.6806Z"
+                fill="#AAAAAA"
+              />
+            </svg>
+            <span>macos</span>
+          </li>
+
+          <li>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.0105 16.0583C17.424 15.8181 17.1732 15.4994 17.1974 15.0238C17.2224 14.4686 16.9075 14.062 16.7579 13.9013C16.8482 13.5562 17.1123 12.3621 16.7581 11.3249C16.3776 10.2147 15.2156 8.51914 14.0166 6.85244C13.5258 6.16798 13.5026 5.42397 13.4758 4.56246C13.4501 3.74075 13.4211 2.80933 12.9628 1.77391C12.4646 0.646496 11.4649 0 10.2198 0C9.47914 0 8.71888 0.231477 8.13382 0.635021C6.93578 1.46185 7.09414 3.26455 7.19893 4.45741C7.21329 4.62075 7.2268 4.77505 7.23467 4.90679C7.30444 6.07506 7.24096 6.6908 7.15795 6.87795C7.10424 7.00024 6.83985 7.34831 6.56004 7.71684C6.27066 8.09796 5.9426 8.52996 5.67368 8.93252C5.35282 9.41691 5.0938 10.1573 4.84331 10.8733C4.66003 11.3973 4.48691 11.8921 4.31839 12.1879C3.99898 12.7568 4.07845 13.2873 4.14481 13.5325C4.02389 13.6165 3.8492 13.7819 3.70173 14.0936C3.5235 14.4739 3.16185 14.6783 2.40985 14.8229C2.06427 14.8936 1.82598 15.0389 1.70139 15.2548C1.52007 15.569 1.61883 15.9637 1.70893 16.2335C1.84204 16.6301 1.75909 16.8811 1.60827 17.3368C1.57352 17.442 1.53411 17.5611 1.49417 17.6924C1.43129 17.8997 1.45397 18.0882 1.56145 18.2526C1.84545 18.6867 2.67418 18.8399 3.5273 18.9406C4.03668 19.001 4.59419 19.2048 5.13341 19.4019C5.66174 19.595 6.20804 19.7946 6.70463 19.8552C6.78011 19.8647 6.85486 19.8695 6.92693 19.8695C7.6767 19.8695 8.01546 19.372 8.12287 19.1676C8.39219 19.1126 9.32104 18.9367 10.2784 18.913C11.2342 18.8858 12.159 19.0745 12.4209 19.1332C12.5033 19.2908 12.7204 19.6509 13.0665 19.8364C13.2567 19.9404 13.5215 20 13.7926 20C13.7927 20 13.7926 20 13.7927 20C14.0823 20 14.6331 19.9315 15.0691 19.4729C15.504 19.012 16.5906 18.4237 17.384 17.9941C17.5611 17.8982 17.7267 17.8085 17.872 17.7275C18.3177 17.4804 18.5609 17.1274 18.5392 16.7589C18.5211 16.4529 18.3185 16.1844 18.0105 16.0583ZM8.14359 15.9696C8.08812 15.5788 7.58536 15.1912 7.00313 14.7424C6.52706 14.3754 5.98745 13.9594 5.83879 13.6072C5.53158 12.8805 5.77374 11.6027 6.19597 10.9447C6.40463 10.6153 6.57506 10.1157 6.73991 9.63252C6.91788 9.11082 7.10195 8.5714 7.30778 8.33527C7.63375 7.96661 7.935 7.24929 7.98838 6.68398C8.29363 6.97539 8.76714 7.34516 9.20458 7.34516C9.27193 7.34516 9.33731 7.33638 9.3998 7.31874C9.69908 7.23231 10.1393 6.97795 10.565 6.73204C10.932 6.51998 11.3846 6.25847 11.5549 6.23466C11.8469 6.65395 13.5436 10.4088 13.717 11.6146C13.8542 12.5687 13.7093 13.3575 13.6364 13.6664C13.5778 13.6584 13.5079 13.6519 13.4344 13.6519C12.9619 13.6519 12.8367 13.9099 12.8041 14.0639C12.7203 14.4641 12.7115 15.7438 12.7106 16.0313C12.5397 16.2484 11.6755 17.2709 10.4348 17.4547C9.92938 17.5281 9.45744 17.5654 9.03212 17.5654C8.66858 17.5654 8.43658 17.5373 8.34025 17.5227L7.71677 16.8093C7.96261 16.6879 8.20838 16.4318 8.14359 15.9696ZM8.93475 4.20652C8.91527 4.21491 8.89612 4.2239 8.8773 4.23347C8.8754 4.19124 8.87101 4.14842 8.86425 4.10547C8.79619 3.71366 8.53638 3.42927 8.24661 3.42927C8.22517 3.42927 8.20359 3.43091 8.17992 3.43451C8.00753 3.46324 7.87231 3.59275 7.79821 3.77635C7.8632 3.37347 8.09146 3.07517 8.36228 3.07517C8.68032 3.07517 8.94898 3.50376 8.94898 4.01104C8.94898 4.07498 8.94432 4.13859 8.93475 4.20652ZM11.406 4.50862C11.4351 4.4159 11.4508 4.31557 11.4508 4.21144C11.4508 3.7515 11.159 3.39117 10.7865 3.39117C10.4224 3.39117 10.1262 3.75911 10.1262 4.21144C10.1262 4.24226 10.1277 4.27314 10.1306 4.30396C10.1113 4.29655 10.0925 4.28934 10.0742 4.28239C10.0323 4.1555 10.0111 4.02311 10.0111 3.88796C10.0111 3.33799 10.3626 2.89051 10.7947 2.89051C11.2268 2.89051 11.5783 3.33799 11.5783 3.88796C11.5783 4.11675 11.5152 4.33511 11.406 4.50862ZM11.0874 5.57905C11.0811 5.60686 11.0679 5.61918 10.9214 5.69538C10.8474 5.73387 10.7553 5.78181 10.6401 5.85197L10.5632 5.8986C10.2538 6.08614 9.52937 6.52542 9.33272 6.55119C9.19914 6.56916 9.11652 6.51735 8.93075 6.39112C8.88884 6.3626 8.84425 6.3323 8.79671 6.30181C8.46182 6.08207 8.24641 5.84004 8.22209 5.74542C8.33127 5.66102 8.60189 5.44981 8.74045 5.32476C9.0217 5.06325 9.30472 4.88751 9.44478 4.88751C9.45219 4.88751 9.45888 4.88803 9.46583 4.88934C9.63042 4.91839 10.0364 5.08043 10.3329 5.19872C10.47 5.25341 10.5883 5.30063 10.6716 5.33053C10.934 5.42063 11.0708 5.53591 11.0874 5.57905ZM13.4445 17.8001C13.5925 17.1325 13.763 16.2243 13.7354 15.6889C13.7291 15.5673 13.7183 15.4349 13.7079 15.3069C13.6884 15.0675 13.6595 14.7118 13.6893 14.6063C13.6952 14.6035 13.7018 14.6011 13.7091 14.5991C13.7103 14.9052 13.7768 15.5158 14.2651 15.7287C14.4106 15.7922 14.5769 15.8243 14.7593 15.8243C15.2484 15.8243 15.7911 15.5844 16.0134 15.3621C16.1443 15.2312 16.2544 15.0711 16.3315 14.9442C16.3484 14.9936 16.3587 15.0581 16.3533 15.1413C16.3242 15.5928 16.5437 16.1917 16.9612 16.4124L17.022 16.4444C17.1707 16.5224 17.5658 16.7298 17.5721 16.8282C17.5721 16.8282 17.5688 16.8398 17.5467 16.8602C17.4478 16.9507 17.0995 17.1285 16.7627 17.3005C16.1653 17.6056 15.4881 17.9513 15.184 18.2712C14.7558 18.7218 14.2714 19.0245 13.979 19.0245C13.9438 19.0245 13.9117 19.0201 13.8832 19.011C13.5655 18.912 13.3041 18.4537 13.4445 17.8001ZM2.61752 16.097C2.58513 15.9454 2.55956 15.8257 2.58703 15.7097C2.60697 15.6238 3.03103 15.5318 3.21215 15.4925C3.46677 15.4372 3.73012 15.3801 3.90232 15.2756C4.13517 15.1345 4.26127 14.8744 4.37249 14.6449C4.45301 14.4789 4.53616 14.3073 4.63511 14.251C4.64068 14.2477 4.64921 14.2439 4.66547 14.2439C4.85085 14.2439 5.23984 14.6336 5.46397 14.9824C5.52082 15.0703 5.62613 15.2465 5.74797 15.4505C6.11237 16.0602 6.61132 16.8953 6.87191 17.1752C7.10673 17.4268 7.48687 17.9105 7.39336 18.3254C7.3249 18.6473 6.96044 18.9091 6.87447 18.967C6.84326 18.9741 6.80463 18.9777 6.75919 18.9777C6.26043 18.9777 5.27315 18.5627 4.74272 18.3398L4.66423 18.3068C4.36803 18.1826 3.88448 18.1044 3.41687 18.0287C3.0448 17.9684 2.53529 17.886 2.45083 17.8115C2.38237 17.7347 2.46178 17.4851 2.53182 17.2648C2.58224 17.1065 2.63431 16.9429 2.66283 16.7715C2.70329 16.4982 2.65569 16.2757 2.61752 16.097Z"
+                fill="#AAAAAA"
+              />
+            </svg>
+            <span>linux</span>
+          </li>
+
+          <p class="_disable" id="tippy">ios/android</p>
+        </ul>
+
+        <div class="tabs__content active">
+          <h4 class="h4">UTOPIA for Windows</h4>
+
+          <p>For windows 7 and high</p>
+          <p>Translated into 29 languages</p>
+
+          <div class="flex-wrapper">
+            <div class="wrapper">
+              <a
+                href="https://update.u.is/downloads/windows/latest/UtopiaX64.exe"
+                onclick="gtag('event', 'Windows_64_min', {'event_category': 'download', 'event_label': 'Windows_64_min_eco'});"
+                download
+                class="button _offset"
+                >download version 64-bit (recommended)</a
+              >
+              <a
+                href="https://update.u.is/downloads/windows/latest/UtopiaX86.exe"
+                onclick="gtag('event', 'Windows_32_min', {'event_category': 'download', 'event_label': 'Windows_32_min_eco'});"
+                download
+                class="button"
+                >download version 32-bit</a
+              >
+            </div>
+
+            <div class="wrapper links">
+              <p class="links__title">Other links:</p>
+
+              <a href="https://u.is/en/faq.html#faq6" target="_blank"
+                >Installation help</a
+              >
+              <a href="https://support.u.is/" target="_blank">support portal</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs__content">
+          <h4 class="h4">UTOPIA for macOS</h4>
+
+          <p>For macOS 10.12 or higher</p>
+          <p>Translated into 29 languages</p>
+
+          <div class="flex-wrapper">
+            <div class="wrapper">
+              <a
+                href="https://update.u.is/downloads/macos/utopia-latest.dmg"
+                onclick="gtag('event', 'Macos_min', {'event_category': 'download', 'event_label': 'Macos_min_eco'});"
+                download
+                class="button _offset"
+                >download</a
+              >
+            </div>
+
+            <div class="wrapper links">
+              <p class="links__title">Other links:</p>
+
+              <a href="https://u.is/en/faq.html#faq6" target="_blank"
+                >Installation help</a
+              >
+              <a href="https://support.u.is/" target="_blank">support portal</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs__content">
+          <h4 class="h4">UTOPIA for Linux</h4>
+
+          <p>For Linux (64-bit only)</p>
+          <p>Translated into 29 languages</p>
+
+          <div class="flex-wrapper">
+            <div class="wrapper">
+              <a
+                href="https://update.u.is/downloads/linux/utopia-latest.amd64.deb"
+                onclick="gtag('event', 'Ubuntu_debian_min', {'event_category': 'download', 'event_label': 'Ubuntu_debian_min_eco'});"
+                download
+                class="button _offset"
+                >Ubuntu and Debian-based Linux Distributions</a
+              >
+              <a
+                href="https://update.u.is/downloads/linux/utopia-latest.x86_64.rpm"
+                onclick="gtag('event', 'Rhel_min', {'event_category': 'download', 'event_label': 'Rhel_min_eco'});"
+                download
+                class="button"
+                >RHEL AND RPM-BASED LINUX DISTRIBUTIONS</a
+              >
+            </div>
+
+            <div class="wrapper links">
+              <p class="links__title">Other links:</p>
+              <a
+                href="https://update.u.is/downloads/uam/linux/uam-latest.x86_64.rpm"
+                download
+                onclick="gtag('event', 'pop_rpm', {'event_category': 'download', 'event_label': 'pop_rpm_eco'});"
+                >Mining Bot for Linux (RPM)</a
+              >
+              <a
+                href="https://update.u.is/downloads/uam/linux/uam-latest_amd64.deb"
+                download
+                onclick="gtag('event', 'pop_deb', {'event_category': 'download', 'event_label': 'pop_deb_eco'});"
+                >Mining Bot for Linux (DEB)</a
+              >
+              <a href="https://u.is/en/faq.html#faq6" target="_blank"
+                >Installation help</a
+              >
+              <a href="https://support.u.is/" target="_blank">support portal</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ecosystem-header">
+      <img
+        src="img/ecosystem/ecosystem-logo.svg"
+        alt="Logo"
+        class="ecosystem-header__logo"
+      />
+
+      <ul class="ecosystem-header__menu">
+        <li>
+          <a href=""
+            ><img
+              src="img/ecosystem/ecosystem-messenger.svg"
+              alt="Messenger"
+            /><span>messenger</span></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="img/ecosystem/ecosystem-crypton.svg"
+              alt="Crypton"
+            /><span>cryptocurrency</span></a
+          >
+        </li>
+        <li>
+          <a href="" class="active"
+            ><img src="img/ecosystem/ecosystem-mining.png" alt="Mining" /><span
+              >mining</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><img src="img/ecosystem/ecosystem-poker.png" alt="Poker" /><span
+              >poker</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><img src="img/ecosystem/ecosystem-chess.png" alt="Chess" /><span
+              >Chess</span
+            ></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="container_fixed-bg">
+      <div class="ecosystem-header">
+        <img
+          src="img/ecosystem/ecosystem-logo.svg"
+          alt="Logo"
+          class="ecosystem-header__logo"
+        />
+
+        <ul class="ecosystem-header__menu">
+          <li>
+            <a href=""
+              ><img
+                src="img/ecosystem/ecosystem-messenger.svg"
+                alt="Messenger"
+              /><span>messenger</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="img/ecosystem/ecosystem-crypton.svg"
+                alt="Crypton"
+              /><span>cryptocurrency</span></a
+            >
+          </li>
+          <li>
+            <a href="" class="active"
+              ><img
+                src="img/ecosystem/ecosystem-mining.png"
+                alt="Crypton"
+              /><span>Mining</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="img/ecosystem/ecosystem-poker.png" alt="Poker" /><span
+                >poker</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="img/ecosystem/ecosystem-chess.png" alt="Chess" /><span
+                >Chess</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="container _fixed">
+        <div class="row">
+          <div class="col-12">
+            <div class="header__top-line top-line">
+              <img
+                src="img/ecosystem/ecosystem-logo_mobile.svg"
+                alt="Logo"
+                class="top-line__logo"
+              />
+
+              <nav>
+                <ul class="top-line__menu">
+                  <li>
+                    <a href="#s-header" class="menu-move">About</a>
+                  </li>
+                  <li>
+                    <a href="#s-benefits" class="menu-move">Benefits</a>
+                  </li>
+                  <li>
+                    <a href="#s-exchange" class="menu-move">Exchange</a>
+                  </li>
+                  <li>
+                    <a href="#s-ecosystem" class="menu-move">About Utopia</a>
+                  </li>
+                  <li>
+                    <a href="#s-ways" class="menu-move">More</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="top-line__buttons">
+                <a
+                  href=".pop-up_download"
+                  class="button top-line__button magnific-popup"
+                  ><img
+                    src="img/icons/download.svg"
+                    alt="download"
+                  />download</a
+                >
+                <a href="articles.html" class="top-line__button_secondary"
+                  >how to start</a
+                >
+              </div>
+
+              <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-menu__plug"></div>
+
+    <div class="sidebar-menu">
+      <div class="hamburger">
+        <img src="img/icons/close.svg" alt="X" />
+      </div>
+
+      <ul>
+        <li>
+          <a href="#s-header" class="menu-move">About</a>
+        </li>
+        <li>
+          <a href="#s-benefits" class="menu-move">Benefits</a>
+        </li>
+        <li>
+          <a href="#s-exchange" class="menu-move">Exchange</a>
+        </li>
+        <li>
+          <a href="#s-ecosystem" class="menu-move">About Utopia</a>
+        </li>
+        <li>
+          <a href="#s-ways" class="menu-move">More</a>
+        </li>
+      </ul>
+
+      <a href=".pop-up_download" class="button"
+        ><img src="img/icons/download.svg" alt="download" />download</a
+      >
+      <a href="articles.html" class="button_secondary">how to start</a>
+
+      <div class="wrapper">
+        <ul class="ecosystem-header__menu">
+          <li>
+            <a href="" class="active"
+              ><img src="img/ecosystem/ecosystem-messenger.svg" alt="Messenger"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="img/ecosystem/ecosystem-crypton.svg" alt="Crypton"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="img/ecosystem/ecosystem-mining.png" alt="Mining"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="img/ecosystem/ecosystem-poker.png" alt="Poker"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="img/ecosystem/ecosystem-chess.png" alt="Chess"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="header header_height" id="s-header">
+      <div class="header__shape">
+        <img
+          src="img/header__shape.png"
+          alt="Shape"
+          data-aos="zoom-in-right"
+          data-aos-duration="1500"
+          data-aos-delay="3000"
+        />
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header__top-line top-line">
+              <img
+                class="top-line__logo"
+                src="img/ecosystem/ecosystem-logo_mobile.svg"
+                alt="Site logo"
+              />
+
+              <nav>
+                <ul class="top-line__menu">
+                  <li
+                    data-aos="zoom-in"
+                    data-aos-delay="2500"
+                    data-aos-duration="500"
+                  >
+                    <a href="#s-header" class="menu-move">About</a>
+                  </li>
+                  <li
+                    data-aos="zoom-in"
+                    data-aos-delay="2600"
+                    data-aos-duration="500"
+                  >
+                    <a href="#s-benefits" class="menu-move">Benefits</a>
+                  </li>
+                  <li
+                    data-aos="zoom-in"
+                    data-aos-delay="2700"
+                    data-aos-duration="500"
+                  >
+                    <a href="#s-exchange" class="menu-move">Exchange</a>
+                  </li>
+                  <li
+                    data-aos="zoom-in"
+                    data-aos-delay="2800"
+                    data-aos-duration="500"
+                  >
+                    <a href="#s-ecosystem" class="menu-move">About Utopia</a>
+                  </li>
+                  <li
+                    data-aos="zoom-in"
+                    data-aos-delay="2900"
+                    data-aos-duration="500"
+                  >
+                    <a href="#s-ways" class="menu-move">More</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <div
+                class="top-line__buttons"
+                data-aos="zoom-in"
+                data-aos-delay="3000"
+                data-aos-duration="500"
+              >
+                <a
+                  href=".pop-up_download"
+                  class="button top-line__button magnific-popup"
+                  ><img
+                    src="img/icons/download.svg"
+                    alt="download"
+                  />download</a
+                >
+                <a href="articles.html" class="top-line__button_secondary"
+                  >how to start</a
+                >
+              </div>
+
+              <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__main">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <h1 class="h1" data-aos="fade-down" data-aos-delay="2500">
+                The easiest way to make money using mining
+              </h1>
+              <h4 class="h4" data-aos="fade-up" data-aos-delay="2500">
+                If you dream of stable earnings online, then
+                <span class="_highlight">CRP mining</span> is
+                <br />
+                what you need! This secure and well-trusted mining solution
+                <br />
+                provides you with a simple way of earning money.
+              </h4>
+
+              <div class="header__image_mobile" data-aos="zoom-in">
+                <img
+                  src="img/header__image_mobile.png"
+                  alt="Header image mobile"
+                />
+              </div>
+
+              <a
+                href="articles.html"
+                class="button"
+                data-aos="fade-up"
+                data-aos-delay="3000"
+              >
+                Start now <img src="img/button__bg-image.svg" alt="diamond"
+              /></a>
+            </div>
+          </div>
+
+          <div class="header__image" data-aos="zoom-in" data-aos-delay="3000">
+            <img src="img/header__image.png" alt="Header image" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="benefits" id="s-benefits">
+        <div class="benefits__background">
+          <img src="img/benefits/background.svg" alt="Bg" />
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="h2" data-aos="zoom-in">Main CRP mining benefits</h2>
+              <div class="benefits__wrapper">
+                <div class="benefits__box _left" data-aos="fade-up">
+                  <img
+                    src="img/benefits/box__background_left.svg"
+                    alt="Bg"
+                    class="bg"
+                  />
+
+                  <div class="benefits__image">
+                    <img src="img/benefits/bot.png" alt="Bot" />
+                  </div>
+                  <h4 class="h4">Unlimited number of bots</h4>
+                  <p>
+                    You can run as many bots as you want as long as each bot
+                    works on a separate host. The easiest way is to use
+                    <span> a VPS server </span> for this
+                  </p>
+                </div>
+                <div
+                  class="benefits__box _middle"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div class="benefits__image">
+                    <img src="img/benefits/tech.png" alt="Server" />
+                  </div>
+
+                  <h4 class="h4">Technology</h4>
+                  <p>
+                    We use <span>Proof-of-State</span> and
+                    <span>Proof-of-Connectivity</span> technologies for mining.
+                    They don’t slow your computer and use only a small amount of
+                    memory.
+                  </p>
+                </div>
+                <div
+                  class="benefits__box _right"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
+                  <img
+                    src="img/benefits/box__background_right.svg"
+                    alt="Bg"
+                    class="bg"
+                  />
+
+                  <div class="benefits__image">
+                    <img src="img/benefits/wallet.png" alt="Wallet" />
+                  </div>
+
+                  <h4 class="h4">Proof of Stake reward</h4>
+                  <p>
+                    You will receive Cryptons every 15 minutes (block generation
+                    time). You will also get <span>Proof of Stake</span> rewards
+                    on your Minimal Monthly Balance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="exchange" id="s-exchange">
+        <div class="exchange__background" data-aos="zoom-in">
+          <img src="img/exchange/background.png" alt="Background" />
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="exchange__wrapper">
+                <div
+                  class="exchange__image"
+                  data-aos="zoom-in"
+                  data-aos-delay="600"
+                >
+                  <img src="img/exchange/image.png" alt="Miner" />
+                </div>
+
+                <div class="exchange__text" data-aos="fade-right">
+                  <h3 class="h3">
+                    Internal Utopia P2P crypto exchange with the lowest fees to
+                    exchange or trade Cryptons
+                  </h3>
+                  <p>
+                    You don’t need to leave Utopia to start selling or trading
+                    Cryptons. The ecosystem has an internal
+                    <span>CRP cryptocurrency exchange</span> that provides a
+                    reliable and secure way to sell and exchange
+                    cryptocurrencies. Just enter your Utopia account, open the
+                    Idyll Browser, and type CRP on the search line. <br /><br />
+                    Now, you just have to register on the exchange and start
+                    trading
+                  </p>
+                  <a href="articles.html" class="button">
+                    Start now <img src="img/button__bg-image.svg" alt="diamond"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <article class="gradient">
+        <section class="ecosystem" id="s-ecosystem">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="h2" data-aos="zoom-in">
+                  Find out about other cool <span> Utopia P2P </span> features
+                </h2>
+                <h4 class="h4" data-aos="zoom-in">
+                  We have something to surprise you with. Our team has created
+                  other useful and reliable Utopia P2P features for messaging,
+                  playing games, and surfing. Make your online life easier and
+                  safer with the reliable features and perks of Utopia P2P
+                  ecosystem.
+                </h4>
+
+                <div class="ecosystem__slider" data-aos="fade-up">
+                  <a href="" class="ecosystem__slide">
+                    <div class="ecosystem__image">
+                      <img
+                        src="img/ecosystem/slider__messenger.png"
+                        alt="Messenger"
+                      />
+                    </div>
+
+                    <h5 class="h5">
+                      <img
+                        src="img/ecosystem/ecosystem-messenger.svg"
+                        alt="Messenger"
+                      /><span>Messenger</span>
+                    </h5>
+                    <p class="ecosystem__text">
+                      Fast and secure chatting place for instant data transfer
+                      and storage.
+                    </p>
+                  </a>
+
+                  <a href="" class="ecosystem__slide">
+                    <div class="ecosystem__image">
+                      <img src="img/ecosystem/slider__poker.png" alt="Poker" />
+                    </div>
+
+                    <h5 class="h5">
+                      <img
+                        src="img/ecosystem/ecosystem-poker.png"
+                        alt="Poker"
+                      /><span>Poker</span>
+                    </h5>
+                    <p class="ecosystem__text">
+                      Built-in chance to become wealthy playing online poker
+                      game.
+                    </p>
+                  </a>
+
+                  <a href="" class="ecosystem__slide">
+                    <div class="ecosystem__image">
+                      <img
+                        src="img/ecosystem/slider__crypton.png"
+                        alt="Crypton"
+                      />
+                    </div>
+
+                    <h5 class="h5">
+                      <img
+                        src="img/ecosystem/ecosystem-crypton.svg"
+                        alt="Crypton"
+                      /><span>Cryptocurrency</span>
+                    </h5>
+                    <p class="ecosystem__text">
+                      Internal cryptocurrency designed for secure financial
+                      operations.
+                    </p>
+                  </a>
+
+                  <a href="" class="ecosystem__slide">
+                    <div class="ecosystem__image">
+                      <img src="img/ecosystem/slider__chess.png" alt="Chess" />
+                    </div>
+
+                    <h5 class="h5">
+                      <img
+                        src="img/ecosystem/ecosystem-chess.png"
+                        alt="Chess"
+                      /><span>Chess</span>
+                    </h5>
+                    <p class="ecosystem__text">
+                      The game promotes using logical and abstract thinking
+                      simultaneously.
+                    </p>
+                  </a>
+
+                  <a href="" class="ecosystem__slide">
+                    <div class="ecosystem__image">
+                      <img
+                        src="img/ecosystem/slider__mining.png"
+                        alt="Mining"
+                      />
+                    </div>
+
+                    <h5 class="h5">
+                      <img
+                        src="img/ecosystem/ecosystem-mining.png"
+                        alt="Mining"
+                      /><span>Mining</span>
+                    </h5>
+                    <p class="ecosystem__text">
+                      Fast and secure chatting service for instant data transfer
+                      and storage.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="start" id="s-start">
+          <div class="start__background" data-aos="fade-up">
+            <img
+              src="img/start/sphere.png"
+              alt="Sphere"
+              class="start__sphere"
+              data-aos="zoom-in"
+            />
+
+            <div class="start__container">
+              <h2 class="h2">
+                Start mining <br />
+                and earning right now
+              </h2>
+              <h5 class="h5">
+                Get bonuses, invite friends and enjoy the <br />
+                benefits of mining!
+              </h5>
+              <a href="articles.html" class="button"
+                ><img src="img/button__bg-image.svg" alt="diamond" />Start
+                now</a
+              >
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article class="background">
+        <section class="ways" id="s-ways">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="h2" data-aos="zoom-in">
+                  Other ways to use Cryptons
+                </h2>
+
+                <div class="ways__wrapper">
+                  <div class="ways__text _top" data-aos="fade-left">
+                    <h3 class="h3">Play poker and multiply your Cryptons</h3>
+                    <p>
+                      If you want to earn even more Cryptons, you can win them
+                      by playing the Poker Game in Utopia P2P. A built-in
+                      <span> Texas Hold 'em </span> game provides the most
+                      secure and well-organized match games. You can earn money,
+                      train your brain, and have a good time with your friends
+                      and rivals in one place.
+                    </p>
+                    <a href="" class="button"
+                      ><img src="img/button__bg-image.svg" alt="diamond" />know
+                      more</a
+                    >
+                  </div>
+
+                  <div
+                    class="ways__image"
+                    data-aos="zoom-in"
+                    data-aos-delay="600"
+                  >
+                    <img src="img/ways/poker.png" alt="Poker" />
+                  </div>
+                </div>
+
+                <div class="wrapper">
+                  <div class="ways__wrapper _fill">
+                    <div
+                      class="ways__image"
+                      data-aos="zoom-in"
+                      data-aos-delay="600"
+                    >
+                      <img src="img/ways/private-finance.png" alt="Poker" />
+                    </div>
+                    <div class="ways__text _bottom" data-aos="fade-right">
+                      <h3 class="h3">
+                        Use it for private financial transactions
+                      </h3>
+                      <p>
+                        Using Cryptons, you can make any private financial
+                        payments fast and free. In addition, you don’t need to
+                        enter any personal data. The entire process is protected
+                        by multi-level blockchain encryption. Forget about bank
+                        cards and other online payment methods. Choose the most
+                        reliable and protected way.
+                      </p>
+                      <a href="" class="button"
+                        ><img
+                          src="img/button__bg-image.svg"
+                          alt="diamond"
+                        />know more</a
+                      >
+                    </div>
+                  </div>
+                  <div class="ways__under"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="start-crp" id="s-start-crp">
+          <div class="start-crp__container">
+            <h2 class="h2" data-aos="zoom-in">
+              Start
+              <span class="box">
+                <span>crp</span>
+                <img src="img/start/heading__span-box.svg" alt="Box" />
+              </span>
+
+              mining <br />
+              and earning right now
+            </h2>
+            <h5 class="h5" data-aos="zoom-in" data-aos-delay="300">
+              Get bonuses, invite friends and enjoy the <br />
+              benefits of mining!
+            </h5>
+            <a
+              href="articles.html"
+              class="button"
+              data-aos="zoom-in"
+              data-aos-delay="600"
+              ><img src="img/button__bg-image.svg" alt="diamond" />Start now</a
+            >
+          </div>
+        </section>
+
+        <footer class="footer">
+          Copyright © 2021 Utopia. All rights reserved.
+        </footer>
+      </article>
+    </main>
+
+    <script src="js/scripts.min.js"></script>
+    <!-- <script src="js/preloader.js"></script> -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+    <script type="text/javascript">
+      tippy('#tippy', {
+        content: 'In development',
+      });
+    </script>
+  </body>
 </html>
