@@ -12,9 +12,11 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="libs/hamburgers.css" />
+    <link rel="stylesheet" href="libs/aos-master/aos.css" />
     <link rel="stylesheet" href="css/styles.min.css" />
 
     <script defer src="js/scripts.min.js"></script>
+    <script defer src="libs/aos-master/aos.js"></script>
 
     <script
       async
@@ -28,7 +30,12 @@
     <header class="header">
       <div class="container">
         <div class="header__top-line">
-          <img src="img/logo.svg" alt="Alchemiq" class="logo" />
+          <img
+            src="img/logo.svg"
+            alt="Alchemiq"
+            class="logo"
+            data-aos="zoom-in"
+          />
 
           <div class="header__hamburger hamburger hamburger--squeeze">
             <span class="hamburger-box">
@@ -53,11 +60,15 @@
         </div>
 
         <div class="header__wrapper">
-          <h1 class="h1">ELEVATE YOUR SENSES</h1>
+          <h1 class="h1" data-aos="zoom-in" data-aos-delay="250">
+            ELEVATE YOUR SENSES
+          </h1>
           <img
             src="img/main__image.png"
             alt="Main image"
             class="header__image"
+            data-aos="zoom-in"
+            data-aos-delay="500"
           />
           <a href="#" class="button"><span>Request a Quote</span></a>
         </div>
@@ -67,14 +78,14 @@
     <main>
       <article class="clients-events">
         <div class="container clients-events__container">
-          <section class="clients">
+          <section class="clients" data-aos="fade-up">
             <h2 class="h2">Satisfiend Clients</h2>
             <div class="clients__container">
               <img src="img/clients/all-clients.png" alt="Clients" />
             </div>
           </section>
 
-          <section class="events">
+          <section class="events" data-aos="fade-up" data-aos-delay="200">
             <h2 class="h2">Recent Happening`s</h2>
             <div class="events__container">
               <div class="event">
@@ -106,7 +117,7 @@
 
       <article class="about">
         <div class="container">
-          <section class="about__section">
+          <section class="about__section" data-aos="zoom-in-up">
             <img src="img/about/image_1.png" alt="Image" class="about__image" />
             <div class="about__text">
               <h2 class="h2 about__title">
@@ -121,7 +132,7 @@
             </div>
           </section>
 
-          <section class="about__section">
+          <section class="about__section" data-aos="zoom-in-up">
             <img src="img/about/A.svg" alt="A" class="about__bg-a" />
 
             <div class="about__text">
@@ -138,7 +149,7 @@
             <img src="img/about/image_2.png" alt="Image" class="about__image" />
           </section>
 
-          <section class="about__section">
+          <section class="about__section" data-aos="zoom-in-up">
             <img src="img/about/image_3.png" alt="Image" class="about__image" />
             <div class="about__text">
               <h2 class="h2 about__title">
@@ -161,9 +172,15 @@
 
       <section class="ceo">
         <div class="container ceo__container">
-          <img src="img/ceo-image.png" alt="Ceo" class="ceo__image" />
+          <img
+            src="img/ceo-image.png"
+            alt="Ceo"
+            class="ceo__image"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          />
 
-          <div class="ceo__text">
+          <div class="ceo__text" data-aos="fade-right">
             <h3 class="ceo__title_under">behind the magic</h3>
 
             <h2 class="h2 ceo__title">Igor Zucowiek, Founder & CEO</h2>
@@ -179,7 +196,7 @@
       </section>
 
       <section class="reviews">
-        <div class="container reviews__container">
+        <div class="container reviews__container" data-aos="zoom-in-up">
           <div class="review">
             <div class="review__quotes">‘’</div>
             <p class="review__text">
@@ -210,7 +227,7 @@
         </div>
       </section>
 
-      <section class="instagram">
+      <section class="instagram" data-aos="fade-up">
         <div class="container">
           <h2 class="h2">Follow our jounrey</h2>
           <h3 class="h3">@alchemiq</h3>
