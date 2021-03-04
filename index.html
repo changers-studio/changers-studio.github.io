@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ru">
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Jogos Evoli | Cassinos Online</title>
+		<title>Kassa 24 | Главная</title>
 		<!-- <meta name="description" content=""> -->
 
 		<meta name="viewport" content="width=device-width" />
@@ -13,1035 +13,592 @@
 
 		<link rel="stylesheet" href="css/styles.min.css" />
 
-		<script defer src="js/scripts.min.js"></script>
-
 		<script
 			async
 			defer
 			src="https://kit.fontawesome.com/55e0136003.js"
 			crossorigin="anonymous"
 		></script>
+
+		<script defer src="js/scripts.min.js"></script>
 	</head>
 
 	<body>
+		<header id="header" class="header">
+			<div class="header__sidebar-plug"></div>
 
-		<div class="preloader">
-			<div class="stage-box">
-				<figure class="cube">
-					<div class="back">
-						<span class="circle two-1"></span>
-						<span class="circle two-2"></span>
-					</div>
-					<div class="top">
-						<span class="circle three-1"></span>
-						<span class="circle three-2"></span>
-						<span class="circle three-3"></span>
-					</div>
-					<div class="bottom">
-						<span class="circle four-1"></span>
-						<span class="circle four-2"></span>
-						<span class="circle four-3"></span>
-						<span class="circle four-4"></span>
-					</div>
-					<div class="left">
-						<span class="circle five-1"></span>
-						<span class="circle five-2"></span>
-						<span class="circle five-3"></span>
-						<span class="circle five-4"></span>
-						<span class="circle five-5"></span>   
-					</div>
-					<div class="right">
-						<span class="circle six-1"></span>
-						<span class="circle six-2"></span>
-						<span class="circle six-3"></span>
-						<span class="circle six-4"></span>
-						<span class="circle six-5"></span> 
-						<span class="circle six-6"></span>  
-					</div>
-					<div class="front">
-						<span class="circle"></span>
-					</div>
-				</figure>
-			</div>
-		</div>
-
-		<header class="header _height" id="header">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 header__align-center">
-						<div class="header__hamburger hamburger" data-aos="zoom-in" data-aos-delay="1500">
-							<div class="hamburger__inner">
-								<div class="hamburger__close"></div>
-								<div class="hamburger__line"></div>
-								<div class="hamburger__line _short"></div>
-								<div class="hamburger__line"></div>
+					<div class="col-12 header_flex">
+						<img
+							src="img/header/logo.svg"
+							alt="Kassa 24"
+							class="header__logo"
+						/>
+						<div class="header__sidebar">
+							<img src="img/header/sidebar-close.svg" alt="X" class="close" />
+
+							<ul class="header__menu menu">
+								<li class="menu__item">
+									<div class="menu__heading"><span>О программе</span></div>
+									<div class="menu__dropdown">
+										<a href="">Функционал ПРРО Kassa24</a>
+										<a href="">Настройка фискализации</a>
+										<a href="">Эквайринг</a>
+									</div>
+								</li>
+								<li class="menu__item">
+									<div class="menu__heading"><span>Онлайн кассы</span></div>
+									<div class="menu__dropdown">
+										<a href="">iMin M1 5"</a>
+										<a href="">iMin D2 10.1"</a>
+										<a href="imin_d2_pro.html">iMin D2 Pro10.1"</a>
+										<a href="">iMin M1 5"</a>
+										<a href="">iMin D3 15.6"</a>
+									</div>
+								</li>
+								<li class="menu__item">
+									<div class="menu__heading"><span>Приложения</span></div>
+									<div class="menu__dropdown">
+										<a href="">Интеграция с SMS Club</a>
+										<a href="">Клиентская база</a>
+										<a href="">Весовые товары</a>
+									</div>
+								</li>
+								<li class="menu__item">
+									<div class="menu__heading"><span>Поддержка</span></div>
+									<div class="menu__dropdown">
+										<a href="">Библиотека знаний</a>
+										<a href="">Онлайн чат</a>
+										<a href="">Удаленная настрока</a>
+										<a href="">Публичная оферта</a>
+									</div>
+								</li>
+								<li class="menu__item">
+									<div class="menu__heading"><span>О нас</span></div>
+									<div class="menu__dropdown">
+										<a href="">О компании</a>
+										<a href="">Новости</a>
+										<a href="">Контакты</a>
+									</div>
+								</li>
+							</ul>
+
+							<div class="header__wrapper_right">
+								<a href="#" class="header__cabinet">Личный кабинет</a>
+
+								<ul class="header__lang">
+									<li><a href="" class="_active">ru</a></li>
+									<li><a href="">ua</a></li>
+								</ul>
 							</div>
 						</div>
-						<img src="img/logo.png" alt="Jogos Evoli" class="header__logo" data-aos="zoom-in" data-aos-delay="1400" />
-						<img
-							src="img/logo_mobile.png"
-							alt="Jogos Evoli"
-							class="header__logo _mobile"
-							data-aos="zoom-in" data-aos-delay="1800"
-						/>
-						<nav class="header__menu">
-							<div class="aos-wrapper" data-aos="zoom-in" data-aos-delay="1500">
-								<a href="#header" class="menu-move">Home</a>
-							</div>
 
-								<div class="aos-wrapper" data-aos="zoom-in" data-aos-delay="1600">
-									<a href="#s-about" class="menu-move">Sobre nós</a>
-								</div>
-
-								<div class="aos-wrapper" data-aos="zoom-in" data-aos-delay="1700">
-									<a href="#s-stages" class="menu-move">Etapas de trabalho</a>
-								</div>
-
-								<div class="aos-wrapper" data-aos="zoom-in" data-aos-delay="1800">
-									<a href="#s-choice" class="menu-move">Cassino Online </a>
-								</div>
-
-								<div class="aos-wrapper" data-aos="zoom-in" data-aos-delay="1900">
-									<a href="#s-qualification" class="menu-move">Plataforma para salões</a>
-								</div>
-
-								<div class="aos-wrapper" data-aos="zoom-in" data-aos-delay="2000">
-									<a href="#s-gallery" class="menu-move">Galeria</a>
-								</div>
-						</nav>
-						<div class="aos-wrapper" data-aos="zoom-in" data-aos-delay="2100">
-							<a href="" class="header__whatsapp button"
-								><div class="icon-wrap">
-									<svg
-										width="27"
-										height="27"
-										viewBox="0 0 27 27"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M14.0101 3C12.0435 2.99954 10.1126 3.52567 8.41839 4.52367C6.72414 5.52167 5.32835 6.9551 4.37618 8.67489C3.42402 10.3947 2.95024 12.338 3.00413 14.3028C3.05803 16.2676 3.63761 18.182 4.68262 19.8471L4.94439 20.2631L3.83254 24.3207L7.99784 23.2289L8.3997 23.4673C10.0956 24.4709 12.0304 25.0003 14.0013 25H14.0057C16.9223 24.9968 19.7183 23.8368 21.7798 21.7748C23.8412 19.7127 24.9994 16.9172 25 14.0022C25.0006 11.0873 23.8435 8.29129 21.7829 6.22838C19.7223 4.16547 16.9267 3.00433 14.0101 3H14.0101ZM20.4836 18.7227C20.24 19.1244 19.9159 19.4715 19.5315 19.742C19.1472 20.0125 18.711 20.2006 18.2504 20.2945C17.555 20.4134 16.8415 20.3686 16.1665 20.1636C15.526 19.9647 14.8964 19.7323 14.2804 19.4671C11.9954 18.3211 10.0477 16.6011 8.62853 14.4758C7.85477 13.4917 7.38526 12.3032 7.2776 11.0562C7.26841 10.5414 7.36664 10.0303 7.56601 9.55551C7.76538 9.08072 8.06153 8.65264 8.43559 8.29855C8.54615 8.17253 8.6816 8.07072 8.83343 7.99953C8.98525 7.92835 9.15017 7.88932 9.31782 7.8849C9.5383 7.8849 9.75913 7.88694 9.95185 7.89658C10.155 7.90666 10.4277 7.81943 10.6963 8.4641C10.972 9.12586 11.6337 10.7529 11.7163 10.9184C11.7688 11.005 11.7987 11.1033 11.8036 11.2044C11.8084 11.3056 11.7879 11.4063 11.744 11.4975C11.6606 11.6962 11.5492 11.8819 11.4131 12.049C11.2477 12.2421 11.0656 12.48 10.9169 12.6282C10.7512 12.7931 10.5787 12.9719 10.7717 13.3028C11.2686 14.1528 11.8889 14.9245 12.6123 15.5928C13.397 16.2901 14.2973 16.8453 15.2729 17.2335C15.6037 17.3991 15.7967 17.3714 15.9897 17.1508C16.1827 16.9302 16.8168 16.1856 17.0372 15.8547C17.2577 15.5238 17.4783 15.5789 17.7815 15.6893C18.0848 15.7997 19.7115 16.5993 20.0424 16.7647C20.3733 16.9302 20.5938 17.0129 20.6765 17.1508C20.7671 17.6824 20.7001 18.2289 20.4836 18.7228V18.7227Z"
-											fill="#FEFFFF"
-										/>
-									</svg>
-								</div>
-								<span class="text-wrap">Write to WhatsApp</span>
-							</a>
+						<div class="header__hamburger">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
 
-		<div class="container_fixed header">
+		<section class="main-screen">
+			<div class="container">
+				<div class="row main-screen_flex">
+					<div class="col-lg-5">
+						<h1 class="h1">
+							Программный РРО Kassa24 <br />
+							комплексное решение для <br />
+							вашего бизнеса!
+						</h1>
+
+						<h5 class="h5">
+							Современный подход к фискализации и <br />
+							товарному учету.
+						</h5>
+
+						<a href="#" class="button">Получить консультацию</a>
+					</div>
+
+					<div class="col-lg-7">
+						<img
+							src="img/main-screen__img.svg"
+							alt="Kassa24 network"
+							class="main-screen__img"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="product-list" id="s-product-list">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 header__align-center">
-						<div class="header__hamburger hamburger">
-							<div class="hamburger__inner">
-								<div class="hamburger__close"></div>
-								<div class="hamburger__line"></div>
-								<div class="hamburger__line _short"></div>
-								<div class="hamburger__line"></div>
+					<div class="col-12">
+						<h2 class="h2">Линейка онлайн-касс</h2>
+						<div class="product-list__container">
+							<div class="product-list__item _accent _1">
+								<h2 class="h2">iMin M1 5"</h2>
+								<img src="img/product-list/cashbox_1.png" alt="iMin M1 5''" />
+								<a href="" class="button"><span>узнать больше</span></a>
+							</div>
+
+							<div class="product-list__item _2">
+								<h2 class="h2">iMin M1 5"</h2>
+								<img
+									src="img/product-list/cashbox_2.png"
+									alt="iMin iMin M1 5''"
+								/>
+								<a href="" class="button _accent"><span>узнать больше</span></a>
+							</div>
+
+							<div class="product-list__item _3">
+								<h2 class="h2">iMin D2 10.1"</h2>
+								<img
+									src="img/product-list/cashbox_3.png"
+									alt="iMin D2 10.1''"
+								/>
+								<a href="" class="button _accent"><span>узнать больше</span></a>
+							</div>
+
+							<div class="product-list__item _accent _4">
+								<h2 class="h2">iMin D3 15.6"</h2>
+								<img
+									src="img/product-list/cashbox_4.png"
+									alt="iMin D3 15.6''"
+								/>
+								<a href="" class="button"><span>узнать больше</span></a>
+							</div>
+
+							<div class="product-list__item _accent _5">
+								<h2 class="h2">iMin D2 Pro10.1"</h2>
+								<img
+									src="img/product-list/cashbox_5.png"
+									alt="iMin D2 Pro10.1''"
+								/>
+								<a href="" class="button"><span>узнать больше</span></a>
 							</div>
 						</div>
-						<img src="img/logo.png" alt="Jogos Evoli" class="header__logo" />
-						<img
-							src="img/logo_mobile.png"
-							alt="Jogos Evoli"
-							class="header__logo _mobile"
-						/>
-						<nav class="header__menu">
-							<a href="#header" class="menu-move">Home</a>
-							<a href="#s-about" class="menu-move">Sobre nós</a>
-							<a href="#s-stages" class="menu-move">Etapas de trabalho</a>
-							<a href="#s-choice" class="menu-move">Cassino Online </a>
-							<a href="#s-qualification" class="menu-move">Plataforma para salões</a>
-							<a href="#s-gallery" class="menu-move">Galeria</a>
-						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
 
-						<a href="" class="header__whatsapp button"
-							><div class="icon-wrap">
-								<svg
-									width="27"
-									height="27"
-									viewBox="0 0 27 27"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M14.0101 3C12.0435 2.99954 10.1126 3.52567 8.41839 4.52367C6.72414 5.52167 5.32835 6.9551 4.37618 8.67489C3.42402 10.3947 2.95024 12.338 3.00413 14.3028C3.05803 16.2676 3.63761 18.182 4.68262 19.8471L4.94439 20.2631L3.83254 24.3207L7.99784 23.2289L8.3997 23.4673C10.0956 24.4709 12.0304 25.0003 14.0013 25H14.0057C16.9223 24.9968 19.7183 23.8368 21.7798 21.7748C23.8412 19.7127 24.9994 16.9172 25 14.0022C25.0006 11.0873 23.8435 8.29129 21.7829 6.22838C19.7223 4.16547 16.9267 3.00433 14.0101 3H14.0101ZM20.4836 18.7227C20.24 19.1244 19.9159 19.4715 19.5315 19.742C19.1472 20.0125 18.711 20.2006 18.2504 20.2945C17.555 20.4134 16.8415 20.3686 16.1665 20.1636C15.526 19.9647 14.8964 19.7323 14.2804 19.4671C11.9954 18.3211 10.0477 16.6011 8.62853 14.4758C7.85477 13.4917 7.38526 12.3032 7.2776 11.0562C7.26841 10.5414 7.36664 10.0303 7.56601 9.55551C7.76538 9.08072 8.06153 8.65264 8.43559 8.29855C8.54615 8.17253 8.6816 8.07072 8.83343 7.99953C8.98525 7.92835 9.15017 7.88932 9.31782 7.8849C9.5383 7.8849 9.75913 7.88694 9.95185 7.89658C10.155 7.90666 10.4277 7.81943 10.6963 8.4641C10.972 9.12586 11.6337 10.7529 11.7163 10.9184C11.7688 11.005 11.7987 11.1033 11.8036 11.2044C11.8084 11.3056 11.7879 11.4063 11.744 11.4975C11.6606 11.6962 11.5492 11.8819 11.4131 12.049C11.2477 12.2421 11.0656 12.48 10.9169 12.6282C10.7512 12.7931 10.5787 12.9719 10.7717 13.3028C11.2686 14.1528 11.8889 14.9245 12.6123 15.5928C13.397 16.2901 14.2973 16.8453 15.2729 17.2335C15.6037 17.3991 15.7967 17.3714 15.9897 17.1508C16.1827 16.9302 16.8168 16.1856 17.0372 15.8547C17.2577 15.5238 17.4783 15.5789 17.7815 15.6893C18.0848 15.7997 19.7115 16.5993 20.0424 16.7647C20.3733 16.9302 20.5938 17.0129 20.6765 17.1508C20.7671 17.6824 20.7001 18.2289 20.4836 18.7228V18.7227Z"
-										fill="#FEFFFF"
-									/>
-								</svg>
-							</div>
-							<span class="text-wrap">Write to WhatsApp</span>
+		<section class="connection" id="s-connection">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="h2">Как подключить онлайн-кассу?</h2>
+					</div>
+
+					<div class="col-lg-6 connection__container">
+						<div class="connection__item">
+							<div class="number">01</div>
+							<h6 class="h6">
+								Купите один из Терминалов, который <br />
+								совместим с Kassa24.Online.
+							</h6>
+						</div>
+						<div class="connection__item">
+							<div class="number">02</div>
+							<h6 class="h6">
+								Зарегистрируйте ваш программный РРО в
+								налоговой.
+							</h6>
+							<p>
+								Мы поможем получить ЭЦП (цифровую подпись) и
+								поставить вашу онлайн кассу на учет удаленно.
+							</p>
+						</div>
+						<div class="connection__item">
+							<div class="number">03</div>
+							<h6 class="h6">
+								Создайте учетную запись в системе
+								Kassa24.Online
+							</h6>
+							<p>
+								В личном кабинете вы сможете управлять
+								учетными данными кассиров, а так же вести
+								полноценный товарный учет.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-6 connection__container">
+						<div class="connection__item">
+							<div class="number">04</div>
+							<h6 class="h6">Добавьте ваши товары в память Терминала.</h6>
+							<p>
+								это можно сделать как на самом Терминале 
+								поочередно, так и импортировав все товары в
+								онлайн кабинете.
+							</p>
+						</div>
+						<div class="connection__item">
+							<div class="number">05</div>
+							<h6 class="h6">
+								Регистрируйте чеки в приложении через Терминал
+								Kassa24
+							</h6>
+							<p>
+								Кассир в момент приема оплаты за товар формирует
+								чек, информация о котором фиксируется на сервере
+								налоговой через программный РРО Kassa24.
+							</p>
+						</div>
+						<div class="connection__item">
+							<div class="number">06</div>
+							<h6 class="h6">Выдайте черек или перешлите QR-код клиенту</h6>
+							<p>
+								После подтверждения оплаты кассир может выдать
+								бумажный чек или отправить QR-код с фискальным
+								номером на e-mail клиента или по СМС.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="join-us" id="s-join-us">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="join-us__container">
+							<h2 class="h2">
+								Присоединяйтесь <br />
+								прямо сейчас
+							</h2>
+							<form class="join-us__form">
+								<input type="text" placeholder="+380 (97) 097 00 24" required />
+								<button class="button">Подключиться</button>
+							</form>
+							<div class="join-us__img"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="work-system" id="s-work-system">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="h2">Принцип работы онлайн-кассы</h2>
+
+						<img
+							src="img/work-system__img.svg"
+							alt="Work system"
+							class="work-system__img"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="apps" id="s-apps">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="h2">
+							Готовые приложения, которые <br />
+							расширят функционал вашего <br />
+							Терминала Kassa24!
+						</h2>
+					</div>
+
+					<div class="col-lg-4">
+						<a class="apps__item">
+							<h4 class="h4">Работа с маркировкой</h4>
+							<p>Подключайте сканер и считывайте штрих-коды без ограничений.</p>
+							<div class="button">бесплатно</div>
+							<img src="img/apps/app-1.svg" alt="App">
+						</a>
+					</div>
+
+					<div class="col-lg-4">
+						<a href="" class="apps__item">
+							<h4 class="h4">Интеграция с SMS CLUB</h4>
+							<p>Отправляйте электронные чеки вашим клиентам по SMS</p>
+							<div class="button">бесплатно</div>
+							<img src="img/apps/app-2.png" alt="">
+						</a>
+					</div>
+
+					<div class="col-lg-4">
+						<a href="" class="apps__item">
+							<h4 class="h4">Печать этикеток со штрих-кодом</h4>
+							<p>
+								Печатайте наклейки для товаров, у которых нет заводской
+								маркировки.
+							</p>
+							<div class="button">30 грн/мес</div>
+							<img src="img/apps/app-3.svg" alt="App">
+						</a>
+					</div>
+
+					<div class="col-lg-6">
+						<a href="" class="apps__item">
+							<h4 class="h4">Клиентская база</h4>
+							<p>
+								Создайте собственную базу клиентов и используйте накопительную
+								систему скидок для увеличения ваших продаж. Идентификация
+								происходит по номеру телефона или карты клиента.
+							</p>
+							<div class="button">50 грн/мес</div>
+							<img src="img/apps/app-4.svg" alt="">
+						</a>
+					</div>
+
+					<div class="col-lg-6">
+						<a href="" class="apps__item">
+							<h4 class="h4">Продажа весовых товаров</h4>
+							<p>
+								Если у вас в продаже есть весовые товары, тогда это приложение
+								поможет вам автоматизировать их продажу и будет передавать
+								информацию с весов сразу на терминал.
+							</p>
+							<div class="button">50 грн/мес</div>
+							<img src="img/apps/app-5.svg" alt="App">
 						</a>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<section class="main-screen" id="s-main-screen">
+		<section class="equipment" id="s-equipment">
+			<div class="container tabs">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="h2">Дополнительное оборудование</h2>
+					</div>
+				</div>
+
+					<div class="row equipment_flex">
+						<div class="col-lg-4 offset-xl-1">
+							<ul class="tabs__caption">
+								<li class="_active">Сканер штрих-кодов</li>
+								<li>Принтер чеков</li>
+								<li>Цифровые весы</li>
+								<li>Принтер этикеток</li>
+								<li>Денежный ящик</li>
+							</ul>
+						</div>
+
+						<div class="col-xl-7 col-lg-8 equipment__circle-container">
+							<div class="equipment__circle">
+
+								<div class="tabs__content _active">
+									<div class="equipment__img">
+										<img src="img/equipment/item-1.png" alt="Сканер штрих-кодов"/>
+									</div>
+
+									<a href="" class="button"><span> Подробнее </span></a>
+								</div>
+
+								<div class="tabs__content">
+									<div class="equipment__img">
+										<img src="img/equipment/item-2.png" alt="Принтер чеков" />
+									</div>
+									<a href="" class="button"><span> Подробнее </span></a>
+								</div>
+
+								<div class="tabs__content">
+									<div class="equipment__img">
+										<img src="img/equipment/item-3.png" alt="Цифровые весы" />
+									</div>
+									<a href="" class="button"><span> Подробнее </span></a>
+								</div>
+
+								<div class="tabs__content">
+									<div class="equipment__img">
+										<img src="img/equipment/item-4.png" alt="Принтер этикеток" />
+									</div>
+									<a href="" class="button"><span> Подробнее </span></a>
+								</div>
+
+								<div class="tabs__content">
+									<div class="equipment__img">
+										<img src="img/equipment/item-5.png" alt="Денежный ящик" />
+									</div>
+									<a href="" class="button"><span> Подробнее </span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="control" id="s-control">
 			<div class="container">
-				<div class="row main-screen__container">
-					<div class="col-lg-8 col-lg-7">
-						<h1 class="h1" data-aos="zoom-in-down" data-aos-delay="1500">
-							<span class="_highlight"> Cassinos Online</span> e soluções de
-							software de
-							<span class="_ellipse"
-								><img src="img/h1__ellipse.svg" alt="ellipse" /> jogos
-								online</span
-							>
-							para negócios
-						</h1>
+				<div class="row">
+					<div class="col-12">
+						<h2 class="h2">Управляйте бизнесом и сотрудниками</h2>
+					</div>
 
-						<h4 class="h4" data-aos="zoom-in-down" data-aos-delay="1700"> 
-							Soluções online populares que o ajudarão a iniciar seu próprio
-							negócio, criar um site de cassino online ou abrir um site de
-							apostas online
+					<div class="col-lg-6 col-xl-5">
+						<h4 class="h4">
+							Личный кабинет Kassa24 — главный помощник предпринимателя.
 						</h4>
 
-						<div class="main-screen__img _mobile" data-aos="zoom-in-down" data-aos-delay="1600"></div>
+						<ul class="control__list">
+							<h6 class="h6">Вы всегда будете знать:</h6>
+							<li>что происходит на точке сейчас</li>
+							<li>как дела в вашем бизнесе</li>
+							<li>как ведут себя продавцы</li>
+						</ul>
 
-						<div class="aos-wrapper" data-aos="zoom-in-down" data-aos-delay="1800">
-							<a href="" class="button">Estágios de conexão</a>
-						</div>
+						<p>
+							Личный кабинет покажет на одном экране все основные показатели.
+							Выручка, прибыль, средний чек, самые популярные товары, рейтинг
+							кассиров — считать их вручную больше не надо, вы сразу получите
+							наглядные таблицы и графики.
+						</p>
+					</div>
 
-						<div class="main-screen__advantages" data-aos="zoom-in-up" data-aos-delay="2100"> 
-							<div class="advantage-wrap">
-								<img src="img/icons/like.svg" alt="Like" />
-								<h4 class="h4">Experiência em mercados informais</h4>
+					<div class="control__image"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="delivery" id="s-delivery">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="delivery__container">
+							<div class="delivery__img"></div>
+							<div class="delivery__inner">
+								<h2 class="h2">Доставка по Украине</h2>
+
 								<p>
-									Nós entedemos o seu negócio e estamos aqui para crescer junto
-									com você
+									Оставьте заявку. Менеджер свяжется с <br />
+									вами в течение 30 минут, ответит на <br />
+									вопросы и поможет оформить заказ.
 								</p>
+
+								<a href="" class="button">Получить консультацию</a>
 							</div>
-							<div class="advantage-wrap">
-								<img src="img/icons/new.svg" alt="New" />
-								<h4 class="h4">Biblioteca crescente de jogos</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="news" id="s-news">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 news__heading">
+						<h2 class="h2">Новости</h2>
+						<a href="" class="news__more-link">Больше новостей</a>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="news__box">
+							<div class="news__img"></div>
+							<div class="news__text">
+								<h6 class="h6">
+									Особенности внедрения програмный РРО и онлайн касс в Украине
+								</h6>
 								<p>
-									Biblioteca de jogos que cresce a cada semana. De 2 a 3 jogos
-									aficionados por semana
+									Одно из нововведений реформы – это онлайн-касса, закон о
+									внедрении которой вступает в 2020 году.
 								</p>
 							</div>
+							<a href="" class="button">Читать</a>
 						</div>
 					</div>
-					<div class="main-screen__img" data-aos="zoom-in" data-aos-delay="2300" data-aos-duration="1200"></div>
+					<div class="col-lg-4">
+						<div class="news__box">
+							<div class="news__img"></div>
+							<div class="news__text">
+								<h6 class="h6">
+									Особенности внедрения програмный РРО и онлайн касс в Украине
+								</h6>
+								<p>
+									Одно из нововведений реформы – это онлайн-касса, закон о
+									внедрении которой вступает в 2020 году.
+								</p>
+							</div>
+							<a href="" class="button">Читать</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="news__box">
+							<div class="news__img"></div>
+							<div class="news__text">
+								<h6 class="h6">
+									Особенности внедрения програмный РРО и онлайн касс в Украине
+								</h6>
+								<p>
+									Одно из нововведений реформы – это онлайн-касса, закон о
+									внедрении которой вступает в 2020 году.
+								</p>
+							</div>
+							<a href="" class="button">Читать</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="choice" id="s-choice">
+		<footer class="footer" id="s-footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<div class="choice__container">
-							<div class="choice__wrapper">
-								<img
-									src="img/choice__img_left.png"
-									alt="phones"
-									class="choice__img choice__img_left"
-									data-aos="fade-up"
-								/>
+						<div class="footer__menu">
+							<ul>
+								<h6 class="h6">О программе</h6>
+								<li><a href="">Функционал ПРРО Kassa24</a></li>
+								<li><a href="">Настройка фискализации</a></li>
+								<li><a href="">Эквайринг</a></li>
+							</ul>
+							<ul>
+								<h6 class="h6">Онлайн кассы</h6>
+								<li><a href="">iMin M1 5"</a></li>
+								<li><a href="">iMin D2 10.1"</a></li>
+								<li><a href="imin_d2_pro.html">iMin D2 Pro10.1"</a></li>
+								<li><a href="">iMin M1 5"</a></li>
+								<li><a href="">iMin D3 15.6"</a></li>
+							</ul>
+							<ul>
+								<h6 class="h6">Приложения</h6>
+								<li><a href="">Интеграция с SMS Club</a></li>
+								<li><a href="">Клиентская база</a></li>
+								<li><a href="">Печать этикеток</a></li>
+								<li><a href="">Весовые товары</a></li>
+							</ul>
+							<ul>
+								<h6 class="h6">Подержка</h6>
+								<li><a href="">Библиотека знаний</a></li>
+								<li><a href="">Онлайн чат</a></li>
+								<li><a href="">Удаленная настрока</a></li>
+								<li><a href="">Публичная оферта</a></li>
+							</ul>
+							<ul>
+								<h6 class="h6">О нас</h6>
+								<li><a href="">О компании</a></li>
+								<li><a href="">Новости</a></li>
+								<li><a href="">Контакты</a></li>
+							</ul>
+						</div>
 
-								<img
-									src="img/choice__img_top.png"
-									alt="phones"
-									class="choice__img choice__img_top _mobile"
-									data-aos="fade-down"
-								/>
-
-								<div class="choice__text">
-									<h2 class="h2" data-aos="zoom-in">
-										Cassino Online - <br />
-										White Label
-									</h2>
-
-									<p data-aos="zoom-in">
-										Uma plataforma de casino online completa com uma interface
-										simples e conveniente. Inclui um site de jogos e uma
-										interface acessível para sua administração.
-									</p>
-
-									<a href="#">Pedir</a>
-								</div>
-							</div>
-
-							<div class="choice__middle">
-								<div class="line"></div>
-								<img class="icon" src="img/choice__icon.svg" alt="I" data-aos="zoom-in"/>
-							</div>
-
-							<div class="choice__wrapper _end">
-								<div class="choice__text">
-									<h2 class="h2" data-aos="zoom-in">Web Lima</h2>
-
-									<p data-aos="zoom-in">
-										Uma plataforma de jogos que pode ser lançada em qualquer
-										dispositivo e sistema operacional. Possui uma opção muito
-										flexível de configuração de todos os parâmetros, uma
-										interface colorida e inclui uma infinidade de variedades de
-										bônus.
-									</p>
-
-									<a href="#">Pedir</a>
-								</div>
-
-								<img
-									src="img/choice__img_right.png"
-									alt="phones"
-									class="choice__img choice__img_right"
-									data-aos="fade-down"
-								/>
-
-								<img
-									src="img/choice__img_bottom.png"
-									alt="phones"
-									class="choice__img choice__img_bottom _mobile"
-									data-aos="fade-up"
-								/>
-							</div>
+						<div class="footer__bottom">
+							<span class="copyrights">Copyright 2020</span>
+							<ul class="footer__social-links">
+								<li>
+									<a href=""><i class="fab fa-facebook-square"></i></a>
+								</li>
+								<li>
+									<a href=""><i class="fab fa-instagram"></i></a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-
-		<section class="about" id="s-about">
-			<div class="about__img_right" data-aos="zoom-in"></div>
-
-			<div class="about__img-wrapper" data-aos="fade-right">
-				<div class="about__img" data-aos="zoom-in-right" data-aos-delay="500"></div>
-			</div>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-8 col-lg-9 offset-lg-3 offset-xl-4">
-						<h2 class="h2" data-aos="fade-right">Sobre Nos</h2>
-						<div class="about__text">
-							<p data-aos="fade-right" data-aos-delay="200">
-								Um negócio online com soluções de software Evoli é simples,
-								acessível e seguro.
-							</p>
-							<p data-aos="fade-right" data-aos-delay="400">
-								Neste momento, a empresa Evoli já está no mercado há mais de 10
-								anos. Nossas plataformas possuem milhares de jogos, centenas de
-								milhares de eventos esportivos, o melhor sistema de segurança e
-								um painel administrativo profissional de fácil utilização.
-								Possui as melhores ferramentas de marketing, SEO, análises e
-								relatórios.
-							</p>
-						</div>
-
-						<div class="about__statistics statistics" id="counters_1" data-aos="fade-up">
-							<div class="statistics__box">
-								<div class="statistics__number">
-									<span
-										class="statistics__number_1 counter"
-										data-TargetNum="10"
-									></span
-									><span class="_stroke counter" data-TargetNum="10"></span
-									><span class="plus">+</span>
-								</div>
-								<p class="statistics__text">
-									Estamos há mais de 10 anos presentes no mercado
-								</p>
-							</div>
-
-							<div class="statistics__box">
-								<div class="statistics__number">
-									<span
-										class="statistics__number_2 counter"
-										data-TargetNum="120"
-									></span
-									><span class="_stroke counter" data-TargetNum="120"></span
-									><span class="plus">+</span>
-								</div>
-								<p class="statistics__text">
-									Mais de 120 páginas ativas na América Latina
-								</p>
-							</div>
-
-							<div class="statistics__box">
-								<div class="statistics__number">
-									<span
-										class="statistics__number_3 counter"
-										data-TargetNum="500"
-									></span
-									><span class="_stroke counter" data-TargetNum="500"></span
-									><span class="plus">+</span>
-								</div>
-								<p class="statistics__text">
-									Mais de 500 jogos populares nas nossas plataformas
-								</p>
-							</div>
-
-							<div class="statistics__box">
-								<div class="statistics__number">
-									<span
-										class="statistics__number_4 counter"
-										data-TargetNum="40"
-									></span
-									><span class="_stroke counter" data-TargetNum="40"></span
-									><span class="plus">+</span>
-								</div>
-								<p class="statistics__text">Presente em mais de 40 países</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="stages" id="s-stages">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="h2" data-aos="fade-right">Etapas de trabalho</h2>
-						<h4 class="h4" data-aos="fade-right">
-							Consulte nossos especialistas para um trabalho de sucesso
-						</h4>
-
-						<img src="img/stages__cube.svg" alt="Cube" class="stages__cube" data-aos="zoom-in" data-aos-delay="2800" />
-					</div>
-				</div>
-
-				<div class="row stages__container">
-					<div class="stages__line anime">
-						<svg
-							width="905"
-							height="100"
-							viewBox="0 0 905 100"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M1 49.6844C45.3333 79.3511 167.3 119.584 300.5 43.1844C433.7 -33.2156 556.667 11.3511 601.5 43.1844C649.667 85.1844 777.7 143.984 904.5 43.1844"
-								stroke="black"
-								stroke-dasharray="8 8"
-							/>
-						</svg>
-					</div>
-
-					<div class="col-6 col-lg-3">
-						<div class="stages__box stage">
-							<div class="stage__number stage__number_1" data-aos="zoom-in">
-								01 <span class="_stroke">01</span>
-							</div>
-
-							<h4
-								class="stage__title"
-								data-aos="fade-down"
-								data-aos-delay="200"
-							>
-								Vamos nos conhecer
-							</h4>
-							<p class="stage__text" data-aos="fade-up" data-aos-delay="200">
-								Vamos entender todos os seus requisitos básicos e começaremos.
-							</p>
-						</div>
-					</div>
-
-					<div class="col-6 col-lg-3">
-						<div class="stages__box stage">
-							<div
-								class="stage__number stage__number_2"
-								data-aos="zoom-in"
-								data-aos-delay="800"
-							>
-								02 <span class="_stroke">02</span>
-							</div>
-							<h4
-								class="stage__title"
-								data-aos="fade-down"
-								data-aos-delay="1000"
-							>
-								Um conselho sobre o negócio
-							</h4>
-							<p class="stage__text" data-aos="fade-up" data-aos-delay="1000">
-								Vamos falar sobre as novas tendências do mercado, no âmbito do
-								seu orçamento
-							</p>
-						</div>
-					</div>
-
-					<div class="col-6 col-lg-3">
-						<div class="stages__box stage">
-							<div
-								class="stage__number stage__number_3"
-								data-aos="zoom-in"
-								data-aos-delay="1500"
-							>
-								03 <span class="_stroke">03</span>
-							</div>
-							<h4
-								class="stage__title"
-								data-aos="fade-down"
-								data-aos-delay="1700"
-							>
-								Veja suas opções
-							</h4>
-							<p class="stage__text" data-aos="fade-up" data-aos-delay="1700">
-								Oferecemos-lhe as melhores soluções e as condições mais
-								favoráveis de cooperação
-							</p>
-						</div>
-					</div>
-
-					<div class="col-6 col-lg-3">
-						<div class="stages__box stage">
-							<div
-								class="stage__number stage__number_4"
-								data-aos="zoom-in"
-								data-aos-delay="2300"
-							>
-								04 <span class="_stroke">04</span>
-							</div>
-							<h4
-								class="stage__title"
-								data-aos="fade-down"
-								data-aos-delay="2500"
-							>
-								Nós vamos fazer as instalações
-							</h4>
-							<p class="stage__text" data-aos="fade-up" data-aos-delay="2500">
-								O lançamento completo é possível em 3 dias
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="gallery" id="s-gallery">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 gallery__heading">
-						<h2 class="h2" data-aos="fade-right">Galeria</h2>
-
-						<div class="gallery__slider-nav" data-aos="fade-right" data-aos-delay="200">
-							<div class="prev">
-								<svg
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										fill-rule="evenodd"
-										clip-rule="evenodd"
-										d="M15.7071 18.7071C15.3166 19.0976 14.6834 19.0976 14.2929 18.7071L8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929L14.2929 5.29289C14.6834 4.90237 15.3166 4.90237 15.7071 5.29289C16.0976 5.68342 16.0976 6.31658 15.7071 6.70711L10.4142 12L15.7071 17.2929C16.0976 17.6834 16.0976 18.3166 15.7071 18.7071Z"
-										fill="#282B33"
-									/>
-								</svg>
-							</div>
-
-							<div class="next">
-								<svg
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										fill-rule="evenodd"
-										clip-rule="evenodd"
-										d="M8.29289 5.29289C8.68342 4.90237 9.31658 4.90237 9.70711 5.29289L15.7071 11.2929C16.0976 11.6834 16.0976 12.3166 15.7071 12.7071L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071C7.90237 18.3166 7.90237 17.6834 8.29289 17.2929L13.5858 12L8.29289 6.70711C7.90237 6.31658 7.90237 5.68342 8.29289 5.29289Z"
-										fill="#282B33"
-									/>
-								</svg>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="gallery__slider" data-aos="fade-up">
-				<div class="slide _1"></div>
-				<div class="slide _2"></div>
-				<div class="slide _3"></div>
-			</div>
-		</section>
-
-		<section class="services" id="s-services">
-			<svg
-				class="services__bg"
-				viewBox="0 0 1440 524"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<g filter="url(#filter0_d)">
-					<ellipse
-						cx="722"
-						cy="501"
-						rx="1572"
-						ry="457"
-						fill="url(#paint0_linear)"
-					/>
-				</g>
-				<defs>
-					<filter
-						id="filter0_d"
-						x="-922"
-						y="0"
-						width="3240"
-						height="1010"
-						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
-					>
-						<feFlood flood-opacity="0" result="BackgroundImageFix" />
-						<feColorMatrix
-							in="SourceAlpha"
-							type="matrix"
-							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-						/>
-						<feOffset dx="-24" dy="4" />
-						<feGaussianBlur stdDeviation="24" />
-						<feColorMatrix
-							type="matrix"
-							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-						/>
-						<feBlend
-							mode="normal"
-							in2="BackgroundImageFix"
-							result="effect1_dropShadow"
-						/>
-						<feBlend
-							mode="normal"
-							in="SourceGraphic"
-							in2="effect1_dropShadow"
-							result="shape"
-						/>
-					</filter>
-					<linearGradient
-						id="paint0_linear"
-						x1="722"
-						y1="44"
-						x2="722"
-						y2="958"
-						gradientUnits="userSpaceOnUse"
-					>
-						<stop stop-color="#31343D" />
-						<stop offset="0.51875" stop-color="#282B33" />
-						<stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
-					</linearGradient>
-				</defs>
-			</svg>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="h2" data-aos="zoom-in">Nossos Serviços</h2>
-					</div>
-
-					<div class="col-lg-4 services__wrapper" data-aos="fade-down" data-aos-delay="200">
-						<div class="services__box">
-							<div class="services__icon">
-								<svg
-									width="30"
-									height="15"
-									viewBox="0 0 30 15"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M29.5566 0.443184C29.4172 0.302754 29.2514 0.191292 29.0687 0.115227C28.886 0.0391623 28.6901 0 28.4922 0C28.2943 0 28.0983 0.0391623 27.9156 0.115227C27.733 0.191292 27.5672 0.302754 27.4278 0.443184L17.9983 9.88224L11.567 3.43971C11.4276 3.29928 11.2618 3.18782 11.0791 3.11175C10.8965 3.03569 10.7005 2.99653 10.5026 2.99653C10.3047 2.99653 10.1088 3.03569 9.92608 3.11175C9.74339 3.18782 9.57759 3.29928 9.43822 3.43971L0.44344 12.4293C0.302929 12.5686 0.191402 12.7343 0.115294 12.9169C0.0391846 13.0994 0 13.2953 0 13.4931C0 13.6908 0.0391846 13.8867 0.115294 14.0692C0.191402 14.2518 0.302929 14.4175 0.44344 14.5568C0.582804 14.6972 0.74861 14.8087 0.931293 14.8848C1.11398 14.9608 1.30992 15 1.50782 15C1.70573 15 1.90167 14.9608 2.08435 14.8848C2.26704 14.8087 2.43284 14.6972 2.57221 14.5568L10.5026 6.61602L16.9339 13.0586C17.0732 13.199 17.239 13.3104 17.4217 13.3865C17.6044 13.4626 17.8004 13.5017 17.9983 13.5017C18.1962 13.5017 18.3921 13.4626 18.5748 13.3865C18.7575 13.3104 18.9233 13.199 19.0626 13.0586L29.5566 2.57072C29.6971 2.43143 29.8086 2.26572 29.8847 2.08315C29.9608 1.90057 30 1.70474 30 1.50695C30 1.30916 29.9608 1.11333 29.8847 0.930753C29.8086 0.748176 29.6971 0.582466 29.5566 0.443184Z"
-										fill="#282B33"
-									/>
-								</svg>
-							</div>
-							<h3 class="h3 services__title">Estratégia</h3>
-							<p class="services__text">
-								A chave do sucesso é um plano de negócios claro e temos uma
-								solução prática
-							</p>
-						</div>
-						<img
-							src="img/services__box-img_back.svg"
-							alt="Back image"
-							class="services__box_back"
-						/>
-					</div>
-					<div class="col-lg-4 services__wrapper" data-aos="fade-down" data-aos-delay="300">
-						<div class="services__box">
-							<div class="services__icon">
-								<svg
-									width="30"
-									height="27"
-									viewBox="0 0 30 27"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M27 15.27V12C27 8.8174 25.7357 5.76516 23.4853 3.51472C21.2348 1.26428 18.1826 0 15 0C11.8174 0 8.76516 1.26428 6.51472 3.51472C4.26428 5.76516 3 8.8174 3 12V15.27C2.12468 15.5795 1.3665 16.1521 0.829408 16.9094C0.292318 17.6667 0.00260927 18.5716 0 19.5V22.5C0 23.6935 0.474106 24.8381 1.31802 25.682C2.16193 26.5259 3.30653 27 4.5 27H9C9.39782 27 9.77935 26.842 10.0607 26.5607C10.342 26.2794 10.5 25.8978 10.5 25.5V16.5C10.5 16.1022 10.342 15.7206 10.0607 15.4393C9.77935 15.158 9.39782 15 9 15H6V12C6 9.61305 6.94821 7.32387 8.63604 5.63604C10.3239 3.94821 12.6131 3 15 3C17.3869 3 19.6761 3.94821 21.364 5.63604C23.0518 7.32387 24 9.61305 24 12V15H21C20.6022 15 20.2206 15.158 19.9393 15.4393C19.658 15.7206 19.5 16.1022 19.5 16.5V25.5C19.5 25.8978 19.658 26.2794 19.9393 26.5607C20.2206 26.842 20.6022 27 21 27H25.5C26.6935 27 27.8381 26.5259 28.682 25.682C29.5259 24.8381 30 23.6935 30 22.5V19.5C29.9974 18.5716 29.7077 17.6667 29.1706 16.9094C28.6335 16.1521 27.8753 15.5795 27 15.27ZM7.5 18V24H4.5C4.10218 24 3.72064 23.842 3.43934 23.5607C3.15804 23.2794 3 22.8978 3 22.5V19.5C3 19.1022 3.15804 18.7206 3.43934 18.4393C3.72064 18.158 4.10218 18 4.5 18H7.5ZM27 22.5C27 22.8978 26.842 23.2794 26.5607 23.5607C26.2794 23.842 25.8978 24 25.5 24H22.5V18H25.5C25.8978 18 26.2794 18.158 26.5607 18.4393C26.842 18.7206 27 19.1022 27 19.5V22.5Z"
-										fill="#282B33"
-									/>
-								</svg>
-							</div>
-							<h3 class="h3 services__title">Suporte do TI</h3>
-							<p class="services__text">
-								Nossa equipe de TI está pronta para oferecer seu suporte em
-								questões complexas em qualquer estágio
-							</p>
-						</div>
-						<img
-							src="img/services__box-img_back.svg"
-							alt="Back image"
-							class="services__box_back"
-						/>
-					</div>
-					<div class="col-lg-4 services__wrapper" data-aos="fade-down" data-aos-delay="400">
-						<div class="services__box">
-							<div class="services__icon">
-								<svg
-									width="30"
-									height="30"
-									viewBox="0 0 30 30"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M12.435 14.5648C12.5744 14.7054 12.7403 14.817 12.9231 14.8931C13.1059 14.9693 13.302 15.0085 13.5 15.0085C13.698 15.0085 13.8941 14.9693 14.0769 14.8931C14.2597 14.817 14.4256 14.7054 14.565 14.5648L20.565 8.56488C20.7049 8.42502 20.8158 8.25899 20.8915 8.07626C20.9672 7.89353 21.0061 7.69768 21.0061 7.4999C21.0061 7.30211 20.9672 7.10626 20.8915 6.92353C20.8158 6.7408 20.7049 6.57477 20.565 6.43491C20.4251 6.29505 20.2591 6.18411 20.0764 6.10843C19.8936 6.03274 19.6978 5.99378 19.5 5.99378C19.3022 5.99378 19.1064 6.03274 18.9236 6.10843C18.7409 6.18411 18.5749 6.29505 18.435 6.43491L13.5 11.3848L11.565 9.43487C11.2825 9.15242 10.8995 8.99374 10.5 8.99374C10.1005 8.99374 9.71746 9.15242 9.435 9.43487C9.15254 9.71732 8.99386 10.1004 8.99386 10.4999C8.99386 10.8993 9.15254 11.2824 9.435 11.5648L12.435 14.5648ZM28.5 17.9997H27V2.99996H28.5C28.8978 2.99996 29.2794 2.84193 29.5607 2.56062C29.842 2.27932 30 1.8978 30 1.49998C30 1.10216 29.842 0.720634 29.5607 0.439334C29.2794 0.158033 28.8978 0 28.5 0H1.5C1.10218 0 0.720644 0.158033 0.43934 0.439334C0.158035 0.720634 0 1.10216 0 1.49998C0 1.8978 0.158035 2.27932 0.43934 2.56062C0.720644 2.84193 1.10218 2.99996 1.5 2.99996H3V17.9997H1.5C1.10218 17.9997 0.720644 18.1578 0.43934 18.4391C0.158035 18.7204 0 19.1019 0 19.4997C0 19.8975 0.158035 20.2791 0.43934 20.5604C0.720644 20.8417 1.10218 20.9997 1.5 20.9997H13.5V22.7247L6.675 27.2246C6.395 27.3979 6.17982 27.6586 6.06265 27.9663C5.94549 28.2741 5.93285 28.6118 6.02669 28.9275C6.12053 29.2431 6.31564 29.5191 6.5819 29.7129C6.84816 29.9066 7.17079 30.0074 7.5 29.9996C7.7949 30.003 8.08344 29.9138 8.325 29.7446L13.5 26.3246V28.4996C13.5 28.8974 13.658 29.2789 13.9393 29.5602C14.2206 29.8415 14.6022 29.9996 15 29.9996C15.3978 29.9996 15.7794 29.8415 16.0607 29.5602C16.342 29.2789 16.5 28.8974 16.5 28.4996V26.3246L21.675 29.7446C21.9166 29.9138 22.2051 30.003 22.5 29.9996C22.8205 29.9971 23.1317 29.8921 23.3882 29.6998C23.6446 29.5076 23.8327 29.2383 23.9249 28.9314C24.0172 28.6245 24.0087 28.2961 23.9007 27.9943C23.7928 27.6926 23.591 27.4334 23.325 27.2546L16.5 22.7547V20.9997H28.5C28.8978 20.9997 29.2794 20.8417 29.5607 20.5604C29.842 20.2791 30 19.8975 30 19.4997C30 19.1019 29.842 18.7204 29.5607 18.4391C29.2794 18.1578 28.8978 17.9997 28.5 17.9997ZM24 17.9997H6V2.99996H24V17.9997Z"
-										fill="#282B33"
-									/>
-								</svg>
-							</div>
-							<h3 class="h3 services__title">Marketing</h3>
-							<p class="services__text">
-								O anúncio é o motor do processo de negociação. Vamos mostrar por
-								onde começar - totalmente de graça.
-							</p>
-						</div>
-						<img
-							src="img/services__box-img_back.svg"
-							alt="Back image"
-							class="services__box_back"
-						/>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="form-section" id="s-form">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="form-section__container">
-							<img
-								class="form-section__img _left"
-								src="img/form__img_left.svg"
-								alt="Chip"
-								data-aos="zoom-in" data-aos-delay="400"
-							/>
-							<img
-								class="form-section__img _right"
-								src="img/form__img_right.svg"
-								alt="Cube"
-								data-aos="zoom-in" data-aos-delay="800"
-							/>
-
-							<h2 class="h2 form-section__title" data-aos="zoom-in-up">
-								14 dias de teste como um presente
-							</h2>
-							<h4 class="h4 form-section__subtitle" data-aos="zoom-in-up" data-aos-delay="200">
-								Deixe um pedido para testar um casino online e iremos
-								considerá-lo num futuro próximo
-							</h4>
-
-							<form class="form" data-aos="zoom-in" data-aos-delay="400">
-
-								<!-- Hidden Required Fields -->
-								<input type="hidden" name="project_name" value="Jogos Evoli">
-								<input type="hidden" name="admin_email" value="nikita.tytskyi@gmail.com">
-								<input type="hidden" name="form_subject" value="Jogos Evoli">
-								<!-- END Hidden Required Fields -->
-
-								<input
-									type="text"
-									name="Name"
-									placeholder="Digite seu nome"
-									autocomplete="off"
-									required
-								/>
-								<input
-									type="email"
-									name="E-mail"
-									placeholder="Digite seu e-mail"
-									autocomplete="off"
-									required
-								/>
-								<button>Enviar</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="qualification" id="s-qualification">
-
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-
-						<div class="qualification__bg" data-aos="zoom-in" data-aos-delay="400"></div>
-						<div class="qualification__heading">
-							<h2 class="h2" data-aos="fade-right">Título</h2>
-
-							<div class="qualification__slider-nav" data-aos="fade-right" data-aos-delay="400">
-								<div class="prev">
-									<svg
-										width="24"
-										height="24"
-										viewBox="0 0 24 24"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M15.7071 18.7071C15.3166 19.0976 14.6834 19.0976 14.2929 18.7071L8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929L14.2929 5.29289C14.6834 4.90237 15.3166 4.90237 15.7071 5.29289C16.0976 5.68342 16.0976 6.31658 15.7071 6.70711L10.4142 12L15.7071 17.2929C16.0976 17.6834 16.0976 18.3166 15.7071 18.7071Z"
-											fill="#282B33"
-										/>
-									</svg>
-								</div>
-	
-								<div class="next">
-									<svg
-										width="24"
-										height="24"
-										viewBox="0 0 24 24"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M8.29289 5.29289C8.68342 4.90237 9.31658 4.90237 9.70711 5.29289L15.7071 11.2929C16.0976 11.6834 16.0976 12.3166 15.7071 12.7071L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071C7.90237 18.3166 7.90237 17.6834 8.29289 17.2929L13.5858 12L8.29289 6.70711C7.90237 6.31658 7.90237 5.68342 8.29289 5.29289Z"
-											fill="#282B33"
-										/>
-									</svg>
-								</div>
-							</div>
-						</div>
-
-						<div class="qualification__slider">
-							<div class="qualification__slide">
-								<div class="qualification__icon">
-									<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M31.1667 3.66699H12.8334C10.4022 3.66699 8.07063 4.63276 6.35154 6.35185C4.63246 8.07093 3.66669 10.4025 3.66669 12.8337V31.167C3.66669 33.5981 4.63246 35.9297 6.35154 37.6488C8.07063 39.3679 10.4022 40.3337 12.8334 40.3337H31.1667C33.5978 40.3337 35.9294 39.3679 37.6485 37.6488C39.3676 35.9297 40.3334 33.5981 40.3334 31.167V12.8337C40.3334 10.4025 39.3676 8.07093 37.6485 6.35185C35.9294 4.63276 33.5978 3.66699 31.1667 3.66699ZM36.6667 31.167C36.6667 32.6257 36.0872 34.0246 35.0558 35.0561C34.0243 36.0875 32.6254 36.667 31.1667 36.667H12.8334C11.3747 36.667 9.97572 36.0875 8.94427 35.0561C7.91282 34.0246 7.33335 32.6257 7.33335 31.167V12.8337C7.33335 11.375 7.91282 9.97602 8.94427 8.94457C9.97572 7.91312 11.3747 7.33366 12.8334 7.33366H31.1667C32.6254 7.33366 34.0243 7.91312 35.0558 8.94457C36.0872 9.97602 36.6667 11.375 36.6667 12.8337V31.167ZM14.6667 27.5003C14.3041 27.5003 13.9496 27.6078 13.6481 27.8093C13.3467 28.0107 13.1117 28.2971 12.9729 28.6321C12.8341 28.9671 12.7978 29.3357 12.8686 29.6913C12.9393 30.047 13.1139 30.3736 13.3703 30.63C13.6267 30.8864 13.9534 31.061 14.309 31.1318C14.6647 31.2025 15.0333 31.1662 15.3683 31.0274C15.7033 30.8887 15.9896 30.6537 16.191 30.3522C16.3925 30.0507 16.5 29.6963 16.5 29.3337C16.5 28.8474 16.3069 28.3811 15.963 28.0373C15.6192 27.6935 15.1529 27.5003 14.6667 27.5003ZM22 20.167C21.6374 20.167 21.283 20.2745 20.9815 20.476C20.68 20.6774 20.445 20.9637 20.3062 21.2987C20.1675 21.6337 20.1312 22.0024 20.2019 22.358C20.2727 22.7136 20.4473 23.0403 20.7037 23.2967C20.9601 23.5531 21.2867 23.7277 21.6424 23.7984C21.998 23.8692 22.3666 23.8329 22.7016 23.6941C23.0366 23.5553 23.3229 23.3204 23.5244 23.0189C23.7258 22.7174 23.8334 22.3629 23.8334 22.0003C23.8334 21.5141 23.6402 21.0478 23.2964 20.704C22.9526 20.3601 22.4863 20.167 22 20.167ZM14.6667 12.8337C14.3041 12.8337 13.9496 12.9412 13.6481 13.1426C13.3467 13.3441 13.1117 13.6304 12.9729 13.9654C12.8341 14.3004 12.7978 14.669 12.8686 15.0247C12.9393 15.3803 13.1139 15.707 13.3703 15.9634C13.6267 16.2198 13.9534 16.3944 14.309 16.4651C14.6647 16.5358 15.0333 16.4995 15.3683 16.3608C15.7033 16.222 15.9896 15.987 16.191 15.6855C16.3925 15.384 16.5 15.0296 16.5 14.667C16.5 14.1808 16.3069 13.7144 15.963 13.3706C15.6192 13.0268 15.1529 12.8337 14.6667 12.8337ZM29.3334 27.5003C28.9708 27.5003 28.6163 27.6078 28.3148 27.8093C28.0133 28.0107 27.7783 28.2971 27.6396 28.6321C27.5008 28.9671 27.4645 29.3357 27.5352 29.6913C27.606 30.047 27.7806 30.3736 28.037 30.63C28.2934 30.8864 28.6201 31.061 28.9757 31.1318C29.3313 31.2025 29.6999 31.1662 30.0349 31.0274C30.3699 30.8887 30.6563 30.6537 30.8577 30.3522C31.0592 30.0507 31.1667 29.6963 31.1667 29.3337C31.1667 28.8474 30.9735 28.3811 30.6297 28.0373C30.2859 27.6935 29.8196 27.5003 29.3334 27.5003ZM29.3334 12.8337C28.9708 12.8337 28.6163 12.9412 28.3148 13.1426C28.0133 13.3441 27.7783 13.6304 27.6396 13.9654C27.5008 14.3004 27.4645 14.669 27.5352 15.0247C27.606 15.3803 27.7806 15.707 28.037 15.9634C28.2934 16.2198 28.6201 16.3944 28.9757 16.4651C29.3313 16.5358 29.6999 16.4995 30.0349 16.3608C30.3699 16.222 30.6563 15.987 30.8577 15.6855C31.0592 15.384 31.1667 15.0296 31.1667 14.667C31.1667 14.1808 30.9735 13.7144 30.6297 13.3706C30.2859 13.0268 29.8196 12.8337 29.3334 12.8337Z" fill="#282B33"/>
-										</svg>
-										
-								</div>
-								<h3 class="h3">Online Cassino
-								</h3>
-								<p class="qualification__text">
-									Um portal de jogos autônomo pronto para uso; <br>	
-									O processo de instalação e configuração leva apenas alguns dias; <br>
-									Protegido contra hacks e fraudes; <br>
-									Exibição correta em dispositivos de qualquer tipo (PC, tablet ou mobile); <br>
-									Coloca automaticamente os jogos mais populares na página principal <br>
-									Ferramentas avançadas para monitoramento e análises financeiras <br>
-									Banco de dados estendido do jogador contendo informações detalhadas sobre suas atividades (aplicado para o lançamento do programa de fidelidade e prevenção de fraude) <br>
-									Possibilidade de conectar a conta de um jogador
-								</p>
-							</div>
-
-							<div class="qualification__slide">
-								<div class="qualification__icon">
-									<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M38.5 7.33366H33V5.50033C33 5.0141 32.8068 4.54778 32.463 4.20396C32.1192 3.86015 31.6529 3.66699 31.1666 3.66699H12.8333C12.3471 3.66699 11.8807 3.86015 11.5369 4.20396C11.1931 4.54778 11 5.0141 11 5.50033V7.33366H5.49996C5.01373 7.33366 4.54741 7.52681 4.2036 7.87063C3.85978 8.21445 3.66663 8.68076 3.66663 9.16699V14.667C3.66663 16.6119 4.43924 18.4772 5.81451 19.8524C7.18978 21.2277 9.05504 22.0003 11 22.0003H13.8233C15.4816 23.8504 17.7174 25.0846 20.1666 25.502V29.3337H18.3333C16.8746 29.3337 15.4757 29.9131 14.4442 30.9446C13.4128 31.976 12.8333 33.375 12.8333 34.8337V38.5003C12.8333 38.9866 13.0264 39.4529 13.3703 39.7967C13.7141 40.1405 14.1804 40.3337 14.6666 40.3337H29.3333C29.8195 40.3337 30.2858 40.1405 30.6297 39.7967C30.9735 39.4529 31.1666 38.9866 31.1666 38.5003V34.8337C31.1666 33.375 30.5872 31.976 29.5557 30.9446C28.5243 29.9131 27.1253 29.3337 25.6666 29.3337H23.8333V25.502C26.2825 25.0846 28.5183 23.8504 30.1766 22.0003H33C34.9449 22.0003 36.8101 21.2277 38.1854 19.8524C39.5607 18.4772 40.3333 16.6119 40.3333 14.667V9.16699C40.3333 8.68076 40.1401 8.21445 39.7963 7.87063C39.4525 7.52681 38.9862 7.33366 38.5 7.33366V7.33366ZM11 18.3337C10.0275 18.3337 9.09487 17.9474 8.40723 17.2597C7.7196 16.5721 7.33329 15.6395 7.33329 14.667V11.0003H11V14.667C11.004 15.9168 11.221 17.1568 11.6416 18.3337H11ZM25.6666 33.0003C26.1529 33.0003 26.6192 33.1935 26.963 33.5373C27.3068 33.8811 27.5 34.3474 27.5 34.8337V36.667H16.5V34.8337C16.5 34.3474 16.6931 33.8811 17.0369 33.5373C17.3807 33.1935 17.8471 33.0003 18.3333 33.0003H25.6666ZM29.3333 14.667C29.3333 16.6119 28.5607 18.4772 27.1854 19.8524C25.8101 21.2277 23.9449 22.0003 22 22.0003C20.055 22.0003 18.1898 21.2277 16.8145 19.8524C15.4392 18.4772 14.6666 16.6119 14.6666 14.667V7.33366H29.3333V14.667ZM36.6666 14.667C36.6666 15.6395 36.2803 16.5721 35.5927 17.2597C34.9051 17.9474 33.9724 18.3337 33 18.3337H32.3583C32.7789 17.1568 32.9959 15.9168 33 14.667V11.0003H36.6666V14.667Z" fill="#282B33"/>
-										</svg>
-										
-								</div>
-								<h3 class="h3">Ferramentas de Marketing</h3>
-								<p class="qualification__text">
-									Jackpots (totalmente customizável); <br>
-									Lista de vencedores na página principal; <br>
-									Uma variedade de bônus; <br>
-									Torneios com fundos de prêmios fixos e acumulativos; <br>
-									Programas de parceria e indicações; <br>
-									Banco de dados do jogador com ferramentas para mensagens diretas (DM); <br>
-									Relatórios detalhados sobre fontes de tráfego. <br>
-								</p>
-							</div>
-
-							<div class="qualification__slide">
-								<div class="qualification__icon">
-									<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M38.5 22.9163C38.4922 20.8868 37.8745 18.9066 36.727 17.2327C35.5794 15.5588 33.9551 14.2686 32.065 13.5296C32.065 10.8554 31.0026 8.29062 29.1117 6.39963C27.2207 4.50864 24.6559 3.44629 21.9817 3.44629C19.3074 3.44629 16.7427 4.50864 14.8517 6.39963C12.9607 8.29062 11.8983 10.8554 11.8983 13.5296C9.71136 14.3877 7.89265 15.9825 6.75621 18.0386C5.61978 20.0947 5.23695 22.4831 5.67383 24.7914C6.11071 27.0997 7.33988 29.183 9.14911 30.6817C10.9583 32.1803 13.234 33.0001 15.5833 32.9996H15.95C15.4869 34.5951 14.7144 36.0839 13.6767 37.3813C13.4689 37.6511 13.3404 37.9734 13.3056 38.3122C13.2707 38.6509 13.3309 38.9926 13.4794 39.2991C13.6279 39.6055 13.8587 39.8646 14.1462 40.0472C14.4336 40.2298 14.7662 40.3288 15.1067 40.333H28.8933C29.2403 40.3341 29.5804 40.2369 29.8742 40.0524C30.1681 39.868 30.4036 39.6039 30.5533 39.291C30.7031 38.9781 30.761 38.629 30.7202 38.2845C30.6795 37.94 30.5419 37.6141 30.3233 37.3446C29.2898 36.0582 28.5175 34.5822 28.05 32.9996H28.4167C31.0894 32.9948 33.6514 31.9309 35.5413 30.0409C37.4312 28.151 38.4951 25.5891 38.5 22.9163ZM18.4433 36.6663C19.1731 35.1861 19.6738 33.6036 19.9283 31.973C20.6685 31.631 21.3642 31.2 22 30.6896C22.6358 31.2 23.3315 31.631 24.0717 31.973C24.3262 33.6036 24.8269 35.1861 25.5567 36.6663H18.4433ZM23.43 26.9496L23.2833 26.803L23.1367 26.6563H23.0083L22.6783 26.4913L22.3483 26.3813H21.6517L21.3217 26.4913C21.209 26.5279 21.1036 26.5837 21.01 26.6563H20.8633L20.7167 26.803L20.57 26.9496C19.9252 27.7468 19.0988 28.3779 18.1599 28.79C17.2211 29.2021 16.1972 29.3832 15.1739 29.3182C14.1507 29.2531 13.1579 28.9438 12.2788 28.4162C11.3997 27.8886 10.6598 27.1579 10.1211 26.2855C9.58246 25.4131 9.26071 24.4243 9.18281 23.402C9.1049 22.3796 9.27312 21.3535 9.67338 20.4095C10.0736 19.4656 10.6943 18.6313 11.4833 17.9765C12.2723 17.3218 13.2068 16.8656 14.2083 16.6463C14.3099 16.6054 14.408 16.5563 14.5017 16.4996C14.6149 16.4584 14.7252 16.4094 14.8317 16.353C14.9261 16.2837 15.0122 16.2037 15.0883 16.1146C15.2722 15.9694 15.4066 15.7709 15.4733 15.5463C15.5316 15.4495 15.5749 15.3444 15.6017 15.2346C15.6195 15.113 15.6195 14.9895 15.6017 14.868C15.6105 14.7643 15.6105 14.66 15.6017 14.5563C15.5834 14.2816 15.5834 14.006 15.6017 13.7313C15.6017 12.0295 16.2777 10.3974 17.4811 9.19402C18.6844 7.99066 20.3165 7.31462 22.0183 7.31462C23.7201 7.31462 25.3522 7.99066 26.5556 9.19402C27.759 10.3974 28.435 12.0295 28.435 13.7313C28.4532 14.006 28.4532 14.2816 28.435 14.5563C28.4253 14.6538 28.4253 14.7521 28.435 14.8496C28.4167 14.9773 28.4167 15.1069 28.435 15.2346C28.4618 15.3444 28.5051 15.4495 28.5633 15.5463C28.63 15.7709 28.7645 15.9694 28.9483 16.1146C29.0244 16.2037 29.1105 16.2837 29.205 16.353C29.3115 16.4094 29.4217 16.4584 29.535 16.4996C29.6293 16.55 29.7273 16.5929 29.8283 16.628C30.8299 16.8473 31.7643 17.3034 32.5534 17.9582C33.3424 18.6129 33.963 19.4472 34.3633 20.3912C34.7635 21.3352 34.9317 22.3613 34.8538 23.3836C34.7759 24.406 34.4542 25.3948 33.9155 26.2672C33.3769 27.1396 32.637 27.8702 31.7579 28.3979C30.8787 28.9255 29.886 29.2348 28.8627 29.2998C27.8395 29.3649 26.8156 29.1838 25.8767 28.7717C24.9379 28.3596 24.1114 27.7285 23.4667 26.9313L23.43 26.9496Z" fill="#282B33"/>
-										</svg>
-								</div>
-								<h3 class="h3">LM</h3>
-								<p class="qualification__text">
-									Solução multiuso para seu negócio; <br>
-									Mais de 100 jogos populares e coloridos, cuja lista está continuamente em expansão; <br>	
-									Funciona em modo de navegador. Não necessita nenhuma capacidade extra do seu computador, é instalado em servidores seguros a partir dos quais funciona normalmente;<br>
-									Não é necessária uma longa preparação para começar a trabalhar com LM. Você pode iniciar e configurar o produto em qualquer computador dentro de algumas horas; <br>
-									Um jogador pode fazer login no sistema de qualquer dispositivo, a qualquer momento. LM apresenta um design totalmente adaptativo e de fácil compreensão.<br> <br>
-									Customize a plataforma LM da melhor maneira;<br>
-									A plataforma apresenta uma configuração flexível. Selecione jogos populares, aparência de mesa de jogo, jackpots e bônus. Tudo para envolver seus jogadores em um processo cativante de jogo; <br>
-									A plataforma fornece um conjunto de ferramentas simples e úteis para facilitar o trabalho de caixas e administradores. <br>
-									Obtenha estatísticas detalhadas sobre o desempenho da sua loja de apostas e atividades dos jogadores. <br>
-									Suporte técnico 24/7, que garante estabilidade de trabalho com LM
-
-								</p>
-							</div>
-
-							<div class="qualification__slide">
-								<div class="qualification__icon">
-									<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.0001 27.2422C21.2893 27.2422 20.711 26.6639 20.711 25.9531C20.711 25.4339 21.02 24.9676 21.4981 24.765C22.0754 24.5206 22.7661 24.7292 23.3938 25.3373C23.9051 25.8326 24.7212 25.8197 25.2165 25.3085C25.712 24.7972 25.699 23.9811 25.1877 23.4858C24.6058 22.9219 23.9588 22.5234 23.2891 22.2985V20.7969C23.2891 20.085 22.712 19.5078 22.0001 19.5078C21.2882 19.5078 20.711 20.085 20.711 20.7969V22.3069C20.6379 22.3329 20.565 22.3604 20.4927 22.391C19.0592 22.9982 18.1329 24.3964 18.1329 25.9531C18.1329 28.0855 19.8677 29.8203 22.0001 29.8203C22.7109 29.8203 23.2891 30.3986 23.2891 31.1094C23.2891 31.6496 22.9484 32.1367 22.4413 32.3214C21.7791 32.5624 21.0084 32.2354 20.3267 31.4237C19.8688 30.8785 19.0558 30.8078 18.5106 31.2657C17.9654 31.7236 17.8947 32.5367 18.3525 33.0818C19.0494 33.9115 19.8606 34.4805 20.7111 34.7669V36.2656C20.7111 36.9775 21.2883 37.5547 22.0002 37.5547C22.7121 37.5547 23.2892 36.9775 23.2892 36.2656V34.7554C23.3007 34.7514 23.3122 34.7479 23.3237 34.7438C24.845 34.1896 25.8673 32.729 25.8673 31.1094C25.8673 28.977 24.1324 27.2422 22.0001 27.2422Z" fill="#282B33"/>
-										<path d="M33.9384 19.3582C32.4063 17.4733 30.6549 15.9717 28.7323 14.8918C29.0471 14.5192 29.2956 14.0824 29.456 13.5956C30.0856 11.6784 29.166 9.40105 26.8188 8.65915L30.1092 2.92153C30.5244 2.19742 30.1514 1.27514 29.3509 1.04242C26.9718 0.350711 24.4987 0 22 0C19.5013 0 17.0282 0.350711 14.6491 1.04242C13.8476 1.2754 13.4761 2.19828 13.8908 2.92153L17.1812 8.65923C14.8433 9.39735 13.9121 11.6713 14.5443 13.5966C14.7042 14.0821 14.9526 14.5187 15.2684 14.8914C13.3456 15.9713 11.594 17.4732 10.0617 19.3582C6.99884 23.1263 5.24219 27.8792 5.24219 32.3984C5.24219 41.7734 12.7228 44 22 44C31.2837 44 38.7578 41.7697 38.7578 32.3984C38.7578 27.8792 37.0012 23.1263 33.9384 19.3582ZM16.9723 3.11248C18.6169 2.75748 20.3017 2.57812 22 2.57812C23.6983 2.57812 25.3831 2.75748 27.0277 3.11248L24.1889 8.06266C22.7349 7.85967 21.2655 7.85976 19.8112 8.06274L16.9723 3.11248ZM17.8145 11.1629C20.033 10.4352 22.354 10.2973 24.6104 10.7484C24.6131 10.7489 24.6159 10.7494 24.6185 10.7499C25.1445 10.8555 25.6669 10.9928 26.1837 11.1623C26.8593 11.385 27.2284 12.1157 27.007 12.7901C26.846 13.2785 26.4211 13.6148 25.9212 13.6693C24.6359 13.2669 23.3249 13.0625 22 13.0625C20.6778 13.0625 19.3694 13.266 18.0866 13.6668C17.5789 13.6146 17.153 13.2758 16.9934 12.7913C16.7716 12.1157 17.1408 11.3849 17.8145 11.1629ZM22 41.4391C11.9285 41.4391 7.82031 38.8077 7.82031 32.3984C7.82031 28.519 9.40612 24.2522 12.0622 20.9844C14.8633 17.5384 18.3926 15.6406 22 15.6406C25.9708 15.6406 29.444 17.9164 31.9378 20.9844C34.5939 24.2522 36.1797 28.519 36.1797 32.3984C36.1797 38.8077 32.0715 41.4391 22 41.4391Z" fill="#282B33"/>
-										</svg>
-										
-								</div>
-								<h3 class="h3">Bônus</h3>
-								<p class="qualification__text">
-									Personalize os parâmetros dos bônus que você oferece para encorajar seus jogadores: <br>
-									A porcentagem de acumulação. <br>
-									Período de disponibilidade de bônus claramente definido que inclui dias da semana e horas. <br>
-									Requisitos para obter bônus (número de apostas, quantidade de reposição, jogos). <br>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<div class="contacts-footer__bg">
-			<section class="contacts" id="s-contacts">
-
-				<div class="container">
-					<div class="row">
-
-						<img src="img/footer__img_right.svg" alt="Chip" class="contacts__img">
-
-						<div class="col-xl-5 col-lg-6">
-							<h2 class="h2" data-aos="zoom-in-down">Estamos em contato com nossos clientes</h2>
-							<h4 class="h4" data-aos="zoom-in-down" data-aos-delay="200">
-								Contacte-nos através dos contactos indicados abaixo e
-								responderemos o mais brevemente possível à sua questão
-							</h4>
-
-							<div class="contacts__info info">
-								<div class="info__wrapper info__box" data-aos="zoom-in-down">
-									<a href="tel:+5551998192908" class="info__phone">
-										<img
-											src="img/icons/phone.svg"
-											class="info__icon"
-											alt="Phone"
-										/>
-										<span>+5551998192908</span>
-									</a>
-									<a href="#" class="info__whatsapp"
-										><svg
-											width="27"
-											height="27"
-											viewBox="0 0 27 27"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M14.0101 3C12.0435 2.99954 10.1126 3.52567 8.41839 4.52367C6.72414 5.52167 5.32835 6.9551 4.37618 8.67489C3.42402 10.3947 2.95024 12.338 3.00413 14.3028C3.05803 16.2676 3.63761 18.182 4.68262 19.8471L4.94439 20.2631L3.83254 24.3207L7.99784 23.2289L8.3997 23.4673C10.0956 24.4709 12.0304 25.0003 14.0013 25H14.0057C16.9223 24.9968 19.7183 23.8368 21.7798 21.7748C23.8412 19.7127 24.9994 16.9172 25 14.0022C25.0006 11.0873 23.8435 8.29129 21.7829 6.22838C19.7223 4.16547 16.9267 3.00433 14.0101 3H14.0101ZM20.4836 18.7227C20.24 19.1244 19.9159 19.4715 19.5315 19.742C19.1472 20.0125 18.711 20.2006 18.2504 20.2945C17.555 20.4134 16.8415 20.3686 16.1665 20.1636C15.526 19.9647 14.8964 19.7323 14.2804 19.4671C11.9954 18.3211 10.0477 16.6011 8.62853 14.4758C7.85477 13.4917 7.38526 12.3032 7.2776 11.0562C7.26841 10.5414 7.36664 10.0303 7.56601 9.55551C7.76538 9.08072 8.06153 8.65264 8.43559 8.29855C8.54615 8.17253 8.6816 8.07072 8.83343 7.99953C8.98525 7.92835 9.15017 7.88932 9.31782 7.8849C9.5383 7.8849 9.75913 7.88694 9.95185 7.89658C10.155 7.90666 10.4277 7.81943 10.6963 8.4641C10.972 9.12586 11.6337 10.7529 11.7163 10.9184C11.7688 11.005 11.7987 11.1033 11.8036 11.2044C11.8084 11.3056 11.7879 11.4063 11.744 11.4975C11.6606 11.6962 11.5492 11.8819 11.4131 12.049C11.2477 12.2421 11.0656 12.48 10.9169 12.6282C10.7512 12.7931 10.5787 12.9719 10.7717 13.3028C11.2686 14.1528 11.8889 14.9245 12.6123 15.5928C13.397 16.2901 14.2973 16.8453 15.2729 17.2335C15.6037 17.3991 15.7967 17.3714 15.9897 17.1508C16.1827 16.9302 16.8168 16.1856 17.0372 15.8547C17.2577 15.5238 17.4783 15.5789 17.7815 15.6893C18.0848 15.7997 19.7115 16.5993 20.0424 16.7647C20.3733 16.9302 20.5938 17.0129 20.6765 17.1508C20.7671 17.6824 20.7001 18.2289 20.4836 18.7228V18.7227Z"
-												fill="#FEFFFF"
-											/>
-										</svg>
-									</a>
-								</div>
-
-								<a
-									href="mailto:jogosgustavo101@gmail.com"
-									class="info__box info__mail"
-									data-aos="zoom-in-down"
-								>
-									<img
-										src="img/icons/mail.svg"
-										class="info__icon"
-										alt="E-main"
-									/>
-									<span>jogosgustavo101@gmail.com</span>
-								</a>
-
-								<a href="#" class="info__box info__facebook" data-aos="zoom-in-down">
-									<img
-										src="img/icons/facebook.svg"
-										class="info__icon"
-										alt="facebook"
-									/>
-									<span>
-										Estamos no <span class="_highlight">Facebook</span></span
-									>
-								</a>
-							</div>
-						</div>
-
-						<div
-							class="col-lg-5 offset-xl-2 offset-lg-1 contacts-form__container"
-						>
-							<h2 class="h2 form-section__title" data-aos="zoom-in-down">
-								14 dias de teste como um presente
-							</h2>
-							<h4 class="h4 form-section__subtitle" data-aos="zoom-in-down" data-aos-delay="200">
-								Deixe um pedido para testar um casino online e iremos
-								considerá-lo num futuro próximo
-							</h4>
-							<form class="form" data-aos="zoom-in-down">
-
-								<!-- Hidden Required Fields -->
-								<input type="hidden" name="project_name" value="Jogos Evoli">
-								<input type="hidden" name="admin_email" value="nikita.tytskyi@gmail.com">
-								<input type="hidden" name="form_subject" value="Jogos Evoli">
-								<!-- END Hidden Required Fields -->
-
-								<input
-									type="text"
-									name="Name"
-									placeholder="Digite seu nome"
-									autocomplete="off"
-									required
-								/>
-								<input
-									type="email"
-									name="E-mail"
-									placeholder="Digite seu e-mail"
-									autocomplete="off"
-									required
-								/>
-								<button class="button">Enviar</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<footer class="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-5 col-lg-6 order-2 order-lg-1">
-							<span class="copyrights">© 2020 JOGOS EVOLI. Todos os direitos reservados</span>
-						</div>
-
-						<div class="col-lg-5 offset-xl-2 offset-lg-1 order-1 order-lg-2 footer__wrapper">
-							<span>Política de Privacidade</span>
-							<span>Termo de Acordo do Usuário</span>
-						</div>
-				</div>
-			</footer>
-		</div>
-
-		<div class="succes-form">
-			<div class="succes-form__container">
-				<h3 class="h3">A inscrição foi enviada com sucesso</h3>
-				<p>Entraremos em contato o mais rápido possível e ofereceremos um presente na forma de um período de teste de 14 dias!</p>
-				<img src="img/icons/check.svg" alt="Check">
-				<button class="button">Boa</button>
-			</div>
-		</div>
-
+		</footer>
 	</body>
 </html>
