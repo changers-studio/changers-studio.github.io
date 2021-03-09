@@ -11,6 +11,7 @@
 
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 
+		<link rel="stylesheet" href="libs/select2/select2.css" />
 		<link rel="stylesheet" href="css/styles.min.css" />
 
 		<script
@@ -21,6 +22,7 @@
 		></script>
 
 		<script defer src="js/scripts.min.js"></script>
+		<script defer src="libs/select2/select2.js"></script>
 		<script defer src="js/calc.js"></script>
 	</head>
 
@@ -31,11 +33,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 header_flex">
-						<img
-							src="img/header/logo.svg"
-							alt="Kassa 24"
-							class="header__logo"
-						/>
+						<a href="index.html" class="header__logo">
+							<img src="img/header/logo.svg" alt="Kassa 24" />
+						</a>
 						<div class="header__sidebar">
 							<img src="img/header/sidebar-close.svg" alt="X" class="close" />
 
@@ -43,44 +43,44 @@
 								<li class="menu__item">
 									<div class="menu__heading"><span>О программе</span></div>
 									<div class="menu__dropdown">
-										<a href="">Функционал ПРРО Kassa24</a>
-										<a href="">Настройка фискализации</a>
-										<a href="">Эквайринг</a>
+										<a href="functional.html">Функционал ПРРО Kassa24</a>
+										<a href="fiscalization.html">Настройка фискализации</a>
+										<a href="acquiring.html">Эквайринг</a>
 									</div>
 								</li>
 								<li class="menu__item">
 									<div class="menu__heading"><span>Онлайн кассы</span></div>
 									<div class="menu__dropdown">
-										<a href="">iMin M1 5"</a>
-										<a href="">iMin D2 10.1"</a>
-										<a href="">iMin D2 Pro10.1"</a>
-										<a href="">iMin M1 5"</a>
-										<a href="">iMin D3 15.6"</a>
+										<a href="imin_m1.html">iMin M1 5"</a>
+										<a href="imin_m2.html">iMin M2 5.5"</a>
+										<a href="imin_d2.html">iMin D2 10.1"</a>
+										<a href="imin_d2_pro.html">iMin D2 Pro 10.1"</a>
+										<a href="imin_d3.html">iMin D3 15.6"</a>
 									</div>
 								</li>
 								<li class="menu__item">
 									<div class="menu__heading"><span>Приложения</span></div>
 									<div class="menu__dropdown">
-										<a href="">Интеграция с SMS Club</a>
-										<a href="">Клиентская база</a>
-										<a href="">Весовые товары</a>
+										<a href="sms_club.html">Интеграция с SMS Club</a>
+										<a href="customer_base.html">Клиентская база</a>
+										<a href="weight_products.html">Весовые товары</a>
 									</div>
 								</li>
 								<li class="menu__item">
 									<div class="menu__heading"><span>Поддержка</span></div>
 									<div class="menu__dropdown">
-										<a href="">Библиотека знаний</a>
+										<a href="help.html">Библиотека знаний</a>
 										<a href="">Онлайн чат</a>
-										<a href="">Удаленная настрока</a>
+										<a href="settings.html">Удаленная настрока</a>
 										<a href="">Публичная оферта</a>
 									</div>
 								</li>
 								<li class="menu__item">
 									<div class="menu__heading"><span>О нас</span></div>
 									<div class="menu__dropdown">
-										<a href="">О компании</a>
-										<a href="">Новости</a>
-										<a href="">Контакты</a>
+										<a href="contacts-about_us.html">О компании</a>
+										<a href="contacts-about_us.html">Новости</a>
+										<a href="contacts-about_us.html">Контакты</a>
 									</div>
 								</li>
 							</ul>
@@ -167,10 +167,17 @@
 							<div class="calc__table">
 								<p class="calc__title">Дополнительное оборудование:</p>
 
-								<div class="calc__row _enable">
+								<div class="calc__row">
 									<div class="calc__inner product-name">
-										<input type="checkbox" name="Num" value="1250" checked />
-										<span>Принтер чеков</span>
+										<input
+											type="checkbox"
+											name="Num"
+											value="1250"
+											checked
+											disabled
+											data-enable="disabled"
+										/>
+										<span>Принтер чеков Xprinter XP-58IIH</span>
 									</div>
 
 									<div class="calc__inner price">1250 ₴</div>
@@ -179,7 +186,7 @@
 								<div class="calc__row _enable">
 									<div class="calc__inner product-name">
 										<input type="checkbox" name="Num" value="2999" />
-										<span>Принтер этикеток</span>
+										<span>Принтер этикеток Xprinter XP-365B</span>
 									</div>
 
 									<div class="calc__inner price">2999 ₴</div>
@@ -187,20 +194,20 @@
 
 								<div class="calc__row _enable">
 									<div class="calc__inner product-name">
-										<input type="checkbox" name="Num" value="2299" />
-										<span>Сканер штрих-кодов Lemmix 1900CB</span>
+										<input type="checkbox" name="Num" value="1499" />
+										<span>Сканер штрих-кодов Alanda CT007</span>
 									</div>
 
-									<div class="calc__inner price">2299 ₴</div>
+									<div class="calc__inner price">1499 ₴</div>
 								</div>
 
 								<div class="calc__row _enable">
 									<div class="calc__inner product-name">
-										<input type="checkbox" name="Num" value="1999" />
+										<input type="checkbox" name="Num" value="1599" />
 										<span>Денежный ящик</span>
 									</div>
 
-									<div class="calc__inner price">1999 ₴</div>
+									<div class="calc__inner price">1599 ₴</div>
 								</div>
 
 								<div class="calc__row _enable">
@@ -231,7 +238,13 @@
 										<span>Печать этикеток</span>
 									</div>
 
-									<div class="calc__inner price">30 ₴/мес</div>
+									<div class="calc__inner price">
+										<select class="price__list _labels">
+											<option>30 ₴/мес</option>
+											<option>80 ₴/3 мес</option>
+											<option>300 ₴/год</option>
+										</select>
+									</div>
 								</div>
 
 								<div class="calc__row _enable">
@@ -240,7 +253,13 @@
 										<span>Клиентская база</span>
 									</div>
 
-									<div class="calc__inner price">50 ₴/мес</div>
+									<div class="calc__inner price">
+										<select class="price__list _clients">
+											<option>50 ₴/мес</option>
+											<option>140 ₴/3 мес</option>
+											<option>500 ₴/год</option>
+										</select>
+									</div>
 								</div>
 
 								<div class="calc__row _enable">
@@ -249,7 +268,13 @@
 										<span>Весовые товары</span>
 									</div>
 
-									<div class="calc__inner price">50 ₴/мес</div>
+									<div class="calc__inner price">
+										<select class="price__list _weight">
+											<option>50 ₴/мес</option>
+											<option>140 ₴/3 мес</option>
+											<option>500 ₴/год</option>
+										</select>
+									</div>
 								</div>
 							</div>
 
@@ -265,18 +290,18 @@
 									<div class="calc__inner price">299 ₴</div>
 								</div>
 							</div>
-						</div>
 
-						<form class="calc__form">
-							<input type="text" placeholder="+380 (97) 097 00 24" required />
-							<button class="button">оставить заявку</button>
-						</form>
+							<form class="calc__form">
+								<input type="text" placeholder="+380 (97) 097 00 24" required />
+								<button class="button">оставить заявку</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="product-features features" id="product-features">
+		<section class="product-features features" id="s-product-features">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3 col-md-6">
@@ -317,7 +342,7 @@
 			</div>
 		</section>
 
-		<section class="product-tabs" id="product-tabs">
+		<section class="product-tabs" id="s-product-tabs">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -377,26 +402,18 @@
 
 							<div class="tabs__content _tech">
 								<p>
-									Процессор Четырехъядерный ARM Cortex-A53 64-бит до 1,5 ГГц
+									Процессор Четырехъядерный ARM Cortex-A53 64-бит до 1,5 ГГц ОС
+									Android 7.1 iMin OS Память 2 ГБ RAM + 16 ГБ ROM Дисплей 10,1 ″
+									1280 × 800 Сенсорный экран Многоточечный емкостный сенсорный
+									экран Интерфейс USB Type_Ax4, Micro USBx1, 3,5 мм 耳机 接口
+									x1, DC Jackx1, RJ11x1, RJ12x1, RJ45x1, TF Cardx1 Связь
+									Ethernet: 100 Мбит / с, Wi-Fi: 802.11 b / g / n 2,4 ГГц,
+									Bluetooth: BT4.2 Источник питания Вход 100-240 В переменного
+									тока Выход 24 В постоянного тока 1,5 А Аккумулятор 7,4 В /
+									5200 мАч Кнопка Кнопка питания Динамик 1,5 Вт моно
+									Максимальное хранилище TF-карты 128G Вес 1,5 кг Размер
+									252x141x258мм Сертификация CE IMDA
 								</p>
-								<p>ОС Android 7.1 iMin OS</p>
-								<p>Память 2 ГБ RAM + 16 ГБ ROM Дисплей 10,1 ″ 1280 × 800</p>
-								<p>Сенсорный экран</p>
-								<p>
-									Многоточечный емкостный сенсорный экран Интерфейс USB
-									Type_Ax4, Micro USBx1, 3,5 мм 耳机 接口 x1, DC Jackx1, RJ11x1,
-									RJ12x1, RJ45x1, TF Cardx1
-								</p>
-								<p>Связь Ethernet: 100 Мбит / с,</p>
-								<p>Wi-Fi: 802.11 b / g / n 2,4 ГГц, Bluetooth: BT4.2</p>
-								<p>Источник питания Вход 100-240</p>
-								<p>В переменного тока Выход 24</p>
-								<p>В постоянного тока 1,5 А</p>
-								<p>Аккумулятор 7,4 В / 5200 мАч</p>
-								<p>Кнопка Кнопка питания Динамик 1,5 Вт моно</p>
-								<p>Максимальное хранилище TF-карты 128G</p>
-								<p>Вес 1,5 кг</p>
-								<p>Размер 252x141x258мм Сертификация CE IMDA</p>
 							</div>
 						</div>
 					</div>
@@ -415,8 +432,7 @@
 						<div class="connection__item">
 							<div class="number">01</div>
 							<h6 class="h6">
-								Купите один из Терминалов, который <br />
-								совместим с Kassa24.Online.
+								Купите один из Терминалов, который совместим с Kassa24.Online.
 							</h6>
 						</div>
 						<div class="connection__item">
@@ -497,9 +513,11 @@
 
 		<section class="product-advantages advantages" id="s-product-advantages">
 			<div class="container">
-				<div class="row">
+				<div class="row _flex">
 					<div class="col-lg-5">
-						<div class="advantages__img"></div>
+						<div class="advantages__img">
+							<img src="img/imin_d2_pro/advantages.png" alt="" />
+						</div>
 					</div>
 
 					<div class="col-lg-6 offset-xl-1">
@@ -509,27 +527,28 @@
 
 						<ul class="advantages__list">
 							<li>
-								Возможность подключения дополнительного оборудования: весы,
-								принтер этикеток, принтер чеков, денежный ящик, сканер
-								штрих-кодов.
+								Возможность подключения
+								<span>дополнительного оборудования</span>: весы, принтер
+								этикеток, принтер чеков, денежный ящик, сканер штрих-кодов.
 							</li>
 							<li>
-								Ведение клиентской базы: вы сможете отслеживать суммы покупок
-								конкретного клиента и предлагать накопительные скидки.
+								Ведение <span>клиентской базы</span>: вы сможете отслеживать
+								суммы покупок конкретного клиента и предлагать накопительные
+								скидки.
 							</li>
 							<li>
-								Программа Kassa24.Online бесплатна для всех, кто покупает
-								Терминал у нас. Вы платите только за дополнительные приложения
-								при необходимо.
+								Программа Kassa24.Online <span>бесплатна</span> для всех, кто
+								покупает Терминал у нас. Вы платите только за дополнительные
+								приложения при необходимо.
 							</li>
 							<li>
-								Полноценный товарный учет и контроль за работой персонала:
-								ослеживайте заказы, открытие смены и успеваемость ваших
-								продавцов.
+								Полноценный товарный <span>учет и контроль</span> за работой
+								персонала: ослеживайте заказы, открытие смены и успеваемость
+								ваших продавцов.
 							</li>
 							<li>
-								Возможность удаленной настройки: вы предоставляете доступ, а
-								наши специалисты перенастроят вашу онлайн-кассу.
+								Возможность <span>удаленной настройки</span>: вы предоставляете
+								доступ, а наши специалисты перенастроят вашу онлайн-кассу.
 							</li>
 						</ul>
 					</div>
@@ -552,7 +571,7 @@
 									вопросы и поможет оформить заказ.
 								</p>
 
-								<a href="" class="button">Получить консультацию</a>
+								<a href="#s-join-us" class="button">Получить консультацию</a>
 							</div>
 						</div>
 					</div>
@@ -567,37 +586,37 @@
 						<div class="footer__menu">
 							<ul>
 								<h6 class="h6">О программе</h6>
-								<li><a href="">Функционал ПРРО Kassa24</a></li>
-								<li><a href="">Настройка фискализации</a></li>
-								<li><a href="">Эквайринг</a></li>
+								<li><a href="functional.html">Функционал ПРРО Kassa24</a></li>
+								<li><a href="fiscalization.html">Настройка фискализации</a></li>
+								<li><a href="acquiring.html">Эквайринг</a></li>
 							</ul>
 							<ul>
 								<h6 class="h6">Онлайн кассы</h6>
-								<li><a href="">iMin M1 5"</a></li>
-								<li><a href="">iMin D2 10.1"</a></li>
-								<li><a href="">iMin D2 Pro10.1"</a></li>
-								<li><a href="">iMin M1 5"</a></li>
-								<li><a href="">iMin D3 15.6"</a></li>
+								<li><a href="imin_m1.html">iMin M1 5"</a></li>
+								<li><a href="imin_m2.html">iMin M2 5.5"</a></li>
+								<li><a href="imin_d2.html">iMin D2 10.1"</a></li>
+								<li><a href="imin_d2_pro.html">iMin D2 Pro 10.1"</a></li>
+								<li><a href="imin_d3.html">iMin D3 15.6"</a></li>
 							</ul>
 							<ul>
 								<h6 class="h6">Приложения</h6>
-								<li><a href="">Интеграция с SMS Club</a></li>
-								<li><a href="">Клиентская база</a></li>
-								<li><a href="">Печать этикеток</a></li>
-								<li><a href="">Весовые товары</a></li>
+								<li><a href="sms_club.html">Интеграция с SMS Club</a></li>
+								<li><a href="customer_base.html">Клиентская база</a></li>
+								<li><a href="printing_labels.html">Печать этикеток</a></li>
+								<li><a href="weight_products.html">Весовые товары</a></li>
 							</ul>
 							<ul>
 								<h6 class="h6">Подержка</h6>
-								<li><a href="">Библиотека знаний</a></li>
+								<li><a href="help.html">Библиотека знаний</a></li>
 								<li><a href="">Онлайн чат</a></li>
-								<li><a href="">Удаленная настрока</a></li>
+								<li><a href="settings.html">Удаленная настрока</a></li>
 								<li><a href="">Публичная оферта</a></li>
 							</ul>
 							<ul>
 								<h6 class="h6">О нас</h6>
-								<li><a href="">О компании</a></li>
-								<li><a href="">Новости</a></li>
-								<li><a href="">Контакты</a></li>
+								<li><a href="contacts.html">О компании</a></li>
+								<li><a href="contacts.html">Новости</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
 							</ul>
 						</div>
 
@@ -605,10 +624,16 @@
 							<span class="copyrights">Copyright 2020</span>
 							<ul class="footer__social-links">
 								<li>
-									<a href=""><i class="fab fa-facebook-square"></i></a>
+									<a href="https://www.facebook.com/kassa24/" target="_blank"
+										><i class="fab fa-facebook-square"></i
+									></a>
 								</li>
 								<li>
-									<a href=""><i class="fab fa-instagram"></i></a>
+									<a
+										href="https://www.instagram.com/kassa24.ua/"
+										target="_blank"
+										><i class="fab fa-instagram"></i
+									></a>
 								</li>
 							</ul>
 						</div>

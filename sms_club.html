@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Kassa 24 | Интеграция с SMS Club</title>
+		<!-- <meta name="description" content=""> -->
+
+		<meta name="viewport" content="width=device-width" />
+		<meta name="format-detection" content="telephone=no" />
+
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+
+		<link rel="stylesheet" href="libs/select2/select2.css" />
+		<link rel="stylesheet" href="css/styles.min.css" />
+
+		<script
+			async
+			defer
+			src="https://kit.fontawesome.com/55e0136003.js"
+			crossorigin="anonymous"
+		></script>
+
+		<script defer src="js/scripts.min.js"></script>
+		<script defer src="libs/select2/select2.js"></script>
+		<script defer src="js/calc.js"></script>
+	</head>
+
+	<body class="p-product">
+		<header id="header" class="header">
+			<div class="header__sidebar-plug"></div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-12 header_flex">
+						<a href="index.html" class="header__logo">
+							<img src="img/header/logo.svg" alt="Kassa 24" />
+						</a>
+						<div class="header__sidebar">
+							<img src="img/header/sidebar-close.svg" alt="X" class="close" />
+
+							<ul class="header__menu menu">
+								<li class="menu__item">
+									<div class="menu__heading"><span>О программе</span></div>
+									<div class="menu__dropdown">
+										<a href="functional.html">Функционал ПРРО Kassa24</a>
+										<a href="fiscalization.html">Настройка фискализации</a>
+										<a href="acquiring.html">Эквайринг</a>
+									</div>
+								</li>
+								<li class="menu__item">
+									<div class="menu__heading"><span>Онлайн кассы</span></div>
+									<div class="menu__dropdown">
+										<a href="imin_m1.html">iMin M1 5"</a>
+										<a href="imin_m2.html">iMin M2 5.5"</a>
+										<a href="imin_d2.html">iMin D2 10.1"</a>
+										<a href="imin_d2.html">iMin D2 Pro10.1"</a>
+										<a href="imin_d3.html">iMin D3 15.6"</a>
+									</div>
+								</li>
+								<li class="menu__item">
+									<div class="menu__heading"><span>Приложения</span></div>
+									<div class="menu__dropdown">
+										<a href="sms_club.html">Интеграция с SMS Club</a>
+										<a href="customer_base.html">Клиентская база</a>
+										<a href="weight_products.html">Весовые товары</a>
+									</div>
+								</li>
+								<li class="menu__item">
+									<div class="menu__heading"><span>Поддержка</span></div>
+									<div class="menu__dropdown">
+										<a href="help.html">Библиотека знаний</a>
+										<a href="">Онлайн чат</a>
+										<a href="settings.html">Удаленная настрока</a>
+										<a href="">Публичная оферта</a>
+									</div>
+								</li>
+								<li class="menu__item">
+									<div class="menu__heading"><span>О нас</span></div>
+									<div class="menu__dropdown">
+										<a href="contacts-about_us.html">О компании</a>
+										<a href="contacts-about_us.html">Новости</a>
+										<a href="contacts-about_us.html">Контакты</a>
+									</div>
+								</li>
+							</ul>
+
+							<div class="header__wrapper_right">
+								<a href="#" class="header__cabinet">Личный кабинет</a>
+
+								<ul class="header__lang">
+									<li><a href="" class="_active">ru</a></li>
+									<li><a href="">ua</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="header__hamburger">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="product-preview-calc" id="s-product-preview-calc">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<h1 class="h1">Интеграция с SMS Club</h1>
+
+						<div class="preview _transparent">
+							<img src="img/sms_club/main.png" alt="SMS Club" />
+						</div>
+
+						<div class="calc__result-wrapper">
+							<span>Итоговая стоимость:</span>
+							<div class="calc__result-inner">
+								<span class="calc__result">9249</span> ₴
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-xl-5 offset-xl-1">
+						<div class="calc">
+							<div class="calc__table">
+								<p class="calc__title _bold">Рассчет стоимости:</p>
+
+								<div class="calc__row _default">
+									<div class="calc__inner product-name">
+										<input
+											type="checkbox"
+											name="Num"
+											checked
+											disabled
+											value="7999"
+											data-enable="default"
+										/>
+										<span>Терминал iMin D2</span>
+									</div>
+
+									<div class="calc__inner price">7999 ₴</div>
+								</div>
+
+								<div class="calc__row">
+									<div class="calc__inner product-name">
+										<input
+											type="checkbox"
+											name="Num"
+											checked
+											disabled
+											value="0"
+											data-enable="default"
+										/>
+										<span>Программный РРО Kassa24</span>
+									</div>
+
+									<div class="calc__inner price">бесплатно</div>
+								</div>
+							</div>
+
+							<div class="calc__table">
+								<p class="calc__title">Дополнительное оборудование:</p>
+
+								<div class="calc__row">
+									<div class="calc__inner product-name">
+										<input
+											type="checkbox"
+											name="Num"
+											value="1250"
+											checked
+											disabled
+											data-enable="disabled"
+										/>
+										<span>Принтер чеков Xprinter XP-58IIH</span>
+									</div>
+
+									<div class="calc__inner price">1250 ₴</div>
+								</div>
+
+								<div class="calc__row _enable">
+									<div class="calc__inner product-name">
+										<input type="checkbox" name="Num" value="2999" />
+										<span>Принтер этикеток Xprinter XP-365B</span>
+									</div>
+
+									<div class="calc__inner price">2999 ₴</div>
+								</div>
+
+								<div class="calc__row _enable">
+									<div class="calc__inner product-name">
+										<input type="checkbox" name="Num" value="1499" />
+										<span>Сканер штрих-кодов Alanda CT007</span>
+									</div>
+
+									<div class="calc__inner price">1499 ₴</div>
+								</div>
+
+								<div class="calc__row _enable">
+									<div class="calc__inner product-name">
+										<input type="checkbox" name="Num" value="1599" />
+										<span>Денежный ящик</span>
+									</div>
+
+									<div class="calc__inner price">1599 ₴</div>
+								</div>
+
+								<div class="calc__row _enable">
+									<div class="calc__inner product-name">
+										<input type="checkbox" name="Num" value="2499" />
+										<span>Весы</span>
+									</div>
+
+									<div class="calc__inner price">2499 ₴</div>
+								</div>
+							</div>
+
+							<div class="calc__table">
+								<p class="calc__title">Приложения:</p>
+
+								<div class="calc__row _enable">
+									<div class="calc__inner product-name">
+										<input type="checkbox" name="Num" value="0" />
+										<span>Отправка чеков по SMS</span>
+									</div>
+
+									<div class="calc__inner price">бесплатно</div>
+								</div>
+
+								<div class="calc__row _enable">
+									<div class="calc__inner product-name">
+										<input type="checkbox" name="Num" value="30" />
+										<span>Печать этикеток</span>
+									</div>
+
+									<div class="calc__inner price">
+										<select class="price__list _labels">
+											<option>30 ₴/мес</option>
+											<option>80 ₴/3 мес</option>
+											<option>300 ₴/год</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="calc__row _enable">
+									<div class="calc__inner product-name">
+										<input type="checkbox" name="Num" value="50" />
+										<span>Клиентская база</span>
+									</div>
+
+									<div class="calc__inner price">
+										<select class="price__list _clients">
+											<option>50 ₴/мес</option>
+											<option>140 ₴/3 мес</option>
+											<option>500 ₴/год</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="calc__row _enable">
+									<div class="calc__inner product-name">
+										<input type="checkbox" name="Num" value="50" />
+										<span>Весовые товары</span>
+									</div>
+
+									<div class="calc__inner price">
+										<select class="price__list _weight">
+											<option>50 ₴/мес</option>
+											<option>140 ₴/3 мес</option>
+											<option>500 ₴/год</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="calc__table">
+								<p class="calc__title">Услуги:</p>
+
+								<div class="calc__row _enable">
+									<div class="calc__inner product-name">
+										<input type="checkbox" name="Num" value="299" />
+										<span>Регистрация Програмного РРО в налоговой</span>
+									</div>
+
+									<div class="calc__inner price">299 ₴</div>
+								</div>
+							</div>
+
+							<form class="calc__form">
+								<input type="text" placeholder="+380 (97) 097 00 24" required />
+								<button class="button">оставить заявку</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="product-notice" id="s-product-notice">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="product-notice__text">
+							<p>
+								Эта интеграция позволяет вам настроить SMS информирование. Если
+								ваш клиент хочет получить электронный чек вместо бумажного,
+								после активации вы сможете отправить ему на мобильный сообщение
+								с информацией о его заказе.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="product-instruction" id="s-product-instruction">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="h2">Как подключить SMS информирование?</h2>
+						<div class="product-instruction__container">
+							<div class="product-instruction__inner">
+								<div class="product-instruction__img">
+									<img src="img/sms_club/instruction_1.png" alt="instruction" />
+								</div>
+								<p class="product-instruction__text">
+									1. Пройдите регистрацию на сайте
+									<a href="https://smsclub.mobi" target="_blank"
+										>https://smsclub.mobi</a
+									>
+								</p>
+							</div>
+
+							<div class="product-instruction__inner">
+								<p class="product-instruction__text">
+									2. В настройках профиля найдите информацию о вашем токене для
+									интеграции, скопируйте его и перенесите в личный кабинет
+									Kassa24.Online
+								</p>
+
+								<div class="product-instruction__img">
+									<img src="img/sms_club/instruction_2.png" alt="instruction" />
+								</div>
+							</div>
+
+							<div class="product-instruction__inner">
+								<div class="product-instruction__img">
+									<img src="img/sms_club/instruction_3.png" alt="instruction" />
+								</div>
+								<p class="product-instruction__text">
+									3. Вставьте скопированный токен в вашем личном кабинете
+									Kassa24 и сохраните его. После этого нужно добавить все кассы,
+									на которых будет работать данное приложение.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="product-tabs" id="s-product-tabs">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="tabs">
+							<ul class="tabs__caption">
+								<li class="_active">Сферы приминения отправки SMS</li>
+								<li>Технические особенности</li>
+							</ul>
+
+							<div class="tabs__content _active _flex">
+								<div class="wrapper">
+									<img
+										src="img/product_tabs/icon_1.svg"
+										alt="Продуктовые магазины"
+									/>
+									<p>Продуктовые магазины</p>
+								</div>
+								<div class="wrapper">
+									<img
+										src="img/product_tabs/icon_2.svg"
+										alt="Ювелирные изделия"
+									/>
+									<p>Ювелирные изделия</p>
+								</div>
+								<div class="wrapper">
+									<img src="img/product_tabs/icon_3.svg" alt="Зоотовары" />
+									<p>Зоотовары</p>
+								</div>
+								<div class="wrapper">
+									<img
+										src="img/product_tabs/icon_4.svg"
+										alt="Медицинские клиники"
+									/>
+									<p>Медицинские клиники</p>
+								</div>
+								<div class="wrapper">
+									<img src="img/product_tabs/icon_5.svg" alt="Салоны красоты" />
+									<p>Салоны красоты</p>
+								</div>
+								<div class="wrapper">
+									<img
+										src="img/product_tabs/icon_10.svg"
+										alt="Онлайн-магазины"
+									/>
+									<p>Онлайн-магазины</p>
+								</div>
+								<div class="wrapper">
+									<img src="img/product_tabs/icon_7.svg" alt="Одежда и обувь" />
+									<p>Одежда и обувь</p>
+								</div>
+								<div class="wrapper">
+									<img src="img/product_tabs/icon_8.svg" alt="Запчасти" />
+									<p>Запчасти</p>
+								</div>
+								<div class="wrapper">
+									<img src="img/product_tabs/icon_9.svg" alt="Хозтовары" />
+									<p>Хозтовары</p>
+								</div>
+							</div>
+
+							<div class="tabs__content _tech">
+								<p>
+									Отправка электронных чеков и забота о природе становятся
+									современным трендом в мире ритейла. <br />
+									С технической точки зрения отправка SMS происходит через
+									сервис SMS Club.<br />
+									Вам нужно зарегистрироваться на их сайте и пополнить
+									баланс.<br />
+									Также вы можете зарегистрировать собственное альфа-имя, чтобы
+									ваши клиенты получали SMS уведомления с уникальным
+									идентификатором.<br />
+									Например, собственник магазина "Ромашка" может оформить себе
+									альфа-имя "ROMASHKA", и тогда клиентам будет понятнее, с
+									какого именно магазина им пришел чек.<br /><br />
+									Кроме того, в дальнейшем будет внедрена функция SMS рассылки,
+									и вы сможете информировать своих клиентов о предстоящих акциях
+									и распродажах.<br /><br />
+
+									Стоимость одного SMS на данный момент составляет 0,36 грн.<br /><br />
+
+									Пополнить баланс для отправки уведомлений вы можете прямо на
+									сайте сервиса
+									<a href="https://smsclub.mobi" target="_blank"
+										>https://smsclub.mobi</a
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="product-advantages advantages" id="s-product-advantages">
+			<div class="container">
+				<div class="row _flex">
+					<div class="col-lg-5">
+						<div class="advantages__img">
+							<img src="img/sms_club/advantages.png" alt="" />
+						</div>
+					</div>
+
+					<div class="col-lg-6 offset-xl-1">
+						<h2 class="h2 advantages__title">
+							Основные преимущества SMS информирования:
+						</h2>
+
+						<ul class="advantages__list">
+							<li>
+								<span>Забота о природе</span>: отправка электронного чека не
+								требует использования бумаги и вырубки деревьев, кроме того,
+								такие чеки намного удобнее хранить!
+							</li>
+							<li>
+								Созданные <span>шаблоны чеков</span>: все нужные параметры
+								электронных чеков уже в памяти и передаются покупателю
+								автоматически.
+							</li>
+							<li>
+								Сервис поддерживает услугу <span>альфа-имя</span>: ваши клиенты
+								смогут с легкостью понять, в каком именно магазине они портатили
+								деньги.
+							</li>
+							<li>
+								<span>Автоматическая синхронизация</span> с програмным РРО
+								Kassa24. Нет необходимости часами "ковыряться" в настройках.
+							</li>
+							<li>
+								Возможность <span>удаленной настройки</span>: вы предоставляете
+								доступ, а наши специалисты помогут настроить эту функцию.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="join-us" id="s-join-us">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="join-us__container">
+							<h2 class="h2">
+								Присоединяйтесь <br />
+								прямо сейчас
+							</h2>
+							<form class="join-us__form">
+								<input type="text" placeholder="+380 (97) 097 00 24" required />
+								<button class="button">Подключиться</button>
+							</form>
+							<div class="join-us__img"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer" id="s-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="footer__menu">
+							<ul>
+								<h6 class="h6">О программе</h6>
+								<li><a href="functional.html">Функционал ПРРО Kassa24</a></li>
+								<li><a href="fiscalization.html">Настройка фискализации</a></li>
+								<li><a href="acquiring.html">Эквайринг</a></li>
+							</ul>
+							<ul>
+								<h6 class="h6">Онлайн кассы</h6>
+								<li><a href="imin_m1.html">iMin M1 5"</a></li>
+								<li><a href="imin_m2.html">iMin M2 5.5"</a></li>
+								<li><a href="imin_d2.html">iMin D2 10.1"</a></li>
+								<li><a href="imin_d2.html">iMin D2 10.1"</a></li>
+								<li><a href="imin_d3.html">iMin D3 15.6"</a></li>
+							</ul>
+							<ul>
+								<h6 class="h6">Приложения</h6>
+								<li><a href="sms_club.html">Интеграция с SMS Club</a></li>
+								<li><a href="customer_base.html">Клиентская база</a></li>
+								<li><a href="printing_labels.html">Печать этикеток</a></li>
+								<li><a href="weight_products.html">Весовые товары</a></li>
+							</ul>
+							<ul>
+								<h6 class="h6">Подержка</h6>
+								<li><a href="help.html">Библиотека знаний</a></li>
+								<li><a href="">Онлайн чат</a></li>
+								<li><a href="settings.html">Удаленная настрока</a></li>
+								<li><a href="">Публичная оферта</a></li>
+							</ul>
+							<ul>
+								<h6 class="h6">О нас</h6>
+								<li><a href="contacts.html">О компании</a></li>
+								<li><a href="contacts.html">Новости</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
+						</div>
+
+						<div class="footer__bottom">
+							<span class="copyrights">Copyright 2020</span>
+							<ul class="footer__social-links">
+								<li>
+									<a href="https://www.facebook.com/kassa24/" target="_blank"
+										><i class="fab fa-facebook-square"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="https://www.instagram.com/kassa24.ua/"
+										target="_blank"
+										><i class="fab fa-instagram"></i
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
