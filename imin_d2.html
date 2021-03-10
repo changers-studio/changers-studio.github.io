@@ -11,7 +11,6 @@
 
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 
-		<link rel="stylesheet" href="libs/select2/select2.css" />
 		<link rel="stylesheet" href="css/styles.min.css" />
 
 		<script
@@ -22,8 +21,9 @@
 		></script>
 
 		<script defer src="js/scripts.min.js"></script>
-		<script defer src="libs/select2/select2.js"></script>
+
 		<script defer src="js/calc.js"></script>
+		<script src="//code.jivosite.com/widget/x2VrvA5yHw" async></script>
 	</head>
 
 	<body class="p-product">
@@ -70,7 +70,7 @@
 									<div class="menu__heading"><span>Поддержка</span></div>
 									<div class="menu__dropdown">
 										<a href="help.html">Библиотека знаний</a>
-										<a href="">Онлайн чат</a>
+										<a class="online-chat">Онлайн чат</a>
 										<a href="settings.html">Удаленная настрока</a>
 										<a href="">Публичная оферта</a>
 									</div>
@@ -137,16 +137,16 @@
 											name="Num"
 											checked
 											disabled
-											value="7999"
+											value="6999"
 											data-enable="default"
 										/>
 										<span>Терминал iMin D2</span>
 									</div>
 
-									<div class="calc__inner price">7999 ₴</div>
+									<div class="calc__inner price">6999 ₴</div>
 								</div>
 
-								<div class="calc__row">
+								<div class="calc__row _enable">
 									<div class="calc__inner product-name">
 										<input
 											type="checkbox"
@@ -166,7 +166,7 @@
 							<div class="calc__table">
 								<p class="calc__title">Дополнительное оборудование:</p>
 
-								<div class="calc__row">
+								<div class="calc__row _enable">
 									<div class="calc__inner product-name">
 										<input
 											type="checkbox"
@@ -174,9 +174,10 @@
 											value="1250"
 											checked
 											disabled
-											data-enable="disabled"
 										/>
-										<span>Принтер чеков Xprinter XP-58IIH</span>
+										<a href="receipt_xprinter.html"
+											>Принтер чеков Xprinter XP-58IIH</a
+										>
 									</div>
 
 									<div class="calc__inner price">1250 ₴</div>
@@ -185,7 +186,9 @@
 								<div class="calc__row _enable">
 									<div class="calc__inner product-name">
 										<input type="checkbox" name="Num" value="2999" />
-										<span>Принтер этикеток Xprinter XP-365B</span>
+										<a href="labels_xprinter.html"
+											>Принтер этикеток Xprinter XP-365B</a
+										>
 									</div>
 
 									<div class="calc__inner price">2999 ₴</div>
@@ -194,7 +197,7 @@
 								<div class="calc__row _enable">
 									<div class="calc__inner product-name">
 										<input type="checkbox" name="Num" value="1499" />
-										<span>Сканер штрих-кодов Alanda CT007</span>
+										<a href="alanda.html">Сканер штрих-кодов Alanda CT007</a>
 									</div>
 
 									<div class="calc__inner price">1499 ₴</div>
@@ -203,7 +206,7 @@
 								<div class="calc__row _enable">
 									<div class="calc__inner product-name">
 										<input type="checkbox" name="Num" value="1599" />
-										<span>Денежный ящик</span>
+										<a href="maken_ek-240.html">Денежный ящик</a>
 									</div>
 
 									<div class="calc__inner price">1599 ₴</div>
@@ -212,7 +215,7 @@
 								<div class="calc__row _enable">
 									<div class="calc__inner product-name">
 										<input type="checkbox" name="Num" value="2499" />
-										<span>Весы</span>
+										<a href="vagar_vp-n06.html">Весы</a>
 									</div>
 
 									<div class="calc__inner price">2499 ₴</div>
@@ -225,7 +228,7 @@
 								<div class="calc__row _enable">
 									<div class="calc__inner product-name">
 										<input type="checkbox" name="Num" value="0" />
-										<span>Отправка чеков по SMS</span>
+										<a href="sms_club.html">Отправка чеков по SMS</a>
 									</div>
 
 									<div class="calc__inner price">бесплатно</div>
@@ -234,45 +237,54 @@
 								<div class="calc__row _enable">
 									<div class="calc__inner product-name">
 										<input type="checkbox" name="Num" value="30" />
-										<span>Печать этикеток</span>
+										<a href="printing_labels.html">Печать этикеток</a>
 									</div>
 
 									<div class="calc__inner price">
-										<select class="price__list _labels">
-											<option>30 ₴/мес</option>
-											<option>80 ₴/3 мес</option>
-											<option>300 ₴/год</option>
-										</select>
+										<div class="price__list">
+											<div class="price__list-heading">30 ₴/мес</div>
+											<div class="price__list-dropdown">
+												<p class="active" data-value="30">30 ₴/мес</p>
+												<p data-value="80">80 ₴/3 мес</p>
+												<p data-value="300">300 ₴/год</p>
+											</div>
+										</div>
 									</div>
 								</div>
 
 								<div class="calc__row _enable">
 									<div class="calc__inner product-name">
 										<input type="checkbox" name="Num" value="50" />
-										<span>Клиентская база</span>
+										<a href="customer_base.html">Клиентская база</a>
 									</div>
 
 									<div class="calc__inner price">
-										<select class="price__list _clients">
-											<option>50 ₴/мес</option>
-											<option>140 ₴/3 мес</option>
-											<option>500 ₴/год</option>
-										</select>
+										<div class="price__list">
+											<div class="price__list-heading">50 ₴/мес</div>
+											<div class="price__list-dropdown">
+												<p class="active" data-value="50">50 ₴/мес</p>
+												<p data-value="140">140 ₴/3 мес</p>
+												<p data-value="500">500 ₴/год</p>
+											</div>
+										</div>
 									</div>
 								</div>
 
 								<div class="calc__row _enable">
 									<div class="calc__inner product-name">
 										<input type="checkbox" name="Num" value="50" />
-										<span>Весовые товары</span>
+										<a href="weight_products.html">Весовые товары</a>
 									</div>
 
 									<div class="calc__inner price">
-										<select class="price__list _weight">
-											<option>50 ₴/мес</option>
-											<option>140 ₴/3 мес</option>
-											<option>500 ₴/год</option>
-										</select>
+										<div class="price__list">
+											<div class="price__list-heading">50 ₴/мес</div>
+											<div class="price__list-dropdown">
+												<p class="active" data-value="50">50 ₴/мес</p>
+												<p data-value="140">140 ₴/3 мес</p>
+												<p data-value="500">500 ₴/год</p>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -305,7 +317,9 @@
 				<div class="row">
 					<div class="col-lg-3 col-md-6">
 						<div class="features__box">
-							<img src="img/imin_d2/about_1.png" alt="Photo product" />
+							<div class="features__box-img">
+								<img src="img/imin_d2/about_1.png" alt="Photo product" />
+							</div>
 							<h5 class="h5">Дисплей</h5>
 							<p>10.1″ 1280×800</p>
 						</div>
@@ -313,7 +327,9 @@
 
 					<div class="col-lg-3 col-md-6">
 						<div class="features__box">
-							<img src="img/imin_d2/about_2.png" alt="Photo product" />
+							<div class="features__box-img">
+								<img src="img/imin_d2/about_2.png" alt="Photo product" />
+							</div>
 							<h5 class="h5">Процессор</h5>
 							<p>Quad-core ARM Cortex-A53 32-bit 1.5G</p>
 						</div>
@@ -321,7 +337,9 @@
 
 					<div class="col-lg-3 col-md-6">
 						<div class="features__box">
-							<img src="img/imin_d2/about_3.png" alt="Photo product" />
+							<div class="features__box-img">
+								<img src="img/imin_d2/about_3.png" alt="Photo product" />
+							</div>
 							<h5 class="h5">Размер</h5>
 							<p>251.5x154x250mm</p>
 						</div>
@@ -329,7 +347,9 @@
 
 					<div class="col-lg-3 col-md-6">
 						<div class="features__box">
-							<img src="img/imin_d2/about_4.png" alt="Photo product" />
+							<div class="features__box-img">
+								<img src="img/imin_d2/about_4.png" alt="Photo product" />
+							</div>
 							<h5 class="h5">Порты</h5>
 							<p>
 								USB Type_Ax4, Micro USBx1, 3.5mmEarphone Jackx1,
@@ -401,18 +421,23 @@
 
 							<div class="tabs__content _tech">
 								<p>
-									Процессор Четырехъядерный ARM Cortex-A53 32-бит 1.5G
-									Операционная система Android 7.1 iMin OS Хранилище 1 ГБ RAM +
-									8 ГБ ROM Экран дисплея 10,1 ″ 800 × 1280 Сенсорный экран
-									емкостный сенсорный экран, мультисенсорный экран Возможности
-									подключения USB Type_Ax4, Micro USBx1, 3,5 мм, 1 разъем для
-									наушников, 1 разъем постоянного тока, RJ11x1, RJ12x1, RJ45x1,
-									TF Cardx1 Связь Ethernet: 100M, Wi-Fi: 802.11 b / g / n 2.4G,
-									Bluetooth: BT4.2 Вход адаптера питания ： Выход 100-240 В
-									переменного тока 24 В постоянного тока 1,5 А Физические
-									клавиши Клавиша включения Динамик 1,5 Вт моно TF-карта
-									Максимальное хранилище 128 ГБ Вес 1,8 кг Размер 251,5x154x250
-									мм Сертификация CE IMDA
+									Процессор Четырехъядерный ARM Cortex-A53 32-бит 1.5G <br />
+									Операционная система Android 7.1 iMin OS <br />
+									Хранилище 1 ГБ RAM + 8 ГБ ROM <br />
+									Экран дисплея 10,1 ″ 800 × 1280 <br />
+									Сенсорный экран емкостный сенсорный экран, мультисенсорный
+									экран <br />
+									Возможности подключения USB Type_Ax4, Micro USBx1, 3,5 мм, 1
+									разъем для наушников, 1 разъем постоянного тока, RJ11x1,
+									RJ12x1, RJ45x1, TF Cardx1 <br />
+									Связь Ethernet: 100M, Wi-Fi: 802.11 b / g / n 2.4G, Bluetooth:
+									BT4.2
+									<br />
+									Вход адаптера питания 100-240В переменного тока<br />
+									Выход 24В постоянного тока 1,5А <br />
+									Физические клавиши Клавиша включения <br />
+									Динамик 1,5 Вт моно TF-карта <br />
+									Максимальное хранилище 128 ГБ <br />
 								</p>
 							</div>
 						</div>
@@ -608,7 +633,7 @@
 							<ul>
 								<h6 class="h6">Подержка</h6>
 								<li><a href="help.html">Библиотека знаний</a></li>
-								<li><a href="">Онлайн чат</a></li>
+								<li><a class="online-chat">Онлайн чат</a></li>
 								<li><a href="settings.html">Удаленная настрока</a></li>
 								<li><a href="">Публичная оферта</a></li>
 							</ul>
@@ -621,7 +646,7 @@
 						</div>
 
 						<div class="footer__bottom">
-							<span class="copyrights">Copyright 2020</span>
+							<span class="copyrights">Copyright Kassa24</span>
 							<ul class="footer__social-links">
 								<li>
 									<a href="https://www.facebook.com/kassa24/" target="_blank"
