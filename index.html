@@ -36,6 +36,37 @@
 	</head>
 
 	<body>
+		<form class="popup mfp-hide">
+			<h3 class="h3 popup__title">Fill the form</h3>
+			<h5 class="h5 popup__subtitle">and we will call you back shortly</h5>
+
+			<div class="popup__input">
+				<p class="popup__input_over">Your name:</p>
+				<input
+					type="text"
+					name="Name"
+					placeholder="Elon Musk"
+					required
+					autocomplete="off"
+				/>
+			</div>
+
+			<div class="popup__input">
+				<p class="popup__input_over">Phone number:</p>
+				<input
+					type="tel"
+					name="Telephone"
+					placeholder="0 (000) 000 00 00"
+					required
+					autocomplete="off"
+				/>
+			</div>
+
+			<div class="popup__button">
+				<button type="submit" class="button">Request Call Back</button>
+			</div>
+		</form>
+
 		<header class="header" data-aos="fade-down">
 			<div class="header__plug"></div>
 
@@ -72,7 +103,7 @@
 							</div>
 						</div>
 
-						<a href="#" class="header__button button"
+						<a href=".popup" class="header__button button magnific-popup"
 							><span>call me back</span></a
 						>
 					</div>
@@ -192,7 +223,7 @@
 								</p>
 							</article>
 
-							<a href="#" class="main__review _bottom">
+							<a href="#s-reviews" class="main__review _bottom move-link">
 								<span>Show all reviews</span>
 								<div class="number"><span>50+</span></div>
 							</a>
@@ -342,7 +373,7 @@
 									Leave a request and our manager will give answers to all
 									questions
 								</p>
-								<a href="#" class="callBack__button"
+								<a href=".popup" class="callBack__button magnific-popup"
 									><span>call me back</span></a
 								>
 							</div>
@@ -409,8 +440,8 @@
 						</p>
 
 						<a
-							href="#"
-							class="choose__link"
+							href=".popup"
+							class="choose__link magnific-popup"
 							data-aos="fade-right"
 							data-aos-delay="200"
 						>
