@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Appliance repair | Contacts</title>
+		<title>Nashpoker | Контакты</title>
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="format-detection" content="telephone=no" />
@@ -15,16 +15,11 @@
 			href="img/favicon.ico"
 		/>
 
-		<link rel="stylesheet" href="libs/aos/aos.css" />
-		<link rel="stylesheet" href="libs/slick-slider/slick.css" />
-		<link rel="stylesheet" href="libs/slick-slider/slick-theme.css" />
-		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="libs/hamburger/hamburgers.min.css" />
 		<link rel="stylesheet" href="css/main.min.css" />
 
 		<script defer src="libs/jquery.min.js"></script>
-		<script defer src="libs/aos/aos.js"></script>
-		<script defer src="libs/slick-slider/slick.min.js"></script>
-		<script defer src="libs/magnific-popup/magnific-popup.min.js"></script>
+
 		<script defer src="js/custom.min.js"></script>
 
 		<script
@@ -36,327 +31,127 @@
 	</head>
 
 	<body>
-		<form class="popup mfp-hide">
-			<h3 class="h3 popup__title">Fill the form</h3>
-			<h5 class="h5 popup__subtitle">and we will call you back shortly</h5>
+		<header class="header">
+			<button
+				class="header__hamburger hamburger hamburger--emphatic"
+				type="button"
+			>
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
 
-			<div class="popup__input">
-				<p class="popup__input_over">Your name:</p>
-				<input
-					type="text"
-					name="Name"
-					placeholder="Elon Musk"
-					required
-					autocomplete="off"
-				/>
-			</div>
-
-			<div class="popup__input">
-				<p class="popup__input_over">Phone number:</p>
-				<input
-					type="tel"
-					name="Telephone"
-					placeholder="0 (000) 000 00 00"
-					required
-					autocomplete="off"
-				/>
-			</div>
-
-			<div class="popup__button">
-				<button type="submit" class="button">Request Call Back</button>
-			</div>
-		</form>
-
-		<header class="header" data-aos="fade-down">
-			<div class="header__plug"></div>
+			<div class="header__sidebar-plug"></div>
 
 			<div class="container">
 				<div class="row">
 					<div class="col-12 header_flex">
-						<div class="header__hamburger">
-							<div class="line"></div>
-							<div class="line"></div>
-							<div class="line"></div>
-						</div>
+						<img src="img/logo.png" alt="Nashpoker" class="header__logo" />
 
-						<img
-							src="img/logo.svg"
-							alt="Appliance repair"
-							class="header__logo"
-						/>
+						<nav class="header__menu header__sidebar">
+							<a href="#">Обменник</a>
+							<a href="#">Словарь покерных терминов</a>
+							<a href="#" class="_active">Блог</a>
+							<a href="#">Румы</a>
+							<a href="#">Контакты</a>
+						</nav>
 
-						<div class="header__sidebar">
-							<div class="header__sidebar-close"></div>
-
-							<nav class="header__menu">
-								<a href="index.html">Home</a>
-								<a href="everything.html">Services</a>
-								<a href="simi-valley.html">Services Locations</a>
-								<a href="managers.html">Property Managers</a>
-								<a href="blog.html">Blog</a>
-								<a href="contacts.html">Contacts</a>
-							</nav>
-
-							<div class="header__tel">
-								<p>Open & Avaliable:</p>
-								<a href="tel:8000000000">800-000-0000</a>
-							</div>
-						</div>
-
-						<a href=".popup" class="header__button button magnific-popup"
-							><span>call me back</span></a
-						>
+						<a href="#" class="header__button button"
+							>Войти<i class="fas fa-arrow-right"></i
+						></a>
 					</div>
 				</div>
 			</div>
 		</header>
 
-		<section class="contacts _topOffsetNone">
-			<h1 class="h1 _bg-grey">Contacts</h1>
-
+		<section class="contacts">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 contacts__wrapper">
-						<div class="contacts__map">
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4179.768268394156!2d-81.2975538745569!3d28.245201423359873!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1617368862833!5m2!1sru!2sua"
-								style="border: 0"
-								allowfullscreen=""
-								loading="lazy"
-							></iframe>
+					<div class="col-12">
+						<div class="breadcrumbs">
+							<a href="index.html">Главная</a>
+							<span>Контакты</span>
 						</div>
 
-						<div class="contacts__info">
-							<h2 class="h2 contacts__title">
-								CR Applience repair Simi Valley
-							</h2>
+						<div class="contacts_flex">
+							<div class="contacts__box">
+								<h2 class="h2">Наши контакты<span>:</span></h2>
 
-							<div class="contacts__container">
-								<div class="contacts__box">
-									<img src="img/icons/phone_solid.svg" alt="Phone" />
-									<h4 class="h4">
-										<a href="tel:8000000000" class="_green">(800) 000-0000</a>
-									</h4>
+								<div class="contacts__telegram">
+									<h3 class="h3">
+										Ввод/вывод с рума, <br />
+										и ответы на все вопросы тут:
+									</h3>
+
+									<a href="#" class="button"
+										><i class="fab fa-telegram-plane"></i> @DDXPOKER_BOT</a
+									>
+
+									<h3 class="h3 _top-offset">
+										Остались вопросы любого характера
+									</h3>
+
+									<a href="#" class="button"
+										><i class="fab fa-telegram-plane"></i> @ddxsupport
+									</a>
 								</div>
 
-								<div class="contacts__box">
-									<img src="img/icons/calendar.svg" alt="Calendar" />
-									<h4 class="h4 _blue">Monday-Saturday</h4>
-								</div>
+								<div class="contacts__wrapper _transparent">
+									<h3 class="h3">
+										Если вам интересен бекинг и вы хотите попасть в команду
+										профессионалов MVP - отправляйте заявки сюда:
+									</h3>
 
-								<div class="contacts__box">
-									<img src="img/icons/stars.svg" alt="Stars" />
-									<h4 class="h4 _red">50+ reviews</h4>
-								</div>
+									<a href="#" class="button _mvp"
+										><img src="img/contacts/mvp.png" alt="Mvp" />Отправить
+										заявку в MVP</a
+									>
 
-								<div class="contacts__box">
-									<img src="img/icons/clock.svg" alt="Clock" />
-									<h4 class="h4 _black">9:00 am - 9:00 pm</h4>
+									<p>
+										Обязательно укажите при регистрации кодовое слово НАШПОКЕР -
+										тогда вы получите приоритетное рассмотрение своей заявки и
+										разбор своей базы в подарок!
+									</p>
 								</div>
 							</div>
-						</div>
-					</div>
 
-					<div class="col-12 contacts__wrapper _reverse">
-						<div class="contacts__map">
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4179.768268394156!2d-81.2975538745569!3d28.245201423359873!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1617368862833!5m2!1sru!2sua"
-								style="border: 0"
-								allowfullscreen=""
-								loading="lazy"
-							></iframe>
-						</div>
+							<div class="contacts__box">
+								<h2 class="h2">Подписывайтесь<span>:</span></h2>
 
-						<div class="contacts__info">
-							<h2 class="h2 contacts__title">
-								CR Applience repair Simi Valley
-							</h2>
+								<div class="contacts__telegram _transparent">
+									<div class="telegram_flex">
+										<div class="telegram__box">
+											<h3 class="h3">Телеграм-канал для новостей:</h3>
+											<a href="#" class="button"
+												><i class="fab fa-telegram-plane"></i> @DDXPOKER</a
+											>
+										</div>
+										<div class="telegram__box">
+											<h3 class="h3">Группа в Телеграме для общения:</h3>
+											<a href="#" class="button"
+												><i class="fab fa-telegram-plane"></i> @DDXPOKER2</a
+											>
+										</div>
+									</div>
 
-							<div class="contacts__container">
-								<div class="contacts__box">
-									<img src="img/icons/phone_solid.svg" alt="Phone" />
-									<h4 class="h4">
-										<a href="tel:8000000000" class="_green">(800) 000-0000</a>
-									</h4>
+									<h3 class="h3 _top-offset">
+										Группа в Дискорд MVP Open Water:
+									</h3>
+									<a href="#" class="button _purple"
+										><img src="img/contacts/discord.svg" alt="Discord" />
+										@ddxsupport</a
+									>
 								</div>
 
-								<div class="contacts__box">
-									<img src="img/icons/calendar.svg" alt="Calendar" />
-									<h4 class="h4 _blue">Monday-Saturday</h4>
-								</div>
+								<div class="contacts__wrapper">
+									<h3 class="h3">
+										Создаём банкролл с нуля! На этом телеграм-канале вы найдете
+										большое количество ежедневных фрироллов:
+									</h3>
 
-								<div class="contacts__box">
-									<img src="img/icons/stars.svg" alt="Stars" />
-									<h4 class="h4 _red">50+ reviews</h4>
-								</div>
-
-								<div class="contacts__box">
-									<img src="img/icons/clock.svg" alt="Clock" />
-									<h4 class="h4 _black">9:00 am - 9:00 pm</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-12 contacts__wrapper">
-						<div class="contacts__map">
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4179.768268394156!2d-81.2975538745569!3d28.245201423359873!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1617368862833!5m2!1sru!2sua"
-								style="border: 0"
-								allowfullscreen=""
-								loading="lazy"
-							></iframe>
-						</div>
-
-						<div class="contacts__info">
-							<h2 class="h2 contacts__title">
-								CR Applience repair Simi Valley
-							</h2>
-
-							<div class="contacts__container">
-								<div class="contacts__box">
-									<img src="img/icons/phone_solid.svg" alt="Phone" />
-									<h4 class="h4">
-										<a href="tel:8000000000" class="_green">(800) 000-0000</a>
-									</h4>
-								</div>
-
-								<div class="contacts__box">
-									<img src="img/icons/calendar.svg" alt="Calendar" />
-									<h4 class="h4 _blue">Monday-Saturday</h4>
-								</div>
-
-								<div class="contacts__box">
-									<img src="img/icons/stars.svg" alt="Stars" />
-									<h4 class="h4 _red">50+ reviews</h4>
-								</div>
-
-								<div class="contacts__box">
-									<img src="img/icons/clock.svg" alt="Clock" />
-									<h4 class="h4 _black">9:00 am - 9:00 pm</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-12 contacts__wrapper _reverse">
-						<div class="contacts__map">
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4179.768268394156!2d-81.2975538745569!3d28.245201423359873!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1617368862833!5m2!1sru!2sua"
-								style="border: 0"
-								allowfullscreen=""
-								loading="lazy"
-							></iframe>
-						</div>
-
-						<div class="contacts__info">
-							<h2 class="h2 contacts__title">
-								CR Applience repair Simi Valley
-							</h2>
-
-							<div class="contacts__container">
-								<div class="contacts__box">
-									<img src="img/icons/phone_solid.svg" alt="Phone" />
-									<h4 class="h4">
-										<a href="tel:8000000000" class="_green">(800) 000-0000</a>
-									</h4>
-								</div>
-
-								<div class="contacts__box">
-									<img src="img/icons/calendar.svg" alt="Calendar" />
-									<h4 class="h4 _blue">Monday-Saturday</h4>
-								</div>
-
-								<div class="contacts__box">
-									<img src="img/icons/stars.svg" alt="Stars" />
-									<h4 class="h4 _red">50+ reviews</h4>
-								</div>
-
-								<div class="contacts__box">
-									<img src="img/icons/clock.svg" alt="Clock" />
-									<h4 class="h4 _black">9:00 am - 9:00 pm</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-12 contacts__wrapper">
-						<div class="contacts__map">
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4179.768268394156!2d-81.2975538745569!3d28.245201423359873!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1617368862833!5m2!1sru!2sua"
-								style="border: 0"
-								allowfullscreen=""
-								loading="lazy"
-							></iframe>
-						</div>
-
-						<div class="contacts__info">
-							<h2 class="h2 contacts__title">
-								CR Applience repair Simi Valley
-							</h2>
-
-							<div class="contacts__container">
-								<div class="contacts__box">
-									<img src="img/icons/phone_solid.svg" alt="Phone" />
-									<h4 class="h4">
-										<a href="tel:8000000000" class="_green">(800) 000-0000</a>
-									</h4>
-								</div>
-
-								<div class="contacts__box">
-									<img src="img/icons/calendar.svg" alt="Calendar" />
-									<h4 class="h4 _blue">Monday-Saturday</h4>
-								</div>
-
-								<div class="contacts__box">
-									<img src="img/icons/stars.svg" alt="Stars" />
-									<h4 class="h4 _red">50+ reviews</h4>
-								</div>
-
-								<div class="contacts__box">
-									<img src="img/icons/clock.svg" alt="Clock" />
-									<h4 class="h4 _black">9:00 am - 9:00 pm</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-12 contacts__wrapper _reverse">
-						<div class="contacts__map">
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4179.768268394156!2d-81.2975538745569!3d28.245201423359873!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1617368862833!5m2!1sru!2sua"
-								style="border: 0"
-								allowfullscreen=""
-								loading="lazy"
-							></iframe>
-						</div>
-
-						<div class="contacts__info">
-							<h2 class="h2 contacts__title">
-								CR Applience repair Simi Valley
-							</h2>
-
-							<div class="contacts__container">
-								<div class="contacts__box">
-									<img src="img/icons/phone_solid.svg" alt="Phone" />
-									<h4 class="h4">
-										<a href="tel:8000000000" class="_green">(800) 000-0000</a>
-									</h4>
-								</div>
-
-								<div class="contacts__box">
-									<img src="img/icons/calendar.svg" alt="Calendar" />
-									<h4 class="h4 _blue">Monday-Saturday</h4>
-								</div>
-
-								<div class="contacts__box">
-									<img src="img/icons/stars.svg" alt="Stars" />
-									<h4 class="h4 _red">50+ reviews</h4>
-								</div>
-
-								<div class="contacts__box">
-									<img src="img/icons/clock.svg" alt="Clock" />
-									<h4 class="h4 _black">9:00 am - 9:00 pm</h4>
+									<a href="#" class="button"
+										><i class="fab fa-telegram-plane"></i> @ddxfreeroll
+									</a>
 								</div>
 							</div>
 						</div>
@@ -366,95 +161,18 @@
 		</section>
 
 		<footer class="footer">
-			<div class="footer_top" data-aos="fade-down" data-aos-offset="0">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 footer_flex _align-center">
-							<img
-								src="img/logo.svg"
-								alt="Appliance repair"
-								class="footer__logo"
-							/>
-							<nav class="footer__menu">
-								<a href="index.html">Home</a>
-								<a href="everything.html">Services</a>
-								<a href="simi-valley.html">Services Locations</a>
-								<a href="managers.html">Property Managers</a>
-								<a href="blog.html">Blog</a>
-								<a href="contacts.html">Contacts</a>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 footer_flex">
+						<img src="img/logo.png" alt="Nashpoker" class="footer__logo" />
 
-			<div
-				class="footer_middle"
-				data-aos="fade-down"
-				data-aos-delay="100"
-				data-aos-offset="0"
-			>
-				<div class="container">
-					<div class="row">
-						<div class="col-12 footer_flex">
-							<div class="footer__contacts footer__tel">
-								<h6 class="h6">Phone:</h6>
-								<a href="tel:8000000000">800-000-0000</a>
-							</div>
-
-							<div class="footer__contacts footer__email">
-								<h6 class="h6">Email:</h6>
-								<a href="mailto:123@cr.com">123@cr.com</a>
-							</div>
-
-							<address class="footer__contacts footer__address">
-								<h6 class="h6">Address:</h6>
-								<a href="#">1919 Vineburn Ave unit 020 Los Angeles, CA 90032</a>
-							</address>
-
-							<div class="footer__contacts footer__social-links">
-								<h6 class="h6">Social media:</h6>
-								<ul>
-									<li>
-										<a href="#" target="_blank"
-											><img src="img/icons/instagram.svg" alt="Instagram"
-										/></a>
-									</li>
-									<li>
-										<a href="#" target="_blank"
-											><img src="img/icons/twitter.svg" alt="Twitter"
-										/></a>
-									</li>
-									<li>
-										<a href="#" target="_blank"
-											><img src="img/icons/youtube.svg" alt="You tube"
-										/></a>
-									</li>
-									<li>
-										<a href="#" target="_blank"
-											><img src="img/icons/facebook.svg" alt="Facebook"
-										/></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div
-				class="footer_bottom"
-				data-aos="fade-down"
-				data-aos-delay="200"
-				data-aos-offset="0"
-			>
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<p class="footer__copyrights">
-								Copyright © CR APPLIANCE REPAIR 2021 All rights reserved
-							</p>
-						</div>
+						<nav class="footer__menu">
+							<a href="#">Обменник</a>
+							<a href="#">Словарь покерных терминов</a>
+							<a href="#" class="_active">Блог</a>
+							<a href="#">Румы</a>
+							<a href="#">Контакты</a>
+						</nav>
 					</div>
 				</div>
 			</div>
