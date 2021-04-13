@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Nashpoker | Статья</title>
+		<title>Nashpoker | Обменник</title>
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="format-detection" content="telephone=no" />
@@ -17,6 +17,7 @@
 
 		<link rel="stylesheet" href="libs/hamburger/hamburgers.min.css" />
 		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="libs/select2/select2.min.css" />
 		<link rel="stylesheet" href="css/main.min.css" />
 
 		<script defer src="libs/jquery.min.js"></script>
@@ -25,6 +26,7 @@
 			defer
 			src="libs/magnific-popup/jquery.magnific-popup.min.js"
 		></script>
+		<script defer src="libs/select2/select2.min.js"></script>
 		<script defer src="js/custom.min.js"></script>
 
 		<script
@@ -35,7 +37,7 @@
 		></script>
 	</head>
 
-	<body class="p-article">
+	<body>
 		<form class="pop-up form__sign-in form mfp-hide">
 			<p class="form__title">Войти</p>
 
@@ -107,91 +109,104 @@
 			</div>
 		</header>
 
-		<section class="articles">
+		<section class="exchanger">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
 						<div class="breadcrumbs">
 							<a href="index.html">Главная</a>
-							<a href="articles.html">Блог</a>
-							<span> Правила составления турнирной сетки для МТТ игроков</span>
+							<span>Обменник</span>
 						</div>
 
 						<h2 class="h2">
-							Правила составления турнирной <br />
-							сетки для МТТ игроков
+							Помогаем покерным игрокам в вводе, <br />
+							выводе и обмене денег в покерных румах
 						</h2>
 
-						<div class="articles__content">
-							<p>
-								Бренд — это больше, чем логотип или набор цветов, и это также
-								намного больше, чем фотография на обложке. Бренд — это то, как
-								вы чувствуете и понимаете своих клиентов, и он строится на
-								последовательном подходе к каждому взаимодействию с вашим
-								брендом. Хотя это не ограничивается социальными сетями, ваши
-								социальные каналы играют важную роль в создании бренда.
+						<div class="exchanger__captions captions">
+							<p class="captions__title">Я хочу<span>:</span></p>
+							<ul class="captions__buttons">
+								<li class="captions__button button _active">Сделать депозит</li>
+								<li class="captions__button button">Вывести деньги</li>
+								<li class="captions__button button">Перевести с рума на рум</li>
+							</ul>
+						</div>
+
+						<div class="exchanger__content">
+							<p class="exchanger__text">
+								*Депозит осуществляется без комиссии системы по курсу 78 рублей
+								за 1$ обычно в течение 2-х часов, и максимум до 24-х часов
 							</p>
 
-							<p>
-								В этой статье мы покажем вам простые способы использования
-								социальных сетей, которые помогут вам создать единый бренд. Это
-								поможет вам при общении со своими потенциальными клиентами и
-								покупателями
-							</p>
+							<form class="exchanger_flex">
+								<div class="exchanger__box _left">
+									<h3 class="h3">Выберите способ пополнения<span>:</span></h3>
+									<div class="exchanger__methods methods">
+										<div class="methods__item">
+											<img src="img/exchanger/logo_1.png" alt="Master" /><span
+												>Картой</span
+											>
+										</div>
+										<div class="methods__item">
+											<img src="img/exchanger/logo_2.png" alt="Web" /><span
+												>WebMoney</span
+											>
+										</div>
+										<div class="methods__item">
+											<img src="img/exchanger/logo_3.png" alt="qiwi" /><span
+												>Qiwi</span
+											>
+										</div>
+										<div class="methods__item">
+											<img src="img/exchanger/logo_4.png" alt="yandex" /><span
+												>Ю.Money</span
+											>
+										</div>
+									</div>
+								</div>
 
-							<h3>1 — Используйте постоянный брендинг в ваших профилях</h3>
+								<div class="exchanger__box _right">
+									<h3 class="h3">Заполните поля ниже<span>:</span></h3>
 
-							<p>
-								Бренд — это больше, чем логотип или набор цветов, и это также
-								намного больше, чем фотография на обложке. Бренд — это то, как
-								вы чувствуете и понимаете своих клиентов, и он строится на
-								последовательном подходе к каждому взаимодействию с вашим
-								брендом. Хотя это не ограничивается социальными сетями, ваши
-								социальные каналы играют
-							</p>
+									<select class="select2" data-placeholder="Ваш покерный рум">
+										<option></option>
+										<option value="Pokerdom">Pokerdom</option>
+										<option value="Pokerstars">Pokerstars</option>
+										<option value="888poker">888poker</option>
+									</select>
 
-							<img src="img/article/article__image-1.png" alt="Article image" />
+									<input
+										type="text"
+										class="exchanger__input"
+										name="Сумма в рублях"
+										placeholder="Сумма в рублях"
+										required
+										autocomplete="off"
+									/>
 
-							<h3>2 — Разработайте уникальный месседж бренда</h3>
+									<input
+										type="text"
+										class="exchanger__input"
+										name="Ваш ник в руме"
+										placeholder="Ваш ник в руме"
+										required
+										autocomplete="off"
+									/>
 
-							<p>
-								Бренд — это больше, чем логотип или набор цветов, и это также
-								намного больше, чем фотография на обложке. Бренд — это то, как
-								вы чувствуете и понимаете своих клиентов, и он строится на
-								последовательном подходе к каждому взаимодействию
-							</p>
+									<input
+										type="text"
+										class="exchanger__input"
+										name="Ваш телефон/Телеграм"
+										placeholder="Ваш телефон/Телеграм"
+										required
+										autocomplete="off"
+									/>
 
-							<h3>3 — Правило 1/3</h3>
-
-							<p>
-								Делимся лайфхаком системы третей. Вы, наверное, слышали о таком
-								правиле в социальных сетях. 1/3 ваших сообщений должна
-								рекламировать ваш продукт или услугу, 1/3 — взаимодействовать с
-								другими, а 1/3 — рассказывать новости и давать советы,
-								относящиеся к вашей аудитории. Другими словами: не просто
-								рекламируйте свои продукты или услуги. Людям не нравится
-								чувствовать, что им что-то продают.
-							</p>
-
-							<img src="img/article/article__image-2.png" alt="Article image" />
-
-							<h3>4 — Разработайте уникальный месседж бренда</h3>
-
-							<p>
-								Бренд — это больше, чем логотип или набор цветов, и это также
-								намного больше, чем фотография на обложке. Бренд — это то, как
-								вы чувствуете и понимаете своих клиентов, и он строится на
-								последовательном подходе к каждому взаимодействию с вашим
-								брендом. Хотя это не ограничивается социальными сетями, ваши
-								социальные каналы играют важную роль в создании бренда.
-							</p>
-
-							<p>
-								В этой статье мы покажем вам простые способы использования
-								социальных сетей, которые помогут вам создать единый бренд. Это
-								поможет вам при общении со своими потенциальными клиентами и
-								покупателями
-							</p>
+									<button class="exchanger__button button">
+										Далее <i class="fas fa-arrow-right"></i>
+									</button>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
