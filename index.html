@@ -15,16 +15,31 @@
 			href="img/favicon.ico"
 		/>
 
+		<link
+			rel="preload"
+			href="fonts/BebasNeue-Bold.woff"
+			as="font"
+			type="font/woff"
+			crossorigin="anonymous"
+		/>
+
 		<link rel="stylesheet" href="libs/hamburger/hamburgers.min.css" />
+		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="libs/aos-master/aos.css" />
 		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css" />
 		<link rel="stylesheet" href="css/main.min.css" />
 
 		<script defer src="libs/jquery.min.js"></script>
 
+		<script defer src="js/preloader.js"></script>
 		<script defer src="js/parallax.js"></script>
 		<script defer src="libs/aos-master/aos.js"></script>
 		<script defer src="libs/fancybox/jquery.fancybox.min.js"></script>
+		<script
+			defer
+			src="libs/magnific-popup/jquery.magnific-popup.min.js"
+		></script>
+		<script defer src="js/aos-init.js"></script>
 		<script defer src="js/custom.min.js"></script>
 
 		<script
@@ -36,6 +51,43 @@
 	</head>
 
 	<body>
+		<div class="preloader">
+			<p>Nashpoker<span>.</span></p>
+		</div>
+
+		<form class="pop-up form__sign-in form mfp-hide">
+			<p class="form__title">Войти</p>
+
+			<div class="form__wrapper">
+				<input
+					class="form__input"
+					type="email"
+					name="E-mail"
+					placeholder="E-mail"
+					required
+					autocomplete="off"
+				/>
+			</div>
+
+			<div class="form__wrapper">
+				<input
+					class="form__input"
+					type="password"
+					name="Пароль"
+					placeholder="Пароль"
+					required
+					autocomplete="off"
+				/>
+
+				<div class="toggle-password"></div>
+			</div>
+
+			<button class="button form__button">
+				Войти <i class="fas fa-arrow-right"></i>
+			</button>
+
+			<a href="#" class="form__restore">Восстановить пароль</a>
+		</form>
 
 		<div class="background_top">
 			<header class="header" data-aos="fade-down" data-aos-delay="1500">
@@ -56,14 +108,16 @@
 							<img src="img/logo.png" alt="Nashpoker" class="header__logo" />
 
 							<nav class="header__menu header__sidebar">
-								<a href="#">Обменник</a>
-								<a href="#">Словарь покерных терминов</a>
-								<a href="#">Блог</a>
-								<a href="#">Румы</a>
-								<a href="#">Контакты</a>
+								<a href="exchanger.html">Обменник</a>
+								<a href="dictionary.html">Словарь покерных терминов</a>
+								<a href="articles.html">Блог</a>
+								<a href="rooms.html">Румы</a>
+								<a href="contacts.html">Контакты</a>
 							</nav>
 
-							<a href="#" class="header__button button"
+							<a
+								href=".form__sign-in"
+								class="header__button button magnific-popup"
 								>Войти<i class="fas fa-arrow-right"></i
 							></a>
 						</div>
@@ -119,7 +173,11 @@
 						</h2>
 
 						<div class="video__container" data-aos="zoom-in">
-							<a href="img/introduction.mp4" class="video__play" id="playVideo"
+							<a
+								href="img/introduction.mp4"
+								data-fancybox
+								class="video__play"
+								id="playVideo"
 								><i class="fas fa-play"></i
 							></a>
 						</div>
@@ -763,11 +821,11 @@
 						<img src="img/logo.png" alt="Nashpoker" class="footer__logo" />
 
 						<nav class="footer__menu">
-							<a href="#">Обменник</a>
-							<a href="#">Словарь покерных терминов</a>
-							<a href="#">Блог</a>
-							<a href="#">Румы</a>
-							<a href="#">Контакты</a>
+							<a href="exchanger.html">Обменник</a>
+							<a href="dictionary.html">Словарь покерных терминов</a>
+							<a href="articles.html">Блог</a>
+							<a href="rooms.html">Румы</a>
+							<a href="contacts.html">Контакты</a>
 						</nav>
 					</div>
 				</div>
