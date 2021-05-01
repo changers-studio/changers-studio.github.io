@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Nashpoker | Главная</title>
+		<title>Wunity | Main</title>
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="format-detection" content="telephone=no" />
@@ -15,30 +15,14 @@
 			href="img/favicon.ico"
 		/>
 
-		<link
-			rel="preload"
-			href="fonts/BebasNeue-Bold.woff"
-			as="font"
-			type="font/woff"
-			crossorigin="anonymous"
-		/>
-
 		<link rel="stylesheet" href="libs/hamburger/hamburgers.min.css" />
-		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
-		<link rel="stylesheet" href="libs/aos-master/aos.css" />
-		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css" />
+		<link rel="stylesheet" href="libs/aos/aos.css" />
 		<link rel="stylesheet" href="css/main.min.css" />
 
 		<script defer src="libs/jquery.min.js"></script>
 
-		<script defer src="js/preloader.js"></script>
-		<script defer src="js/parallax.js"></script>
-		<script defer src="libs/aos-master/aos.js"></script>
-		<script defer src="libs/fancybox/jquery.fancybox.min.js"></script>
-		<script
-			defer
-			src="libs/magnific-popup/jquery.magnific-popup.min.js"
-		></script>
+		<script defer src="libs/aos/aos.js"></script>
+
 		<script defer src="js/aos-init.js"></script>
 		<script defer src="js/custom.min.js"></script>
 
@@ -50,858 +34,316 @@
 		></script>
 	</head>
 
-	<body>
-		<div class="preloader">
-			<p>Nashpoker<span>.</span></p>
-		</div>
+	<body class="ishome">
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 header_flex">
+						<img src="img/logo.png" alt="Wunity" class="header__logo_mobile" />
 
-		<form class="pop-up form__sign-in form mfp-hide">
-			<p class="form__title">Войти</p>
+						<div class="header__sidebar">
+							<a href="index.html" class="header__logo">
+								<img src="img/logo.png" alt="Wunity" />
+							</a>
 
-			<div class="form__wrapper">
-				<input
-					class="form__input"
-					type="email"
-					name="E-mail"
-					placeholder="E-mail"
-					required
-					autocomplete="off"
-				/>
-			</div>
+							<nav class="header__menu menu">
+								<a href="features.html" class="menu__item">Features</a>
 
-			<div class="form__wrapper">
-				<input
-					class="form__input"
-					type="password"
-					name="Пароль"
-					placeholder="Пароль"
-					required
-					autocomplete="off"
-				/>
+								<div class="menu__item dropdown">
+									<div class="dropdown__heading"><span>Solutions</span></div>
 
-				<div class="toggle-password"></div>
-			</div>
+									<div class="dropdown__body">
+										<a href="government.html" class="dropdown__item"
+											>For Government</a
+										>
+										<a href="healthcare.html" class="dropdown__item"
+											>For Healthcare</a
+										>
+										<a href="education.html" class="dropdown__item"
+											>For Education</a
+										>
+										<a href="work.html" class="dropdown__item">For Work</a>
+									</div>
+								</div>
 
-			<button class="button form__button">
-				Войти <i class="fas fa-arrow-right"></i>
-			</button>
+								<a href="plans.html" class="menu__item">Plans and Pricing</a>
 
-			<a href="#" class="form__restore">Восстановить пароль</a>
-		</form>
-
-		<div class="background_top">
-			<header class="header" data-aos="fade-down" data-aos-delay="1500">
-				<button
-					class="header__hamburger hamburger hamburger--emphatic"
-					type="button"
-				>
-					<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-					</span>
-				</button>
-
-				<div class="header__sidebar-plug"></div>
-
-				<div class="container">
-					<div class="row">
-						<div class="col-12 header_flex">
-							<img src="img/logo.png" alt="Nashpoker" class="header__logo" />
-
-							<nav class="header__menu header__sidebar">
-								<a class="_hidden" href="exchanger.html">Обменник</a>
-								<a href="dictionary.html">Словарь покерных терминов</a>
-								<a href="articles.html">Блог</a>
-								<a href="rooms.html">Румы</a>
-								<a href="contacts.html">Контакты</a>
+								<a href="resources.html" class="menu__item">Resources</a>
 							</nav>
 
-							<a
-								href=".form__sign-in"
-								class="header__button button magnific-popup"
-								>Войти<i class="fas fa-arrow-right"></i
-							></a>
+							<div class="header__buttons">
+								<a href="#" class="button _shadow"><span>Sign Up</span></a>
+								<a href="#" class="button _white"
+									><span>Start for free</span></a
+								>
+							</div>
 						</div>
+
+						<button
+							class="header__hamburger hamburger hamburger--emphatic"
+							type="button"
+						>
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>
 					</div>
 				</div>
-			</header>
+			</div>
+		</header>
 
-			<section class="main">
+		<section class="main">
+			<img src="img/main/main__bg_left.svg" alt="Rombs" class="main__bg_left" />
+			<div class="main__bg_right"></div>
+
+			<div class="main_flex">
 				<div class="container">
 					<div class="row">
-						<div class="col-12 main_flex">
-							<div
-								class="main__text"
-								data-aos="fade-right"
-								data-aos-delay="1700"
+						<div class="col-xl-7 col-lg-8 main__container">
+							<h1 class="h1 main__title">
+								Stay connected with unique experience <br />
+								of
+								<span class="_blue-text">Wunity!</span>
+							</h1>
+
+							<h4 class="h4 main__subtitle">
+								<i class="fas fa-caret-right"></i
+								><span>Bring everyone together</span>
+							</h4>
+
+							<a href="#" class="main__button button _shadow"
+								>Start trial now</a
 							>
-								<h1 class="h1 main__title">
-									Твой проводник <br />
-									в мир покера<span>.</span>
-								</h1>
 
-								<h3 class="h3 main__subtitle">
-									<span>Поможем вывести ваш навык игры </span>
-									в покер на совершенно новый уровень. Объясняем простыми
-									словами передовые покерные концепции
-								</h3>
-
-								<a href="#" class="main__button button">
-									Больше о курсе
-									<img src="img/main/main__star.svg" alt="Звезда" />
-								</a>
-
-								<div class="main__scroll-down">
-									<div class="wheel"></div>
-								</div>
-							</div>
-
-							<div class="main__image" data-aos="zoom-in" data-aos-delay="2000">
-								<img src="img/main/main__image.png" alt="Карты" id="parallax" />
+							<div class="main__features">
+								<p>We have all features you need for your remote work</p>
+								<a href="#" class="button _white _shadow">Learn More</a>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 
-		<section class="video">
+		<section class="appeal">
+			<div class="appeal__bg appeal__bg_left"></div>
+			<div class="appeal__bg appeal__bg_right"></div>
+
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2 class="h2 video__title" data-aos="zoom-in">
-							О чем этот проект<span>:</span>
-						</h2>
+						<div class="appeal__buttons">
+							<a href="#" class="appeal__button button _white _wide"
+								>Start for Free</a
+							>
+							<a href="#" class="appeal__button button _turquoise _wide"
+								>Buy Now</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-						<div
-							href="https://youtu.be/a_9qC8pw1Vs"
-							data-fancybox
-							class="video__container"
-							id="videoContainer"
-							data-aos="zoom-in"
+		<section class="built">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="h2 built__title">
+							Built for <span class="_blue-text">Everyone</span>
+						</h2>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="built__box">
+							<img src="img/built/icon_1.svg" alt="icon" class="built__icon" />
+							<h5 class="h5 built__heading">
+								<i class="fas fa-caret-right"></i>
+								<span>Work from anywhere</span>
+							</h5>
+							<p class="built__text">
+								No matter where you are, as a video conferencing product, Wunity
+								makes it simple and easy to connect with anyone you want; on the
+								other hand it can easily serve as a modern workplace.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="built__box">
+							<img src="img/built/icon_2.svg" alt="icon" class="built__icon" />
+							<h5 class="h5 built__heading">
+								<i class="fas fa-caret-right"></i>
+								<span>Streaming, recording and transcripts</span>
+							</h5>
+							<p class="built__text">
+								With RTMP support, stream your meetings and webinars. Wunity
+								allows recording, furthermore provides transcript and messages
+								of the meeting or webinar.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="built__box">
+							<img src="img/built/icon_3.svg" alt="icon" class="built__icon" />
+							<h5 class="h5 built__heading">
+								<i class="fas fa-caret-right"></i>
+								<span>Safe place to meet</span>
+							</h5>
+							<p class="built__text">
+								By its meeting and webinar utilities Wunity enables businesses
+								to operate safely especially during extraordinary times like
+								pandemic by allowing employees to work from home.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="built__box">
+							<img src="img/built/icon_4.svg" alt="icon" class="built__icon" />
+							<h5 class="h5 built__heading">
+								<i class="fas fa-caret-right"></i>
+								<span>Combined mobile version</span>
+							</h5>
+							<p class="built__text">
+								Stay connected how you wish. Wunity combined mobile version
+								provides securely video & voice calls, file transfer, messaging
+								utilities, meeting and webinar together in one application.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="built__box">
+							<img src="img/built/icon_5.svg" alt="icon" class="built__icon" />
+							<h5 class="h5 built__heading">
+								<i class="fas fa-caret-right"></i>
+								<span>Privacy for connection</span>
+							</h5>
+							<p class="built__text">
+								Securely send your instant messages to public or private
+								participants without interrupting the meetings by Wunity’s user
+								friendly interfaces.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="built__box">
+							<img src="img/built/icon_6.svg" alt="icon" class="built__icon" />
+							<h5 class="h5 built__heading">
+								<i class="fas fa-caret-right"></i>
+								<span>Effectice connectivity</span>
+							</h5>
+							<p class="built__text">
+								Screen sharing lets you to share your web browser, entire
+								monitor or just an individual app; by whiteboard it is easy to
+								collaborate even on drawings. Also Wunity allows you to schedule
+								and share meeting information with others.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<a href="#" class="button built__button _shadow"
+							>Explore all Features</a
 						>
-							<a class="video__play"><i class="fas fa-play"></i></a>
-						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="founders">
+		<section class="appeal">
+			<div class="appeal__bg appeal__bg_left"></div>
+			<div class="appeal__bg appeal__bg_right"></div>
+
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2 class="h2" data-aos="zoom-in">
-							Основатели проекта<span>:</span>
-						</h2>
-
-						<div class="founders__container" data-aos="fade-up">
-							<div class="founders__about">
-								<div class="founders__image_mobile">
-									<img
-										src="img/founders/founders_1.png"
-										alt="Анатолий Никитин"
-									/>
-								</div>
-
-								<p class="founders__title">Анатолий Никитин</p>
-
-								<p class="founders__subtitle">
-									ПРЕДПРИНИМАТЕЛЬ<span>.</span> АКТЕР<span>.</span>
-								</p>
-
-								<p class="founders__text">
-									Знает как дойти в покере до самого дна (минус 63 тысячи
-									долларов), после чего изменить подход к игре и начать
-									выигрывать
-								</p>
-
-								<div class="founders__statistics statistics _wrap">
-									<div class="statistics__box">
-										<img
-											src="img/founders/founders__offline_2.png"
-											alt="Игравой стол"
-											class="statistics__image"
-										/>
-
-										<p class="statistics__title">
-											<span>20, 761 $</span>
-											Самый большой <br />
-											выигрыш офлай
-										</p>
-									</div>
-
-									<div class="statistics__box">
-										<img
-											src="img/founders/founders__online_2.png"
-											alt="График"
-											class="statistics__image"
-										/>
-
-										<p class="statistics__title">
-											<span>1, 500 000 $</span>
-											чистой прибыли онлайн
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="founders__about _active">
-								<div class="founders__image_mobile">
-									<img
-										src="img/founders/founders_2.png"
-										alt="Глеб Тремзин"
-										class="founders__image_mobile"
-									/>
-								</div>
-
-								<p class="founders__title">Глеб Тремзин</p>
-
-								<p class="founders__subtitle">
-									Автор курса<span>.</span> Хайроллер<span>.</span>
-								</p>
-
-								<p class="founders__text">
-									Последние 12 лет профессионально играет в покер
-								</p>
-
-								<div class="founders__opened opened">
-									<div class="opened__box">
-										<img
-											src="img/founders/founders__logo_1.png"
-											alt="MVP"
-											class="opened__image"
-										/>
-										<p class="opened__title">
-											Со-основатель <br />
-											бекингового фонда MVP
-										</p>
-									</div>
-									<div class="opened__box">
-										<img
-											src="img/founders/founders__logo_2.png"
-											alt="ДДХ"
-											class="opened__image"
-										/>
-										<p class="opened__title">
-											Со-основатель <br />
-											ютуб канала ДДХ Покер
-										</p>
-									</div>
-								</div>
-
-								<div class="founders__statistics statistics">
-									<div class="statistics__box">
-										<img
-											src="img/founders/founders__offline.png"
-											alt="Таблица"
-											class="statistics__image"
-										/>
-
-										<p class="statistics__title">
-											<span>724,510 €</span>
-											самый большой <br />
-											выигрыш офлайн
-											<a href="http://youtu.be/wpj9q5M8L_Y" data-fancybox
-												>http://youtu.be/wpj9q5M8L_Y</a
-											>
-										</p>
-									</div>
-
-									<div class="statistics__box">
-										<img
-											src="img/founders/founders__online.png"
-											alt="График"
-											class="statistics__image"
-										/>
-
-										<p class="statistics__title">
-											<span>1,500 000 $</span>
-											чистой прибыли онлайн
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="founders__photos photos">
-								<div class="photos__box">
-									<img
-										src="img/founders/founders_1.png"
-										alt="Анатолий Никитин"
-									/>
-								</div>
-								<div class="photos__box _active">
-									<img src="img/founders/founders_2.png" alt="Глеб Тремзин" />
-								</div>
-
-								<div class="photos__arrows">
-									<div class="arrow _active">
-										<i class="fas fa-arrow-left"></i>
-									</div>
-									<div class="arrow">
-										<i class="fas fa-arrow-right"></i>
-									</div>
-								</div>
-							</div>
+						<div class="appeal__buttons">
+							<a href="#" class="appeal__button button _white _wide"
+								>Start for Free</a
+							>
+							<a href="#" class="appeal__button button _turquoise _wide"
+								>Buy Now</a
+							>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="structure">
-			<div class="structure__blur_left"></div>
-			<div class="structure__blur_right"></div>
-
+		<section class="admins">
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-10 offset-xl-1">
-						<h2 class="h2" data-aos="zoom-in">
-							Структура нашей покерной вселенной<span>:</span>
+					<div class="col-12">
+						<h2 class="h2 admins__title">
+							Solutions for <span class="_blue-text">Administrators</span>
 						</h2>
 
-						<div class="structure__container" data-aos="fade-up">
+						<div class="admins__container _align-center">
 							<img
-								src="img/structure/structure__line.png"
-								alt="-----"
-								class="structure__line"
+								class="admins__image"
+								src="img/main/admins__image.png"
+								alt="Laptop & mobile"
 							/>
 
-							<div class="structure__box">
-								<div class="box-logo">
-									<img
-										src="img/structure/structure__logo-1.png"
-										alt="ДДХ покер"
-										class="structure__logo"
-									/>
-
-									<img
-										src="img/structure/structure__logo-1_color.png"
-										alt="ДДХ покер"
-										class="structure__logo _color"
-									/>
+							<div class="admins__col">
+								<div class="admins__box _col">
+									<h5 class="h5 admins__heading">Monitor the resources</h5>
+									<p class="admins__text">
+										With its advanced reporting feature, you can also instantly
+										monitor the resource consumption of the running Wunity
+										system. Easily see the overall load.
+									</p>
 								</div>
 
-								<p class="structure__title">ДДХ покер</p>
-								<p class="structure__text">
-									Для тех, кто играет <br />
-									в покер в кайф
+								<div class="admins__box _col">
+									<h5 class="h5 admins__heading">Security & Policies</h5>
+									<p class="admins__text">
+										According to client support Wunity offer SHA-256 encryption;
+										TLS, SRTP, specific user ban mechanisms are also standard
+										against attacks.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="admins__container">
+							<div class="admins__box">
+								<h5 class="h5 admins__heading">Sync & Manage users</h5>
+								<p class="admins__text">
+									It is easy and quick to reach your Active Directory users on
+									Wunity. Manage large number of users over Wunity even there
+									are more than one LDAP server; also add new branches when
+									needed. Manage the users and their credentials from a single
+									point seamlessly.
 								</p>
 							</div>
 
-							<div class="structure__box _active">
-								<div class="box-logo">
-									<img
-										src="img/structure/structure__logo-2.png"
-										alt="NashPoker"
-										class="structure__logo"
-									/>
-								</div>
-
-								<p class="structure__title">NashPoker<span>.</span></p>
-								<p class="structure__text">
-									Для тех, кто решил, что покер <br />
-									должен приносить деньги
+							<div class="admins__box">
+								<h5 class="h5 admins__heading">Remote support</h5>
+								<p class="admins__text">
+									Wunity Desktop allows you to give support remotely from
+									anywhere to the users when they need. The users can give
+									access right from the participant list to technical support
+									team easily.
 								</p>
 							</div>
 
-							<div class="structure__box">
-								<div class="box-logo">
-									<img
-										src="img/structure/structure__logo-3.png"
-										alt="MVP"
-										class="structure__logo"
-									/>
-
-									<img
-										src="img/structure/structure__logo-3_color.png"
-										alt="ДДХ покер"
-										class="structure__logo _color"
-									/>
-								</div>
-								<p class="structure__title">MVP</p>
-								<p class="structure__text">
-									Для тех, кто решил сделать покер <br />
-									основным делом жизни
+							<div class="admins__box">
+								<h5 class="h5 admins__heading">Support decision makers</h5>
+								<p class="admins__text">
+									Wunity poll feature ease organization management for decision
+									makers, instantly get the preferences and ideas of team
+									members in a meeting.
 								</p>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
-		<section class="course">
-			<img src="img/course/course__bg.png" alt="Bg" class="course__image" />
-
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="h2 course__title" data-aos="fade-right">
-							В рамках проекта НашПокер мы представляем вам наш первый курс для
-							начинающих<span
-								>: <br />
-								Осознанное начало в покере.</span
-							>
-						</h2>
-
-						<h3 class="h3 course__subtitle" data-aos="fade-right">
-							Он поможет вам начать делать первые шаги в мире покера за руку с
-							профессионалами. Пройдя курс до конца, и выполнив несложные
-							задания у вас будет возможность получишь часть от 500$ призового
-							фонда каждый месяц на свою игру
-						</h3>
-
-						<div class="course__table table" data-aos="fade-up">
-							<p class="table__heading h2">темы курса:</p>
-
-							<p class="table__row _flex">
-								<span>1.</span> Вступление в курс
-								<a href="#" class="table__button button"
-									>Смотреть урок
-									<img src="img/course/course__eye.svg" alt="Eye"
-								/></a>
-							</p>
-							<p class="table__row _lock">
-								<span>2.</span> Как играть в покер не вкладывая денег
-							</p>
-							<p class="table__row _lock">
-								<span>3.</span> Настройка игровых клиентов для удобной игры
-							</p>
-							<p class="table__row _lock">
-								<span>4.</span> Селект. Какие турниры играть новичку
-							</p>
-							<p class="table__row _lock">
-								<span>5.</span> Банкролл менеджмент. Как не остаться без денег
-								на игру
-							</p>
-							<p class="table__row _lock">
-								<span>6.</span> Игра на префлопе. Чарты, ренджи открытия, 3 bet
-								и cold call
-							</p>
-							<p class="table__row _lock">
-								<span>7.</span> Игра на постфлопе. Диапазоны, контбеты, когда
-								делать пас
-							</p>
-							<p class="table__row _lock">
-								<span>8.</span> Сайзинги. Выбираем правильные размеры ставок
-							</p>
-							<p class="table__row _lock">
-								<span>9.</span> Покерная математика простым языком. <br />
-								Что важно считать для принятия верных решений
-							</p>
-							<p class="table__row _lock">
-								<span>10.</span> Принципы игры в мультипоте (против нескольких
-								соперников)
-							</p>
-							<p class="table__row _lock">
-								<span>11.</span> ICM. Как зарабатывать больше денег в условиях
-								бабла и на финальном столе
-							</p>
-							<p class="table__row _lock">
-								<span>12.</span> Психология покера. Рекомендации борьбы с
-								тильтом
-							</p>
-							<p class="table__row _lock">
-								<span>13.</span> Базовый покерный софт
-							</p>
-							<p class="table__row _lock">
-								<span>14.</span> Заключение и инструкция как получить бонусы на
-								игру
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="bonus">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="bonus__blur_top"></div>
-						<div class="bonus__blur_bottom"></div>
-
-						<div class="bonus__container" data-aos="fade-up">
-							<h2 class="h2 bonus__title">Бонусом к курсу вы получите:</h2>
-
-							<div class="bonus__box">
-								<span class="bonus__number">1.</span>
-								<img
-									src="img/course/bonus__img-1.png"
-									alt="Таблица"
-									class="bonus__image"
-								/>
-								<p class="bonus__text">
-									<span class="bonus__number_mobile">1.</span> Солверные
-									(идеально математически рассчитанные) таблицы разыгрывания
-									стартовых рук на префлопе, благодаря которым вы сможете
-									эксплойтить на лузовых так и нитовых оппонентов
-								</p>
-							</div>
-							<div class="bonus__box">
-								<span class="bonus__number">2.</span>
-								<img
-									src="img/course/bonus__img-2.png"
-									alt="Таблица"
-									class="bonus__image"
-								/>
-								<p class="bonus__text">
-									<span class="bonus__number_mobile">2.</span> Универсальные
-									таблицы Пуш Фолда, благодаря которым в финальной части игры ты
-									будешь готов к удвоениям
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="skills">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="h2 skills__title" data-aos="zoom-in">
-							Ваши навыки в среде микролимитов <br />
-							по отношению к другим игрокам после прохождения курса<span
-								>:</span
-							>
-						</h2>
-
-						<img
-							src="img/skills/skills__img.svg"
-							alt="Skills"
-							class="skills__image"
-							data-aos="zoom-in"
-						/>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="free">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="h2 free__title" data-aos="zoom-in">
-							Вы можете получить этот курс абсолютно <br />
-							бесплатно просто зарегистрировавшись и сделав депозит <br />
-							от 10$ в любом из наших покерных румов
-						</h2>
-
-						<p class="free__subtitle" data-aos="zoom-in">по ссылкам ниже</p>
-
-						<div class="free__scroll-down">
-							<div class="wheel"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="rooms">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="rooms__blur_top"></div>
-						<div class="rooms__blur_bottom"></div>
-
-						<h2 class="h2" data-aos="zoom-in">Покерные румы<span>:</span></h2>
-
-						<div class="rooms__container">
-							<div class="rooms__box" data-aos="fade-up" data-aos-delay="100">
-								<div class="wrapper">
-									<img
-										src="img/rooms/rooms__logo-1.png"
-										alt="GG poker"
-										class="rooms__logo"
-									/>
-									<p class="rooms__text">
-										Лидер покерной индустрии. <br />
-										Мировые серии, миллионные гарантии
-									</p>
-									<ul class="rooms__list">
-										<li>Множество дешевых сателлитов от 0.01$</li>
-										<li>Высокие гарантии</li>
-										<li>Кешбек до 60% по программе Fish Buffet</li>
-										<li>Розыгрыши джекпотов каждый день</li>
-										<li>Большое количество игроков</li>
-										<li>Множество турниров в любое время</li>
-										<li>Приветственный бонус 100$</li>
-										<li>Игровые анимации</li>
-										<li>Отсутствие HUD-статистики</li>
-										<li>Удобная запись и экспорт вашиих рук</li>
-									</ul>
-								</div>
-								<a href="#" class="button rooms__button"
-									>Зарегистрироваться в PokerStars ES</a
-								>
-							</div>
-
-							<div class="rooms__box" data-aos="fade-up" data-aos-delay="200">
-								<div class="wrapper">
-									<img
-										src="img/rooms/rooms__logo-2.png"
-										alt="Poker stars"
-										class="rooms__logo"
-									/>
-									<p class="rooms__text">
-										Огромный онлайн к Cash и MTT всегда! <br />
-										Лучший вариант для регулярных гриндеров
-									</p>
-									<ul class="rooms__list">
-										<li>Бонус до 100% от депозита</li>
-										<li>Огромные килополя</li>
-										<li>Множество слабых игроков</li>
-										<li>Большие призовые во всех турнирах</li>
-										<li>Крупные покерные серии!</li>
-										<li>Миллионные гарантии каждую неделю</li>
-										<li>Sunday Million 1M$ GTD каждое воскресенье!</li>
-										<li>Возможность подключить HUD-статистику</li>
-									</ul>
-								</div>
-								<a href="#" class="button rooms__button _brown"
-									>Зарегистрироваться в PokerStars</a
-								>
-								<a href="#" class="button rooms__button"
-									>Зарегистрироваться в PokerStars ES</a
-								>
-							</div>
-
-							<div class="rooms__box" data-aos="fade-up" data-aos-delay="300">
-								<div class="wrapper">
-									<img
-										src="img/rooms/rooms__logo-3.png"
-										alt="888 poker"
-										class="rooms__logo"
-									/>
-									<p class="rooms__text">
-										Один из лидеров индустрии онлайн-покера. <br />
-										Большое количество игр в любое время суток
-									</p>
-									<ul class="rooms__list">
-										<li>Депозит-бонус 100% до $800</li>
-										<li>$88 Бездепозитный бонус</li>
-										<li>Кеш-игры с лимитами от 2 до 1000NL</li>
-										<li>Удобные лейаут для игры</li>
-										<li>Слабое поле игроков</li>
-										<li>Много дешевых турниров</li>
-										<li>Регулярные фрироллы</li>
-									</ul>
-								</div>
-								<a href="#" class="button rooms__button"
-									>Зарегистрироваться в PokerStars ES</a
-								>
-							</div>
-
-							<div class="rooms__box" data-aos="fade-up" data-aos-delay="100">
-								<div class="wrapper">
-									<img
-										src="img/rooms/rooms__logo-4.png"
-										alt="Poker match"
-										class="rooms__logo"
-									/>
-									<p class="rooms__text">
-										Первый украинский покер-рум <br />
-										с 12 вариантами бонусов на депозит <br />
-										и слабым полем игроков
-									</p>
-									<ul class="rooms__list">
-										<li>Депозит-бонус 100% до $1,000</li>
-										<li>Кешбек от 5% до 40%</li>
-										<li>Частые оверлеи в турнирах</li>
-										<li>Удобные лейаут для игры</li>
-										<li>Китайский покер</li>
-										<li>Регулярные промо-акции</li>
-										<li>Слабое поле игроков</li>
-									</ul>
-								</div>
-								<a href="#" class="button rooms__button"
-									>Зарегистрироваться в PokerStars ES</a
-								>
-							</div>
-
-							<div class="rooms__box" data-aos="fade-up" data-aos-delay="200">
-								<div class="wrapper">
-									<img
-										src="img/rooms/rooms__logo-5.png"
-										alt="Pokerdom"
-										class="rooms__logo"
-									/>
-									<p class="rooms__text">
-										Лучший русский онлайн покер-рум, который предлагает турниры
-										по покеру и кеш-игры
-									</p>
-									<ul class="rooms__list">
-										<li>Бонус до 100,000 рублей</li>
-										<li>Кешбек от 5% до 50%</li>
-										<li>Частые оверлеи в турнирах</li>
-										<li>Удобные лейаут для игры</li>
-										<li>Регулярные промо-акции</li>
-										<li>Слабое поле игроков</li>
-									</ul>
-								</div>
-								<a href="#" class="button rooms__button"
-									>Зарегистрироваться в PokerStars ES</a
-								>
-							</div>
-
-							<div class="rooms__box" data-aos="fade-up" data-aos-delay="300">
-								<div class="wrapper">
-									<img
-										src="img/rooms/rooms__logo-6.png"
-										alt="Partypoker"
-										class="rooms__logo"
-									/>
-									<p class="rooms__text">
-										Большое количество игр, хорошие условия для начинающих
-										игроков и регулярных гриндеров
-									</p>
-									<ul class="rooms__list">
-										<li>Депозит-бонус 100% до $800</li>
-										<li>$88 Бездепозитный бонус</li>
-										<li>Кеш-игры с лимитами от 2 до 1000NL</li>
-										<li>Удобные лейаут для игры</li>
-										<li>Слабое поле игроков</li>
-										<li>Много дешевых турниров</li>
-										<li>Регулярные фрироллы</li>
-									</ul>
-								</div>
-								<a href="#" class="button rooms__button"
-									>Зарегистрироваться в PokerStars ES</a
-								>
-							</div>
-
-							<div class="rooms__box" data-aos="fade-up" data-aos-delay="100">
-								<div class="wrapper">
-									<img
-										src="img/rooms/rooms__logo-7.png"
-										alt="Tigergaming"
-										class="rooms__logo"
-									/>
-									<p class="rooms__text">
-										С очень слабом полем американских и канадских игроков и
-										отличным бонусом на депозит.
-									</p>
-									<ul class="rooms__list">
-										<li>100% бонус до $1000 на первый депозит</li>
-										<li>Слабые игроки из Америки</li>
-										<li>Еженедельная рейк-гонка на $10,000</li>
-										<li>Кешауты до 24 часов</li>
-										<li>Общее число игроков в пиковые часы – до 2,000</li>
-										<li>Высокая популярность 9-max столов и лимита NL100$</li>
-										<li>Удобный софт</li>
-										<li>Регулярные обновления клиента</li>
-									</ul>
-								</div>
-								<a href="#" class="button rooms__button"
-									>Зарегистрироваться в PokerStars ES</a
-								>
-							</div>
-
-							<div class="rooms__box" data-aos="fade-up" data-aos-delay="200">
-								<div class="wrapper">
-									<img
-										src="img/rooms/rooms__logo-8.png"
-										alt="Poker king"
-										class="rooms__logo"
-									/>
-									<p class="rooms__text">
-										Самая крупная открытая покерная сеть, принимающая
-										американцев.
-									</p>
-									<ul class="rooms__list">
-										<li>100% бонус до 2000$ на первый депозит</li>
-										<li>Слабые игроки из Америки</li>
-										<li>Ориентирован на игроков из СНГ</li>
-										<li>
-											Рум часто предлагает бонусы за депозиты через биткоин
-										</li>
-										<li>Высокий кешбек!</li>
-										<li>Много крупных турниров и сателлитов к ним</li>
-										<li>Удобная запись и экспорт вашиих рук</li>
-										<li>Множество слабых игроков</li>
-									</ul>
-								</div>
-								<a href="#" class="button rooms__button"
-									>Зарегистрироваться в PokerStars ES</a
-								>
-							</div>
-						</div>
-
-						<p class="rooms__course">
-							Если вы зарегистрированы во всех румах или по какой-то причине не
-							хотите регистрироваться в новом, но хотели бы получить курс то вы
-							можете купить его за 49$ (обращаем внимание, что курс предназначен
-							исключительно для новичков)
-						</p>
-
-						<a href="#" class="button rooms__details">Купить курс</a>
-
-						<p class="rooms__course_under">
-							Выполнив несложные задания курса вы получите доступ к ежемесячному
-							закрытому фрироллу с гарантией 500$ только для игроков проекта
-							NashPoker.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="articles">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="articles__blur_top"></div>
-						<div class="articles__blur_bottom"></div>
-
-						<h2 class="h2" data-aos="zoom-in">статьи<span>:</span></h2>
-
-						<div class="articles__container" data-aos="fade-up">
-							<article class="articles__box article">
-								<div
-									class="article__heading"
-									style="
-										background-image: url('img/articles/article__image-1.png');
-									"
-								>
-									<p>Правила составления турнирной</p>
-									<p>сетки для МТТ игроков</p>
-								</div>
-								<div class="article__content">
-									<p class="article__text">
-										С каждым годом поля в МТТ становятся все сильнее. Регуляров
-										в турнирах больше, софт для игры доступнее. Как выжить МТТ
-										игроку в такое
-									</p>
-
-									<a href="#" class="article__link">Читать далее</a>
-								</div>
-							</article>
-
-							<article class="articles__box article">
-								<div
-									class="article__heading"
-									style="
-										background-image: url('img/articles/article__image-2.png');
-									"
-								>
-									<p>Правила составления турнирной</p>
-									<p>сетки для МТТ игроков</p>
-								</div>
-								<div class="article__content">
-									<p class="article__text">
-										С каждым годом поля в МТТ становятся все сильнее. Регуляров
-										в турнирах больше, софт для игры доступнее. Как выжить МТТ
-										игроку в такое
-									</p>
-									<a href="#" class="article__link">Читать далее</a>
-								</div>
-							</article>
-						</div>
-
-						<a href="#" class="button articles__more"
-							><span>Больше статтей</span></a
+						<a href="#" class="button admins__button _shadow"
+							><span>Learn more</span></a
 						>
 					</div>
 				</div>
@@ -912,15 +354,73 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 footer_flex">
-						<img src="img/logo.png" alt="Nashpoker" class="footer__logo" />
+						<div class="footer__wrapper">
+							<img src="img/logo.png" alt="Wunity" class="footer__logo" />
 
-						<nav class="footer__menu">
-							<a class="_hidden" href="exchanger.html">Обменник</a>
-							<a href="dictionary.html">Словарь покерных терминов</a>
-							<a href="articles.html">Блог</a>
-							<a href="rooms.html">Румы</a>
-							<a href="contacts.html">Контакты</a>
-						</nav>
+							<div class="footer__platforms">
+								<img src="img/main/footer__google.png" alt="Google Play" />
+								<img src="img/main/footer__apple.png" alt="App Store" />
+							</div>
+
+							<div class="footer__pc">
+								<img src="img/icons/pc.svg" alt="Pc" />
+								<span>Desktop</span>
+							</div>
+						</div>
+
+						<div class="footer__menu menu">
+							<p class="title">Menu</p>
+
+							<nav class="menu__container">
+								<div class="menu__col _1">
+									<a href="features.html" class="menu__heading menu__link"
+										>Features</a
+									>
+								</div>
+
+								<div class="menu__col _2">
+									<p class="menu__heading menu__link">Solutions</p>
+									<a href="government.html" class="menu__link"
+										>For Government</a
+									>
+									<a href="healthcare.html" class="menu__link"
+										>For Healthcare</a
+									>
+									<a href="education.html" class="menu__link">For Education</a>
+									<a href="work.html" class="menu__link">For Work</a>
+								</div>
+
+								<div class="menu__col _3">
+									<a href="plans.html" class="menu__heading menu__link"
+										>Plans and Pricing</a
+									>
+									<a href="plans.html" class="menu__link">Wunity Indidvidual</a>
+									<a href="plans.html" class="menu__link">Wunity Advance</a>
+									<a href="plans.html" class="menu__link">Wunity Business</a>
+									<a href="plans.html" class="menu__link"
+										>Wunity Latge Enterprise</a
+									>
+									<a href="plans.html" class="menu__link">Wunity Alliance</a>
+								</div>
+
+								<div class="menu__col _4">
+									<a href="resources.html" class="menu__heading menu__link"
+										>Resources</a
+									>
+									<a href="resources.html" class="menu__link">FAQ</a>
+									<a href="resources.html" class="menu__link">Blog</a>
+								</div>
+							</nav>
+						</div>
+
+						<div class="footer__contacts contacts">
+							<p class="title">Contact</p>
+
+							<div class="contacts__container">
+								<img src="img/icons/mail.svg" alt="Email" />
+								<a href="mailto:support@wunity.online">support@wunity.online</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
