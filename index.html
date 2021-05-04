@@ -15,6 +15,8 @@
 			href="img/favicon.ico"
 		/>
 
+		<link rel="preload" href="img/logo.svg" as="image" />
+
 		<link rel="stylesheet" href="libs/hamburger/hamburgers.min.css" />
 		<link rel="stylesheet" href="libs/aos/aos.css" />
 		<link rel="stylesheet" href="css/main.min.css" />
@@ -24,6 +26,7 @@
 		<script defer src="libs/aos/aos.js"></script>
 
 		<script defer src="js/aos-init.js"></script>
+		<script defer src="js/preloader.js"></script>
 		<script defer src="js/custom.min.js"></script>
 
 		<script
@@ -35,15 +38,19 @@
 	</head>
 
 	<body class="ishome">
+		<div class="preloader">
+			<img src="img/logo.svg" alt="Wunity" data-aos="zoom-out" />
+		</div>
+
 		<header class="header">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 header_flex">
-						<img src="img/logo.png" alt="Wunity" class="header__logo_mobile" />
+						<img src="img/logo.svg" alt="Wunity" class="header__logo_mobile" />
 
 						<div class="header__sidebar">
 							<a href="index.html" class="header__logo">
-								<img src="img/logo.png" alt="Wunity" />
+								<img src="img/logo.svg" alt="Wunity" />
 							</a>
 
 							<nav class="header__menu menu">
@@ -93,29 +100,60 @@
 		</header>
 
 		<section class="main">
-			<img src="img/main/main__bg_left.svg" alt="Rombs" class="main__bg_left" />
-			<div class="main__bg_right"></div>
+			<img
+				src="img/main/main__bg_left.svg"
+				alt="Rombs"
+				class="main__bg_left"
+				data-aos="fade-right"
+				data-aos-delay="2500"
+				data-aos-duration="2000"
+			/>
+			<div
+				class="main__bg_right"
+				data-aos="fade-up"
+				data-aos-delay="2500"
+				data-aos-duration="2000"
+			></div>
 
 			<div class="main_flex">
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-7 col-lg-8 main__container">
-							<h1 class="h1 main__title">
+							<h1
+								class="h1 main__title"
+								data-aos="zoom-in-down"
+								data-aos-delay="1700"
+							>
 								Stay connected with unique experience <br />
 								of
-								<span class="_blue-text">Wunity!</span>
+								<span
+									class="_blue-text"
+									data-aos="zoom-in"
+									data-aos-delay="2700"
+									>Wunity!</span
+								>
 							</h1>
 
-							<h4 class="h4 main__subtitle">
+							<h4
+								class="h4 main__subtitle"
+								data-aos="zoom-in-down"
+								data-aos-delay="1900"
+							>
 								<i class="fas fa-caret-right"></i
 								><span>Bring everyone together</span>
 							</h4>
 
-							<a href="#" class="main__button button _shadow"
-								>Start trial now</a
-							>
+							<div data-aos="zoom-in-down" data-aos-delay="2100">
+								<a href="#" class="main__button button _shadow"
+									>Start trial now</a
+								>
+							</div>
 
-							<div class="main__features">
+							<div
+								class="main__features"
+								data-aos="zoom-in-up"
+								data-aos-delay="2100"
+							>
 								<p>We have all features you need for your remote work</p>
 								<a href="#" class="button _white _shadow">Learn More</a>
 							</div>
@@ -126,13 +164,21 @@
 		</section>
 
 		<section class="appeal">
-			<div class="appeal__bg appeal__bg_left"></div>
-			<div class="appeal__bg appeal__bg_right"></div>
+			<div
+				class="appeal__bg appeal__bg_left"
+				data-aos="fade-right"
+				data-aos-delay="200"
+			></div>
+			<div
+				class="appeal__bg appeal__bg_right"
+				data-aos="fade-left"
+				data-aos-delay="200"
+			></div>
 
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<div class="appeal__buttons">
+						<div class="appeal__buttons" data-aos="zoom-in">
 							<a href="#" class="appeal__button button _white _wide"
 								>Start for Free</a
 							>
@@ -149,19 +195,37 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2 class="h2 built__title">
-							Built for <span class="_blue-text">Everyone</span>
+						<h2 class="h2 built__title" data-aos="fade-up">
+							Built for
+							<span class="_blue-text" data-aos="zoom-in" data-aos-delay="700"
+								>Everyone</span
+							>
 						</h2>
 					</div>
 
 					<div class="col-lg-6">
-						<div class="built__box">
-							<img src="img/built/icon_1.svg" alt="icon" class="built__icon" />
-							<h5 class="h5 built__heading">
+						<div class="built__box" data-aos="fade-up">
+							<img
+								src="img/built/icon_1.svg"
+								alt="icon"
+								class="built__icon"
+								data-aos="zoom-in"
+								data-aos-delay="200"
+							/>
+
+							<h5
+								class="h5 built__heading"
+								data-aos="zoom-in-right"
+								data-aos-delay="400"
+							>
 								<i class="fas fa-caret-right"></i>
 								<span>Work from anywhere</span>
 							</h5>
-							<p class="built__text">
+							<p
+								class="built__text"
+								data-aos="zoom-in-right"
+								data-aos-delay="600"
+							>
 								No matter where you are, as a video conferencing product, Wunity
 								makes it simple and easy to connect with anyone you want; on the
 								other hand it can easily serve as a modern workplace.
@@ -170,13 +234,27 @@
 					</div>
 
 					<div class="col-lg-6">
-						<div class="built__box">
-							<img src="img/built/icon_2.svg" alt="icon" class="built__icon" />
-							<h5 class="h5 built__heading">
+						<div class="built__box" data-aos="fade-up">
+							<img
+								src="img/built/icon_2.svg"
+								alt="icon"
+								class="built__icon"
+								data-aos="zoom-in"
+								data-aos-delay="200"
+							/>
+							<h5
+								class="h5 built__heading"
+								data-aos="zoom-in-right"
+								data-aos-delay="400"
+							>
 								<i class="fas fa-caret-right"></i>
 								<span>Streaming, recording and transcripts</span>
 							</h5>
-							<p class="built__text">
+							<p
+								class="built__text"
+								data-aos="zoom-in-right"
+								data-aos-delay="600"
+							>
 								With RTMP support, stream your meetings and webinars. Wunity
 								allows recording, furthermore provides transcript and messages
 								of the meeting or webinar.
@@ -185,13 +263,27 @@
 					</div>
 
 					<div class="col-lg-6">
-						<div class="built__box">
-							<img src="img/built/icon_3.svg" alt="icon" class="built__icon" />
-							<h5 class="h5 built__heading">
+						<div class="built__box" data-aos="fade-up">
+							<img
+								src="img/built/icon_3.svg"
+								alt="icon"
+								class="built__icon"
+								data-aos="zoom-in"
+								data-aos-delay="200"
+							/>
+							<h5
+								class="h5 built__heading"
+								data-aos="zoom-in-right"
+								data-aos-delay="400"
+							>
 								<i class="fas fa-caret-right"></i>
 								<span>Safe place to meet</span>
 							</h5>
-							<p class="built__text">
+							<p
+								class="built__text"
+								data-aos="zoom-in-right"
+								data-aos-delay="600"
+							>
 								By its meeting and webinar utilities Wunity enables businesses
 								to operate safely especially during extraordinary times like
 								pandemic by allowing employees to work from home.
@@ -200,13 +292,27 @@
 					</div>
 
 					<div class="col-lg-6">
-						<div class="built__box">
-							<img src="img/built/icon_4.svg" alt="icon" class="built__icon" />
-							<h5 class="h5 built__heading">
+						<div class="built__box" data-aos="fade-up">
+							<img
+								src="img/built/icon_4.svg"
+								alt="icon"
+								class="built__icon"
+								data-aos="zoom-in"
+								data-aos-delay="200"
+							/>
+							<h5
+								class="h5 built__heading"
+								data-aos="zoom-in-right"
+								data-aos-delay="400"
+							>
 								<i class="fas fa-caret-right"></i>
 								<span>Combined mobile version</span>
 							</h5>
-							<p class="built__text">
+							<p
+								class="built__text"
+								data-aos="zoom-in-right"
+								data-aos-delay="600"
+							>
 								Stay connected how you wish. Wunity combined mobile version
 								provides securely video & voice calls, file transfer, messaging
 								utilities, meeting and webinar together in one application.
@@ -215,13 +321,27 @@
 					</div>
 
 					<div class="col-lg-6">
-						<div class="built__box">
-							<img src="img/built/icon_5.svg" alt="icon" class="built__icon" />
-							<h5 class="h5 built__heading">
+						<div class="built__box" data-aos="fade-up">
+							<img
+								src="img/built/icon_5.svg"
+								alt="icon"
+								class="built__icon"
+								data-aos="zoom-in"
+								data-aos-delay="200"
+							/>
+							<h5
+								class="h5 built__heading"
+								data-aos="zoom-in-right"
+								data-aos-delay="400"
+							>
 								<i class="fas fa-caret-right"></i>
 								<span>Privacy for connection</span>
 							</h5>
-							<p class="built__text">
+							<p
+								class="built__text"
+								data-aos="zoom-in-right"
+								data-aos-delay="600"
+							>
 								Securely send your instant messages to public or private
 								participants without interrupting the meetings by Wunity’s user
 								friendly interfaces.
@@ -230,13 +350,27 @@
 					</div>
 
 					<div class="col-lg-6">
-						<div class="built__box">
-							<img src="img/built/icon_6.svg" alt="icon" class="built__icon" />
-							<h5 class="h5 built__heading">
+						<div class="built__box" data-aos="fade-up">
+							<img
+								src="img/built/icon_6.svg"
+								alt="icon"
+								class="built__icon"
+								data-aos="zoom-in"
+								data-aos-delay="200"
+							/>
+							<h5
+								class="h5 built__heading"
+								data-aos="zoom-in-right"
+								data-aos-delay="400"
+							>
 								<i class="fas fa-caret-right"></i>
 								<span>Effectice connectivity</span>
 							</h5>
-							<p class="built__text">
+							<p
+								class="built__text"
+								data-aos="zoom-in-right"
+								data-aos-delay="600"
+							>
 								Screen sharing lets you to share your web browser, entire
 								monitor or just an individual app; by whiteboard it is easy to
 								collaborate even on drawings. Also Wunity allows you to schedule
@@ -245,7 +379,7 @@
 						</div>
 					</div>
 
-					<div class="col-12">
+					<div class="col-12" data-aos="zoom-in">
 						<a href="#" class="button built__button _shadow"
 							>Explore all Features</a
 						>
@@ -255,13 +389,21 @@
 		</section>
 
 		<section class="appeal">
-			<div class="appeal__bg appeal__bg_left"></div>
-			<div class="appeal__bg appeal__bg_right"></div>
+			<div
+				class="appeal__bg appeal__bg_left"
+				data-aos="fade-right"
+				data-aos-delay="200"
+			></div>
+			<div
+				class="appeal__bg appeal__bg_right"
+				data-aos="fade-left"
+				data-aos-delay="200"
+			></div>
 
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<div class="appeal__buttons">
+						<div class="appeal__buttons" data-aos="zoom-in">
 							<a href="#" class="appeal__button button _white _wide"
 								>Start for Free</a
 							>
@@ -278,8 +420,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2 class="h2 admins__title">
-							Solutions for <span class="_blue-text">Administrators</span>
+						<h2 class="h2 admins__title" data-aos="fade-up">
+							Solutions for
+							<span class="_blue-text" data-aos="zoom-in" data-aos-delay="700"
+								>Administrators</span
+							>
 						</h2>
 
 						<div class="admins__container _align-center">
@@ -287,10 +432,11 @@
 								class="admins__image"
 								src="img/main/admins__image.png"
 								alt="Laptop & mobile"
+								data-aos="zoom-in"
 							/>
 
 							<div class="admins__col">
-								<div class="admins__box _col">
+								<div class="admins__box _col" data-aos="zoom-in-right">
 									<h5 class="h5 admins__heading">Monitor the resources</h5>
 									<p class="admins__text">
 										With its advanced reporting feature, you can also instantly
@@ -299,7 +445,11 @@
 									</p>
 								</div>
 
-								<div class="admins__box _col">
+								<div
+									class="admins__box _col"
+									data-aos="zoom-in-right"
+									data-aos-delay="100"
+								>
 									<h5 class="h5 admins__heading">Security & Policies</h5>
 									<p class="admins__text">
 										According to client support Wunity offer SHA-256 encryption;
@@ -311,7 +461,11 @@
 						</div>
 
 						<div class="admins__container">
-							<div class="admins__box">
+							<div
+								class="admins__box"
+								data-aos="zoom-in-up"
+								data-aos-delay="100"
+							>
 								<h5 class="h5 admins__heading">Sync & Manage users</h5>
 								<p class="admins__text">
 									It is easy and quick to reach your Active Directory users on
@@ -322,7 +476,11 @@
 								</p>
 							</div>
 
-							<div class="admins__box">
+							<div
+								class="admins__box"
+								data-aos="zoom-in-up"
+								data-aos-delay="200"
+							>
 								<h5 class="h5 admins__heading">Remote support</h5>
 								<p class="admins__text">
 									Wunity Desktop allows you to give support remotely from
@@ -332,7 +490,11 @@
 								</p>
 							</div>
 
-							<div class="admins__box">
+							<div
+								class="admins__box"
+								data-aos="zoom-in-up"
+								data-aos-delay="300"
+							>
 								<h5 class="h5 admins__heading">Support decision makers</h5>
 								<p class="admins__text">
 									Wunity poll feature ease organization management for decision
@@ -342,9 +504,11 @@
 							</div>
 						</div>
 
-						<a href="#" class="button admins__button _shadow"
-							><span>Learn more</span></a
-						>
+						<div data-aos="zoom-in">
+							<a href="#" class="button admins__button _shadow"
+								><span>Learn more</span></a
+							>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -355,17 +519,22 @@
 				<div class="row">
 					<div class="col-12 footer_flex">
 						<div class="footer__wrapper">
-							<img src="img/logo.png" alt="Wunity" class="footer__logo" />
+							<img src="img/logo.svg" alt="Wunity" class="footer__logo" />
 
 							<div class="footer__platforms">
-								<img src="img/main/footer__google.png" alt="Google Play" />
-								<img src="img/main/footer__apple.png" alt="App Store" />
+								<a href="#">
+									<img src="img/main/footer__google.svg" alt="Google Play" />
+								</a>
+
+								<a href="#">
+									<img src="img/main/footer__apple.svg" alt="App Store" />
+								</a>
 							</div>
 
-							<div class="footer__pc">
+							<a href="#" class="footer__pc">
 								<img src="img/icons/pc.svg" alt="Pc" />
 								<span>Desktop</span>
-							</div>
+							</a>
 						</div>
 
 						<div class="footer__menu menu">
