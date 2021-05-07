@@ -15,4 +15,8 @@ jQuery(function () {
 			$('.captions__counter .counter__all').html(slick.slideCount / 2)
 		})
 	}
+
+	$(window).on('resize', function () {
+		$('.captions_flex').slick('refresh')
+	})
 })
