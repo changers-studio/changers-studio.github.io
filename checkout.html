@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ua">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Torpeda | Оформлення замовлення</title>
+
+		<meta name="viewport" content="width=device-width" />
+		<meta name="format-detection" content="telephone=no" />
+
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+
+		<link rel="stylesheet" href="libs/select2/select2.min.css" />
+		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="css/main.css" />
+
+		<script defer src="libs/jquery.min.js"></script>
+		<script defer src="libs/jquery.inputmask.min.js"></script>
+		<script
+			defer
+			src="libs/magnific-popup/jquery.magnific-popup.min.js"
+		></script>
+		<script defer src="libs/select2/select2.min.js"></script>
+
+		<script defer src="js/select2-init.js"></script>
+		<script defer src="js/checkbox.js"></script>
+		<script defer src="js/magnific-popup.js"></script>
+		<script defer src="js/custom.min.js"></script>
+
+		<script
+			async
+			defer
+			src="https://kit.fontawesome.com/55e0136003.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+
+	<!-- 
+		p = page
+		s = section 
+	-->
+
+	<body class="isnohome p-checkout">
+		<header>header</header>
+
+		<section class="checkout" id="s-checkout">
+			<div class="container checkout__container">
+				<div class="row">
+					<div class="col-xl-5 col-lg-6">
+						<h2 class="h2">Оформлення замовлення</h2>
+
+						<div class="checkout__one-click one-click">
+							<span class="one-click__text"
+								>Нема часу на формлення замовлення?
+							</span>
+
+							<a href="#" class="one-click__button button">Купити в 1 клік</a>
+						</div>
+
+						<form class="checkout__stages">
+							<div class="stage stage-data _current">
+								<div class="stage__heading">
+									<div class="stage__number">1</div>
+									<h5 class="h5 stage__title">Дані</h5>
+
+									<div class="stage-data__buyer buyer">
+										<span class="buyer__text">Постійний покупець</span>
+										<input class="buyer__input" type="checkbox" name="buyer" />
+									</div>
+								</div>
+								<div class="stage__body stage__body-data">
+									<div class="stage__input">
+										<input
+											type="text"
+											name="Ім’я"
+											placeholder="Ім’я"
+											required
+										/>
+									</div>
+
+									<div class="stage__input">
+										<input
+											type="text"
+											name="Прізвище"
+											placeholder="Прізвище"
+											required
+										/>
+									</div>
+
+									<div class="stage__input">
+										<input
+											class="_invalid"
+											type="tel"
+											name="Телефон"
+											placeholder="+38 (***) *** ** **"
+											required
+										/>
+
+										<p class="error">Номер телефону вказано неправильно.</p>
+									</div>
+
+									<div class="stage__dropdown">
+										<select class="select2" data-placeholder="Місто">
+											<option></option>
+											<option value="Днепр">Днепр</option>
+											<option value="Днепр">Днепр</option>
+											<option value="Днепр">Днепр</option>
+											<option value="Днепр">Днепр</option>
+											<option value="Днепр">Днепр</option>
+											<option value="Днепр">Днепр</option>
+										</select>
+									</div>
+
+									<div class="stage__input">
+										<input
+											type="email"
+											name="Email"
+											placeholder="Email"
+											required
+										/>
+									</div>
+
+									<div class="stage__button button">Далі</div>
+								</div>
+
+								<div class="stage__body stage__body-data _hidden">
+									<input
+										type="text"
+										name="Ел. пошта або телефон"
+										placeholder="Ел. пошта або телефон"
+										required
+									/>
+
+									<div class="stage__input">
+										<input
+											type="password"
+											name="Пароль"
+											placeholder="Пароль"
+											required
+											class="_invalid"
+										/>
+										<div class="error__wrap">
+											<span class="error__title"
+												>Пароль вказано неправильно!</span
+											>
+											<p>
+												Якщо ви забули пароль, скористуйтеся функцією
+												<a href="#">відновлення паролю</a>
+											</p>
+										</div>
+									</div>
+
+									<div class="authorization">
+										<a href="#">Зареєструватися</a>
+										<a href="#">Забули пароль?</a>
+									</div>
+
+									<button type="submit" class="button">Увійти</button>
+								</div>
+							</div>
+
+							<div class="stage stage-delivery">
+								<div class="stage__heading">
+									<div class="stage__number">2</div>
+									<h5 class="h5 stage__title">Доставка</h5>
+								</div>
+
+								<div class="stage__body">
+									<div class="stage-delivery__wrap">
+										<input
+											class="stage-delivery__checkbox checkbox"
+											type="checkbox"
+											id="c2-1"
+											name="cc"
+										/>
+										<label for="c2-1">
+											Доставка у відділення Нової пошти
+											<p>
+												*Вартість доставки згідно з такрифами Нової Пошти
+											</p></label
+										>
+
+										<div class="stage-delivery__dropdown">
+											<select
+												class="select2"
+												data-placeholder="Оберіть відділення"
+											>
+												<option></option>
+												<option value="123">
+													Відділення Нової Пошти № 123
+												</option>
+												<option value="321">
+													Відділення Нової Пошти № 321
+												</option>
+												<option value="432">
+													Відділення Нової Пошти № 432
+												</option>
+												<option value="633">
+													Відділення Нової Пошти № 633
+												</option>
+												<option value="123">
+													Відділення Нової Пошти № 123
+												</option>
+												<option value="321">
+													Відділення Нової Пошти № 321
+												</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="stage-delivery__wrap">
+										<input
+											class="stage-delivery__checkbox checkbox"
+											type="checkbox"
+											id="c2-2"
+											name="cc"
+										/>
+										<label for="c2-2">Доставка у відділення УКРПОШТИ</label>
+
+										<div class="stage-delivery__dropdown">
+											<select
+												class="select2"
+												data-placeholder="Оберіть відділення"
+											>
+												<option></option>
+												<option value="123">Відділення УКРПОШТИ № 123</option>
+												<option value="321">Відділення УКРПОШТИ № 321</option>
+												<option value="432">Відділення УКРПОШТИ № 432</option>
+												<option value="633">Відділення УКРПОШТИ № 633</option>
+												<option value="123">Відділення УКРПОШТИ № 123</option>
+												<option value="321">Відділення УКРПОШТИ № 321</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="stage-delivery__wrap">
+										<input
+											class="stage-delivery__checkbox checkbox"
+											type="checkbox"
+											id="c2-3"
+											name="cc"
+										/>
+										<label for="c2-3">Доставка за адресою</label>
+
+										<div class="stage-delivery__dropdown">
+											<div class="stage__dropdown">
+												<select class="select2" data-placeholder="Місто">
+													<option></option>
+													<option value="Днепр">Днепр</option>
+													<option value="Днепр">Днепр</option>
+													<option value="Днепр">Днепр</option>
+													<option value="Днепр">Днепр</option>
+													<option value="Днепр">Днепр</option>
+													<option value="Днепр">Днепр</option>
+												</select>
+											</div>
+											<div class="stage__input">
+												<input type="text" name="Вулиця" placeholder="Вулиця" />
+											</div>
+											<div class="stage__input">
+												<input
+													type="text"
+													name="Будинок"
+													placeholder="Будинок"
+												/>
+											</div>
+											<div class="stage__input">
+												<input
+													type="text"
+													name="Квартира"
+													placeholder="Квартира"
+												/>
+											</div>
+
+											<button class="stage-delivery__button button">
+												Далі
+											</button>
+										</div>
+									</div>
+
+									<div class="stage__button button">Далі</div>
+								</div>
+							</div>
+
+							<div class="stage stage-payment">
+								<div class="stage__heading">
+									<div class="stage__number">3</div>
+									<h5 class="h5 stage__title">Оплата</h5>
+								</div>
+								<div class="stage__body">
+									<label class="stage-payment__label">
+										<input
+											class="checkbox"
+											id="c3-1"
+											type="checkbox"
+											name="cc"
+										/>
+										<span>Оплата при отриманні</span>
+									</label>
+
+									<label class="stage-payment__label">
+										<input
+											class="checkbox"
+											id="c3-2"
+											type="checkbox"
+											name="cc"
+										/>
+										<span>Оплата карткою онлайн</span>
+									</label>
+
+									<div class="stage__button button">Далі</div>
+								</div>
+							</div>
+
+							<div class="stage stage-recipient">
+								<div class="stage__heading">
+									<div class="stage__number">4</div>
+									<h5 class="h5 stage__title">Данні отримувача</h5>
+								</div>
+								<div class="stage__body">
+									<h5 class="h5">Хто отримувач?</h5>
+
+									<label class="stage-recipient__label">
+										<input
+											class="checkbox"
+											id="c4-1"
+											type="checkbox"
+											name="cc"
+										/>
+										<span>Я</span>
+									</label>
+
+									<label class="stage-recipient__label">
+										<input
+											class="checkbox"
+											id="c4-2"
+											type="checkbox"
+											name="cc"
+										/>
+										<span>Інша людина</span>
+									</label>
+
+									<div class="stage__input">
+										<input
+											type="text"
+											name="Ім’я"
+											placeholder="Ім’я"
+											required
+										/>
+									</div>
+
+									<div class="stage__input">
+										<input
+											type="text"
+											name="Прізвище"
+											placeholder="Прізвище"
+											required
+										/>
+									</div>
+
+									<div class="stage__input">
+										<input
+											type="text"
+											name="По батькові"
+											placeholder="По батькові"
+											required
+										/>
+									</div>
+
+									<div class="stage__input">
+										<input
+											class="_invalid"
+											type="tel"
+											name="Телефон"
+											placeholder="+38 (***) *** ** **"
+											required
+										/>
+
+										<p class="error">Номер телефону вказано неправильно.</p>
+									</div>
+
+									<p class="comment__title">Коментар до замовлення:</p>
+									<textarea
+										class="comment__textarea"
+										name="Коментар до замовлення"
+										cols="30"
+										rows="10"
+									></textarea>
+
+									<label class="agreement">
+										<input
+											class="checkbox"
+											type="checkbox"
+											name="Условия соглашения"
+											required
+										/>
+										<span
+											>Я прочитал <a href="#">Условия соглашения</a> и согласен
+											с условиями безопасности и обработки персональных
+											данных.</span
+										>
+									</label>
+
+									<button type="submit" class="button">Оформити</button>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="offset-xl-1 col-lg-6">
+						<div class="checkout__order">
+							<h2 class="h2 _green"><span>Склад замовлення:</span></h2>
+
+							<div class="checkout__products">
+								<div class="product">
+									<i class="far fa-trash-alt product__delete"></i>
+
+									<div class="product_flex">
+										<div
+											class="product__image"
+											style="
+												background-image: url('img/checkout/product_1.png');
+											"
+										></div>
+
+										<div class="product__description">
+											<p class="product__name">Ароматизатор в салон</p>
+											<p class="product__price sale">259₴ <span>298₴</span></p>
+										</div>
+									</div>
+
+									<div class="product__about">
+										<p>Колір: <span class="product__color">Зелений</span></p>
+										<p>Розмір: <span class="product__size">M</span></p>
+										<div>
+											Кількість:
+											<div class="counter">
+												<button
+													type="button"
+													class="counter__button counter__take-away _disable"
+												>
+													<i class="fas fa-minus"></i>
+												</button>
+
+												<input
+													type="text"
+													class="counter__number"
+													value="1"
+													readonly
+												/>
+
+												<button
+													class="counter__button counter__add"
+													type="button"
+												>
+													<i class="fas fa-plus"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="product">
+									<i class="far fa-trash-alt product__delete"></i>
+
+									<div class="product_flex">
+										<div
+											class="product__image"
+											style="
+												background-image: url('img/checkout/product_2.png');
+											"
+										></div>
+
+										<div class="product__description">
+											<p class="product__name">Захисна плівка</p>
+											<p class="product__price">149₴</p>
+										</div>
+									</div>
+
+									<div class="product__about">
+										<p>Розмір: <span class="product__size">M</span></p>
+										<div>
+											Кількість:
+											<div class="counter">
+												<button
+													type="button"
+													class="counter__button counter__take-away _disable"
+												>
+													<i class="fas fa-minus"></i>
+												</button>
+
+												<input
+													type="text"
+													class="counter__number"
+													value="1"
+													readonly
+												/>
+
+												<button
+													class="counter__button counter__add"
+													type="button"
+												>
+													<i class="fas fa-plus"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="checkout__products-together">
+									<p class="title">Разом дешевше</p>
+
+									<div class="product">
+										<div class="product_flex">
+											<div
+												class="product__image"
+												style="
+													background-image: url('img/checkout/product_1.png');
+												"
+											>
+												<span class="product__sale">-20%</span>
+											</div>
+
+											<div class="product__description">
+												<p class="product__name">Ароматизатор в салон</p>
+												<p class="product__price sale">
+													259₴ <span>298₴</span>
+												</p>
+											</div>
+										</div>
+
+										<div class="product__about">
+											<p>Колір: <span class="product__color">Зелений</span></p>
+											<p>Розмір: <span class="product__size">M</span></p>
+										</div>
+									</div>
+
+									<div class="product">
+										<div class="product_flex">
+											<div
+												class="product__image"
+												style="
+													background-image: url('img/checkout/product_2.png');
+												"
+											></div>
+
+											<div class="product__description">
+												<p class="product__name">Захисна плівка</p>
+												<p class="product__price">149₴</p>
+											</div>
+										</div>
+
+										<div class="product__about">
+											<p>Розмір: <span class="product__size">M</span></p>
+										</div>
+									</div>
+
+									<div class="total__wrap">
+										<div class="total__count">
+											Кількість:
+											<div class="counter">
+												<button
+													type="button"
+													class="counter__button counter__take-away _disable"
+												>
+													<i class="fas fa-minus"></i>
+												</button>
+
+												<input
+													type="text"
+													class="counter__number"
+													value="1"
+													readonly
+												/>
+
+												<button
+													class="counter__button counter__add"
+													type="button"
+												>
+													<i class="fas fa-plus"></i>
+												</button>
+											</div>
+										</div>
+										<p class="total__price">596₴</p>
+									</div>
+								</div>
+
+								<div class="total__wrap">
+									<a href=".popup-cart" class="total__edit magnific-popup">
+										<i class="far fa-edit"></i>
+										<span>Редагувати</span>
+									</a>
+									<div class="total">
+										<p>Підсумок:</p>
+										<p class="total__price">596₴</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>footer</footer>
+	</body>
+</html>
