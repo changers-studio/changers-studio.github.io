@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Hiroster | Верификация</title>
+
+		<meta name="viewport" content="width=device-width" />
+		<meta name="format-detection" content="telephone=no" />
+
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+
+		<script
+			async
+			defer
+			src="https://kit.fontawesome.com/55e0136003.js"
+			crossorigin="anonymous"
+		></script>
+
+		<link rel="stylesheet" href="css/main.css" />
+
+		<script defer src="libs/jquery.min.js"></script>
+
+		<script defer src="js/custom.js"></script>
+	</head>
+
+	<body class="isnohome p-verification">
+		<!-- Header -->
+		<header class="header _profile">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 header__flex-box">
+						<div class="header__box">
+							<img class="header__logo" src="img/logo.svg" alt="Hiroster" />
+
+							<div class="header__langs dropdown">
+								<div class="dropdown__heading langs__current">
+									<img src="img/languages/ru.svg" alt="Ru" />
+								</div>
+
+								<ul class="dropdown__body langs__list">
+									<li class="langs__item">
+										<a href="#">
+											<img src="img/languages/en.svg" alt="En" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="header__box header__sidebar">
+							<i class="sidebar__close"></i>
+
+							<nav class="header__menu menu">
+								<a class="menu__item bd_animate _menu" href="#"
+									>Учебный центр</a
+								>
+								<a class="menu__item bd_animate _menu" href="#"
+									>Приглашенные мной</a
+								>
+								<a class="menu__item bd_animate _menu" href="#">Мой профиль</a>
+							</nav>
+
+							<a href="#" class="button header__button _blue"
+								>Получить дотступ <i class="fas fa-chevron-right"></i
+							></a>
+
+							<div class="header__cabinet dropdown">
+								<div class="dropdown__heading">
+									<img src="img/icons/user.svg" alt="User" />
+								</div>
+
+								<div class="dropdown__body">
+									<a href="index.html">Выйти</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="header__hamburger">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="verification">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h1 class="verification__title">Верификация игрока</h1>
+					</div>
+
+					<div class="col-lg-6 _bottom-offset">
+						<h2 class="verification__heading">Зачем это нужно?</h2>
+
+						<p class="verification__text">
+							Мы хотим удостовериться, что вы не выдаете себя за другого
+							человека.
+						</p>
+
+						<p class="verification__text">
+							Это займет <span>не более трех минут.</span>
+						</p>
+
+						<ul class="verification__list">
+							<h3 class="verification__caption">Важно:</h3>
+
+							<li class="list__item">
+								<img src="img/icons/unlock_blue.svg" alt="Unlock" />
+								<p>
+									После верификации вы получите полный доступ ко
+									<span>всем фукнциям</span>;
+								</p>
+							</li>
+
+							<li class="list__item">
+								<img src="img/icons/ticket.svg" alt="Ticket" />
+								<div>
+									Дополнительный <span>бонус +50 баллов</span> <br />
+									(<span class="info bd_animate _grey"
+										>Как работают баллы?
+										<p class="tooltip">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut.
+										</p> </span
+									>);
+								</div>
+							</li>
+
+							<li class="list__item">
+								<img src="img/icons/document.svg" alt="Docs" />
+								<p>
+									Доступ к
+									<a href="#" class="bd_animate _grey">Учебному центру</a>.
+								</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-6">
+						<form class="verification__form form needs-validation">
+							<h2 class="verification__heading">
+								Как быстро пройти верификацию?
+							</h2>
+
+							<p class="verification__text">
+								Загрузите фотографию одного из ваших документов:
+							</p>
+
+							<ul class="verification__request">
+								<li>Паспорта</li>
+								<li>ID-карты</li>
+								<li>Водительского удостоверения</li>
+							</ul>
+
+							<p class="verification__text">
+								В течение двух часов мы проверим ваши данные и откроем
+								<span class="_bold">полный доступ к сервису Hiroster.</span>
+							</p>
+
+							<input
+								class="verification__input"
+								type="file"
+								name="Photo"
+								id="verificationInput"
+								required
+							/>
+
+							<label class="verification__label" for="verificationInput"
+								><svg
+									width="100%"
+									height="100%"
+									viewBox="0 0 280 55"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect
+										x="1"
+										y="1"
+										width="278"
+										height="53"
+										rx="26.5"
+										stroke="#CDD1DF"
+										stroke-width="2"
+										stroke-dasharray="10 10"
+									/>
+								</svg>
+								+ Добавить фото</label
+							>
+							<p class="verification__notification">
+								Пожалуйста, используйте следующие форматы <br />
+								фотографии/скана: pdf, jpg, jpeg, png
+							</p>
+
+							<ul class="verification__list">
+								<h3 class="verification__caption">Важно:</h3>
+
+								<li class="list__item">
+									<img src="img/icons/shield.svg" alt="Shild" />
+									Ваши данные передаются зашифрованным методом;
+								</li>
+
+								<li class="list__item">
+									<img src="img/icons/delete.svg" alt="Trash can" />
+									После проверки документы автоматически удаляются.
+								</li>
+							</ul>
+						</form>
+
+						<div class="verification__success">
+							<h2 class="verification__heading">
+								Спасибо! Мы уже проверяем ваши документы.
+							</h2>
+
+							<p class="verification__text">
+								Нам потребуется не более двух часов, чтобы проверить ваши
+								документы. Вы увидите, как изменится статус профиля (рядом с
+								вашей фотографией).
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 footer__flex-box">
+						<img class="footer__logo" src="img/logo.svg" alt="Hiroster" />
+
+						<nav class="footer__menu menu">
+							<a
+								class="menu__item bd_animate _menu"
+								href="https://hiroster.com"
+								target="_blank"
+								>Роадмап</a
+							>
+							<a
+								class="menu__item bd_animate _menu"
+								href="https://hiroster.com"
+								target="_blank"
+								>Политика конфиденциальности</a
+							>
+							<a
+								class="menu__item bd_animate _menu"
+								href="https://hiroster.com"
+								target="_blank"
+								>Правила пользования</a
+							>
+						</nav>
+
+						<div class="footer__social-links">
+							<h4 class="social-links__caption">Подписывайтесь</h4>
+							<a
+								href="https://web.facebook.com/HiRoster-111110761014613?_rdc=2&_rdr"
+								target="_blank"
+								class="social-links__item"
+								><i class="fab fa-facebook-f"></i
+							></a>
+							<a
+								href="https://www.instagram.com/hiroster_com/?igshid=jxhbk9sw69au"
+								target="_blank"
+								class="social-links__item"
+								><i class="fab fa-instagram"></i
+							></a>
+							<a
+								href="https://twitter.com/hi_roster"
+								target="_blank"
+								class="social-links__item"
+								><i class="fab fa-twitter"></i
+							></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<p class="footer__copyrights">Copyright © 2021 - Hiroster</p>
+		</footer>
+	</body>
+</html>

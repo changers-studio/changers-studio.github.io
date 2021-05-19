@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Hiroster | Профиль</title>
+
+		<meta name="viewport" content="width=device-width" />
+		<meta name="format-detection" content="telephone=no" />
+
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+
+		<script
+			async
+			defer
+			src="https://kit.fontawesome.com/55e0136003.js"
+			crossorigin="anonymous"
+		></script>
+
+		<link rel="stylesheet" href="libs/slick-slider/slick.css" />
+		<link rel="stylesheet" href="libs/slick-slider/slick-theme.css" />
+		<link rel="stylesheet" href="css/main.css" />
+
+		<script defer src="libs/jquery.min.js"></script>
+		<script defer src="libs/slick-slider/slick.min.js"></script>
+
+		<script defer src="js/avatar.js"></script>
+		<script defer src="js/slick-init.js"></script>
+		<script defer src="js/custom.js"></script>
+	</head>
+
+	<body class="isnohome p-profile">
+		<!-- Header -->
+		<header class="header _profile">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 header__flex-box">
+						<div class="header__box">
+							<img class="header__logo" src="img/logo.svg" alt="Hiroster" />
+
+							<div class="header__langs dropdown">
+								<div class="dropdown__heading langs__current">
+									<img src="img/languages/ru.svg" alt="Ru" />
+								</div>
+
+								<ul class="dropdown__body langs__list">
+									<li class="langs__item">
+										<a href="#">
+											<img src="img/languages/en.svg" alt="En" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="header__box header__sidebar">
+							<i class="sidebar__close"></i>
+
+							<nav class="header__menu menu">
+								<a class="menu__item bd_animate _menu" href="#"
+									>Учебный центр</a
+								>
+								<a class="menu__item bd_animate _menu" href="#"
+									>Приглашенные мной</a
+								>
+								<a class="menu__item bd_animate _menu" href="#">Мой профиль</a>
+							</nav>
+
+							<a href="#" class="button header__button _blue"
+								>Получить дотступ <i class="fas fa-chevron-right"></i
+							></a>
+
+							<div class="header__cabinet dropdown">
+								<div class="dropdown__heading">
+									<img src="img/icons/user.svg" alt="User" />
+								</div>
+
+								<div class="dropdown__body">
+									<a href="index.html">Выйти</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="header__hamburger">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="profile">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h1 class="profile__title">Мой профиль</h1>
+					</div>
+				</div>
+
+				<div class="row _align-start">
+					<div class="col-lg-7 col-xl-6 offset-xl-1 _align-center">
+						<div class="profile__avatar" id="avatar"></div>
+
+						<div class="profile__data data">
+							<h2 class="data__name">Олег Евенко</h2>
+							<div class="data__verification">Верифицирован</div>
+						</div>
+					</div>
+
+					<div class="col-lg-5">
+						<div class="profile__instruction">
+							<div class="instruction__body">
+								<p>Итак, вы в Hiroster! Что нужно сделать в первую очередь?</p>
+
+								<ul>
+									<li>Заполните профиль и пройдите верификацию</li>
+									<li>
+										Пригласите друзей по реферальной ссылке - это даст вам
+										доступ к материалам учебного центра Hiroster
+									</li>
+								</ul>
+
+								<p>
+									Зарабатывайте баллы - и в будущем их можно потратить на
+									продвижение вашего профиля в поиске
+								</p>
+
+								<p>Итак, вы в Hiroster! Что нужно сделать в первую очередь?</p>
+
+								<ul>
+									<li>Заполните профиль и пройдите верификацию</li>
+									<li>
+										Пригласите друзей по реферальной ссылке - это даст вам
+										доступ к материалам учебного центра Hiroster
+									</li>
+								</ul>
+
+								<p>
+									Зарабатывайте баллы - и в будущем их можно потратить на
+									продвижение вашего профиля в поиске
+								</p>
+							</div>
+
+							<div class="instruction__button">
+								<span class="bd_animate _grey">Показать больше</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<div class="profile__invite invite">
+							<div class="invite__text">
+								<h4 class="invite__title">Пригласи 3 друга</h4>
+
+								<div class="invite__friends">
+									<img src="img/icons/friend.svg" alt="Man" />
+									<img src="img/icons/friend.svg" alt="Man" />
+									<img src="img/icons/friend.svg" alt="Man" />
+								</div>
+
+								<h5 class="invite__subtitle">
+									и получи <span>полный доступ</span> к видео
+									<a href="" class="bd_animate _grey">Учебного центра</a>
+								</h5>
+
+								<div class="invite__info">
+									<span class="bd_animate _grey">Как это работает?</span>
+									<p class="tooltip">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut.
+									</p>
+								</div>
+							</div>
+
+							<div class="invite__slider">
+								<div class="invite__slide">
+									<div class="video__box">
+										<div
+											class="video__preview"
+											style="background-image: url('img/video/image_2.jpg')"
+										>
+											<div class="video__live">
+												<i class="fas fa-circle"></i> Live
+											</div>
+											<div class="video__time">45:20</div>
+										</div>
+
+										<div class="video__info">
+											<div class="video__wrapper">
+												<p class="video__name">Name Adviser</p>
+
+												<div
+													class="video__avatar"
+													style="
+														background-image: url('img/video/avatar_2.jpg');
+													"
+												></div>
+											</div>
+
+											<h3 class="video__title">
+												Мощная программа предсезонных тренировок
+											</h3>
+
+											<p class="video__data">24K views • 1 days ago</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="invite__slide">
+									<div class="video__box">
+										<div
+											class="video__preview"
+											style="background-image: url('img/video/image_2.jpg')"
+										>
+											<div class="video__live">
+												<i class="fas fa-circle"></i> Live
+											</div>
+											<div class="video__time">45:20</div>
+										</div>
+
+										<div class="video__info">
+											<div class="video__wrapper">
+												<p class="video__name">Name Adviser</p>
+
+												<div
+													class="video__avatar"
+													style="
+														background-image: url('img/video/avatar_2.jpg');
+													"
+												></div>
+											</div>
+
+											<h3 class="video__title">
+												Мощная программа предсезонных тренировок
+											</h3>
+
+											<p class="video__data">24K views • 1 days ago</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="invite__slide">
+									<div class="video__box">
+										<div
+											class="video__preview"
+											style="background-image: url('img/video/image_3.jpg')"
+										>
+											<div class="video__live">
+												<i class="fas fa-circle"></i> Live
+											</div>
+											<div class="video__time">45:20</div>
+										</div>
+
+										<div class="video__info">
+											<div class="video__wrapper">
+												<p class="video__name">Oleg Evenko</p>
+
+												<div
+													class="video__avatar"
+													style="
+														background-image: url('img/video/avatar_3.jpg');
+													"
+												></div>
+											</div>
+
+											<h3 class="video__title">
+												Уехать играть хоккеисту в США не так сложно
+											</h3>
+
+											<p class="video__data">24K views • 1 days ago</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="invite__slide">
+									<div class="video__box">
+										<div
+											class="video__preview"
+											style="background-image: url('img/video/image_2.jpg')"
+										>
+											<div class="video__live">
+												<i class="fas fa-circle"></i> Live
+											</div>
+											<div class="video__time">45:20</div>
+										</div>
+
+										<div class="video__info">
+											<div class="video__wrapper">
+												<p class="video__name">Name Adviser</p>
+
+												<div
+													class="video__avatar"
+													style="
+														background-image: url('img/video/avatar_2.jpg');
+													"
+												></div>
+											</div>
+
+											<h3 class="video__title">
+												Мощная программа предсезонных тренировок
+											</h3>
+
+											<p class="video__data">24K views • 1 days ago</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="invite__slide">
+									<div class="video__box">
+										<div
+											class="video__preview"
+											style="background-image: url('img/video/image_2.jpg')"
+										>
+											<div class="video__live">
+												<i class="fas fa-circle"></i> Live
+											</div>
+											<div class="video__time">45:20</div>
+										</div>
+
+										<div class="video__info">
+											<div class="video__wrapper">
+												<p class="video__name">Name Adviser</p>
+
+												<div
+													class="video__avatar"
+													style="
+														background-image: url('img/video/avatar_2.jpg');
+													"
+												></div>
+											</div>
+
+											<h3 class="video__title">
+												Мощная программа предсезонных тренировок
+											</h3>
+
+											<p class="video__data">24K views • 1 days ago</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row profile__partnership">
+					<div class="col-lg-4">
+						<h3 class="partnership__title">Партнерская программа</h3>
+						<p class="partnership__text">
+							Распространяйте свою ссылку среди друзей - и получайте
+							дополнительнные баллы, бонусы, доступы, если они переходят по ней.
+						</p>
+					</div>
+
+					<div class="col-lg-8">
+						<div class="partnership__form">
+							<input
+								class="partnership__input"
+								type="text"
+								name="Partnership link"
+								id="copyInput"
+								value="Hiroster.com/ref=12412"
+								readonly
+							/>
+
+							<button class="button partnership__button">
+								<i class="far fa-copy"></i> Копировать
+							</button>
+						</div>
+
+						<div class="partnership__info">
+							<span class="bd_animate _grey">Как это работает?</span>
+
+							<p class="tooltip">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row profile__score">
+					<div class="col-lg-4">
+						<h3 class="score__title">Ваш счет</h3>
+
+						<p class="score__text">
+							Распространяйте свою ссылку среди друзей - и получайте
+							дополнительнные баллы, бонусы, доступы, если они переходят по ней.
+						</p>
+
+						<div class="score__info">
+							<span class="bd_animate _grey">На что потратить баллы?</span>
+
+							<p class="tooltip">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-8 score__flex-box">
+						<div class="score__points">
+							<span class="points__number">170</span>
+							Баллов
+						</div>
+
+						<div class="score__table">
+							<div class="table__row _heading">
+								<h4 class="table__elem table__heading _bold">Статистика</h4>
+								<h4 class="table__elem table__heading">Пользователи</h4>
+								<h4 class="table__elem table__heading">Баллы</h4>
+							</div>
+
+							<div class="table__row">
+								<span class="table__caption table__elem"
+									>Зарегистрировались</span
+								>
+								<span class="table__elem _number">10</span>
+								<span class="table__elem _number">20</span>
+							</div>
+
+							<div class="table__row">
+								<span class="table__caption table__elem">Верифицировались</span>
+								<span class="table__elem _number">4</span>
+								<span class="table__elem _number">10</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 footer__flex-box">
+						<img class="footer__logo" src="img/logo.svg" alt="Hiroster" />
+
+						<nav class="footer__menu menu">
+							<a
+								class="menu__item bd_animate _menu"
+								href="https://hiroster.com"
+								target="_blank"
+								>Роадмап</a
+							>
+							<a
+								class="menu__item bd_animate _menu"
+								href="https://hiroster.com"
+								target="_blank"
+								>Политика конфиденциальности</a
+							>
+							<a
+								class="menu__item bd_animate _menu"
+								href="https://hiroster.com"
+								target="_blank"
+								>Правила пользования</a
+							>
+						</nav>
+
+						<div class="footer__social-links">
+							<h4 class="social-links__caption">Подписывайтесь</h4>
+							<a
+								href="https://web.facebook.com/HiRoster-111110761014613?_rdc=2&_rdr"
+								target="_blank"
+								class="social-links__item"
+								><i class="fab fa-facebook-f"></i
+							></a>
+							<a
+								href="https://www.instagram.com/hiroster_com/?igshid=jxhbk9sw69au"
+								target="_blank"
+								class="social-links__item"
+								><i class="fab fa-instagram"></i
+							></a>
+							<a
+								href="https://twitter.com/hi_roster"
+								target="_blank"
+								class="social-links__item"
+								><i class="fab fa-twitter"></i
+							></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<p class="footer__copyrights">Copyright © 2021 - Hiroster</p>
+		</footer>
+	</body>
+</html>
