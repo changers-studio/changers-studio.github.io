@@ -22,10 +22,28 @@ toggleSidebar.on('click', function () {
 	body.toggleClass('scroll_disable')
 })
 
-// $('.main__form').on('submit', function () {
-// 	var popup = $('body').append(
-// 		'<a href=".main__success" class="magnific-popup"></a>'
-// 	)
+$('.toggle-password').on('click', function () {
+	$(this).toggleClass('_hide')
+	var input = $(this).prev()
+	if (input.attr('type') == 'password') {
+		input.attr('type', 'text')
+	} else {
+		input.attr('type', 'password')
+	}
+})
 
-// 	popup.trigger('click')
-// })
+// Form success
+$('.main__form').on('submit', function () {
+	var th = $(this)
+	$.ajax({
+		type: 'POST',
+		data: th.serialize(),
+	}).done(function () {
+		th.trigger('reset')
+	})
+	return false
+})
+
+$('.main__form').on('submit', function () {
+	$('.success__link').trigger('click')
+})

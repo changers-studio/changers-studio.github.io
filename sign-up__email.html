@@ -26,7 +26,6 @@
 
 		<script defer src="libs/jquery.min.js"></script>
 
-		<script defer src="js/form-validation.js"></script>
 		<script defer src="js/custom.js"></script>
 	</head>
 
@@ -70,7 +69,7 @@
 									Введите свой действующий email чтобы создать аккаунт
 								</h2>
 
-								<form class="signIn-signUp__form form needs-validation">
+								<form class="signIn-signUp__form form">
 									<div class="form__input">
 										<input
 											class="input_validation"
@@ -81,6 +80,10 @@
 											autocomplete="off"
 										/>
 									</div>
+
+									<p class="form__is-invalid">
+										Неправильный формат email. Повторите попытку
+									</p>
 
 									<button type="submit" class="form__button button">
 										Создать

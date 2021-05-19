@@ -26,7 +26,6 @@
 
 		<script defer src="libs/jquery.min.js"></script>
 
-		<script defer src="js/form-validation.js"></script>
 		<script defer src="js/custom.js"></script>
 	</head>
 
@@ -83,7 +82,7 @@
 
 								<h1 class="signIn-signUp__title">Подтвердите свою личность</h1>
 
-								<form class="signIn-signUp__form form needs-validation">
+								<form class="signIn-signUp__form form">
 									<div class="signIn-signUp__verification verification">
 										<p class="verification__text">
 											Загрузите фотографию одного из ваших документов:
@@ -134,6 +133,12 @@
 										<p class="verification__notification">
 											Пожалуйста, используйте следующие форматы <br />
 											фотографии/скана: pdf, jpg, jpeg, png
+										</p>
+
+										<p class="form__is-invalid">
+											<img class="icon" src="img/icons/attention.svg" alt="!" />
+											Произошла ошибка. <br />
+											Проверьте формат документов. Повторите попытку.
 										</p>
 
 										<div class="verification__important important">

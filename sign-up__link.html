@@ -26,7 +26,6 @@
 
 		<script defer src="libs/jquery.min.js"></script>
 
-		<script defer src="js/form-validation.js"></script>
 		<script defer src="js/custom.js"></script>
 	</head>
 
@@ -90,7 +89,7 @@
 									идентифицировали вас
 								</h2>
 
-								<form class="signIn-signUp__form form needs-validation">
+								<form class="signIn-signUp__form form">
 									<div class="form__input">
 										<input
 											class="input_validation"
@@ -101,6 +100,10 @@
 											autocomplete="off"
 										/>
 									</div>
+
+									<p class="form__is-invalid">
+										Неправильная сслыка. Повторите попытку
+									</p>
 
 									<div class="form__buttons">
 										<a href="#" class="form__skip button _transparent"

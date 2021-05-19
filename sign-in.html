@@ -26,7 +26,6 @@
 
 		<script defer src="libs/jquery.min.js"></script>
 
-		<script defer src="js/form-validation.js"></script>
 		<script defer src="js/custom.js"></script>
 	</head>
 
@@ -66,8 +65,8 @@
 							<div class="signIn-signUp__container">
 								<h1 class="signIn-signUp__title">Войдите в аккаунт</h1>
 
-								<form class="signIn-signUp__form form needs-validation">
-									<div class="form__input">
+								<form class="signIn-signUp__form form _invalid">
+									<div class="form__input _invalid">
 										<input
 											class="input_validation"
 											type="email"
@@ -87,7 +86,13 @@
 											required
 											autocomplete="off"
 										/>
+
+										<div class="toggle-password"></div>
 									</div>
+
+									<p class="form__is-invalid">
+										Неправильный email или пароль. Повторите попытку
+									</p>
 
 									<a
 										href="forgot_password.html"
