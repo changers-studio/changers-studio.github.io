@@ -1,65 +1,28 @@
 jQuery(function () {
-	// Code
-})
-
-$('.dropdown__heading').on('click', function () {
-	$(this).toggleClass('_active').next().slideToggle()
-	$('.dropdown__heading').not(this).removeClass('_active').next().slideUp()
-})
-
-var body = $('body')
-var hamburger = $('.header__hamburger')
-var sidebar = $('.header__sidebar')
-
-hamburger.on('click', function () {
-	body.toggleClass('scroll_disable')
-	hamburger.toggleClass('is-active')
-	sidebar.slideToggle()
-})
-
-var tabs = $('section.tabs')
-var tabsCaptions = $('.tabs .captions')
-var tabsContent = $('.tabs .tabs__content')
-
-if ($(window).width() > 992) {
-	tabsCaptions.on('click', '.captions__inner:not(._active)', function () {
-		$(this)
-			.addClass('_active')
-			.siblings()
-			.removeClass('_active')
-			.closest(tabs)
-			.find(tabsContent)
-			.hide()
-			.removeClass('_active')
-			.eq($(this).index())
-			.addClass('_active')
-			.hide()
-			.fadeIn(600)
+	AOS.init({
+		duration: 1000,
+		once: true,
 	})
-}
 
-if ($(window).width() < 992) {
-	tabsCaptions.on('click', '.captions__inner:not(._active)', function () {
-		$(this)
-			.addClass('_active')
-			.closest('.slick-slide')
-			.siblings()
-			.find('.captions__inner')
-			.removeClass('_active')
-			.closest(tabs)
-			.find(tabsContent)
-			.hide()
-			.removeClass('_active')
-			.eq($(this).closest('.slick-slide').index())
-			.addClass('_active')
-			.hide()
-			.fadeIn(600)
+	$(document).on('load', function () {
+		AOS.refreshHard()
 	})
-}
 
-$('body').on('click', '.captions__inner', function (event) {
+	$(window).on('scroll', function () {
+		AOS.refresh()
+	})
+
+	$('.magnific-popup').magnificPopup()
+})
+
+$('.header__hamburger').on('click', function () {
+	$(this).toggleClass('is-active')
+	$('.header__dropdown').toggleClass('_visible')
+})
+
+$('body').on('click', '.link-move', function (event) {
 	event.preventDefault()
-	var id = $(this).attr('data-scroll-to'),
+	var id = $(this).attr('href'),
 		top = $(id).offset().top
-	$('body,html').animate({ scrollTop: top }, 1000)
+	$('body,html').animate({ scrollTop: top - 50 }, 1500)
 })
