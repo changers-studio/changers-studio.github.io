@@ -1,49 +1,65 @@
 jQuery(function () {
-	$('.dropdown__heading').on('click', function () {
-		$(this).toggleClass('_active').next().slideToggle()
-		$('.dropdown__heading').not(this).removeClass('_active').next().slideUp()
-	})
+	// Code
+})
 
-	$('.instruction__button').on('click', function () {
-		$(this).toggleClass('_active').prev().toggleClass('_visible')
-	})
+$('.dropdown__heading').on('click', function () {
+	$(this).toggleClass('_active').next().slideToggle()
+	$('.dropdown__heading').not(this).removeClass('_active').next().slideUp()
 })
 
 var body = $('body')
+var hamburger = $('.header__hamburger')
 var sidebar = $('.header__sidebar')
-var sidebarClose = $('.sidebar__close')
-var plug = $('.sidebar__plug')
-var toggleSidebar = $('.header__hamburger, .sidebar__plug, .sidebar__close')
 
-toggleSidebar.on('click', function () {
-	sidebarClose.toggleClass('_rotate')
-	sidebar.toggleClass('_visible')
-	plug.toggleClass('_visible')
+hamburger.on('click', function () {
 	body.toggleClass('scroll_disable')
+	hamburger.toggleClass('is-active')
+	sidebar.slideToggle()
 })
 
-$('.toggle-password').on('click', function () {
-	$(this).toggleClass('_hide')
-	var input = $(this).prev()
-	if (input.attr('type') == 'password') {
-		input.attr('type', 'text')
-	} else {
-		input.attr('type', 'password')
-	}
-})
+var tabs = $('section.tabs')
+var tabsCaptions = $('.tabs .captions')
+var tabsContent = $('.tabs .tabs__content')
 
-// Form success
-$('.main__form').on('submit', function () {
-	var th = $(this)
-	$.ajax({
-		type: 'POST',
-		data: th.serialize(),
-	}).done(function () {
-		th.trigger('reset')
+if ($(window).width() > 992) {
+	tabsCaptions.on('click', '.captions__inner:not(._active)', function () {
+		$(this)
+			.addClass('_active')
+			.siblings()
+			.removeClass('_active')
+			.closest(tabs)
+			.find(tabsContent)
+			.hide()
+			.removeClass('_active')
+			.eq($(this).index())
+			.addClass('_active')
+			.hide()
+			.fadeIn(600)
 	})
-	return false
-})
+}
 
-$('.main__form').on('submit', function () {
-	$('.success__link').trigger('click')
+if ($(window).width() < 992) {
+	tabsCaptions.on('click', '.captions__inner:not(._active)', function () {
+		$(this)
+			.addClass('_active')
+			.closest('.slick-slide')
+			.siblings()
+			.find('.captions__inner')
+			.removeClass('_active')
+			.closest(tabs)
+			.find(tabsContent)
+			.hide()
+			.removeClass('_active')
+			.eq($(this).closest('.slick-slide').index())
+			.addClass('_active')
+			.hide()
+			.fadeIn(600)
+	})
+}
+
+$('body').on('click', '.captions__inner', function (event) {
+	event.preventDefault()
+	var id = $(this).attr('data-scroll-to'),
+		top = $(id).offset().top
+	$('body,html').animate({ scrollTop: top }, 1000)
 })
