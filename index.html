@@ -25,6 +25,7 @@
 		<link rel="stylesheet" href="libs/aos/aos.css" />
 		<link rel="stylesheet" href="libs/hamburger/hamburgers.min.css" />
 		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css" />
 		<link rel="stylesheet" href="css/main.css" />
 
 		<script defer src="libs/jquery.min.js"></script>
@@ -35,6 +36,7 @@
 		></script>
 
 		<script defer src="libs/aos/aos.js"></script>
+		<script defer src="libs/fancybox/jquery.fancybox.min.js"></script>
 		<script defer src="js/custom.js"></script>
 	</head>
 
@@ -113,10 +115,12 @@
 							<nav class="header__menu">
 								<a href=".header" class="link-move">Главная</a>
 								<a href=".about" class="link-move">О нас</a>
-								<a href=".services" class="link-move">Наши услуги</a>
-								<a href=".clients" class="link-move">Наши партнеры</a>
-								<a href=".calculation" class="link-move">Калькуляция</a>
-								<a href=".contacts" class="link-move">Как добраться</a>
+								<a href=".services" class="link-move">Услуги хранения</a>
+								<a href=".services-2" class="link-move">Аренда мини-склада</a>
+								<a href=".services-3" class="link-move">Услуги для бизнеса</a>
+								<!-- <a href=".clients" class="link-move">Наши партнеры</a> -->
+								<a href=".calculation" class="link-move">Стоимость услуг</a>
+								<a href=".contacts" class="link-move">Контакты</a>
 							</nav>
 
 							<div class="header__social-links">
@@ -157,8 +161,8 @@
 					<div class="col-12 main_flex">
 						<div class="main__container" data-aos="fade-right">
 							<h1 class="main__title">
-								Алло гараж! - это комплексный и удобный сервис для хранения
-								вещей!
+								<span>Алло гараж!</span> - это комплексный и удобный сервис для
+								хранения вещей!
 							</h1>
 							<a href=".popup-form" class="button main__button magnific-popup"
 								>Оставить заявку</a
@@ -190,34 +194,26 @@
 							<div class="about__container">
 								<p class="about__text" data-aos="fade-right">
 									Наш сервис поможет вам избавиться от лишних или ненужных в
-									данный момент вещей. Мы заберём ваши вещи на наш склад,
-									сохраним и привезём обратно в любую точку Киева.
+									данный момент вещей. Мы заберём ваши вещи на наш
+									<span>склад</span>, сохраним и привезём обратно в любую точку
+									Киева.
 									<br />
-									А если вам необходим собственный мини склад, с доступом 24/7,
-									удобным расположением и приветливым персоналом, где вы сможете
-									хранить все: от детских колясок до товара (если вы
-									предприниматель) - мы с удовольствием предоставим вам его!
-									Позаботимся о ваших вещах, как о своих.
+									А если вам необходим собственный <span>мини склад</span>, с
+									доступом 24/7, удобным расположением и приветливым персоналом,
+									где вы сможете хранить все: от детских колясок до товара (если
+									вы предприниматель) - мы с удовольствием предоставим вам его!
+									<br />
+									<span>Позаботимся о ваших вещах, как о своих.</span>
 								</p>
 
 								<div class="about__pictures">
-									<img
-										src="img/about/about__pic-1.png"
-										alt="Pic"
-										data-aos="zoom-in"
-									/>
-									<img
-										src="img/about/about__pic-2.png"
-										alt="Pic"
-										data-aos="zoom-in"
-										data-aos-delay="200"
-									/>
-									<img
-										src="img/about/about__pic-3.png"
-										alt="Pic"
-										data-aos="zoom-in"
-										data-aos-delay="400"
-									/>
+									<a href="img/about/about__pic-2_big.jpg" data-fancybox>
+										<img
+											src="img/about/about__pic-2.png"
+											alt="Pic"
+											data-aos="zoom-in"
+										/>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -239,31 +235,23 @@
 						<div class="about__flex-box _reverse _margin-bottom">
 							<div class="about__container">
 								<p class="about__text" data-aos="fade-right">
-									Облачное хранение» - самый удобный способ избавиться от всех
-									тех вещей, которые занимают ваше пространство. Вы платите не
-									за стандартный бокс, а только за объем ваших вещей. Без
-									переплаты за пустое пространство. Мы сами приедем к вам,
+									<span>«Облачное хранение»</span> - самый удобный способ
+									избавиться от всех тех вещей, которые занимают ваше
+									пространство. <br />
+									Вы платите не за стандартный бокс, а только за объем ваших
+									вещей. <br />
+									Без переплаты за пустое пространство. Мы сами приедем к вам,
 									упакуем, погрузим в нашу машину и отвезем на склад!
 								</p>
 
 								<div class="about__pictures">
-									<img
-										src="img/about/about__pic-1.png"
-										alt="Pic"
-										data-aos="zoom-in"
-									/>
-									<img
-										src="img/about/about__pic-2.png"
-										alt="Pic"
-										data-aos="zoom-in"
-										data-aos-delay="200"
-									/>
-									<img
-										src="img/about/about__pic-3.png"
-										alt="Pic"
-										data-aos="zoom-in"
-										data-aos-delay="400"
-									/>
+									<a href="img/about/about__pic-3_big.jpg" data-fancybox>
+										<img
+											src="img/about/about__pic-3.png"
+											alt="Pic"
+											data-aos="zoom-in"
+										/>
+									</a>
 								</div>
 							</div>
 
@@ -276,7 +264,7 @@
 							</div>
 						</div>
 
-						<div class="about__flex-box _margin-bottom">
+						<div class="about__flex-box services-2 _margin-bottom">
 							<div class="about__img">
 								<img
 									src="img/services/services__img-2.png"
@@ -287,62 +275,32 @@
 
 							<div class="about__container">
 								<p class="about__text" data-aos="fade-right">
-									Аренда мини-склада - если вам важно иметь постоянный и
-									индивидуальный доступ к своим вещам мы предложим вам различные
-									варианты мини-складов. Наш комплекс мини складов находится в
-									центре, с удобным подьездом и доступом 24/7.
+									<span>Аренда мини-склада</span> - если вам важно иметь
+									постоянный и индивидуальный доступ к своим вещам мы предложим
+									вам различные варианты мини-складов. Наш комплекс мини складов
+									находится в центре, с удобным подьездом и доступом 24/7.
 								</p>
 
 								<div class="about__pictures">
-									<img
-										src="img/about/about__pic-1.png"
-										alt="Pic"
-										data-aos="zoom-in"
-									/>
-									<img
-										src="img/about/about__pic-2.png"
-										alt="Pic"
-										data-aos="zoom-in"
-										data-aos-delay="200"
-									/>
-									<img
-										src="img/about/about__pic-3.png"
-										alt="Pic"
-										data-aos="zoom-in"
-										data-aos-delay="400"
-									/>
+									<a href="img/about/about__pic-1_big.jpg" data-fancybox>
+										<img
+											src="img/about/about__pic-1.png"
+											alt="Pic"
+											data-aos="zoom-in"
+										/>
+									</a>
 								</div>
 							</div>
 						</div>
 
-						<div class="about__flex-box _reverse">
+						<div class="about__flex-box services-3 _reverse">
 							<div class="about__container">
 								<p class="about__text" data-aos="fade-right">
-									Складские услуги для малого бизнеса - мы с удовольствием
-									поможем вам не только в хранении вашего товара, но и
-									предоставим услуги учета/размещения товарно-материальных
+									<span>Складские услуги для малого бизнеса</span> - мы с
+									удовольствием поможем вам не только в хранении вашего товара,
+									но и предоставим услуги учета/размещения товарно-материальных
 									ценностей, а также приема, выдачи/отправки товаров.
 								</p>
-
-								<div class="about__pictures">
-									<img
-										src="img/about/about__pic-1.png"
-										alt="Pic"
-										data-aos="zoom-in"
-									/>
-									<img
-										src="img/about/about__pic-2.png"
-										alt="Pic"
-										data-aos="zoom-in"
-										data-aos-delay="200"
-									/>
-									<img
-										src="img/about/about__pic-3.png"
-										alt="Pic"
-										data-aos="zoom-in"
-										data-aos-delay="400"
-									/>
-								</div>
 							</div>
 
 							<div class="about__img" data-aos="zoom-in">
@@ -358,45 +316,53 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2 class="h2 calculation__title" data-aos="fade-up">Расчет</h2>
+						<h2 class="h2 calculation__title" data-aos="fade-up">
+							Стоимость услуг
+						</h2>
 
 						<div class="calculation__table" data-aos="fade-up">
 							<div class="calculation__row">
 								<div class="calculation__box">
-									<div class="calculation__heading">Открытого хранение</div>
+									<div class="calculation__heading">
+										Облачное хранение <br />
+										(аренда м3 на общем складе)
+									</div>
 
 									<div class="calculation__text">
-										<p>1 месяц = 280 грн.</p>
+										<p>1 месяц = 280 грн. за м<sup>3</sup></p>
 
-										<p>3-6 месяцев = 230 грн.</p>
+										<p>3-6 месяцев = 230 грн. за м<sup>3</sup></p>
 
-										<p>+6 месяцев = 190 грн.</p>
+										<p>+6 месяцев = 190 грн. за м<sup>3</sup></p>
 									</div>
 								</div>
 
 								<div class="calculation__box">
-									<div class="calculation__heading">Мини склад</div>
+									<div class="calculation__heading">
+										«Мини-склад» <br />
+										(аренда индивидуального склада)
+									</div>
 
 									<div class="calculation__text">
 										<p>
 											<span>Объем от 1 до 4,5 м<sup>3</sup> </span>
-											1 месяц = 350 грн. за м<sup>3</sup> <br />
-											1-6 месяцев = 320 грн. за м<sup>3</sup> <br />
-											+6 месяцев - 290 грн. за м<sup>3</sup> <br />
+											1 месяц = от 350 грн. за м<sup>3</sup> <br />
+											1-6 месяцев = от 320 грн. за м<sup>3</sup> <br />
+											+6 месяцев = от 290 грн. за м<sup>3</sup> <br />
 										</p>
 
 										<p>
 											<span>Объем от 4,5 до 27 м<sup>3</sup> </span>
-											1 месяц = 400 грн. за м<sup>3</sup> <br />
-											1-6 месяцев = 360 грн. за м<sup>3</sup> <br />
-											+6 месяцев - 320 грн. за м<sup>3</sup> <br />
+											1 месяц = от 400 грн. за м<sup>3</sup> <br />
+											1-6 месяцев = от 360 грн. за м<sup>3</sup> <br />
+											+6 месяцев = от 320 грн. за м<sup>3</sup> <br />
 										</p>
 
 										<p>
 											<span>Объем от 27 м<sup>3</sup> </span>
-											1 месяц = 450 грн. за м<sup>3</sup> <br />
-											1-6 месяцев = 410 грн. за м<sup>3</sup> <br />
-											+6 месяцев - 385 грн. за м<sup>3</sup> <br />
+											1 месяц = от 450 грн. за м<sup>3</sup> <br />
+											1-6 месяцев = от 410 грн. за м<sup>3</sup> <br />
+											+6 месяцев = от 385 грн. за м<sup>3</sup> <br />
 										</p>
 									</div>
 								</div>
@@ -433,6 +399,8 @@
 										fill="#fff"
 									/>
 								</svg>
+
+								<p class="frequently__price">от 90 грн.</p>
 							</div>
 
 							<div
@@ -440,7 +408,7 @@
 								data-aos="zoom-in"
 								data-aos-delay="100"
 							>
-								<p class="frequently__caption">Велосепед</p>
+								<p class="frequently__caption">велосипед</p>
 
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -456,6 +424,8 @@
 										fill="#fff"
 									/>
 								</svg>
+
+								<p class="frequently__price">от 300 грн.</p>
 							</div>
 
 							<div
@@ -479,6 +449,8 @@
 										fill="#fff"
 									/>
 								</svg>
+
+								<p class="frequently__price">от 450 грн.</p>
 							</div>
 
 							<div
@@ -575,6 +547,8 @@
 										/>
 									</g>
 								</svg>
+
+								<p class="frequently__price">от 450 грн.</p>
 							</div>
 
 							<div
@@ -650,6 +624,8 @@
 										fill="#fff"
 									/>
 								</svg>
+
+								<p class="frequently__price">от 300 грн.</p>
 							</div>
 						</div>
 					</div>
@@ -746,7 +722,7 @@
 			</div>
 		</section>
 
-		<section class="clients _grad">
+		<!-- <section class="clients _grad">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -758,7 +734,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<footer class="footer">
 			<div class="container">
@@ -767,10 +743,12 @@
 						<nav class="footer__menu">
 							<a href=".header" class="link-move">Главная</a>
 							<a href=".about" class="link-move">О нас</a>
-							<a href=".services" class="link-move">Наши услуги</a>
-							<a href=".clients" class="link-move">Наши партнеры</a>
-							<a href=".calculation" class="link-move">Калькуляция</a>
-							<a href=".contacts" class="link-move">Как добраться</a>
+							<a href=".services" class="link-move">Услуги хранения</a>
+							<a href=".services-2" class="link-move">Аренда мини-склада</a>
+							<a href=".services-3" class="link-move">Услуги для бизнеса</a>
+							<!-- <a href=".clients" class="link-move">Наши партнеры</a> -->
+							<a href=".calculation" class="link-move">Стоимость услуг</a>
+							<a href=".contacts" class="link-move">Контакты</a>
 						</nav>
 
 						<p class="footer__copyrights">Все права защищены 2021</p>

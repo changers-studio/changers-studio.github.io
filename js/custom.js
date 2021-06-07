@@ -20,6 +20,11 @@ $('.header__hamburger').on('click', function () {
 	$('.header__dropdown').toggleClass('_visible')
 })
 
+$('.header__menu a').on('click', function () {
+	$('.header__hamburger').removeClass('is-active')
+	$('.header__dropdown').removeClass('_visible')
+})
+
 $('body').on('click', '.link-move', function (event) {
 	event.preventDefault()
 	var id = $(this).attr('href'),
