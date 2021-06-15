@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Алло гараж!</title>
+		<title>Lexx</title>
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="format-detection" content="telephone=no" />
@@ -22,745 +22,1207 @@
 			crossorigin="anonymous"
 		></script>
 
-		<link rel="stylesheet" href="libs/aos/aos.css" />
-		<link rel="stylesheet" href="libs/hamburger/hamburgers.min.css" />
-		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
-		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css" />
+		<link rel="stylesheet" href="libs/slick-slider/slick-theme.css" />
+		<link rel="stylesheet" href="libs/slick-slider/slick.css" />
 		<link rel="stylesheet" href="css/main.css" />
 
 		<script defer src="libs/jquery.min.js"></script>
 
-		<script
-			defer
-			src="libs/magnific-popup/jquery.magnific-popup.min.js"
-		></script>
-
-		<script defer src="libs/aos/aos.js"></script>
-		<script defer src="libs/fancybox/jquery.fancybox.min.js"></script>
+		<script defer src="libs/slick-slider/slick.min.js"></script>
 		<script defer src="js/custom.js"></script>
 	</head>
 
-	<body>
-		<form class="popup-form mfp-hide">
-			<!-- Hidden Required Fields -->
-			<input type="hidden" name="project_name" value="Алло гараж" />
-			<input type="hidden" name="admin_email" value="Allogarazh1@gmail.com" />
-			<input type="hidden" name="form_subject" value="Заявка" />
-			<!-- END Hidden Required Fields -->
-
-			<div class="popup-form__logo">
-				<img src="img/popup__logo.svg" alt="Лого" />
-			</div>
-
-			<div class="popup-form__field">
-				<p>Имя</p>
-				<input
-					type="text"
-					name="Name"
-					placeholder="Алексей"
-					required
-					autocomplete="off"
-				/>
-			</div>
-
-			<div class="popup-form__field">
-				<p>Телефон</p>
-				<input
-					type="tel"
-					name="Phone number"
-					placeholder="+380671234567"
-					required
-					autocomplete="off"
-				/>
-			</div>
-
-			<!-- <div class="popup-form__field">
-				<p>Почта</p>
-				<input
-					type="email"
-					name="E-mail"
-					placeholder="exemple@gmail.com"
-					required
-					autocomplete="off"
-				/>
-			</div>
-
-			<div class="popup-form__field">
-				<p>Сообщение</p>
-				<textarea name="Message" placeholder="Мое сообщение..."></textarea>
-			</div> -->
-
-			<button type="submit" class="button popup-form__button">Отправить</button>
-		</form>
-
-		<a href="tel:380937990001" class="phone_fixed"
-			><img src="img/icons/phone.svg" alt="Телефон"
-		/></a>
-
+	<body class="ishome">
 		<header class="header">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 header_flex">
-						<img
-							src="img/logo.svg"
-							alt="Лого"
-							class="header__logo"
-							data-aos="zoom-in"
-						/>
+					<div class="col-12">
+						<div class="header__top-line">
+							<img src="img/logo.svg" alt="Lexx" class="header__logo_mobile" />
 
-						<div
-							class="header__hamburger hamburger hamburger--emphatic"
-							data-aos="zoom-in"
-						>
-							<div class="hamburger-box">
-								<div class="hamburger-inner"></div>
+							<div class="header__sidebar">
+								<div class="header__sidebar_top">
+									<img src="img/logo.svg" alt="Lexx" class="header__logo" />
+
+									<div class="header__sidebar-close"></div>
+								</div>
+
+								<nav class="header__menu">
+									<ul>
+										<li><a href="#">О платформе</a></li>
+										<li><a href="#">Тарифные планы</a></li>
+										<li><a href="#">Услуги</a></li>
+										<li><a href="#">Инструкции</a></li>
+										<li><a href="#">FAQ</a></li>
+										<li><a href="#">Кейсы</a></li>
+									</ul>
+								</nav>
+
+								<div class="header__buttons">
+									<a href="#" class="button _green">Вход</a>
+									<a href="#" class="button _orange">Регистрация</a>
+								</div>
+							</div>
+
+							<div class="header__sidebar-plug"></div>
+
+							<div class="header__hamburger">
+								<div class="line"></div>
+								<div class="line"></div>
+								<div class="line"></div>
 							</div>
 						</div>
 
-						<div class="header__dropdown">
-							<nav class="header__menu">
-								<a href=".header" class="link-move">Главная</a>
-								<a href=".about" class="link-move">О нас</a>
-								<a href=".services" class="link-move">Услуги хранения</a>
-								<a href=".services-2" class="link-move">Аренда мини-склада</a>
-								<a href=".services-3" class="link-move">Услуги для бизнеса</a>
-								<!-- <a href=".clients" class="link-move">Наши партнеры</a> -->
-								<a href=".calculation" class="link-move">Стоимость услуг</a>
-								<a href=".contacts" class="link-move">Контакты</a>
-							</nav>
+						<div class="main">
+							<h6 class="h6 main__title_over">
+								Мощный инструментарий в единой платформе
+							</h6>
 
-							<div class="header__social-links">
-								<a href="#"
-									><img src="img/icons/facebook.svg" alt="Facebook"
-								/></a>
-								<a href="#"
-									><img src="img/icons/instagram.svg" alt="Instagram"
-								/></a>
-								<a href="#"><img src="img/icons/viber.svg" alt="Viber" /></a>
-								<a href="#"
-									><img src="img/icons/telegram.svg" alt="Telegram"
-								/></a>
+							<h1 class="h1 main__title">
+								Lexx - платформа развития <br />
+								интернет-продаж
+							</h1>
+
+							<ul class="main__list">
+								<li>Единый каталог компании</li>
+								<li>Экспорт на популярные маркетплейсы</li>
+								<li>Собственные продающие сайты и интернет-магазин</li>
+								<li>Встроенная CRM-система, модули оплаты и доставки</li>
+							</ul>
+
+							<div class="main__flex-box_bottom">
+								<a href="#" class="button main__button">Зарегистрироваться</a>
+								<p class="main__bonus">
+									Зарегистрируйтесь сейчас <br />
+									и пользуйтесь <span>14 дней бесплатно</span>
+								</p>
 							</div>
+
+							<img
+								src="img/main__image.png"
+								alt="Ноутбук"
+								class="main__image"
+							/>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
 
-		<section class="main _grad">
-			<img
-				class="main__img"
-				src="img/main__img.png"
-				alt="Девушка с телефоном"
-				data-aos="fade-up"
-			/>
-
-			<img
-				class="main__img _mobile"
-				src="img/main__img_mobile.png"
-				alt="Девушка с телефоном"
-				data-aos="fade-up"
-			/>
-
+		<section class="benefits">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 main_flex">
-						<div class="main__container" data-aos="fade-right">
-							<h1 class="main__title">
-								<span>Алло гараж!</span> - это комплексный и удобный сервис для
-								хранения вещей!
-							</h1>
-							<a href=".popup-form" class="button main__button magnific-popup"
-								>Оставить заявку</a
-							>
+					<div class="col-12">
+						<h2 class="h2 benefits__title">Кому выгодно</h2>
+
+						<div class="benefits__container">
+							<div class="benefits__box">
+								<div class="benefits__icon">
+									<img src="img/benefits/icon_1.svg" alt="Иконка" />
+								</div>
+								<h4 class="h4 benefits__caption _1">
+									Руководителям производственных <br />
+									и торговых компаний
+								</h4>
+							</div>
+
+							<div class="benefits__box">
+								<div class="benefits__icon">
+									<img src="img/benefits/icon_2.svg" alt="Иконка" />
+								</div>
+								<h4 class="h4 benefits__caption _2">
+									Маркетологам, директорам по развитию <br />
+									и диджитал-агентствам
+								</h4>
+							</div>
+
+							<div class="benefits__box">
+								<div class="benefits__icon">
+									<img src="img/benefits/icon_3.svg" alt="Иконка" />
+								</div>
+								<h4 class="h4 benefits__caption _3">
+									Предпринимателям <br />
+									для развивития продаж на маркетплейсах
+								</h4>
+							</div>
+
+							<div class="benefits__box">
+								<div class="benefits__icon">
+									<img src="img/benefits/icon_4.svg" alt="Иконка" />
+								</div>
+								<h4 class="h4 benefits__caption _4">
+									Экспертам развития интернет-продаж и их партнерам
+								</h4>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<a href=".about" class="main__arrow-down link-move" data-aos="zoom-in">
-				<img src="img/icons/arrow-down.svg" alt="Вниз" />
-			</a>
 		</section>
 
-		<section class="about _grad">
+		<section class="capabilities">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2 class="h2 about__title" data-aos="fade-up">О Нас</h2>
+						<h2 class="h2 capabilities__title">Ключевые возможности</h2>
 
-						<div class="about__flex-box">
+						<div class="capabilities__container">
 							<img
-								class="about__img"
-								src="img/about/about__img.png"
-								alt="Коллаж"
-								data-aos="zoom-in"
+								src="img/capabilities/image_1.png"
+								alt="Изображение"
+								class="capabilities__image"
 							/>
-
-							<div class="about__container">
-								<p class="about__text" data-aos="fade-right">
-									Наш сервис поможет вам избавиться от лишних или ненужных в
-									данный момент вещей. Мы заберём ваши вещи на наш
-									<span>склад</span>, сохраним и привезём обратно в любую точку
-									Киева.
-									<br />
-									А если вам необходим собственный <span>мини склад</span>, с
-									доступом 24/7, удобным расположением и приветливым персоналом,
-									где вы сможете хранить все: от детских колясок до товара (если
-									вы предприниматель) - мы с удовольствием предоставим вам его!
-									<br />
-									<span>Позаботимся о ваших вещах, как о своих.</span>
+							<div class="capabilities__box _green">
+								<div class="capabilities__number">1</div>
+								<h3 class="h3 capabilities__heading">Единый каталог товаров</h3>
+								<p class="capabilities__text">
+									Платформа Lexx - пространство для ведения единого каталога
+									товаров Вашей компании. Здесь Вы загружаете товары, управляете
+									ими, а затем автоматически экспортируете изменения для
+									загрузки на маркетплейсы, прайс-агрегаторы и собственные
+									продающие площадки.
 								</p>
-
-								<div class="about__pictures">
-									<a href="img/about/about__pic-2_big.jpg" data-fancybox>
-										<img
-											src="img/about/about__pic-2.png"
-											alt="Pic"
-											data-aos="zoom-in"
-										/>
-									</a>
-								</div>
 							</div>
 						</div>
 
-						<a href=".services" class="about__arrow-down link-move">
-							<img src="img/icons/arrow-down.svg" alt="Вниз" />
-						</a>
+						<div class="capabilities__container">
+							<div class="capabilities__box _blue_light">
+								<div class="capabilities__number">2</div>
+								<h3 class="h3 capabilities__heading">
+									Выгрузка в маркетплейсы
+								</h3>
+								<p class="capabilities__text">
+									С помощью платформы Lexx Вы управляете настройками
+									качественного экспорта в прайс-агрегаторы и маркетплейсы
+									Rozetka, Prom.ua, Bigl,ua, Google Shopping, Hotline и многие
+									другие.
+								</p>
+							</div>
+
+							<img
+								src="img/capabilities/image_2.png"
+								alt="Изображение"
+								class="capabilities__image"
+							/>
+						</div>
+
+						<div class="capabilities__container">
+							<img
+								src="img/capabilities/image_3.png"
+								alt="Изображение"
+								class="capabilities__image"
+							/>
+							<div class="capabilities__box _red">
+								<div class="capabilities__number">3</div>
+								<h3 class="h3 capabilities__heading">
+									Собственные продающие сайты и интернет-магазины
+								</h3>
+								<p class="capabilities__text">
+									Без использования дополнительных инструментов непосредственно
+									внутри платформы Lexx Вы создаёте и управляете своими
+									продающими сайтами и интернет-магазинами.
+								</p>
+							</div>
+						</div>
+
+						<div class="capabilities__container">
+							<div class="capabilities__box _purple">
+								<div class="capabilities__number">4</div>
+								<h3 class="h3 capabilities__heading">Встроенная CRM-система</h3>
+								<p class="capabilities__text">
+									Все заказы из маркетплейсов и собственных продающих сайтов,
+									интернет-магазинов автоматически поступают и обрабатываются в
+									единой CRM-системе. У Вас накапливается единая клиентская
+									база.
+								</p>
+							</div>
+
+							<img
+								src="img/capabilities/image_4.png"
+								alt="Изображение"
+								class="capabilities__image"
+							/>
+						</div>
+
+						<div class="capabilities__container">
+							<img
+								src="img/capabilities/image_5.png"
+								alt="Изображение"
+								class="capabilities__image"
+							/>
+							<div class="capabilities__box _blue">
+								<div class="capabilities__number">5</div>
+								<h3 class="h3 capabilities__heading">
+									Автоматизация бизнес-процессов
+								</h3>
+								<p class="capabilities__text">
+									Платформа Lexx - пространство для ведения единого каталога
+									товаров для компаний. Здесь Вы загружаете товары, управляете
+									ими, а затем автоматически экспортируете изменения для
+									загрузки на маркетплейсы, прайс-агрегаторы и собственные
+									продающие площадки.
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="services _grad">
+		<section class="appeal">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2 class="h2 about__title" data-aos="fade-up">Наши услуги</h2>
+						<div class="appeal__container">
+							<h2 class="h2 appeal__title">
+								Регистрируйтесь и оцените <br />
+								возможности платформы
+							</h2>
 
-						<div class="about__flex-box _reverse _margin-bottom">
-							<div class="about__container">
-								<p class="about__text" data-aos="fade-right">
-									<span>«Облачное хранение»</span> - самый удобный способ
-									избавиться от всех тех вещей, которые занимают ваше
-									пространство. <br />
-									Вы платите не за стандартный бокс, а только за объем ваших
-									вещей. <br />
-									Без переплаты за пустое пространство. Мы сами приедем к вам,
-									упакуем, погрузим в нашу машину и отвезем на склад!
-								</p>
+							<h5 class="h5 appeal__subtitle">
+								Поличайте 14 дней бесплатного пользования тарфиным планом
+								“Standart”
+							</h5>
 
-								<div class="about__pictures">
-									<a href="img/about/about__pic-3_big.jpg" data-fancybox>
-										<img
-											src="img/about/about__pic-3.png"
-											alt="Pic"
-											data-aos="zoom-in"
-										/>
-									</a>
-								</div>
-							</div>
+							<a href="#" class="appeal__button button">Попробовать сейчас</a>
 
-							<div class="about__img">
+							<img
+								src="img/appeal/image_1.png"
+								alt="Деловой мужчина"
+								class="appeal__image"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="plans">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="h2 plans__title">Тарифные планы</h2>
+
+						<div class="plans__container">
+							<div class="plans__box">
 								<img
-									src="img/services/services__img-1.png"
-									alt="Коллаж"
-									data-aos="zoom-in"
+									src="img/plans/image_1.png"
+									alt="Ноутбук"
+									class="plans__image"
 								/>
-							</div>
-						</div>
 
-						<div class="about__flex-box services-2 _margin-bottom">
-							<div class="about__img">
-								<img
-									src="img/services/services__img-2.png"
-									alt="Коллаж"
-									data-aos="zoom-in"
-								/>
-							</div>
-
-							<div class="about__container">
-								<p class="about__text" data-aos="fade-right">
-									<span>Аренда мини-склада</span> - если вам важно иметь
-									постоянный и индивидуальный доступ к своим вещам мы предложим
-									вам различные варианты мини-складов. Наш комплекс мини складов
-									находится в центре, с удобным подьездом и доступом 24/7.
-								</p>
-
-								<div class="about__pictures">
-									<a href="img/about/about__pic-1_big.jpg" data-fancybox>
-										<img
-											src="img/about/about__pic-1.png"
-											alt="Pic"
-											data-aos="zoom-in"
-										/>
-									</a>
+								<div class="plans__row">
+									<h3 class="h3 plans__heading">Тариф Free</h3>
 								</div>
-							</div>
-						</div>
-
-						<div class="about__flex-box services-3 _reverse">
-							<div class="about__container">
-								<p class="about__text" data-aos="fade-right">
-									<span>Складские услуги для малого бизнеса</span> - мы с
-									удовольствием поможем вам не только в хранении вашего товара,
-									но и предоставим услуги учета/размещения товарно-материальных
-									ценностей, а также приема, выдачи/отправки товаров.
-								</p>
-							</div>
-
-							<div class="about__img" data-aos="zoom-in">
-								<img src="img/services/services__img-3.png" alt="Коллаж" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="calculation">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="h2 calculation__title" data-aos="fade-up">
-							Стоимость услуг
-						</h2>
-
-						<div class="calculation__table" data-aos="fade-up">
-							<div class="calculation__row">
-								<div class="calculation__box">
-									<div class="calculation__heading">
-										Облачное хранение <br />
-										(аренда м3 на общем складе)
-									</div>
-
-									<div class="calculation__text">
-										<p>1 месяц = 280 грн. за м<sup>3</sup></p>
-
-										<p>3-6 месяцев = 230 грн. за м<sup>3</sup></p>
-
-										<p>+6 месяцев = 190 грн. за м<sup>3</sup></p>
-									</div>
+								<div class="plans__row">
+									<h5 class="h5 plans__caption">Количество товаров</h5>
+									<span class="plans__amount">500</span>
 								</div>
-
-								<div class="calculation__box">
-									<div class="calculation__heading">
-										«Мини-склад» <br />
-										(аренда индивидуального склада)
-									</div>
-
-									<div class="calculation__text">
-										<p>
-											<span>Объем от 1 до 4,5 м<sup>3</sup> </span>
-											1 месяц = от 350 грн. за м<sup>3</sup> <br />
-											1-6 месяцев = от 320 грн. за м<sup>3</sup> <br />
-											+6 месяцев = от 290 грн. за м<sup>3</sup> <br />
-										</p>
-
-										<p>
-											<span>Объем от 4,5 до 27 м<sup>3</sup> </span>
-											1 месяц = от 400 грн. за м<sup>3</sup> <br />
-											1-6 месяцев = от 360 грн. за м<sup>3</sup> <br />
-											+6 месяцев = от 320 грн. за м<sup>3</sup> <br />
-										</p>
-
-										<p>
-											<span>Объем от 27 м<sup>3</sup> </span>
-											1 месяц = от 450 грн. за м<sup>3</sup> <br />
-											1-6 месяцев = от 410 грн. за м<sup>3</sup> <br />
-											+6 месяцев = от 385 грн. за м<sup>3</sup> <br />
-										</p>
-									</div>
+								<div class="plans__row _bd-none">
+									<h5 class="h5 plans__caption">Стоимость</h5>
+									<span class="plans__price">Бесплатно</span>
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="frequently _grad">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="h2 frequently__title" data-aos="fade-up">
-							Наиболее часто хранимые предметы
-						</h2>
-
-						<div class="frequently__container">
-							<div class="frequently__item" data-aos="zoom-in">
-								<p class="frequently__caption">Шины</p>
-
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="144.533"
-									height="144.533"
-									viewBox="0 0 144.533 144.533"
-								>
-									<path
-										id="Контур_1187"
-										data-name="Контур 1187"
-										d="M77.267,66.025A11.241,11.241,0,1,0,88.508,77.267,11.172,11.172,0,0,0,77.267,66.025Zm0,16.059a4.831,4.831,0,0,1-4.818-4.818,4.818,4.818,0,0,1,9.636,0A4.831,4.831,0,0,1,77.267,82.084ZM77.267,5a72.267,72.267,0,1,0,72.267,72.267A72.375,72.375,0,0,0,77.267,5Zm0,138.109a65.843,65.843,0,1,1,65.843-65.843A65.933,65.933,0,0,1,77.267,143.109Zm0-122.05a56.207,56.207,0,1,0,56.207,56.207A56.269,56.269,0,0,0,77.267,21.059Zm48.5,45.126H97.822l-.642-1.124,13.972-24.249A49.407,49.407,0,0,1,125.766,66.186Zm-48.5-38.7a49.859,49.859,0,0,1,14.775,2.248L78.07,53.981H76.624L62.653,29.731A48.014,48.014,0,0,1,77.267,27.483ZM43.382,40.812,57.353,65.062l-.642,1.124H28.768A49.407,49.407,0,0,1,43.382,40.812ZM28.768,88.347H56.711l.642,1.124L43.382,113.721A49.408,49.408,0,0,1,28.768,88.347Zm48.5,38.7A49.859,49.859,0,0,1,62.492,124.8l13.972-24.249h1.445L91.881,124.8A48.014,48.014,0,0,1,77.267,127.05Zm33.885-13.329L97.18,89.472l.642-1.124h27.943A49.407,49.407,0,0,1,111.152,113.721Zm15.738-31.8H95.9a3.108,3.108,0,0,0-2.73,1.606L90.6,87.866a2.917,2.917,0,0,0,0,3.212l15.417,26.658a15.911,15.911,0,0,1-2.73,1.767l-2.73,1.606a14.237,14.237,0,0,1-2.73,1.285L82.406,95.735a3.108,3.108,0,0,0-2.73-1.606H74.537a3.108,3.108,0,0,0-2.73,1.606L56.39,122.393c-.964-.482-1.767-.8-2.73-1.285l-2.73-1.606c-.964-.642-1.767-1.124-2.73-1.767L63.616,91.078a2.917,2.917,0,0,0,0-3.212L61.047,83.53a3.312,3.312,0,0,0-2.73-1.606H27.644c0-.964-.161-2.088-.161-3.051V75.661c0-.964.161-2.088.161-3.051H58.477A3.108,3.108,0,0,0,61.207,71l2.569-4.336a2.917,2.917,0,0,0,0-3.212L48.36,36.637a15.911,15.911,0,0,1,2.73-1.767l2.569-1.445a14.236,14.236,0,0,1,2.73-1.285L71.806,58.959a3.108,3.108,0,0,0,2.73,1.606h5.139a3.108,3.108,0,0,0,2.73-1.606L97.822,32.14c.964.482,1.767.8,2.73,1.285l2.569,1.445c.964.642,1.767,1.124,2.73,1.767L90.435,63.456a2.917,2.917,0,0,0,0,3.212L93,71a3.312,3.312,0,0,0,2.73,1.606h30.834a19.436,19.436,0,0,1,.161,3.051v3.212A9.5,9.5,0,0,1,126.89,81.924Z"
-										transform="translate(-5 -5)"
-										fill="#fff"
-									/>
-								</svg>
-
-								<p class="frequently__price">от 90 грн.</p>
-							</div>
-
-							<div
-								class="frequently__item"
-								data-aos="zoom-in"
-								data-aos-delay="100"
-							>
-								<p class="frequently__caption">велосипед</p>
-
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="184.594"
-									height="134.6"
-									viewBox="0 0 184.594 134.6"
-								>
-									<path
-										id="Контур_1188"
-										data-name="Контур 1188"
-										d="M152.137,70.186a38.714,38.714,0,0,0-4.038.216l-10.46-50.21h27.238c4.79,0,6.49,3.688,6.49,6.847s-1.7,6.848-6.49,6.848a3.846,3.846,0,0,0,0,7.691c8.217,0,14.181-6.114,14.181-14.54S173.093,12.5,164.876,12.5H132.908a2.046,2.046,0,0,1-.785.081,3.554,3.554,0,0,0-.343.147,3.666,3.666,0,0,0-1.811,1.225,3.518,3.518,0,0,0-.679,1.268,3.692,3.692,0,0,0-.154.761,3.6,3.6,0,0,0-.073.364,3.591,3.591,0,0,0,.078.387,3.621,3.621,0,0,0,0,.4l5.445,26.135H74.955l-7-15.383H79.068a3.846,3.846,0,0,0,0-7.691H48.3a3.846,3.846,0,1,0,0,7.691h11.2l8.749,19.227L56.8,72.255a38.438,38.438,0,1,0,25.917,40.233H98.3c.044,0,.085-.015.129-.016a2.62,2.62,0,0,0,1.2-.253,2.065,2.065,0,0,0,.854-.449,3.77,3.77,0,0,0,.384-.271,3.848,3.848,0,0,0,.472-.544c.049-.064.111-.112.156-.18l35.928-53.893,3.143,15.088a38.447,38.447,0,1,0,11.569-1.785ZM44.457,139.408a30.766,30.766,0,1,1,9.152-60.141L40.957,107.048a3.847,3.847,0,0,0,3.5,5.44h30.5A30.793,30.793,0,0,1,44.457,139.408ZM60.591,82.5a30.77,30.77,0,0,1,14.365,22.3H50.434Zm22.129,22.3A38.481,38.481,0,0,0,63.8,75.456l8.551-18.776L92.515,104.8Zm16.354-4.251L78.286,50.957h53.845Zm53.064,38.863a30.748,30.748,0,0,1-9.985-59.835l6.22,29.855a3.846,3.846,0,0,0,3.761,3.061,3.917,3.917,0,0,0,.789-.081,3.846,3.846,0,0,0,2.98-4.55L149.681,78c.812-.064,1.627-.124,2.455-.124a30.766,30.766,0,0,1,0,61.531Z"
-										transform="translate(-6 -12.5)"
-										fill="#fff"
-									/>
-								</svg>
-
-								<p class="frequently__price">от 300 грн.</p>
-							</div>
-
-							<div
-								class="frequently__item"
-								data-aos="zoom-in"
-								data-aos-delay="200"
-							>
-								<p class="frequently__caption">Стол</p>
-
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="155.927"
-									height="133.652"
-									viewBox="0 0 155.927 133.652"
-								>
-									<path
-										id="_5-table"
-										data-name="5-table"
-										d="M152.358,4H7.569A5.569,5.569,0,0,0,2,9.569V31.844a5.569,5.569,0,0,0,5.569,5.569h5.569v94.67a5.569,5.569,0,1,0,11.138,0V37.413H135.652v94.67a5.569,5.569,0,1,0,11.138,0V37.413h5.569a5.569,5.569,0,0,0,5.569-5.569V9.569A5.569,5.569,0,0,0,152.358,4Z"
-										transform="translate(-2 -4)"
-										fill="#fff"
-									/>
-								</svg>
-
-								<p class="frequently__price">от 450 грн.</p>
-							</div>
-
-							<div
-								class="frequently__item"
-								data-aos="zoom-in"
-								data-aos-delay="300"
-							>
-								<p class="frequently__caption">Шкаф</p>
-
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="111.87"
-									height="128.262"
-									viewBox="0 0 111.87 128.262"
-								>
-									<g
-										id="Сгруппировать_187"
-										data-name="Сгруппировать 187"
-										transform="translate(3 3)"
+								<a href="#" class="plans__button">
+									<span>Оформить тариф</span>
+									<svg
+										width="41"
+										height="16"
+										viewBox="0 0 41 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
 									>
 										<path
-											id="Контур_1189"
-											data-name="Контур 1189"
-											d="M11.5,4.42H56.715V115.385H13.706a2.206,2.206,0,0,1-2.206-2.206Z"
-											transform="translate(-3.78 -3.821)"
-											fill="none"
-											stroke="#fff"
-											stroke-miterlimit="10"
-											stroke-width="6"
+											d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+											fill="white"
 										/>
-										<line
-											id="Линия_9"
-											data-name="Линия 9"
-											y2="10.697"
-											transform="translate(16.542 111.564)"
-											fill="none"
-											stroke="#fff"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="6"
-										/>
-										<line
-											id="Линия_10"
-											data-name="Линия 10"
-											y2="10.697"
-											transform="translate(89.328 111.564)"
-											fill="none"
-											stroke="#fff"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="6"
-										/>
-										<line
-											id="Линия_11"
-											data-name="Линия 11"
-											x2="105.87"
-											fill="none"
-											stroke="#fff"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="6"
-										/>
-										<line
-											id="Линия_12"
-											data-name="Линия 12"
-											y1="9.043"
-											transform="translate(39.15 48.197)"
-											fill="none"
-											stroke="#fff"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="6"
-										/>
-										<path
-											id="Контур_1190"
-											data-name="Контур 1190"
-											d="M2.206,0h43.01V110.965H0V2.206A2.206,2.206,0,0,1,2.206,0Z"
-											transform="translate(98.172 111.586) rotate(180)"
-											fill="none"
-											stroke="#fff"
-											stroke-miterlimit="10"
-											stroke-width="6"
-										/>
-										<line
-											id="Линия_13"
-											data-name="Линия 13"
-											y1="9.043"
-											transform="translate(66.72 48.197)"
-											fill="none"
-											stroke="#fff"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="6"
-										/>
-									</g>
-								</svg>
-
-								<p class="frequently__price">от 450 грн.</p>
+									</svg>
+								</a>
 							</div>
 
-							<div
-								class="frequently__item"
-								data-aos="zoom-in"
-								data-aos-delay="400"
-							>
-								<p class="frequently__caption">Телевизор</p>
+							<div class="plans__box">
+								<img
+									src="img/plans/image_2.png"
+									alt="Ноутбук"
+									class="plans__image"
+								/>
+								<div class="plans__row">
+									<h3 class="h3 plans__heading">Тариф Basic</h3>
+								</div>
+								<div class="plans__row">
+									<h5 class="h5 plans__caption">Количество товаров</h5>
+									<span class="plans__amount">1 000</span>
+								</div>
+								<div class="plans__row _bd-none">
+									<h5 class="h5 plans__caption">Стоимость</h5>
+									<span class="plans__price">10 € / месяц</span>
+								</div>
+								<a href="#" class="plans__button">
+									<span>Оформить тариф</span>
+									<svg
+										width="41"
+										height="16"
+										viewBox="0 0 41 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+											fill="white"
+										/>
+									</svg>
+								</a>
+							</div>
 
-								<svg
-									id="Layer_2"
-									data-name="Layer 2"
-									xmlns="http://www.w3.org/2000/svg"
-									width="137.896"
-									height="129.843"
-									viewBox="0 0 137.896 129.843"
-								>
-									<rect
-										id="Прямоугольник_187"
-										data-name="Прямоугольник 187"
-										width="18.386"
-										height="9.193"
-										rx="1"
-										transform="translate(103.651 49.726)"
-										fill="#fff"
-									/>
-									<rect
-										id="Прямоугольник_188"
-										data-name="Прямоугольник 188"
-										width="18.386"
-										height="9.193"
-										rx="1"
-										transform="translate(103.651 72.708)"
-										fill="#fff"
-									/>
-									<rect
-										id="Прямоугольник_189"
-										data-name="Прямоугольник 189"
-										width="9.193"
-										height="18.386"
-										rx="1"
-										transform="translate(101.123 111.457)"
-										fill="#fff"
-									/>
-									<rect
-										id="Прямоугольник_190"
-										data-name="Прямоугольник 190"
-										width="9.193"
-										height="18.386"
-										rx="1"
-										transform="translate(27.579 111.457)"
-										fill="#fff"
-									/>
-									<path
-										id="Контур_1191"
-										data-name="Контур 1191"
-										d="M125.106,106.205H14.79A13.79,13.79,0,0,1,1,92.416V19.01A13.79,13.79,0,0,1,14.79,5.22H125.106A13.79,13.79,0,0,1,138.9,19.01V92.278a13.79,13.79,0,0,1-13.79,13.927ZM14.79,14.275a4.6,4.6,0,0,0-4.6,4.6V92.278a4.6,4.6,0,0,0,4.6,4.6H125.106a4.6,4.6,0,0,0,4.6-4.6V19.01a4.6,4.6,0,0,0-4.6-4.6Z"
-										transform="translate(-1 10.17)"
-										fill="#fff"
-									/>
-									<path
-										id="Контур_1192"
-										data-name="Контур 1192"
-										d="M77.775,102.159H14.3A9.653,9.653,0,0,1,4.69,92.552V44.381a11.215,11.215,0,0,1,11.215-11.17H77.775a9.653,9.653,0,0,1,9.607,9.607V92.506a9.653,9.653,0,0,1-9.607,9.653ZM15.86,42.4a2.022,2.022,0,0,0-2.022,2.022v48.08a.414.414,0,0,0,.414.414H77.775a.414.414,0,0,0,.414-.414V42.818a.414.414,0,0,0-.414-.414Zm73.59-35.9a4.6,4.6,0,0,1-2.3,4L67.524,21.72h-21.7L26.2,10.5a4.6,4.6,0,0,1,4.551-8L56.677,17.262,82.6,2.461A4.6,4.6,0,0,1,89.45,6.506Z"
-										transform="translate(12.271 -1.872)"
-										fill="#fff"
-									/>
-									<path
-										id="Контур_1193"
-										data-name="Контур 1193"
-										d="M12.309,9.69H74.178a5.01,5.01,0,0,1,5.01,5.01V64.388a5.01,5.01,0,0,1-5.01,5.01H10.7a5.01,5.01,0,0,1-5.01-5.01V16.263A6.619,6.619,0,0,1,12.309,9.69Z"
-										transform="translate(15.868 26.246)"
-										fill="#fff"
-									/>
-								</svg>
+							<div class="plans__box">
+								<img
+									src="img/plans/image_3.png"
+									alt="Ноутбук"
+									class="plans__image"
+								/>
+								<div class="plans__row">
+									<h3 class="h3 plans__heading">Тариф Standart</h3>
+								</div>
+								<div class="plans__row">
+									<h5 class="h5 plans__caption">Количество товаров</h5>
+									<span class="plans__amount">10 000</span>
+								</div>
+								<div class="plans__row _bd-none">
+									<h5 class="h5 plans__caption">Стоимость</h5>
+									<span class="plans__price">25 € / месяц</span>
+								</div>
+								<a href="#" class="plans__button">
+									<span>Оформить тариф</span>
+									<svg
+										width="41"
+										height="16"
+										viewBox="0 0 41 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+											fill="white"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
 
-								<p class="frequently__price">от 300 грн.</p>
+						<a href="#" class="plans__all button _grey"
+							>Посмотреть все тарифные планы</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="h2 advantages__title">Главные преимущества</h2>
+
+						<div class="advantages__container">
+							<div class="advantages__box">
+								<img
+									src="img/advantages/icon_1.svg"
+									alt="Иконка"
+									class="advantages__icon"
+								/>
+								<h4 class="h4 advantages__heading _blue">
+									Комплексная платформа для онлайн-продаж
+								</h4>
+								<p class="advantages__text">
+									Вам не требуется много различных систем и инструментов,
+									которые нужно интегрировать между собой.
+								</p>
+							</div>
+
+							<div class="advantages__box">
+								<img
+									src="img/advantages/icon_2.svg"
+									alt="Иконка"
+									class="advantages__icon"
+								/>
+								<h4 class="h4 advantages__heading _green">
+									Рабочее пространство для сотрудников
+								</h4>
+								<p class="advantages__text">
+									Все работают в единой системе, действия и изменения сразу же
+									становятся доступными коллегам
+								</p>
+							</div>
+
+							<div class="advantages__box">
+								<img
+									src="img/advantages/icon_3.svg"
+									alt="Иконка"
+									class="advantages__icon"
+								/>
+								<h4 class="h4 advantages__heading _purple">
+									Партнёрская программа от наших участников
+								</h4>
+								<p class="advantages__text">
+									Вы можете воспользоваться экспертной помощью участников нашей
+									партнёрской программы
+								</p>
+							</div>
+
+							<div class="advantages__box">
+								<img
+									src="img/advantages/icon_4.svg"
+									alt="Иконка"
+									class="advantages__icon"
+								/>
+								<h4 class="h4 advantages__heading _blue_light">
+									Качественная поддержка по любым вопросам
+								</h4>
+								<p class="advantages__text">
+									Оказываем качественную поддержку клиентам по организационным и
+									техническим вопросам
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<a href=".contacts" class="frequently__arrow-down link-move">
-				<img src="img/icons/arrow-down.svg" alt="Вниз" />
-			</a>
 		</section>
 
-		<section class="contacts _grad">
+		<section class="reviews">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2 class="h2 contacts__title" data-aos="fade-up">Контакты</h2>
+						<h2 class="h2 reviews__title">Отзывы наших клиентов</h2>
 
-						<div class="contacts__container">
-							<iframe
-								data-aos="fade-up"
-								class="contacts__map"
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.053110603228!2d30.498523815731666!3d50.458735679476504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce6612f22bef%3A0x7823ce3b8c5563ac!2z0YPQuy4g0JrRg9C00YDRj9Cy0YHQutCw0Y8sIDE2LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1622908031717!5m2!1sru!2sua"
-								style="border: 0"
-								allowfullscreen=""
-								loading="lazy"
-							></iframe>
+						<div class="reviews__slider">
+							<div class="review">
+								<div class="review__heading">
+									<div
+										class="review__avatar"
+										style="background-image: url('img/reviews/user_1.png')"
+									></div>
 
-							<div class="contacts__box" data-aos="fade-up">
-								<div class="contacts__items">
-									<a href="tel:380937990001">
-										<span>Телефон</span>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="84.992"
-											height="84.98"
-											viewBox="0 0 84.992 84.98"
-										>
-											<path
-												id="Контур_1197"
-												data-name="Контур 1197"
-												d="M161.038,141.759c-3.525-3.621-13.544-10.405-20.11-10.405a7.143,7.143,0,0,0-3.935,1.038c-3.211,2.052-5.77,3.645-7,3.645-.676,0-1.4-.6-2.994-1.98l-.266-.241a83.766,83.766,0,0,1-7.074-6.615l-.435-.459c-.314-.314-.579-.6-.845-.869-1.5-1.545-2.583-2.656-6.422-7l-.169-.193c-1.835-2.076-3.042-3.428-3.114-4.418-.072-.966.773-2.535,2.921-5.456,2.607-3.525,2.7-7.87.314-12.916-1.907-3.983-5.022-7.8-7.774-11.154l-.241-.29c-2.366-2.9-5.118-4.346-8.184-4.346-3.4,0-6.229,1.835-7.725,2.8-.121.072-.241.169-.362.241a15.494,15.494,0,0,0-6.712,8.015c-1.376,4.466-2.294,10.26,4.3,22.307a107.8,107.8,0,0,0,19.072,25.856c7.725,7.919,11.154,10.478,18.831,16.03,8.546,6.18,16.755,9.729,22.5,9.729,5.335,0,9.536,0,15.523-7.219C167.412,150.281,164.8,145.646,161.038,141.759Z"
-												transform="translate(-79.927 -80.1)"
-											/>
-										</svg>
-										<span class="_hidden">+380937990001</span>
-									</a>
-
-									<a href="tg://resolve?domain=NikName">
-										<span>Telegram</span>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="120.33"
-											height="109.906"
-											viewBox="0 0 120.33 109.906"
-										>
-											<path
-												id="Контур_1210"
-												data-name="Контур 1210"
-												d="M117.311,4.545a11.2,11.2,0,0,0-11.367-1.773L7.923,42.347a11.175,11.175,0,0,0,.572,20.885l19.828,6.9,11.051,36.546a5.459,5.459,0,0,0,.647,1.38c.042.066.1.114.147.178a5.406,5.406,0,0,0,1.156,1.18c.126.1.247.186.382.272a5.392,5.392,0,0,0,1.7.744l.065.005.037.016a5.59,5.59,0,0,0,1.106.112c.036,0,.067-.017.1-.018a5.429,5.429,0,0,0,1.647-.286c.124-.042.229-.112.349-.163a5.432,5.432,0,0,0,1.117-.627l.833-.7,14.78-16.318,22.044,17.077a11.066,11.066,0,0,0,6.789,2.334,11.235,11.235,0,0,0,10.982-8.931L121.1,15.324a11.1,11.1,0,0,0-3.792-10.779ZM46.782,71.869a5.435,5.435,0,0,0-1.49,2.767L43.6,82.862,39.31,68.679,61.546,57.1ZM92.19,100.878,66.14,80.7a5.477,5.477,0,0,0-7.4.652L54,86.574l1.673-8.13L94.417,39.7a5.468,5.468,0,0,0-6.394-8.717l-55.6,28.949L12.052,52.479l98.336-39.34Z"
-												transform="translate(-1 -1.954)"
-											/>
-										</svg>
-									</a>
-
-									<a href="viber://add?number=380937990001">
-										<span>Viber</span>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="100.837"
-											height="106.341"
-											viewBox="0 0 100.837 106.341"
-										>
-											<path
-												id="Контур_1196"
-												data-name="Контур 1196"
-												d="M89.446,10.353C86.81,7.938,76.134.177,52.358.075c0,0-28.055-1.679-41.721,10.862C3.035,18.539.373,29.672.067,43.48S-.58,83.168,24.365,90.2h.022l-.022,10.716s-.164,4.341,2.689,5.214c3.447,1.081,5.484-2.224,8.785-5.777,1.807-1.954,4.3-4.815,6.189-7,2.658.261,5.741.408,8.864.408a96.669,96.669,0,0,0,23.47-2.875l-.664.142c3.447-1.121,22.947-3.615,26.1-29.49,3.3-26.713-1.568-43.564-10.353-51.188Zm2.888,49.239c-2.689,21.6-18.486,22.969-21.392,23.9a87.026,87.026,0,0,1-21.127,2.534q-3.229,0-6.4-.226l.284.018s-10.8,13.02-14.163,16.4c-1.1,1.1-2.308,1.01-2.286-1.183,0-1.431.084-17.8.084-17.8C6.216,77.382,7.438,55.339,7.687,43.825S10.1,22.849,16.533,16.5C28.1,6.011,51.924,7.566,51.924,7.566c20.125.084,29.761,6.149,32,8.182,7.416,6.357,11.195,21.561,8.408,43.839ZM63.491,42.811v.062a1.345,1.345,0,0,1-2.689.066v0c.018-.186.031-.408.031-.625a6.422,6.422,0,0,0-6.423-6.423c-.133,0-.266,0-.394.013h.018a1.345,1.345,0,0,1,.071-2.689h.071c.089,0,.2,0,.306,0a9.026,9.026,0,0,1,9.028,9.028c0,.2-.009.408-.022.607v-.027ZM67.7,45.163c.208-8.807-5.294-15.7-15.74-16.471A1.346,1.346,0,0,1,52.057,26a.718.718,0,0,1,.1,0h.071A18.19,18.19,0,0,1,70.415,44.2c0,.359-.009.718-.031,1.072l0-.049a1.345,1.345,0,0,1-2.689-.035V45.15ZM77.45,47.95v.009a1.345,1.345,0,0,1-2.689.013c-.106-16.931-11.4-26.15-25.082-26.248a1.342,1.342,0,1,1,0-2.685C65,19.146,77.317,29.72,77.441,47.945ZM75.124,68.319v.04c-2.242,3.947-6.437,8.306-10.756,6.915l-.04-.062a79.918,79.918,0,0,1-21.4-11.868l.182.133a54.72,54.72,0,0,1-8.723-8.7L34.3,54.67a66.811,66.811,0,0,1-6.211-9.33l-.177-.35a60.508,60.508,0,0,1-5.285-11.133l-.133-.434C21.1,29.1,25.442,24.909,29.411,22.668h.04a3.787,3.787,0,0,1,4.962.8l0,.009s2.574,3.07,3.677,4.589c1.037,1.413,2.432,3.677,3.154,4.939a4.276,4.276,0,0,1,.66,2.3,4.322,4.322,0,0,1-1.426,3.216l0,0-2.49,1.993a3.639,3.639,0,0,0-1.112,2.623c0,.1,0,.2.013.3v-.013A26.132,26.132,0,0,0,54.21,60.89l.186.049a2.834,2.834,0,0,0,.284.013A3.653,3.653,0,0,0,57.3,59.844l1.993-2.49a4.339,4.339,0,0,1,5.542-.758l-.018-.009a54.114,54.114,0,0,1,9.555,6.862l-.049-.044a3.7,3.7,0,0,1,.78,4.917l.009-.013Z"
-												transform="translate(0.001 0)"
-											/>
-										</svg>
-
-										<span class="_hidden">+380937990001</span>
-									</a>
+									<div class="review__wrap">
+										<p class="review__name">Сергей Р.</p>
+										<p class="review__from">
+											интернет-магазин <span>TechnoLavka</span>
+										</p>
+									</div>
 								</div>
 
-								<a
-									href=".popup-form"
-									class="button contacts__button magnific-popup"
-									>Оставить заявку</a
-								>
+								<p class="review__text">
+									Активно использую платформу Lexx для продвижения на
+									маркетплейсе Rozetka. Настройка качественной выгрузки занимает
+									время. Но результатом довольны, есть регулярный поток заказов
+								</p>
+
+								<a href="#" class="review__link">
+									<span>Читать далее</span>
+									<svg
+										width="41"
+										height="16"
+										viewBox="0 0 41 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+											fill="#333333"
+										/>
+									</svg>
+								</a>
+							</div>
+
+							<div class="review">
+								<div class="review__heading">
+									<div
+										class="review__avatar"
+										style="background-image: url('img/reviews/user_2.png')"
+									></div>
+
+									<div class="review__wrap">
+										<p class="review__name">Сергей Р.</p>
+										<p class="review__from">
+											интернет-магазин <span>TechnoLavka</span>
+										</p>
+									</div>
+								</div>
+
+								<p class="review__text">
+									Активно использую платформу Lexx для продвижения на
+									маркетплейсе Rozetka. Настройка качественной выгрузки занимает
+									время. Но результатом довольны, есть регулярный поток заказов
+								</p>
+
+								<a href="#" class="review__link">
+									<span>Читать далее</span>
+									<svg
+										width="41"
+										height="16"
+										viewBox="0 0 41 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+											fill="#333333"
+										/>
+									</svg>
+								</a>
+							</div>
+
+							<div class="review">
+								<div class="review__heading">
+									<div
+										class="review__avatar"
+										style="background-image: url('img/reviews/user_3.png')"
+									></div>
+
+									<div class="review__wrap">
+										<p class="review__name">Сергей Р.</p>
+										<p class="review__from">
+											интернет-магазин <span>TechnoLavka</span>
+										</p>
+									</div>
+								</div>
+
+								<p class="review__text">
+									Активно использую платформу Lexx для продвижения на
+									маркетплейсе Rozetka. Настройка качественной выгрузки занимает
+									время. Но результатом довольны, есть регулярный поток заказов
+								</p>
+
+								<a href="#" class="review__link">
+									<span>Читать далее</span>
+									<svg
+										width="41"
+										height="16"
+										viewBox="0 0 41 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+											fill="#333333"
+										/>
+									</svg>
+								</a>
+							</div>
+
+							<div class="review">
+								<div class="review__heading">
+									<div
+										class="review__avatar"
+										style="background-image: url('img/reviews/user_2.png')"
+									></div>
+
+									<div class="review__wrap">
+										<p class="review__name">Сергей Р.</p>
+										<p class="review__from">
+											интернет-магазин <span>TechnoLavka</span>
+										</p>
+									</div>
+								</div>
+
+								<p class="review__text">
+									Активно использую платформу Lexx для продвижения на
+									маркетплейсе Rozetka. Настройка качественной выгрузки занимает
+									время. Но результатом довольны, есть регулярный поток заказов
+								</p>
+
+								<a href="#" class="review__link">
+									<span>Читать далее</span>
+									<svg
+										width="41"
+										height="16"
+										viewBox="0 0 41 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+											fill="#333333"
+										/>
+									</svg>
+								</a>
 							</div>
 						</div>
+
+						<a href="#" class="reviews__all button _grey"
+							>Посмотреть все отзывы</a
+						>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- <section class="clients _grad">
+		<section class="examples">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2 class="h2 clients__title" data-aos="fade-up">Наши клиенты</h2>
+						<h2 class="h2 examples__title">Примеры интернет-магазинов</h2>
 
-						<div class="clients__img">
-							<img src="img/clients__plug.svg" alt="Plug" />
+						<div class="examples__container">
+							<div class="examples__wrapper">
+								<div class="examples__item">
+									<div
+										class="examples__preview"
+										style="background-image: url('img/examples/item_1.png')"
+									></div>
+
+									<div class="examples__row">
+										<div class="examples__wrap">
+											<h3 class="h3 examples__heading">Сайт “Abiturients”</h3>
+											<h5 class="h5 examples__heading_under">
+												Продажа курсов и тренингов
+											</h5>
+										</div>
+
+										<div class="examples__buttons">
+											<a href="#">
+												<svg
+													width="20"
+													height="20"
+													viewBox="0 0 20 20"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M8.33329 1.66675C4.65746 1.66675 1.66663 4.65758 1.66663 8.33341C1.66663 12.0092 4.65746 15.0001 8.33329 15.0001C9.81244 14.9998 11.249 14.5046 12.4141 13.5934L16.0775 17.2567L17.2558 16.0784L13.5925 12.4151C14.5041 11.2498 14.9996 9.81295 15 8.33341C15 4.65758 12.0091 1.66675 8.33329 1.66675ZM11.6666 9.16675H9.16663V11.6667H7.49996V9.16675H4.99996V7.50008H7.49996V5.00008H9.16663V7.50008H11.6666V9.16675Z"
+														fill="#828282"
+													/>
+												</svg>
+											</a>
+
+											<a href="#"
+												><svg
+													width="20"
+													height="20"
+													viewBox="0 0 20 20"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<g clip-path="url(#clip0)">
+														<path
+															d="M12.7578 7.24137C15.0917 9.57766 15.0596 13.3233 12.7719 15.6238C12.7676 15.6285 12.7625 15.6336 12.7578 15.6382L10.1328 18.2632C7.81758 20.5785 4.05082 20.5782 1.73594 18.2632C-0.579297 15.9484 -0.579297 12.1812 1.73594 9.86637L3.18539 8.41691C3.56977 8.03254 4.23172 8.28801 4.25156 8.83121C4.27687 9.52348 4.40101 10.219 4.63008 10.8906C4.70766 11.118 4.65223 11.3696 4.4823 11.5395L3.97109 12.0507C2.87633 13.1455 2.84199 14.9281 3.92598 16.0336C5.02066 17.1499 6.81996 17.1566 7.92305 16.0535L10.548 13.4289C11.6493 12.3277 11.6446 10.5477 10.548 9.45113C10.4035 9.30684 10.2578 9.19473 10.1441 9.11641C10.0636 9.06115 9.99718 8.98785 9.95007 8.90235C9.90295 8.81685 9.87647 8.72153 9.87273 8.62398C9.85726 8.21121 10.0035 7.78586 10.3297 7.45969L11.1521 6.63723C11.3678 6.42156 11.7061 6.39508 11.9562 6.56961C12.2426 6.76959 12.5108 6.99438 12.7578 7.24137ZM18.2631 1.73582C15.9482 -0.579102 12.1814 -0.579414 9.86621 1.73582L7.24121 4.36082C7.23652 4.36551 7.23144 4.37059 7.22715 4.37527C4.93941 6.67574 4.90734 10.4214 7.24121 12.7577C7.48819 13.0047 7.75643 13.2294 8.04281 13.4294C8.29289 13.6039 8.63125 13.5774 8.84687 13.3618L9.6693 12.5393C9.99547 12.2132 10.1417 11.7878 10.1262 11.375C10.1225 11.2775 10.096 11.1822 10.0489 11.0967C10.0018 11.0112 9.93535 10.9379 9.85488 10.8826C9.74113 10.8043 9.59551 10.6922 9.45094 10.5479C8.35433 9.45129 8.34972 7.67137 9.45094 6.57016L12.0759 3.94555C13.179 2.84246 14.9783 2.8491 16.073 3.96547C17.157 5.07094 17.1227 6.85352 16.0279 7.94828L15.5167 8.45949C15.3468 8.62941 15.2913 8.88098 15.3689 9.1084C15.598 9.78004 15.7221 10.4755 15.7474 11.1678C15.7673 11.711 16.4292 11.9665 16.8136 11.5821L18.263 10.1327C20.5783 7.81785 20.5783 4.05066 18.2631 1.73582Z"
+															fill="#828282"
+														/>
+													</g>
+													<defs>
+														<clipPath id="clip0">
+															<rect width="20" height="20" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+											</a>
+										</div>
+									</div>
+
+									<div class="examples__row _bd-none">
+										<h5 class="h5 examples__caption">Количество товаров</h5>
+										<span class="examples__amount">до 5 000</span>
+									</div>
+
+									<a href="#" class="examples__button">
+										<span>Сделать себе сайт</span>
+
+										<svg
+											width="41"
+											height="16"
+											viewBox="0 0 41 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+												fill="#4F4F4F"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+
+							<div class="examples__wrapper">
+								<div class="examples__item">
+									<div
+										class="examples__preview"
+										style="background-image: url('img/examples/item_1.png')"
+									></div>
+
+									<div class="examples__row">
+										<div class="examples__wrap">
+											<h3 class="h3 examples__heading">Сайт “Abiturients”</h3>
+											<h5 class="h5 examples__heading_under">
+												Продажа курсов и тренингов
+											</h5>
+										</div>
+
+										<div class="examples__buttons">
+											<a href="#">
+												<svg
+													width="20"
+													height="20"
+													viewBox="0 0 20 20"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M8.33329 1.66675C4.65746 1.66675 1.66663 4.65758 1.66663 8.33341C1.66663 12.0092 4.65746 15.0001 8.33329 15.0001C9.81244 14.9998 11.249 14.5046 12.4141 13.5934L16.0775 17.2567L17.2558 16.0784L13.5925 12.4151C14.5041 11.2498 14.9996 9.81295 15 8.33341C15 4.65758 12.0091 1.66675 8.33329 1.66675ZM11.6666 9.16675H9.16663V11.6667H7.49996V9.16675H4.99996V7.50008H7.49996V5.00008H9.16663V7.50008H11.6666V9.16675Z"
+														fill="#828282"
+													/>
+												</svg>
+											</a>
+
+											<a href="#"
+												><svg
+													width="20"
+													height="20"
+													viewBox="0 0 20 20"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<g clip-path="url(#clip0)">
+														<path
+															d="M12.7578 7.24137C15.0917 9.57766 15.0596 13.3233 12.7719 15.6238C12.7676 15.6285 12.7625 15.6336 12.7578 15.6382L10.1328 18.2632C7.81758 20.5785 4.05082 20.5782 1.73594 18.2632C-0.579297 15.9484 -0.579297 12.1812 1.73594 9.86637L3.18539 8.41691C3.56977 8.03254 4.23172 8.28801 4.25156 8.83121C4.27687 9.52348 4.40101 10.219 4.63008 10.8906C4.70766 11.118 4.65223 11.3696 4.4823 11.5395L3.97109 12.0507C2.87633 13.1455 2.84199 14.9281 3.92598 16.0336C5.02066 17.1499 6.81996 17.1566 7.92305 16.0535L10.548 13.4289C11.6493 12.3277 11.6446 10.5477 10.548 9.45113C10.4035 9.30684 10.2578 9.19473 10.1441 9.11641C10.0636 9.06115 9.99718 8.98785 9.95007 8.90235C9.90295 8.81685 9.87647 8.72153 9.87273 8.62398C9.85726 8.21121 10.0035 7.78586 10.3297 7.45969L11.1521 6.63723C11.3678 6.42156 11.7061 6.39508 11.9562 6.56961C12.2426 6.76959 12.5108 6.99438 12.7578 7.24137ZM18.2631 1.73582C15.9482 -0.579102 12.1814 -0.579414 9.86621 1.73582L7.24121 4.36082C7.23652 4.36551 7.23144 4.37059 7.22715 4.37527C4.93941 6.67574 4.90734 10.4214 7.24121 12.7577C7.48819 13.0047 7.75643 13.2294 8.04281 13.4294C8.29289 13.6039 8.63125 13.5774 8.84687 13.3618L9.6693 12.5393C9.99547 12.2132 10.1417 11.7878 10.1262 11.375C10.1225 11.2775 10.096 11.1822 10.0489 11.0967C10.0018 11.0112 9.93535 10.9379 9.85488 10.8826C9.74113 10.8043 9.59551 10.6922 9.45094 10.5479C8.35433 9.45129 8.34972 7.67137 9.45094 6.57016L12.0759 3.94555C13.179 2.84246 14.9783 2.8491 16.073 3.96547C17.157 5.07094 17.1227 6.85352 16.0279 7.94828L15.5167 8.45949C15.3468 8.62941 15.2913 8.88098 15.3689 9.1084C15.598 9.78004 15.7221 10.4755 15.7474 11.1678C15.7673 11.711 16.4292 11.9665 16.8136 11.5821L18.263 10.1327C20.5783 7.81785 20.5783 4.05066 18.2631 1.73582Z"
+															fill="#828282"
+														/>
+													</g>
+													<defs>
+														<clipPath id="clip0">
+															<rect width="20" height="20" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+											</a>
+										</div>
+									</div>
+
+									<div class="examples__row _bd-none">
+										<h5 class="h5 examples__caption">Количество товаров</h5>
+										<span class="examples__amount">до 5 000</span>
+									</div>
+
+									<a href="#" class="examples__button">
+										<span>Сделать себе сайт</span>
+
+										<svg
+											width="41"
+											height="16"
+											viewBox="0 0 41 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+												fill="#4F4F4F"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+
+							<div class="examples__wrapper">
+								<div class="examples__item">
+									<div
+										class="examples__preview"
+										style="background-image: url('img/examples/item_1.png')"
+									></div>
+
+									<div class="examples__row">
+										<div class="examples__wrap">
+											<h3 class="h3 examples__heading">Сайт “Abiturients”</h3>
+											<h5 class="h5 examples__heading_under">
+												Продажа курсов и тренингов
+											</h5>
+										</div>
+
+										<div class="examples__buttons">
+											<a href="#">
+												<svg
+													width="20"
+													height="20"
+													viewBox="0 0 20 20"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M8.33329 1.66675C4.65746 1.66675 1.66663 4.65758 1.66663 8.33341C1.66663 12.0092 4.65746 15.0001 8.33329 15.0001C9.81244 14.9998 11.249 14.5046 12.4141 13.5934L16.0775 17.2567L17.2558 16.0784L13.5925 12.4151C14.5041 11.2498 14.9996 9.81295 15 8.33341C15 4.65758 12.0091 1.66675 8.33329 1.66675ZM11.6666 9.16675H9.16663V11.6667H7.49996V9.16675H4.99996V7.50008H7.49996V5.00008H9.16663V7.50008H11.6666V9.16675Z"
+														fill="#828282"
+													/>
+												</svg>
+											</a>
+
+											<a href="#"
+												><svg
+													width="20"
+													height="20"
+													viewBox="0 0 20 20"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<g clip-path="url(#clip0)">
+														<path
+															d="M12.7578 7.24137C15.0917 9.57766 15.0596 13.3233 12.7719 15.6238C12.7676 15.6285 12.7625 15.6336 12.7578 15.6382L10.1328 18.2632C7.81758 20.5785 4.05082 20.5782 1.73594 18.2632C-0.579297 15.9484 -0.579297 12.1812 1.73594 9.86637L3.18539 8.41691C3.56977 8.03254 4.23172 8.28801 4.25156 8.83121C4.27687 9.52348 4.40101 10.219 4.63008 10.8906C4.70766 11.118 4.65223 11.3696 4.4823 11.5395L3.97109 12.0507C2.87633 13.1455 2.84199 14.9281 3.92598 16.0336C5.02066 17.1499 6.81996 17.1566 7.92305 16.0535L10.548 13.4289C11.6493 12.3277 11.6446 10.5477 10.548 9.45113C10.4035 9.30684 10.2578 9.19473 10.1441 9.11641C10.0636 9.06115 9.99718 8.98785 9.95007 8.90235C9.90295 8.81685 9.87647 8.72153 9.87273 8.62398C9.85726 8.21121 10.0035 7.78586 10.3297 7.45969L11.1521 6.63723C11.3678 6.42156 11.7061 6.39508 11.9562 6.56961C12.2426 6.76959 12.5108 6.99438 12.7578 7.24137ZM18.2631 1.73582C15.9482 -0.579102 12.1814 -0.579414 9.86621 1.73582L7.24121 4.36082C7.23652 4.36551 7.23144 4.37059 7.22715 4.37527C4.93941 6.67574 4.90734 10.4214 7.24121 12.7577C7.48819 13.0047 7.75643 13.2294 8.04281 13.4294C8.29289 13.6039 8.63125 13.5774 8.84687 13.3618L9.6693 12.5393C9.99547 12.2132 10.1417 11.7878 10.1262 11.375C10.1225 11.2775 10.096 11.1822 10.0489 11.0967C10.0018 11.0112 9.93535 10.9379 9.85488 10.8826C9.74113 10.8043 9.59551 10.6922 9.45094 10.5479C8.35433 9.45129 8.34972 7.67137 9.45094 6.57016L12.0759 3.94555C13.179 2.84246 14.9783 2.8491 16.073 3.96547C17.157 5.07094 17.1227 6.85352 16.0279 7.94828L15.5167 8.45949C15.3468 8.62941 15.2913 8.88098 15.3689 9.1084C15.598 9.78004 15.7221 10.4755 15.7474 11.1678C15.7673 11.711 16.4292 11.9665 16.8136 11.5821L18.263 10.1327C20.5783 7.81785 20.5783 4.05066 18.2631 1.73582Z"
+															fill="#828282"
+														/>
+													</g>
+													<defs>
+														<clipPath id="clip0">
+															<rect width="20" height="20" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+											</a>
+										</div>
+									</div>
+
+									<div class="examples__row _bd-none">
+										<h5 class="h5 examples__caption">Количество товаров</h5>
+										<span class="examples__amount">до 5 000</span>
+									</div>
+
+									<a href="#" class="examples__button">
+										<span>Сделать себе сайт</span>
+
+										<svg
+											width="41"
+											height="16"
+											viewBox="0 0 41 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+												fill="#4F4F4F"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+
+							<div class="examples__wrapper">
+								<div class="examples__item">
+									<div
+										class="examples__preview"
+										style="background-image: url('img/examples/item_1.png')"
+									></div>
+
+									<div class="examples__row">
+										<div class="examples__wrap">
+											<h3 class="h3 examples__heading">Сайт “Abiturients”</h3>
+											<h5 class="h5 examples__heading_under">
+												Продажа курсов и тренингов
+											</h5>
+										</div>
+
+										<div class="examples__buttons">
+											<a href="#">
+												<svg
+													width="20"
+													height="20"
+													viewBox="0 0 20 20"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M8.33329 1.66675C4.65746 1.66675 1.66663 4.65758 1.66663 8.33341C1.66663 12.0092 4.65746 15.0001 8.33329 15.0001C9.81244 14.9998 11.249 14.5046 12.4141 13.5934L16.0775 17.2567L17.2558 16.0784L13.5925 12.4151C14.5041 11.2498 14.9996 9.81295 15 8.33341C15 4.65758 12.0091 1.66675 8.33329 1.66675ZM11.6666 9.16675H9.16663V11.6667H7.49996V9.16675H4.99996V7.50008H7.49996V5.00008H9.16663V7.50008H11.6666V9.16675Z"
+														fill="#828282"
+													/>
+												</svg>
+											</a>
+
+											<a href="#"
+												><svg
+													width="20"
+													height="20"
+													viewBox="0 0 20 20"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<g clip-path="url(#clip0)">
+														<path
+															d="M12.7578 7.24137C15.0917 9.57766 15.0596 13.3233 12.7719 15.6238C12.7676 15.6285 12.7625 15.6336 12.7578 15.6382L10.1328 18.2632C7.81758 20.5785 4.05082 20.5782 1.73594 18.2632C-0.579297 15.9484 -0.579297 12.1812 1.73594 9.86637L3.18539 8.41691C3.56977 8.03254 4.23172 8.28801 4.25156 8.83121C4.27687 9.52348 4.40101 10.219 4.63008 10.8906C4.70766 11.118 4.65223 11.3696 4.4823 11.5395L3.97109 12.0507C2.87633 13.1455 2.84199 14.9281 3.92598 16.0336C5.02066 17.1499 6.81996 17.1566 7.92305 16.0535L10.548 13.4289C11.6493 12.3277 11.6446 10.5477 10.548 9.45113C10.4035 9.30684 10.2578 9.19473 10.1441 9.11641C10.0636 9.06115 9.99718 8.98785 9.95007 8.90235C9.90295 8.81685 9.87647 8.72153 9.87273 8.62398C9.85726 8.21121 10.0035 7.78586 10.3297 7.45969L11.1521 6.63723C11.3678 6.42156 11.7061 6.39508 11.9562 6.56961C12.2426 6.76959 12.5108 6.99438 12.7578 7.24137ZM18.2631 1.73582C15.9482 -0.579102 12.1814 -0.579414 9.86621 1.73582L7.24121 4.36082C7.23652 4.36551 7.23144 4.37059 7.22715 4.37527C4.93941 6.67574 4.90734 10.4214 7.24121 12.7577C7.48819 13.0047 7.75643 13.2294 8.04281 13.4294C8.29289 13.6039 8.63125 13.5774 8.84687 13.3618L9.6693 12.5393C9.99547 12.2132 10.1417 11.7878 10.1262 11.375C10.1225 11.2775 10.096 11.1822 10.0489 11.0967C10.0018 11.0112 9.93535 10.9379 9.85488 10.8826C9.74113 10.8043 9.59551 10.6922 9.45094 10.5479C8.35433 9.45129 8.34972 7.67137 9.45094 6.57016L12.0759 3.94555C13.179 2.84246 14.9783 2.8491 16.073 3.96547C17.157 5.07094 17.1227 6.85352 16.0279 7.94828L15.5167 8.45949C15.3468 8.62941 15.2913 8.88098 15.3689 9.1084C15.598 9.78004 15.7221 10.4755 15.7474 11.1678C15.7673 11.711 16.4292 11.9665 16.8136 11.5821L18.263 10.1327C20.5783 7.81785 20.5783 4.05066 18.2631 1.73582Z"
+															fill="#828282"
+														/>
+													</g>
+													<defs>
+														<clipPath id="clip0">
+															<rect width="20" height="20" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+											</a>
+										</div>
+									</div>
+
+									<div class="examples__row _bd-none">
+										<h5 class="h5 examples__caption">Количество товаров</h5>
+										<span class="examples__amount">до 5 000</span>
+									</div>
+
+									<a href="#" class="examples__button">
+										<span>Сделать себе сайт</span>
+
+										<svg
+											width="41"
+											height="16"
+											viewBox="0 0 41 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+												fill="#4F4F4F"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+
+							<div class="examples__wrapper">
+								<div class="examples__item">
+									<div
+										class="examples__preview"
+										style="background-image: url('img/examples/item_1.png')"
+									></div>
+
+									<div class="examples__row">
+										<div class="examples__wrap">
+											<h3 class="h3 examples__heading">Сайт “Abiturients”</h3>
+											<h5 class="h5 examples__heading_under">
+												Продажа курсов и тренингов
+											</h5>
+										</div>
+
+										<div class="examples__buttons">
+											<a href="#">
+												<svg
+													width="20"
+													height="20"
+													viewBox="0 0 20 20"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M8.33329 1.66675C4.65746 1.66675 1.66663 4.65758 1.66663 8.33341C1.66663 12.0092 4.65746 15.0001 8.33329 15.0001C9.81244 14.9998 11.249 14.5046 12.4141 13.5934L16.0775 17.2567L17.2558 16.0784L13.5925 12.4151C14.5041 11.2498 14.9996 9.81295 15 8.33341C15 4.65758 12.0091 1.66675 8.33329 1.66675ZM11.6666 9.16675H9.16663V11.6667H7.49996V9.16675H4.99996V7.50008H7.49996V5.00008H9.16663V7.50008H11.6666V9.16675Z"
+														fill="#828282"
+													/>
+												</svg>
+											</a>
+
+											<a href="#"
+												><svg
+													width="20"
+													height="20"
+													viewBox="0 0 20 20"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<g clip-path="url(#clip0)">
+														<path
+															d="M12.7578 7.24137C15.0917 9.57766 15.0596 13.3233 12.7719 15.6238C12.7676 15.6285 12.7625 15.6336 12.7578 15.6382L10.1328 18.2632C7.81758 20.5785 4.05082 20.5782 1.73594 18.2632C-0.579297 15.9484 -0.579297 12.1812 1.73594 9.86637L3.18539 8.41691C3.56977 8.03254 4.23172 8.28801 4.25156 8.83121C4.27687 9.52348 4.40101 10.219 4.63008 10.8906C4.70766 11.118 4.65223 11.3696 4.4823 11.5395L3.97109 12.0507C2.87633 13.1455 2.84199 14.9281 3.92598 16.0336C5.02066 17.1499 6.81996 17.1566 7.92305 16.0535L10.548 13.4289C11.6493 12.3277 11.6446 10.5477 10.548 9.45113C10.4035 9.30684 10.2578 9.19473 10.1441 9.11641C10.0636 9.06115 9.99718 8.98785 9.95007 8.90235C9.90295 8.81685 9.87647 8.72153 9.87273 8.62398C9.85726 8.21121 10.0035 7.78586 10.3297 7.45969L11.1521 6.63723C11.3678 6.42156 11.7061 6.39508 11.9562 6.56961C12.2426 6.76959 12.5108 6.99438 12.7578 7.24137ZM18.2631 1.73582C15.9482 -0.579102 12.1814 -0.579414 9.86621 1.73582L7.24121 4.36082C7.23652 4.36551 7.23144 4.37059 7.22715 4.37527C4.93941 6.67574 4.90734 10.4214 7.24121 12.7577C7.48819 13.0047 7.75643 13.2294 8.04281 13.4294C8.29289 13.6039 8.63125 13.5774 8.84687 13.3618L9.6693 12.5393C9.99547 12.2132 10.1417 11.7878 10.1262 11.375C10.1225 11.2775 10.096 11.1822 10.0489 11.0967C10.0018 11.0112 9.93535 10.9379 9.85488 10.8826C9.74113 10.8043 9.59551 10.6922 9.45094 10.5479C8.35433 9.45129 8.34972 7.67137 9.45094 6.57016L12.0759 3.94555C13.179 2.84246 14.9783 2.8491 16.073 3.96547C17.157 5.07094 17.1227 6.85352 16.0279 7.94828L15.5167 8.45949C15.3468 8.62941 15.2913 8.88098 15.3689 9.1084C15.598 9.78004 15.7221 10.4755 15.7474 11.1678C15.7673 11.711 16.4292 11.9665 16.8136 11.5821L18.263 10.1327C20.5783 7.81785 20.5783 4.05066 18.2631 1.73582Z"
+															fill="#828282"
+														/>
+													</g>
+													<defs>
+														<clipPath id="clip0">
+															<rect width="20" height="20" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+											</a>
+										</div>
+									</div>
+
+									<div class="examples__row _bd-none">
+										<h5 class="h5 examples__caption">Количество товаров</h5>
+										<span class="examples__amount">до 5 000</span>
+									</div>
+
+									<a href="#" class="examples__button">
+										<span>Сделать себе сайт</span>
+
+										<svg
+											width="41"
+											height="16"
+											viewBox="0 0 41 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+												fill="#4F4F4F"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+
+							<div class="examples__wrapper">
+								<div class="examples__item">
+									<div
+										class="examples__preview"
+										style="background-image: url('img/examples/item_1.png')"
+									></div>
+
+									<div class="examples__row">
+										<div class="examples__wrap">
+											<h3 class="h3 examples__heading">Сайт “Abiturients”</h3>
+											<h5 class="h5 examples__heading_under">
+												Продажа курсов и тренингов
+											</h5>
+										</div>
+
+										<div class="examples__buttons">
+											<a href="#">
+												<svg
+													width="20"
+													height="20"
+													viewBox="0 0 20 20"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M8.33329 1.66675C4.65746 1.66675 1.66663 4.65758 1.66663 8.33341C1.66663 12.0092 4.65746 15.0001 8.33329 15.0001C9.81244 14.9998 11.249 14.5046 12.4141 13.5934L16.0775 17.2567L17.2558 16.0784L13.5925 12.4151C14.5041 11.2498 14.9996 9.81295 15 8.33341C15 4.65758 12.0091 1.66675 8.33329 1.66675ZM11.6666 9.16675H9.16663V11.6667H7.49996V9.16675H4.99996V7.50008H7.49996V5.00008H9.16663V7.50008H11.6666V9.16675Z"
+														fill="#828282"
+													/>
+												</svg>
+											</a>
+
+											<a href="#"
+												><svg
+													width="20"
+													height="20"
+													viewBox="0 0 20 20"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<g clip-path="url(#clip0)">
+														<path
+															d="M12.7578 7.24137C15.0917 9.57766 15.0596 13.3233 12.7719 15.6238C12.7676 15.6285 12.7625 15.6336 12.7578 15.6382L10.1328 18.2632C7.81758 20.5785 4.05082 20.5782 1.73594 18.2632C-0.579297 15.9484 -0.579297 12.1812 1.73594 9.86637L3.18539 8.41691C3.56977 8.03254 4.23172 8.28801 4.25156 8.83121C4.27687 9.52348 4.40101 10.219 4.63008 10.8906C4.70766 11.118 4.65223 11.3696 4.4823 11.5395L3.97109 12.0507C2.87633 13.1455 2.84199 14.9281 3.92598 16.0336C5.02066 17.1499 6.81996 17.1566 7.92305 16.0535L10.548 13.4289C11.6493 12.3277 11.6446 10.5477 10.548 9.45113C10.4035 9.30684 10.2578 9.19473 10.1441 9.11641C10.0636 9.06115 9.99718 8.98785 9.95007 8.90235C9.90295 8.81685 9.87647 8.72153 9.87273 8.62398C9.85726 8.21121 10.0035 7.78586 10.3297 7.45969L11.1521 6.63723C11.3678 6.42156 11.7061 6.39508 11.9562 6.56961C12.2426 6.76959 12.5108 6.99438 12.7578 7.24137ZM18.2631 1.73582C15.9482 -0.579102 12.1814 -0.579414 9.86621 1.73582L7.24121 4.36082C7.23652 4.36551 7.23144 4.37059 7.22715 4.37527C4.93941 6.67574 4.90734 10.4214 7.24121 12.7577C7.48819 13.0047 7.75643 13.2294 8.04281 13.4294C8.29289 13.6039 8.63125 13.5774 8.84687 13.3618L9.6693 12.5393C9.99547 12.2132 10.1417 11.7878 10.1262 11.375C10.1225 11.2775 10.096 11.1822 10.0489 11.0967C10.0018 11.0112 9.93535 10.9379 9.85488 10.8826C9.74113 10.8043 9.59551 10.6922 9.45094 10.5479C8.35433 9.45129 8.34972 7.67137 9.45094 6.57016L12.0759 3.94555C13.179 2.84246 14.9783 2.8491 16.073 3.96547C17.157 5.07094 17.1227 6.85352 16.0279 7.94828L15.5167 8.45949C15.3468 8.62941 15.2913 8.88098 15.3689 9.1084C15.598 9.78004 15.7221 10.4755 15.7474 11.1678C15.7673 11.711 16.4292 11.9665 16.8136 11.5821L18.263 10.1327C20.5783 7.81785 20.5783 4.05066 18.2631 1.73582Z"
+															fill="#828282"
+														/>
+													</g>
+													<defs>
+														<clipPath id="clip0">
+															<rect width="20" height="20" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+											</a>
+										</div>
+									</div>
+
+									<div class="examples__row _bd-none">
+										<h5 class="h5 examples__caption">Количество товаров</h5>
+										<span class="examples__amount">до 5 000</span>
+									</div>
+
+									<a href="#" class="examples__button">
+										<span>Сделать себе сайт</span>
+
+										<svg
+											width="41"
+											height="16"
+											viewBox="0 0 41 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+												fill="#4F4F4F"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<a href="#" class="examples__all button _grey"
+							>Показать еще кейсы</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bonus">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<img
+							src="img/appeal/image_2.png"
+							alt="Деловая девушка"
+							class="bonus__image_left"
+						/>
+						<div class="bonus__container">
+							<h2 class="h2 bonus__title">
+								Опробуйте возможности платформы <br />
+								Lexx бесплатно в течение 14 дней
+							</h2>
+
+							<h5 class="h5 bonus__subtitle">
+								Регистрируйте аккаунт прямо сейчас
+							</h5>
+
+							<a href="#" class="bonus__button button">Начать использование</a>
+						</div>
+
+						<img
+							src="img/appeal/image_3.png"
+							alt="Деловой мужчина"
+							class="bonus__image_right"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="footer__top-line">
+								<img src="img/logo.svg" alt="Lexx" class="footer__logo" />
+
+								<nav class="footer__menu">
+									<ul>
+										<li><a href="#">О платформе</a></li>
+										<li><a href="#">Тарифные планы</a></li>
+										<li><a href="#">Услуги</a></li>
+										<li><a href="#">Инструкции</a></li>
+										<li><a href="#">FAQ</a></li>
+										<li><a href="#">Кейсы</a></li>
+									</ul>
+								</nav>
+
+								<div class="footer__buttons">
+									<a href="#" class="button _green">Вход</a>
+									<a href="#" class="button _orange">Регистрация</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section> -->
 
-		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<nav class="footer__menu">
-							<a href=".header" class="link-move">Главная</a>
-							<a href=".about" class="link-move">О нас</a>
-							<a href=".services" class="link-move">Услуги хранения</a>
-							<a href=".services-2" class="link-move">Аренда мини-склада</a>
-							<a href=".services-3" class="link-move">Услуги для бизнеса</a>
-							<!-- <a href=".clients" class="link-move">Наши партнеры</a> -->
-							<a href=".calculation" class="link-move">Стоимость услуг</a>
-							<a href=".contacts" class="link-move">Контакты</a>
-						</nav>
+			<div class="footer__container_bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 footer__flex-box">
+							<span class="footer__copyrights">Платформа Lexx © 2019-2021</span>
 
-						<p class="footer__copyrights">Все права защищены 2021</p>
+							<nav class="footer__links">
+								<a href="#">Правила конфиденциальности</a>
+								<a href="#">Публичный договор</a>
+							</nav>
+						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
+
+		<div style="height: 1000px"></div>
 	</body>
 </html>

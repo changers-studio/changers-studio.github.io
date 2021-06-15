@@ -1,51 +1,44 @@
 jQuery(function () {
-	AOS.init({
-		duration: 1000,
-		once: true,
-	})
-
-	$(document).on('load', function () {
-		AOS.refreshHard()
-	})
-
-	$(window).on('scroll', function () {
-		AOS.refresh()
-	})
-
-	$('.magnific-popup').magnificPopup()
-
-	//E-mail Ajax Send
-	$('form').on('submit', function () {
-		//Change
-		var th = $(this)
-		$.ajax({
-			type: 'POST',
-			url: 'mail.php', //Change
-			data: th.serialize(),
-		}).done(function () {
-			alert('Thank you!')
-			setTimeout(function () {
-				// Done Functions
-				th.trigger('reset')
-			}, 1000)
-		})
-		return false
+	$('.reviews__slider').slick({
+		infinite: true,
+		slidesToShow: 3,
+		SlidesToScroll: 1,
+		speed: 800,
+		touchMove: false,
+		responsive: [
+			{
+				breakpoint: 1240,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+				},
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					centerMode: true,
+					variableWidth: true,
+					arrows: false,
+				},
+			},
+		],
 	})
 })
 
-$('.header__hamburger').on('click', function () {
-	$(this).toggleClass('is-active')
-	$('.header__dropdown').toggleClass('_visible')
-})
+var body = $('body')
+var sidebar = $('.header__sidebar')
+var plug = $('.header__sidebar-plug')
+var toggleSidebar = $(
+	'.header__hamburger, .header__sidebar-plug, .header__sidebar-close'
+)
 
-$('.header__menu a').on('click', function () {
-	$('.header__hamburger').removeClass('is-active')
-	$('.header__dropdown').removeClass('_visible')
-})
-
-$('body').on('click', '.link-move', function (event) {
-	event.preventDefault()
-	var id = $(this).attr('href'),
-		top = $(id).offset().top
-	$('body,html').animate({ scrollTop: top - 50 }, 1500)
+toggleSidebar.on('click', function () {
+	sidebar.toggleClass('_visible')
+	plug.toggleClass('_visible')
+	body.toggleClass('scroll_disable')
 })
