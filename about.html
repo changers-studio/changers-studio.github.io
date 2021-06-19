@@ -22,9 +22,12 @@
 			crossorigin="anonymous"
 		></script>
 
+		<link rel="stylesheet" href="libs/aos/aos.css" />
 		<link rel="stylesheet" href="css/main.css" />
 
 		<script defer src="libs/jquery.min.js"></script>
+
+		<script defer src="libs/aos/aos.js"></script>
 
 		<script defer src="js/custom.js"></script>
 	</head>
@@ -87,13 +90,13 @@
 					<div class="sidebar__close"></div>
 
 					<nav class="menu">
-						<a href="#" class="menu__item">Головна</a>
-						<a href="#" class="menu__item">Про нас</a>
-						<a href="#" class="menu__item">Новини</a>
-						<a href="#" class="menu__item">Технічні умови</a>
-						<a href="#" class="menu__item">Статут Асоціації</a>
-						<a href="#" class="menu__item">Вступити в Асоціацію</a>
-						<a href="#" class="menu__item">Контакти</a>
+						<a href="index.html" class="menu__item">Головна</a>
+						<a href="about.html" class="menu__item">Про нас</a>
+						<a href="news.html" class="menu__item">Новини</a>
+						<a href="tech.html" class="menu__item">Технічні умови</a>
+						<a href="status.html" class="menu__item">Статут Асоціації</a>
+						<a href="join.html" class="menu__item">Вступити в Асоціацію</a>
+						<a href="contacts.html" class="menu__item">Контакти</a>
 					</nav>
 
 					<a href="mailto:info@association.com.ua" class="email-link _mobile">
@@ -120,7 +123,7 @@
 			<div class="sidebar__plug"></div>
 		</header>
 
-		<nav class="breadcrumbs">
+		<nav class="breadcrumbs" data-aos="fade-right">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -133,14 +136,22 @@
 
 		<section class="about">
 			<div class="container">
-				<h1 class="h1 about__title">Про нас</h1>
+				<h1 class="h1 about__title" data-aos="fade-right" data-aos-delay="100">
+					Про нас
+				</h1>
 
 				<div class="row _align-center">
 					<div class="col-lg-6">
-						<img src="img/about__image.png" alt="Image" class="about__img" />
+						<img
+							src="img/about__image.png"
+							alt="Image"
+							class="about__img"
+							data-aos="zoom-in"
+							data-aos-delay="200"
+						/>
 					</div>
 
-					<div class="col-lg-6">
+					<div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
 						<p class="about__text">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -167,7 +178,7 @@
 					</div>
 
 					<div class="col-lg-4">
-						<div class="advantage">
+						<div class="advantage" data-aos="fade-up">
 							<img
 								src="img/advantages/icon-1.svg"
 								alt="Icon"
@@ -184,7 +195,7 @@
 					</div>
 
 					<div class="col-lg-4">
-						<div class="advantage">
+						<div class="advantage" data-aos="fade-up" data-aos-delay="200">
 							<img
 								src="img/advantages/icon-2.svg"
 								alt="Icon"
@@ -201,7 +212,7 @@
 					</div>
 
 					<div class="col-lg-4">
-						<div class="advantage">
+						<div class="advantage" data-aos="fade-up" data-aos-delay="400">
 							<img
 								src="img/advantages/icon-3.svg"
 								alt="Icon"
@@ -220,7 +231,7 @@
 			</div>
 		</section>
 
-		<section class="history">
+		<section class="history" data-aos="fade-up">
 			<div class="container tabs">
 				<h2 class="h2 history__title">Історія</h2>
 
@@ -387,7 +398,7 @@
 			<div class="container">
 				<h2 class="h2"></h2>
 
-				<div class="row storage__item">
+				<div class="row storage__item" data-aos="fade-up">
 					<div class="col-lg-4">
 						<div class="storage__image">
 							<img src="img/storages/logo-1.svg" alt="Logo" />
@@ -446,7 +457,7 @@
 					</div>
 				</div>
 
-				<div class="row storage__item">
+				<div class="row storage__item" data-aos="fade-up">
 					<div class="col-lg-4">
 						<div class="storage__image">
 							<img src="img/storages/logo-1.svg" alt="Logo" />
@@ -505,7 +516,7 @@
 					</div>
 				</div>
 
-				<div class="row storage__item">
+				<div class="row storage__item" data-aos="fade-up">
 					<div class="col-lg-4">
 						<div class="storage__image">
 							<img src="img/storages/logo-1.svg" alt="Logo" />
@@ -590,12 +601,12 @@
 
 					<div class="col-lg-4">
 						<nav class="menu">
-							<a href="#" class="menu__item">Головна</a>
-							<a href="#" class="menu__item">Технічні умови</a>
-							<a href="#" class="menu__item">Про нас</a>
-							<a href="#" class="menu__item">Статут Асоціації</a>
-							<a href="#" class="menu__item">Новини</a>
-							<a href="#" class="menu__item">Вступити в Асоціацію</a>
+							<a href="index.html" class="menu__item">Головна</a>
+							<a href="tech.html" class="menu__item">Технічні умови</a>
+							<a href="about.html" class="menu__item">Про нас</a>
+							<a href="status.html" class="menu__item">Статут Асоціації</a>
+							<a href="news.html" class="menu__item">Новини</a>
+							<a href="join.html" class="menu__item">Вступити в Асоціацію</a>
 						</nav>
 					</div>
 

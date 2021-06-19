@@ -1,5 +1,16 @@
 jQuery(function () {
-	// code
+	AOS.init({
+		duration: 1000,
+		once: true,
+	})
+
+	$(document).on('load', function () {
+		AOS.refreshHard()
+	})
+
+	$(window).on('scroll', function () {
+		AOS.refresh()
+	})
 })
 
 $('.dropdown__heading').on('click', function () {
