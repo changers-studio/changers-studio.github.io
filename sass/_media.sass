@@ -184,7 +184,7 @@
 		.product-about
 			&__container
 				flex-direction: column
-			&__image
+			&__slider
 				width: 100%
 				min-height: 0
 				height: 400px
@@ -225,6 +225,10 @@
 					&:last-child
 						margin-bottom: 0
 
+
+	.p-furniture 
+		.product__wrapper
+			padding-left: 0
 
 
 
@@ -355,14 +359,20 @@
 			&__container
 				flex-direction: column
 				margin: 40px 0
-			&__wrapper, &__image
+			&__wrapper, &__slider
 				width: 100%
 				max-width: 100%
 			&__wrapper
 				margin:
 					right: 0
 					bottom: 50px
+			&__slider .image
+				height: 300px
 
+
+	.p-contacts
+		.contacts-info__col
+			padding-left: 0
 
 
 @media only screen and (max-width : 768px)

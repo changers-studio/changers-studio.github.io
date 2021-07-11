@@ -18,6 +18,7 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="libs/fullPage/src/fullpage.css" />
 		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css" />
+		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="css/main.css" />
 
 		<!-- JS -->
@@ -26,15 +27,79 @@
 		<!-- Libs -->
 		<script defer src="libs/fullPage/src/fullpage.js"></script>
 		<script defer src="libs/fancybox/jquery.fancybox.min.js"></script>
+		<script
+			defer
+			src="libs/magnific-popup/jquery.magnific-popup.min.js"
+		></script>
 
 		<!-- Custom -->
 		<script defer src="js/preloader.js"></script>
+		<script defer src="js/magnificPopup-init.js"></script>
 		<script defer src="js/fullpage-init.js"></script>
 		<script defer src="js/custom.js"></script>
 	</head>
 
 	<body class="ishome">
 		<div class="preloader"></div>
+
+		<form class="feedback mfp-hide">
+			<div class="feedback__wrapper">
+				<h2 class="feedback__title">Обратная связь</h2>
+
+				<input
+					type="text"
+					name="Name"
+					placeholder="имя"
+					required
+					autocomplete="off"
+					class="feedback__item"
+				/>
+
+				<input
+					type="text"
+					name="Second name"
+					placeholder="Фамилия"
+					autocomplete="off"
+					class="feedback__item"
+				/>
+
+				<input
+					type="text"
+					name="Dad name"
+					placeholder="отчество"
+					autocomplete="off"
+					class="feedback__item"
+				/>
+
+				<input
+					type="tel"
+					name="Telephone"
+					placeholder="телефон"
+					required
+					autocomplete="off"
+					class="feedback__item"
+				/>
+
+				<input
+					type="email"
+					name="E-mail"
+					placeholder="электронная почта"
+					required
+					autocomplete="off"
+					class="feedback__item"
+				/>
+
+				<textarea
+					name="Message"
+					class="feedback__item"
+					placeholder="сообщение"
+				></textarea>
+
+				<button type="submit" class="feedback__button button">
+					<span>Отправить</span>
+				</button>
+			</div>
+		</form>
 
 		<ul class="fullpage-menu" id="fullpageMenu">
 			<li class="fullpage-menu__item active" data-menuanchor="about">
@@ -110,7 +175,7 @@
 						<h5 class="h5 about__subtitle">
 							Закрытое акционерное общество «Пелла-Фиорд» - дочернее общество
 							«Судостроительного завода «Пелла» (
-							<span>ОАО «Пелла»</span>
+							<a href="http://www.pellaship.ru/" target="_blank">ОАО «Пелла»</ф>
 							)
 						</h5>
 
@@ -346,7 +411,9 @@
 					</div>
 
 					<div class="contacts__buttons">
-						<a href="#" class="button"><span>Обратная связь</span></a>
+						<a href=".feedback" class="button magnific-popup">
+							<span>Обратная связь</span>
+						</a>
 						<a href="#" class="button"><span>Все контакты</span></a>
 					</div>
 				</div>
@@ -427,7 +494,9 @@
 				<div class="footer__copyrights">
 					<div class="container _full _space-between">
 						<span>© судостроительный завод пеллафиорд, 2021</span>
-						<img src="img/main/footer__company.png" alt="MediaПалуба" />
+						<a href="https://paluba.media/" target="_blank">
+							<img src="img/main/footer__company.png" alt="MediaПалуба" />
+						</a>
 					</div>
 				</div>
 			</footer>

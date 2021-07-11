@@ -156,6 +156,7 @@ body
 	min-width: 375px
 	position: relative
 	line-height: 1.2
+	font-weight: 300
 	font-family: $default-font
 	overflow-x: hidden
 	color: #000
@@ -188,6 +189,7 @@ body
 	transition: .4s ease-in-out
 	span
 		z-index: 2
+		font-weight: 400
 	&:focus, &:hover
 		text-decoration: none
 	&::before
@@ -498,7 +500,7 @@ body
 		margin-bottom: 40px
 		font-weight: 400
 		text-transform: uppercase
-		span
+		a
 			font-weight: 700
 	&__text
 		margin-bottom: 50px
@@ -736,6 +738,15 @@ body
 .footer
 	height: auto !important
 	background-color: #242730
+	position: relative
+	&::before
+		content: ''
+		width: 100%
+		height: 7px
+		position: absolute
+		left: 0
+		bottom: 100%
+		background-image: url('../img/pattern_dark.png')
 	.fp-tableCell
 		height: auto !important
 		flex-direction: column
@@ -866,7 +877,7 @@ body
 		img
 			margin-right: 20px
 	.section
-		padding: 70px 0
+		padding: 35px 0
 	.container
 		min-height: 0
 		margin: 0 auto
@@ -913,6 +924,11 @@ body
 				transform: translate(50%, -50%)
 			&:hover
 				text-decoration: none
+	&.top-line__weight-normal
+		.top-line .title
+			font-weight: 400
+			&.h1
+				font-weight: 700
 
 // About company page
 .p-about
@@ -1022,6 +1038,8 @@ body
 			margin-bottom: 25px
 			font-weight: 500
 			margin-bottom: 25px
+			&:last-child
+				margin-bottom: 0
 		.list
 			margin-bottom: 40px
 			&__item
@@ -1090,7 +1108,6 @@ body
 				justify-content: center
 			&__heading
 				font-weight: 300
-				text-transform: uppercase
 				span
 					font-weight: 700
 					display: block
@@ -1099,7 +1116,6 @@ body
 				font-weight: 700
 				margin-bottom: 20px
 //
-
 
 
 // Vacancies page
@@ -1183,6 +1199,8 @@ body
 				margin-bottom: 15px
 				margin-left: 20px
 				transition: .3s ease
+				text-transform: uppercase
+				cursor: pointer
 				&:hover
 					color: $accent
 			&__preview
@@ -1277,8 +1295,7 @@ body
 			font-size: 36px
 			margin-bottom: 15px
 			transition: .3s ease
-			&:hover
-				color: $accent
+			text-transform: uppercase
 		&__preview
 			height: 620px
 			width: 100%
@@ -1329,6 +1346,7 @@ body
 
 // Contacts page
 .p-contacts
+	font-weight: 400
 	.header__logo::before
 		display: none
 	.contacts-info
@@ -1347,6 +1365,7 @@ body
 		&__col
 			width: 320px
 			margin-right: 200px
+			padding-left: 45px
 			&:last-child
 				margin-right: 0
 		.contact
@@ -1377,39 +1396,6 @@ body
 			width: 100%
 			height: 400px
 			margin-top: 50px
-
-.feedback
-	background-color: #2C2C2C
-	color: #fff
-	width: 100%
-	max-width: 410px
-	position: fixed
-	left: 50%
-	top: 50%
-	transform: translate(-50%, -50%)
-	border-radius: 15px
-	&__wrapper
-		padding: 30px
-		display: flex
-		flex-direction: column
-	&__title
-		text-transform: uppercase
-		font-weight: 700
-		font-size: 36px
-		margin-bottom: 20px
-	&__item
-		margin-bottom: 12px
-		width: auto
-	textarea
-		height: 120px
-	&__button
-		background-color: transparent
-		width: 150px
-		height: 45px
-	.mfp-close
-		font-size: 44px
-		color: #fff
-		opacity: 1
 //
 
 
@@ -1472,6 +1458,7 @@ body
 			font-size: 16px
 			padding: 0
 	.slider
+		background-image: url('../img/product/slider__bg.png')
 		&__main
 			margin-bottom: 50px	
 			padding: 0 60px
@@ -1499,6 +1486,7 @@ body
 					border-radius: 5px
 					width: 44px
 					height: 44px
+					background-color: #fff
 					&::before
 						content: ''
 						width: 12px
@@ -1699,7 +1687,7 @@ body
 				bottom: 0
 				background-image: url('../img/pattern_dark.png')
 		.product-list
-			margin-top: 25px
+			margin: 25px 0 40px
 	.product
 		margin-bottom: 100px
 		&__container
@@ -1722,12 +1710,22 @@ body
 			width: 460px
 			max-width: 50%
 			margin-right: 30px
+			padding-left: 50px
 		&__text
 			margin-top: 40px
 			font-size: 300px
 			font-size: 18px
-		&__image
-			max-width: 50%
+		&__slider
+			max-width: calc(50% - 30px)
+			width: 100%
+			.image
+				width: 100%
+				height: 400px
+				background-size: contain
+				background-position: center
+				background-repeat: no-repeat
+			.slick-dots
+				bottom: -10px
 	.product-about
 		&__container
 			display: flex
@@ -1736,15 +1734,21 @@ body
 			position: relative
 			&:last-child
 				margin-bottom: 0
-			&::before
+				&::after
+					display: none
+			&::before, &::after
 				content: ''
 				width: 100%
 				height: 20px
 				position: absolute
 				left: 0
-				top: 100%
 				background-image: url('../img/pattern_dark.png')
+			&::before
+				top: 100%
 				margin-top: 10px
+			&::after
+				bottom: 100%
+				margin-bottom: 10px
 			&._white-text
 				color: #fff
 				.product-about__wrapper
@@ -1753,11 +1757,23 @@ body
 			font-weight: 300
 			width: calc(50% - 60px)
 			padding: 30px
-		&__image
+		&__slider
 			width: 50%
 			background-size: cover
 			background-position: center
+			margin-bottom: 0
 			min-height: 550px
+			.slick
+				&-dots
+					bottom: 25px
+				&-list, &-draggable, &-track, &-slide, &-slide > div
+					height: 100%
+				&-slide > div
+					display: flex
+			.image
+				height: 100%
+				background-size: cover
+				background-position: center
 		.product-list
 			li::before
 				border-color: #fff
@@ -1892,6 +1908,7 @@ body
 // Doors page
 .p-doors
 	.doors
+		.top-line
 		&__container
 			margin-top: 50px
 			&:last-child
@@ -1962,17 +1979,14 @@ body
 			font-weight: 700
 			padding: 10px 0
 			margin-bottom: 30px
-			&::after, &::before
+			&::before
 				content: ''
 				width: 100%
 				height: 10px
 				position: absolute
 				left: 0
 				background-image: url('../img/pattern_dark.png')
-			&::before
 				top: 0
-			&::after
-				bottom: 0
 			&__icon
 				margin-right: 10px
 				flex: auto 0 0
@@ -2003,6 +2017,9 @@ body
 .p-composites
 	.composites
 		padding-bottom: 120px
+		.top-line
+			.title
+				font-weight: 400
 		.review
 			display: flex
 			align-items: center
@@ -2019,6 +2036,7 @@ body
 				margin: 0
 				font-style: italic
 				font-size: 18px
+				max-width: 590px
 				span
 					display: block
 					font-weight: 700
@@ -2096,7 +2114,6 @@ body
 						transform: scale(-1, 1)
 				&-next
 					right: 0
-
 //
 
 
@@ -2150,6 +2167,30 @@ body
 			border-right: 1px solid #B9B9B9
 
 
+.slick-dots 
+	left: 50%
+	bottom: -50px
+	transform: translate(-50%, 0)
+	width: auto
+	display: flex
+	align-items: center
+	justify-content: center
+	li 
+		width: 12px
+		height: 5px
+		border-radius: 5px
+		background-color: #000
+		border: 1px solid #fff
+		padding: 0
+		transition: .3s ease
+		&.slick-active
+			background-color: $accent
+		button
+			height: 100%
+			width: 100%
+			padding: 0
+			&::before
+				display: none
 
 
 .product-list
@@ -2184,27 +2225,40 @@ body
 	justify-content: space-between
 
 
+.feedback
+	background-color: #2C2C2C
+	color: #fff
+	width: 100%
+	max-width: 410px
+	position: fixed
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	border-radius: 15px
+	&__wrapper
+		padding: 30px
+		display: flex
+		flex-direction: column
+	&__title
+		text-transform: uppercase
+		font-weight: 700
+		font-size: 36px
+		margin-bottom: 20px
+	&__item
+		margin-bottom: 12px
+		width: auto
+	textarea
+		height: 120px
+	&__button
+		background-color: transparent
+		width: 150px
+		height: 45px
+	.mfp-close
+		font-size: 44px
+		color: #fff
+		opacity: 1
+
 // End Inner pages CSS
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

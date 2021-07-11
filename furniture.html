@@ -16,16 +16,22 @@
 		/>
 
 		<!-- CSS -->
+		<link rel="stylesheet" href="libs/slick-slider/slick.css" />
+		<link rel="stylesheet" href="libs/slick-slider/slick-theme.css" />
 		<link rel="stylesheet" href="css/main.css" />
 
 		<!-- JS -->
 		<script defer src="libs/jquery.min.js"></script>
 
+		<!-- Libs -->
+		<script defer src="libs/slick-slider/slick.min.js"></script>
+
 		<!-- Custom -->
+		<script defer src="js/slick-init.js"></script>
 		<script defer src="js/custom.js"></script>
 	</head>
 
-	<body class="isnohome p-furniture">
+	<body class="isnohome p-furniture top-line__weight-normal">
 		<div class="sidebar">
 			<div class="sidebar__close"></div>
 
@@ -221,19 +227,66 @@
 						</p>
 					</div>
 
-					<div class="product__img">
-						<img src="img/furniture/product__image.png" alt="Image" />
+					<div class="product__slider">
+						<div class="slide">
+							<div
+								class="image"
+								style="
+									background-image: url('img/furniture/product__image.png');
+								"
+							></div>
+						</div>
+
+						<div class="slide">
+							<div
+								class="image"
+								style="
+									background-image: url('img/furniture/product__image.png');
+								"
+							></div>
+						</div>
+
+						<div class="slide">
+							<div
+								class="image"
+								style="
+									background-image: url('img/furniture/product__image.png');
+								"
+							></div>
+						</div>
 					</div>
 				</div>
 
 				<div class="product-about">
 					<div class="product-about__container _white-text">
-						<div
-							class="product-about__image"
-							style="
-								background-image: url('img/furniture/product__image-2.jpg');
-							"
-						></div>
+						<div class="product-about__slider">
+							<div class="slide">
+								<div
+									class="image"
+									style="
+										background-image: url('img/furniture/product__image-2.jpg');
+									"
+								></div>
+							</div>
+
+							<div class="slide">
+								<div
+									class="image"
+									style="
+										background-image: url('img/furniture/product__image-2.jpg');
+									"
+								></div>
+							</div>
+
+							<div class="slide">
+								<div
+									class="image"
+									style="
+										background-image: url('img/furniture/product__image-2.jpg');
+									"
+								></div>
+							</div>
+						</div>
 
 						<div class="product-about__wrapper">
 							<div class="product__heading">
@@ -312,12 +365,34 @@
 							</p>
 						</div>
 
-						<div
-							class="product-about__image"
-							style="
-								background-image: url('img/furniture/product__image-3.jpg');
-							"
-						></div>
+						<div class="product-about__slider">
+							<div class="slide">
+								<div
+									class="image"
+									style="
+										background-image: url('img/furniture/product__image-2.jpg');
+									"
+								></div>
+							</div>
+
+							<div class="slide">
+								<div
+									class="image"
+									style="
+										background-image: url('img/furniture/product__image-3.jpg');
+									"
+								></div>
+							</div>
+
+							<div class="slide">
+								<div
+									class="image"
+									style="
+										background-image: url('img/furniture/product__image-2.jpg');
+									"
+								></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -404,7 +479,9 @@
 			<div class="footer__copyrights">
 				<div class="container _full _space-between">
 					<span>© судостроительный завод пеллафиорд, 2021</span>
-					<img src="img/main/footer__company.png" alt="MediaПалуба" />
+					<a href="https://paluba.media/" target="_blank">
+						<img src="img/main/footer__company.png" alt="MediaПалуба" />
+					</a>
 				</div>
 			</div>
 		</footer>

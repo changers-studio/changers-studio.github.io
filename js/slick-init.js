@@ -34,6 +34,7 @@ jQuery(function () {
 		touchMove: false,
 		autoplay: true,
 		autoplaySpeed: 4000,
+		dots: true,
 		responsive: [
 			{
 				breakpoint: 1200,
@@ -55,4 +56,15 @@ jQuery(function () {
 			},
 		],
 	})
+
+	$('.product__slider, .product-about__slider, .product-about__slider-2').slick(
+		{
+			touchMove: false,
+			autoplay: true,
+			autoplaySpeed: 5000,
+			dots: true,
+			arrows: false,
+			fade: true,
+		}
+	)
 })
