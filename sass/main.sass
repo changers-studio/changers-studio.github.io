@@ -1209,6 +1209,7 @@ body
 				width: 100%
 				background-size: cover
 				background-position: center
+				position: relative
 				&::before
 					content: ''
 					background-image: url('../img/pattern_dark.png')
@@ -1217,6 +1218,34 @@ body
 					position: absolute
 					top: 100%
 					margin-top: 15px
+			&__details
+				position: absolute
+				left: 60px
+				top: 0
+				color: #fff
+				text-transform: uppercase
+				text-decoration: underline
+				font-size: 14px
+				font-weight: 700
+				text-align: center
+				display: flex
+				align-items: center
+				justify-content: center
+				background-color: $accent
+				width: 170px
+				height: 26px
+				&::after, &::before
+					content: ''
+					position: absolute
+					top: 0
+					border: 13px solid transparent
+					border-top: 13px solid $accent
+				&::before
+					border-right: 13px solid $accent
+					right: 100%
+				&::after
+					left: 100%
+					border-left: 13px solid $accent
 		.pagination
 			display: flex
 			align-items: center
