@@ -25,6 +25,7 @@
 		<script defer src="libs/jquery.min.js"></script>
 
 		<!-- Libs -->
+		<script defer src='libs/loading-bar/jquery.loadBar.min.js'></script>
 		<script defer src="libs/fullPage/src/fullpage.js"></script>
 		<script defer src="libs/fancybox/jquery.fancybox.min.js"></script>
 		<script
@@ -39,7 +40,7 @@
 		<script defer src="js/custom.js"></script>
 	</head>
 
-	<body class="ishome">
+	<body class="ishome" data-nanobar="#fff">
 		<div class="preloader"></div>
 
 		<form class="feedback mfp-hide">
@@ -420,7 +421,7 @@
 			</section>
 
 			<footer class="footer section">
-				<div class="container _full footer__container">
+				<div class="container footer__container">
 					<div class="footer__contacts">
 						<a href="index.html" class="footer__logo">
 							<img src="img/main/logo_white.svg" alt="ПЕЛЛА ФИОРД" />
@@ -465,30 +466,29 @@
 						</div>
 					</div>
 
-					<div class="footer__wrapper">
-						<nav class="footer__menu">
-							<a href="#">Главная</a>
-							<a href="#">Компания</a>
-							<a href="#">Пресс центр</a>
-							<a href="#">Контакты</a>
-							<a href="#">Вакансии</a>
-							<a href="#">Продукция</a>
-						</nav>
+					<nav class="footer__menu">
+						<a href="#">Главная</a>
+						<a href="#">Компания</a>
+						<a href="#">Пресс центр</a>
+						<a href="#">Контакты</a>
+						<a href="#">Вакансии</a>
+						<a href="#">Продукция</a>
+					</nav>
 
-						<nav class="footer__production">
-							<p class="heading">Продукция</p>
-							<ul>
-								<li><a href="#">Маломерное судостроение</a></li>
-								<li><a href="#">Спасательное оборудование</a></li>
-								<li><a href="#">Судовая мебель</a></li>
-								<li><a href="#">Система зашивки</a></li>
-								<li><a href="#">Дельные вещи</a></li>
-								<li><a href="#">Гребные и моторные лодки</a></li>
-								<li><a href="#">Вентфасады</a></li>
-								<li><a href="#">Композиты</a></li>
-							</ul>
-						</nav>
-					</div>
+					<nav class="footer__production">
+						<p class="heading">Продукция</p>
+						<ul>
+							<li><a href="#">Маломерное судостроение</a></li>
+							<li><a href="#">Спасательное оборудование</a></li>
+							<li><a href="#">Судовая мебель</a></li>
+							<li><a href="#">Система зашивки</a></li>
+							<li><a href="#">Дельные вещи</a></li>
+							<li><a href="#">Гребные и моторные лодки</a></li>
+							<li><a href="#">Вентфасады</a></li>
+							<li><a href="#">Композиты</a></li>
+						</ul>
+					</nav>
+					
 				</div>
 
 				<div class="footer__copyrights">

@@ -12,6 +12,12 @@ jQuery(function () {
 			} else {
 				$('.fullpage-menu').removeClass('dark')
 			}
+
+			if ($('.footer').hasClass('active')) {
+				$('.fullpage-menu').addClass('hidden')
+			} else {
+				$('.fullpage-menu').removeClass('hidden')
+			}
 		},
 	})
 })
