@@ -672,7 +672,7 @@ body.scroll_disable {
   display: flex;
 }
 
-.sidebar__button._white::after {
+.sidebar__button._white span::after {
   display: none;
 }
 
