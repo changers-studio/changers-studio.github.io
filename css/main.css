@@ -35,7 +35,7 @@
 
 @-webkit-keyframes changeColor {
   0%, 80%, 100% {
-    fill: rgba(222, 228, 235, 0.33);
+    fill: #dee4eb;
   }
   20%, 50% {
     fill: #3A6DEB;
@@ -44,7 +44,7 @@
 
 @keyframes changeColor {
   0%, 80%, 100% {
-    fill: rgba(222, 228, 235, 0.33);
+    fill: #dee4eb;
   }
   20%, 50% {
     fill: #3A6DEB;
@@ -216,7 +216,6 @@ body.scroll_disable {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .button span::after {
@@ -968,6 +967,7 @@ body.scroll_disable {
   left: 0;
   top: 0;
   background-color: #F7F8FD;
+  border-radius: 150px 0 0 150px;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
@@ -980,7 +980,6 @@ body.scroll_disable {
   -webkit-transition: .3s ease .3s;
   transition: .3s ease .3s;
   border-color: #3A6DEB;
-  background-color: #fff;
 }
 
 .ishome .main .scroll-down:hover .scroll-down__wrapper svg {
@@ -1560,18 +1559,36 @@ body.scroll_disable {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 80px;
+  cursor: pointer;
 }
 
 .blog .article:last-child {
   margin-bottom: 0;
 }
 
+.blog .article:hover .article__link span::after {
+  width: 250px;
+}
+
+.blog .article:hover .article__image {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .blog .article__image {
-  width: 330px;
-  height: 330px;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.blog .article__preview {
+  overflow: hidden;
   margin-right: 100px;
+  width: 330px;
+  height: 330px;
 }
 
 .blog .article__wrapper {
@@ -1624,10 +1641,6 @@ body.scroll_disable {
           flex: auto 0 0;
   -webkit-transition: .5s ease;
   transition: .5s ease;
-}
-
-.blog .article__link:hover span::after {
-  width: 250px;
 }
 
 .footer {
@@ -1737,6 +1750,14 @@ body.scroll_disable {
   min-width: 284px;
 }
 
+.footer__button span::after {
+  display: none;
+}
+
+.footer__button:hover svg path {
+  fill: #fff;
+}
+
 .footer__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1837,6 +1858,9 @@ body.scroll_disable {
             justify-content: center;
     width: 100%;
   }
+  .categories__wrapper._indent {
+    min-width: 235px;
+  }
   .statistics__items .item._5 {
     width: 380px;
     height: 380px;
@@ -1844,7 +1868,7 @@ body.scroll_disable {
   .strategy__boxs .box__inner {
     padding: 30px;
   }
-  .blog .article__image {
+  .blog .article__preview {
     margin-right: 40px;
   }
   .footer {
@@ -1987,6 +2011,7 @@ body.scroll_disable {
   }
   .categories__wrapper._indent {
     margin-left: 60px;
+    min-width: 220px;
   }
   .categories .tabs__caption li {
     padding: 50px 0;
@@ -2049,6 +2074,9 @@ body.scroll_disable {
   .strategy__text {
     font-size: 36px;
   }
+  .strategy__button.button {
+    width: 300px;
+  }
   .strategy__boxs .box__inner {
     padding: 20px;
   }
@@ -2093,7 +2121,7 @@ body.scroll_disable {
   .blog__wrapper._left {
     width: 350px;
   }
-  .blog .article__image {
+  .blog .article__preview {
     width: 250px;
     height: 250px;
   }
@@ -2148,24 +2176,15 @@ body.scroll_disable {
   .footer__text {
     font-size: 16px;
   }
-  .footer__row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .footer__tels {
-    margin-bottom: 30px;
-  }
-  .footer__address {
-    margin-bottom: 30px;
+  .footer__container._bottom {
+    padding: 40px 0;
   }
 }
 
 @media only screen and (max-width: 1400px) {
+  .blog .article:hover .article__link span::after {
+    width: 150px;
+  }
   .blog .article__wrapper {
     max-width: 300px;
   }
@@ -2190,9 +2209,6 @@ body.scroll_disable {
   }
   .blog .article__link span::after {
     margin-left: 15px;
-  }
-  .blog .article__link:hover span::after {
-    width: 150px;
   }
   .footer__logo span {
     font-size: 16px;
@@ -2367,18 +2383,6 @@ body.scroll_disable {
     font-size: 18px;
     margin-bottom: 55px;
   }
-  .strategy__boxs .box__inner {
-    padding: 20px;
-  }
-  .strategy__boxs .box__wrapper_top {
-    margin-bottom: 50px;
-  }
-  .strategy__boxs .box__heading {
-    font-size: 18px;
-  }
-  .strategy__boxs .box__text {
-    font-size: 15px;
-  }
   .strategy__boxs {
     margin-top: 100px;
     -webkit-box-orient: horizontal;
@@ -2448,7 +2452,7 @@ body.scroll_disable {
         -ms-flex-align: stretch;
             align-items: stretch;
   }
-  .blog .article__image {
+  .blog .article__preview {
     width: 200px;
     height: auto;
     margin-right: 20px;
@@ -2476,8 +2480,20 @@ body.scroll_disable {
   .footer__logo span {
     display: none;
   }
-  .footer__container._bottom {
-    padding: 40px 0;
+  .footer__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer__tels {
+    margin-bottom: 30px;
+  }
+  .footer__address {
+    margin-bottom: 30px;
   }
 }
 
@@ -2605,12 +2621,22 @@ body.scroll_disable {
     padding: 40px 0;
   }
   .categories .tabs__caption li::before {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     top: 30px;
   }
   .categories__list li {
     margin-bottom: 20px;
+  }
+  .categories__heading {
+    display: none;
+    margin-bottom: 10px;
+  }
+  .categories__heading._mobile {
+    display: block;
+  }
+  .categories__subheading {
+    max-width: 230px;
   }
   .statistics__container {
     -webkit-box-align: center;
@@ -2801,7 +2827,7 @@ body.scroll_disable {
             align-items: flex-start;
     margin-bottom: 50px;
   }
-  .blog .article__image {
+  .blog .article__preview {
     width: 100%;
     height: 280px;
     margin-right: 0;
@@ -2885,7 +2911,6 @@ body.scroll_disable {
 @media only screen and (max-width: 768px) {
   .button {
     width: 250px;
-    height: 80px;
     font-size: 16px;
   }
   .button:hover {
@@ -2979,20 +3004,6 @@ body.scroll_disable {
   }
   .ishome .main .scroll-down {
     display: none;
-  }
-  .categories__heading {
-    display: none;
-    margin-bottom: 10px;
-  }
-  .categories__heading._mobile {
-    display: block;
-  }
-  .categories__subheading {
-    max-width: 230px;
-  }
-  .categories .tabs__caption li::before {
-    width: 30px;
-    height: 30px;
   }
   .blog__button {
     width: 100%;
