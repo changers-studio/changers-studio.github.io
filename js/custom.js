@@ -2,10 +2,22 @@ jQuery(function () {
 	//
 })
 
-$('.header__menu').on('click', function () {
-	$('.sidebar').fadeIn()
+// Menu
+$('.sidebarActivator').on('click', function () {
+	$('.sidebar').fadeToggle('slow')
 })
 
-$('.sidebar__close').on('click', function () {
-	$('.sidebar').fadeOut()
+// END
+
+$('ul.tabs__caption').on('click', 'li:not(.active)', function () {
+	$(this)
+		.addClass('active')
+		.siblings()
+		.removeClass('active')
+		.closest('div.tabs')
+		.find('div.tabs__content')
+		.fadeOut(300)
+		.eq($(this).index())
+		.delay(300)
+		.fadeIn(300)
 })
