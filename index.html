@@ -23,16 +23,57 @@
 		></script>
 
 		<link rel="stylesheet" href="libs/aos/aos.css" />
+		<link rel="stylesheet" href="libs/magnific-Popup/magnific-popup.css" />
 		<link rel="stylesheet" href="css/main.css" />
 
 		<script defer src="libs/aos/aos.js"></script>
 
 		<script defer src="libs/jquery.min.js"></script>
 
+		<script
+			defer
+			src="libs/magnific-Popup/jquery.magnific-popup.min.js"
+		></script>
 		<script defer src="js/custom.js"></script>
 	</head>
 
 	<body class="ishome">
+		<form class="popup mfp-hide">
+			<h3 class="popup__heading">Заказать звонок</h3>
+
+			<div class="form__wrapper">
+				<h5 class="form__caption">
+					Имя
+					<span>*</span>
+				</h5>
+				<input
+					type="text"
+					name="Name"
+					placeholder="Введите имя"
+					required
+					autocomplete="off"
+				/>
+			</div>
+
+			<div class="form__wrapper">
+				<h5 class="form__caption">
+					Номер телефона
+					<span>*</span>
+				</h5>
+				<input
+					type="tel"
+					name="Tel"
+					placeholder="+38 (0__) ___-__-__"
+					required
+					autocomplete="off"
+				/>
+			</div>
+
+			<button type="submit" class="form__button button _blue">
+				<span>Отправить</span>
+			</button>
+		</form>
+
 		<header class="header">
 			<div class="header__container container _full">
 				<div class="header__wrapper header__wrapper_left">
@@ -52,7 +93,9 @@
 				</div>
 
 				<div class="header__wrapper header__wrapper_right">
-					<a href="#" class="header__callback"><span>Обратный звонок</span></a>
+					<a href=".popup" class="header__callback magnific-popup">
+						<span>Обратный звонок</span>
+					</a>
 
 					<div class="header__menu sidebarActivator">
 						<span>Меню</span>
@@ -103,15 +146,15 @@
 						<a href="#">Услуги</a>
 						<a href="about.html">О нас</a>
 						<a href="partners.html">Партнерам</a>
-						<a href="faq.html">Вопросы-ответы</a>
+						<a href="#">Вопросы-ответы</a>
 						<a href="contacts.html">Контакты</a>
 					</nav>
 
 					<nav class="sidebar__menu _second">
 						<a href="about.html">Про компанию</a>
-						<a href="info.html">Публичная информация</a>
+						<a href="public_info.html">Публичная информация</a>
 						<a href="partners.html">Партнеры</a>
-						<a href="work.html">Работа и карьера</a>
+						<a href="career.html">Работа и карьера</a>
 						<a href="contacts.html">Обратная связь</a>
 					</nav>
 				</div>
@@ -193,7 +236,7 @@
 						</div>
 					</div>
 
-					<a href="#" class="sidebar__button button _white">
+					<a href=".popup" class="sidebar__button button _white magnific-popup">
 						<svg
 							width="12"
 							height="12"
@@ -554,7 +597,7 @@
 							реализации
 						</p>
 
-						<a href="#" class="strategy__button button">
+						<a href="strategy.html" class="strategy__button button">
 							<span>Стратегия развития</span>
 						</a>
 					</div>
@@ -682,7 +725,7 @@
 							клиентов
 						</p>
 
-						<a href="#" class="about-us__button button">
+						<a href="about.html" class="about-us__button button">
 							<span>Подробнее</span>
 						</a>
 					</div>
@@ -831,22 +874,22 @@
 					<div class="footer__wrapper _right">
 						<div class="footer__row _flex">
 							<div class="footer__tels">
-								<a href="tel:0443370160" class="sidebar__tel">044 337-01-60</a>
+								<a href="tel:0443370160" class="footer__tel">044 337-01-60</a>
 
 								<div class="flex-box">
-									<a href="tel:0967071737" class="sidebar__tel _second">
+									<a href="tel:0967071737" class="footer__tel _second">
 										096 707-17-37
 									</a>
-									<a href="tel:0507071737" class="sidebar__tel _second">
+									<a href="tel:0507071737" class="footer__tel _second">
 										050 707-17-37
 									</a>
-									<a href="tel:0737071737" class="sidebar__tel _second">
+									<a href="tel:0737071737" class="footer__tel _second">
 										073 707-17-37
 									</a>
 								</div>
 							</div>
 
-							<a href="#" class="footer__button button">
+							<a href=".popup" class="footer__button button magnific-popup">
 								<svg
 									width="12"
 									height="12"

@@ -1,5 +1,5 @@
 jQuery(function () {
-	//
+	$('.magnific-popup').magnificPopup()
 })
 
 // Menu
