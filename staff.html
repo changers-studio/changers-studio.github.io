@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Премьер гарант профи | Страхование персонала</title>
+
+		<meta name="viewport" content="width=device-width" />
+		<meta name="format-detection" content="telephone=no" />
+
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+
+		<script
+			async
+			defer
+			src="https://kit.fontawesome.com/55e0136003.js"
+			crossorigin="anonymous"
+		></script>
+
+		<link rel="stylesheet" href="libs/aos/aos.css" />
+		<link rel="stylesheet" href="libs/magnific-Popup/magnific-popup.css" />
+		<link rel="stylesheet" href="css/main.css" />
+
+		<script defer src="libs/aos/aos.js"></script>
+
+		<script defer src="libs/jquery.min.js"></script>
+
+		<script
+			defer
+			src="libs/magnific-Popup/jquery.magnific-popup.min.js"
+		></script>
+		<script defer src="js/custom.js"></script>
+	</head>
+
+	<body class="isnohome p-service">
+		<form class="popup mfp-hide">
+			<h3 class="popup__heading">Заказать звонок</h3>
+
+			<div class="form__wrapper">
+				<h5 class="form__caption">
+					Имя
+					<span>*</span>
+				</h5>
+				<input
+					type="text"
+					name="Name"
+					placeholder="Введите имя"
+					required
+					autocomplete="off"
+				/>
+			</div>
+
+			<div class="form__wrapper">
+				<h5 class="form__caption">
+					Номер телефона
+					<span>*</span>
+				</h5>
+				<input
+					type="tel"
+					name="Tel"
+					placeholder="+38 (0__) ___-__-__"
+					required
+					autocomplete="off"
+				/>
+			</div>
+
+			<button type="submit" class="form__button button _blue">
+				<span>Отправить</span>
+			</button>
+		</form>
+
+		<div class="sidebar">
+			<div class="sidebar__container">
+				<div class="sidebar__inner">
+					<h2 class="sidebar__heading">Меню</h2>
+
+					<button class="sidebar__close sidebarActivator">
+						<svg
+							width="24"
+							height="25"
+							viewBox="0 0 24 25"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g clip-path="url(#clip0)">
+								<path
+									d="M24 3.32811L21.1719 0.5L12 9.67186L2.82811 0.5L0 3.32811L9.17186 12.5L0 21.6719L2.82811 24.5L12 15.3281L21.1718 24.5L23.9999 21.6719L14.8281 12.5L24 3.32811Z"
+									fill="white"
+								/>
+							</g>
+							<defs>
+								<clipPath id="clip0">
+									<rect
+										width="24"
+										height="24"
+										fill="white"
+										transform="translate(0 0.5)"
+									/>
+								</clipPath>
+							</defs>
+						</svg>
+					</button>
+
+					<nav class="sidebar__menu">
+						<a href="index.html">главная</a>
+						<a href="#">Услуги</a>
+						<a href="about.html">О нас</a>
+						<a href="partners.html">Партнерам</a>
+						<a href="#">Вопросы-ответы</a>
+						<a href="contacts.html">Контакты</a>
+					</nav>
+
+					<nav class="sidebar__menu _second">
+						<a href="about.html">Про компанию</a>
+						<a href="public_info.html">Публичная информация</a>
+						<a href="partners.html">Партнеры</a>
+						<a href="career.html">Работа и карьера</a>
+						<a href="contacts.html">Обратная связь</a>
+					</nav>
+				</div>
+
+				<div class="sidebar__footer">
+					<a href="index.html" class="sidebar__logo">
+						<img src="img/logo_white.svg" alt="Логотип" />
+						<span>Премьер гарант профи</span>
+					</a>
+
+					<div class="sidebar__social-links">
+						<a href="#">
+							<svg
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g clip-path="url(#clip0)">
+									<path
+										d="M9.20438 15.7781V8.68299H11.585L11.9421 5.91708H9.20438V4.15145C9.20438 3.35091 9.42577 2.80535 10.575 2.80535L12.0385 2.80475V0.330824C11.7854 0.297936 10.9167 0.222534 9.90556 0.222534C7.7942 0.222534 6.34873 1.51129 6.34873 3.87752V5.91708H3.96094V8.68299H6.34873V15.7781H9.20438Z"
+										fill="white"
+									/>
+								</g>
+								<defs>
+									<clipPath id="clip0">
+										<rect
+											width="15.5556"
+											height="15.5556"
+											fill="white"
+											transform="translate(0.222656 0.222534)"
+										/>
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+
+						<a href="#">
+							<svg
+								width="15"
+								height="16"
+								viewBox="0 0 15 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g clip-path="url(#clip0)">
+									<path
+										d="M7.80657 5.14113C6.21499 5.14113 4.92028 6.43584 4.92028 8.02742C4.92028 9.619 6.21499 10.9137 7.80657 10.9137C9.39815 10.9137 10.6929 9.619 10.6929 8.02742C10.6929 6.43584 9.39815 5.14113 7.80657 5.14113ZM7.80657 5.14113C6.21499 5.14113 4.92028 6.43584 4.92028 8.02742C4.92028 9.619 6.21499 10.9137 7.80657 10.9137C9.39815 10.9137 10.6929 9.619 10.6929 8.02742C10.6929 6.43584 9.39815 5.14113 7.80657 5.14113ZM12.782 0.962891H2.83116C1.69314 0.962891 0.769531 1.8865 0.769531 3.02452V12.9753C0.769531 14.1134 1.69314 15.037 2.83116 15.037H12.782C13.92 15.037 14.8436 14.1134 14.8436 12.9753V3.02452C14.8436 1.8865 13.92 0.962891 12.782 0.962891ZM7.80657 11.7384C5.76146 11.7384 4.09563 10.0725 4.09563 8.02742C4.09563 5.98225 5.76146 4.31648 7.80657 4.31648C9.85168 4.31648 11.5175 5.98225 11.5175 8.02742C11.5175 10.0725 9.85168 11.7384 7.80657 11.7384ZM12.3422 4.31648C11.8886 4.31648 11.5175 3.94538 11.5175 3.49183C11.5175 3.03827 11.8886 2.66717 12.3422 2.66717C12.7957 2.66717 13.1668 3.03827 13.1668 3.49183C13.1668 3.94538 12.7957 4.31648 12.3422 4.31648ZM7.80657 5.14113C6.21499 5.14113 4.92028 6.43584 4.92028 8.02742C4.92028 9.619 6.21499 10.9137 7.80657 10.9137C9.39815 10.9137 10.6929 9.619 10.6929 8.02742C10.6929 6.43584 9.39815 5.14113 7.80657 5.14113ZM7.80657 5.14113C6.21499 5.14113 4.92028 6.43584 4.92028 8.02742C4.92028 9.619 6.21499 10.9137 7.80657 10.9137C9.39815 10.9137 10.6929 9.619 10.6929 8.02742C10.6929 6.43584 9.39815 5.14113 7.80657 5.14113ZM7.80657 5.14113C6.21499 5.14113 4.92028 6.43584 4.92028 8.02742C4.92028 9.619 6.21499 10.9137 7.80657 10.9137C9.39815 10.9137 10.6929 9.619 10.6929 8.02742C10.6929 6.43584 9.39815 5.14113 7.80657 5.14113Z"
+										fill="white"
+									/>
+								</g>
+								<defs>
+									<clipPath id="clip0">
+										<rect
+											width="14.0741"
+											height="14.0741"
+											fill="white"
+											transform="translate(0.769531 0.962891)"
+										/>
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</div>
+
+					<div class="sidebar__tels">
+						<a href="tel:0443370160" class="sidebar__tel">044 337-01-60</a>
+						<div class="flex-box">
+							<a href="tel:0967071737" class="sidebar__tel _second">
+								096 707-17-37
+							</a>
+							<a href="tel:0507071737" class="sidebar__tel _second">
+								050 707-17-37
+							</a>
+							<a href="tel:0737071737" class="sidebar__tel _second">
+								073 707-17-37
+							</a>
+						</div>
+					</div>
+
+					<a href=".popup" class="sidebar__button button _white magnific-popup">
+						<svg
+							width="12"
+							height="12"
+							viewBox="0 0 12 12"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g clip-path="url(#clip0)">
+								<path
+									d="M11.6725 8.80679L9.99788 7.13215C9.39979 6.53407 8.38305 6.77333 8.14382 7.55081C7.96439 8.08911 7.36631 8.38815 6.82803 8.26851C5.63186 7.96947 4.01703 6.41445 3.71799 5.15848C3.53857 4.62018 3.89742 4.02209 4.43569 3.84269C5.2132 3.60346 5.45244 2.58671 4.85435 1.98863L3.17972 0.313994C2.70125 -0.104665 1.98355 -0.104665 1.56489 0.313994L0.428528 1.45035C-0.707832 2.64652 0.548145 5.81637 3.35914 8.62736C6.17014 11.4384 9.33998 12.7542 10.5362 11.558L11.6725 10.4216C12.0912 9.94315 12.0912 9.22545 11.6725 8.80679Z"
+									fill="white"
+								/>
+							</g>
+							<defs>
+								<clipPath id="clip0">
+									<rect width="12" height="12" fill="white" />
+								</clipPath>
+							</defs>
+						</svg>
+
+						<span>Заказать звонок</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="main__bg">
+			<header class="header">
+				<div class="header__container container _full">
+					<div class="header__wrapper header__wrapper_left">
+						<a href="index.html" class="header__logo">
+							<img src="img/logo_white.svg" alt="Логотип" />
+
+							<span>Премьер гарант профи</span>
+						</a>
+
+						<div class="header__inner">
+							<nav class="header__links">
+								<a href="individuals.html">Физ.лицам</a>
+								<a href="legal.html">Юр.лицам</a>
+							</nav>
+
+							<a href="tel:0443370160" class="header__tel _white">
+								(044) 337-01-60
+							</a>
+						</div>
+					</div>
+
+					<div class="header__wrapper header__wrapper_right">
+						<a href=".popup" class="header__callback magnific-popup">
+							<span>Обратный звонок</span>
+						</a>
+
+						<div class="header__menu sidebarActivator">
+							<span>Меню</span>
+
+							<div class="hamburger">
+								<div class="hamburger__line"></div>
+								<div class="hamburger__line"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="main">
+				<div class="container">
+					<nav class="breadcrumbs">
+						<a class="breadcrumbs__link" href="index.html">Главная</a>
+						<a class="breadcrumbs__link" href="legal.html">Юр.лицам</a>
+						<span class="breadcrumbs__current">Страхование персонала</span>
+					</nav>
+				</div>
+
+				<div class="container">
+					<div class="main__container">
+						<h1 class="main__title">Страхование персонала</h1>
+
+						<a href=".popup" class="main__button button _white magnific-popup">
+							<span>Заказать страховку</span>
+						</a>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<section class="service">
+			<div class="container">
+				<div class="sectionHasSideHeading">
+					<div class="side">
+						<object
+							class="side__number"
+							data="img/headings/numbers/01.svg"
+							type="image/svg+xml"
+						></object>
+					</div>
+				</div>
+
+				<div class="service__container">
+					<h2 class="service__title">Корпоративное медицинское страхование</h2>
+
+					<div class="service__wrapper">
+						<p class="service__text">
+							Страховая компания Премьер Гарант Профи предлагает своим клиентам
+							<span>
+								корпоративное медицинское страхование – обезопасьте своих
+								сотрудников и себя
+							</span>
+						</p>
+					</div>
+
+					<div class="service__wrapper">
+						<p class="service__text">
+							Страхование проводится на основании Лицензий:
+						</p>
+
+						<ul class="service__list">
+							<li>
+								Добровольное страхование здоровья на случай болезни (Лицензия
+								Серия АД № 039827, выдана Нацкомфинуслуг 15.05.2012 года (срок
+								действия с 20.10.2011 бессрочный).
+							</li>
+							<li>
+								Добровольное медицинское страхование (непрерывное страхование
+								здоровья) (Лицензия Серия АД № 039828, выдана Нацкомфинуслуг
+								15.05.2012 года (срок действия с 20.10.2011 бессрочный).
+							</li>
+							<li>
+								Добровольное страхование медицинских расходов (Лицензия Серия АД
+								№ 039829, выдана Нацкомфинуслуг 15.05.2012 года (срок действия с
+								20.10.2011 бессрочный)
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="service _grey">
+			<div class="container">
+				<div class="sectionHasSideHeading">
+					<div class="side">
+						<object
+							class="side__number"
+							data="img/headings/numbers/02.svg"
+							type="image/svg+xml"
+						></object>
+					</div>
+				</div>
+
+				<div class="service__container">
+					<div class="service__wrapper _paddingTop-none">
+						<p class="service__text _blue">
+							Страховые продукты и программы, которые предоставляет Премьер
+							Гарант Профи:
+						</p>
+
+						<p class="service__text">Амбулаторное лечение</p>
+
+						<p class="service__addition">
+							Предоставление полного объема медицинских услуг в амбулаторных
+							условиях базового медицинского учреждения при возникновении
+							заболеваний и состояний, которые в соответствии с требованиями МОЗ
+							не требуют стационарного лечения.
+						</p>
+
+						<p class="service__addition">Включены консультации специалистов:</p>
+
+						<ul class="service__list">
+							<li>Терапевта,</li>
+							<li>Хирурга,</li>
+							<li>Уролога,</li>
+							<li>Нинеколога,</li>
+							<li>Невропатолога,</li>
+							<li>Гастроэнтэролога,</li>
+							<li>Кардиолога,</li>
+							<li>Ревматолога,</li>
+							<li>Эндокринолога,</li>
+							<li>Ортопеда-травматолога,</li>
+							<li>Офтальмолога,</li>
+							<li>При необходимости — врачей более узких специальностей</li>
+						</ul>
+
+						<p class="service__addition">
+							Применение лабораторных и инструментальных методов диагностики, в
+							том числе методов с использованием специальных диагностических
+							препаратов, тест-систем и аппаратуры (общего и специального
+							исследования крови и физиологических выделений организма;
+							рентгенологические методы диагностики; ультразвуковые
+							исследования; диагностическая пункция; электрокардио- и
+							электроэнцефаллография; диагностическое зондирование; гастро- и
+							бронхоскопия; гинекологические исследования) в базовом медицинском
+							учреждении или за направлением доверенного врача — в другом
+							медицинском учреждении
+						</p>
+
+						<p class="service__caption">
+							Амбулаторное консервативное и оперативное лечение болезней и
+							состояний, которые не требуют госпитализации в стационар, в таком
+							объеме:
+						</p>
+
+						<ul class="service__list">
+							<li>Определения предшествующего и окончательного диагноза;</li>
+							<li>Назначение плана вспомогательных обследований и лечения;</li>
+							<li>Контроль за ходом лечения;</li>
+							<li>
+								Медикаментозное обеспечение в соответствии с распоряжением
+								доверенного врача
+							</li>
+						</ul>
+					</div>
+
+					<div class="service__wrapper">
+						<p class="service__text">Стационарное лечение</p>
+
+						<p class="service__addition _semiBold">
+							Экстренное (немедленное) и плановое лечение застрахованных (за
+							направлением доверенного врача) в условиях стационара при
+							возникновении состояний и заболеваний, которые в соответствии с
+							требованиями МОЗ требуют стационарного лечения:
+						</p>
+
+						<ul class="service__list">
+							<li>
+								Размещение в палатах повышенной комфортности базового
+								медицинского учреждения.
+							</li>
+							<li>
+								При необходимости — оперативное хирургическое лечение с учетом
+								послеоперационной реабилитации.
+							</li>
+							<li>
+								Медикаментозное обеспечение в границах лимита в соответствии с
+								договором страхования.
+							</li>
+							<li>
+								Необходимые вспомогательные консультативно-диагностические
+								обследования в условиях стационара
+							</li>
+						</ul>
+					</div>
+
+					<div class="service__wrapper">
+						<p class="service__text">Скорая помощь</p>
+
+						<p class="service__addition _semiBold">
+							Предоставление неотложной медпомощи службой скорой медпомощи:
+						</p>
+
+						<ul class="service__list">
+							<li>Выезд бригады скорой медпомощи.</li>
+							<li>Неотложная помощь на догоспитальном этапе.</li>
+							<li>Медикаментозное обеспечение.</li>
+							<li>
+								Доставка каретой скорой помощи в базовый стационар для
+								проведения дальнейшего лечения
+							</li>
+						</ul>
+					</div>
+
+					<div class="service__wrapper">
+						<p class="service__text">Стоматологическая помощь</p>
+
+						<p class="service__addition _semiBold">
+							Предоставление стоматологической помощи в границах установленной в
+							договоре страховой суммы:
+						</p>
+
+						<ul class="service__list">
+							<li>Неотложная стоматологическая помощь.</li>
+							<li>
+								Терапевтическое и хирургическое лечение зубов и ротовой полости
+								(за исключением протезирования и ортодонтических операций) в
+								границах указанной в договоре страховой суммы.
+							</li>
+							<li>
+								Через четыре месяцы после начала действия договора проводится
+								один профилактический осмотр со снятием зубного камня (при
+								необходимости)
+							</li>
+						</ul>
+
+						<a
+							href=".popup"
+							class="button service__button _blue magnific-popup"
+						>
+							<span>Заказать страховку</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="service">
+			<div class="container">
+				<div class="sectionHasSideHeading">
+					<div class="side">
+						<object
+							class="side__number"
+							data="img/headings/numbers/03.svg"
+							type="image/svg+xml"
+						></object>
+					</div>
+				</div>
+
+				<div class="service__container">
+					<h2 class="service__title">Страхование жизни сотрудников</h2>
+
+					<div class="service__wrapper">
+						<p class="service__text">
+							Премьер Гарант Профи предлагает юридическим лицам и физическим
+							лицам предпринимателям сотрудничество в сфере страхования жизни
+							сотрудников
+						</p>
+
+						<p class="service__addition">
+							Заключение договора страхования жизни и здоровья персонала -
+							обычная практика в развитых странах Европы и мира, ведь наличие
+							страховой защиты или пенсионной программы, выплаты по которым
+							осуществляются помимо гарантированных государством стандартов,
+							является существенной частью социального компенсационного пакета
+							предприятия и выгодно отличает такого работодателя среди других
+							конкурентов на рынке труда
+						</p>
+					</div>
+
+					<div class="service__wrapper">
+						<p class="service__text">
+							Корпоративное страхование жизни сотрудников даст вашей компании
+							возможности:
+						</p>
+
+						<ul class="service__list">
+							<li>Мотивировать сотрудников</li>
+							<li>Повысить лояльность сотрудников</li>
+							<li>Повысить социальную защищенность сотрудников и их близких</li>
+							<li>
+								Спланировать и минимизировать социальные риски, связанные со
+								здоровьем сотрудников
+							</li>
+							<li>Удержать ключевых сотрудников</li>
+							<li>Иметь преимущества при наборе квалифицированных кадров</li>
+							<li>Повысить имидж компании</li>
+						</ul>
+
+						<p class="service__addition _blue">
+							Премьер Гарант Профи предлагает корпоративным клиентам заключить
+							рисковые, накопительные и пенсионные программы страхования жизни
+							наемных работников, в т.ч. программы, которые являются льготными
+							по налогообложению
+						</p>
+					</div>
+
+					<div class="service__wrapper">
+						<p class="service__text">Программы:</p>
+
+						<ol class="service__numbered">
+							<li>
+								Защита сотрудников от рисков, которые могут обеспечить
+								значительные выплаты в случае смерти, инвалидности, критического
+								заболевания, травмы, госпитализации работника.
+							</li>
+							<li>
+								Социальная поддержка - финансовая защита работника, гарантирует
+								дополнительные выплаты в связи с рождением у него ребенка и
+								смертью близких родственников.
+							</li>
+							<li>
+								Накопительная система – сохранение средств для дальнейших
+								мотивационных выплат работникам при достижении пенсионного
+								возраста или дожития до определенной даты или события.
+							</li>
+						</ol>
+
+						<a
+							href=".popup"
+							class="button service__button _blue magnific-popup"
+						>
+							<span>Заказать страховку</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="service _grey">
+			<div class="container">
+				<div class="sectionHasSideHeading">
+					<div class="side">
+						<object
+							class="side__number"
+							data="img/headings/numbers/04.svg"
+							type="image/svg+xml"
+						></object>
+					</div>
+				</div>
+
+				<div class="service__container">
+					<h2 class="service__title">
+						Страхование работников от несчастных случаев
+					</h2>
+
+					<div class="service__wrapper">
+						<p class="service__text">
+							Данная страховка предусматривает финансовую защиту работников,
+							которые заняты на работе с повышенным риском для жизни и здоровья
+						</p>
+
+						<p class="service__addition">
+							Страховой пакет предусматривает полную минимизацию рисков и
+							потерь, которые может понести работодатель и сотрудники при
+							наступлении несчастного случая, который повлек за собой негативные
+							последствия для сотрудников
+						</p>
+					</div>
+
+					<div class="service__wrapper">
+						<p class="service__text">
+							Страхование работников от несчастных случаев – это отличное
+							решение для:
+						</p>
+
+						<ul class="service__list">
+							<li>Шахт, рудников, горнодобывающих комплексов</li>
+							<li>Металлургических комбинатов</li>
+							<li>Теплоэлектростанций</li>
+							<li>Машиностроительных заводов</li>
+							<li>Прочих объектов тяжелой промышленности</li>
+							<li>Авиакомпаний, транспортных компаний</li>
+						</ul>
+					</div>
+
+					<div class="service__wrapper">
+						<p class="service__text">
+							Страховые случаи, от которых вы можете обезопасить своих
+							сотрудников:
+						</p>
+
+						<ul class="service__list">
+							<li>
+								Травматические повреждения в результате несчастного случая
+							</li>
+							<li>Наступление инвалидности вследствие несчастного случая</li>
+							<li>Смерть в результате несчастного случая</li>
+						</ul>
+
+						<p class="service__addition _blue">
+							Программа страхования от несчастного случая предусматривает
+							осуществление страховой выплаты в случае травматических
+							повреждений, инвалидности, смерти, наступивших в результате
+							несчастного случая
+						</p>
+
+						<a
+							href=".popup"
+							class="button service__button _blue magnific-popup"
+						>
+							<span>Заказать страховку</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="service">
+			<div class="container">
+				<div class="sectionHasSideHeading">
+					<div class="side">
+						<object
+							class="side__number"
+							data="img/headings/numbers/05.svg"
+							type="image/svg+xml"
+						></object>
+					</div>
+				</div>
+
+				<div class="service__container">
+					<h2 class="service__title">Страхование работников в командировках</h2>
+
+					<div class="service__wrapper">
+						<p class="service__text">
+							Премьер Гарант Профи предлагает корпоративным клиентам обезопасить
+							своих сотрудников во время командировок по Украине и миру
+						</p>
+
+						<p class="service__addition">
+							Имея на руках страховой полис во время командировки, путешествия
+							или работы за рубежом, каждый застрахованный работник в любой
+							момент (24 часа в сутки) сможет получить необходимую медицинскую
+							помощь, не платя при этом за нее
+						</p>
+
+						<a
+							href=".popup"
+							class="button service__button _blue magnific-popup"
+						>
+							<span>Заказать страховку</span>
+						</a>
+					</div>
+
+					<div class="service__wrapper">
+						<p class="service__text">
+							Преимущества корпоративного медицинского страхования от Премьер
+							Гранат Профи
+						</p>
+
+						<ul class="service__list">
+							<li>
+								Страховая сумма выбирается клиентом, исходя из его потребностей
+							</li>
+							<li>Низкие страховые тарифы</li>
+							<li>
+								Минимальный перечень документов для получения страховой выплаты
+							</li>
+							<li>Возможность расширить страховое покрытие</li>
+							<li>
+								Деньги можно направить на лечение, реабилитацию или повседневные
+								потребности клиента
+							</li>
+							<li>
+								Сопровождение и поддержка медицинских партнеров Премьер Гарант
+								Профи – медицинских центров, врачей, аптек
+							</li>
+						</ul>
+
+						<a
+							href=".popup"
+							class="button service__button _blue magnific-popup"
+						>
+							<span>Заказать страховку</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container" data-aos="fade-up">
+				<div class="footer__container">
+					<div class="footer__wrapper _left">
+						<nav class="footer__menu">
+							<h3 class="footer__heading">Для юридических лиц:</h3>
+
+							<ul class="footer__list">
+								<li><a href="#">Финансовое</a></li>
+								<li><a href="#">Агробизнес</a></li>
+								<li><a href="#">Транспорт и логистика</a></li>
+								<li><a href="#">Имущество</a></li>
+								<li><a href="#">Ответственность</a></li>
+								<li><a href="#">Персонал</a></li>
+							</ul>
+						</nav>
+
+						<nav class="footer__menu">
+							<h3 class="footer__heading">Для физических лиц:</h3>
+
+							<ul class="footer__list">
+								<li><a href="#">Автосрахование</a></li>
+								<li><a href="#">Имущество</a></li>
+								<li><a href="#">Здоровье и жизнь</a></li>
+								<li><a href="#">Туристическое</a></li>
+								<li><a href="#">Другое</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="footer__wrapper _right">
+						<div class="footer__row _flex">
+							<div class="footer__tels">
+								<a href="tel:0443370160" class="footer__tel">044 337-01-60</a>
+
+								<div class="flex-box">
+									<a href="tel:0967071737" class="footer__tel _second">
+										096 707-17-37
+									</a>
+									<a href="tel:0507071737" class="footer__tel _second">
+										050 707-17-37
+									</a>
+									<a href="tel:0737071737" class="footer__tel _second">
+										073 707-17-37
+									</a>
+								</div>
+							</div>
+
+							<a href=".popup" class="footer__button button magnific-popup">
+								<svg
+									width="12"
+									height="12"
+									viewBox="0 0 12 12"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<g clip-path="url(#clip0)">
+										<path
+											d="M11.6725 8.80679L9.99788 7.13215C9.39979 6.53407 8.38305 6.77333 8.14382 7.55081C7.96439 8.08911 7.36631 8.38815 6.82803 8.26851C5.63186 7.96947 4.01703 6.41445 3.71799 5.15848C3.53857 4.62018 3.89742 4.02209 4.43569 3.84269C5.2132 3.60346 5.45244 2.58671 4.85435 1.98863L3.17972 0.313994C2.70125 -0.104665 1.98355 -0.104665 1.56489 0.313994L0.428528 1.45035C-0.707832 2.64652 0.548145 5.81637 3.35914 8.62736C6.17014 11.4384 9.33998 12.7542 10.5362 11.558L11.6725 10.4216C12.0912 9.94315 12.0912 9.22545 11.6725 8.80679Z"
+											fill="#3A6DEB"
+										/>
+									</g>
+									<defs>
+										<clipPath id="clip0">
+											<rect width="12" height="12" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+
+								<span>Заказать звонок</span>
+							</a>
+						</div>
+
+						<div class="footer__row">
+							<address class="footer__address">
+								<h4 class="footer__caption">Главный офис:</h4>
+								<p class="footer__text">
+									02090, м.Київ, Харківське шосе, будинок 19
+								</p>
+							</address>
+
+							<div class="footer__email">
+								<h4 class="footer__caption">E-mail:</h4>
+								<p class="footer__text">sk-php@ukr.net</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="footer__container _bottom">
+					<a href="index.html" class="footer__logo">
+						<img src="img/logo.svg" alt="Логотип" />
+						<span>Премьер гарант профи</span>
+					</a>
+
+					<div class="footer__social-links">
+						<a href="#">
+							<svg
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g clip-path="url(#clip0)">
+									<path
+										d="M9.20438 15.7781V8.68299H11.585L11.9421 5.91708H9.20438V4.15145C9.20438 3.35091 9.42577 2.80535 10.575 2.80535L12.0385 2.80475V0.330824C11.7854 0.297936 10.9167 0.222534 9.90556 0.222534C7.7942 0.222534 6.34873 1.51129 6.34873 3.87752V5.91708H3.96094V8.68299H6.34873V15.7781H9.20438Z"
+										fill="#3A6DEB"
+									/>
+								</g>
+								<defs>
+									<clipPath id="clip0">
+										<rect
+											width="15.5556"
+											height="15.5556"
+											fill="white"
+											transform="translate(0.222656 0.222534)"
+										/>
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+
+						<a href="#">
+							<svg
+								width="15"
+								height="16"
+								viewBox="0 0 15 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g clip-path="url(#clip0)">
+									<path
+										d="M7.80657 5.14113C6.21499 5.14113 4.92028 6.43584 4.92028 8.02742C4.92028 9.619 6.21499 10.9137 7.80657 10.9137C9.39815 10.9137 10.6929 9.619 10.6929 8.02742C10.6929 6.43584 9.39815 5.14113 7.80657 5.14113ZM7.80657 5.14113C6.21499 5.14113 4.92028 6.43584 4.92028 8.02742C4.92028 9.619 6.21499 10.9137 7.80657 10.9137C9.39815 10.9137 10.6929 9.619 10.6929 8.02742C10.6929 6.43584 9.39815 5.14113 7.80657 5.14113ZM12.782 0.962891H2.83116C1.69314 0.962891 0.769531 1.8865 0.769531 3.02452V12.9753C0.769531 14.1134 1.69314 15.037 2.83116 15.037H12.782C13.92 15.037 14.8436 14.1134 14.8436 12.9753V3.02452C14.8436 1.8865 13.92 0.962891 12.782 0.962891ZM7.80657 11.7384C5.76146 11.7384 4.09563 10.0725 4.09563 8.02742C4.09563 5.98225 5.76146 4.31648 7.80657 4.31648C9.85168 4.31648 11.5175 5.98225 11.5175 8.02742C11.5175 10.0725 9.85168 11.7384 7.80657 11.7384ZM12.3422 4.31648C11.8886 4.31648 11.5175 3.94538 11.5175 3.49183C11.5175 3.03827 11.8886 2.66717 12.3422 2.66717C12.7957 2.66717 13.1668 3.03827 13.1668 3.49183C13.1668 3.94538 12.7957 4.31648 12.3422 4.31648ZM7.80657 5.14113C6.21499 5.14113 4.92028 6.43584 4.92028 8.02742C4.92028 9.619 6.21499 10.9137 7.80657 10.9137C9.39815 10.9137 10.6929 9.619 10.6929 8.02742C10.6929 6.43584 9.39815 5.14113 7.80657 5.14113ZM7.80657 5.14113C6.21499 5.14113 4.92028 6.43584 4.92028 8.02742C4.92028 9.619 6.21499 10.9137 7.80657 10.9137C9.39815 10.9137 10.6929 9.619 10.6929 8.02742C10.6929 6.43584 9.39815 5.14113 7.80657 5.14113ZM7.80657 5.14113C6.21499 5.14113 4.92028 6.43584 4.92028 8.02742C4.92028 9.619 6.21499 10.9137 7.80657 10.9137C9.39815 10.9137 10.6929 9.619 10.6929 8.02742C10.6929 6.43584 9.39815 5.14113 7.80657 5.14113Z"
+										fill="#3A6DEB"
+									/>
+								</g>
+								<defs>
+									<clipPath id="clip0">
+										<rect
+											width="14.0741"
+											height="14.0741"
+											fill="white"
+											transform="translate(0.769531 0.962891)"
+										/>
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</div>
+
+					<p class="footer__code">
+						<span>код ЄДРПОУ:</span>
+						37689635
+					</p>
+
+					<p class="footer__studio">
+						<span>Разработка сайта:</span>
+						<a href="#">Lubimov.studio</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
