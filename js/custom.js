@@ -21,3 +21,11 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
 		.delay(300)
 		.fadeIn(300)
 })
+
+$('.sidebar__about-heading').on('click', function () {
+	$('.sidebar__about-content, .sidebar__services-content').toggleClass('active')
+})
+
+$('.sidebar__services-heading').on('click', function () {
+	$('.sidebar__services-content, .sidebar__about-content').toggleClass('active')
+})
