@@ -23,7 +23,7 @@
 		></script>
 
 		<link rel="stylesheet" href="libs/aos/aos.css" />
-		<link rel="stylesheet" href="libs/magnific-Popup/magnific-popup.css" />
+		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="css/main.css" />
 
 		<script defer src="libs/aos/aos.js"></script>
@@ -33,13 +33,16 @@
 		<script defer src="libs/multi-animated-counter.js"></script>
 		<script
 			defer
-			src="libs/magnific-Popup/jquery.magnific-popup.min.js"
+			src="libs/magnific-popup/jquery.magnific-popup.min.js"
 		></script>
+		<script defer src="libs/jquery.inputmask.min.js"></script>
 		<script defer src="js/custom.js"></script>
 	</head>
 
 	<body class="ishome">
 		<form class="popup mfp-hide">
+			<div class="popup__close" onClick="closePopup();"></div>
+
 			<h3 class="popup__heading">Заказать звонок</h3>
 
 			<div class="form__wrapper">
@@ -73,17 +76,17 @@
 			<button type="submit" class="form__button button _blue">
 				<span>Отправить</span>
 			</button>
+
+			<div class="success-form">
+				<img src="img/icons/success-form.svg" alt="Done" />
+
+				<h3 class="success-form__title">Спасибо, ваши данные отправлены!</h3>
+
+				<h4 class="success-form__subtitle">
+					С вами свяжутся в ближайшее время наши консультанты
+				</h4>
+			</div>
 		</form>
-
-		<div class="success-form mfp-hide" id="success-form">
-			<img src="img/icons/success-form.svg" alt="Done" />
-
-			<h3 class="success-form__title">Спасибо, ваши данные отправлены!</h3>
-
-			<h4 class="success-form__subtitle">
-				С вами свяжутся в ближайшее время наши консультанты
-			</h4>
-		</div>
 
 		<header class="header" data-aos="fade-down">
 			<div class="header__container container _full">
@@ -295,7 +298,9 @@
 			<div class="main__container">
 				<div class="main__wrapper _left">
 					<h1 data-aos="fade-right" class="main__title">
-						Страхование финансовых рисков
+						Страхование
+						<br />
+						финансовых рисков
 					</h1>
 
 					<div class="main__inner" data-aos="fade-right" data-aos-delay="300">
@@ -350,13 +355,13 @@
 
 						<ul class="main__list">
 							<li data-aos="fade-down" data-aos-delay="300">
-								<span>Страхование от несчастных случаев</span>
+								<a href="voluntary.html">Добровольное страхование</a>
 							</li>
 							<li data-aos="fade-down" data-aos-delay="600">
-								<span>Туристическое страхование</span>
+								<a href="legal_property.html">Страхование имущества</a>
 							</li>
 							<li data-aos="fade-down" data-aos-delay="800">
-								<span>Медицинское страхование</span>
+								<a href="staff.html">Страхование персонала</a>
 							</li>
 						</ul>
 					</div>
@@ -878,7 +883,7 @@
 				<div class="blog__container">
 					<div class="blog__wrapper _left" data-aos="fade-right">
 						<div class="blog__box">
-							<h2 data-aos="fade-right" class="blog__title">Блог</h2>
+							<h2 class="blog__title">Блог</h2>
 
 							<h3 class="blog__heading">Последние события</h3>
 
@@ -906,7 +911,7 @@
 								<div class="article__wrapper">
 									<p class="article__date">15.06.2021</p>
 
-									<h1 data-aos="fade-right" class="article__title">
+									<h1 class="article__title">
 										Документи в Нацкомфінпослуг на отримання ліцензій
 									</h1>
 
@@ -930,7 +935,7 @@
 								<div class="article__wrapper">
 									<p class="article__date">22.06.2021</p>
 
-									<h1 data-aos="fade-right" class="article__title">
+									<h1 class="article__title">
 										Документи в Нацкомфінпослуг на отримання ліцензій
 									</h1>
 

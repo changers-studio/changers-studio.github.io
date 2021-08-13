@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Премьер гарант профи | Стратегия развития</title>
+		<title>Прем'єр Гарант Профі | Стратегія развитку</title>
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="format-detection" content="telephone=no" />
@@ -23,22 +23,26 @@
 		></script>
 
 		<link rel="stylesheet" href="../libs/aos/aos.css" />
-		<link rel="stylesheet" href="../libs/magnific-Popup/magnific-popup.css" />
+		<link rel="stylesheet" href="../libs/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="../css/main.css" />
 
+		<script defer src="../js/location.js"></script>
 		<script defer src="../libs/aos/aos.js"></script>
 
 		<script defer src="../libs/jquery.min.js"></script>
 
 		<script
 			defer
-			src="../libs/magnific-Popup/jquery.magnific-popup.min.js"
+			src="../libs/magnific-popup/jquery.magnific-popup.min.js"
 		></script>
+		<script defer src="../libs/jquery.inputmask.min.js"></script>
 		<script defer src="../js/custom.js"></script>
 	</head>
 
 	<body class="isnohome p-strategy">
 		<form class="popup mfp-hide">
+			<div class="popup__close" onClick="closePopup();"></div>
+
 			<h3 class="popup__heading">Замовити дзвінок</h3>
 
 			<div class="form__wrapper">
@@ -72,6 +76,16 @@
 			<button type="submit" class="form__button button _blue">
 				<span>Відправити</span>
 			</button>
+
+			<div class="success-form">
+				<img src="../img/icons/success-form.svg" alt="Done" />
+
+				<h3 class="success-form__title">Спасибі, ваші дані відправлені!</h3>
+
+				<h4 class="success-form__subtitle">
+					З вами зв'яжуться найближчим часом наші консультанти
+				</h4>
+			</div>
 		</form>
 
 		<div class="sidebar">
@@ -288,15 +302,15 @@
 			<section class="main">
 				<div class="container">
 					<nav class="breadcrumbs" data-aos="fade-right">
-						<a class="breadcrumbs__link" href="index.html">Главная</a>
-						<span class="breadcrumbs__current">Стратегия развития</span>
+						<a class="breadcrumbs__link" href="index.html">Головна</a>
+						<span class="breadcrumbs__current">Стратегія развитку</span>
 					</nav>
 				</div>
 
 				<div class="container">
 					<div class="main__container">
 						<h1 data-aos="fade-right" class="main__title">
-							Стратегия развития
+							Стратегія развитку
 						</h1>
 					</div>
 				</div>
@@ -323,7 +337,7 @@
 
 				<div class="plan__container">
 					<div class="plan__wrapper _left" data-aos="fade-right">
-						<h2 class="plan__title">Бизнес-планирование</h2>
+						<h2 class="plan__title">Бізнес-планування</h2>
 
 						<ul class="plan__list">
 							<li>
@@ -354,16 +368,16 @@
 						data-aos-delay="200"
 					>
 						<p class="plan__text">
-							Страховая компания «Премьер Гарант Профи» всегда
-							<span>целеустремленно и уверенно смотрит в будущее.</span>
-							Для успешного достижения своих целей мы занимаемся
-							бизнес-планированием своей деятельности
+							Страхова компанія «Прем'єр Гарант Профі» завжди
+							<span>цілеспрямовано і впевнено дивиться в майбутнє.</span>
+							Для успішного досягнення своїх цілей ми займаємося
+							бізнес-плануванням своєї діяльності
 						</p>
 
 						<p class="plan__addition">
-							Бизнес-план составлен специалистами по структуре и требованиям
+							Бізнес-план складений фахівцями за структурою і вимогам
 							<br />
-							Европейского Банка Реконструкции и Развития.
+							Європейського Банку Реконструкції та Розвитку.
 						</p>
 					</div>
 				</div>
@@ -390,7 +404,7 @@
 
 				<div class="indicators__container">
 					<h2 data-aos="fade-right" class="indicators__title">
-						показатели, к которым мы стремимся
+						Прагнемо розвивати наші сильні сторони
 					</h2>
 
 					<h3
@@ -398,9 +412,9 @@
 						data-aos="fade-right"
 						data-aos-delay="100"
 					>
-						Компания ведет
-						<span>свою хозяйственную деятельность</span>
-						согласно имеющихся лицензий
+						КОМПАНІЯ ВЕДЕ
+						<span>СВОЮ ГОСПОДАРСЬКІЙ ДІЯЛЬНОСТІ</span>
+						ВІДПОВІДНО ДО НАЯВНИХ ліцензій
 					</h3>
 
 					<p
@@ -408,7 +422,7 @@
 						data-aos="fade-right"
 						data-aos-delay="200"
 					>
-						И имеет специализацию на внедрении следующих услуг:
+						І має спеціалізацію на впровадженні наступних послуг:
 					</p>
 
 					<div class="indicators__boxs">
@@ -419,7 +433,7 @@
 						>
 							<span class="indicators__number">01</span>
 							<h4 class="indicators__text">
-								Страхование имущества от огневых рисков и стихийных явлений
+								Страхування від вогневих ризиків та ризиків нещасних випадків
 							</h4>
 
 							<div class="indicators__plus"></div>
@@ -432,7 +446,9 @@
 						>
 							<span class="indicators__number">02</span>
 							<h4 class="indicators__text">
-								Личное и корпоративное медицинское страхование
+								Страхування майна
+								<br />
+								підприємств
 							</h4>
 
 							<div class="indicators__plus"></div>
@@ -445,9 +461,7 @@
 						>
 							<span class="indicators__number">03</span>
 							<h4 class="indicators__text">
-								Страхование
-								<br />
-								финансовых рисков
+								Корпоративне страхування персоналу
 							</h4>
 
 							<div class="indicators__plus"></div>
@@ -476,22 +490,22 @@
 				</div>
 
 				<div class="strategy__container">
-					<h2 data-aos="fade-right" class="strategy__title">Стратегия</h2>
+					<h2 data-aos="fade-right" class="strategy__title">Стратегія</h2>
 
 					<h3 class="strategy__heading" data-aos="fade-right">
-						<span>Главный вектор</span>
-						стратегии
+						<span>Головний вектор</span>
+						стратегії
 						<br />
-						развития компании
+						развитку компанії
 					</h3>
 
 					<div class="strategy__flex-box">
 						<p class="strategy__text _left" data-aos="fade-right">
-							Предусматривает проектное развитие этих направлений деятельности и
-							достижения
-							<span>лидирующих позиций на рынке Украины</span>
-							по количеству страховых премий и заключенных договоров с этими
-							страховыми продуктами
+							Передбачає проектний розвиток цих напрямків діяльності та
+							досягнення
+							<span>лідируючих позицій на ринку України</span>
+							за кількістю страхових премій і укладених договорів з цими
+							страховими продуктами
 						</p>
 
 						<p
@@ -499,9 +513,11 @@
 							data-aos="fade-right"
 							data-aos-delay="200"
 						>
-							В рамках этих страховых продуктов планируется реализация проекта,
-							с бизнес-планом которого вы можете ознакомиться,
-							<a href="../img/inner_pages/doc-3.jpg" download>скачав файл</a>
+							В рамках цих страхових продуктів планується реалізація проекту, з
+							бізнес-планом якого ви можете ознайомитися,
+							<a href="../img/inner_pages/doc-3.jpg" download>
+								завантаживши файл
+							</a>
 						</p>
 					</div>
 				</div>
@@ -528,7 +544,7 @@
 
 				<div class="pursuit__container">
 					<h2 data-aos="fade-right" class="pursuit__title">
-						Показатели, к которым мы стремимся
+						Показники, які ми прагнемо досягти
 					</h2>
 
 					<div class="pursuit__flex-box">
@@ -540,7 +556,7 @@
 							<div class="pursuit__box">
 								<h4 class="pursuit__caption">NPV</h4>
 								<p class="pursuit__number">233 491</p>
-								<p class="pursuit__text _text-right">тыс. грн</p>
+								<p class="pursuit__text _text-right">тис. грн</p>
 							</div>
 						</div>
 
@@ -552,7 +568,7 @@
 							<div class="pursuit__box">
 								<h4 class="pursuit__caption">pp</h4>
 								<p class="pursuit__number">10-12</p>
-								<p class="pursuit__text">периодов</p>
+								<p class="pursuit__text">періодів</p>
 							</div>
 						</div>
 
@@ -564,7 +580,7 @@
 							<div class="pursuit__box">
 								<h4 class="pursuit__caption">CAPEX</h4>
 								<p class="pursuit__number">100 000</p>
-								<p class="pursuit__text _text-right">тыс. грн</p>
+								<p class="pursuit__text _text-right">тис. грн</p>
 							</div>
 						</div>
 

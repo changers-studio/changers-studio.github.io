@@ -1,8 +1,15 @@
 jQuery(function () {
-	$('.magnific-popup').magnificPopup({
+	$('.magnific-popup, .success-form__button').magnificPopup({
 		removalDelay: 350,
 		mainClass: 'mfp-fade',
 	})
+
+	if ($('*').is('input[type="tel"]')) {
+		$('input[type=tel]').inputmask({
+			mask: '+38 (099) 999 99 99',
+			placeholder: '+38 (0__) ___-__-__',
+		})
+	}
 })
 
 $('.sidebarActivator').on('click', function () {
@@ -37,14 +44,40 @@ $('.lang__heading').on('click', function () {
 	$(this).toggleClass('_active').next().slideToggle()
 })
 
-$('form').on('submit', function () {
+$('.popup form').on('submit', function () {
 	var th = $(this)
 	$.ajax({
 		type: 'POST',
 		url: 'mail.php',
 		data: th.serialize(),
 	}).done(function () {
-		th.trigger('reset')
+		$(th).find('.success-form').css('display', 'flex').hide().fadeIn()
+
+		setTimeout(function () {
+			th.trigger('reset')
+		}, 500)
+	})
+	return false
+})
+
+function closePopup() {
+	$.magnificPopup.close()
+	$('.popup .success-form').fadeOut()
+}
+
+$('.form form').on('submit', function () {
+	var th = $(this)
+	$.ajax({
+		type: 'POST',
+		url: 'mail.php',
+		data: th.serialize(),
+	}).done(function () {
+		$(th).find('.success-form').css('display', 'flex').hide().fadeIn()
+
+		setTimeout(function () {
+			$(th).find('.success-form').fadeOut()
+			th.trigger('reset')
+		}, 3000)
 	})
 	return false
 })

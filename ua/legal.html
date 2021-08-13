@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Премьер гарант профи | Юр. лицам</title>
+		<title>Прем'єр Гарант Профі | Юр. особам</title>
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="format-detection" content="telephone=no" />
@@ -23,22 +23,26 @@
 		></script>
 
 		<link rel="stylesheet" href="../libs/aos/aos.css" />
-		<link rel="stylesheet" href="../libs/magnific-Popup/magnific-popup.css" />
+		<link rel="stylesheet" href="../libs/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="../css/main.css" />
 
+		<script defer src="../js/location.js"></script>
 		<script defer src="../libs/aos/aos.js"></script>
 
 		<script defer src="../libs/jquery.min.js"></script>
 
 		<script
 			defer
-			src="../libs/magnific-Popup/jquery.magnific-popup.min.js"
+			src="../libs/magnific-popup/jquery.magnific-popup.min.js"
 		></script>
+		<script defer src="../libs/jquery.inputmask.min.js"></script>
 		<script defer src="../js/custom.js"></script>
 	</head>
 
 	<body class="isnohome p-services">
 		<form class="popup mfp-hide">
+			<div class="popup__close" onClick="closePopup();"></div>
+
 			<h3 class="popup__heading">Замовити дзвінок</h3>
 
 			<div class="form__wrapper">
@@ -72,6 +76,16 @@
 			<button type="submit" class="form__button button _blue">
 				<span>Відправити</span>
 			</button>
+
+			<div class="success-form">
+				<img src="../img/icons/success-form.svg" alt="Done" />
+
+				<h3 class="success-form__title">Спасибі, ваші дані відправлені!</h3>
+
+				<h4 class="success-form__subtitle">
+					З вами зв'яжуться найближчим часом наші консультанти
+				</h4>
+			</div>
 		</form>
 
 		<div class="sidebar">
@@ -288,14 +302,14 @@
 			<section class="main">
 				<div class="container">
 					<nav class="breadcrumbs" data-aos="fade-right">
-						<a class="breadcrumbs__link" href="index.html">Главная</a>
-						<span class="breadcrumbs__current">Юр.лицам</span>
+						<a class="breadcrumbs__link" href="index.html">Головна</a>
+						<span class="breadcrumbs__current">Юр.особам</span>
 					</nav>
 				</div>
 
 				<div class="container">
 					<div class="main__container">
-						<h1 data-aos="fade-right" class="main__title">Юридическим лицам</h1>
+						<h1 data-aos="fade-right" class="main__title">Юридичним особам</h1>
 					</div>
 				</div>
 			</section>
@@ -318,7 +332,8 @@
 						<span class="services__number" data-aos="zoom-in-right">01</span>
 
 						<h3 class="services__heading" data-aos="zoom-in-right">
-							Добровольное страхование от огневых рисков
+							Добровільне страхування від вогневих ризиків та ризіків стихійних
+							явищ
 						</h3>
 
 						<a
@@ -326,7 +341,7 @@
 							class="services__more"
 							data-aos="zoom-in-right"
 						>
-							Подробнее
+							Детальніше
 						</a>
 					</div>
 
@@ -334,7 +349,7 @@
 						<span class="services__number" data-aos="zoom-in-right">02</span>
 
 						<h3 class="services__heading" data-aos="zoom-in-right">
-							Страхование имущества
+							Страхування майна
 						</h3>
 
 						<a
@@ -342,7 +357,7 @@
 							class="services__more"
 							data-aos="zoom-in-right"
 						>
-							Подробнее
+							Детальніше
 						</a>
 					</div>
 
@@ -350,7 +365,7 @@
 						<span class="services__number" data-aos="zoom-in-right">03</span>
 
 						<h3 class="services__heading" data-aos="zoom-in-right">
-							Страхования персонала
+							Страхування персоналу
 						</h3>
 
 						<a
@@ -358,7 +373,7 @@
 							class="services__more"
 							data-aos="zoom-in-right"
 						>
-							Подробнее
+							Детальніше
 						</a>
 					</div>
 
@@ -366,11 +381,11 @@
 						<span class="services__number" data-aos="zoom-in-right">04</span>
 
 						<h3 class="services__heading" data-aos="zoom-in-right">
-							Агрострахование
+							Агрострахування
 						</h3>
 
 						<a href="agro.html" class="services__more" data-aos="zoom-in-right">
-							Подробнее
+							Детальніше
 						</a>
 					</div>
 
@@ -378,7 +393,7 @@
 						<span class="services__number" data-aos="zoom-in-right">05</span>
 
 						<h3 class="services__heading" data-aos="zoom-in-right">
-							Логистическое страхование
+							Логістичне страхування
 						</h3>
 
 						<a
@@ -386,7 +401,7 @@
 							class="services__more"
 							data-aos="zoom-in-right"
 						>
-							Подробнее
+							Детальніше
 						</a>
 					</div>
 
@@ -394,7 +409,7 @@
 						<span class="services__number" data-aos="zoom-in-right">06</span>
 
 						<h3 class="services__heading" data-aos="zoom-in-right">
-							Финансовое страхование
+							Фінансове страхування
 						</h3>
 
 						<a
@@ -402,7 +417,7 @@
 							class="services__more"
 							data-aos="zoom-in-right"
 						>
-							Подробнее
+							Детальніше
 						</a>
 					</div>
 
@@ -410,7 +425,7 @@
 						<span class="services__number" data-aos="zoom-in-right">07</span>
 
 						<h3 class="services__heading" data-aos="zoom-in-right">
-							Страхование ответсвенности
+							Страхування відповідальності
 						</h3>
 
 						<a
@@ -418,7 +433,7 @@
 							class="services__more"
 							data-aos="zoom-in-right"
 						>
-							Подробнее
+							Детальніше
 						</a>
 					</div>
 				</div>

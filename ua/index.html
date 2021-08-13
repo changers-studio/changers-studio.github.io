@@ -23,9 +23,10 @@
 		></script>
 
 		<link rel="stylesheet" href="../libs/aos/aos.css" />
-		<link rel="stylesheet" href="../libs/magnific-Popup/magnific-popup.css" />
+		<link rel="stylesheet" href="../libs/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="../css/main.css" />
 
+		<script defer src="../js/location.js"></script>
 		<script defer src="../libs/aos/aos.js"></script>
 
 		<script defer src="../libs/jquery.min.js"></script>
@@ -35,11 +36,14 @@
 			defer
 			src="../libs/magnific-Popup/jquery.magnific-popup.min.js"
 		></script>
+		<script defer src="../libs/jquery.inputmask.min.js"></script>
 		<script defer src="../js/custom.js"></script>
 	</head>
 
 	<body class="ishome">
 		<form class="popup mfp-hide">
+			<div class="popup__close" onClick="closePopup();"></div>
+
 			<h3 class="popup__heading">Замовити дзвінок</h3>
 
 			<div class="form__wrapper">
@@ -73,6 +77,16 @@
 			<button type="submit" class="form__button button _blue">
 				<span>Відправити</span>
 			</button>
+
+			<div class="success-form">
+				<img src="../img/icons/success-form.svg" alt="Done" />
+
+				<h3 class="success-form__title">Спасибі, ваші дані відправлені!</h3>
+
+				<h4 class="success-form__subtitle">
+					З вами зв'яжуться найближчим часом наші консультанти
+				</h4>
+			</div>
 		</form>
 
 		<header class="header" data-aos="fade-down">
@@ -341,15 +355,13 @@
 
 						<ul class="main__list">
 							<li data-aos="fade-down" data-aos-delay="300">
-								<span>
-									Страхування від вогневих ризиків та ризиків нещасних випадків
-								</span>
+								<a href="voluntary.html">Добровільне страхування</a>
 							</li>
 							<li data-aos="fade-down" data-aos-delay="600">
-								<span>Страхування майна підприємств</span>
+								<a href="legal_property.html">Страхування майна</a>
 							</li>
 							<li data-aos="fade-down" data-aos-delay="800">
-								<span>Корпоративне страхування персоналу</span>
+								<a href="staff.html">Страхування персоналу</a>
 							</li>
 						</ul>
 					</div>
@@ -404,7 +416,7 @@
 						data-aos-delay="200"
 					>
 						<div class="tabs__content active">
-							<h2 class="categories__title _blue">Від вогневих ризиків</h2>
+							<h2 class="categories__title _blue">Для юридичних осіб</h2>
 
 							<ul class="categories__list">
 								<li><a href="auto_insurance.html">Автосрахування</a></li>
@@ -422,7 +434,7 @@
 
 							<ul class="categories__list">
 								<li>
-									<a href="voluntary.html">Для юридичних осіб</a>
+									<a href="voluntary.html">Від вогневих ризиків</a>
 								</li>
 								<li><a href="legal_property.html">Корпоративного майна</a></li>
 								<li><a href="staff.html">Персоналу</a></li>

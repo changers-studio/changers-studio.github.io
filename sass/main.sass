@@ -677,7 +677,8 @@ body
 				align-items: center
 		&__title
 			margin-bottom: 65px
-			max-width: 830px
+			max-width: 920px
+			padding-right: 20px
 		&__inner
 			padding-left: 220px
 			position: relative
@@ -704,12 +705,12 @@ body
 				padding: 50px 0 
 				border-bottom: 1px solid #9CADC1
 				font-weight: 700
-				font-size: 32px
+				font-size: 33px
 				display: flex
 				align-items: flex-start
 				justify-content: space-between
 				cursor: default
-				span
+				a
 					display: block
 					max-width: calc(100% - 40px)
 				&::after
@@ -1187,6 +1188,7 @@ body
 			display: flex
 			justify-content: space-between
 			border-right: 1px solid $grey
+			width: 745px
 		&._right
 			width: calc(100% - 835px)
 	&__menu
@@ -1271,7 +1273,7 @@ body
 			width: 60px
 			height: 60px
 			border-radius: 100%
-			background-color: #F0F4F9
+			background-color: #fff
 			margin-right: 15px
 			border: 2px solid transparent
 			transition: .2s ease
@@ -1327,10 +1329,17 @@ body
 		&__menu
 			color: $black
 			background-color: #fff
+			transition: .2.5s ease
 			&::before
 				display: none
 			.hamburger__line
 				background-color: $black
+				transition: .2.5s ease
+			&:hover
+				color: #fff
+				background-color: transparent
+				.hamburger__line
+					background-color: #fff
 		&__lang
 			.lang__heading
 				color: #fff
@@ -2660,6 +2669,7 @@ body
 .form
 	&__container
 		width: 100%
+		position: static!important
 	&__heading
 		font-size: 70px
 		letter-spacing: 0.033em
@@ -2716,6 +2726,9 @@ body
 		width: 100%
 		height: 95px
 		padding: 0
+	.success-form
+		position: fixed
+
 // END
 
 
@@ -2985,13 +2998,16 @@ body
 		&__wrapper
 			margin-bottom: 40px
 	.mfp-close
-		font-size: 0
+		display: none
+	&__close
 		display: flex
 		align-items: center
 		justify-content: center
+		position: absolute
 		right: 20px
 		top: 20px
-		transition: .2s ease
+		z-index: 10
+		cursor: pointer
 		&::before
 			content: ''
 			width: 20px
@@ -3000,17 +3016,39 @@ body
 			background-size: contain
 			background-repeat: no-repeat
 			background-position: center
+			opacity: 0.7
+			transition: .2s ease
+		&:hover::before
+			opacity: 1
 // END
 
 // Success form submit
 .success-form
-	&__button
-		position: absolute
-		left: 0
-		top: 0
-		width: 0
-		height: 0
-		z-index: 10
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: #fff
+	display: none
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	text-align: center
+	z-index: 5
+	&__title
+		color: $blue
+		font-size: 30px
+		text-transform: uppercase
+		font-weight: 500
+		padding: 0 20px
+		margin:
+			top: 50px
+			bottom: 25px
+	&__subtitle
+		font-size: 18px
+		font-weight: 500
+		padding: 0 20px
 // END
 
 
@@ -3696,6 +3734,7 @@ body
 			font-weight: 400
 			span
 				color: $blue
+
 // END
 
 

@@ -93,6 +93,8 @@
 	.footer
 		&__wrapper
 			padding: 60px 0
+			&._left
+				width: 503px
 			&._right
 				width: calc(100% - 545px)
 				padding-left: 40px
@@ -629,7 +631,7 @@
 			&__heading
 				font-size: 40px
 			&__text
-				font-size: 18px	
+				font-size: 24px	
 		.advantages
 			&__wrapper
 				&._right
@@ -1215,6 +1217,16 @@
 
 @media only screen and (max-width : 1300px)
 
+
+	// Main
+	.ishome
+		.main__title
+			font-size: 55px
+			br
+				display: none
+	// END
+
+
 	// Page about
 	.p-about
 		.main
@@ -1414,6 +1426,7 @@
 			&__title
 				max-width: 600px
 				margin-bottom: 40px
+				font-size: 45px
 			&__inner
 				padding-left: 180px
 				&::before
@@ -1624,8 +1637,6 @@
 		.strong
 			&__heading
 				font-size: 34px
-			&__text
-				font-size: 16px	
 		.company
 			&__heading
 				font-size: 60px
@@ -2296,6 +2307,8 @@
 		padding-top: 100px
 		&__wrapper
 			flex-direction: column
+			&._left
+				width: auto
 		&__container
 			flex-direction: column
 			border: none
@@ -3071,7 +3084,7 @@
 	.popup
 		max-width: calc(100% - 80px)
 		padding: 30px 20px
-		.mfp-close
+		&__close
 			right: 10px
 			top: 10px
 			&::before
@@ -3079,6 +3092,18 @@
 				height: 16px
 		&__heading
 			font-size: 2px
+	// END
+
+
+	// Success form submit
+	.success-form
+		&__title
+			font-size: 20px
+			margin:
+				top: 20px
+				bottom: 10px
+		&__subtitle
+			font-size: 14px
 	// END
 
 
@@ -3416,6 +3441,7 @@
 			&__title
 				margin-bottom: 20px
 				max-width: 500px
+				font-size: 40px
 			&__text
 				margin-bottom: 40px
 			&__advantages

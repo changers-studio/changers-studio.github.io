@@ -23,7 +23,7 @@
 		></script>
 
 		<link rel="stylesheet" href="libs/aos/aos.css" />
-		<link rel="stylesheet" href="libs/magnific-Popup/magnific-popup.css" />
+		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="css/main.css" />
 
 		<script defer src="libs/aos/aos.js"></script>
@@ -32,13 +32,16 @@
 
 		<script
 			defer
-			src="libs/magnific-Popup/jquery.magnific-popup.min.js"
+			src="libs/magnific-popup/jquery.magnific-popup.min.js"
 		></script>
+		<script defer src="libs/jquery.inputmask.min.js"></script>
 		<script defer src="js/custom.js"></script>
 	</head>
 
 	<body class="isnohome p-services">
 		<form class="popup mfp-hide">
+			<div class="popup__close" onClick="closePopup();"></div>
+
 			<h3 class="popup__heading">Заказать звонок</h3>
 
 			<div class="form__wrapper">
@@ -72,6 +75,16 @@
 			<button type="submit" class="form__button button _blue">
 				<span>Отправить</span>
 			</button>
+
+			<div class="success-form">
+				<img src="img/icons/success-form.svg" alt="Done" />
+
+				<h3 class="success-form__title">Спасибо, ваши данные отправлены!</h3>
+
+				<h4 class="success-form__subtitle">
+					С вами свяжутся в ближайшее время наши консультанты
+				</h4>
+			</div>
 		</form>
 
 		<div class="sidebar">

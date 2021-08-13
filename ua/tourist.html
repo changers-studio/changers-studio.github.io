@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Премьер гарант профи | Туристическое страхование</title>
+		<title>Прем'єр Гарант Профі | Туристичне страхування</title>
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="format-detection" content="telephone=no" />
@@ -23,22 +23,26 @@
 		></script>
 
 		<link rel="stylesheet" href="../libs/aos/aos.css" />
-		<link rel="stylesheet" href="../libs/magnific-Popup/magnific-popup.css" />
+		<link rel="stylesheet" href="../libs/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="../css/main.css" />
 
+		<script defer src="../js/location.js"></script>
 		<script defer src="../libs/aos/aos.js"></script>
 
 		<script defer src="../libs/jquery.min.js"></script>
 
 		<script
 			defer
-			src="../libs/magnific-Popup/jquery.magnific-popup.min.js"
+			src="../libs/magnific-popup/jquery.magnific-popup.min.js"
 		></script>
+		<script defer src="../libs/jquery.inputmask.min.js"></script>
 		<script defer src="../js/custom.js"></script>
 	</head>
 
 	<body class="isnohome p-service">
 		<form class="popup mfp-hide">
+			<div class="popup__close" onClick="closePopup();"></div>
+
 			<h3 class="popup__heading">Замовити дзвінок</h3>
 
 			<div class="form__wrapper">
@@ -72,6 +76,16 @@
 			<button type="submit" class="form__button button _blue">
 				<span>Відправити</span>
 			</button>
+
+			<div class="success-form">
+				<img src="../img/icons/success-form.svg" alt="Done" />
+
+				<h3 class="success-form__title">Спасибі, ваші дані відправлені!</h3>
+
+				<h4 class="success-form__subtitle">
+					З вами зв'яжуться найближчим часом наші консультанти
+				</h4>
+			</div>
 		</form>
 
 		<div class="sidebar">
@@ -288,16 +302,16 @@
 			<section class="main">
 				<div class="container">
 					<nav class="breadcrumbs" data-aos="fade-right">
-						<a class="breadcrumbs__link" href="index.html">Главная</a>
-						<a class="breadcrumbs__link" href="individuals.html">Физ.лицам</a>
-						<span class="breadcrumbs__current">Туристическое страхование</span>
+						<a class="breadcrumbs__link" href="index.html">Головна</a>
+						<a class="breadcrumbs__link" href="individuals.html">Фіз.особам</a>
+						<span class="breadcrumbs__current">Туристичне страхування</span>
 					</nav>
 				</div>
 
 				<div class="container">
 					<div class="main__container">
 						<h1 data-aos="fade-right" class="main__title">
-							Туристическое страхование
+							Туристичне страхування
 						</h1>
 
 						<a
@@ -306,7 +320,7 @@
 							data-aos="fade-right"
 							data-aos-delay="200"
 						>
-							<span>Заказать страховку</span>
+							<span>Замовити страхування</span>
 						</a>
 					</div>
 				</div>
@@ -328,78 +342,75 @@
 				<div class="service__container">
 					<div class="service__wrapper _paddingTop-none">
 						<p class="service__text">
-							Туристическое страхование – это ваша надежная защита от
-							непредвиденных ситуаций во время путешествия за границей
+							Туристичне страхування - це ваша надійний захист від
+							непередбачених ситуацій під час подорожі за кордоном
 						</p>
 					</div>
 
 					<div class="service__wrapper">
 						<p class="service__text">
-							Вместе с туристической страховкой от Премьер Гарант Профи,
-							<span>вы можете рассчитывать на:</span>
+							Разом з туристичною страховкою від Прем'єр Гарант Профі,
+							<span>ви можете розраховувати на:</span>
 						</p>
 
 						<ul class="service__list">
-							<li>Медицинскую помощь за границей</li>
-							<li>Возмещение стоимости лекарств и лечения</li>
-							<li>Медицинскую эвакуацию и госпитализацию</li>
-							<li>Возмещение расходов на медицинские услуги</li>
-							<li>Неотложную стоматологическую помощь</li>
-							<li>Компенсацию в случае задержки рейса</li>
-							<li>Компенсацию потери багажа</li>
-							<li>Лечение COVID-19</li>
-							<li>Компенсацию при отмене тура</li>
+							<li>Медичну допомогу за кордоном</li>
+							<li>Відшкодування вартості ліків і лікування</li>
+							<li>Медичну евакуацію і госпіталізацію</li>
+							<li>Відшкодування витрат на медичні послуги</li>
+							<li>Невідкладну стоматологічну допомогу</li>
+							<li>Компенсацію в разі затримки рейсу</li>
+							<li>Компенсацію втрати багажу</li>
+							<li>Лікування COVID-19</li>
+							<li>Компенсацію за скасування туру</li>
 						</ul>
 					</div>
 
 					<div class="service__wrapper">
 						<p class="service__text">
 							<span>
-								Туристическая страховка от Премьер Гарант Профи позволит
-								максимально защитить себя и свою семью в путешествиях за
-								границей.
+								Туристична страховка від Прем'єр Гарант Профі дозволить
+								максимально захистити себе і свою сім'ю в подорожах за кордоном.
 							</span>
-							Круглосуточная поддержка в любой стране мира сделает страхование
-							туристов, выезжающих за границу надежным и выгодным
+							Цілодобова підтримка в будь-якій країні світу зробить страхування
+							туристів, що виїжджають за кордон надійним і вигідним.
 						</p>
 
 						<p class="service__addition">
-							Объект страхования – возможные потери при получении медицинской
-							помощи застрахованным лицом во время пребывания за границей, а
-							также возможные имущественные потери
+							Об'єкт страхування - можливі втрати при отриманні медичної
+							допомоги застрахованою особою під час перебування за кордоном, а
+							також можливі майнові втрати.
 						</p>
 					</div>
 
 					<div class="service__wrapper">
 						<p class="service__text">
-							Имея туристический полис, вы можете обратиться к нашим ассистентам
-							и получить необходимую помощь или компенсировать собственные
-							расходы по следующим страховым случаям:
+							Маючи туристичний поліс, ви можете звернутися до наших асистентам
+							і отримати необхідну допомогу або компенсувати власні витрати за
+							такими з трахови м випад ям :
 						</p>
 
 						<ul class="service__list">
+							<li>Різке погіршення стану здоров'я і вимушена госпіталізація</li>
 							<li>
-								Резкое ухудшение состояния здоровья и вынужденная госпитализация
+								Хвороба, внаслідок якої застрахована особа зазнала матеріальні
+								витрати
 							</li>
+							<li>Нещасний випадок</li>
+							<li>Втрата або пошкодження багажу</li>
+							<li>Переоформлення проїзного документа</li>
 							<li>
-								Болезнь, вследствие которой застрахованное лицо понесло
-								материальные расходы
+								Втрата або пошкодження документів , в тому числі
+								закордонного паспорта
 							</li>
-							<li>Несчастный случай</li>
-							<li>Потеря или повреждение багажа</li>
-							<li>Переоформление проездного документа</li>
-							<li>
-								Потеря или повреждение документов, в том числе заграничного
-								паспорта
-							</li>
-							<li>Задержка, отмена или перенос рейса или тура</li>
+							<li>Затримка, скасування або перенесення рейсу або туру</li>
 						</ul>
 
 						<a
 							href=".popup"
 							class="button service__button _blue magnific-popup"
 						>
-							<span>Заказать страховку</span>
+							<span>Замовити страхування</span>
 						</a>
 					</div>
 				</div>

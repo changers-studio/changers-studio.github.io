@@ -23,7 +23,7 @@
 		></script>
 
 		<link rel="stylesheet" href="libs/aos/aos.css" />
-		<link rel="stylesheet" href="libs/magnific-Popup/magnific-popup.css" />
+		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="css/main.css" />
 
 		<script defer src="libs/aos/aos.js"></script>
@@ -35,11 +35,14 @@
 			src="libs/magnific-Popup/jquery.magnific-popup.min.js"
 		></script>
 		<script defer src="js/dropdown.js"></script>
+		<script defer src="libs/jquery.inputmask.min.js"></script>
 		<script defer src="js/custom.js"></script>
 	</head>
 
 	<body class="isnohome p-faq">
 		<form class="popup mfp-hide">
+			<div class="popup__close" onClick="closePopup();"></div>
+
 			<h3 class="popup__heading">Замовити дзвінок</h3>
 
 			<div class="form__wrapper">
@@ -73,6 +76,16 @@
 			<button type="submit" class="form__button button _blue">
 				<span>Відправити</span>
 			</button>
+
+			<div class="success-form">
+				<img src="../img/icons/success-form.svg" alt="Done" />
+
+				<h3 class="success-form__title">Спасибі, ваші дані відправлені!</h3>
+
+				<h4 class="success-form__subtitle">
+					З вами зв'яжуться найближчим часом наші консультанти
+				</h4>
+			</div>
 		</form>
 
 		<div class="sidebar">
@@ -253,9 +266,7 @@
 										<i class="fas fa-caret-down"></i>
 									</span>
 								</div>
-								<a href="../faq.html" class="lang__dropdown">
-									<span>ru</span>
-								</a>
+								<a href="../faq.html" class="lang__dropdown"><span>ru</span></a>
 							</div>
 						</div>
 
