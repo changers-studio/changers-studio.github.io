@@ -30,6 +30,7 @@
 
 		<script defer src="libs/jquery.min.js"></script>
 
+		<script defer src="libs/multi-animated-counter.js"></script>
 		<script
 			defer
 			src="libs/magnific-Popup/jquery.magnific-popup.min.js"
@@ -74,13 +75,35 @@
 			</button>
 		</form>
 
-		<header class="header">
+		<div class="success-form mfp-hide" id="success-form">
+			<img src="img/icons/success-form.svg" alt="Done" />
+
+			<h3 class="success-form__title">Спасибо, ваши данные отправлены!</h3>
+
+			<h4 class="success-form__subtitle">
+				С вами свяжутся в ближайшее время наши консультанты
+			</h4>
+		</div>
+
+		<header class="header" data-aos="fade-down">
 			<div class="header__container container _full">
 				<div class="header__wrapper header__wrapper_left">
-					<a href="index.html" class="header__logo">
-						<img src="img/logo.svg" alt="Логотип" />
-						<span>Премьер гарант профи</span>
-					</a>
+					<div class="header__inner">
+						<a href="index.html" class="header__logo">
+							<img src="img/logo.svg" alt="Логотип" />
+							<span>Премьер гарант профи</span>
+						</a>
+
+						<div class="header__lang">
+							<div class="lang__heading">
+								<span>
+									ru
+									<i class="fas fa-caret-down"></i>
+								</span>
+							</div>
+							<a href="ua/index.html" class="lang__dropdown"><span>ua</span></a>
+						</div>
+					</div>
 
 					<div class="header__inner">
 						<nav class="header__links">
@@ -115,30 +138,7 @@
 					<h2 class="sidebar__heading">Меню</h2>
 
 					<button class="sidebar__close sidebarActivator">
-						<svg
-							width="24"
-							height="25"
-							viewBox="0 0 24 25"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<g clip-path="url(#clip0)">
-								<path
-									d="M24 3.32811L21.1719 0.5L12 9.67186L2.82811 0.5L0 3.32811L9.17186 12.5L0 21.6719L2.82811 24.5L12 15.3281L21.1718 24.5L23.9999 21.6719L14.8281 12.5L24 3.32811Z"
-									fill="white"
-								/>
-							</g>
-							<defs>
-								<clipPath id="clip0">
-									<rect
-										width="24"
-										height="24"
-										fill="white"
-										transform="translate(0 0.5)"
-									/>
-								</clipPath>
-							</defs>
-						</svg>
+						<img src="img/icons/close.svg" alt="close" />
 					</button>
 
 					<nav class="sidebar__menu">
@@ -294,15 +294,11 @@
 		<section class="main">
 			<div class="main__container">
 				<div class="main__wrapper _left">
-					<h1 class="main__title" data-aos="zoom-out-right">
+					<h1 data-aos="fade-right" class="main__title">
 						Страхование финансовых рисков
 					</h1>
 
-					<div
-						class="main__inner"
-						data-aos="zoom-out-right"
-						data-aos-delay="300"
-					>
+					<div class="main__inner" data-aos="fade-right" data-aos-delay="300">
 						<p class="main__text">
 							Cтабильная и надежная компания, которая из года в год увеличивает
 							количество клиентов и сохраняет репутацию надежного финансового
@@ -344,7 +340,11 @@
 
 				<div class="main__wrapper _right">
 					<div class="main__advantages">
-						<h2 class="main__caption" data-aos="fade-down">
+						<h2
+							data-aos="fade-right"
+							class="main__caption"
+							data-aos="fade-down"
+						>
 							Наши сильные стороны:
 						</h2>
 
@@ -365,8 +365,8 @@
 		</section>
 
 		<section class="categories">
-			<div class="container" data-aos="fade-up">
-				<div class="sectionHasSideHeading">
+			<div class="container">
+				<div class="sectionHasSideHeading" data-aos="fade-right">
 					<div class="side">
 						<object
 							class="side__number"
@@ -383,7 +383,7 @@
 				</div>
 
 				<div class="categories__container tabs">
-					<div class="categories__wrapper">
+					<div class="categories__wrapper" data-aos="fade-right">
 						<h2 class="categories__title">Категоризация услуг</h2>
 
 						<ul class="tabs__caption">
@@ -399,15 +399,19 @@
 								<h3 class="categories__heading">Для физических лиц</h3>
 								<h3 class="categories__heading _mobile">Для физ.лиц</h3>
 								<h4 class="categories__subheading">
-									Частным клиентам / для вас
+									Частным клиентам / Для вас
 								</h4>
 							</li>
 						</ul>
 					</div>
 
-					<div class="categories__wrapper _indent">
+					<div
+						class="categories__wrapper _indent"
+						data-aos="fade-right"
+						data-aos-delay="200"
+					>
 						<div class="tabs__content active">
-							<h2 class="categories__title _blue">Для юридических лиц</h2>
+							<h2 class="categories__title _blue">Для физических лиц:</h2>
 
 							<ul class="categories__list">
 								<li><a href="auto_insurance.html">Автосрахование</a></li>
@@ -419,7 +423,9 @@
 						</div>
 
 						<div class="tabs__content">
-							<h2 class="categories__title _blue">Для физических лиц:</h2>
+							<h2 data-aos="fade-right" class="categories__title _blue">
+								Для юридических лиц
+							</h2>
 
 							<ul class="categories__list">
 								<li>
@@ -440,7 +446,7 @@
 
 		<section class="statistics">
 			<div class="container">
-				<div class="sectionHasSideHeading">
+				<div class="sectionHasSideHeading" data-aos="fade-right">
 					<div class="side">
 						<object
 							class="side__number"
@@ -456,22 +462,30 @@
 					</div>
 				</div>
 
-				<div class="statistics__container">
+				<div class="statistics__container" id="counters_1">
 					<div class="statistics__wrapper">
-						<h2 class="statistics__title">Общая статистика:</h2>
+						<h2 data-aos="fade-right" class="statistics__title">
+							Общая статистика:
+						</h2>
 
 						<div class="statistics__items">
 							<div class="item _1 _reg" data-aos="zoom-in">
 								<div class="item__inner">
 									<h3 class="item__heading">На рынке</h3>
-									<p class="item__number">10 лет</p>
+									<p class="item__number">
+										<span class="counter" data-TargetNum="10">10</span>
+										&nbsp;лет
+									</p>
 								</div>
 							</div>
 
 							<div class="item _2 _bold" data-aos="zoom-in">
 								<div class="item__inner">
 									<h3 class="item__heading">Активов</h3>
-									<p class="item__number">94 000 000</p>
+									<p class="item__number">
+										<span class="counter" data-TargetNum="94">94</span>
+										&nbsp;000 000
+									</p>
 									<p class="item__currency">грн</p>
 								</div>
 							</div>
@@ -494,7 +508,10 @@
 
 								<div class="item__inner">
 									<h3 class="item__heading">Собственного капитала</h3>
-									<p class="item__number">73 000 000</p>
+									<p class="item__number">
+										<span class="counter" data-TargetNum="73">73</span>
+										&nbsp;000 000
+									</p>
 									<p class="item__currency">грн</p>
 								</div>
 							</div>
@@ -502,20 +519,28 @@
 					</div>
 
 					<div class="statistics__wrapper">
-						<h2 class="statistics__title">За 2020 год:</h2>
+						<h2 data-aos="fade-right" class="statistics__title">
+							За 2020 год:
+						</h2>
 
 						<div class="statistics__items _flex-col">
 							<div class="item _4 _reg" data-aos="zoom-in">
 								<div class="item__inner">
 									<h3 class="item__heading">Договоров страхования</h3>
-									<p class="item__number">20 000+</p>
+									<p class="item__number">
+										<span class="counter" data-TargetNum="20">20</span>
+										&nbsp;000+
+									</p>
 								</div>
 							</div>
 
 							<div class="item _5 _bold" data-aos="zoom-in">
 								<div class="item__inner">
 									<h3 class="item__heading">Страховых платежей</h3>
-									<p class="item__number">280 000 000+</p>
+									<p class="item__number">
+										<span class="counter" data-TargetNum="280">280</span>
+										&nbsp;000 000+
+									</p>
 								</div>
 							</div>
 
@@ -526,7 +551,10 @@
 										<br />
 										единичное возмещение
 									</h3>
-									<p class="item__number">23 000 000</p>
+									<p class="item__number">
+										<span class="counter" data-TargetNum="23">23</span>
+										&nbsp;000 000
+									</p>
 									<p class="item__currency">грн</p>
 								</div>
 							</div>
@@ -537,8 +565,8 @@
 		</section>
 
 		<section class="strategy">
-			<div class="container" data-aos="fade-up">
-				<div class="sectionHasSideHeading">
+			<div class="container">
+				<div class="sectionHasSideHeading" data-aos="fade-right">
 					<div class="side">
 						<object
 							class="side__number"
@@ -556,7 +584,9 @@
 
 				<div class="strategy__container">
 					<div class="strategy__wrapper">
-						<h2 class="strategy__title">Наша стратегия</h2>
+						<h2 data-aos="fade-right" class="strategy__title">
+							Наша стратегия
+						</h2>
 
 						<div class="strategy__logo" data-aos="zoom-in">
 							<svg
@@ -617,7 +647,11 @@
 						</div>
 					</div>
 
-					<div class="strategy__wrapper _indent">
+					<div
+						class="strategy__wrapper _indent"
+						data-aos="fade-right"
+						data-aos-delay="200"
+					>
 						<p class="strategy__text">
 							Стабильная и надежная компания, которая из года в год увеличивает
 							количество клиентов, улучшает качество своих услуг и
@@ -640,92 +674,131 @@
 				<div class="box" data-aos="fade-up" data-aos-delay="200">
 					<div class="box__inner">
 						<div class="box__wrapper_top">
-							<span class="box__number">01</span>
+							<span class="box__number" data-aos="zoom-in" data-aos-delay="300">
+								01
+							</span>
 
 							<img
 								src="img/strategy/icon-1.svg"
+								data-aos="zoom-in"
+								data-aos-delay="300"
 								alt="Иконка"
-								class="box__icon"
 							/>
 						</div>
 
-						<h3 class="box__heading">
+						<h3
+							class="box__heading"
+							data-aos="zoom-in-right"
+							data-aos-delay="300"
+						>
 							Лучшие условия
 							<br />
 							на рынке
 						</h3>
-						<p class="box__text">Для корпоративных клиентов</p>
+						<p class="box__text" data-aos="zoom-in-right" data-aos-delay="300">
+							Для корпоративных клиентов
+						</p>
 					</div>
 				</div>
 
 				<div class="box" data-aos="fade-up" data-aos-delay="300">
 					<div class="box__inner">
 						<div class="box__wrapper_top">
-							<span class="box__number">02</span>
+							<span class="box__number" data-aos="zoom-in" data-aos-delay="400">
+								02
+							</span>
 
 							<img
 								src="img/strategy/icon-2.svg"
 								alt="Иконка"
 								class="box__icon"
+								data-aos="zoom-in"
+								data-aos-delay="400"
 							/>
 						</div>
 
-						<h3 class="box__heading">
+						<h3
+							class="box__heading"
+							data-aos="zoom-in-right"
+							data-aos-delay="400"
+						>
 							Персональный
 							<br />
 							менеджмент
 						</h3>
-						<p class="box__text">К каждому корпоративному клиенту</p>
+						<p class="box__text" data-aos="zoom-in-right" data-aos-delay="400">
+							К каждому корпоративному клиенту
+						</p>
 					</div>
 				</div>
 
 				<div class="box" data-aos="fade-up" data-aos-delay="400">
 					<div class="box__inner">
 						<div class="box__wrapper_top">
-							<span class="box__number">03</span>
+							<span class="box__number" data-aos="zoom-in" data-aos-delay="500">
+								03
+							</span>
 
 							<img
 								src="img/strategy/icon-3.svg"
 								alt="Иконка"
 								class="box__icon"
+								data-aos="zoom-in"
+								data-aos-delay="500"
 							/>
 						</div>
 
-						<h3 class="box__heading">
+						<h3
+							class="box__heading"
+							data-aos="zoom-in-right"
+							data-aos-delay="500"
+						>
 							Актуальные
 							<br />
 							страховые продукты
 						</h3>
-						<p class="box__text">Которые отвечают за процессы рынка</p>
+						<p class="box__text" data-aos="zoom-in-right" data-aos-delay="500">
+							Которые отвечают за процессы рынка
+						</p>
 					</div>
 				</div>
 
 				<div class="box" data-aos="fade-up" data-aos-delay="500">
 					<div class="box__inner">
 						<div class="box__wrapper_top">
-							<span class="box__number">04</span>
+							<span class="box__number" data-aos="zoom-in" data-aos-delay="600">
+								04
+							</span>
 
 							<img
 								src="img/strategy/icon-4.svg"
 								alt="Иконка"
 								class="box__icon"
+								data-aos="zoom-in"
+								data-aos-delay="600"
 							/>
 						</div>
 
-						<h3 class="box__heading">
+						<h3
+							class="box__heading"
+							data-aos="zoom-in-right"
+							data-aos-delay="600"
+						>
 							Компания способствует
 							<br />
 							развитию экономики
 						</h3>
-						<p class="box__text">Украины и рынка страховых услуг</p>
+						<p class="box__text" data-aos="zoom-in-right" data-aos-delay="600">
+							Украины и рынка страховых услуг
+						</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<section class="about-us">
-			<div class="container" data-aos="fade-up">
-				<div class="sectionHasSideHeading">
+			<div class="container">
+				<div class="sectionHasSideHeading" data-aos="fade-right">
 					<div class="side">
 						<object
 							class="side__number"
@@ -742,8 +815,10 @@
 				</div>
 
 				<div class="about-us__container">
-					<div class="about-us__wrapper">
-						<h2 class="about-us__title"><span>Страховая компания</span></h2>
+					<div class="about-us__wrapper" data-aos="fade-right">
+						<h2 class="about-us__title">
+							<span>Страховая компания</span>
+						</h2>
 
 						<h3 class="about-us__heading">
 							Премьер
@@ -762,7 +837,11 @@
 						</a>
 					</div>
 
-					<div class="about-us__wrapper doc">
+					<div
+						class="about-us__wrapper doc"
+						data-aos="zoom-in"
+						data-aos-delay="200"
+					>
 						<img class="doc__image" src="img/about-us/doc.jpg" alt="Документ" />
 
 						<div class="doc__wrapper">
@@ -779,8 +858,8 @@
 		</section>
 
 		<section class="blog">
-			<div class="container" data-aos="fade-up">
-				<div class="sectionHasSideHeading">
+			<div class="container">
+				<div class="sectionHasSideHeading" data-aos="fade-right">
 					<div class="side">
 						<object
 							class="side__number"
@@ -797,9 +876,9 @@
 				</div>
 
 				<div class="blog__container">
-					<div class="blog__wrapper _left">
+					<div class="blog__wrapper _left" data-aos="fade-right">
 						<div class="blog__box">
-							<h2 class="blog__title">Блог</h2>
+							<h2 data-aos="fade-right" class="blog__title">Блог</h2>
 
 							<h3 class="blog__heading">Последние события</h3>
 
@@ -814,7 +893,7 @@
 						</a>
 					</div>
 
-					<div class="blog__wrapper">
+					<div class="blog__wrapper" data-aos="fade-right" data-aos-delay="300">
 						<div class="blog__last">
 							<article class="article">
 								<div class="article__preview">
@@ -827,7 +906,7 @@
 								<div class="article__wrapper">
 									<p class="article__date">15.06.2021</p>
 
-									<h1 class="article__title">
+									<h1 data-aos="fade-right" class="article__title">
 										Документи в Нацкомфінпослуг на отримання ліцензій
 									</h1>
 
@@ -851,7 +930,7 @@
 								<div class="article__wrapper">
 									<p class="article__date">22.06.2021</p>
 
-									<h1 class="article__title">
+									<h1 data-aos="fade-right" class="article__title">
 										Документи в Нацкомфінпослуг на отримання ліцензій
 									</h1>
 
@@ -866,7 +945,7 @@
 						</div>
 					</div>
 
-					<a href="#" class="blog__button button _mobile">
+					<a href="#" class="blog__button button _mobile" data-aos="fade-right">
 						<span>больше новостей</span>
 					</a>
 				</div>
@@ -881,12 +960,12 @@
 							<h3 class="footer__heading">Для юридических лиц:</h3>
 
 							<ul class="footer__list">
-								<li><a href="#">Финансовое</a></li>
-								<li><a href="#">Агробизнес</a></li>
-								<li><a href="#">Транспорт и логистика</a></li>
-								<li><a href="#">Имущество</a></li>
-								<li><a href="#">Ответственность</a></li>
-								<li><a href="#">Персонал</a></li>
+								<li><a href="finance.html">Финансовое</a></li>
+								<li><a href="agro.html">Агробизнес</a></li>
+								<li><a href="logistic.html">Транспорт и логистика</a></li>
+								<li><a href="legal_property.html">Имущество</a></li>
+								<li><a href="legal_responsibility.html">Ответственность</a></li>
+								<li><a href="staff.html">Персонал</a></li>
 							</ul>
 						</nav>
 
@@ -894,11 +973,11 @@
 							<h3 class="footer__heading">Для физических лиц:</h3>
 
 							<ul class="footer__list">
-								<li><a href="#">Автосрахование</a></li>
-								<li><a href="#">Имущество</a></li>
-								<li><a href="#">Здоровье и жизнь</a></li>
-								<li><a href="#">Туристическое</a></li>
-								<li><a href="#">Другое</a></li>
+								<li><a href="auto_insurance.html">Автосрахование</a></li>
+								<li><a href="property.html">Имущество</a></li>
+								<li><a href="life.html">Здоровье и жизнь</a></li>
+								<li><a href="tourist.html">Туристическое</a></li>
+								<li><a href="responsibility.html">Ответственность</a></li>
 							</ul>
 						</nav>
 					</div>

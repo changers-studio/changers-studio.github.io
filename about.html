@@ -80,30 +80,7 @@
 					<h2 class="sidebar__heading">Меню</h2>
 
 					<button class="sidebar__close sidebarActivator">
-						<svg
-							width="24"
-							height="25"
-							viewBox="0 0 24 25"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<g clip-path="url(#clip0)">
-								<path
-									d="M24 3.32811L21.1719 0.5L12 9.67186L2.82811 0.5L0 3.32811L9.17186 12.5L0 21.6719L2.82811 24.5L12 15.3281L21.1718 24.5L23.9999 21.6719L14.8281 12.5L24 3.32811Z"
-									fill="white"
-								/>
-							</g>
-							<defs>
-								<clipPath id="clip0">
-									<rect
-										width="24"
-										height="24"
-										fill="white"
-										transform="translate(0 0.5)"
-									/>
-								</clipPath>
-							</defs>
-						</svg>
+						<img src="img/icons/close.svg" alt="close" />
 					</button>
 
 					<nav class="sidebar__menu">
@@ -129,23 +106,25 @@
 						<div class="tabs__col">
 							<h4 class="tabs__heading">физ.лицам:</h4>
 
-							<a href="">Автосрахование</a>
-							<a href="">Имущество</a>
-							<a href="">Здоровье и жизнь</a>
-							<a href="">Туристическое</a>
-							<a href="">Другое</a>
+							<a href="auto_insurance.html">Автосрахование</a>
+							<a href="property.html">Имущество</a>
+							<a href="life.html">Здоровье и жизнь</a>
+							<a href="tourist.html">Туристическое</a>
+							<a href="responsibility.html">Ответственность</a>
 						</div>
 
 						<div class="tabs__col">
 							<h4 class="tabs__heading">юр.лицам:</h4>
 
-							<a href="">Добровольное страхование от огневых рисков</a>
-							<a href="">Страхование имущества</a>
-							<a href="">Страхования персонала</a>
-							<a href="">Автострахование</a>
-							<a href="">Логистическое страхование</a>
-							<a href="">Финансовое страхование</a>
-							<a href="">Страхование ответсвенности</a>
+							<a href="voluntary.html">
+								Добровольное страхование от огневых рисков
+							</a>
+							<a href="legal_property.html">Страхование имущества</a>
+							<a href="staff.html">Страхования персонала</a>
+							<a href="agro.html">Агрострахование</a>
+							<a href="logistic.html">Логистическое страхование</a>
+							<a href="finance.html">Финансовое страхование</a>
+							<a href="legal_responsibility.html">Страхование ответсвенности</a>
 						</div>
 					</nav>
 				</div>
@@ -255,14 +234,27 @@
 		</div>
 
 		<div class="main__bg">
-			<header class="header">
+			<header class="header" data-aos="fade-down">
 				<div class="header__container container _full">
 					<div class="header__wrapper header__wrapper_left">
-						<a href="index.html" class="header__logo">
-							<img src="img/logo_white.svg" alt="Логотип" />
+						<div class="header__inner">
+							<a href="index.html" class="header__logo">
+								<img src="img/logo_white.svg" alt="Логотип" />
+								<span>Премьер гарант профи</span>
+							</a>
 
-							<span>Премьер гарант профи</span>
-						</a>
+							<div class="header__lang">
+								<div class="lang__heading">
+									<span>
+										ru
+										<i class="fas fa-caret-down"></i>
+									</span>
+								</div>
+								<a href="ua/about.html" class="lang__dropdown">
+									<span>ua</span>
+								</a>
+							</div>
+						</div>
 
 						<div class="header__inner">
 							<nav class="header__links">
@@ -293,7 +285,7 @@
 
 			<section class="main">
 				<div class="container">
-					<nav class="breadcrumbs">
+					<nav class="breadcrumbs" data-aos="fade-right">
 						<a class="breadcrumbs__link" href="index.html">Главная</a>
 						<span class="breadcrumbs__current">Про компанию</span>
 					</nav>
@@ -301,8 +293,12 @@
 
 				<div class="container">
 					<div class="main__container">
-						<div class="main__wrapper _left">
-							<h1 class="main__title">
+						<div
+							class="main__wrapper _left"
+							data-aos="fade-right"
+							data-aos-delay="200"
+						>
+							<h1 data-aos="fade-right" class="main__title">
 								Про
 								<br />
 								компанию
@@ -313,7 +309,11 @@
 							</a>
 						</div>
 
-						<div class="main__wrapper _right">
+						<div
+							class="main__wrapper _right"
+							data-aos="fade-right"
+							data-aos-delay="400"
+						>
 							<p class="main__text _bold">
 								Страховая компания «Премьер Гарант Профи» работает на рынке
 								страховых услуг Украины с 2011 года.
@@ -329,14 +329,14 @@
 					</div>
 				</div>
 
-				<div class="exist">
+				<div class="exist" data-aos="fade-up">
 					<div class="container exist__container">
-						<div class="exist__number">
+						<div class="exist__number" data-aos="zoom-in-down">
 							<span>10</span>
 							лет
 						</div>
 
-						<p class="exist__text">
+						<p class="exist__text" data-aos="zoom-in-down">
 							на рынке
 							<br />
 							страховых
@@ -344,7 +344,12 @@
 							услуг
 						</p>
 
-						<img class="exist__logo" src="img/logo_white.svg" alt="Логотип" />
+						<img
+							class="exist__logo"
+							src="img/logo_white.svg"
+							alt="Логотип"
+							data-aos="zoom-in"
+						/>
 					</div>
 				</div>
 			</section>
@@ -352,7 +357,7 @@
 
 		<section class="strong">
 			<div class="container">
-				<div class="sectionHasSideHeading">
+				<div class="sectionHasSideHeading" data-aos="fade-right">
 					<div class="side">
 						<object
 							class="side__number"
@@ -369,16 +374,18 @@
 				</div>
 
 				<div class="strong__container">
-					<h2 class="strong__title">Наши сильные стороны</h2>
+					<h2 data-aos="fade-right" class="strong__title">
+						Наши сильные стороны
+					</h2>
 
-					<h3 class="strong__heading">
+					<h3 class="strong__heading" data-aos="fade-right">
 						Глубокой специализацией
 						<br />
 						компании является:
 					</h3>
 
 					<div class="strong__boxs">
-						<div class="strong__box">
+						<div class="strong__box" data-aos="fade-right" data-aos-delay="100">
 							<span class="strong__number">01</span>
 							<h4 class="strong__text">
 								медицинское
@@ -389,7 +396,7 @@
 							<div class="strong__plus"></div>
 						</div>
 
-						<div class="strong__box">
+						<div class="strong__box" data-aos="fade-right" data-aos-delay="200">
 							<span class="strong__number">02</span>
 							<h4 class="strong__text">
 								страхование от
@@ -400,7 +407,7 @@
 							<div class="strong__plus"></div>
 						</div>
 
-						<div class="strong__box">
+						<div class="strong__box" data-aos="fade-right" data-aos-delay="300">
 							<span class="strong__number">03</span>
 							<h4 class="strong__text">
 								работа с финансовыми
@@ -417,7 +424,7 @@
 
 		<section class="company">
 			<div class="container">
-				<div class="sectionHasSideHeading">
+				<div class="sectionHasSideHeading" data-aos="fade-right">
 					<div class="side">
 						<object
 							class="side__number"
@@ -434,30 +441,34 @@
 				</div>
 
 				<div class="company__container">
-					<h2 class="company__title">Компания</h2>
+					<h2 data-aos="fade-right" class="company__title">Компания</h2>
 
-					<h3 class="company__heading">
+					<h3 class="company__heading" data-aos="fade-right">
 						<span>Премьер Гарант Профи</span>
 						<br />
 						Ваш надежный партнер!
 					</h3>
 
 					<div class="company__wrapper">
-						<p class="company__text">
+						<p class="company__text" data-aos="fade-right">
 							На данный момент «Премьер Гарант Профи» предоставляет на рынке
 							<span>12 разных категорий страхования</span>
 							для физических и юридических лиц. В эти категории входит более 50
 							различных видов страхования
 						</p>
 
-						<p class="company__text">
+						<p class="company__text" data-aos="fade-right" data-aos-delay="200">
 							Для работы с каждым из этих видов компания имеет большой опыт,
 							квалифицированный персонал, ресурсы, и соответствующие разрезающие
 							лицензии
 						</p>
 					</div>
 
-					<a href="mission.html" class="company__button button">
+					<a
+						href="mission.html"
+						class="company__button button"
+						data-aos="fade-right"
+					>
 						<span>Миссия и ценности компании</span>
 					</a>
 				</div>
@@ -466,7 +477,7 @@
 
 		<section class="advantages">
 			<div class="container">
-				<div class="sectionHasSideHeading">
+				<div class="sectionHasSideHeading" data-aos="fade-right">
 					<div class="side">
 						<object
 							class="side__number"
@@ -483,13 +494,13 @@
 				</div>
 
 				<div class="advantages__container">
-					<h2 class="advantages__title">Преимущества</h2>
+					<h2 data-aos="fade-right" class="advantages__title">Преимущества</h2>
 
 					<div class="advantages__flex-box">
 						<div class="advantages__wrapper _left">
-							<span class="advantages__amount">6</span>
+							<span class="advantages__amount" data-aos="zoom-in-right">6</span>
 
-							<div class="advantages__box">
+							<div class="advantages__box" data-aos="fade-right">
 								<h3 class="advantages__heading">
 									<span>Преимуществ</span>
 									<br />
@@ -540,41 +551,41 @@
 						</div>
 
 						<ul class="advantages__wrapper _right">
-							<li>
+							<li data-aos="fade-down">
 								<span class="advantages__number">01</span>
 								<h4 class="advantages__caption">
 									Лучшие условия для клиентов в сферах страхования от несчастных
 									случаев
 								</h4>
 							</li>
-							<li>
+							<li data-aos="fade-down">
 								<span class="advantages__number">02</span>
 								<h4 class="advantages__caption">
 									Широкий профиль предоставляемых услуг, которые соответствуют
 									рыночной конъюнктуре
 								</h4>
 							</li>
-							<li>
+							<li data-aos="fade-down">
 								<span class="advantages__number">03</span>
 								<h4 class="advantages__caption">
 									Слаженная команда профессионалов, которые готовы помочь вам в
 									любой момент
 								</h4>
 							</li>
-							<li>
+							<li data-aos="fade-down">
 								<span class="advantages__number">04</span>
 								<h4 class="advantages__caption">
 									Лучшие условия на рынке для корпоративных клиентов в сферах
 									медицинского страхования
 								</h4>
 							</li>
-							<li>
+							<li data-aos="fade-down">
 								<span class="advantages__number">05</span>
 								<h4 class="advantages__caption">
 									Грамотный и отлаженный финансовый риск-менеджмент
 								</h4>
 							</li>
-							<li>
+							<li data-aos="fade-down">
 								<span class="advantages__number">06</span>
 								<h4 class="advantages__caption">
 									Своевременные полные страховые выплаты
@@ -588,7 +599,7 @@
 
 		<section class="partner">
 			<div class="container">
-				<div class="sectionHasSideHeading">
+				<div class="sectionHasSideHeading" data-aos="fade-right">
 					<div class="side">
 						<object
 							class="side__number"
@@ -605,9 +616,11 @@
 				</div>
 
 				<div class="partner__container">
-					<h2 class="partner__title">Страховая компания</h2>
+					<h2 data-aos="fade-right" class="partner__title">
+						Страховая компания
+					</h2>
 
-					<h3 class="partner__heading">
+					<h3 class="partner__heading" data-aos="fade-right">
 						<span>
 							Премьер
 							<br />
@@ -622,9 +635,10 @@
 							src="img/about/gerb.png"
 							alt="Герб Украины"
 							class="partner__logo"
+							data-aos="zoom-in"
 						/>
 
-						<p class="partner__text">
+						<p class="partner__text" data-aos="fade-right" data-aos-delay="200">
 							Мы ежедневно усовершенствуем свои навыки и услуги, чтобы
 							<span>предоставить нашим клиентам лучшие условия на рынке</span>
 							и создавать конкурентную среду отрасли, тем самым развивая рынок
@@ -643,12 +657,12 @@
 							<h3 class="footer__heading">Для юридических лиц:</h3>
 
 							<ul class="footer__list">
-								<li><a href="#">Финансовое</a></li>
-								<li><a href="#">Агробизнес</a></li>
-								<li><a href="#">Транспорт и логистика</a></li>
-								<li><a href="#">Имущество</a></li>
-								<li><a href="#">Ответственность</a></li>
-								<li><a href="#">Персонал</a></li>
+								<li><a href="finance.html">Финансовое</a></li>
+								<li><a href="agro.html">Агробизнес</a></li>
+								<li><a href="logistic.html">Транспорт и логистика</a></li>
+								<li><a href="legal_property.html">Имущество</a></li>
+								<li><a href="legal_responsibility.html">Ответственность</a></li>
+								<li><a href="staff.html">Персонал</a></li>
 							</ul>
 						</nav>
 
@@ -656,11 +670,11 @@
 							<h3 class="footer__heading">Для физических лиц:</h3>
 
 							<ul class="footer__list">
-								<li><a href="#">Автосрахование</a></li>
-								<li><a href="#">Имущество</a></li>
-								<li><a href="#">Здоровье и жизнь</a></li>
-								<li><a href="#">Туристическое</a></li>
-								<li><a href="#">Другое</a></li>
+								<li><a href="auto_insurance.html">Автосрахование</a></li>
+								<li><a href="property.html">Имущество</a></li>
+								<li><a href="life.html">Здоровье и жизнь</a></li>
+								<li><a href="tourist.html">Туристическое</a></li>
+								<li><a href="responsibility.html">Ответственность</a></li>
 							</ul>
 						</nav>
 					</div>

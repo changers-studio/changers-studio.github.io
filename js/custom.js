@@ -1,13 +1,14 @@
 jQuery(function () {
-	$('.magnific-popup').magnificPopup()
+	$('.magnific-popup').magnificPopup({
+		removalDelay: 350,
+		mainClass: 'mfp-fade',
+	})
 })
 
-// Menu
 $('.sidebarActivator').on('click', function () {
 	$('.sidebar').fadeToggle('slow')
+	$('body').toggleClass('scroll_disable')
 })
-
-// END
 
 $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
 	$(this)
@@ -23,9 +24,27 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
 })
 
 $('.sidebar__about-heading').on('click', function () {
-	$('.sidebar__about-content, .sidebar__services-content').toggleClass('active')
+	$('.sidebar__about-content').addClass('active')
+	$('.sidebar__services-content').removeClass('active')
 })
 
 $('.sidebar__services-heading').on('click', function () {
-	$('.sidebar__services-content, .sidebar__about-content').toggleClass('active')
+	$('.sidebar__services-content').addClass('active')
+	$('.sidebar__about-content').removeClass('active')
+})
+
+$('.lang__heading').on('click', function () {
+	$(this).toggleClass('_active').next().slideToggle()
+})
+
+$('form').on('submit', function () {
+	var th = $(this)
+	$.ajax({
+		type: 'POST',
+		url: 'mail.php',
+		data: th.serialize(),
+	}).done(function () {
+		th.trigger('reset')
+	})
+	return false
 })

@@ -80,30 +80,7 @@
 					<h2 class="sidebar__heading">Меню</h2>
 
 					<button class="sidebar__close sidebarActivator">
-						<svg
-							width="24"
-							height="25"
-							viewBox="0 0 24 25"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<g clip-path="url(#clip0)">
-								<path
-									d="M24 3.32811L21.1719 0.5L12 9.67186L2.82811 0.5L0 3.32811L9.17186 12.5L0 21.6719L2.82811 24.5L12 15.3281L21.1718 24.5L23.9999 21.6719L14.8281 12.5L24 3.32811Z"
-									fill="white"
-								/>
-							</g>
-							<defs>
-								<clipPath id="clip0">
-									<rect
-										width="24"
-										height="24"
-										fill="white"
-										transform="translate(0 0.5)"
-									/>
-								</clipPath>
-							</defs>
-						</svg>
+						<img src="img/icons/close.svg" alt="close" />
 					</button>
 
 					<nav class="sidebar__menu">
@@ -129,23 +106,25 @@
 						<div class="tabs__col">
 							<h4 class="tabs__heading">физ.лицам:</h4>
 
-							<a href="">Автосрахование</a>
-							<a href="">Имущество</a>
-							<a href="">Здоровье и жизнь</a>
-							<a href="">Туристическое</a>
-							<a href="">Другое</a>
+							<a href="auto_insurance.html">Автосрахование</a>
+							<a href="property.html">Имущество</a>
+							<a href="life.html">Здоровье и жизнь</a>
+							<a href="tourist.html">Туристическое</a>
+							<a href="responsibility.html">Ответственность</a>
 						</div>
 
 						<div class="tabs__col">
 							<h4 class="tabs__heading">юр.лицам:</h4>
 
-							<a href="">Добровольное страхование от огневых рисков</a>
-							<a href="">Страхование имущества</a>
-							<a href="">Страхования персонала</a>
-							<a href="">Автострахование</a>
-							<a href="">Логистическое страхование</a>
-							<a href="">Финансовое страхование</a>
-							<a href="">Страхование ответсвенности</a>
+							<a href="voluntary.html">
+								Добровольное страхование от огневых рисков
+							</a>
+							<a href="legal_property.html">Страхование имущества</a>
+							<a href="staff.html">Страхования персонала</a>
+							<a href="agro.html">Агрострахование</a>
+							<a href="logistic.html">Логистическое страхование</a>
+							<a href="finance.html">Финансовое страхование</a>
+							<a href="legal_responsibility.html">Страхование ответсвенности</a>
 						</div>
 					</nav>
 				</div>
@@ -255,14 +234,27 @@
 		</div>
 
 		<div class="main__bg">
-			<header class="header">
+			<header class="header" data-aos="fade-down">
 				<div class="header__container container _full">
 					<div class="header__wrapper header__wrapper_left">
-						<a href="index.html" class="header__logo">
-							<img src="img/logo_white.svg" alt="Логотип" />
+						<div class="header__inner">
+							<a href="index.html" class="header__logo">
+								<img src="img/logo_white.svg" alt="Логотип" />
+								<span>Премьер гарант профи</span>
+							</a>
 
-							<span>Премьер гарант профи</span>
-						</a>
+							<div class="header__lang">
+								<div class="lang__heading">
+									<span>
+										ru
+										<i class="fas fa-caret-down"></i>
+									</span>
+								</div>
+								<a href="ua/partners.html" class="lang__dropdown">
+									<span>ua</span>
+								</a>
+							</div>
+						</div>
 
 						<div class="header__inner">
 							<nav class="header__links">
@@ -270,9 +262,7 @@
 								<a href="legal.html">Юр.лицам</a>
 							</nav>
 
-							<a href="tel:0443370160" class="header__tel _white">
-								(044) 337-01-60
-							</a>
+							<a href="tel:0443370160" class="header__tel">(044) 337-01-60</a>
 						</div>
 					</div>
 
@@ -295,7 +285,7 @@
 
 			<section class="main">
 				<div class="container">
-					<nav class="breadcrumbs">
+					<nav class="breadcrumbs" data-aos="fade-right">
 						<a class="breadcrumbs__link" href="index.html">Главная</a>
 						<span class="breadcrumbs__current">Партнеры</span>
 					</nav>
@@ -303,7 +293,7 @@
 
 				<div class="container">
 					<div class="main__container">
-						<h1 class="main__title">Партнеры</h1>
+						<h1 data-aos="fade-right" class="main__title">Партнеры</h1>
 					</div>
 				</div>
 			</section>
@@ -311,7 +301,7 @@
 
 		<section class="partners">
 			<div class="container">
-				<div class="sectionHasSideHeading">
+				<div class="sectionHasSideHeading" data-aos="fade-right">
 					<div class="side">
 						<object
 							class="side__number"
@@ -329,9 +319,11 @@
 
 				<div class="partners__container">
 					<div class="partners__wrapper _left">
-						<h2 class="partners__title">Существующие партнеры</h2>
+						<h2 data-aos="fade-right" class="partners__title">
+							Существующие партнеры
+						</h2>
 
-						<h3 class="partners__heading">
+						<h3 class="partners__heading" data-aos="fade-right">
 							За десятилетний срок своей деятельности страховая компания
 							«Премьер Гарант Профи» успела приобрести
 							<span>
@@ -339,12 +331,12 @@
 							</span>
 						</h3>
 
-						<p class="partners__text">
+						<p class="partners__text" data-aos="fade-right">
 							Которые помогают компании делать свои услуги еще лучше и быть еще
 							безопаснее и надежнее для клиентов
 						</p>
 
-						<div class="partners__logo">
+						<div class="partners__logo" data-aos="zoom-in">
 							<svg
 								width="177"
 								height="186"
@@ -404,7 +396,7 @@
 					</div>
 
 					<ul class="partners__wrapper _right list">
-						<li class="list__item">
+						<li class="list__item" data-aos="fade-down">
 							<h4 class="list__heading">ТДВ СК КРЕДО</h4>
 							<p class="list__code">
 								<span>код ЄДРПОУ:</span>
@@ -421,7 +413,7 @@
 							<span class="list__number">01</span>
 						</li>
 
-						<li class="list__item">
+						<li class="list__item" data-aos="fade-down">
 							<h4 class="list__heading">ТДВ СК НГС</h4>
 							<p class="list__code">
 								<span>код ЄДРПОУ:</span>
@@ -434,7 +426,7 @@
 							<span class="list__number">02</span>
 						</li>
 
-						<li class="list__item">
+						<li class="list__item" data-aos="fade-down">
 							<h4 class="list__heading">ПРАТ СК Перша</h4>
 							<p class="list__code">
 								<span>код ЄДРПОУ:</span>
@@ -447,7 +439,7 @@
 							<span class="list__number">03</span>
 						</li>
 
-						<li class="list__item">
+						<li class="list__item" data-aos="fade-down">
 							<h4 class="list__heading">ПРАТ СК Престиж</h4>
 							<p class="list__code">
 								<span>код ЄДРПОУ:</span>
@@ -464,7 +456,7 @@
 							<span class="list__number">04</span>
 						</li>
 
-						<li class="list__item">
+						<li class="list__item" data-aos="fade-down">
 							<h4 class="list__heading">ПРАТ СК САТІС</h4>
 							<p class="list__code">
 								<span>код ЄДРПОУ:</span>
@@ -481,7 +473,7 @@
 							<span class="list__number">05</span>
 						</li>
 
-						<li class="list__item">
+						<li class="list__item" data-aos="fade-down">
 							<h4 class="list__heading">ПРАТ СК Сузір’я</h4>
 							<p class="list__code">
 								<span>код ЄДРПОУ:</span>
@@ -510,12 +502,12 @@
 							<h3 class="footer__heading">Для юридических лиц:</h3>
 
 							<ul class="footer__list">
-								<li><a href="#">Финансовое</a></li>
-								<li><a href="#">Агробизнес</a></li>
-								<li><a href="#">Транспорт и логистика</a></li>
-								<li><a href="#">Имущество</a></li>
-								<li><a href="#">Ответственность</a></li>
-								<li><a href="#">Персонал</a></li>
+								<li><a href="finance.html">Финансовое</a></li>
+								<li><a href="agro.html">Агробизнес</a></li>
+								<li><a href="logistic.html">Транспорт и логистика</a></li>
+								<li><a href="legal_property.html">Имущество</a></li>
+								<li><a href="legal_responsibility.html">Ответственность</a></li>
+								<li><a href="staff.html">Персонал</a></li>
 							</ul>
 						</nav>
 
@@ -523,11 +515,11 @@
 							<h3 class="footer__heading">Для физических лиц:</h3>
 
 							<ul class="footer__list">
-								<li><a href="#">Автосрахование</a></li>
-								<li><a href="#">Имущество</a></li>
-								<li><a href="#">Здоровье и жизнь</a></li>
-								<li><a href="#">Туристическое</a></li>
-								<li><a href="#">Другое</a></li>
+								<li><a href="auto_insurance.html">Автосрахование</a></li>
+								<li><a href="property.html">Имущество</a></li>
+								<li><a href="life.html">Здоровье и жизнь</a></li>
+								<li><a href="tourist.html">Туристическое</a></li>
+								<li><a href="responsibility.html">Ответственность</a></li>
 							</ul>
 						</nav>
 					</div>

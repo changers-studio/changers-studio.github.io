@@ -649,14 +649,9 @@ AOS.init({
 })
 
 document.addEventListener('load', function () {
-	AOS.refreshHard()
+	AOS.refresh()
 })
 
 window.addEventListener('scroll', function () {
 	AOS.refresh()
-})
-
-AOS.init({
-	duration: 1000,
-	once: true,
 })
