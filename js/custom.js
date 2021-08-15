@@ -1,15 +1,24 @@
 jQuery(function () {
-	$('.magnific-popup, .success-form__button').magnificPopup({
-		removalDelay: 350,
-		mainClass: 'mfp-fade',
-	})
-
 	if ($('*').is('input[type="tel"]')) {
 		$('input[type=tel]').inputmask({
 			mask: '+38 (099) 999 99 99',
 			placeholder: '+38 (0__) ___-__-__',
 		})
 	}
+})
+
+$('.magnific-popup').magnificPopup({
+	removalDelay: 350,
+	mainClass: 'mfp-fade',
+	fixedContentPos: false,
+	callbacks: {
+		open: function () {
+			$('body').addClass('scroll_disable')
+		},
+		close: function () {
+			$('body').removeClass('scroll_disable')
+		},
+	},
 })
 
 $('.sidebarActivator').on('click', function () {

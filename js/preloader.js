@@ -112,5 +112,11 @@ function onDone() {
 }
 
 jQuery(function () {
+	$('body').addClass('scroll_disable')
+
 	$('.overlay').delay(2500).fadeOut()
+
+	setTimeout(() => {
+		$('body').removeClass('scroll_disable')
+	}, 2500)
 })
