@@ -30,6 +30,7 @@
 
 		<script defer src="libs/jquery.min.js"></script>
 
+		<script defer src="js/preloader.js"></script>
 		<script defer src="libs/multi-animated-counter.js"></script>
 		<script
 			defer
@@ -40,6 +41,33 @@
 	</head>
 
 	<body class="ishome">
+		<div class="overlay flex cac vac">
+			<div>
+				<div class="loader preloader flex vac">
+					<svg width="200" height="200">
+						<circle
+							class="background"
+							cx="90"
+							cy="90"
+							r="80"
+							transform="rotate(-90, 100, 90)"
+						/>
+						<circle
+							class="outer"
+							cx="90"
+							cy="90"
+							r="80"
+							transform="rotate(-90, 100, 90)"
+						/>
+					</svg>
+					<span class="circle-background"></span>
+					<span class="logo animated fade-in">
+						<img src="img/logo_white.svg" alt="Logo" />
+					</span>
+				</div>
+			</div>
+		</div>
+
 		<form class="popup mfp-hide">
 			<div class="popup__close" onClick="closePopup();"></div>
 
@@ -167,11 +195,12 @@
 						<div class="tabs__col">
 							<h4 class="tabs__heading">физ.лицам:</h4>
 
-							<a href="auto_insurance.html">Автосрахование</a>
+							<a href="auto_insurance.html">Автострахование</a>
 							<a href="property.html">Имущество</a>
 							<a href="life.html">Здоровье и жизнь</a>
 							<a href="tourist.html">Туристическое</a>
 							<a href="responsibility.html">Ответственность</a>
+							<a href="insurance_case.html">Страховой случай</a>
 						</div>
 
 						<div class="tabs__col">
@@ -186,6 +215,7 @@
 							<a href="logistic.html">Логистическое страхование</a>
 							<a href="finance.html">Финансовое страхование</a>
 							<a href="legal_responsibility.html">Страхование ответсвенности</a>
+							<a href="insurance_case.html">Страховой случай</a>
 						</div>
 					</nav>
 				</div>
@@ -298,9 +328,7 @@
 			<div class="main__container">
 				<div class="main__wrapper _left">
 					<h1 data-aos="fade-right" class="main__title">
-						Страхование
-						<br />
-						финансовых рисков
+						Страховая компания "Премьер Гарант Профи"
 					</h1>
 
 					<div class="main__inner" data-aos="fade-right" data-aos-delay="300">
@@ -310,10 +338,17 @@
 							партнера
 						</p>
 
-						<a href="#" class="button main__button"><span>Подробнее</span></a>
+						<a href="about.html" class="button main__button">
+							<span>Подробнее</span>
+						</a>
 					</div>
 
-					<div class="scroll-down" data-aos="zoom-in" data-aos-delay="600">
+					<div
+						href="#categories"
+						class="scroll-down"
+						data-aos="zoom-in"
+						data-aos-delay="600"
+					>
 						<div class="scroll-down__wrapper">
 							<svg
 								width="20"
@@ -369,7 +404,7 @@
 			</div>
 		</section>
 
-		<section class="categories">
+		<section class="categories" id="categories">
 			<div class="container">
 				<div class="sectionHasSideHeading" data-aos="fade-right">
 					<div class="side">
@@ -416,20 +451,8 @@
 						data-aos-delay="200"
 					>
 						<div class="tabs__content active">
-							<h2 class="categories__title _blue">Для физических лиц:</h2>
-
-							<ul class="categories__list">
-								<li><a href="auto_insurance.html">Автосрахование</a></li>
-								<li><a href="property.html">Имущество</a></li>
-								<li><a href="life.html">Здоровье и жизнь</a></li>
-								<li><a href="tourist.html">Туристическое</a></li>
-								<li><a href="responsibility.html">Ответственность</a></li>
-							</ul>
-						</div>
-
-						<div class="tabs__content">
 							<h2 data-aos="fade-right" class="categories__title _blue">
-								Для юридических лиц
+								Для юридических лиц:
 							</h2>
 
 							<ul class="categories__list">
@@ -442,6 +465,18 @@
 								<li><a href="logistic.html">Логистическое</a></li>
 								<li><a href="finance.html">Финансы</a></li>
 								<li><a href="legal_responsibility.html">Ответственность</a></li>
+							</ul>
+						</div>
+
+						<div class="tabs__content">
+							<h2 class="categories__title _blue">Для физических лиц:</h2>
+
+							<ul class="categories__list">
+								<li><a href="auto_insurance.html">Автострахование</a></li>
+								<li><a href="property.html">Имущество</a></li>
+								<li><a href="life.html">Здоровье и жизнь</a></li>
+								<li><a href="tourist.html">Туристическое</a></li>
+								<li><a href="responsibility.html">Ответственность</a></li>
 							</ul>
 						</div>
 					</div>
@@ -978,7 +1013,7 @@
 							<h3 class="footer__heading">Для физических лиц:</h3>
 
 							<ul class="footer__list">
-								<li><a href="auto_insurance.html">Автосрахование</a></li>
+								<li><a href="auto_insurance.html">Автострахование</a></li>
 								<li><a href="property.html">Имущество</a></li>
 								<li><a href="life.html">Здоровье и жизнь</a></li>
 								<li><a href="tourist.html">Туристическое</a></li>
@@ -1034,7 +1069,7 @@
 							<address class="footer__address">
 								<h4 class="footer__caption">Главный офис:</h4>
 								<p class="footer__text">
-									02090, м.Київ, Харківське шосе, будинок 19
+									02090, г.Киев, Харьковское шоссе, дом 19
 								</p>
 							</address>
 
@@ -1111,13 +1146,8 @@
 					</div>
 
 					<p class="footer__code">
-						<span>код ЄДРПОУ:</span>
+						<span>код ЕГРПОУ:</span>
 						37689635
-					</p>
-
-					<p class="footer__studio">
-						<span>Разработка сайта:</span>
-						<a href="#">Lubimov.studio</a>
 					</p>
 				</div>
 			</div>
