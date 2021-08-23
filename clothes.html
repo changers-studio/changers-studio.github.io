@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Mod.kids | Одежда для мальчиков</title>
+
+		<meta name="viewport" content="width=device-width" />
+		<meta name="format-detection" content="telephone=no" />
+
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+
+		<script
+			async
+			defer
+			src="https://kit.fontawesome.com/55e0136003.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- libs css -->
+		<link rel="stylesheet" href="libs/select2/select2.min.css" />
+		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="libs/slick/slick.css" />
+		<link rel="stylesheet" href="libs/slick/slick-theme.css" />
+
+		<!-- main css -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- jquery -->
+		<script defer src="libs/jquery.min.js"></script>
+
+		<!-- libs -->
+		<script defer src="libs/select2/select2.min.js"></script>
+		<script
+			defer
+			src="libs/magnific-popup/jquery.magnific-popup.min.js"
+		></script>
+		<script defer src="libs/jquery.inputmask.min.js"></script>
+		<script defer src="libs/slick/slick.js"></script>
+
+		<!-- js -->
+		<script defer src="js/custom.js"></script>
+	</head>
+
+	<body class="isnohome p-clothes">
+		<!-- Попапы -->
+		<form class="popup popup__callback mfp-hide">
+			<h3 class="popup__title">Закажите звонок</h3>
+
+			<p class="popup__text">И мы свяжимся с вами в ближайшее время</p>
+
+			<input
+				class="popup__input"
+				type="text"
+				name="Name"
+				placeholder="Ваше имя"
+				required
+			/>
+			<input
+				class="popup__input"
+				type="tel"
+				name="Telephone number"
+				placeholder="Ваш телефон"
+				required
+			/>
+
+			<button type="submit" class="popup__button button">
+				<span>Заказать звонок</span>
+			</button>
+		</form>
+
+		<form class="popup popup__feedback mfp-hide">
+			<h3 class="popup__title">Обратная связь</h3>
+
+			<p class="popup__text">
+				Напишите нам и мы свяжимся с вами в ближайшее время
+			</p>
+
+			<input
+				class="popup__input"
+				type="text"
+				name="Name"
+				placeholder="Ваше имя"
+				required
+			/>
+
+			<input
+				class="popup__input"
+				type="email"
+				name="Email"
+				placeholder="Ваш email"
+				required
+			/>
+
+			<textarea
+				class="popup__textarea"
+				name="Message"
+				placeholder="Ваше сообщение"
+			></textarea>
+
+			<button type="submit" class="popup__button button">
+				<span>Заказать звонок</span>
+			</button>
+		</form>
+
+		<!-- Шапка -->
+		<header class="header">
+			<marquee class="header__ticker">
+				<span>
+					Реализация товаров осуществляется только оптом и минимальная сумма
+					заказа составляет 500$.
+				</span>
+				<span>
+					Реализация товаров осуществляется только оптом и минимальная сумма
+					заказа составляет 500$.
+				</span>
+				<span>
+					Реализация товаров осуществляется только оптом и минимальная сумма
+					заказа составляет 500$.
+				</span>
+				<span>
+					Реализация товаров осуществляется только оптом и минимальная сумма
+					заказа составляет 500$.
+				</span>
+			</marquee>
+
+			<div class="header__wrapper_top">
+				<div class="container header__container">
+					<div class="header__inner">
+						<a href="index.html" class="header__logo">
+							<img src="img/logo.svg" alt="Mod.kids" />
+						</a>
+
+						<form class="lang">
+							<div class="lang__heading">Ru</div>
+
+							<div class="lang__dropdown">
+								<div class="lang__wrapper">
+									<h6 class="lang__title">Выбрать страну и регион</h6>
+
+									<select class="select2" name="Country">
+										<option value="UZ">Узбекистан</option>
+										<option value="UA">Украина</option>
+										<option value="RU">Россия</option>
+									</select>
+								</div>
+
+								<div class="lang__wrapper">
+									<h6 class="lang__title">Выбрать язык</h6>
+
+									<label class="lang__item">
+										<input
+											class="lang__radio"
+											type="radio"
+											name="Language"
+											checked
+										/>
+										<span>Русский</span>
+									</label>
+
+									<label class="lang__item">
+										<input class="lang__radio" type="radio" name="Language" />
+										<span>Английский</span>
+									</label>
+								</div>
+
+								<div class="lang__wrapper">
+									<h6 class="lang__title">Выбрать валюту</h6>
+
+									<label class="lang__item">
+										<input
+											class="lang__radio"
+											type="radio"
+											name="Currency"
+											checked
+										/>
+										<span>UZS</span>
+									</label>
+
+									<label class="lang__item">
+										<input class="lang__radio" type="radio" name="Currency" />
+										<span>USD</span>
+									</label>
+								</div>
+
+								<button type="submit" class="lang__button button">
+									<span>Перейти к покупкам</span>
+								</button>
+							</div>
+						</form>
+					</div>
+
+					<nav class="header__menu">
+						<a href="#">Новинки</a>
+						<a href="#">О нас</a>
+						<a href="#">Как купить</a>
+						<a href="#">Новости</a>
+						<a href="#">Распродажа</a>
+						<a href="#">Хиты</a>
+						<a href="#">Доставка</a>
+						<a href="#">Контакты</a>
+					</nav>
+
+					<div class="header__inner">
+						<div href="#" class="header__search header__button">
+							<img src="img/icons/search.svg" alt="Поиск" />
+						</div>
+
+						<a href="#" class="header__cabinet header__button">
+							<img src="img/icons/user.svg" alt="Личный кабинет" />
+						</a>
+
+						<a href="#" class="header__chosen header__button">
+							<img src="img/icons/heart.svg" alt="Избранные" />
+						</a>
+
+						<a href="#" class="header__cart header__button">
+							<img src="img/icons/shopping-bag.svg" alt="Корзина" />
+							<span>2</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__wrapper_bottom">
+				<div class="container header__container">
+					<div class="social-links">
+						<a class="social-links__item" href="#">
+							<img src="img/icons/instagram.svg" alt="instagram" />
+						</a>
+						<a class="social-links__item" href="#">
+							<img src="img/icons/whatsapp.svg" alt="whatsapp" />
+						</a>
+						<a class="social-links__item" href="#">
+							<img src="img/icons/telegram.svg" alt="telegram" />
+						</a>
+						<a class="social-links__item" href="#">
+							<img src="img/icons/facebook.svg" alt="facebook" />
+						</a>
+					</div>
+
+					<nav class="header__menu _second">
+						<a href="#">Девочкам</a>
+						<a href="#">Мальчикам</a>
+						<a href="#">Новорожденным</a>
+					</nav>
+
+					<div class="header__inner">
+						<div class="header__popup-buttons">
+							<a
+								href=".popup__feedback"
+								class="header__feedback magnific-popup"
+							>
+								Обратная связь
+							</a>
+							<a
+								href=".popup__callback"
+								class="header__callback magnific-popup"
+							>
+								Заказать звонок
+							</a>
+						</div>
+
+						<div class="tel">
+							<div class="dropdown__heading">
+								<i class="fas fa-chevron-down"></i>
+								<a href="tel:998990000000">+998 (99) 000 00 00</a>
+								<img src="img/icons/tel.svg" alt="Телефон" />
+							</div>
+
+							<div class="dropdown__body">
+								<a href="tel:998990000000">+998 (99) 000 00 00</a>
+								<a href="tel:998990000000">+998 (99) 000 00 00</a>
+								<a href="tel:998990000000">+998 (99) 000 00 00</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Шапка моб версии -->
+		<header class="header _mobile">
+			<div class="container header__container">
+				<div class="header__inner">
+					<div class="header__hamburger">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line _short"></div>
+					</div>
+
+					<div class="header__search header__button">
+						<img src="img/icons/search.svg" alt="Поиск" />
+					</div>
+				</div>
+
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.svg" alt="Mod.kids" />
+				</a>
+
+				<div class="header__inner">
+					<a href="#" class="header__chosen header__button">
+						<img src="img/icons/heart.svg" alt="Избранные" />
+					</a>
+
+					<a href="#" class="header__cart header__button">
+						<img src="img/icons/shopping-bag.svg" alt="Корзина" />
+						<span>2</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<div class="dropdown__wrapper">
+					<nav class="dropdown__menu">
+						<a href="#">Девочкам</a>
+						<a href="#">Мальчикам</a>
+						<a href="#">Новорожденным</a>
+						<a href="#">Коллекции</a>
+					</nav>
+
+					<nav class="dropdown__menu _small">
+						<a href="#">Новинки</a>
+						<a href="#">О нас</a>
+						<a href="#">Как купить</a>
+						<a href="#">Новости</a>
+						<a href="#">Распродажа</a>
+						<a href="#">Хиты</a>
+						<a href="#">Доставка</a>
+						<a href="#">Контакты</a>
+					</nav>
+				</div>
+
+				<div class="dropdown__wrapper _bd">
+					<div class="dropdown__flex-box">
+						<div class="tel">
+							<div class="dropdown__heading">
+								<a href="tel:998990000000">+998 (99) 000 00 00</a>
+								<i class="fas fa-chevron-down"></i>
+							</div>
+
+							<div class="dropdown__body">
+								<a href="tel:998990000000">+998 (99) 000 00 00</a>
+								<a href="tel:998990000000">+998 (99) 000 00 00</a>
+								<a href="tel:998990000000">+998 (99) 000 00 00</a>
+							</div>
+						</div>
+
+						<form class="lang">
+							<div class="lang__heading">Ru</div>
+
+							<div class="lang__dropdown">
+								<div class="lang__wrapper">
+									<h6 class="lang__title">Выбрать страну и регион</h6>
+
+									<select class="select2" name="Country">
+										<option value="UZ">Узбекистан</option>
+										<option value="UA">Украина</option>
+										<option value="RU">Россия</option>
+									</select>
+								</div>
+
+								<div class="lang__wrapper">
+									<h6 class="lang__title">Выбрать язык</h6>
+
+									<label class="lang__item">
+										<input
+											class="lang__radio"
+											type="radio"
+											name="Language"
+											checked
+										/>
+										<span>Русский</span>
+									</label>
+
+									<label class="lang__item">
+										<input class="lang__radio" type="radio" name="Language" />
+										<span>Английский</span>
+									</label>
+								</div>
+
+								<div class="lang__wrapper">
+									<h6 class="lang__title">Выбрать валюту</h6>
+
+									<label class="lang__item">
+										<input
+											class="lang__radio"
+											type="radio"
+											name="Currency"
+											checked
+										/>
+										<span>UZS</span>
+									</label>
+
+									<label class="lang__item">
+										<input class="lang__radio" type="radio" name="Currency" />
+										<span>USD</span>
+									</label>
+								</div>
+
+								<button type="submit" class="lang__button button">
+									<span>Перейти к покупкам</span>
+								</button>
+							</div>
+						</form>
+					</div>
+
+					<div class="social-links">
+						<a class="social-links__item" href="#">
+							<img src="img/icons/instagram.svg" alt="instagram" />
+						</a>
+						<a class="social-links__item" href="#">
+							<img src="img/icons/whatsapp.svg" alt="whatsapp" />
+						</a>
+						<a class="social-links__item" href="#">
+							<img src="img/icons/telegram.svg" alt="telegram" />
+						</a>
+						<a class="social-links__item" href="#">
+							<img src="img/icons/facebook.svg" alt="facebook" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="heading">
+			<div class="container">
+				<h1 class="heading__title _large">Одежда для мальчиков</h1>
+
+				<ul class="heading__caption">
+					<li>3-7 лет</li>
+					<li>5-8 лет</li>
+					<li>8-12 лет</li>
+					<li>10-13 лет</li>
+					<li>10-14 лет</li>
+					<li>Другие</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Категории -->
+		<section class="categories">
+			<div class="container">
+				<h2 class="categories__title">Категории</h2>
+
+				<div class="categories__container">
+					<a href="#" class="categories__box">
+						<div
+							class="categories__image"
+							style="background-image: url(img/categories/image-1.jpg)"
+						></div>
+
+						<div class="categories__wrapper">
+							<h3 class="categories__name">Верхняя одежда</h3>
+							<p class="categories__amount">121 Товар</p>
+						</div>
+					</a>
+
+					<a href="#" class="categories__box">
+						<div
+							class="categories__image"
+							style="background-image: url(img/categories/image-2.jpg)"
+						></div>
+
+						<div class="categories__wrapper">
+							<h3 class="categories__name">Комлпекты</h3>
+							<p class="categories__amount">121 Товар</p>
+						</div>
+					</a>
+
+					<a href="#" class="categories__box">
+						<div
+							class="categories__image"
+							style="background-image: url(img/categories/image-3.jpg)"
+						></div>
+
+						<div class="categories__wrapper">
+							<h3 class="categories__name">Домашняя одежда</h3>
+							<p class="categories__amount">121 Товар</p>
+						</div>
+					</a>
+
+					<a href="#" class="categories__box">
+						<div
+							class="categories__image"
+							style="background-image: url(img/categories/image-4.jpg)"
+						></div>
+
+						<div class="categories__wrapper">
+							<h3 class="categories__name">Брюки</h3>
+							<p class="categories__amount">121 Товар</p>
+						</div>
+					</a>
+
+					<a href="#" class="categories__box">
+						<div
+							class="categories__image"
+							style="background-image: url(img/categories/image-1.jpg)"
+						></div>
+
+						<div class="categories__wrapper">
+							<h3 class="categories__name">Верхняя одежда</h3>
+							<p class="categories__amount">121 Товар</p>
+						</div>
+					</a>
+
+					<a href="#" class="categories__box">
+						<div
+							class="categories__image"
+							style="background-image: url(img/categories/image-2.jpg)"
+						></div>
+
+						<div class="categories__wrapper">
+							<h3 class="categories__name">Комлпекты</h3>
+							<p class="categories__amount">121 Товар</p>
+						</div>
+					</a>
+
+					<a href="#" class="categories__box">
+						<div
+							class="categories__image"
+							style="background-image: url(img/categories/image-3.jpg)"
+						></div>
+
+						<div class="categories__wrapper">
+							<h3 class="categories__name">Домашняя одежда</h3>
+							<p class="categories__amount">121 Товар</p>
+						</div>
+					</a>
+
+					<a href="#" class="categories__box">
+						<div
+							class="categories__image"
+							style="background-image: url(img/categories/image-4.jpg)"
+						></div>
+
+						<div class="categories__wrapper">
+							<h3 class="categories__name">Брюки</h3>
+							<p class="categories__amount">121 Товар</p>
+						</div>
+					</a>
+				</div>
+
+				<button class="button show-more _full-width">
+					<span>Загрузить еще</span>
+				</button>
+			</div>
+		</section>
+
+		<!-- Галерея -->
+		<section class="gallery">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<h2 class="gallery__title">Сладких снов</h2>
+
+						<h5 class="gallery__subtitle">
+							Пижамы из
+							<span>100% натурального хлопка</span>
+							для ваших
+							<span>любимых</span>
+						</h5>
+
+						<a href="#" class="button gallery__button">
+							<span>Купить сейчас</span>
+						</a>
+
+						<div class="gallery__images">
+							<div
+								class="gallery__image _small"
+								style="
+									background-image: url('img/main/gallery__image-1_small.jpg');
+								"
+							></div>
+							<div
+								class="gallery__image _small"
+								style="
+									background-image: url('img/main/gallery__image-2_small.jpg');
+								"
+							></div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 d-lg-block d-none">
+						<div
+							class="gallery__image _large"
+							style="background-image: url('img/main/gallery__image_large.jpg')"
+						></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="clothes">
+			<div class="container">
+				<h2 class="clothes__title">Лидеры продаж</h2>
+
+				<div class="clothes__container">
+					<div class="clothes__item">
+						<button class="clothes__favorites">
+							<svg
+								width="20"
+								height="21"
+								viewBox="0 0 20 21"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M12.4263 2.96301C13.0837 2.69064 13.7882 2.55045 14.4998 2.55045C15.2113 2.55045 15.9159 2.69064 16.5732 2.96301C17.2305 3.23533 17.8276 3.63445 18.3306 4.13757C18.8337 4.64053 19.2331 5.23795 19.5054 5.89518C19.7778 6.55252 19.918 7.25709 19.918 7.96863C19.918 8.68018 19.7778 9.38474 19.5054 10.0421C19.2331 10.6994 18.8339 11.2966 18.3307 11.7996C18.3306 11.7996 18.3307 11.7995 18.3307 11.7996L10.964 19.1662C10.6386 19.4917 10.111 19.4917 9.78552 19.1662L2.41885 11.7996C1.40283 10.7835 0.832031 9.40551 0.832031 7.96863C0.832031 6.53176 1.40283 5.15373 2.41885 4.13771C3.43488 3.12169 4.8129 2.55089 6.24977 2.55089C7.68665 2.55089 9.06467 3.12169 10.0807 4.13771L10.3748 4.43179L10.6687 4.13785C10.6688 4.1378 10.6687 4.1379 10.6687 4.13785C11.1717 3.63466 11.769 3.23536 12.4263 2.96301ZM14.4998 4.21711C14.0072 4.21711 13.5194 4.31417 13.0643 4.50273C12.6092 4.6913 12.1957 4.96768 11.8475 5.31608L10.964 6.19956C10.6386 6.52499 10.111 6.52499 9.78552 6.19956L8.90218 5.31622C8.19872 4.61276 7.24462 4.21756 6.24977 4.21756C5.25493 4.21756 4.30083 4.61276 3.59736 5.31622C2.8939 6.01969 2.4987 6.97379 2.4987 7.96863C2.4987 8.96348 2.8939 9.91758 3.59736 10.621L10.3748 17.3985L17.1522 10.621C17.5006 10.2728 17.7771 9.85919 17.9657 9.4041C18.1542 8.94902 18.2513 8.46124 18.2513 7.96863C18.2513 7.47603 18.1542 6.98825 17.9657 6.53316C17.7771 6.07808 17.5007 5.6646 17.1523 5.31636C16.8041 4.96795 16.3903 4.6913 15.9352 4.50273C15.4802 4.31417 14.9924 4.21711 14.4998 4.21711Z"
+									fill="#0A003C"
+								/>
+							</svg>
+						</button>
+
+						<div class="clothes__colors">
+							<div class="color" style="background-color: #374373"></div>
+							<div class="color" style="background-color: #f4b2b8"></div>
+							<div class="color" style="background-color: #e3383d"></div>
+						</div>
+
+						<div
+							class="clothes__image"
+							style="background-image: url('img/clothes/image-1.png')"
+						></div>
+
+						<p class="clothes__heading">Куртка для девочек</p>
+
+						<div class="clothes__flex-box">
+							<div class="clothes__price">
+								<p class="current">100 000 UZS</p>
+								<p class="old">120 000 UZS</p>
+							</div>
+
+							<button class="clothes__bag">
+								<svg
+									width="23"
+									height="25"
+									viewBox="0 0 23 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M4.05128 1.02448C4.25625 0.751176 4.57794 0.590332 4.91957 0.590332H17.9439C18.2855 0.590332 18.6072 0.751176 18.8122 1.02448L22.0683 5.36592C22.2092 5.55379 22.2853 5.78229 22.2853 6.01713V21.2122C22.2853 22.0757 21.9423 22.9039 21.3316 23.5146C20.721 24.1252 19.8928 24.4683 19.0292 24.4683H3.83421C2.97064 24.4683 2.14244 24.1252 1.53181 23.5146C0.921175 22.9039 0.578125 22.0757 0.578125 21.2122V6.01713C0.578125 5.78229 0.654293 5.55379 0.795197 5.36592L4.05128 1.02448ZM5.46225 2.76105L2.74885 6.37892V21.2122C2.74885 21.5 2.8632 21.7761 3.06674 21.9796C3.27028 22.1832 3.54635 22.2975 3.83421 22.2975H19.0292C19.3171 22.2975 19.5932 22.1832 19.7967 21.9796C20.0003 21.7761 20.1146 21.5 20.1146 21.2122V6.37892L17.4012 2.76105H5.46225Z"
+										fill="#FF461E"
+									/>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M0.578125 6.01713C0.578125 5.41771 1.06406 4.93177 1.66349 4.93177H21.2C21.7994 4.93177 22.2853 5.41771 22.2853 6.01713C22.2853 6.61656 21.7994 7.10249 21.2 7.10249H1.66349C1.06406 7.10249 0.578125 6.61656 0.578125 6.01713Z"
+										fill="#FF461E"
+									/>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M7.09029 9.27321C7.68971 9.27321 8.17565 9.75915 8.17565 10.3586C8.17565 11.2221 8.5187 12.0503 9.12933 12.661C9.73996 13.2716 10.5682 13.6147 11.4317 13.6147C12.2953 13.6147 13.1235 13.2716 13.7341 12.661C14.3448 12.0503 14.6878 11.2221 14.6878 10.3586C14.6878 9.75915 15.1737 9.27321 15.7732 9.27321C16.3726 9.27321 16.8585 9.75915 16.8585 10.3586C16.8585 11.7979 16.2868 13.1782 15.2691 14.1959C14.2513 15.2136 12.871 15.7854 11.4317 15.7854C9.99245 15.7854 8.61212 15.2136 7.5944 14.1959C6.57668 13.1782 6.00493 11.7979 6.00493 10.3586C6.00493 9.75915 6.49086 9.27321 7.09029 9.27321Z"
+										fill="#FF461E"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<button class="clothes__click">Купить в один клик</button>
+					</div>
+
+					<div class="clothes__item">
+						<button class="clothes__favorites">
+							<svg
+								width="20"
+								height="21"
+								viewBox="0 0 20 21"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M12.4263 2.96301C13.0837 2.69064 13.7882 2.55045 14.4998 2.55045C15.2113 2.55045 15.9159 2.69064 16.5732 2.96301C17.2305 3.23533 17.8276 3.63445 18.3306 4.13757C18.8337 4.64053 19.2331 5.23795 19.5054 5.89518C19.7778 6.55252 19.918 7.25709 19.918 7.96863C19.918 8.68018 19.7778 9.38474 19.5054 10.0421C19.2331 10.6994 18.8339 11.2966 18.3307 11.7996C18.3306 11.7996 18.3307 11.7995 18.3307 11.7996L10.964 19.1662C10.6386 19.4917 10.111 19.4917 9.78552 19.1662L2.41885 11.7996C1.40283 10.7835 0.832031 9.40551 0.832031 7.96863C0.832031 6.53176 1.40283 5.15373 2.41885 4.13771C3.43488 3.12169 4.8129 2.55089 6.24977 2.55089C7.68665 2.55089 9.06467 3.12169 10.0807 4.13771L10.3748 4.43179L10.6687 4.13785C10.6688 4.1378 10.6687 4.1379 10.6687 4.13785C11.1717 3.63466 11.769 3.23536 12.4263 2.96301ZM14.4998 4.21711C14.0072 4.21711 13.5194 4.31417 13.0643 4.50273C12.6092 4.6913 12.1957 4.96768 11.8475 5.31608L10.964 6.19956C10.6386 6.52499 10.111 6.52499 9.78552 6.19956L8.90218 5.31622C8.19872 4.61276 7.24462 4.21756 6.24977 4.21756C5.25493 4.21756 4.30083 4.61276 3.59736 5.31622C2.8939 6.01969 2.4987 6.97379 2.4987 7.96863C2.4987 8.96348 2.8939 9.91758 3.59736 10.621L10.3748 17.3985L17.1522 10.621C17.5006 10.2728 17.7771 9.85919 17.9657 9.4041C18.1542 8.94902 18.2513 8.46124 18.2513 7.96863C18.2513 7.47603 18.1542 6.98825 17.9657 6.53316C17.7771 6.07808 17.5007 5.6646 17.1523 5.31636C16.8041 4.96795 16.3903 4.6913 15.9352 4.50273C15.4802 4.31417 14.9924 4.21711 14.4998 4.21711Z"
+									fill="#0A003C"
+								/>
+							</svg>
+						</button>
+
+						<div class="clothes__colors">
+							<div class="color" style="background-color: #374373"></div>
+							<div class="color" style="background-color: #f4b2b8"></div>
+							<div class="color" style="background-color: #e3383d"></div>
+						</div>
+
+						<div
+							class="clothes__image"
+							style="background-image: url('img/clothes/image-2.png')"
+						></div>
+
+						<p class="clothes__heading">Куртка для девочек</p>
+
+						<div class="clothes__flex-box">
+							<div class="clothes__price">
+								<p class="current">100 000 UZS</p>
+								<p class="old">120 000 UZS</p>
+							</div>
+
+							<button class="clothes__bag">
+								<svg
+									width="23"
+									height="25"
+									viewBox="0 0 23 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M4.05128 1.02448C4.25625 0.751176 4.57794 0.590332 4.91957 0.590332H17.9439C18.2855 0.590332 18.6072 0.751176 18.8122 1.02448L22.0683 5.36592C22.2092 5.55379 22.2853 5.78229 22.2853 6.01713V21.2122C22.2853 22.0757 21.9423 22.9039 21.3316 23.5146C20.721 24.1252 19.8928 24.4683 19.0292 24.4683H3.83421C2.97064 24.4683 2.14244 24.1252 1.53181 23.5146C0.921175 22.9039 0.578125 22.0757 0.578125 21.2122V6.01713C0.578125 5.78229 0.654293 5.55379 0.795197 5.36592L4.05128 1.02448ZM5.46225 2.76105L2.74885 6.37892V21.2122C2.74885 21.5 2.8632 21.7761 3.06674 21.9796C3.27028 22.1832 3.54635 22.2975 3.83421 22.2975H19.0292C19.3171 22.2975 19.5932 22.1832 19.7967 21.9796C20.0003 21.7761 20.1146 21.5 20.1146 21.2122V6.37892L17.4012 2.76105H5.46225Z"
+										fill="#FF461E"
+									/>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M0.578125 6.01713C0.578125 5.41771 1.06406 4.93177 1.66349 4.93177H21.2C21.7994 4.93177 22.2853 5.41771 22.2853 6.01713C22.2853 6.61656 21.7994 7.10249 21.2 7.10249H1.66349C1.06406 7.10249 0.578125 6.61656 0.578125 6.01713Z"
+										fill="#FF461E"
+									/>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M7.09029 9.27321C7.68971 9.27321 8.17565 9.75915 8.17565 10.3586C8.17565 11.2221 8.5187 12.0503 9.12933 12.661C9.73996 13.2716 10.5682 13.6147 11.4317 13.6147C12.2953 13.6147 13.1235 13.2716 13.7341 12.661C14.3448 12.0503 14.6878 11.2221 14.6878 10.3586C14.6878 9.75915 15.1737 9.27321 15.7732 9.27321C16.3726 9.27321 16.8585 9.75915 16.8585 10.3586C16.8585 11.7979 16.2868 13.1782 15.2691 14.1959C14.2513 15.2136 12.871 15.7854 11.4317 15.7854C9.99245 15.7854 8.61212 15.2136 7.5944 14.1959C6.57668 13.1782 6.00493 11.7979 6.00493 10.3586C6.00493 9.75915 6.49086 9.27321 7.09029 9.27321Z"
+										fill="#FF461E"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<button class="clothes__click">Купить в один клик</button>
+					</div>
+
+					<div class="clothes__item">
+						<button class="clothes__favorites">
+							<svg
+								width="20"
+								height="21"
+								viewBox="0 0 20 21"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M12.4263 2.96301C13.0837 2.69064 13.7882 2.55045 14.4998 2.55045C15.2113 2.55045 15.9159 2.69064 16.5732 2.96301C17.2305 3.23533 17.8276 3.63445 18.3306 4.13757C18.8337 4.64053 19.2331 5.23795 19.5054 5.89518C19.7778 6.55252 19.918 7.25709 19.918 7.96863C19.918 8.68018 19.7778 9.38474 19.5054 10.0421C19.2331 10.6994 18.8339 11.2966 18.3307 11.7996C18.3306 11.7996 18.3307 11.7995 18.3307 11.7996L10.964 19.1662C10.6386 19.4917 10.111 19.4917 9.78552 19.1662L2.41885 11.7996C1.40283 10.7835 0.832031 9.40551 0.832031 7.96863C0.832031 6.53176 1.40283 5.15373 2.41885 4.13771C3.43488 3.12169 4.8129 2.55089 6.24977 2.55089C7.68665 2.55089 9.06467 3.12169 10.0807 4.13771L10.3748 4.43179L10.6687 4.13785C10.6688 4.1378 10.6687 4.1379 10.6687 4.13785C11.1717 3.63466 11.769 3.23536 12.4263 2.96301ZM14.4998 4.21711C14.0072 4.21711 13.5194 4.31417 13.0643 4.50273C12.6092 4.6913 12.1957 4.96768 11.8475 5.31608L10.964 6.19956C10.6386 6.52499 10.111 6.52499 9.78552 6.19956L8.90218 5.31622C8.19872 4.61276 7.24462 4.21756 6.24977 4.21756C5.25493 4.21756 4.30083 4.61276 3.59736 5.31622C2.8939 6.01969 2.4987 6.97379 2.4987 7.96863C2.4987 8.96348 2.8939 9.91758 3.59736 10.621L10.3748 17.3985L17.1522 10.621C17.5006 10.2728 17.7771 9.85919 17.9657 9.4041C18.1542 8.94902 18.2513 8.46124 18.2513 7.96863C18.2513 7.47603 18.1542 6.98825 17.9657 6.53316C17.7771 6.07808 17.5007 5.6646 17.1523 5.31636C16.8041 4.96795 16.3903 4.6913 15.9352 4.50273C15.4802 4.31417 14.9924 4.21711 14.4998 4.21711Z"
+									fill="#0A003C"
+								/>
+							</svg>
+						</button>
+
+						<div class="clothes__colors">
+							<div class="color" style="background-color: #374373"></div>
+							<div class="color" style="background-color: #f4b2b8"></div>
+							<div class="color" style="background-color: #e3383d"></div>
+						</div>
+
+						<div
+							class="clothes__image"
+							style="background-image: url('img/clothes/image-3.png')"
+						></div>
+
+						<p class="clothes__heading">Куртка для девочек</p>
+
+						<div class="clothes__flex-box">
+							<div class="clothes__price">
+								<p class="current">100 000 UZS</p>
+								<p class="old">120 000 UZS</p>
+							</div>
+
+							<button class="clothes__bag">
+								<svg
+									width="23"
+									height="25"
+									viewBox="0 0 23 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M4.05128 1.02448C4.25625 0.751176 4.57794 0.590332 4.91957 0.590332H17.9439C18.2855 0.590332 18.6072 0.751176 18.8122 1.02448L22.0683 5.36592C22.2092 5.55379 22.2853 5.78229 22.2853 6.01713V21.2122C22.2853 22.0757 21.9423 22.9039 21.3316 23.5146C20.721 24.1252 19.8928 24.4683 19.0292 24.4683H3.83421C2.97064 24.4683 2.14244 24.1252 1.53181 23.5146C0.921175 22.9039 0.578125 22.0757 0.578125 21.2122V6.01713C0.578125 5.78229 0.654293 5.55379 0.795197 5.36592L4.05128 1.02448ZM5.46225 2.76105L2.74885 6.37892V21.2122C2.74885 21.5 2.8632 21.7761 3.06674 21.9796C3.27028 22.1832 3.54635 22.2975 3.83421 22.2975H19.0292C19.3171 22.2975 19.5932 22.1832 19.7967 21.9796C20.0003 21.7761 20.1146 21.5 20.1146 21.2122V6.37892L17.4012 2.76105H5.46225Z"
+										fill="#FF461E"
+									/>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M0.578125 6.01713C0.578125 5.41771 1.06406 4.93177 1.66349 4.93177H21.2C21.7994 4.93177 22.2853 5.41771 22.2853 6.01713C22.2853 6.61656 21.7994 7.10249 21.2 7.10249H1.66349C1.06406 7.10249 0.578125 6.61656 0.578125 6.01713Z"
+										fill="#FF461E"
+									/>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M7.09029 9.27321C7.68971 9.27321 8.17565 9.75915 8.17565 10.3586C8.17565 11.2221 8.5187 12.0503 9.12933 12.661C9.73996 13.2716 10.5682 13.6147 11.4317 13.6147C12.2953 13.6147 13.1235 13.2716 13.7341 12.661C14.3448 12.0503 14.6878 11.2221 14.6878 10.3586C14.6878 9.75915 15.1737 9.27321 15.7732 9.27321C16.3726 9.27321 16.8585 9.75915 16.8585 10.3586C16.8585 11.7979 16.2868 13.1782 15.2691 14.1959C14.2513 15.2136 12.871 15.7854 11.4317 15.7854C9.99245 15.7854 8.61212 15.2136 7.5944 14.1959C6.57668 13.1782 6.00493 11.7979 6.00493 10.3586C6.00493 9.75915 6.49086 9.27321 7.09029 9.27321Z"
+										fill="#FF461E"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<button class="clothes__click">Купить в один клик</button>
+					</div>
+
+					<div class="clothes__item">
+						<button class="clothes__favorites">
+							<svg
+								width="20"
+								height="21"
+								viewBox="0 0 20 21"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M12.4263 2.96301C13.0837 2.69064 13.7882 2.55045 14.4998 2.55045C15.2113 2.55045 15.9159 2.69064 16.5732 2.96301C17.2305 3.23533 17.8276 3.63445 18.3306 4.13757C18.8337 4.64053 19.2331 5.23795 19.5054 5.89518C19.7778 6.55252 19.918 7.25709 19.918 7.96863C19.918 8.68018 19.7778 9.38474 19.5054 10.0421C19.2331 10.6994 18.8339 11.2966 18.3307 11.7996C18.3306 11.7996 18.3307 11.7995 18.3307 11.7996L10.964 19.1662C10.6386 19.4917 10.111 19.4917 9.78552 19.1662L2.41885 11.7996C1.40283 10.7835 0.832031 9.40551 0.832031 7.96863C0.832031 6.53176 1.40283 5.15373 2.41885 4.13771C3.43488 3.12169 4.8129 2.55089 6.24977 2.55089C7.68665 2.55089 9.06467 3.12169 10.0807 4.13771L10.3748 4.43179L10.6687 4.13785C10.6688 4.1378 10.6687 4.1379 10.6687 4.13785C11.1717 3.63466 11.769 3.23536 12.4263 2.96301ZM14.4998 4.21711C14.0072 4.21711 13.5194 4.31417 13.0643 4.50273C12.6092 4.6913 12.1957 4.96768 11.8475 5.31608L10.964 6.19956C10.6386 6.52499 10.111 6.52499 9.78552 6.19956L8.90218 5.31622C8.19872 4.61276 7.24462 4.21756 6.24977 4.21756C5.25493 4.21756 4.30083 4.61276 3.59736 5.31622C2.8939 6.01969 2.4987 6.97379 2.4987 7.96863C2.4987 8.96348 2.8939 9.91758 3.59736 10.621L10.3748 17.3985L17.1522 10.621C17.5006 10.2728 17.7771 9.85919 17.9657 9.4041C18.1542 8.94902 18.2513 8.46124 18.2513 7.96863C18.2513 7.47603 18.1542 6.98825 17.9657 6.53316C17.7771 6.07808 17.5007 5.6646 17.1523 5.31636C16.8041 4.96795 16.3903 4.6913 15.9352 4.50273C15.4802 4.31417 14.9924 4.21711 14.4998 4.21711Z"
+									fill="#0A003C"
+								/>
+							</svg>
+						</button>
+
+						<div class="clothes__colors">
+							<div class="color" style="background-color: #374373"></div>
+							<div class="color" style="background-color: #f4b2b8"></div>
+							<div class="color" style="background-color: #e3383d"></div>
+						</div>
+
+						<div
+							class="clothes__image"
+							style="background-image: url('img/clothes/image-4.png')"
+						></div>
+
+						<p class="clothes__heading">Куртка для девочек</p>
+
+						<div class="clothes__flex-box">
+							<div class="clothes__price">
+								<p class="current">100 000 UZS</p>
+								<p class="old">120 000 UZS</p>
+							</div>
+
+							<button class="clothes__bag">
+								<svg
+									width="23"
+									height="25"
+									viewBox="0 0 23 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M4.05128 1.02448C4.25625 0.751176 4.57794 0.590332 4.91957 0.590332H17.9439C18.2855 0.590332 18.6072 0.751176 18.8122 1.02448L22.0683 5.36592C22.2092 5.55379 22.2853 5.78229 22.2853 6.01713V21.2122C22.2853 22.0757 21.9423 22.9039 21.3316 23.5146C20.721 24.1252 19.8928 24.4683 19.0292 24.4683H3.83421C2.97064 24.4683 2.14244 24.1252 1.53181 23.5146C0.921175 22.9039 0.578125 22.0757 0.578125 21.2122V6.01713C0.578125 5.78229 0.654293 5.55379 0.795197 5.36592L4.05128 1.02448ZM5.46225 2.76105L2.74885 6.37892V21.2122C2.74885 21.5 2.8632 21.7761 3.06674 21.9796C3.27028 22.1832 3.54635 22.2975 3.83421 22.2975H19.0292C19.3171 22.2975 19.5932 22.1832 19.7967 21.9796C20.0003 21.7761 20.1146 21.5 20.1146 21.2122V6.37892L17.4012 2.76105H5.46225Z"
+										fill="#FF461E"
+									/>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M0.578125 6.01713C0.578125 5.41771 1.06406 4.93177 1.66349 4.93177H21.2C21.7994 4.93177 22.2853 5.41771 22.2853 6.01713C22.2853 6.61656 21.7994 7.10249 21.2 7.10249H1.66349C1.06406 7.10249 0.578125 6.61656 0.578125 6.01713Z"
+										fill="#FF461E"
+									/>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M7.09029 9.27321C7.68971 9.27321 8.17565 9.75915 8.17565 10.3586C8.17565 11.2221 8.5187 12.0503 9.12933 12.661C9.73996 13.2716 10.5682 13.6147 11.4317 13.6147C12.2953 13.6147 13.1235 13.2716 13.7341 12.661C14.3448 12.0503 14.6878 11.2221 14.6878 10.3586C14.6878 9.75915 15.1737 9.27321 15.7732 9.27321C16.3726 9.27321 16.8585 9.75915 16.8585 10.3586C16.8585 11.7979 16.2868 13.1782 15.2691 14.1959C14.2513 15.2136 12.871 15.7854 11.4317 15.7854C9.99245 15.7854 8.61212 15.2136 7.5944 14.1959C6.57668 13.1782 6.00493 11.7979 6.00493 10.3586C6.00493 9.75915 6.49086 9.27321 7.09029 9.27321Z"
+										fill="#FF461E"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<button class="clothes__click">Купить в один клик</button>
+					</div>
+				</div>
+
+				<button class="button show-more">
+					<span>Загрузить еще</span>
+				</button>
+			</div>
+		</section>
+
+		<!-- Подвал -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__flex-box">
+					<div class="footer__inner">
+						<a href="#" class="footer__logo">
+							<img src="img/logo.svg" alt="Mod.kids" />
+						</a>
+
+						<div class="footer__data">
+							<p>ООО «PLUG AND PLAY COMMUNICATIONS»</p>
+							<p>Код ОКЭД-61200</p>
+							<p>ИНН-306985234</p>
+							<p>номер расчетного счета-20208000505157897001</p>
+							<p>Код банка-00491</p>
+							<p>Юридический адрес-Г.Ташкент,</p>
+							<p>Алмазарский район, ул Елкин 7-10</p>
+						</div>
+					</div>
+
+					<nav class="footer__menu">
+						<a href="#">Девочкам</a>
+						<a href="#">Мальчикам</a>
+						<a href="#">Новорожденным</a>
+					</nav>
+
+					<nav class="footer__menu _small">
+						<a href="#">Новинки</a>
+						<a href="#">Скидки</a>
+						<a href="#">Хиты</a>
+						<a href="#">Блог</a>
+						<a href="#">Для юридических лиц</a>
+						<a href="#">Условия обслуживания</a>
+						<a href="#">Контакты</a>
+						<a href="#">Вопросы-ответы</a>
+					</nav>
+
+					<div class="footer__inner">
+						<a href="998990000000" class="footer__tel">
+							<img src="img/icons/tel.svg" alt="Телефон" />
+							<span>+998 (99) 000 00 00</span>
+						</a>
+
+						<address class="footer__address">
+							Адрес: Узбекистан, г. Ташкент
+						</address>
+
+						<p class="footer__working-hours">
+							Режим работы: Пн. - Вс.: 09:00 - 20:00
+						</p>
+
+						<div class="footer__social-links">
+							<a class="social-links__item" href="#">
+								<img src="img/icons/instagram.svg" alt="instagram" />
+							</a>
+							<a class="social-links__item" href="#">
+								<img src="img/icons/whatsapp.svg" alt="whatsapp" />
+							</a>
+							<a class="social-links__item" href="#">
+								<img src="img/icons/telegram.svg" alt="telegram" />
+							</a>
+							<a class="social-links__item" href="#">
+								<img src="img/icons/facebook.svg" alt="facebook" />
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__bottom-line">
+					<p>© 2007-2020 Все права защищены.</p>
+					<a href="#">Политика обработки персональных данных</a>
+					<a href="#" class="web-dev">
+						<span>Разработка сайта</span>
+						<svg
+							width="31"
+							height="32"
+							viewBox="0 0 31 32"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M24.9369 11.7707C24.9456 8.95331 25.2338 6.87849 24.1599 4.44113C23.3698 2.64149 21.4752 0.79381 19.4497 0.330798C17.6818 -0.0754301 12.8843 -0.0404858 11.1513 0.383214C7.78568 1.20877 5.74708 4.74689 5.73399 8.12775C5.72962 8.84411 5.57684 11.3339 5.84748 11.7314C13.5391 14.9987 21.7284 12.8409 24.9413 11.7663L24.9369 11.7707Z"
+								fill="white"
+							/>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M2.81802 18.7946C2.81802 17.5715 2.99263 16.3965 3.33312 15.2739L3.18034 15.2259C2.36403 14.7323 0.517508 14.0247 0.417106 12.854C0.347261 12.0328 1.16794 10.1852 3.33749 11.5917C12.5177 16.5057 20.1439 14.4353 24.7885 12.7841C27.1764 11.9324 28.4685 10.6089 29.4158 11.1592C31.044 11.797 30.4678 13.6883 29.132 14.0596C28.5034 14.3872 27.8399 14.693 27.1545 14.9725C27.5736 16.1956 27.7831 17.4754 27.7831 18.7946C27.7831 20.4675 27.4732 22.0444 26.8621 23.5077C26.2509 24.9797 25.3517 26.277 24.1774 27.4127C22.9289 28.6052 21.5495 29.5137 20.0391 30.1253C18.5188 30.739 16.8941 31.052 15.2547 31.0469C13.6047 31.0469 12.0332 30.7368 10.514 30.1253C9.00364 29.5137 7.65913 28.6227 6.47614 27.4651C5.28441 26.2814 4.37206 24.9579 3.75219 23.4902C3.13232 22.0269 2.82238 20.4588 2.82238 18.8033L2.81802 18.7946ZM22.3047 18.8426C22.3047 17.5278 22.3745 17.0517 22.0995 16.5232C20.0129 16.9818 17.8739 17.2526 15.8484 17.3138C13.238 17.3575 10.8938 17.1129 8.58021 16.6542C8.41433 17.3706 8.2921 18.1699 8.2921 18.8426C8.2921 20.948 8.97745 22.7302 10.3394 24.1891C11.7014 25.6524 13.3515 26.3775 15.3028 26.3775C17.2453 26.3775 18.8954 25.6524 20.2574 24.1891C21.6193 22.7258 22.3047 20.948 22.3047 18.8426Z"
+								fill="white"
+							/>
+
+							<defs>
+								<clipPath id="clip0">
+									<rect
+										width="30"
+										height="31"
+										fill="white"
+										transform="translate(0.411865 0.046875)"
+									/>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
