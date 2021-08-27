@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Mod.kids | Статья</title>
+
+		<meta name="viewport" content="width=device-width" />
+		<meta name="format-detection" content="telephone=no" />
+
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+
+		<script
+			async
+			defer
+			src="https://kit.fontawesome.com/55e0136003.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- libs css -->
+		<link rel="stylesheet" href="libs/select2/select2.min.css" />
+		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
+
+		<!-- main css -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- jquery -->
+		<script defer src="libs/jquery.min.js"></script>
+
+		<!-- libs -->
+		<script defer src="libs/select2/select2.min.js"></script>
+		<script
+			defer
+			src="libs/magnific-popup/jquery.magnific-popup.min.js"
+		></script>
+		<script defer src="libs/jquery.inputmask.min.js"></script>
+
+		<!-- js -->
+		<script defer src="js/custom.js"></script>
+	</head>
+
+	<body class="isnohome p-article">
+		<!-- Попапы -->
+		<form class="popup popup__callback mfp-hide">
+			<h3 class="popup__title">Закажите звонок</h3>
+
+			<p class="popup__text">И мы свяжимся с вами в ближайшее время</p>
+
+			<input
+				class="popup__input"
+				type="text"
+				name="Name"
+				placeholder="Ваше имя"
+				required
+			/>
+			<input
+				class="popup__input"
+				type="tel"
+				name="Telephone number"
+				placeholder="Ваш телефон"
+				required
+			/>
+
+			<button type="submit" class="popup__button button">
+				<span>Заказать звонок</span>
+			</button>
+		</form>
+
+		<form class="popup popup__feedback mfp-hide">
+			<h3 class="popup__title">Обратная связь</h3>
+
+			<p class="popup__text">
+				Напишите нам и мы свяжимся с вами в ближайшее время
+			</p>
+
+			<input
+				class="popup__input"
+				type="text"
+				name="Name"
+				placeholder="Ваше имя"
+				required
+			/>
+
+			<input
+				class="popup__input"
+				type="email"
+				name="Email"
+				placeholder="Ваш email"
+				required
+			/>
+
+			<textarea
+				class="popup__textarea"
+				name="Message"
+				placeholder="Ваше сообщение"
+			></textarea>
+
+			<button type="submit" class="popup__button button">
+				<span>Заказать звонок</span>
+			</button>
+		</form>
+
+		<!-- Шапка -->
+		<header class="header">
+			<marquee class="header__ticker">
+				<span>
+					Реализация товаров осуществляется только оптом и минимальная сумма
+					заказа составляет 500$.
+				</span>
+				<span>
+					Реализация товаров осуществляется только оптом и минимальная сумма
+					заказа составляет 500$.
+				</span>
+				<span>
+					Реализация товаров осуществляется только оптом и минимальная сумма
+					заказа составляет 500$.
+				</span>
+				<span>
+					Реализация товаров осуществляется только оптом и минимальная сумма
+					заказа составляет 500$.
+				</span>
+			</marquee>
+
+			<div class="header__wrapper_top">
+				<div class="container header__container">
+					<div class="header__inner">
+						<a href="index.html" class="header__logo">
+							<img src="img/logo.svg" alt="Mod.kids" />
+						</a>
+
+						<form class="lang">
+							<div class="lang__heading">Ru</div>
+
+							<div class="lang__dropdown">
+								<div class="lang__wrapper">
+									<h6 class="lang__title">Выбрать страну и регион</h6>
+
+									<select class="select2" name="Country">
+										<option value="UZ">Узбекистан</option>
+										<option value="UA">Украина</option>
+										<option value="RU">Россия</option>
+									</select>
+								</div>
+
+								<div class="lang__wrapper">
+									<h6 class="lang__title">Выбрать язык</h6>
+
+									<label class="lang__item">
+										<input
+											class="lang__radio"
+											type="radio"
+											name="Language"
+											checked
+										/>
+										<span>Русский</span>
+									</label>
+
+									<label class="lang__item">
+										<input class="lang__radio" type="radio" name="Language" />
+										<span>Английский</span>
+									</label>
+								</div>
+
+								<div class="lang__wrapper">
+									<h6 class="lang__title">Выбрать валюту</h6>
+
+									<label class="lang__item">
+										<input
+											class="lang__radio"
+											type="radio"
+											name="Currency"
+											checked
+										/>
+										<span>UZS</span>
+									</label>
+
+									<label class="lang__item">
+										<input class="lang__radio" type="radio" name="Currency" />
+										<span>USD</span>
+									</label>
+								</div>
+
+								<button type="submit" class="lang__button button">
+									<span>Перейти к покупкам</span>
+								</button>
+							</div>
+						</form>
+					</div>
+
+					<nav class="header__menu">
+						<a href="#">Новинки</a>
+						<a href="#">О нас</a>
+						<a href="#">Как купить</a>
+						<a href="#">Новости</a>
+						<a href="#">Распродажа</a>
+						<a href="#">Хиты</a>
+						<a href="#">Доставка</a>
+						<a href="#">Контакты</a>
+					</nav>
+
+					<div class="header__inner">
+						<div href="#" class="header__search header__button">
+							<img src="img/icons/search.svg" alt="Поиск" />
+						</div>
+
+						<a href="#" class="header__cabinet header__button">
+							<img src="img/icons/user.svg" alt="Личный кабинет" />
+						</a>
+
+						<a href="#" class="header__chosen header__button">
+							<img src="img/icons/heart.svg" alt="Избранные" />
+						</a>
+
+						<a href="#" class="header__cart header__button">
+							<img src="img/icons/shopping-bag.svg" alt="Корзина" />
+							<span>2</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__wrapper_bottom">
+				<div class="container header__container">
+					<div class="social-links">
+						<a class="social-links__item" href="#">
+							<img src="img/icons/instagram.svg" alt="instagram" />
+						</a>
+						<a class="social-links__item" href="#">
+							<img src="img/icons/whatsapp.svg" alt="whatsapp" />
+						</a>
+						<a class="social-links__item" href="#">
+							<img src="img/icons/telegram.svg" alt="telegram" />
+						</a>
+						<a class="social-links__item" href="#">
+							<img src="img/icons/facebook.svg" alt="facebook" />
+						</a>
+					</div>
+
+					<nav class="header__menu _second">
+						<a href="#">Девочкам</a>
+						<a href="#">Мальчикам</a>
+						<a href="#">Новорожденным</a>
+					</nav>
+
+					<div class="header__inner">
+						<div class="header__popup-buttons">
+							<a
+								href=".popup__feedback"
+								class="header__feedback magnific-popup"
+							>
+								Обратная связь
+							</a>
+							<a
+								href=".popup__callback"
+								class="header__callback magnific-popup"
+							>
+								Заказать звонок
+							</a>
+						</div>
+
+						<div class="tel">
+							<div class="dropdown__heading">
+								<i class="fas fa-chevron-down"></i>
+								<a href="tel:998990000000">+998 (99) 000 00 00</a>
+								<img src="img/icons/tel.svg" alt="Телефон" />
+							</div>
+
+							<div class="dropdown__body">
+								<a href="tel:998990000000">+998 (99) 000 00 00</a>
+								<a href="tel:998990000000">+998 (99) 000 00 00</a>
+								<a href="tel:998990000000">+998 (99) 000 00 00</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Шапка моб версии -->
+		<header class="header _mobile">
+			<div class="container header__container">
+				<div class="header__inner">
+					<div class="header__hamburger">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line _short"></div>
+					</div>
+
+					<div class="header__search header__button">
+						<img src="img/icons/search.svg" alt="Поиск" />
+					</div>
+				</div>
+
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.svg" alt="Mod.kids" />
+				</a>
+
+				<div class="header__inner">
+					<a href="#" class="header__chosen header__button">
+						<img src="img/icons/heart.svg" alt="Избранные" />
+					</a>
+
+					<a href="#" class="header__cart header__button">
+						<img src="img/icons/shopping-bag.svg" alt="Корзина" />
+						<span>2</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<div class="dropdown__wrapper">
+					<nav class="dropdown__menu">
+						<a href="#">Девочкам</a>
+						<a href="#">Мальчикам</a>
+						<a href="#">Новорожденным</a>
+						<a href="#">Коллекции</a>
+					</nav>
+
+					<nav class="dropdown__menu _small">
+						<a href="#">Новинки</a>
+						<a href="#">О нас</a>
+						<a href="#">Как купить</a>
+						<a href="#">Новости</a>
+						<a href="#">Распродажа</a>
+						<a href="#">Хиты</a>
+						<a href="#">Доставка</a>
+						<a href="#">Контакты</a>
+					</nav>
+				</div>
+
+				<div class="dropdown__wrapper _bd">
+					<div class="dropdown__flex-box">
+						<div class="tel">
+							<div class="dropdown__heading">
+								<a href="tel:998990000000">+998 (99) 000 00 00</a>
+								<i class="fas fa-chevron-down"></i>
+							</div>
+
+							<div class="dropdown__body">
+								<a href="tel:998990000000">+998 (99) 000 00 00</a>
+								<a href="tel:998990000000">+998 (99) 000 00 00</a>
+								<a href="tel:998990000000">+998 (99) 000 00 00</a>
+							</div>
+						</div>
+
+						<form class="lang">
+							<div class="lang__heading">Ru</div>
+
+							<div class="lang__dropdown">
+								<div class="lang__wrapper">
+									<h6 class="lang__title">Выбрать страну и регион</h6>
+
+									<select class="select2" name="Country">
+										<option value="UZ">Узбекистан</option>
+										<option value="UA">Украина</option>
+										<option value="RU">Россия</option>
+									</select>
+								</div>
+
+								<div class="lang__wrapper">
+									<h6 class="lang__title">Выбрать язык</h6>
+
+									<label class="lang__item">
+										<input
+											class="lang__radio"
+											type="radio"
+											name="Language"
+											checked
+										/>
+										<span>Русский</span>
+									</label>
+
+									<label class="lang__item">
+										<input class="lang__radio" type="radio" name="Language" />
+										<span>Английский</span>
+									</label>
+								</div>
+
+								<div class="lang__wrapper">
+									<h6 class="lang__title">Выбрать валюту</h6>
+
+									<label class="lang__item">
+										<input
+											class="lang__radio"
+											type="radio"
+											name="Currency"
+											checked
+										/>
+										<span>UZS</span>
+									</label>
+
+									<label class="lang__item">
+										<input class="lang__radio" type="radio" name="Currency" />
+										<span>USD</span>
+									</label>
+								</div>
+
+								<button type="submit" class="lang__button button">
+									<span>Перейти к покупкам</span>
+								</button>
+							</div>
+						</form>
+					</div>
+
+					<div class="social-links">
+						<a class="social-links__item" href="#">
+							<img src="img/icons/instagram.svg" alt="instagram" />
+						</a>
+						<a class="social-links__item" href="#">
+							<img src="img/icons/whatsapp.svg" alt="whatsapp" />
+						</a>
+						<a class="social-links__item" href="#">
+							<img src="img/icons/telegram.svg" alt="telegram" />
+						</a>
+						<a class="social-links__item" href="#">
+							<img src="img/icons/facebook.svg" alt="facebook" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Хлебные крошки -->
+		<div class="breadcrumbs">
+			<div class="container breadcrumbs__container">
+				<a href="#" class="breadcrumbs__back breadcrumbs__item">Назад</a>
+				<a href="index.html" class="breadcrumbs__main breadcrumbs__item">
+					Главная
+				</a>
+				<span class="breadcrumbs__current breadcrumbs__item">Блог</span>
+			</div>
+		</div>
+
+		<!-- Контент страницы -->
+		<section class="content custom-padding_top">
+			<div class="container">
+				<h1 class="content__title _large">
+					100% хлопковая одежда - для малышей
+				</h1>
+
+				<h3 class="content__date">22.12.2020</h3>
+
+				<div class="row">
+					<div class="col-xl-10 offset-xl-1">
+						<div
+							class="content__image"
+							style="background-image: url('img/blog/article__image.jpg')"
+						></div>
+					</div>
+
+					<div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+						<div class="content__wrapper">
+							<p class="content__text">
+								100% хлопковая одежда для новорожденных; комбинезон с длинными
+								рукавами для маленьких мальчиков и девочек; комбинезон с
+								рисунком; одежда для малышей; костюм для подвижных игр для
+								малышей
+							</p>
+						</div>
+
+						<div class="content__wrapper">
+							<h4 class="content__heading">
+								Комбинезон с длинными рукавами для маленьких мальчиков и девочек
+							</h4>
+
+							<p class="content__text">
+								100% хлопковая одежда для новорожденных; комбинезон с длинными
+								рукавами для маленьких мальчиков и девочек; комбинезон с
+								рисунком; одежда для малышей; костюм для подвижных игр для
+								малышей
+							</p>
+
+							<ul class="content__list">
+								<li class="content__list-item">
+									хлопковая одежда для новорожденных
+								</li>
+								<li class="content__list-item">
+									костюм для подвижных игр для малышей
+								</li>
+								<li class="content__list-item">
+									хлопковая одежда для новорожденных
+								</li>
+								<li class="content__list-item">
+									костюм для подвижных игр для малышей
+								</li>
+							</ul>
+						</div>
+
+						<div class="content__wrapper">
+							<p class="content__text">
+								100% хлопковая одежда для новорожденных; комбинезон с длинными
+								рукавами для маленьких мальчиков и девочек; комбинезон с
+								рисунком; одежда для малышей; костюм для подвижных игр для
+								малышей
+							</p>
+						</div>
+
+						<div class="content__wrapper">
+							<h5 class="content__caption">Поделиться в соц сетях</h5>
+
+							<div class="social-links">
+								<a class="social-links__item" href="#">
+									<img src="img/icons/instagram.svg" alt="instagram" />
+								</a>
+								<a class="social-links__item" href="#">
+									<img src="img/icons/whatsapp.svg" alt="whatsapp" />
+								</a>
+								<a class="social-links__item" href="#">
+									<img src="img/icons/telegram.svg" alt="telegram" />
+								</a>
+								<a class="social-links__item" href="#">
+									<img src="img/icons/facebook.svg" alt="facebook" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="blog custom-padding_bottom">
+			<div class="container">
+				<h2 class="blog__title _text-left">Похожие статьи</h2>
+
+				<div class="row">
+					<div class="col-lg-4">
+						<article class="article">
+							<div
+								class="article__preview"
+								style="background-image: url('img/blog/image-1.jpg')"
+							></div>
+
+							<div class="article__inner">
+								<span class="article__date">22.12.2020</span>
+
+								<h3 class="article__title">Сладких снов</h3>
+
+								<p class="article__text">
+									Если вы хотите спать, как в детстве, надевайте теплую пижаму,
+									берите с собой в постель...
+								</p>
+
+								<a href="#" class="article__link">Читать далее</a>
+							</div>
+						</article>
+					</div>
+
+					<div class="col-lg-4">
+						<article class="article">
+							<div
+								class="article__preview"
+								style="background-image: url('img/blog/image-2.jpg')"
+							></div>
+
+							<div class="article__inner">
+								<span class="article__date">22.12.2020</span>
+
+								<h3 class="article__title">Сладких снов</h3>
+
+								<p class="article__text">
+									Если вы хотите спать, как в детстве, надевайте теплую пижаму,
+									берите с собой в постель...
+								</p>
+
+								<a href="#" class="article__link">Читать далее</a>
+							</div>
+						</article>
+					</div>
+
+					<div class="col-lg-4">
+						<article class="article">
+							<div
+								class="article__preview"
+								style="background-image: url('img/blog/image-3.jpg')"
+							></div>
+
+							<div class="article__inner">
+								<span class="article__date">22.12.2020</span>
+
+								<h3 class="article__title">Сладких снов</h3>
+
+								<p class="article__text">
+									Если вы хотите спать, как в детстве, надевайте теплую пижаму,
+									берите с собой в постель...
+								</p>
+
+								<a href="#" class="article__link">Читать далее</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Подвал -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__flex-box">
+					<div class="footer__inner">
+						<a href="#" class="footer__logo">
+							<img src="img/logo.svg" alt="Mod.kids" />
+						</a>
+
+						<div class="footer__data">
+							<p>ООО «PLUG AND PLAY COMMUNICATIONS»</p>
+							<p>Код ОКЭД-61200</p>
+							<p>ИНН-306985234</p>
+							<p>номер расчетного счета-20208000505157897001</p>
+							<p>Код банка-00491</p>
+							<p>Юридический адрес-Г.Ташкент,</p>
+							<p>Алмазарский район, ул Елкин 7-10</p>
+						</div>
+					</div>
+
+					<nav class="footer__menu">
+						<a href="#">Девочкам</a>
+						<a href="#">Мальчикам</a>
+						<a href="#">Новорожденным</a>
+					</nav>
+
+					<nav class="footer__menu _small">
+						<a href="#">Новинки</a>
+						<a href="#">Скидки</a>
+						<a href="#">Хиты</a>
+						<a href="#">Блог</a>
+						<a href="#">Для юридических лиц</a>
+						<a href="#">Условия обслуживания</a>
+						<a href="#">Контакты</a>
+						<a href="#">Вопросы-ответы</a>
+					</nav>
+
+					<div class="footer__inner">
+						<a href="998990000000" class="footer__tel">
+							<img src="img/icons/tel.svg" alt="Телефон" />
+							<span>+998 (99) 000 00 00</span>
+						</a>
+
+						<address class="footer__address">
+							Адрес: Узбекистан, г. Ташкент
+						</address>
+
+						<p class="footer__working-hours">
+							Режим работы: Пн. - Вс.: 09:00 - 20:00
+						</p>
+
+						<div class="footer__social-links">
+							<a class="social-links__item" href="#">
+								<img src="img/icons/instagram.svg" alt="instagram" />
+							</a>
+							<a class="social-links__item" href="#">
+								<img src="img/icons/whatsapp.svg" alt="whatsapp" />
+							</a>
+							<a class="social-links__item" href="#">
+								<img src="img/icons/telegram.svg" alt="telegram" />
+							</a>
+							<a class="social-links__item" href="#">
+								<img src="img/icons/facebook.svg" alt="facebook" />
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__bottom-line">
+					<p>© 2007-2020 Все права защищены.</p>
+					<a href="#">Политика обработки персональных данных</a>
+					<a href="#" class="web-dev">
+						<span>Разработка сайта</span>
+						<svg
+							width="31"
+							height="32"
+							viewBox="0 0 31 32"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M24.9369 11.7707C24.9456 8.95331 25.2338 6.87849 24.1599 4.44113C23.3698 2.64149 21.4752 0.79381 19.4497 0.330798C17.6818 -0.0754301 12.8843 -0.0404858 11.1513 0.383214C7.78568 1.20877 5.74708 4.74689 5.73399 8.12775C5.72962 8.84411 5.57684 11.3339 5.84748 11.7314C13.5391 14.9987 21.7284 12.8409 24.9413 11.7663L24.9369 11.7707Z"
+								fill="white"
+							/>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M2.81802 18.7946C2.81802 17.5715 2.99263 16.3965 3.33312 15.2739L3.18034 15.2259C2.36403 14.7323 0.517508 14.0247 0.417106 12.854C0.347261 12.0328 1.16794 10.1852 3.33749 11.5917C12.5177 16.5057 20.1439 14.4353 24.7885 12.7841C27.1764 11.9324 28.4685 10.6089 29.4158 11.1592C31.044 11.797 30.4678 13.6883 29.132 14.0596C28.5034 14.3872 27.8399 14.693 27.1545 14.9725C27.5736 16.1956 27.7831 17.4754 27.7831 18.7946C27.7831 20.4675 27.4732 22.0444 26.8621 23.5077C26.2509 24.9797 25.3517 26.277 24.1774 27.4127C22.9289 28.6052 21.5495 29.5137 20.0391 30.1253C18.5188 30.739 16.8941 31.052 15.2547 31.0469C13.6047 31.0469 12.0332 30.7368 10.514 30.1253C9.00364 29.5137 7.65913 28.6227 6.47614 27.4651C5.28441 26.2814 4.37206 24.9579 3.75219 23.4902C3.13232 22.0269 2.82238 20.4588 2.82238 18.8033L2.81802 18.7946ZM22.3047 18.8426C22.3047 17.5278 22.3745 17.0517 22.0995 16.5232C20.0129 16.9818 17.8739 17.2526 15.8484 17.3138C13.238 17.3575 10.8938 17.1129 8.58021 16.6542C8.41433 17.3706 8.2921 18.1699 8.2921 18.8426C8.2921 20.948 8.97745 22.7302 10.3394 24.1891C11.7014 25.6524 13.3515 26.3775 15.3028 26.3775C17.2453 26.3775 18.8954 25.6524 20.2574 24.1891C21.6193 22.7258 22.3047 20.948 22.3047 18.8426Z"
+								fill="white"
+							/>
+
+							<defs>
+								<clipPath id="clip0">
+									<rect
+										width="30"
+										height="31"
+										fill="white"
+										transform="translate(0.411865 0.046875)"
+									/>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
