@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Mod.kids | Статья</title>
+		<title>Mod.kids | Оформить заказ</title>
 
 		<meta
 			name="viewport"
@@ -47,7 +47,7 @@
 		<script defer src="js/custom.js"></script>
 	</head>
 
-	<body class="isnohome p-article">
+	<body class="isnohome p-checkout">
 		<!-- Попапы -->
 		<form class="popup popup__callback mfp-hide">
 			<h3 class="popup__title">Закажите звонок</h3>
@@ -435,166 +435,212 @@
 				<a href="index.html" class="breadcrumbs__main breadcrumbs__item">
 					Главная
 				</a>
-				<span class="breadcrumbs__current breadcrumbs__item">Блог</span>
+				<span class="breadcrumbs__current breadcrumbs__item">
+					Оформить заказ
+				</span>
 			</div>
 		</div>
 
 		<!-- Контент страницы -->
-		<section class="content custom-padding_top">
+		<section class="checkout custom-padding_top custom-padding_bottom">
 			<div class="container">
-				<h1 class="content__title _large">
-					100% хлопковая одежда - для малышей
-				</h1>
-
-				<h3 class="content__date">22.12.2020</h3>
-
 				<div class="row">
-					<div class="col-xl-10 offset-xl-1">
-						<div
-							class="content__image"
-							style="background-image: url('img/blog/article__image.jpg')"
-						></div>
-					</div>
+					<div class="col-lg-5">
+						<div class="basket">
+							<div class="basket__top-line">
+								<h5 class="basket__title">В корзине</h5>
 
-					<div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-						<div class="content__wrapper">
-							<p class="content__text">
-								100% хлопковая одежда для новорожденных; комбинезон с длинными
-								рукавами для маленьких мальчиков и девочек; комбинезон с
-								рисунком; одежда для малышей; костюм для подвижных игр для
-								малышей
-							</p>
-						</div>
+								<div class="basket__data">
+									<div class="basket__data-amount">
+										<span>2</span>
+										Товара
+									</div>
 
-						<div class="content__wrapper">
-							<h4 class="content__heading">
-								Комбинезон с длинными рукавами для маленьких мальчиков и девочек
-							</h4>
+									<div class="basket__data-price">
+										Сумма:
+										<span>100 000 UZS</span>
+									</div>
+								</div>
 
-							<p class="content__text">
-								100% хлопковая одежда для новорожденных; комбинезон с длинными
-								рукавами для маленьких мальчиков и девочек; комбинезон с
-								рисунком; одежда для малышей; костюм для подвижных игр для
-								малышей
-							</p>
+								<button class="basket__delete-all">
+									<img src="img/icons/trash.svg" alt="Удалить" />
+									<span>Очистить корзину</span>
+								</button>
 
-							<ul class="content__list">
-								<li class="content__list-item">
-									хлопковая одежда для новорожденных
-								</li>
-								<li class="content__list-item">
-									костюм для подвижных игр для малышей
-								</li>
-								<li class="content__list-item">
-									хлопковая одежда для новорожденных
-								</li>
-								<li class="content__list-item">
-									костюм для подвижных игр для малышей
-								</li>
-							</ul>
-						</div>
+								<div class="basket__container">
+									<div class="basket__item">
+										<div class="basket__item-wrapper">
+											<button class="basket__item-delete">
+												<img src="img/icons/trash.svg" alt="Удалить" />
+											</button>
 
-						<div class="content__wrapper">
-							<p class="content__text">
-								100% хлопковая одежда для новорожденных; комбинезон с длинными
-								рукавами для маленьких мальчиков и девочек; комбинезон с
-								рисунком; одежда для малышей; костюм для подвижных игр для
-								малышей
-							</p>
-						</div>
+											<div
+												class="basket__item-preview"
+												style="
+													background-image: url('img/clothes/main-product.jpg');
+												"
+											></div>
 
-						<div class="content__wrapper">
-							<h5 class="content__caption">Поделиться в соц сетях</h5>
+											<div class="basket__item-data">
+												<h6 class="basket__item-title">Комплект для девочек</h6>
 
-							<div class="social-links">
-								<a class="social-links__item" href="#">
-									<img src="img/icons/instagram.svg" alt="instagram" />
-								</a>
-								<a class="social-links__item" href="#">
-									<img src="img/icons/whatsapp.svg" alt="whatsapp" />
-								</a>
-								<a class="social-links__item" href="#">
-									<img src="img/icons/telegram.svg" alt="telegram" />
-								</a>
-								<a class="social-links__item" href="#">
-									<img src="img/icons/facebook.svg" alt="facebook" />
-								</a>
+												<p class="basket__item-color">
+													Цвет:
+													<span>Синий</span>
+												</p>
+												<p class="basket__item-size">
+													Размер:
+													<span>S (86-92)</span>
+												</p>
+
+												<p class="basket__item-price">100 000 UZS</p>
+											</div>
+										</div>
+
+										<div class="basket__item-amount">
+											<button
+												type="button"
+												class="basket__item-remove _disable"
+											>
+												<svg
+													width="8"
+													height="2"
+													viewBox="0 0 8 2"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M7.34447 1.60301H0.0800781V0.00616455H7.34447V1.60301Z"
+														fill="#0A003C"
+													/>
+												</svg>
+											</button>
+
+											<input
+												type="text"
+												class="basket__item-number"
+												value="1"
+												readonly
+											/>
+
+											<button class="basket__item-add" type="button">
+												<svg
+													width="9"
+													height="9"
+													viewBox="0 0 9 9"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M5.48795 8.49046H3.91995V5.21446H0.751953V3.61761H3.91995V0.341614H5.48795V3.61761H8.67195V5.21446H5.48795V8.49046Z"
+														fill="#0A003C"
+													/>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</section>
 
-		<section class="blog custom-padding_bottom">
-			<div class="container">
-				<h2 class="blog__title _text-left">Похожие статьи</h2>
+					<div class="col-lg-6 offset-lg-1">
+						<form class="checkout__container">
+							<p class="checkout__title">Оформить заказ</p>
 
-				<div class="row">
-					<div class="col-lg-4">
-						<article class="article">
-							<div
-								class="article__preview"
-								style="background-image: url('img/blog/image-1.jpg')"
-							></div>
+							<div class="checkout__wrapper tabs _indent">
+								<p class="checkout__heading">Доставке</p>
 
-							<div class="article__inner">
-								<span class="article__date">22.12.2020</span>
+								<ul class="tabs__caption">
+									<li class="active">
+										<input type="radio" />
+										<span>Самовывоз</span>
+									</li>
+									<li>
+										<input type="radio" />
+										<span>Доставка</span>
+									</li>
+								</ul>
 
-								<h3 class="article__title">Сладких снов</h3>
+								<div class="tabs__content active">
+									<address class="checkout__address">
+										Г.Ташкент, Алмазарский район, ул Елкин 7-10
+									</address>
+								</div>
 
-								<p class="article__text">
-									Если вы хотите спать, как в детстве, надевайте теплую пижаму,
-									берите с собой в постель...
+								<div class="tabs__content">
+									<select class="checkout__select select2" name="Country">
+										<option value="UZ">Узбекистан</option>
+										<option value="UA">Украина</option>
+										<option value="RU">Россия</option>
+									</select>
+
+									<select class="checkout__select select2" name="City">
+										<option value="Ташкент">Ташкент</option>
+										<option value="Киев">Киев</option>
+										<option value="Москва">Москва</option>
+									</select>
+
+									<input
+										class="checkout__input-address"
+										type="text"
+										name="Address"
+										placeholder="Улица/дом/квартира"
+									/>
+								</div>
+							</div>
+
+							<div class="checkout__wrapper">
+								<p class="checkout__heading">Оплата</p>
+
+								<ul class="tabs__caption">
+									<li class="active">
+										<input type="radio" />
+										<span>Наличными</span>
+									</li>
+									<li>
+										<input type="radio" />
+										<span>Картой</span>
+									</li>
+									<li>
+										<input type="radio" />
+										<span>Перечислением</span>
+									</li>
+								</ul>
+							</div>
+
+							<div class="checkout__pay">
+								<div class="checkout__pay-row">
+									<span class="checkout__pay-caption">Cумма</span>
+									<span class="checkout__pay-number">100 000 UZS</span>
+								</div>
+
+								<div class="checkout__pay-row">
+									<span class="checkout__pay-caption">Скидка - 7%</span>
+									<span class="checkout__pay-number">- 7000 UZS</span>
+								</div>
+
+								<div class="checkout__pay-row total">
+									<span class="checkout__pay-caption">К оплате</span>
+									<span class="checkout__pay-number">100 000 UZS</span>
+								</div>
+							</div>
+
+							<label class="checkout__checkbox form__checkbox">
+								<input type="checkbox" required />
+
+								<p>
+									Ознакомлен с
+									<span>публичной офертой</span>
+									и политикой
+									<span>обработки данных</span>
 								</p>
+							</label>
 
-								<a href="#" class="article__link">Читать далее</a>
-							</div>
-						</article>
-					</div>
-
-					<div class="col-lg-4">
-						<article class="article">
-							<div
-								class="article__preview"
-								style="background-image: url('img/blog/image-2.jpg')"
-							></div>
-
-							<div class="article__inner">
-								<span class="article__date">22.12.2020</span>
-
-								<h3 class="article__title">Сладких снов</h3>
-
-								<p class="article__text">
-									Если вы хотите спать, как в детстве, надевайте теплую пижаму,
-									берите с собой в постель...
-								</p>
-
-								<a href="#" class="article__link">Читать далее</a>
-							</div>
-						</article>
-					</div>
-
-					<div class="col-lg-4">
-						<article class="article">
-							<div
-								class="article__preview"
-								style="background-image: url('img/blog/image-3.jpg')"
-							></div>
-
-							<div class="article__inner">
-								<span class="article__date">22.12.2020</span>
-
-								<h3 class="article__title">Сладких снов</h3>
-
-								<p class="article__text">
-									Если вы хотите спать, как в детстве, надевайте теплую пижаму,
-									берите с собой в постель...
-								</p>
-
-								<a href="#" class="article__link">Читать далее</a>
-							</div>
-						</article>
+							<button type="submit" class="checkout__button button">
+								<span>Оформить заказ</span>
+							</button>
+						</form>
 					</div>
 				</div>
 			</div>
