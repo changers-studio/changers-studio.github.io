@@ -58,6 +58,11 @@ jQuery(function () {
 		})
 	}
 
+	// Reset form
+	$('.form__reset').on('click', function () {
+		$(this).closest('form').trigger('reset')
+	})
+
 	// Magnific popup
 	$('.magnific-popup').magnificPopup({
 		removalDelay: 350,

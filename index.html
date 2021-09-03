@@ -18,12 +18,15 @@
 			href="img/favicon.ico"
 		/>
 
+		<!-- fontawesome -->
 		<script
 			async
 			defer
 			src="https://kit.fontawesome.com/55e0136003.js"
 			crossorigin="anonymous"
 		></script>
+
+		<!-- reCAPTCHA v3 -->
 
 		<!-- libs css -->
 		<link rel="stylesheet" href="libs/select2/select2.min.css" />
@@ -88,7 +91,15 @@
 				class="popup__input"
 				type="text"
 				name="Name"
-				placeholder="Ваше имя"
+				placeholder="Ваше имя*"
+				required
+			/>
+
+			<input
+				class="popup__input"
+				type="tel"
+				name="Telephone number"
+				placeholder="Ваш телефон*"
 				required
 			/>
 
@@ -97,7 +108,6 @@
 				type="email"
 				name="Email"
 				placeholder="Ваш email"
-				required
 			/>
 
 			<textarea
@@ -106,9 +116,13 @@
 				placeholder="Ваше сообщение"
 			></textarea>
 
+			<p class="form__note">«*» Поля обязательные для заполнения</p>
+
 			<button type="submit" class="popup__button button">
-				<span>Заказать звонок</span>
+				<span>Отправить</span>
 			</button>
+
+			<button type="button" class="form__reset">Сбросить</button>
 		</form>
 
 		<!-- Шапка -->
@@ -858,12 +872,12 @@
 
 						<div class="footer__data">
 							<p>ООО «PLUG AND PLAY COMMUNICATIONS»</p>
-							<p>Код ОКЭД-61200</p>
-							<p>ИНН-306985234</p>
-							<p>номер расчетного счета-20208000505157897001</p>
-							<p>Код банка-00491</p>
-							<p>Юридический адрес-Г.Ташкент,</p>
-							<p>Алмазарский район, ул Елкин 7-10</p>
+							<p>Код ОКЭД: 61200</p>
+							<p>ИНН: 306985234</p>
+							<p>Р/с: 20208000505157897001</p>
+							<p>Код банка: 00491</p>
+							<p>Юридический адрес: г.Ташкент,</p>
+							<p>Алмазарский район, ул.Елкин, 7-10</p>
 						</div>
 					</div>
 
@@ -916,7 +930,7 @@
 				</div>
 
 				<div class="footer__bottom-line">
-					<p>© 2007-2020 Все права защищены.</p>
+					<p>© 2007-2021 Все права защищены.</p>
 					<a href="#">Политика обработки персональных данных</a>
 					<a href="#" class="web-dev">
 						<span>Разработка сайта</span>

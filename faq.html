@@ -18,12 +18,15 @@
 			href="img/favicon.ico"
 		/>
 
+		<!-- fontawesome -->
 		<script
 			async
 			defer
 			src="https://kit.fontawesome.com/55e0136003.js"
 			crossorigin="anonymous"
 		></script>
+
+		<!-- reCAPTCHA v3 -->
 
 		<!-- libs css -->
 		<link rel="stylesheet" href="libs/select2/select2.min.css" />
@@ -503,7 +506,7 @@
 								class="form__input"
 								type="text"
 								name="Name"
-								placeholder="Ваше имя"
+								placeholder="Ваше имя*"
 								required
 							/>
 
@@ -511,7 +514,7 @@
 								class="form__input"
 								type="tel"
 								name="Telephone number"
-								placeholder="Ваш телефон"
+								placeholder="Ваш телефон*"
 								required
 							/>
 
@@ -540,9 +543,13 @@
 								</p>
 							</label>
 
+							<p class="form__note">«*» Поля обязательные для заполнения</p>
+
 							<button type="submit" class="form__button button">
 								<span>Отправить вопрос</span>
 							</button>
+
+							<button type="button" class="form__reset">Сбросить</button>
 						</form>
 					</div>
 				</div>

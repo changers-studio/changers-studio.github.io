@@ -1,0 +1,1483 @@
+@import vars
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1700px)
+
+	// Slick
+	.slick
+		&-arrow
+			width: 40px
+			height: 40px
+			&::before
+				font-size: 12px
+		&-prev
+			margin-right: 20px
+		&-next
+			margin-left: 20px
+
+	
+	// Шапка
+	.header
+		&__menu._second
+			position: static
+			transform: none
+	
+
+@media only screen and (max-width : 1520px)
+
+	// Шапка
+	.header
+		font-size: 14px
+		&__logo
+			width: 100px
+			margin-right: 40px
+		.lang__dropdown
+			padding: 30px
+			top: calc(100% + 45px)
+		&__menu
+				margin-right: 15px
+		&__button
+			margin-right: 15px
+			width: 25px
+		.social-links__item
+			margin-right: 15px
+		&__popup-buttons
+			margin-right: 20px
+			a
+				font-size: 12px
+				margin-right: 10px
+
+
+	// Одежда для детей
+	.clothes-for
+		&__box
+			padding: 60px 40px 80px
+		&__title
+			font-size: 28px
+		&__pattern
+			height: 60px
+		&__arrow
+			width: 60px
+			height: 60px
+
+
+	// Слайдер продукции
+	.product
+		&__slide, &__box
+			height: 460px
+
+
+	// Галерея
+	.gallery
+		&__title
+			font-size: 54px
+		&__subtitle
+			max-width: 475px
+		&__images
+			margin-top: 100px
+			height: 250px
+		&__image
+			&._large
+				height: 550px
+
+
+	// Категории
+	.categories
+		.slick
+			&-slide	
+				margin: 15px 10px
+		&__age
+			margin-bottom: 70px
+		&__wrapper
+			height: 70px
+			padding: 20px 15px
+		&__image
+			height: 200px
+		&__name
+			font-size: 16px
+			padding: 5px 15px
+			width: calc(100% - 15px)
+		&__amount
+			font-size: 12px
+
+
+	// Подвал
+	.footer
+		padding: 100px 0 150px
+		&::before
+			height: 100px
+		&__logo
+			margin-bottom: 30px
+		&__data
+			font-size: 8px
+		&__menu
+			a
+				margin-bottom: 20px
+				font-size: 20px
+		&__tel
+			font-size: 16px
+			margin-bottom: 15px
+			padding-bottom: 15px
+			img
+				width: 40px
+				margin-right: 10px
+		&__address, &__working-hours
+			font-size: 12px	
+		&__social-links
+			display: flex
+			a
+				width: 40px
+				height: 40px
+				margin-right: 10px
+		&__bottom-line
+			margin-top: 50px
+			padding-top: 20px
+
+
+	// Оджеда
+	.clothes
+		&__item
+			padding: 15px
+			&:hover
+				.clothes__click
+					margin-top: 20px
+			&.not-available
+				.clothes
+					&__heading
+						margin-bottom: 25px
+		&__image
+			height: 180px
+			margin-bottom: 30px
+		&__heading
+			font-size: 12px
+		&__price
+			.current
+				font-size: 16px
+			.old
+				font-size: 10px
+		&__bag
+			width: 40px
+			height: 40px
+			svg
+				width: 15px
+				height: 15px
+		&__click
+			font-size: 10px
+		&__favorites
+			top: 15px
+			right: 15px
+		&__colors
+			left: 15px
+			top: 15px
+			.color
+				width: 15px
+				height: 15px
+				margin-bottom: 10px
+		&__not-available
+			font-size: 10px
+
+
+	// Страница вопрос-ответ
+	.p-faq
+		.faq
+			&__title
+				margin-bottom: 30px
+			&__text
+				margin-bottom: 10px
+				font-size: 14px
+			&__form
+				padding: 40px 25px
+
+
+	// Страница контакты
+	.p-contacts
+		.contacts
+			.data
+				&__box
+					width: 30%
+					margin-right: 0
+				&__caption
+					font-size: 12px
+				&__text
+					font-size: 16px
+
+
+	// Блог
+	.blog
+		.article
+			&__preview
+				height: 200px
+			&__inner
+				padding: 20px 15px
+			&__date
+				padding: 5px 15px
+				font-size: 14px
+			&__text
+				margin-bottom: 15px
+
+	// О компании
+	.p-about
+		.about
+			&-insta
+				&__title._large
+					font-size: 40px
+				&__images-item
+					width: calc(33.3% - 5px)
+					height: 180px
+					margin-bottom: 10px
+			&-advantages
+				&__heading
+					font-size: 22px
+
+
+	// Скидки
+	.p-discount
+		.discount
+			&__container
+				margin-top: 70px
+			&__box
+				padding: 25px
+			&__number
+				margin-bottom: 20px
+
+
+	// Личный кабинет
+	.p-cabinet
+		.cabinet
+			.tabs
+				&__caption-item
+					font-size: 14px
+				&__content
+					padding: 25px
+			.form
+				&__col
+					width: calc(50% - 20px)
+			.favorites
+				&__container
+					display: flex
+					flex-flow: row wrap
+					justify-content: space-between
+				&__item
+					width: 100%
+
+
+	// Оформить заказ
+	.checkout
+		&__container
+			padding: 25px
+		&__wrapper._indent
+			margin-bottom: 50px
+		&__checkbox
+			p
+				font-size: 12px
+
+
+	// Каталог
+	.p-catalog
+		.filter
+			font-size: 14px
+			&__item
+				.available-amount
+					margin-left: 10px
+					font-size: 10px
+				&.not-dropdown
+					padding: 20px
+					font-size: 12px
+				&-heading
+					padding: 15px 20px
+				&-dropdown
+					display: none
+					padding: 25px 20px
+					border-top: 1px solid $grey_light
+					&.active
+						display: block
+				&-checkbox
+					font-size: 12px
+					margin-bottom: 15px
+					input
+						margin-right: 10px
+				.range
+					&__value
+						padding: 10px 15px
+						font-size: 12px
+					&__button
+						margin-top: 30px
+			&__list
+				&-li
+					margin-bottom: 15px
+				&-item
+					font-size: 12px
+					&::before
+						margin-right: 10px
+
+
+
+	.p-product
+		.product
+			&__images
+				.color
+					margin-top: 15px
+					width: calc(100% - 70px)
+					&__list-item
+						height: 70px
+			&__slider
+				&-nav
+					width: 60px
+					.slide
+						height: 60px
+				&-main
+					width: calc(100% - 70px)
+					.slide
+						height: 500px
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 1200px)
+
+	// Slick
+	.slick
+		&-arrow
+			width: 30px
+			height: 30px
+			z-index: 2
+			&::before
+				font-size: 10px
+				color: $grey
+		&-prev
+			margin-right: 0
+			right: auto
+			left: 20px
+		&-next
+			margin-left: 0
+			right: 20px
+			left: auto
+
+	
+	// Шапка
+	.header
+		font-size: 12px
+		&__ticker
+			font-size: 10px
+		&__logo
+			width: 80px
+			margin-right: 30px
+		.lang
+			&__item
+				font-size: 14px
+			&__wrapper
+				margin-bottom: 15px
+			&__dropdown
+				top: calc(100% + 43px)
+		&__button
+			width: 20px
+		&__cart span
+			width: 15px
+			height: 15px
+			font-size: 9px
+		&__popup-buttons
+			a
+				font-size: 10px
+	
+
+/*  Small Devices, Tablets */
+@media only screen and (max-width : 992px)
+
+	section
+		padding: 25px 0
+		&.custom-padding
+			&_top
+				padding-top: 15px
+			&_bottom
+				padding-bottom: 50px
+
+	input, textarea
+		padding: 15px 20px
+
+
+	.ishome h1
+		font-size: 36px
+
+	.button
+		font-size: 12px
+
+	.show-more
+		height: 50px
+		border-radius: 12px
+
+
+	// Slick
+	.slick
+		&-dots 
+			bottom: -25px
+			li
+				border-width: 4px
+				width: 12px
+				height: 12px
+				margin-right: 5px
+		&-dotted.slick-slider
+			margin-bottom: 25px
+
+	
+	// Хлебные крошки
+	.breadcrumbs
+		padding: 15px 0
+		&__item
+			font-size: 10px
+			margin-right: 10px
+
+
+
+	// Шапка
+	.header
+		display: none
+		&._mobile
+			display: block
+		&__logo
+			margin-right: 0
+		&__inner
+			width: 70px
+			justify-content: space-between
+		&__button
+			margin-right: 0
+		&__cart
+			margin-right: 12px
+			span
+				top: 2px
+				right: 2px
+
+
+
+	// Главный экран
+	.main
+		height: 260px
+		background-image: url('../img/main/main-screen__bg_mobile.png')
+		background-size: auto 100%
+		background-position: right bottom
+		padding: 20px 0
+		&__title
+			margin-bottom: 5px
+		&__subtitle
+			font-size: 14px
+			max-width: 290px
+		&__button
+			display: none
+		&__slider
+			align-items: flex-start
+		.slick
+			&-dots
+				bottom: 0
+
+
+
+	// Одежда для детей
+	.clothes-for
+		padding-top: 40px
+		&__wrapper
+			&_left
+				padding-right: 5px
+			&_right
+				padding-left: 5px
+		&__box
+			padding: 20px 20px 60px
+			&._girl::before
+				background-color: #F64056
+			&._boy::before
+				background-color: #00A6B6
+			&._offset
+				bottom: 20px
+		&__title
+			font-size: 24px
+		&__pattern
+			height: 40px
+		&__image
+			margin-bottom: 20px
+		&__arrow
+			display: none
+
+
+	// Слайдер продукции
+	.product
+		&__slide, &__box
+			height: 320px
+		&__wrapper
+			font-size: 20px
+			padding: 25px 25px 15px 
+		&__years
+			padding: 5px 15px
+
+
+	// Галерея
+	.gallery
+		&__title
+			font-size: 32px
+			margin: 0 0 10px
+		&__subtitle
+			font-size: 14px
+			margin-bottom: 15px
+			max-width: 300px
+		&__images
+			margin-top: 25px
+			height: 200px
+		&__image._small
+			width: calc(50% - 5px)
+
+
+	// Категории
+	.categories
+		padding-bottom: 60px
+		.slick
+			&-slide
+				margin: 0 10px
+			&-dotted.slick-slider
+				margin-bottom: 30px
+			&-dots
+				bottom: -30px
+		&__title
+			font-size: 32px
+			margin-bottom: 20px
+		.tabs__caption
+			width: 100%
+			padding: 4px
+			border-radius: 16px
+			margin-bottom: 20px
+			li
+				width: calc(50% - 4px)
+				padding: 10px
+				border-radius: 16px
+				display: flex
+				align-items: center
+				justify-content: center
+				font-size: 14px
+				img
+					margin-right: 10px
+					width: 24px
+					height: 24px
+		&__age
+			margin-bottom: 30px
+			li
+				margin-right: 20px
+		&__box:hover
+			transform: none
+		&__wrapper
+			height: 50px
+			padding: 10px
+		&__image
+			height: 200px
+		&__name
+			font-size: 11px
+			padding: 5px 10px
+			width: calc(100% - 10px)
+
+
+	// Подвал
+	.footer
+		padding: 40px 0 60px
+		&::before
+			display: none
+		&__flex-box
+			flex-direction: column
+		&__logo
+			margin-bottom: 30px
+		&__data
+			font-size: 12px
+			margin-bottom: 30px
+		&__menu
+			margin-bottom: 30px
+			a
+				font-size: 24px
+				line-height: 1.2
+				margin-bottom: 15px
+			&._small
+				margin-bottom: 60px
+				a
+					margin-bottom: 12px
+		&__tel
+			padding-bottom: 0
+			font-size: 24px
+			img
+				display: none
+			&::before
+				display: none
+		&__social-links
+			a 
+				width: 50px
+				height: 50px
+				margin-right: 8px
+				img
+					width: 18px
+					height: 18px
+		&__bottom-line
+			flex-direction: column
+			align-items: flex-start
+			margin-top: 20px
+			& > *
+				margin-bottom: 5px
+				&:last-child
+					margin-bottom: 0
+		.web-dev
+			margin-top: 20px
+			svg
+				order: -1
+				margin:
+					right: 10px
+					left: 0
+
+
+	// Оджеда
+	.clothes
+		&__item
+			padding: 20px 10px
+			&.not-available
+				.clothes
+					&__heading
+						margin-bottom: 10px
+		&__image
+			width: 120px
+			height: 120px
+			margin-bottom: 15px
+		&__heading
+			margin-bottom: 10px
+		&__flex-box
+			justify-content: center
+		&__price
+			.current
+				font-size: 12px
+			.old
+				font-size: 10px
+		&__bag
+			display: none
+		&__click
+			display: none
+		&__favorites
+			top: 10px
+			right: 10px
+			width: 14px
+			height: 14px
+		&__colors
+			display: none
+		&__plate
+			font-size: 8px
+			padding: 3px 6px
+			top: 10px
+			left: 10px
+		&__not-available
+			font-size: 10px
+			top: 10px
+			left: 10px
+
+
+	// Внутренние страницы
+	.isnohome
+		h1
+			font-size: 32px
+			&._large
+				font-size: 32px
+			&._huge
+				font-size: 32px
+		h2
+			font-size: 20px
+			&._large
+				font-size: 24px
+		h3
+			margin-bottom: 15px
+
+
+	// Страница одежда для мальчиков/девочек
+	.p-clothes	
+		.heading
+			padding: 20px 0
+			&__title
+				margin-bottom: 20px
+			&__caption 
+				overflow-x: auto
+				padding-bottom: 15px
+				justify-content: flex-start
+				li
+					white-space: nowrap
+		.categories
+			padding: 20px 0
+			&__title
+				margin-bottom: 30px
+			&__container
+				justify-content: space-between
+				left: 0
+				width: 100%
+				margin-bottom: 15px
+			&__box
+				width: calc(50% - 10px)
+				margin: 0 0 20px
+		.clothes
+			padding: 40px 0
+			&__title
+				margin-bottom: 25px
+			&__container
+				justify-content: space-between
+				left: 0
+				width: 100%
+			&__item
+				width: calc(50% - 10px)
+				margin: 0 0 20px
+			.show-more
+				margin-top: 10px
+				width: 100%
+
+
+	// Страница вопрос-ответ
+	.p-faq
+		.faq
+			&__title
+				margin-bottom: 20px
+			.form
+				margin-top: 40px
+				padding: 25px 15px
+	
+
+	// Форма обратной связи
+	.form
+		&__button
+			width: 100%
+		&__input, &__textarea
+			margin-bottom: 10px
+		&__note
+			font-size: 10px
+		&__reset._text-left
+			margin-left: auto
+
+
+	// Страница контакты
+	.p-contacts
+		.contacts
+			&__container_bottom
+				margin-top: 30px
+			&__title
+				margin-bottom: 20px
+			.data
+				flex-direction: column
+				align-items: flex-start
+				margin-bottom: 30px
+				&__box
+					width: 100%
+					margin-bottom: 20px
+				&__caption
+					font-size: 12px
+				&__text
+					font-size: 14px
+			&__map
+				height: 320px
+			.table
+				margin-bottom: 30px
+				width: calc(100% + 20px)
+				position: relative
+				left: -10px
+				&__elem
+					width: 50%
+					font-size: 12px
+				&__elem._heading
+					margin-right: 15px
+					min-width: auto
+				&__row
+					padding: 15px 10px
+					align-items: flex-start
+					border-radius: 0
+
+
+
+	// Блог
+	.blog
+		&__title
+			margin-bottom: 20px
+		.article
+			margin-bottom: 15px
+			&__inner
+				padding: 30px 20px
+			&__date
+				padding: 10px 30px
+				font-size: 16px
+			&__text
+				font-size: 12px
+
+
+	// Пагинация
+	.pagination
+		margin-top: 10px
+		&__link
+			width: 40px
+			height: 40px
+			font-size: 12px
+
+
+	// Статья блога
+	.p-article
+		.content
+			&__title
+				text-align: left
+				margin-bottom: 15px
+			&__date
+				text-align: left
+				font-size: 14px
+				margin-bottom: 15px
+			&__image
+				height: 230px
+				margin-bottom: 30px
+			&__wrapper
+				margin-bottom: 25px
+			&__heading
+				font-size: 14px
+			&__text
+				font-size: 14px
+			&__list
+				margin-top: 10px
+				padding-left: 15px
+				&-item
+					font-size: 12px
+					margin-bottom: 5px
+					&::before
+						font-size: 6px
+						margin-right: 7px
+						bottom: 2px
+		.blog
+			&__title
+				margin-bottom: 20px
+
+
+	// О компании
+	.p-about
+		.about
+			&-main
+				display: flex
+				align-items: flex-end
+				height: 400px
+				padding-bottom: 20px
+				&__logo
+					width: 150px
+					margin-bottom: 20px
+			&-description
+				padding: 40px 0
+				&__title
+					margin-bottom: 15px
+				&__text
+					font-size: 16px
+				&__video
+					height: 300px
+			&-insta
+				&__wrapper
+					text-align: center
+					display: flex
+					flex-direction: column
+					align-items: center
+					margin-bottom: 30px
+				&__title._large
+					font-size: 24px
+					margin-bottom: 5px
+				&__text
+					font-size: 14px
+					max-width: 240px
+					margin: 0 auto 25px
+				&__images-item
+					width: calc(33.3% - 5px)
+					height: 75px
+					margin-bottom: 10px
+			&-advantages
+				&__title
+					margin-bottom: 40px
+				&__icon
+					width: 60px
+					margin-bottom: 25px
+				&__heading
+					font-size: 16px
+				&__box
+					margin-bottom: 50px
+					max-width: 230px
+				&__text
+					font-size: 12px
+
+
+
+	// Колекции
+	.p-collection
+		.collection
+			&__container
+				margin-bottom: 40px
+			&__wrapper
+				width: 100%
+				padding: 
+					right: 10px
+					left: 10px
+			&__title
+				font-size: 12px
+
+
+	// Скидки
+	.p-discount
+		.discount
+			&__container
+				margin-top: 30px
+			&__title
+				margin-bottom: 15px
+			&__box
+				padding: 25px
+				margin-bottom: 15px
+			&__text
+				font-size: 14px
+			&__number
+				max-width: 50%
+
+
+	// Личный кабинет
+	.p-cabinet
+		background-color: #fff
+		.cabinet
+			padding: 0 0 50px
+			.tabs
+				&__caption
+					display: flex
+					flex-flow: row nowrap
+					justify-content: space-between
+					align-items: center
+					box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.12)
+					border-radius: 0 0 5px 5px
+					width: calc(100% + 20px)
+					padding: 0 10px
+					position: relative
+					left: -10px
+					&-item
+						font-size: 12px
+						padding: 10px 0
+						margin: 0
+					&-icon
+						width: 24px
+						margin-right: 5px
+				&__content
+					padding: 20px 0 0
+				&__title
+					margin-bottom: 30px
+			&__exit
+				display: none
+			.form
+				&__col
+					width: 100%
+					margin-bottom: 40px
+				&__item
+					margin-bottom: 10px
+					&-icon
+						width: 30px
+						margin-left: 10px
+			.favorites
+				&__top-line
+					padding-bottom: 15px
+				&__item
+					padding: 15px 0
+					background-size: contain
+					background-repeat: no-repeat
+					background-position: center
+				&-title
+					font-size: 14px
+					margin-bottom: 15px
+				&-price
+					font-family: $second-font
+					color: $accent
+					font-weight: 800
+					margin-bottom: 20px
+				&-wrapper
+					display: flex
+					align-items: center
+					justify-content: space-between
+				&-selects
+					display: flex
+					align-items: flex-start
+				&-select
+					margin-right: 25px
+					&:last-child
+						margin-right: 0
+
+
+	// Вход
+	.sign-in
+		background-color: #fff
+		padding: 20px 0 40px
+		&__container
+			flex-direction: column
+			height: auto
+			& > *
+				width: 100%
+		&__wrapper
+			padding: 0
+			margin-bottom: 20px
+		.form
+			max-width: 100%
+			&__title
+				margin-bottom: 20px
+			&__item
+				margin-bottom: 20px
+			&__forgot
+				font-size: 10px
+			&__button
+				font-size: 14px
+		.sign-up
+			background-color: $blue_dark
+			color: #fff
+			text-align: center
+			padding: 30px 50px 110px
+			position: relative
+			&::before
+				height: 70px
+			&__title
+				margin-bottom: 10px
+			&__text
+				margin-bottom: 20px
+				font-size: 12px
+
+
+	// Оформить заказ
+	.checkout
+		&__container
+			padding: 25px 15px
+		&__wrapper._indent
+			margin-bottom: 20px
+			padding-bottom: 20px
+			border-bottom: 1px solid $grey_light
+		&__address
+			font-size: 12px
+		.tabs
+			&__capiton
+				margin-bottom: 20px
+		&__pay
+			padding-top: 20px
+
+
+	// Корзина
+	.p-checkout
+		.basket
+			margin-bottom: 50px
+	
+	.basket
+		&__title
+			font-size: 14px
+			margin-bottom: 15px
+		&__data
+			font-size: 14px
+			padding-bottom: 15px
+			margin-bottom: 15px
+		&__container
+			margin-top: 20px
+		&__item
+			padding: 15px 0
+			&-wrapper
+				font-size: 10px
+				padding-right: 10px
+			&-delete
+				margin-right: 10px
+			&-preview
+				width: 80px
+				height: 80px
+				margin-right: 10px
+			&-title
+				font-size: 12px
+				margin-bottom: 5px
+				max-width: 150px
+			&-price
+				font-size: 12px
+				margin-top: 10px
+			&-amount
+				border-radius: 8px
+				width: 30px
+			&-number
+				padding: 5px 0
+			&-add, &-remove
+				height: 25px
+
+
+	// Каталог
+	.p-catalog
+		.catalog
+			&__top-line
+				justify-content: center
+				margin-bottom: 15px
+			&__title
+				text-align: center
+			&__container
+				left: 0
+				width: 100%
+				justify-content: space-between
+			&__item
+				width: calc(50% - 5px)
+				margin: 0 0 10px
+				&:nth-child(2n)
+					margin-right: 0
+			&__sort
+				display: none
+				&_mobile
+					display: block
+			.show-more
+				margin-top: 30px
+		.filter
+			margin-bottom: 15px
+			&__heading_mobile
+				display: flex
+			&__dropdown_mobile
+				display: none
+				background-color: #fff
+				border-top: 1px solid $grey_light
+			&__item
+			&__clear
+				border-radius: 0
+				margin-top: 20px
+		.recently-viewed
+			padding-bottom: 50px
+			.slick-slide
+				width: 220px
+				margin: 0 8px
+			&__slider
+				margin-top: 30px
+				width: calc(100% + 10px)
+				left: 0
+			&__item
+				padding: 15px
+				&-preview
+					width: 80px
+					height: 80px
+					margin-right: 15px
+				&-data
+					max-width: 100px
+				&-title
+					margin-bottom: 10px
+					font-size: 12px
+				&-price
+					.current
+						font-size: 12px
+					.old
+						font-size: 10px
+
+
+
+	// Страница товара
+	.p-product
+		.product
+			&__title, &__code, &__stars
+				display: none
+				&._mobile
+					display: block
+			&__title
+				margin-bottom: 15px
+			&__code
+				font-size: 12px
+			&__stars
+				margin-bottom: 20px
+				.star
+					font-size: 12px
+					margin-right: 0
+			&__size
+				margin-bottom: 15px
+				border: none
+				justify-content: space-between
+				&-table
+					font-size: 12px
+					padding: 20px 0
+					&::after
+						display: none
+					img
+						margin-right: 10px
+			&__amount-price
+				display: flex
+				margin-bottom: 20px
+			&__amount
+				width: 100px
+				margin-right: 20px
+			&__price
+				&-main
+					font-size: 12px
+					margin-bottom: 5px
+					span
+						display: block
+						font-size: 16px
+						margin-right: 0
+				&-secondary
+					font-size: 10px
+			&__to-basket
+				margin-bottom: 25px
+			&__to-favorites
+				margin-left: 20px
+			&__button
+				span
+					&::before
+						width: 16px
+						height: 16px
+						margin-right: 15px
+			&__advantages
+				margin-bottom: 25px
+				width: 100%
+				justify-content: space-between
+				&-box
+					text-align: center
+					flex-direction: column
+					justify-content: center
+				&-text
+					max-width: 90px
+					margin:
+						top: 10px
+						left: 0
+					font-size: 10px
+			&__dropdown
+				&-heading
+					padding: 15px 0
+					font-size: 14px
+			&__detail
+				&-dropdown
+					padding-bottom: 15px
+				&-caption
+					width: 50%
+			&__discount
+				&-container
+					padding: 10px 0 20px
+				&-box
+					padding: 10px 0
+					border-radius: 0 20px 20px 20px
+				&-number
+					font-size: 22px
+				&-text
+					font-size: 10px
+			&__images
+				margin-bottom: 20px
+				.color
+					margin-top: 10px
+					width: 100%
+					&__title
+						font-size: 12px
+			&__slider
+				&-nav
+					display: none
+				&-main
+					width: calc(100% + 20px)
+					left: -10px
+					.slide
+						height: 400px
+
+
+
+	// Таблица размеров
+	.table-size
+		flex-direction: column
+		&__wrapper
+			max-width: 100%
+			margin-bottom: 20px
+		.table
+			&__row.heading .table__elem
+				font-size: 10px
+
+
+
+
+
+@media only screen and (max-width : 576px)
+	
+	// Попапы
+	.popup
+		padding: 20px
+		max-width: calc(100% - 40px)
+		&__title
+		.mfp-close
+			width: 20px
+			height: 20px
+
+
+	// Главный экран
+	.main
+		background-size: auto
+
+	
+	// Одежда для детей
+	.clothes-for
+		&__title
+			font-size: 16px
+		&__box
+			padding: 15px 10px 35px
+		&__image
+			width: calc(100% - 20px)
+			margin-bottom: 10px
+		&__pattern
+			height: 20px
+
+
+	// Слайдер продукции
+	.product
+		&__slide, &__box
+			height: 200px
+		&__wrapper
+			font-size: 16px
+
+
+	// Категории
+	.categories
+		.slick
+			&-slide	
+				width: 160px
+				margin: 0 2.5px
+		&__age
+			li
+				margin-right: 15px
+		&__slider
+			width: calc(100% + 10px)
+
+
+	// Подвал
+	.footer__bottom-line
+		width: calc(100% + 20px)
+		position: relative
+		left: -10px
+		padding: 
+			right: 10px
+			left: 10px
+
+
+
+	// Страница одежда для мальчиков/девочек
+	.p-clothes	
+		.heading__caption 
+			width: calc(100% + 10px)
+			li
+				padding: 10px 12px
+				font-size: 10px
+				margin-right: 5px
+				border-radius: 10px
+				&:last-child
+					margin-right: 10px
+		.categories
+			&__title
+				margin-bottom: 15px
+			&__box
+				width: calc(50% - 5px)
+				margin-bottom: 10px
+			&__image
+				height: 140px
+		.clothes
+			&__item
+				width: calc(50% - 5px)
+				margin-bottom: 10px
+	
+	
+	// Личный кабинет
+	.p-cabinet
+		.cabinet
+			.form
+				&__button
+					&-success
+						width: 100%
+						margin: 
+							right: 0
+							bottom: 15px
+						font-size: 14px
+					&-secondary
+						font-size: 12px
+						margin: 0 auto
+						display: flex
+			.favorites
+				&__amount
+					font-size: 10px
+					&-number
+						margin-right: 5px
+						width: 20px
+						height: 20px
+						font-size: 10px
+				&__delete
+					font-size: 10px
+					&-icon
+						margin-left: 5px
+						width: 15px
+				&__item
+					&-box
+						&_left
+							display: flex
+							align-items: flex-start
+							width: 100px
+						&_right
+							width: calc(100% - 120px)
+					&-preview
+						width: 100px
+						height: 100px
+					&-title
+						font-size: 10px
+					&-price
+						font-size: 10px
+						margin-bottom: 5px
+					&-icon
+						width: 40px
+					&-select
+						margin-right: 15px
+
+
+
+	// Оформить заказ
+	.checkout
+		&__container
+			padding: 25px 10px
+			width: calc(100% + 20px)
+			position: relative
+			left: -10px
+
+
+
+	// Страница товара
+	.p-product
+		.product
+			&__images
+				.color__list-item
+					height: 60px
+			&__slider-main
+				.slide
+					height: 300px
+
+
+	// Таблица размеров
+	.table-size
+		padding: 0
+		max-width: 100%
+		max-height: 100%
+		&__wrapper
+			max-width: 100%
+			margin-bottom: 20px
+		&__text
+			padding: 0 10px
+			margin-top: 30px
+		.table
+			&__row
+				padding: 10px
+
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	
+	// Галерея
+	.gallery
+		&__images
+			height: 180px
+
+
+	// О компании
+	.p-about
+		.about-description__video
+			height: 200px
+
+
+/* Custom adaptation */
+@media only screen and (max-height : 600px) and (max-width : 480px)
+	/**/
+
+@media only screen and (width : 1366px) and (height : 768px)
+	/**/
+
+@media only screen and (width : 1280px) and (height : 800px)
+	/**/
+
+@media only screen and (width : 1024px) and (height : 768px)
+	/**/
+
+@media only screen and (width : 1024px) and (height : 600px)
+	/**/
