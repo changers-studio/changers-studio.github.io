@@ -1,22 +1,16 @@
-.select, .favorites-select, .sort-select, .size-select
+.filter-select
   &__heading
     &.select2-selection--single
-      background-color: transparent
-      border: 2px solid $grey_light
-      border-radius: 16px
+      background-color: #E7E8F1
+      border: none
+      border-radius: 10px
       height: auto
       transition: .1s
-      &:hover
-        border-color: #9D99B2
-      &:active
-        border-color: $accent
-      .select2-selection__placeholder
-        color: $black
       .select2-selection__rendered
         color: $black
-        padding: 20px
-        font-size: 14px
-        line-height: 1.5
+        padding: 12px 20px
+        font-size: 15px
+        line-height: 1.2
       .select2-selection__arrow 
         top: 50%
         right: 20px
@@ -28,15 +22,16 @@
           left: 50%
           transform: translate(-50%, -50%)
           transition: .2s ease
-          color: $blue_dark
+          color: #757E99
     &[aria-expanded="true"]
       .select2-selection__arrow i
         transform: translate(-50%, -50%) rotate(180deg)
   &__dropdown
     box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.12)
     border: none
-    border-radius: 0 0 16px 16px
+    border-radius: 0 0 10px 10px
     overflow: hidden
+    color: $black
     .select2-results
       &__option
         font-size: 14px
@@ -49,86 +44,20 @@
             background-color: #F2F2F2
             color: $black
         &--selected
-          background-color: $accent !important
+          background-color: #2662CD !important
           color: #fff !important
           &:hover
-            background-color: $accent
+            background-color: #2662CD
             color: #fff
 
 
-.favorites-select
-  &__heading
-    &.select2-selection--single
-      border: none
-      .select2-selection__rendered
-        padding: 
-          left: 5px
-          top: 5px
-          bottom: 5px
-          right: 25px
-      .select2-selection__arrow 
-        right: 0
-  &__dropdown
-    border-radius: 0px
-    .select2-results
-      &__option
-        padding: 5px
 
 
-.sort-select
-  &__heading
-    &.select2-selection--single
-      .select2-selection__rendered
-        padding: 15px 40px 15px 20px
-      .select2-selection__arrow 
-        right: 15px
-  &__dropdown
-    .select2-results
-      &__option
-        white-space: nowrap
-        padding: 10px 20px
 
-
-.size-select
-  &__heading
-    &.select2-selection--single
-      border: none
-      .select2-selection__rendered
-        padding-right: 30px
-      .select2-selection__arrow 
-        right: 0
-  &__dropdown
-    border-radius: 16px!important
+// @media only screen and (max-width : 992px)
 
 
 
 
 
-
-
-@media only screen and (max-width : 992px)
-
-  .select, .favorites-select, .sort-select, .size-select
-    &__heading
-      &.select2-selection--single
-        .select2-selection__rendered
-          padding: 15px 20px
-          font-size: 12px
-
-
-
-
-
-@media only screen and (max-width : 576px)
-
-  .favorites-select
-    &__heading
-      &.select2-selection--single
-        .select2-selection__rendered
-          font-size: 10px
-        .select2-selection__arrow i
-          font-size: 10px
-    &__dropdown
-      .select2-results
-        &__option
-          font-size: 10px
+// @media only screen and (max-width : 576px)

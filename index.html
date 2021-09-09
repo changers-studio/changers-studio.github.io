@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Mod.kids | Главная</title>
+		<title>Hiroster | Main</title>
 
 		<meta
 			name="viewport"
-			content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
 		/>
 		<meta name="format-detection" content="telephone=no" />
 
+		<!-- favicon -->
 		<link
 			rel="icon"
 			type="image/x-icon"
@@ -26,11 +27,10 @@
 			crossorigin="anonymous"
 		></script>
 
-		<!-- reCAPTCHA v3 -->
+		<!-- reset css -->
+		<link rel="stylesheet" href="css/reset.css" />
 
 		<!-- libs css -->
-		<link rel="stylesheet" href="libs/select2/select2.min.css" />
-		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="libs/slick/slick.css" />
 		<link rel="stylesheet" href="libs/slick/slick-theme.css" />
 
@@ -40,934 +40,566 @@
 		<!-- jquery -->
 		<script defer src="libs/jquery.min.js"></script>
 
-		<!-- libs -->
-		<script defer src="libs/select2/select2.min.js"></script>
-		<script
-			defer
-			src="libs/magnific-popup/jquery.magnific-popup.min.js"
-		></script>
-		<script defer src="libs/jquery.inputmask.min.js"></script>
-		<script defer src="libs/slick/slick.js"></script>
+		<!-- libs js -->
+		<script defer src="libs/slick/slick.min.js"></script>
 
-		<!-- js -->
+		<!-- main js -->
 		<script defer src="js/custom.js"></script>
 	</head>
 
 	<body class="ishome">
-		<!-- Попапы -->
-		<form class="popup popup__callback mfp-hide">
-			<h3 class="popup__title">Закажите звонок</h3>
+		<div class="header-main">
+			<header class="header">
+				<div class="container header__flex-box">
+					<img class="header__logo" src="img/logo.svg" alt="Hiroster" />
 
-			<p class="popup__text">И мы свяжимся с вами в ближайшее время</p>
+					<div class="header__sidebar">
+						<button class="header__sidebar-close"></button>
 
-			<input
-				class="popup__input"
-				type="text"
-				name="Name"
-				placeholder="Ваше имя"
-				required
-			/>
-			<input
-				class="popup__input"
-				type="tel"
-				name="Telephone number"
-				placeholder="Ваш телефон"
-				required
-			/>
-
-			<button type="submit" class="popup__button button">
-				<span>Заказать звонок</span>
-			</button>
-		</form>
-
-		<form class="popup popup__feedback mfp-hide">
-			<h3 class="popup__title">Обратная связь</h3>
-
-			<p class="popup__text">
-				Напишите нам и мы свяжимся с вами в ближайшее время
-			</p>
-
-			<input
-				class="popup__input"
-				type="text"
-				name="Name"
-				placeholder="Ваше имя*"
-				required
-			/>
-
-			<input
-				class="popup__input"
-				type="tel"
-				name="Telephone number"
-				placeholder="Ваш телефон*"
-				required
-			/>
-
-			<input
-				class="popup__input"
-				type="email"
-				name="Email"
-				placeholder="Ваш email"
-			/>
-
-			<textarea
-				class="popup__textarea"
-				name="Message"
-				placeholder="Ваше сообщение"
-			></textarea>
-
-			<p class="form__note">«*» Поля обязательные для заполнения</p>
-
-			<button type="submit" class="popup__button button">
-				<span>Отправить</span>
-			</button>
-
-			<button type="button" class="form__reset">Сбросить</button>
-		</form>
-
-		<!-- Шапка -->
-		<header class="header">
-			<marquee class="header__ticker">
-				<span>
-					Реализация товаров осуществляется только оптом и минимальная сумма
-					заказа составляет 500$.
-				</span>
-				<span>
-					Реализация товаров осуществляется только оптом и минимальная сумма
-					заказа составляет 500$.
-				</span>
-				<span>
-					Реализация товаров осуществляется только оптом и минимальная сумма
-					заказа составляет 500$.
-				</span>
-				<span>
-					Реализация товаров осуществляется только оптом и минимальная сумма
-					заказа составляет 500$.
-				</span>
-			</marquee>
-
-			<div class="header__wrapper_top">
-				<div class="container header__container">
-					<div class="header__inner">
-						<a href="index.html" class="header__logo">
-							<img src="img/logo.svg" alt="Mod.kids" />
-						</a>
-
-						<form class="lang">
-							<div class="lang__heading">Ru</div>
-
-							<div class="lang__dropdown">
-								<div class="lang__wrapper">
-									<h6 class="lang__title">Выбрать страну и регион</h6>
-
-									<select class="select2" name="Country">
-										<option value="UZ">Узбекистан</option>
-										<option value="UA">Украина</option>
-										<option value="RU">Россия</option>
-									</select>
+						<nav class="header__nav">
+							<div class="lang">
+								<div class="lang__heading dropdown">
+									<img src="img/languages/en.svg" alt="EN" />
 								</div>
 
-								<div class="lang__wrapper">
-									<h6 class="lang__title">Выбрать язык</h6>
-
-									<label class="lang__item">
-										<input
-											class="lang__radio"
-											type="radio"
-											name="Language"
-											checked
-										/>
-										<span>Русский</span>
-									</label>
-
-									<label class="lang__item">
-										<input class="lang__radio" type="radio" name="Language" />
-										<span>Английский</span>
-									</label>
+								<div class="lang__dropdown">
+									<a href="#" class="lang__dropdown-item">
+										<img src="img/languages/ru.svg" alt="RU" />
+									</a>
 								</div>
-
-								<div class="lang__wrapper">
-									<h6 class="lang__title">Выбрать валюту</h6>
-
-									<label class="lang__item">
-										<input
-											class="lang__radio"
-											type="radio"
-											name="Currency"
-											checked
-										/>
-										<span>UZS</span>
-									</label>
-
-									<label class="lang__item">
-										<input class="lang__radio" type="radio" name="Currency" />
-										<span>USD</span>
-									</label>
-								</div>
-
-								<button type="submit" class="lang__button button">
-									<span>Перейти к покупкам</span>
-								</button>
-							</div>
-						</form>
-					</div>
-
-					<nav class="header__menu">
-						<a href="#">Новинки</a>
-						<a href="#">О нас</a>
-						<a href="#">Как купить</a>
-						<a href="#">Новости</a>
-						<a href="#">Распродажа</a>
-						<a href="#">Хиты</a>
-						<a href="#">Доставка</a>
-						<a href="#">Контакты</a>
-					</nav>
-
-					<div class="header__inner">
-						<div href="#" class="header__search header__button">
-							<img src="img/icons/search.svg" alt="Поиск" />
-						</div>
-
-						<a href="#" class="header__cabinet header__button">
-							<img src="img/icons/user.svg" alt="Личный кабинет" />
-						</a>
-
-						<a href="#" class="header__chosen header__button">
-							<img src="img/icons/heart.svg" alt="Избранные" />
-						</a>
-
-						<a href="#" class="header__cart header__button">
-							<img src="img/icons/shopping-bag.svg" alt="Корзина" />
-							<span>2</span>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="header__wrapper_bottom">
-				<div class="container header__container">
-					<div class="social-links">
-						<a class="social-links__item" href="#">
-							<img src="img/icons/instagram.svg" alt="instagram" />
-						</a>
-						<a class="social-links__item" href="#">
-							<img src="img/icons/whatsapp.svg" alt="whatsapp" />
-						</a>
-						<a class="social-links__item" href="#">
-							<img src="img/icons/telegram.svg" alt="telegram" />
-						</a>
-						<a class="social-links__item" href="#">
-							<img src="img/icons/facebook.svg" alt="facebook" />
-						</a>
-					</div>
-
-					<nav class="header__menu _second">
-						<a href="#">Девочкам</a>
-						<a href="#">Мальчикам</a>
-						<a href="#">Новорожденным</a>
-					</nav>
-
-					<div class="header__inner">
-						<div class="header__popup-buttons">
-							<a
-								href=".popup__feedback"
-								class="header__feedback magnific-popup"
-							>
-								Обратная связь
-							</a>
-							<a
-								href=".popup__callback"
-								class="header__callback magnific-popup"
-							>
-								Заказать звонок
-							</a>
-						</div>
-
-						<div class="tel">
-							<div class="dropdown__heading">
-								<i class="fas fa-chevron-down"></i>
-								<a href="tel:998990000000">+998 (99) 000 00 00</a>
-								<img src="img/icons/tel.svg" alt="Телефон" />
 							</div>
 
-							<div class="dropdown__body">
-								<a href="tel:998990000000">+998 (99) 000 00 00</a>
-								<a href="tel:998990000000">+998 (99) 000 00 00</a>
-								<a href="tel:998990000000">+998 (99) 000 00 00</a>
-							</div>
-						</div>
+							<ul class="menu">
+								<li class="menu__item">
+									<a href="#" class="menu__item-link">About</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__item-link">Deals</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__item-link">Positions</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__item-link">Advisors</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__item-link">Advisers</a>
+								</li>
+							</ul>
+						</nav>
+
+						<a href="#" class="header__button button _blue">
+							Demo dashboard
+							<i class="fas fa-chevron-right"></i>
+						</a>
 					</div>
+
+					<button class="header__hamburger">
+						<span class="header__hamburger-line"></span>
+						<span class="header__hamburger-line"></span>
+						<span class="header__hamburger-line"></span>
+					</button>
 				</div>
-			</div>
-		</header>
 
-		<!-- Шапка моб версии -->
-		<header class="header _mobile">
-			<div class="container header__container">
-				<div class="header__inner">
-					<div class="header__hamburger">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line _short"></div>
-					</div>
+				<div class="header__sidebar-plug"></div>
+			</header>
 
-					<div class="header__search header__button">
-						<img src="img/icons/search.svg" alt="Поиск" />
-					</div>
-				</div>
+			<section class="main">
+				<div class="container main__container">
+					<h1 class="main__title">
+						Free Hockey Players Market – Build the Perfect Team
+					</h1>
 
-				<a href="index.html" class="header__logo">
-					<img src="img/logo.svg" alt="Mod.kids" />
-				</a>
+					<p class="main__text">
+						Control the hockey transfer market without media or any middlemen.
+						Hiroster database contains thousands of available players from all
+						over the world. Filter your search for hockey players by 10 key
+						parameters. Contact any player you are interested in right in the
+						application.
+					</p>
 
-				<div class="header__inner">
-					<a href="#" class="header__chosen header__button">
-						<img src="img/icons/heart.svg" alt="Избранные" />
-					</a>
+					<h4 class="main__secondary-title">
+						Try the Hiroster demo dashboard and find out how it works
+					</h4>
 
-					<a href="#" class="header__cart header__button">
-						<img src="img/icons/shopping-bag.svg" alt="Корзина" />
-						<span>2</span>
+					<a href="#" class="button main__button">
+						Get Access
+						<i class="fas fa-chevron-right"></i>
 					</a>
 				</div>
-			</div>
+			</section>
+		</div>
 
-			<div class="dropdown">
-				<div class="dropdown__wrapper">
-					<nav class="dropdown__menu">
-						<a href="#">Девочкам</a>
-						<a href="#">Мальчикам</a>
-						<a href="#">Новорожденным</a>
-						<a href="#">Коллекции</a>
-					</nav>
-
-					<nav class="dropdown__menu _small">
-						<a href="#">Новинки</a>
-						<a href="#">О нас</a>
-						<a href="#">Как купить</a>
-						<a href="#">Новости</a>
-						<a href="#">Распродажа</a>
-						<a href="#">Хиты</a>
-						<a href="#">Доставка</a>
-						<a href="#">Контакты</a>
-					</nav>
+		<section class="description">
+			<div class="container description__container">
+				<div class="description__wrapper">
+					<img
+						src="img/description__image.png"
+						alt="Phone"
+						class="description__image"
+					/>
 				</div>
 
-				<div class="dropdown__wrapper _bd">
-					<div class="dropdown__flex-box">
-						<div class="tel">
-							<div class="dropdown__heading">
-								<a href="tel:998990000000">+998 (99) 000 00 00</a>
-								<i class="fas fa-chevron-down"></i>
-							</div>
-
-							<div class="dropdown__body">
-								<a href="tel:998990000000">+998 (99) 000 00 00</a>
-								<a href="tel:998990000000">+998 (99) 000 00 00</a>
-								<a href="tel:998990000000">+998 (99) 000 00 00</a>
-							</div>
-						</div>
-
-						<form class="lang">
-							<div class="lang__heading">Ru</div>
-
-							<div class="lang__dropdown">
-								<div class="lang__wrapper">
-									<h6 class="lang__title">Выбрать страну и регион</h6>
-
-									<select class="select2" name="Country">
-										<option value="UZ">Узбекистан</option>
-										<option value="UA">Украина</option>
-										<option value="RU">Россия</option>
-									</select>
-								</div>
-
-								<div class="lang__wrapper">
-									<h6 class="lang__title">Выбрать язык</h6>
-
-									<label class="lang__item">
-										<input
-											class="lang__radio"
-											type="radio"
-											name="Language"
-											checked
-										/>
-										<span>Русский</span>
-									</label>
-
-									<label class="lang__item">
-										<input class="lang__radio" type="radio" name="Language" />
-										<span>Английский</span>
-									</label>
-								</div>
-
-								<div class="lang__wrapper">
-									<h6 class="lang__title">Выбрать валюту</h6>
-
-									<label class="lang__item">
-										<input
-											class="lang__radio"
-											type="radio"
-											name="Currency"
-											checked
-										/>
-										<span>UZS</span>
-									</label>
-
-									<label class="lang__item">
-										<input class="lang__radio" type="radio" name="Currency" />
-										<span>USD</span>
-									</label>
-								</div>
-
-								<button type="submit" class="lang__button button">
-									<span>Перейти к покупкам</span>
-								</button>
-							</div>
-						</form>
-					</div>
-
-					<div class="social-links">
-						<a class="social-links__item" href="#">
-							<img src="img/icons/instagram.svg" alt="instagram" />
-						</a>
-						<a class="social-links__item" href="#">
-							<img src="img/icons/whatsapp.svg" alt="whatsapp" />
-						</a>
-						<a class="social-links__item" href="#">
-							<img src="img/icons/telegram.svg" alt="telegram" />
-						</a>
-						<a class="social-links__item" href="#">
-							<img src="img/icons/facebook.svg" alt="facebook" />
-						</a>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<!-- Главный экран -->
-		<section class="main">
-			<div class="container main__container">
-				<div class="main__slider">
-					<div class="main__slide">
-						<h1 class="main__title">Сладких снов</h1>
-
-						<h3 class="main__subtitle">
-							Пижамы из
-							<span>100% натурального хлопка</span>
-							для ваших
-							<span>любимых</span>
-						</h3>
-
-						<a href="#" class="button main__button">
-							<span>Купить сейчас</span>
-						</a>
-					</div>
-
-					<div class="main__slide">
-						<h1 class="main__title">Сладких снов2</h1>
-
-						<h3 class="main__subtitle">
-							Пижамы из
-							<span>100% натурального хлопка</span>
-							для ваших
-							<span>любимых</span>
-						</h3>
-
-						<a href="#" class="button main__button">
-							<span>Купить сейчас</span>
-						</a>
-					</div>
-
-					<div class="main__slide">
-						<h1 class="main__title">Сладких снов3</h1>
-
-						<h3 class="main__subtitle">
-							Пижамы из
-							<span>100% натурального хлопка</span>
-							для ваших
-							<span>любимых</span>
-						</h3>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Одежда для детей -->
-		<section class="clothes-for">
-			<div class="container">
-				<div class="row">
-					<div class="col-6 clothes-for__wrapper_left">
-						<a href="#" class="clothes-for__box _boy">
-							<img
-								src="img/main/clothes__boys-image.png"
-								alt="Мальчик"
-								class="clothes-for__image"
-							/>
-
-							<div class="clothes-for__flex-box">
-								<h2 class="clothes-for__title">
-									Одежда для
-									<br />
-									мальчиков
-								</h2>
-
-								<div class="clothes-for__arrow"></div>
-							</div>
-
-							<div class="clothes-for__pattern"></div>
-						</a>
-					</div>
-
-					<div class="col-6 clothes-for__wrapper_right">
-						<a href="#" class="clothes-for__box _offset _girl">
-							<img
-								src="img/main/clothes__girls-image.png"
-								alt="Девочка"
-								class="clothes-for__image"
-							/>
-
-							<div class="clothes-for__flex-box">
-								<h2 class="clothes-for__title">
-									Одежда для
-									<br />
-									девочек
-								</h2>
-
-								<div class="clothes-for__arrow"></div>
-							</div>
-
-							<div class="clothes-for__pattern"></div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Слайдер продукции -->
-		<section class="product">
-			<div class="container">
-				<div class="product__slider">
-					<div class="product__slide">
-						<div
-							class="product__image"
-							style="background-image: url('img/main/slider__image.jpg')"
-						>
-							<div class="product__wrapper">
-								<p class="product__years">2020 - 2021</p>
-								<h2 class="product__title">Комплекты для девочек</h2>
-							</div>
-						</div>
-					</div>
-
-					<div class="product__slide">
-						<div
-							class="product__image"
-							style="background-image: url('img/main/slider__image.jpg')"
-						>
-							<div class="product__wrapper">
-								<p class="product__years">2019 - 2020</p>
-								<h2 class="product__title">Комплекты для девочек</h2>
-							</div>
-						</div>
-					</div>
-
-					<div class="product__slide">
-						<div
-							class="product__image"
-							style="background-image: url('img/main/slider__image.jpg')"
-						>
-							<div class="product__wrapper">
-								<p class="product__years">2018 - 2019</p>
-								<h2 class="product__title">Комплекты для девочек</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Галерея -->
-		<section class="gallery">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<h2 class="gallery__title">Сладких снов</h2>
-
-						<h5 class="gallery__subtitle">
-							Пижамы из
-							<span>100% натурального хлопка</span>
-							для ваших
-							<span>любимых</span>
-						</h5>
-
-						<a href="#" class="button gallery__button">
-							<span>Купить сейчас</span>
-						</a>
-
-						<div class="gallery__images">
-							<div
-								class="gallery__image _small"
-								style="
-									background-image: url('img/main/gallery__image-1_small.jpg');
-								"
-							></div>
-							<div
-								class="gallery__image _small"
-								style="
-									background-image: url('img/main/gallery__image-2_small.jpg');
-								"
-							></div>
-						</div>
-					</div>
-
-					<div class="col-lg-6 d-lg-block d-none">
-						<div
-							class="gallery__image _large"
-							style="background-image: url('img/main/gallery__image_large.jpg')"
-						></div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Категории -->
-		<section class="categories">
-			<div class="container">
-				<h2 class="categories__title">Лучшие предложения</h2>
-
-				<div class="tabs">
-					<div class="tabs__flex-center">
-						<ul class="tabs__caption">
-							<li class="_blue active">
-								<img src="img/icons/boy.svg" alt="Мальчик" />
-								<span>Мальчики</span>
-							</li>
-							<li class="_red">
-								<img src="img/icons/girl.svg" alt="Девочика" />
-								<span>Девочики</span>
-							</li>
-						</ul>
-					</div>
-
-					<div class="tabs__flex-center">
-						<ul class="categories__age">
-							<li class="active">От 0-2 лет</li>
-							<li>От 3 до 6 лет</li>
-							<li>От 7 до 14 лет</li>
-						</ul>
-					</div>
-
-					<div class="tabs__content active">
-						<div class="categories__slider">
-							<a href="#" class="categories__box">
-								<div
-									class="categories__image"
-									style="background-image: url(img/categories/image-1.jpg)"
-								></div>
-
-								<div class="categories__wrapper">
-									<h3 class="categories__name">Верхняя одежда</h3>
-									<p class="categories__amount">121 Товар</p>
-								</div>
-							</a>
-
-							<a href="#" class="categories__box">
-								<div
-									class="categories__image"
-									style="background-image: url(img/categories/image-2.jpg)"
-								></div>
-
-								<div class="categories__wrapper">
-									<h3 class="categories__name">Комлпекты</h3>
-									<p class="categories__amount">121 Товар</p>
-								</div>
-							</a>
-
-							<a href="#" class="categories__box">
-								<div
-									class="categories__image"
-									style="background-image: url(img/categories/image-3.jpg)"
-								></div>
-
-								<div class="categories__wrapper">
-									<h3 class="categories__name">Домашняя одежда</h3>
-									<p class="categories__amount">121 Товар</p>
-								</div>
-							</a>
-
-							<a href="#" class="categories__box">
-								<div
-									class="categories__image"
-									style="background-image: url(img/categories/image-4.jpg)"
-								></div>
-
-								<div class="categories__wrapper">
-									<h3 class="categories__name">Брюки</h3>
-									<p class="categories__amount">121 Товар</p>
-								</div>
-							</a>
-
-							<a href="#" class="categories__box">
-								<div
-									class="categories__image"
-									style="background-image: url(img/categories/image-1.jpg)"
-								></div>
-
-								<div class="categories__wrapper">
-									<h3 class="categories__name">Верхняя одежда</h3>
-									<p class="categories__amount">121 Товар</p>
-								</div>
-							</a>
-
-							<a href="#" class="categories__box">
-								<div
-									class="categories__image"
-									style="background-image: url(img/categories/image-2.jpg)"
-								></div>
-
-								<div class="categories__wrapper">
-									<h3 class="categories__name">Комлпекты</h3>
-									<p class="categories__amount">121 Товар</p>
-								</div>
-							</a>
-
-							<a href="#" class="categories__box">
-								<div
-									class="categories__image"
-									style="background-image: url(img/categories/image-3.jpg)"
-								></div>
-
-								<div class="categories__wrapper">
-									<h3 class="categories__name">Домашняя одежда</h3>
-									<p class="categories__amount">121 Товар</p>
-								</div>
-							</a>
-
-							<a href="#" class="categories__box">
-								<div
-									class="categories__image"
-									style="background-image: url(img/categories/image-4.jpg)"
-								></div>
-
-								<div class="categories__wrapper">
-									<h3 class="categories__name">Брюки</h3>
-									<p class="categories__amount">121 Товар</p>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="tabs__content">
-						<div class="categories__slider">
-							<a href="#" class="categories__box">
-								<div
-									class="categories__image"
-									style="background-image: url(img/categories/image-2.jpg)"
-								></div>
-
-								<div class="categories__wrapper">
-									<h3 class="categories__name">Верхняя одежда</h3>
-									<p class="categories__amount">1212 Товар</p>
-								</div>
-							</a>
-
-							<a href="#" class="categories__box">
-								<div
-									class="categories__image"
-									style="background-image: url(img/categories/image-3.jpg)"
-								></div>
-
-								<div class="categories__wrapper">
-									<h3 class="categories__name">Комлпекты</h3>
-									<p class="categories__amount">1212 Товар</p>
-								</div>
-							</a>
-
-							<a href="#" class="categories__box">
-								<div
-									class="categories__image"
-									style="background-image: url(img/categories/image-4.jpg)"
-								></div>
-
-								<div class="categories__wrapper">
-									<h3 class="categories__name">Домашняя одежда</h3>
-									<p class="categories__amount">1212 Товар</p>
-								</div>
-							</a>
-
-							<a href="#" class="categories__box">
-								<div
-									class="categories__image"
-									style="background-image: url(img/categories/image-1.jpg)"
-								></div>
-
-								<div class="categories__wrapper">
-									<h3 class="categories__name">Брюки</h3>
-									<p class="categories__amount">1212 Товар</p>
-								</div>
-							</a>
-
-							<a href="#" class="categories__box">
-								<div
-									class="categories__image"
-									style="background-image: url(img/categories/image-1.jpg)"
-								></div>
-
-								<div class="categories__wrapper">
-									<h3 class="categories__name">Верхняя одежда</h3>
-									<p class="categories__amount">121 Товар</p>
-								</div>
-							</a>
-
-							<a href="#" class="categories__box">
-								<div
-									class="categories__image"
-									style="background-image: url(img/categories/image-2.jpg)"
-								></div>
-
-								<div class="categories__wrapper">
-									<h3 class="categories__name">Комлпекты</h3>
-									<p class="categories__amount">121 Товар</p>
-								</div>
-							</a>
-
-							<a href="#" class="categories__box">
-								<div
-									class="categories__image"
-									style="background-image: url(img/categories/image-3.jpg)"
-								></div>
-
-								<div class="categories__wrapper">
-									<h3 class="categories__name">Домашняя одежда</h3>
-									<p class="categories__amount">121 Товар</p>
-								</div>
-							</a>
-
-							<a href="#" class="categories__box">
-								<div
-									class="categories__image"
-									style="background-image: url(img/categories/image-4.jpg)"
-								></div>
-
-								<div class="categories__wrapper">
-									<h3 class="categories__name">Брюки</h3>
-									<p class="categories__amount">121 Товар</p>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Подвал -->
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__flex-box">
-					<div class="footer__inner">
-						<a href="#" class="footer__logo">
-							<img src="img/logo.svg" alt="Mod.kids" />
-						</a>
-
-						<div class="footer__data">
-							<p>ООО «PLUG AND PLAY COMMUNICATIONS»</p>
-							<p>Код ОКЭД: 61200</p>
-							<p>ИНН: 306985234</p>
-							<p>Р/с: 20208000505157897001</p>
-							<p>Код банка: 00491</p>
-							<p>Юридический адрес: г.Ташкент,</p>
-							<p>Алмазарский район, ул.Елкин, 7-10</p>
-						</div>
-					</div>
-
-					<nav class="footer__menu">
-						<a href="#">Девочкам</a>
-						<a href="#">Мальчикам</a>
-						<a href="#">Новорожденным</a>
-					</nav>
-
-					<nav class="footer__menu _small">
-						<a href="#">Новинки</a>
-						<a href="#">Скидки</a>
-						<a href="#">Хиты</a>
-						<a href="#">Блог</a>
-						<a href="#">Для юридических лиц</a>
-						<a href="#">Условия обслуживания</a>
-						<a href="#">Контакты</a>
-						<a href="#">Вопросы-ответы</a>
-					</nav>
-
-					<div class="footer__inner">
-						<a href="998990000000" class="footer__tel">
-							<img src="img/icons/tel.svg" alt="Телефон" />
-							<span>+998 (99) 000 00 00</span>
-						</a>
-
-						<address class="footer__address">
-							Адрес: Узбекистан, г. Ташкент
-						</address>
-
-						<p class="footer__working-hours">
-							Режим работы: Пн. - Вс.: 09:00 - 20:00
+				<div class="description__wrapper">
+					<h2 class="description__title">
+						Find a dream roaster in Hiroster just in a few hours
+					</h2>
+
+					<div class="description__text">
+						<p class="description__text-p">
+							A clearly segmented base of active players from all over the
+							world. They are eager to play on your team.
 						</p>
 
-						<div class="footer__social-links">
-							<a class="social-links__item" href="#">
-								<img src="img/icons/instagram.svg" alt="instagram" />
-							</a>
-							<a class="social-links__item" href="#">
-								<img src="img/icons/whatsapp.svg" alt="whatsapp" />
-							</a>
-							<a class="social-links__item" href="#">
-								<img src="img/icons/telegram.svg" alt="telegram" />
-							</a>
-							<a class="social-links__item" href="#">
-								<img src="img/icons/facebook.svg" alt="facebook" />
-							</a>
+						<p class="description__text-p">
+							Simple search and smart filtering of hundreds of players according
+							to your specified parameters: from player statistics to salary
+							wishes.
+						</p>
+
+						<p class="description__text-p">
+							All important information shown in the search results immediately:
+							choose, add to favorites, contact them directly.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="features">
+			<div class="container">
+				<h2 class="features__title">Hiroster Features</h2>
+
+				<div class="features__container">
+					<div class="features__box">
+						<img
+							src="img/features/icon-1.svg"
+							alt="Icon"
+							class="features__icon"
+						/>
+
+						<h5 class="features__heading">Advanced player profile</h5>
+
+						<p class="features__text">
+							All information on one page: statistics of the last seasons,
+							player indicators, videos of game shifts.
+						</p>
+					</div>
+
+					<div class="features__box">
+						<img
+							src="img/features/icon-2.svg"
+							alt="Icon"
+							class="features__icon"
+						/>
+
+						<h5 class="features__heading">Contacts and a quick chat</h5>
+
+						<p class="features__text">
+							Contact any player directly in Hiroster. In the messenger, social
+							network or directly in the service chat – discuss cooperation
+							without wasting a minute.
+						</p>
+					</div>
+
+					<div class="features__box">
+						<img
+							src="img/features/icon-3.svg"
+							alt="Icon"
+							class="features__icon"
+						/>
+
+						<h5 class="features__heading">All the preferences of the player</h5>
+
+						<p class="features__text">
+							You will have access to each player’s preferences for salary,
+							league level, and location in Hiroster. Choose from the most
+							relevant players.
+						</p>
+					</div>
+
+					<div class="features__box">
+						<img
+							src="img/features/icon-4.svg"
+							alt="Icon"
+							class="features__icon"
+						/>
+
+						<h5 class="features__heading">Comprehensive statistics</h5>
+
+						<p class="features__text">
+							You no longer have to search for player data all over the
+							internet. Full statistics of each hockey player are available for
+							viewing and filtering in his profile.
+						</p>
+					</div>
+
+					<div class="features__box">
+						<img
+							src="img/features/icon-5.svg"
+							alt="Icon"
+							class="features__icon"
+						/>
+
+						<h5 class="features__heading">Not highlights, but game shifts</h5>
+
+						<p class="features__text">
+							Evaluate the level of a hockey player not by a collection of good
+							moments, but by their entire playing time. Watch videos of any
+							player's game shifts.
+						</p>
+					</div>
+
+					<div class="features__box">
+						<img
+							src="img/features/icon-6.svg"
+							alt="Icon"
+							class="features__icon"
+						/>
+
+						<h5 class="features__heading">Convenient search and filtering</h5>
+
+						<p class="features__text">
+							Contact any player directly in Hiroster. In the messenger, social
+							network or directly in the service chat – discuss cooperation
+							without wasting a minute.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="access">
+			<div class="container">
+				<h2 class="access__title">
+					Get access to Hiroster
+					<br />
+					demo dashboard
+				</h2>
+
+				<a href="#" class="button access__button">
+					Get Access
+					<i class="fas fa-chevron-right"></i>
+				</a>
+			</div>
+		</section>
+
+		<section class="deal">
+			<div class="container">
+				<div class="deal__container">
+					<img class="deal__image" src="img/deal__image.png" alt="Dashboard" />
+
+					<div class="deal__wrapper">
+						<h2 class="deal__title">
+							Conduct a deal with a player directly in Hiroster
+						</h2>
+
+						<p class="deal__text">
+							Hiroster has the tools for conducting sports deals: Chat with
+							relevant players, negotiate, and discuss resumes with those who
+							are well suited to the team, all without leaving the application.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages">
+			<div class="container">
+				<div class="advantages__container">
+					<div class="advantages__wrapper">
+						<img
+							src="img/advantages/icon-1.svg"
+							alt="Icon"
+							class="advantages__icon"
+						/>
+
+						<h3 class="advantages__heading">
+							Post vacancies and get real-time responses
+						</h3>
+
+						<p class="advantages__text">
+							Get feedback from relevant players on your published position
+							right in the app chat, and discuss the details of your contracts
+							without intermediaries.
+						</p>
+					</div>
+
+					<div class="advantages__wrapper image">
+						<div class="advantages__image">
+							<img src="img/advantages/image-1.png" alt="Image" />
 						</div>
 					</div>
 				</div>
 
-				<div class="footer__bottom-line">
-					<p>© 2007-2021 Все права защищены.</p>
-					<a href="#">Политика обработки персональных данных</a>
-					<a href="#" class="web-dev">
-						<span>Разработка сайта</span>
-						<svg
-							width="31"
-							height="32"
-							viewBox="0 0 31 32"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								fill-rule="evenodd"
-								clip-rule="evenodd"
-								d="M24.9369 11.7707C24.9456 8.95331 25.2338 6.87849 24.1599 4.44113C23.3698 2.64149 21.4752 0.79381 19.4497 0.330798C17.6818 -0.0754301 12.8843 -0.0404858 11.1513 0.383214C7.78568 1.20877 5.74708 4.74689 5.73399 8.12775C5.72962 8.84411 5.57684 11.3339 5.84748 11.7314C13.5391 14.9987 21.7284 12.8409 24.9413 11.7663L24.9369 11.7707Z"
-								fill="white"
-							/>
-							<path
-								fill-rule="evenodd"
-								clip-rule="evenodd"
-								d="M2.81802 18.7946C2.81802 17.5715 2.99263 16.3965 3.33312 15.2739L3.18034 15.2259C2.36403 14.7323 0.517508 14.0247 0.417106 12.854C0.347261 12.0328 1.16794 10.1852 3.33749 11.5917C12.5177 16.5057 20.1439 14.4353 24.7885 12.7841C27.1764 11.9324 28.4685 10.6089 29.4158 11.1592C31.044 11.797 30.4678 13.6883 29.132 14.0596C28.5034 14.3872 27.8399 14.693 27.1545 14.9725C27.5736 16.1956 27.7831 17.4754 27.7831 18.7946C27.7831 20.4675 27.4732 22.0444 26.8621 23.5077C26.2509 24.9797 25.3517 26.277 24.1774 27.4127C22.9289 28.6052 21.5495 29.5137 20.0391 30.1253C18.5188 30.739 16.8941 31.052 15.2547 31.0469C13.6047 31.0469 12.0332 30.7368 10.514 30.1253C9.00364 29.5137 7.65913 28.6227 6.47614 27.4651C5.28441 26.2814 4.37206 24.9579 3.75219 23.4902C3.13232 22.0269 2.82238 20.4588 2.82238 18.8033L2.81802 18.7946ZM22.3047 18.8426C22.3047 17.5278 22.3745 17.0517 22.0995 16.5232C20.0129 16.9818 17.8739 17.2526 15.8484 17.3138C13.238 17.3575 10.8938 17.1129 8.58021 16.6542C8.41433 17.3706 8.2921 18.1699 8.2921 18.8426C8.2921 20.948 8.97745 22.7302 10.3394 24.1891C11.7014 25.6524 13.3515 26.3775 15.3028 26.3775C17.2453 26.3775 18.8954 25.6524 20.2574 24.1891C21.6193 22.7258 22.3047 20.948 22.3047 18.8426Z"
-								fill="white"
-							/>
+				<div class="advantages__container">
+					<div class="advantages__wrapper image">
+						<div class="advantages__image">
+							<img src="img/advantages/image-2.png" alt="Image" />
+						</div>
+					</div>
 
-							<defs>
-								<clipPath id="clip0">
-									<rect
-										width="30"
-										height="31"
-										fill="white"
-										transform="translate(0.411865 0.046875)"
-									/>
-								</clipPath>
-							</defs>
-						</svg>
-					</a>
+					<div class="advantages__wrapper">
+						<img
+							src="img/advantages/icon-2.svg"
+							alt="Icon"
+							class="advantages__icon"
+						/>
+
+						<h3 class="advantages__heading">
+							Communicate with the players conveniently. No language barriers
+						</h3>
+
+						<p class="advantages__text">
+							Email any player directly inHiroster. There are no language
+							barriers here – the chat has a built-in auto-translator. Discuss
+							the details of your cooperation without intermediaries,
+							translators, and misunderstandings.
+						</p>
+					</div>
 				</div>
 			</div>
-		</footer>
+		</section>
+
+		<section class="access _second">
+			<div class="container access__container">
+				<h2 class="access__title">
+					Get access to Hiroster
+					<br />
+					demo dashboard
+				</h2>
+
+				<h4 class="access__subtitle">
+					Try the Hiroster demo dashboard and find out how it works
+				</h4>
+
+				<a href="#" class="button access__button">
+					Get Access
+					<i class="fas fa-chevron-right"></i>
+				</a>
+			</div>
+		</section>
+
+		<section class="advisors">
+			<div class="container">
+				<h2 class="advisors__title">Advisors</h2>
+
+				<div class="advisors__slider">
+					<div class="advisors__slide">
+						<div class="advisors__slide-wrapper">
+							<img
+								class="advisors__image"
+								src="img/advisors/image-1.png"
+								alt="Image"
+							/>
+
+							<h6 class="advisors__heading">
+								<span>Joonas Korpisalo</span>
+								<img
+									class="advisors__flag"
+									src="img/flags/fin.png"
+									alt="Flag"
+								/>
+							</h6>
+
+							<p class="advisors__text">
+								Some description information about adviser here
+							</p>
+						</div>
+					</div>
+
+					<div class="advisors__slide">
+						<div class="advisors__slide-wrapper">
+							<img
+								class="advisors__image"
+								src="img/advisors/image-2.png"
+								alt="Image"
+							/>
+
+							<h6 class="advisors__heading">
+								<span>Markus Hännikäinen</span>
+								<img
+									class="advisors__flag"
+									src="img/flags/fin.png"
+									alt="Flag"
+								/>
+							</h6>
+
+							<p class="advisors__text">
+								Some description information about adviser here
+							</p>
+						</div>
+					</div>
+
+					<div class="advisors__slide">
+						<div class="advisors__slide-wrapper">
+							<img
+								class="advisors__image"
+								src="img/advisors/image-3.png"
+								alt="Image"
+							/>
+
+							<h6 class="advisors__heading">
+								<span>Dean Kukan</span>
+								<img class="advisors__flag" src="img/flags/sw.png" alt="Flag" />
+							</h6>
+
+							<p class="advisors__text">
+								Some description information about adviser here
+							</p>
+						</div>
+					</div>
+
+					<div class="advisors__slide">
+						<div class="advisors__slide-wrapper">
+							<img
+								class="advisors__image"
+								src="img/advisors/image-4.png"
+								alt="Image"
+							/>
+
+							<h6 class="advisors__heading">
+								<span>Lukas Sedlak</span>
+								<img class="advisors__flag" src="img/flags/ch.png" alt="Flag" />
+							</h6>
+
+							<p class="advisors__text">
+								Some description information about adviser here
+							</p>
+						</div>
+					</div>
+
+					<div class="advisors__slide">
+						<div class="advisors__slide-wrapper">
+							<img
+								class="advisors__image"
+								src="img/advisors/image-2.png"
+								alt="Image"
+							/>
+
+							<h6 class="advisors__heading">
+								<span>Markus Hännikäinen</span>
+								<img
+									class="advisors__flag"
+									src="img/flags/fin.png"
+									alt="Flag"
+								/>
+							</h6>
+
+							<p class="advisors__text">
+								Some description information about adviser here
+							</p>
+						</div>
+					</div>
+
+					<div class="advisors__slide">
+						<div class="advisors__slide-wrapper">
+							<img
+								class="advisors__image"
+								src="img/advisors/image-3.png"
+								alt="Image"
+							/>
+
+							<h6 class="advisors__heading">
+								<span>Dean Kukan</span>
+								<img class="advisors__flag" src="img/flags/sw.png" alt="Flag" />
+							</h6>
+
+							<p class="advisors__text">
+								Some description information about adviser here
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="about-footer">
+			<section class="about">
+				<div class="container">
+					<h2 class="about__title">Our mission</h2>
+
+					<div class="about__container">
+						<div class="about__wrapper">
+							<h3 class="about__heading">
+								HiRoster is a new recruiting approach, thatchanges the whole
+								hockey transfer system.
+							</h3>
+
+							<div class="about__text">
+								<p class="about__text-p">
+									Players fill out their profiles and send requests to teams and
+									clubs. Teams submit requests for the next season with
+									HiRoster.
+								</p>
+
+								<p class="about__text-p">
+									Both sides will filter amd find each others offers, making it
+									possible to get into an ideal team or sign a player for a
+									season in a few clicks.
+								</p>
+
+								<p class="about__text-p">
+									"I played for an unknown team and failed with the absence of a
+									motivating salary or career opportunities..." - forget about
+									this bad stories.
+								</p>
+
+								<p class="about__text-p">
+									The HiRoster app makes it possible to determine what players
+									there are available to the selected parameters and find a team
+									which is seeking for a specified position player.
+								</p>
+
+								<p class="about__text-p">
+									Hockey trafers have never been so simple and succesful!
+								</p>
+							</div>
+						</div>
+
+						<div class="social-links">
+							<h6 class="social-links__heading">
+								Follow us
+								<br />
+								in social networks
+							</h6>
+
+							<div class="social-links__flex-box">
+								<a href="#" class="social-links__item">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+								<a href="#" class="social-links__item">
+									<i class="fab fa-instagram"></i>
+								</a>
+								<a href="#" class="social-links__item">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__container">
+						<img src="img/logo.svg" alt="Hiroster" class="footer__logo" />
+
+						<div class="footer__wrapper">
+							<nav class="footer__menu">
+								<a class="footer__menu-item" href="#">Project Roadmap</a>
+								<a class="footer__menu-item" href="#">Privacy policy</a>
+								<a class="footer__menu-item" href="#">Terms of Service</a>
+							</nav>
+
+							<a href="#" class="button footer__button">
+								Demo dashboard
+								<i class="fas fa-chevron-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 	</body>
 </html>
