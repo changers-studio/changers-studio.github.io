@@ -1,6 +1,5 @@
 @import vars
 @import fonts
-@import select
 @import '../libs/bootstrap-grid/bootstrap-grid'
 
 
@@ -16,32 +15,29 @@ body
 	position: relative
 	line-height: 1.5
 	font-family: $default-font
-	color: #fff
-	&.scroll_disable
+	color: $black
+	&.scroll_disabled
 		overflow-y: hidden
 
-
-
 section
-	padding: 80px 0
+	padding: 100px 0
+
+.h2
+	font-size: 24px
+	font-weight: 400
+	text-transform: uppercase
+	margin-bottom: 25px
+
+.h3
+	font-size: 48px
+	font-weight: 800
+	line-height: 1.2
+	text-transform: uppercase
+	margin-bottom: 40px
 
 
-h1
-	font-size: 85px
-h2
-	font-size: 70px
-	font-weight: 600
-	line-height: 1
-h3
-	font-size: 45px
-h4
-	font-size: 30px
-h5
-	font-size: 26px
-h6
-	font-size: 21px
 
-
+// Кнопка
 .button
 	display: flex
 	justify-content: center
@@ -53,1051 +49,787 @@ h6
 	outline: none
 	overflow: hidden
 	cursor: pointer
-	font-weight: 600
-	border-radius: 40px
-	border: none
-	background-color: $blue
+	width: 250px
+	height: 60px
+	font-size: 18px
+	border: 2px solid $accent
+	font-weight: 300
+	background-color: $black
 	color: #fff
 	transition: .2s ease-in-out
 	&:focus, &:hover
 		text-decoration: none
-
-
-
-// Main screen background
-.header-main
-	background-image: url('../img/main__bg-image.png')
-	background-size: cover
-	background-position: center bottom
-	background-color: #000
-// eof
-
-
-// Header
-.header
-	padding: 30px 0
-	&__flex-box
-		display: flex
-		justify-content: space-between
-		align-items: center
-	&__sidebar
-		display: flex
-		align-items: center
-		z-index: 5
-		&-close
-			position: absolute
-			right: 20px
-			top: 20px
-			width: 16px
-			height: 16px
-			background-image: url('../img/icons/close.svg')
-			background-size: contain
-			background-repeat: no-repeat
-			display: none
-		&-plug
-			position: fixed
-			left: 0
-			top: 0
-			width: 0
-			height: 100%
-			opacity: 0
-			z-index: 4
-			transition: .5s
-	&__nav
-		display: flex
-		align-items: center
-		position: absolute
-		left: 50%
-		top: 50%
-		transform: translate(-50%, -50%)
-	.lang
-		cursor: pointer
-		margin-right: 80px
-		position: absolute
-		right: 100%
-		display: flex
-		img
-			max-width: none
-			max-height: none
-		&__heading
-			display: flex
-			align-items: center
-			position: relative
-			cursor: pointer
-			padding-right: 10px
-			&::after
-				content: '\f078'
-				font-family: fontawesome
-				font-size: 12px
-				position: absolute
-				left: 100%
-				color: #fff
-				transition: .2s ease
-			&.active::after
-				transform: rotate(180deg)
-		&__dropdown
-			display: none
-			position: absolute
-			top: 100%
-			margin-top: 10px
-			&-item
-				display: flex
-	.menu
-		display: flex
-		&__item
-			margin-right: 50px
-			&:last-child
-				margin-right: 0
-			&-link
-				font-size: 21px
-				font-weight: 600
-				position: relative
-				display: inline-block
-				&::before
-					content: ''
-					height: 1px
-					width: 0
-					position: absolute
-					top: 100%
-					left: 50%
-					transform: translate(-50%, 0)
-					background-color: #fff
-					transition: .2s
-					display: block
-				&:hover::before
-					width: 100%
-	&__hamburger
-		display: none
-		flex-direction: column
-		justify-content: space-between
-		width: 21px
-		height: 16px
-		&-line
-			height: 2px
-			width: 100%
-			background-color: #fff
-			border-radius: 5px
-	&__button
-		width: 260px
-		height: 55px
-		background-color: $blue
-		font-size: 18px
-		i
-			margin-left: 20px
-			font-size: 14px
-		&:hover
-			background-color: #fff
-			color: $blue
-// eof
-
-
-// Main screen
-.main
-	height: calc(100vh - 115px)
-	min-height: 600px
-	padding: 0
-	&__container
-		height: 100%
-		display: flex
-		flex-direction: column
-		justify-content: center
-		align-items: flex-start
-	&__title
-		max-width: 770px
-		margin-bottom: 40px
-		line-height: 1
-	&__text
-		max-width: 465px
-		padding-left: 50px
-		color: $grey
-		margin-bottom: 40px
-		line-height: 1.2
-	&__secondary-title
-		max-width: 425px
-		line-height: 1.2
-		font-weight: 500
-	&__button
-		width: 50%
-		height: 100px
-		position: absolute
-		right: 0
-		bottom: 0
-		border-radius: 40px 0 0 0
-		background-color: $red
-		font-size: 40px
-		font-weight: 700
-		&:hover
-			background-color: #fff
-			color: $red
-		i
-			margin-left: 40px
-			font-size: 26px
-// eof
-
-
-// Description
-.description
-	color: $black
-	&__container
-		display: flex
-		justify-content: space-between
-	&__wrapper
-		width: 50%
-		border-right: 1px solid #757E99
-		display: flex
-		flex-direction: column
-		align-items: center
-		justify-content: center
-		&:last-child
-			border: none
-	&__title
-		margin-bottom: 90px
-		max-width: 590px
-	&__text
-		max-width: 350px
-		font-size: 18px
-		color: $grey
-		&-p
-			margin-bottom: 15px
-			&:last-child
-				margin-bottom: 0
-	&__image
-		filter: drop-shadow(1px 5px 30px rgba(0, 0, 0, 0.3))
-// eof
-
-
-
-// Features
-.features
-	background-color: $black
-	padding: 100px 0
 	&::before
 		content: ''
+		background-color: $accent
+		width: 0
+		height: 100%
 		position: absolute
 		left: 0
 		top: 0
-		max-width: 500px
-		max-height: 500px
+		transition: .4s ease-in-out
+	&:hover::before
 		width: 100%
-		height: 100%
-		background-color: #2673CD
-		filter: blur(400px)
-		border-radius: 30%
-	&__title
-		text-align: center
-	&__container
+	span
 		display: flex
-		flex-flow: row wrap
-		justify-content: space-between
-		max-width: 1080px
-		margin: 0 auto
-	&__box
-		margin-top: 80px
-		padding-left: 30px
-		border-left: 1px solid $blue
-		max-width: 240px
-		margin-right: 10%
-		&:nth-child(3n)
-			margin-right: 0
-	&__icon
-		margin-bottom: 30px
-	&__heading
-		line-height: 1
-		margin-bottom: 20px
-	&__text
-		line-height: 1.2
-		color: $grey
+		align-items: center
+		position: relative
+		z-index: 2
+		&::after
+			content: ''
+			width: 50px
+			height: 10px
+			background-image: url('../img/icons/arrow.png')
+			background-size: contain
+			background-position: right center
+			background-repeat: no-repeat
+			margin-left: 20px
+	&._transparent
+		background-color: transparent
+		border: 1px solid $black
+		color: $black
+		font-weight: 400
+		&::before
+			background-color: $black
+		&:hover
+			color: #fff
 // eof
 
 
-// Acces
-.access
-	background-image: url('../img/access__bg-image.png')
-	background-position: right center
+// Шапка
+.header
+	padding: 40px 0 0
+	&__container
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__menu
+		display: flex
+		align-items: center
+		&-item
+			color: #fff
+			text-transform: uppercase
+			font-weight: 300
+			font-size: 14px
+			margin-right: 15px
+			position: relative
+			&:last-child
+				margin: 0
+			&::before
+				content: ''
+				position: absolute
+				bottom: 0
+				width: 0
+				height: 1px
+				background-color: #fff
+				transition: .3s ease
+			&:hover::before
+				width: 100%
+		&-close
+			display: none
+			position: absolute
+			right: 20px
+			top: 30px
+			width: 20px
+			height: 20px
+			background-image: url('../img/icons/close.svg')
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: center
+			position: absolute
+	&__plug
+		display: none
+		position: fixed
+		left: 0
+		top: 0
+		width: 0
+		height: 100%
+		background-color: rgba(18, 18, 20, 0.8)
+		z-index: 4
+		transition: .5s ease
+		opacity: 0
+		&._visible
+			opacity: 1
+			width: 100%
+	&__hamburger
+		display: none
+		flex-flow: row wrap
+		width: 44px
+		height: 44px
+		&-coub
+			width: 16px
+			height: 16px
+			border: 3px solid #5d6062
+			margin: 3px
+			transition: .3s ease
+		&:hover
+			* 
+				border-color: #fff
+// eof
+
+
+// Главный экран
+.main
+	background-image: url('../img/main/main-screen__bg.jpg')
 	background-size: cover
-	background-color: $black
-	&._second
-		background-image: url('../img/access-second__bg-image.png')
-		background-position: center
-		.access
-			&__container
-				text-align: center
-				display: flex
-				flex-direction: column
-				align-items: center
-			&__title
-				margin-bottom: 25px
-			&__subtitle
-				margin-bottom: 50px
-				color: #ABB2C8
-				font-weight: 400
-	&__title	
-		font-size: 75px
+	background-position: center
+	height: 750px
+	color: #fff
+	padding: 0
+	&__container
+		height: calc(100% - 127px)
+		display: flex
+		align-items: flex-start
+		flex-direction: column
+		justify-content: center
+	&__title
+		font-size: 85px
+		font-weight: 300
+		text-transform: uppercase
+		line-height: 1
+		margin-bottom: 35px
+		span
+			font-weight: 800
+			color: #b4a86c
+			display: block
+	&__text
+		font-size: 24px
+		max-width: 570px
 		margin-bottom: 60px
 	&__button
-		width: 400px
-		height: 85px
-		background-color: $red
-		font-size: 32px
-		i
-			margin-left: 25px
-		&:hover
-			background-color: #fff
-			color: $red
+		text-transform: uppercase
+	.social-links
+		display: none
+		position: absolute
+		left: 0
+		top: 0
+		height: 100%
+		width: 90px
+		background-color: $black
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		&__item
+			margin-bottom: 35px
+			&:last-child
+				margin: 0
 // eof
 
 
-// Deal
-.deal
-	color: $black
-	padding: 100px 0
-	&__container
-		display: flex
-		justify-content: space-between
+// Отрасли промышленности
+.industries
+	background-image: url('../img/industries/bg.jpg')
+	background-size: cover
+	background-position: center
+	&__slider
+		margin-left: calc(100vw - 1200px - ((100vw - 1200px)/2))
+		&-container
+			max-width: 100%
+			padding: 0
+	&__slide
+		width: 900px
+		&-inner
+			transform: scale(0.75)
+			transition: .5s
+			width: 100%
+		&-bottom
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&.slick-active
+			.industries__slide-inner
+				transform: scale(1)
+	&__image
+		width: 100%
+		height: 500px
+		background-size: cover
+		background-position: center
+		margin-bottom: 20px
 	&__wrapper
-		width: 570px
+		margin-right: 80px
+	&__heading
+		font-size: 30px
+		font-weight: 700
+	&__text
+		font-size: 20px
+		line-height: 1.2
+	&__button
+		width: 200px
+		flex: 0 0 auto
+		span::after
+			display: none
+// eof
+
+
+// Цель и миссия 
+.target
+	background-color: #0a1215
+	color: #fff
+	&__container
+		align-items: center
+	&__image
+		max-width: none
+		max-height: auto
+		position: relative
+		right: 70px
+		&-container
+			display: flex
+			align-items: center
+			justify-content: center
+	&__wrapper
+		text-align: right
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+	&__text
+		font-size: 21px
+		margin-bottom: 60px
+		p
+			margin-bottom: 20px
+			&:last-child
+				margin-bottom: 0
+// eof
+
+
+// Призыв
+.appeal
+	background-image: url('../img/main/appeal-1__bg.jpg')
+	background-size: cover
+	background-position: center
+	padding: 60px 0
+	&__title
+		max-width: 900px
+		width: 100%
+		margin: 0 auto 
+		border: 2px solid $accent
 		display: flex
 		align-items: center
 		justify-content: center
-		flex-direction: column
-	&__image
-		filter: drop-shadow(1px 5px 30px rgba(0, 0, 0, 0.3))
-		flex: 0 0 auto
-	&__title
-		margin-bottom: 60px
-	&__text
-		color: $grey
-		max-width: 365px
-		font-size: 18px
+		text-align: center
+		color: #fff
+		padding: 15px
+		line-height: 1.1
 // eof
 
 
-// Advantages
+// Преимущества
 .advantages
-	background-color: $black
-	&__container
+	background-image: url('../img/main/advantages__bg.jpg')
+	background-size: cover
+	background-position: center top
+	&__box
+		margin-bottom: 40px
+		padding: 15px 20px
 		display: flex
 		align-items: center
-		justify-content: space-between
-		border-bottom: 1px solid #3F4C70
-		padding: 80px 0
-		max-width: 1000px
-		margin: 0 auto
+		background-color: #fff
 		&:last-child
-			border-bottom: none
-	&__wrapper
-		max-width: 380px
-		flex-direction: column
-		align-items: flex-start
-		&.image
-			width: 100%
+			margin-bottom: 0
+		&-icon
+			flex: 0 0 auto
+			margin-right: 20px
 			display: flex
 			align-items: center
 			justify-content: center
-	&__image
-		position: relative
-		&::before
-			content: ''
-			display: block
-			width: 140px
-			height: 200px
-			position: absolute
-			left: 0
-			top: 0
-			background: linear-gradient(152.96deg, #2A83D6 -6.29%, rgba(42, 111, 214, 0) 118.08%)
-			filter: blur(80px)
-	&__icon
-		margin-bottom: 35px
-		height: auto
-	&__heading
-		line-height: 1
-		margin-bottom: 30px
-	&__text
-		max-width: 310px
-		color: $grey
+			width: 70px
+			height: 70px
+		&-text
+			font-size: 21px
+			line-height: 1.2
 // eof
 
 
-// Advisors
-.advisors
-	color: $black
-	&__title
-		text-align: center
-		margin-bottom: 60px
-	&__slide
-		&-wrapper
-			text-align: center
-			display: flex
-			align-items: center
-			flex-direction: column
-			width: 240px
-			margin: 0 auto
+
+// Слайдер
+.slider
+	padding: 70px 0
+	background-image: url('../img/main/slider__bg.jpg')
+	background-position: center
+	&__item
+		margin: 0 5px
 	&__image
-		border-radius: 50%
-		margin-bottom: 30px
-	&__heading
-		position: relative
-		margin-bottom: 20px
-		line-height: 1
-		font-weight: 600
-	&__text
-		color: $grey
-		line-height: 1.2
-	&__flag
-		position: absolute
-		left: 100%
-		margin-left: 15px
-		top: 50%
-		transform: translate(0, -50%)
+		width: 100%
+		height: 250px
+		background-size: cover
+		background-position: center
+	&__caption
+		text-align: center
+		margin-top: 20px
+		color: #fff
+		font-size: 21px
 	.slick
-		&-dots 
-			bottom: -60px
-			li
-				width: 10px
-				height: 10px
-				transition: .5s ease
-				border-radius: 50%
-				transition: .2s
-				background-color: #757E99
-				&.slick-active
-					background-color: #CD0A0A
-				button
-					display: none
-		&-arrow
-			border: 1px solid #757E99
-			border-radius: 50%
-			width: 55px
-			height: 55px
-			display: flex
-			align-items: center
-			justify-content: center
-			z-index: 3
-			&::before
-				font-family: fontawesome
-				font-size: 18px
-				color: $black
-		&-next
-			left: 100%
-			right: auto
-			margin-left: 15px
-			&::before
-				content: '\f054'
 		&-prev
 			right: 100%
 			left: auto
-			margin-right: 15px
-			&::before
-				content: '\f053'
+			margin-right: 25px
+		&-next
+			left: 100%
+			margin-left: 25px
 // eof
 
 
-// About and footer wrapper
-.about-footer
-	background-image: url('../img/about__bg-image.png')
+// Slick custom
+.slick
+	&-arrow
+		width: 60px
+		height: 60px
+		border: 1px solid $accent
+		border-radius: 50%
+		transition: .3s ease
+		&::before
+			opacity: 1
+			font-size: 14px
+			transition: .3s ease
+	&-disabled
+		border-color: #5f666b
+		&::before
+			opacity: 1!important
+	&-prev
+		z-index: 3
+		&::before
+			content: '\f053'
+			font-family: fontawesome
+	&-next
+		&::before
+			content: '\f054'
+			font-family: fontawesome
+.slick
+	&-prev
+		right: 100%
+		left: auto
+		margin-right: 25px
+	&-next
+		left: 100%
+		margin-left: 25px
+// eof
+
+
+// Актуальность
+.relevance
+	background-image: url('../img/main/relevance__bg.jpg')
+	background-position: center
 	background-size: cover
-	background-position: right center
-	background-color: #000
-
-// About
-.about
-	padding: 120px 0
-	&__title
-		text-align: center
-		margin-bottom: 60px
-	&__container
-		display: flex
-		align-items: center
-		justify-content: space-between
-	&__heading
-		max-width: 540px
-		margin-bottom: 50px
-		font-weight: 600
-		line-height: 1
+	padding: 80px 0
 	&__text
-		margin-left: 80px
-		color: #8d9bc4
-		max-width: 410px
-		&-p
-			margin-bottom: 10px
-			&:last-child
-				margin-bottom: 0
-	.social-links
-		&__heading
-			margin-bottom: 20px
-			font-size: 18px
-			font-weight: 600
-		&__flex-box
-			display: flex
-			align-items: center
-		&__item
-			margin-right: 10px
-			width: 40px
-			height: 40px
-			border-radius: 50%
-			border: 1px solid #34395A
-			display: flex
-			align-items: center
-			justify-content: center
-			color: #fff
-			transition: .2s
-			&:last-child
-				margin-right: 0
-			&:hover
-				background-color: #34395A
+		font-size: 21px
 // eof
 
+
+// Welcome
+.welcome
+	background-image: url('../img/main/welcome__bg.jpg')
+	background-position: center
+	background-size: cover
+	color: #fff
+	&__title
+		font-size: 85px
+		font-weight: 300
+		text-transform: uppercase
+		line-height: 1
+		margin-bottom: 35px
+		span
+			font-weight: 800
+			color: #b4a86c
+			display: block
+	&__text
+		font-size: 24px
+		max-width: 570px
+		margin-bottom: 60px
+// eof
 
 
 // Footer
 .footer
+	background-color: $black
+	padding: 30px 0
 	&__container
-		padding: 30px 0
-		border-top: 1px solid #757E99
 		display: flex
 		align-items: center
 		justify-content: space-between
+	.social-links	
+		margin-right: 170px
+		&__item
+			margin-right: 30px 
+			&:last-child
+				margin-right: 0
 	&__wrapper
 		display: flex
+		justify-content: flex-end
 		align-items: center
-	&__menu
-		margin-right: 70px
+	&__button
+		width: 60px
+		height: 60px
+		border-radius: 50%
+		background-color: #5f666b
+		font-size: 16px
+		color: #fff
 		display: flex
 		align-items: center
-		&-item
-			margin-right: 50px
-			font-size: 18px
-			font-weight: 600
-			&:last-child
-				margin: 0
-	&__button
-		width: 260px
-		height: 55px
-		background-color: $blue
-		font-size: 18px
+		justify-content: center
+		position: relative
 		i
-			margin-left: 20px
-			font-size: 14px
+			position: relative
+			z-index: 2
+		&::before
+			content: ''
+			width: calc(100% - 2px)
+			height: calc(100% - 2px)
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			background-color: $black
+			border-radius: 50%
+			transition: .3s ease
 		&:hover
-			background-color: #fff
-			color: $blue
+			color: #fff
+			&::before
+				width: 0
+				height: 0
 // eof
 
 
-// Sidebar menu
-.sidebar-menu
-	background: linear-gradient(180deg, #23398D 0%, #132A61 100%)
-	box-shadow: 10px 14px 23px -1px rgba(34, 47, 95, 0.11), 0px 14px 24px -10px rgba(21, 44, 102, 0.33)
-	border-radius: 20px
-	width: 100px
-	display: flex
-	flex-direction: column
-	align-items: center
-	justify-content: space-between
-	padding: 30px 0
-	position: absolute
-	left: 20px
-	top: 30px
-	&__logo
-		margin-bottom: 30px
-		width: 50px
-		height: 50px
-		border-radius: 50%
-	&__nav
-		width: 100%
+// Хлебные крошки
+.breadcrumbs
+	margin-bottom: 25px
 	&__item
+		font-size: 24px
+		padding-right: 20px
+		margin-right: 20px
 		position: relative
+		&::after
+			content: '/'
+			position: absolute
+			right: 0
+			transform: translate(50%, 0)
+		&:last-child
+			margin-right: 0
+			padding-right: 0
+			&::after
+				display: none
+// eof
+
+
+.industries
+	padding-top: 123px
+	padding-bottom: 117px
+	background: url(../img/about/1.png)center/cover no-repeat
+	position: relative
+	z-index: 0
+	// &::before
+	// 	content: ''
+	// 	width: 240px
+	// 	height: 240px
+	// 	position: absolute
+	// 	z-index: -1
+	// 	right: -100px   
+	// 	bottom: 0 
+	// 	background: url(../img/icons/circle.svg) center/cover no-repeat
+	// 	opacity: 0.37
+	&__caption-2
+		text-align: center
+	&__title-2
+		text-align: center
+	&-inner  
+		display: flex
+		justify-content: space-between
+		max-width: 1192px
+		margin: 0 auto
+		position: relative
+		&::before
+				content: ''
+				width: 150px
+				height: 150px
+				position: absolute
+				left: -200px
+				top: 55% 
+				transform: translate(0, -50%)  
+				background: url(../img/icons/arrow.svg) center/cover no-repeat
+	&-col 
+		flex: 0 0 46.5%
+	&__text-2
+		font-size: 21px
+		font-weight: 400
+		margin-bottom: 30px
+		color: #0c0c0c
+		&._bold 
+				font-weight: 700
+	&__btn 
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 255px
+		height: 60px
+		border: 2px solid #e8d789
+		background-color: #000000
+		opacity: 0.65
+		margin: 0 auto
+		margin-top: 60px
+		transition: all .5s
+		&:hover 
+				background: #fff
+				span 
+					color: #000 
+				path 
+					fill: #000
+		span 
+				font-size: 18px
+				font-weight: 300
+				text-transform: uppercase
+				margin-right: 22px
+				color: #fff
+
+.features
+	background: url(../img/about/features/bg.png) 85% 50%/cover no-repeat
+	background-color: #1b1d24
+	padding-top: 85px
+	padding-bottom: 30px
+	&-inner 
+		padding-left: 60px
+	&-item 
+		display: flex
+		align-items: center
+		margin-bottom: 20px
+		&__text 
+				max-width: 590px
+				font-weight: 400
+				font-size: 21px
+				margin-left: 30px
+				color: #fff
+
+
+.registration
+	padding: 125px 0 85px
+	position: relative
+	background: url(../img/about/2.png) center left/cover no-repeat
+	z-index: 0
+	&::before
+		content: ''
+		width: 240px
+		height: 240px
+		position: absolute
+		z-index: -1
+		right: 40px   
+		bottom: 40px 
+		background: url(../img/icons/circle.svg) center/cover no-repeat
+		opacity: 0.16
+	&::after
+		content: ''
+		width: 240px
+		height: 240px
+		position: absolute
+		z-index: -1
+		left: -20px   
+		bottom: 20px 
+		background: url(../img/icons/circle.svg) center/cover no-repeat
+		opacity: 0.16
+		
+	&-inner 
+		display: flex
+		justify-content: space-between
+		align-items: center
+		max-width: 1140px
+		position: relative
+		&::before
+				content: ''
+				width: 150px
+				height: 150px
+				opacity: 0.25
+				position: absolute
+				right: -200px
+				top: 20% 
+				transform: translate(0, -50%)  
+				background: url(../img/icons/arrow.svg) center/cover no-repeat
+		&::after
+				content: ''
+				width: 150px
+				height: 150px
+				opacity: 0.25
+				position: absolute
+				left: -300px
+				top: 30% 
+				transform: translate(0, -50%)  
+				background: url(../img/icons/arrow.svg) center/cover no-repeat
+	&-content 
+		flex: 0 0 50%
+		
+	&-img 
+		flex: 0 0 40%
+		padding-bottom: 57%  
+		position: relative
+		height: 100%
+		img 
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+	&__caption  
+		font-size: 23px
+		font-weight: 400
+		text-transform: uppercase
+		margin-bottom: 36px
+		color: #111
+				
+	&__title
+		font-weight: 800
+		font-size: 48px
+		text-transform: uppercase
+		margin-bottom: 60px
+	&__text 
+		font-size: 21px
+		font-weight: 400
+		margin-bottom: 30px
+		color: #0c0c0c
+	&__btn 
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 210px
+		height: 60px
+		border: 1px solid #474747
+		margin-top: 60px
+		transition: all .5s
+		&._clone 
+				display: none
+		&:hover 
+				background: #474747
+				span 
+					color: #fff 
+				path 
+					fill: #fff
+		span 
+				font-size: 18px
+				font-weight: 300
+				margin-right: 22px
+				color: #141414
+		path 
+				fill: #141414
+
+.team
+	background: url(../img/about/team/bg.png) center/cover no-repeat
+	background-color: $black
+	position: relative
+	z-index: 0
+	&::before
+		content: ''
+		width: 150px
+		height: 150px
+		opacity: 0.08
+		position: absolute
+		right: 50px
+		top: 320px 
+		
+		background: url(../img/icons/arrow.svg) center/cover no-repeat
+	&::after
+		content: ''
+		width: 240px
+		height: 240px
+		position: absolute
+		z-index: -1
+		left: -20px   
+		top: 100px 
+		background: url(../img/icons/circle.svg) center/cover no-repeat
+		opacity: 0.16
+	&__caption  
+		text-align: center
+		font-size: 23px
+		font-weight: 400
+		text-transform: uppercase
+		margin-bottom: 25px
+		color: #fff
+		position: relative
+	&__title
+		font-weight: 800
+		font-size: 48px
+		text-transform: uppercase
+		max-width: 730px
+		margin: 0 auto
+		text-align: center
+		margin-bottom: 80px
+		color: #fff
+	&-slider__wrapper 
+		position: relative
+		max-width: 1140px
+		margin: 0 auto
+	&-slider__btn  
+		width: 58px
+		height: 58px
+		border-radius: 50%   
+		border: 1px solid rgba(255, 255, 255, 0.35)
+		
+		cursor: pointer
+		display: flex
+		align-items: center
+		justify-content: center
+		position: absolute
+		&._prev
+				top: 50%
+				transform: translate(0, -50%)
+				left: -60px
+		&._next
+				right: -60px
+				top: 50%
+				transform: translate(0, -50%) rotate(180deg)
+	&-slider 
+		margin: 0 -10px
+	&-item 
 		display: flex
 		flex-direction: column
 		align-items: center
-		text-align: center
-		justify-content: center
-		padding: 15px 5px
-		width: 100%
-		border-bottom: 1px solid #5E6B99
-		background-color: transparent
-		transition: .2s
-		&.active
-			background-color: #E02E38
-		&:hover
-			background-color: #E02E38
-		&:first-child
-			border: 1px solid #5E6B99
-		&.has-notification
-			.sidebar-menu__notification-number
-				display: flex
-	&__title
-		font-size: 14px
-		margin-top: 10px
-		line-height: 1.2
-		font-weight: 600
-	&__notification
-		margin-top: 70px
-		svg path
-			transition: .2s
-		&:hover
-			svg path
-				stroke: #fff
-		&-number
-			display: none
-			align-items: center
-			justify-content: center
-			width: 20px
-			height: 18px
-			border-radius: 5px
-			background-color: #3A81FF
-			font-size: 10px
-			font-weight: 600
-			position: absolute
-			right: 10px
-			top: 10px
-	&__close
-		position: absolute
-		right: 30px
-		top: 25px
-		display: none
-// eof
-
-
-// Dashboard
-.p-dashboard
-	background-color: #F2F4FA
-
-.dashboard
-	padding: 30px 0 60px
-	display: flex
-	&__container
-		width: 100%
-		max-width: 1320px
-		min-height: 900px
-		margin: 0 auto
-		&._flex
-			display: flex
-			align-items: flex-start
-			justify-content: space-between
-	.top-line
-		display: flex
-		justify-content: space-between
-		align-items: center
-		&__search
-			background-color: #E7E8F1
-			border-radius: 30px
-			width: 100%
-			height: 50px
-			overflow: hidden
-			position: relative
-			&-input
-				font-size: 15px
-				height: 100%
-				width: 100%
-				padding: 0 60px
-				background: none
-				&::placeholder
-					font-size: 15px
-					color: #5E5F78
-			&-button
-				position: absolute
-				top: 50%
-				left: 25px
-				transform: translate(0, -50%)
-				svg
-					max-height: 100%
-					max-width: 100%
-		&__button
-			height: 50px
-			padding: 0 20px
-			border-radius: 30px
-			margin-right: 15px
-			display: flex
-			align-items: center
-			font-weight: 600
-			font-size: 15px
-			transition: .2s
-			svg path
-				transition: .2s
-			&:last-child
-				margin: 0
-			&-wrapper
-				display: flex
-				flex: 0 0 auto
-				margin-left: 30px
-			&-icon
-				margin-right: 10px
-			&-secondary
-				background-color: #fff
-				color: #447CDF
-				&:hover
-					background-color: #447cdf
-					color: #fff
-			&-seccess
-				background-color: #447cdf
+		margin: 0 5px
+		&__name  
+				color: #b4a86c
+				font-size: 24px
+				font-weight: 800
+				text-transform: uppercase
+				margin-top: 35px
+				margin-bottom: 15px
+		&__text 
+				text-align: center
+				font-weight: 400
 				color: #fff
-				&:hover
-					background-color: #fff
-					color: #447CDF
-					svg path
-						stroke: #447cdf
-		&__hamburger
-			flex: 0 0 auto
-			display: none
-			flex-direction: column
-			justify-content: space-between
-			width: 21px
-			height: 16px
-			&-line
-				height: 2px
-				width: 100%
-				background-color: #06163E
-				border-radius: 5px
-	&__body
+				font-size: 21px
+				max-width: 330px
+	&-mob 
+		display: none
+
+.contacts
+	background: url('../img/contacts/bg.png') 
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	&-inner 
+		max-width: 830px
+		margin: 0 auto
 		display: flex
 		align-items: flex-start
-		color: $black
-		padding-top: 35px
-	&__col
-		width: calc(25% - 10px)
-		position: relative
-		padding: 20px 15px
-		border: 0.5px solid rgba(189, 195, 213, 0.7)
-		border-radius: 25px
-		margin-right: 20px
-		&:last-child
-			margin-right: 0
-		&-title
-			position: absolute
-			top: 0
-			left: 35px
-			padding: 0 15px
-			background-color: #F2F4FA
-			transform: translate(0, -50%)
-			font-size: 20px
-			font-weight: 600
-			line-height: 1
-	.player
-		padding: 20px 15px
-		background-color: #fff
-		box-shadow: 1px 4px 16px -15px #484953
-		border-radius: 15px
-		margin-bottom: 15px
-		&:last-child
-			margin-bottom: 0
-		&__wrapper
-			&-top
-				display: flex
-				align-items: center
-				margin-bottom: 15px
-			&-bottom
-				display: flex
-				align-items: center
-				justify-content: space-between
-		&__avatar
-			position: relative
-			flex: 0 0 auto
-			margin-right: 15px
-			display: flex
-			&-image
-				border-radius: 50%
-				width: 70px
-				height: 70px
-			&-flag
-				position: absolute
-				bottom: -3px
-				left: -3px
-				width: 30px
-				height: 20px
-				filter: drop-shadow(0px 2px 4px rgba(42, 53, 88, 0.18))
-		&__name
-			font-weight: 600
-			line-height: 1.2
-			margin-bottom: 5px
-		&__team
-			font-size: 12px
-			font-weight: 500
-			line-height: 1.2
-			margin-bottom: 5px
-		&__contract
-			font-weight: 500
-			line-height: 1.2
-			color: #969DB5
-			font-size: 12px
-			span
-				color: #CD0A0A
-			i
-				margin-left: 5px
-		&__dropdown
-			&-heading
-				padding: 12px 20px
-				border-radius: 10px
-				background-color: #F5F6FA
-				line-height: 1.2
-				color: #2662CD
-				font-size: 14px
-				font-weight: 600
-				flex: 0 0 auto
-				transition: .2s
-				i
-					margin-left: 5px
-					font-size: 12px
-					transition: transform .2s
-				&.active
-					background-color: #E03F48
-					color: #fff
-					i
-						transform: rotate(180deg)
-			&-body
-				display: none
-				margin-top: 25px
-		&__time-left
-			font-size: 13px
-			font-weight: 600
-			color: #757E99
-			text-align: center
-			width: 100%
-			i
-				margin-right: 5px
-		&__info
-			display: flex
-			align-items: flex-start
-			justify-content: space-between
-			margin-bottom: 10px
-			font-weight: 600
-			&:last-child
-				margin-bottom: 0
-			&-heading
-				font-size: 12px
-				color: #969DB5
-				margin-right: 40px
-				flex: 0 0 auto
-			&-data
-				font-size: 14px
-				text-align: right
-		&__add
-			width: 100%
-			height: 40px
-			display: flex
-			align-items: center
-			justify-content: center
-			text-align: center
-			background-color: #F5F6FA
-			color: #2662CD
-			font-weight: 600
-			border-radius: 10px
-			transition: .2s
-			svg
-				margin-right: 10px
-				path
-					transition: .2s
-			&:hover
-				background-color: #2662CD
-				color: #fff
-				svg path
-					fill: #fff
-		&__stats
-			display: flex
-			align-items: flex-start
-			justify-content: center
-			text-align: center
-			margin-top: 15px
-			&-box
-				margin-right: 15px
-				display: flex
-				flex-direction: column
-				align-items: center
-				justify-content: center
-				&:last-child
-					margin-right: 0
-			&-heading
-				text-transform: uppercase
-				color: #8A8BA4
-				font-weight: 400
-				margin-bottom: 5px
-				font-size: 14px
-			&-info
-				font-size: 15px
-				font-weight: 600
-		&__button
-			width: calc(50% - 7.5px)
-			height: 40px
-			font-weight: 600
-			border-radius: 12px
-			i
-				margin-left: 10px
-			&-main
-				background-color: #2662CD
-				color: #fff
-				&:hover
-					background-color: #ECEEF2
-					color: #2662CD
-			&-secondary
-				background-color: #ECEEF2
-				color: #2662CD
-				&:hover
-					background-color: #2662CD
-					color: #fff
-	&__container-search
-		width: 100%
-		max-width: 940px
-		.dashboard
-			&__body
-				display: flex
-				flex-flow: row wrap
-		.player
-			width: calc(50% - 10px)
-			margin-right: 20px
-			padding: 20px 30px
-			&:nth-child(2n)
-				margin-right: 0
-			&__stats
-				margin:
-					top: 0
-					bottom: 15px
-			&__contract
-				font-weight: 600
-	.filter
-		width: 280px
-		position: relative
-		&__close
-			position: absolute
-			right: 20px
-			top: 20px
-		&__button-mobile
-			width: 100%
-			height: 40px
-			border-radius: 12px
-			background-color: #DEDFEC
-			margin-bottom: 15px
-			font-weight: 600
-			color: $black
-			display: none
-			align-items: center
-			justify-content: center
-			span
-				margin-left: 15px
-				font-size: 15px
-		&__title
-			font-size: 24px
-			font-weight: 600
-			margin-bottom: 40px
-			color: $black
-		&__item
-			margin-bottom: 25px
-			&:last-child
-				margin-bottom: 0
-			&-heading
-				font-size: 14px
-				font-weight: 400
-				color: #6A7083
-				line-height: 1.2
-				margin-bottom: 5px
-			.age
-				display: flex
-				align-items: center
-				justify-content: space-between
-				color: #6A7083
-				&__input
-					height: 40px
-					width: 120px
-					background-color: #E7E8F1
-					border-radius: 10px
-					text-align: center
-					font-weight: 600
-			.irs
-				&-from, &-to, &-max, &-min
-					display: none
-					visibility: hidden
-				&-single
-					background-color: transparent
-					font-size: 20px
-					font-weight: 600
-					color: $black
-					&::before
-						display: none
-				&-line
-					height: 8px
-					border-radius: 25px
-					background-color: #D1D3E1
-					cursor: pointer
-				&-bar
-					height: 8px
-					background-color: #2662CD
-					cursor: pointer
-				&-handle
-					border: none
-					background-color: #fff
-					top: 28px
-					width: 22px
-					height: 22px
-					box-shadow: 0px 4px 7px rgba(20, 47, 118, 0.07)
-					border-radius: 50%
-					cursor: pointer
-	&__body.pitches
+		justify-content: space-between
+	&-item 
+		
 		display: flex
-		flex-flow: row wrap
-		.player
-			width: calc(50% - 10px)
-			margin-right: 20px
-			padding: 20px 30px
-			&:nth-child(2n)
-				margin-right: 0
-			&__stats
-				margin: 0 0 15px
-			&__button-secondary
-				color: #CD0A0A
-				&:hover
-					background-color: #CD0A0A
-					color: #fff
-	.pitches
-		&__top-line
-			display: flex
-			margin-top: 50px
-		&__select
-			width: 160px
-		&__date
-			margin-right: 20px
-			background-color: #E7E8F1
-			border-radius: 10px
-			padding: 0 20px
-			&::-webkit-calendar-picker-indicator
-				color: rgba(0, 0, 0, 0);
-				opacity: 1;
-				display: block;
-				background: url('../img/icons/date.svg') no-repeat;
-				width: 20px;
-				height: 20px;
-				border-width: thin;
-	.tabs
-		&__caption
-			display: flex
-			margin-right: 40px
-			li
-				font-size: 30px
-				color: #969FB9
-				position: relative
-				font-weight: 600
-				margin-right: 30px
-				&:last-child
-					margin-right: 0
-				&::before
-					content: ''
-					width: 35px
-					height: 5px
-					border-radius: 4px
-					display: none
-					position: absolute
-					top: 100%
-					left: 50%
-					transform: translate(-50%, 0)
-					background-color: #CD0A0A
-				&.active
-					color: #CD0A0A
-					&::before
-						display: block
-		&__content
-			display: none
-			&.active
-				display: block
-// eof
+		flex-direction: column
+		align-items: center
+		&__caption 
+				font-weight: 700
+				font-size: 24px
+				color: #0c0c0c
+				margin: 50px 0 30px
+		&__link 
+				font-size: 36px
+				font-weight: 400
+				color: #0c0c0c
 
 
+.p-contacts
+	.main
+		height: 600px
+
+
+.p-about
+	.main
+		background-image: url('../img/about/main__bg.jpg')
 
 
 

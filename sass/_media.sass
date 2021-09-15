@@ -1,642 +1,318 @@
 @import vars
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1600px)
-
-	// Dashboard
-	.dashboard
-		&__container
-			max-width: 900px
-		&__body
-			flex-flow: row wrap
-		&__col
-			width: calc(50% - 10px)
-			margin-bottom: 30px
-			&:nth-child(2n)
-				margin-right: 0
-		&__container-search
-			max-width: 600px
-			.player
-				width: 100%
-				margin-right: 0
-	// eof
-
-
-
-
-
-@media only screen and (max-width : 1500px)
-
-
-	h2
-		font-size: 50px
-
-
-	// Main screen background
-	.header-main
-		background-position: 20% bottom
-	// eof
-
-
-	// Header
-	.header
-		&__logo
-			width: 120px
-		.lang
-			margin-right: 40px
-		.menu
-			&__item
-				margin-right: 20px
-				&-link
-					font-size: 14px
-		&__button
-			font-size: 14px
-			width: 200px
-			height: 40px
-	// eof
-
-
-	// Main screen
+@media only screen and (max-width : 1430px)
+	
+	// Главный экран
 	.main
-		height: calc(100vh - 100px)
+		.social-links
+			width: 70px
 	// eof
 
 
-	// Description
-	.description
-		&__title
-			max-width: 400px
-			margin-bottom: 60px
-	// eof
-
-
-	// Deal
-	.deal
+	// Отрасли промышленности
+	.industries
+		&__slider
+			margin-left: calc(100vw - 930px - ((100vw - 930px)/2))
+		&__slide
+			width: 700px
+			&-inner
+				transform: scale(0.85)
 		&__image
-			width: 50%
-		&__wrapper
-			width: 400px
-		&__title
-			margin-bottom: 40px
-			font-size: 40px
+			height: 400px
+		&__heading
+			font-size: 20px
 		&__text
 			font-size: 16px
 	// eof
 
 
-	// About and footer wrapper
-	.about-footer
-		background-position: center
-		position: relative
-		&::before
-			content: ''
-			position: absolute
-			left: 0
-			top: 0
-			width: 100%
-			height: 100%
-			background-color: rgba(0, 0, 0, 0.7)
-	// eof
-
-
-	// About
-	.about
-		&__container, &__title
-			z-index: 3
-			position: relative
+	// Цель и миссия 
+	.target
+		&__image
+			right: 40px
+			max-width: 125%
+		&__title
+			font-size: 20px
+		&__subtitle
+			font-size: 36px
 		&__text
-			margin-left: 0
-			color: #fff
+			font-size: 16px
 	// eof
 
 
-	// Footer
-	.footer
-		&__container
-			padding: 20px 0
-		&__logo
-			width: 120px
-		&__menu
-			margin-right: 40px
-			&-item
-				margin-right: 20px
-				font-size: 16px
-		&__button
-			font-size: 14px
-			width: 200px
-			height: 40px
+	// Слайдер
+	.slider
+		&__image
+			height: 200px
+		&__caption
+			font-size: 18px
 	// eof
 
-
-
-
-@media only screen and (max-width : 1200px)
-
-	// Dashboard
-	.dashboard
-		&__container
-			max-width: 700px
-		&__container-search
-			max-width: 390px
-			.player	
-				padding: 20px
-		.player__stats
-			&-box
-				margin-right: 10px
-			&-heading
-				font-size: 13px
-			&-info
-				font-size: 14px
-	// eof
-
+	.features
+		&-inner 
+				padding: 0
+	.team
+		&-slider__btn
+				width: 48px
+				height: 48px
+				&._prev 
+					left: -35px
+				&._next 
+					right: -35px
 
 
 
 
 /*  Small Devices, Tablets */
-@media only screen and (max-width : 992px)
+@media only screen and (max-width : 1100px)
+	
+	// Главный экран
+	.main .social-links
+		bottom: 0
+		top: auto
+		flex-direction: row
+		width: 100%
+		height: 60px
+		&__item
+			margin:
+				bottom: 0
+				right: 35px
+	// eof
 
-	body
-		font-size: 14px
+
+@media only screen and (max-width : 992px)
 
 	section
 		padding: 50px 0
 
+	.h2
+		font-size: 16px
+		margin-bottom: 15px
 
-	h1
-		font-size: 32px
-	h2
+	.h3
 		font-size: 26px
-	h4, h5
-		font-size: 18px
+		margin-bottom: 25px
+		br
+			display: none
 
-	
-	// Main screen background
-	.header-main
-		background-position: center bottom
+
+	// Кнопка
+	.button
+		font-size: 16px
 	// eof
 
 
-	// Header
+	// Шапка
 	.header
 		padding: 15px 0
-		&__sidebar
-			display: flex
+		&__logo
+			width: 120px
+		&__menu
+			position: fixed
+			right: -320px
+			top: 0
+			width: 320px
+			height: 100%
+			background-color: $black
 			flex-direction: column
 			align-items: flex-start
 			justify-content: center
-			position: fixed
-			top: 0
-			right: -320px
-			width: 320px
-			height: 100%
-			transition: .5s ease
-			background-color: $black
 			padding: 0 30px
-			&.active
+			transition: .5s ease
+			z-index: 5
+			&._visible
 				right: 0
+			&-item
+				font-size: 24px
+				margin:
+					bottom: 15px
+					right: 0
 			&-close
-				display: flex
-			&-plug
-				background-color: rgba(0, 0, 0, 0.8)
-				&.active
-					width: 100%
-					opacity: 1
-		&__nav
-			flex-direction: column
-			align-items: flex-start
-			position: static
-			transform: none
-		.lang
-			margin-right: 0
-			right: auto
-			position: relative
-			margin-top: 20px
-		.menu
-			flex-direction: column
-			order: -1
-			&__item
-				margin-bottom: 20px
-				&-link
-					font-size: 25px
+				display: block
+		&__plug
+			display: block
 		&__hamburger
 			display: flex
-		&__logo
-			width: 170px
-		&__button	
-			font-size: 18px
-			width: 100%
-			height: 55px
-			margin-top: 60px
 	// eof
 
-
-	// Main screen
-	.main
-		height: auto
-		padding: 100px 0
+	// Главный экран
+	.main 
+		height: 550px
+		.social-links
+			display: none
+		&__container
+			height: calc(100% - 86px)
 		&__title
-			max-width: 290px
+			font-size: 40px
 			margin-bottom: 20px
 		&__text
-			max-width: 250px
-			padding-left: 20px
-		&__secondary-title
-			max-width: 260px
-		&__button
-			position: static
-			width: 320px
-			border-radius: 60px
-			height: 50px
-			font-size: 18px
-			margin-top: 20px
-			i
-				font-size: 14px
-				margin-left: 20px
-	// eof
-
-
-	// Description
-	.description
-		&__container
-			flex-direction: column
-		&__wrapper
-			width: 100%
-			border: none
-			&:last-child
-				order: -1
-		&__title
-			margin-bottom: 30px
-			max-width: 100%
-		&__text
-			max-width: 80%
 			font-size: 14px
-			margin-bottom: 45px
-			&-p
-				margin-bottom: 10px
-		&__image
-			width: 40%
+			margin-bottom: 40px
 	// eof
 
 
-	// Features
-	.features
-		padding: 60px 0
-		&__container
-			margin-top: 20px
-		&__title
-			font-size: 36px
-		&__box
-			max-width: 100%
-			border: none
-			padding-left: 0
+	// Отрасли промышленности
+	.industries
+		&__slider
+			margin-left: 0
+			&-container
+				max-width: 100%
+				padding: 0 15px
+		&__slide
+			width: auto
+			&-bottom
+				flex-direction: column
+				align-items: flex-start
+		&__wrapper
 			margin:
-				top: 50px
 				right: 0
+				bottom: 15px
+		&__image
+			height: 300px
 		&__heading
 			font-size: 18px
-		&__icon
-			margin-bottom: 15px
-	// eof
-
-
-	// Acces
-	.access
-		background-position: center
-		padding: 60px 0
-		&._second
-			.access__subtitle
-				margin-bottom: 30px
-		&__title
-			font-size: 36px
-			margin-bottom: 40px
-		&__button
-			max-width: 300px
-			width: 100%
-			height: 60px
-			font-size: 24px
-	// eof
-
-
-	// Deal
-	.deal
-		padding: 50px 0
-		&__container
-			flex-direction: column
-		&__image
-			width: 100%
-			margin-top: 50px
-			order: 1
-		&__wrapper
-			width: 100%
-		&__title
-			margin-bottom: 30px
-			font-size: 36px
 		&__text
-			max-width: 100%
+			font-size: 14px
 	// eof
 
 
-	// Advantages
-	.advantages
-		&__container
-			flex-wrap: wrap
-			padding: 0
-			margin-bottom: 90px
-			border: none
-			&:last-child
-				margin-bottom: 0
-		&__wrapper
+	// Цель и миссия 
+	.target
+		&__image
+			right: 0
 			max-width: 100%
-			&.image
+			width: auto
+			&-container
 				order: 1
-		&__image
-			margin-top: 40px
-		&__icon
-			margin-bottom: 15px
-			width: 60px
-		&__heading
-			font-size: 28px
-			margin-bottom: 10px
+		&__wrapper
+			margin-bottom: 40px
+		&__title
+			font-size: 16px
+		&__subtitle
+			font-size: 26px
 		&__text
-			max-width: 100%
-	// eof
-
-
-	// Advisors
-	.advisors
-		&__title
-			font-size: 36px
-			margin-bottom: 40px
-	// eof
-
-
-	// About
-	.about
-		padding: 60px 0
-		&__title
-			font-size: 50px
-			margin-bottom: 40px
-		&__container
-			flex-direction: column
-			align-items: stretch
-		&__heading
-			font-size: 28px
+			font-size: 14px
 			margin-bottom: 30px
+			p
+				margin-bottom: 15px
+	// eof
+
+
+	// Призыв
+	.appeal
+		padding: 30px 0
+		&__title
+			padding: 25px 15px
+	// eof
+
+
+	// Преимущества
+	.advantages
+		&__box
+			margin-bottom: 20px
+			padding: 15px
+			&-icon
+				width: 50px
+				height: 50px
+			&-text
+				font-size: 14px
+	// eof
+
+
+	// Слайдер
+	.slider
+		&__container
+			padding-top: 90px
+		&__image
+			height: 200px
+		&__caption
+			font-size: 18px
+		.slick
+			&-arrow
+				transform: none
+				top: 0
+			&-prev
+				right: 75px
+				left: auto
+				margin-right: 0
+			&-next
+				left: auto
+				right: 0
+				margin-left: 0
+	// eof
+
+	.slick
+		&-arrow
+			transform: none
+			top: 0
+		&-prev
+			right: 75px
+			left: auto
+			margin-right: 0
+		&-next
+			left: auto
+			right: 0
+			margin-left: 0
+
+
+	// Актуальность
+	.relevance
+		padding-right: 20%
+	// eof
+
+
+	// Welcome
+	.welcome
+		&__title
+			font-size: 40px
+			margin-bottom: 20px
 		&__text
+			font-size: 14px
 			margin-bottom: 40px
 	// eof
 
 
 	// Footer
 	.footer
-		&__container
-			padding: 40px 0
-		&__container
-			flex-direction: column
-			align-items: center
-		&__wrapper
-			flex-direction: column
-			align-items: center
-		&__logo
-			width: auto
-			order: 1
-		&__menu
-			flex-direction: column
-			align-items: center
-			margin:
-				right: 0
-				bottom: 30px
-			&-item
-				margin:
-					right: 0
-					bottom: 10px
-				font-size: 16px
-		&__button
-			font-size: 14px
-			width: 200px
-			height: 40px
-			margin-bottom: 30px
-			order: -1
-	// eof
-
-
-	// Sidebar menu
-	.sidebar-menu
-		border-radius: 0
-		width: 375px
-		height: 100%
 		padding: 20px 0
-		position: fixed
-		left: auto
-		right: -375px
-		top: 0
-		overflow-y: auto
-		transition: .5s
-		z-index: 5
-		&.active
-			right: 0
-		&__logo
-			width: 30px
-			height: 30px
-		&__nav
-			width: auto
-			height: 100%
-			display: flex
-			flex-direction: column
-			justify-content: center
-			align-items: flex-start
-		&__item
-			flex-direction: row
-			text-align: left
-			justify-content: flex-start
-			padding: 
-				top: 10px
-				bottom: 10px
-				left: 40px
-			margin-bottom: 25px
-			width: auto
-			border-bottom: none
-			background-color: transparent
-			position: relative
-			&:hover
-				background-color: transparent
-			&.active
-				background-color: transparent
-			&:first-child
-				border: none
-			&:last-child
-				margin-bottom: 0
-		&__icon
-			position: absolute
-			left: 0
-		&__title
-			font-size: 21px
-			margin-top: 0
-		&__notification
-			margin-top: 0
-			position: absolute
-			left: 30px
-			top: 25px
-			&-number
-				position: absolute
-				width: 18px
-				height: 16px
-				right: 0
-				top: 0
-				transform: translate(100%, 50%)
-		&__close
-			display: flex
-	// eof
-
-
-	// Dashboard
-	.dashboard
-		padding-top: 0
-		.top-line
-			background-color: #fff
-			padding: 15px 20px
-			width: calc(100% + 40px)
-			position: relative
-			left: -20px
-			border-radius: 0 0 20px 20px
-			&__button-wrapper
-				display: none
-			&__search
-				height: 35px
-				font-size: 14px
-				border-radius: 20px
-				&::placeholder
-					font-size: 14px
-				&-input
-					padding: 0 40px
-				&-button
-					width: 15px
-					height: 15px
-					left: 15px
-			&__hamburger
-				display: flex
-				margin-left: 20px
-		&__container-search
-			max-width: 100%
-		.filter
-			position: fixed
-			min-width: 375px
-			left: 0
-			top: 100%
-			width: 100%
-			height: 100%
-			z-index: 3
-			background-color: #FBFCFF
-			padding: 40px 20px
-			overflow-y: auto
-			transition: .5s
-			&.active
-				top: 0
-			&__button-mobile
-				display: flex
-			&__title
-				font-size: 30px
-			&__item
-				margin-bottom: 15px
-		&__body.pitches
-			.player
-				width: 100%
-				margin-right: 0
-				padding: 20px
-		.pitches
-			&__top-line
-				flex-wrap: wrap
-				justify-content: center
-			&__select, &__date
-				width: calc(50% - 10px)
-		.tabs__caption
-			width: 100%
-			justify-content: center
-			margin:
-				right: 0
-				bottom: 30px
-	// eof
-
-
-
-
-@media only screen and (max-width : 768px)
-	
-	// Advisors
-	.advisors
-		.slick
-			&-next
-				left: auto
-				right: 0
-				margin-left: 0
-			&-prev
-				right: auto
-				left: 0
-				margin-right: 0
-	// eof
-
-
-	// Dashboard
-	.dashboard
-		&__body
-			flex-flow: row wrap
-		&__col
-			width: 100%
-			margin-right: 0
-			&:nth-child(2n)
-				margin-right: 0
-
-
-@media only screen and (max-width : 576px)
-	
-	// Main screen background
-	.header-main
-		background-image: url('../img/main__bg-image_mobile.png')
-		background-position: cetner bottom
-	// eof
-
-
-	// Main screen
-	.main
-		padding: 30px 0 50px
 		&__container
-			align-items: stretch
-		&__text
-			padding-left: 10px
-			margin-bottom: 350px
-		&__button
-			width: 100%
+		&__logo
+			width: 150px
+		.social-links
+			display: none
 	// eof
 
 
-	// Description
-	.description
-		&__title
-			max-width: 305px
-		&__image
-			width: 250px
+	// Хлебные крошки
+	.breadcrumbs
+		&__item
+			font-size: 16px
+			padding-right: 10px
+			margin-right: 10px
 	// eof
 
 
-	// Deal
-	.deal
-		&__image
-			margin-top: 35px
-		&__title
-			max-width: 300px
-		&__text
-			font-size: 14px
-			max-width: 210px
-	// eof
+	.p-contacts
+		.main
+			height: 300px
 
-
-
+	
+	.industries
+		&__caption-2
+			text-align: left
+		&__title-2
+			text-align: left
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	
+	// Отрасли промышленности
+	.industries
+		&__image
+			height: 200px
+	// eof
 
 
 
@@ -656,3 +332,201 @@
 
 @media only screen and (width : 1024px) and (height : 600px)
 	/**/
+
+
+
+
+//////////////////////////////////////////////////////////
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1539px)
+   .features
+      &-inner 
+         padding: 0
+   .team
+      &-slider__btn
+         width: 48px
+         height: 48px
+         &._prev 
+            left: -35px
+         &._next 
+            right: -35px
+@media only screen and (max-width : 1199px)
+   //
+   
+/*  Small Devices, Tablets */
+@media only screen and (max-width : 991px)
+   .industries
+      padding: 80px 0
+      &__caption
+         margin-bottom: 20px
+      &__text-2
+         margin-bottom: 15px
+         font-size: 18px
+      &-col 
+         flex: 0 0 48%
+      &__btn
+         width: 100%
+   .registration
+      &::before
+         display: none
+      &::after
+         display: none
+      &-inner 
+         flex-wrap: wrap
+         justify-content: center
+      &-content   
+         flex: 0 0 100%
+      &-img 
+         flex: 0 0 80%
+         padding-bottom: 100%
+      &__btn 
+         display: none
+         &._clone 
+            display: flex
+            margin-top: 24px
+   .team
+      &-slider__btn
+         &._prev 
+            left: 0
+         &._next 
+            right: 0
+   .contacts
+      &-item 
+         &__link 
+            font-size: 24px
+
+
+@media only screen and (max-width : 767px)
+   .industries
+      padding: 65px 0 70px
+      &::before 
+         display: none
+      &__title 
+         text-align: left
+      &__caption 
+         text-align: left
+      &__text-2
+         font-size: 21px
+      &-inner
+         flex-wrap: wrap
+      &-col 
+         flex: 0 0 100%
+      &__btn 
+         max-width: 254px
+         margin-top: 75px
+   .features
+      padding-top: 60px
+      padding-bottom: 50px
+      background: url(../img/about/features/bg2.png) center/cover no-repeat
+      background-color: #1b1d24
+      &-item 
+         flex-direction: column
+         margin-bottom: 50px
+         &__text 
+            text-align: center
+            margin: 0
+         &__img 
+            margin-bottom: 26px
+            width: 110px
+            height: 110px
+            img
+               width: 100%
+               height: 100%
+   .registration
+      padding: 90px 0 80px
+      &__title
+         font-size: 36px
+         margin-bottom: 37px
+   .team
+      padding-top: 90px
+      padding-bottom: 30px
+      &__title 
+         font-size: 36px
+         margin-bottom: 44px
+      &__caption
+         margin-bottom: 11px
+
+   .contacts
+      padding: 90px 0 80px
+      position: relative
+      z-index: 0
+      &::before
+         content: ''
+         width: 240px
+         height: 240px
+         position: absolute
+         z-index: -1
+         right: -140px   
+         top: 200px 
+         background: url(../img/icons/circle.svg) center/cover no-repeat
+         opacity: 0.16
+      &::after
+         content: ''
+         width: 240px
+         height: 240px
+         position: absolute
+         z-index: -1
+         left: -150px   
+         bottom: 350px 
+         background: url(../img/icons/circle.svg) center/cover no-repeat
+         opacity: 0.16
+      &-inner 
+         flex-wrap: wrap
+         position: relative
+         &::before
+            content: ''
+            width: 200px
+            height: 200px
+            opacity: 0.37
+            position: absolute
+            left: -70px
+            top: 186px
+            
+            background: url(../img/icons/arrow.svg) center/cover no-repeat
+         &::after
+            content: ''
+            width: 200px
+            height: 200px
+            opacity: 0.37
+            position: absolute
+            left: -40px
+            bottom: 0
+            
+            background: url(../img/icons/arrow.svg) center/cover no-repeat
+      &-item 
+         flex: 0 0 100%
+         margin-bottom: 50px
+         &__link 
+            font-size: 36px
+
+
+   .footer
+      &-box
+         display: none
+      &-inner 
+         justify-content: center
+
+
+@media only screen and (max-width : 576px)
+   .team-slider__wrapper
+      display: none
+   .team-mob
+      display: block
+      .team-item
+         margin: 0
+         margin-bottom: 60px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+   //
+
+
+
+// @media (min-width : 1400px)
+// 	.container
+//       max-width: 1360px 
+
+// @media (min-width : 1560px)
+// 	.container
+//       max-width: 1510px

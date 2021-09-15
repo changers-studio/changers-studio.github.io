@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Hiroster | Main</title>
+		<title>Share financial group | Main page</title>
 
 		<meta
 			name="viewport"
@@ -31,482 +31,369 @@
 		<link rel="stylesheet" href="css/reset.css" />
 
 		<!-- libs css -->
-		<link rel="stylesheet" href="libs/slick/slick.css" />
-		<link rel="stylesheet" href="libs/slick/slick-theme.css" />
+		<link rel="stylesheet" href="libs/aos/aos.css" />
+		<link rel="stylesheet" href="libs/slick-carousel/slick.css" />
+		<link rel="stylesheet" href="libs/slick-carousel/slick-theme.css" />
 
 		<!-- main css -->
 		<link rel="stylesheet" href="css/main.css" />
 
-		<!-- jquery -->
+		<!-- jQeury -->
 		<script defer src="libs/jquery.min.js"></script>
 
 		<!-- libs js -->
-		<script defer src="libs/slick/slick.min.js"></script>
+		<script defer src="libs/slick-carousel/slick.min.js"></script>
 
 		<!-- main js -->
 		<script defer src="js/custom.js"></script>
 	</head>
 
 	<body class="ishome">
-		<div class="header-main">
+		<section class="main">
 			<header class="header">
-				<div class="container header__flex-box">
-					<img class="header__logo" src="img/logo.svg" alt="Hiroster" />
+				<div class="container header__container">
+					<img
+						src="img/logo.png"
+						alt="Share financial group"
+						class="header__logo"
+					/>
 
-					<div class="header__sidebar">
-						<button class="header__sidebar-close"></button>
+					<nav class="header__menu">
+						<button class="header__menu-close"></button>
 
-						<nav class="header__nav">
-							<div class="lang">
-								<div class="lang__heading dropdown">
-									<img src="img/languages/en.svg" alt="EN" />
-								</div>
+						<a href="#" class="header__menu-item">home</a>
+						<a href="#" class="header__menu-item">arbitration</a>
+						<a href="#" class="header__menu-item">cryptocurrencies</a>
+						<a href="#" class="header__menu-item">exchanges</a>
+						<a href="#" class="header__menu-item">bot</a>
+						<a href="#" class="header__menu-item">faq</a>
+						<a href="#" class="header__menu-item">team</a>
+						<a href="#" class="header__menu-item">login</a>
+					</nav>
 
-								<div class="lang__dropdown">
-									<a href="#" class="lang__dropdown-item">
-										<img src="img/languages/ru.svg" alt="RU" />
-									</a>
-								</div>
-							</div>
+					<div class="header__plug"></div>
 
-							<ul class="menu">
-								<li class="menu__item">
-									<a href="#" class="menu__item-link">About</a>
-								</li>
-								<li class="menu__item">
-									<a href="#" class="menu__item-link">Deals</a>
-								</li>
-								<li class="menu__item">
-									<a href="#" class="menu__item-link">Positions</a>
-								</li>
-								<li class="menu__item">
-									<a href="#" class="menu__item-link">Advisors</a>
-								</li>
-								<li class="menu__item">
-									<a href="#" class="menu__item-link">Advisers</a>
-								</li>
-							</ul>
-						</nav>
-
-						<a href="#" class="header__button button _blue">
-							Demo dashboard
-							<i class="fas fa-chevron-right"></i>
-						</a>
+					<div class="header__hamburger">
+						<div class="header__hamburger-coub"></div>
+						<div class="header__hamburger-coub"></div>
+						<div class="header__hamburger-coub"></div>
+						<div class="header__hamburger-coub"></div>
 					</div>
-
-					<button class="header__hamburger">
-						<span class="header__hamburger-line"></span>
-						<span class="header__hamburger-line"></span>
-						<span class="header__hamburger-line"></span>
-					</button>
 				</div>
-
-				<div class="header__sidebar-plug"></div>
 			</header>
 
-			<section class="main">
-				<div class="container main__container">
-					<h1 class="main__title">
-						Free Hockey Players Market – Build the Perfect Team
-					</h1>
+			<div
+				class="container main__container"
+				data-aos="fade-right"
+				data-aos-delay="300"
+			>
+				<h1 class="main__title">
+					<span>Welcome</span>
+					to the world
+				</h1>
+				<p class="main__text">
+					At vero eos et accusamus et iusto odio dignissimos ducimus qui
+					blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+					et quas molestias excepturi
+				</p>
 
-					<p class="main__text">
-						Control the hockey transfer market without media or any middlemen.
-						Hiroster database contains thousands of available players from all
-						over the world. Filter your search for hockey players by 10 key
-						parameters. Contact any player you are interested in right in the
-						application.
-					</p>
-
-					<h4 class="main__secondary-title">
-						Try the Hiroster demo dashboard and find out how it works
-					</h4>
-
-					<a href="#" class="button main__button">
-						Get Access
-						<i class="fas fa-chevron-right"></i>
-					</a>
-				</div>
-			</section>
-		</div>
-
-		<section class="description">
-			<div class="container description__container">
-				<div class="description__wrapper">
-					<img
-						src="img/description__image.png"
-						alt="Phone"
-						class="description__image"
-					/>
-				</div>
-
-				<div class="description__wrapper">
-					<h2 class="description__title">
-						Find a dream roaster in Hiroster just in a few hours
-					</h2>
-
-					<div class="description__text">
-						<p class="description__text-p">
-							A clearly segmented base of active players from all over the
-							world. They are eager to play on your team.
-						</p>
-
-						<p class="description__text-p">
-							Simple search and smart filtering of hundreds of players according
-							to your specified parameters: from player statistics to salary
-							wishes.
-						</p>
-
-						<p class="description__text-p">
-							All important information shown in the search results immediately:
-							choose, add to favorites, contact them directly.
-						</p>
-					</div>
-				</div>
+				<a href="#" class="button main__button"><span>Регистрация</span></a>
 			</div>
-		</section>
 
-		<section class="features">
-			<div class="container">
-				<h2 class="features__title">Hiroster Features</h2>
-
-				<div class="features__container">
-					<div class="features__box">
-						<img
-							src="img/features/icon-1.svg"
-							alt="Icon"
-							class="features__icon"
-						/>
-
-						<h5 class="features__heading">Advanced player profile</h5>
-
-						<p class="features__text">
-							All information on one page: statistics of the last seasons,
-							player indicators, videos of game shifts.
-						</p>
-					</div>
-
-					<div class="features__box">
-						<img
-							src="img/features/icon-2.svg"
-							alt="Icon"
-							class="features__icon"
-						/>
-
-						<h5 class="features__heading">Contacts and a quick chat</h5>
-
-						<p class="features__text">
-							Contact any player directly in Hiroster. In the messenger, social
-							network or directly in the service chat – discuss cooperation
-							without wasting a minute.
-						</p>
-					</div>
-
-					<div class="features__box">
-						<img
-							src="img/features/icon-3.svg"
-							alt="Icon"
-							class="features__icon"
-						/>
-
-						<h5 class="features__heading">All the preferences of the player</h5>
-
-						<p class="features__text">
-							You will have access to each player’s preferences for salary,
-							league level, and location in Hiroster. Choose from the most
-							relevant players.
-						</p>
-					</div>
-
-					<div class="features__box">
-						<img
-							src="img/features/icon-4.svg"
-							alt="Icon"
-							class="features__icon"
-						/>
-
-						<h5 class="features__heading">Comprehensive statistics</h5>
-
-						<p class="features__text">
-							You no longer have to search for player data all over the
-							internet. Full statistics of each hockey player are available for
-							viewing and filtering in his profile.
-						</p>
-					</div>
-
-					<div class="features__box">
-						<img
-							src="img/features/icon-5.svg"
-							alt="Icon"
-							class="features__icon"
-						/>
-
-						<h5 class="features__heading">Not highlights, but game shifts</h5>
-
-						<p class="features__text">
-							Evaluate the level of a hockey player not by a collection of good
-							moments, but by their entire playing time. Watch videos of any
-							player's game shifts.
-						</p>
-					</div>
-
-					<div class="features__box">
-						<img
-							src="img/features/icon-6.svg"
-							alt="Icon"
-							class="features__icon"
-						/>
-
-						<h5 class="features__heading">Convenient search and filtering</h5>
-
-						<p class="features__text">
-							Contact any player directly in Hiroster. In the messenger, social
-							network or directly in the service chat – discuss cooperation
-							without wasting a minute.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="access">
-			<div class="container">
-				<h2 class="access__title">
-					Get access to Hiroster
-					<br />
-					demo dashboard
-				</h2>
-
-				<a href="#" class="button access__button">
-					Get Access
-					<i class="fas fa-chevron-right"></i>
+			<div class="social-links" data-aos="fade-right">
+				<a href="#" class="social-links__item">
+					<img src="img/icons/telegram.png" alt="Telegram" />
+				</a>
+				<a href="#" class="social-links__item">
+					<img src="img/icons/facebook.png" alt="Facebook" />
+				</a>
+				<a href="#" class="social-links__item">
+					<img src="img/icons/instagram.png" alt="Instagram" />
+				</a>
+				<a href="#" class="social-links__item">
+					<img src="img/icons/youtube.png" alt="Youtube" />
 				</a>
 			</div>
 		</section>
 
-		<section class="deal">
+		<section class="industries">
 			<div class="container">
-				<div class="deal__container">
-					<img class="deal__image" src="img/deal__image.png" alt="Dashboard" />
+				<h2 class="industries__title h2" data-aos="fade-right">Industries</h2>
+				<h3
+					class="industries__subtitle h3"
+					data-aos="fade-right"
+					data-aos-delay="300"
+				>
+					Fusce eu mauris ac dolor
+					<br />
+					ultricies sodales
+				</h3>
+			</div>
 
-					<div class="deal__wrapper">
-						<h2 class="deal__title">
-							Conduct a deal with a player directly in Hiroster
-						</h2>
+			<div class="container industries__slider-container" data-aos="fade-up">
+				<div class="industries__slider">
+					<div class="industries__slide">
+						<div class="industries__slide-inner">
+							<div
+								class="industries__image"
+								style="background-image: url(img/industries/image-1.jpg)"
+							></div>
 
-						<p class="deal__text">
-							Hiroster has the tools for conducting sports deals: Chat with
-							relevant players, negotiate, and discuss resumes with those who
-							are well suited to the team, all without leaving the application.
-						</p>
+							<div class="industries__slide-bottom">
+								<div class="industries__wrapper">
+									<h4 class="industries__heading">
+										Lorem ipsum dolor sit amet, consectetur
+									</h4>
+									<p class="industries__text">
+										Donec ac egestas diam. Phasellus tincidunt dui eros, et
+										maximus turpis ultricies tincidunt. Suspendisse fermentum
+										scelerisque urna, porttitor
+									</p>
+								</div>
+
+								<a href="#" class="button industries__button _transparent">
+									<span>Читать далее</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="industries__slide">
+						<div class="industries__slide-inner">
+							<div
+								class="industries__image"
+								style="background-image: url(img/industries/image-2.jpg)"
+							></div>
+
+							<div class="industries__slide-bottom">
+								<div class="industries__wrapper">
+									<h4 class="industries__heading">
+										Lorem ipsum dolor sit amet, consectetur
+									</h4>
+									<p class="industries__text">
+										Donec ac egestas diam. Phasellus tincidunt dui eros, et
+										maximus turpis ultricies tincidunt. Suspendisse fermentum
+										scelerisque urna, porttitor
+									</p>
+								</div>
+
+								<a href="#" class="button industries__button _transparent">
+									<span>Читать далее</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="industries__slide">
+						<div class="industries__slide-inner">
+							<div
+								class="industries__image"
+								style="background-image: url(img/industries/image-1.jpg)"
+							></div>
+
+							<div class="industries__slide-bottom">
+								<div class="industries__wrapper">
+									<h4 class="industries__heading">
+										Lorem ipsum dolor sit amet, consectetur
+									</h4>
+									<p class="industries__text">
+										Donec ac egestas diam. Phasellus tincidunt dui eros, et
+										maximus turpis ultricies tincidunt. Suspendisse fermentum
+										scelerisque urna, porttitor
+									</p>
+								</div>
+
+								<a href="#" class="button industries__button _transparent">
+									<span>Читать далее</span>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
+			</div>
+		</section>
+
+		<section class="target">
+			<div class="container">
+				<div class="row target__container">
+					<div class="col-lg-6 target__image-container">
+						<img
+							src="img/main/target__image.png"
+							alt="Image"
+							class="target__image"
+							data-aos="zoom-in"
+						/>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="target__wrapper" data-aos="fade-right">
+							<h2 class="target__title h2">Цель и миссия</h2>
+							<h3 class="target__subtitle h3">
+								Phasellus tincidunt egestas sem
+							</h3>
+
+							<div class="target__text">
+								<p>
+									Curabitur ac viverra velit, sit amet commodo est. Aenean
+									lobortis libero sed gravida interdum. In tristique ex vitae
+									pellentesque tempus. Mauris suscipit, turpis sit amet
+									malesuada vehicula, mi nisl rhoncus justo, rutrum ornare est
+									quam in eros.
+								</p>
+
+								<p>
+									Aenean convallis consequat nibh et aliquam. Pellentesque mi
+									odio, malesuada et mauris id, ullamcorper ullamcorper neque.
+								</p>
+							</div>
+
+							<a href="#" class="target__button button">
+								<span>Подробнее</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="appeal">
+			<div class="container">
+				<h3 class="appeal__title h3" data-aos="zoom-in">
+					Morbi pretium
+					<br />
+					ornare nisl id aliquam
+				</h3>
 			</div>
 		</section>
 
 		<section class="advantages">
 			<div class="container">
-				<div class="advantages__container">
-					<div class="advantages__wrapper">
-						<img
-							src="img/advantages/icon-1.svg"
-							alt="Icon"
-							class="advantages__icon"
-						/>
-
-						<h3 class="advantages__heading">
-							Post vacancies and get real-time responses
-						</h3>
-
-						<p class="advantages__text">
-							Get feedback from relevant players on your published position
-							right in the app chat, and discuss the details of your contracts
-							without intermediaries.
-						</p>
-					</div>
-
-					<div class="advantages__wrapper image">
-						<div class="advantages__image">
-							<img src="img/advantages/image-1.png" alt="Image" />
-						</div>
-					</div>
-				</div>
-
-				<div class="advantages__container">
-					<div class="advantages__wrapper image">
-						<div class="advantages__image">
-							<img src="img/advantages/image-2.png" alt="Image" />
-						</div>
-					</div>
-
-					<div class="advantages__wrapper">
-						<img
-							src="img/advantages/icon-2.svg"
-							alt="Icon"
-							class="advantages__icon"
-						/>
-
-						<h3 class="advantages__heading">
-							Communicate with the players conveniently. No language barriers
-						</h3>
-
-						<p class="advantages__text">
-							Email any player directly inHiroster. There are no language
-							barriers here – the chat has a built-in auto-translator. Discuss
-							the details of your cooperation without intermediaries,
-							translators, and misunderstandings.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="access _second">
-			<div class="container access__container">
-				<h2 class="access__title">
-					Get access to Hiroster
-					<br />
-					demo dashboard
+				<h2 class="target__title h2" data-aos="fade-right">
+					Преимущества сотрудничества
 				</h2>
+				<h3 class="target__subtitle h3" data-aos="fade-right" data-aos="300">
+					Наша компания представляет
+					<br />
+					ряд преимуществ
+				</h3>
 
-				<h4 class="access__subtitle">
-					Try the Hiroster demo dashboard and find out how it works
-				</h4>
+				<div class="advantages__container">
+					<div class="advantages__box" data-aos="fade-up">
+						<div class="advantages__box-icon">
+							<img src="img/main/advantages__icon-1.png" alt="Icon" />
+						</div>
+						<p class="advantages__box-text">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+							accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+							quae ab illo inventore veritatis et quasi architecto beatae vitae
+							dicta sunt explicabo. Nemo
+						</p>
+					</div>
 
-				<a href="#" class="button access__button">
-					Get Access
-					<i class="fas fa-chevron-right"></i>
-				</a>
+					<div class="advantages__box" data-aos="fade-up">
+						<div class="advantages__box-icon">
+							<img src="img/main/advantages__icon-2.png" alt="Icon" />
+						</div>
+						<p class="advantages__box-text">
+							We support you in making your vision a reality and make your
+							digital transformation the foundation of your growth.
+						</p>
+					</div>
+
+					<div class="advantages__box" data-aos="fade-up">
+						<div class="advantages__box-icon">
+							<img src="img/main/advantages__icon-3.png" alt="Icon" />
+						</div>
+						<p class="advantages__box-text">
+							But I must explain to you how all this mistaken idea of denouncing
+							pleasure and praising pain was born and I will give you a complete
+							account of the system, and expound the actual teachings of the
+							great explorer of the truth, the
+						</p>
+					</div>
+
+					<div class="advantages__box" data-aos="fade-up">
+						<div class="advantages__box-icon">
+							<img src="img/main/advantages__icon-4.png" alt="Icon" />
+						</div>
+						<p class="advantages__box-text">
+							To take a trivial example, which of us ever undertakes laborious
+							physical exercise, except to obtain some advantage from it? But
+							who has any right to find fault with a man who chooses to enjoy a
+							pleasure that has no
+						</p>
+					</div>
+				</div>
 			</div>
 		</section>
 
-		<section class="advisors">
+		<section class="slider">
 			<div class="container">
-				<h2 class="advisors__title">Advisors</h2>
+				<div class="slider__container" data-aos="fade-up">
+					<div class="slider__item">
+						<div class="slider__item-inner">
+							<div
+								class="slider__image"
+								style="background-image: url('img/main/slider__image-1.jpg')"
+							></div>
 
-				<div class="advisors__slider">
-					<div class="advisors__slide">
-						<div class="advisors__slide-wrapper">
-							<img
-								class="advisors__image"
-								src="img/advisors/image-1.png"
-								alt="Image"
-							/>
-
-							<h6 class="advisors__heading">
-								<span>Joonas Korpisalo</span>
-								<img
-									class="advisors__flag"
-									src="img/flags/fin.png"
-									alt="Flag"
-								/>
-							</h6>
-
-							<p class="advisors__text">
-								Some description information about adviser here
+							<p class="slider__caption">
+								We support you in making your vision a reality and make your
+								digital
 							</p>
 						</div>
 					</div>
 
-					<div class="advisors__slide">
-						<div class="advisors__slide-wrapper">
-							<img
-								class="advisors__image"
-								src="img/advisors/image-2.png"
-								alt="Image"
-							/>
+					<div class="slider__item">
+						<div class="slider__item-inner">
+							<div
+								class="slider__image"
+								style="background-image: url('img/main/slider__image-2.jpg')"
+							></div>
 
-							<h6 class="advisors__heading">
-								<span>Markus Hännikäinen</span>
-								<img
-									class="advisors__flag"
-									src="img/flags/fin.png"
-									alt="Flag"
-								/>
-							</h6>
-
-							<p class="advisors__text">
-								Some description information about adviser here
+							<p class="slider__caption">
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui
 							</p>
 						</div>
 					</div>
 
-					<div class="advisors__slide">
-						<div class="advisors__slide-wrapper">
-							<img
-								class="advisors__image"
-								src="img/advisors/image-3.png"
-								alt="Image"
-							/>
+					<div class="slider__item">
+						<div class="slider__item-inner">
+							<div
+								class="slider__image"
+								style="background-image: url('img/main/slider__image-3.jpg')"
+							></div>
 
-							<h6 class="advisors__heading">
-								<span>Dean Kukan</span>
-								<img class="advisors__flag" src="img/flags/sw.png" alt="Flag" />
-							</h6>
-
-							<p class="advisors__text">
-								Some description information about adviser here
+							<p class="slider__caption">
+								In a free hour, when our power of choice is untrammelled and
+								when
 							</p>
 						</div>
 					</div>
 
-					<div class="advisors__slide">
-						<div class="advisors__slide-wrapper">
-							<img
-								class="advisors__image"
-								src="img/advisors/image-4.png"
-								alt="Image"
-							/>
+					<div class="slider__item">
+						<div class="slider__item-inner">
+							<div
+								class="slider__image"
+								style="background-image: url('img/main/slider__image-2.jpg')"
+							></div>
 
-							<h6 class="advisors__heading">
-								<span>Lukas Sedlak</span>
-								<img class="advisors__flag" src="img/flags/ch.png" alt="Flag" />
-							</h6>
-
-							<p class="advisors__text">
-								Some description information about adviser here
+							<p class="slider__caption">
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui
 							</p>
 						</div>
 					</div>
 
-					<div class="advisors__slide">
-						<div class="advisors__slide-wrapper">
-							<img
-								class="advisors__image"
-								src="img/advisors/image-2.png"
-								alt="Image"
-							/>
+					<div class="slider__item">
+						<div class="slider__item-inner">
+							<div
+								class="slider__image"
+								style="background-image: url('img/main/slider__image-3.jpg')"
+							></div>
 
-							<h6 class="advisors__heading">
-								<span>Markus Hännikäinen</span>
-								<img
-									class="advisors__flag"
-									src="img/flags/fin.png"
-									alt="Flag"
-								/>
-							</h6>
-
-							<p class="advisors__text">
-								Some description information about adviser here
-							</p>
-						</div>
-					</div>
-
-					<div class="advisors__slide">
-						<div class="advisors__slide-wrapper">
-							<img
-								class="advisors__image"
-								src="img/advisors/image-3.png"
-								alt="Image"
-							/>
-
-							<h6 class="advisors__heading">
-								<span>Dean Kukan</span>
-								<img class="advisors__flag" src="img/flags/sw.png" alt="Flag" />
-							</h6>
-
-							<p class="advisors__text">
-								Some description information about adviser here
+							<p class="slider__caption">
+								In a free hour, when our power of choice is untrammelled and
+								when
 							</p>
 						</div>
 					</div>
@@ -514,92 +401,94 @@
 			</div>
 		</section>
 
-		<div class="about-footer">
-			<section class="about">
-				<div class="container">
-					<h2 class="about__title">Our mission</h2>
+		<section class="appeal">
+			<div class="container">
+				<h3 class="appeal__title h3" data-aos="zoom-in">
+					Morbi pretium
+					<br />
+					ornare nisl id aliquam
+				</h3>
+			</div>
+		</section>
 
-					<div class="about__container">
-						<div class="about__wrapper">
-							<h3 class="about__heading">
-								HiRoster is a new recruiting approach, thatchanges the whole
-								hockey transfer system.
-							</h3>
+		<section class="relevance">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-7">
+						<h2 class="target__title h2" data-aos="fade-right">
+							Акитуальность
+						</h2>
+						<h3 class="target__subtitle h3" data-aos="fade-right">
+							Преспективы развития
+						</h3>
 
-							<div class="about__text">
-								<p class="about__text-p">
-									Players fill out their profiles and send requests to teams and
-									clubs. Teams submit requests for the next season with
-									HiRoster.
-								</p>
-
-								<p class="about__text-p">
-									Both sides will filter amd find each others offers, making it
-									possible to get into an ideal team or sign a player for a
-									season in a few clicks.
-								</p>
-
-								<p class="about__text-p">
-									"I played for an unknown team and failed with the absence of a
-									motivating salary or career opportunities..." - forget about
-									this bad stories.
-								</p>
-
-								<p class="about__text-p">
-									The HiRoster app makes it possible to determine what players
-									there are available to the selected parameters and find a team
-									which is seeking for a specified position player.
-								</p>
-
-								<p class="about__text-p">
-									Hockey trafers have never been so simple and succesful!
-								</p>
-							</div>
-						</div>
-
-						<div class="social-links">
-							<h6 class="social-links__heading">
-								Follow us
-								<br />
-								in social networks
-							</h6>
-
-							<div class="social-links__flex-box">
-								<a href="#" class="social-links__item">
-									<i class="fab fa-facebook-f"></i>
-								</a>
-								<a href="#" class="social-links__item">
-									<i class="fab fa-instagram"></i>
-								</a>
-								<a href="#" class="social-links__item">
-									<i class="fab fa-twitter"></i>
-								</a>
-							</div>
-						</div>
+						<p class="target__text" data-aos="fade-right">
+							On the other hand, we denounce with righteous indignation and
+							dislike men who are so beguiled and demoralized by the charms of
+							pleasure of the moment, so blinded by desire, that they cannot
+							foresee the pain and trouble that are bound to ensue; and equal
+							blame belongs to those who fail in their duty through weakness of
+							will, which is the same as saying through shrinking from toil and
+							pain. These cases are perfectly simple and easy to distinguish.
+						</p>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<footer class="footer">
-				<div class="container">
-					<div class="footer__container">
-						<img src="img/logo.svg" alt="Hiroster" class="footer__logo" />
+		<section class="welcome">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-8">
+						<h2 class="welcome__title" data-aos="fade-right">
+							<span>Welcome</span>
+							to the world
+						</h2>
+						<p class="welcome__text" data-aos="fade-right" data-aos-delay="150">
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui
+							blanditiis praesentium voluptatum deleniti atque corrupti quos
+							dolores et quas molestias excepturi
+						</p>
 
-						<div class="footer__wrapper">
-							<nav class="footer__menu">
-								<a class="footer__menu-item" href="#">Project Roadmap</a>
-								<a class="footer__menu-item" href="#">Privacy policy</a>
-								<a class="footer__menu-item" href="#">Terms of Service</a>
-							</nav>
-
-							<a href="#" class="button footer__button">
-								Demo dashboard
-								<i class="fas fa-chevron-right"></i>
-							</a>
-						</div>
+						<a href="#" class="button welcome__button">
+							<span>Регистрация</span>
+						</a>
 					</div>
 				</div>
-			</footer>
-		</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container footer__container">
+				<img
+					src="img/logo.png"
+					alt="Share financial group"
+					class="footer__logo"
+				/>
+
+				<div class="footer__wrapper">
+					<div class="social-links">
+						<a href="#" class="social-links__item">
+							<img src="img/icons/telegram.png" alt="Telegram" />
+						</a>
+						<a href="#" class="social-links__item">
+							<img src="img/icons/facebook.png" alt="Facebook" />
+						</a>
+						<a href="#" class="social-links__item">
+							<img src="img/icons/instagram.png" alt="Instagram" />
+						</a>
+						<a href="#" class="social-links__item">
+							<img src="img/icons/youtube.png" alt="Youtube" />
+						</a>
+					</div>
+
+					<a href=".main" class="footer__button link_move">
+						<i class="fas fa-chevron-up"></i>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="libs/aos/aos.js"></script>
 	</body>
 </html>
