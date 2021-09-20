@@ -24,59 +24,92 @@ toggleSidebar.on('click', function () {
 })
 
 // Sliders
-$('.industries__slider').slick({
-	infinite: false,
-	arrows: false,
-	touchMove: false,
-	variableWidth: true,
-	speed: 500,
-	autoplay: true,
-	autoplaySpeed: 5000,
-	responsive: [
-		{
-			breakpoint: 992,
-			settings: {
-				variableWidth: false,
+if ($('*').is('.industries__slider')) {
+	$('.industries__slider').slick({
+		infinite: false,
+		arrows: false,
+		touchMove: false,
+		variableWidth: true,
+		speed: 500,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					variableWidth: false,
+				},
 			},
-		},
-	],
-})
+		],
+	})
+}
 
-$('.slider__container').slick({
-	infinite: false,
-	touchMove: false,
-	speed: 500,
-	slidesToShow: 3,
-	responsive: [
-		{
-			breakpoint: 992,
-			settings: {
-				slidesToShow: 2,
+if ($('*').is('.slider__container')) {
+	$('.slider__container').slick({
+		infinite: false,
+		touchMove: false,
+		speed: 500,
+		slidesToShow: 3,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+				},
 			},
-		},
-		{
-			breakpoint: 576,
-			settings: {
-				slidesToShow: 1,
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+				},
 			},
-		},
-	],
-})
+		],
+	})
+}
 
-$('.team-slider').slick({
-	slidesToShow: 3,
-	slidesToScroll: 1,
-	dots: false,
-	infinite: true,
-	responsive: [
-		{
-			breakpoint: 992,
-			settings: {
-				slidesToShow: 1,
+if ($('*').is('.team-slider')) {
+	$('.team-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: false,
+		infinite: true,
+		touchMove: false,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+				},
 			},
-		},
-	],
-})
+		],
+	})
+}
+
+if ($('*').is('.ranks__slider')) {
+	$('.ranks__slider').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		dots: false,
+		infinite: true,
+		touchMove: false,
+		responsive: [
+			{
+				breakpoint: 1430,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					variableWidth: true,
+					centerMode: true,
+				},
+			},
+		],
+	})
+}
 
 $('body').on('click', '.link_move', function (event) {
 	event.preventDefault()

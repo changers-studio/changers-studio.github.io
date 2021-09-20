@@ -49,17 +49,21 @@
 			font-size: 18px
 	// eof
 
-	.features
-		&-inner 
-				padding: 0
-	.team
-		&-slider__btn
-				width: 48px
-				height: 48px
-				&._prev 
-					left: -35px
-				&._next 
-					right: -35px
+
+
+	// Marketing page
+	.p-marketing
+		.about
+			&__wrapper
+				max-width: 700px
+				padding-right: 200px
+			&__text
+				font-size: 16px
+			&__image
+				width: 400px
+			.table
+				max-width: 400px
+	// eof
 
 
 
@@ -96,10 +100,18 @@
 		br
 			display: none
 
-
 	// Кнопка
 	.button
 		font-size: 16px
+	// eof
+
+
+	// Хлебные крошки
+	.breadcrumbs
+		&__item
+			font-size: 16px
+			padding-right: 10px
+			margin-right: 10px
 	// eof
 
 
@@ -284,25 +296,94 @@
 	// eof
 
 
-	// Хлебные крошки
-	.breadcrumbs
-		&__item
-			font-size: 16px
-			padding-right: 10px
-			margin-right: 10px
+	// Marketing page
+	.p-marketing
+
+		.industries
+			padding: 50px 0
+			background-image: none
+			&__subtitle
+				margin-bottom: 50px
+			&__container
+				flex-direction: column
+				align-items: center
+			&__box
+				max-width: 375px
+				width: 100%
+				margin-bottom: 40px
+				&-icon
+					margin-bottom: 15px
+				&-text
+					font-size: 16px
+
+		.tariffs
+			&__container
+				justify-content: space-around
+			&__box
+				margin-bottom: 40px
+
+		.about
+			&__container
+				position: relative
+				&:last-child
+					margin-bottom: 150px
+					.about__image::before
+						display: none
+				&:first-child
+					.about__image::before
+						display: flex
+				&._has-table
+					.about
+						&__wrapper
+							padding: 20px
+						&__image
+							width: 0
+							bottom: 0
+							&::before
+								top: 100%
+								transform: none
+								margin-top: 40px
+				&._reverse
+					.about
+						&__wrapper
+							padding: 20px 20px 120px
+						&__image
+							left: 20px
+							&::before
+								left: 60vw
+				&._has-table
+					.about__image
+
+			&__wrapper
+				max-width: 100%
+				padding: 20px 20px 120px
+				min-height: auto
+			&__text
+				font-size: 16px
+			&__image
+				width: 200px
+				right: 20px
+				bottom: 0
+				transform: translate(0, 50%)
+				&::before
+					height: 100px
+					width: 70px
+					bottom: auto
+					margin-bottom: 0
+					right: 60vw
+					transform: translate(0, -50%)
+					top: 100%
+			.table
+				max-width: 100%
+				margin-top: 40px
+
+		.ranks
+			&__slide
+				width: 345px
+				padding-top: 60px
 	// eof
 
 
-	.p-contacts
-		.main
-			height: 300px
-
-	
-	.industries
-		&__caption-2
-			text-align: left
-		&__title-2
-			text-align: left
 
 
 /* Extra Small Devices, Phones */
@@ -317,26 +398,28 @@
 
 
 
-/* Custom adaptation */
-@media only screen and (max-height : 600px) and (max-width : 480px)
-	/**/
-
-@media only screen and (width : 1366px) and (height : 768px)
-	/**/
-
-@media only screen and (width : 1280px) and (height : 800px)
-	/**/
-
-@media only screen and (width : 1024px) and (height : 768px)
-	/**/
-
-@media only screen and (width : 1024px) and (height : 600px)
-	/**/
 
 
 
 
-//////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Дима //////////////////////////////////////////////////////////
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1539px)
    .features
@@ -352,7 +435,7 @@
             right: -35px
 @media only screen and (max-width : 1199px)
    //
-   
+
 /*  Small Devices, Tablets */
 @media only screen and (max-width : 991px)
    .industries
@@ -516,17 +599,3 @@
          margin: 0
          margin-bottom: 60px
 
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-   //
-
-
-
-// @media (min-width : 1400px)
-// 	.container
-//       max-width: 1360px 
-
-// @media (min-width : 1560px)
-// 	.container
-//       max-width: 1510px
