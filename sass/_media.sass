@@ -50,6 +50,21 @@
 	// eof
 
 
+	// About page
+	.p-about
+		.features
+      &-inner 
+        padding: 0
+		.team
+      &-slider__btn
+        width: 48px
+        height: 48px
+        &._prev 
+          left: -35px
+        &._next 
+          right: -35px
+	// eof
+
 
 	// Marketing page
 	.p-marketing
@@ -296,6 +311,138 @@
 	// eof
 
 
+	// About page
+	.p-about
+
+		.industries
+			&::before 
+				display: none
+			&__title 
+				text-align: left
+			&__caption
+				text-align: left
+			&__text
+        margin-top: 15px
+        font-size: 18px
+			&-inner
+				flex-wrap: wrap
+			&-col
+				flex: 0 0 100%
+			&__button
+				margin:
+					top: 50px
+					left: 0
+
+		.registration
+			&::before, &::after
+				display: none
+			&__text
+				font-size: 16px
+				margin-bottom: 15px
+			&-inner
+				flex-wrap: wrap
+				justify-content: center
+			&-content
+				flex: 0 0 100%
+			&-img
+				margin-top: 50px
+				flex: 0 0 100%
+				img
+					max-width: 400px
+		
+		.features
+			background: url(../img/about/features/bg2.png) center/cover no-repeat
+			background-color: #1b1d24
+			&-item 
+				flex-direction: column
+				margin-bottom: 50px
+				align-items: center
+				&__text 
+					text-align: center
+					margin: 0
+					font-size: 16px
+					max-width: 400px
+				&__img 
+					margin-bottom: 26px
+					width: 110px
+					height: 110px
+					img
+							width: 100%
+							height: 100%
+
+		.team
+			&::before, &::after
+				display: none
+			&-item
+				margin: 0 15px
+				width: 250px
+				&__name
+					font-size: 21px
+					margin: 20px 0 10px
+				&__text
+					font-size: 16px
+					max-width: 100%
+	// eof
+
+
+	// Contacts page
+	.p-contacts
+
+		.contacts
+			position: relative
+			&::before
+				content: ''
+				width: 240px
+				height: 240px
+				position: absolute
+				z-index: -1
+				right: -140px   
+				top: 200px 
+				background: url(../img/icons/circle.svg) center/cover no-repeat
+				opacity: 0.16
+			&::after
+				content: ''
+				width: 240px
+				height: 240px
+				position: absolute
+				z-index: -1
+				left: -150px   
+				bottom: 350px 
+				background: url(../img/icons/circle.svg) center/cover no-repeat
+				opacity: 0.16
+			&-inner 
+				flex-wrap: wrap
+				position: relative
+				&::before
+					content: ''
+					width: 200px
+					height: 200px
+					opacity: 0.37
+					position: absolute
+					left: -70px
+					top: 186px
+					
+					background: url(../img/icons/arrow.svg) center/cover no-repeat
+				&::after
+					content: ''
+					width: 200px
+					height: 200px
+					opacity: 0.37
+					position: absolute
+					left: -40px
+					bottom: 0
+					
+					background: url(../img/icons/arrow.svg) center/cover no-repeat
+			&-item 
+				flex: 0 0 100%
+				margin-bottom: 50px
+				&__link 
+					font-size: 24px
+				&__caption
+					margin: 15px 0 10px
+	// eof
+
+
 	// Marketing page
 	.p-marketing
 
@@ -395,207 +542,4 @@
 			height: 200px
 	// eof
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Дима //////////////////////////////////////////////////////////
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1539px)
-   .features
-      &-inner 
-         padding: 0
-   .team
-      &-slider__btn
-         width: 48px
-         height: 48px
-         &._prev 
-            left: -35px
-         &._next 
-            right: -35px
-@media only screen and (max-width : 1199px)
-   //
-
-/*  Small Devices, Tablets */
-@media only screen and (max-width : 991px)
-   .industries
-      padding: 80px 0
-      &__caption
-         margin-bottom: 20px
-      &__text-2
-         margin-bottom: 15px
-         font-size: 18px
-      &-col 
-         flex: 0 0 48%
-      &__btn
-         width: 100%
-   .registration
-      &::before
-         display: none
-      &::after
-         display: none
-      &-inner 
-         flex-wrap: wrap
-         justify-content: center
-      &-content   
-         flex: 0 0 100%
-      &-img 
-         flex: 0 0 80%
-         padding-bottom: 100%
-      &__btn 
-         display: none
-         &._clone 
-            display: flex
-            margin-top: 24px
-   .team
-      &-slider__btn
-         &._prev 
-            left: 0
-         &._next 
-            right: 0
-   .contacts
-      &-item 
-         &__link 
-            font-size: 24px
-
-
-@media only screen and (max-width : 767px)
-   .industries
-      padding: 65px 0 70px
-      &::before 
-         display: none
-      &__title 
-         text-align: left
-      &__caption 
-         text-align: left
-      &__text-2
-         font-size: 21px
-      &-inner
-         flex-wrap: wrap
-      &-col 
-         flex: 0 0 100%
-      &__btn 
-         max-width: 254px
-         margin-top: 75px
-   .features
-      padding-top: 60px
-      padding-bottom: 50px
-      background: url(../img/about/features/bg2.png) center/cover no-repeat
-      background-color: #1b1d24
-      &-item 
-         flex-direction: column
-         margin-bottom: 50px
-         &__text 
-            text-align: center
-            margin: 0
-         &__img 
-            margin-bottom: 26px
-            width: 110px
-            height: 110px
-            img
-               width: 100%
-               height: 100%
-   .registration
-      padding: 90px 0 80px
-      &__title
-         font-size: 36px
-         margin-bottom: 37px
-   .team
-      padding-top: 90px
-      padding-bottom: 30px
-      &__title 
-         font-size: 36px
-         margin-bottom: 44px
-      &__caption
-         margin-bottom: 11px
-
-   .contacts
-      padding: 90px 0 80px
-      position: relative
-      z-index: 0
-      &::before
-         content: ''
-         width: 240px
-         height: 240px
-         position: absolute
-         z-index: -1
-         right: -140px   
-         top: 200px 
-         background: url(../img/icons/circle.svg) center/cover no-repeat
-         opacity: 0.16
-      &::after
-         content: ''
-         width: 240px
-         height: 240px
-         position: absolute
-         z-index: -1
-         left: -150px   
-         bottom: 350px 
-         background: url(../img/icons/circle.svg) center/cover no-repeat
-         opacity: 0.16
-      &-inner 
-         flex-wrap: wrap
-         position: relative
-         &::before
-            content: ''
-            width: 200px
-            height: 200px
-            opacity: 0.37
-            position: absolute
-            left: -70px
-            top: 186px
-            
-            background: url(../img/icons/arrow.svg) center/cover no-repeat
-         &::after
-            content: ''
-            width: 200px
-            height: 200px
-            opacity: 0.37
-            position: absolute
-            left: -40px
-            bottom: 0
-            
-            background: url(../img/icons/arrow.svg) center/cover no-repeat
-      &-item 
-         flex: 0 0 100%
-         margin-bottom: 50px
-         &__link 
-            font-size: 36px
-
-
-   .footer
-      &-box
-         display: none
-      &-inner 
-         justify-content: center
-
-
-@media only screen and (max-width : 576px)
-   .team-slider__wrapper
-      display: none
-   .team-mob
-      display: block
-      .team-item
-         margin: 0
-         margin-bottom: 60px
 

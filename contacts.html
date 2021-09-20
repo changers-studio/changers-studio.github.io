@@ -31,17 +31,13 @@
 		<link rel="stylesheet" href="css/reset.css" />
 
 		<!-- libs css -->
-		<link rel="stylesheet" href="libs/slick-carousel/slick.css" />
-		<link rel="stylesheet" href="libs/slick-carousel/slick-theme.css" />
+		<link rel="stylesheet" href="libs/aos/aos.css" />
 
 		<!-- main css -->
 		<link rel="stylesheet" href="css/main.css" />
 
 		<!-- jQeury -->
 		<script defer src="libs/jquery.min.js"></script>
-
-		<!-- libs js -->
-		<script defer src="libs/slick-carousel/slick.min.js"></script>
 
 		<!-- main js -->
 		<script defer src="js/custom.js"></script>
@@ -54,24 +50,31 @@
 						src="img/logo.png"
 						alt="Share financial group"
 						class="header__logo"
+						data-aos="zoom-in"
 					/>
 
 					<nav class="header__menu">
 						<button class="header__menu-close"></button>
 
-						<a href="#" class="header__menu-item">home</a>
-						<a href="#" class="header__menu-item">arbitration</a>
-						<a href="#" class="header__menu-item">cryptocurrencies</a>
-						<a href="#" class="header__menu-item">exchanges</a>
-						<a href="#" class="header__menu-item">bot</a>
-						<a href="#" class="header__menu-item">faq</a>
-						<a href="#" class="header__menu-item">team</a>
-						<a href="#" class="header__menu-item">login</a>
+						<a href="#" class="header__menu-item" data-aos="zoom-in">home</a>
+						<a href="#" class="header__menu-item" data-aos="zoom-in">
+							arbitration
+						</a>
+						<a href="#" class="header__menu-item" data-aos="zoom-in">
+							cryptocurrencies
+						</a>
+						<a href="#" class="header__menu-item" data-aos="zoom-in">
+							exchanges
+						</a>
+						<a href="#" class="header__menu-item" data-aos="zoom-in">bot</a>
+						<a href="#" class="header__menu-item" data-aos="zoom-in">faq</a>
+						<a href="#" class="header__menu-item" data-aos="zoom-in">team</a>
+						<a href="#" class="header__menu-item" data-aos="zoom-in">login</a>
 					</nav>
 
 					<div class="header__plug"></div>
 
-					<div class="header__hamburger">
+					<div class="header__hamburger" data-aos="zoom-in">
 						<div class="header__hamburger-coub"></div>
 						<div class="header__hamburger-coub"></div>
 						<div class="header__hamburger-coub"></div>
@@ -80,7 +83,11 @@
 				</div>
 			</header>
 
-			<div class="container main__container">
+			<div
+				class="container main__container"
+				data-aos="fade-right"
+				data-aos-delay="300"
+			>
 				<nav class="breadcrumbs">
 					<a href="index.html" class="breadcrumbs__item">Главная</a>
 					<span class="breadcrumbs__item">Контакты</span>
@@ -91,7 +98,7 @@
 				</h1>
 			</div>
 
-			<div class="social-links">
+			<div class="social-links" data-aos="fade-right">
 				<a href="#" class="social-links__item">
 					<img src="img/icons/telegram.png" alt="Telegram" />
 				</a>
@@ -110,7 +117,7 @@
 		<section class="contacts">
 			<div class="container">
 				<div class="contacts-inner">
-					<div class="contacts-item">
+					<div class="contacts-item" data-aos="zoom-in-up">
 						<div class="contacts-item__img">
 							<img src="img/contacts/1.png" alt="Картинка" />
 						</div>
@@ -119,7 +126,7 @@
 							+ 38 093 45 36
 						</a>
 					</div>
-					<div class="contacts-item">
+					<div class="contacts-item" data-aos="zoom-in-up">
 						<div class="contacts-item__img">
 							<img src="img/contacts/2.png" alt="Картинка" />
 						</div>
@@ -132,7 +139,7 @@
 							share@gmail.com
 						</a>
 					</div>
-					<div class="contacts-item">
+					<div class="contacts-item" data-aos="zoom-in-up">
 						<div class="contacts-item__img">
 							<img src="img/contacts/3.png" alt="Картинка" />
 						</div>
@@ -180,6 +187,6 @@
 			</div>
 		</footer>
 
-		<script src="libs/aos.js"></script>
+		<script src="libs/aos/aos.js"></script>
 	</body>
 </html>

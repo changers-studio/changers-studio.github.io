@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Share financial group | Main page</title>
+		<title>Share financial group | About us</title>
 
 		<meta
 			name="viewport"
@@ -31,6 +31,7 @@
 		<link rel="stylesheet" href="css/reset.css" />
 
 		<!-- libs css -->
+		<link rel="stylesheet" href="libs/aos/aos.css" />
 		<link rel="stylesheet" href="libs/slick-carousel/slick.css" />
 		<link rel="stylesheet" href="libs/slick-carousel/slick-theme.css" />
 
@@ -54,24 +55,31 @@
 						src="img/logo.png"
 						alt="Share financial group"
 						class="header__logo"
+						data-aos="zoom-in"
 					/>
 
 					<nav class="header__menu">
 						<button class="header__menu-close"></button>
 
-						<a href="#" class="header__menu-item">home</a>
-						<a href="#" class="header__menu-item">arbitration</a>
-						<a href="#" class="header__menu-item">cryptocurrencies</a>
-						<a href="#" class="header__menu-item">exchanges</a>
-						<a href="#" class="header__menu-item">bot</a>
-						<a href="#" class="header__menu-item">faq</a>
-						<a href="#" class="header__menu-item">team</a>
-						<a href="#" class="header__menu-item">login</a>
+						<a href="#" class="header__menu-item" data-aos="zoom-in">home</a>
+						<a href="#" class="header__menu-item" data-aos="zoom-in">
+							arbitration
+						</a>
+						<a href="#" class="header__menu-item" data-aos="zoom-in">
+							cryptocurrencies
+						</a>
+						<a href="#" class="header__menu-item" data-aos="zoom-in">
+							exchanges
+						</a>
+						<a href="#" class="header__menu-item" data-aos="zoom-in">bot</a>
+						<a href="#" class="header__menu-item" data-aos="zoom-in">faq</a>
+						<a href="#" class="header__menu-item" data-aos="zoom-in">team</a>
+						<a href="#" class="header__menu-item" data-aos="zoom-in">login</a>
 					</nav>
 
 					<div class="header__plug"></div>
 
-					<div class="header__hamburger">
+					<div class="header__hamburger" data-aos="zoom-in">
 						<div class="header__hamburger-coub"></div>
 						<div class="header__hamburger-coub"></div>
 						<div class="header__hamburger-coub"></div>
@@ -80,7 +88,11 @@
 				</div>
 			</header>
 
-			<div class="container main__container">
+			<div
+				class="container main__container"
+				data-aos="fade-right"
+				data-aos-delay="300"
+			>
 				<nav class="breadcrumbs">
 					<a href="index.html" class="breadcrumbs__item">Главная</a>
 					<span class="breadcrumbs__item">О компании</span>
@@ -112,63 +124,60 @@
 
 		<section class="industries">
 			<div class="container">
-				<p class="industries__caption-2 h2">Industries</p>
-				<h2 class="industries__title-2 h3">
+				<p class="industries__caption h2" data-aos="fade-up">Industries</p>
+				<h2 class="industries__title h3" data-aos="fade-up">
 					Fusce eu mauris ac dolor ultricies sodales
 				</h2>
 				<div class="industries-inner">
-					<div class="industries-col">
-						<p class="industries__text-2 _bold">
+					<div class="industries-col" data-aos="fade-right">
+						<p class="industries__text _bold">
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 							accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
 							quae ab illo inventore veritatis et quasi architecto beatae vitae
 							dicta sunt explicabo.
 						</p>
-						<p class="industries__text-2">
+						<p class="industries__text">
 							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
 							aut fugit, sed quia consequuntur magni dolores eos qui ratione
 							voluptatem sequi nesciunt.
 						</p>
-						<p class="industries__text-2">
+						<p class="industries__text">
 							Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
 							consectetur, adipisci velit, sed quia non numquam eius modi
 							tempora incidunt ut labore et dolore magnam aliquam
 						</p>
 					</div>
-					<div class="industries-col">
-						<p class="industries__text-2">
-							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-							aut fugit, sed quia consequuntur magni dolores eos qui ratione
-							voluptatem sequi nesciunt.
-						</p>
-						<p class="industries__text-2 _bold">
-							Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-							consectetur, adipisci velit, sed quia non numquam eius modi
-							tempora incidunt ut labore et dolore magnam aliquam quaerat
-							voluptatem.
-						</p>
-						<a href="#" class="industries__btn">
+					<div
+						class="industries-col"
+						data-aos="fade-right"
+						data-aos-delay="200"
+					>
+						<div>
+							<p class="industries__text">
+								Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+								aut fugit, sed quia consequuntur magni dolores eos qui ratione
+								voluptatem sequi nesciunt.
+							</p>
+							<p class="industries__text _bold">
+								Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+								consectetur, adipisci velit, sed quia non numquam eius modi
+								tempora incidunt ut labore et dolore magnam aliquam quaerat
+								voluptatem.
+							</p>
+						</div>
+
+						<a href="#" class="industries__button button">
 							<span>Регистрация</span>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="50"
-								height="10"
-								viewBox="0 0 50 10"
-							>
-								<g>
-									<g><path fill="#fff" d="M0 5V4h48v1z" /></g>
-									<g><path fill="#fff" d="M40 .003L49.993 5 40 9.996z" /></g>
-								</g>
-							</svg>
 						</a>
 					</div>
 				</div>
 			</div>
 		</section>
+
 		<section class="features">
 			<div class="container">
 				<div class="features-inner">
-					<div class="features-item">
+					<div class="features-item" data-aos="fade-up">
 						<div class="features-item__img">
 							<img src="img/about/features/1.png" alt="Картинка" />
 						</div>
@@ -179,7 +188,8 @@
 							nisl rhoncus justo, rutrum ornare est quam in eros.
 						</p>
 					</div>
-					<div class="features-item">
+
+					<div class="features-item" data-aos="fade-up">
 						<div class="features-item__img">
 							<img src="img/about/features/2.png" alt="Картинка" />
 						</div>
@@ -190,7 +200,8 @@
 							venenatis lobortis, tortor tellus dictum dolor, nec consequat nisl
 						</p>
 					</div>
-					<div class="features-item">
+
+					<div class="features-item" data-aos="fade-up">
 						<div class="features-item__img">
 							<img src="img/about/features/3.png" alt="Картинка" />
 						</div>
@@ -201,7 +212,8 @@
 							foresee the pain and trouble that are bound to ensue; and equal
 						</p>
 					</div>
-					<div class="features-item">
+
+					<div class="features-item" data-aos="fade-up">
 						<div class="features-item__img">
 							<img src="img/about/features/4.png" alt="Картинка" />
 						</div>
@@ -215,69 +227,55 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="registration">
 			<div class="container">
 				<div class="registration-inner">
 					<div class="registration-content">
-						<p class="registration__caption">регистрация</p>
-						<h2 class="registration__title">
-							Et harum quidem rerum facilis est et
+						<h2 class="registration__caption h2" data-aos="fade-right">
+							регистрация
 						</h2>
-						<p class="registration__text">
+						<h3 class="registration__title h3" data-aos="fade-right">
+							Et harum quidem rerum facilis est et
+						</h3>
+						<p class="registration__text" data-aos="fade-right">
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 							accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
 							quae ab illo inventore veritatis et quasi architecto beatae vitae
 							dicta sunt explicabo.
 						</p>
-						<p class="registration__text">
+						<p class="registration__text" data-aos="fade-right">
 							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
 							aut fugit, sed quia consequuntur magni dolores eos qui ratione
 							voluptatem sequi nesciunt.
 						</p>
-						<p class="registration__text">
+						<p class="registration__text" data-aos="fade-right">
 							Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
 							consectetur, adipisci velit, sed quia non num
 						</p>
-						<a href="#" class="registration__btn">
-							<span>Читать далее</span>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="50"
-								height="10"
-								viewBox="0 0 50 10"
-							>
-								<g>
-									<g><path fill="#fff" d="M0 5V4h48v1z" /></g>
-									<g><path fill="#fff" d="M40 .003L49.993 5 40 9.996z" /></g>
-								</g>
-							</svg>
-						</a>
+
+						<div data-aos="fade-right">
+							<a href="#" class="registration__btn button _transparent">
+								<span>Читать далее</span>
+							</a>
+						</div>
 					</div>
+
 					<div class="registration-img">
-						<img src="img/about/cert.jpg" alt="Сертификат" />
+						<img src="img/about/cert.jpg" alt="Сертификат" data-aos="zoom-in" />
 					</div>
-					<a href="#" class="registration__btn _clone">
-						<span>Читать далее</span>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="50"
-							height="10"
-							viewBox="0 0 50 10"
-						>
-							<g>
-								<g><path fill="#fff" d="M0 5V4h48v1z" /></g>
-								<g><path fill="#fff" d="M40 .003L49.993 5 40 9.996z" /></g>
-							</g>
-						</svg>
-					</a>
 				</div>
 			</div>
 		</section>
+
 		<section class="team">
 			<div class="container">
-				<p class="team__caption">Команда</p>
-				<h2 class="team__title">quidem rerum</h2>
-				<div class="team-slider__wrapper">
+				<h2 class="team__caption h2 text-center" data-aos="fade-up">Команда</h2>
+				<h3 class="team__title h3 text-center" data-aos="fade-up">
+					quidem rerum
+				</h3>
+
+				<div class="team-slider__wrapper" data-aos="fade-up">
 					<div class="team-slider">
 						<div class="team-slide">
 							<div class="team-item">
@@ -351,43 +349,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="team-mob">
-					<div class="team-slide">
-						<div class="team-item">
-							<div class="team-item__img">
-								<img src="img/about/team/1.jpg" alt="Картинка" />
-							</div>
-							<p class="team-item__name">William</p>
-							<p class="team-item__text">
-								We support you in making your vision a reality and make your
-								digital
-							</p>
-						</div>
-					</div>
-					<div class="team-slide">
-						<div class="team-item">
-							<div class="team-item__img">
-								<img src="img/about/team/2.jpg" alt="Картинка" />
-							</div>
-							<p class="team-item__name">Alexander</p>
-							<p class="team-item__text">
-								At vero eos et accusamus et iusto odio dignissimos ducimus qui
-							</p>
-						</div>
-					</div>
-					<div class="team-slide">
-						<div class="team-item">
-							<div class="team-item__img">
-								<img src="img/about/team/3.jpg" alt="Картинка" />
-							</div>
-							<p class="team-item__name">Daniel</p>
-							<p class="team-item__text">
-								In a free hour, when our power of choice is untrammelled and
-								when
-							</p>
-						</div>
-					</div>
-				</div>
 			</div>
 		</section>
 
@@ -421,6 +382,6 @@
 				</div>
 			</div>
 		</footer>
-		<script src="libs/aos.js"></script>
+		<script src="libs/aos/aos.js"></script>
 	</body>
 </html>

@@ -78,7 +78,12 @@ if ($('*').is('.team-slider')) {
 			{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 1,
+					centerMode: true,
+					variableWidth: true,
+					arrows: false,
+					slidesToShow: 3,
+					autoplay: true,
+					autoplaySpeed: 3000,
 				},
 			},
 		],
