@@ -38,9 +38,6 @@
 
 	// Цель и миссия 
 	.target
-		&__image
-			right: 100px
-			max-width: 680px
 		&__title
 			font-size: 20px
 		&__subtitle
@@ -140,8 +137,8 @@
 
 	// Хлебные крошки
 	.breadcrumbs
-		a:hover::before
-			width: calc(100% - 10px)
+		a::before
+			display: none
 		&__item
 			font-size: 16px
 			padding-right: 10px
@@ -242,12 +239,13 @@
 	// Цель и миссия 
 	.target
 		padding: 50px 0
+		background-image: none
 		&__image
-			right: 0
-			max-width: 100%
-			width: auto
+			display: flex
 			&-container
+				display: flex
 				order: 1
+				padding: 0
 		&__wrapper
 			margin-bottom: 40px
 			padding: 0
@@ -433,47 +431,33 @@
 			position: relative
 			&::before
 				content: ''
-				width: 240px
+				width: 120px
 				height: 240px
 				position: absolute
 				z-index: -1
-				right: -140px   
+				right: 0px   
 				top: 200px 
-				background: url(../img/icons/circle.svg) center/cover no-repeat
+				background-image: url(../img/icons/circle.svg)
+				background-position: left center
+				background-size: cover
 				opacity: 0.16
 			&::after
 				content: ''
-				width: 240px
+				width: 120px
 				height: 240px
 				position: absolute
 				z-index: -1
-				left: -150px   
+				left: 0px   
 				bottom: 350px 
-				background: url(../img/icons/circle.svg) center/cover no-repeat
+				background-image: url(../img/icons/circle.svg)
+				background-position: right center
+				background-size: cover
 				opacity: 0.16
 			&-inner 
 				flex-wrap: wrap
 				position: relative
-				&::before
-					content: ''
-					width: 200px
-					height: 200px
-					opacity: 0.37
-					position: absolute
-					left: -70px
-					top: 186px
-					
-					background: url(../img/icons/arrow.svg) center/cover no-repeat
-				&::after
-					content: ''
-					width: 200px
-					height: 200px
-					opacity: 0.37
-					position: absolute
-					left: -40px
-					bottom: 0
-					
-					background: url(../img/icons/arrow.svg) center/cover no-repeat
+				&::before, &::after
+					display: none
 			&-item 
 				flex: 0 0 100%
 				margin-bottom: 50px

@@ -20,7 +20,7 @@ toggleSidebar.on('click', function () {
 	hamburger.toggleClass('_active')
 	sidebar.toggleClass('_visible')
 	plug.toggleClass('_visible')
-	body.toggleClass('scroll_disable')
+	body.toggleClass('scroll_disabled')
 })
 
 // Sliders

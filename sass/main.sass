@@ -192,6 +192,7 @@ section
 // Шапка
 .header
 	padding: 40px 0 0
+	z-index: 3
 	&__container
 		display: flex
 		align-items: center
@@ -266,6 +267,7 @@ section
 	height: 750px
 	color: #fff
 	padding: 0
+	background-color: #0a1215
 	&::before
 		content: ''
 		width: 100%
@@ -274,8 +276,8 @@ section
 		left: 0
 		top: 0
 		background-color: #000
-		z-index: -1
 		opacity: 0.5
+		z-index: 2
 	&__video
 		position: absolute
 		left: 0
@@ -285,7 +287,6 @@ section
 		overflow: hidden
 		width: 100%
 		height: 100%
-		z-index: -2
 		video
 			position: absolute
 			left: 0
@@ -298,6 +299,8 @@ section
 		align-items: flex-start
 		flex-direction: column
 		justify-content: center
+		position: relative
+		z-index: 3
 	&__title
 		font-size: 85px
 		font-weight: 300
@@ -407,20 +410,22 @@ section
 
 // Цель и миссия 
 .target
-	background-color: #0a1215
+	background-color: #000
+	background-image: url('../img/main/target__bg.jpg')
+	background-size: cover
+	background-position: center
 	color: #fff
 	padding: 0
 	&__container
 		align-items: center
 	&__image
 		max-width: none
-		max-height: none
-		position: relative
-		right: 70px
+		width: 100%
+		display: none
 		&-container
-			display: flex
 			align-items: center
 			justify-content: center
+			position: relative
 	&__wrapper
 		text-align: right
 		display: flex
@@ -440,6 +445,7 @@ section
 // Призыв
 .appeal
 	padding: 60px 0
+	background-color: #0a1215
 	&::before
 		content: ''
 		width: 100%
@@ -448,7 +454,7 @@ section
 		left: 0
 		top: 0
 		background-color: #000
-		z-index: -1
+		z-index: 2
 		opacity: 0.5
 	&__video
 		position: absolute
@@ -457,7 +463,6 @@ section
 		right: 0
 		top: 0
 		overflow: hidden
-		z-index: -2
 		width: 100%
 		height: 100%
 		video
@@ -477,6 +482,8 @@ section
 		color: #fff
 		padding: 15px
 		line-height: 1.1
+		z-index: 3
+		position: relative
 // eof
 
 
@@ -507,19 +514,23 @@ section
 // eof
 
 
-
 // Слайдер
 .slider
 	padding: 70px 0
 	background-image: url('../img/main/slider__bg.jpg')
+	background-color: #0a1215
 	background-position: center
 	&__item
 		margin: 0 5px
+		&:hover
+			.slider__image
+				background-size: 120% 120%
 	&__image
 		width: 100%
 		height: 250px
-		background-size: cover
 		background-position: center
+		transition: .3s ease
+		background-size: 100% 100%
 	&__caption
 		text-align: center
 		margin-top: 20px
@@ -595,6 +606,7 @@ section
 // Welcome
 .welcome
 	background-image: url('../img/main/welcome__bg.jpg')
+	background-color: #0a1215
 	background-position: center
 	background-size: cover
 	color: #fff
@@ -645,7 +657,7 @@ section
 		width: 60px
 		height: 60px
 		border-radius: 50%
-		background-color: #5f666b
+		background-color: $gold
 		font-size: 16px
 		color: #fff
 		display: flex
@@ -716,6 +728,8 @@ section
 
 	.main
 		background-image: url('../img/about/main__bg.jpg')
+		background-position: center
+		background-size: cover
 	
 	.industries
 		background: url(../img/about/1.png)center/cover no-repeat
@@ -907,6 +921,8 @@ section
 
 	.main
 		background-image: url('../img/marketing/main__bg.jpg')
+		background-size: cover
+		background-position: center
 
 	.industries
 		background-image: url('../img/marketing/industries__bg.jpg')
@@ -1256,12 +1272,36 @@ section
 
 // Страницы входа и регистрации
 .sign
-	background-image: url('../img/sign/bg.jpg')
 	min-height: 100vh
 	display: flex
 	align-items: center
 	justify-content: center
 	color: #fff
+	&::before
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		background-color: #000
+		opacity: 0.5
+		z-index: 2
+	&__video
+		position: absolute
+		left: 0
+		bottom: 0
+		right: 0
+		top: 0
+		overflow: hidden
+		width: 100%
+		height: 100%
+		video
+			position: absolute
+			left: 0
+			bottom: 0
+			right: 0
+			top: 0
 	&__form
 		background-color: #0f1215
 		width: 100%
@@ -1271,6 +1311,8 @@ section
 		border-radius: 15px
 		display: flex
 		flex-direction: column
+		position: relative
+		z-index: 3
 	&__logo
 		align-self: center
 		margin-bottom: 25px
