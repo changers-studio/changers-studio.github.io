@@ -1,10 +1,13 @@
 @import vars
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1430px)
+@media only screen and (max-width : 1530px)
 	
 	// Главный экран
 	.main
+		&__video
+			video
+				width: auto
 		.social-links
 			width: 70px
 	// eof
@@ -17,7 +20,13 @@
 		&__slide
 			width: 700px
 			&-inner
-				transform: scale(0.85)
+				transform: scale(0.85) translate(0, -15%)
+		.slick
+			&-prev
+				left: 752px
+			&-next
+				right: auto
+				left: 802px
 		&__image
 			height: 400px
 		&__heading
@@ -30,14 +39,22 @@
 	// Цель и миссия 
 	.target
 		&__image
-			right: 40px
-			max-width: 125%
+			right: 100px
+			max-width: 680px
 		&__title
 			font-size: 20px
 		&__subtitle
 			font-size: 36px
 		&__text
 			font-size: 16px
+	// eof
+
+
+	// Актуальность
+	.relevance
+		&__text
+			font-size: 16px
+			max-width: 450px
 	// eof
 
 
@@ -50,7 +67,7 @@
 	// eof
 
 
-	// About page
+	// Страница о нас
 	.p-about
 		.features
       &-inner 
@@ -66,7 +83,7 @@
 	// eof
 
 
-	// Marketing page
+	// Страница маркетинг
 	.p-marketing
 		.about
 			&__wrapper
@@ -123,6 +140,8 @@
 
 	// Хлебные крошки
 	.breadcrumbs
+		a:hover::before
+			width: calc(100% - 10px)
 		&__item
 			font-size: 16px
 			padding-right: 10px
@@ -166,6 +185,11 @@
 	// Главный экран
 	.main 
 		height: 550px
+		&__video 
+			video
+				top: 0
+				right: 0
+				width: auto
 		.social-links
 			display: none
 		&__container
@@ -183,9 +207,20 @@
 	.industries
 		&__slider
 			margin-left: 0
+			padding-top: 70px
 			&-container
 				max-width: 100%
 				padding: 0 15px
+		.slick
+			&-arrow
+				bottom: auto
+				top: 0
+			&-prev
+				left: auto
+				right: 60px
+			&-next
+				right: 0
+				left: auto
 		&__slide
 			width: auto
 			&-bottom
@@ -206,6 +241,7 @@
 
 	// Цель и миссия 
 	.target
+		padding: 50px 0
 		&__image
 			right: 0
 			max-width: 100%
@@ -214,6 +250,7 @@
 				order: 1
 		&__wrapper
 			margin-bottom: 40px
+			padding: 0
 		&__title
 			font-size: 16px
 		&__subtitle
@@ -229,6 +266,9 @@
 	// Призыв
 	.appeal
 		padding: 30px 0
+		&__video
+			video
+				width: auto
 		&__title
 			padding: 25px 15px
 	// eof
@@ -250,17 +290,13 @@
 	// Слайдер
 	.slider
 		&__container
-			padding-top: 90px
+			padding-top: 70px
 		&__image
 			height: 200px
 		&__caption
 			font-size: 18px
 		.slick
-			&-arrow
-				transform: none
-				top: 0
 			&-prev
-				right: 75px
 				left: auto
 				margin-right: 0
 			&-next
@@ -273,8 +309,10 @@
 		&-arrow
 			transform: none
 			top: 0
+			width: 50px
+			height: 50px
 		&-prev
-			right: 75px
+			right: 60px
 			left: auto
 			margin-right: 0
 		&-next
@@ -285,9 +323,12 @@
 
 	// Актуальность
 	.relevance
-		padding-right: 20%
+		padding: 40px 0
+		&__text
+			font-size: 14px
+			max-width: 500px
+			width: 60%
 	// eof
-
 
 	// Welcome
 	.welcome
@@ -311,7 +352,7 @@
 	// eof
 
 
-	// About page
+	// Страница о нас
 	.p-about
 
 		.industries
@@ -443,7 +484,7 @@
 	// eof
 
 
-	// Marketing page
+	// Страница маркетинг
 	.p-marketing
 
 		.industries
@@ -540,6 +581,18 @@
 	.industries
 		&__image
 			height: 200px
+	// eof
+
+
+	// Страницы входа и регистрации
+	.sign
+		&__form
+			max-width: calc(100% - 30px)
+			padding: 20px 15px
+		&__logo
+			width: 140px
+		&__heading-text
+			font-size: 16px
 	// eof
 
 

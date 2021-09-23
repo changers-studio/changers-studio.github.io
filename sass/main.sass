@@ -4,9 +4,66 @@
 
 
 ::placeholder
-	color: #CAC8C8
-	font-size: 16px
+	color: #676767
+	font-size: 18px
 	font-family: $default-font
+
+input
+	border: 1px solid #e8d789
+	font-size: 18px
+	color: #fff
+	border-radius: 10px
+	width: 100%
+	padding: 12px 25px
+	background: none
+
+.checkbox
+	display: flex
+	margin-bottom: 10px
+	cursor: pointer
+	&__input
+		width: 18px
+		height: 18px
+		margin: 0
+		cursor: pointer
+		appearance: none
+		position: relative
+		visibility: hidden
+		padding: 0
+		&::before, &::after
+			visibility: visible
+		&::before
+			content: ''
+			border: 1px solid #a79c5e
+			width: 100%
+			height: 100%
+			position: absolute
+			left: 0
+			top: 0
+			border-radius: 0
+			transition: .2s ease
+		&::after
+			content: '✔'
+			font-family: fontawesome
+			font-size: 24px
+			color: #a79c5e
+			opacity: 0
+			position: absolute
+			left: 50%
+			bottom: 0
+			transform: translate(-40%, 0)
+			transition: .2s ease
+		&:checked
+			&::after
+				opacity: 1
+	&__text
+		font-style: italic
+		color: #fff
+		font-size: 14px
+		margin-left: 15px
+		a
+			color: #c7ad69
+	
 
 
 body
@@ -21,6 +78,7 @@ body
 
 section
 	padding: 100px 0
+
 
 .h2
 	font-size: 24px
@@ -101,6 +159,18 @@ section
 // Хлебные крошки
 .breadcrumbs
 	margin-bottom: 25px
+	a
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			bottom: 0
+			width: 0
+			height: 1px
+			background-color: #fff
+			transition: .3s ease
+		&:hover::before
+			width: calc(100% - 20px)
 	&__item
 		font-size: 24px
 		padding-right: 20px
@@ -110,7 +180,7 @@ section
 			content: '/'
 			position: absolute
 			right: 0
-			transform: translate(50%, 0)
+			transform: translate(80%, 0)
 		&:last-child
 			margin-right: 0
 			padding-right: 0
@@ -193,12 +263,35 @@ section
 
 // Главный экран
 .main
-	background-image: url('../img/main/main-screen__bg.jpg')
-	background-size: cover
-	background-position: center
 	height: 750px
 	color: #fff
 	padding: 0
+	&::before
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		background-color: #000
+		z-index: -1
+		opacity: 0.5
+	&__video
+		position: absolute
+		left: 0
+		bottom: 0
+		right: 0
+		top: 0
+		overflow: hidden
+		width: 100%
+		height: 100%
+		z-index: -2
+		video
+			position: absolute
+			left: 0
+			bottom: 0
+			right: 0
+			width: 100%
 	&__container
 		height: calc(100% - 127px)
 		display: flex
@@ -235,8 +328,16 @@ section
 		justify-content: center
 		&__item
 			margin-bottom: 35px
+			svg
+				width: 30px
+				height: 30px
+				path
+					transition: .2s
 			&:last-child
 				margin: 0
+			&:hover
+				svg path 
+					fill: $gold
 // eof
 
 
@@ -245,6 +346,25 @@ section
 	background-image: url('../img/industries/bg.jpg')
 	background-size: cover
 	background-position: center
+	.slick
+		&-arrow
+			border-color: #4e545a
+			top: auto
+			bottom: 0
+			transform: none
+			&::after
+				background-color: #4e545a
+			&::before
+				color: #020e16
+			&:hover::before
+				color: #fff
+		&-disabled
+			opacity: 0.5
+		&-prev
+			left: 1013px
+		&-next
+			right: auto
+			left: 1063px
 	&__slider
 		margin-left: calc(100vw - 1200px - ((100vw - 1200px)/2))
 		&-container
@@ -253,13 +373,13 @@ section
 	&__slide
 		width: 900px
 		&-inner
-			transform: scale(0.75)
-			transition: .5s
+			transform: scale(0.75) translate(0, -25%)
+			transition: .5s ease-in-out
 			width: 100%
 		&-bottom
 			display: flex
 			justify-content: space-between
-			align-items: center
+			align-items: flex-end
 		&.slick-active
 			.industries__slide-inner
 				transform: scale(1)
@@ -289,11 +409,12 @@ section
 .target
 	background-color: #0a1215
 	color: #fff
+	padding: 0
 	&__container
 		align-items: center
 	&__image
 		max-width: none
-		max-height: auto
+		max-height: none
 		position: relative
 		right: 70px
 		&-container
@@ -305,6 +426,7 @@ section
 		display: flex
 		flex-direction: column
 		align-items: flex-end
+		padding: 100px 0
 	&__text
 		font-size: 21px
 		margin-bottom: 60px
@@ -317,10 +439,32 @@ section
 
 // Призыв
 .appeal
-	background-image: url('../img/main/appeal-1__bg.jpg')
-	background-size: cover
-	background-position: center
 	padding: 60px 0
+	&::before
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		background-color: #000
+		z-index: -1
+		opacity: 0.5
+	&__video
+		position: absolute
+		left: 0
+		bottom: 0
+		right: 0
+		top: 0
+		overflow: hidden
+		z-index: -2
+		width: 100%
+		height: 100%
+		video
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
 	&__title
 		max-width: 900px
 		width: 100%
@@ -381,14 +525,6 @@ section
 		margin-top: 20px
 		color: #fff
 		font-size: 21px
-	.slick
-		&-prev
-			right: 100%
-			left: auto
-			margin-right: 25px
-		&-next
-			left: 100%
-			margin-left: 25px
 // eof
 
 
@@ -397,34 +533,52 @@ section
 	&-arrow
 		width: 60px
 		height: 60px
-		border: 1px solid $accent
+		border: 2px solid $accent
 		border-radius: 50%
 		transition: .3s ease
+		&::after
+			content: ''
+			width: 0
+			height: 0
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			background-color: $accent
+			border-radius: 50%
+			transition: .3s ease
+			z-index: 2
 		&::before
 			opacity: 1
 			font-size: 14px
 			transition: .3s ease
+			z-index: 3
+			position: relative
+		&:hover
+			color: #fff
+			&::after
+				width: calc(100% + 2px)
+				height: calc(100% + 2px)
 	&-disabled
 		border-color: #5f666b
 		&::before
 			opacity: 1!important
+		&::after
+			background-color: #5f666b
 	&-prev
 		z-index: 3
+		right: 100%
+		left: auto
+		margin-right: 25px
 		&::before
 			content: '\f053'
 			font-family: fontawesome
 	&-next
+		left: 100%
+		margin-left: 25px
 		&::before
 			content: '\f054'
 			font-family: fontawesome
-.slick
-	&-prev
-		right: 100%
-		left: auto
-		margin-right: 25px
-	&-next
-		left: 100%
-		margin-left: 25px
 // eof
 
 
@@ -433,7 +587,6 @@ section
 	background-image: url('../img/main/relevance__bg.jpg')
 	background-position: center
 	background-size: cover
-	padding: 80px 0
 	&__text
 		font-size: 21px
 // eof
@@ -474,8 +627,16 @@ section
 		margin-right: 170px
 		&__item
 			margin-right: 30px 
+			svg
+				width: 30px
+				height: 30px
+				path
+					transition: .2s
 			&:last-child
 				margin-right: 0
+			&:hover
+				svg path 
+					fill: $gold
 	&__wrapper
 		display: flex
 		justify-content: flex-end
@@ -518,6 +679,9 @@ section
 	
 	.main
 		height: 600px
+		background-image: url('../img/contacts/main__bg.jpg')
+		background-size: cover
+		background-position: center
 	
 	.contacts
 		background: url('../img/contacts/bg.png') 
@@ -547,7 +711,7 @@ section
 // eof
 
 
-// About page
+// Страница о нас
 .p-about
 
 	.main
@@ -738,7 +902,7 @@ section
 // eof
 
 
-// Marketing page
+// Страница маркетинг
 .p-marketing
 
 	.main
@@ -1090,11 +1254,140 @@ section
 // eof
 
 
-
-
-
-
-
+// Страницы входа и регистрации
+.sign
+	background-image: url('../img/sign/bg.jpg')
+	min-height: 100vh
+	display: flex
+	align-items: center
+	justify-content: center
+	color: #fff
+	&__form
+		background-color: #0f1215
+		width: 100%
+		max-width: 450px
+		padding: 30px 40px
+		border: 1px solid #e8d789
+		border-radius: 15px
+		display: flex
+		flex-direction: column
+	&__logo
+		align-self: center
+		margin-bottom: 25px
+	&__heading
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 25px
+		cursor: pointer
+		&-text
+			text-transform: uppercase
+			font-size: 21px
+			font-weight: 700
+	.lang
+		position: relative
+		flex: 0 0 auto
+		&__heading
+			display: flex
+			border: 1px solid #e8d789
+			border-radius: 3px
+			transition: .3s ease
+			.lang__item
+				border-right: 1px solid #e8d789
+			&::after
+				content: '\f0d7'
+				font-family: fontawesome
+				font-size: 10px
+				width: 20px
+				height: 15px
+				display: flex
+				align-items: center
+				justify-content: center
+				color: $accent
+				transition: .3s ease
+			&.active
+				border-radius: 3px 3px 0 0
+				&::after
+					transform: rotate(180deg)
+		&__dropdown
+			display: none
+			width: 100%
+			position: absolute
+			top: 100%
+			left: 0
+			background-color: #0f1215
+			border: 
+				bottom: 1px solid #e8d789
+				right: 1px solid #e8d789
+				left: 1px solid #e8d789
+			padding-bottom: 10px
+			border-radius: 0 0 3px 3px
+			.lang__item
+				display: flex
+				margin: 10px auto 0
+				border-radius: 2px
+		&__item
+			width: 30px
+			height: 15px
+			background-position: center
+			background-size: cover
+	&__input
+		margin-bottom: 20px
+	&__text, &__link
+		font-style: italic
+		color: #fff
+		font-size: 14px
+		a
+			color: #c7ad69
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	&__link
+		margin-top: 5px
+	.forgot-password
+		&::before
+			display: inline-block
+			content: ''
+			background-image: url('../img/icons/lock.png')
+			width: 17px
+			height: 19px
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center
+			margin-right: 5px
+			position: relative
+			top: 2px
+	&__link
+	&__button
+		align-self: center
+		margin-top: 10px
+		color: $black
+		text-transform: uppercase
+		border-color: #fff
+		background: linear-gradient( 90deg, rgb(216,200,129) 0%, rgb(183,148,83) 100%)
+		font-weight: 400
+		width: 100%
+		font-size: 21px
+		margin-bottom: 20px
+		span::after
+			background-image: url('../img/icons/arrow_black_long.png')
+		&::before
+			background-color: #fff
+	&__wrapper
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		margin: 10px 0
+		.sign__button
+			width: 170px
+			height: 50px
+			font-size: 18px
+			margin: 0
+			span
+				&::after
+					background-image: url('../img/icons/arrow_black.png')
+					margin-left: 0
+// eof
 
 
 

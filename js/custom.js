@@ -27,7 +27,7 @@ toggleSidebar.on('click', function () {
 if ($('*').is('.industries__slider')) {
 	$('.industries__slider').slick({
 		infinite: false,
-		arrows: false,
+		arrows: true,
 		touchMove: false,
 		variableWidth: true,
 		speed: 500,
@@ -46,7 +46,7 @@ if ($('*').is('.industries__slider')) {
 
 if ($('*').is('.slider__container')) {
 	$('.slider__container').slick({
-		infinite: false,
+		infinite: true,
 		touchMove: false,
 		speed: 500,
 		slidesToShow: 3,
@@ -121,4 +121,8 @@ $('body').on('click', '.link_move', function (event) {
 	var id = $(this).attr('href'),
 		top = $(id).offset().top
 	$('body,html').animate({ scrollTop: top }, 1500)
+})
+
+$('.lang__heading').on('click', function () {
+	$(this).toggleClass('active').next().slideToggle()
 })
