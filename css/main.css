@@ -5079,6 +5079,7 @@ section {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 3;
 }
 
 .main .social-links__item {
@@ -6955,6 +6956,88 @@ section {
   margin-left: 0;
 }
 
+.p-info .main {
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.p-info .main::before {
+  opacity: 0.7;
+}
+
+.p-info .main__title {
+  font-size: 48px;
+}
+
+.p-info .main__text._full-width {
+  max-width: 100%;
+}
+
+.p-info .info__text {
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.p-info .info__text:last-child {
+  margin-bottom: 0;
+}
+
+.p-info .info__list {
+  margin-bottom: 30px;
+}
+
+.p-info .info__list-item {
+  margin-bottom: 5px;
+  font-size: 21px;
+  line-height: 1.2;
+  display: inline-block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-info .info__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.p-info .info__list-item::before {
+  content: '\f111';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 7px;
+  color: #d5c47d;
+  position: relative;
+  top: 10px;
+  margin-right: 10px;
+}
+
+.p-info .info ._bold {
+  font-weight: 700;
+}
+
+.p-info .info ._black {
+  font-weight: 800;
+}
+
+.p-info .info ._uppercase {
+  text-transform: uppercase;
+}
+
+.p-politics .main {
+  background-image: url("../img/info/politics-main__bg.jpg");
+}
+
+.p-warn .main {
+  background-image: url("../img/info/warn-main__bg.jpg");
+}
+
+.p-denial .main {
+  background-image: url("../img/info/denial-main__bg.jpg");
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1530px) {
   .main__video video {
@@ -7085,6 +7168,7 @@ section {
   }
   .header {
     padding: 15px 0;
+    z-index: 5;
   }
   .header__logo {
     width: 120px;
@@ -7113,7 +7197,7 @@ section {
     -webkit-transition: .5s ease;
     -o-transition: .5s ease;
     transition: .5s ease;
-    z-index: 5;
+    z-index: 10;
   }
   .header__menu._visible {
     right: 0;
@@ -7128,6 +7212,7 @@ section {
   }
   .header__plug {
     display: block;
+    z-index: 9;
   }
   .header__hamburger {
     display: -webkit-box;
@@ -7592,6 +7677,25 @@ section {
   .p-marketing .ranks__slide {
     width: 345px;
     padding-top: 60px;
+  }
+  .p-info .main__title {
+    font-size: 25px;
+  }
+  .p-info .info__text {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .p-info .info__list {
+    margin-bottom: 15px;
+  }
+  .p-info .info__list-item {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+  .p-info .info__list-item::before {
+    font-size: 5px;
+    margin-right: 5px;
+    top: 8px;
   }
 }
 
