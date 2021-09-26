@@ -126,3 +126,8 @@ $('body').on('click', '.link_move', function (event) {
 $('.lang__heading').on('click', function () {
 	$(this).toggleClass('active').next().slideToggle()
 })
+
+$('.faq__dropdown-heading').on('click', function () {
+	$(this).toggleClass('active').next().slideToggle()
+	$('.faq__dropdown-heading').not(this).removeClass('active').next().slideUp()
+})
