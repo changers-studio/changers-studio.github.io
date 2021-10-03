@@ -1,0 +1,1207 @@
+@import vars
+@import fonts
+@import keyframes
+@import '../libs/bootstrap-grid/bootstrap-grid'
+@import '../libs/hamburgers/hamburgers'
+
+
+::placeholder
+	color: rgba(255, 255, 255, 0.6)
+	font-size: 16px
+	font-weight: 500
+	font-family: $default-font
+
+input, textarea
+	background-color: $bg
+	border-radius: 4px
+	color: #fff
+	font-weight: 500
+	font-size: 16px
+	resize: none
+
+
+// Заголовки
+h1, h2, h3, h4, h5, h6
+	font-weight: 600
+
+.h1
+	font-size: 55px
+
+.h2
+	font-size: 50px
+	position: relative
+	display: inline-block
+	span
+		position: relative
+		display: inline-block
+		z-index: 2
+	&__underline
+		position: absolute
+		bottom: 5px
+		left: 0
+		width: 100%
+		height: auto
+		z-index: 1
+		display: flex
+		&::before
+			content: ''
+			position: absolute
+			right: 0
+			top: 0
+			width: 100%
+			height: 100%
+			display: block
+			transition: 1s ease .3s
+			background-color: #2B2B2B
+		&.animation::before
+			width: 0
+
+.h3
+	font-size: 30px
+	font-weight: 400
+
+// eof
+
+
+body
+	font-size: 16px
+	font-weight: 500
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	font-family: $default-font
+	color: #fff
+	background-color: #2B2B2B
+	overflow-x: hidden!important
+	&.scroll_disable
+		overflow-y: hidden
+
+
+// Кнопка
+.button
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	position: relative
+	text-decoration: none
+	line-height: 1
+	outline: none
+	overflow: hidden
+	cursor: pointer
+	width: 200px
+	height: 56px
+	font-size: 16px
+	font-weight: 600
+	border-radius: 4px
+	padding: 0 15px
+	border: none
+	background-color: $red
+	color: #fff
+	transition: .2s ease-in-out
+	&:focus, &:hover
+		text-decoration: none
+	&:hover
+		background-color: #E12C33
+		box-shadow: 0px 6px 20px rgba(214, 0, 0, 0.25)
+	&:active
+		background-color: #D82027
+		box-shadow: none
+// eof
+
+
+// fullpage
+.fullpage-menu
+	position: fixed
+	right: 50px
+	top: 50%
+	transform: translate(0, -50%)
+	z-index: 5
+	&.hidden
+		display: none
+	&__item
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 32px
+		height: 32px
+		margin-bottom: 16px
+		background-color: rgba(255, 255, 255, 0.1)
+		border-radius: 50%
+		transition: .3s ease
+		cursor: pointer
+		&.active
+			background-color: $red
+		&:last-child
+			margin-bottom: 0
+
+
+.section
+	background-color: #2B2B2B
+	&._bg-light
+		background-color: $bg
+		.h2__underline::before
+			background-color: $bg
+	&-inner
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		height: 100vh
+		min-height: 750px
+	&-hamburger
+		position: fixed
+		top: 50px
+		right: 50px
+		z-index: 7
+		&.hidden
+			display: none
+	&-menu
+		position: fixed
+		left: 0
+		top: 0
+		width: 100%
+		height: 0
+		background-color: #3C3B3B
+		transition: 1s ease
+		z-index: 6
+		overflow: hidden
+		display: flex
+		align-items: center
+		&.visible
+			height: 100%
+		&__list
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			&-item
+				font-size: 50px
+				margin-bottom: 25px
+				position: relative
+				color: rgba(255, 255, 255, 0.5)
+				transition: .3s ease-in-out
+				&:last-child
+					margin-bottom: 0
+				&::before
+					content: ''
+					width: 0
+					height: 1px
+					position: absolute
+					bottom: 0
+					background-color: #fff
+					transition: .3s ease-in-out
+					opacity: 0
+				&:hover
+					color: rgba(255, 255, 255, 1)
+					&::before
+						width: 100%
+						opacity: 1
+// eof
+
+
+// header
+.header
+	width: 100%
+	z-index: 4
+	background: linear-gradient(0deg, #2B2B2B, #2B2B2B), linear-gradient(180deg, #242424 0%, #323232 100%)
+	&__container
+		max-width: 1460px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 20px
+	&__langs
+		position: relative
+		img
+			border-radius: 3px
+		&-heading
+			display: flex
+			align-items: center
+			cursor: pointer
+			&::after
+				content: '\f078'
+				font-size: 10px
+				margin-left: 10px
+				font-family: fontawesome
+				transition: .3s ease
+			&.active::after
+				transform: rotate(180deg)
+		&-dropdown
+			display: none
+			position: absolute
+			left: -7px
+			top: 100%
+			background-color: #323232
+			border-radius: 4px
+			padding: 7px
+			width: 100px
+			margin-top: 15px
+		&-items
+			display: flex
+			flex-direction: column
+		&-item
+			text-transform: uppercase
+			font-weight: 600
+			font-size: 14px
+			padding: 8px
+			display: flex
+			align-items: center
+			border-radius: 4px
+			img
+				margin-right: 8px
+			&.current
+				background: linear-gradient(0deg, #2B2B2B, #2B2B2B), linear-gradient(180deg, #242424 0%, #323232 100%)
+	&__logo
+		transition: .3s ease
+		display: flex
+		&:hover
+			filter: drop-shadow(0px 0px 10px $accent)
+	&__search-menu
+		border-right: 1px solid rgba(255, 255, 255, 0.1)
+		display: flex
+		align-items: center
+		position: relative
+	&__search
+		margin-right: 30px
+		display: flex
+		align-items: center
+		justify-content: center
+		background-color: rgba(255, 255, 255, 0.1)
+		border-radius: 50%
+		width: 40px
+		height: 40px
+		cursor: pointer
+		z-index: 2
+		&::before, &::after
+			content: ''
+			width: 40px
+			height: 40px
+			background-repeat: no-repeat
+			background-position: center
+			transition: .3s ease
+			z-index: 2
+			position: absolute
+		&::before
+			background-image: url('../img/icons/search.svg')
+		&::after
+			background-image: url('../img/icons/close-search.svg')
+			opacity: 0
+		&.active
+			background-color: $bg
+			&::before
+				opacity: 0
+			&::after
+				opacity: 1
+			.header__search
+				&-input
+					width: calc(100% - 30px)
+					input
+						color: #fff
+						&::placeholder
+							opacity: 1
+							transition: .2s ease-in-out .6s
+				&-button
+					width: 48px
+					height: 100%
+					transition: opacity .2s ease-in-out 1s
+					opacity: 1
+		&-switch
+			position: absolute
+			left: 0
+			top: 0
+			width: 40px
+			height: 40px
+			z-index: 3
+		&-input
+			position: absolute
+			top: 0
+			left: 0
+			height: 100%
+			width: 0
+			transition: width .8s ease-in-out
+			overflow: hidden
+			input
+				color: $bg
+				padding: 0 50px
+				width: 100%
+				height: 100%
+				&::placeholder
+					opacity: 0
+					transition: .2s ease-in-out 0s
+		&-button
+			width: 0
+			height: 0
+			display: flex
+			align-items: center
+			justify-content: center
+			position: absolute
+			top: 50%
+			right: 30px
+			transform: translate(0, -50%)
+			opacity: 0
+			transition: .2s ease-in-out 0s
+			&::before
+				content: ''
+				width: 16px
+				height: 16px
+				background-image: url('../img/icons/search.svg')
+				background-repeat: no-repeat
+				background-size: contain
+				background-position: center
+	&__menu
+		padding: 0 30px
+		border-left: 1px solid rgba(255, 255, 255, 0.1)
+		display: flex
+		align-items: center
+		align-self: stretch
+		&-item
+			margin-right: 30px
+			text-transform: uppercase
+			font-size: 14px
+			font-weight: 600
+			transition: .3s ease-in-out
+			position: relative
+			&:last-child
+				margin-right: 0
+			&::before
+				content: ''
+				width: 0
+				height: 2px
+				background-color: $red
+				opacity: 0
+				transition: .3s ease-in-out
+				position: absolute
+				top: 100%
+			&:hover
+				color: $red
+				&::before
+					width: 100%
+					opacity: 1
+	&__contacts
+		display: flex
+		&-item
+			font-size: 14px
+			font-weight: 600
+			text-transform: uppercase
+			display: flex
+			align-items: center
+			margin-right: 25px
+			transition: .3s ease-in-out
+			&:last-child
+				margin-right: 0
+			&:hover
+				color: $red
+				.header__contacts-icon
+					background-color: $accent
+		&-icon
+			width: 32px
+			height: 32px
+			border-radius: 50%
+			display: flex
+			align-items: center
+			justify-content: center
+			background-color: rgba(255, 255, 255, 0.1)
+			margin-right: 15px
+			flex: 0 0 auto
+			transition: .3s ease-in-out
+			&::before
+				content: ''
+				width: 16px
+				height: 16px
+				background-repeat: no-repeat
+				background-size: contain
+				background-position: center
+		&-tel::before
+			background-image: url('../img/icons/phone.svg')
+		&-email::before
+			background-image: url('../img/icons/email.svg')
+	&__hamburger
+		display: none
+		transform: translate(5px, 0)
+	.sidebar
+		position: absolute
+		top: 100%
+		left: 0
+		width: 100%
+		height: 0
+		background-color: #242424
+		transition: 1s ease-in-out
+		overflow: hidden
+		&.visible
+			height: calc(100vh - 80px)
+		&-inner
+			display: flex
+			flex-direction: column
+			padding: 40px 0
+		&__container
+			height: 100%
+			max-height: 100%
+			overflow-y: auto
+		&__search
+			position: relative
+			&-input
+				padding: 8px 16px
+				width: 100%
+			&-button
+				height: 100%
+				width: 40px
+				position: absolute
+				right: 0
+				top: 0
+				display: flex
+				align-items: center
+				justify-content: center
+				&::before
+					content: ''
+					width: 16px
+					height: 16px
+					background-image: url('../img/icons/search.svg')
+					background-repeat: no-repeat
+					background-size: contain
+					background-position: center
+		&__menu
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin: 40px 0
+			padding: 30px 0
+			border: 
+				top: 1px solid rgba(255, 255, 255, 0.1)
+				bottom: 1px solid rgba(255, 255, 255, 0.1)
+			&-item
+				font-size: 14px
+				font-weight: 600
+				text-transform: uppercase
+				margin-bottom: 30px
+				&:last-child
+					margin-bottom: 0
+		&__contacts
+			display: flex
+			flex-direction: column
+			align-items: center
+			&-item
+				font-size: 14px
+				font-weight: 600
+				text-transform: uppercase
+				display: flex
+				align-items: center
+				margin-bottom: 25px
+				&:last-child
+					margin-bottom: 0
+			&-icon
+				width: 32px
+				height: 32px
+				border-radius: 50%
+				display: flex
+				align-items: center
+				justify-content: center
+				background-color: rgba(255, 255, 255, 0.1)
+				margin-right: 15px
+				&::before
+					content: ''
+					width: 16px
+					height: 16px
+					background-repeat: no-repeat
+					background-size: contain
+					background-position: center
+			&-tel::before
+				background-image: url('../img/icons/phone.svg')
+			&-email::before
+				background-image: url('../img/icons/email.svg')
+// eof
+
+
+// Главный экран
+.main-screen
+	width: 100%
+	height: 100%
+	background-size: cover
+	background-position: center
+	padding-top: 120px
+	&::before
+		content: ''
+		position: absolute
+		right: 0
+		top: 0
+		display: block
+		width: 100%
+		height: 100%
+		background: linear-gradient(90deg, #242424 0.6%, rgba(36, 36, 36, 0.6) 51.29%, rgba(36, 36, 36, 0) 70.28%)
+		animation: mainBg 4s ease infinite
+	&__container
+		z-index: 2
+		position: relative
+	&__title
+		margin-bottom: 60px
+		max-width: 900px
+		line-height: 1.3
+	&__scroll-down
+		text-transform: uppercase
+		font-size: 14px
+		font-weight: 600
+		display: flex
+		align-items: center
+		writing-mode: vertical-rl
+		white-space: nowrap
+		position: absolute
+		right: 100%
+		top: 0
+		margin-right: 60px
+		transition: .3s ease
+		cursor: pointer
+		&::before, &::after
+			content: '\f078'
+			font-family: fontawesome
+			font-size: 12px
+			animation: mainArrows 6s ease infinite
+		&::before
+			margin-bottom: 35px
+		&::after
+			margin-top: 35px
+		&:hover
+			color: $red
+// eof
+
+
+// О нас
+.about
+	&__container
+		display: flex
+		justify-content: space-between
+		width: 100%
+		margin-bottom: 40px
+		&-item
+			width: calc(50% - 25px)
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+	&__title
+		margin-bottom: 30px
+	&__box
+		padding: 40px
+		border-radius: 4px
+		background-color: $bg
+		width: 100%
+		flex: 1
+		& > *
+			max-width: 410px
+		&-text
+			transition: .3s ease
+			&:hover
+				color: $red
+	&__list
+		&-item
+			margin-bottom: 20px
+			display: flex
+			align-items: center
+			&:last-child
+				margin-bottom: 0
+			&:hover
+				.about__list
+					&-icon
+						svg
+							transform: scale(1.1)
+							path
+								fill: $red
+					&-text
+						color: $red
+		&-icon
+			margin-right: 15px
+			background-color: rgba(255, 255, 255, 0.1)
+			width: 32px
+			height: 32px
+			border-radius: 50%
+			display: flex
+			align-items: center
+			justify-content: center
+			flex: 0 0 auto
+			svg
+				transition: .3s ease
+				path
+					transition: .3s ease
+					transform: scale(1)
+		&-text
+			font-weight: 400
+			transition: .3s ease
+			._bold
+				font-weight: 600
+	&__text
+		max-width: 930px
+		position: relative
+		&.animation
+			.about__text
+				&-regular
+					opacity: 0
+				&-bold
+					opacity: 1
+		&-regular
+			font-weight: 400
+			transition: 2s ease 2s
+		&-bold
+			font-weight: 600
+			position: absolute
+			left: 0
+			top: 0
+			transition: 2s ease 4s
+			opacity: 0
+// eof
+
+
+
+// Проекты
+.projects
+	&__running-text
+		text-transform: uppercase
+		font-size: 5vw
+		position: absolute
+		top: 30%
+		transform: translate(0, -50%)
+		color: #242424
+		font-weight: 700
+		letter-spacing: 0.02em
+		font-size: 25vw
+		opacity: 0.15
+	&__top-line
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 65px
+	&__arrows
+		display: flex
+		align-items: center
+		justify-content: center
+	&__arrow
+		margin-right: 35px
+		&:last-child
+			margin-right: 0
+		&::before
+			font-family: fontawesome
+			font-size: 24px
+			color: #fff
+			transition: .3s ease
+		&:hover::before
+			color: $red
+		&.prev::before
+			content: '\f053'
+		&.next::before
+			content: '\f054'
+	&__slide
+		&-inner
+			height: 600px
+			position: relative
+			display: flex
+			align-items: flex-end
+			background-position: center
+			background-size: 100% 100%
+			transition: 1s ease-in-out
+			&::before
+				content: ''
+				width: 100%	
+				height: 100%
+				position: absolute
+				top: 0
+				left: 0
+				background-color: #242424
+				opacity: 0.6
+				transition: .5s ease
+			&:hover
+				background-size: 120% 120%
+				transition-duration: 4s
+				&::before
+					background-color: $accent
+					opacity: 0.9
+				.projects
+					&__description
+						position: absolute
+						bottom: 50%
+						transform: translate(-50%, 50%)
+						border-color: transparent
+					&__text
+						font-size: 36px
+	&__description
+		position: relative
+		left: 50%
+		bottom: 0
+		transform: translate(-50%, 0)
+		z-index: 2
+		padding: 30px 0
+		border-top: 1px solid rgba(255, 255, 255, 0.3)
+		transition: 1s ease
+		max-width: calc(100% - 60px)
+		width: 100%
+	&__text
+		font-size: 24px
+		line-height: 1.4
+		font-weight: 600
+		margin-bottom: 30px
+		transition: 1s ease
+	&__author
+		display: flex
+		align-items: center
+		&-photo
+			width: 80px
+			height: 80px
+			background-size: cover
+			background-position: center
+			border-radius: 5px
+			margin-right: 15px
+		&-wrapper
+			font-size: 20px
+			line-height: 1.4
+		&-name
+			font-weight: 600
+			margin-bottom: 10px
+		&-post
+			font-weight: 400
+// eof
+
+
+// Блог
+.blog
+	&__top-line
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 65px
+	&__arrows
+		display: flex
+		align-items: center
+		justify-content: center
+	&__arrow
+		margin-right: 35px
+		&:last-child
+			margin-right: 0
+		&::before
+			font-family: fontawesome
+			font-size: 24px
+			color: #fff
+			transition: .3s ease
+		&:hover::before
+			color: $red
+		&.prev::before
+			content: '\f053'
+		&.next::before
+			content: '\f054'
+	&__slider
+		overflow: hidden
+		.slick-list
+			width: calc(100% + 70px)
+			position: relative
+			left: -35px
+	&__slide
+		&-inner
+			margin: 0 35px
+			border-top: 1px solid rgba(255, 255, 255, 0.3)
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			&:hover
+				.blog
+					&__preview
+						background-size: 120% 120%
+					&__text
+						color: $red
+	&__date
+		font-size: 14px
+		font-weight: 600
+		margin: 25px 0
+	&__text
+		font-size: 20px
+		font-weight: 600
+		line-height: 1.4
+		margin-bottom: 25px
+		transition: .5s ease
+	&__preview
+		height: 200px
+		width: 100%
+		background-size: 100% 100%
+		background-position: center
+		transition: 2s ease
+// eof
+
+
+// Подвал
+.footer	
+	padding: 100px 0
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		position: relative
+	&__search
+		position: relative
+		&-input
+			padding: 8px 16px
+			width: 100%
+		&-button
+			height: 100%
+			width: 40px
+			position: absolute
+			right: 0
+			top: 0
+			display: flex
+			align-items: center
+			justify-content: center
+			&::before
+				content: ''
+				width: 16px
+				height: 16px
+				background-image: url('../img/icons/search.svg')
+				background-repeat: no-repeat
+				background-size: contain
+				background-position: center
+	&__menu
+		padding: 35px 0
+		margin: 35px 0
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		border: 
+			top: 1px solid rgba(255, 255, 255, .1)
+			bottom: 1px solid rgba(255, 255, 255, .1)
+		&-item
+			margin-bottom: 30px
+			font-size: 14px
+			font-weight: 600
+			text-transform: uppercase
+			position: relative
+			&:last-child
+				margin-bottom: 0
+			&::before
+				content: ''
+				width: 0
+				height: 1px
+				position: absolute
+				bottom: 0
+				background-color: #fff
+				transition: .3s ease
+				opacity: 0
+			&:hover::before
+				opacity: 1
+				width: 100%
+	&__privacy-policy
+		text-transform: uppercase
+		transition: .3s ease 
+		display: flex
+		&:hover
+			color: $red
+	&__social
+		display: flex
+		align-items: center
+		margin: 25px 0
+		&-link
+			margin-right: 15px
+			svg path
+				transition: .3s ease 
+			&:last-child
+				margin-right: 0
+			&:hover
+				svg path
+					fill: $red
+	&__author
+		white-space: nowrap
+		display: flex
+		align-items: center
+		color: rgba(255, 255, 255, 0.6)
+		margin-bottom: 25px
+		&-logo
+			margin-left: 25px
+	&__copyrights
+		color: rgba(255, 255, 255, 0.6)
+	&__scroll-up
+		text-transform: uppercase
+		font-size: 14px
+		font-weight: 600
+		display: flex
+		align-items: center
+		writing-mode: vertical-rl
+		white-space: nowrap
+		position: absolute
+		left: 100%
+		bottom: 0
+		margin-left: 60px
+		transition: .3s ease
+		cursor: pointer
+		&::before, &::after
+			content: '\f077'
+			font-family: fontawesome
+			font-size: 12px
+			animation: footerArrows 6s ease infinite
+		&::before
+			margin-bottom: 35px
+		&::after
+			margin-top: 35px
+		&:hover
+			color: $red
+	
+
+.contacts
+	width: 100%
+	width: 630px
+	&__title
+		margin-bottom: 25px
+	&__subtitle
+		margin-bottom: 25px
+	&__list
+		display: flex
+		flex-direction: column
+		position: relative
+		margin-bottom: 30px
+	&__item
+		font-size: 14px
+		font-weight: 600
+		text-transform: uppercase
+		display: flex
+		align-items: center
+		margin-bottom: 25px
+		transition: .3s ease-in-out
+		padding-right: 75px
+		&:last-child
+			margin-bottom: 0
+		&:hover
+			color: $red
+			.contacts__icon
+				background-color: $accent
+				&::before
+					transform: scale(1.1)
+	&__icon
+		width: 32px
+		height: 32px
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		background-color: rgba(255, 255, 255, 0.1)
+		margin-right: 15px
+		transition: .3s ease-in-out
+		flex: 0 0 auto
+		&::before
+			content: ''
+			width: 16px
+			height: 16px
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: center
+			transition: .3s ease-in-out
+	&__tel::before
+		background-image: url('../img/icons/phone.svg')
+	&__email::before
+		background-image: url('../img/icons/email.svg')
+	&__address::before
+		background-image: url('../img/icons/location.svg')
+	&__qr
+		position: absolute
+		bottom: 0
+		right: 0
+		transition: 1s ease 
+		&:hover
+			transform: scale(1.1)
+	&__map
+		width: 100%
+		height: 300px
+		border-radius: 4px
+// eof
+
+
+.isnohome
+	.section-inner
+		padding: 120px 0
+
+
+// Статья
+.article
+	&__preview
+		background-size: cover
+		background-position: center
+		height: 400px
+	&__date
+		font-weight: 600
+		margin-bottom: 30px
+	&__title
+		line-height: 1.2
+		font-size: 46px
+		margin-bottom: 60px
+	&__caption
+		font-size: 20px
+		margin-bottom: 25px
+	&__text
+		color: rgba(255, 255, 255, .8)
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		&-inner
+			width: calc(50% - 50px)
+		&-section
+			margin-bottom: 40px
+			&:last-child
+				margin-bottom: 0
+// eof
+
+
+// Хлебные крошки
+.breadcrumbs
+	padding-top: 50px
+	display: flex
+	min-width: 320px
+	a
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			bottom: 0
+			height: 1px
+			background-color: #fff
+			transition: .3s ease
+			width: 100%
+		&:hover::before
+			opacity: 0
+	&__item
+		font-size: 14px
+		margin-right: 30px
+		position: relative
+		font-weight: 400
+		color: #fff
+		display: flex
+		align-items: center
+		white-space: nowrap
+		&::after
+			content: '\f054'
+			font-family: fontawesome
+			position: absolute
+			left: 100%
+			font-size: 9px
+			color: rgba(255, 255, 255, 0.6)
+			width: 30px
+			display: flex
+			align-items: center
+			justify-content: center
+		&:last-child
+			margin-right: 0
+			padding-right: 0
+			&::after
+				display: none
+		&.current
+			color: rgba(255, 255, 255, 0.6)
+// eof
+
+
+// Попап
+.mfp-fade
+  &.mfp-bg
+    opacity: 0
+    -webkit-transition: all 0.35s ease-out
+    -moz-transition: all 0.35s ease-out
+    transition: all 0.35s ease-out
+
+    &.mfp-ready
+      opacity: 0.8
+
+    &.mfp-removing
+      opacity: 0
+
+  &.mfp-wrap
+    .mfp-content
+      opacity: 0
+      -webkit-transition: all 0.35s ease-out
+      -moz-transition: all 0.35s ease-out
+      transition: all 0.35s ease-out
+
+    &.mfp-ready .mfp-content
+      opacity: 1
+
+    &.mfp-removing .mfp-content
+      opacity: 0
+
+
+.callback
+	width: calc(100% - 20px)
+	max-height: 100%
+	max-width: 360px
+	padding: 40px
+	overflow-y: auto
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	background-color: #3C3B3B
+	overflow: visible
+	border-radius: 4px
+	min-width: 300px
+	.mfp-close
+		width: 30px
+		height: 30px
+		display: flex
+		align-items: center
+		justify-content: center
+		position: absolute
+		top: auto
+		bottom: 100%
+		right: 0
+		transform: none
+		margin-bottom: 15px
+		background-color: rgba(255, 255, 255, 0.1)
+		color: #fff
+		border-radius: 50%
+		font-size: 0
+		opacity: 1
+		transition: .3s ease
+		&::before
+			content: ''
+			background-image: url('../img/icons/close-search.svg')
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center
+			width: 16px
+			height: 16px
+			display: block
+			transition: .3s ease
+		&:hover
+			background-color: $accent
+			&::before
+				transform: scale(1.3)
+	&__title
+		position: relative
+		display: inline-block
+		font-size: 24px
+		margin-bottom: 45px
+		span
+			position: relative
+			display: inline-block
+			z-index: 2
+		&-underline
+			position: absolute
+			top: 17px
+			left: 0
+			width: 100%
+			height: auto
+			z-index: 1
+			display: flex
+	&__input
+		margin-bottom: 15px
+		display: block
+		&-caption
+			font-weight: 500
+			font-size: 16px
+			color: rgba(255, 255, 255, 0.6)
+			margin-bottom: 5px
+		&-body
+			padding: 15px
+			width: 100%
+	&__textarea
+		width: 100%
+		height: 120px
+		padding: 15px
+	&__button
+		width: 100%
+		margin-top: 25px
+// eof
+
+
+
+
+
+
+
+
+@import media

@@ -1,133 +1,219 @@
 jQuery(function () {
-	AOS.init({
-		duration: 1000,
-		once: true,
+	function isScrolledIntoView(elem) {
+		var docViewTop = $(window).scrollTop()
+		var docViewBottom = docViewTop + $(window).height()
+
+		var elemTop = $(elem).offset().top
+		var elemBottom = elemTop + $(elem).height()
+
+		return elemBottom <= docViewBottom && elemTop >= docViewTop
+	}
+
+	// AOS
+	if ($('body').hasClass('ishome')) {
+		$('[data-aos]').each(function () {
+			$(this).addClass('aos-init')
+		})
+	} else if ($('body').hasClass('isnohome')) {
+		AOS.init({
+			once: true,
+			duration: 1000,
+		})
+
+		$(window).on('scroll', function () {
+			$('.get-animation').each(function () {
+				if (isScrolledIntoView(this) === true) {
+					$(this).addClass('animation')
+				}
+			})
+
+			AOS.refresh()
+		})
+
+		$(window).on('load', function () {
+			$('.get-animation').each(function () {
+				if (isScrolledIntoView(this) === true) {
+					$(this).addClass('animation')
+				}
+			})
+
+			AOS.refresh()
+		})
+
+		$('.footer__scroll-up').on('click', function () {
+			$('html, body').animate({ scrollTop: 0 }, 'slow')
+		})
+	}
+
+	// eof
+
+	// Inputmask
+	if ($('*').is('input[type="tel"]')) {
+		$('input[type=tel]').inputmask({
+			mask: '+380 99 999 9999',
+			showMaskOnHover: false,
+			placeholder: '+380 XX XXX XXXX',
+		})
+	}
+	// eof
+
+	// Magnific popup
+	$('.magnific-popup').magnificPopup({
+		removalDelay: 350,
+		mainClass: 'mfp-fade',
+		fixedContentPos: false,
+		callbacks: {
+			open: function () {
+				$('body').addClass('scroll_disable')
+			},
+			close: function () {
+				$('body').removeClass('scroll_disable')
+			},
+		},
+	})
+	// eof
+
+	// fullpage
+	new fullpage('#fullpage', {
+		navigation: false,
+		menu: '#fullpageMenu',
+		lockAnchors: false,
+		scrollingSpeed: 1500,
+		responsiveWidth: 992,
+		css3: true,
+		onLeave: function (origin, destination, direction) {
+			if (origin.index == 1 && direction == 'up') {
+				$('.fullpage-menu').fadeOut()
+				$('.section-hamburger').fadeOut()
+			}
+		},
+		afterLoad: function (origin, destination, direction) {
+			if (origin.index == 0 && direction == 'down') {
+				$('.fullpage-menu').hide().fadeIn()
+				$('.section-hamburger').hide().fadeIn()
+			}
+
+			$('.get-animation').each(function () {
+				if (isScrolledIntoView(this) === true) {
+					$(this).addClass('animation')
+				}
+			})
+
+			$('[data-aos]').each(function () {
+				if (isScrolledIntoView(this) === true) {
+					$(this).addClass('aos-animate')
+				}
+			})
+
+			$(window).on('scroll', function () {
+				$('.get-animation').each(function () {
+					if (isScrolledIntoView(this) === true) {
+						$(this).addClass('animation')
+					}
+				})
+
+				$('[data-aos]').each(function () {
+					if (isScrolledIntoView(this) === true) {
+						$(this).addClass('aos-animate')
+					}
+				})
+			})
+		},
 	})
 
-	document.addEventListener('load', AOS.refresh())
-
-	window.addEventListener('scroll', AOS.refresh())
-})
-
-// Hamburger menu
-let body = $('body')
-let hamburger = $('.header__hamburger')
-let sidebar = $('.header__menu')
-let plug = $('.header__plug')
-let toggleSidebar = $('.header__hamburger, .header__plug, .header__menu-close')
-
-toggleSidebar.on('click', function () {
-	hamburger.toggleClass('_active')
-	sidebar.toggleClass('_visible')
-	plug.toggleClass('_visible')
-	body.toggleClass('scroll_disabled')
-})
-
-// Sliders
-if ($('*').is('.industries__slider')) {
-	$('.industries__slider').slick({
-		infinite: false,
-		arrows: true,
-		touchMove: false,
-		variableWidth: true,
-		speed: 500,
-		autoplay: true,
-		autoplaySpeed: 5000,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					variableWidth: false,
-				},
-			},
-		],
+	$('.main-screen__scroll-down').on('click', function () {
+		fullpage_api.moveTo('about')
 	})
-}
 
-if ($('*').is('.slider__container')) {
-	$('.slider__container').slick({
-		infinite: true,
-		touchMove: false,
-		speed: 500,
-		slidesToShow: 3,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 2,
-				},
-			},
-			{
-				breakpoint: 576,
-				settings: {
-					slidesToShow: 1,
-				},
-			},
-		],
+	$('.footer__scroll-up').on('click', function () {
+		fullpage_api.moveTo('main')
+		$('.fullpage-menu').fadeOut()
+		$('.section-hamburger').fadeOut()
 	})
-}
+	// eof
 
-if ($('*').is('.team-slider')) {
-	$('.team-slider').slick({
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		dots: false,
-		infinite: true,
-		touchMove: false,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					centerMode: true,
-					variableWidth: true,
-					arrows: false,
-					slidesToShow: 3,
-					autoplay: true,
-					autoplaySpeed: 3000,
-				},
-			},
-		],
+	// Dropdown
+	let dropdown = $('.header__langs-heading')
+
+	dropdown.on('click', function () {
+		$(this).toggleClass('active').next().slideToggle()
 	})
-}
+	// eof
 
-if ($('*').is('.ranks__slider')) {
-	$('.ranks__slider').slick({
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		dots: false,
-		infinite: true,
-		touchMove: false,
-		responsive: [
-			{
-				breakpoint: 1430,
-				settings: {
-					slidesToShow: 3,
-				},
-			},
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 1,
-					variableWidth: true,
-					centerMode: true,
-				},
-			},
-		],
+	// Header search
+	$('.header__search-switch').on('click', function () {
+		$('.header__search').toggleClass('active')
 	})
-}
+	//eof
 
-$('body').on('click', '.link_move', function (event) {
-	event.preventDefault()
-	var id = $(this).attr('href'),
-		top = $(id).offset().top
-	$('body,html').animate({ scrollTop: top }, 1500)
-})
+	// Header hamburger
+	let body = $('body')
+	let hamburger = $('.header__hamburger')
+	let sidebar = $('.header .sidebar')
+	let toggleSidebar = $('.header__hamburger, .sidebar__menu-item')
 
-$('.lang__heading').on('click', function () {
-	$(this).toggleClass('active').next().slideToggle()
-})
+	toggleSidebar.on('click', function () {
+		hamburger.toggleClass('is-active')
+		sidebar.toggleClass('visible')
+		body.toggleClass('scroll_disable')
+	})
+	// eof
 
-$('.faq__dropdown-heading').on('click', function () {
-	$(this).toggleClass('active').next().slideToggle()
-	$('.faq__dropdown-heading').not(this).removeClass('active').next().slideUp()
+	// Sections hamburger
+	let hamburgerMain = $('.section-hamburger .hamburger')
+	let sidebarMain = $('.section-menu')
+	let toggleSidebarMain = $('.section-hamburger, .section-menu__list-item')
+
+	toggleSidebarMain.on('click', function () {
+		hamburgerMain.toggleClass('is-active')
+		sidebarMain.toggleClass('visible')
+		body.toggleClass('scroll_disable')
+	})
+	// eof
+
+	// Slick sliders
+	if ($('*').is('.projects__slider')) {
+		$('.projects__slider').slick({
+			touchMove: false,
+			speed: 1000,
+			slidesToShow: 2,
+			arrows: true,
+			prevArrow: $('.projects__arrow.prev'),
+			nextArrow: $('.projects__arrow.next'),
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 1,
+					},
+				},
+			],
+		})
+	}
+
+	if ($('*').is('.blog__slider')) {
+		$('.blog__slider').slick({
+			touchMove: false,
+			speed: 1000,
+			slidesToShow: 3,
+			arrows: true,
+			prevArrow: $('.blog__arrow.prev'),
+			nextArrow: $('.blog__arrow.next'),
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2,
+					},
+				},
+				{
+					breakpoint: 576,
+					settings: {
+						slidesToShow: 1,
+					},
+				},
+			],
+		})
+	}
+	// eof
 })
