@@ -120,6 +120,8 @@
 
 	.h2
 		font-size: 24px
+		&__underline
+			bottom: -10px
 
 	.h3
 		font-size: 20px
@@ -145,7 +147,7 @@
 	// header
 	.header
 		background: #242424
-		position: sticky
+		position: fixed
 		top: 0
 		left: 0
 		&__container
@@ -308,6 +310,12 @@
 
 @media only screen and (max-width : 576px)
 
+	input, textarea
+		font-size: 14px
+		&::placeholder
+			font-size: 14px
+
+
 	.button
 		width: 160px
 		height: 45px
@@ -328,8 +336,10 @@
 
 	// Попап
 	.callback
-		padding: 40px 20px
+		padding: 20px
 		&__button
 			height: 50px
+		&__textarea
+			height: 80px
 	// eof
 

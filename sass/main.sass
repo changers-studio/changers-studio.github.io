@@ -39,12 +39,16 @@ h1, h2, h3, h4, h5, h6
 		position: absolute
 		bottom: 5px
 		left: 0
-		width: 100%
+		width: 0
 		height: auto
 		z-index: 1
 		display: flex
+		opacity: 0
+		svg
+			height: 32px
 		&::before
 			content: ''
+			display: none
 			position: absolute
 			right: 0
 			top: 0
@@ -53,8 +57,11 @@ h1, h2, h3, h4, h5, h6
 			display: block
 			transition: 1s ease .3s
 			background-color: #2B2B2B
-		&.animation::before
-			width: 0
+		&.animation
+			width: 100%
+			opacity: 1
+			&::before
+				width: 0
 
 .h3
 	font-size: 30px
@@ -532,6 +539,7 @@ body
 	&__container
 		z-index: 2
 		position: relative
+		animation: mainAnime 1s 
 	&__title
 		margin-bottom: 60px
 		max-width: 900px
@@ -707,7 +715,7 @@ body
 				transition: .5s ease
 			&:hover
 				background-size: 120% 120%
-				transition-duration: 4s
+				transition: 4s
 				&::before
 					background-color: $accent
 					opacity: 0.9
@@ -727,15 +735,15 @@ body
 		z-index: 2
 		padding: 30px 0
 		border-top: 1px solid rgba(255, 255, 255, 0.3)
-		transition: 1s ease
+		transition: 1s ease 
 		max-width: calc(100% - 60px)
 		width: 100%
+		color: #fff
 	&__text
 		font-size: 24px
 		line-height: 1.4
 		font-weight: 600
 		margin-bottom: 30px
-		transition: 1s ease
 	&__author
 		display: flex
 		align-items: center
