@@ -539,7 +539,6 @@ body
 	&__container
 		z-index: 2
 		position: relative
-		animation: mainAnime 1s 
 	&__title
 		margin-bottom: 60px
 		max-width: 900px
@@ -728,7 +727,7 @@ body
 					&__text
 						font-size: 36px
 	&__description
-		position: relative
+		position: absolute
 		left: 50%
 		bottom: 0
 		transform: translate(-50%, 0)
@@ -874,6 +873,7 @@ body
 			font-weight: 600
 			text-transform: uppercase
 			position: relative
+			transition: .3s ease
 			&:last-child
 				margin-bottom: 0
 			&::before
@@ -882,12 +882,14 @@ body
 				height: 1px
 				position: absolute
 				bottom: 0
-				background-color: #fff
+				background-color: $red
 				transition: .3s ease
 				opacity: 0
-			&:hover::before
-				opacity: 1
-				width: 100%
+			&:hover
+				color: $red
+				&::before
+					opacity: 1
+					width: 100%
 	&__privacy-policy
 		text-transform: uppercase
 		transition: .3s ease 
@@ -1179,12 +1181,14 @@ body
 			z-index: 2
 		&-underline
 			position: absolute
-			top: 17px
+			bottom: -12px
 			left: 0
 			width: 100%
 			height: auto
 			z-index: 1
 			display: flex
+			svg
+				height: 35px
 	&__input
 		margin-bottom: 15px
 		display: block

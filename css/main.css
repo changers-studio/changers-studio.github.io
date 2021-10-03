@@ -92,30 +92,6 @@
   }
 }
 
-@-webkit-keyframes mainAnime {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate(-100px, 0);
-            transform: translate(-100px, 0);
-  }
-  100% {
-  }
-  opacity: 1;
-  opacity-transform: translate(0, 0);
-}
-
-@keyframes mainAnime {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate(-100px, 0);
-            transform: translate(-100px, 0);
-  }
-  100% {
-  }
-  opacity: 1;
-  opacity-transform: translate(0, 0);
-}
-
 /*!
  * Bootstrap Grid v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -7214,8 +7190,6 @@ body.scroll_disable {
 .main-screen__container {
   z-index: 2;
   position: relative;
-  -webkit-animation: mainAnime 1s;
-          animation: mainAnime 1s;
 }
 
 .main-screen__title {
@@ -7578,7 +7552,7 @@ body.scroll_disable {
 }
 
 .projects__description {
-  position: relative;
+  position: absolute;
   left: 50%;
   bottom: 0;
   -webkit-transform: translate(-50%, 0);
@@ -7850,6 +7824,9 @@ body.scroll_disable {
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
 }
 
 .footer__menu-item:last-child {
@@ -7862,11 +7839,15 @@ body.scroll_disable {
   height: 1px;
   position: absolute;
   bottom: 0;
-  background-color: #fff;
+  background-color: #F0343B;
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
   transition: .3s ease;
   opacity: 0;
+}
+
+.footer__menu-item:hover {
+  color: #F0343B;
 }
 
 .footer__menu-item:hover::before {
@@ -8386,7 +8367,7 @@ body.scroll_disable {
 
 .callback__title-underline {
   position: absolute;
-  top: 17px;
+  bottom: -12px;
   left: 0;
   width: 100%;
   height: auto;
@@ -8395,6 +8376,10 @@ body.scroll_disable {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.callback__title-underline svg {
+  height: 35px;
 }
 
 .callback__input {
@@ -8632,9 +8617,23 @@ body.scroll_disable {
   .projects__slide-inner:hover {
     -webkit-background-size: cover;
             background-size: cover;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+  }
+  .projects__slide-inner:hover::before {
+    background-color: #242424;
+    opacity: 0.6;
+  }
+  .projects__slide-inner:hover .projects__description {
+    bottom: 0;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    border-color: rgba(255, 255, 255, 0.3);
   }
   .projects__slide-inner:hover .projects__text {
-    font-size: 24px;
+    font-size: 16px;
   }
   .projects__description {
     max-width: -webkit-calc(100% - 40px);
@@ -8665,6 +8664,9 @@ body.scroll_disable {
   .blog__slide-inner:hover .blog__preview {
     -webkit-background-size: cover;
             background-size: cover;
+  }
+  .blog__slide-inner:hover .blog__text {
+    color: #fff;
   }
   .blog__date {
     font-size: 12px;
@@ -8789,10 +8791,17 @@ body.scroll_disable {
   .callback {
     padding: 20px;
   }
+  .callback__title {
+    margin-bottom: 20px;
+  }
+  .callback__input-body {
+    padding: 10px;
+  }
   .callback__button {
     height: 50px;
   }
   .callback__textarea {
     height: 80px;
+    padding: 1px;
   }
 }

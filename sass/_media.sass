@@ -201,13 +201,23 @@
 			margin-bottom: 30px
 		&__arrow::before
 			font-size: 18px
-		&__slide-inner
-			height: 500px
-			background-size: cover
-			&:hover
+		&__slide
+			&-inner
+				height: 500px
 				background-size: cover
-				.projects__text
-					font-size: 24px
+				&:hover
+					background-size: cover
+					transition: 1s
+					&::before
+						background-color: #242424
+						opacity: 0.6
+					.projects
+						&__description
+							bottom: 0
+							transform: translate(-50%, 0)
+							border-color: rgba(255, 255, 255, 0.3)
+						&__text
+							font-size: 16px
 		&__description
 			max-width: calc(100% - 40px)
 			padding: 20px 0
@@ -233,8 +243,11 @@
 			&-inner
 				margin: 0 15px
 				&:hover
-					.blog__preview
-						background-size: cover
+					.blog
+						&__preview
+							background-size: cover
+						&__text
+							color: #fff
 		&__date
 			font-size: 12px
 			margin: 20px 0
@@ -337,9 +350,14 @@
 	// Попап
 	.callback
 		padding: 20px
+		&__title
+			margin-bottom: 20px
+		&__input-body
+			padding: 10px
 		&__button
 			height: 50px
 		&__textarea
 			height: 80px
+			padding: 1px
 	// eof
 

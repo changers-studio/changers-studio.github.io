@@ -34,7 +34,7 @@ jQuery(function () {
 			new fullpage('#fullpage', {
 				navigation: false,
 				menu: '#fullpageMenu',
-				lockAnchors: false,
+				lockAnchors: true,
 				scrollingSpeed: 1500,
 				responsiveWidth: 992,
 				css3: true,
