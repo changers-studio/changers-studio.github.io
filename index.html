@@ -12,12 +12,7 @@
 		<meta name="format-detection" content="telephone=no" />
 
 		<!-- favicon -->
-		<link
-			rel="icon"
-			type="image/x-icon"
-			sizes="192x192"
-			href="img/favicon.ico"
-		/>
+		<link rel="icon" type="image/x-icon" sizes="192x192" href="img/favicon.ico" />
 
 		<!-- fontawesome -->
 		<script
@@ -42,31 +37,32 @@
 
 		<!-- jQeury -->
 		<script defer src="libs/jquery.min.js"></script>
+		<script defer src="libs/jquery.marquee.min.js"></script>
 
 		<!-- libs js -->
 		<script defer src="libs/fullpage/fullpage.js"></script>
 		<script defer src="libs/slick-carousel/slick.min.js"></script>
 		<script defer src="libs/inputmask/jquery.inputmask.min.js"></script>
-		<script
-			defer
-			src="libs/magnific-popup/jquery.magnific-popup.min.js"
-		></script>
+		<script defer src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+		<!-- preloader js -->
+		<script defer src="js/preloader.js"></script>
 
 		<!-- main js -->
 		<script defer src="js/custom.js"></script>
 	</head>
 
 	<body class="ishome">
+		<div class="preloader">
+			<div class="loader"></div>
+		</div>
+
 		<form class="callback mfp-hide">
 			<h4 class="callback__title">
 				<span>Зв'язатися з нами</span>
 
 				<div class="callback__title-underline">
-					<svg
-						viewBox="0 0 199 35"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
+					<svg viewBox="0 0 199 35" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M199.186 22.6255V10.6085C199.206 10.6082 196.089 11.169 193.793 11.6505C188.75 12.7076 183.121 13.8404 182.302 14.0085C181.558 14.1614 180.819 14.3213 180.104 14.4761C178.215 14.8852 176.432 15.2717 174.632 15.5193C171.684 15.925 169.282 16.3408 167.072 16.8276C166.512 16.9509 165.957 17.0865 165.42 17.2175C164.206 17.5144 163.061 17.7943 161.981 17.897C160.787 18.0107 159.667 18.1784 158.608 18.4038C159.412 16.1676 160.245 13.8962 161.138 11.6906C161.77 10.1304 161.715 8.59277 160.978 7.24347C160.848 6.995 159.842 4.76405 158.74 2.28156L158.348 1.39775C158.11 0.859816 157.5 0.49729 156.809 0.48311L155.675 0.459681C155.606 0.45814 155.227 0.45105 154.633 0.45105C153.45 0.45105 151.141 0.481569 148.962 0.686876C148.954 0.687801 148.946 0.688418 148.938 0.689342C147.866 0.803402 147.183 0.898041 146.684 0.967094C145.994 1.06266 145.812 1.08794 145.246 1.09163L145.141 1.09194C144.817 1.09194 144.496 1.0867 144.173 1.08115C143.819 1.07499 143.462 1.06882 143.099 1.06882C142.512 1.06882 142.019 1.08485 141.545 1.11938C139.965 1.23375 138.346 1.33578 136.78 1.43412C131.654 1.75626 126.357 2.0892 121.12 2.93324C120.315 3.06271 119.51 3.18972 118.704 3.31673C114.988 3.90244 111.145 4.50819 107.362 5.3846C106.715 5.53473 106.095 5.69873 105.496 5.85718C104.4 6.14665 103.366 6.42008 102.382 6.5514C101.081 6.72496 99.8466 6.96911 98.6538 7.20524L98.1569 7.30327C95.4641 7.83196 92.7907 8.46052 90.2048 9.06843C86.2761 9.99231 82.226 10.9446 78.2197 11.5121C76.2355 11.7932 74.5023 12.1274 72.9206 12.534C71.014 13.0241 69.0146 13.4585 67.0809 13.8784C64.6559 14.4052 62.1569 14.9481 59.6918 15.6263C59.6405 15.6364 59.5172 15.6549 59.4415 15.6663C59.2695 15.6922 59.0853 15.7206 58.8904 15.7579C58.4941 15.8334 58.096 15.9059 57.6986 15.9783C56.9433 16.1158 56.1757 16.2551 55.3999 16.4185C55.9462 14.3257 56.5452 12.0383 57.1587 9.71764C57.8127 7.24439 56.3027 4.86486 53.5683 4.05966C53.1063 3.9234 52.615 3.55625 51.9926 3.09107L51.8292 2.96869C50.5383 2.00658 49.1041 1.51951 47.5636 1.51951C47.1667 1.51951 46.7578 1.5525 46.3485 1.61754C45.2589 1.79079 44.1415 1.95017 43.0608 2.10461C41.9382 2.26491 40.7773 2.43076 39.6119 2.61634C37.5471 2.94495 35.4942 3.33368 33.5089 3.70946C31.1641 4.15337 28.7409 4.61208 26.3686 4.95549C26.3251 4.95888 26.2813 4.9635 26.2375 4.96998C25.1969 5.11918 24.225 5.32726 23.2851 5.52825C22.1472 5.77179 21.0758 6.00083 20.0654 6.08283C18.9004 6.17716 17.0666 6.5477 14.9431 6.97682C12.742 7.42165 10.2527 7.92475 8.66066 8.08381C7.72815 8.17691 6.90817 8.38808 6.249 8.55762C5.79778 8.67384 5.37257 8.78328 5.05951 8.81595C3.71181 8.95683 -1.61212 9.95871 -4.99268 10.6085V22.6255C-2.83169 22.1748 3.86222 20.7213 4.5381 20.5126C5.10853 20.3363 5.57868 20.2747 6.17435 20.1964C6.57506 20.1436 7.02924 20.0838 7.5447 19.9818C9.23405 19.6473 10.9784 19.3021 12.6677 19.069C14.5405 18.8107 18.0299 18.1713 21.7239 17.4944C24.4612 16.9928 27.284 16.4755 29.2203 16.1596C29.2708 16.1546 29.3195 16.1485 29.3674 16.1404C30.2212 16.0023 31.0616 15.8414 31.8737 15.6861C32.5567 15.5554 33.2545 15.4216 33.9263 15.3081C34.4774 15.2153 35.03 15.1244 35.583 15.0338C37.0372 14.7952 38.5257 14.551 40.0197 14.2591C39.4723 15.8371 38.9435 17.4084 38.4265 18.9445C37.9816 20.266 37.4777 21.7642 36.976 23.2177C36.3198 25.1182 36.5396 26.8054 37.6288 28.2351L37.881 28.8165C37.914 28.8926 48.0643 26.4296 48.1107 26.4977C48.114 26.7215 38.0678 29.4306 38.0982 29.5012C38.3667 30.1223 38.6716 30.8267 39.0541 31.5259C39.1381 31.6791 39.2105 31.8157 39.2747 31.9377L39.2977 31.9815C39.7029 32.7488 40.654 34.5491 43.17 34.5491C43.7586 34.5491 44.4015 34.4535 45.1947 34.2482C45.3726 34.2023 45.5661 34.152 45.7893 34.0978C49.1806 33.2735 52.5366 32.3144 55.782 31.3869L55.8626 31.3637C57.204 30.9806 58.5907 30.5844 59.9547 30.2056C61.5557 29.761 63.1722 29.302 64.7361 28.8578C68.8542 27.6882 73.1078 26.4807 77.3184 25.4681C78.1391 25.2708 78.9658 25.0627 79.7649 24.8617L79.8407 24.8426C82.1406 24.2637 84.5166 23.6659 86.8373 23.2966C89.4108 22.8863 92.1608 22.3888 94.8354 21.5318C96.4375 21.0179 98.223 20.5635 100.454 20.1017C101.966 19.7888 103.585 19.4053 105.187 18.7216C105.558 18.5634 106.079 18.4654 106.586 18.3831C107.566 18.2247 108.545 18.0641 109.524 17.9031L109.57 17.8957C111.387 17.5976 113.267 17.2894 115.11 17.0011C122.142 15.9003 129.404 14.7637 136.768 13.9601C139.675 13.6428 142.557 13.4206 145.365 13.2967C143.717 17.9528 142.202 22.5284 140.855 26.9237L140.602 27.7474C140.446 28.257 140.648 28.7962 141.123 29.143L141.893 29.7037C143.815 31.1045 145.877 31.98 147.997 32.8262C148.807 33.1499 149.635 33.3139 150.457 33.3139C151.18 33.3139 151.907 33.1868 152.619 32.9365C154.284 32.3496 156.02 31.8826 157.858 31.3881L159.035 31.0703C160.294 30.7309 161.837 30.3144 163.242 29.3877C163.785 29.2885 164.339 29.1975 164.92 29.1026C165.899 28.942 166.91 28.7761 167.946 28.5551C168.88 28.3556 169.851 28.2037 170.879 28.0427C172.083 27.8541 173.327 27.6593 174.596 27.3738C174.913 27.3026 175.213 27.2246 175.544 27.1374C175.93 27.0356 176.412 26.9092 176.621 26.8969C177.952 26.8183 179.151 26.6142 180.312 26.4169L180.38 26.4052C180.683 26.3537 180.986 26.3023 181.289 26.2542C182.053 26.133 182.806 25.998 183.535 25.867L183.588 25.8574C184.267 25.7353 185.569 25.4336 187.076 25.084C189.006 24.6364 191.928 23.9008 192.722 23.8154C195.037 23.5664 199.175 22.6277 199.186 22.6255Z"
 							fill="#ED1C24"
@@ -93,13 +89,297 @@
 			<button type="submit" class="callback__button button">Отправить</button>
 		</form>
 
+		<div class="team-info mfp-hide">
+			<div class="team-info__slider">
+				<div class="team-info__slide">
+					<div class="team-info__slide-inner">
+						<div class="team-info__wrapper">
+							<button class="team-info__close mfp-close">вернуться назад</button>
+
+							<div class="team-info__content">
+								<h6 class="team-info__name">Сергій Харитонов</h6>
+								<p class="team-info__post">Помічник адвоката</p>
+
+								<p class="team-info__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+									dolor viverra feugiat gravida. Mauris pulvinar eget at ut vel at
+									pharetra molestie nulla. Faucibus vitae placerat non lobortis malesuada
+									a libero, amet. Vivamus condimentum ac felis tortor viverra. Morbi quam
+									odio sit diam praesent venenatis pulvinar. Facilisi facilisi sed nunc,
+									purus volutpat nunc elementum gravida. Mattis mauris mi a laoreet urna,
+									proin est egestas. Pretium egestas morbi quis pellentesque aliquet
+									pellentesque est, donec. Justo at congue eget elit eu sollicitudin
+								</p>
+
+								<ul class="team-info__list">
+									<li class="team-info__list-item">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+										dolor viverra feugiat gravida. Mauris pulvinar eget
+									</li>
+									<li class="team-info__list-item">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+										dolor viverra feugiat gravida. Mauris pulvinar eget
+									</li>
+									<li class="team-info__list-item">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+										dolor viverra feugiat gravida. Mauris pulvinar eget
+									</li>
+								</ul>
+							</div>
+
+							<nav class="team-info__nav">
+								<button class="team-info__nav-button prev">
+									<p class="team-info__nav-name">Іван Колеснік</p>
+									<p class="team-info__nav-post">Молодший юрист</p>
+								</button>
+
+								<button class="team-info__nav-button next">
+									<p class="team-info__nav-name">Сергій Сільченко</p>
+									<p class="team-info__nav-post">Керуючий партнер, адвокат</p>
+								</button>
+							</nav>
+						</div>
+
+						<div
+							class="team-info__image"
+							style="background-image: url('img/team/image-1.png')"
+						></div>
+					</div>
+				</div>
+
+				<div class="team-info__slide">
+					<div class="team-info__slide-inner">
+						<div class="team-info__wrapper">
+							<button class="team-info__close mfp-close">вернуться назад</button>
+
+							<div class="team-info__content">
+								<h6 class="team-info__name">Сергій Сільченко</h6>
+								<p class="team-info__post">Керуючий партнер, адвокат</p>
+
+								<p class="team-info__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+									dolor viverra feugiat gravida. Mauris pulvinar eget at ut vel at
+									pharetra molestie nulla. Faucibus vitae placerat non lobortis malesuada
+									a libero, amet. Vivamus condimentum ac felis tortor viverra. Morbi quam
+									odio sit diam praesent venenatis pulvinar. Facilisi facilisi sed nunc,
+									purus volutpat nunc elementum gravida. Mattis mauris mi a laoreet urna,
+									proin est egestas. Pretium egestas morbi quis pellentesque aliquet
+									pellentesque est, donec. Justo at congue eget elit eu sollicitudin
+								</p>
+
+								<ul class="team-info__list">
+									<li class="team-info__list-item">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+										dolor viverra feugiat gravida. Mauris pulvinar eget
+									</li>
+									<li class="team-info__list-item">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+										dolor viverra feugiat gravida. Mauris pulvinar eget
+									</li>
+									<li class="team-info__list-item">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+										dolor viverra feugiat gravida. Mauris pulvinar eget
+									</li>
+								</ul>
+							</div>
+
+							<nav class="team-info__nav">
+								<button class="team-info__nav-button prev">
+									<p class="team-info__nav-name">Сергій Харитонов</p>
+									<p class="team-info__nav-post">Помічник адвоката</p>
+								</button>
+
+								<button class="team-info__nav-button next">
+									<p class="team-info__nav-name">Данило Кравцов</p>
+									<p class="team-info__nav-post">Адвокат</p>
+								</button>
+							</nav>
+						</div>
+
+						<div
+							class="team-info__image"
+							style="background-image: url('img/team/image-2.png')"
+						></div>
+					</div>
+				</div>
+
+				<div class="team-info__slide">
+					<div class="team-info__slide-inner">
+						<div class="team-info__wrapper">
+							<button class="team-info__close mfp-close">вернуться назад</button>
+
+							<div class="team-info__content">
+								<h6 class="team-info__name">Данило Кравцов</h6>
+								<p class="team-info__post">Адвокат</p>
+
+								<p class="team-info__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+									dolor viverra feugiat gravida. Mauris pulvinar eget at ut vel at
+									pharetra molestie nulla. Faucibus vitae placerat non lobortis malesuada
+									a libero, amet. Vivamus condimentum ac felis tortor viverra. Morbi quam
+									odio sit diam praesent venenatis pulvinar. Facilisi facilisi sed nunc,
+									purus volutpat nunc elementum gravida. Mattis mauris mi a laoreet urna,
+									proin est egestas. Pretium egestas morbi quis pellentesque aliquet
+									pellentesque est, donec. Justo at congue eget elit eu sollicitudin
+								</p>
+
+								<ul class="team-info__list">
+									<li class="team-info__list-item">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+										dolor viverra feugiat gravida. Mauris pulvinar eget
+									</li>
+									<li class="team-info__list-item">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+										dolor viverra feugiat gravida. Mauris pulvinar eget
+									</li>
+									<li class="team-info__list-item">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+										dolor viverra feugiat gravida. Mauris pulvinar eget
+									</li>
+								</ul>
+							</div>
+
+							<nav class="team-info__nav">
+								<button class="team-info__nav-button prev">
+									<p class="team-info__nav-name">Сергій Сільченко</p>
+									<p class="team-info__nav-post">Керуючий партнер, адвокат</p>
+								</button>
+
+								<button class="team-info__nav-button next">
+									<p class="team-info__nav-name">Тетяна Сільченко</p>
+									<p class="team-info__nav-post">Партнер, адвокат</p>
+								</button>
+							</nav>
+						</div>
+
+						<div
+							class="team-info__image"
+							style="background-image: url('img/team/image-3.png')"
+						></div>
+					</div>
+				</div>
+
+				<div class="team-info__slide">
+					<div class="team-info__slide-inner">
+						<div class="team-info__wrapper">
+							<button class="team-info__close mfp-close">вернуться назад</button>
+
+							<div class="team-info__content">
+								<h6 class="team-info__name">Тетяна Сільченко</h6>
+								<p class="team-info__post">Партнер, адвокат</p>
+
+								<p class="team-info__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+									dolor viverra feugiat gravida. Mauris pulvinar eget at ut vel at
+									pharetra molestie nulla. Faucibus vitae placerat non lobortis malesuada
+									a libero, amet. Vivamus condimentum ac felis tortor viverra. Morbi quam
+									odio sit diam praesent venenatis pulvinar. Facilisi facilisi sed nunc,
+									purus volutpat nunc elementum gravida. Mattis mauris mi a laoreet urna,
+									proin est egestas. Pretium egestas morbi quis pellentesque aliquet
+									pellentesque est, donec. Justo at congue eget elit eu sollicitudin
+								</p>
+
+								<ul class="team-info__list">
+									<li class="team-info__list-item">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+										dolor viverra feugiat gravida. Mauris pulvinar eget
+									</li>
+									<li class="team-info__list-item">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+										dolor viverra feugiat gravida. Mauris pulvinar eget
+									</li>
+									<li class="team-info__list-item">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+										dolor viverra feugiat gravida. Mauris pulvinar eget
+									</li>
+								</ul>
+							</div>
+
+							<nav class="team-info__nav">
+								<button class="team-info__nav-button prev">
+									<p class="team-info__nav-name">Данило Кравцов</p>
+									<p class="team-info__nav-post">Адвокат</p>
+								</button>
+
+								<button class="team-info__nav-button next">
+									<p class="team-info__nav-name">Іван Колеснік</p>
+									<p class="team-info__nav-post">Молодший юрист</p>
+								</button>
+							</nav>
+						</div>
+
+						<div
+							class="team-info__image"
+							style="background-image: url('img/team/image-4.png')"
+						></div>
+					</div>
+				</div>
+
+				<div class="team-info__slide">
+					<div class="team-info__slide-inner">
+						<div class="team-info__wrapper">
+							<button class="team-info__close mfp-close">вернуться назад</button>
+
+							<div class="team-info__content">
+								<h6 class="team-info__name">Іван Колеснік</h6>
+								<p class="team-info__post">Молодший юрист</p>
+
+								<p class="team-info__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+									dolor viverra feugiat gravida. Mauris pulvinar eget at ut vel at
+									pharetra molestie nulla. Faucibus vitae placerat non lobortis malesuada
+									a libero, amet. Vivamus condimentum ac felis tortor viverra. Morbi quam
+									odio sit diam praesent venenatis pulvinar. Facilisi facilisi sed nunc,
+									purus volutpat nunc elementum gravida. Mattis mauris mi a laoreet urna,
+									proin est egestas. Pretium egestas morbi quis pellentesque aliquet
+									pellentesque est, donec. Justo at congue eget elit eu sollicitudin
+								</p>
+
+								<ul class="team-info__list">
+									<li class="team-info__list-item">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+										dolor viverra feugiat gravida. Mauris pulvinar eget
+									</li>
+									<li class="team-info__list-item">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+										dolor viverra feugiat gravida. Mauris pulvinar eget
+									</li>
+									<li class="team-info__list-item">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget
+										dolor viverra feugiat gravida. Mauris pulvinar eget
+									</li>
+								</ul>
+							</div>
+
+							<nav class="team-info__nav">
+								<button class="team-info__nav-button prev">
+									<p class="team-info__nav-name">Тетяна Сільченко</p>
+									<p class="team-info__nav-post">Партнер, адвокат</p>
+								</button>
+
+								<button class="team-info__nav-button next">
+									<p class="team-info__nav-name">Сергій Харитонов</p>
+									<p class="team-info__nav-post">Помічник адвоката</p>
+								</button>
+							</nav>
+						</div>
+
+						<div
+							class="team-info__image"
+							style="background-image: url('img/team/image-5.png')"
+						></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- fullpage menu -->
 		<ul class="fullpage-menu hidden" id="fullpageMenu">
 			<li class="fullpage-menu__item active" data-menuanchor="about">2</li>
 			<li class="fullpage-menu__item" data-menuanchor="products">3</li>
-			<li class="fullpage-menu__item" data-menuanchor="products">4</li>
+			<li class="fullpage-menu__item" data-menuanchor="team">4</li>
 			<li class="fullpage-menu__item" data-menuanchor="projects">5</li>
-			<li class="fullpage-menu__item" data-menuanchor="products">6</li>
+			<li class="fullpage-menu__item" data-menuanchor="reviews">6</li>
 			<li class="fullpage-menu__item" data-menuanchor="blog">7</li>
 		</ul>
 		<!-- fullpage menu eof -->
@@ -114,12 +394,12 @@
 
 		<div class="section-menu">
 			<div class="container">
-				<nav class="section-menu__list">
-					<a href="#products" class="section-menu__list-item">Продукти</a>
-					<a href="#team" class="section-menu__list-item">Команда</a>
-					<a href="#projects" class="section-menu__list-item">Проєкти</a>
-					<a href="#blog" class="section-menu__list-item">Публікації</a>
-					<a href="#contacts" class="section-menu__list-item">Контакти</a>
+				<nav class="section-menu__list" id="fullpageMenu">
+					<span class="section-menu__list-item" data-menuanchor="products">Продукти</span>
+					<span class="section-menu__list-item" data-menuanchor="team">Команда</span>
+					<span class="section-menu__list-item" data-menuanchor="products">Проєкти</span>
+					<span class="section-menu__list-item" data-menuanchor="blog">Публікації</span>
+					<span class="section-menu__list-item" data-menuanchor="contacts">Контакти</span>
 				</nav>
 			</div>
 		</div>
@@ -165,44 +445,36 @@
 
 									<form class="header__search-form">
 										<div class="header__search-input">
-											<input
-												type="search"
-												name="search"
-												placeholder="Пошук..."
-											/>
+											<input type="search" name="search" placeholder="Пошук..." />
 										</div>
 
-										<button
-											type="submit"
-											class="header__search-button"
-										></button>
+										<button type="submit" class="header__search-button"></button>
 									</form>
 								</div>
 
-								<nav class="header__menu">
-									<a href="#products" class="header__menu-item">Продукти</a>
-									<a href="#team" class="header__menu-item">Команда</a>
-									<a href="#projects" class="header__menu-item">Проєкти</a>
-									<a href="#blog" class="header__menu-item">Публікації</a>
-									<a href="#contacts" class="header__menu-item">Контакти</a>
+								<nav class="header__menu" id="fullpageMenu">
+									<span class="header__menu-item" data-menuanchor="products">
+										Продукти
+									</span>
+									<span class="header__menu-item" data-menuanchor="team">Команда</span>
+									<span class="header__menu-item" data-menuanchor="projects">
+										Проєкти
+									</span>
+									<span class="header__menu-item" data-menuanchor="blog">Публікації</span>
+									<span class="header__menu-item" data-menuanchor="contacts">
+										Контакти
+									</span>
 								</nav>
 							</div>
 
 							<div class="header__contacts">
 								<a href="tel:380503008387" class="header__contacts-item">
-									<span
-										class="header__contacts-icon header__contacts-tel"
-									></span>
+									<span class="header__contacts-icon header__contacts-tel"></span>
 									+38 050 300 83 87
 								</a>
 
-								<a
-									href="mailto:roland_law@ukr.net"
-									class="header__contacts-item"
-								>
-									<span
-										class="header__contacts-icon header__contacts-email"
-									></span>
+								<a href="mailto:roland_law@ukr.net" class="header__contacts-item">
+									<span class="header__contacts-icon header__contacts-email"></span>
 									roland_law@ukr.net
 								</a>
 							</div>
@@ -225,25 +497,20 @@
 											placeholder="Пошук..."
 										/>
 
-										<button
-											type="submit"
-											class="sidebar__search-button"
-										></button>
+										<button type="submit" class="sidebar__search-button"></button>
 									</form>
 
 									<nav class="sidebar__menu">
-										<a href="#products" class="sidebar__menu-item">Продукти</a>
-										<a href="#team" class="sidebar__menu-item">Команда</a>
-										<a href="#projects" class="sidebar__menu-item">Проєкти</a>
-										<a href="#blog" class="sidebar__menu-item">Публікації</a>
-										<a href="#contacts" class="sidebar__menu-item">Контакти</a>
+										<a href="#products" class="sidebar__menu-item link_move">Продукти</a>
+										<a href="#team" class="sidebar__menu-item link_move">Команда</a>
+										<a href="#projects" class="sidebar__menu-item link_move">Проєкти</a>
+										<a href="#blog" class="sidebar__menu-item link_move">Публікації</a>
+										<a href="#contacts" class="sidebar__menu-item link_move">Контакти</a>
 									</nav>
 
 									<div class="sidebar__contacts">
 										<a href="tel:380503008387" class="sidebar__contacts-item">
-											<span
-												class="sidebar__contacts-icon sidebar__contacts-tel"
-											></span>
+											<span class="sidebar__contacts-icon sidebar__contacts-tel"></span>
 											+38 050 300 83 87
 										</a>
 
@@ -251,9 +518,7 @@
 											href="mailto:roland_law@ukr.net"
 											class="sidebar__contacts-item sidebar__contacts-email"
 										>
-											<span
-												class="sidebar__contacts-icon sidebar__contacts-email"
-											></span>
+											<span class="sidebar__contacts-icon sidebar__contacts-email"></span>
 											roland_law@ukr.net
 										</a>
 									</div>
@@ -263,20 +528,14 @@
 					</header>
 					<!-- header eof -->
 
-					<div
-						class="main-screen"
-						style="background-image: url('img/main__bg.jpg')"
-					>
-						<div class="container main-screen__container get-animation">
+					<div class="main-screen" style="background-image: url('img/main__bg.jpg')">
+						<div class="container main-screen__container">
 							<h1 class="h1 main-screen__title">
-								Надійний партнер, який допомагає досягти бажаного результату і
-								не витратити зайвого
+								Надійний партнер, який допомагає досягти бажаного результату і не
+								витратити зайвого
 							</h1>
 
-							<a
-								href=".callback"
-								class="main-screen__button button magnific-popup"
-							>
+							<a href=".callback" class="main-screen__button button magnific-popup">
 								Зв'язатися з нами
 							</a>
 
@@ -286,7 +545,7 @@
 				</div>
 			</section>
 
-			<section class="section about" data-anchor="about">
+			<section class="section about" data-anchor="about" id="about">
 				<div class="section-inner">
 					<div class="container">
 						<div class="about__container">
@@ -308,14 +567,10 @@
 									</div>
 								</div>
 
-								<div
-									class="about__box"
-									data-aos="fade-right"
-									data-aos-duration="1000"
-								>
+								<div class="about__box" data-aos="fade-right" data-aos-duration="1000">
 									<p class="about__box-text">
-										Спираючись на цінності адвокатської спільноти, робимо право
-										доступним і зрозумілим для клієнта
+										Спираючись на цінності адвокатської спільноти, робимо право доступним
+										і зрозумілим для клієнта
 									</p>
 								</div>
 							</div>
@@ -338,11 +593,7 @@
 									</div>
 								</h2>
 
-								<div
-									class="about__box"
-									data-aos="fade-right"
-									data-aos-duration="1000"
-								>
+								<div class="about__box" data-aos="fade-right" data-aos-duration="1000">
 									<ul class="about__list">
 										<li class="about__list-item">
 											<div class="about__list-icon">
@@ -468,9 +719,9 @@
 							data-aos-duration="1000"
 						>
 							<span class="about__text-regular">
-								Ми говоримо і пишемо просто про складне. Щиро піклуємося про
-								клієнтів, розуміємо їхні потреби та запити. Проблеми клієнтів
-								вирішуємо як свої. Виконуємо обіцяне і робимо це ефективно.
+								Ми говоримо і пишемо просто про складне. Щиро піклуємося про клієнтів,
+								розуміємо їхні потреби та запити. Проблеми клієнтів вирішуємо як свої.
+								Виконуємо обіцяне і робимо це ефективно.
 							</span>
 
 							<span class="about__text-bold">
@@ -481,15 +732,2078 @@
 				</div>
 			</section>
 
-			<section class="section products" data-anchor="products">
-				<div class="section-inner"></div>
+			<section class="section products _bg-light" data-anchor="products" id="products">
+				<div class="section-inner">
+					<div class="container">
+						<div class="products__top-line">
+							<h2 class="h2 products__title">
+								<span class="get-animation">Продукти</span>
+								<div class="h2__underline get-animation">
+									<svg
+										viewBox="0 0 223 37"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M223.208 24.0617V11.022C223.231 11.0216 219.738 11.6301 217.165 12.1526C211.514 13.2996 205.206 14.5289 204.288 14.7112C203.454 14.8771 202.626 15.0507 201.825 15.2187C199.708 15.6626 197.71 16.082 195.693 16.3506C192.389 16.7908 189.697 17.2421 187.221 17.7703C186.594 17.9041 185.972 18.0513 185.37 18.1934C184.009 18.5156 182.726 18.8193 181.517 18.9307C180.178 19.0541 178.924 19.2361 177.737 19.4806C178.638 17.0541 179.571 14.5895 180.571 12.1961C181.28 10.5031 181.218 8.83463 180.393 7.3705C180.247 7.10089 179.119 4.68007 177.884 1.98629L177.445 1.02727C177.178 0.443554 176.494 0.0501758 175.721 0.0347886L174.449 0.00936616C174.372 0.00769363 173.948 0 173.282 0C171.957 0 169.369 0.0331161 166.927 0.255897C166.918 0.2569 166.909 0.257569 166.9 0.258573C165.699 0.38234 164.933 0.485033 164.374 0.559962C163.601 0.663659 163.398 0.691089 162.763 0.695103L162.646 0.695437C162.282 0.695437 161.923 0.689751 161.561 0.683729C161.164 0.677039 160.763 0.670349 160.358 0.670349C159.7 0.670349 159.147 0.687744 158.616 0.725208C156.845 0.84931 155.031 0.960031 153.276 1.06674C147.532 1.4163 141.596 1.77756 135.727 2.69344C134.826 2.83393 133.923 2.97175 133.02 3.10956C128.856 3.74512 124.549 4.40243 120.31 5.35343C119.585 5.51633 118.89 5.69429 118.218 5.86623C116.991 6.18033 115.832 6.47703 114.729 6.61953C113.271 6.80786 111.888 7.07279 110.552 7.32902L109.995 7.43539C106.977 8.00907 103.981 8.69112 101.084 9.35077C96.6811 10.3533 92.1425 11.3866 87.6531 12.0024C85.4295 12.3075 83.4873 12.6701 81.7149 13.1113C79.5784 13.6431 77.3378 14.1145 75.1709 14.5701C72.4534 15.1417 69.6531 15.7308 66.8906 16.4667C66.8332 16.4777 66.695 16.4978 66.6101 16.5102C66.4175 16.5383 66.211 16.5691 65.9926 16.6095C65.5485 16.6915 65.1024 16.7701 64.6571 16.8487C63.8107 16.9979 62.9505 17.1491 62.0811 17.3264C62.6933 15.0554 63.3645 12.5734 64.052 10.0552C64.7849 7.3715 63.0928 4.78945 60.0286 3.91572C59.5109 3.76787 58.9604 3.36948 58.2629 2.86471L58.0798 2.73191C56.6332 1.68792 55.026 1.1594 53.2998 1.1594C52.8549 1.1594 52.3968 1.19519 51.9381 1.26577C50.7171 1.45376 49.4649 1.6267 48.2539 1.79429C46.9959 1.96823 45.695 2.1482 44.3891 2.34957C42.0753 2.70615 39.7747 3.12796 37.55 3.53572C34.9224 4.01741 32.207 4.51516 29.5486 4.8878C29.4999 4.89148 29.4508 4.89649 29.4016 4.90352C28.2356 5.06542 27.1465 5.29121 26.0932 5.50931C24.8181 5.77357 23.6175 6.0221 22.4851 6.11108C21.1797 6.21344 19.1247 6.61552 16.7451 7.08115C14.2785 7.56384 11.4891 8.10975 9.705 8.28236C8.66003 8.38338 7.74116 8.61252 7.00248 8.79649C6.49685 8.9226 6.02035 9.04135 5.66953 9.07681C4.15931 9.22968 -1.8067 10.3168 -5.59497 11.022V24.0617C-3.17336 23.5726 4.32785 21.9954 5.08525 21.769C5.72447 21.5776 6.25132 21.5107 6.91883 21.4258C7.36787 21.3686 7.87682 21.3037 8.45445 21.1929C10.3475 20.83 12.3022 20.4554 14.1953 20.2025C16.294 19.9222 20.2042 19.2284 24.3437 18.4938C27.4112 17.9496 30.5744 17.3883 32.7442 17.0454C32.8008 17.0401 32.8553 17.0334 32.909 17.0247C33.8658 16.8748 34.8075 16.7002 35.7176 16.5316C36.483 16.3898 37.2649 16.2446 38.0177 16.1215C38.6353 16.0208 39.2546 15.9221 39.8742 15.8238C41.5039 15.5649 43.1718 15.3 44.846 14.9832C44.2326 16.6955 43.64 18.4005 43.0607 20.0673C42.5622 21.5014 41.9974 23.127 41.4352 24.7042C40.6999 26.7665 40.9462 28.5972 42.1668 30.1487L42.4494 30.7795C42.4864 30.8622 53.8608 28.1895 53.9128 28.2634C53.9166 28.5062 42.6587 31.4459 42.6928 31.5225C42.9937 32.1965 43.3354 32.9608 43.764 33.7195C43.8581 33.8858 43.9392 34.0339 44.0112 34.1664L44.037 34.2139C44.491 35.0465 45.5568 37 48.3763 37C49.0359 37 49.7562 36.8963 50.6452 36.6735C50.8445 36.6237 51.0613 36.5692 51.3114 36.5103C55.1118 35.6158 58.8726 34.5752 62.5093 33.5686L62.5996 33.5436C64.1028 33.1278 65.6567 32.6979 67.1853 32.2868C68.9793 31.8045 70.7908 31.3064 72.5433 30.8244C77.158 29.5552 81.9247 28.245 86.6431 27.1461C87.5628 26.9321 88.4891 26.7063 89.3847 26.4882L89.4696 26.4674C92.0468 25.8392 94.7094 25.1906 97.31 24.7899C100.194 24.3447 103.276 23.8048 106.273 22.8748C108.068 22.3172 110.069 21.8242 112.569 21.3231C114.263 20.9835 116.078 20.5674 117.872 19.8255C118.288 19.6539 118.872 19.5475 119.441 19.4582C120.538 19.2863 121.636 19.112 122.733 18.9374L122.784 18.9293C124.821 18.6059 126.927 18.2714 128.992 17.9586C136.873 16.7641 145.01 15.5308 153.262 14.6587C156.52 14.3145 159.749 14.0733 162.897 13.9388C161.049 18.9912 159.352 23.9563 157.842 28.7257L157.559 29.6195C157.385 30.1724 157.61 30.7575 158.143 31.1338L159.005 31.7422C161.159 33.2622 163.47 34.2122 165.846 35.1305C166.754 35.4817 167.681 35.6596 168.602 35.6596C169.412 35.6596 170.228 35.5218 171.025 35.2502C172.891 34.6133 174.836 34.1065 176.896 33.57L178.215 33.2251C179.626 32.8568 181.355 32.4049 182.929 31.3994C183.537 31.2917 184.159 31.193 184.81 31.09C185.907 30.9157 187.04 30.7357 188.2 30.4959C189.247 30.2794 190.336 30.1145 191.488 29.9399C192.836 29.7352 194.231 29.5238 195.653 29.214C196.008 29.1368 196.344 29.0521 196.715 28.9575C197.148 28.8471 197.687 28.7099 197.922 28.6966C199.413 28.6113 200.758 28.3898 202.058 28.1757L202.135 28.163C202.474 28.1072 202.813 28.0513 203.153 27.9991C204.009 27.8677 204.853 27.7211 205.67 27.579L205.729 27.5686C206.49 27.4362 207.949 27.1087 209.638 26.7293C211.801 26.2436 215.075 25.4455 215.964 25.3528C218.559 25.0826 223.196 24.064 223.208 24.0617Z"
+											fill="#ED1C24"
+										/>
+									</svg>
+								</div>
+							</h2>
+
+							<p class="products__note get-animation">
+								Вам
+								<span>не потрібен</span>
+								юридичний відділ, адже більшість питань вашого бізнесу ми вже вирішували
+								для наших клієнтів
+							</p>
+						</div>
+
+						<div class="products__slider-nav get-animation">
+							<div class="products__slide-caption">Управління персоналом</div>
+							<div class="products__slide-caption">Захист бізнесу</div>
+							<div class="products__slide-caption">
+								Абонентське юридичне обслуговування
+							</div>
+							<div class="products__slide-caption">IT/IP</div>
+							<div class="products__slide-caption">Виконання судових рішень</div>
+							<div class="products__slide-caption">Судовий захист</div>
+							<div class="products__slide-caption">
+								Абонентське юридичне обслуговування
+							</div>
+							<div class="products__slide-caption">Захист бізнесу</div>
+						</div>
+
+						<div class="products__slider-main get-animation">
+							<div class="products__slide tabs">
+								<div class="products__slide-inner">
+									<div class="products__wrapper">
+										<div class="tabs__content active">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="products__wrapper">
+										<ul class="tabs__caption">
+											<li class="tabs__caption-item active">
+												<img
+													src="img/icons/document-check.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Трудовий договір
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/users.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Колективний договір
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/user-remove.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Безпечне звільнення працівників
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/edit.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Встановлення нетипових умов праці
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/megaphone.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Притягнення працівників до відповідальності
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="products__slide tabs">
+								<div class="products__slide-inner">
+									<div class="products__wrapper">
+										<div class="tabs__content active">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="products__wrapper">
+										<ul class="tabs__caption">
+											<li class="tabs__caption-item active">
+												<img
+													src="img/icons/document-check.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Трудовий договір
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/users.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Колективний договір
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/user-remove.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Безпечне звільнення працівників
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/edit.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Встановлення нетипових умов праці
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/megaphone.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Притягнення працівників до відповідальності
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="products__slide tabs">
+								<div class="products__slide-inner">
+									<div class="products__wrapper">
+										<div class="tabs__content active">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="products__wrapper">
+										<ul class="tabs__caption">
+											<li class="tabs__caption-item active">
+												<img
+													src="img/icons/document-check.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Трудовий договір
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/users.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Колективний договір
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/user-remove.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Безпечне звільнення працівників
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/edit.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Встановлення нетипових умов праці
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/megaphone.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Притягнення працівників до відповідальності
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="products__slide tabs">
+								<div class="products__slide-inner">
+									<div class="products__wrapper">
+										<div class="tabs__content active">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="products__wrapper">
+										<ul class="tabs__caption">
+											<li class="tabs__caption-item active">
+												<img
+													src="img/icons/document-check.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Трудовий договір
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/users.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Колективний договір
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/user-remove.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Безпечне звільнення працівників
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/edit.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Встановлення нетипових умов праці
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/megaphone.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Притягнення працівників до відповідальності
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="products__slide tabs">
+								<div class="products__slide-inner">
+									<div class="products__wrapper">
+										<div class="tabs__content active">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="products__wrapper">
+										<ul class="tabs__caption">
+											<li class="tabs__caption-item active">
+												<img
+													src="img/icons/document-check.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Трудовий договір
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/users.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Колективний договір
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/user-remove.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Безпечне звільнення працівників
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/edit.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Встановлення нетипових умов праці
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/megaphone.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Притягнення працівників до відповідальності
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="products__slide tabs">
+								<div class="products__slide-inner">
+									<div class="products__wrapper">
+										<div class="tabs__content active">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="products__wrapper">
+										<ul class="tabs__caption">
+											<li class="tabs__caption-item active">
+												<img
+													src="img/icons/document-check.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Трудовий договір
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/users.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Колективний договір
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/user-remove.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Безпечне звільнення працівників
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/edit.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Встановлення нетипових умов праці
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/megaphone.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Притягнення працівників до відповідальності
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="products__slide tabs">
+								<div class="products__slide-inner">
+									<div class="products__wrapper">
+										<div class="tabs__content active">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="products__wrapper">
+										<ul class="tabs__caption">
+											<li class="tabs__caption-item active">
+												<img
+													src="img/icons/document-check.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Трудовий договір
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/users.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Колективний договір
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/user-remove.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Безпечне звільнення працівників
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/edit.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Встановлення нетипових умов праці
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/megaphone.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Притягнення працівників до відповідальності
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="products__slide tabs">
+								<div class="products__slide-inner">
+									<div class="products__wrapper">
+										<div class="tabs__content active">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<h4 class="products__heading">Ми пропонуємо вам</h4>
+
+											<ul class="products__list">
+												<li class="products__list-item">
+													з’ясування мети та задач, які мають бути вирішені завдяки
+													укладенню письмового трудового договору
+												</li>
+												<li class="products__list-item">
+													визначення змісту трудового договору з урахування очікувань
+													сторін
+												</li>
+												<li class="products__list-item">
+													розробку або легалізацію існуючої у роботодавця системи ключових
+													показників ефективності (КРІ) працівників та її включення у
+													зміст трудового договору
+												</li>
+												<li class="products__list-item">
+													підготовку проєктів трудового договору та його інтеграцію з
+													кадровим діловодством
+												</li>
+												<li class="products__list-item">
+													надання необхідних консультацій під час упровадження трудового
+													договору
+												</li>
+											</ul>
+
+											<div class="products__result">
+												<h4 class="products__heading">Результат</h4>
+
+												<p class="products__text">
+													Надійний та зручний інструмент управління персоналом у вигляді
+													письмового трудового договору
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="products__wrapper">
+										<ul class="tabs__caption">
+											<li class="tabs__caption-item active">
+												<img
+													src="img/icons/document-check.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Трудовий договір
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/users.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Колективний договір
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/user-remove.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Безпечне звільнення працівників
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/edit.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Встановлення нетипових умов праці
+											</li>
+
+											<li class="tabs__caption-item">
+												<img
+													src="img/icons/megaphone.svg"
+													alt="Icon"
+													class="tabs__caption-icon"
+												/>
+												Притягнення працівників до відповідальності
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 
-			<section class="section projects" data-anchor="projects">
+			<section class="section team" data-anchor="team" id="team">
 				<div class="section-inner">
-					<marquee class="projects__running-text" scrollamount="8">
-						roland
-					</marquee>
+					<div class="container team__flex-box">
+						<div class="team__top-line">
+							<h2 class="h2 team__title">
+								<span data-aos="fade" data-aos-duration="500">Команда</span>
+								<div class="h2__underline get-animation">
+									<svg
+										viewBox="0 0 198 37"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M198.185 24.0617V11.022C198.205 11.0216 195.104 11.6301 192.819 12.1526C187.802 13.2996 182.201 14.5289 181.386 14.7112C180.645 14.8771 179.91 15.0507 179.199 15.2187C177.32 15.6626 175.545 16.082 173.755 16.3506C170.821 16.7908 168.431 17.2421 166.232 17.7703C165.675 17.9041 165.123 18.0513 164.588 18.1934C163.38 18.5156 162.241 18.8193 161.167 18.9307C159.979 19.0541 158.865 19.2361 157.811 19.4806C158.611 17.0541 159.44 14.5895 160.328 12.1961C160.957 10.5031 160.902 8.83463 160.169 7.3705C160.04 7.10089 159.038 4.68007 157.942 1.98629L157.552 1.02727C157.315 0.443554 156.708 0.0501758 156.021 0.0347886L154.892 0.00936616C154.824 0.00769363 154.447 0 153.856 0C152.679 0 150.381 0.0331161 148.214 0.255897C148.205 0.2569 148.197 0.257569 148.189 0.258573C147.123 0.38234 146.443 0.485033 145.946 0.559962C145.26 0.663659 145.079 0.691089 144.516 0.695103L144.412 0.695437C144.089 0.695437 143.77 0.689751 143.449 0.683729C143.096 0.677039 142.74 0.670349 142.38 0.670349C141.796 0.670349 141.305 0.687744 140.834 0.725208C139.262 0.84931 137.651 0.960031 136.092 1.06674C130.992 1.4163 125.722 1.77756 120.511 2.69344C119.711 2.83393 118.909 2.97175 118.108 3.10956C114.41 3.74512 110.586 4.40243 106.823 5.35343C106.178 5.51633 105.562 5.69429 104.965 5.86623C103.876 6.18033 102.846 6.47703 101.867 6.61953C100.573 6.80786 99.3447 7.07279 98.1579 7.32902L97.6635 7.43539C94.9843 8.00907 92.3242 8.69112 89.7514 9.35077C85.8424 10.3533 81.8126 11.3866 77.8264 12.0024C75.8522 12.3075 74.1277 12.6701 72.554 13.1113C70.657 13.6431 68.6676 14.1145 66.7436 14.5701C64.3308 15.1417 61.8444 15.7308 59.3916 16.4667C59.3406 16.4777 59.218 16.4978 59.1426 16.5102C58.9715 16.5383 58.7882 16.5691 58.5943 16.6095C58.2 16.6915 57.8039 16.7701 57.4085 16.8487C56.657 16.9979 55.8932 17.1491 55.1213 17.3264C55.6648 15.0554 56.2609 12.5734 56.8713 10.0552C57.522 7.3715 56.0196 4.78945 53.2989 3.91572C52.8393 3.76787 52.3504 3.36948 51.7311 2.86471L51.5686 2.73191C50.2842 1.68792 48.8571 1.1594 47.3245 1.1594C46.9295 1.1594 46.5226 1.19519 46.1154 1.26577C45.0313 1.45376 43.9195 1.6267 42.8442 1.79429C41.7272 1.96823 40.5722 2.1482 39.4127 2.34957C37.3583 2.70615 35.3157 3.12796 33.3403 3.53572C31.0073 4.01741 28.5963 4.51516 26.2359 4.8878C26.1927 4.89148 26.1491 4.89649 26.1055 4.90352C25.0701 5.06542 24.1031 5.29121 23.1679 5.50931C22.0358 5.77357 20.9698 6.0221 19.9643 6.11108C18.8052 6.21344 16.9806 6.61552 14.8678 7.08115C12.6778 7.56384 10.201 8.10975 8.61695 8.28236C7.68913 8.38338 6.87327 8.61252 6.21741 8.79649C5.76846 8.9226 5.34538 9.04135 5.0339 9.07681C3.69297 9.22968 -1.6042 10.3168 -4.96777 11.022V24.0617C-2.81764 23.5726 3.84262 21.9954 4.51511 21.769C5.08267 21.5776 5.55046 21.5107 6.14314 21.4258C6.54183 21.3686 6.99373 21.3037 7.5066 21.1929C9.18746 20.83 10.923 20.4554 12.6039 20.2025C14.4673 19.9222 17.9391 19.2284 21.6145 18.4938C24.3381 17.9496 27.1467 17.3883 29.0733 17.0454C29.1236 17.0401 29.172 17.0334 29.2196 17.0247C30.0691 16.8748 30.9053 16.7002 31.7134 16.5316C32.3929 16.3898 33.0872 16.2446 33.7556 16.1215C34.304 16.0208 34.8538 15.9221 35.404 15.8238C36.8509 15.5649 38.3319 15.3 39.8184 14.9832C39.2738 16.6955 38.7476 18.4005 38.2332 20.0673C37.7906 21.5014 37.2892 23.127 36.79 24.7042C36.1371 26.7665 36.3558 28.5972 37.4395 30.1487L37.6904 30.7795C37.7233 30.8622 47.8225 28.1895 47.8687 28.2634C47.8721 28.5062 37.8763 31.4459 37.9066 31.5225C38.1737 32.1965 38.4771 32.9608 38.8577 33.7195C38.9412 33.8858 39.0133 34.0339 39.0772 34.1664L39.1001 34.2139C39.5032 35.0465 40.4495 37 42.9529 37C43.5385 37 44.1782 36.8963 44.9674 36.6735C45.1444 36.6237 45.3369 36.5692 45.559 36.5103C48.9333 35.6158 52.2725 34.5752 55.5015 33.5686L55.5817 33.5436C56.9163 33.1278 58.2961 32.6979 59.6532 32.2868C61.2462 31.8045 62.8546 31.3064 64.4106 30.8244C68.508 29.5552 72.7403 28.245 76.9297 27.1461C77.7463 26.9321 78.5688 26.7063 79.3639 26.4882L79.4393 26.4674C81.7276 25.8392 84.0917 25.1906 86.4007 24.7899C88.9614 24.3447 91.6975 23.8048 94.3587 22.8748C95.9527 22.3172 97.7293 21.8242 99.9492 21.3231C101.453 20.9835 103.065 20.5674 104.658 19.8255C105.027 19.6539 105.545 19.5475 106.05 19.4582C107.025 19.2863 107.999 19.112 108.974 18.9374L109.019 18.9293C110.827 18.6059 112.697 18.2714 114.531 17.9586C121.528 16.7641 128.753 15.5308 136.08 14.6587C138.973 14.3145 141.84 14.0733 144.635 13.9388C142.994 18.9912 141.487 23.9563 140.147 28.7257L139.896 29.6195C139.74 30.1724 139.941 30.7575 140.414 31.1338L141.18 31.7422C143.092 33.2622 145.144 34.2122 147.253 35.1305C148.059 35.4817 148.883 35.6596 149.701 35.6596C150.42 35.6596 151.144 35.5218 151.852 35.2502C153.508 34.6133 155.236 34.1065 157.065 33.57L158.236 33.2251C159.488 32.8568 161.024 32.4049 162.422 31.3994C162.961 31.2917 163.513 31.193 164.091 31.09C165.065 30.9157 166.072 30.7357 167.102 30.4959C168.031 30.2794 168.998 30.1145 170.02 29.9399C171.218 29.7352 172.456 29.5238 173.719 29.214C174.034 29.1368 174.332 29.0521 174.662 28.9575C175.046 28.8471 175.525 28.7099 175.733 28.6966C177.057 28.6113 178.251 28.3898 179.405 28.1757L179.474 28.163C179.775 28.1072 180.076 28.0513 180.378 27.9991C181.138 27.8677 181.888 27.7211 182.613 27.579L182.665 27.5686C183.341 27.4362 184.636 27.1087 186.136 26.7293C188.057 26.2436 190.963 25.4455 191.753 25.3528C194.056 25.0826 198.174 24.064 198.185 24.0617Z"
+											fill="#ED1C24"
+										/>
+									</svg>
+								</div>
+							</h2>
+						</div>
+
+						<div class="team__container">
+							<img
+								src="img/team/group.png"
+								alt="Команда"
+								class="team__image"
+								data-aos="fade-up"
+								data-aos-duration="800"
+							/>
+
+							<div class="team__container-inner">
+								<a
+									href=".team-info"
+									class="team__item _left-direction _pos-1 magnific-popup"
+									data-aos="zoom-in"
+									data-aos-delay="200"
+								>
+									<span class="team__item-inner">
+										<span class="team__item-dot"></span>
+										<span class="team__item-name">Сергій Харитонов</span>
+										<span class="team__item-post">Помічник адвоката</span>
+									</span>
+								</a>
+
+								<a
+									href=".team-info"
+									class="team__item _left-direction _pos-2 magnific-popup"
+									data-aos="zoom-in"
+									data-aos-delay="400"
+								>
+									<span class="team__item-inner">
+										<span class="team__item-dot"></span>
+										<span class="team__item-name">Сергій Сільченко</span>
+										<span class="team__item-post">Керуючий партнер, адвокат</span>
+									</span>
+								</a>
+
+								<a
+									href=".team-info"
+									class="team__item _right-direction _pos-3 magnific-popup"
+									data-aos="zoom-in"
+									data-aos-delay="600"
+								>
+									<span class="team__item-inner">
+										<span class="team__item-dot"></span>
+										<span class="team__item-name">Данило Кравцов</span>
+										<span class="team__item-post">Адвокат</span>
+									</span>
+								</a>
+
+								<a
+									href=".team-info"
+									class="team__item _right-direction _pos-4 magnific-popup"
+									data-aos="zoom-in"
+									data-aos-delay="800"
+								>
+									<span class="team__item-inner">
+										<span class="team__item-dot"></span>
+										<span class="team__item-name">Тетяна Сільченко</span>
+										<span class="team__item-post">Партнер, адвокат</span>
+									</span>
+								</a>
+
+								<a
+									href=".team-info"
+									class="team__item _right-direction _pos-5 magnific-popup"
+									data-aos="zoom-in"
+									data-aos-delay="1000"
+								>
+									<span class="team__item-inner">
+										<span class="team__item-dot"></span>
+										<span class="team__item-name">Іван Колеснік</span>
+										<span class="team__item-post">Молодший юрист</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section projects _bg-light" data-anchor="projects" id="projects">
+				<div class="section-inner">
+					<marquee class="projects__running-text">roland</marquee>
 
 					<div class="container">
 						<div class="projects__top-line">
@@ -509,21 +2823,13 @@
 								</div>
 							</h2>
 
-							<div
-								class="projects__arrows"
-								data-aos="zoom-in"
-								data-aos-duration="1000"
-							>
+							<div class="projects__arrows" data-aos="zoom-in" data-aos-duration="1000">
 								<button class="projects__arrow prev"></button>
 								<button class="projects__arrow next"></button>
 							</div>
 						</div>
 
-						<div
-							class="projects__slider"
-							data-aos="fade-right"
-							data-aos-duration="1000"
-						>
+						<div class="projects__slider" data-aos="fade-right" data-aos-duration="1000">
 							<div class="projects__slide">
 								<a
 									href="#"
@@ -532,24 +2838,19 @@
 								>
 									<div class="projects__description">
 										<p class="projects__text">
-											Як ми допомогли девелоперу сонячних електростанцій
-											створити інструмент для розвитку регіональної партнерської
-											мережі
+											Як ми допомогли девелоперу сонячних електростанцій створити
+											інструмент для розвитку регіональної партнерської мережі
 										</p>
 
 										<div class="projects__author">
 											<div
 												class="projects__author-photo"
-												style="
-													background-image: url('img/projects/author-1.png');
-												"
+												style="background-image: url('img/projects/author-1.png')"
 											></div>
 
 											<div class="projects__author-wrapper">
 												<p class="projects__author-name">Сергій Сільченко</p>
-												<p class="projects__author-post">
-													Керуючий партнер, адвокат
-												</p>
+												<p class="projects__author-post">Керуючий партнер, адвокат</p>
 											</div>
 										</div>
 									</div>
@@ -564,17 +2865,14 @@
 								>
 									<div class="projects__description">
 										<p class="projects__text">
-											Як ми допомогли девелоперу сонячних електростанцій
-											створити інструмент для розвитку регіональної партнерської
-											мережі
+											Як ми допомогли девелоперу сонячних електростанцій створити
+											інструмент для розвитку регіональної партнерської мережі
 										</p>
 
 										<div class="projects__author">
 											<div
 												class="projects__author-photo"
-												style="
-													background-image: url('img/projects/author-2.png');
-												"
+												style="background-image: url('img/projects/author-2.png')"
 											></div>
 
 											<div class="projects__author-wrapper">
@@ -594,24 +2892,19 @@
 								>
 									<div class="projects__description">
 										<p class="projects__text">
-											Як ми допомогли девелоперу сонячних електростанцій
-											створити інструмент для розвитку регіональної партнерської
-											мережі
+											Як ми допомогли девелоперу сонячних електростанцій створити
+											інструмент для розвитку регіональної партнерської мережі
 										</p>
 
 										<div class="projects__author">
 											<div
 												class="projects__author-photo"
-												style="
-													background-image: url('img/projects/author-1.png');
-												"
+												style="background-image: url('img/projects/author-1.png')"
 											></div>
 
 											<div class="projects__author-wrapper">
 												<p class="projects__author-name">Сергій Сільченко</p>
-												<p class="projects__author-post">
-													Керуючий партнер, адвокат
-												</p>
+												<p class="projects__author-post">Керуючий партнер, адвокат</p>
 											</div>
 										</div>
 									</div>
@@ -626,17 +2919,14 @@
 								>
 									<div class="projects__description">
 										<p class="projects__text">
-											Як ми допомогли девелоперу сонячних електростанцій
-											створити інструмент для розвитку регіональної партнерської
-											мережі
+											Як ми допомогли девелоперу сонячних електростанцій створити
+											інструмент для розвитку регіональної партнерської мережі
 										</p>
 
 										<div class="projects__author">
 											<div
 												class="projects__author-photo"
-												style="
-													background-image: url('img/projects/author-2.png');
-												"
+												style="background-image: url('img/projects/author-2.png')"
 											></div>
 
 											<div class="projects__author-wrapper">
@@ -652,7 +2942,305 @@
 				</div>
 			</section>
 
-			<section class="section blog _bg-light" data-anchor="blog">
+			<section class="section reviews" data-anchor="reviews" id="reviews">
+				<div class="section-inner">
+					<div class="container reviews__container">
+						<h2 class="h2 reviews__title">
+							<span data-aos="fade" data-aos-duration="500">Відгуки</span>
+							<div class="h2__underline get-animation">
+								<svg viewBox="0 0 174 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M174.162 24.0617V11.022C174.18 11.0216 171.455 11.6301 169.447 12.1526C165.038 13.2996 160.116 14.5289 159.4 14.7112C158.749 14.8771 158.103 15.0507 157.478 15.2187C155.826 15.6626 154.267 16.082 152.693 16.3506C150.115 16.7908 148.015 17.2421 146.083 17.7703C145.593 17.9041 145.108 18.0513 144.638 18.1934C143.577 18.5156 142.576 18.8193 141.632 18.9307C140.587 19.0541 139.608 19.2361 138.682 19.4806C139.385 17.0541 140.114 14.5895 140.894 12.1961C141.447 10.5031 141.398 8.83463 140.755 7.3705C140.641 7.10089 139.761 4.68007 138.798 1.98629L138.455 1.02727C138.246 0.443554 137.713 0.0501758 137.109 0.0347886L136.117 0.00936616C136.057 0.00769363 135.726 0 135.207 0C134.172 0 132.153 0.0331161 130.248 0.255897C130.241 0.2569 130.234 0.257569 130.227 0.258573C129.29 0.38234 128.692 0.485033 128.256 0.559962C127.653 0.663659 127.494 0.691089 126.999 0.695103L126.907 0.695437C126.623 0.695437 126.343 0.689751 126.061 0.683729C125.751 0.677039 125.438 0.670349 125.122 0.670349C124.609 0.670349 124.177 0.687744 123.763 0.725208C122.381 0.84931 120.966 0.960031 119.596 1.06674C115.114 1.4163 110.483 1.77756 105.903 2.69344C105.2 2.83393 104.496 2.97175 103.791 3.10956C100.542 3.74512 97.1819 4.40243 93.8744 5.35343C93.3081 5.51633 92.7662 5.69429 92.2421 5.86623C91.2845 6.18033 90.3801 6.47703 89.5193 6.61953C88.3819 6.80786 87.3028 7.07279 86.2599 7.32902L85.8254 7.43539C83.4709 8.00907 81.1333 8.69112 78.8723 9.35077C75.4372 10.3533 71.8958 11.3866 68.3928 12.0024C66.6579 12.3075 65.1424 12.6701 63.7595 13.1113C62.0924 13.6431 60.3442 14.1145 58.6534 14.5701C56.533 15.1417 54.348 15.7308 52.1926 16.4667C52.1477 16.4777 52.0399 16.4978 51.9737 16.5102C51.8234 16.5383 51.6623 16.5691 51.4918 16.6095C51.1453 16.6915 50.7973 16.7701 50.4498 16.8487C49.7893 16.9979 49.1182 17.1491 48.4398 17.3264C48.9175 15.0554 49.4413 12.5734 49.9777 10.0552C50.5495 7.3715 49.2292 4.78945 46.8383 3.91572C46.4344 3.76787 46.0048 3.36948 45.4606 2.86471L45.3177 2.73191C44.189 1.68792 42.935 1.1594 41.5881 1.1594C41.2409 1.1594 40.8834 1.19519 40.5256 1.26577C39.5729 1.45376 38.5958 1.6267 37.6509 1.79429C36.6693 1.96823 35.6542 2.1482 34.6353 2.34957C32.8299 2.70615 31.0349 3.12796 29.299 3.53572C27.2487 4.01741 25.13 4.51516 23.0557 4.8878C23.0177 4.89148 22.9794 4.89649 22.9411 4.90352C22.0312 5.06542 21.1814 5.29121 20.3596 5.50931C19.3647 5.77357 18.4279 6.0221 17.5443 6.11108C16.5257 6.21344 14.9223 6.61552 13.0655 7.08115C11.141 7.56384 8.96442 8.10975 7.57237 8.28236C6.75701 8.38338 6.04005 8.61252 5.46368 8.79649C5.06915 8.9226 4.69736 9.04135 4.42362 9.07681C3.24524 9.22968 -1.40986 10.3168 -4.36572 11.022V24.0617C-2.47621 23.5726 3.37675 21.9954 3.96772 21.769C4.46648 21.5776 4.87757 21.5107 5.39841 21.4258C5.74878 21.3686 6.1459 21.3037 6.5966 21.1929C8.07373 20.83 9.59891 20.4554 11.076 20.2025C12.7136 19.9222 15.7646 19.2284 18.9945 18.4938C21.388 17.9496 23.8561 17.3883 25.5492 17.0454C25.5933 17.0401 25.6359 17.0334 25.6777 17.0247C26.4243 16.8748 27.1591 16.7002 27.8692 16.5316C28.4664 16.3898 29.0765 16.2446 29.6639 16.1215C30.1458 16.0208 30.629 15.9221 31.1125 15.8238C32.3841 15.5649 33.6855 15.3 34.9918 14.9832C34.5132 16.6955 34.0508 18.4005 33.5988 20.0673C33.2098 21.5014 32.7692 23.127 32.3305 24.7042C31.7567 26.7665 31.9489 28.5972 32.9013 30.1487L33.1218 30.7795C33.1507 30.8622 42.0258 28.1895 42.0664 28.2634C42.0693 28.5062 33.2851 31.4459 33.3118 31.5225C33.5465 32.1965 33.8131 32.9608 34.1476 33.7195C34.221 33.8858 34.2843 34.0339 34.3405 34.1664L34.3606 34.2139C34.7148 35.0465 35.5464 37 37.7464 37C38.261 37 38.8231 36.8963 39.5167 36.6735C39.6722 36.6237 39.8414 36.5692 40.0366 36.5103C43.0019 35.6158 45.9363 34.5752 48.774 33.5686L48.8444 33.5436C50.0173 33.1278 51.2298 32.6979 52.4224 32.2868C53.8223 31.8045 55.2358 31.3064 56.6031 30.8244C60.2039 29.5552 63.9231 28.245 67.6048 27.1461C68.3224 26.9321 69.0452 26.7063 69.744 26.4882L69.8102 26.4674C71.8212 25.8392 73.8987 25.1906 75.9278 24.7899C78.1781 24.3447 80.5826 23.8048 82.9212 22.8748C84.322 22.3172 85.8832 21.8242 87.8341 21.3231C89.1557 20.9835 90.5717 20.5674 91.9719 19.8255C92.2963 19.6539 92.7519 19.5475 93.1957 19.4582C94.052 19.2863 94.9083 19.112 95.7649 18.9374L95.8045 18.9293C97.3936 18.6059 99.037 18.2714 100.649 17.9586C106.797 16.7641 113.147 15.5308 119.586 14.6587C122.127 14.3145 124.647 14.0733 127.103 13.9388C125.662 18.9912 124.337 23.9563 123.159 28.7257L122.939 29.6195C122.802 30.1724 122.978 30.7575 123.394 31.1338L124.067 31.7422C125.747 33.2622 127.55 34.2122 129.404 35.1305C130.113 35.4817 130.837 35.6596 131.555 35.6596C132.187 35.6596 132.823 35.5218 133.446 35.2502C134.901 34.6133 136.419 34.1065 138.027 33.57L139.056 33.2251C140.156 32.8568 141.506 32.4049 142.734 31.3994C143.208 31.2917 143.694 31.193 144.201 31.09C145.057 30.9157 145.942 30.7357 146.847 30.4959C147.664 30.2794 148.513 30.1145 149.412 29.9399C150.464 29.7352 151.552 29.5238 152.662 29.214C152.938 29.1368 153.201 29.0521 153.491 28.9575C153.828 28.8471 154.249 28.7099 154.432 28.6966C155.596 28.6113 156.645 28.3898 157.659 28.1757L157.719 28.163C157.984 28.1072 158.249 28.0513 158.514 27.9991C159.182 27.8677 159.841 27.7211 160.478 27.579L160.524 27.5686C161.118 27.4362 162.256 27.1087 163.574 26.7293C165.262 26.2436 167.816 25.4455 168.51 25.3528C170.534 25.0826 174.153 24.064 174.162 24.0617Z"
+										fill="#ED1C24"
+									/>
+								</svg>
+							</div>
+						</h2>
+
+						<div class="reviews__slider-main">
+							<div class="review">
+								<div class="review__inner">
+									<div class="review__author" data-aos="fade-right">
+										<div
+											class="review__author-photo"
+											style="background-image: url('img/reviews/image-1.png')"
+										></div>
+
+										<p class="review__author-name">Олег Харченко</p>
+										<p class="review__author-post">Власник групи компаній «Партнер»</p>
+									</div>
+
+									<div
+										class="review__text-wrapper get-animation"
+										data-aos="fade-right"
+										data-aos-delay="200"
+									>
+										<p class="review__text">
+											Усі питання, з якими ми звертаємось до Адвокатського об’єднання
+											«Роланд», вирішуються якісно і швидко. Можу впевнено стверджувати,
+											що там працюють високопрофесійні та порядні юристи, які вміють
+											робити свою роботу. Я задоволений співпрацею і можу рекомендувати АО
+											«Роландяк надійного партнера
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="review">
+								<div class="review__inner">
+									<div class="review__author">
+										<div
+											class="review__author-photo"
+											style="background-image: url('img/reviews/image-2.png')"
+										></div>
+
+										<p class="review__author-name">Анна Харченко</p>
+										<p class="review__author-post">Власник групи компаній «Партнер»</p>
+									</div>
+
+									<div
+										class="review__text-wrapper get-animation"
+										data-aos="fade-right"
+										data-aos-delay="200"
+									>
+										<p class="review__text">
+											Усі питання, з якими ми звертаємось до Адвокатського об’єднання
+											«Роланд», вирішуються якісно і швидко. Можу впевнено стверджувати,
+											що там працюють високопрофесійні та порядні юристи, які вміють
+											робити свою роботу. Я задоволений співпрацею і можу рекомендувати АО
+											«Роландяк надійного партнера Усі питання, з якими ми звертаємось до
+											Адвокатського об’єднання «Роланд», вирішуються якісно і
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="review">
+								<div class="review__inner">
+									<div class="review__author">
+										<div
+											class="review__author-photo"
+											style="background-image: url('img/reviews/image-3.png')"
+										></div>
+
+										<p class="review__author-name">Николай Харченко</p>
+										<p class="review__author-post">Власник групи компаній «Партнер»</p>
+									</div>
+
+									<div
+										class="review__text-wrapper get-animation"
+										data-aos="fade-right"
+										data-aos-delay="200"
+									>
+										<p class="review__text">
+											Усі питання, з якими ми звертаємось до Адвокатського об’єднання
+											«Роланд»,
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="review">
+								<div class="review__inner">
+									<div class="review__author">
+										<div
+											class="review__author-photo"
+											style="background-image: url('img/reviews/image-4.png')"
+										></div>
+
+										<p class="review__author-name">Людмила Харченко</p>
+										<p class="review__author-post">Власник групи компаній «Партнер»</p>
+									</div>
+
+									<div
+										class="review__text-wrapper get-animation"
+										data-aos="fade-right"
+										data-aos-delay="200"
+									>
+										<p class="review__text">Все супер!</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="review">
+								<div class="review__inner">
+									<div class="review__author" data-aos="fade-right">
+										<div
+											class="review__author-photo"
+											style="background-image: url('img/reviews/image-1.png')"
+										></div>
+
+										<p class="review__author-name">Олег Харченко</p>
+										<p class="review__author-post">Власник групи компаній «Партнер»</p>
+									</div>
+
+									<div
+										class="review__text-wrapper get-animation"
+										data-aos="fade-right"
+										data-aos-delay="200"
+									>
+										<p class="review__text">
+											Усі питання, з якими ми звертаємось до Адвокатського об’єднання
+											«Роланд», вирішуються якісно і швидко. Можу впевнено стверджувати,
+											що там працюють високопрофесійні та порядні юристи, які вміють
+											робити свою роботу. Я задоволений співпрацею і можу рекомендувати АО
+											«Роландяк надійного партнера
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="review">
+								<div class="review__inner">
+									<div class="review__author">
+										<div
+											class="review__author-photo"
+											style="background-image: url('img/reviews/image-2.png')"
+										></div>
+
+										<p class="review__author-name">Анна Харченко</p>
+										<p class="review__author-post">Власник групи компаній «Партнер»</p>
+									</div>
+
+									<div
+										class="review__text-wrapper get-animation"
+										data-aos="fade-right"
+										data-aos-delay="200"
+									>
+										<p class="review__text">
+											Усі питання, з якими ми звертаємось до Адвокатського об’єднання
+											«Роланд», вирішуються якісно і швидко. Можу впевнено стверджувати,
+											що там працюють високопрофесійні та порядні юристи, які вміють
+											робити свою роботу. Я задоволений співпрацею і можу рекомендувати АО
+											«Роландяк надійного партнера Усі питання, з якими ми звертаємось до
+											Адвокатського об’єднання «Роланд», вирішуються якісно і
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="review">
+								<div class="review__inner">
+									<div class="review__author">
+										<div
+											class="review__author-photo"
+											style="background-image: url('img/reviews/image-3.png')"
+										></div>
+
+										<p class="review__author-name">Николай Харченко</p>
+										<p class="review__author-post">Власник групи компаній «Партнер»</p>
+									</div>
+
+									<div
+										class="review__text-wrapper get-animation"
+										data-aos="fade-right"
+										data-aos-delay="200"
+									>
+										<p class="review__text">
+											Усі питання, з якими ми звертаємось до Адвокатського об’єднання
+											«Роланд»,
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="review">
+								<div class="review__inner">
+									<div class="review__author">
+										<div
+											class="review__author-photo"
+											style="background-image: url('img/reviews/image-4.png')"
+										></div>
+
+										<p class="review__author-name">Людмила Харченко</p>
+										<p class="review__author-post">Власник групи компаній «Партнер»</p>
+									</div>
+
+									<div
+										class="review__text-wrapper get-animation"
+										data-aos="fade-right"
+										data-aos-delay="200"
+									>
+										<p class="review__text">Все супер!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="reviews__slider-nav get-animation">
+							<div class="review__preview">
+								<div
+									class="review__preview-image"
+									style="background-image: url('img/reviews/image-1.png')"
+									data-aos="zoom-in"
+								></div>
+							</div>
+
+							<div class="review__preview">
+								<div
+									class="review__preview-image"
+									style="background-image: url('img/reviews/image-2.png')"
+									data-aos="zoom-in"
+									data-aos-delay="500"
+								></div>
+							</div>
+
+							<div class="review__preview">
+								<div
+									class="review__preview-image"
+									style="background-image: url('img/reviews/image-3.png')"
+									data-aos="zoom-in"
+									data-aos-delay="1000"
+								></div>
+							</div>
+
+							<div class="review__preview">
+								<div
+									class="review__preview-image"
+									style="background-image: url('img/reviews/image-4.png')"
+									data-aos="zoom-in"
+								></div>
+							</div>
+
+							<div class="review__preview">
+								<div
+									class="review__preview-image"
+									style="background-image: url('img/reviews/image-1.png')"
+									data-aos="zoom-in"
+								></div>
+							</div>
+
+							<div class="review__preview">
+								<div
+									class="review__preview-image"
+									style="background-image: url('img/reviews/image-2.png')"
+									data-aos="zoom-in"
+									data-aos-delay="500"
+								></div>
+							</div>
+
+							<div class="review__preview">
+								<div
+									class="review__preview-image"
+									style="background-image: url('img/reviews/image-3.png')"
+									data-aos="zoom-in"
+									data-aos-delay="1000"
+								></div>
+							</div>
+
+							<div class="review__preview">
+								<div
+									class="review__preview-image"
+									style="background-image: url('img/reviews/image-4.png')"
+									data-aos="zoom-in"
+								></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section blog _bg-light" data-anchor="blog" id="blog">
 				<div class="section-inner">
 					<div class="container">
 						<div class="blog__top-line">
@@ -672,30 +3260,21 @@
 								</div>
 							</h2>
 
-							<div
-								class="blog__arrows"
-								data-aos="zoom-in"
-								data-aos-duration="1000"
-							>
+							<div class="blog__arrows" data-aos="zoom-in" data-aos-duration="1000">
 								<button class="blog__arrow prev"></button>
 								<button class="blog__arrow next"></button>
 							</div>
 						</div>
 
-						<div
-							class="blog__slider"
-							data-aos="fade-right"
-							data-aos-duration="1200"
-						>
+						<div class="blog__slider" data-aos="fade-right" data-aos-duration="1200">
 							<div class="blog__slide">
 								<a href="#" class="blog__slide-inner">
 									<div class="blog__slide-wrapper">
 										<p class="blog__date">Вересень 2021</p>
 
 										<p class="blog__text">
-											Як ми допомогли девелоперу сонячних електростанцій
-											створити інструмент для розвитку регіональної партнерської
-											мережі
+											Як ми допомогли девелоперу сонячних електростанцій створити
+											інструмент для розвитку регіональної партнерської мережі
 										</p>
 									</div>
 
@@ -712,9 +3291,8 @@
 										<p class="blog__date">Вересень 2021</p>
 
 										<p class="blog__text">
-											Як ми допомогли девелоперу сонячних електростанцій
-											створити інструмент для розвитку регіональної партнерської
-											мережі
+											Як ми допомогли девелоперу сонячних електростанцій створити
+											інструмент для розвитку регіональної партнерської мережі
 										</p>
 									</div>
 
@@ -731,9 +3309,8 @@
 										<p class="blog__date">Вересень 2021</p>
 
 										<p class="blog__text">
-											Як ми допомогли девелоперу сонячних електростанцій
-											створити інструмент для розвитку регіональної партнерської
-											мережі
+											Як ми допомогли девелоперу сонячних електростанцій створити
+											інструмент для розвитку регіональної партнерської мережі
 										</p>
 									</div>
 
@@ -750,9 +3327,8 @@
 										<p class="blog__date">Вересень 2021</p>
 
 										<p class="blog__text">
-											Як ми допомогли девелоперу сонячних електростанцій
-											створити інструмент для розвитку регіональної партнерської
-											мережі
+											Як ми допомогли девелоперу сонячних електростанцій створити
+											інструмент для розвитку регіональної партнерської мережі
 										</p>
 									</div>
 
@@ -767,22 +3343,13 @@
 				</div>
 			</section>
 
-			<footer class="footer section fp-auto-height" data-anchor="contacts">
+			<footer class="footer section fp-auto-height" data-anchor="contacts" id="contacts">
 				<div class="container footer__container">
-					<div
-						class="contacts"
-						data-aos="fade-right"
-						data-aos-duration="1000"
-						data-aos-offset="0"
-					>
+					<div class="contacts" data-aos="fade-right" data-aos-duration="1000">
 						<h2 class="h2 contacts__title">
 							<span data-aos="fade" data-aos-duration="500">Контакти</span>
 							<div class="h2__underline get-animation">
-								<svg
-									viewBox="0 0 212 37"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
+								<svg viewBox="0 0 212 37" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
 										d="M212.198 24.0617V11.022C212.219 11.0216 208.899 11.6301 206.453 12.1526C201.08 13.2996 195.083 14.5289 194.211 14.7112C193.418 14.8771 192.631 15.0507 191.87 15.2187C189.857 15.6626 187.957 16.082 186.04 16.3506C182.899 16.7908 180.34 17.2421 177.986 17.7703C177.39 17.9041 176.798 18.0513 176.226 18.1934C174.933 18.5156 173.713 18.8193 172.563 18.9307C171.29 19.0541 170.098 19.2361 168.969 19.4806C169.826 17.0541 170.713 14.5895 171.664 12.1961C172.338 10.5031 172.279 8.83463 171.494 7.3705C171.356 7.10089 170.284 4.68007 169.11 1.98629L168.692 1.02727C168.438 0.443554 167.788 0.0501758 167.053 0.0347886L165.844 0.00936616C165.771 0.00769363 165.367 0 164.734 0C163.474 0 161.014 0.0331161 158.693 0.255897C158.685 0.2569 158.676 0.257569 158.667 0.258573C157.526 0.38234 156.797 0.485033 156.266 0.559962C155.531 0.663659 155.338 0.691089 154.735 0.695103L154.623 0.695437C154.277 0.695437 153.935 0.689751 153.592 0.683729C153.214 0.677039 152.833 0.670349 152.447 0.670349C151.822 0.670349 151.296 0.687744 150.792 0.725208C149.108 0.84931 147.383 0.960031 145.715 1.06674C140.254 1.4163 134.612 1.77756 129.032 2.69344C128.175 2.83393 127.317 2.97175 126.459 3.10956C122.5 3.74512 118.406 4.40243 114.376 5.35343C113.686 5.51633 113.025 5.69429 112.387 5.86623C111.22 6.18033 110.118 6.47703 109.07 6.61953C107.684 6.80786 106.369 7.07279 105.098 7.32902L104.569 7.43539C101.7 8.00907 98.8521 8.69112 96.0974 9.35077C91.912 10.3533 87.5973 11.3866 83.3293 12.0024C81.2154 12.3075 79.369 12.6701 77.684 13.1113C75.6529 13.6431 73.5228 14.1145 71.4628 14.5701C68.8793 15.1417 66.2172 15.7308 63.591 16.4667C63.5364 16.4777 63.405 16.4978 63.3243 16.5102C63.1412 16.5383 62.9449 16.5691 62.7372 16.6095C62.3151 16.6915 61.891 16.7701 61.4677 16.8487C60.6629 16.9979 59.8452 17.1491 59.0187 17.3264C59.6007 15.0554 60.2388 12.5734 60.8924 10.0552C61.5891 7.3715 59.9805 4.78945 57.0675 3.91572C56.5753 3.76787 56.0519 3.36948 55.3888 2.86471L55.2148 2.73191C53.8396 1.68792 52.3116 1.1594 50.6706 1.1594C50.2476 1.1594 49.8121 1.19519 49.3761 1.26577C48.2153 1.45376 47.0249 1.6267 45.8736 1.79429C44.6776 1.96823 43.4409 2.1482 42.1994 2.34957C39.9997 2.70615 37.8127 3.12796 35.6976 3.53572C33.1996 4.01741 30.6182 4.51516 28.0909 4.8878C28.0446 4.89148 27.9979 4.89649 27.9512 4.90352C26.8427 5.06542 25.8073 5.29121 24.806 5.50931C23.5938 5.77357 22.4524 6.0221 21.3759 6.11108C20.1348 6.21344 18.1812 6.61552 15.919 7.08115C13.5741 7.56384 10.9222 8.10975 9.22617 8.28236C8.23275 8.38338 7.3592 8.61252 6.65696 8.79649C6.17627 8.9226 5.72328 9.04135 5.38977 9.07681C3.95403 9.22968 -1.71769 10.3168 -5.31909 11.022V24.0617C-3.01693 23.5726 4.11426 21.9954 4.8343 21.769C5.44199 21.5776 5.94285 21.5107 6.57744 21.4258C7.00432 21.3686 7.48818 21.3037 8.03731 21.1929C9.83702 20.83 11.6953 20.4554 13.495 20.2025C15.4901 19.9222 19.2075 19.2284 23.1428 18.4938C26.059 17.9496 29.0661 17.3883 31.1289 17.0454C31.1827 17.0401 31.2346 17.0334 31.2856 17.0247C32.1951 16.8748 33.0905 16.7002 33.9557 16.5316C34.6832 16.3898 35.4266 16.2446 36.1423 16.1215C36.7294 16.0208 37.3181 15.9221 37.9072 15.8238C39.4565 15.5649 41.0422 15.3 42.6338 14.9832C42.0506 16.6955 41.4873 18.4005 40.9365 20.0673C40.4626 21.5014 39.9257 23.127 39.3912 24.7042C38.6921 26.7665 38.9264 28.5972 40.0867 30.1487L40.3554 30.7795C40.3906 30.8622 51.2039 28.1895 51.2533 28.2634C51.2569 28.5062 40.5544 31.4459 40.5868 31.5225C40.8728 32.1965 41.1977 32.9608 41.6052 33.7195C41.6946 33.8858 41.7717 34.0339 41.8402 34.1664L41.8647 34.2139C42.2963 35.0465 43.3095 37 45.9899 37C46.617 37 47.3018 36.8963 48.1469 36.6735C48.3364 36.6237 48.5425 36.5692 48.7803 36.5103C52.3931 35.6158 55.9684 34.5752 59.4258 33.5686L59.5117 33.5436C60.9407 33.1278 62.4179 32.6979 63.8711 32.2868C65.5766 31.8045 67.2988 31.3064 68.9648 30.8244C73.3519 29.5552 77.8834 28.245 82.3691 27.1461C83.2434 26.9321 84.1241 26.7063 84.9755 26.4882L85.0562 26.4674C87.5063 25.8392 90.0375 25.1906 92.5098 24.7899C95.2515 24.3447 98.1811 23.8048 101.03 22.8748C102.737 22.3172 104.639 21.8242 107.016 21.3231C108.626 20.9835 110.352 20.5674 112.058 19.8255C112.453 19.6539 113.008 19.5475 113.549 19.4582C114.592 19.2863 115.635 19.112 116.679 18.9374L116.727 18.9293C118.664 18.6059 120.666 18.2714 122.629 17.9586C130.121 16.7641 137.857 15.5308 145.702 14.6587C148.799 14.3145 151.869 14.0733 154.861 13.9388C153.105 18.9912 151.491 23.9563 150.056 28.7257L149.787 29.6195C149.621 30.1724 149.836 30.7575 150.342 31.1338L151.162 31.7422C153.209 33.2622 155.406 34.2122 157.665 35.1305C158.528 35.4817 159.41 35.6596 160.286 35.6596C161.056 35.6596 161.831 35.5218 162.589 35.2502C164.362 34.6133 166.212 34.1065 168.17 33.57L169.424 33.2251C170.765 32.8568 172.409 32.4049 173.906 31.3994C174.484 31.2917 175.075 31.193 175.694 31.09C176.736 30.9157 177.814 30.7357 178.917 30.4959C179.912 30.2794 180.947 30.1145 182.042 29.9399C183.324 29.7352 184.65 29.5238 186.002 29.214C186.339 29.1368 186.659 29.0521 187.011 28.9575C187.423 28.8471 187.936 28.7099 188.159 28.6966C189.576 28.6113 190.855 28.3898 192.091 28.1757L192.164 28.163C192.486 28.1072 192.809 28.0513 193.132 27.9991C193.946 27.8677 194.748 27.7211 195.525 27.579L195.581 27.5686C196.305 27.4362 197.691 27.1087 199.297 26.7293C201.353 26.2436 204.466 25.4455 205.311 25.3528C207.778 25.0826 212.186 24.064 212.198 24.0617Z"
 										fill="#ED1C24"
@@ -791,9 +3358,7 @@
 							</div>
 						</h2>
 
-						<h3 class="h3 contacts__subtitle">
-							Адвокатське об’єднання «Роланд»
-						</h3>
+						<h3 class="h3 contacts__subtitle">Адвокатське об’єднання «Роланд»</h3>
 
 						<div class="contacts__list">
 							<img src="img/qr.png" alt="qr" class="contacts__qr" />
@@ -814,21 +3379,18 @@
 							</address>
 						</div>
 
-						<iframe
-							class="contacts__map"
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.4882559948837!2d36.24235961594399!3d50.00220312744182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a197c2a97da1%3A0xae9048f3fff968e4!2z0JDQtNCy0L7QutCw0YLRgdC60L7QtSDQvtCx0YrQtdC00LjQvdC10L3QuNC1ICLQoNC-0LvQsNC90LQi!5e0!3m2!1sru!2sge!4v1633217837066!5m2!1sru!2sge"
-							style="border: 0"
-							allowfullscreen=""
-							loading="lazy"
-						></iframe>
+						<div class="contacts__map">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.485129069623!2d36.2433359397966!3d50.00226174380215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a197c2a97da1%3A0xae9048f3fff968e4!2z0JDQtNCy0L7QutCw0YLRgdC60L7QtSDQvtCx0YrQtdC00LjQvdC10L3QuNC1ICLQoNC-0LvQsNC90LQi!5e0!3m2!1sru!2sge!4v1633259780159!5m2!1sru!2sge"
+								class="contacts__map-iframe"
+								style="border: 0"
+								allowfullscreen=""
+								loading="lazy"
+							></iframe>
+						</div>
 					</div>
 
-					<div
-						class="footer__wrapper"
-						data-aos="fade-right"
-						data-aos-duration="1000"
-						data-aos-offset="0"
-					>
+					<div class="footer__wrapper" data-aos="fade-right" data-aos-duration="1000">
 						<form class="footer__search">
 							<input
 								class="footer__search-input"
@@ -840,17 +3402,17 @@
 							<button type="submit" class="footer__search-button"></button>
 						</form>
 
-						<nav class="footer__menu">
-							<a href="#products" class="footer__menu-item">Продукти</a>
-							<a href="#team" class="footer__menu-item">Команда</a>
-							<a href="#projects" class="footer__menu-item">Проєкти</a>
-							<a href="#blog" class="footer__menu-item">Публікації</a>
-							<a href="#contacts" class="footer__menu-item">Контакти</a>
+						<nav class="footer__menu" id="fullpageMenu">
+							<span class="footer__menu-item" data-menuanchor="products">Продукти</span>
+							<span class="footer__menu-item" data-menuanchor="team">Команда</span>
+							<span class="footer__menu-item" data-menuanchor="products">Проєкти</span>
+							<span class="footer__menu-item" data-menuanchor="blog">Публікації</span>
+							<span class="footer__menu-item" data-menuanchor="contacts">Контакти</span>
+
+							<div class="footer__scroll-up">вверх</div>
 						</nav>
 
-						<a href="#" class="footer__privacy-policy">
-							Політика конфіденційності
-						</a>
+						<a href="#" class="footer__privacy-policy">Політика конфіденційності</a>
 
 						<div class="footer__social">
 							<a href="#" class="footer__social-link">
@@ -917,16 +3479,10 @@
 
 						<p class="footer__author">
 							Designed & Developed by
-							<img
-								src="img/author.png"
-								alt="Chuloy"
-								class="footer__author-logo"
-							/>
+							<img src="img/author.png" alt="Chuloy" class="footer__author-logo" />
 						</p>
 
 						<p class="footer__copyrights">© 2021 Roland</p>
-
-						<div class="footer__scroll-up">вверх</div>
 					</div>
 				</div>
 			</footer>
