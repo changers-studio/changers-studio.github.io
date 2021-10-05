@@ -116,11 +116,11 @@ jQuery(function () {
 		fullpage_api.moveTo('about')
 	})
 
-	if ($('body').hasClass('ishome')) {
+	if ($('body').hasClass('ishome') && $(window).width() > 992) {
 		$('.footer__scroll-up').on('click', function () {
 			fullpage_api.moveTo('main')
 		})
-	} else {
+	} else if ($(window).width() < 992 || $('body').hasClass('isnohome')) {
 		$('.footer__scroll-up').on('click', function () {
 			$('body, html').animate({ scrollTop: 0 }, 1500)
 		})

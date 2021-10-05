@@ -7813,9 +7813,9 @@ body.scroll_disable {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: 2s ease 2s;
-  -o-transition: 2s ease 2s;
-  transition: 2s ease 2s;
+  -webkit-transition: 2s ease 5s;
+  -o-transition: 2s ease 5s;
+  transition: 2s ease 5s;
 }
 
 .fly-in {
@@ -7827,9 +7827,9 @@ body.scroll_disable {
 .fly-in li {
   display: inline-block;
   font-weight: 600;
-  -webkit-transition: all 2.8s cubic-bezier(0.6, -0.005, 0.32, 1.75) 3.5s;
-  -o-transition: all 2.8s cubic-bezier(0.6, -0.005, 0.32, 1.75) 3.5s;
-  transition: all 2.8s cubic-bezier(0.6, -0.005, 0.32, 1.75) 3.5s;
+  -webkit-transition: all 2.8s cubic-bezier(0.6, -0.005, 0.32, 1.75) 6.5s;
+  -o-transition: all 2.8s cubic-bezier(0.6, -0.005, 0.32, 1.75) 6.5s;
+  transition: all 2.8s cubic-bezier(0.6, -0.005, 0.32, 1.75) 6.5s;
 }
 
 .fly-in.hidden li {
@@ -9458,6 +9458,8 @@ body.scroll_disable {
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
+  height: -webkit-calc(100vh - 22vh);
+  height: calc(100vh - 22vh);
 }
 
 .team__container-inner {
@@ -9467,8 +9469,6 @@ body.scroll_disable {
 }
 
 .team__image {
-  height: -webkit-calc(100vh - 22vh);
-  height: calc(100vh - 22vh);
   width: auto;
 }
 
@@ -9898,9 +9898,6 @@ body.scroll_disable {
   .projects__slide-inner {
     height: 460px;
   }
-  .projects__slide-inner:hover .projects__text {
-    font-size: 26px;
-  }
   .projects__text {
     font-size: 18px;
   }
@@ -10191,9 +10188,6 @@ body.scroll_disable {
   }
   .footer__wrapper {
     width: 100%;
-  }
-  .footer__scroll-up {
-    display: none;
   }
   .footer__author {
     font-size: 12px;
