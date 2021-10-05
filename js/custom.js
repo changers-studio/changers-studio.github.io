@@ -33,6 +33,12 @@ jQuery(function () {
 			}
 		})
 
+		$('.fly-in').each(function () {
+			if (isScrolledIntoView(this) === true) {
+				$(this).removeClass('hidden')
+			}
+		})
+
 		AOS.refresh()
 	})
 	// eof
@@ -78,6 +84,22 @@ jQuery(function () {
 						}
 					})
 
+					$('.fly-in').each(function () {
+						if (isScrolledIntoView(this) === true) {
+							$(this).removeClass('hidden')
+						}
+					})
+
+					if ($('.footer').hasClass('active')) {
+						$('.fullpage-menu').hide()
+						$('.section-hamburger').hide()
+					}
+
+					if ($('.main').hasClass('active')) {
+						$('.fullpage-menu').hide()
+						$('.section-hamburger').hide()
+					}
+
 					AOS.refreshHard()
 				},
 			})
@@ -96,7 +118,7 @@ jQuery(function () {
 
 	if ($('body').hasClass('ishome')) {
 		$('.footer__scroll-up').on('click', function () {
-			fullpage_api.moveTo('about')
+			fullpage_api.moveTo('main')
 		})
 	} else {
 		$('.footer__scroll-up').on('click', function () {
@@ -125,7 +147,15 @@ jQuery(function () {
 
 	// Header search
 	$('.header__search-switch').on('click', function () {
-		$('.header__search').toggleClass('active')
+		let headerSearch = $('.header__search')
+
+		headerSearch.toggleClass('active')
+
+		// if (headerSearch.hasClass('active')) {
+		// 	fullpage_api.setAllowScrolling(false)
+		// } else {
+		// 	fullpage_api.setAllowScrolling(true)
+		// }
 	})
 	//eof
 
@@ -233,7 +263,7 @@ jQuery(function () {
 		})
 
 		$('.products__slider-main').slick({
-			infinite: false,
+			infinite: true,
 			touchMove: false,
 			speed: 700,
 			arrows: false,
@@ -249,7 +279,7 @@ jQuery(function () {
 	})
 	// eof
 
-	// marquee
+	// Marquee
 	let windowCalc = $(window).width() / 2
 
 	$('marquee').marquee({
@@ -310,12 +340,17 @@ jQuery(function () {
 			callbacks: {
 				open: function () {
 					$('body').addClass('scroll_disable')
+
 					if ($('*').is('.team-info__slider')) {
 						teamCarousel.slick('refresh')
 					}
+
+					fullpage_api.setAllowScrolling(false)
 				},
 				close: function () {
 					$('body').removeClass('scroll_disable')
+
+					fullpage_api.setAllowScrolling(true)
 				},
 			},
 		})
@@ -329,5 +364,26 @@ jQuery(function () {
 			top = $(id).offset().top - 40
 		$('body,html').animate({ scrollTop: top }, 2000)
 	})
+	// eof
+
+	// Not current elem click
+	$(document).on('mouseup', function (e) {
+		var langs = $('.header__langs')
+
+		if (!langs.is(e.target) && langs.has(e.target).length === 0) {
+			$('.header__langs-heading').removeClass('active').next().slideUp()
+		}
+	})
+	// eof
+
+	// Custom scrollbar
+	$('.custom-scroll').mCustomScrollbar({
+		theme: 'light-thick',
+		axis: 'y',
+	})
+
+	if ($(window).width() < 992) {
+		$('.custom-scroll').mCustomScrollbar('destroy').css('overflow-y', 'auto')
+	}
 	// eof
 })

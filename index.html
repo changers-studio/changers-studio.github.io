@@ -31,6 +31,7 @@
 		<link rel="stylesheet" href="libs/slick-carousel/slick.css" />
 		<link rel="stylesheet" href="libs/slick-carousel/slick-theme.css" />
 		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="libs/custom-scrollbar/jquery.mCustomScrollbar.min.css" />
 
 		<!-- main css -->
 		<link rel="stylesheet" href="css/main.css" />
@@ -47,6 +48,10 @@
 		<script defer src="libs/slick-carousel/slick.min.js"></script>
 		<script defer src="libs/inputmask/jquery.inputmask.min.js"></script>
 		<script defer src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script
+			defer
+			src="libs/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"
+		></script>
 
 		<!-- main js -->
 		<script defer src="js/custom.js"></script>
@@ -96,7 +101,7 @@
 						<div class="team-info__wrapper">
 							<button class="team-info__close mfp-close">вернуться назад</button>
 
-							<div class="team-info__content">
+							<div class="team-info__content custom-scroll">
 								<h6 class="team-info__name">Сергій Харитонов</h6>
 								<p class="team-info__post">Помічник адвоката</p>
 
@@ -108,6 +113,22 @@
 									odio sit diam praesent venenatis pulvinar. Facilisi facilisi sed nunc,
 									purus volutpat nunc elementum gravida. Mattis mauris mi a laoreet urna,
 									proin est egestas. Pretium egestas morbi quis pellentesque aliquet
+									pellentesque est, donec. Justo at congue eget elit eu sollicitudin Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget dolor
+									viverra feugiat gravida. Mauris pulvinar eget at ut vel at pharetra
+									molestie nulla. Faucibus vitae placerat non lobortis malesuada a libero,
+									amet. Vivamus condimentum ac felis tortor viverra. Morbi quam odio sit
+									diam praesent venenatis pulvinar. Facilisi facilisi sed nunc, purus
+									volutpat nunc elementum gravida. Mattis mauris mi a laoreet urna, proin
+									est egestas. Pretium egestas morbi quis pellentesque aliquet
+									pellentesque est, donec. Justo at congue eget elit eu sollicitudin Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit. Ipsum eget dolor
+									viverra feugiat gravida. Mauris pulvinar eget at ut vel at pharetra
+									molestie nulla. Faucibus vitae placerat non lobortis malesuada a libero,
+									amet. Vivamus condimentum ac felis tortor viverra. Morbi quam odio sit
+									diam praesent venenatis pulvinar. Facilisi facilisi sed nunc, purus
+									volutpat nunc elementum gravida. Mattis mauris mi a laoreet urna, proin
+									est egestas. Pretium egestas morbi quis pellentesque aliquet
 									pellentesque est, donec. Justo at congue eget elit eu sollicitudin
 								</p>
 
@@ -393,14 +414,96 @@
 		</div>
 
 		<div class="section-menu">
-			<div class="container">
-				<nav class="section-menu__list" id="fullpageMenu">
-					<span class="section-menu__list-item" data-menuanchor="products">Продукти</span>
-					<span class="section-menu__list-item" data-menuanchor="team">Команда</span>
-					<span class="section-menu__list-item" data-menuanchor="products">Проєкти</span>
-					<span class="section-menu__list-item" data-menuanchor="blog">Публікації</span>
-					<span class="section-menu__list-item" data-menuanchor="contacts">Контакти</span>
-				</nav>
+			<div class="section-menu__container">
+				<div class="header__langs">
+					<div class="header__langs-heading">
+						<img src="img/flags/ua.svg" alt="UA" />
+					</div>
+
+					<div class="header__langs-dropdown">
+						<div class="header__langs-items">
+							<a href="#" class="header__langs-item current">
+								<img src="img/flags/ua.svg" alt="UA" />
+								UA
+							</a>
+
+							<a href="#" class="header__langs-item">
+								<img src="img/flags/ru.svg" alt="RU" />
+								RU
+							</a>
+
+							<a href="#" class="header__langs-item">
+								<img src="img/flags/us.svg" alt="ENG" />
+								ENG
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="section-menu__container-inner container">
+					<nav class="section-menu__list" id="fullpageMenu">
+						<span class="section-menu__list-item" data-menuanchor="products">
+							Продукти
+						</span>
+						<span class="section-menu__list-item" data-menuanchor="team">Команда</span>
+						<span class="section-menu__list-item" data-menuanchor="products">
+							Проєкти
+						</span>
+						<span class="section-menu__list-item" data-menuanchor="blog">Публікації</span>
+						<span class="section-menu__list-item" data-menuanchor="contacts">
+							Контакти
+						</span>
+					</nav>
+
+					<div class="section-menu__wrapper">
+						<!-- Класс visible-result убирает border-radius внизу -->
+						<form class="section-menu__search visible-result">
+							<input
+								class="section-menu__search-input"
+								type="search"
+								name="search"
+								placeholder="Пошук..."
+								autocomplete="off"
+							/>
+
+							<!-- Что бы убрать result, нужно добавить класс hidden -->
+							<div class="section-menu__search-result hidden">
+								<div class="section-menu__search-items">
+									<a href="#" class="section-menu__search-item">
+										Ссылка на что то Ссылка на что то Ссылка на что то Ссылка на что то
+										Ссылка на что то
+									</a>
+									<a href="#" class="section-menu__search-item">Ссылка на что то</a>
+									<a href="#" class="section-menu__search-item">Ссылка на что то</a>
+									<a href="#" class="section-menu__search-item">Ссылка на что то</a>
+									<a href="#" class="section-menu__search-item">Ссылка на что то</a>
+									<a href="#" class="section-menu__search-item">Ссылка на что то</a>
+									<a href="#" class="section-menu__search-item">Ссылка на что то</a>
+									<a href="#" class="section-menu__search-item">Ссылка на что то</a>
+									<a href="#" class="section-menu__search-item">Ссылка на что то</a>
+								</div>
+							</div>
+
+							<button type="submit" class="section-menu__search-button"></button>
+						</form>
+
+						<div class="section-menu__contacts">
+							<a href="tel:380503008387" class="section-menu__contacts-item">
+								<span
+									class="section-menu__contacts-icon section-menu__contacts-tel"
+								></span>
+								+38 050 300 83 87
+							</a>
+
+							<a href="mailto:roland_law@ukr.net" class="section-menu__contacts-item">
+								<span
+									class="section-menu__contacts-icon section-menu__contacts-email"
+								></span>
+								roland_law@ukr.net
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -444,8 +547,32 @@
 									<div class="header__search-switch"></div>
 
 									<form class="header__search-form">
+										<!-- Класс visible-result убирает border-radius внизу -->
 										<div class="header__search-input">
-											<input type="search" name="search" placeholder="Пошук..." />
+											<input
+												type="search"
+												name="search"
+												placeholder="Пошук..."
+												autocomplete="off"
+											/>
+										</div>
+
+										<!-- Что бы убрать result, нужно добавить класс hidden -->
+										<div class="header__search-result hidden">
+											<div class="header__search-items">
+												<a href="#" class="header__search-item">
+													Ссылка на что то Ссылка на что то Ссылка на что то Ссылка на что
+													то Ссылка на что то
+												</a>
+												<a href="#" class="header__search-item">Ссылка на что то</a>
+												<a href="#" class="header__search-item">Ссылка на что то</a>
+												<a href="#" class="header__search-item">Ссылка на что то</a>
+												<a href="#" class="header__search-item">Ссылка на что то</a>
+												<a href="#" class="header__search-item">Ссылка на что то</a>
+												<a href="#" class="header__search-item">Ссылка на что то</a>
+												<a href="#" class="header__search-item">Ссылка на что то</a>
+												<a href="#" class="header__search-item">Ссылка на что то</a>
+											</div>
 										</div>
 
 										<button type="submit" class="header__search-button"></button>
@@ -489,13 +616,33 @@
 						<div class="sidebar">
 							<div class="container sidebar__container">
 								<div class="sidebar-inner">
-									<form class="sidebar__search">
+									<!-- Класс visible-result убирает border-radius внизу -->
+									<form class="sidebar__search visible-result">
 										<input
 											class="sidebar__search-input"
 											type="search"
 											name="search"
 											placeholder="Пошук..."
+											autocomplete="off"
 										/>
+
+										<!-- Что бы убрать result, нужно добавить класс hidden -->
+										<div class="sidebar__search-result">
+											<div class="sidebar__search-items">
+												<a href="#" class="sidebar__search-item">
+													Ссылка на что то Ссылка на что то Ссылка на что то Ссылка на что
+													то Ссылка на что то
+												</a>
+												<a href="#" class="sidebar__search-item">Ссылка на что то</a>
+												<a href="#" class="sidebar__search-item">Ссылка на что то</a>
+												<a href="#" class="sidebar__search-item">Ссылка на что то</a>
+												<a href="#" class="sidebar__search-item">Ссылка на что то</a>
+												<a href="#" class="sidebar__search-item">Ссылка на что то</a>
+												<a href="#" class="sidebar__search-item">Ссылка на что то</a>
+												<a href="#" class="sidebar__search-item">Ссылка на что то</a>
+												<a href="#" class="sidebar__search-item">Ссылка на что то</a>
+											</div>
+										</div>
 
 										<button type="submit" class="sidebar__search-button"></button>
 									</form>
@@ -529,7 +676,11 @@
 					<!-- header eof -->
 
 					<div class="main-screen" style="background-image: url('img/main__bg.jpg')">
-						<div class="container main-screen__container">
+						<div
+							class="container main-screen__container"
+							data-aos="fade-right"
+							data-aos-delay="1800"
+						>
 							<h1 class="h1 main-screen__title">
 								Надійний партнер, який допомагає досягти бажаного результату і не
 								витратити зайвого
@@ -567,7 +718,7 @@
 									</div>
 								</div>
 
-								<div class="about__box" data-aos="fade-right" data-aos-duration="1000">
+								<div class="about__box" data-aos="fade-right">
 									<p class="about__box-text">
 										Спираючись на цінності адвокатської спільноти, робимо право доступним
 										і зрозумілим для клієнта
@@ -593,7 +744,7 @@
 									</div>
 								</h2>
 
-								<div class="about__box" data-aos="fade-right" data-aos-duration="1000">
+								<div class="about__box" data-aos="fade-right">
 									<ul class="about__list">
 										<li class="about__list-item">
 											<div class="about__list-icon">
@@ -713,21 +864,25 @@
 							</div>
 						</div>
 
-						<p
-							class="about__text get-animation"
-							data-aos="fade-right"
-							data-aos-duration="1000"
-						>
+						<div class="about__text get-animation" data-aos="fade-right">
 							<span class="about__text-regular">
 								Ми говоримо і пишемо просто про складне. Щиро піклуємося про клієнтів,
 								розуміємо їхні потреби та запити. Проблеми клієнтів вирішуємо як свої.
 								Виконуємо обіцяне і робимо це ефективно.
 							</span>
 
-							<span class="about__text-bold">
-								Щиро піклуємося про своїх клієнтів та вирішуємо їх проблеми.
-							</span>
-						</p>
+							<ul class="fly-in hidden">
+								<li>Щиро</li>
+								<li>піклуємося</li>
+								<li>про</li>
+								<li>своїх</li>
+								<li>клієнтів</li>
+								<li>та</li>
+								<li>вирішуємо</li>
+								<li>їх</li>
+								<li>проблеми.</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -2823,16 +2978,16 @@
 								</div>
 							</h2>
 
-							<div class="projects__arrows" data-aos="zoom-in" data-aos-duration="1000">
+							<div class="projects__arrows" data-aos="zoom-in">
 								<button class="projects__arrow prev"></button>
 								<button class="projects__arrow next"></button>
 							</div>
 						</div>
 
-						<div class="projects__slider" data-aos="fade-right" data-aos-duration="1000">
+						<div class="projects__slider" data-aos="fade-right">
 							<div class="projects__slide">
 								<a
-									href="#"
+									href="article.html"
 									class="projects__slide-inner"
 									style="background-image: url('img/projects/image-1.jpg')"
 								>
@@ -2859,7 +3014,7 @@
 
 							<div class="projects__slide">
 								<a
-									href="#"
+									href="article.html"
 									class="projects__slide-inner"
 									style="background-image: url('img/projects/image-2.jpg')"
 								>
@@ -2886,7 +3041,7 @@
 
 							<div class="projects__slide">
 								<a
-									href="#"
+									href="article.html"
 									class="projects__slide-inner"
 									style="background-image: url('img/projects/image-1.jpg')"
 								>
@@ -2913,7 +3068,7 @@
 
 							<div class="projects__slide">
 								<a
-									href="#"
+									href="article.html"
 									class="projects__slide-inner"
 									style="background-image: url('img/projects/image-2.jpg')"
 								>
@@ -3235,6 +3390,14 @@
 									data-aos="zoom-in"
 								></div>
 							</div>
+
+							<div class="review__preview">
+								<div
+									class="review__preview-image"
+									style="background-image: url('img/reviews/image-1.png')"
+									data-aos="zoom-in"
+								></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -3260,7 +3423,7 @@
 								</div>
 							</h2>
 
-							<div class="blog__arrows" data-aos="zoom-in" data-aos-duration="1000">
+							<div class="blog__arrows" data-aos="zoom-in">
 								<button class="blog__arrow prev"></button>
 								<button class="blog__arrow next"></button>
 							</div>
@@ -3268,7 +3431,7 @@
 
 						<div class="blog__slider" data-aos="fade-right" data-aos-duration="1200">
 							<div class="blog__slide">
-								<a href="#" class="blog__slide-inner">
+								<a href="article.html" target="_blank" class="blog__slide-inner">
 									<div class="blog__slide-wrapper">
 										<p class="blog__date">Вересень 2021</p>
 
@@ -3286,7 +3449,7 @@
 							</div>
 
 							<div class="blog__slide">
-								<a href="#" class="blog__slide-inner">
+								<a href="article.html" target="_blank" class="blog__slide-inner">
 									<div class="blog__slide-wrapper">
 										<p class="blog__date">Вересень 2021</p>
 
@@ -3304,7 +3467,7 @@
 							</div>
 
 							<div class="blog__slide">
-								<a href="#" class="blog__slide-inner">
+								<a href="article.html" target="_blank" class="blog__slide-inner">
 									<div class="blog__slide-wrapper">
 										<p class="blog__date">Вересень 2021</p>
 
@@ -3322,7 +3485,7 @@
 							</div>
 
 							<div class="blog__slide">
-								<a href="#" class="blog__slide-inner">
+								<a href="article.html" target="_blank" class="blog__slide-inner">
 									<div class="blog__slide-wrapper">
 										<p class="blog__date">Вересень 2021</p>
 
@@ -3345,7 +3508,7 @@
 
 			<footer class="footer section fp-auto-height" data-anchor="contacts" id="contacts">
 				<div class="container footer__container">
-					<div class="contacts" data-aos="fade-right" data-aos-duration="1000">
+					<div class="contacts" data-aos="fade-right">
 						<h2 class="h2 contacts__title">
 							<span data-aos="fade" data-aos-duration="500">Контакти</span>
 							<div class="h2__underline get-animation">
@@ -3390,14 +3553,34 @@
 						</div>
 					</div>
 
-					<div class="footer__wrapper" data-aos="fade-right" data-aos-duration="1000">
-						<form class="footer__search">
+					<div class="footer__wrapper" data-aos="fade-right">
+						<!-- Класс visible-result убирает border-radius внизу -->
+						<form class="footer__search visible-result">
 							<input
 								class="footer__search-input"
 								type="search"
 								name="search"
 								placeholder="Пошук..."
+								autocomplete="off"
 							/>
+
+							<!-- Что бы убрать result, нужно добавить класс hidden -->
+							<div class="footer__search-result">
+								<div class="footer__search-items">
+									<a href="#" class="footer__search-item">
+										Ссылка на что то Ссылка на что то Ссылка на что то Ссылка на что то
+										Ссылка на что то
+									</a>
+									<a href="#" class="footer__search-item">Ссылка на что то</a>
+									<a href="#" class="footer__search-item">Ссылка на что то</a>
+									<a href="#" class="footer__search-item">Ссылка на что то</a>
+									<a href="#" class="footer__search-item">Ссылка на что то</a>
+									<a href="#" class="footer__search-item">Ссылка на что то</a>
+									<a href="#" class="footer__search-item">Ссылка на что то</a>
+									<a href="#" class="footer__search-item">Ссылка на что то</a>
+									<a href="#" class="footer__search-item">Ссылка на что то</a>
+								</div>
+							</div>
 
 							<button type="submit" class="footer__search-button"></button>
 						</form>
@@ -3477,10 +3660,10 @@
 							</a>
 						</div>
 
-						<p class="footer__author">
+						<a href="chuloy.com" target="_blank" class="footer__author">
 							Designed & Developed by
 							<img src="img/author.png" alt="Chuloy" class="footer__author-logo" />
-						</p>
+						</a>
 
 						<p class="footer__copyrights">© 2021 Roland</p>
 					</div>
