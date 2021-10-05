@@ -230,16 +230,20 @@ jQuery(function () {
 	}
 
 	if ($('*').is('.reviews__slider-main')) {
-		$('.reviews__slider-main').slick({
+		let reviewsMain = $('.reviews__slider-main')
+		let reviewsNav = $('.reviews__slider-nav')
+
+		reviewsMain.slick({
 			infinite: false,
 			touchMove: false,
 			speed: 1000,
 			arrows: false,
 			fade: true,
 			asNavFor: '.reviews__slider-nav',
+			swipe: false,
 		})
 
-		$('.reviews__slider-nav').slick({
+		reviewsNav.slick({
 			infinite: false,
 			touchMove: false,
 			speed: 1000,
@@ -280,16 +284,18 @@ jQuery(function () {
 	// eof
 
 	// Marquee
-	let windowCalc = $(window).width() / 2
+	if ($('*').is('marquee')) {
+		let windowCalc = $(window).width() / 2
 
-	$('marquee').marquee({
-		direction: 'left',
-		duration: 40000,
-		gap: windowCalc,
-		delayBeforeStart: 0,
-		duplicated: true,
-		startVisible: true,
-	})
+		$('marquee').marquee({
+			direction: 'left',
+			duration: 40000,
+			gap: windowCalc,
+			delayBeforeStart: 0,
+			duplicated: true,
+			startVisible: true,
+		})
+	}
 	// eof
 
 	// Tabs
@@ -377,13 +383,15 @@ jQuery(function () {
 	// eof
 
 	// Custom scrollbar
-	$('.custom-scroll').mCustomScrollbar({
-		theme: 'light-thick',
-		axis: 'y',
-	})
+	if ($('*').is('.custom-scroll')) {
+		$('.custom-scroll').mCustomScrollbar({
+			theme: 'light-thick',
+			axis: 'y',
+		})
 
-	if ($(window).width() < 992) {
-		$('.custom-scroll').mCustomScrollbar('destroy').css('overflow-y', 'auto')
+		if ($(window).width() < 992) {
+			$('.custom-scroll').mCustomScrollbar('destroy')
+		}
 	}
 	// eof
 })
