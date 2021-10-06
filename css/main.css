@@ -7813,9 +7813,9 @@ body.scroll_disable {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: 2s ease 5s;
-  -o-transition: 2s ease 5s;
-  transition: 2s ease 5s;
+  -webkit-transition: 2s ease 7s;
+  -o-transition: 2s ease 7s;
+  transition: 2s ease 7s;
 }
 
 .fly-in {
@@ -7827,9 +7827,9 @@ body.scroll_disable {
 .fly-in li {
   display: inline-block;
   font-weight: 600;
-  -webkit-transition: all 2.8s cubic-bezier(0.6, -0.005, 0.32, 1.75) 6.5s;
-  -o-transition: all 2.8s cubic-bezier(0.6, -0.005, 0.32, 1.75) 6.5s;
-  transition: all 2.8s cubic-bezier(0.6, -0.005, 0.32, 1.75) 6.5s;
+  -webkit-transition: all 2.8s cubic-bezier(0.6, -0.005, 0.32, 1.75) 8.5s;
+  -o-transition: all 2.8s cubic-bezier(0.6, -0.005, 0.32, 1.75) 8.5s;
+  transition: all 2.8s cubic-bezier(0.6, -0.005, 0.32, 1.75) 8.5s;
 }
 
 .fly-in.hidden li {
