@@ -10033,6 +10033,7 @@ body.scroll_disable {
     height: auto;
     min-height: auto;
     padding: 60px 0;
+    overflow-y: auto;
   }
   .section-hamburger, .section-menu {
     display: none !important;
@@ -10067,6 +10068,7 @@ body.scroll_disable {
   .main-screen {
     padding: 60px 0;
     min-height: 350px;
+    height: 100%;
   }
   .main-screen__scroll-down {
     display: none;
@@ -10382,6 +10384,7 @@ body.scroll_disable {
   }
   .team__container {
     width: 100%;
+    height: auto;
   }
   .team__container-inner {
     display: -webkit-box;

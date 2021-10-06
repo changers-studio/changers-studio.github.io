@@ -1,4 +1,4 @@
-jQuery(function () {
+$(function () {
 	function isScrolledIntoView(elem) {
 		var docViewTop = $(window).scrollTop()
 		var docViewBottom = docViewTop + $(window).height()
@@ -111,6 +111,62 @@ jQuery(function () {
 	}
 
 	$(window).on('load resize', windowSize)
+
+	// new fullpage('#fullpage', {
+	// 	navigation: false,
+	// 	menu: '#fullpageMenu',
+	// 	lockAnchors: true,
+	// 	scrollingSpeed: 1500,
+	// 	css3: true,
+	// 	onLeave: function (origin, destination, direction) {
+	// 		if (
+	// 			(origin.index == 1 && direction == 'up') ||
+	// 			(origin.index == 6 && direction == 'down')
+	// 		) {
+	// 			$('.fullpage-menu').fadeOut()
+	// 			$('.section-hamburger').fadeOut()
+	// 		}
+	// 	},
+	// 	afterLoad: function (origin, destination, direction) {
+	// 		if (
+	// 			(origin.index == 0 && direction == 'down') ||
+	// 			(origin.index == 7 && direction == 'up')
+	// 		) {
+	// 			$('.fullpage-menu').hide().fadeIn()
+	// 			$('.section-hamburger').hide().fadeIn()
+	// 		}
+
+	// 		$('.get-animation').each(function () {
+	// 			if (isScrolledIntoView(this) === true) {
+	// 				$(this).addClass('animation')
+	// 			}
+	// 		})
+
+	// 		$('[data-aos]').each(function () {
+	// 			if (isScrolledIntoView(this) === true) {
+	// 				$(this).addClass('aos-animate')
+	// 			}
+	// 		})
+
+	// 		$('.fly-in').each(function () {
+	// 			if (isScrolledIntoView(this) === true) {
+	// 				$(this).removeClass('hidden')
+	// 			}
+	// 		})
+
+	// 		if ($('.footer').hasClass('active')) {
+	// 			$('.fullpage-menu').hide()
+	// 			$('.section-hamburger').hide()
+	// 		}
+
+	// 		if ($('.main').hasClass('active')) {
+	// 			$('.fullpage-menu').hide()
+	// 			$('.section-hamburger').hide()
+	// 		}
+
+	// 		AOS.refreshHard()
+	// 	},
+	// })
 
 	$('.main-screen__scroll-down').on('click', function () {
 		fullpage_api.moveTo('about')
