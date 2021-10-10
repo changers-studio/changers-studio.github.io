@@ -5014,6 +5014,10 @@ section {
   margin-right: 0;
 }
 
+.header-main {
+  background-color: #c6e6ff;
+}
+
 .header {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -8288,6 +8292,53 @@ section {
   .reasons__message._message-third::after {
     display: none;
   }
+  .benefits__description {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .benefits__messages {
+    margin-top: 40px;
+    padding-bottom: 0;
+  }
+  .benefits__messages::before {
+    display: none;
+  }
+  .benefits__messages::after {
+    display: none;
+  }
+  .benefits__message {
+    padding: 30px 15px;
+    left: 0;
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: #e9f7ff;
+    -webkit-border-radius: 30px;
+            border-radius: 30px;
+    border: 2px solid #1c1636;
+  }
+  .benefits__message br {
+    display: none;
+  }
+  .benefits__message:nth-child(2n) {
+    left: 0;
+    right: 0;
+  }
+  .benefits__message::before {
+    display: none;
+  }
+  .benefits__message h3 {
+    font-size: 16px;
+  }
+  .benefits__message p {
+    font-size: 14px;
+    min-height: auto;
+  }
+  .benefits__message._message-first::after {
+    display: none;
+  }
+  .benefits__message._message-third::after {
+    display: none;
+  }
   .indicators .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -8322,6 +8373,11 @@ section {
     -webkit-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
             transform: translate(0, -50%);
+    width: 70px;
+    height: 70px;
+  }
+  .courses__item-sale span {
+    font-size: 24px;
   }
   .courses__item-button {
     padding: 10px 20px;
@@ -8332,6 +8388,40 @@ section {
   }
   .reviews__slider .slick-prev {
     left: -15px;
+  }
+  .appeal__form {
+    margin-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .appeal__form-label {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .appeal__form-input {
+    width: 100%;
+  }
+  .appeal__form-radios {
+    margin-top: 30px;
+  }
+  .appeal__form-button {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .appeal__form-radio span {
+    font-size: 14px;
+  }
+  .appeal__container-heading {
+    font-size: 22px;
+  }
+  .appeal__container-subheading {
+    font-size: 16px;
+  }
+  .appeal__container-inner {
+    padding: 30px 20px;
   }
   .p-success .success {
     padding: 80px 0;
