@@ -4575,26 +4575,26 @@ html {
 }
 
 ::-webkit-input-placeholder {
-  color: #CAC8C8;
-  font-size: 16px;
+  color: #3a3838;
+  font-size: 18px;
   font-family: "NotoSans", sans-serif;
 }
 
 :-ms-input-placeholder {
-  color: #CAC8C8;
-  font-size: 16px;
+  color: #3a3838;
+  font-size: 18px;
   font-family: "NotoSans", sans-serif;
 }
 
 ::-ms-input-placeholder {
-  color: #CAC8C8;
-  font-size: 16px;
+  color: #3a3838;
+  font-size: 18px;
   font-family: "NotoSans", sans-serif;
 }
 
 ::placeholder {
-  color: #CAC8C8;
-  font-size: 16px;
+  color: #3a3838;
+  font-size: 18px;
   font-family: "NotoSans", sans-serif;
 }
 
@@ -4610,6 +4610,12 @@ body {
 
 body.scroll_disable {
   overflow-y: hidden;
+}
+
+input, textarea {
+  cursor: pointer;
+  -webkit-border-radius: 0;
+          border-radius: 0;
 }
 
 h2 {
@@ -4637,7 +4643,7 @@ h3 {
   -webkit-border-radius: 10px;
           border-radius: 10px;
   border: none;
-  background-color: #1c1636;
+  background-color: #7f02c7;
   color: #fff;
   -webkit-transition: .4s ease-in-out;
   -o-transition: .4s ease-in-out;
@@ -4880,7 +4886,7 @@ section {
   z-index: 19;
 }
 
-.sidebar__button {
+.sidebar__button.button {
   padding: 13px 40px;
   background-color: #7f02c7;
   color: #fff;
@@ -5016,6 +5022,8 @@ section {
 
 .header-main {
   background-color: #c6e6ff;
+  background-image: url("../img/main__bg.jpg");
+  background-position: center top;
 }
 
 .header {
@@ -5264,10 +5272,9 @@ section {
   padding: 20px 40px 25px 40px;
 }
 
-.main__image {
-  position: absolute;
-  right: -270px;
-  z-index: 0;
+.main__mobile-image {
+  display: none;
+  width: 100%;
 }
 
 .advantages {
@@ -5754,7 +5761,7 @@ section {
   outline: none;
   overflow: hidden;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
   border: none;
@@ -5945,9 +5952,16 @@ section {
   text-align: center;
 }
 
-.appeal__container-policy span {
+.appeal__container-policy a {
   color: #7c7676;
   font-weight: 700;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.appeal__container-policy a:hover {
+  color: #7f02c7;
 }
 
 .appeal__form {
@@ -5968,11 +5982,6 @@ section {
 
 .appeal__form-label {
   position: relative;
-}
-
-.appeal__form-label.active .appeal__form-caption {
-  font-size: 12px;
-  top: 0;
 }
 
 .appeal__form-caption {
@@ -6085,6 +6094,35 @@ section {
 .appeal__form-button span {
   font-size: 18px;
   color: #3a3838;
+}
+
+.appeal .css {
+  display: block;
+  position: relative;
+}
+
+.appeal .css input {
+  width: 290px;
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+  font-size: 18px;
+  background: none;
+}
+
+.appeal .css label {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  font-size: 18px;
+  color: #3a3838;
+  -webkit-transition: .1s all linear;
+  -o-transition: .1s all linear;
+  transition: .1s all linear;
+  cursor: pointer;
+}
+
+.appeal .css.active label {
+  top: -18px;
 }
 
 .about {
@@ -6200,7 +6238,7 @@ section {
   cursor: default;
 }
 
-.price__box:hover {
+.price__box.active {
   -webkit-transform: translate(0, -50px);
       -ms-transform: translate(0, -50px);
           transform: translate(0, -50px);
@@ -6466,9 +6504,16 @@ section {
   text-align: center;
 }
 
-.feedback__container-policy span {
+.feedback__container-policy a {
   color: #7c7676;
   font-weight: 700;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.feedback__container-policy a:hover {
+  color: #7f02c7;
 }
 
 .feedback__form {
@@ -6609,6 +6654,37 @@ section {
 
 .feedback__form-radio input:checked::before {
   opacity: 1;
+}
+
+.feedback .css {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.feedback .css input {
+  width: 100%;
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+  font-size: 18px;
+  background: none;
+}
+
+.feedback .css label {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  font-size: 18px;
+  color: #3a3838;
+  -webkit-transition: .1s all linear;
+  -o-transition: .1s all linear;
+  transition: .1s all linear;
+  cursor: pointer;
+}
+
+.feedback .css.active label {
+  top: -18px;
 }
 
 .lessons {
@@ -7198,7 +7274,7 @@ section {
   border-color: #2851d1;
 }
 
-.p-computer-literacy .price__box:hover {
+.p-computer-literacy .price__box.active {
   background-color: #2851d1;
 }
 
@@ -7333,7 +7409,7 @@ section {
           border-radius: 0;
 }
 
-.p-minecraft .price__box:hover {
+.p-minecraft .price__box.active {
   background-color: #4501a0;
 }
 
@@ -7481,7 +7557,7 @@ section {
   border-color: #2851d1;
 }
 
-.p-scratch .price__box:hover {
+.p-scratch .price__box.active {
   background-color: #2851d1;
 }
 
@@ -7689,6 +7765,14 @@ section {
   max-width: 500px;
 }
 
+.p-instruction .reasons__subtitle span {
+  display: none;
+}
+
+.mfp-bg {
+  background-color: rgba(16, 33, 46, 0.6);
+}
+
 .mfp-fade.mfp-bg {
   opacity: 0;
   -webkit-transition: all 0.35s ease-out;
@@ -7730,7 +7814,7 @@ section {
   z-index: 50;
   width: -webkit-calc(100% - 20px);
   width: calc(100% - 20px);
-  max-width: 560px;
+  max-width: 540px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   padding: 30px 70px;
@@ -7808,16 +7892,17 @@ section {
           transform: translate(0, -50%);
 }
 
-.popup__form-input {
+.popup__form-input, .popup__form-textarea {
   border-bottom: 1px solid #1c1636;
   width: 100%;
   padding: 10px 0;
   font-size: 18px;
   background: none;
+  margin-bottom: 20px;
 }
 
 .popup__form-textarea {
-  resize: none;
+  resize: vertical;
 }
 
 .popup__form-button {
@@ -7859,17 +7944,55 @@ section {
   text-align: center;
 }
 
-.popup__form-policy span {
+.popup__form-policy a {
   color: #7c7676;
   font-weight: 700;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.popup__form-policy a:hover {
+  color: #7f02c7;
+}
+
+.popup .css {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.popup .css input {
+  width: 100%;
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+  font-size: 18px;
+  background: none;
+}
+
+.popup .css label {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  font-size: 18px;
+  color: #3a3838;
+  -webkit-transition: .1s all linear;
+  -o-transition: .1s all linear;
+  transition: .1s all linear;
+  cursor: pointer;
+}
+
+.popup .css.active label {
+  top: -18px;
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1600px) {
-  .appeal__container-image {
-    display: none;
+  .appeal {
+    overflow: hidden;
   }
-  .appeal__container-decor {
+  .appeal__container-image {
     display: none;
   }
 }
@@ -7967,9 +8090,36 @@ section {
   .p-minecraft .main {
     background-position: 30% 100%;
   }
+  .courses__item {
+    width: -webkit-calc(50% - 30px);
+    width: calc(50% - 30px);
+  }
+  .courses__item-heading {
+    margin-top: 10px;
+    font-size: 15px;
+    min-height: 36px;
+  }
+  .courses__item-subheading {
+    margin-bottom: 20px;
+  }
+  .courses__item-image {
+    height: 200px;
+  }
+  .courses__item-button {
+    padding: 12px 26px;
+  }
+  .appeal__container-inner {
+    padding: 40px 60px;
+  }
+  .appeal .css input {
+    width: 280px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
+  .header-main {
+    background-position: 65% top;
+  }
   .header__menu-item {
     font-size: 16px;
   }
@@ -7985,9 +8135,6 @@ section {
   .main__image {
     width: 679px;
     height: 666px;
-  }
-  .advantages__item {
-    font-size: 14px;
   }
   .benefits__message {
     margin-bottom: 80px;
@@ -8009,21 +8156,6 @@ section {
   .indicators__box-text span {
     font-size: 24px;
   }
-  .courses__item {
-    width: 370px;
-  }
-  .courses__item-heading {
-    margin-top: 10px;
-    font-size: 15px;
-    min-height: 36px;
-  }
-  .courses__item-image {
-    height: 200px;
-  }
-  .courses__item-button {
-    padding: 10px 30px;
-    font-size: 15px;
-  }
   .reviews .review {
     margin: 0 10px;
   }
@@ -8033,7 +8165,10 @@ section {
   .reviews .review__text {
     font-size: 14px;
   }
-  .appeal__form-input {
+  .appeal__container-inner {
+    padding: 30px;
+  }
+  .appeal .css input {
     width: 200px;
   }
   .footer__menu a {
@@ -8125,6 +8260,9 @@ section {
   .isnohome .reasons__container-image img {
     max-width: 60%;
   }
+  .header-main {
+    background-image: none;
+  }
   .header {
     padding: 10px 0;
   }
@@ -8152,6 +8290,10 @@ section {
   }
   .sidebar {
     padding: 80px 60px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .sidebar__logo {
     margin-bottom: 30px;
@@ -8162,6 +8304,12 @@ section {
   .sidebar__menu-text {
     font-size: 16px;
   }
+  .sidebar__inner {
+    margin-bottom: 12vh;
+  }
+  .sidebar__inner:last-child {
+    margin-bottom: 0;
+  }
   .main {
     height: auto;
     padding: 80px 0;
@@ -8169,12 +8317,9 @@ section {
   .main__container {
     height: auto;
   }
-  .main__image {
-    width: 379px;
-    height: 366px;
-    right: 0;
-    top: 500px;
-    display: none;
+  .main__mobile-image {
+    display: inline-block;
+    margin-bottom: 20px;
   }
   .main__title {
     font-size: 22px;
@@ -8184,12 +8329,12 @@ section {
   }
   .main__description {
     font-size: 16px;
-    margin-top: 30px;
+    margin-top: 0;
   }
   .main__button {
     font-size: 18px;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 30px;
   }
   .advantages__item {
     font-size: 16px;
@@ -8350,6 +8495,15 @@ section {
     max-width: 100%;
     margin-right: 0;
     margin-bottom: 25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .indicators__box-number {
     min-width: 100px;
@@ -8379,9 +8533,16 @@ section {
   .courses__item-sale span {
     font-size: 24px;
   }
+  .courses__item-heading {
+    min-height: auto;
+  }
+  .courses__item-subheading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
   .courses__item-button {
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 10px 15px;
+    font-size: 16px;
   }
   .reviews__slider .slick-next {
     right: -15px;
@@ -8411,17 +8572,35 @@ section {
     margin-top: 50px;
     width: 100%;
   }
+  .appeal__form-radios {
+    margin-top: 20px;
+  }
   .appeal__form-radio span {
     font-size: 14px;
+  }
+  .appeal__form-button {
+    margin-top: 30px;
   }
   .appeal__container-heading {
     font-size: 22px;
   }
   .appeal__container-subheading {
     font-size: 16px;
+    margin-bottom: 30px;
   }
   .appeal__container-inner {
     padding: 30px 20px;
+  }
+  .appeal .css {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+  .appeal .css input {
+    width: 100%;
+    font-size: 16px;
+  }
+  .appeal .css label {
+    font-size: 16px;
   }
   .p-success .success {
     padding: 80px 0;
@@ -8464,6 +8643,10 @@ section {
   }
   .p-instruction .reasons__subtitle {
     font-size: 18px;
+  }
+  .p-instruction .reasons__subtitle span {
+    display: inline-block;
+    color: #FFDD00;
   }
   .p-instruction .reasons__subtitle br {
     display: none;
@@ -8538,7 +8721,7 @@ section {
   .price__box:last-child {
     margin-bottom: 0;
   }
-  .price__box:hover {
+  .price__box.active {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
@@ -8587,6 +8770,9 @@ section {
   }
   .teachers .teacher__about {
     font-size: 14px;
+  }
+  .program {
+    padding-bottom: 40px;
   }
   .program__title {
     margin-bottom: 30px;
@@ -8670,6 +8856,9 @@ section {
   .feedback__form-radio {
     font-size: 14px;
     margin-right: 30px;
+  }
+  .feedback .css input, .feedback .css label {
+    font-size: 15px;
   }
   .lessons__title {
     font-size: 26px;
@@ -8848,8 +9037,19 @@ section {
   .p-minecraft .main {
     background-color: #edf7ff;
   }
+  .p-minecraft .main__title {
+    font-size: 28px;
+  }
+  .p-minecraft .about {
+    background-color: #EAF7FF;
+    background-image: none;
+  }
   .p-minecraft .reasons__number {
     display: none;
+  }
+  .p-minecraft .teachers {
+    background-color: #7400EF;
+    background-image: none;
   }
   .p-scratch .main {
     background-color: #d7e9ff;
@@ -8878,5 +9078,20 @@ section {
   .popup__form-button {
     max-width: 100%;
     width: 100%;
+  }
+  .popup__form-textarea::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+  .popup__form-textarea:-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .popup__form-textarea::-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .popup__form-textarea::placeholder {
+    font-size: 15px;
+  }
+  .popup .css input, .popup .css label {
+    font-size: 15px;
   }
 }

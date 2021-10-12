@@ -59,28 +59,31 @@
 			</ul>
 
 			<form class="popup__form">
-				<label class="popup__form-label">
-					<p class="popup__form-caption">Имя</p>
-					<input class="popup__form-input" type="text" required name="name" />
-				</label>
+				<div class="css">
+					<label for="popup-1">Имя</label>
+					<input id="popup-1" type="text" name="name" required />
+				</div>
+
+				<div class="css">
+					<label for="popup-2">Телефон</label>
+					<input id="popup-2" type="tel" name="tel" required />
+				</div>
 
 				<label class="popup__form-label">
-					<p class="popup__form-caption">Телефон</p>
-					<input class="popup__form-input" type="tel" required name="tel" />
-				</label>
-
-				<label class="popup__form-label">
-					<p class="popup__form-caption">Сообщение</p>
-					<input type="text" name="Message" class="popup__form-input" />
+					<textarea
+						name="Message"
+						class="popup__form-textarea"
+						placeholder="Возраст и имя будущего ученика помогут нам быстрее записать Вас на урок"
+					></textarea>
 				</label>
 
 				<button class="popup__form-button button">Записаться</button>
 
 				<p class="popup__form-policy">
 					Нажимая на кнопку, я соглашаюсь
-					<span>на обработку персональных данных</span>
+					<a href="#">на обработку персональных данных</a>
 					и
-					<span>с правилами пользования Платформы</span>
+					<a href="#">с правилами пользования Платформы</a>
 				</p>
 			</form>
 		</div>
@@ -235,6 +238,7 @@
 				<div class="reasons__container _first-reason">
 					<div class="reasons__container-inner _arrow-right">
 						<h3 class="reasons__subtitle">
+							<span>1.</span>
 							Заранее установите приложение Zoom на свое устройство
 						</h3>
 						<p class="reasons__description">Выберите свою операционную систему:</p>
@@ -284,7 +288,10 @@
 				</div>
 				<div class="reasons__container _right">
 					<div class="reasons__container-inner">
-						<h3 class="reasons__subtitle">Настройте интернет-соединения</h3>
+						<h3 class="reasons__subtitle">
+							<span>2.</span>
+							Настройте интернет-соединения
+						</h3>
 						<p class="reasons__description">
 							Чтобы видеосвязь не прерывалась во время урока, убедитесь, что ваше
 							интернет-соединение стабильно работает.
@@ -294,6 +301,7 @@
 				<div class="reasons__container">
 					<div class="reasons__container-inner _arrow-left">
 						<h3 class="reasons__subtitle">
+							<span>3.</span>
 							Подключитесь к уроку за 5 минут
 							<br />
 							до начала занятия

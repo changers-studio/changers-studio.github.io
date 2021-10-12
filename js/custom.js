@@ -37,25 +37,19 @@ $(function () {
 			.slideUp()
 	})
 
-	$('.feedback__form-label').on('mousedown', function () {
-		$(this).addClass('active')
+	$('input').each(function () {
+		$(this).on('focus', function () {
+			$(this).parent('.css').addClass('active')
+		})
+
+		$(this).on('blur', function () {
+			if ($(this).val().length == 0) {
+				$(this).parent('.css').removeClass('active')
+			}
+		})
+
+		if ($(this).val() != '') $(this).parent('.css').addClass('active')
 	})
-
-	$('.appeal__form-label').on('mousedown', function () {
-		$(this).addClass('active')
-	})
-
-	$('.popup__form-label').on('mousedown', function () {
-		$(this).addClass('active')
-	})
-
-	// $(document).on('mouseup', function (e) {
-	// 	var div = $('.feedback__form-label')
-
-	// 	if (!div.is(e.target) && div.has(e.target).length === 0) {
-	// 		div.removeClass('active')
-	// 	}
-	// })
 
 	if ($('*').is('.reviews__slider')) {
 		$('.reviews__slider').slick({
@@ -107,5 +101,12 @@ $(function () {
 				$('body').removeClass('scroll_disable')
 			},
 		},
+	})
+
+	$('body').on('click', '.link_move', function (event) {
+		event.preventDefault()
+		var id = $(this).attr('href'),
+			top = $(id).offset().top
+		$('body,html').animate({ scrollTop: top }, 1500)
 	})
 })

@@ -67,28 +67,31 @@
 			</ul>
 
 			<form class="popup__form">
-				<label class="popup__form-label">
-					<p class="popup__form-caption">Имя</p>
-					<input class="popup__form-input" type="text" required name="name" />
-				</label>
+				<div class="css">
+					<label for="popup-1">Имя</label>
+					<input id="popup-1" type="text" name="name" required />
+				</div>
+
+				<div class="css">
+					<label for="popup-2">Телефон</label>
+					<input id="popup-2" type="tel" name="tel" required />
+				</div>
 
 				<label class="popup__form-label">
-					<p class="popup__form-caption">Телефон</p>
-					<input class="popup__form-input" type="tel" required name="tel" />
-				</label>
-
-				<label class="popup__form-label">
-					<p class="popup__form-caption">Сообщение</p>
-					<input type="text" name="Message" class="popup__form-input" />
+					<textarea
+						name="Message"
+						class="popup__form-textarea"
+						placeholder="Возраст и имя будущего ученика помогут нам быстрее записать Вас на урок"
+					></textarea>
 				</label>
 
 				<button class="popup__form-button button">Записаться</button>
 
 				<p class="popup__form-policy">
 					Нажимая на кнопку, я соглашаюсь
-					<span>на обработку персональных данных</span>
+					<a href="#">на обработку персональных данных</a>
 					и
-					<span>с правилами пользования Платформы</span>
+					<a href="#">с правилами пользования Платформы</a>
 				</p>
 			</form>
 		</div>
@@ -102,7 +105,7 @@
 					<img src="img/logo.png" alt="logo" />
 				</a>
 				<nav class="sidebar__menu">
-					<a href="/" class="sidebar__menu-item">
+					<a href="#reasons" class="sidebar__menu-item link_move">
 						<span class="sidebar__menu-icon">
 							<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -113,7 +116,7 @@
 						</span>
 						<span class="sidebar__menu-text">О школе</span>
 					</a>
-					<a href="/" class="sidebar__menu-item">
+					<a href="#courses" class="sidebar__menu-item link_move">
 						<span class="sidebar__menu-icon">
 							<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -124,7 +127,7 @@
 						</span>
 						<span class="sidebar__menu-text">Курсы</span>
 					</a>
-					<a href="/" class="sidebar__menu-item">
+					<a href="#reviews" class="sidebar__menu-item link_move">
 						<span class="sidebar__menu-icon">
 							<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -135,7 +138,7 @@
 						</span>
 						<span class="sidebar__menu-text">Отзывы</span>
 					</a>
-					<a href="/" class="sidebar__menu-item">
+					<a href="#" class="sidebar__menu-item">
 						<span class="sidebar__menu-icon">
 							<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -146,7 +149,7 @@
 						</span>
 						<span class="sidebar__menu-text">Как настроить Zoom</span>
 					</a>
-					<a href="/" class="sidebar__menu-item">
+					<a href="#" class="sidebar__menu-item">
 						<span class="sidebar__menu-icon">
 							<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -159,40 +162,38 @@
 					</a>
 				</nav>
 			</div>
+
 			<div class="sidebar__inner">
 				<div class="sidebar__social">
 					<p class="sidebar__social-heading">Мы в соц. сетях:</p>
 					<a href="/" class="sidebar__social-link">
 						<img src="img/icons/vk.svg" alt="vk" />
 					</a>
-					<a href="/" class="sidebar__social-link">
+					<a href="#" class="sidebar__social-link">
 						<img src="img/icons/insta.svg" alt="instagram" />
 					</a>
-					<a href="/" class="sidebar__social-link">
+					<a href="#" class="sidebar__social-link">
 						<img src="img/icons/sidebar__whatsup.svg" alt="whatsapp" />
 					</a>
-					<a href="/" class="sidebar__social-link">
+					<a href="#" class="sidebar__social-link">
 						<img src="img/icons/sidebar__telegram.svg" alt="telegram" />
 					</a>
 				</div>
 				<a href=".popup" class="button sidebar__button magnific-popup">Записаться</a>
 			</div>
 		</div>
+
 		<div class="sidebar-plug"></div>
 
 		<header class="header">
 			<div class="container header__container">
-				<a href="" class="header__logo">
-					<img
-						src="img/logo.png
-					"
-						alt="logo"
-					/>
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.png" alt="logo" />
 				</a>
 				<nav class="header__menu">
-					<a href="" class="header__menu-item">О школе</a>
-					<a href="" class="header__menu-item">Курсы</a>
-					<a href="" class="header__menu-item">Отзывы</a>
+					<a href="#reasons" class="header__menu-item link_move">О школе</a>
+					<a href="#courses" class="header__menu-item link_move">Курсы</a>
+					<a href="#reviews" class="header__menu-item link_move">Отзывы</a>
 				</nav>
 				<div class="header__contacts">
 					<a class="header__tel" href="tel:79993335490">+ 7 999 333 54 90</a>
@@ -234,6 +235,8 @@
 					</div>
 
 					<h1 class="main__title">Программирование на языке Scratch</h1>
+
+					<img class="main__mobile-image" src="img/scratch/main__image.png" alt="Image" />
 
 					<p class="main__text">
 						Под руководством опытного педагога ребенок создадаст свои собственные игры
@@ -678,7 +681,7 @@
 						<p class="price__total">7 000₽ за всё</p>
 					</div>
 
-					<div class="price__box">
+					<div class="price__box active">
 						<p class="price__heading">24 занятий</p>
 						<p class="price__subheading">
 							До 6 месяцев занятий
@@ -734,47 +737,25 @@
 							заявку:
 						</p>
 
-						<label class="feedback__form-label">
-							<p class="feedback__form-caption">Имя</p>
-							<input
-								class="feedback__form-input"
-								type="text"
-								required
-								name="name"
-								autocomplete="off"
-							/>
-						</label>
+						<div class="css">
+							<label for="feedback-1">Имя</label>
+							<input id="feedback-1" type="text" name="name" required />
+						</div>
 
-						<label class="feedback__form-label">
-							<p class="feedback__form-caption">Телефон</p>
-							<input
-								class="feedback__form-input"
-								type="tel"
-								required
-								name="tel"
-								autocomplete="off"
-							/>
-						</label>
+						<div class="css">
+							<label for="feedback-2">Телефон</label>
+							<input id="feedback-2" type="tel" name="tel" required />
+						</div>
 
-						<label class="feedback__form-label">
-							<p class="feedback__form-caption">Email</p>
-							<input
-								class="feedback__form-input"
-								type="email"
-								name="email"
-								autocomplete="off"
-							/>
-						</label>
+						<div class="css">
+							<label for="feedback-3">Email</label>
+							<input id="feedback-3" type="email" name="email" required />
+						</div>
 
-						<label class="feedback__form-label">
-							<p class="feedback__form-caption">Возраст ребенка</p>
-							<input
-								class="feedback__form-input"
-								type="text"
-								name="Age"
-								autocomplete="off"
-							/>
-						</label>
+						<div class="css">
+							<label for="feedback-4">Возраст ребенка</label>
+							<input id="feedback-4" type="text" name="Age" required />
+						</div>
 
 						<div class="feedback__form-radios">
 							<label class="feedback__form-radio">
@@ -792,9 +773,9 @@
 
 						<p class="feedback__container-policy">
 							Отправляя заявку, вы принимаете условия
-							<span>договора-оферты</span>
+							<a href="#">договора-оферты</a>
 							и даёте согласие на обработку своих персональных данных в соответствии с
-							<span>политикой конфиденциальности</span>
+							<a href="#">политикой конфиденциальности</a>
 							.
 						</p>
 					</form>

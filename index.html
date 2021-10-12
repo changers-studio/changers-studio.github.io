@@ -59,28 +59,31 @@
 			</ul>
 
 			<form class="popup__form">
-				<label class="popup__form-label">
-					<p class="popup__form-caption">Имя</p>
-					<input class="popup__form-input" type="text" required name="name" />
-				</label>
+				<div class="css">
+					<label for="popup-1">Имя</label>
+					<input id="popup-1" type="text" name="name" required />
+				</div>
+
+				<div class="css">
+					<label for="popup-2">Телефон</label>
+					<input id="popup-2" type="tel" name="tel" required />
+				</div>
 
 				<label class="popup__form-label">
-					<p class="popup__form-caption">Телефон</p>
-					<input class="popup__form-input" type="tel" required name="tel" />
-				</label>
-
-				<label class="popup__form-label">
-					<p class="popup__form-caption">Сообщение</p>
-					<input type="text" name="Message" class="popup__form-input" />
+					<textarea
+						name="Message"
+						class="popup__form-textarea"
+						placeholder="Возраст и имя будущего ученика помогут нам быстрее записать Вас на урок"
+					></textarea>
 				</label>
 
 				<button class="popup__form-button button">Записаться</button>
 
 				<p class="popup__form-policy">
 					Нажимая на кнопку, я соглашаюсь
-					<span>на обработку персональных данных</span>
+					<a href="#">на обработку персональных данных</a>
 					и
-					<span>с правилами пользования Платформы</span>
+					<a href="#">с правилами пользования Платформы</a>
 				</p>
 			</form>
 		</div>
@@ -95,7 +98,7 @@
 						<img src="img/logo.png" alt="logo" />
 					</a>
 					<nav class="sidebar__menu">
-						<a href="/" class="sidebar__menu-item">
+						<a href="#reasons" class="sidebar__menu-item link_move">
 							<span class="sidebar__menu-icon">
 								<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -106,7 +109,7 @@
 							</span>
 							<span class="sidebar__menu-text">О школе</span>
 						</a>
-						<a href="/" class="sidebar__menu-item">
+						<a href="#courses" class="sidebar__menu-item link_move">
 							<span class="sidebar__menu-icon">
 								<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -117,7 +120,7 @@
 							</span>
 							<span class="sidebar__menu-text">Курсы</span>
 						</a>
-						<a href="/" class="sidebar__menu-item">
+						<a href="#reviews" class="sidebar__menu-item link_move">
 							<span class="sidebar__menu-icon">
 								<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -128,7 +131,7 @@
 							</span>
 							<span class="sidebar__menu-text">Отзывы</span>
 						</a>
-						<a href="/" class="sidebar__menu-item">
+						<a href="#" class="sidebar__menu-item">
 							<span class="sidebar__menu-icon">
 								<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -139,7 +142,7 @@
 							</span>
 							<span class="sidebar__menu-text">Как настроить Zoom</span>
 						</a>
-						<a href="/" class="sidebar__menu-item">
+						<a href="#" class="sidebar__menu-item">
 							<span class="sidebar__menu-icon">
 								<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -152,19 +155,20 @@
 						</a>
 					</nav>
 				</div>
+
 				<div class="sidebar__inner">
 					<div class="sidebar__social">
 						<p class="sidebar__social-heading">Мы в соц. сетях:</p>
 						<a href="/" class="sidebar__social-link">
 							<img src="img/icons/vk.svg" alt="vk" />
 						</a>
-						<a href="/" class="sidebar__social-link">
+						<a href="#" class="sidebar__social-link">
 							<img src="img/icons/insta.svg" alt="instagram" />
 						</a>
-						<a href="/" class="sidebar__social-link">
+						<a href="#" class="sidebar__social-link">
 							<img src="img/icons/sidebar__whatsup.svg" alt="whatsapp" />
 						</a>
-						<a href="/" class="sidebar__social-link">
+						<a href="#" class="sidebar__social-link">
 							<img src="img/icons/sidebar__telegram.svg" alt="telegram" />
 						</a>
 					</div>
@@ -177,16 +181,12 @@
 			<header class="header">
 				<div class="container header__container">
 					<a href="index.html" class="header__logo">
-						<img
-							src="img/logo.png
-            "
-							alt="logo"
-						/>
+						<img src="img/logo.png" alt="logo" />
 					</a>
 					<nav class="header__menu">
-						<a href="" class="header__menu-item">О школе</a>
-						<a href="" class="header__menu-item">Курсы</a>
-						<a href="" class="header__menu-item">Отзывы</a>
+						<a href="#reasons" class="header__menu-item link_move">О школе</a>
+						<a href="#courses" class="header__menu-item link_move">Курсы</a>
+						<a href="#reviews" class="header__menu-item link_move">Отзывы</a>
 					</nav>
 					<div class="header__contacts">
 						<a class="header__tel" href="tel:79993335490">+ 7 999 333 54 90</a>
@@ -223,12 +223,17 @@
 				<div class="container main__container">
 					<div class="main__content">
 						<h1 class="main__title">Детская онлайн-школа программирования</h1>
+
 						<p class="main__subtitle">SkillCrafter</p>
+
+						<img
+							class="main__mobile-image"
+							src="img/main__image.png"
+							alt="Programing woman"
+						/>
+
 						<p class="main__description">Научим вашего ребенка программированию с нуля</p>
-						<a href=".popup" class="main__button button magnific-popup">Подобрать курс</a>
-					</div>
-					<div class="main__image">
-						<img src="img/main.png" alt="programing-woman" />
+						<a href="#courses" class="main__button button link_move">Подобрать курс</a>
 					</div>
 				</div>
 			</section>
@@ -247,7 +252,7 @@
 			</div>
 		</section>
 
-		<section class="reasons">
+		<section class="reasons" id="#reasons">
 			<div class="container">
 				<h2 class="reasons__title">
 					<span>Зачем изучать программирование?</span>
@@ -398,7 +403,7 @@
 			</div>
 		</section>
 
-		<section class="courses">
+		<section class="courses" id="courses">
 			<div class="container">
 				<h2>Наши курсы</h2>
 				<p class="courses__subtitle">Направления под любые интересы ребенка</p>
@@ -480,7 +485,7 @@
 			</div>
 		</section>
 
-		<section class="reviews">
+		<section class="reviews" id="reviews">
 			<div class="container">
 				<h2 class="reviews__title">Отзывы</h2>
 				<div class="reviews__slider">
@@ -536,14 +541,16 @@
 							и администратор свяжется с вами в кратчайшие сроки
 						</p>
 						<form class="appeal__form">
-							<label class="appeal__form-label">
-								<p class="appeal__form-caption">Имя</p>
-								<input class="appeal__form-input" type="text" required name="name" />
-							</label>
-							<label class="appeal__form-label">
-								<p class="appeal__form-caption">Телефон</p>
-								<input class="appeal__form-input" type="tel" required name="tel" />
-							</label>
+							<div class="css">
+								<label for="appeal-1">Имя</label>
+								<input id="appeal-1" type="text" name="name" required />
+							</div>
+
+							<div class="css">
+								<label for="appeal-2">Телефон</label>
+								<input id="appeal-2" type="tel" name="tel" required />
+							</div>
+
 							<div class="appeal__form-radios">
 								<label class="appeal__form-radio">
 									<input type="radio" name="radio" />
@@ -558,9 +565,9 @@
 						</form>
 						<p class="appeal__container-policy">
 							Нажимая на кнопку, я соглашаюсь
-							<span>на обработку персональных данных</span>
+							<a href="#">на обработку персональных данных</a>
 							и
-							<span>с правилами пользования Платформы</span>
+							<a href="#">с правилами пользования Платформы</a>
 						</p>
 					</div>
 				</div>
