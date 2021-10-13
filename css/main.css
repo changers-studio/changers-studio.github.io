@@ -8264,7 +8264,7 @@ section {
     background-image: none;
   }
   .header {
-    padding: 10px 0;
+    padding: 20px 0;
   }
   .header__menu {
     display: none;
@@ -8276,7 +8276,14 @@ section {
     display: none;
   }
   .header__hamburger {
-    position: static;
+    top: 15px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+  }
+  .header__hamburger-inner {
+    width: 20px;
+    height: 14px;
   }
   .header__container {
     display: -webkit-box;
@@ -8390,53 +8397,6 @@ section {
   .reasons__title::before {
     display: none;
   }
-  .reasons__description {
-    font-size: 18px;
-    margin-top: 20px;
-  }
-  .reasons__messages {
-    margin-top: 40px;
-    padding-bottom: 0;
-  }
-  .reasons__messages::before {
-    display: none;
-  }
-  .reasons__messages::after {
-    display: none;
-  }
-  .reasons__message {
-    padding: 30px 15px;
-    left: 0;
-    margin-bottom: 30px;
-    width: 100%;
-    background-color: #e9f7ff;
-    -webkit-border-radius: 30px;
-            border-radius: 30px;
-    border: 2px solid #1c1636;
-  }
-  .reasons__message br {
-    display: none;
-  }
-  .reasons__message:nth-child(2n) {
-    left: 0;
-    right: 0;
-  }
-  .reasons__message::before {
-    display: none;
-  }
-  .reasons__message h3 {
-    font-size: 16px;
-  }
-  .reasons__message p {
-    font-size: 14px;
-    min-height: auto;
-  }
-  .reasons__message._message-first::after {
-    display: none;
-  }
-  .reasons__message._message-third::after {
-    display: none;
-  }
   .benefits__description {
     font-size: 18px;
     margin-top: 20px;
@@ -8444,22 +8404,25 @@ section {
   .benefits__messages {
     margin-top: 40px;
     padding-bottom: 0;
+    height: auto;
   }
   .benefits__messages::before {
-    display: none;
+    max-width: 90%;
+    margin-top: 100px;
+    left: -20px;
+    margin-left: 0;
   }
   .benefits__messages::after {
-    display: none;
+    max-width: 90%;
+    right: -20px;
+    bottom: 0;
   }
   .benefits__message {
-    padding: 30px 15px;
+    padding: 30px 20px 30px 30px;
     left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     width: 100%;
-    background-color: #e9f7ff;
-    -webkit-border-radius: 30px;
-            border-radius: 30px;
-    border: 2px solid #1c1636;
+    max-width: 335px;
   }
   .benefits__message br {
     display: none;
@@ -8467,16 +8430,22 @@ section {
   .benefits__message:nth-child(2n) {
     left: 0;
     right: 0;
+    padding: 30px 30px 30px 20px;
   }
   .benefits__message::before {
-    display: none;
+    max-width: 375px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
   }
   .benefits__message h3 {
     font-size: 16px;
   }
   .benefits__message p {
-    font-size: 14px;
+    font-size: 13px;
     min-height: auto;
+    margin-top: 10px;
   }
   .benefits__message._message-first::after {
     display: none;
@@ -9093,5 +9062,25 @@ section {
   }
   .popup .css input, .popup .css label {
     font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .benefits__message {
+    padding: 20px 15px 20px 25px;
+    margin-bottom: 80px;
+    max-width: 280px;
+  }
+  .benefits__message::before {
+    max-width: 280px;
+  }
+  .benefits__message:nth-child(2n) {
+    padding: 20px 25px 20px 15px;
+  }
+  .benefits__message h3 {
+    font-size: 14px;
+  }
+  .benefits__message p {
+    font-size: 12px;
   }
 }
