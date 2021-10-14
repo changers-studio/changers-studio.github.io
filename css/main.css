@@ -6735,6 +6735,9 @@ section {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: 700px;
+  height: auto;
+  width: 100%;
 }
 
 .lessons__roadmap {
@@ -7599,6 +7602,7 @@ section {
 
 .p-success .header-main {
   background-color: #eef6fd;
+  background-image: none;
 }
 
 .p-success .success {
@@ -8798,6 +8802,7 @@ section {
   }
   .feedback__subtitle {
     font-size: 18px;
+    margin-bottom: 50px;
   }
   .feedback__container {
     -webkit-box-orient: vertical;
@@ -8826,6 +8831,15 @@ section {
     font-size: 14px;
     margin-right: 30px;
   }
+  .feedback__image {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .feedback .css input, .feedback .css label {
     font-size: 15px;
   }
@@ -8846,11 +8860,15 @@ section {
     display: none;
   }
   .lessons__roadmap-container {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 0;
   }
   .lessons__roadmap-number {
