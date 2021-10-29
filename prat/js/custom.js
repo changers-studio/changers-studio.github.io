@@ -16,17 +16,27 @@ $(function () {
 
 	// Слайдер новостей на главном экране
 	if ($('*').is('.blog__slider')) {
-		$('.blog__slider').slick({
-			infinite: false,
-			touchMove: false,
-			slidesToShow: 4,
-			variableWidth: true,
-			speed: 1000,
-			autoplay: true,
-			autoplaySpeed: 8000,
-			arrows: false,
-			// prevArrow: $('.main__slider-prev'),
-			// nextArrow: $('.main__slider-next'),
+		let blogSlider = $('.blog__slider')
+
+		blogSlider
+			.on('init', function (event, slick) {
+				$('.blog__counter-current').html(slick.slickCurrentSlide() + 1)
+				$('.blog__counter-all').html(slick.slideCount)
+			})
+			.slick({
+				infinite: false,
+				touchMove: false,
+				variableWidth: true,
+				speed: 1000,
+				autoplay: true,
+				autoplaySpeed: 8000,
+				prevArrow: $('.blog__slider-prev'),
+				nextArrow: $('.blog__slider-next'),
+			})
+
+		blogSlider.on('afterChange', function (event, slick) {
+			$('.blog__counter-current').html(slick.slickCurrentSlide() + 1)
+			$('.blog__counter-all').html(slick.slideCount)
 		})
 	}
 	// eof
