@@ -1,0 +1,40 @@
+// Выравниевание по центру
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Для псевдокласов
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+// Placeholder
+@mixin placeholder($color, $size, $weight) {
+    &::-webkit-input-placeholder {
+        color: $color;
+        font-size: $size;
+        font-weight: $weight;
+    }
+
+    &:-moz-placeholder {
+        color: $color;
+        font-size: $size;
+        font-weight: $weight;
+    }
+
+    &::-moz-placeholder {
+        color: $color;
+        font-size: $size;
+        font-weight: $weight;
+    }
+
+    &:-ms-input-placeholder {
+        color: $color;
+        font-size: $size;
+        font-weight: $weight;
+    }
+}
