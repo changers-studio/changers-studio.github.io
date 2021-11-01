@@ -1,0 +1,547 @@
+@import vars
+@import fonts
+@import '../libs/bootstrap-grid/bootstrap-grid'
+
+
+::placeholder
+	color: #CAC8C8
+	font-size: 16px
+	font-family: $default-font
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	font-family: $default-font
+	color: #2B414D
+	&.scroll_hidden
+		overflow-y: hidden
+
+
+.button
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	position: relative
+	text-decoration: none
+	line-height: 1
+	outline: none
+	overflow: hidden
+	cursor: pointer
+	width: 218px
+	height: 64px
+	font-size: 16px
+	border: 1px solid $accent
+	background-color: $accent
+	color: #fff
+	transition: .4s ease-in-out
+	&:focus, &:hover
+		text-decoration: none
+		border: 1px solid $accent
+		color: $accent
+		background-color: #fff
+
+
+section
+	padding: 80px 0
+
+
+h1, h2, h3
+	font-family: Playfair Display;
+	font-weight: 400;
+	line-height: 114.18%;
+
+h1
+	font-size: 110px
+
+h2
+	font-size: 64px;
+	color: #2B414D
+
+h3
+	font-size: 48px
+	color: #233944	
+
+
+
+.header
+	background-color: $dark
+	padding: 30px 0
+	position: relative
+	z-index: 2
+	&__container
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__logo
+		display: flex
+	&__menu
+		display: flex
+		color: #fff
+		&-item
+			margin-right: 60px
+			font-family: "Ubuntu"
+			font-weight: 400
+			transition: .2s
+			&:hover
+				color: $accent
+			&:last-child
+				margin-right: 0	
+	&__inner
+		display: flex
+		align-items: center
+	&__tel
+		margin-right: 55px
+		display: flex
+		transition: .2s
+		color: #fff
+		&:hover
+			color: $accent
+	&__buttons
+		display: flex		
+	&__button
+		margin-right: 15px
+		display: flex
+		flex: 0 0 auto
+		&:last-child
+			margin-right: 0
+	&__cart
+		position: relative
+		&-amount
+			background-color: $accent
+			border-radius: 50%
+			width: 16px
+			height: 16px
+			font-size: 12px
+			color: #fff
+			display: flex
+			align-items: center
+			justify-content: center
+			position: absolute
+			top: 0
+			right: 0
+			transform: translate(50%, -50%)
+	&__hamburger
+		display: none
+	.menu
+		max-width: 990px
+		width: 100%
+		padding: 40px 50px
+		position: absolute
+		top: 100%
+		right: calc(100vw - 1400px - ((100vw - 1400px)/2))
+		background-color: #fff
+		display: none
+		& > *
+			flex: 0 0 auto
+		&-inner
+			display: flex
+		&__captions
+			width: 230px
+			&-item
+				font-family: 'PlayfairDisplay'
+				font-size: 32px
+				color: #2B414D
+				margin-bottom: 35px
+				display: flex
+				align-items: center
+				justify-content: space-between
+				transition: .3s
+				cursor: pointer
+				&.active
+					color: $accent
+					&::after
+						color: $accent
+				&::after
+					content: "\f054"
+					font-family: fontawesome
+					font-size: 12px
+					color: #233944
+					margin-left: 10px
+					transition: .3s
+					position: relative
+					top: 4px
+				&:hover
+					color: $accent
+					&::after
+						color: $accent
+				&:last-child
+					margin-bottom: 0		
+		&__content
+			height: 380px
+			margin-left: 85px
+			position: relative
+			top: 15px
+			display: none
+			&.active
+				display: flex
+			&-inner
+				width: 100%
+				height: 100%
+				display: flex
+				flex-direction: column
+				flex-wrap: wrap
+			&-link
+				width: 230px
+				margin-bottom: 20px
+				line-height: 1.2
+				margin-right: 50px
+				font-size: 14px
+				color: #233944;
+			&-close
+				display: none
+				align-items: center
+				padding: 20px
+				border-bottom: 1px solid #ECF2F5
+				width: 100%
+				i
+					margin-right: 15px
+					font-size: 10px
+		&__cabinet
+			padding: 20px
+			display: none
+			align-items: center
+			font-size: 14px
+			border-bottom: 1px solid #ECF2F5
+			svg
+				margin-right: 12px
+
+
+.ishome .main
+	position: relative
+	padding: 0
+	&__slider
+		&-container
+			position: relative
+		&-arrows
+			position: absolute
+			z-index: 2
+			bottom: 0
+			right: calc(100vw - 1400px - ((100vw - 1400px)/2))
+			padding: 30px 0
+			display: flex
+			align-items: center
+		&-arrow
+			width: 74px
+			height: 74px
+			border-radius: 50%
+			border: 1px solid rgba(255, 255, 255, 0.2)
+			display: flex
+			align-items: center
+			justify-content: center
+			transition: .3s
+			margin-right: 15px
+			svg path
+				transition: .3s
+			&:last-child
+				margin-right: 0
+			&:hover
+				background-color: #fff
+				border-color: #fff
+				svg path 
+					fill: $accent
+		&-slide
+			height: calc(100vh - 97px)
+			max-height: 800px
+			min-height: 600px
+			background-size: cover
+			background-position: center
+			position: relative
+			&::before
+				content: ""
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+				background-color: #0B151B
+				opacity: .5
+			& > *
+				z-index: 2
+				position: relative
+	&__title
+		color: #fff
+		max-width: 800px
+		width: 100%
+		margin-top: 15vh
+	&__advantages
+		position: absolute
+		bottom: 0
+		left: calc( 100vw - 1400px - ((100vw - 1400px)/2) )
+		transform: translate(-130px, 0)
+		background-color: #fff
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 35px 130px
+		&-box
+			position: relative
+			padding-left: 60px
+			margin-right: 105px
+			&:last-child
+				margin-right: 0
+			&::before
+				content: ""
+				background-size: contain
+				background-repeat: no-repeat
+				background-position: center
+				width: 30px
+				height: 30px
+				position: absolute
+				left: 0
+				top: 0
+			&:first-child::before
+				background-image: url("../img/icons/main__credit-card.svg")
+			&:last-child::before
+				background-image: url("../img/icons/main__union.svg")
+		&-heading
+			color: #233944
+			font-size: 18px
+		&-text
+			color: #7D95A3
+			font-size: 14px
+			margin-top: 20px
+
+
+
+.benefits
+	padding: 160px 0 80px
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&__items
+		width: 635px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__item
+		width: 160px
+		margin-bottom: 60px
+		&-inner
+			background-color: #F9F5F0
+			width: 90px
+			height: 90px
+			display: flex
+			align-items: center
+			justify-content: center
+		&-text
+			line-height: 1.5
+			max-width: 160px
+			margin-top: 20px
+
+
+
+.popular
+	&__slider
+		&-slide
+			cursor: pointer
+			margin: 0 15px
+			&:hover
+				.popular__slider-cart
+					opacity: 1
+				.popular__slider-heart
+					opacity: 1
+		&-image
+			background-image: url("../img/popular__item1.jpg")
+			background-size: cover
+			background-position: center
+			width: 100%
+			height: 358px
+			display: inline-block
+			position: relative
+		&-heart
+			position: absolute
+			top: 24px
+			right: 21px
+			opacity: 0
+			transition: .3s
+
+
+
+		&-inner
+			margin-top: 20px
+			display: flex
+			align-items: start
+			justify-content: space-between
+		&-text
+			font-size: 14px
+			line-height: 129.4%
+			max-width: 160px
+		&-price
+			font-weight: 700
+			line-height: 129.4%
+			margin-top: 15px
+		&-cart
+			background-color: $accent
+			border-radius: 50%
+			width: 58px
+			height: 58px
+			display: flex
+			align-items: center
+			justify-content: center
+			transition: .3s
+			opacity: 0
+
+
+
+
+.gallery
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__content
+		&-subtitle
+			font-size: 15px
+			color: #7D95A3
+			margin-top: 50px
+			max-width: 245px
+			line-height: 1.75
+		&-button
+			margin-top: 50px
+			svg
+				margin-left: 65px
+				path
+					transition: .4s
+			&:hover
+				svg path
+					fill: $accent
+	&__img
+		&._desktop-hidden
+			display: none
+
+
+.footer
+	background-color: $dark
+	position: relative
+	&__decoration
+		background-image: url("../img/footer__decoration.svg")
+		background-size: cover
+		background-repeat: no-repeat
+		width: 791px
+		height: 466px
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translate(-50%, 0)
+		z-index: 1
+	&__container
+		padding-top: 90px
+		padding-bottom: 120px 
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		z-index: 2
+		position: relative
+	&__logo
+		display: flex
+	&__social
+		display: flex
+		margin-top: 80px
+		&-link
+			border-radius: 50%
+			border: 1px solid #405560
+			margin-right: 15px
+			width: 50px
+			height: 50px
+			display: flex
+			align-items: center
+			justify-content: center
+			img
+				height: 15px
+				width: 100%
+	&__menu
+		display: flex
+		flex-direction: column
+		&-link
+			color: #fff
+			margin-bottom: 20px
+			transition: .3s
+			line-height: 1.2
+			&:hover
+				color: $accent
+			&:last-child
+				margin-bottom: 0
+	&__contacts
+		display: flex
+		flex-direction: column
+		&-tels
+			display: flex
+			flex-direction: column
+		&-tel
+			color: #fff
+			font-size: 24px
+			margin-bottom: 15px
+			transition: .3s
+			line-height: 1.2
+			&:last-child
+				margin-bottom: 0
+			&:hover
+				color: $accent	
+		&-address
+			color: #fff
+			font-size: 14px
+			margin-top: 40px
+			line-height: 1.2
+		&-policy
+			color: $accent
+			transition: .3s
+			margin-top: 15px
+			font-size: 14px
+			line-height: 1.2
+			width: 192px
+			border-bottom: 1px solid $accent
+			&:hover
+				color: #fff
+				border-bottom: 1px solid #fff
+	&__bottom
+		position: relative
+		z-index: 2
+		&-container
+			display: flex
+			align-items: center
+			justify-content: space-between
+			border-top: 1px solid #405560
+			padding: 50px 0
+		&-copyright
+			color: #B4B4B4
+			font-size: 12px
+	&__paymethod
+		display: flex
+		align-items: center
+		&-method
+			margin-left: 30px	
+		&-heading
+			font-size: 12px
+			color: #B4B4B4
+
+
+
+.p-about
+	.main
+		background-color: $dark
+		.breadcrumbs
+			&__container
+				display: flex
+			&__item
+				font-size: 12px
+				color: #7D95A3
+				&::after
+					content: "/"
+
+
+.sliders
+	padding: 0
+
+
+
+
+
+
+
+@import media
+@import main
