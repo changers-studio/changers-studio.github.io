@@ -8,7 +8,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- favicon -->
-		<link rel="icon" type="image/x-icon" sizes="192x192" href="img/logo.png" />
+		<link rel="icon" type="image/x-icon" sizes="192x192" href="img/favicon.ico" />
+
 		<!-- СТИЛИ -->
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -16,6 +17,7 @@
 		<!-- БИБЛИОТЕКИ -->
 		<script defer src="libs/jquery.js"></script>
 		<script defer src="libs/swiper-bundle.min.js"></script>
+
 		<!-- ФАЙЛ СКРИПТОВ -->
 		<script defer src="js/script.js"></script>
 	</head>
@@ -242,11 +244,18 @@
 		<section class="launches">
 			<div class="container">
 				<!-- ФОРМА ПОДПИСКИ -->
-				<form action="#" class="launches__form">
+				<form class="launches__form">
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Avision Media" />
+					<input type="hidden" name="admin_email" value="info@avision-media.com" />
+					<input type="hidden" name="form_subject" value="Подписка на новости" />
+					<!-- END Hidden Required Fields -->
+
 					<div class="notification">
 						<img src="img/stay.png" alt="stay icon" />
 						<span>Stay connected</span>
 					</div>
+
 					<input
 						type="email"
 						name="Email"
@@ -254,10 +263,14 @@
 						placeholder="name@gmail.com"
 						required
 					/>
+
 					<button class="launches__form-button" type="submit">Subscribe</button>
 				</form>
+
 				<!-- КОНЕЦ ФОРМЫ ПОДПИСКИ -->
+
 				<h2 class="title">website launches in:</h2>
+
 				<!-- ТАЙМЕР -->
 				<div class="timer">
 					<div class="timer__items">
@@ -268,6 +281,7 @@
 					</div>
 				</div>
 				<!-- КОНЕЦ ТАЙМЕРА -->
+
 				<!-- СЛАЙДЕР -->
 				<div class="slider">
 					<div class="tab">
@@ -399,40 +413,39 @@
 						<div class="swiper">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
-									<div class="embed-container">
-										<iframe
-											title="vimeo-player"
-											src="https://player.vimeo.com/video/640246496?h=b8e12d4f21"
-											frameborder="0"
-											allowfullscreen
-										></iframe>
-									</div>
-								</div>
-								<div class="swiper-slide">
 									<iframe
 										title="vimeo-player"
-										src="https://player.vimeo.com/video/640247117?h=a5ec062299&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=584
-                  79"
+										src="https://player.vimeo.com/video/640246496?h=b8e12d4f21"
 										frameborder="0"
 										allowfullscreen
 									></iframe>
 								</div>
+
 								<div class="swiper-slide">
 									<iframe
 										title="vimeo-player"
-										src="https://player.vimeo.com/video/64
-                    0249884?h=d46aec4483&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=584
-                    79"
+										src="https://player.vimeo.com/video/640247117?h=a5ec062299&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
 										frameborder="0"
 										allowfullscreen
 									></iframe>
 								</div>
+
 								<div class="swiper-slide">
 									<iframe
 										title="vimeo-player"
-										src="https://player.vimeo.com/video/640250603?h=ee6c908764&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;
-                  app_id=584
-                  79"
+										src="https://player.vimeo.com/video/640249884?h=d46aec4483&amp;badge=0&amp;autopause=0&a
+										mp;player_id=0&amp;app_id=58479"
+										frameborder="0"
+										allow="autoplay; fullscreen; picture-in-picture"
+										frameborder="0"
+										allowfullscreen
+									></iframe>
+								</div>
+
+								<div class="swiper-slide">
+									<iframe
+										title="vimeo-player"
+										src="https://player.vimeo.com/video/640250603?h=ee6c908764&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
 										frameborder="0"
 										allowfullscreen
 									></iframe>
@@ -684,13 +697,19 @@
 				<!-- КОНЕЦ СЛАЙДЕРА -->
 				<h2 class="title">contact us:</h2>
 				<div class="contacts-inner">
-					<form action="#" class="contacts-form">
+					<form class="contacts-form">
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Avision Media" />
+						<input type="hidden" name="admin_email" value="info@avision-media.com" />
+						<input type="hidden" name="form_subject" value="Подписка на новости" />
+						<!-- END Hidden Required Fields -->
+
 						<input type="text" class="topic-input" placeholder="Topic" />
 
 						<div class="rows-input">
 							<div class="column-input">
-								<input type="text" class="name-input" placeholder="Name" />
-								<input type="email" class="email-input" placeholder="Email" />
+								<input type="text" class="name-input" placeholder="Name" required />
+								<input type="email" class="email-input" placeholder="Email" required />
 							</div>
 							<textarea
 								name="#"
@@ -706,6 +725,7 @@
 				</div>
 			</div>
 		</section>
+
 		<footer>
 			<div class="container">
 				<div class="footer__contacts">
@@ -925,6 +945,5 @@
 				</div>
 			</div>
 		</footer>
-		<style></style>
 	</body>
 </html>

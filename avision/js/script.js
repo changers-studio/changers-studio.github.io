@@ -1,8 +1,7 @@
 // ТАЙМЕР НАЧАЛО
-
 document.addEventListener('DOMContentLoaded', function () {
 	// конечная дата, например 1 июля 2021
-	const deadline = new Date(2021, 10, 28)
+	const deadline = new Date(2021, 11, 17)
 	// id таймера
 	let timerId = null
 	// склонение числительных
@@ -42,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	// вызываем функцию countdownTimer каждую секунду
 	timerId = setInterval(countdownTimer, 1000)
 })
-
 // ТАЙМЕР КОНЕЦ
 
 //  ТАБЫ В СЛАЙДЕРЕ
@@ -70,7 +68,6 @@ function openCity(evt, cityName) {
 // КОНЕЦ  ТАБОВ В СЛАЙДЕРЕ
 
 // ИНИЦИАЛИЗАЦИЯ  СЛАЙДЕРА
-
 var swiper = new Swiper('.swiper', {
 	navigation: {
 		nextEl: '.swiper-button-next',
@@ -79,34 +76,21 @@ var swiper = new Swiper('.swiper', {
 	observer: true,
 	observeParents: true,
 })
-
 // КОНЕЦ  СЛАЙДЕРА
-//  БЛОК ВИДЕО
-const videoBtn = document.querySelector('#video-story-btn')
-const videoBtnIcon = document.querySelector('#video-story-btn-icon')
-const videoOverlay = document.querySelector('#video-story-overlay')
-const videoFile = document.querySelector('#video-story')
 
-videoBtn.addEventListener('click', function () {
-	function toggleOverlay(event) {
-		if (event.type === 'mouseleave') {
-			videoOverlay.classList.add('hidden')
-		} else {
-			videoOverlay.classList.remove('hidden')
-		}
-	}
-
-	if (videoFile.paused) {
-		videoFile.play()
-		videoBtnIcon.src = 'img/pause-video.png'
-
-		videoOverlay.onmouseleave = toggleOverlay
-		videoOverlay.onmouseenter = toggleOverlay
-	} else {
-		videoFile.pause()
-		videoBtnIcon.src = 'img/video-play-btn.png'
-		videoOverlay.onmouseleave = null
-		videoOverlay.onmouseenter = null
-	}
+$('form').submit(function () {
+	//Change
+	var th = $(this)
+	$.ajax({
+		type: 'POST',
+		url: 'mail.php', //Change
+		data: th.serialize(),
+	}).done(function () {
+		alert('Thank you!')
+		setTimeout(function () {
+			// Done Functions
+			th.trigger('reset')
+		}, 1000)
+	})
+	return false
 })
-// КОНЕЦ  БЛОКА ВИДЕО
