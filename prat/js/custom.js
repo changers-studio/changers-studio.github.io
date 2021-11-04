@@ -2,7 +2,7 @@ $(function () {
 	// Слайдер на главном экране
 	if ($('*').is('.main__slider')) {
 		$('.main__slider').slick({
-			infinite: false,
+			infinite: true,
 			touchMove: false,
 			speed: 800,
 			fade: true,
@@ -24,7 +24,7 @@ $(function () {
 				$('.blog__counter-all').html(slick.slideCount)
 			})
 			.slick({
-				infinite: false,
+				infinite: true,
 				touchMove: false,
 				variableWidth: true,
 				speed: 1000,

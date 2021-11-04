@@ -194,7 +194,7 @@
 			</div>
 
 			<a href="#" class="main__scroll-down">
-				<img src="img/icons/scroll.svg" alt="Скроль вниз">
+				<img src="img/icons/scroll.svg" alt="Скроль вниз" />
 			</a>
 		</section>
 		<!-- eof -->
@@ -473,13 +473,7 @@
 					<a href="#" class="target__button button">
 						<span>Стратегія розвитку</span>
 
-						<svg
-							width="205"
-							height="143"
-							viewBox="0 0 205 143"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
+						<svg viewBox="0 0 205 143" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
 								d="M120.47 72.4702C120.73 72.2105 120.73 71.7895 120.47 71.5298L116.238 67.2978C115.979 67.0381 115.557 67.0381 115.298 67.2978C115.038 67.5574 115.038 67.9785 115.298 68.2382L119.06 72L115.298 75.7618C115.038 76.0215 115.038 76.4426 115.298 76.7023C115.557 76.962 115.978 76.962 116.238 76.7023L120.47 72.4702ZM-5.81361e-08 72.665L120 72.665L120 71.335L5.81361e-08 71.335L-5.81361e-08 72.665Z"
 								fill="#1A1D22"
@@ -524,10 +518,24 @@
 					<div class="blog__counter">
 						<span class="blog__counter-current"></span>
 
-						<svg class="blog__counter-separator" width="83" height="84" viewBox="0 0 83 84" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<line opacity="0.33" x1="0.646447" y1="82.6479" x2="82.6464" y2="0.647911" stroke="#BCC6C0"/>
-							</svg>
-							
+						<svg
+							class="blog__counter-separator"
+							width="83"
+							height="84"
+							viewBox="0 0 83 84"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<line
+								opacity="0.33"
+								x1="0.646447"
+								y1="82.6479"
+								x2="82.6464"
+								y2="0.647911"
+								stroke="#BCC6C0"
+							/>
+						</svg>
+
 						<span class="blog__counter-all"></span>
 					</div>
 
@@ -546,7 +554,7 @@
 								/>
 							</svg>
 						</button>
-	
+
 						<button class="blog__slider-arrow blog__slider-next">
 							<svg
 								width="81"
@@ -567,16 +575,18 @@
 
 			<div class="blog__slider">
 				<article class="article">
-					<div
-						class="article__image"
-						style="background-image: url('img/blog/preview-1.jpg')"
-					>
-						<span class="article__date">15.10.21</span>
+					<div class="article__image-wrapper">
+						<div
+							class="article__image"
+							style="background-image: url('img/blog/preview-1.jpg')"
+						>
+							<span class="article__date">15.10.21</span>
+						</div>
 					</div>
 
 					<a class="article__title">
 						Сведения о принятии решения о предоставлении согласия ...
-					</h1>
+					</a>
 
 					<a href="#" class="article__button button">
 						<span>Читати далі</span>
@@ -783,7 +793,7 @@
 					</p>
 
 					<a href="#" class="about__button button">
-						<span>Про компанІю</span>
+						<span>Про компанію</span>
 
 						<svg
 							width="205"
@@ -851,6 +861,11 @@
 							дом 19, офис 509
 						</address>
 					</div>
+
+					<p class="footer__copyrights">
+						<span>indinsall © 2016</span>
+						<span>Все права защищены</span>
+					</p>
 				</div>
 
 				<nav class="footer__menu">
@@ -930,7 +945,5 @@
 			</div>
 		</footer>
 		<!-- eof -->
-
-		<div style="height: 500px"></div>
 	</body>
 </html>
