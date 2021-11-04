@@ -45,7 +45,7 @@ jQuery(function () {
 		})
 	}
 
-	$('ul.menu__captions').on('click', 'li:not(.active)', function () {
+	$('ul.menu__captions').on('mouseover click', 'li:not(.active)', function () {
 		$(this)
 			.addClass('active')
 			.siblings()
@@ -71,6 +71,38 @@ jQuery(function () {
 		$('.header .menu__captions-item.active').removeClass('active')
 	}
 })
+
+//СКРЫТЬ_ПОКАЗАТЬ КАТЕГОРИИ
+$('.rubrics-accordion').on('click', () => {
+	$('.rubrics-accordion').toggleClass('active')
+	$('.rubrics-mobile .panel').slideToggle()
+})
+//СКРЫТЬ_ПОКАЗАТЬ КАТЕГОРИИ КОНЕЦ
+
+//СКРЫТЬ_ПОКАЗАТЬ ПАРОЛЬ
+
+$('body').on('click', '.password-control', function () {
+	if ($('#password-input').attr('type') == 'password') {
+		$(this).addClass('view')
+		$('#password-input').attr('type', 'text')
+	} else {
+		$(this).removeClass('view')
+		$('#password-input').attr('type', 'password')
+	}
+	return false
+})
+
+//СКРЫТЬ_ПОКАЗАТЬ ПАРОЛЬ КОНЕЦ
+
+//СКРЫТЬ_ПОКАЗАТЬ таблицу
+function myFunction() {
+	var x = document.getElementById('ditals-order')
+	if (x.style.display === 'none') {
+		x.style.display = 'block'
+	} else {
+		x.style.display = 'none'
+	}
+}
 
 function ibg() {
 	let ibg = document.querySelectorAll('.ibg')
@@ -189,6 +221,31 @@ const swiper4 = new Swiper('.slaider-4__body-slaider', {
 		},
 		1024.1: {
 			slidesPerView: 4,
+			spaceBetween: 30,
+		},
+	},
+})
+const swiper5 = new Swiper('.slaider-5__body-slaider', {
+	speed: 800,
+	loop: true,
+	slidesPerView: 2,
+	navigation: {
+		nextEl: '.slaider_5__other-albums__body-reght-buton__next',
+		prevEl: '.slaider_5__other-albums__body-reght-buton__prev',
+	},
+	//centeredSlides: true,
+	breakpoints: {
+		320.1: {
+			//slidesPerView: "auto",
+			spaceBetween: 10,
+		},
+		480.1: {
+			spaceBetween: 10,
+		},
+		992.1: {
+			spaceBetween: 20,
+		},
+		1024.1: {
 			spaceBetween: 30,
 		},
 	},
