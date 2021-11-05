@@ -113,13 +113,13 @@ function ibg() {
 		}
 	}
 }
+
 ibg()
 //Слайдеры=============================================
 const swiper = new Swiper('.other-albums__slider', {
-	speed: 800,
-	allowTouchMove: false,
 	//direction: 'vertical',
 	loop: true,
+	speed: 800,
 	//slidesPerView: 3,
 	spaceBetween: 30,
 
@@ -145,6 +145,7 @@ const swiper = new Swiper('.other-albums__slider', {
 	},
 })
 const swiper2 = new Swiper('.slaider-2__body-slaider', {
+	loop: true,
 	speed: 800,
 	navigation: {
 		prevEl: '.slaider_2__other-albums__body-reght-buton__next',
@@ -152,7 +153,7 @@ const swiper2 = new Swiper('.slaider-2__body-slaider', {
 	},
 	//centeredSlides: true,
 	breakpoints: {
-		319.1: {
+		320.1: {
 			//slidesPerView: "auto",
 			slidesPerView: 2,
 			spaceBetween: 10,
@@ -172,6 +173,7 @@ const swiper2 = new Swiper('.slaider-2__body-slaider', {
 	},
 })
 const swiper3 = new Swiper('.slaider-3__body-slaider', {
+	loop: true,
 	speed: 800,
 	navigation: {
 		nextEl: '.slaider_3__other-albums__body-reght-buton__next',
@@ -179,7 +181,7 @@ const swiper3 = new Swiper('.slaider-3__body-slaider', {
 	},
 	//centeredSlides: true,
 	breakpoints: {
-		319.1: {
+		320.1: {
 			//slidesPerView: "auto",
 			slidesPerView: 2,
 			spaceBetween: 10,
@@ -199,6 +201,7 @@ const swiper3 = new Swiper('.slaider-3__body-slaider', {
 	},
 })
 const swiper4 = new Swiper('.slaider-4__body-slaider', {
+	loop: true,
 	speed: 800,
 	navigation: {
 		nextEl: '.slaider_4__other-albums__body-reght-buton__next',
@@ -206,7 +209,7 @@ const swiper4 = new Swiper('.slaider-4__body-slaider', {
 	},
 	//centeredSlides: true,
 	breakpoints: {
-		319.1: {
+		320.1: {
 			//slidesPerView: "auto",
 			slidesPerView: 2,
 			spaceBetween: 10,
@@ -226,7 +229,6 @@ const swiper4 = new Swiper('.slaider-4__body-slaider', {
 	},
 })
 const swiper5 = new Swiper('.slaider-5__body-slaider', {
-	speed: 800,
 	loop: true,
 	slidesPerView: 2,
 	navigation: {
@@ -250,6 +252,112 @@ const swiper5 = new Swiper('.slaider-5__body-slaider', {
 		},
 	},
 })
+
+const availableScreenWidth = window.screen.availWidth
+if (availableScreenWidth < 992) {
+	const swiper6 = new Swiper('.slaider-6__body-slaider', {
+		loop: true,
+		slidesPerView: 1,
+		/*navigation: {
+			nextEl: '.slaider_6__other-albums__body-reght-buton__next',
+			prevEl: '.slaider_6__other-albums__body-reght-buton__prev',
+		},*/
+		pagination: {
+			el: '.swiper-pagination',
+		},
+	})
+	const swiper7 = new Swiper('.slaider-7__body-slaider', {
+		slidesPerView: 'auto',
+		breakpoints: {
+			320.1: {
+				//slidesPerView: "auto",
+				spaceBetween: 10,
+			},
+			992.1: {
+				spaceBetween: 20,
+			},
+		},
+		/*navigation: {
+			nextEl: '.slaider_6__other-albums__body-reght-buton__next',
+			prevEl: '.slaider_6__other-albums__body-reght-buton__prev',
+		},*/
+	})
+}
+const formTop = document.querySelectorAll('#form-top')
+if (formTop.length > 0) {
+	var handlesSlider = document.getElementById('slider-handles')
+	/*
+	noUiSlider.create(handlesSlider, {
+	    start: [0, 1456],
+	    connect: true,
+	    range: {
+	        'min': [1],
+	        'max': [2000],
+	    }
+	});
+*/
+	var inputStart = document.getElementById('slider-handles__start')
+	var inputEnd = document.getElementById('slider-handles__end')
+
+	inputStart.addEventListener('change', function () {
+		handlesSlider.noUiSlider.set([inputStart.value, null])
+	})
+	inputEnd.addEventListener('change', function () {
+		handlesSlider.noUiSlider.set([null, inputEnd.value])
+	})
+
+	let videobodys = document.querySelectorAll('.form-item')
+	let videoButtons = document.querySelectorAll('.form-body')
+	if (videobodys.length > 0) {
+		for (let i = 0; i < videobodys.length; i++) {
+			const videobody = videobodys[i]
+			const videoButton = videoButtons[i]
+			videobody.addEventListener('click', function (e) {
+				if (videoButton.classList.contains('_active')) {
+					videoButton.classList.remove('_active')
+					videobody.classList.remove('_active')
+				} else {
+					const activs = document.querySelectorAll('._active')
+					for (let i = 0; i < activs.length; i++) {
+						const activ = activs[i]
+						activ.classList.remove('_active')
+					}
+					videoButton.classList.toggle('_active')
+					videobody.classList.toggle('_active')
+				}
+			})
+		}
+	}
+	let formButton = document.querySelector('.catalog-wraper__top-body__mb-button-left')
+	let formButtonRemoves = document.querySelectorAll('#catalog-wraper__remov')
+	let formBody = document.querySelector('.catalog-wraper__top-body-form2')
+	formButton.addEventListener('click', function () {
+		formBody.classList.toggle('_active')
+	})
+	for (let i = 0; i < formButtonRemoves.length; i++) {
+		const formButtonRemove = formButtonRemoves[i]
+		formButtonRemove.addEventListener('click', function (e) {
+			formBody.classList.remove('_active')
+		})
+	}
+}
+
+let heart = document.querySelector('.CardProdyck-body__reght-wraper__span')
+let heartBody = document.querySelector('.CardProdyck-body__reght-wraper__span-reght')
+if (heartBody) {
+	heart.addEventListener('click', function () {
+		heartBody.classList.toggle('_active')
+	})
+}
+
+function hideSpollersBody2(spollersBlock) {
+	const spollerActiveTitle = spollersBlock.querySelectorAll('._active')
+	if (spollerActiveTitle) {
+		spollerActiveTitle.classList.remove('_active')
+		_slideUp(spollerActiveTitle.nextElementSibling, 500)
+	}
+}
+
 //Спойлеры=============================================
 const spollersArray = document.querySelectorAll('[data-spollers]')
 if (spollersArray.length > 0) {
@@ -423,4 +531,233 @@ let _slideToggle = (target, duration = 500) => {
 	} else {
 		return _slideUp(target, duration)
 	}
+}
+// Dynamic Adapt v.1
+// HTML data-da="where(uniq class name),when(breakpoint),position(digi)"
+// e.x. data-da=".item,992,2"
+// Andrikanych Yevhen 2020
+// https://www.youtube.com/c/freelancerlifestyle
+
+;('use strict')
+
+function DynamicAdapt(type) {
+	this.type = type
+}
+
+DynamicAdapt.prototype.init = function () {
+	const _this = this
+	// массив объектов
+	this.оbjects = []
+	this.daClassname = '_dynamic_adapt_'
+	// массив DOM-элементов
+	this.nodes = document.querySelectorAll('[data-da]')
+
+	// наполнение оbjects объктами
+	for (let i = 0; i < this.nodes.length; i++) {
+		const node = this.nodes[i]
+		const data = node.dataset.da.trim()
+		const dataArray = data.split(',')
+		const оbject = {}
+		оbject.element = node
+		оbject.parent = node.parentNode
+		оbject.destination = document.querySelector(dataArray[0].trim())
+		оbject.breakpoint = dataArray[1] ? dataArray[1].trim() : '767'
+		оbject.place = dataArray[2] ? dataArray[2].trim() : 'last'
+		оbject.index = this.indexInParent(оbject.parent, оbject.element)
+		this.оbjects.push(оbject)
+	}
+
+	this.arraySort(this.оbjects)
+
+	// массив уникальных медиа-запросов
+	this.mediaQueries = Array.prototype.map.call(
+		this.оbjects,
+		function (item) {
+			return '(' + this.type + '-width: ' + item.breakpoint + 'px),' + item.breakpoint
+		},
+		this
+	)
+	this.mediaQueries = Array.prototype.filter.call(
+		this.mediaQueries,
+		function (item, index, self) {
+			return Array.prototype.indexOf.call(self, item) === index
+		}
+	)
+
+	// навешивание слушателя на медиа-запрос
+	// и вызов обработчика при первом запуске
+	for (let i = 0; i < this.mediaQueries.length; i++) {
+		const media = this.mediaQueries[i]
+		const mediaSplit = String.prototype.split.call(media, ',')
+		const matchMedia = window.matchMedia(mediaSplit[0])
+		const mediaBreakpoint = mediaSplit[1]
+
+		// массив объектов с подходящим брейкпоинтом
+		const оbjectsFilter = Array.prototype.filter.call(this.оbjects, function (item) {
+			return item.breakpoint === mediaBreakpoint
+		})
+		matchMedia.addListener(function () {
+			_this.mediaHandler(matchMedia, оbjectsFilter)
+		})
+		this.mediaHandler(matchMedia, оbjectsFilter)
+	}
+}
+
+DynamicAdapt.prototype.mediaHandler = function (matchMedia, оbjects) {
+	if (matchMedia.matches) {
+		for (let i = 0; i < оbjects.length; i++) {
+			const оbject = оbjects[i]
+			оbject.index = this.indexInParent(оbject.parent, оbject.element)
+			this.moveTo(оbject.place, оbject.element, оbject.destination)
+		}
+	} else {
+		for (let i = 0; i < оbjects.length; i++) {
+			const оbject = оbjects[i]
+			if (оbject.element.classList.contains(this.daClassname)) {
+				this.moveBack(оbject.parent, оbject.element, оbject.index)
+			}
+		}
+	}
+}
+
+// Функция перемещения
+DynamicAdapt.prototype.moveTo = function (place, element, destination) {
+	element.classList.add(this.daClassname)
+	if (place === 'last' || place >= destination.children.length) {
+		destination.insertAdjacentElement('beforeend', element)
+		return
+	}
+	if (place === 'first') {
+		destination.insertAdjacentElement('afterbegin', element)
+		return
+	}
+	destination.children[place].insertAdjacentElement('beforebegin', element)
+}
+
+// Функция возврата
+DynamicAdapt.prototype.moveBack = function (parent, element, index) {
+	element.classList.remove(this.daClassname)
+	if (parent.children[index] !== undefined) {
+		parent.children[index].insertAdjacentElement('beforebegin', element)
+	} else {
+		parent.insertAdjacentElement('beforeend', element)
+	}
+}
+
+// Функция получения индекса внутри родителя
+DynamicAdapt.prototype.indexInParent = function (parent, element) {
+	const array = Array.prototype.slice.call(parent.children)
+	return Array.prototype.indexOf.call(array, element)
+}
+
+// Функция сортировки массива по breakpoint и place
+// по возрастанию для this.type = min
+// по убыванию для this.type = max
+DynamicAdapt.prototype.arraySort = function (arr) {
+	if (this.type === 'min') {
+		Array.prototype.sort.call(arr, function (a, b) {
+			if (a.breakpoint === b.breakpoint) {
+				if (a.place === b.place) {
+					return 0
+				}
+
+				if (a.place === 'first' || b.place === 'last') {
+					return -1
+				}
+
+				if (a.place === 'last' || b.place === 'first') {
+					return 1
+				}
+
+				return a.place - b.place
+			}
+
+			return a.breakpoint - b.breakpoint
+		})
+	} else {
+		Array.prototype.sort.call(arr, function (a, b) {
+			if (a.breakpoint === b.breakpoint) {
+				if (a.place === b.place) {
+					return 0
+				}
+
+				if (a.place === 'first' || b.place === 'last') {
+					return 1
+				}
+
+				if (a.place === 'last' || b.place === 'first') {
+					return -1
+				}
+
+				return b.place - a.place
+			}
+
+			return b.breakpoint - a.breakpoint
+		})
+		return
+	}
+}
+
+const da = new DynamicAdapt('max')
+da.init()
+
+if ($('*').is('.range')) {
+	let $range = $('.range__slider'),
+		$inputFrom = $('.range__from'),
+		$inputTo = $('.range__to'),
+		instance,
+		min = 100,
+		max = 100000,
+		from = 0,
+		to = 0
+
+	$range.ionRangeSlider({
+		skin: 'round',
+		type: 'double',
+		min: min,
+		max: max,
+		from: 199,
+		to: 3000,
+		onStart: updateInputs,
+		onChange: updateInputs,
+	})
+	instance = $range.data('ionRangeSlider')
+
+	function updateInputs(data) {
+		from = data.from
+		to = data.to
+
+		$inputFrom.prop('value', from)
+		$inputTo.prop('value', to)
+	}
+
+	$inputFrom.on('input', function () {
+		var val = $(this).prop('value')
+
+		// validate
+		if (val < min) {
+			val = min
+		} else if (val > to) {
+			val = to
+		}
+
+		instance.update({
+			from: val,
+		})
+	})
+
+	$inputTo.on('input', function () {
+		var val = $(this).prop('value')
+
+		// validate
+		if (val < from) {
+			val = from
+		} else if (val > max) {
+			val = max
+		}
+
+		instance.update({
+			to: val,
+		})
+	})
 }
