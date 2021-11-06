@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Duo River | История заказов</title>
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" sizes="192x192" href="img/favicon.ico" />
+
+		<!-- fontawesome -->
+		<script
+			async
+			defer
+			src="https://kit.fontawesome.com/55e0136003.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- reset css -->
+		<link rel="stylesheet" href="css/reset.css" />
+
+		<!-- libs css -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+		<!-- main css -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- jQeury -->
+		<script defer src="libs/jquery.min.js"></script>
+
+		<!-- libs js -->
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+		<!-- main js -->
+		<script defer src="js/custom.js"></script>
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container header__container">
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.png" alt="logo" />
+				</a>
+				<nav class="header__menu">
+					<a href="#" class="header__menu-item header__menu-catalog">Каталог</a>
+					<a href="#" class="header__menu-item">Скидки</a>
+					<a href="#" class="header__menu-item">О нас</a>
+					<a href="#" class="header__menu-item">Доставка</a>
+					<a href="#" class="header__menu-item">Оплата</a>
+					<a href="#" class="header__menu-item">Контакты</a>
+				</nav>
+				<div class="header__inner">
+					<a href="tel:998901234567" class="header__tel">+998 90 123 45 67</a>
+					<div class="header__buttons">
+						<a href="#" class="header__button">
+							<img src="img/icons/header__search.svg" alt="search" />
+						</a>
+						<a href="#" class="header__button header__login">
+							<img src="img/icons/header__login.svg" alt="login" />
+						</a>
+						<a href="#" class="header__button header__cart">
+							<img src="img/icons/header__cart.svg" alt="cart" />
+							<span class="header__cart-amount">2</span>
+						</a>
+						<a href="#" class="header__button header__hamburger">
+							<img src="img/icons/header__hamburger.svg" alt="menu" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="menu-inner">
+					<a href="#" class="menu__cabinet">
+						<svg
+							width="24"
+							height="25"
+							viewBox="0 0 24 25"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M14.7879 8.32486C14.7879 9.86459 13.5397 11.1128 12 11.1128C10.4602 11.1128 9.21204 9.86459 9.21204 8.32486C9.21204 6.78512 10.4602 5.53691 12 5.53691C13.5397 5.53691 14.7879 6.78512 14.7879 8.32486ZM15.9879 8.32486C15.9879 10.5273 14.2025 12.3128 12 12.3128C9.79751 12.3128 8.01204 10.5273 8.01204 8.32486C8.01204 6.12238 9.79751 4.33691 12 4.33691C14.2025 4.33691 15.9879 6.12238 15.9879 8.32486ZM11.2025 13.7068C7.78762 13.7068 5.01935 16.475 5.01935 19.8899H6.21935C6.21935 17.1378 8.45037 14.9068 11.2025 14.9068H12.7976C15.5497 14.9068 17.7808 17.1378 17.7808 19.8899H18.9808C18.9808 16.475 16.2125 13.7068 12.7976 13.7068H11.2025Z"
+								fill="#233944"
+							/>
+						</svg>
+
+						<span>Вход / Регистрация</span>
+					</a>
+
+					<ul class="menu__captions">
+						<li class="menu__captions-item active">Гостиные</li>
+						<li class="menu__captions-item">Спальни</li>
+						<li class="menu__captions-item">Прихожие</li>
+						<li class="menu__captions-item">Детские</li>
+						<li class="menu__captions-item">Кабинеты</li>
+						<li class="menu__captions-item">Кухни</li>
+					</ul>
+
+					<div class="menu__content active">
+						<button class="menu__content-close">
+							<i class="fas fa-chevron-left"></i>
+							<span>Назад</span>
+						</button>
+						<div class="menu__content-inner">
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати диваны-кровати</a>
+						</div>
+					</div>
+
+					<div class="menu__content">
+						<button class="menu__content-close">
+							<i class="fas fa-chevron-left"></i>
+							<span>Назад</span>
+						</button>
+						<div class="menu__content-inner">
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати диваны-кровати</a>
+						</div>
+					</div>
+
+					<div class="menu__content">
+						<button class="menu__content-close">
+							<i class="fas fa-chevron-left"></i>
+							<span>Назад</span>
+						</button>
+						<div class="menu__content-inner">
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати диваны-кровати</a>
+						</div>
+					</div>
+
+					<div class="menu__content">
+						<button class="menu__content-close">
+							<i class="fas fa-chevron-left"></i>
+							<span>Назад</span>
+						</button>
+						<div class="menu__content-inner">
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати диваны-кровати</a>
+						</div>
+					</div>
+
+					<div class="menu__content">
+						<button class="menu__content-close">
+							<i class="fas fa-chevron-left"></i>
+							<span>Назад</span>
+						</button>
+						<div class="menu__content-inner">
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати</a>
+							<a href="#" class="menu__content-link">Диваны-кровати диваны-кровати</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="private-data history-products">
+			<div class="container ordering__container">
+				<div class="settings-profile">
+					<div class="settings-profile-left">
+						<ul class="settings-profile-menu">
+							<li>
+								<a href="#">
+									<svg
+										width="12"
+										height="15"
+										viewBox="0 0 12 15"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M0.976311 9.80969C1.60143 9.18456 2.44928 8.83337 3.33333 8.83337H8.66667C9.55072 8.83337 10.3986 9.18456 11.0237 9.80969C11.6488 10.4348 12 11.2827 12 12.1667V13.5C12 13.8682 11.7015 14.1667 11.3333 14.1667C10.9651 14.1667 10.6667 13.8682 10.6667 13.5V12.1667C10.6667 11.6363 10.456 11.1276 10.0809 10.7525C9.70581 10.3774 9.1971 10.1667 8.66667 10.1667H3.33333C2.8029 10.1667 2.29419 10.3774 1.91912 10.7525C1.54405 11.1276 1.33333 11.6363 1.33333 12.1667V13.5C1.33333 13.8682 1.03486 14.1667 0.666667 14.1667C0.298477 14.1667 0 13.8682 0 13.5V12.1667C0 11.2827 0.351189 10.4348 0.976311 9.80969Z"
+											fill="#2B414D"
+										/>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M5.99996 2.16671C4.89539 2.16671 3.99996 3.06214 3.99996 4.16671C3.99996 5.27128 4.89539 6.16671 5.99996 6.16671C7.10453 6.16671 7.99996 5.27128 7.99996 4.16671C7.99996 3.06214 7.10453 2.16671 5.99996 2.16671ZM2.66663 4.16671C2.66663 2.32576 4.15901 0.833374 5.99996 0.833374C7.84091 0.833374 9.33329 2.32576 9.33329 4.16671C9.33329 6.00766 7.84091 7.50004 5.99996 7.50004C4.15901 7.50004 2.66663 6.00766 2.66663 4.16671Z"
+											fill="#2B414D"
+										/>
+									</svg>
+									Персональные данные
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg
+										width="16"
+										height="15"
+										viewBox="0 0 16 15"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M9.94206 1.16342C10.4679 0.945526 11.0316 0.833374 11.6008 0.833374C12.1701 0.833374 12.7337 0.945526 13.2596 1.16342C13.7854 1.38128 14.2631 1.70058 14.6654 2.10308C15.0679 2.50544 15.3875 2.98338 15.6053 3.50916C15.8232 4.03504 15.9354 4.59869 15.9354 5.16792C15.9354 5.73716 15.8232 6.30081 15.6053 6.82669C15.3874 7.35252 15.0681 7.83027 14.6656 8.23266C14.6655 8.2327 14.6656 8.23263 14.6656 8.23266L8.77222 14.126C8.51188 14.3863 8.08977 14.3863 7.82942 14.126L1.93608 8.23266C1.12326 7.41984 0.666626 6.31742 0.666626 5.16792C0.666626 4.01842 1.12326 2.91601 1.93608 2.10319C2.7489 1.29037 3.85132 0.833731 5.00082 0.833731C6.15032 0.833731 7.25274 1.29037 8.06556 2.10319L8.30082 2.33845L8.53597 2.1033C8.53601 2.10326 8.53594 2.10333 8.53597 2.1033C8.93836 1.70075 9.41623 1.3813 9.94206 1.16342ZM11.6008 2.16671C11.2067 2.16671 10.8165 2.24435 10.4524 2.3952C10.0884 2.54606 9.7576 2.76716 9.479 3.04589L8.77222 3.75266C8.51188 4.01301 8.08977 4.01301 7.82942 3.75266L7.12275 3.046C6.55998 2.48323 5.7967 2.16706 5.00082 2.16706C4.20494 2.16706 3.44166 2.48323 2.87889 3.046C2.31612 3.60877 1.99996 4.37205 1.99996 5.16792C1.99996 5.9638 2.31612 6.72708 2.87889 7.28985L8.30082 12.7118L13.7227 7.28985C14.0015 7.01126 14.2227 6.68037 14.3735 6.3163C14.5244 5.95223 14.602 5.56201 14.602 5.16792C14.602 4.77384 14.5244 4.38362 14.3735 4.01955C14.2227 3.65548 14.0016 3.3247 13.7229 3.04611C13.4443 2.76738 13.1133 2.54606 12.7492 2.3952C12.3851 2.24435 11.9949 2.16671 11.6008 2.16671Z"
+											fill="#2B414D"
+										/>
+									</svg>
+									Избранное
+								</a>
+							</li>
+							<li>
+								<a href="#" class="active">
+									<svg
+										width="15"
+										height="13"
+										viewBox="0 0 15 13"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M0.625 0.875C0.625 0.529822 0.904822 0.25 1.25 0.25H5C5.8288 0.25 6.62366 0.57924 7.20971 1.16529C7.79576 1.75134 8.125 2.5462 8.125 3.375V12.125C8.125 12.4702 7.84518 12.75 7.5 12.75C7.15482 12.75 6.875 12.4702 6.875 12.125C6.875 11.7935 6.7433 11.4755 6.50888 11.2411C6.27446 11.0067 5.95652 10.875 5.625 10.875H1.25C0.904822 10.875 0.625 10.5952 0.625 10.25V0.875ZM6.875 9.95993V3.375C6.875 2.87772 6.67746 2.40081 6.32583 2.04917C5.9742 1.69754 5.49728 1.5 5 1.5H1.875V9.625H5.625C6.06764 9.625 6.49818 9.74239 6.875 9.95993Z"
+											fill="#2B414D"
+										/>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M7.79029 1.16529C8.37634 0.57924 9.1712 0.25 10 0.25H13.75C14.0952 0.25 14.375 0.529822 14.375 0.875V10.25C14.375 10.5952 14.0952 10.875 13.75 10.875H9.375C9.04348 10.875 8.72554 11.0067 8.49112 11.2411C8.2567 11.4755 8.125 11.7935 8.125 12.125C8.125 12.4702 7.84518 12.75 7.5 12.75C7.15482 12.75 6.875 12.4702 6.875 12.125V3.375C6.875 2.5462 7.20424 1.75134 7.79029 1.16529ZM8.125 9.95993C8.50182 9.74239 8.93236 9.625 9.375 9.625H13.125V1.5H10C9.50272 1.5 9.02581 1.69754 8.67417 2.04917C8.32254 2.40081 8.125 2.87772 8.125 3.375V9.95993Z"
+											fill="#2B414D"
+										/>
+									</svg>
+									История заказов
+								</a>
+							</li>
+							<li class="exit-link"><a href="#">Выход</a></li>
+						</ul>
+					</div>
+					<div class="settings-profile-main history-products-wrapper">
+						<h1 class="title-h2 settings__title-h3">История заказов</h1>
+
+						<div class="history-table-wrapper">
+							<div class="history-table">
+								<div class="history-table__wrapper">
+									<div class="history-order__row-head">
+										<div class="history-order__number">№ заказа</div>
+										<div class="history-order__count">Кол-во</div>
+										<div class="history-order__summ">Итого</div>
+										<div class="history-order__added">Добавленно</div>
+										<div class="history-order__status">Статус</div>
+										<div class="history-order__adres"></div>
+									</div>
+									<div class="ditals-order">
+										<div class="ditals-order__row-head">
+											<div class="ditals-order__item">Товар</div>
+											<div class="ditals-order__name"></div>
+											<div class="ditals-order__count">Количестов</div>
+											<div class="ditals-order__price">Цена</div>
+											<div class="ditals-order__pays">Способ оплаты</div>
+											<div class="ditals-order__adres">Адрес и способ доставки</div>
+										</div>
+										<div class="ditals-order__row-info">
+											<div class="ditals-order__item-img">
+												<img src="/img/table-img-info.png" alt="" />
+											</div>
+											<div class="ditals-order__name-info">
+												Стол складной пластиковый Кейт 180
+											</div>
+											<div class="ditals-order__count-info">1</div>
+											<div class="ditals-order__price-info">5 990 ₽</div>
+											<div class="ditals-order__pays-info">Наличными</div>
+											<div class="ditals-order__adres-info">
+												Доставка с фиксированной стоимостю до: Ташкент Ул. Мумонова
+											</div>
+										</div>
+										<div class="ditals-order__row-info">
+											<div class="ditals-order__item-img">
+												<img src="/img/table-img-info.png" alt="" />
+											</div>
+											<div class="ditals-order__name-info">
+												Стол складной пластиковый Кейт 180
+											</div>
+											<div class="ditals-order__count-info">1</div>
+											<div class="ditals-order__price-info">5 990 ₽</div>
+											<div class="ditals-order__pays-info">Наличными</div>
+											<div class="ditals-order__adres-info">
+												Доставка с фиксированной стоимостю до: Ташкент Ул. Мумонова
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="history-table__wrap">
+									<div class="history-order__row-info">
+										<div class="history-order__item-info">2323с34</div>
+										<div class="history-order__name-info">2</div>
+										<div class="history-order__count-info">768 ₽</div>
+										<div class="history-order__price-info">24.06.2020</div>
+										<div class="history-order__pays-info">Доставка заказа</div>
+										<div class="history-order__adres-info">
+											<button class="history-table__button">Детали заказа</button>
+										</div>
+									</div>
+									<div class="ditals-order">
+										<div class="ditals-order__row-head">
+											<div class="ditals-order__item">Товар</div>
+											<div class="ditals-order__name"></div>
+											<div class="ditals-order__count">Количестов</div>
+											<div class="ditals-order__price">Цена</div>
+											<div class="ditals-order__pays">Способ оплаты</div>
+											<div class="ditals-order__adres">Адрес и способ доставки</div>
+										</div>
+										<div class="ditals-order__row-info">
+											<div class="ditals-order__item-img">
+												<img src="/img/table-img-info.png" alt="" />
+											</div>
+											<div class="ditals-order__name-info">
+												Стол складной пластиковый Кейт 180
+											</div>
+											<div class="ditals-order__count-info">1</div>
+											<div class="ditals-order__price-info">5 990 ₽</div>
+											<div class="ditals-order__pays-info">Наличными</div>
+											<div class="ditals-order__adres-info">
+												Доставка с фиксированной стоимостю до: Ташкент Ул. Мумонова
+											</div>
+										</div>
+										<div class="ditals-order__row-info">
+											<div class="ditals-order__item-img">
+												<img src="/img/table-img-info.png" alt="" />
+											</div>
+											<div class="ditals-order__name-info">
+												Стол складной пластиковый Кейт 180
+											</div>
+											<div class="ditals-order__count-info">1</div>
+											<div class="ditals-order__price-info">5 990 ₽</div>
+											<div class="ditals-order__pays-info">Наличными</div>
+											<div class="ditals-order__adres-info">
+												Доставка с фиксированной стоимостю до: Ташкент Ул. Мумонова
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="history-table__wrap">
+									<div class="history-order__row-info">
+										<div class="history-order__item-info">2323с34</div>
+										<div class="history-order__name-info">2</div>
+										<div class="history-order__count-info">768 ₽</div>
+										<div class="history-order__price-info">24.06.2020</div>
+										<div class="history-order__pays-info">Доставка заказа</div>
+										<div class="history-order__adres-info">
+											<button class="history-table__button">Детали заказа</button>
+										</div>
+									</div>
+									<div class="ditals-order">
+										<div class="ditals-order__row-head">
+											<div class="ditals-order__item">Товар</div>
+											<div class="ditals-order__name"></div>
+											<div class="ditals-order__count">Количестов</div>
+											<div class="ditals-order__price">Цена</div>
+											<div class="ditals-order__pays">Способ оплаты</div>
+											<div class="ditals-order__adres">Адрес и способ доставки</div>
+										</div>
+										<div class="ditals-order__row-info">
+											<div class="ditals-order__item-img">
+												<img src="/img/table-img-info.png" alt="" />
+											</div>
+											<div class="ditals-order__name-info">
+												Стол складной пластиковый Кейт 180
+											</div>
+											<div class="ditals-order__count-info">1</div>
+											<div class="ditals-order__price-info">5 990 ₽</div>
+											<div class="ditals-order__pays-info">Наличными</div>
+											<div class="ditals-order__adres-info">
+												Доставка с фиксированной стоимостю до: Ташкент Ул. Мумонова
+											</div>
+										</div>
+										<div class="ditals-order__row-info">
+											<div class="ditals-order__item-img">
+												<img src="/img/table-img-info.png" alt="" />
+											</div>
+											<div class="ditals-order__name-info">
+												Стол складной пластиковый Кейт 180
+											</div>
+											<div class="ditals-order__count-info">1</div>
+											<div class="ditals-order__price-info">5 990 ₽</div>
+											<div class="ditals-order__pays-info">Наличными</div>
+											<div class="ditals-order__adres-info">
+												Доставка с фиксированной стоимостю до: Ташкент Ул. Мумонова
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="history-table__wrap">
+									<div class="history-order__row-info">
+										<div class="history-order__item-info">2323с34</div>
+										<div class="history-order__name-info">2</div>
+										<div class="history-order__count-info">768 ₽</div>
+										<div class="history-order__price-info">24.06.2020</div>
+										<div class="history-order__pays-info">Доставка заказа</div>
+										<div class="history-order__adres-info">
+											<button class="history-table__button">Детали заказа</button>
+										</div>
+									</div>
+									<div class="ditals-order">
+										<div class="ditals-order__row-head">
+											<div class="ditals-order__item">Товар</div>
+											<div class="ditals-order__name"></div>
+											<div class="ditals-order__count">Количестов</div>
+											<div class="ditals-order__price">Цена</div>
+											<div class="ditals-order__pays">Способ оплаты</div>
+											<div class="ditals-order__adres">Адрес и способ доставки</div>
+										</div>
+										<div class="ditals-order__row-info">
+											<div class="ditals-order__item-img">
+												<img src="/img/table-img-info.png" alt="" />
+											</div>
+											<div class="ditals-order__name-info">
+												Стол складной пластиковый Кейт 180
+											</div>
+											<div class="ditals-order__count-info">1</div>
+											<div class="ditals-order__price-info">5 990 ₽</div>
+											<div class="ditals-order__pays-info">Наличными</div>
+											<div class="ditals-order__adres-info">
+												Доставка с фиксированной стоимостю до: Ташкент Ул. Мумонова
+											</div>
+										</div>
+										<div class="ditals-order__row-info">
+											<div class="ditals-order__item-img">
+												<img src="/img/table-img-info.png" alt="" />
+											</div>
+											<div class="ditals-order__name-info">
+												Стол складной пластиковый Кейт 180
+											</div>
+											<div class="ditals-order__count-info">1</div>
+											<div class="ditals-order__price-info">5 990 ₽</div>
+											<div class="ditals-order__pays-info">Наличными</div>
+											<div class="ditals-order__adres-info">
+												Доставка с фиксированной стоимостю до: Ташкент Ул. Мумонова
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="history-table__wrap">
+									<div class="history-order__row-info">
+										<div class="history-order__item-info">2323с34</div>
+										<div class="history-order__name-info">2</div>
+										<div class="history-order__count-info">768 ₽</div>
+										<div class="history-order__price-info">24.06.2020</div>
+										<div class="history-order__pays-info">Доставка заказа</div>
+										<div class="history-order__adres-info">
+											<button class="history-table__button">Детали заказа</button>
+										</div>
+									</div>
+									<div class="ditals-order">
+										<div class="ditals-order__row-head">
+											<div class="ditals-order__item">Товар</div>
+											<div class="ditals-order__name"></div>
+											<div class="ditals-order__count">Количестов</div>
+											<div class="ditals-order__price">Цена</div>
+											<div class="ditals-order__pays">Способ оплаты</div>
+											<div class="ditals-order__adres">Адрес и способ доставки</div>
+										</div>
+										<div class="ditals-order__row-info">
+											<div class="ditals-order__item-img">
+												<img src="/img/table-img-info.png" alt="" />
+											</div>
+											<div class="ditals-order__name-info">
+												Стол складной пластиковый Кейт 180
+											</div>
+											<div class="ditals-order__count-info">1</div>
+											<div class="ditals-order__price-info">5 990 ₽</div>
+											<div class="ditals-order__pays-info">Наличными</div>
+											<div class="ditals-order__adres-info">
+												Доставка с фиксированной стоимостю до: Ташкент Ул. Мумонова
+											</div>
+										</div>
+										<div class="ditals-order__row-info">
+											<div class="ditals-order__item-img">
+												<img src="/img/table-img-info.png" alt="" />
+											</div>
+											<div class="ditals-order__name-info">
+												Стол складной пластиковый Кейт 180
+											</div>
+											<div class="ditals-order__count-info">1</div>
+											<div class="ditals-order__price-info">5 990 ₽</div>
+											<div class="ditals-order__pays-info">Наличными</div>
+											<div class="ditals-order__adres-info">
+												Доставка с фиксированной стоимостю до: Ташкент Ул. Мумонова
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container footer__container">
+				<div class="footer__col">
+					<a href="index.html" class="footer__logo">
+						<img src="img/footer__logo.png" alt="logo" />
+					</a>
+					<div class="footer__social">
+						<a href="" class="footer__social-link">
+							<img src="img/icons/footer__telegram-logo.svg" alt="telegram" />
+						</a>
+						<a href="" class="footer__social-link">
+							<img src="img/icons/footer__facebook-logo.svg" alt="facebook" />
+						</a>
+						<a href="" class="footer__social-link">
+							<img src="img/icons/footer__insta-logo.svg" alt="instagram" />
+						</a>
+					</div>
+				</div>
+				<div class="footer__col">
+					<nav class="footer__menu">
+						<a href="" class="footer__menu-link">О нас</a>
+						<a href="" class="footer__menu-link">Новости</a>
+						<a href="" class="footer__menu-link">Блог</a>
+						<a href="" class="footer__menu-link">Юридическим лицам</a>
+						<a href="" class="footer__menu-link">Поддержка (FAQ)</a>
+					</nav>
+				</div>
+				<div class="footer__col">
+					<nav class="footer__menu _menu-mobile">
+						<a href="" class="footer__menu-link">Каталог</a>
+						<a href="" class="footer__menu-link">Распродажа</a>
+						<a href="" class="footer__menu-link">Новинки</a>
+						<a href="" class="footer__menu-link">Хиты</a>
+						<a href="" class="footer__menu-link">Галерея</a>
+					</nav>
+				</div>
+				<div class="footer__col">
+					<div class="footer__contacts">
+						<div class="footer__contacts-tels">
+							<a href="tel:998909991111" class="footer__contacts-tel">
+								+998 90 999 11 11
+							</a>
+							<a href="tel:998931234567" class="footer__contacts-tel">
+								+998 93 123 45 67
+							</a>
+						</div>
+
+						<p class="footer__contacts-address">Ул. Шота Руставели, дом 1/23кв</p>
+						<a href="" class="footer__contacts-policy">Политика обработки данных</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container footer__bottom-container">
+					<p class="footer__bottom-copyright">2021 - Все права защищены</p>
+					<div class="footer__paymethod">
+						<p class="footer__paymethod-heading">Система оплаты:</p>
+						<div class="footer__paymethod-inner">
+							<img
+								class="footer__paymethod-method"
+								src="img/footer__visa.png"
+								alt="visa"
+							/>
+							<img
+								class="footer__paymethod-method"
+								src="img/footer__mastercard.svg"
+								alt="master-card"
+							/>
+							<img
+								class="footer__paymethod-method"
+								src="img/footer__u.png"
+								alt="uzcard"
+							/>
+							<img class="footer__paymethod-method" src="img/humo.png" alt="humo" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__decoration"></div>
+		</footer>
+	</body>
+</html>

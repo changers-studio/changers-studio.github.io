@@ -45,6 +45,10 @@ jQuery(function () {
 		})
 	}
 
+	$('.history-table__button').on('click', function () {
+		$(this).closest('.history-table__wrap').find('.ditals-order').slideToggle()
+	})
+
 	$('ul.menu__captions').on('mouseover click', 'li:not(.active)', function () {
 		$(this)
 			.addClass('active')
@@ -93,16 +97,6 @@ $('body').on('click', '.password-control', function () {
 })
 
 //СКРЫТЬ_ПОКАЗАТЬ ПАРОЛЬ КОНЕЦ
-
-//СКРЫТЬ_ПОКАЗАТЬ таблицу
-function myFunction() {
-	var x = document.getElementById('ditals-order')
-	if (x.style.display === 'none') {
-		x.style.display = 'block'
-	} else {
-		x.style.display = 'none'
-	}
-}
 
 function ibg() {
 	let ibg = document.querySelectorAll('.ibg')
@@ -283,6 +277,7 @@ if (availableScreenWidth < 992) {
 		},*/
 	})
 }
+
 const formTop = document.querySelectorAll('#form-top')
 if (formTop.length > 0) {
 	var handlesSlider = document.getElementById('slider-handles')
