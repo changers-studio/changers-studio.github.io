@@ -1,0 +1,500 @@
+@import vars
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+
+	body
+		font-size: 12px
+
+
+	// Заголовки
+	.h2
+		span
+			font-size: 60px
+	// eof
+
+
+
+	
+	// Главный экран
+	.main
+		&__image
+			height: 400px
+		&__article
+			&-inner
+				height: 400px
+			&-heading
+				font-size: 16px
+			&-button::after
+				font-size: 8px
+	// eof
+
+
+	// Главные новости
+	.news
+		&__main
+			&-image
+				height: 450px
+	// eof
+
+
+	// Медиа
+	.media
+		.tabs
+			&__caption
+				&-text
+					font-size: 12px
+				&-item
+					width: calc(25% - 15px)
+			&__content
+				&-col
+					max-width: calc(50% - 10px)
+				.article
+					max-width: calc(50% - 10px)
+	// eof
+
+
+	// Постоновление правительства
+	.rulings
+		.h2
+			font-size: 17px
+	// eof
+
+
+	// Канцелярия
+	.chancery	
+		&__table
+			&-elem
+				font-size: 12px
+	// eof
+
+
+	// Постановления
+	.rulings
+		&__container
+			&-inner
+				width: 200px
+		&__heading
+			width: calc(100% - 200px)
+			font-size: 16px
+	// eof
+
+
+
+/*  Small Devices, Tablets */
+@media only screen and (max-width : 992px)
+
+	section
+		padding: 25px 0
+
+
+	// Заголовки
+	.h2
+		font-size: 16px
+		margin-bottom: 20px
+		&::before
+			width: 50px
+		span
+			font-size: 32px
+			bottom: 8px
+	// eof
+
+
+	// Общие стили для внутренних страниц
+	.isnohome
+		.timeline
+			margin: 50px 0 35px
+		section
+			padding: 50px 0
+	// eof
+
+
+	// Герб на фоне
+	section._decor
+		&::before
+			display: none
+	// eof
+
+	
+	// Главный экран
+	.main
+		padding: 20px 0 60px
+		&__image
+			height: 180px
+		&__article
+			&-inner
+				height: auto
+				text-align: center
+				align-items: center
+				padding: 35px 20px
+				min-height: 260px
+	// eof
+
+
+	// Главные новости
+	.news
+		&::before
+			width: 450px
+			height: 450px
+			bottom: 0
+			top: auto
+			transform: translate(50%, 0)
+		.article
+			&__image
+				height: 190px
+		&__wrapper
+			position: relative
+			padding-bottom: 30px
+			&-top
+				position: static
+			&-bottom
+				padding-bottom: 20px
+				border-bottom: 1px solid #B7B7B7
+		&__article
+			&-heading
+				font-size: 12px
+		&__link-more
+			right: auto
+			left: 0
+			bottom: 0
+		&__main
+			margin-top: 30px
+			&-image
+				height: 320px
+	// eof
+
+
+	// Превью статьи
+	.article
+		&__image
+			height: 160px
+		&__heading
+			font-size: 16px
+		&__text
+			font-size: 12px
+	// eof
+
+
+	// Медиа
+	.media
+		padding: 60px 0 25px
+		&::before
+			height: 200px
+		&__container
+			padding-top: 50px
+			&::before
+				width: 100%
+		.tabs
+			&__caption
+				overflow-y: scroll
+				padding-bottom: 10px
+				margin-bottom: 10px
+				&-icon
+					width: 15px
+					height: auto
+				&-item
+					width: 150px
+					height: 40px
+					margin-right: 10px
+					flex: 0 0 auto
+					&:last-child
+						margin-right: 0
+			&__content
+				&-col
+					display: none
+				.article
+					max-width: 100%
+		.timeline
+			margin-top: 50px
+	// eof
+
+
+	// Лента новостей
+	.timeline
+		&__article
+			&-text
+				display: none
+	// eof
+
+
+	// Кадровая политика
+	.politics
+		&::before
+			display: none
+		&__top-line
+			position: static
+		&__slider
+			padding-bottom: 50px
+			&-arrows
+				right: auto
+				left: 50%
+				bottom: 25px
+				transform: translate(-50%, 0)
+	// eof
+
+
+	// Постоновление правительства
+	.rulings
+		.h2
+			font-size: 16px
+			padding-right: 20%
+			span
+				display: block
+				bottom: 45px
+		&__article
+			border-left: 3px solid $accent
+			padding-left: 15px
+			min-height: auto
+	// eof
+
+
+	// Заседания Правительства
+	.meetings
+		padding: 30px 0
+		&__container
+			flex-direction: column
+		&__item
+			padding: 5px 20px
+			border-left: 4px solid $accent
+			margin-bottom: 15px
+			&:last-child
+				margin-bottom: 0
+	// eof
+
+	// Стандартный блог
+	.blog
+		&__container
+			& > *
+				max-width: 100%	
+	// eof
+
+
+	// Пагинация страниц
+	.pagination
+		margin-top: 10px
+	// eof
+
+
+	// Канцелярия
+	.chancery
+		.tabs
+			&__caption
+				overflow-y: scroll
+				flex-wrap: nowrap
+				padding-bottom: 10px
+				margin-bottom: 20px
+				&-item
+					height: 40px
+					margin-right: 10px
+					flex: 0 0 auto
+					&:last-child
+						margin-right: 0
+		&__list
+			margin: 20px 0
+			&-item
+				margin-bottom: 5px
+		&__text
+			margin-bottom: 10px
+		
+		&__tables
+			display: none
+			&-pdf
+				display: flex
+		&__dropdown
+			&-heading
+				flex-direction: column
+				align-items: stretch
+				text-align: center
+				padding: 10px 0
+			&-body
+				padding-left: 0
+			&-box
+				padding: 0 10px 10px
+			&-image
+				align-self: center
+				margin: 
+					bottom: 10px
+					right: 0
+	// eof
+
+
+	// Состав
+	.staff
+		&__item
+			width: 100%
+			&._main
+				padding-right: 20px
+				display: block
+				&::before
+					height: 60px
+				.staff__photo
+					max-width: 100%
+					width: 100%
+					height: 300px
+					margin-bottom: 20px
+		&__photo
+			height: 300px
+	// eof
+
+
+	// О деятельности
+	.isnohome .about
+		&-section
+			padding: 25px 0
+		&__list
+			padding-left: 20px
+	// eof
+
+
+	// Страница постановления
+	.ruling
+		&__wrapper-bottom
+			flex-direction: column
+		&__title
+			font-size: 16px
+		&__signature
+			margin-bottom: 30px
+	// eof
+
+
+	// Постановления
+	.rulings
+		&__container
+			flex-wrap: wrap
+			&-inner
+				width: 100%
+				padding: 10px 15px 15px
+		&__heading
+			width: 100%
+			font-size: 14px
+			text-align: center
+			display: block
+			border:
+				right: none
+				bottom: 2px solid #fff
+			padding: 15px
+		&__select
+			&-title
+				font-size: 12px
+	// eof
+
+	// Архив новостей
+	.archive
+		&__container
+			flex-wrap: wrap
+			&-inner
+				width: 100%
+				padding: 10px 15px 15px
+		&__heading
+			width: 100%
+			font-size: 14px
+			text-align: center
+			display: block
+			border:
+				right: none
+				bottom: 2px solid #fff
+			padding: 15px
+		&__select
+			margin-right: 10px
+			&-title
+				font-size: 12px
+		&__result
+			&-container
+				& > *
+					margin-bottom: 20px
+					width: 100%
+					&:last-child
+						margin-bottom: 0
+	// eof
+
+
+	// Депутатские запросы
+	.inquiries
+		.tabs
+			&__caption
+				justify-content: space-between
+				&-item
+					width: calc(50% - 5px)
+					padding: 10px 5px
+					font-size: 12px
+					margin-right: 0
+		&__container
+			& > *
+				max-width: 100%	
+	// eof
+
+
+	// Поиск по сайту
+	.search
+		&__form
+			&-input
+				padding: 
+					left: 15px
+					right: 65px
+				height: 46px
+			&-button
+				width: 46px
+				height: 46px
+		&__result
+			span
+				display: block
+	// eof
+
+
+	// Страница статьи
+	.articles
+		&__title
+			margin: 0 auto 20px
+			font-size: 14px
+		&__image
+			height: 160px
+			margin: 30px 0
+			&-main
+				height: 120px
+		&__heading
+			padding-top: 15px
+			margin-bottom: 20px
+		&__blockquote
+			font-size: 12px
+			margin-bottom: 20px
+			padding-left: 25px
+			&::before
+				left: 0
+				top: -15px
+				font-size: 50px
+				line-height: 0.5
+			&-author
+				margin-top: 10px
+				position: relative
+				font-weight: 700
+				&::before
+					width: 20px
+					margin-right: 5px
+		&__text
+			margin-bottom: 20px
+		&__telegram
+			flex-wrap: wrap
+			&-title
+				width: 100%
+				padding: 15px
+			&-link
+				width: 100%
+				height: 56px
+	// eof
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
