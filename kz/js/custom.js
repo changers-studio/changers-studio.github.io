@@ -100,7 +100,21 @@ $(function () {
 	// eof
 })
 
-$('.heder__burger').on('click', () => {
-	$('.heder__burger').toggleClass('active')
-	$('.heder-menu').slideToggle()
+// Гамбргер меню
+let body = $('body')
+let hamburger = $('.header__hamburger')
+let hamburgerMenu = $('.header__hamburger-menu')
+
+hamburger.on('click', function () {
+	hamburger.toggleClass('active')
+	hamburgerMenu.slideToggle()
+	body.toggleClass('scroll_disabled')
 })
+// eof
+
+// Выпадающие списки в гамбургер меню
+$('.header__menu-heading').on('click', function () {
+	$(this).toggleClass('active').next().slideToggle()
+	$('.header__menu-heading').not(this).removeClass('active').next().slideUp()
+})
+// eof
