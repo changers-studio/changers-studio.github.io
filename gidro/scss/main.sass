@@ -1,0 +1,689 @@
+@import fonts
+@import main
+
+$accent: #0580C4
+$light: #E1EAEC
+$dark: #174890
+
+
+::placeholder
+	color: #263475
+	font-weight: 400
+	font-size: 16px
+
+body
+	&.scroll_disabled
+		overflow-y: hidden
+
+
+.projects
+	padding: 200px 0
+	overflow: hidden
+	&__container
+		display: flex
+		align-items: center
+		&-inner
+			width: 50%
+			position: relative
+	&__map
+			path
+				transition: .2s
+				cursor: pointer
+			a:hover
+				path
+					fill: $accent
+	&__title
+		max-width: 670px
+		font-size: 48px
+		margin-bottom: 60px
+		text-transform: uppercase
+		line-height: 1.2
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		width: 430px
+		&-item
+			width: 170px
+			display: flex
+			align-items: center
+			color: #263475
+			margin-top: 50px
+			transition: .2s
+			cursor: pointer
+			&:hover
+				color: $accent
+		&-icon
+			margin-right: 26px
+	&__info
+		background-color: #fff
+		filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.12))
+		color: #263475
+		width: 330px
+		padding: 15px
+		display: none
+		line-height: 1.2
+		position: absolute
+		&::after
+			content: ''
+			position: absolute
+			left: 0
+			top: 100%
+			border: 5px solid transparent
+			border-left: 5px solid #fff
+			border-top: 5px solid #fff
+		&-inner
+			display: flex
+			align-items: center
+		&-icon
+			width: 48px
+			height: 48px
+			margin-right: 10px
+			flex: 0 0 auto
+		&-title
+			margin-bottom: 3px
+		&.kz
+			top: 100px
+			right: 0
+		&.uz
+			left: 270px
+			top: 240px
+		&.tk
+			bottom: 210px
+			left: 160px
+		&.af
+			left: 300px
+			bottom: 60px
+		&.tj
+			right: 0
+			bottom: 200px
+		&.krgz
+			left: 100px
+			bottom: 130px
+			&::after
+				border: 5px solid transparent
+				border-right: 5px solid #fff
+				border-bottom: 5px solid #fff
+				top: auto
+				left: auto
+				bottom: 100%
+				right: 0
+		&.viet
+			right: 0
+			bottom: 150px
+			&::after
+				border: 5px solid transparent
+				border-right: 5px solid #fff
+				border-bottom: 5px solid #fff
+				top: auto
+				left: auto
+				bottom: 100%
+				right: 0
+
+
+.footer
+	color: #1E2A5E
+	font-family: Roboto
+	position: relative
+	&::before, &::after
+		content: ''
+		position: absolute
+		right: 0
+		top: 0
+		height: 100%
+	&::before
+		background-color: #E1EAEC
+		width: 50%
+	&::after
+		background-color: #0580c4
+		width: 6vw
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		&-inner
+			padding: 80px 0
+			max-width: 50%
+			position: relative
+			z-index: 2
+	&__logo
+		margin-bottom: 45px
+		display: flex
+	&__tels
+		margin-bottom: 25px
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		&-number
+			margin-bottom: 5px
+			font-size: 28px
+			line-height: 1.2
+			font-family: "Roboto"
+			color: #1E2A5E
+			&:last-child
+				margin-bottom: 0
+	&__email
+		font-size: 18px
+		margin-bottom: 80px
+		display: flex
+		text-decoration: underline
+		color: #1E2A5E
+	&__data
+		margin-bottom: 25px
+		&-item
+			margin-bottom: 4px
+			&:last-child
+				margin-bottom: 0
+	&__address
+		margin-bottom: 50px
+	&__social
+		display: flex
+		align-items: center
+		margin-bottom: 50px
+		&-link
+			margin-right: 25px
+			display: flex
+			color: #1E2A5E
+			font-size: 18px
+			&:last-child
+				margin-right: 0
+	&__form
+		display: flex
+		flex-direction: column
+		width: 520px
+		&-title
+			font-size: 36px
+			text-transform: uppercase
+			margin-bottom: 15px
+		&-subtitle
+			margin-bottom: 80px
+			font-size: 18px
+		&-input
+			border-bottom: 1px solid rgba(38, 52, 117, 0.3)
+			background-color: transparent
+			padding: 12px 0
+			margin-bottom: 25px
+			font-size: 16px
+			color: #263475
+		&-textarea
+			height: 81px
+			margin: 40px 0 50px
+			resize: none
+			border-bottom: 1px solid rgba(38, 52, 117, 0.3)
+			background-color: transparent
+		&-buttons
+			display: flex
+			align-items: center
+		&-button
+			width: 180px
+			height: 64px
+			background-color: #263475
+			margin-right: 15px
+			max-width: calc(50% - 5px)
+			&:last-child
+				margin: 0
+		&-reset
+			border: 1px solid #263475
+			color: #263475
+			background-color: transparent
+
+
+.hamburger-menu
+	width: 100%
+	height: 100vh
+	position: fixed
+	left: 0
+	top: 0
+	z-index: 10
+	background-color: #E0E9EB
+	display: none
+	&__close
+		position: absolute
+		top: 30px
+		right: 30px
+	&__top
+		display: none
+		justify-content: space-between
+		align-items: center
+		background-color: #fff
+		padding: 25px 20px
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+	&__glasses
+		margin-right: 50px
+	&__container
+		position: relative
+		top: 50%
+		transform: translate(0, -50%)
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&__col
+		width: 375px
+	&__dropdown
+		margin-bottom: 50px
+		&:last-child
+			margin-bottom: 0
+		&-heading
+			font-size: 24px
+			text-transform: uppercase
+			color: #1E2A5E
+		&-body
+			margin-top: 25px
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+	&__item
+		margin-bottom: 10px
+		color: #1E2A5E
+		font-size: 18px
+		&:last-child
+			margin-bottom: 0
+	a
+		transition: .2s
+		&:hover
+			color: $accent
+	&__tels
+		padding: 20px 0
+		background-color: #057FC3
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		display: none
+		&-container
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+		&-item
+			margin-bottom: 10px
+			color: #fff
+			font-size: 16px
+			&:last-child
+				margin-bottom: 0
+
+
+
+
+.tasks__title
+	margin-bottom: 70px
+	line-height: 1.5
+
+
+@media only screen and (max-width : 1430px)
+
+	.bottom
+		&-header
+			&__link
+				margin-right: 40px
+
+
+
+	.ul-achievement__blok
+		padding: 0 20px
+	.blok-ul__subtitle
+		font-size: 15px
+	.blok-ul__title
+		margin-bottom: 10px
+
+
+	.ul-plans
+		padding: 35px 50px
+	
+	.ul-plans__text
+		font-size: 16px
+		line-height: 1.5
+
+
+	.reght-tasks
+		flex: 0 0 45%
+
+	.reght-news__blok
+		padding: 25px
+
+
+	.blok-reght__left
+		max-width: calc(100% - 180px)
+
+	.blok-reght__text
+		font-size: 15px
+
+	.blok-reght__img
+		width: 150px
+		height: 120px
+
+
+	.left-news__data, .left-news__title, .left-news__text, .about-body__link
+		margin-left: 0
+		margin-top: 0
+		margin-bottom: 20px
+
+	.left-news__title
+		font-size: 21px
+		line-height: 1.3
+
+	.left-news__text
+		font-size: 15px
+
+	.left-news__link-f a
+		margin-left: 0
+
+	.left-news__content
+		padding: 25px
+
+	.left-news
+		padding-bottom: 0
+
+
+
+	.footer
+		&::after
+			display: none
+		&__container-inner, &__form
+			width: 350px
+		&__tels
+			&-number
+				font-size: 22px
+		&__email
+			font-size: 16px
+		&__form
+			width: 100%
+			&-title
+				font-size: 26px
+			&-subtitle
+				font-size: 16px
+
+
+	.projects
+		padding: 150px 0
+		&__title
+			font-size: 36px
+		&__list
+			width: 380px
+			&-item
+				font-size: 16px
+			&-icon
+				margin-right: 15px
+		&__map
+			width: 100%
+			height: auto
+		&__info
+			width: 200px
+			padding: 10px
+			display: none
+			font-size: 12px
+			&::after
+				border: 3px solid transparent
+				border-left: 3px solid #fff
+				border-top: 3px solid #fff
+			&-icon
+				width: 25px
+				height: 25px
+			&-title
+				margin-bottom: 3px
+			&.kz
+				top: 10px
+			&.uz
+				left: 120px
+				top: 120px
+			&.tk
+				bottom: 150px
+				left: 80px
+			&.af
+				left: 160px
+				bottom: 75px
+			&.tj
+				right: -20px
+				bottom: 170px
+			&.krgz
+				left: 50px
+				bottom: 60px
+				&::after
+					border: 3px solid transparent
+					border-right: 3px solid #fff
+					border-bottom: 3px solid #fff
+			&.viet
+				right: 10px
+				bottom: 0
+				&::after
+					border: 3px solid transparent
+					border-right: 3px solid #fff
+					border-bottom: 3px solid #fff
+
+
+
+	.hamburger-menu
+		&__col
+			width: 280px
+		&__dropdown
+			&-heading
+				font-size: 20px
+				&.active
+					color: $accent
+					&::after
+						color: $accent
+		&__item
+			font-size: 16px
+
+
+
+
+
+
+
+@media only screen and (max-width : 992px)
+
+	::placeholder
+		font-size: 12px
+
+
+
+	.projects
+		padding: 50px 0
+		&__container
+			flex-direction: column
+			&-inner
+				width: 100%
+		&__title
+			font-size: 20px
+			margin-bottom: 30px
+		&__list
+			width: 100%
+			&-item
+				max-width: calc(50% - 10px)
+				font-size: 14px
+				margin-top: 25px
+			&-icon
+				width: 24px
+				height: 24px
+		&__map
+			display: none
+
+
+	.bottom
+		&-header
+			&__nav
+				display: none
+			&__logo
+				width: 175px
+
+
+	.minu-icon
+		height: 14px
+
+
+	.labgvidg-header__text
+		margin-right: 15px
+
+
+	.header__bottom
+		height: auto
+		padding: 20px 0
+
+
+	.ul-plans
+		padding: 30px 20px
+	
+	.ul-plans__text
+		font-size: 14px
+
+	.ul-plans__title
+		margin-bottom: 10px
+
+	.left-tasks__blok
+		margin-bottom: 25px
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+	
+	.left-tasks__text
+		line-height: 1.5
+		font-size: 14px
+		margin-top: 10px
+
+	.tasks__title
+		margin-bottom: 35px
+
+
+	.blok-reght__left
+		max-width: calc(100% - 120px)
+
+	.blok-reght__text
+		font-size: 14px
+
+
+	.blok-reght__img
+		width: 100px
+		height: 80px
+
+	.left-news__content
+		padding: 20px
+
+	.reght-news__blok
+		padding: 20px
+
+
+
+	.footer
+		&::before
+			display: none
+		&__container
+			flex-direction: column
+			align-items: stretch
+			&-inner
+				width: 100%
+				max-width: 100%
+				padding: 40px 0
+			&-form
+				order: -1
+				background-color: #E1EAEC
+				max-width: 100vw
+				width: 100vw
+				position: relative
+				left: 50%
+				transform: translate(-50%, 0)
+		&__form
+			width: calc(100% - 40px)
+			max-width: 440px
+			min-width: 280px
+			position: relative
+			left: 50%
+			transform: translate(-50%, 0)
+			&-button
+				width: calc(50% - 5px)
+				height: 50px
+				font-size: 14px
+			&-title
+				margin-bottom: 15px
+				font-size: 18px
+			&-subtitle
+				margin-bottom: 25px
+				font-size: 12px
+			&-input
+				padding: 10px 0
+				font-size: 12px
+			&-textarea
+				padding: 10px 0
+				margin: 0 0 20px
+				height: 45px
+		&__logo
+			margin-bottom: 30px
+			width: 190px
+			display: flex
+		&__data
+			font-size: 14px
+			margin-bottom: 25px
+			&-item
+				margin-bottom: 3px
+		&__tels-number
+			font-size: 18px
+		&__address
+			font-size: 14px
+		&__email
+			font-size: 14px
+			margin-bottom: 25px
+
+
+
+	.hamburger-menu
+		min-width: 320px
+		&__top
+			display: flex
+		&__close
+			top: 30px
+			right: 20px
+		&__container
+			flex-flow: row wrap
+			overflow-y: auto
+			max-height: 350px
+		&__col
+			width: 100%
+			margin-bottom: 20px
+		&__wrapper
+			display: none
+		&__dropdown
+			margin-bottom: 20px
+			&-heading
+				font-size: 14px
+				width: 100%
+				position: relative
+				display: flex
+				padding-right: 40px
+				&::after
+					content: '\f054'
+					font-family: fontawesome
+					font-size: 8px
+					color: #1E2A5E
+					position: absolute
+					top: 50%
+					right: 0
+					transform: translate(0, -50%)
+					transition: .3s
+				&.active::after
+					transform: translate(0, -50%) rotate(90deg)
+			&-body
+				margin-top: 15px
+		&__item
+			margin-bottom: 8px
+			font-size: 12px
+		&__tels
+			display: block
+		a.hamburger-menu__dropdown-heading::after
+			display: none
+
+
+
+
+
+
+@media only screen and (max-width : 480px)
+
+	.blok-ul__subtitle
+		min-height: 32px
+
+	.reght-buttons
+		width: 110px
+		flex: 0 0 auto
+
