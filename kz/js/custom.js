@@ -118,3 +118,7 @@ $('.header__menu-heading').on('click', function () {
 	$('.header__menu-heading').not(this).removeClass('active').next().slideUp()
 })
 // eof
+
+$('.about__show-more').on('click', function () {
+	$(this).addClass('active').closest('.about-section__wrapper').addClass('active')
+})
