@@ -4660,6 +4660,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  z-index: 3;
 }
 
 .politics__slider-arrow {
@@ -6713,8 +6714,11 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
   }
-  .chancery .tabs__caption-item:last-child {
-    margin-right: 0;
+  .chancery .tabs__caption-item.active {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1;
   }
   .chancery__list {
     margin: 20px 0;
