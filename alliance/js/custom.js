@@ -56,3 +56,30 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
 })
 
 // eof
+
+// Табы гамбургер меню
+$('.hamburger-menu__caption-item-1').on('click', function () {
+	$(this).addClass('active').siblings().removeClass('active')
+	$('.hamburger-menu__content').hide()
+	$('.hamburger-menu__content-1').fadeIn()
+})
+
+$('.hamburger-menu__caption-item-2').on('click', function () {
+	$(this).addClass('active').siblings().removeClass('active')
+	$('.hamburger-menu__content').hide()
+	$('.hamburger-menu__content-2').fadeIn()
+})
+
+$('.hamburger-menu__caption-item-3').on('click', function () {
+	$(this).addClass('active').siblings().removeClass('active')
+	$('.hamburger-menu__content').hide()
+	$('.hamburger-menu__content-3').fadeIn()
+})
+// eof
+
+// Открытие гамбургер меню
+$('.header__hamburger, .hamburger-menu__close').on('click', function () {
+	$('.hamburger-menu').slideToggle()
+	$('body').toggleClass('scroll_disabled')
+})
+// eof
