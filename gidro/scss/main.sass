@@ -12,8 +12,20 @@ $dark: #174890
 	font-size: 16px
 
 body
+	min-width: 320px
 	&.scroll_disabled
 		overflow-y: hidden
+
+
+.header
+	width: 100%
+	z-index: 10
+	background-color: #fff
+	&.header_fixed
+		position: fixed
+		top: 0
+		left: 0
+		box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15)
 
 
 .projects
@@ -29,9 +41,8 @@ body
 			path
 				transition: .2s
 				cursor: pointer
-			a:hover
-				path
-					fill: $accent
+			a.active path
+				fill: $accent
 	&__title
 		max-width: 670px
 		font-size: 48px
@@ -49,8 +60,12 @@ body
 			align-items: center
 			color: #263475
 			margin-top: 50px
-			transition: .2s
 			cursor: pointer
+			a
+				display: flex
+				align-items: center
+				justify-content: center
+				transition: .2s
 			&:hover
 				color: $accent
 		&-icon
@@ -83,23 +98,23 @@ body
 		&-title
 			margin-bottom: 3px
 		&.kz
-			top: 100px
-			right: 0
+			top: 5px
+			right: -37px
 		&.uz
-			left: 270px
-			top: 240px
+			left: 372px
+			top: 265px
 		&.tk
-			bottom: 210px
-			left: 160px
+			bottom: 195px
+			left: 195px
 		&.af
-			left: 300px
-			bottom: 60px
+			left: 380px
+			bottom: 160px
 		&.tj
-			right: 0
-			bottom: 200px
+			right: 5px
+			bottom: 195px
 		&.krgz
-			left: 100px
-			bottom: 130px
+			left: 130px
+			bottom: 185px
 			&::after
 				border: 5px solid transparent
 				border-right: 5px solid #fff
@@ -109,8 +124,8 @@ body
 				bottom: 100%
 				right: 0
 		&.viet
-			right: 0
-			bottom: 150px
+			right: -30px
+			bottom: -30px
 			&::after
 				border: 5px solid transparent
 				border-right: 5px solid #fff
@@ -119,6 +134,410 @@ body
 				left: auto
 				bottom: 100%
 				right: 0
+
+
+.about-body__text span
+	font-weight: 700	
+
+
+.about-body__link
+	max-width: none
+	display: inline-block
+	i
+		margin-left: 8px
+
+
+
+// Попапаы
+.popup
+	min-width: 320px
+	max-width: 100%
+	max-height: 100%
+	width: 1600px
+	overflow-y: auto
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	background-color: #fff
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15) // убрать
+	padding: 50px 100px 80px
+	z-index: 100
+	.mfp-close
+		width: 80px
+		height: 80px
+		display: flex
+		align-items: center
+		justify-content: center
+		font-size: 0
+		opacity: 1
+		&::before
+			content: ''
+			width: 15px
+			height: 15px
+			background-image: url('../img/main/close.svg')
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: center
+	&__close
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 80px
+		height: 80px
+		position: absolute
+		right: 0
+		top: 0
+	&__title
+		text-align: center
+		font-size: 32px
+		color: #1E2A5E
+		text-transform: uppercase
+		max-width: 670px
+		margin: 0 auto 90px
+		line-height: 1.2
+	&__container
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&-inner:first-child
+			flex: 0 0 auto
+	&__list
+		max-height: 390px
+		max-width: 400px
+		&-heading
+			display: flex
+			align-items: center
+			font-size: 28px
+			margin-bottom: 35px
+			color: #263475
+			padding-left: 30px
+			img
+				flex: 0 0 auto
+				width: 32px
+				height: auto
+				margin-right: 15px
+		&-item
+			width: 100%
+			padding: 15px 30px
+			display: flex
+			align-items: center
+			line-height: 1.2
+			color: #263475
+			transition: .2s
+			&:hover
+				color: #263475
+				background-color: #E1EAEC
+			&-image
+				width: 64px
+				height: 64px
+				background-image: url('../img/projects/1.jpg')
+				background-size: cover
+				background-position: center
+				margin-right: 12px
+				flex: 0 0 auto
+			&-heading
+				font-size: 18px
+				margin-bottom: 8px
+			&-subheading
+				margin-bottom: 5px
+				font-size: 12px
+			&-status
+				font-size: 12px
+	&__map
+		position: relative
+		&-info
+			display: none
+			padding: 20px 30px
+			min-width: 350px
+			line-height: 1.2
+			color: #263475
+			background-color: #fff
+			box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.12)
+			position: absolute
+			&::after
+				content: ''
+				position: absolute
+				border: 5px solid transparent
+				border-right: 5px solid #fff
+				border-top: 5px solid #fff
+				top: auto
+				left: auto
+				top: 100%
+				right: 0
+
+			&-1
+				top: 108px
+				right: 130px
+			&-2
+				top: 112px
+				right: 133px
+			&-3
+				top: 111px
+				right: 137px
+			&-4
+				top: 112px
+				right: 138px
+			&-5
+				top: 114px
+				right: 140px
+			&-6
+				top: 116px
+				right: 142px
+			&-7
+				top: 118px
+				right: 144px
+			&-8
+				top: 120px
+				right: 146px
+			&-9
+				top: 122px
+				right: 148px
+			&-10
+				top: 124px
+				right: 150px
+			&-11
+				top: 126px
+				right: 152px
+			&-12
+				top: 128px
+				right: 154px
+			&-13
+				top: 130px
+				right: 156px
+			&-14
+				top: 144px
+				right: 156px
+			&-15
+				top: 134px
+				right: 163px
+			&-16
+				top: 134px
+				right: 165px
+			&-17
+				top: 138px
+				right: 167px
+			&-18
+				top: 140px
+				right: 169px
+			&-19
+				top: 142px
+				right: 171px
+			&-20
+				top: 142px
+				right: 176px
+			&-21
+				top: 135px
+				right: 113px
+			&-22
+				top: 140px
+				right: 117px
+			&-23
+				top: 154px
+				right: 5px
+			&-24
+				top: 154px
+				right: 5px
+			&-25
+				top: 164px
+				right: 25px
+			&-26
+				top: 164px
+				right: 25px
+			&-27
+				top: 140px
+				right: 42px
+			&-28
+				top: 140px
+				right: 42px
+			&-29
+				top: 175px
+				right: 85px
+			&-30
+				top: 167px
+				right: 23px
+			&-31
+				top: 169px
+				right: 21px
+			&-32
+				top: 186px
+				right: 161px
+			&-33
+				top: 194px
+				right: 193px 
+			&-34
+				bottom: 90px
+				right: 221px
+			&-35
+				bottom: 105px
+				right: 244px
+			&-36
+				bottom: 130px
+				right: 247px
+			&-37
+				bottom: 137px
+				right: 262px
+			&-38
+				bottom: 142px
+				right: 269px
+			&-39
+				bottom: 144px
+				right: 271px
+			&-40
+				bottom: 154px
+				right: 278px
+			&-41
+				top: 110px
+				right: 484px
+			&-42, &-43, &-44, &-45
+				top: 139px
+				right: 55px
+			&-46
+				top: 144px
+				right: 29px
+			&-47, &-48, &-49
+				display: none
+			&-50
+				top: 152px
+				right: 25px
+			&-51, &-52
+				top: 154px
+				right: 17px
+			&-53
+				top: 256px
+				right: 238px
+			&-54
+				right: 225px
+				bottom: 44px
+			&-55
+				bottom: 72px
+				right: 213px
+			&-56
+				right: 332px
+				bottom: 27px
+			&-57, &-58
+				right: 203px
+				bottom: 86px
+			&-59
+				right: 298px
+				top: 30px
+			&-60
+				right: 262px
+				bottom: 315px
+			&-61
+				bottom: 210px
+				right: 276px
+			&-62
+				right: 585px
+				bottom: 231px
+			&-63
+				right: 319px
+				bottom: 103px
+			&-64
+				right: 583px
+				bottom: 231px
+			&-65
+				right: 568px
+				bottom: 261px
+			&-66
+				right: 581px
+				bottom: 228px
+			&-67
+				right: 469px
+				bottom: 423px
+			&-68
+				right: 569px
+				bottom: 139px
+			&-69
+				right: 573px
+				bottom: 131px
+			&-70
+				right: 581px
+				bottom: 121px
+			&-71
+				right: 319px
+				bottom: 103px
+			&-72
+				right: 530px
+				bottom: 200px
+			&-73
+				right: 545px
+				bottom: 182px
+			&-74
+				right: 553px
+				bottom: 155px
+			&-75
+				right: 309px
+				bottom: 111px
+			&-76
+				right: 261px
+				bottom: 318px
+			&-77
+				right: 367px
+				bottom: 336px
+			&-78
+				right: 472px
+				bottom: 123px
+			&-79
+				right: 356px
+				bottom: 321px
+			&-80
+				right: 113px
+				bottom: 295px
+			&-81
+				right: 354px
+				bottom: 321px
+			&-82
+				right: 352px
+				bottom: 325px
+			&-83
+				right: 352px
+				bottom: 327px
+			&-84
+				right: 352px
+				bottom: 330px
+			&-85
+				right: 350px
+				bottom: 330px
+			&-86
+				right: 508px
+				bottom: 176px
+			&-87
+				right: 293px
+				bottom: 182px
+			&-88
+				right: 480px
+				bottom: 208px
+			&-89
+				right: 487px
+				bottom: 200px
+			&-90
+				right: 497px
+				bottom: 188px
+			&-91
+				right: 502px
+				bottom: 182px
+		&-heading
+			font-size: 18px
+			margin-bottom: 8px
+			font-weight: 500
+		&-subheading
+			margin-bottom: 5px
+			font-size: 12px
+		&-status
+			font-size: 12px
+			._green
+				color: #21A46D
+			._red
+				color: #FF0000
+			._yellow
+				color: #bbb500
+			._gray
+				color: #7F7F7F
+// eof
+
+
+
 
 
 .footer
@@ -205,12 +624,18 @@ body
 			margin-bottom: 25px
 			font-size: 16px
 			color: #263475
+			&:focus
+				&::placeholder
+					opacity: 0
 		&-textarea
 			height: 81px
 			margin: 40px 0 50px
 			resize: none
 			border-bottom: 1px solid rgba(38, 52, 117, 0.3)
 			background-color: transparent
+			&:focus
+				&::placeholder
+					opacity: 0
 		&-buttons
 			display: flex
 			align-items: center
@@ -306,18 +731,188 @@ body
 
 
 
+.left-news
+	display: block
+
+
 
 .tasks__title
 	margin-bottom: 70px
 	line-height: 1.5
 
 
-@media only screen and (max-width : 1430px)
+
+
+
+.labgvidg-header
+	position: relative
+	&__text
+		display: flex
+		align-items: center
+		&.active
+			.labgvidg-header__icon
+				transform: rotate(180deg)
+	&__icon
+		margin-left: 4px
+		transition: .3s
+	.labgvidg-header__dropdown
+		display: none
+		position: absolute
+		top: 100%
+		left: 50%
+		transform: translate(-50%, 0)
+		box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.12)
+		background-color: #fff
+		z-index: 10
+		margin-top: 8px
+		&-inner
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			padding: 24px
+		&-item
+			color: #1E2A5E
+			text-transform: uppercase
+			margin-bottom: 15px
+			transition: .2s
+			&:last-child
+				margin-bottom: 0
+			&:hover
+				color: $accent
+
+
+
+.top-header__colour
+	position: relative
+	margin-right: 30px
+	display: flex
+	align-items: center
+	justify-content: center
+	&-heading
+		width: 27px
+	&-dropdown
+		width: 300px
+		display: none
+		position: absolute
+		top: 100%
+		right: 0
+		box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.12)
+		background-color: #fff
+		z-index: 10
+		margin-top: 8px
+		padding: 24px
+	&-title
+		margin-bottom: 15px
+		font-size: 14px
+		font-family: Roboto
+		&._margin-top
+			margin-top: 25px
+	&-choose
+		display: flex
+		align-items: center
+		cursor: pointer
+		margin-bottom: 15px
+	&-input
+		flex: 0 0 auto
+		margin-right: 10px
+		width: 18px
+		height: 18px
+		position: relative
+		background: none
+		cursor: pointer
+		-moz-appearance: none
+		-webkit-appearance: none
+		-ms-progress-appearance: none
+		&::before, &::after
+			content: ''
+			border-radius: 50%
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+		&::before
+			width: 100%
+			height: 100%
+			border: 1px solid #1E2A5E
+		&::after
+			width: 12px
+			height: 12px
+			background-color: #1E2A5E
+			opacity: 0
+			transition: .2s
+		&:checked
+			&::after
+				opacity: 1
+	&-text
+		font-family: Roboto
+	&-buttons
+		display: flex
+		align-items: center
+	&-button
+		margin-right: 15px
+		font-size: 18px
+		font-weight: 700
+		font-family: Roboto
+
+
+
+.bottom-header__nav
+	flex: 0 0 auto
+
+
+.news
+	.about-body__link
+		border-color: #fff
+		margin-left: 45px
+		span
+			color: #fff
+		i
+			color: #fff
+
+
+.swiper-slide__subTitle
+	align-items: flex-start
+	margin-top: 10px
+	&::before
+		margin-right: 10px
+		position: relative
+		top: 10px
+
+
+.bottom-header__logo
+	display: flex
+	width: 210px
+
+
+
+.slaider
+	.slaider__body
+		height: 750px
+
+
+
+@media only screen and (max-width : 1600px)
+
+	// Попапаы
+	.popup
+		padding: 40px 80px
+		&__title
+			margin-bottom: 50px
+	// eof
+
+	.slaider
+		.slaider__body
+			height: 550px
+
+
+
 
 	.bottom
 		&-header
 			&__link
-				margin-right: 40px
+				margin-right: 25px
+				font-size: 14px
+				line-height: 1.5
 
 
 
@@ -355,7 +950,7 @@ body
 		height: 120px
 
 
-	.left-news__data, .left-news__title, .left-news__text, .about-body__link
+	.left-news__data, .left-news__title, .left-news__text, .news .about-body__link
 		margin-left: 0
 		margin-top: 0
 		margin-bottom: 20px
@@ -424,29 +1019,30 @@ body
 			&-title
 				margin-bottom: 3px
 			&.kz
-				top: 10px
+				top: 0
+				right: 20px
 			&.uz
-				left: 120px
-				top: 120px
+				left: 225px
+				top: 155px
 			&.tk
-				bottom: 150px
-				left: 80px
+				bottom: 120px
+				left: 116px
 			&.af
-				left: 160px
-				bottom: 75px
+				left: 230px
+				bottom: 95px
 			&.tj
-				right: -20px
-				bottom: 170px
+				right: 45px
+				bottom: 120px
 			&.krgz
-				left: 50px
-				bottom: 60px
+				left: 80px
+				bottom: 110px
 				&::after
 					border: 3px solid transparent
 					border-right: 3px solid #fff
 					border-bottom: 3px solid #fff
 			&.viet
-				right: 10px
-				bottom: 0
+				right: 27px
+				bottom: -20px
 				&::after
 					border: 3px solid transparent
 					border-right: 3px solid #fff
@@ -468,12 +1064,74 @@ body
 			font-size: 16px
 
 
+	.bottom-header__logo
+		display: flex
+		width: 160px
 
 
+
+@media only screen and (max-width : 1400px)
+
+	.popup
+		padding: 40px
+
+
+@media only screen and (max-width : 1200px)
+
+	.popup
+		padding: 20px 0
 
 
 
 @media only screen and (max-width : 992px)
+
+	.popup
+		padding: 20px
+		.mfp-close
+			width: 30px
+			height: 30px
+			&::before
+				width: 12px
+				height: 12px
+		&__container
+			&-map
+				display: none
+			&-inner
+				width: 100%
+		&__title
+			text-align: left
+			margin: 0 0 20px
+			font-size: 16px
+		&__list
+			width: 100%
+			max-width: 100%
+			border-top: 1px solid rgba(0, 0, 0, 0.1)
+			padding-top: 10px
+			&-heading
+				font-size: 14px
+				margin-bottom: 20px
+				padding-left: 0
+				img
+					width: 24px
+					height: 24px
+					margin-right: 12px
+			&-item
+				padding: 10px 0
+				&:hover
+					background-color: #fff
+				&-image
+					width: 50px
+					height: 50px
+				&-heading
+					font-size: 12px
+					margin-bottom: 5px
+				&-subheading
+					font-size: 10px
+					margin-bottom: 2px
+				&-status
+					font-size: 10px
+
+
 
 	::placeholder
 		font-size: 12px
@@ -500,6 +1158,10 @@ body
 				height: 24px
 		&__map
 			display: none
+		&__info	
+			width: 0
+			height: 0
+			overflow: hidden
 
 
 	.bottom
@@ -675,6 +1337,15 @@ body
 
 
 
+	.top-header__colour
+		margin-right: 0
+		font-size: 14px
+		position: static
+		&-heading
+			width: auto
+		&-dropdown
+			right: 5px
+			margin-top: 0
 
 
 

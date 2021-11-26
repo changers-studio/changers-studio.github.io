@@ -90,7 +90,7 @@ body {
 	max-width: 1430px;
 	margin: 0 auto;
 	padding: 0 15px;
-	@media (max-width: 1430px) {
+	@media (max-width: 1600px) {
 		max-width: 960px;
 	}
 	@media (max-width: 992px) {
@@ -163,7 +163,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 
-	@media (max-width: 1430px) {
+	@media (max-width: 1600px) {
 		flex: 0 0 7%;
 	}
 }
@@ -703,7 +703,7 @@ body {
 	background: #fff;
 	padding: 65px 70px;
 	margin: 0 -70px;
-	@media (max-width: 1430px) {
+	@media (max-width: 1600px) {
 		margin: 0 -35px;
 		padding: 35px 20px;
 	}
@@ -1027,10 +1027,6 @@ body {
 	color: #fff !important;
 	border-bottom: 1px solid #fff;
 	@include adaptiv-value('margin-left', 45, 15, 1);
-}
-.about-body__link {
-}
-.fas {
 }
 .fa-arrow-up {
 }
