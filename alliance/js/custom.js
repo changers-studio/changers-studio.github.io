@@ -1,4 +1,20 @@
 $(function () {
+	// AOS
+	AOS.init({
+		once: true,
+		duration: 1000,
+		offset: 0,
+	})
+
+	$(window).on('resize load', function () {
+		AOS.refreshHard()
+	})
+
+	$(window).on('scroll load', function () {
+		AOS.refresh()
+	})
+	// eof
+
 	// Слайдер на главном экране
 	if ($('*').is('.main__slider')) {
 		$('.main__slider').slick({
@@ -79,7 +95,7 @@ $('.hamburger-menu__caption-item-3').on('click', function () {
 
 // Открытие гамбургер меню
 $('.header__hamburger, .hamburger-menu__close').on('click', function () {
-	$('.hamburger-menu').slideToggle()
+	$('.hamburger-menu').fadeToggle()
 	$('body').toggleClass('scroll_disabled')
 })
 // eof

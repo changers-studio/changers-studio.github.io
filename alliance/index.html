@@ -27,6 +27,7 @@
 
 		<!-- libs css -->
 		<link rel="stylesheet" href="libs/slick-carousel/slick.css" />
+		<link rel="stylesheet" href="libs/aos/aos.css" />
 
 		<!-- main css -->
 		<link rel="stylesheet" href="css/main.css" />
@@ -42,613 +43,221 @@
 	</head>
 
 	<body class="ishome">
-		<!-- Гамбургер меню -->
-		<div class="hamburger-menu">
-			<button class="hamburger-menu__close">
-				<svg
-					width="35"
-					height="34"
-					viewBox="0 0 35 34"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<path
-						d="M34.1154 2.7205L34.2359 2.60258L34.1154 2.48466L32.1711 0.581784L32.0557 0.468836L31.9403 0.581784L17.5 14.7142L3.05973 0.581784L2.94432 0.468836L2.82891 0.581784L0.884591 2.48466L0.7641 2.60258L0.884591 2.7205L15.3198 16.848L0.884591 30.9754L0.7641 31.0933L0.884591 31.2113L2.82891 33.1141L2.94432 33.2271L3.05973 33.1141L17.5 18.9817L31.9403 33.1141L32.0557 33.2271L32.1711 33.1141L34.1154 31.2113L34.2359 31.0933L34.1154 30.9754L19.6802 16.848L34.1154 2.7205Z"
-						fill="white"
-						stroke="white"
-						stroke-width="0.33"
-					/>
-				</svg>
-			</button>
+		<div class="body-wrapper">
+			<!-- Гамбургер меню -->
+			<div class="hamburger-menu">
+				<button class="hamburger-menu__close">
+					<svg
+						width="35"
+						height="34"
+						viewBox="0 0 35 34"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M34.1154 2.7205L34.2359 2.60258L34.1154 2.48466L32.1711 0.581784L32.0557 0.468836L31.9403 0.581784L17.5 14.7142L3.05973 0.581784L2.94432 0.468836L2.82891 0.581784L0.884591 2.48466L0.7641 2.60258L0.884591 2.7205L15.3198 16.848L0.884591 30.9754L0.7641 31.0933L0.884591 31.2113L2.82891 33.1141L2.94432 33.2271L3.05973 33.1141L17.5 18.9817L31.9403 33.1141L32.0557 33.2271L32.1711 33.1141L34.1154 31.2113L34.2359 31.0933L34.1154 30.9754L19.6802 16.848L34.1154 2.7205Z"
+							fill="white"
+							stroke="white"
+							stroke-width="0.33"
+						/>
+					</svg>
+				</button>
 
-			<div class="container">
-				<div class="hamburger-menu__top-line">
-					<p class="hamburger-menu__title">Меню сайту:</p>
+				<div class="container">
+					<div class="hamburger-menu__top-line">
+						<p class="hamburger-menu__title">Меню сайту:</p>
 
-					<div class="hamburger-menu__top-line-wrapper">
+						<div class="hamburger-menu__top-line-wrapper">
+							<address class="hamburger-menu__address">
+								г. Киев, ул. Евгения Сверстюка 19
+							</address>
+
+							<a href="tel:380442210551" class="hamburger-menu__tel">38 044 221-05-51</a>
+						</div>
+					</div>
+
+					<div class="hamburger-menu__container">
+						<nav class="hamburger-menu__caption">
+							<a href="index.html" class="hamburger-menu__caption-item">Головна</a>
+							<p class="hamburger-menu__caption-item hamburger-menu__caption-item-1">
+								Документація
+							</p>
+							<p class="hamburger-menu__caption-item hamburger-menu__caption-item-2">
+								Послуги
+							</p>
+							<a href="#" class="hamburger-menu__caption-item">Стратегія розвитку</a>
+							<p class="hamburger-menu__caption-item hamburger-menu__caption-item-3">
+								Про компанію
+							</p>
+							<a href="#" class="hamburger-menu__caption-item">Страхові випадки</a>
+							<a href="contacts.html" class="hamburger-menu__caption-item">
+								Зворотній зв'язок
+							</a>
+						</nav>
+
+						<nav class="hamburger-menu__content hamburger-menu__content-1">
+							<div class="hamburger-menu__content-inner">
+								<a href="financial-report.html" class="hamburger-menu__content-item">
+									Фінансова звітність
+								</a>
+								<a href="licenses.html" class="hamburger-menu__content-item">Ліцензії</a>
+								<a href="rules.html" class="hamburger-menu__content-item">
+									Правила страхування
+								</a>
+								<a href="structure.html" class="hamburger-menu__content-item">
+									Структура власності
+								</a>
+								<a href="#" class="hamburger-menu__content-item">
+									Інформація щодо зборів акціонерів
+								</a>
+							</div>
+						</nav>
+
+						<nav class="hamburger-menu__content hamburger-menu__content-2">
+							<div class="hamburger-menu__content-inner">
+								<a href="physical__main.html" class="hamburger-menu__content-item">
+									Для фізичних осіб
+								</a>
+								<a href="legal__main.html" class="hamburger-menu__content-item">
+									Для юридичних осіб
+								</a>
+							</div>
+						</nav>
+
+						<nav class="hamburger-menu__content hamburger-menu__content-3">
+							<div class="hamburger-menu__content-inner">
+								<a href="#" class="hamburger-menu__content-item">Про компанію</a>
+								<a href="documents.html" class="hamburger-menu__content-item">
+									Документи
+								</a>
+								<a href="#" class="hamburger-menu__content-item">Кар'єра</a>
+								<a href="requisites.html" class="hamburger-menu__content-item">
+									Реквізити
+								</a>
+								<a href="partners.html" class="hamburger-menu__content-item">Партнери</a>
+							</div>
+						</nav>
+
+						<p class="hamburger-menu__copyrights">
+							<span class="hamburger-menu__copyrights-item">indinsall © 2016</span>
+							<span class="hamburger-menu__copyrights-item">Все права защищены</span>
+						</p>
+					</div>
+				</div>
+
+				<p class="hamburger-menu__corner-text">
+					Промислово
+					<br />
+					страховий Альянс
+				</p>
+
+				<div class="hamburger-menu__bottom-line">
+					<div class="container">
+						<a href="tel:380442210551" class="hamburger-menu__tel">38 044 221-05-51</a>
+
 						<address class="hamburger-menu__address">
 							г. Киев, ул. Евгения Сверстюка 19
 						</address>
 
-						<a href="tel:380442210551" class="hamburger-menu__tel">38 044 221-05-51</a>
+						<p class="hamburger-menu__copyrights _mob">
+							<span class="hamburger-menu__copyrights-item">indinsall © 2016</span>
+							<span class="hamburger-menu__copyrights-item">Все права защищены</span>
+						</p>
 					</div>
 				</div>
-
-				<div class="hamburger-menu__container">
-					<nav class="hamburger-menu__caption">
-						<a href="#" class="hamburger-menu__caption-item active">Головна</a>
-						<p class="hamburger-menu__caption-item hamburger-menu__caption-item-1">
-							Документація
-						</p>
-						<p class="hamburger-menu__caption-item hamburger-menu__caption-item-2">
-							Послуги
-						</p>
-						<a href="#" class="hamburger-menu__caption-item">Стратегія розвитку</a>
-						<p class="hamburger-menu__caption-item hamburger-menu__caption-item-3">
-							Про компанію
-						</p>
-						<a href="#" class="hamburger-menu__caption-item">Страхові випадки</a>
-						<a href="#" class="hamburger-menu__caption-item">Зворотній зв'язок</a>
-					</nav>
-
-					<nav class="hamburger-menu__content hamburger-menu__content-1">
-						<div class="hamburger-menu__content-inner">
-							<a href="#" class="hamburger-menu__content-item">Фінансова звітність</a>
-							<a href="#" class="hamburger-menu__content-item">Ліцензії</a>
-							<a href="#" class="hamburger-menu__content-item">Правила страхування</a>
-							<a href="#" class="hamburger-menu__content-item">Структура власності</a>
-							<a href="#" class="hamburger-menu__content-item">
-								Інформація щодо зборів акціонерів
-							</a>
-						</div>
-					</nav>
-
-					<nav class="hamburger-menu__content hamburger-menu__content-2">
-						<div class="hamburger-menu__content-inner">
-							<a href="#" class="hamburger-menu__content-item">Для фізичних осіб</a>
-							<a href="#" class="hamburger-menu__content-item">Для юридичних осіб</a>
-						</div>
-					</nav>
-
-					<nav class="hamburger-menu__content hamburger-menu__content-3">
-						<div class="hamburger-menu__content-inner">
-							<a href="#" class="hamburger-menu__content-item">Про компанію</a>
-							<a href="#" class="hamburger-menu__content-item">Документи</a>
-							<a href="#" class="hamburger-menu__content-item">Кар'єра</a>
-							<a href="#" class="hamburger-menu__content-item">Реквізити</a>
-							<a href="#" class="hamburger-menu__content-item">Партнери</a>
-						</div>
-					</nav>
-
-					<p class="hamburger-menu__copyrights">
-						<span class="hamburger-menu__copyrights-item">indinsall © 2016</span>
-						<span class="hamburger-menu__copyrights-item">Все права защищены</span>
-					</p>
-				</div>
 			</div>
+			<!-- eof -->
 
-			<p class="hamburger-menu__corner-text">
-				Промислово
-				<br />
-				страховий Альянс
-			</p>
-
-			<div class="hamburger-menu__bottom-line">
+			<!-- Главный экран -->
+			<section class="main">
 				<div class="container">
-					<a href="tel:380442210551" class="hamburger-menu__tel">38 044 221-05-51</a>
-
-					<address class="hamburger-menu__address">
-						г. Киев, ул. Евгения Сверстюка 19
-					</address>
-
-					<p class="hamburger-menu__copyrights _mob">
-						<span class="hamburger-menu__copyrights-item">indinsall © 2016</span>
-						<span class="hamburger-menu__copyrights-item">Все права защищены</span>
-					</p>
-				</div>
-			</div>
-		</div>
-		<!-- eof -->
-
-		<!-- Главный экран -->
-		<section class="main">
-			<div class="container">
-				<header class="header">
-					<div class="header__container">
-						<div class="header__wrapper _left">
-							<a href="index.html" class="header__logo">
-								<img src="img/logo.svg" alt="Логотип" />
-							</a>
-
-							<a href="#" class="header__link">Послуги</a>
-						</div>
-
-						<div class="header__wrapper _right">
-							<address class="header__address">г. Киев, ул. Евгения Сверстюка 19</address>
-
-							<div class="header__wrapper-inner">
-								<a href="tel:380442210551" class="header__tel header__link">
-									38 044 221-05-51
+					<header class="header" data-aos="zoom-out">
+						<div class="header__container">
+							<div class="header__wrapper _left">
+								<a href="index.html" class="header__logo">
+									<img src="img/logo.svg" alt="Логотип" />
 								</a>
 
-								<button class="header__hamburger">
-									<span class="header__hamburger-line"></span>
-									<span class="header__hamburger-line _short"></span>
-								</button>
+								<a href="#" class="header__link">Послуги</a>
+							</div>
+
+							<div class="header__wrapper _right">
+								<address class="header__address">
+									г. Киев, ул. Евгения Сверстюка 19
+								</address>
+
+								<div class="header__wrapper-inner">
+									<a href="tel:380442210551" class="header__tel header__link">
+										38 044 221-05-51
+									</a>
+
+									<button class="header__hamburger">
+										<span class="header__hamburger-line"></span>
+										<span class="header__hamburger-line _short"></span>
+									</button>
+								</div>
 							</div>
 						</div>
-					</div>
-				</header>
+					</header>
 
-				<div class="main__container">
-					<div class="main__container-inner _left">
-						<h3 class="main__company-name">Страхова компанія ПрАТ</h3>
-						<h2 class="main__company-about">Промислово страховий Альянс</h2>
-					</div>
+					<div class="main__container">
+						<div class="main__container-inner _left" data-aos="zoom-out">
+							<h3 class="main__company-name">Страхова компанія ПрАТ</h3>
+							<h2 class="main__company-about">Промислово страховий Альянс</h2>
+						</div>
 
-					<div class="main__container-inner _right">
-						<h1 class="main__title">
-							Майже 30 років досвіду
-							<br />
-							на ринку страхових та
-							<br />
-							фінансових послуг
-							<br />
-							України
-
-							<p class="main__subtitle">
-								Досвідчена,
+						<div class="main__container-inner _right" data-aos="zoom-out">
+							<h1 class="main__title">
+								Майже 30 років досвіду
 								<br />
-								прозора
+								на ринку страхових та
 								<br />
-								та амбітна страхова
+								фінансових послуг
 								<br />
-								компанія.
-							</p>
-						</h1>
+								України
 
-						<a href="#" class="button main__button">
-							<span>Стратегія розвитку</span>
+								<p class="main__subtitle">
+									Досвідчена,
+									<br />
+									прозора
+									<br />
+									та амбітна страхова
+									<br />
+									компанія.
+								</p>
+							</h1>
 
-							<svg viewBox="0 0 205 144" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M120.47 72.9702C120.73 72.7105 120.73 72.2895 120.47 72.0298L116.238 67.7978C115.979 67.5381 115.557 67.5381 115.298 67.7978C115.038 68.0574 115.038 68.4785 115.298 68.7382L119.06 72.5L115.298 76.2618C115.038 76.5215 115.038 76.9426 115.298 77.2023C115.557 77.462 115.978 77.462 116.238 77.2023L120.47 72.9702ZM-5.81361e-08 73.165L120 73.165L120 71.835L5.81361e-08 71.835L-5.81361e-08 73.165Z"
-									fill="white"
-								/>
-								<circle opacity="0.1" cx="133.5" cy="72" r="71" stroke="white" />
-							</svg>
+							<a href="#" class="button main__button">
+								<span>Стратегія розвитку</span>
 
-							<svg
-								class="_hidden"
-								viewBox="0 0 131 66"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M99.4702 33.4702C99.7299 33.2105 99.7299 32.7895 99.4702 32.5298L95.2382 28.2977C94.9785 28.038 94.5574 28.038 94.2977 28.2977C94.038 28.5574 94.038 28.9785 94.2977 29.2382L98.0595 33L94.2977 36.7618C94.038 37.0215 94.038 37.4426 94.2977 37.7023C94.5574 37.962 94.9785 37.962 95.2382 37.7023L99.4702 33.4702ZM-5.81361e-08 33.665L99 33.665L99 32.335L5.81361e-08 32.335L-5.81361e-08 33.665Z"
-									fill="white"
-								/>
-								<circle opacity="0.1" cx="98" cy="33" r="32.5" stroke="white" />
-							</svg>
-						</a>
-					</div>
-				</div>
-			</div>
+								<svg viewBox="0 0 205 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M120.47 72.9702C120.73 72.7105 120.73 72.2895 120.47 72.0298L116.238 67.7978C115.979 67.5381 115.557 67.5381 115.298 67.7978C115.038 68.0574 115.038 68.4785 115.298 68.7382L119.06 72.5L115.298 76.2618C115.038 76.5215 115.038 76.9426 115.298 77.2023C115.557 77.462 115.978 77.462 116.238 77.2023L120.47 72.9702ZM-5.81361e-08 73.165L120 73.165L120 71.835L5.81361e-08 71.835L-5.81361e-08 73.165Z"
+										fill="white"
+									/>
+									<circle opacity="0.1" cx="133.5" cy="72" r="71" stroke="white" />
+								</svg>
 
-			<div class="main__slider-container">
-				<div class="main__slider-arrows">
-					<button class="main__slider-arrow main__slider-prev">
-						<svg
-							width="81"
-							height="10"
-							viewBox="0 0 81 10"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M0.529778 4.52977C0.270073 4.78947 0.270073 5.21053 0.529778 5.47023L4.76181 9.70226C5.02151 9.96196 5.44256 9.96196 5.70226 9.70226C5.96196 9.44256 5.96196 9.02151 5.70226 8.76181L1.94045 5L5.70226 1.23819C5.96196 0.978493 5.96196 0.557438 5.70226 0.29774C5.44256 0.0380411 5.02151 0.0380411 4.76181 0.29774L0.529778 4.52977ZM81 4.335L1 4.335V5.665L81 5.665V4.335Z"
-								fill="#BCC6C0"
-							/>
-						</svg>
-					</button>
-
-					<button class="main__slider-arrow main__slider-next">
-						<svg
-							width="81"
-							height="10"
-							viewBox="0 0 81 10"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M80.4702 5.47023C80.7299 5.21053 80.7299 4.78948 80.4702 4.52978L76.2382 0.297747C75.9785 0.0380478 75.5574 0.0380477 75.2977 0.297747C75.038 0.557445 75.038 0.9785 75.2977 1.2382L79.0595 5.00001L75.2977 8.76181C75.038 9.02151 75.038 9.44257 75.2977 9.70227C75.5574 9.96197 75.9785 9.96197 76.2382 9.70227L80.4702 5.47023ZM-5.81362e-08 5.665L80 5.66501L80 4.33501L5.81362e-08 4.335L-5.81362e-08 5.665Z"
-								fill="#BCC6C0"
-							/>
-						</svg>
-					</button>
-				</div>
-
-				<div class="main__slider">
-					<div class="main__slide">
-						<div class="main__slide-icon">
-							<img src="img/icons/fire.svg" alt="Огонь" />
+								<svg
+									class="_hidden"
+									viewBox="0 0 131 66"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M99.4702 33.4702C99.7299 33.2105 99.7299 32.7895 99.4702 32.5298L95.2382 28.2977C94.9785 28.038 94.5574 28.038 94.2977 28.2977C94.038 28.5574 94.038 28.9785 94.2977 29.2382L98.0595 33L94.2977 36.7618C94.038 37.0215 94.038 37.4426 94.2977 37.7023C94.5574 37.962 94.9785 37.962 95.2382 37.7023L99.4702 33.4702ZM-5.81361e-08 33.665L99 33.665L99 32.335L5.81361e-08 32.335L-5.81361e-08 33.665Z"
+										fill="white"
+									/>
+									<circle opacity="0.1" cx="98" cy="33" r="32.5" stroke="white" />
+								</svg>
+							</a>
 						</div>
-
-						<div class="main__slide-content">
-							<p class="main__slide-heading">Найсильніші страхові продукти:</p>
-							<p class="main__slide-text">
-								Страхування майна від огневих ризиків та ризиків стихійних явищ
-							</p>
-						</div>
-
-						<span class="main__slide-number">01</span>
-					</div>
-
-					<div class="main__slide">
-						<div class="main__slide-icon">
-							<img src="img/icons/fire.svg" alt="Огонь" />
-						</div>
-
-						<div class="main__slide-content">
-							<p class="main__slide-heading">Найсильніші продукти:</p>
-							<p class="main__slide-text">
-								Страхування майна від огневих та стихійних явищ
-							</p>
-						</div>
-
-						<span class="main__slide-number">02</span>
-					</div>
-				</div>
-			</div>
-
-			<a href="#" class="main__scroll-down">
-				<img src="img/icons/scroll.svg" alt="Скроль вниз" />
-			</a>
-		</section>
-		<!-- eof -->
-
-		<!-- Услуги -->
-		<section class="services">
-			<div class="container tabs">
-				<div class="services__top-line">
-					<ul class="tabs__caption">
-						<li class="tabs__caption-item active">Фізичні особи</li>
-						<li class="tabs__caption-item">Юридичні особи</li>
-					</ul>
-
-					<div class="services__title-box">
-						<h3>ПС Альянс</h3>
-						<h2>Страхові послуги</h2>
 					</div>
 				</div>
 
-				<div class="tabs__content active">
-					<div class="services__wrapper">
-						<p class="services__heading">Добровільне страхування:</p>
-
-						<nav class="services__list">
-							<a href="#" class="services__list-item">Медичне страхування персоналу</a>
-							<a href="#" class="services__list-item">
-								Здоров’я персоналу на випадок хвороби
-							</a>
-							<a href="#" class="services__list-item">
-								Майна від огневих ризиків та ризиків стихійних явищ
-							</a>
-							<a href="#" class="services__list-item">Вантажів та багажу</a>
-							<a href="#" class="services__list-item">
-								Фінансових та комерційних ризиків
-							</a>
-							<a href="#" class="services__list-item">Кредитів</a>
-							<a href="#" class="services__list-item">Наземних транспортних засобів</a>
-							<a href="#" class="services__list-item">
-								Відповідальності перед третіми особами
-							</a>
-							<a href="#" class="services__list-item">
-								Відповідальності власників підприємств за трудовим договором
-							</a>
-							<a href="#" class="services__list-item">Персоналу від нещасних випадків</a>
-						</nav>
-					</div>
-
-					<div class="services__wrapper">
-						<p class="services__heading">Обов’язкове страхування:</p>
-
-						<nav class="services__list">
-							<a href="#" class="services__list-item">
-								Від нещасних випадків на транспорті
-							</a>
-							<a href="#" class="services__list-item">
-								Відповідальності суб’єктів перевезення небезпечних вантажів
-							</a>
-							<a href="#" class="services__list-item">
-								Працівників пожежної охорони і членів пожежних дружин
-							</a>
-							<a href="#" class="services__list-item">«Зелена картка»</a>
-							<a href="#" class="services__list-item">
-								Цивільно-правової відповідальності власників наземних транспортних засобів
-							</a>
-						</nav>
-					</div>
-				</div>
-
-				<div class="tabs__content">
-					<div class="services__wrapper">
-						<p class="services__heading">Страхування:</p>
-
-						<nav class="services__list">
-							<a href="#" class="services__list-item">Медичне страхування</a>
-							<a href="#" class="services__list-item">
-								Здоров’я персоналу на випадок хвороби
-							</a>
-							<a href="#" class="services__list-item">
-								Майна від огневих ризиків та ризиків стихійних явищ
-							</a>
-							<a href="#" class="services__list-item">Вантажів та багажу</a>
-							<a href="#" class="services__list-item">
-								Фінансових та комерційних ризиків
-							</a>
-							<a href="#" class="services__list-item">Кредитів</a>
-							<a href="#" class="services__list-item">Наземних транспортних засобів</a>
-							<a href="#" class="services__list-item">
-								Відповідальності перед третіми особами
-							</a>
-							<a href="#" class="services__list-item">
-								Відповідальності власників підприємств за трудовим договором
-							</a>
-							<a href="#" class="services__list-item">Персоналу від нещасних випадків</a>
-						</nav>
-					</div>
-
-					<div class="services__wrapper">
-						<p class="services__heading">Обов’язкове страхування:</p>
-
-						<nav class="services__list">
-							<a href="#" class="services__list-item">
-								Від нещасних випадків на транспорті
-							</a>
-							<a href="#" class="services__list-item">
-								Відповідальності суб’єктів перевезення небезпечних вантажів
-							</a>
-							<a href="#" class="services__list-item">
-								Працівників пожежної охорони і членів пожежних дружин
-							</a>
-							<a href="#" class="services__list-item">«Зелена картка»</a>
-							<a href="#" class="services__list-item">
-								Цивільно-правової відповідальності власників наземних транспортних засобів
-							</a>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- eof -->
-
-		<!-- Альянс -->
-		<section class="alliance">
-			<div class="container alliance__container">
-				<div class="alliance__title-box">
-					<h3>ПС Альянс</h3>
-					<h2>Промислово страховий Альянс</h2>
-				</div>
-
-				<div class="alliance__content">
-					<p class="alliance__text">
-						Має ліцензії на здійснення
-						<br />
-						10-ти видів добровільного
-						<br />
-						та 3-х обов’язкових видів страхування
-					</p>
-
-					<a href="#" class="alliance__button button">
-						<span>Усі послуги</span>
-
-						<svg
-							width="205"
-							height="143"
-							viewBox="0 0 205 143"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M120.47 72.4702C120.73 72.2105 120.73 71.7895 120.47 71.5298L116.238 67.2978C115.979 67.0381 115.557 67.0381 115.298 67.2978C115.038 67.5574 115.038 67.9785 115.298 68.2382L119.06 72L115.298 75.7618C115.038 76.0215 115.038 76.4426 115.298 76.7023C115.557 76.962 115.978 76.962 116.238 76.7023L120.47 72.4702ZM-5.81361e-08 72.665L120 72.665L120 71.335L5.81361e-08 71.335L-5.81361e-08 72.665Z"
-								fill="#1A1D22"
-							/>
-							<circle opacity="0.33" cx="133.5" cy="71.5" r="71" stroke="#BCC6C0" />
-						</svg>
-
-						<svg
-							class="_hidden"
-							width="131"
-							height="66"
-							viewBox="0 0 131 66"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M99.4702 33.4702C99.7299 33.2105 99.7299 32.7895 99.4702 32.5298L95.2382 28.2977C94.9785 28.038 94.5574 28.038 94.2977 28.2977C94.038 28.5574 94.038 28.9785 94.2977 29.2382L98.0595 33L94.2977 36.7618C94.038 37.0215 94.038 37.4426 94.2977 37.7023C94.5574 37.962 94.9785 37.962 95.2382 37.7023L99.4702 33.4702ZM-5.81361e-08 33.665L99 33.665L99 32.335L5.81361e-08 32.335L-5.81361e-08 33.665Z"
-								fill="#1A1D22"
-							/>
-							<circle opacity="0.1" cx="98" cy="33" r="32.5" stroke="#1A1D22" />
-						</svg>
-					</a>
-				</div>
-			</div>
-		</section>
-		<!-- eof -->
-
-		<!-- Преимущества -->
-		<section class="advantages">
-			<div class="container">
-				<div class="advantages__container">
-					<div class="advantages__item">
-						<p class="advantages__item-number">01</p>
-						<p class="advantages__item-heading">
-							Майже 30 років
-							<br />
-							бездоганного
-							<br />
-							досвіду роботи
-						</p>
-						<p class="advantages__item-subheading">На страховому ринку України</p>
-					</div>
-
-					<div class="advantages__item">
-						<p class="advantages__item-number">02</p>
-						<p class="advantages__item-heading">
-							Продумані
-							<br />
-							страхові продукти,
-							<br />
-							які відповідають
-						</p>
-						<p class="advantages__item-subheading">Запитам ринку та клієнтів</p>
-					</div>
-
-					<div class="advantages__item">
-						<p class="advantages__item-number">03</p>
-						<p class="advantages__item-heading">
-							Широкий
-							<br />
-							спектр
-							<br />
-							визначення
-						</p>
-						<p class="advantages__item-subheading">Страхових ризиків</p>
-					</div>
-
-					<div class="advantages__item">
-						<p class="advantages__item-number">04</p>
-						<p class="advantages__item-heading">
-							Входить до ТОП-30,
-							<br />
-							з понад 400 страхових
-							<br />
-							компаній
-						</p>
-						<p class="advantages__item-subheading">В Україні</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- eof -->
-
-		<!-- Цель -->
-		<section class="target">
-			<div class="container target__container">
-				<div class="target__title-box">
-					<h3>Стратегія розвитку</h3>
-					<h2>
-						Головна мета ПрАТ
-						<br />
-						Промислово страховий
-						<br />
-						Альянс
-					</h2>
-				</div>
-
-				<div class="target__heading-box">
-					<p class="target__heading">Мета компанії:</p>
-
-					<p class="target__subheading">
-						Забезпечення
-						<br />
-						збалансованого розвитку,
-						<br />
-						збільшення конкурентних
-						<br />
-						переваг, покращення
-						<br />
-						фінансових результатів
-						<br />
-						компанії
-					</p>
-				</div>
-
-				<div class="target__text-box">
-					<p class="target__text">
-						Для досягнення цієї мети та виконання поставлених завдань,
-						<span>
-							спеціалістами бізнес-консалтингу було розроблено спеціальну стратегію
-						</span>
-					</p>
-
-					<p class="target__text">
-						Яка включає в себе бізнес-планування реалізації проектів розвитку ПрАТ
-						Промислово страховий Альянс”
-					</p>
-
-					<a href="#" class="target__button button">
-						<span>Стратегія розвитку</span>
-
-						<svg viewBox="0 0 205 143" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M120.47 72.4702C120.73 72.2105 120.73 71.7895 120.47 71.5298L116.238 67.2978C115.979 67.0381 115.557 67.0381 115.298 67.2978C115.038 67.5574 115.038 67.9785 115.298 68.2382L119.06 72L115.298 75.7618C115.038 76.0215 115.038 76.4426 115.298 76.7023C115.557 76.962 115.978 76.962 116.238 76.7023L120.47 72.4702ZM-5.81361e-08 72.665L120 72.665L120 71.335L5.81361e-08 71.335L-5.81361e-08 72.665Z"
-								fill="#1A1D22"
-							/>
-							<circle opacity="0.33" cx="133.5" cy="71.5" r="71" stroke="#BCC6C0" />
-						</svg>
-
-						<svg
-							class="_hidden"
-							width="131"
-							height="66"
-							viewBox="0 0 131 66"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M99.4702 33.4702C99.7299 33.2105 99.7299 32.7895 99.4702 32.5298L95.2382 28.2977C94.9785 28.038 94.5574 28.038 94.2977 28.2977C94.038 28.5574 94.038 28.9785 94.2977 29.2382L98.0595 33L94.2977 36.7618C94.038 37.0215 94.038 37.4426 94.2977 37.7023C94.5574 37.962 94.9785 37.962 95.2382 37.7023L99.4702 33.4702ZM-5.81361e-08 33.665L99 33.665L99 32.335L5.81361e-08 32.335L-5.81361e-08 33.665Z"
-								fill="#1A1D22"
-							/>
-							<circle opacity="0.1" cx="98" cy="33" r="32.5" stroke="#1A1D22" />
-						</svg>
-					</a>
-				</div>
-			</div>
-		</section>
-		<!-- eof -->
-
-		<!-- Блог -->
-		<section class="blog">
-			<div class="container blog__top-line">
-				<div class="blog__title-box">
-					<p class="blog__title">Останні новини</p>
-
-					<p class="blog__subtitle">
-						Будьте в курсі всіх
-						<br />
-						останніх подій і досягнень
-					</p>
-				</div>
-
-				<div class="blog__slider-nav">
-					<div class="blog__counter">
-						<span class="blog__counter-current"></span>
-
-						<svg
-							class="blog__counter-separator"
-							width="83"
-							height="84"
-							viewBox="0 0 83 84"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<line
-								opacity="0.33"
-								x1="0.646447"
-								y1="82.6479"
-								x2="82.6464"
-								y2="0.647911"
-								stroke="#BCC6C0"
-							/>
-						</svg>
-
-						<span class="blog__counter-all"></span>
-					</div>
-
-					<div class="blog__slider-arrows">
-						<button class="blog__slider-arrow blog__slider-prev">
+				<div class="main__slider-container" data-aos="zoom-out">
+					<div class="main__slider-arrows">
+						<button class="main__slider-arrow main__slider-prev">
 							<svg
 								width="81"
 								height="10"
@@ -663,7 +272,7 @@
 							</svg>
 						</button>
 
-						<button class="blog__slider-arrow blog__slider-next">
+						<button class="main__slider-arrow main__slider-next">
 							<svg
 								width="81"
 								height="10"
@@ -678,380 +287,804 @@
 							</svg>
 						</button>
 					</div>
-				</div>
-			</div>
 
-			<div class="blog__slider">
-				<article class="article">
-					<div class="article__image-wrapper">
+					<div class="main__slider">
+						<div class="main__slide">
+							<div class="main__slide-icon">
+								<img src="img/icons/fire.svg" alt="Огонь" />
+							</div>
+
+							<div class="main__slide-content">
+								<p class="main__slide-heading">Найсильніші страхові продукти:</p>
+								<p class="main__slide-text">
+									Страхування майна від огневих ризиків та ризиків стихійних явищ
+								</p>
+							</div>
+
+							<span class="main__slide-number">01</span>
+						</div>
+
+						<div class="main__slide">
+							<div class="main__slide-icon">
+								<img src="img/icons/fire.svg" alt="Огонь" />
+							</div>
+
+							<div class="main__slide-content">
+								<p class="main__slide-heading">Найсильніші продукти:</p>
+								<p class="main__slide-text">
+									Страхування майна від огневих та стихійних явищ
+								</p>
+							</div>
+
+							<span class="main__slide-number">02</span>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="main__scroll-down" data-aos="zoom-out">
+					<img src="img/icons/scroll.svg" alt="Скроль вниз" />
+				</a>
+			</section>
+			<!-- eof -->
+
+			<!-- Услуги -->
+			<section class="services" data-aos="zoom-out">
+				<div class="container tabs">
+					<div class="services__top-line">
+						<ul class="tabs__caption">
+							<li class="tabs__caption-item active">Фізичні особи</li>
+							<li class="tabs__caption-item">Юридичні особи</li>
+						</ul>
+
+						<div class="services__title-box">
+							<h3>ПС Альянс</h3>
+							<h2>Страхові послуги</h2>
+						</div>
+					</div>
+
+					<div class="tabs__content active">
+						<div class="services__wrapper">
+							<p class="services__heading">Добровільне страхування:</p>
+
+							<nav class="services__list">
+								<a href="#" class="services__list-item">Медичне страхування персоналу</a>
+								<a href="#" class="services__list-item">
+									Здоров’я персоналу на випадок хвороби
+								</a>
+								<a href="#" class="services__list-item">
+									Майна від огневих ризиків та ризиків стихійних явищ
+								</a>
+								<a href="#" class="services__list-item">Вантажів та багажу</a>
+								<a href="#" class="services__list-item">
+									Фінансових та комерційних ризиків
+								</a>
+								<a href="#" class="services__list-item">Кредитів</a>
+								<a href="#" class="services__list-item">Наземних транспортних засобів</a>
+								<a href="#" class="services__list-item">
+									Відповідальності перед третіми особами
+								</a>
+								<a href="#" class="services__list-item">
+									Відповідальності власників підприємств за трудовим договором
+								</a>
+								<a href="#" class="services__list-item">
+									Персоналу від нещасних випадків
+								</a>
+							</nav>
+						</div>
+
+						<div class="services__wrapper">
+							<p class="services__heading">Обов’язкове страхування:</p>
+
+							<nav class="services__list">
+								<a href="#" class="services__list-item">
+									Від нещасних випадків на транспорті
+								</a>
+								<a href="#" class="services__list-item">
+									Відповідальності суб’єктів перевезення небезпечних вантажів
+								</a>
+								<a href="#" class="services__list-item">
+									Працівників пожежної охорони і членів пожежних дружин
+								</a>
+								<a href="#" class="services__list-item">«Зелена картка»</a>
+								<a href="#" class="services__list-item">
+									Цивільно-правової відповідальності власників наземних транспортних
+									засобів
+								</a>
+							</nav>
+						</div>
+					</div>
+
+					<div class="tabs__content">
+						<div class="services__wrapper">
+							<p class="services__heading">Страхування:</p>
+
+							<nav class="services__list">
+								<a href="#" class="services__list-item">Медичне страхування</a>
+								<a href="#" class="services__list-item">
+									Здоров’я персоналу на випадок хвороби
+								</a>
+								<a href="#" class="services__list-item">
+									Майна від огневих ризиків та ризиків стихійних явищ
+								</a>
+								<a href="#" class="services__list-item">Вантажів та багажу</a>
+								<a href="#" class="services__list-item">
+									Фінансових та комерційних ризиків
+								</a>
+								<a href="#" class="services__list-item">Кредитів</a>
+								<a href="#" class="services__list-item">Наземних транспортних засобів</a>
+								<a href="#" class="services__list-item">
+									Відповідальності перед третіми особами
+								</a>
+								<a href="#" class="services__list-item">
+									Відповідальності власників підприємств за трудовим договором
+								</a>
+								<a href="#" class="services__list-item">
+									Персоналу від нещасних випадків
+								</a>
+							</nav>
+						</div>
+
+						<div class="services__wrapper">
+							<p class="services__heading">Обов’язкове страхування:</p>
+
+							<nav class="services__list">
+								<a href="#" class="services__list-item">
+									Від нещасних випадків на транспорті
+								</a>
+								<a href="#" class="services__list-item">
+									Відповідальності суб’єктів перевезення небезпечних вантажів
+								</a>
+								<a href="#" class="services__list-item">
+									Працівників пожежної охорони і членів пожежних дружин
+								</a>
+								<a href="#" class="services__list-item">«Зелена картка»</a>
+								<a href="#" class="services__list-item">
+									Цивільно-правової відповідальності власників наземних транспортних
+									засобів
+								</a>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- eof -->
+
+			<!-- Альянс -->
+			<section class="alliance" data-aos="zoom-out">
+				<div class="container alliance__container">
+					<div class="alliance__title-box">
+						<h3>ПС Альянс</h3>
+						<h2>Промислово страховий Альянс</h2>
+					</div>
+
+					<div class="alliance__content">
+						<p class="alliance__text">
+							Має ліцензії на здійснення
+							<br />
+							10-ти видів добровільного
+							<br />
+							та 3-х обов’язкових видів страхування
+						</p>
+
+						<a href="#" class="alliance__button button">
+							<span>Усі послуги</span>
+
+							<svg
+								width="205"
+								height="143"
+								viewBox="0 0 205 143"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M120.47 72.4702C120.73 72.2105 120.73 71.7895 120.47 71.5298L116.238 67.2978C115.979 67.0381 115.557 67.0381 115.298 67.2978C115.038 67.5574 115.038 67.9785 115.298 68.2382L119.06 72L115.298 75.7618C115.038 76.0215 115.038 76.4426 115.298 76.7023C115.557 76.962 115.978 76.962 116.238 76.7023L120.47 72.4702ZM-5.81361e-08 72.665L120 72.665L120 71.335L5.81361e-08 71.335L-5.81361e-08 72.665Z"
+									fill="#1A1D22"
+								/>
+								<circle opacity="0.33" cx="133.5" cy="71.5" r="71" stroke="#BCC6C0" />
+							</svg>
+
+							<svg
+								class="_hidden"
+								width="131"
+								height="66"
+								viewBox="0 0 131 66"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M99.4702 33.4702C99.7299 33.2105 99.7299 32.7895 99.4702 32.5298L95.2382 28.2977C94.9785 28.038 94.5574 28.038 94.2977 28.2977C94.038 28.5574 94.038 28.9785 94.2977 29.2382L98.0595 33L94.2977 36.7618C94.038 37.0215 94.038 37.4426 94.2977 37.7023C94.5574 37.962 94.9785 37.962 95.2382 37.7023L99.4702 33.4702ZM-5.81361e-08 33.665L99 33.665L99 32.335L5.81361e-08 32.335L-5.81361e-08 33.665Z"
+									fill="#1A1D22"
+								/>
+								<circle opacity="0.1" cx="98" cy="33" r="32.5" stroke="#1A1D22" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- eof -->
+
+			<!-- Преимущества -->
+			<section class="advantages" data-aos="zoom-out">
+				<div class="container">
+					<div class="advantages__container">
+						<div class="advantages__item">
+							<p class="advantages__item-number">01</p>
+							<p class="advantages__item-heading">
+								Майже 30 років
+								<br />
+								бездоганного
+								<br />
+								досвіду роботи
+							</p>
+							<p class="advantages__item-subheading">На страховому ринку України</p>
+						</div>
+
+						<div class="advantages__item">
+							<p class="advantages__item-number">02</p>
+							<p class="advantages__item-heading">
+								Продумані
+								<br />
+								страхові продукти,
+								<br />
+								які відповідають
+							</p>
+							<p class="advantages__item-subheading">Запитам ринку та клієнтів</p>
+						</div>
+
+						<div class="advantages__item">
+							<p class="advantages__item-number">03</p>
+							<p class="advantages__item-heading">
+								Широкий
+								<br />
+								спектр
+								<br />
+								визначення
+							</p>
+							<p class="advantages__item-subheading">Страхових ризиків</p>
+						</div>
+
+						<div class="advantages__item">
+							<p class="advantages__item-number">04</p>
+							<p class="advantages__item-heading">
+								Входить до ТОП-30,
+								<br />
+								з понад 400 страхових
+								<br />
+								компаній
+							</p>
+							<p class="advantages__item-subheading">В Україні</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- eof -->
+
+			<!-- Цель -->
+			<section class="target" data-aos="zoom-out">
+				<div class="container target__container">
+					<div class="target__title-box">
+						<h3>Стратегія розвитку</h3>
+						<h2>
+							Головна мета ПрАТ
+							<br />
+							Промислово страховий
+							<br />
+							Альянс
+						</h2>
+					</div>
+
+					<div class="target__heading-box">
+						<p class="target__heading">Мета компанії:</p>
+
+						<p class="target__subheading">
+							Забезпечення
+							<br />
+							збалансованого розвитку,
+							<br />
+							збільшення конкурентних
+							<br />
+							переваг, покращення
+							<br />
+							фінансових результатів
+							<br />
+							компанії
+						</p>
+					</div>
+
+					<div class="target__text-box">
+						<p class="target__text">
+							Для досягнення цієї мети та виконання поставлених завдань,
+							<span>
+								спеціалістами бізнес-консалтингу було розроблено спеціальну стратегію
+							</span>
+						</p>
+
+						<p class="target__text">
+							Яка включає в себе бізнес-планування реалізації проектів розвитку ПрАТ
+							Промислово страховий Альянс”
+						</p>
+
+						<a href="#" class="target__button button">
+							<span>Стратегія розвитку</span>
+
+							<svg viewBox="0 0 205 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M120.47 72.4702C120.73 72.2105 120.73 71.7895 120.47 71.5298L116.238 67.2978C115.979 67.0381 115.557 67.0381 115.298 67.2978C115.038 67.5574 115.038 67.9785 115.298 68.2382L119.06 72L115.298 75.7618C115.038 76.0215 115.038 76.4426 115.298 76.7023C115.557 76.962 115.978 76.962 116.238 76.7023L120.47 72.4702ZM-5.81361e-08 72.665L120 72.665L120 71.335L5.81361e-08 71.335L-5.81361e-08 72.665Z"
+									fill="#1A1D22"
+								/>
+								<circle opacity="0.33" cx="133.5" cy="71.5" r="71" stroke="#BCC6C0" />
+							</svg>
+
+							<svg
+								class="_hidden"
+								width="131"
+								height="66"
+								viewBox="0 0 131 66"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M99.4702 33.4702C99.7299 33.2105 99.7299 32.7895 99.4702 32.5298L95.2382 28.2977C94.9785 28.038 94.5574 28.038 94.2977 28.2977C94.038 28.5574 94.038 28.9785 94.2977 29.2382L98.0595 33L94.2977 36.7618C94.038 37.0215 94.038 37.4426 94.2977 37.7023C94.5574 37.962 94.9785 37.962 95.2382 37.7023L99.4702 33.4702ZM-5.81361e-08 33.665L99 33.665L99 32.335L5.81361e-08 32.335L-5.81361e-08 33.665Z"
+									fill="#1A1D22"
+								/>
+								<circle opacity="0.1" cx="98" cy="33" r="32.5" stroke="#1A1D22" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- eof -->
+
+			<!-- Блог -->
+			<section class="blog" data-aos="zoom-out">
+				<div class="container blog__top-line">
+					<div class="blog__title-box">
+						<p class="blog__title">Останні новини</p>
+
+						<p class="blog__subtitle">
+							Будьте в курсі всіх
+							<br />
+							останніх подій і досягнень
+						</p>
+					</div>
+
+					<div class="blog__slider-nav">
+						<div class="blog__counter">
+							<span class="blog__counter-current"></span>
+
+							<svg
+								class="blog__counter-separator"
+								width="83"
+								height="84"
+								viewBox="0 0 83 84"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<line
+									opacity="0.33"
+									x1="0.646447"
+									y1="82.6479"
+									x2="82.6464"
+									y2="0.647911"
+									stroke="#BCC6C0"
+								/>
+							</svg>
+
+							<span class="blog__counter-all"></span>
+						</div>
+
+						<div class="blog__slider-arrows">
+							<button class="blog__slider-arrow blog__slider-prev">
+								<svg
+									width="81"
+									height="10"
+									viewBox="0 0 81 10"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M0.529778 4.52977C0.270073 4.78947 0.270073 5.21053 0.529778 5.47023L4.76181 9.70226C5.02151 9.96196 5.44256 9.96196 5.70226 9.70226C5.96196 9.44256 5.96196 9.02151 5.70226 8.76181L1.94045 5L5.70226 1.23819C5.96196 0.978493 5.96196 0.557438 5.70226 0.29774C5.44256 0.0380411 5.02151 0.0380411 4.76181 0.29774L0.529778 4.52977ZM81 4.335L1 4.335V5.665L81 5.665V4.335Z"
+										fill="#BCC6C0"
+									/>
+								</svg>
+							</button>
+
+							<button class="blog__slider-arrow blog__slider-next">
+								<svg
+									width="81"
+									height="10"
+									viewBox="0 0 81 10"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M80.4702 5.47023C80.7299 5.21053 80.7299 4.78948 80.4702 4.52978L76.2382 0.297747C75.9785 0.0380478 75.5574 0.0380477 75.2977 0.297747C75.038 0.557445 75.038 0.9785 75.2977 1.2382L79.0595 5.00001L75.2977 8.76181C75.038 9.02151 75.038 9.44257 75.2977 9.70227C75.5574 9.96197 75.9785 9.96197 76.2382 9.70227L80.4702 5.47023ZM-5.81362e-08 5.665L80 5.66501L80 4.33501L5.81362e-08 4.335L-5.81362e-08 5.665Z"
+										fill="#BCC6C0"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="blog__slider">
+					<article class="article">
+						<div class="article__image-wrapper">
+							<div
+								class="article__image"
+								style="background-image: url('img/blog/preview-1.jpg')"
+							>
+								<span class="article__date">15.10.21</span>
+							</div>
+						</div>
+
+						<a class="article__title">
+							Сведения о принятии решения о предоставлении согласия ...
+						</a>
+
+						<a href="#" class="article__button button">
+							<span>Читати далі</span>
+
+							<svg
+								width="153"
+								height="66"
+								viewBox="0 0 153 66"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M120.47 33.4702C120.73 33.2105 120.73 32.7895 120.47 32.5298L116.238 28.2978C115.979 28.0381 115.557 28.0381 115.298 28.2978C115.038 28.5574 115.038 28.9785 115.298 29.2382L119.06 33L115.298 36.7618C115.038 37.0215 115.038 37.4426 115.298 37.7023C115.557 37.962 115.978 37.962 116.238 37.7023L120.47 33.4702ZM-5.81362e-08 33.665L120 33.665L120 32.335L5.81362e-08 32.335L-5.81362e-08 33.665Z"
+									fill="#1A1D22"
+								/>
+								<circle opacity="0.33" cx="120" cy="33" r="32.5" stroke="#BCC6C0" />
+							</svg>
+						</a>
+					</article>
+
+					<article class="article">
+						<div
+							class="article__image"
+							style="background-image: url('img/blog/preview-2.jpg')"
+						>
+							<span class="article__date">15.10.21</span>
+						</div>
+
+						<a class="article__title">
+							Сведения об изменении состава должностных лиц эмитента ...
+						</a>
+
+						<a href="#" class="article__button button">
+							<span>Читати далі</span>
+
+							<svg
+								width="153"
+								height="66"
+								viewBox="0 0 153 66"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M120.47 33.4702C120.73 33.2105 120.73 32.7895 120.47 32.5298L116.238 28.2978C115.979 28.0381 115.557 28.0381 115.298 28.2978C115.038 28.5574 115.038 28.9785 115.298 29.2382L119.06 33L115.298 36.7618C115.038 37.0215 115.038 37.4426 115.298 37.7023C115.557 37.962 115.978 37.962 116.238 37.7023L120.47 33.4702ZM-5.81362e-08 33.665L120 33.665L120 32.335L5.81362e-08 32.335L-5.81362e-08 33.665Z"
+									fill="#1A1D22"
+								/>
+								<circle opacity="0.33" cx="120" cy="33" r="32.5" stroke="#BCC6C0" />
+							</svg>
+						</a>
+					</article>
+
+					<article class="article">
+						<div
+							class="article__image"
+							style="background-image: url('img/blog/preview-3.jpg')"
+						>
+							<span class="article__date">15.10.21</span>
+						</div>
+
+						<a class="article__title">
+							Сведения о смене акционеров, которым принадлежат ...
+						</a>
+
+						<a href="#" class="article__button button">
+							<span>Читати далі</span>
+
+							<svg
+								width="153"
+								height="66"
+								viewBox="0 0 153 66"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M120.47 33.4702C120.73 33.2105 120.73 32.7895 120.47 32.5298L116.238 28.2978C115.979 28.0381 115.557 28.0381 115.298 28.2978C115.038 28.5574 115.038 28.9785 115.298 29.2382L119.06 33L115.298 36.7618C115.038 37.0215 115.038 37.4426 115.298 37.7023C115.557 37.962 115.978 37.962 116.238 37.7023L120.47 33.4702ZM-5.81362e-08 33.665L120 33.665L120 32.335L5.81362e-08 32.335L-5.81362e-08 33.665Z"
+									fill="#1A1D22"
+								/>
+								<circle opacity="0.33" cx="120" cy="33" r="32.5" stroke="#BCC6C0" />
+							</svg>
+						</a>
+					</article>
+
+					<article class="article">
+						<div
+							class="article__image"
+							style="background-image: url('img/blog/preview-4.jpg')"
+						>
+							<span class="article__date">15.10.21</span>
+						</div>
+
+						<a class="article__title">
+							Сведения о смене акционеров, которым принадлежат ...
+						</a>
+
+						<a href="#" class="article__button button">
+							<span>Читати далі</span>
+
+							<svg
+								width="153"
+								height="66"
+								viewBox="0 0 153 66"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M120.47 33.4702C120.73 33.2105 120.73 32.7895 120.47 32.5298L116.238 28.2978C115.979 28.0381 115.557 28.0381 115.298 28.2978C115.038 28.5574 115.038 28.9785 115.298 29.2382L119.06 33L115.298 36.7618C115.038 37.0215 115.038 37.4426 115.298 37.7023C115.557 37.962 115.978 37.962 116.238 37.7023L120.47 33.4702ZM-5.81362e-08 33.665L120 33.665L120 32.335L5.81362e-08 32.335L-5.81362e-08 33.665Z"
+									fill="#1A1D22"
+								/>
+								<circle opacity="0.33" cx="120" cy="33" r="32.5" stroke="#BCC6C0" />
+							</svg>
+						</a>
+					</article>
+
+					<article class="article">
 						<div
 							class="article__image"
 							style="background-image: url('img/blog/preview-1.jpg')"
 						>
 							<span class="article__date">15.10.21</span>
 						</div>
-					</div>
 
-					<a class="article__title">
-						Сведения о принятии решения о предоставлении согласия ...
-					</a>
-
-					<a href="#" class="article__button button">
-						<span>Читати далі</span>
-
-						<svg
-							width="153"
-							height="66"
-							viewBox="0 0 153 66"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M120.47 33.4702C120.73 33.2105 120.73 32.7895 120.47 32.5298L116.238 28.2978C115.979 28.0381 115.557 28.0381 115.298 28.2978C115.038 28.5574 115.038 28.9785 115.298 29.2382L119.06 33L115.298 36.7618C115.038 37.0215 115.038 37.4426 115.298 37.7023C115.557 37.962 115.978 37.962 116.238 37.7023L120.47 33.4702ZM-5.81362e-08 33.665L120 33.665L120 32.335L5.81362e-08 32.335L-5.81362e-08 33.665Z"
-								fill="#1A1D22"
-							/>
-							<circle opacity="0.33" cx="120" cy="33" r="32.5" stroke="#BCC6C0" />
-						</svg>
-					</a>
-				</article>
-
-				<article class="article">
-					<div
-						class="article__image"
-						style="background-image: url('img/blog/preview-2.jpg')"
-					>
-						<span class="article__date">15.10.21</span>
-					</div>
-
-					<a class="article__title">
-						Сведения об изменении состава должностных лиц эмитента ...
-					</a>
-
-					<a href="#" class="article__button button">
-						<span>Читати далі</span>
-
-						<svg
-							width="153"
-							height="66"
-							viewBox="0 0 153 66"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M120.47 33.4702C120.73 33.2105 120.73 32.7895 120.47 32.5298L116.238 28.2978C115.979 28.0381 115.557 28.0381 115.298 28.2978C115.038 28.5574 115.038 28.9785 115.298 29.2382L119.06 33L115.298 36.7618C115.038 37.0215 115.038 37.4426 115.298 37.7023C115.557 37.962 115.978 37.962 116.238 37.7023L120.47 33.4702ZM-5.81362e-08 33.665L120 33.665L120 32.335L5.81362e-08 32.335L-5.81362e-08 33.665Z"
-								fill="#1A1D22"
-							/>
-							<circle opacity="0.33" cx="120" cy="33" r="32.5" stroke="#BCC6C0" />
-						</svg>
-					</a>
-				</article>
-
-				<article class="article">
-					<div
-						class="article__image"
-						style="background-image: url('img/blog/preview-3.jpg')"
-					>
-						<span class="article__date">15.10.21</span>
-					</div>
-
-					<a class="article__title">
-						Сведения о смене акционеров, которым принадлежат ...
-					</a>
-
-					<a href="#" class="article__button button">
-						<span>Читати далі</span>
-
-						<svg
-							width="153"
-							height="66"
-							viewBox="0 0 153 66"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M120.47 33.4702C120.73 33.2105 120.73 32.7895 120.47 32.5298L116.238 28.2978C115.979 28.0381 115.557 28.0381 115.298 28.2978C115.038 28.5574 115.038 28.9785 115.298 29.2382L119.06 33L115.298 36.7618C115.038 37.0215 115.038 37.4426 115.298 37.7023C115.557 37.962 115.978 37.962 116.238 37.7023L120.47 33.4702ZM-5.81362e-08 33.665L120 33.665L120 32.335L5.81362e-08 32.335L-5.81362e-08 33.665Z"
-								fill="#1A1D22"
-							/>
-							<circle opacity="0.33" cx="120" cy="33" r="32.5" stroke="#BCC6C0" />
-						</svg>
-					</a>
-				</article>
-
-				<article class="article">
-					<div
-						class="article__image"
-						style="background-image: url('img/blog/preview-4.jpg')"
-					>
-						<span class="article__date">15.10.21</span>
-					</div>
-
-					<a class="article__title">
-						Сведения о смене акционеров, которым принадлежат ...
-					</a>
-
-					<a href="#" class="article__button button">
-						<span>Читати далі</span>
-
-						<svg
-							width="153"
-							height="66"
-							viewBox="0 0 153 66"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M120.47 33.4702C120.73 33.2105 120.73 32.7895 120.47 32.5298L116.238 28.2978C115.979 28.0381 115.557 28.0381 115.298 28.2978C115.038 28.5574 115.038 28.9785 115.298 29.2382L119.06 33L115.298 36.7618C115.038 37.0215 115.038 37.4426 115.298 37.7023C115.557 37.962 115.978 37.962 116.238 37.7023L120.47 33.4702ZM-5.81362e-08 33.665L120 33.665L120 32.335L5.81362e-08 32.335L-5.81362e-08 33.665Z"
-								fill="#1A1D22"
-							/>
-							<circle opacity="0.33" cx="120" cy="33" r="32.5" stroke="#BCC6C0" />
-						</svg>
-					</a>
-				</article>
-
-				<article class="article">
-					<div
-						class="article__image"
-						style="background-image: url('img/blog/preview-1.jpg')"
-					>
-						<span class="article__date">15.10.21</span>
-					</div>
-
-					<a class="article__title">
-						Сведения о принятии решения о предоставлении согласия ...
-					</a>
-
-					<a href="#" class="article__button button">
-						<span>Читати далі</span>
-
-						<svg
-							width="153"
-							height="66"
-							viewBox="0 0 153 66"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M120.47 33.4702C120.73 33.2105 120.73 32.7895 120.47 32.5298L116.238 28.2978C115.979 28.0381 115.557 28.0381 115.298 28.2978C115.038 28.5574 115.038 28.9785 115.298 29.2382L119.06 33L115.298 36.7618C115.038 37.0215 115.038 37.4426 115.298 37.7023C115.557 37.962 115.978 37.962 116.238 37.7023L120.47 33.4702ZM-5.81362e-08 33.665L120 33.665L120 32.335L5.81362e-08 32.335L-5.81362e-08 33.665Z"
-								fill="#1A1D22"
-							/>
-							<circle opacity="0.33" cx="120" cy="33" r="32.5" stroke="#BCC6C0" />
-						</svg>
-					</a>
-				</article>
-
-				<article class="article">
-					<div
-						class="article__image"
-						style="background-image: url('img/blog/preview-2.jpg')"
-					>
-						<span class="article__date">15.10.21</span>
-					</div>
-
-					<a class="article__title">
-						Сведения об изменении состава должностных лиц эмитента ...
-					</a>
-
-					<a href="#" class="article__button button">
-						<span>Читати далі</span>
-
-						<svg
-							width="153"
-							height="66"
-							viewBox="0 0 153 66"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M120.47 33.4702C120.73 33.2105 120.73 32.7895 120.47 32.5298L116.238 28.2978C115.979 28.0381 115.557 28.0381 115.298 28.2978C115.038 28.5574 115.038 28.9785 115.298 29.2382L119.06 33L115.298 36.7618C115.038 37.0215 115.038 37.4426 115.298 37.7023C115.557 37.962 115.978 37.962 116.238 37.7023L120.47 33.4702ZM-5.81362e-08 33.665L120 33.665L120 32.335L5.81362e-08 32.335L-5.81362e-08 33.665Z"
-								fill="#1A1D22"
-							/>
-							<circle opacity="0.33" cx="120" cy="33" r="32.5" stroke="#BCC6C0" />
-						</svg>
-					</a>
-				</article>
-			</div>
-		</section>
-		<!-- eof -->
-
-		<!-- О нас -->
-		<section class="about">
-			<div class="container about__container">
-				<p class="about__heading">
-					Страхова
-					<br />
-					компанія
-					<br />
-					ПрАТ
-				</p>
-
-				<div class="about__title-box">
-					<p class="about__title">
-						Промислово
-						<br />
-						страховий Альянс
-					</p>
-
-					<p class="about__subtitle">Страхова компанія з великою історією!</p>
-				</div>
-
-				<div class="about__text-box">
-					<p class="about__text">
-						Багатим досвідом та великою кількістю задоволених клієнтів у секторах
-						обслуговування фізичних і юридичних осіб
-					</p>
-
-					<a href="#" class="about__button button">
-						<span>Про компанію</span>
-
-						<svg
-							width="205"
-							height="143"
-							viewBox="0 0 205 143"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M120.47 72.4702C120.73 72.2105 120.73 71.7895 120.47 71.5298L116.238 67.2978C115.979 67.0381 115.557 67.0381 115.298 67.2978C115.038 67.5574 115.038 67.9785 115.298 68.2382L119.06 72L115.298 75.7618C115.038 76.0215 115.038 76.4426 115.298 76.7023C115.557 76.962 115.978 76.962 116.238 76.7023L120.47 72.4702ZM-5.81361e-08 72.665L120 72.665L120 71.335L5.81361e-08 71.335L-5.81361e-08 72.665Z"
-								fill="#1A1D22"
-							/>
-							<circle opacity="0.33" cx="133.5" cy="71.5" r="71" stroke="#BCC6C0" />
-						</svg>
-
-						<svg
-							class="_hidden"
-							width="131"
-							height="66"
-							viewBox="0 0 131 66"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M99.4702 33.4702C99.7299 33.2105 99.7299 32.7895 99.4702 32.5298L95.2382 28.2977C94.9785 28.038 94.5574 28.038 94.2977 28.2977C94.038 28.5574 94.038 28.9785 94.2977 29.2382L98.0595 33L94.2977 36.7618C94.038 37.0215 94.038 37.4426 94.2977 37.7023C94.5574 37.962 94.9785 37.962 95.2382 37.7023L99.4702 33.4702ZM-5.81361e-08 33.665L99 33.665L99 32.335L5.81361e-08 32.335L-5.81361e-08 33.665Z"
-								fill="#1A1D22"
-							/>
-							<circle opacity="0.1" cx="98" cy="33" r="32.5" stroke="#1A1D22" />
-						</svg>
-					</a>
-				</div>
-			</div>
-		</section>
-		<!-- eof -->
-
-		<!-- Подвал -->
-		<footer class="footer">
-			<div class="container footer__container">
-				<div class="footer__wrapper">
-					<div class="footer__logo">
-						<a href="#" class="footer__logo-icon">
-							<img src="img/logo.svg" alt="Логотип" />
+						<a class="article__title">
+							Сведения о принятии решения о предоставлении согласия ...
 						</a>
 
-						<p class="footer__logo-title">Страхова компанія ПрАТ</p>
-						<p class="footer__logo-text">
+						<a href="#" class="article__button button">
+							<span>Читати далі</span>
+
+							<svg
+								width="153"
+								height="66"
+								viewBox="0 0 153 66"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M120.47 33.4702C120.73 33.2105 120.73 32.7895 120.47 32.5298L116.238 28.2978C115.979 28.0381 115.557 28.0381 115.298 28.2978C115.038 28.5574 115.038 28.9785 115.298 29.2382L119.06 33L115.298 36.7618C115.038 37.0215 115.038 37.4426 115.298 37.7023C115.557 37.962 115.978 37.962 116.238 37.7023L120.47 33.4702ZM-5.81362e-08 33.665L120 33.665L120 32.335L5.81362e-08 32.335L-5.81362e-08 33.665Z"
+									fill="#1A1D22"
+								/>
+								<circle opacity="0.33" cx="120" cy="33" r="32.5" stroke="#BCC6C0" />
+							</svg>
+						</a>
+					</article>
+
+					<article class="article">
+						<div
+							class="article__image"
+							style="background-image: url('img/blog/preview-2.jpg')"
+						>
+							<span class="article__date">15.10.21</span>
+						</div>
+
+						<a class="article__title">
+							Сведения об изменении состава должностных лиц эмитента ...
+						</a>
+
+						<a href="#" class="article__button button">
+							<span>Читати далі</span>
+
+							<svg
+								width="153"
+								height="66"
+								viewBox="0 0 153 66"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M120.47 33.4702C120.73 33.2105 120.73 32.7895 120.47 32.5298L116.238 28.2978C115.979 28.0381 115.557 28.0381 115.298 28.2978C115.038 28.5574 115.038 28.9785 115.298 29.2382L119.06 33L115.298 36.7618C115.038 37.0215 115.038 37.4426 115.298 37.7023C115.557 37.962 115.978 37.962 116.238 37.7023L120.47 33.4702ZM-5.81362e-08 33.665L120 33.665L120 32.335L5.81362e-08 32.335L-5.81362e-08 33.665Z"
+									fill="#1A1D22"
+								/>
+								<circle opacity="0.33" cx="120" cy="33" r="32.5" stroke="#BCC6C0" />
+							</svg>
+						</a>
+					</article>
+				</div>
+			</section>
+			<!-- eof -->
+
+			<!-- О нас -->
+			<section class="about" data-aos="zoom-out">
+				<div class="container about__container">
+					<p class="about__heading">
+						Страхова
+						<br />
+						компанія
+						<br />
+						ПрАТ
+					</p>
+
+					<div class="about__title-box">
+						<p class="about__title">
 							Промислово
 							<br />
 							страховий Альянс
 						</p>
+
+						<p class="about__subtitle">Страхова компанія з великою історією!</p>
 					</div>
 
-					<div class="footer__contacts">
-						<a href="tel:380442210551" class="footer__contacts-tel">38 044 221-05-51</a>
+					<div class="about__text-box">
+						<p class="about__text">
+							Багатим досвідом та великою кількістю задоволених клієнтів у секторах
+							обслуговування фізичних і юридичних осіб
+						</p>
 
-						<a href="mailto:psa.inscom@gmail.com" class="footer__contacts-email">
-							psa.inscom@gmail.com
+						<a href="#" class="about__button button">
+							<span>Про компанію</span>
+
+							<svg
+								width="205"
+								height="143"
+								viewBox="0 0 205 143"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M120.47 72.4702C120.73 72.2105 120.73 71.7895 120.47 71.5298L116.238 67.2978C115.979 67.0381 115.557 67.0381 115.298 67.2978C115.038 67.5574 115.038 67.9785 115.298 68.2382L119.06 72L115.298 75.7618C115.038 76.0215 115.038 76.4426 115.298 76.7023C115.557 76.962 115.978 76.962 116.238 76.7023L120.47 72.4702ZM-5.81361e-08 72.665L120 72.665L120 71.335L5.81361e-08 71.335L-5.81361e-08 72.665Z"
+									fill="#1A1D22"
+								/>
+								<circle opacity="0.33" cx="133.5" cy="71.5" r="71" stroke="#BCC6C0" />
+							</svg>
+
+							<svg
+								class="_hidden"
+								width="131"
+								height="66"
+								viewBox="0 0 131 66"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M99.4702 33.4702C99.7299 33.2105 99.7299 32.7895 99.4702 32.5298L95.2382 28.2977C94.9785 28.038 94.5574 28.038 94.2977 28.2977C94.038 28.5574 94.038 28.9785 94.2977 29.2382L98.0595 33L94.2977 36.7618C94.038 37.0215 94.038 37.4426 94.2977 37.7023C94.5574 37.962 94.9785 37.962 95.2382 37.7023L99.4702 33.4702ZM-5.81361e-08 33.665L99 33.665L99 32.335L5.81361e-08 32.335L-5.81361e-08 33.665Z"
+									fill="#1A1D22"
+								/>
+								<circle opacity="0.1" cx="98" cy="33" r="32.5" stroke="#1A1D22" />
+							</svg>
 						</a>
-
-						<address class="footer__contacts-address">
-							02000, город Киев,
-							<br />
-							ул. Евгения Сверстюка
-							<br />
-							дом 19, офис 509
-						</address>
 					</div>
-
-					<p class="footer__copyrights">
-						<span>indinsall © 2016</span>
-						<span>Все права защищены</span>
-					</p>
 				</div>
+			</section>
+			<!-- eof -->
 
-				<nav class="footer__menu">
-					<div class="footer__menu-col _max-width">
-						<p class="footer__menu-title">Для фізичних осіб:</p>
-
-						<div class="footer__menu-wrapper">
-							<p class="footer__menu-heading">Добровільне страхування:</p>
-
-							<a href="#" class="footer__menu-item">Наземних транспортних засобів</a>
-							<a href="#" class="footer__menu-item">
-								Майна від огневих ризиків та ризиків стихійних явищ
+			<!-- Подвал -->
+			<footer class="footer" data-aos="zoom-out">
+				<div class="container footer__container">
+					<div class="footer__wrapper">
+						<div class="footer__logo">
+							<a href="#" class="footer__logo-icon">
+								<img src="img/logo.svg" alt="Логотип" />
 							</a>
-							<a href="#" class="footer__menu-item">
-								Відповідальності перед третіми особами
-							</a>
-							<a href="#" class="footer__menu-item">Від нещасних випадків</a>
-							<a href="#" class="footer__menu-item">Здоров’я на випадок хвороби</a>
+
+							<p class="footer__logo-title">Страхова компанія ПрАТ</p>
+							<p class="footer__logo-text">
+								Промислово
+								<br />
+								страховий Альянс
+							</p>
 						</div>
 
-						<div class="footer__menu-wrapper">
-							<p class="footer__menu-heading">Обов’язкове страхування:</p>
+						<div class="footer__contacts">
+							<a href="tel:380442210551" class="footer__contacts-tel">38 044 221-05-51</a>
 
-							<a href="#" class="footer__menu-item">Під час поїздок за кордон;</a>
-							<a href="#" class="footer__menu-item">«Зелена карта»;</a>
-							<a href="#" class="footer__menu-item">
-								Цивільно-правової відповідальності власників наземних транспортних засобів
+							<a href="mailto:psa.inscom@gmail.com" class="footer__contacts-email">
+								psa.inscom@gmail.com
 							</a>
+
+							<address class="footer__contacts-address">
+								02000, город Киев,
+								<br />
+								ул. Евгения Сверстюка
+								<br />
+								дом 19, офис 509
+							</address>
 						</div>
+
+						<p class="footer__copyrights">
+							<span>indinsall © 2016</span>
+							<span>Все права защищены</span>
+						</p>
 					</div>
 
-					<div class="footer__menu-col">
-						<p class="footer__menu-title">Для юридичних осіб:</p>
+					<nav class="footer__menu">
+						<div class="footer__menu-col _max-width">
+							<p class="footer__menu-title">Для фізичних осіб:</p>
 
-						<div class="footer__menu-wrapper">
-							<p class="footer__menu-heading">Добровільне страхування:</p>
+							<div class="footer__menu-wrapper">
+								<p class="footer__menu-heading">Добровільне страхування:</p>
 
-							<a href="#" class="footer__menu-item">Медичне страхування персоналу;</a>
-							<a href="#" class="footer__menu-item">
-								Здоров’я персоналу на випадок хвороби;
-							</a>
-							<a href="#" class="footer__menu-item">
-								Майна від огневих ризиків та ризиків стихійних явищ;
-							</a>
-							<a href="#" class="footer__menu-item">Вантажів та багажу;</a>
-							<a href="#" class="footer__menu-item">Фінансових та комерційних ризиків;</a>
-							<a href="#" class="footer__menu-item">Кредитів;</a>
-							<a href="#" class="footer__menu-item">Наземних транспортних засобів;</a>
-							<a href="#" class="footer__menu-item">
-								Відповідальності перед третіми особами;
-							</a>
-							<a href="#" class="footer__menu-item">
-								Відповідальності власників підприємств за трудовим договором;
-							</a>
-							<a href="#" class="footer__menu-item">Персоналу від нещасних випадків</a>
+								<a href="#" class="footer__menu-item">Наземних транспортних засобів</a>
+								<a href="#" class="footer__menu-item">
+									Майна від огневих ризиків та ризиків стихійних явищ
+								</a>
+								<a href="#" class="footer__menu-item">
+									Відповідальності перед третіми особами
+								</a>
+								<a href="#" class="footer__menu-item">Від нещасних випадків</a>
+								<a href="#" class="footer__menu-item">Здоров’я на випадок хвороби</a>
+							</div>
+
+							<div class="footer__menu-wrapper">
+								<p class="footer__menu-heading">Обов’язкове страхування:</p>
+
+								<a href="#" class="footer__menu-item">Під час поїздок за кордон;</a>
+								<a href="#" class="footer__menu-item">«Зелена карта»;</a>
+								<a href="#" class="footer__menu-item">
+									Цивільно-правової відповідальності власників наземних транспортних
+									засобів
+								</a>
+							</div>
 						</div>
 
-						<div class="footer__menu-wrapper">
-							<p class="footer__menu-heading">Обов’язкове страхування:</p>
+						<div class="footer__menu-col">
+							<p class="footer__menu-title">Для юридичних осіб:</p>
 
-							<a href="#" class="footer__menu-item">
-								Від нещасних випадків на транспорті;
-							</a>
-							<a href="#" class="footer__menu-item">
-								Відповідальності суб’єктів перевезення небезпечних вантажів;
-							</a>
-							<a href="#" class="footer__menu-item">
-								Працівників пожежної охорони і членів пожежних дружин;
-							</a>
-							<a href="#" class="footer__menu-item">«Зелена картка»</a>
-							<a href="#" class="footer__menu-item">
-								Цивільно-правової відповідальності власників наземних транспортних засобів
-							</a>
+							<div class="footer__menu-wrapper">
+								<p class="footer__menu-heading">Добровільне страхування:</p>
+
+								<a href="#" class="footer__menu-item">Медичне страхування персоналу;</a>
+								<a href="#" class="footer__menu-item">
+									Здоров’я персоналу на випадок хвороби;
+								</a>
+								<a href="#" class="footer__menu-item">
+									Майна від огневих ризиків та ризиків стихійних явищ;
+								</a>
+								<a href="#" class="footer__menu-item">Вантажів та багажу;</a>
+								<a href="#" class="footer__menu-item">
+									Фінансових та комерційних ризиків;
+								</a>
+								<a href="#" class="footer__menu-item">Кредитів;</a>
+								<a href="#" class="footer__menu-item">Наземних транспортних засобів;</a>
+								<a href="#" class="footer__menu-item">
+									Відповідальності перед третіми особами;
+								</a>
+								<a href="#" class="footer__menu-item">
+									Відповідальності власників підприємств за трудовим договором;
+								</a>
+								<a href="#" class="footer__menu-item">Персоналу від нещасних випадків</a>
+							</div>
+
+							<div class="footer__menu-wrapper">
+								<p class="footer__menu-heading">Обов’язкове страхування:</p>
+
+								<a href="#" class="footer__menu-item">
+									Від нещасних випадків на транспорті;
+								</a>
+								<a href="#" class="footer__menu-item">
+									Відповідальності суб’єктів перевезення небезпечних вантажів;
+								</a>
+								<a href="#" class="footer__menu-item">
+									Працівників пожежної охорони і членів пожежних дружин;
+								</a>
+								<a href="#" class="footer__menu-item">«Зелена картка»</a>
+								<a href="#" class="footer__menu-item">
+									Цивільно-правової відповідальності власників наземних транспортних
+									засобів
+								</a>
+							</div>
 						</div>
-					</div>
-				</nav>
-			</div>
-		</footer>
-		<!-- eof -->
+					</nav>
+				</div>
+			</footer>
+			<!-- eof -->
+		</div>
+
+		<script src="libs/aos/aos.js"></script>
 	</body>
 </html>
