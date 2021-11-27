@@ -2169,6 +2169,16 @@ body.scroll_disabled {
   margin-left: 8px;
 }
 
+.missions img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px auto 0;
+  width: 50px;
+  height: auto;
+}
+
 .popup {
   min-width: 320px;
   max-width: 100%;

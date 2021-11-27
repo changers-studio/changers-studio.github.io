@@ -1,4 +1,20 @@
 $(function () {
+	// AOS
+	AOS.init({
+		once: true,
+		duration: 1000,
+		offset: 0,
+	})
+
+	$(window).on('resize load', function () {
+		AOS.refreshHard()
+	})
+
+	$(window).on('scroll load', function () {
+		AOS.refresh()
+	})
+	// eof
+
 	$('.magnific-popup').magnificPopup({
 		fixedContentPos: false,
 		callbacks: {
