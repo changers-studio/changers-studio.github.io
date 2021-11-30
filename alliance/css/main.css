@@ -3882,6 +3882,9 @@ h3 {
   .p-partners .partners__item {
     height: 180px;
   }
+  .p-contacts .heading-section {
+    min-height: 600px;
+  }
   .p-contacts .contacts-data__container::before, .p-contacts .about__container::before {
     width: -webkit-calc(100vw - 1360px - ((100vw - 1360px)/2));
     width: calc(100vw - 1360px - ((100vw - 1360px)/2));
