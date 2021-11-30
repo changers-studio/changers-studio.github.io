@@ -20,7 +20,7 @@ $(function () {
 		$('.main__slider').slick({
 			infinite: true,
 			touchMove: false,
-			speed: 800,
+			speed: 500,
 			fade: true,
 			autoplay: true,
 			autoplaySpeed: 8000,

@@ -1,0 +1,31 @@
+// font-weight helper:
+
+// 100 Thin;
+// 200 Extra Light or Ultra Light; 
+// 300 Light;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+
+
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('woff')
+
+
+@include font('TTHoves', normal, 400, '../fonts/TTHoves-Regular.woff')
+@include font('TTHoves', normal, 500, '../fonts/TTHoves-Medium.woff')
+@include font('TTHoves', normal, 600, '../fonts/TTHoves-DemiBold.woff')
+@include font('TTHoves', normal, 700, '../fonts/TTHoves-Bold.woff')
+
+
+
+
+
