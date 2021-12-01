@@ -2922,6 +2922,10 @@ h3 {
   bottom: 0;
 }
 
+.p-info .heading-section__wrapper._bottom-line-none::before {
+  display: none;
+}
+
 .p-info .heading-section__wrapper h2 {
   color: #fff;
 }
@@ -2983,6 +2987,30 @@ h3 {
           transform: translate(8px, 0);
 }
 
+.p-info .structure__item._flex-start {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.p-info .structure__item._flex-start .structure__item-icon {
+  margin-right: 6vw;
+}
+
+.p-info .structure__item._flex-start .structure__item-heading {
+  max-width: 1170px;
+  width: 100%;
+}
+
+.p-info .structure__item._flex-start:hover .structure__item-heading {
+  color: #1A1D22;
+}
+
 .p-info .structure__item-icon {
   width: 116px;
 }
@@ -2992,6 +3020,36 @@ h3 {
   font-size: 50px;
   font-weight: 400;
   line-height: 1.1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.p-info .structure__item-link {
+  color: #4CA970;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: underline;
+  margin-top: 20px;
+  max-width: 900px;
+}
+
+.p-info .structure__item-link:first-child {
+  margin-top: 40px;
+}
+
+.p-info .structure__item-link:hover {
+  text-decoration: none;
 }
 
 .p-info .structure__item-button svg {
@@ -3908,6 +3966,9 @@ h3 {
   }
   .p-info .structure__item-icon {
     width: 90px;
+  }
+  .p-info .structure__item-link {
+    font-size: 16px;
   }
   .p-career .career__container::before {
     width: -webkit-calc(100vw - 1360px - ((100vw - 1360px)/2));
@@ -5677,6 +5738,7 @@ h3 {
   }
   .p-info .structure__container {
     padding-right: 20px;
+    padding: 100px 20px 100px 0;
   }
   .p-info .structure__container::before {
     width: 20px;
@@ -5691,6 +5753,7 @@ h3 {
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding: 50px 0;
   }
   .p-info .structure__item:hover .structure__item-button svg path {
     -webkit-transform: none;
