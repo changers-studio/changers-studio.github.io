@@ -1,4 +1,48 @@
 $(function () {
+	// Форма обратной связи
+	$('form').on('submit', function () {
+		var th = $(this)
+		$.ajax({
+			type: 'POST',
+			url: 'mail.php',
+			data: th.serialize(),
+		}).done(function () {
+			$(th).find('.success-form').css('display', 'flex').hide().fadeIn()
+
+			setTimeout(function () {
+				$(th).find('.success-form').fadeOut()
+				th.trigger('reset')
+			}, 3000)
+		})
+		return false
+	})
+	// eof
+
+	// Маска для телефона
+	if ($('*').is('input[type="tel"]')) {
+		$('input[type=tel]').inputmask({
+			mask: '+38 (099) 999 99 99',
+			placeholder: '+38 (0__) ___-__-__',
+		})
+	}
+	// eof
+
+	// Magnific popup
+	$('.magnific-popup').magnificPopup({
+		removalDelay: 350,
+		mainClass: 'mfp-fade',
+		fixedContentPos: false,
+		callbacks: {
+			open: function () {
+				$('body').addClass('scroll_disabled')
+			},
+			close: function () {
+				$('body').removeClass('scroll_disabled')
+			},
+		},
+	})
+	// eof
+
 	// AOS
 	AOS.init({
 		once: true,

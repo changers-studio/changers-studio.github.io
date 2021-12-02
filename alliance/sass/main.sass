@@ -3,9 +3,10 @@
 
 
 ::placeholder
-	color: #CAC8C8
-	font-size: 16px
+	color: #BCC6C0
+	font-size: 20px
 	font-family: $default-font
+	font-weight: 500
 
 ::selection
 	background: $accent
@@ -33,6 +34,7 @@ body
 
 section
 	padding: 100px 0
+	z-index: 2
 
 
 
@@ -236,7 +238,7 @@ h3
 					background-color: $accent
 	&__content
 		display: none
-		margin-top: 20px
+		margin-top: 40px
 		&-inner
 			display: flex
 			flex-direction: column
@@ -245,7 +247,8 @@ h3
 			font-size: 33px
 			font-weight: 600
 			transition: .3s
-			margin-bottom: 25px
+			margin-bottom: 30px
+			line-height: 1.1
 			&:hover
 				color: $accent
 			&:last-child
@@ -430,7 +433,6 @@ h3
 			position: absolute
 			right: 95px
 			bottom: 0
-			transform: translate(0, 45%)
 			font-size: 130px
 			line-height: 0.8
 			font-weight: 600
@@ -979,6 +981,7 @@ h3
 		background-color: $accent
 		color: #fff
 		position: relative
+		z-index: 1
 		&::before
 			content: ''
 			width: 100%
@@ -989,7 +992,6 @@ h3
 			left: 0
 		&._black-bg
 			background-color: $black
-			z-index: -1
 			&::before
 				background-color: $black
 		&__container
@@ -1477,6 +1479,7 @@ h3
 				font-size: 66px
 				font-weight: 400
 				line-height: 1.1
+				transition: .3s
 			&-button
 				svg
 					width: auto
@@ -1778,6 +1781,7 @@ h3
 				display: flex
 				flex-direction: column
 				align-items: flex-start
+				transition: .3s
 			&-link
 				color: $accent
 				font-weight: 500
@@ -2107,7 +2111,7 @@ h3
 
 
 // О компании
-.p-about, .p-strategy
+.p-about
 	background-image: url('../img/main/about__bg.png')
 	background-repeat: no-repeat
 	.heading-section
@@ -2142,9 +2146,137 @@ h3
 // eof
 
 
+.p-strategy
+	background-image: url('../img/main/about__bg.png')
+	background-repeat: no-repeat
+	.heading-section
+		h2
+			color: #fff
+			margin-bottom: 30px
+		&__title
+			color: $accent
+			max-width: 100%
+
+
 // Страховые случаи
 .p-cases
 // eof
+
+
+
+// Форма обратной связи
+.popup
+	max-width: 800px
+	min-width: 375px
+	width: 100%
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	background-color: #F4F7F5
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 100px 20px
+	&__inner
+		text-align: center
+		width: 100%
+		max-width: 530px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	&__title
+		margin-bottom: 70px
+		font-size: 50px
+		font-weight: 600
+		line-height: 1.1
+	&__input
+		padding: 25px 0
+		border-bottom: 2px solid #BCC6C0
+		width: 100%
+		margin-bottom: 20px
+		background-color: transparent
+		font-size: 20px
+		font-weight: 500
+	&__button
+		margin-top: 45px
+		width: 330px
+		height: 100px
+		border-radius: 230px
+		background-color: $accent
+		font-weight: 600
+		display: flex
+		align-items: center
+		justify-content: center
+		font-size: 20px
+		color: #fff
+	.success-form
+		display: none
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		text-align: center
+		background-color: #F4F7F5
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		.popup__title
+			margin-bottom: 30px
+	&__text
+		font-weight: 500
+		color: $accent
+	&__success-icon
+		position: absolute
+		left: 50%
+		top: 0
+		transform: translate(-50%, -50%)
+	.mfp-close
+		font-size: 0
+		width: 24px
+		height: 24px
+		background-image: url('../img/icons/popup-close.svg')
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center
+		right: 40px
+		top: 40px
+		opacity: 1
+		z-index: 3
+
+// Эффект fade
+.mfp-fade
+  &.mfp-bg
+    opacity: 0
+    -webkit-transition: all 0.35s ease-out
+    -moz-transition: all 0.35s ease-out
+    transition: all 0.35s ease-out
+
+    &.mfp-ready
+      opacity: 0.8
+
+    &.mfp-removing
+      opacity: 0
+
+  &.mfp-wrap
+    .mfp-content
+      opacity: 0
+      -webkit-transition: all 0.35s ease-out
+      -moz-transition: all 0.35s ease-out
+      transition: all 0.35s ease-out
+
+    &.mfp-ready .mfp-content
+      opacity: 1
+
+    &.mfp-removing .mfp-content
+      opacity: 0
+// eof
+
+
+
+
 
 
 

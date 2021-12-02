@@ -26,6 +26,7 @@
 		<link rel="stylesheet" href="css/reset.css" />
 
 		<!-- libs css -->
+		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="libs/slick-carousel/slick.css" />
 		<link rel="stylesheet" href="libs/aos/aos.css" />
 
@@ -36,6 +37,8 @@
 		<script defer src="libs/jquery.min.js"></script>
 
 		<!-- libs js -->
+		<script defer src="libs/jquery.inputmask.min.js"></script>
+		<script defer src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 		<script defer src="libs/slick-carousel/slick.min.js"></script>
 
 		<!-- main js -->
@@ -43,6 +46,42 @@
 	</head>
 
 	<body class="isnohome p-sevrice _physical-bg">
+		<form class="popup mfp-hide">
+			<div class="success-form">
+				<img src="img/icons/popup__icon.svg" alt="Icon" class="popup__success-icon" />
+
+				<p class="popup__title">
+					Дякуємо,
+					<br />
+					ваші дані надіслані!
+				</p>
+
+				<p class="popup__text">З вами зв'яжуться найближчим часом!</p>
+			</div>
+
+			<div class="popup__inner">
+				<p class="popup__title">Зв'язатися з нами</p>
+
+				<input
+					type="text"
+					name="Iм'я"
+					class="popup__input"
+					placeholder="Ваше ім'я"
+					required
+				/>
+
+				<input
+					type="tel"
+					name="Телефон"
+					class="popup__input"
+					placeholder="Ваш номер телефону"
+					required
+				/>
+
+				<button type="submit" class="popup__button">Відправити</button>
+			</div>
+		</form>
+
 		<div class="body-wrapper">
 			<!-- Гамбургер меню -->
 			<div class="hamburger-menu">
@@ -112,10 +151,12 @@
 									Структура власності
 								</a>
 								<a href="info.html" class="hamburger-menu__content-item">
-									Інформація щодо зборів акціонерів
+									Відомості про вищий та
+									<br />
+									виконавчий орган управління
 								</a>
 								<a href="zvitnist_emitenta.html" class="hamburger-menu__content-item">
-									Звітність емитента
+									Звітність емітента
 								</a>
 								<a href="osoblyva.html" class="hamburger-menu__content-item">
 									Особлива інформація
@@ -399,7 +440,7 @@
 							То зв’яжіться з нами, зателефонував або заповніть форму
 						</p>
 
-						<a href="#" class="about__button button">
+						<a href=".popup" class="about__button button magnific-popup">
 							<span>Зв’язатися</span>
 
 							<svg
