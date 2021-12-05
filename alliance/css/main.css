@@ -244,6 +244,9 @@ h3 {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  visibility: hidden;
+  position: relative;
+  z-index: -10;
 }
 
 .header__link:hover {
@@ -3066,6 +3069,10 @@ h3 {
   height: auto;
 }
 
+.p-info .about::before {
+  height: 350px;
+}
+
 .p-career {
   background-image: url("../img/main/contacts__bg.png");
   background-repeat: no-repeat;
@@ -4903,6 +4910,7 @@ h3 {
   }
   .hamburger-menu__content-item {
     font-size: 20px;
+    margin-bottom: 20px;
   }
   .hamburger-menu__copyrights {
     left: 420px;
