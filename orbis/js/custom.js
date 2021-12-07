@@ -4,7 +4,7 @@ $(function () {
 		onmousemove = (e) => {
 			const x = innerWidth / 2 - e.x
 			const y = innerHeight / 2 - e.y
-			parallax.style.transform = `translate(${x / 40}px, ${y / 40}px)`
+			parallax.style.transform = `translate(${x / 50}px, ${y / 50}px)`
 		}
 	}
 })
@@ -27,6 +27,14 @@ function windowSize() {
 			onLeave: function (origin, destination, direction) {
 				if (origin.index == 4 && direction == 'up') {
 					fullpage_api.setAutoScrolling(true)
+				}
+
+				if (origin.index == 1 && direction == 'up') {
+					$('.button-up').fadeOut()
+				}
+
+				if (origin.index == 0 && direction == 'down') {
+					$('.button-up').fadeIn()
 				}
 			},
 		})
@@ -58,8 +66,14 @@ $('.header__hamburger').on('click', function () {
 })
 // eof
 
-// Json animation
+// Buttom to top
+$('.button-up').on('click', function () {
+	fullpage_api.moveTo(1)
+	$(this).fadeOut()
+})
+// eof
 
+//// Json animation
 // Home page
 lottie.loadAnimation({
 	container: document.getElementById('shadowAnimation-1'),
