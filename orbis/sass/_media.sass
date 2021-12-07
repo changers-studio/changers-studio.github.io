@@ -1,0 +1,449 @@
+@import vars
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px)
+
+	.button
+		width: 470px
+		height: 55px
+
+	
+	// Общие стили
+	.section
+		&-container
+			width: 1300px
+			height: 700px
+
+	.text
+		font-size: 20px
+	// eof
+
+	// Общие стили для внутренних страниц
+	.isnohome
+		.text-image
+			&__animation
+				min-height: 400px
+				&-inner
+					height: 700px
+	// eof
+
+
+	// Главная страница
+	.main
+		&__image
+			max-width: calc(100% + 150px)
+			max-height: calc(100% + 150px)
+			left: 42%
+	// eof
+
+	// Header
+	.header
+		&__menu
+			&-item
+				padding: 4px 20px
+				font-size: 16px
+				margin-right: 20px
+			&-dropdown
+				&.active
+					&::before
+						width: calc(100% + 20px)
+				&-body
+					width: calc(100% + 20px)
+					padding: 8px 5px
+				&-item
+					font-size: 13px
+	// eof
+
+
+	// Блок с изображениям и текстом
+	.text-image
+		&__container
+			&-content
+				width: calc(100% - 600px)
+		&__image
+			width: 450px
+			height: 450px
+	// eof
+
+
+	// Текст + изображение на внутр. страницах
+	.image-text
+		&__image
+			width: 500px
+			height: 500px
+	// eof
+
+
+	// Галерея
+	.gallery
+		&__container
+			gap: 40px
+		&__item
+			height: 320px
+	// eof
+
+
+@media only screen and (max-width : 1400px)
+
+	.button
+		width: 350px
+		height: 50px
+
+
+	// Общие стили
+	.section
+		&-container
+			width: 992px
+			height: 600px
+			padding: 30px 60px
+		&._has-partners
+			.section-container__wrapper
+				padding: 0 60px
+
+	.title
+		font-size: 24px
+	
+	.text
+		font-size: 16px
+
+	.heading
+		font-size: 26px
+	// eof
+
+
+	// Общие стили для внутренних страниц
+	.isnohome
+		.text-image
+			&__container
+				padding: 50px 0
+			&__animation
+				min-height: 300px
+				&-inner
+					height: 500px
+	// eof
+	
+
+	
+	// Главная страница
+	.main
+		&__image
+			max-width: calc(100% + 100px)
+			max-height: calc(100% + 100px)
+	// eof
+
+
+	// Блок с изображениям и текстом
+	.text-image
+		&__container
+			&-content
+				width: calc(100% - 400px)
+		&__image
+			width: 300px
+			height: 300px
+	// eof
+
+
+	// О нас на главной странице
+	.about
+		&__image, &__text
+			max-width: 600px
+		&__container
+			padding: 0 60px
+	// eof
+
+	// Партнеры
+	.partners
+		&__item
+			max-width: 22%
+			max-height: 50px
+	// eof
+	
+
+	// Текст + изображение на внутр. страницах
+	.image-text
+		&__image
+			width: 350px
+			height: 350px
+			padding: 10px
+	// eof
+
+
+	// Галерея
+	.gallery
+		.section-container
+			padding: 60px
+		&__container
+			gap: 30px
+		&__item
+			height: 250px
+			padding: 10px
+	// eof
+
+
+
+/*  Small Devices, Tablets */
+@media only screen and (max-width : 992px)
+
+	.button
+		width: 100%
+		height: 32px
+		font-size: 15px
+		margin-top: 15px
+
+	
+	// Общие стили 
+	.section
+		display: flex
+		align-items: center
+		justify-content: center
+		margin: 35px 0
+		height: auto
+		min-height: auto
+		&-container
+			width: 310px
+			height: auto
+			max-width: calc(100% - 35px)
+			max-height: none
+			transform: scale(1)
+			padding: 20px 10px
+			border-radius: 20px
+		&._has-partners
+			.section-container
+				&__wrapper
+					padding: 0 10px
+
+
+	.main-container
+		flex-direction: column
+		height: auto
+		&__inner
+			height: auto
+			width: 100%
+			max-width: 100%
+			text-align: center
+			&._image-center
+				align-items: center
+
+	.title
+		font-size: 20px
+		margin-bottom: 15px
+
+
+	.text
+		font-size: 15px
+
+	.heading
+		font-size: 20px
+		padding: 7px 0
+		width: 100%
+		position: static
+		transform: none
+		margin-bottom: 15px
+
+	._text-right
+		align-items: center
+		text-align: center
+	
+	._desktop-hidden
+		display: block
+	
+	._mob-hidden
+		// display: none
+	// eof
+
+
+
+	// Общие стили для внутренних страниц
+	.isnohome
+		.section
+			margin: 35px 0
+		.text-image
+			&__container
+				padding: 30px 0
+			&__animation
+				min-height: 250px
+				&-inner
+					height: 400px
+	// eof
+
+
+
+	// Главная страница
+	.main
+		&__image
+			position: static
+			transform: none
+			width: 200px
+			margin-bottom: 15px
+			&-inner
+				max-width: 100%
+				max-height: 100%
+		.text
+			padding-left: 0
+	// eof
+
+	// Header
+	.header
+		justify-content: center
+		margin-bottom: 15px
+		&__logo
+			width: 50px
+		&__hamburger
+			display: flex
+		&__menu
+			display: none
+			background: linear-gradient(144deg, #9bd3ff 1%, #edf2f5 100%)
+			box-shadow: -9px -8px 7px 0 rgba(255, 255, 255, 0.55)
+			margin-top: 15px
+			position: absolute
+			top: 100%
+			left: 0
+			width: 100%
+			border-radius: 20px
+			padding: 15px
+			&-item
+				display: block
+				width: 100%
+				text-align: left
+				margin:
+					right: 0
+					bottom: 15px
+			&-dropdown
+				&.active
+					border-radius: 20px
+					box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.15), -5px -4px 6px #fff
+					background-color: #edf2f5
+					&::before
+						display: none
+				&-body
+					width: 100%
+					position: relative
+					transform: none
+					left: auto
+					z-index: 3
+					box-shadow: none
+					padding: 15px 0
+				&-item
+					font-size: 15px
+					margin-bottom: 10px
+					text-align: left
+	// eof
+
+
+	// Блок с изображениям и текстом
+	.text-image
+		text-align: center
+		br
+			display: none
+		&__container
+			flex-direction: column
+			&._has-heading
+				height: auto
+			&-content
+				width: 100%
+			&-image
+				order: -1
+		&__image
+			width: 130px
+			height: 130px
+			margin-bottom: 10px
+			&::before
+				animation: none
+			&-inner
+				width: calc(100% - 10px)
+				height: calc(100% - 10px)
+	// eof
+
+
+	// О нас на главной странице
+	.about
+		&__container
+			padding: 0 10px
+		&__image
+			margin-bottom: 10px
+		&__text
+			margin-bottom: 30px
+	// eof
+
+	// Партнеры
+	.partners
+		border-radius: 0 0 20px 20px
+		flex-direction: column
+		padding: 20px 40px
+		&__item
+			max-width: 100%
+			margin-bottom: 30px
+	// eof
+
+	// Footer
+	.footer
+		margin-top: 80px
+		padding: 0 20px 20px
+		&__logo
+			margin-bottom: 30px
+			width: 260px
+		&__social
+			margin-bottom: 50px
+			&-item
+				margin-right: 20px
+				width: 38px
+				height: 38px
+		&__copyrights
+			font-size: 16px
+	// eof
+
+
+	// Текст + изображение на внутр. страницах
+	.image-text
+		.section-container
+			padding:
+				top: 30px
+				bottom: 30px
+		&__container
+			margin-bottom: 30px
+			flex-direction: column
+			flex-wrap: wrap
+			&._reverse-position
+			.image-text
+				&__container-inner
+					&:first-child
+						text-align: center
+			&-inner
+				width: 100%
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				&:first-child
+					order: 1
+				&:last-child
+					text-align: left
+		&__text
+			text-align: center
+		&__image
+			width: 100%
+			height: 280px
+			border-radius: 25px
+			margin-bottom: 20px
+			&:hover
+				transform: scale(1)
+			&-inner
+				border-radius: 20px
+	// eof
+
+	// Галерея
+	.gallery
+		.section-container
+			padding: 20px
+			overflow-x: auto 
+		&__container
+			width: 800px
+			gap: 20px
+		&__item
+			border-radius: 25px
+			max-width: 245px
+			height: 245px
+			&:hover
+				transform: scale(1)
+			&-image
+				border-radius: 20px
+	// eof

@@ -1,0 +1,573 @@
+@import vars
+@import fonts
+@import '../libs/hamburgers/hamburgers'
+
+
+::placeholder
+	color: #CAC8C8
+	font-size: 16px
+	font-family: $default-font
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	font-family: $default-font
+	color: $gray
+	background: linear-gradient(275deg, #edf2f5, #e0f1fb)
+
+
+.body-wrapper
+	overflow: hidden
+
+
+// Стандартные стили для кнопки
+.button
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	position: relative
+	text-decoration: none
+	line-height: 1
+	outline: none
+	overflow: hidden
+	cursor: pointer
+	max-width: 100%
+	width: 570px
+	height: 60px
+	font-size: 20px
+	font-weight: 800
+	border-radius: 30px
+	border: none
+	background-color: transparent
+	color: $gray
+	box-shadow: -6px -6px 6px 0 #fff, 6px 6px 6px 0 rgba(0, 0, 0, 0.15)
+	transition: .2s ease-in-out
+	margin-top: 50px
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		box-shadow: none
+		border-radius: 20px
+		transition: .3s
+		z-index: 1
+	&:focus, &:hover
+		text-decoration: none
+	span
+		position: relative
+		z-index: 2
+	&:hover
+		box-shadow: none
+		&::before
+			box-shadow: inset 6px 6px 6px 0 rgba(0, 0, 0, 0.15), inset -6px -6px 6px 0 #fff
+// eof
+
+
+
+// Общие стили
+.section
+	height: 100vh
+	&-container
+		width: 1580px
+		height: 900px
+		max-height: calc(100% - 170px)
+		border-radius: 70px
+		margin: auto
+		transform: scale(1.1)
+		transition: 1s ease-in-out
+		box-shadow: -17px -16px 28px 0 rgba(255, 255, 255, 0.66), 43px 33px 45px 0 rgba(97, 97, 97, 0.16)
+		background: linear-gradient(119deg, #9bd3ff 2%, #edf2f5 98%)
+		padding: 30px 85px
+		&.overflow_hidden
+			overflow: hidden
+	&.active
+		.section-container
+			transform: scale(1)
+	&._transform-none
+		.section-container
+			transform: none
+	&._has-partners
+		.section-container
+			padding: 
+				right: 0
+				left: 0
+				bottom: 0
+			&__wrapper
+				padding: 0 85px
+
+.main-container
+	display: flex
+	align-items: center
+	height: calc(100% - 75px)
+	&__inner
+		position: relative
+		max-width: 50%
+		width: 100%
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: flex-start
+
+.title
+	text-transform: uppercase
+	font-size: 30px
+	font-weight: 700
+	margin-bottom: 30px
+
+.text
+	font-size: 26px
+	line-height: 1.4
+
+.heading
+	padding: 13px 30px
+	border-radius: 40px
+	text-align: center
+	display: inline-block
+	box-shadow: inset -2px -3px 6px 0 rgba(255, 255, 255, 0.82), inset 3px 5px 6px 0 rgba(0, 0, 0, 0.16)
+	font-size: 34px
+	font-weight: 800
+	position: relative
+	left: 50%
+	transform: translate(-50%, 0)
+	width: 450px
+	max-width: 100%
+
+._text-right
+	text-align: right
+	align-items: flex-end
+
+._desktop-hidden
+	display: none
+// eof
+
+
+// Общие стили для внутренних страниц
+.isnohome
+	.section
+		display: flex
+		align-items: center
+		justify-content: center
+		height: auto
+		margin: 80px 0
+		&-container
+			transform: none
+			height: auto
+			max-height: none
+	.text-image
+		.heading
+			margin-top: 10px
+		&__container
+			padding: 80px 0
+			&-image
+				position: relative
+		&__animation
+			width: 100%
+			min-height: 500px
+			&-inner
+				position: absolute
+				bottom: 0
+				left: 50%
+				transform: translate(-50%, 0)
+				width: 100%
+				height: 800px
+// eof
+
+
+// Header
+.header
+	display: flex
+	align-items: center
+	justify-content: space-between
+	position: relative
+	z-index: 5
+	&__menu
+		display: flex
+		align-items: center
+		&-item
+			padding: 4px 25px
+			box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.15), -5px -4px 6px #fff
+			background-color: #edf2f5
+			border-radius: 20px
+			font-size: 20px
+			line-height: 1.2
+			font-weight: 700
+			margin-right: 30px
+			cursor: pointer
+			transition: .3s
+			position: relative
+			span
+				position: relative
+				z-index: 2
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				left: 50%
+				transform: translate(-50%, 0)
+				width: 100%
+				height: 100%
+				box-shadow: none
+				border-radius: 20px
+				transition: .3s
+				background-color: #edf2f5
+				z-index: 2
+			&:hover
+				box-shadow: none
+				background: transparent
+				&::before
+					box-shadow: inset 5px 4px 6px rgba(0, 0, 0, 0.15), inset -5px -4px 6px #fff
+			&:last-child
+				margin: 0
+		&-dropdown
+			transition-delay: .25s
+			&:hover
+				box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.15), -5px -4px 6px #fff
+				&::before
+					box-shadow: none
+					transition-duration: .1s
+			&::before
+				transition-delay: .25s
+			&.active
+				border-radius: 20px 20px 0 0
+				box-shadow: none
+				transition-delay: 0s
+				&::before
+					box-shadow: -5px -4px 6px #fff
+					width: calc(100% + 40px)
+					border-radius: 20px 20px 0 0
+					transition-delay: 0s
+			&-heading
+				position: relative
+				z-index: 2
+			&-body
+				display: none
+				position: absolute
+				top: 100%
+				left: 50%
+				transform: translate(-50%, 0)
+				width: calc(100% + 40px)
+				background-color: #edf2f5
+				border-radius: 0 0 20px 20px
+				box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.15), -5px -4px 6px #fff
+				padding: 8px
+			&-item
+				font-size: 15px
+				font-weight: 700
+				display: block
+				text-align: center
+				margin-bottom: 6px
+				transition: .3s
+				&:last-child
+					margin-bottom: 0
+				&:hover
+					transform: scale(1.1)
+	&__hamburger
+		display: none
+		position: absolute
+		right: 0
+		top: 50%
+		transform: translate(0, -50%)
+		padding: 10px
+		.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+			box-shadow: -1px -1px 1px 0 rgba(255, 255, 255, 0.51)
+// eof
+
+
+// Главная страница
+.main
+	&__image
+		position: absolute
+		left: 40%
+		top: 50%
+		transform: translate(-50%, -50%)
+		&-inner
+			max-width: none
+			max-height: none
+	.text
+		padding-left: 70px
+// eof
+
+
+
+// Блок с изображениям и текстом
+.text-image
+	&__container
+		display: flex
+		align-items: center
+		justify-content: space-between
+		height: 100%
+		&._has-heading
+			height: calc(100% - 77px)
+		&-content
+			width: calc(100% - 700px)
+			flex: 0 0 auto
+			display: flex
+			flex-direction: column
+		&-image
+			width: 100%
+			display: flex
+			align-items: center
+			justify-content: center
+	&__image
+		background: linear-gradient(273deg, #b1dbfc 98%, #c0e1fa 2%)
+		box-shadow: -8px -3px 9px 0 rgba(255, 255, 255, 0.77), 9px 9px 19px 0 rgba(68, 68, 68, 0.43)
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 520px
+		height: 520px
+		margin: auto
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			display: none
+			width: 100%
+			height: 100%
+			animation: pulse-black 2s infinite
+			border-radius: 50%
+		&-inner
+			width: calc(100% - 30px)
+			height: calc(100% - 30px)
+			background-size: cover
+			background-position: center
+			position: relative
+			svg
+				width: 1000px
+				height: 1000px
+		&-shadow
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			width: 300%
+			height: 300%
+			z-index: -1
+// eof
+
+
+// О нас на главной странице
+.about
+	height: auto
+	padding-top: 70px
+	.section-container
+		height: auto
+		max-height: none
+		display: block
+		padding: 
+			right: 0
+			left: 0
+			bottom: 0
+	.heading
+		position: static
+		transform: none
+	&__container
+		padding: 0 85px
+		display: flex
+		align-items: center
+		flex-direction: column
+	&__heading
+		&_top
+			margin-bottom: 90px
+		&_bottom
+			margin-bottom: 50px
+	&__image
+		margin-bottom: 30px
+		position: relative
+		&-inner
+			position: relative
+			z-index: 2
+		&-anime
+			position: absolute
+			left: 50%
+			top: 45%
+			transform: translate(-50%, -50%)
+			width: 100%
+			height: auto
+			z-index: 1
+	&__text
+		max-width: 810px
+		text-align: center
+		margin-bottom: 200px
+// eof
+
+
+// Партнеры
+.partners
+	border-radius: 0 0 70px 70px
+	box-shadow: 43px 33px 45px 0 rgba(97, 97, 97, 0.16)
+	background-color: #E8F0F6
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 100%
+	padding: 30px 85px
+	&__item
+		display: flex
+		&:last-child
+			margin: 0
+// eof
+
+
+// Footer
+.footer
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-top: 270px
+	padding: 0 20px 70px
+	&__logo
+		margin-bottom: 40px
+	&__social
+		margin-bottom: 70px
+		display: flex
+		align-items: center
+		justify-content: center
+		&-item
+			display: flex
+			margin-right: 25px
+			box-shadow: -6px -6px 6px 0 #fff, 6px 6px 6px 0 rgba(0, 0, 0, 0.15)
+			transition: .2s ease-in-out
+			padding: 3px
+			border-radius: 8px
+			position: relative
+			&-icon
+				position: relative
+				z-index: 2
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				box-shadow: none
+				border-radius: 8px
+				transition: .3s
+				z-index: 1
+			&:last-child
+				margin-right: 0
+			&:hover
+				box-shadow: none
+				&::before
+					box-shadow: inset 6px 6px 6px 0 rgba(0, 0, 0, 0.15), inset -6px -6px 6px 0 #fff
+	&__copyrights
+		text-align: center
+		font-weight: 700
+		font-size: 20px
+// eof
+
+
+
+
+
+// Текст + изображение на внутр. страницах
+.image-text
+	.section-container
+		padding:
+			top: 150px
+			bottom: 150px
+	&__container
+		display: flex
+		align-items: center
+		margin-bottom: 80px
+		&:last-child
+			margin-bottom: 0
+		&._reverse-position
+			.image-text
+				&__container-inner
+					&:first-child
+						text-align: right
+						align-items: flex-end
+						order: 1
+					&:last-child
+						align-items: flex-start
+		&-inner
+			width: 50%
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			&:last-child
+				align-items: flex-end
+	&__text
+		max-width: 500px
+	&__image
+		width: 640px
+		height: 640px
+		max-width: 100%
+		border-radius: 50px
+		box-shadow: -9px -7px 9px 0 rgba(255, 255, 255, 0.69), 8px 4px 6px 0 rgba(0, 0, 0, 0.16)
+		background-image: linear-gradient(91deg, #a9d8fd 0%, #bbdffb 100%)
+		padding: 15px
+		transform: scale(1)
+		transition: .7s ease-in-out
+		&:hover
+			transform: scale(1.2)
+		&-inner
+			width: 100%
+			height: 100%
+			background-size: cover
+			border-radius: 45px
+// eof
+
+
+// Галерея
+.gallery
+	.section-container
+		padding: 85px
+	&__container
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		gap: 60px
+	&__item
+		width: 100%
+		max-width: 30%
+		height: 370px
+		border-radius: 45px
+		padding: 15px
+		box-shadow: -9px -7px 9px 0 rgba(255, 255, 255, 0.69), 8px 4px 6px 0 rgba(0, 0, 0, 0.16)
+		background-image: linear-gradient(91deg, #a9d8fd 0%, #bbdffb 100%)
+		transform: scale(1)
+		transition: .7s ease-in-out
+		&:hover
+			transform: scale(1.2)
+		&-image
+			width: 100%
+			height: 100%
+			background-size: cover
+			background-position: center
+			border-radius: 40px
+// eof
+
+
+
+// Страница glazing
+.p-glazing
+// eof
+
+
+
+
+
+
+
+
+
+
+
+@import media
