@@ -2569,10 +2569,10 @@ body {
     font-size: 20px;
   }
   .button-up {
-    right: -webkit-calc(100vw - 1300px - ((100vw - 1300px)/2) + 40px);
-    right: calc(100vw - 1300px - ((100vw - 1300px)/2) + 40px);
-    top: -webkit-calc(100vh - 700px - ((100vh - 700px)/2) + 20px);
-    top: calc(100vh - 700px - ((100vh - 700px)/2) + 20px);
+    right: -webkit-calc(100vw - 1300px - ((100vw - 1300px)/2) + 20px);
+    right: calc(100vw - 1300px - ((100vw - 1300px)/2) + 20px);
+    top: -webkit-calc(100vh - 700px - ((100vh - 700px)/2));
+    top: calc(100vh - 700px - ((100vh - 700px)/2));
   }
   .isnohome .text-image__animation {
     min-height: 400px;
