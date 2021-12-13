@@ -98,6 +98,24 @@ h3
 	margin: 0 auto
 
 
+
+// Прелоадер
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: $accent
+	z-index: 20
+	.loader
+		height: 10px
+		position: absolute
+		background-color: #fff
+// eof
+
+
+
 // Шапка
 .header
 	padding: 40px 0
@@ -125,15 +143,27 @@ h3
 			align-items: center
 	&__link
 		transition: .3s
+		position: relative
 		&:hover
 			color: $accent
-		&._hidden
-			visibility: hidden
-			position: relative
-			z-index: -10
+			&::before
+				width: 0
+		&::before
+			content: ''
+			transition: .3s
+			width: 100%
+			height: 1px
+			background-color: rgba(255, 255, 255, 0.33)
+			position: absolute
+			left: 50%
+			top: 100%
+			transform: translate(-50%, 0)
+			margin-top: 10px
 	&__tel
 		font-weight: 700
 		margin-right: 160px
+		&::before
+			display: none
 	&__hamburger
 		width: 56px
 		height: 16px
@@ -730,16 +760,8 @@ h3
 		width: 485px
 		margin-right: 60px
 		cursor: pointer
-		// &.slick-current
-		// 	.article
-		// 		&__image
-		// 			background-size: 120% 120%
-		// 			transition: 2s
 		&:hover
 			.article
-				// &__image
-				// 	background-size: 120% 120%
-				// 	transition: 4s
 				&__button
 					opacity: 1
 		&:last-child
@@ -750,7 +772,6 @@ h3
 			background-position: center
 			padding: 40px 30px
 			margin-bottom: 35px
-			// transition: 1s
 			&-wrapper
 				overflow: hidden
 		&__date
@@ -760,7 +781,6 @@ h3
 			color: $accent
 		&__title
 			font-size: 30px
-			max-width: 85%
 			line-height: 1.3
 			margin-bottom: 30px
 			display: block
@@ -769,6 +789,24 @@ h3
 			transition: .4s ease-in-out
 			svg
 				width: 150px
+
+@supports (-webkit-appearance:none)
+	.blog
+		.article
+			&__image
+				background-size: 100% 100%
+				transition: 1s
+			&.slick-current
+				.article
+					&__image
+						background-size: 120% 120%
+						transition: 2s
+			&:hover
+				.article
+					&__image
+						background-size: 120% 120%
+						transition: 4s
+
 // eof
 
 
@@ -1598,6 +1636,7 @@ h3
 		&-data
 			padding: 0
 			z-index: 2
+			position: relative
 			&__container
 				background-color: #fff
 				position: relative
@@ -1636,6 +1675,7 @@ h3
 		&-map
 			padding: 0
 			height: 750px
+			z-index: 1
 			&__iframe
 				height: 1200px
 				width: 100%
@@ -1706,6 +1746,33 @@ h3
 				width: 250px
 			&-content
 				width: calc(100% - 400px)
+// eof
+
+
+// Страница услуги
+.p-services-main
+	background-image: url('../img/main/services__bg.jpg')
+	background-size: 100% auto
+	background-repeat: no-repeat
+	.services-main__row
+		padding: 100px 180px 100px 0
+		border-bottom: 1px solid rgba(188, 198, 192, 0.65)
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&:first-child
+			padding-top: 0
+		&:last-child
+			padding-bottom: 0
+			border: none
+		&-heading
+			font-size: 65px
+			font-weight: 400
+			line-height: 1.1
+		&-button
+			svg
+				width: auto
+				height: auto
 // eof
 
 

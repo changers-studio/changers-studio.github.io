@@ -36,6 +36,9 @@
 		<!-- jQeury -->
 		<script defer src="libs/jquery.min.js"></script>
 
+		<!-- preloader -->
+		<script defer src="js/preloader.js"></script>
+
 		<!-- libs js -->
 		<script defer src="libs/jquery.inputmask.min.js"></script>
 		<script defer src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
@@ -46,6 +49,10 @@
 	</head>
 
 	<body class="ishome">
+		<div class="preloader">
+			<div class="loader"></div>
+		</div>
+
 		<form class="popup mfp-hide">
 			<div class="success-form">
 				<img src="img/icons/popup__icon.svg" alt="Icon" class="popup__success-icon" />
@@ -170,9 +177,9 @@
 									href="mehanizmy-zahystu-prav-spozhyvachiv.html"
 									class="hamburger-menu__content-item"
 								>
-									Механизмы защиты
+									Механізм захисту
 									<br />
-									прав потребителей
+									прав споживачів
 								</a>
 							</div>
 						</nav>
@@ -235,14 +242,14 @@
 			<!-- Главный экран -->
 			<section class="main">
 				<div class="container">
-					<header class="header" data-aos="zoom-out">
+					<header class="header" data-aos="zoom-out" data-aos-delay="2000">
 						<div class="header__container">
 							<div class="header__wrapper _left">
 								<a href="index.html" class="header__logo">
 									<img src="img/logo.svg" alt="Логотип" />
 								</a>
 
-								<a href="#" class="header__link _hidden">Послуги</a>
+								<a href="services.html" class="header__link">Послуги</a>
 							</div>
 
 							<div class="header__wrapper _right">
@@ -265,12 +272,20 @@
 					</header>
 
 					<div class="main__container">
-						<div class="main__container-inner _left" data-aos="zoom-out">
+						<div
+							class="main__container-inner _left"
+							data-aos="zoom-out"
+							data-aos-delay="2000"
+						>
 							<h3 class="main__company-name">Страхова компанія ПрАТ</h3>
 							<h2 class="main__company-about">Промислово страховий Альянс</h2>
 						</div>
 
-						<div class="main__container-inner _right" data-aos="zoom-out">
+						<div
+							class="main__container-inner _right"
+							data-aos="zoom-out"
+							data-aos-delay="2000"
+						>
 							<h1 class="main__title">
 								Майже 30 років досвіду
 								<br />
@@ -319,7 +334,7 @@
 					</div>
 				</div>
 
-				<div class="main__slider-container" data-aos="zoom-out">
+				<div class="main__slider-container" data-aos="zoom-out" data-aos-delay="2000">
 					<div class="main__slider-arrows">
 						<button class="main__slider-arrow main__slider-prev">
 							<svg
@@ -417,7 +432,7 @@
 					</div>
 				</div>
 
-				<a href="#" class="main__scroll-down" data-aos="zoom-out">
+				<a href="#" class="main__scroll-down" data-aos="zoom-out" data-aos-delay="2000">
 					<img src="img/icons/scroll.svg" alt="Скроль вниз" />
 				</a>
 			</section>
@@ -824,15 +839,16 @@
 								class="article__image"
 								style="background-image: url('img/blog/preview-1.jpg')"
 							>
-								<span class="article__date">27.10.21</span>
+								<span class="article__date"></span>
 							</div>
 						</div>
 
-						<a class="article__title">
-							Відомості про зміну складу посадових осіб емітента ...
-						</a>
+						<p class="article__title">
+							ПрАТ промислово страховий альянс надає звіт емітента за за 3 квартал 2021
+							Року
+						</p>
 
-						<a href="#" class="article__button button">
+						<a href="zvit_emitenta_za_3kv_2021.html" class="article__button button">
 							<span>Читати далі</span>
 
 							<svg
@@ -856,15 +872,14 @@
 							class="article__image"
 							style="background-image: url('img/blog/preview-2.jpg')"
 						>
-							<span class="article__date">05.10.21</span>
+							<span class="article__date">27.10.21</span>
 						</div>
 
-						<a class="article__title">
-							Особлива інформація (інформація про іпотечні цінні папери, сертифікати фонду
-							операцій з нерухомістю) емітента ...
-						</a>
+						<p class="article__title">
+							Відомості про зміну складу посадових осіб емітента
+						</p>
 
-						<a href="#" class="article__button button">
+						<a href="posadovi_27102021.html" class="article__button button">
 							<span>Читати далі</span>
 
 							<svg
@@ -888,15 +903,15 @@
 							class="article__image"
 							style="background-image: url('img/blog/preview-3.jpg')"
 						>
-							<span class="article__date">29.04.21</span>
+							<span class="article__date">05.10.21</span>
 						</div>
 
-						<a class="article__title">
-							Відомості про прийняття рішення про надання згоди на вчинення значних
-							правочинів ...
-						</a>
+						<p class="article__title">
+							Особлива інформація (інформація про іпотечні цінні папери, сертифікати фонду
+							Операцій з нерухомістю) емітента
+						</p>
 
-						<a href="#" class="article__button button">
+						<a href="osobliva-informaciya-051021.html" class="article__button button">
 							<span>Читати далі</span>
 
 							<svg
@@ -923,12 +938,12 @@
 							<span class="article__date">29.04.21</span>
 						</div>
 
-						<a class="article__title">
-							Відомості про прийняття рішення про попереднє надання згоди на вчинення
-							значних правочинів ...
-						</a>
+						<p class="article__title">
+							Відомості про прийняття рішення про надання згоди на вчинення значних
+							правочинів
+						</p>
 
-						<a href="#" class="article__button button">
+						<a href="zgoda_29042021.html" class="article__button button">
 							<span>Читати далі</span>
 
 							<svg
@@ -955,11 +970,12 @@
 							<span class="article__date">29.04.21</span>
 						</div>
 
-						<a class="article__title">
-							Відомості про зміну складу посадових осіб емітента ...
-						</a>
+						<p class="article__title">
+							Відомості про прийняття рішення про попереднє надання згоди на вчинення
+							значних правочинів
+						</p>
 
-						<a href="#" class="article__button button">
+						<a href="poperednya_zgoda_29042021.html" class="article__button button">
 							<span>Читати далі</span>
 
 							<svg
@@ -983,14 +999,14 @@
 							class="article__image"
 							style="background-image: url('img/blog/preview-2.jpg')"
 						>
-							<span class="article__date">05.01.2021</span>
+							<span class="article__date">29.04.2021</span>
 						</div>
 
-						<a class="article__title">
-							Конкурс з відбору суб’єктів аудиторської діяльності ...
-						</a>
+						<p class="article__title">
+							Відомості про зміну складу посадових осіб емітента
+						</p>
 
-						<a href="#" class="article__button button">
+						<a href="posadovi_29042021.html" class="article__button button">
 							<span>Читати далі</span>
 
 							<svg
@@ -1101,7 +1117,7 @@
 							</a>
 
 							<address class="footer__contacts-address">
-								02002, місто Київ,
+								02000, місто Київ,
 								<br />
 								вул. Євгена Сверстюка,
 								<br />

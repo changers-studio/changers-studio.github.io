@@ -189,6 +189,8 @@
 		.heading-section
 			&__wrapper
 				right: calc(100vw - 1360px - ((100vw - 1360px)/2))
+				&::before
+					display: none
 			&__title
 				font-size: 120px
 		.about
@@ -203,6 +205,8 @@
 
 	// Страница услуги
 	.p-sevrice
+		.heading-section
+			min-height: 500px
 		&._actions
 			background-size: cover
 			.heading-section
@@ -406,6 +410,13 @@
 		.about__container
 			&::before
 				width: calc(100vw - 1360px - ((100vw - 1360px)/2))
+	// eof
+
+
+	// Страница услуги
+	.p-services-main
+		.services-main__row
+			padding: 100px 0
 	// eof
 
 
@@ -1161,6 +1172,12 @@
 					width: 500px
 	// eof
 
+	// Страница услуги
+	.p-services-main
+		background-size: cover
+		background-position: left
+	// eof
+
 
 
 
@@ -1309,6 +1326,8 @@
 			&__icon
 				width: 100px
 	// eof
+
+	
 
 
 /* Small Devices, Tablets */
@@ -2198,6 +2217,17 @@
 			top: 20px
 	// eof
 
+
+	// Страница услуги
+	.p-services-main
+		.services-main__row
+			padding: 50px 0
+			flex-direction: column
+			align-items: flex-start
+			&-heading
+				font-size: 40px
+				margin-bottom: 30px
+	// eof
 
 
 
