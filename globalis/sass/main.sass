@@ -9,6 +9,13 @@
 	font-family: $default-font
 
 
+input
+	color: #fff
+	font-size: 16px
+
+
+
+
 body
 	font-size: 18px
 	min-width: 375px
@@ -17,9 +24,15 @@ body
 	font-family: $default-font
 	color: $black
 	background-color: #F4F6F5
+	&.scroll_disabled
+		overflow-y: hidden
 
 .body-overflow-hidden
 	overflow: hidden
+
+
+
+
 
 
 // Заголовки
@@ -64,6 +77,223 @@ h2
 	max-width: 1760px
 	padding: 0 20px
 	margin: 0 auto
+// eof
+
+
+// Гамбургер меню
+.hamburger-menu
+	display: none
+	min-width: 375px
+	position: fixed
+	top: 0
+	left: 0
+	background-color: $black
+	background-image: url('../img/main/hamburge-menu__bg.jpg')
+	background-size: cover
+	background-position: right top
+	height: 100%
+	width: 100%
+	z-index: 10
+	&__close
+		position: absolute
+		top: 390px
+		right: 300px
+		background-color: #fff
+		border-radius: 50%
+		width: 230px
+		height: 230px
+		display: flex
+		align-items: center
+		justify-content: center
+		transition: .3s
+		&-icon > *
+			transition: .3s
+		&:hover
+			background-color: $accent
+			path
+				fill: #fff
+	&__top-line
+		display: flex
+		justify-content: space-between
+		padding-top: 40px
+		&-wrapper
+			display: flex
+			align-items: center
+	&__about
+		color: #fff
+		margin-left: 150px
+	&__links
+		margin-right: 100px
+		display: flex
+		align-items: center
+		&-item
+			color: $accent
+			display: flex
+			align-items: center
+			margin-right: 80px
+			transition: .3s
+			&:last-child
+				margin-right: 0
+			&:hover
+				color: #fff
+				.hamburger-menu__links-item-icon
+					path
+						fill: #fff
+			&-icon
+				margin-right: 15px
+				path
+					transition: .3s
+	&__container
+		display: flex
+		align-items: flex-start
+		flex-direction: column
+		padding:
+			top: 5vh
+			left: 216px
+	&__caption
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		margin-bottom: 40px
+		&-item
+			font-size: 55px
+			font-weight: 300
+			line-height: 1.1
+			position: relative
+			cursor: pointer
+			transition: .3s
+			margin-bottom: 20px
+			letter-spacing: -0.033em
+			text-transform: uppercase
+			color: rgba(255, 255, 255, 0.33)
+			&:last-child
+				margin-bottom: 0
+			&:hover
+				color: $accent
+			&.active
+				color: #fff
+				&:hover
+					color: #fff
+	&__content
+		display: none
+		&-inner
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+		&-item
+			font-size: 18px
+			transition: .3s
+			margin-bottom: 20px
+			line-height: 1.1
+			color: #fff
+			&:hover
+				color: $accent
+			&:last-child
+				margin-bottom: 0
+// eof
+
+
+// Попап обратной связи
+.mfp-fade
+  &.mfp-bg
+    opacity: 0
+    -webkit-transition: all 0.35s ease-out
+    -moz-transition: all 0.35s ease-out
+    transition: all 0.35s ease-out
+
+    &.mfp-ready
+      opacity: 0.8
+
+    &.mfp-removing
+      opacity: 0
+
+  &.mfp-wrap
+    .mfp-content
+      opacity: 0
+      -webkit-transition: all 0.35s ease-out
+      -moz-transition: all 0.35s ease-out
+      transition: all 0.35s ease-out
+
+    &.mfp-ready .mfp-content
+      opacity: 1
+
+    &.mfp-removing .mfp-content
+      opacity: 0
+
+
+.popup
+	min-width: 375px
+	position: fixed
+	top: 0
+	left: 0
+	background-color: $black
+	background-image: url('../img/main/popup__bg.jpg')
+	background-size: cover
+	background-position: right top
+	height: 100%
+	width: 100%
+	z-index: 10
+	&__close
+		width: 215px
+		height: 215px
+		background-color: transparent
+		border-radius: 50%
+		transition: .3s
+		position: absolute
+		right: 200px
+		top: 250px
+		border: 1px solid rgba(255, 255, 255, 0.2)!important
+		z-index: 2
+		opacity: 1
+		&::before
+			content: ''
+			width: 33px
+			height: 33px
+			background-image: url('../img/icons/close.svg')
+			background-size: contain
+			background-position: center
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+		&:active
+			top: 250px
+		&:hover
+			background-color: $accent
+			border-color: $accent
+	&__container
+		height: calc(100vh - 88px)
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
+		margin-left: 216px
+		position: relative
+		.form-success
+			position: absolute
+			display: none
+	&__title
+		font-size: 100px
+		color: #fff
+	&__subtitle
+		margin-top: 40px
+		color: $accent
+	&__inputs
+		display: flex
+		gap: 100px
+		margin-top: 80px
+	&__input
+		padding: 25px 0
+		background: none
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+		width: 430px
+		margin-bottom: 50px
+		transition: .3s
+		&:focus
+			border-color: rgba(255, 255, 255, 1)
+	&__button
+		width: 300px
+		margin-top: 80px
 // eof
 
 
@@ -164,6 +394,8 @@ h2
 			white-space: nowrap
 			&:last-child
 				margin-right: 0
+			&:hover
+				color: $accent
 		&-icon
 			margin-right: 15px
 	&__social
@@ -214,6 +446,50 @@ h2
 // eof
 
 
+// Хлебные крошки
+.breadcrumbs
+	display: flex
+	align-items: center
+	&__item
+		margin-right: 20px
+		padding-right: 20px
+		color: $accent
+		line-height: 1.9
+		position: relative
+		display: flex
+		transition: .3s
+		&::after
+			content: '/'
+			color: rgba(255, 255, 255, 0.22)
+			font-size: 18px
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translate(50%, -50%)
+		&::before
+			content: ''
+			width: calc(100% - 20px)
+			height: 1px
+			display: block
+			background-color: $accent
+			position: absolute
+			bottom: 0
+			left: 0
+			transition: .3s
+		&:hover
+			&::before
+				width: 0
+				background-color: #fff
+		&:last-child
+			color: #fff
+			&::after, &::before
+				display: none
+				display: none
+			&:hover
+				color: #fff
+// eof
+
+
 // Главный экран
 .main
 	height: 100vh
@@ -226,6 +502,7 @@ h2
 	color: #fff
 	&__container
 		height: calc(100% - 166px)
+		min-height: 450px
 		display: flex
 		flex-direction: column
 		justify-content: flex-end
@@ -266,7 +543,7 @@ h2
 
 
 // Про компанию на главной страние
-.about
+.ishome .about
 	padding: 0
 	z-index: 2
 	&__container
@@ -425,7 +702,7 @@ h2
 
 
 // Сервесы на главной сранице
-.services
+.ishome .services
 	padding: 300px 0
 	color: #fff
 	&::before
@@ -722,6 +999,1001 @@ h2
 
 
 
+// Общие стили внутренних страниц
+.isnohome
+	background-color: $black
+	color: #fff
+	.footer
+		background-color: $black
+		color: #fff
+		&._dark-green
+			background-color: #162122
+			.footer
+				&__social-item
+					&:hover
+						svg path
+							fill: #162122
+		&__social-item
+			&:hover
+				svg path
+					fill: $black
+		&__menu
+			&-heading
+				&:hover
+					color: #fff
+			&-item._light
+				color: rgba(255, 255, 255, 0.33)
+				&:hover
+					color: $accent
+		&__container-bottom
+			border-top: 1px solid rgba(255, 255, 255, 0.1)
+			color: rgba(255, 255, 255, 0.33)
+	.main
+		background-image: none
+		&__title
+			text-transform: uppercase
+			font-size: 230px
+			letter-spacing: -0.066em
+			font-weight: 300
+			line-height: 0.9
+		&__overtitle
+			margin-bottom: 40px
+// eof
+
+
+
+// Реквизиты
+.p-requisites
+	.main
+		&__overtitle
+			margin-left: 695px
+			br
+				display: none
+	.requisites
+		padding: 80px 0 380px
+		&._custom
+			.requisites__container
+				margin-left: 216px
+				&-item
+					&:first-child
+						width: 250px
+						margin-right: 170px
+		&__container
+			margin-bottom: 100px
+			display: flex
+			align-items: flex-start
+			&:last-child
+				margin-bottom: 0
+			&-item
+				line-height: 1.3
+				&:first-child
+					width: 565px
+					margin-right: 130px
+		&__heading
+			font-weight: 600
+			color: $accent
+			margin-bottom: 20px
+		&__text
+			font-size: 33px
+			text-transform: uppercase
+// eof
+
+
+// Финансовый отчет
+.p-report
+	.main
+		&__overtitle
+			text-transform: uppercase
+			margin:
+				bottom: 40px
+				left: 246px
+			font-weight: 700
+			line-height: 1.3
+		&__undertitle
+			margin:
+				top: 60px
+				left: 715px
+			max-width: 755px
+	.report
+		&__container
+			padding: 200px 0
+			&:nth-child(2n)
+				background-color: #162122
+			&-inner
+				display: flex
+				align-items: flex-start
+				padding-left: 246px
+			&-wrapper
+				width: 100%
+		&__title
+			padding-right: 400px
+			flex: 0 0 auto
+			color: $accent
+			font-weight: 600
+			margin-top: 100px
+			position: relative
+			font-size: 18px
+			&-icon
+				position: absolute
+				left: 0
+				top: 100%
+				margin-top: 130px
+				max-width: none
+				max-height: none
+		&__year
+			line-height: 0.8
+			font-size: 160px
+			font-weight: 300
+			display: flex
+			align-items: flex-start
+			color: $accent
+			margin-bottom: 130px
+			span
+				font-weight: 700
+				font-size: 30px
+				margin-left: 15px
+				text-transform: uppercase
+				line-height: 1.2
+		&__list
+			display: flex
+			flex-direction: column
+			border-top: 1px solid #fff
+			&-item
+				display: block
+				margin-top: 60px
+				width: 100%
+				border-bottom: 1px solid #fff
+				font-size: 26px
+				line-height: 1.2
+				padding:
+					bottom: 20px
+					right: 210px
+				transition: .3s
+				&:hover
+					color: $accent
+					border-color: $accent
+			&._short
+				border: none
+				.report__list-item
+					font-size: 18px
+					text-decoration: underline
+					text-underline-position: under
+					border: none
+					max-width: 530px
+					padding: 0
+					line-height: 1.65
+					margin:
+						top: 0
+						bottom: 50px
+					&:last-child
+						margin-bottom: 0
+// eof
+
+
+// Лицензии
+.p-licenses
+	background-image: url('../img/inner-pages/licenses__bg.png')
+	background-size: cover
+	background-repeat: no-repeat
+	.main
+		background: none
+		height: auto
+		min-height: auto
+		&__container
+			height: auto
+			min-height: auto
+			padding: 70px 20px 30px
+		&__title
+			margin-bottom: 0
+	.licenses
+		padding: 50px 0 250px
+		&__table
+			font-size: 20px
+			&-row
+				border-bottom: 1px solid #fff
+				padding:
+					right: 80px
+					top: 40px
+					bottom: 40px
+				display: flex
+				align-items: center
+				justify-content: space-between
+				&:first-child
+					border-top: 1px solid #fff
+			&-title
+				font-weight: 700
+			&-heading
+				width: calc(100% - 650px)
+			&-date
+				width: 235px
+	.licenses-docs
+		padding: 230px 0 280px
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 630px
+			background-color: $accent
+		&__title
+			margin-bottom: 100px
+			position: relative
+			z-index: 2
+		&__slider
+			cursor: grab
+			position: relative
+			z-index: 2
+			&:active
+				cursor: grabbing
+			.swiper-pagination-progressbar
+				width: 100%
+				top: auto
+				bottom: -100px
+				height: 2px
+				background-color: rgba(255, 255, 255, 0.2)
+				cursor: default
+				&-fill
+					background-color: #fff
+		&__item
+			width: 490px
+			&-link
+				display: block
+				filter: grayscale(100%)
+				transition: .5s
+				&:hover
+					filter: none
+			&-image
+				width: 490px
+// eof
+
+
+// Правила
+.p-rules
+	background-image: url('../img/inner-pages/rules__bg.png')
+	background-size: cover
+	background-repeat: no-repeat
+	.main
+		background: none
+		height: auto
+		min-height: auto
+		&__container
+			padding: 140px 20px 170px
+		&__overtitle
+			text-transform: uppercase
+			margin:
+				bottom: 40px
+				left: 246px
+			font-weight: 700
+			line-height: 1.3
+	.rules
+		padding: 30px 0 175px
+		&__container
+			display: flex
+			flex-direction: column
+			padding-left: 246px
+		&__item
+			padding: 80px 90px 25px 0
+			font-size: 26px
+			border-bottom: 1px solid #fff
+			transition: .3s
+			&:first-child
+				border-top: 1px solid #fff
+			&:hover
+				color: $accent
+				border-bottom: 1px solid $accent
+// eof
+
+
+// Контакты
+.p-contacts
+	background-image: url('../img/inner-pages/contacts__bg.png')
+	background-size: cover
+	background-repeat: no-repeat
+	.main
+		background: none
+		height: auto
+		min-height: auto
+		&__container
+			padding: 200px 20px 140px
+		&__overtitle
+			margin:
+				left: 610px
+				bottom: 60px
+		&__arrow-down
+	.contacts
+		padding-top: 70px
+		&__map
+			width: 100%
+			height: 830px
+		&__container
+			padding-left: 610px
+			margin-bottom: 160px
+		&__heading
+			margin-bottom: 15px
+			font-weight: 600
+			font-size: 18px
+		&__text
+			margin-bottom: 80px
+			font-size: 40px
+			font-weight: 400
+			color: $accent
+			text-transform: uppercase
+			line-height: 1.2
+			&:last-child
+				margin-bottom: 0
+// eof
+
+
+
+// Карьера
+.p-career
+	._left-offset
+		margin-left: 215px
+	.main
+		height: auto
+		max-height: none
+		&__container
+			height: auto
+			padding: 250px 20px
+		&__overtitle
+			font-weight: 700
+			margin-bottom: 60px
+		&__large-text
+			max-width: 575px
+			margin: 100px 0 50px
+			text-transform: uppercase
+			font-size: 33px
+			font-weight: 400
+			line-height: 1.3
+		&__text
+			max-width: none
+			width: auto
+			margin: 0
+		._left-margin
+			margin-left: 690px
+	.career-about
+		position: relative
+		padding: 100px 0 500px
+		&._vertical-padding
+			padding: 250px 0 200px
+		&__ellipse
+			position: absolute
+			right: 0
+			top: -300px
+		&__title
+			margin-bottom: 20px
+			display: flex
+			flex-direction: column
+			&-middle
+				margin-left: 400px
+			&-bottom
+				margin-left: 215px
+		&__subtitle
+			margin-bottom: 150px
+			text-transform: uppercase
+			font-size: 30px
+			color: $accent
+		&__subtitle, &__text_under
+			margin-left: 700px
+		&__text
+			font-weight: 300
+			font-size: 56px
+			line-height: 1.3
+			position: relative
+			z-index: 2
+			span
+				display: inline-block
+				font-size: 18px
+				font-weight: 600
+				margin-right: 320px
+				color: $accent
+			&_under
+				margin-top: 90px
+	.career-list
+		padding: 100px 0 300px
+		&._vertical-padding
+			padding: 200px 0 250px
+		&__container
+			display: flex
+			align-items: flex-start
+		&__heading
+			margin-right: 265px
+			flex: 0 0 auto
+			font-size: 18px
+			font-weight: 600
+			color: $accent
+		&__item
+			line-height: 1.1
+			margin-bottom: 60px
+			font-size: 52px
+			font-weight: 300
+			&:last-child
+				margin-bottom: 0
+	.form-section
+		padding: 330px 0
+		background-image: url('../img/inner-pages/form__bg.png')
+		background-size: auto 100%
+		background-position: right bottom
+		background-repeat: no-repeat
+		&__title
+			margin-bottom: 90px
+			&-wrapper
+				margin-left: 215px
+		&__subtitle
+			font-size: 30px
+			text-transform: uppercase
+			line-height: 1.2
+			margin-bottom: 140px
+		&__subtitle, &__form
+			margin-left: 610px
+		&__form
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			gap: 90px
+			&-input
+				padding: 25px 0
+				background: none
+				border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+				width: 430px
+				margin-bottom: 50px
+				transition: .3s
+				&:focus
+					border-color: rgba(255, 255, 255, 1)
+			&-wrapper
+				width: 430px
+				display: flex
+				align-items: center
+				justify-content: center
+			&-button
+				width: 260px
+				height: 260px
+				svg
+					width: 100%
+					height: 100%
+					circle, path
+						transition: .3s
+				&:hover
+					svg
+						circle
+							fill: $accent
+						path
+							fill: #fff
+// eof
+
+
+
+// Страница со списком услуг
+.p-services
+	background-image: url('../img/inner-pages/services__bg.png')
+	background-size: 100% 120%
+	background-repeat: no-repeat
+	.main
+		background: none
+		&__overtitle
+			margin-left: 700px
+			font-size: 18px
+			font-weight: 700
+		&__title
+			&._custom-width
+				width: calc(100% - 240px)
+	.services
+		padding-bottom: 180px
+		&__container
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			gap: 80px
+		&__box
+			padding: 60px
+			width: calc(50% - 40px)
+			min-height: 430px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			background-color: #162122
+			position: relative
+			&-title
+				text-transform: uppercase
+				font-weight: 400
+				font-size: 40px
+				line-height: 1.2
+			&-list
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				&-item
+					transition: .3s
+					margin-bottom: 10px
+					&:last-child
+						margin-bottom: 0
+					&:hover
+						color: $accent
+			&-link
+				position: absolute
+				right: 60px
+				bottom: 0
+				transform: translate(0, 50%)
+				width: 100px
+				height: 100px
+				svg 
+					width: 100%
+					height: 100%
+					path, circle
+						transition: .3s
+				&:hover
+					svg 
+						path
+							fill: $accent
+						circle
+							stroke: $accent
+// eof
+
+
+// Страница услуги
+.p-service
+	.service
+		padding: 80px 0 180px
+		&__container
+			padding-left: 215px
+			&-inner
+				padding: 140px 0 220px
+				border-bottom: 1px solid rgba(255, 255, 255, 0.4)
+				&:first-child
+					padding-top: 0
+				&:nth-last-child(2)
+					border: none
+		&__title
+			margin-bottom: 100px
+			font-size: 100px
+			font-weight: 300
+			letter-spacing: -0.05em
+			line-height: 1.1
+			text-transform: none
+			&._uppercase
+				text-transform: uppercase
+		&__overtitle
+			text-transform: uppercase
+			color: #F4F7F5
+			opacity: 0.2
+			font-weight: 600
+			margin-bottom: 10px
+		&__text
+			max-width: 1000px
+			margin-bottom: 60px
+			span
+				color: $accent
+			&:last-child
+				margin-bottom: 0
+			&._accent
+				color: $accent
+		&__wrapper
+			display: flex
+			align-items: flex-start
+			margin-bottom: 100px
+			&:last-child
+				margin-bottom: 0
+			&-heading
+				width: 250px
+				flex: 0 0 auto
+				margin-right: 80px
+				font-weight: 600
+				color: $accent
+			&-list
+				&-item
+					display: flex
+					align-items: flex-start
+					margin-bottom: 65px
+					&:last-child
+						margin-bottom: 0
+				&-number
+					width: 20px
+					font-weight: 400
+					font-size: 18px
+					color: #fff
+					opacity: 0.12
+					margin-right: 30px
+					flex: 0 0 auto
+				&-text
+					font-weight: 300
+					font-size: 50px
+					line-height: 1.1
+					&._medium
+						font-size: 30px
+						max-width: 1000px
+						padding-left: 50px
+					&._padding-left-none
+						padding-left: 0
+					&_under
+						margin-top: 20px
+						display: block
+						font-size: 18px
+						font-weight: 400
+						line-height: 1.4
+						max-width: 900px
+				&-list
+					display: block
+					width: 100%
+					margin-top: 40px
+					padding-left: 20px
+					&-item
+						font-size: 18px
+						margin-bottom: 10px
+						list-style-type: disc
+						line-height: 1.3
+		&__buttons
+			display: flex
+			align-items: center
+		&__button
+			margin-right: 60px
+			&:last-child
+				margin: 0
+			&._accent
+				background-color: $accent
+				color: #fff
+				&:hover
+					color: $accent
+					background-color: #fff
+// eof
+
+
+// О компании
+.p-about
+	background-image: url('../img/inner-pages/about__top-bg.png')
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	.main
+		height: auto
+		max-height: none
+		background: none
+		&__container
+			height: auto
+			padding: 230px 20px 300px
+		&__overtitle
+			font-weight: 700
+			margin-bottom: 70px
+		&__title
+			&-bottom
+				margin-left: 150px
+		&__large-text
+			margin-top: 100px
+			text-transform: uppercase
+			font-size: 33px
+			font-weight: 400
+			line-height: 1.3
+		._left-margin
+			margin-left: 630px
+	.about
+		&__sections
+			margin-top: 400px
+			background-image: url('../img/inner-pages/about__bottom-bg.png')
+			background-size: auto 100%
+			background-position: center
+			padding: 520px 0 600px
+			position: relative
+			._bottom-margin
+				margin-bottom: 300px
+		&__container
+			display: flex
+			align-items: flex-start
+			padding-left: 216px
+		&__heading
+			width: 250px
+			flex: 0 0 auto
+			margin-right: 160px
+			color: $accent
+			font-weight: 600
+			&._white
+				color: #fff
+		&__text
+			margin-bottom: 70px
+			max-width: 600px
+			width: 100%
+			&._large
+				font-weight: 300
+				font-size: 50px
+				line-height: 1.1
+			&:last-child
+				margin-bottom: 0
+		&__list
+			&-item
+				display: flex
+				align-items: flex-start
+				font-weight: 300
+				font-size: 50px
+				margin-bottom: 65px
+				line-height: 1.1
+				&:last-child
+					margin-bottom: 0
+			&-number
+				width: 20px
+				margin-right: 30px
+				font-size: 18px
+				font-weight: 400
+				color: #fff
+				opacity: 0.12
+	.base
+		padding-bottom: 170px
+		background-image: url('../img/inner-pages/about__middle-bg.png')
+		background-position: right top
+		background-repeat: no-repeat
+		&__year
+			display: flex
+			align-items: flex-start
+			font-weight: 300
+			font-size: 185px
+			line-height: 0.85
+			color: $accent
+			margin-bottom: 170px
+			&-text
+				margin-left: 30px
+				font-size: 30px
+				text-transform: uppercase
+				font-weight: 400
+				line-height: 1.5
+		&__text
+			max-width: 510px
+			margin-bottom: 40px
+			font-weight: 400
+			&:last-child
+				margin-bottom: 0
+			&._bold
+				font-weight: 600
+	.about
+		padding: 200px 0 20px
+		&__title
+			margin-bottom: 200px
+			display: flex
+			flex-direction: column
+			&-top
+				margin-left: 210px
+			&-middle
+				margin-left: 285px
+		&__boxs
+			display: flex
+			max-width: 660px
+			width: 100%
+			justify-content: space-between
+			flex-wrap: wrap
+		&__box
+			width: calc(50% - 30px)
+			margin-bottom: 130px
+			color: $accent
+			font-weight: 600
+			line-height: 1.65
+	.circle
+		&__about
+			width: 830px
+			height: 830px
+			background-color: #fff
+			border-radius: 50% 
+			position: absolute
+			left: 100px
+			top: 0
+			transform: translate(0, -50%)
+			display: flex
+			align-items: center
+			justify-content: center
+			&-number
+				font-size: 200px
+				font-weight: 300
+				color: $accent
+				margin-right: 10px
+			&-text
+				width: 150px
+				color: $black
+				span
+					display: block
+					color: $accent
+					text-transform: uppercase
+					font-size: 33px
+					font-weight: 700
+					margin-bottom: 10px
+	.services
+		padding-left: 216px
+		._left-margin
+			margin-left: 410px
+		&__overtitle
+			margin-bottom: 60px
+			color: $accent
+			font-weight: 600
+		&__title
+			display: flex
+			flex-direction: column
+			line-height: 1.1
+			margin-bottom: 150px
+			font-weight: 300
+			font-size: 50px
+		&__list
+			border-top: 1px solid #fff
+			display: flex
+			flex-direction: column
+			&-item
+				padding: 60px 0 20px
+				border-bottom: 1px solid #fff
+				font-size: 26px
+				transition: .3s
+				&:hover
+					color: $accent
+					border-color: $accent
+	.care
+		padding: 280px 0
+		._left-margin
+			margin-left: 400px
+		&__container
+			padding-left: 216px
+		&__title
+			margin-bottom: 80px
+		&__subtitle
+			margin-bottom: 40px
+			color: $accent
+			font-weight: 600
+		&__text
+			max-width: 440px
+// eof
+
+
+
+// Стратегия
+.p-strategy
+	.main
+		height: auto
+		max-height: none
+		background-image: url('../img/inner-pages/strategy__top-bg.png')
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		&__container
+			height: auto
+			padding: 100px 20px 200px
+			&-inner
+				margin-left: 635px
+		&__title
+			margin-bottom: 80px
+		&__large-text
+			margin-bottom: 50px
+			text-transform: uppercase
+			font-size: 22px
+		&__text
+			max-width: 610px
+			margin-left: 0
+		&__subtitle
+			margin: 180px 0 100px
+			font-weight: 600
+			font-size: 26px
+			max-width: 440px
+			line-height: 1.1
+			color: $accent
+		&__text
+			width: auto
+		&__docs
+			border-top: 1px solid #fff
+			display: flex
+			flex-direction: column
+			&-item
+				padding: 60px 0 20px
+				border-bottom: 1px solid #fff
+				font-size: 26px
+				transition: .3s
+				&:hover
+					color: $accent
+					border-color: $accent
+	.services
+		padding: 190px 0
+		background-image: url('../img/inner-pages/strategy__middle-bg.png')
+		background-position: center
+		background-size: cover
+		&__container
+			padding-left: 215px
+		._left-margin
+			margin-left: 410px
+		&__overtitle
+			margin-bottom: 60px
+			color: $accent
+			font-weight: 600
+		&__title
+			display: flex
+			flex-direction: column
+			line-height: 1.1
+			margin-bottom: 150px
+			font-weight: 300
+			font-size: 50px
+		&__list
+			border-top: 1px solid #fff
+			display: flex
+			flex-direction: column
+			&-item
+				padding: 60px 0 20px
+				border-bottom: 1px solid #fff
+				font-size: 26px
+				transition: .3s
+				&:hover
+					color: $accent
+					border-color: $accent
+		&__text
+			font-weight: 600
+			max-width: 530px
+			line-height: 1.65
+			margin-top: 100px
+	.table
+		padding: 250px 0
+		&__container
+			padding-left: 215px
+		._left-margin
+			margin-left: 410px
+		&__title
+			display: flex
+			flex-direction: column
+			line-height: 1.1
+			margin-bottom: 150px
+			font-weight: 300
+			font-size: 50px
+		&__body
+			border-top: 1px solid #fff
+			display: flex
+			flex-direction: column
+		&__row
+			padding: 60px 0 20px
+			border-bottom: 1px solid #fff
+			font-size: 26px
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&__elem._accent
+			color: $accent
+	.perspective
+		padding: 100px 0 250px
+		&__title
+			margin-bottom: 30px
+			display: flex
+			flex-direction: column
+			&-middle
+				margin-left: 450px
+			&-bottom
+				margin-left: 200px
+		&__subtitle
+			text-transform: uppercase
+			color: $accent
+			font-size: 30px
+			margin-left: 625px
+// eof
+
+
+
+// Страница инфо
+.p-info
+	.main
+		height: auto
+		max-height: none
+		background-image: url('../img/inner-pages/info__bg.png')
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		&__container
+			height: auto
+			min-height: auto
+			padding: 80px 20px 150px
+		&__title
+			font-size: 100px
+			margin-bottom: 120px
+			line-height: 1.1
+		&__list
+			border-top: 1px solid #fff
+			display: flex
+			flex-direction: column
+			margin-left: 250px
+			&-item
+				padding: 60px 0 20px
+				border-bottom: 1px solid #fff
+				font-size: 26px
+				transition: .3s
+				&:hover
+					color: $accent
+					border-color: $accent
+// eof
 
 
 
@@ -736,6 +2008,24 @@ h2
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Скрытые блоки
+._desktop-hidden
+	display: none
+// eof
 
 
 
