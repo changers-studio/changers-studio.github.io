@@ -1662,6 +1662,22 @@ body {
           box-shadow: inset 6px 6px 6px 0 rgba(0, 0, 0, 0.15), inset -6px -6px 6px 0 #fff;
 }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #A6D7FE;
+  z-index: 30;
+}
+
+.preloader .loader {
+  height: 10px;
+  position: absolute;
+  background-color: #fff;
+}
+
 .section {
   height: 100vh;
 }
