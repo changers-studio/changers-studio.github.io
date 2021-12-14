@@ -114,4 +114,60 @@ lottie.loadAnimation({
 	autoplay: true,
 	path: 'animation/glazing__main-screen.json',
 })
+
+lottie.loadAnimation({
+	container: document.getElementById('animationCladding'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: 'animation/cladding__main-screen.json',
+})
+
+lottie.loadAnimation({
+	container: document.getElementById('animationArchitectural'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: 'animation/architectural-panels.json',
+})
+
+lottie.loadAnimation({
+	container: document.getElementById('animationWood'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: 'animation/wood-siding.json',
+})
+
+lottie.loadAnimation({
+	container: document.getElementById('animationCement'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: 'animation/cement.json',
+})
+
+lottie.loadAnimation({
+	container: document.getElementById('animationSteel'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: 'animation/steel.json',
+})
+
+lottie.loadAnimation({
+	container: document.getElementById('animationAluminium'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: 'animation/aluminium-panels.json',
+})
+
+lottie.loadAnimation({
+	container: document.getElementById('ourTeamAnimation'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: 'animation/our-team.json',
+})
 // eof

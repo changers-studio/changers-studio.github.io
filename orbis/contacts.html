@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Orbis | Contacts</title>
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" sizes="192x192" href="img/favicon.ico" />
+
+		<!-- fontawesome -->
+		<script
+			async
+			defer
+			src="https://kit.fontawesome.com/55e0136003.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- reset css -->
+		<link rel="stylesheet" href="css/reset.css" />
+
+		<!-- libs css -->
+		<link rel="stylesheet" href="libs/fullpage/fullpage.css" />
+
+		<!-- main css -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- jQeury -->
+		<script defer src="libs/jquery.min.js"></script>
+
+		<!-- libs js -->
+		<script defer src="libs/fullpage/fullpage.js"></script>
+		<script defer src="libs/lottie/lottie.min.js"></script>
+
+		<!-- main js -->
+		<script defer src="js/custom.js"></script>
+	</head>
+
+	<body class="isnohome">
+		<div class="body-wrapper">
+			<section class="section text-image">
+				<div class="section-container overflow_hidden">
+					<div class="section-container__wrapper">
+						<header class="header">
+							<a href="index.html" class="header__logo">
+								<img src="img/logo.svg" alt="Логотип" class="header__logo-img" />
+							</a>
+
+							<button
+								class="header__hamburger hamburger hamburger--squeeze"
+								type="button"
+							>
+								<span class="hamburger-box">
+									<span class="hamburger-inner"></span>
+								</span>
+							</button>
+
+							<nav class="header__menu">
+								<a href="index.html" class="header__menu-item"><span>Home</span></a>
+
+								<div class="header__menu-item header__menu-dropdown">
+									<div class="header__menu-dropdown-heading"><span>Services</span></div>
+									<div class="header__menu-dropdown-body">
+										<a href="glazing.html" class="header__menu-dropdown-item">Glazing</a>
+										<a href="cladding.html" class="header__menu-dropdown-item">
+											Cladding
+										</a>
+									</div>
+								</div>
+
+								<div class="header__menu-item header__menu-dropdown">
+									<div class="header__menu-dropdown-heading"><span>Products</span></div>
+									<div class="header__menu-dropdown-body">
+										<a href="fiber-cement-siding.html" class="header__menu-dropdown-item">
+											Fiber cement siding
+										</a>
+										<a href="wood-siding.html" class="header__menu-dropdown-item">
+											Wood siding
+										</a>
+										<a href="aluminium-panels.html" class="header__menu-dropdown-item">
+											Aluminium panels
+										</a>
+										<a href="steel-metal-siding.html" class="header__menu-dropdown-item">
+											Steel metal siding
+										</a>
+									</div>
+								</div>
+
+								<a href="contacts.html" class="header__menu-item">
+									<span>Contacts</span>
+								</a>
+
+								<div class="header__menu-item header__menu-dropdown">
+									<div class="header__menu-dropdown-heading"><span>Portfolio</span></div>
+									<div class="header__menu-dropdown-body">
+										<a href="portfolio-glazing.html" class="header__menu-dropdown-item">
+											Glazing
+										</a>
+										<a href="portfolio-cladding.html" class="header__menu-dropdown-item">
+											Cladding
+										</a>
+									</div>
+								</div>
+							</nav>
+						</header>
+
+						<p class="heading">Our team</p>
+
+						<div class="text-image__container _has-heading _flex-column">
+							<div class="image-text__our-team">
+								<div
+									class="image-text__our-team-image"
+									style="background-image: url('img/our-team__main-screen.png')"
+								></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="about our-team">
+				<div class="section-container">
+					<div class="about__container">
+						<div class="about__image">
+							<img
+								src="img/our-team__image.png"
+								alt="City"
+								style="visibility: hidden"
+								class="about__image-inner"
+							/>
+
+							<div class="about__image-anime">
+								<div id="ourTeamAnimation"></div>
+							</div>
+						</div>
+
+						<p class="our-team__text text">
+							Orbis Group, founded in 2007 specializing in glazing installation. Over the
+							years, Orbis has expanded into the building envelope sector enabling us to
+							offer a full building envelope solution.
+						</p>
+
+						<p class="our-team__text text">
+							Focusing in Calgary, expansion commenced throughout many major cities from
+							Vancouver to Toronto while maintaining our primary focus in Western Canada.
+							Orbis Group has maintained many great relationships by ensuring exceptional
+							completion of each and every project throughout the years.
+						</p>
+
+						<p class="our-team__text text">
+							As safety and efficiency evolved in the industry over the last several
+							years, Orbis Group ensured that the highest standards were met consistently
+							by following the province of BC stringent codes and implementing them across
+							Western Canada.
+						</p>
+
+						<p class="our-team__text text">
+							For full or partial building envelope needs, Orbis Group can help manage
+							your project from conception to completion while ensuring that our clients
+							needs are top priority. Call us, we’re here to help.
+						</p>
+
+						<a href="#" class="button">Viev Gallery</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="contacts">
+				<div class="section-container">
+					<p class="heading">Contacts</p>
+
+					<div class="contacts__container">
+						<div class="contacts__container-form">
+							<form class="contacts__form">
+								<p class="contacts__form-title">GET A FREE ESTIMATE</p>
+								<p class="contacts__form-subtitle">How can we help you?</p>
+
+								<input
+									class="contacts__form-input"
+									type="text"
+									name="Name"
+									placeholder="Name"
+								/>
+
+								<input
+									class="contacts__form-input"
+									type="email"
+									name="Email"
+									placeholder="Email"
+								/>
+
+								<input
+									class="contacts__form-input"
+									type="tel"
+									name="Phone"
+									placeholder="Phone"
+								/>
+
+								<textarea
+									name="Message"
+									placeholder="Message"
+									class="contacts__form-textarea"
+								></textarea>
+
+								<button class="button contacts__form-button">Send message</button>
+							</form>
+						</div>
+
+						<div class="contacts__container-data">
+							<p class="contacts__title">Contact Us</p>
+
+							<p class="contacts__tel">
+								Siding
+								<a href="tel:7788199999" class="contacts__tel-link">778-819-9999</a>
+							</p>
+							<p class="contacts__tel">
+								Glazing
+								<a href="tel:6047246076" class="contacts__tel-link">604-724-6076</a>
+							</p>
+
+							<div class="footer__social">
+								<a href="#" class="footer__social-item">
+									<img
+										class="footer__social-item-icon"
+										src="img/icons/facebook.svg"
+										alt="facebook"
+									/>
+								</a>
+								<a href="#" class="footer__social-item">
+									<img
+										class="footer__social-item-icon"
+										src="img/icons/instagram.svg"
+										alt="instagram"
+									/>
+								</a>
+								<a href="#" class="footer__social-item">
+									<img
+										class="footer__social-item-icon"
+										src="img/icons/linkedin.svg"
+										alt="linkedin"
+									/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<img src="img/footer__logo.svg" alt="Logo" class="footer__logo" />
+
+				<div class="footer__social">
+					<a href="#" class="footer__social-item">
+						<img
+							class="footer__social-item-icon"
+							src="img/icons/facebook.svg"
+							alt="facebook"
+						/>
+					</a>
+					<a href="#" class="footer__social-item">
+						<img
+							class="footer__social-item-icon"
+							src="img/icons/instagram.svg"
+							alt="instagram"
+						/>
+					</a>
+					<a href="#" class="footer__social-item">
+						<img
+							class="footer__social-item-icon"
+							src="img/icons/linkedin.svg"
+							alt="linkedin"
+						/>
+					</a>
+				</div>
+
+				<p class="footer__copyrights">
+					Privacy Policy | Terms & Conditions
+					<br />
+					© 2021 Orbis Group. All Rights Reserved.
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

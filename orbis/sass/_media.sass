@@ -20,8 +20,8 @@
 
 	// Кнопка "На верх"
 	.button-up
-		right: calc(100vw - 1300px - ((100vw - 1300px)/2) + 40px)
-		top: calc(100vh - 700px - ((100vh - 700px)/2) + 20px)
+		right: calc(100vw - 1300px - ((100vw - 1300px)/2) + 20px)
+		top: calc(100vh - 700px - ((100vh - 700px)/2))
 	// eof
 
 	// Общие стили для внутренних страниц
@@ -133,10 +133,16 @@
 		.text-image
 			&__container
 				padding: 50px 0
+				&._flex-column
+					.text-image
+						&__animation
+							min-height: 250px
 			&__animation
 				min-height: 300px
 				&-inner
 					height: 500px
+					&._cladding
+						height: 300px
 	// eof
 	
 
@@ -196,6 +202,28 @@
 			padding: 10px
 	// eof
 
+
+	// Наша команда
+	.image-text__our-team
+		height: 500px
+	// eof
+
+
+	// Контакты
+	.contacts
+		&__container
+			&-form
+				width: 400px
+	// eof
+
+
+	// Portfolio
+	.portfolio
+		&__top-line
+			margin-bottom: 25px
+		&__title, &__heading
+			font-size: 26px
+	// eof
 
 
 /*  Small Devices, Tablets */
@@ -277,10 +305,16 @@
 		.text-image
 			&__container
 				padding: 30px 0
+				&._flex-column
+					.text-image
+						&__animation
+							min-height: 220px
 			&__animation
 				min-height: 250px
 				&-inner
 					height: 400px
+					&._cladding
+						height: 250px
 	// eof
 
 
@@ -453,14 +487,100 @@
 			padding: 20px
 			overflow-x: auto 
 		&__container
-			width: 800px
-			gap: 20px
+			display: block
+			width: auto
+			white-space: nowrap
 		&__item
 			border-radius: 25px
-			max-width: 245px
+			width: 245px
+			max-width: none
 			height: 245px
+			display: inline-block
+			margin-right: 20px
 			&:hover
 				transform: scale(1)
 			&-image
 				border-radius: 20px
+	// eof
+
+
+	// Наша команда
+	.image-text__our-team
+		border-radius: 20px
+		padding: 10px
+		height: 180px
+		&-image
+			border-radius: 20px
+
+	.our-team
+		margin: 35px 0
+		.section-container
+			padding: 20px 10px
+		&__text
+			margin-bottom: 15px
+	// eof
+
+
+	// Контакты
+	::placeholder
+		font-size: 16px
+
+	.contacts
+		&__container
+			flex-direction: column
+			&-form
+				width: 100%
+				margin-bottom: 50px
+			&-data
+				width: 100%
+		&__form
+			text-align: center
+			display: block
+			&-title
+				font-size: 20px
+				margin-left: 0
+			&-subtitle
+				font-size: 15px
+				margin-left: 0
+			&-input
+				font-size: 16px
+			&-textarea
+				font-size: 16px
+				height: 100px
+				margin-bottom: 20px
+			&-button
+				margin-top: 0
+		&__title
+			text-align: center
+			font-size: 20px
+			margin-bottom: 10px
+		&__tel
+			justify-content: center
+			text-align: center
+			font-size: 20px
+			margin-bottom: 5px
+			&-link
+				min-width: auto
+				margin-left: 10px
+		.footer__social
+			margin-top: 40px
+			justify-content: center
+	// eof
+
+
+	// Portfolio
+	.portfolio
+		padding: 20px 0 0
+		&__top-line
+			margin-bottom: 0
+		&__title, &__heading
+			font-size: 20px
+		&__title
+			margin-bottom: 10px
+		&__title
+			position: static
+			transform: none
+		&__container
+			overflow-x: auto
+			padding: 25px 15px
 	// eof
