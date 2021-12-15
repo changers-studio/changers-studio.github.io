@@ -15,3 +15,13 @@ $('.sign__form-label-button').on('click', function () {
 	}
 })
 // eof
+
+// Смена иконок при фокусе на поле
+$('._user-icon input, ._key-icon input').on('focus', function () {
+	$(this).parent().addClass('_focus')
+})
+
+$('._user-icon input, ._key-icon input').on('focusout', function () {
+	$(this).parent().removeClass('_focus')
+})
+// eof
