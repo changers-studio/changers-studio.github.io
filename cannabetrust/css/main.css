@@ -623,6 +623,7 @@ input:focus {
 }
 
 .p-sign .sign__form-resend {
+  width: 100%;
   position: absolute;
   top: 100%;
   left: 0;
@@ -646,7 +647,7 @@ input:focus {
   color: #68B663;
 }
 
-.p-sign .sign__register {
+.p-sign .sign__bottom {
   margin-top: 130px;
   text-align: center;
   display: -webkit-box;
@@ -666,27 +667,34 @@ input:focus {
   font-size: 14px;
 }
 
-.p-sign .sign__register-text {
+.p-sign .sign__bottom-text {
   margin-bottom: 10px;
   color: rgba(51, 51, 51, 0.3);
 }
 
-.p-sign .sign__register-link {
+.p-sign .sign__bottom-link {
   font-weight: 500;
   color: #68B663;
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1600px) {
+  .p-sign .sign__header {
+    margin-bottom: 60px;
+  }
   .p-sign .sign__image {
     width: 550px;
   }
   .p-sign .sign__container {
+    padding: 30px;
     width: -webkit-calc(100% - 550px);
     width: calc(100% - 550px);
   }
   .p-sign .sign__container-inner {
     width: 650px;
+  }
+  .p-sign .sign__bottom {
+    margin-top: 90px;
   }
 }
 
@@ -812,7 +820,7 @@ input:focus {
   .p-sign .sign__form-resend {
     position: static;
   }
-  .p-sign .sign__register {
+  .p-sign .sign__bottom {
     margin-top: 80px;
   }
 }
