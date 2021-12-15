@@ -1,0 +1,640 @@
+@font-face {
+  font-family: "MonumentExtended";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/MonumentExtended-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MonumentExtended";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/MonumentExtended-Ultrabold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/Stolzl-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Stolzl-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 350;
+  src: url("../fonts/Stolzl-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Stolzl-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Stolzl-Bold.woff") format("woff");
+}
+
+::-webkit-input-placeholder {
+  color: #000;
+  opacity: 0.4;
+  font-size: 14px;
+  font-family: "Stolzl", sans-serif;
+}
+
+:-ms-input-placeholder {
+  color: #000;
+  opacity: 0.4;
+  font-size: 14px;
+  font-family: "Stolzl", sans-serif;
+}
+
+::-ms-input-placeholder {
+  color: #000;
+  opacity: 0.4;
+  font-size: 14px;
+  font-family: "Stolzl", sans-serif;
+}
+
+::placeholder {
+  color: #000;
+  opacity: 0.4;
+  font-size: 14px;
+  font-family: "Stolzl", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.5;
+  font-family: "Stolzl", sans-serif;
+  background-color: #F2EEE8;
+  color: #4B4B4B;
+}
+
+.button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  line-height: 1;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%;
+  height: 48px;
+  font-family: "MonumentExtended";
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  border: none;
+  color: #fff;
+  background-color: #68B663;
+  -webkit-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.button:focus, .button:hover {
+  text-decoration: none;
+}
+
+.button._yellow {
+  background-color: #EDC644;
+  color: #010D00;
+}
+
+input {
+  width: 100%;
+  min-width: auto;
+  font-size: 14px;
+  font-weight: 300;
+  color: #010D00;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+input:focus {
+  border-color: #68B663;
+}
+
+.container {
+  width: 100%;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+.p-sign .sign {
+  min-height: 100vh;
+}
+
+.p-sign .sign ._dashed-underline {
+  position: relative;
+}
+
+.p-sign .sign ._dashed-underline::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url("../img/sign-in-up/dashed-line.svg");
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.p-sign .sign__image {
+  width: 740px;
+  height: 100vh;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.p-sign .sign__container {
+  width: -webkit-calc(100% - 740px);
+  width: calc(100% - 740px);
+  min-height: 100vh;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.p-sign .sign__container-inner {
+  margin: 0 auto;
+  width: 715px;
+}
+
+.p-sign .sign__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+.p-sign .sign__header-logo, .p-sign .sign__header-wrapper, .p-sign .sign__header-link, .p-sign .sign__header-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-sign .sign__header-wrapper {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-sign .sign__header-link {
+  margin-right: 100px;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  color: #68B663;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-sign .sign__header-link::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: block;
+  background-image: url("../img/icons/user.svg");
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 10px;
+}
+
+.p-sign .sign__header-button {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  opacity: 0.2;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.p-sign .sign__header-button:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
+}
+
+.p-sign .sign__header-button:hover .sign__header-button-icon > * {
+  fill: #EC6A5F;
+}
+
+.p-sign .sign__header-button-icon > * {
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.p-sign .sign__top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 45px;
+}
+
+.p-sign .sign__top-title {
+  font-size: 36px;
+  font-family: "MonumentExtended";
+}
+
+.p-sign .sign__top-title span {
+  color: #68B663;
+  display: block;
+}
+
+.p-sign .sign__top-text {
+  width: 100%;
+  max-width: 295px;
+  color: #404040;
+  letter-spacing: 0.25px;
+  line-height: 2.15;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.p-sign .sign__top-text span {
+  font-weight: 500;
+}
+
+.p-sign .sign__form-container {
+  padding: 45px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 30px;
+}
+
+.p-sign .sign__form-label {
+  width: 300px;
+}
+
+.p-sign .sign__form-label-heading {
+  font-size: 12px;
+  letter-spacing: 0.25px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.p-sign .sign__form-label-wrapper {
+  position: relative;
+}
+
+.p-sign .sign__form-label-wrapper input {
+  padding-right: 50px;
+}
+
+.p-sign .sign__form-label-input {
+  padding: 13px 18px;
+  background-color: #FAF6F0;
+  border: 1px solid #D1D1D1;
+}
+
+.p-sign .sign__form-label-input:focus {
+  border-color: #68B663;
+}
+
+.p-sign .sign__form-label-button {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.p-sign .sign__form-label-button::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url("../img/icons/eye.svg");
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.p-sign .sign__form-label-button._show-password::before {
+  background-image: url("../img/icons/crossed-eye.svg");
+}
+
+.p-sign .sign__form-checkbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 45px;
+}
+
+.p-sign .sign__form-checkbox-input {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background: none;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-right: 15px;
+}
+
+.p-sign .sign__form-checkbox-input::before, .p-sign .sign__form-checkbox-input::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.p-sign .sign__form-checkbox-input::before {
+  border: 1px solid #D1D1D1;
+  background-color: #FAF6F0;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.p-sign .sign__form-checkbox-input::after {
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/icons/done.svg");
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.p-sign .sign__form-checkbox-input:checked::before {
+  background-color: #68B663;
+  border-color: #68B663;
+}
+
+.p-sign .sign__form-checkbox-input:checked::after {
+  opacity: 1;
+}
+
+.p-sign .sign__form-checkbox-text {
+  font-weight: 300;
+  color: #404040;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.p-sign .sign__form-checkbox-link {
+  color: #68B663;
+  font-weight: 400;
+}
+
+.p-sign .sign__form-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 45px;
+}
+
+.p-sign .sign__form-captcha {
+  width: 300px;
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.p-sign .sign__form-success {
+  width: 300px;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1600px) {
+  .p-sign .sign__image {
+    width: 550px;
+  }
+  .p-sign .sign__container {
+    width: -webkit-calc(100% - 550px);
+    width: calc(100% - 550px);
+  }
+  .p-sign .sign__container-inner {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .p-sign .sign__image {
+    width: 300px;
+  }
+  .p-sign .sign__container {
+    width: -webkit-calc(100% - 300px);
+    width: calc(100% - 300px);
+  }
+  .p-sign .sign__container-inner {
+    width: 650px;
+  }
+}
+
+/*  Small Devices, Tablets, Mobile */
+@media only screen and (max-width: 992px) {
+  .p-sign .sign__image {
+    display: none;
+  }
+  .p-sign .sign__container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px 20px;
+  }
+  .p-sign .sign__container-inner {
+    width: 100%;
+    max-width: 480px;
+  }
+  .p-sign .sign__header {
+    margin-bottom: 40px;
+  }
+  .p-sign .sign__header-link {
+    display: none;
+  }
+  .p-sign .sign__header-button:hover {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.2;
+  }
+  .p-sign .sign__header-button:hover .sign__header-button-icon > * {
+    fill: #010D00;
+  }
+  .p-sign .sign__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-bottom: 40px;
+  }
+  .p-sign .sign__top-title {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  .p-sign .sign__top-text {
+    line-height: 1.5;
+    max-width: 280px;
+    letter-spacing: normal;
+  }
+  .p-sign .sign__form-container {
+    padding: 40px 0;
+    gap: 15px;
+  }
+  .p-sign .sign__form-label {
+    width: 100%;
+  }
+  .p-sign .sign__form-checkbox {
+    margin-top: 40px;
+  }
+  .p-sign .sign__form-checkbox-text {
+    font-size: 12px;
+    max-width: 170px;
+  }
+  .p-sign .sign__form-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 40px;
+  }
+  .p-sign .sign__form-captcha {
+    width: 100%;
+  }
+  .p-sign .sign__form-success {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
