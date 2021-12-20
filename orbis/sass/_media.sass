@@ -19,9 +19,9 @@
 	// eof
 
 	// Кнопка "На верх"
-	.button-up
-		right: calc(100vw - 1300px - ((100vw - 1300px)/2) + 20px)
-		top: calc(100vh - 700px - ((100vh - 700px)/2))
+	// .button-up
+	// 	right: calc(100vw - 1300px - ((100vw - 1300px)/2) + 20px)
+	// 	top: calc(100vh - 700px - ((100vh - 700px)/2))
 	// eof
 
 	// Общие стили для внутренних страниц
@@ -50,16 +50,10 @@
 	.header
 		&__menu
 			&-item
-				padding: 4px 20px
+				padding: 5px 20px
 				font-size: 16px
 				margin-right: 20px
 			&-dropdown
-				&.active
-					&::before
-						width: calc(100% + 20px)
-				&-body
-					width: calc(100% + 20px)
-					padding: 8px 5px
 				&-item
 					font-size: 13px
 	// eof
@@ -249,7 +243,7 @@
 			height: auto
 			max-width: calc(100% - 35px)
 			max-height: none
-			transform: scale(1)
+			transform: none
 			padding: 20px 10px
 			border-radius: 20px
 		&._has-partners
@@ -291,9 +285,6 @@
 	
 	._desktop-hidden
 		display: block
-	
-	._mob-hidden
-		// display: none
 	// eof
 
 
@@ -342,42 +333,85 @@
 		&__hamburger
 			display: flex
 		&__menu
-			display: none
+			display: flex
+			flex-direction: column
+			justify-content: center
 			background: linear-gradient(144deg, #9bd3ff 1%, #edf2f5 100%)
-			box-shadow: -9px -8px 7px 0 rgba(255, 255, 255, 0.55)
-			margin-top: 15px
-			position: absolute
-			top: 100%
-			left: 0
-			width: 100%
-			border-radius: 20px
-			padding: 15px
+			position: fixed
+			top: 0
+			right: -340px
+			max-width: 100%
+			width: 340px
+			height: 100vh
+			padding: 30px
+			z-index: 10
+			transition: 1s
+			&.active
+				right: 0
+				transition-delay: .1s
+			&-close
+				position: absolute
+				top: 10px
+				right: 20px
+				transform: none
 			&-item
 				display: block
 				width: 100%
 				text-align: left
+				padding: 10px 30px
 				margin:
 					right: 0
-					bottom: 15px
+					bottom: 30px
+				&::before
+					width: 100%
 			&-dropdown
+				padding: 0
+				box-shadow: none
+				background: transparent
+				&:hover
+					box-shadow: none
+				&::before
+					display: none
 				&.active
-					border-radius: 20px
+					.header__menu-dropdown-heading
+						box-shadow: none
+						background: transparent
+						&::before
+							box-shadow: inset 5px 4px 6px rgba(0, 0, 0, 0.15), inset -5px -4px 6px #fff
+				&-heading
+					padding: 10px 30px
 					box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.15), -5px -4px 6px #fff
 					background-color: #edf2f5
+					border-radius: 20px
 					&::before
-						display: none
+						content: ''
+						display: block
+						position: absolute
+						top: 0
+						left: 50%
+						transform: translate(-50%, 0)
+						width: 100%
+						height: 100%
+						box-shadow: none
+						border-radius: 20px
+						transition: .3s
+						background-color: #edf2f5
+						z-index: 2
 				&-body
 					width: 100%
-					position: relative
+					position: static
 					transform: none
+					top: 0
 					left: auto
 					z-index: 3
-					box-shadow: none
-					padding: 15px 0
+					padding: 15px 30px
+					margin-top: 15px
 				&-item
-					font-size: 15px
-					margin-bottom: 10px
+					font-size: 16px
+					margin-bottom: 15px
 					text-align: left
+					&:hover
+						transform: none
 	// eof
 
 

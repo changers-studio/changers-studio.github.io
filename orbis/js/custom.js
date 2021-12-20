@@ -49,20 +49,60 @@ $(window).on('load resize', windowSize)
 // eof
 
 // Dropdown в меню шапки
-$('.header__menu-dropdown').on('click', function () {
-	$(this).toggleClass('active').find('.header__menu-dropdown-body').slideToggle(300)
-	$(this)
-		.siblings()
-		.removeClass('active')
-		.find('.header__menu-dropdown-body')
-		.slideUp(300)
-})
+let headerDropdown = $('.header__menu-dropdown')
+
+if ($(window).width() < 992) {
+	headerDropdown.on('click', function () {
+		$(this).toggleClass('active').find('.header__menu-dropdown-body').slideToggle(300)
+		$(this)
+			.siblings()
+			.removeClass('active')
+			.find('.header__menu-dropdown-body')
+			.slideUp(300)
+	})
+
+	$(document).on('mouseup', function (event) {
+		if (
+			!headerDropdown.is(event.target) &&
+			headerDropdown.has(event.target).length === 0
+		) {
+			headerDropdown
+				.removeClass('active')
+				.find('.header__menu-dropdown-body')
+				.slideUp(300)
+		}
+	})
+} else {
+	headerDropdown.on('click', function () {
+		$(this).toggleClass('active').find('.header__menu-dropdown-body').fadeToggle(300)
+		$(this)
+			.siblings()
+			.removeClass('active')
+			.find('.header__menu-dropdown-body')
+			.fadeOut(300)
+	})
+
+	$(document).on('mouseup', function (event) {
+		if (
+			!headerDropdown.is(event.target) &&
+			headerDropdown.has(event.target).length === 0
+		) {
+			headerDropdown
+				.removeClass('active')
+				.find('.header__menu-dropdown-body')
+				.fadeOut(300)
+		}
+	})
+}
+
 // eof
 
 // Hamburger menu
 $('.header__hamburger').on('click', function () {
-	$(this).toggleClass('is-active')
-	$('.header__menu').slideToggle()
+	$('.header__hamburger').toggleClass('is-active')
+	$('.header__menu').toggleClass('active')
+	$('.header__menu-plug').fadeToggle()
+	$('body').toggleClass('scroll__disabled')
 })
 // eof
 
@@ -73,8 +113,7 @@ $('.button-up').on('click', function () {
 })
 // eof
 
-//// Json animation
-// Home page
+// Json animation
 lottie.loadAnimation({
 	container: document.getElementById('shadowAnimation-1'),
 	renderer: 'svg',

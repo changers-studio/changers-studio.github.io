@@ -18,6 +18,8 @@ body
 	font-family: $default-font
 	color: $gray
 	background: linear-gradient(275deg, #edf2f5, #e0f1fb)
+	&.scroll_disabled
+		overflow: hidden
 
 
 .body-wrapper
@@ -239,6 +241,8 @@ body
 	&__menu
 		display: flex
 		align-items: center
+		&-close
+			display: none
 		&-item
 			padding: 4px 25px
 			box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.15), -5px -4px 6px #fff
@@ -276,23 +280,16 @@ body
 			&:last-child
 				margin: 0
 		&-dropdown
-			transition-delay: .25s
 			&:hover
 				box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.15), -5px -4px 6px #fff
 				&::before
 					box-shadow: none
 					transition-duration: .1s
-			&::before
-				transition-delay: .25s
 			&.active
-				border-radius: 20px 20px 0 0
 				box-shadow: none
-				transition-delay: 0s
+				background: transparent
 				&::before
-					box-shadow: -5px -4px 6px #fff
-					width: calc(100% + 40px)
-					border-radius: 20px 20px 0 0
-					transition-delay: 0s
+					box-shadow: inset 5px 4px 6px rgba(0, 0, 0, 0.15), inset -5px -4px 6px #fff
 			&-heading
 				position: relative
 				z-index: 2
@@ -301,11 +298,12 @@ body
 				position: absolute
 				top: 100%
 				left: 50%
+				margin-top: 15px
 				transform: translate(-50%, 0)
 				width: calc(100% + 40px)
 				background-color: #edf2f5
-				border-radius: 0 0 20px 20px
-				box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.15), -5px -4px 6px #fff
+				border-radius: 15px
+				box-shadow: 5px 4px 6px rgba(24, 16, 16, 0.15), -5px -4px 6px #fff
 				padding: 8px
 			&-item
 				font-size: 15px
@@ -318,6 +316,15 @@ body
 					margin-bottom: 0
 				&:hover
 					transform: scale(1.1)
+		&-plug
+			display: none
+			z-index: 9
+			position: fixed
+			left: 0
+			top: 0
+			width: 100vw
+			height: 100vh
+			background-color: rgba(0, 0, 0, 0.8)
 	&__hamburger
 		display: none
 		position: absolute
