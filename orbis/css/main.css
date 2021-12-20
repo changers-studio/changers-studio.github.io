@@ -1976,6 +1976,7 @@ body.scroll_disabled {
   -o-transition: .3s;
   transition: .3s;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .header__menu-item span {
@@ -2018,6 +2019,10 @@ body.scroll_disabled {
 
 .header__menu-item:last-child {
   margin: 0;
+}
+
+.header__menu-dropdown {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .header__menu-dropdown:hover {

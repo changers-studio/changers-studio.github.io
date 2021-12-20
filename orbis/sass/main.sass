@@ -255,6 +255,7 @@ body
 			cursor: pointer
 			transition: .3s
 			position: relative
+			-webkit-tap-highlight-color: rgba(0,0,0,0)
 			span
 				position: relative
 				z-index: 2
@@ -280,6 +281,8 @@ body
 			&:last-child
 				margin: 0
 		&-dropdown
+			-webkit-tap-highlight-color: rgba(0,0,0,0)
+			tap-highlight-color
 			&:hover
 				box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.15), -5px -4px 6px #fff
 				&::before
