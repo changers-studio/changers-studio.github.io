@@ -94,6 +94,7 @@ h2
 	height: 100%
 	width: 100%
 	z-index: 10
+	overflow-y: auto
 	&__close
 		position: absolute
 		top: 390px
@@ -150,6 +151,7 @@ h2
 		padding:
 			top: 5vh
 			left: 216px
+			bottom: 5vh
 	&__caption
 		display: flex
 		flex-direction: column
@@ -822,7 +824,7 @@ h2
 
 // Лицензии на главной странице
 .license
-	z-index: 2
+	z-index: 3
 	&__container
 		padding: 170px 20px
 		display: flex
@@ -902,6 +904,7 @@ h2
 	background-size: cover
 	background-position: center
 	color: #fff
+	z-index: 2
 	&__container
 		padding: 550px 20px 220px
 		display: flex
@@ -1550,6 +1553,21 @@ h2
 							fill: $accent
 						circle
 							stroke: $accent
+			&-tel
+				display: flex
+				align-items: center
+				margin-top: 30px
+				&-icon
+					margin-right: 15px
+					display: flex
+			&-main-link
+				color: $accent
+				text-transform: uppercase
+				line-height: 1.2
+				text-decoration: underline
+				text-underline-position: under
+				&:hover
+					text-decoration: none
 // eof
 
 

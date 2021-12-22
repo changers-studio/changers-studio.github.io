@@ -142,6 +142,7 @@ h2 {
   height: 100%;
   width: 100%;
   z-index: 10;
+  overflow-y: auto;
 }
 
 .hamburger-menu__close {
@@ -278,6 +279,7 @@ h2 {
           flex-direction: column;
   padding-top: 5vh;
   padding-left: 216px;
+  padding-bottom: 5vh;
 }
 
 .hamburger-menu__caption {
@@ -1517,7 +1519,7 @@ h2 {
 }
 
 .license {
-  z-index: 2;
+  z-index: 3;
 }
 
 .license__container {
@@ -1662,6 +1664,7 @@ h2 {
           background-size: cover;
   background-position: center;
   color: #fff;
+  z-index: 2;
 }
 
 .strategy__container {
@@ -2753,6 +2756,38 @@ h2 {
   stroke: #14837D;
 }
 
+.p-services .services__box-tel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.p-services .services__box-tel-icon {
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-services .services__box-main-link {
+  color: #14837D;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.p-services .services__box-main-link:hover {
+  text-decoration: none;
+}
+
 .p-service .service {
   padding: 80px 0 180px;
 }
@@ -3748,6 +3783,7 @@ h2 {
   }
   .target__title {
     margin-bottom: 40px;
+    font-size: 70px;
   }
   .target__overtitle {
     margin-bottom: 100px;
@@ -4908,6 +4944,7 @@ h2 {
   .target__title {
     margin-bottom: 45px;
     left: 0;
+    font-size: 50px;
   }
   .target__title-wrapper {
     margin-left: 80px;
@@ -5392,6 +5429,9 @@ h2 {
   }
   .p-services .services__box-title br {
     display: none;
+  }
+  .p-services .services__box-main-link {
+    font-size: 14px;
   }
   .p-service .service {
     padding: 100px 0;
