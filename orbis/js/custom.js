@@ -76,7 +76,7 @@ if ($(window).width() < 992) {
 			.siblings()
 			.removeClass('active')
 			.find('.header__menu-dropdown-body')
-			.slideUp(300)
+			.slideUp(150)
 	})
 
 	$(document).on('mouseup', function (event) {
@@ -87,7 +87,7 @@ if ($(window).width() < 992) {
 			headerDropdown
 				.removeClass('active')
 				.find('.header__menu-dropdown-body')
-				.slideUp(300)
+				.slideUp(150)
 		}
 	})
 } else {
@@ -97,7 +97,7 @@ if ($(window).width() < 992) {
 			.siblings()
 			.removeClass('active')
 			.find('.header__menu-dropdown-body')
-			.fadeOut(300)
+			.fadeOut(150)
 	})
 
 	$(document).on('mouseup', function (event) {
@@ -108,7 +108,7 @@ if ($(window).width() < 992) {
 			headerDropdown
 				.removeClass('active')
 				.find('.header__menu-dropdown-body')
-				.fadeOut(300)
+				.fadeOut(150)
 		}
 	})
 }
