@@ -2244,6 +2244,8 @@ body.scroll_disabled {
           background-size: cover;
   background-position: center;
   position: relative;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
 }
 
 .text-image__image-inner svg {
@@ -2364,6 +2366,7 @@ body.scroll_disabled {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 35px;
 }
 
 .partners__item:last-child {
@@ -2468,9 +2471,17 @@ body.scroll_disabled {
   font-size: 20px;
 }
 
+.image-text .heading {
+  margin-bottom: 60px;
+}
+
 .image-text .section-container {
   padding-top: 150px;
   padding-bottom: 150px;
+}
+
+.image-text .section-container._has-heading {
+  padding-top: 60px;
 }
 
 .image-text__container {
@@ -2533,7 +2544,8 @@ body.scroll_disabled {
 }
 
 .image-text__text {
-  max-width: 500px;
+  max-width: 600px;
+  font-size: 24px;
 }
 
 .image-text__image {
@@ -2569,6 +2581,24 @@ body.scroll_disabled {
           background-size: cover;
   -webkit-border-radius: 45px;
           border-radius: 45px;
+}
+
+.gallery.team .gallery__container {
+  gap: 40px;
+}
+
+.gallery.team .gallery__item {
+  max-width: -webkit-calc(25% - 30px);
+  max-width: calc(25% - 30px);
+  height: 400px;
+}
+
+.gallery .team__container {
+  margin-bottom: 50px;
+}
+
+.gallery .heading {
+  margin-bottom: 50px;
 }
 
 .gallery .section-container {
@@ -2730,6 +2760,7 @@ body.scroll_disabled {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
+  margin: 30px 0 20px;
   margin-left: 25px;
 }
 
@@ -2889,6 +2920,12 @@ body.scroll_disabled {
     width: 500px;
     height: 500px;
   }
+  .gallery.team .gallery__item {
+    height: 320px;
+  }
+  .gallery .heading {
+    margin-bottom: 30px;
+  }
   .gallery__container {
     gap: 40px;
   }
@@ -2964,7 +3001,6 @@ body.scroll_disabled {
   }
   .partners__item {
     max-width: 22%;
-    max-height: 50px;
   }
   .image-text__image {
     width: 350px;
@@ -2980,6 +3016,14 @@ body.scroll_disabled {
   .gallery__item {
     height: 250px;
     padding: 10px;
+  }
+  .gallery.team .gallery__container {
+    gap: 20px;
+  }
+  .gallery.team .gallery__item {
+    height: 280px;
+    max-width: -webkit-calc(25% - 15px);
+    max-width: calc(25% - 15px);
   }
   .image-text__our-team {
     height: 500px;
@@ -3328,7 +3372,16 @@ body.scroll_disabled {
   }
   .partners__item {
     max-width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-right: 0;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer {
     margin-top: 80px;
@@ -3349,9 +3402,18 @@ body.scroll_disabled {
   .footer__copyrights {
     font-size: 16px;
   }
+  .image-text .heading {
+    margin-bottom: 20px;
+  }
+  .image-text .title {
+    margin: 15px auto 10px;
+  }
   .image-text .section-container {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+  .image-text .section-container._has-heading {
+    padding-top: 20px;
   }
   .image-text__container {
     margin-bottom: 30px;
@@ -3411,14 +3473,22 @@ body.scroll_disabled {
     -webkit-border-radius: 20px;
             border-radius: 20px;
   }
+  .gallery .heading {
+    margin: 20px 20px 5px;
+    width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
+  }
   .gallery .section-container {
-    padding: 20px;
-    overflow-x: auto;
+    padding: 0;
   }
   .gallery__container {
     display: block;
     width: auto;
     white-space: nowrap;
+  }
+  .gallery__container-wrapper {
+    overflow-x: auto;
+    padding: 20px;
   }
   .gallery__item {
     -webkit-border-radius: 25px;
@@ -3437,6 +3507,15 @@ body.scroll_disabled {
   .gallery__item-image {
     -webkit-border-radius: 20px;
             border-radius: 20px;
+  }
+  .gallery.team .gallery__item {
+    height: 300px;
+    width: 245px;
+    max-width: none;
+  }
+  .gallery .team__container {
+    margin-bottom: 0;
+    padding: 20px;
   }
   .image-text__our-team {
     -webkit-border-radius: 20px;
@@ -3489,11 +3568,7 @@ body.scroll_disabled {
   }
   .contacts__form-title {
     font-size: 20px;
-    margin-left: 0;
-  }
-  .contacts__form-subtitle {
-    font-size: 15px;
-    margin-left: 0;
+    margin: 0 0 10px;
   }
   .contacts__form-input {
     font-size: 16px;
