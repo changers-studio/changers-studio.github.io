@@ -122,6 +122,13 @@ $('.header__hamburger').on('click', function () {
 	$('.header__menu-plug').fadeToggle()
 	$('body').toggleClass('scroll__disabled')
 })
+
+$('.header__menu-plug').on('click', function () {
+	$('.header__hamburger').removeClass('is-active')
+	$('.header__menu').removeClass('active')
+	$('.header__menu-plug').fadeOut()
+	$('body').removeClass('scroll__disabled')
+})
 // eof
 
 // Buttom to top
