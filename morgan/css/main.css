@@ -2163,6 +2163,7 @@ input:focus, textarea:focus {
     padding-top: 110px;
   }
   .ishome .main .section-container {
+    position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -2208,6 +2209,9 @@ input:focus, textarea:focus {
     height: 75px;
     font-size: 20px;
     margin-top: 30px;
+  }
+  .ishome .main__button_accent {
+    margin-right: 0;
   }
   .ishome .main__scroll-down {
     position: static;
