@@ -316,6 +316,22 @@ input:focus, textarea:focus {
           transform: scale(1.05);
 }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #545BE7;
+  z-index: 30;
+}
+
+.preloader .loader {
+  height: 10px;
+  position: absolute;
+  background-color: #74EFF2;
+}
+
 .header {
   padding: 40px 0 10px;
   z-index: 5;
