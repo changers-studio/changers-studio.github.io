@@ -1785,6 +1785,9 @@ input:focus, textarea:focus {
   .section {
     padding: 85px 0;
   }
+  .stars {
+    height: 500px;
+  }
   input, textarea {
     font-size: 16px;
   }
@@ -1994,7 +1997,7 @@ input:focus, textarea:focus {
             border-radius: 30px;
     -webkit-backdrop-filter: blur(30px);
             backdrop-filter: blur(30px);
-    background-color: #545BE7;
+    background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid #5158C1;
     width: 400px;
     padding: 15px 0 30px;
