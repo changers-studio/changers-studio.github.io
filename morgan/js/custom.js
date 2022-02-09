@@ -1,12 +1,28 @@
 $(function () {
 	// Json animation
-	// lottie.loadAnimation({
-	// 	container: document.getElementById('main-animation'),
-	// 	renderer: 'svg',
-	// 	loop: true,
-	// 	autoplay: true,
-	// 	path: 'animation/main__coins.json',
-	// })
+	lottie.loadAnimation({
+		container: document.getElementById('main-coin-1'),
+		renderer: 'svg',
+		loop: true,
+		autoplay: true,
+		path: 'animation/main__coins.json',
+	})
+
+	lottie.loadAnimation({
+		container: document.getElementById('main-coin-2'),
+		renderer: 'svg',
+		loop: true,
+		autoplay: true,
+		path: 'animation/main__coins.json',
+	})
+
+	lottie.loadAnimation({
+		container: document.getElementById('main-coin-3'),
+		renderer: 'svg',
+		loop: true,
+		autoplay: true,
+		path: 'animation/main__coins.json',
+	})
 
 	lottie.loadAnimation({
 		container: document.getElementById('scroll-down'),
@@ -78,6 +94,14 @@ $(function () {
 		loop: true,
 		autoplay: true,
 		path: 'animation/stars.json',
+	})
+
+	lottie.loadAnimation({
+		container: document.getElementById('money-rain'),
+		renderer: 'svg',
+		loop: true,
+		autoplay: true,
+		path: 'animation/money-rain.json',
 	})
 	// eof
 })

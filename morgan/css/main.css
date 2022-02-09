@@ -937,6 +937,47 @@ input:focus, textarea:focus {
           align-items: center;
 }
 
+.ishome .main__wrapper-animation {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ishome .main__coin {
+  position: absolute;
+}
+
+.ishome .main__coin-1 {
+  width: 140px;
+  height: 140px;
+  left: 5px;
+  top: 20px;
+}
+
+.ishome .main__coin-2 {
+  width: 210px;
+  height: 210px;
+  right: -55px;
+  bottom: 100px;
+}
+
+.ishome .main__coin-3 {
+  width: 100px;
+  height: 100px;
+  left: -10px;
+  bottom: 50px;
+}
+
 .ishome .main__button {
   width: 730px;
   height: 75px;
@@ -1014,12 +1055,22 @@ input:focus, textarea:focus {
   left: -120px;
 }
 
+.ishome .about__animation {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .ishome .about__wrapper {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   padding-left: 60px;
+  position: relative;
 }
 
 .ishome .about__content {
@@ -1885,6 +1936,24 @@ input:focus, textarea:focus {
     height: 45px;
     font-size: 16px;
     margin-top: 20px;
+  }
+  .ishome .main__coin-1 {
+    width: 100px;
+    height: 100px;
+    left: 5px;
+    top: 20px;
+  }
+  .ishome .main__coin-2 {
+    width: 150px;
+    height: 150px;
+    right: -55px;
+    bottom: 50px;
+  }
+  .ishome .main__coin-3 {
+    width: 70px;
+    height: 70px;
+    left: -10px;
+    bottom: 30px;
   }
   .ishome .about__wrapper {
     width: 400px;
