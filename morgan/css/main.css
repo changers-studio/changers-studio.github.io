@@ -170,6 +170,11 @@ body {
           border-radius: 50px;
   border: 1px solid #5158C1;
   background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: -webkit-backdrop-filter 1s ease;
+  transition: -webkit-backdrop-filter 1s ease;
+  -o-transition: backdrop-filter 1s ease;
+  transition: backdrop-filter 1s ease;
+  transition: backdrop-filter 1s ease, -webkit-backdrop-filter 1s ease;
 }
 
 .section-container__flex-box {
