@@ -1,0 +1,20 @@
+<svg width="405" height="170" viewBox="0 0 405 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.1">
+<g clip-path="url(#clip0_1018_6676)">
+<path d="M148.334 0.495117H404.173V170.002H148.334V0.495117Z" fill="#D80027"/>
+<path d="M148.334 0.495117H404.173V56.9952H148.334V0.495117Z" fill="black"/>
+<path d="M148.334 113.495H404.173V169.996H148.334V113.495Z" fill="#FFDA44"/>
+</g>
+</g>
+<path d="M0 20.4961C0 9.45039 8.95431 0.496094 20 0.496094H384.003C395.049 0.496094 404.003 9.4504 404.003 20.4961V150C404.003 161.046 395.049 170 384.003 170H20C8.95428 170 0 161.046 0 150V20.4961Z" fill="url(#paint0_linear_1018_6676)"/>
+<defs>
+<linearGradient id="paint0_linear_1018_6676" x1="43.2545" y1="161.124" x2="400.225" y2="94.1347" gradientUnits="userSpaceOnUse">
+<stop offset="0.396252" stop-color="#1C2023"/>
+<stop offset="0.607294" stop-color="#1C2023" stop-opacity="0.79"/>
+<stop offset="1" stop-color="#1C2023" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_1018_6676">
+<path d="M148.334 20.4961C148.334 9.4504 157.288 0.496094 168.334 0.496094H384.173C395.219 0.496094 404.173 9.4504 404.173 20.4961V150C404.173 161.046 395.219 170 384.173 170H168.334C157.288 170 148.334 161.046 148.334 150V20.4961Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>
