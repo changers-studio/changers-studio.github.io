@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Donnie Connect | Checkout</title>
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" sizes="192x192" href="img/favicon.ico" />
+
+		<!-- reset css -->
+		<link rel="stylesheet" href="css/reset.css" />
+
+		<!-- libs css -->
+		<link rel="stylesheet" href="libs/slick-carousel/slick.css" />
+		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
+
+		<!-- main css -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- jQeury -->
+		<script defer src="libs/jquery.min.js"></script>
+
+		<!-- libs js -->
+		<script defer src="libs/lottie/lottie.min.js"></script>
+		<script defer src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script defer src="libs/slick-carousel/slick.min.js"></script>
+
+		<!-- main js -->
+		<script defer src="js/custom.js"></script>
+	</head>
+
+	<body class="isnohome">
+		<div class="body-inner">
+			<section class="cart">
+				<header class="header">
+					<div class="container">
+						<div class="header__container">
+							<button class="header__container-close"></button>
+
+							<nav class="header__menu">
+								<a href="#" class="header__menu-item">Home</a>
+								<a href="#" class="header__menu-item">About Us</a>
+								<a href="#" class="header__menu-item">Courses</a>
+								<a href="#" class="header__menu-item">Gallery</a>
+								<a href="#" class="header__menu-item">Contacts</a>
+								<a href="#" class="header__menu-item">Cart</a>
+							</nav>
+						</div>
+
+						<button class="header__hamburger hamburger hamburger--slider">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>
+					</div>
+				</header>
+
+				<div class="container">
+					<div class="cart__container">
+						<h1 class="cart__title title">Checkout</h1>
+
+						<form class="checkout">
+							<div class="checkout__container">
+								<div class="checkout__item">
+									<p class="checkout__heading">
+										First name
+										<span>*</span>
+									</p>
+									<input type="text" name="Name" class="checkout__input" required />
+								</div>
+
+								<div class="checkout__item">
+									<p class="checkout__heading">
+										Last name
+										<span>*</span>
+									</p>
+									<input type="text" name="Last name" class="checkout__input" required />
+								</div>
+
+								<div class="checkout__item">
+									<p class="checkout__heading">
+										Email address
+										<span>*</span>
+									</p>
+									<input type="email" name="Email" class="checkout__input" required />
+								</div>
+
+								<div class="checkout__item">
+									<p class="checkout__heading">
+										Street address
+										<span>*</span>
+									</p>
+									<input type="text" name="address" class="checkout__input" required />
+								</div>
+
+								<div class="checkout__item">
+									<p class="checkout__heading">
+										Town / City
+										<span>*</span>
+									</p>
+									<input type="text" name="" class="checkout__input" required />
+								</div>
+
+								<div class="checkout__item">
+									<p class="checkout__heading">
+										Country / Region
+										<span>*</span>
+									</p>
+									<input type="text" name="Country" class="checkout__input" required />
+								</div>
+
+								<div class="checkout__item">
+									<p class="checkout__heading">
+										Postcode / ZIP
+										<span>*</span>
+									</p>
+									<input type="text" name="Postcode" class="checkout__input" required />
+								</div>
+							</div>
+
+							<div class="checkout__card">
+								<div class="checkout__item icon-card">
+									<p class="checkout__heading">
+										Card Number
+										<span>*</span>
+									</p>
+									<input
+										type="number"
+										name="Card number"
+										placeholder="1234 1234 1234 1234"
+										class="checkout__input"
+										required
+									/>
+								</div>
+
+								<div class="checkout__card-wrapper">
+									<div class="checkout__item">
+										<p class="checkout__heading">
+											Expiry Date
+											<span>*</span>
+										</p>
+										<input
+											type="number"
+											name="Expiry Date"
+											placeholder="MM/YY"
+											class="checkout__input"
+											required
+										/>
+									</div>
+
+									<div class="checkout__item">
+										<p class="checkout__heading">
+											Card Code (CVC)
+											<span>*</span>
+										</p>
+										<input
+											type="number"
+											name="CVC"
+											placeholder="CVC"
+											class="checkout__input"
+											required
+										/>
+									</div>
+								</div>
+							</div>
+
+							<div class="checkout__checkbox-container">
+								<label class="checkout__checkbox">
+									<input type="checkbox" class="checkout__checkbox-input" required />
+
+									<span>
+										By completing your purchase I accept the Terms & Service and Privacy
+										Policy
+									</span>
+								</label>
+
+								<label class="checkout__checkbox">
+									<input type="checkbox" class="checkout__checkbox-input" />
+
+									<span>Subscribe to our newsletter</span>
+								</label>
+							</div>
+
+							<button type="submit" class="checkout__submit button">Place order</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<div class="container">
+					<img src="img/footer-logo.png" alt="Image" class="footer__image" />
+
+					<div class="footer__container">
+						<nav class="footer__menu">
+							<a href="#" class="footer__menu-item">Home</a>
+							<a href="#" class="footer__menu-item">About Us</a>
+							<a href="#" class="footer__menu-item">Courses</a>
+							<a href="#" class="footer__menu-item">Gallery</a>
+							<a href="#" class="footer__menu-item">Contacts</a>
+						</nav>
+
+						<div class="footer__social">
+							<a href="#" class="footer__social-item">
+								<img src="img/icons/facebook.svg" alt="Icon" />
+							</a>
+
+							<a href="#" class="footer__social-item">
+								<img src="img/icons/instagram.svg" alt="Icon" />
+							</a>
+
+							<a href="#" class="footer__social-item">
+								<img src="img/icons/in.svg" alt="Icon" />
+							</a>
+
+							<a href="#" class="footer__social-item">
+								<img src="img/icons/youtube.svg" alt="Icon" />
+							</a>
+						</div>
+
+						<p class="footer__copyrights">
+							© 2017-2022 All Rights Reserved. Empowerment Lab.
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

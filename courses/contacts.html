@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Donnie Connect | Contacts</title>
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" sizes="192x192" href="img/favicon.ico" />
+
+		<!-- reset css -->
+		<link rel="stylesheet" href="css/reset.css" />
+
+		<!-- libs css -->
+		<link rel="stylesheet" href="libs/slick-carousel/slick.css" />
+		<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
+
+		<!-- main css -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- jQeury -->
+		<script defer src="libs/jquery.min.js"></script>
+
+		<!-- libs js -->
+		<script defer src="libs/lottie/lottie.min.js"></script>
+		<script defer src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script defer src="libs/slick-carousel/slick.min.js"></script>
+
+		<!-- main js -->
+		<script defer src="js/custom.js"></script>
+	</head>
+
+	<body class="isnohome">
+		<div class="body-inner">
+			<header class="header">
+				<div class="container">
+					<div class="header__container">
+						<button class="header__container-close"></button>
+
+						<nav class="header__menu">
+							<a href="#" class="header__menu-item">Home</a>
+							<a href="#" class="header__menu-item">About Us</a>
+							<a href="#" class="header__menu-item">Courses</a>
+							<a href="#" class="header__menu-item">Gallery</a>
+							<a href="#" class="header__menu-item">Contacts</a>
+							<a href="#" class="header__menu-item">Cart</a>
+						</nav>
+					</div>
+
+					<button class="header__hamburger hamburger hamburger--slider">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</div>
+			</header>
+
+			<section class="top">
+				<div class="top__preview">
+					<video
+						src="videos/contacts.mp4"
+						autoplay
+						loop
+						muted
+						class="top__preview-video"
+					></video>
+
+					<h1 class="top__title">Contact Us</h1>
+				</div>
+			</section>
+
+			<section class="contacts">
+				<div class="container">
+					<img src="img/contacts__bg.svg" alt="Icons" class="contacts__bg" />
+					<div class="contacts__container">
+						<form class="contacts__form">
+							<div class="contacts__form-item">
+								<p class="contacts__form-heading">Name</p>
+								<input
+									type="text"
+									name="Name"
+									placeholder="Doni"
+									class="contacts__form-input"
+									required
+								/>
+							</div>
+
+							<div class="contacts__form-item">
+								<p class="contacts__form-heading">Tel. number</p>
+								<input
+									type="text"
+									name="Telephone"
+									placeholder="777-777-777"
+									class="contacts__form-input"
+									required
+								/>
+							</div>
+
+							<div class="contacts__form-item">
+								<p class="contacts__form-heading">Email</p>
+								<input
+									type="email"
+									name="Email"
+									placeholder="exemple@gmail.com"
+									class="contacts__form-input"
+									required
+								/>
+							</div>
+
+							<div class="contacts__form-item">
+								<p class="contacts__form-heading">Your text</p>
+								<textarea
+									name="Text"
+									placeholder="Text"
+									class="contacts__form-input contacts__form-textarea"
+								></textarea>
+							</div>
+
+							<button type="submit" class="contacts__form-button button">Submit</button>
+						</form>
+
+						<iframe
+							class="contacts__map"
+							src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31179.170303472278!2d-0.45550500961757545!3d46.31231310980637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sge!4v1645546914303!5m2!1sru!2sge"
+							style="border: 0"
+							allowfullscreen=""
+							loading="lazy"
+						></iframe>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<div class="container">
+					<img src="img/footer-logo.png" alt="Image" class="footer__image" />
+
+					<div class="footer__container">
+						<nav class="footer__menu">
+							<a href="#" class="footer__menu-item">Home</a>
+							<a href="#" class="footer__menu-item">About Us</a>
+							<a href="#" class="footer__menu-item">Courses</a>
+							<a href="#" class="footer__menu-item">Gallery</a>
+							<a href="#" class="footer__menu-item">Contacts</a>
+						</nav>
+
+						<div class="footer__social">
+							<a href="#" class="footer__social-item">
+								<img src="img/icons/facebook.svg" alt="Icon" />
+							</a>
+
+							<a href="#" class="footer__social-item">
+								<img src="img/icons/instagram.svg" alt="Icon" />
+							</a>
+
+							<a href="#" class="footer__social-item">
+								<img src="img/icons/in.svg" alt="Icon" />
+							</a>
+
+							<a href="#" class="footer__social-item">
+								<img src="img/icons/youtube.svg" alt="Icon" />
+							</a>
+						</div>
+
+						<p class="footer__copyrights">
+							© 2017-2022 All Rights Reserved. Empowerment Lab.
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
