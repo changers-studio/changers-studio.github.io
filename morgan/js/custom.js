@@ -112,3 +112,10 @@ $('.header__hamburger').on('click', function () {
 	$('.header__hamburger-inner').fadeToggle()
 })
 // eof
+
+// Выпадающий блок FAQ
+$('.faq__dropdown-heading').on('click', function () {
+	$(this).toggleClass('active').next().slideToggle()
+	$('.faq__dropdown-heading').not(this).removeClass('active').next().slideUp()
+})
+// eof

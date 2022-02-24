@@ -12,8 +12,6 @@ body
 	font-family: $default-font
 	font-weight: 700
 	color: #fff
-
-.ishome
 	background-image: url('../img/gradient-bg.svg')
 	background-position: center top
 
@@ -25,10 +23,12 @@ body
 	width: 100%
 	max-width: 1690px
 	margin: 0 auto
+	position: relative
 
 .section
 	padding: 140px 0
 	&-container
+		position: relative
 		width: 100%
 		backdrop-filter: blur(30px)
 		border-radius: 50px
@@ -52,6 +52,7 @@ body
 		&__heading
 			font-size: 35px
 			margin-bottom: 30px
+			color: $gold
 
 
 .scroll-down
@@ -146,6 +147,8 @@ input, textarea
 	z-index: 5
 	position: absolute
 	bottom: 100%
+	left: 50%
+	transform: translate(-50%, 0)
 	margin-bottom: 10px
 	width: 100%
 	&__container
@@ -193,7 +196,7 @@ input, textarea
 				top: 100%
 				left: 50%
 				transform: translate(-50%, 0)
-				margin-top: 10px
+				padding-top: 10px
 				white-space: nowrap
 				text-align: center
 				.header__menu-item
@@ -316,9 +319,7 @@ input, textarea
 			display: flex
 			align-items: center
 			justify-content: center
-			background-image: url('../img/main-page/button-bg.svg')
-			background-size: cover
-			background-position: center
+			background: linear-gradient(#78fff2 0%, #2a34ff 100%)
 			font-size: 20px
 			font-weight: 700
 			border-radius: 0 30px 30px 0
@@ -414,6 +415,7 @@ input, textarea
 		&__title
 			margin-bottom: 60px
 			font-size: 55px
+			color: $gold
 		&__text
 			max-width: 510px
 			padding-bottom: 50px
@@ -690,10 +692,14 @@ input, textarea
 				cursor: default
 				&:hover
 					transform: scale(1.15)
+					.statistic__info-heading
+						color: #fff
 			&-icon
 				margin-bottom: 10px
 			&-heading
 				margin-bottom: 5px
+				color: $gold
+				transition: .3s
 			&-data
 				color: $gold
 	// eof
@@ -758,16 +764,15 @@ input, textarea
 			&-text
 				margin-top: 8px
 				&._gold
-					margin-top: 20px
 					color: $gold
+				&._margin-top
+					margin-top: 20px
 				&._large
 					font-size: 32px
 			&-button
 				width: 220px
 				height: 50px
-				background-image: url('../img/main-page/button-bg.svg')
-				background-size: cover
-				background-position: center
+				background: linear-gradient(#78fff2 0%, #2a34ff 100%)
 				border-radius: 30px
 				display: flex
 				align-items: center
@@ -847,10 +852,230 @@ input, textarea
 
 
 
+////////// Страница FAQ
+.p-faq
+	.faq
+		&__decor
+			position: absolute
+			background-size: contain
+			background-repeat: no-repeat 
+			background-position: center
+			z-index: -1
+			&_right
+				top: -30px
+				right: -205px
+				background-image: url('../img/main-page/coin_big.svg')
+				width: 450px
+				height: 450px
+			&_middle
+				top: 40%
+				left: -260px
+				background-image: url('../img/main-page/coin_big.svg')
+				width: 500px
+				height: 500px
+			&_left
+				background-image: url('../img/main-page/coin.svg')
+				width: 240px
+				height: 240px
+				bottom: -120px
+				right: -120px
+		.container-inner
+			padding: 40px 90px 40px
+		&__title
+			font-size: 45px
+			text-align: center
+		&__image
+			margin: 0 auto
+			display: flex
+			margin-bottom: 40px
+		&__text
+			max-width: 1000px
+			text-align: center
+			margin: 0 auto
+			text-shadow: 0px 3px 6px #00000029
+		&__container
+			margin-top: 80px
+			display: flex
+			justify-content: space-between
+			align-items: flex-start
+			flex-wrap: wrap
+			&-item
+				width: calc(33% - 30px)
+				margin-bottom: 50px
+		&__dropdown
+			box-shadow: inset 0px 3px 6px #FFFFFF8A, 0px 8px 0px #989DFF
+			border-radius: 40px
+			background-color: $second
+			font-weight: 400
+			&-heading
+				position: relative
+				min-height: 82px
+				display: flex
+				align-items: center
+				justify-content: flex-start
+				padding: 
+					top: 15px
+					left: 30px
+					bottom: 15px
+					right: 130px
+				&::before
+					content: ''
+					display: block
+					width: 30px
+					height: 30px
+					background-image: url('../img/icons/dropdown-icon.svg')
+					background-size: contain
+					background-repeat: no-repeat
+					background-position: center
+					position: absolute
+					top: 50%
+					right: 30px
+					transform: translate(0, -50%)
+					transition: .3s
+				&.active
+					&::before
+						transform: translate(0, -50%) rotate(45deg)
+			&-body
+				display: none
+				padding:
+					left: 30px
+					bottom: 30px
+					right: 90px
+				span
+					font-weight: 700
+////////// eop
 
 
 
 
+////////// Страница сервисы
+.p-services
+	.services
+		&__decor
+			position: absolute
+			background-size: contain
+			background-repeat: no-repeat 
+			background-position: center
+			z-index: -1
+			&_right
+				top: -30px
+				right: -205px
+				background-image: url('../img/main-page/coin_big.svg')
+				width: 450px
+				height: 450px
+			&_middle
+				top: 40%
+				left: -260px
+				background-image: url('../img/main-page/coin_big.svg')
+				width: 500px
+				height: 500px
+			&_left
+				background-image: url('../img/main-page/coin.svg')
+				width: 240px
+				height: 240px
+				bottom: -120px
+				right: -120px
+		.container-inner
+			padding: 40px 90px 40px
+		&__title
+			font-size: 45px
+			text-align: center
+			margin-bottom: 20px
+		&__image
+			margin: 0 auto
+			display: flex
+			margin-bottom: 40px
+		&__text
+			max-width: 1000px
+			text-align: center
+			margin: 0 auto
+			text-shadow: 0px 3px 6px #00000029
+		&__heading
+			font-size: 25px
+			color: $gold
+			text-align: center
+			margin-bottom: 15px
+		&__info
+			display: flex
+			justify-content: center
+			align-items: center
+			padding: 90px 0
+			&-box
+				width: 370px
+				border-radius: 30px
+				border: 3px solid #fff
+				background-image: url('../img/main-page/services__box-bg.svg')
+				background-size: cover
+				background-position: center
+				text-align: center
+				padding: 30px 15px
+				&._large
+					margin: 0 40px
+					width: 460px
+					.services__info
+						&-heading
+							font-size: 38px
+						&-button
+							width: 270px
+							height: 60px
+							font-size: 23px
+						&-dropdown
+							margin-top: 100px
+			&-heading
+				font-size: 30px
+				margin-bottom: 15px
+			&-text
+				margin-top: 8px
+				&._gold
+					color: $gold
+				&._margin-top
+					margin-top: 20px
+				&._large
+					font-size: 32px
+			&-button
+				width: 220px
+				height: 50px
+				background: linear-gradient(#78fff2 0%, #2a34ff 100%)
+				border-radius: 30px
+				display: flex
+				align-items: center
+				justify-content: center
+				text-align: center
+				font-size: 20px
+				margin: 15px auto 0
+				transition: .3s
+				cursor: pointer
+				&:hover
+					transform: scale(1.1)
+			&-dropdown
+				margin-top: 45px
+				&-heading
+					display: flex
+					flex-direction: column
+					align-items: center
+					text-transform: uppercase
+					transition: .3s
+					cursor: pointer
+					&:hover
+						transform: scale(1.15)
+				&-body
+					display: none
+		&__boxs
+			display: flex
+			justify-content: space-between
+			max-width: 1300px
+			margin: 120px auto 90px
+		&__box
+			display: flex
+			flex-direction: column
+			text-align: center
+			align-items: center
+			max-width: calc(30%)
+		&__caption
+			margin-bottom: 35px
+			font-size: 35px
+			color: $gold
+////////// eop
 
 
 

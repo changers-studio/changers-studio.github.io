@@ -144,6 +144,26 @@
 	////////// eop
 
 
+	////////// Страница FAQ
+	.p-faq
+		.faq
+			&__container
+				&-item
+					width: calc(33% - 15px)
+			&__dropdown
+				&-heading, &-body
+					padding-right: 70px
+	////////// eop
+
+
+	////////// Страница сервисы
+	.p-services
+		.services
+			&__caption
+				font-size: 25px
+	////////// eop
+
+
 
 
 
@@ -342,6 +362,15 @@
 					gap: 30px
 		// eof
 
+	////////// eop
+
+
+	////////// Страница FAQ
+	.p-faq
+		.faq
+			&__container
+				&-item
+					width: calc(50% - 30px)
 	////////// eop
 
 
@@ -699,11 +728,82 @@
 
 
 
+	////////// Страница FAQ
+	.p-faq
+		.faq
+			&__container
+				margin-top: 50px
+				&-item
+					width: 100%
+					margin-bottom: 30px
+			&__dropdown
+				&-heading, &-body
+					padding-right: 60px
+	////////// eop
+
+
+
+	////////// Страница сервисы
+	.p-services
+		.services
+			&__info
+				flex-direction: column
+				&-box
+					width: 100%
+					max-width: 370px
+					margin-top: 35px
+					&._large
+						margin: 35px 0 0
+						width: 100%
+						max-width: 370px
+						.services__info
+							&-heading
+								font-size: 30px
+							&-text
+								font-size: 18px
+								&._large
+									font-size: 24px
+							&-button
+								max-width: 220px
+								width: 100%
+								font-size: 20px
+							&-dropdown
+								margin-top: 50px
+				&-heading
+					font-size: 30px
+				&-text
+					font-size: 18px
+				&-button
+					max-width: 220px
+					width: 100%
+					height: 50px
+					font-size: 20px
+				&-dropdown
+					margin-top: 50px
+			&__boxs
+				flex-direction: column
+				align-content: inherit
+				margin: 70px 0 30px
+			&__box
+				width: auto
+				max-width: 100%
+				margin-bottom: 60px
+				&:last-child
+					margin-bottom: 0
+			&__caption
+				font-size: 30px
+	////////// eop
+
+
+
 
 
 @media only screen and (max-width : 840px)
 	
 	// Общие стили для сайта
+	body
+		font-size: 20px
+
 	.container
 		max-width: calc(100% - 20px)
 		width: 320px
@@ -717,6 +817,14 @@
 					right: 20px
 			&__title
 				padding: 0 20px
+	// eof
+
+
+	// Внутрение страницы
+	.isnohome
+		.header
+			padding-top: 30px
+			margin-bottom: 60px
 	// eof
 
 
@@ -870,4 +978,47 @@
 				margin-top: 0
 		// eof
 
+	////////// eop
+
+
+	////////// Страница FAQ
+	.p-faq
+		.faq
+			.container-inner
+				padding: 0 20px 20px
+			&__container
+				margin-top: 50px
+				&-item
+					width: 100%
+					margin-bottom: 30px
+			&__dropdown
+				font-size: 16px
+				&-heading
+					min-height: auto
+					padding: 
+						top: 15px
+						left: 30px
+						bottom: 15px
+					&::before
+						width: 25px
+						height: 25px
+						right: 20px
+				&-body
+					padding: 
+						left: 30px
+						bottom: 15px
+						right: 30px
+	////////// eop
+
+
+	////////// Страница сервисы
+	.p-services
+		.services
+			.container-inner
+				padding: 0 20px 20px
+			&__info
+				margin-top: 10px
+				&-box, &-box._large
+					max-width: calc(100vw - 20px)
+					width: calc(100% + 60px)
 	////////// eop
