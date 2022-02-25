@@ -1,7 +1,3 @@
-$(function () {
-	//
-})
-
 // Выезжающие блоки
 $('.nav__inner-close, .aside__container-close, .main-plug').on('click', function () {
 	$('.header__buttons-item').removeClass('active')
@@ -151,5 +147,11 @@ $('.contacts__form-input').on('focusout', function () {
 // Закрытие попапа
 $('.contacts__popup-close').on('click', function () {
 	$(this).closest('.contacts__popup-container').fadeOut()
+})
+// eof
+
+// Воспроизведение видео
+$('.project').on('click', function () {
+	$(this).find('.project__video').fadeIn()
 })
 // eof

@@ -508,6 +508,7 @@ input, textarea
 	&__dropdown
 		display: none
 	&__button 
+		display: none
 		width: 100%
 		height: 38px
 		background-color: $block-bg
@@ -719,6 +720,7 @@ input, textarea
 		width: calc(50% - 20px)
 		margin-top: 40px
 		display: block
+		cursor: pointer
 		&:hover
 			.project
 				&__preview-wrapper
@@ -748,8 +750,8 @@ input, textarea
 			background-position: center
 			overflow: hidden
 			border-radius: 12px
-			width: calc(100% - 2px)
-			height: calc(100% - 2px)
+			width: 100%
+			padding-bottom: 56.25%
 			background-color: $block-bg
 			display: flex
 			align-items: center
@@ -765,7 +767,6 @@ input, textarea
 				opacity: 0.6
 				transition: .3s
 			&-wrapper
-				height: 315px
 				display: flex
 				align-items: center
 				justify-content: center
@@ -773,6 +774,7 @@ input, textarea
 				border-radius: 12px
 				transition: .6s
 				background-size: 100% 100%
+				padding: 1px
 		&__category
 			display: flex
 			align-items: center
@@ -797,7 +799,10 @@ input, textarea
 				flex: 0 0 auto
 				margin-right: 5px
 		&__icon
-			position: relative
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
 			display: flex
 			align-items: center
 			justify-content: center
@@ -821,6 +826,13 @@ input, textarea
 				z-index: 2
 				path
 					transition: .3s
+		&__video
+			display: none
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
 // eof
 
 

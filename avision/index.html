@@ -19,7 +19,6 @@
 
 		<!-- libs css -->
 		<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
-		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 
 		<!-- main css -->
 		<link rel="stylesheet" href="css/main.css" />
@@ -30,16 +29,18 @@
 		<!-- preloader -->
 		<script defer src="js/preloader.js"></script>
 
+		<!-- vimeo js -->
+		<script src="https://player.vimeo.com/api/player.js"></script>
+
 		<!-- libs js -->
 		<script defer src="libs/swiper/swiper-bundle.min.js"></script>
-		<script defer src="libs/fancybox/jquery.fancybox.min.js"></script>
 
 		<!-- main js -->
 		<script defer src="js/custom.js"></script>
 	</head>
 
 	<body class="ishome">
-		<div class="overlay flex cac vac">
+		<!-- <div class="overlay flex cac vac">
 			<div>
 				<div class="loader preloader flex vac">
 					<svg width="200" height="200">
@@ -65,7 +66,7 @@
 					</span>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="body-inner">
 			<header class="header">
@@ -448,7 +449,7 @@
 						<h3 class="nav__heading">Portfolio</h3>
 
 						<div class="nav__list">
-							<a href="portfolio-animation.html" class="nav__item">
+							<a href="portfolio-cgi-vfx.html" class="nav__item">
 								<i class="nav__icon">
 									<svg
 										width="16"
@@ -492,7 +493,7 @@
 								Animation
 							</a>
 
-							<a href="portfolio-animation.html" class="nav__item">
+							<a href="portfolio-3d-graphics.html" class="nav__item">
 								<i class="nav__icon">
 									<svg
 										width="17"
@@ -522,7 +523,7 @@
 								3D Graphics
 							</a>
 
-							<a href="portfolio-animation.html" class="nav__item">
+							<a href="portfolio-video-editing.html" class="nav__item">
 								<i class="nav__icon">
 									<svg
 										width="20"
@@ -542,7 +543,7 @@
 								Video Editing
 							</a>
 
-							<a href="portfolio-animation.html" class="nav__item">
+							<a href="portfolio-music-video.html" class="nav__item">
 								<i class="nav__icon">
 									<svg
 										width="18"
@@ -562,7 +563,7 @@
 								Music Video
 							</a>
 
-							<a href="portfolio-animation.html" class="nav__item">
+							<a href="#" class="nav__item">
 								<i class="nav__icon">
 									<svg
 										width="18"
@@ -642,19 +643,15 @@
 							<h1 class="section__title projects__title">Recognized projects</h1>
 
 							<div class="projects__container">
-								<a
-									href="https://www.youtube.com/watch?v=fb5ELWi-ekk"
-									class="project"
-									data-fancybox
-								>
-									<p class="project__title">Avision Media Showreel</p>
+								<div class="project">
+									<p class="project__title">World of Tanks Holiday Ops</p>
 
 									<div class="project__preview-wrapper">
 										<div
 											class="project__preview"
-											style="background-image: url('img/preview.jpg')"
+											style="background-image: url('img/previews/preview-1.png')"
 										>
-											<span class="project__category">Animated Explainer</span>
+											<span class="project__category">CGI commercial</span>
 
 											<div class="project__icon">
 												<svg
@@ -670,23 +667,41 @@
 													/>
 												</svg>
 											</div>
+
+											<iframe
+												class="project__video"
+												src="https://player.vimeo.com/video/674547492?h=bce6518ffb&amp;b
+												adge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+												frameborder="0"
+												allow="autoplay; fullscreen; picture
+												-
+												in
+												-
+												picture"
+												allowfullscreen
+												style="
+													position: absolute;
+													top: 0;
+													left: 0;
+													width: 100%;
+													height: 100%;
+												"
+												title="Arnold Schwarzenegger in World of Tanks (CGI
+												commercial)"
+											></iframe>
 										</div>
 									</div>
-								</a>
+								</div>
 
-								<a
-									href="https://www.youtube.com/watch?v=fb5ELWi-ekk"
-									class="project"
-									data-fancybox
-								>
-									<p class="project__title">Avision Media Showreel</p>
+								<div class="project">
+									<p class="project__title">Arnold Schwarzenegger in World of Tanks</p>
 
 									<div class="project__preview-wrapper">
 										<div
 											class="project__preview"
-											style="background-image: url('img/preview.jpg')"
+											style="background-image: url('img/previews/preview-2.png')"
 										>
-											<span class="project__category">Animated Explainer</span>
+											<span class="project__category">CGI commercial</span>
 
 											<div class="project__icon">
 												<svg
@@ -702,23 +717,41 @@
 													/>
 												</svg>
 											</div>
+
+											<iframe
+												class="project__video"
+												src="https://player.vimeo.com/video/675611478?h=feaeb73cac&amp;b
+adge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+												frameborder="0"
+												allow="autoplay; fullscreen; picture
+-
+in
+-
+picture"
+												allowfullscreen
+												style="
+													position: absolute;
+													top: 0;
+													left: 0;
+													width: 100%;
+													height: 100%;
+												"
+												title="World of Tanks (ft. Arnold Schwarzenegger) Holiday Ops (CGI
+commercial)"
+											></iframe>
 										</div>
 									</div>
-								</a>
+								</div>
 
-								<a
-									href="https://www.youtube.com/watch?v=fb5ELWi-ekk"
-									class="project"
-									data-fancybox
-								>
-									<p class="project__title">Avision Media Showreel</p>
+								<div class="project">
+									<p class="project__title">Kyivstar Android promo</p>
 
 									<div class="project__preview-wrapper">
 										<div
 											class="project__preview"
-											style="background-image: url('img/preview.jpg')"
+											style="background-image: url('img/previews/preview-3.png')"
 										>
-											<span class="project__category">Animated Explainer</span>
+											<span class="project__category">CGI commercial</span>
 
 											<div class="project__icon">
 												<svg
@@ -734,23 +767,37 @@
 													/>
 												</svg>
 											</div>
+
+											<iframe
+												class="project__video"
+												src="https://player.vimeo.com/video/649666910?h=bcd5149338&amp;
+badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+												frameborder="0"
+												allow="autoplay; fullscreen; picture-in-picture"
+												allowfullscreen
+												style="
+													position: absolute;
+													top: 0;
+													left: 0;
+													width: 100%;
+													height: 100%;
+												"
+												title="Kyivstar Android (CGI Robot for Ukrainian Telecommunication
+company)"
+											></iframe>
 										</div>
 									</div>
-								</a>
+								</div>
 
-								<a
-									href="https://www.youtube.com/watch?v=fb5ELWi-ekk"
-									class="project"
-									data-fancybox
-								>
-									<p class="project__title">Avision Media Showreel</p>
+								<div class="project">
+									<p class="project__title">Roshen: Yummi Gummi Party</p>
 
 									<div class="project__preview-wrapper">
 										<div
 											class="project__preview"
-											style="background-image: url('img/preview.jpg')"
+											style="background-image: url('img/previews/preview-4.png')"
 										>
-											<span class="project__category">Animated Explainer</span>
+											<span class="project__category">CGI commercial</span>
 
 											<div class="project__icon">
 												<svg
@@ -766,23 +813,36 @@
 													/>
 												</svg>
 											</div>
+
+											<iframe
+												class="project__video"
+												src="https://player.vimeo.com/video/673341464?h=6b6dec43aa&amp;
+badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+												frameborder="0"
+												allow="autoplay; fullscreen; picture-in-picture"
+												allowfullscreen
+												style="
+													position: absolute;
+													top: 0;
+													left: 0;
+													width: 100%;
+													height: 100%;
+												"
+												title="Roshen: Yummi Gummi Party (CGIanimation)"
+											></iframe>
 										</div>
 									</div>
-								</a>
+								</div>
 
-								<a
-									href="https://www.youtube.com/watch?v=fb5ELWi-ekk"
-									class="project"
-									data-fancybox
-								>
-									<p class="project__title">Avision Media Showreel</p>
+								<div class="project">
+									<p class="project__title">Cleaning Agents</p>
 
 									<div class="project__preview-wrapper">
 										<div
 											class="project__preview"
-											style="background-image: url('img/preview.jpg')"
+											style="background-image: url('img/previews/preview-5.png')"
 										>
-											<span class="project__category">Animated Explainer</span>
+											<span class="project__category">Promo Animation</span>
 
 											<div class="project__icon">
 												<svg
@@ -798,23 +858,36 @@
 													/>
 												</svg>
 											</div>
+
+											<iframe
+												class="project__video"
+												src="https://player.vimeo.com/video/640277653?h=a106ac4582&amp;
+badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+												frameborder="0"
+												allow="autoplay; fullscreen; picture-in-picture"
+												allowfullscreen
+												style="
+													position: absolute;
+													top: 0;
+													left: 0;
+													width: 100%;
+													height: 100%;
+												"
+												title="Cleaning Agents (Animated Commercial)"
+											></iframe>
 										</div>
 									</div>
-								</a>
+								</div>
 
-								<a
-									href="https://www.youtube.com/watch?v=fb5ELWi-ekk"
-									class="project"
-									data-fancybox
-								>
-									<p class="project__title">Avision Media Showreel</p>
+								<div class="project">
+									<p class="project__title">Cinemas Guzzo: Chocolate Banana popcorn</p>
 
 									<div class="project__preview-wrapper">
 										<div
 											class="project__preview"
-											style="background-image: url('img/preview.jpg')"
+											style="background-image: url('img/previews/preview-6.png')"
 										>
-											<span class="project__category">Animated Explainer</span>
+											<span class="project__category">Promo Animation</span>
 
 											<div class="project__icon">
 												<svg
@@ -830,23 +903,36 @@
 													/>
 												</svg>
 											</div>
+
+											<iframe
+												class="project__video"
+												src="https://player.vimeo.com/video/662131781?h=5625ea3196&amp;
+badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+												frameborder="0"
+												allow="autoplay;fullscreen; picture-in-picture"
+												allowfullscreen
+												style="
+													position: absolute;
+													top: 0;
+													left: 0;
+													width: 100%;
+													height: 100%;
+												"
+												title="Cinemas Guzzo: Chocolate Banana popcorn (promoanimation)"
+											></iframe>
 										</div>
 									</div>
-								</a>
+								</div>
 
-								<a
-									href="https://www.youtube.com/watch?v=fb5ELWi-ekk"
-									class="project"
-									data-fancybox
-								>
-									<p class="project__title">Avision Media Showreel</p>
+								<div class="project">
+									<p class="project__title">DimA - We Are Alone</p>
 
 									<div class="project__preview-wrapper">
 										<div
 											class="project__preview"
-											style="background-image: url('img/preview.jpg')"
+											style="background-image: url('img/previews/preview-7.png')"
 										>
-											<span class="project__category">Animated Explainer</span>
+											<span class="project__category">Music Video</span>
 
 											<div class="project__icon">
 												<svg
@@ -862,23 +948,36 @@
 													/>
 												</svg>
 											</div>
+
+											<iframe
+												class="project__video"
+												src="https://player.vimeo.com/video/639754094?h=60704f02e5&amp;
+badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+												frameborder="0"
+												allow="autoplay; fullscreen; picture-in-picture"
+												allowfullscreen
+												style="
+													position: absolute;
+													top: 0;
+													left: 0;
+													width: 100%;
+													height: 100%;
+												"
+												title="DimA-We Are Alone (official musicvideo)"
+											></iframe>
 										</div>
 									</div>
-								</a>
+								</div>
 
-								<a
-									href="https://www.youtube.com/watch?v=fb5ELWi-ekk"
-									class="project"
-									data-fancybox
-								>
-									<p class="project__title">Avision Media Showreel</p>
+								<div class="project">
+									<p class="project__title">Must Escape</p>
 
 									<div class="project__preview-wrapper">
 										<div
 											class="project__preview"
-											style="background-image: url('img/preview.jpg')"
+											style="background-image: url('img/previews/preview-8.png')"
 										>
-											<span class="project__category">Animated Explainer</span>
+											<span class="project__category">Short Film</span>
 
 											<div class="project__icon">
 												<svg
@@ -894,41 +993,27 @@
 													/>
 												</svg>
 											</div>
+
+											<iframe
+												class="project__video"
+												src="https://player.vimeo.com/video/679876050?h=ff3bcc259c&amp;b
+adge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+												frameborder="0"
+												allow="autoplay; fullscreen; picture-in-picture"
+												allowfull
+												screen
+												style="
+													position: absolute;
+													top: 0;
+													left: 0;
+													width: 100%;
+													height: 100%;
+												"
+												title="Must Escape (short film).mp4"
+											></iframe>
 										</div>
 									</div>
-								</a>
-
-								<a
-									href="https://www.youtube.com/watch?v=fb5ELWi-ekk"
-									class="project"
-									data-fancybox
-								>
-									<p class="project__title">Avision Media Showreel</p>
-
-									<div class="project__preview-wrapper">
-										<div
-											class="project__preview"
-											style="background-image: url('img/preview.jpg')"
-										>
-											<span class="project__category">Animated Explainer</span>
-
-											<div class="project__icon">
-												<svg
-													width="36"
-													height="36"
-													viewBox="0 0 36 36"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														d="M28.874 19.9432C30.3204 18.824 30.3204 16.6402 28.874 15.521C24.5025 12.1385 19.6212 9.47245 14.4127 7.62258L13.4612 7.28464C11.6408 6.6381 9.71795 7.86975 9.4715 9.74888C8.78294 14.9992 8.78294 20.465 9.4715 25.7153C9.71794 27.5944 11.6408 28.8261 13.4612 28.1796L14.4127 27.8416C19.6212 25.9918 24.5025 23.3257 28.874 19.9432Z"
-														fill="#EC6608"
-													/>
-												</svg>
-											</div>
-										</div>
-									</div>
-								</a>
+								</div>
 							</div>
 						</div>
 					</section>

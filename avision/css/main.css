@@ -1379,6 +1379,7 @@ input, textarea {
 }
 
 .nav__button {
+  display: none;
   width: 100%;
   height: 38px;
   background-color: #171B1F;
@@ -1751,6 +1752,7 @@ input, textarea {
   width: calc(50% - 20px);
   margin-top: 40px;
   display: block;
+  cursor: pointer;
 }
 
 .projects .project:hover .project__preview-wrapper {
@@ -1801,10 +1803,8 @@ input, textarea {
   overflow: hidden;
   -webkit-border-radius: 12px;
           border-radius: 12px;
-  width: -webkit-calc(100% - 2px);
-  width: calc(100% - 2px);
-  height: -webkit-calc(100% - 2px);
-  height: calc(100% - 2px);
+  width: 100%;
+  padding-bottom: 56.25%;
   background-color: #171B1F;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1835,7 +1835,6 @@ input, textarea {
 }
 
 .projects .project__preview-wrapper {
-  height: 315px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1858,6 +1857,7 @@ input, textarea {
   transition: .6s;
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
+  padding: 1px;
 }
 
 .projects .project__category {
@@ -1903,7 +1903,12 @@ input, textarea {
 }
 
 .projects .project__icon {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1952,6 +1957,15 @@ input, textarea {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+}
+
+.projects .project__video {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .about {
@@ -3459,9 +3473,6 @@ input, textarea {
     width: -webkit-calc(50% - 15px);
     width: calc(50% - 15px);
   }
-  .projects .project__preview-wrapper {
-    height: 245px;
-  }
   .about__logo {
     margin-right: 40px;
   }
@@ -3496,9 +3507,6 @@ input, textarea {
 }
 
 @media only screen and (max-width: 1500px) {
-  .projects .project__preview-wrapper {
-    height: 200px;
-  }
   .specialty__box {
     width: -webkit-calc(33% - 10px);
     width: calc(33% - 10px);
@@ -3706,9 +3714,6 @@ input, textarea {
     width: -webkit-calc(50% - 20px);
     width: calc(50% - 20px);
   }
-  .projects .project__preview-wrapper {
-    height: 300px;
-  }
   .specialty__heading {
     height: 40px;
     font-size: 14px;
@@ -3830,9 +3835,6 @@ input, textarea {
   .projects .project__title {
     font-size: 12px;
     margin-bottom: 8px;
-  }
-  .projects .project__preview-wrapper {
-    height: 190px;
   }
   .projects .project__category {
     padding: 5px 10px;
@@ -4147,9 +4149,6 @@ input, textarea {
   }
   .projects .project {
     width: 100%;
-  }
-  .projects .project__preview-wrapper {
-    height: 160px;
   }
   .projects .project__icon {
     width: 46px;
