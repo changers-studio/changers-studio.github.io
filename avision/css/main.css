@@ -1375,7 +1375,7 @@ input, textarea {
 }
 
 .nav__dropdown {
-  display: none;
+  display: none !important;
 }
 
 .nav__button {
@@ -1508,7 +1508,7 @@ input, textarea {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60px;
+  height: 70px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   overflow: hidden;
@@ -1550,7 +1550,6 @@ input, textarea {
 .aside__rating-item:hover .aside__rating-number {
   -webkit-border-radius: 5px 0 0 5px;
           border-radius: 5px 0 0 5px;
-  margin-right: 0;
   background-color: #EC6608;
   color: #fff;
 }
@@ -1558,10 +1557,19 @@ input, textarea {
 .aside__rating-item:hover .aside__rating-image {
   -webkit-border-radius: 0;
           border-radius: 0;
+  -webkit-transform: translateX(-10px);
+      -ms-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 
 .aside__rating-item:hover .aside__rating-image::before {
   opacity: 0;
+}
+
+.aside__rating-item:hover .aside__rating-wrapper {
+  -webkit-transform: translateX(-10px);
+      -ms-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 
 .aside__rating-inner {
@@ -1612,6 +1620,10 @@ input, textarea {
   height: 100%;
   width: 35px;
   transition: .3s;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 .aside__rating-image {
@@ -1628,6 +1640,10 @@ input, textarea {
           border-radius: 5px;
   position: relative;
   overflow: hidden;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 .aside__rating-image::before {
@@ -1639,6 +1655,12 @@ input, textarea {
   position: absolute;
   left: 0;
   top: 0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.aside__rating-wrapper {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
@@ -1670,7 +1692,7 @@ input, textarea {
   content: '';
   width: 15px;
   height: 15px;
-  margin-right: 10px;
+  margin-right: 5px;
   background-image: url("../img/icons/eye.svg");
   -webkit-background-size: contain;
           background-size: contain;

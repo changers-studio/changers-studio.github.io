@@ -506,7 +506,7 @@ input, textarea
 			path
 				transition: 0.35s
 	&__dropdown
-		display: none
+		display: none!important
 	&__button 
 		display: none
 		width: 100%
@@ -586,7 +586,7 @@ input, textarea
 			margin-bottom: 15px
 			display: flex
 			align-items: center
-			height: 60px
+			height: 70px
 			border-radius: 5px
 			overflow: hidden
 			position: relative
@@ -610,13 +610,15 @@ input, textarea
 				.aside__rating
 					&-number
 						border-radius: 5px 0 0 5px
-						margin-right: 0
 						background-color: $accent
 						color: #fff
 					&-image
 						border-radius: 0
+						transform: translateX(-10px)
 						&::before
 							opacity: 0
+					&-wrapper
+						transform: translateX(-10px)
 		&-inner
 			background-color: $block-bg
 			height: calc(100% - 2px)
@@ -642,6 +644,7 @@ input, textarea
 			height: 100%
 			width: 35px
 			transition: .3s
+			flex: 0 0 auto
 		&-image
 			width: 100px
 			height: 100%
@@ -652,6 +655,7 @@ input, textarea
 			border-radius: 5px
 			position: relative
 			overflow: hidden
+			flex: 0 0 auto
 			&::before
 				content: ''
 				background: rgba(23, 27, 31, 0.6)
@@ -662,6 +666,8 @@ input, textarea
 				left: 0
 				top: 0
 				transition: .3s
+		&-wrapper
+			transition: .3s
 		&-title
 			margin-bottom: 10px
 			color: #E2E2E2
@@ -678,7 +684,7 @@ input, textarea
 				content: ''
 				width: 15px
 				height: 15px
-				margin-right: 10px
+				margin-right: 5px
 				background-image: url('../img/icons/eye.svg')
 				background-size: contain
 				background-position: center
