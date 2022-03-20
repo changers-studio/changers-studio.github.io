@@ -1,0 +1,4 @@
+$(function(){
+
+   $('.magnific-popup').magnificPopup();
+})
