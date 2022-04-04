@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Mint NFT to rescue pets in Ukraine</title>
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" sizes="192x192" href="img/favicon.ico" />
+
+		<!-- reset css -->
+		<link rel="stylesheet" href="css/reset.css" />
+
+		<!-- libs css -->
+		<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="libs/slick-carousel/slick.css" />
+		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+
+		<!-- main css -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- jQeury -->
+		<script defer src="libs/jquery.min.js"></script>
+
+		<!-- libs js -->
+		<script defer src="libs/fullpage/fullpage.js"></script>
+		<script defer src="libs/swiper/swiper-bundle.min.js"></script>
+		<script defer src="libs/slick-carousel/slick.min.js"></script>
+		<script defer src="libs/fancybox/jquery.fancybox.min.js"></script>
+
+		<!-- main js -->
+		<script defer src="js/custom.js"></script>
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="header__hamburger-plug"></div>
+
+			<div class="container header__container">
+				<div class="header__flex-box _space-between">
+					<nav class="header__menu header__flex-box" id="menu">
+						<a
+							href="#main"
+							class="header__menu-item underline-anime"
+							data-menuanchor="main"
+						>
+							Mission
+						</a>
+						<a
+							href="#shelters"
+							class="header__menu-item underline-anime"
+							data-menuanchor="shelters"
+						>
+							Shelters
+						</a>
+						<a
+							href="#security"
+							class="header__menu-item underline-anime"
+							data-menuanchor="security"
+						>
+							Security
+						</a>
+						<a
+							href="#collection"
+							class="header__menu-item underline-anime"
+							data-menuanchor="collection"
+						>
+							Art
+						</a>
+						<a
+							href="#info"
+							class="header__menu-item underline-anime"
+							data-menuanchor="info"
+						>
+							About Situation
+						</a>
+						<a
+							href="#team"
+							class="header__menu-item underline-anime"
+							data-menuanchor="team"
+						>
+							Team
+						</a>
+						<a
+							href="#faq"
+							class="header__menu-item underline-anime"
+							data-menuanchor="faq"
+						>
+							FAQ
+						</a>
+						<a
+							href="#contact"
+							class="header__menu-item underline-anime"
+							data-menuanchor="contact"
+						>
+							Contact
+						</a>
+					</nav>
+
+					<div class="header__wrapper header__flex-box">
+						<div class="header__social header__flex-box">
+							<a
+								href="https://t.me/sobaken"
+								target="_blank"
+								class="header__social-link"
+								title="Telegram"
+							>
+								<img src="img/icons/telegram.svg" alt="Telegram" />
+							</a>
+
+							<a
+								href="https://twitter.com/SavePetsUkraine"
+								target="_blank"
+								class="header__social-link"
+								title="Twitter"
+							>
+								<img src="img/icons/twitter.svg" alt="Twitter" />
+							</a>
+
+							<a
+								href="https://discord.gg/g9dxTmqxxd"
+								target="_blank"
+								class="header__social-link"
+								title="Discord"
+							>
+								<img src="img/icons/discord.svg" alt="Discord" />
+							</a>
+
+							<a
+								href="https://www.instagram.com/savepetsinukraine/"
+								target="_blank"
+								class="header__social-link"
+								title="Instagram"
+							>
+								<img src="img/icons/inst.svg" alt="Instagram" />
+							</a>
+						</div>
+
+						<div class="header__wrapper-inner header__flex-box">
+							<a href="#buy" class="button header__button">Mint</a>
+
+							<button type="button" class="header__hamburger">
+								<img src="img/icons/hamburger.svg" alt="Hamburger" />
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="body-wrapper" id="fullpage">
+			<section class="main section fp-auto-height-responsive">
+				<div class="main-inner">
+					<div class="main__decor"></div>
+
+					<div class="container main__container">
+						<div class="main__container-inner">
+							<h1 class="main__title">Mint NFT to rescue pets in Ukraine</h1>
+
+							<p class="main__text">
+								Thousands of pets have been abandoned since the war in Ukraine began. Our
+								goal is to sell a collection of 1000 NFT with German Shepherd from
+								"Sobaken" and donate all profit to foundations that keep actively help to
+								rescue animals
+							</p>
+
+							<div class="main__wrapper">
+								<a href="#buy" class="main__button button">Mint</a>
+
+								<p class="main__note _italic">They need your help more than ever!</p>
+							</div>
+						</div>
+
+						<img src="img/main__image.png" alt="Pets" class="main__image" />
+					</div>
+				</div>
+			</section>
+
+			<section class="shelters section fp-auto-height-responsive">
+				<div class="flex-center">
+					<div class="container">
+						<div class="shelters__top-line">
+							<h2 class="title">Shelters we donate</h2>
+
+							<div class="shelters__pagination"></div>
+						</div>
+
+						<div class="shelters__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide shelters__slide">
+									<img
+										src="img/shelters/img-1.png"
+										alt="Image"
+										class="shelters__slide-image"
+									/>
+
+									<div class="shelters__slide-info">
+										<div class="shelters__slide-wrapper">
+											<p class="shelters__slide-heading">Sumy Animal Home</p>
+											<a
+												href="http://animal-home.sumy.ua/"
+												target="_blank"
+												class="shelters__slide-link"
+											>
+												www.animal-home.sumy.ua
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide shelters__slide">
+									<img
+										src="img/shelters/img-2.png"
+										alt="Image"
+										class="shelters__slide-image"
+									/>
+
+									<div class="shelters__slide-info">
+										<div class="shelters__slide-wrapper">
+											<p class="shelters__slide-heading">Ginger Cat</p>
+											<a
+												href="https://rudiy-kit.com/"
+												target="_blank"
+												class="shelters__slide-link"
+											>
+												www.rudiy-kit.com
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide shelters__slide">
+									<img
+										src="img/shelters/img-3.png"
+										alt="Image"
+										class="shelters__slide-image"
+									/>
+
+									<div class="shelters__slide-info">
+										<div class="shelters__slide-wrapper">
+											<p class="shelters__slide-heading">Happy Paw</p>
+											<a
+												href="http://happypaw.ua/"
+												target="_blank"
+												class="shelters__slide-link"
+											>
+												www.happypaw.ua
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide shelters__slide">
+									<img
+										src="img/shelters/img-1.png"
+										alt="Image"
+										class="shelters__slide-image"
+									/>
+
+									<div class="shelters__slide-info">
+										<div class="shelters__slide-wrapper">
+											<p class="shelters__slide-heading">Best Friends</p>
+											<a
+												href="http://www.priiut-best-friends.com.ua/"
+												target="_blank"
+												class="shelters__slide-link"
+											>
+												www.priiut-best-friends.com.ua
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide shelters__slide">
+									<img
+										src="img/shelters/img-2.png"
+										alt="Image"
+										class="shelters__slide-image"
+									/>
+
+									<div class="shelters__slide-info">
+										<div class="shelters__slide-wrapper">
+											<p class="shelters__slide-heading">Shelter Sirius</p>
+											<a
+												href="https://www.facebook.com/Shelter.SIRIUS/"
+												target="_blank"
+												class="shelters__slide-link"
+											>
+												www.facebook.com/Shelter.SIRIUS
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="security section fp-auto-height-responsive">
+				<div class="flex-center">
+					<div class="container">
+						<div class="security__flex-col">
+							<h2 class="title security__title">
+								<span>100%</span>
+								of the funds will be donated
+							</h2>
+
+							<p class="security__subtitle">
+								We will maintain full reporting in an open
+								<a href="#" class="security__subtitle-link">Google Sheets,</a>
+								where you can see what needs the funds are spent on
+							</p>
+
+							<div class="security__hashtag">
+								<div class="security__hashtag-item">#SavePetsUkraine</div>
+								<div class="security__hashtag-item">#StopWarInUkraine</div>
+							</div>
+
+							<img src="img/security__img.png" alt="Sad dog" class="security__image" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="collection section fp-auto-height-responsive">
+				<div class="flex-center">
+					<div class="container">
+						<h2 class="title">Sobaken Collection</h2>
+						<p class="collection__subtitle">
+							The collection will be revealed once 1000 NFT sold
+						</p>
+
+						<div class="collection__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide collection__slide">
+									<img
+										src="img/collection/img-1.png"
+										alt="Saboken card"
+										class="collection__slide-img"
+									/>
+								</div>
+
+								<div class="swiper-slide collection__slide">
+									<img
+										src="img/collection/img-2.png"
+										alt="Saboken card"
+										class="collection__slide-img"
+									/>
+								</div>
+
+								<div class="swiper-slide collection__slide">
+									<img
+										src="img/collection/img-3.png"
+										alt="Saboken card"
+										class="collection__slide-img"
+									/>
+								</div>
+
+								<div class="swiper-slide collection__slide">
+									<img
+										src="img/collection/img-4.png"
+										alt="Saboken card"
+										class="collection__slide-img"
+									/>
+								</div>
+
+								<div class="swiper-slide collection__slide">
+									<img
+										src="img/collection/img-5.png"
+										alt="Saboken card"
+										class="collection__slide-img"
+									/>
+								</div>
+
+								<div class="swiper-slide collection__slide">
+									<img
+										src="img/collection/img-6.png"
+										alt="Saboken card"
+										class="collection__slide-img"
+									/>
+								</div>
+
+								<div class="swiper-slide collection__slide">
+									<img
+										src="img/collection/img-7.png"
+										alt="Saboken card"
+										class="collection__slide-img"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="collection__slider-mobile">
+						<div class="mobile-slide">
+							<img src="img/collection/img-1.png" alt="Saboken card" class="slide-img" />
+						</div>
+
+						<div class="mobile-slide">
+							<img src="img/collection/img-2.png" alt="Saboken card" class="slide-img" />
+						</div>
+
+						<div class="mobile-slide">
+							<img src="img/collection/img-3.png" alt="Saboken card" class="slide-img" />
+						</div>
+
+						<div class="mobile-slide">
+							<img src="img/collection/img-4.png" alt="Saboken card" class="slide-img" />
+						</div>
+
+						<div class="mobile-slide">
+							<img src="img/collection/img-5.png" alt="Saboken card" class="slide-img" />
+						</div>
+
+						<div class="mobile-slide">
+							<img src="img/collection/img-6.png" alt="Saboken card" class="slide-img" />
+						</div>
+
+						<div class="mobile-slide">
+							<img src="img/collection/img-7.png" alt="Saboken card" class="slide-img" />
+						</div>
+					</div>
+
+					<div class="collection__slider-mobile _reverse">
+						<div class="mobile-slide">
+							<img src="img/collection/img-1.png" alt="Saboken card" class="slide-img" />
+						</div>
+
+						<div class="mobile-slide">
+							<img src="img/collection/img-2.png" alt="Saboken card" class="slide-img" />
+						</div>
+
+						<div class="mobile-slide">
+							<img src="img/collection/img-3.png" alt="Saboken card" class="slide-img" />
+						</div>
+
+						<div class="mobile-slide">
+							<img src="img/collection/img-4.png" alt="Saboken card" class="slide-img" />
+						</div>
+
+						<div class="mobile-slide">
+							<img src="img/collection/img-5.png" alt="Saboken card" class="slide-img" />
+						</div>
+
+						<div class="mobile-slide">
+							<img src="img/collection/img-6.png" alt="Saboken card" class="slide-img" />
+						</div>
+
+						<div class="mobile-slide">
+							<img src="img/collection/img-7.png" alt="Saboken card" class="slide-img" />
+						</div>
+					</div>
+
+					<div class="container collection__bottom-line">
+						<a href="#buy" class="button collection__button">Mint</a>
+
+						<img class="collection__decor" src="img/collection/decor.svg" alt="Decor" />
+					</div>
+				</div>
+			</section>
+
+			<section class="info section fp-auto-height-responsive">
+				<div class="flex-center">
+					<div class="container">
+						<a
+							href="https://www.youtube.com/watch?v=LxPLmYbu9gA"
+							class="info__video"
+							data-fancybox
+						></a>
+
+						<div class="info__flex-box">
+							<p class="info__title">
+								More than one million people have now fled Ukraine, with the EU suggesting
+								that number could rise to four million
+							</p>
+
+							<p class="info__text">
+								The scale of the tragedy is still unfolding - and while the focus is
+								rightly on the humanitarian disaster, it's meant some people have had to
+								make agonising decisions about what to take with them.
+								<span class="_italic">
+									And that includes what happens to their much-loved pets.
+								</span>
+							</p>
+						</div>
+
+						<div class="security__hashtag">
+							<div class="security__hashtag-item">#SavePetsUkraine</div>
+							<div class="security__hashtag-item">#StopWarInUkraine</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="team section fp-auto-height-responsive">
+				<div class="flex-center">
+					<div class="container">
+						<h2 class="title team__title">Our team</h2>
+						<p class="team__subtitle">We have goal to help animals together</p>
+
+						<div class="team__container">
+							<div class="team__item">
+								<img src="img/team/photo-1.png" alt="Photo" class="team__item-img" />
+								<div class="team__item-wrapper">
+									<p class="team__item-title">Tanya</p>
+									<p class="team__item-post _italic">Social Media Manager</p>
+									<a
+										href="https://www.linkedin.com/in/tanya-skryplyuk-2a180b21a"
+										target="_blank"
+										class="team__item-link"
+									>
+										<img src="img/icons/in.svg" alt="Linked in" />
+									</a>
+								</div>
+							</div>
+
+							<div class="team__item">
+								<img src="img/team/photo-2.png" alt="Photo" class="team__item-img" />
+								<div class="team__item-wrapper">
+									<p class="team__item-title">Denis</p>
+									<p class="team__item-post _italic">Community Manager</p>
+									<a
+										href="https://www.linkedin.com/in/denys-trotsiuk-6a75a21b6/"
+										target="_blank"
+										class="team__item-link"
+									>
+										<img src="img/icons/in.svg" alt="Linked in" />
+									</a>
+								</div>
+							</div>
+
+							<div class="team__item">
+								<img src="img/team/photo-3.png" alt="Photo" class="team__item-img" />
+								<div class="team__item-wrapper">
+									<p class="team__item-title">Alex</p>
+									<p class="team__item-post _italic">Marketing Manager</p>
+									<a
+										href="https://www.linkedin.com/in/aleksey-rozumnyj-062461236/"
+										target="_blank"
+										class="team__item-link"
+									>
+										<img src="img/icons/in.svg" alt="Linked in" />
+									</a>
+								</div>
+							</div>
+
+							<div class="team__item">
+								<img src="img/team/photo-4.png" alt="Photo" class="team__item-img" />
+								<div class="team__item-wrapper">
+									<p class="team__item-title">Yaroslav</p>
+									<p class="team__item-post _italic">Graphic Designer</p>
+									<a
+										href="https://www.linkedin.com/in/%D1%8F%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2-%D1%84%D0%B5%D0%B4%D0%BE%D1%80%D0%BA%D0%BE-1aa491236/"
+										target="_blank"
+										class="team__item-link"
+									>
+										<img src="img/icons/in.svg" alt="Linked in" />
+									</a>
+								</div>
+							</div>
+
+							<div class="team__item">
+								<img src="img/team/photo-5.png" alt="Photo" class="team__item-img" />
+								<div class="team__item-wrapper">
+									<p class="team__item-title">Anton</p>
+									<p class="team__item-post _italic">CEO</p>
+									<a
+										href="https://www.linkedin.com/in/anton-pavlysh-662730125/"
+										target="_blank"
+										class="team__item-link"
+									>
+										<img src="img/icons/in.svg" alt="Linked in" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="buy section fp-auto-height-responsive">
+				<div class="flex-center">
+					<div class="container buy__container">
+						<div class="buy__container-inner">
+							<div class="buy__wrapper">
+								<h2 class="title buy__title">
+									<span>Buy</span>
+									NFTs here
+								</h2>
+
+								<p class="buy__subtitle">Save Pets in Ukraine</p>
+							</div>
+
+							<div class="buy__amount">1 of 1000 lefts</div>
+						</div>
+
+						<div class="buy__info">
+							<img src="img/buy/cards.png" alt="Cards" class="buy__img" />
+
+							<div class="buy__calc">
+								<div class="buy__calc-inner">
+									<p class="buy__calc-caption _italic">Mint price</p>
+									<p class="buy__calc-price">
+										<input class="buy__calc-total" type="number" value="0.08" readonly />
+										ETH
+									</p>
+								</div>
+
+								<div class="buy__calc-box">
+									<button class="buy__calc-sub">
+										<img src="img/icons/sub.svg" alt="-" />
+									</button>
+									<input class="buy__calc-val" type="number" value="1" readonly />
+									<button class="buy__calc-add">
+										<img src="img/icons/add.svg" alt="+" />
+									</button>
+								</div>
+							</div>
+
+							<div class="buy__max">
+								<span class="buy__max-caption _italic">Max per transaction</span>
+								<span class="buy__max-number">10</span>
+							</div>
+
+							<a href="#buy" class="button buy__button">Mint</a>
+
+							<div class="buy__info _italic">
+								Don’t know how to buy?
+								<a href="#" class="buy__info-link underline-anime">Read here</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="faq section fp-auto-height-responsive">
+				<div class="flex-center">
+					<div class="container">
+						<h2 class="title faq__title">Frequently asked questions</h2>
+
+						<div class="faq__captions">
+							<div class="faq__captions-item faq__captions-item-1 active">
+								Who is the team?
+							</div>
+							<div class="faq__captions-item faq__captions-item-2">
+								Why should I trust them?
+							</div>
+							<div class="faq__captions-item faq__captions-item-3">How to buy NFT?</div>
+							<div class="faq__captions-item faq__captions-item-4">
+								Where I can see the money spend?
+							</div>
+							<div class="faq__captions-item faq__captions-item-5">
+								How can I contact you?
+							</div>
+						</div>
+
+						<div class="faq__container">
+							<div class="faq__slider">
+								<div class="faq__slide">
+									<h3 class="faq__slide-heading">Who is the team?</h3>
+									<p class="faq__slide-text">
+										Our team is 100% Ukrainian and runs 2 brands in the US, it's Sobaken
+										and Seedra. We work in eCommerce, but now we want to explore a new
+										market and do something good for our country. So we decided to make a
+										donation NFT project and help animals.
+									</p>
+								</div>
+
+								<div class="faq__slide">
+									<h3 class="faq__slide-heading">Why should I trust them?</h3>
+									<p class="faq__slide-text">
+										Our team is Ukrainians who, like no one else, felt the war on
+										themselves, our main task is to help animals. We show all our costs in
+										a Google spreadsheet. We also provide reporting from shelters.
+									</p>
+								</div>
+
+								<div class="faq__slide">
+									<h3 class="faq__slide-heading">How to buy NFT?</h3>
+									<p class="faq__slide-text">
+										You need to set up a crypto wallet compatible with Ethereum.Connect
+										your wallet to the our website. After a successful bid, you will
+										complete the transaction and the necessary amount will be debited from
+										your wallet.
+									</p>
+								</div>
+
+								<div class="faq__slide">
+									<h3 class="faq__slide-heading">Where I can see the money spend?</h3>
+									<p class="faq__slide-text">
+										We will provide a google spreadsheet with all expenses.
+									</p>
+								</div>
+
+								<div class="faq__slide">
+									<h3 class="faq__slide-heading">How can I contact you?</h3>
+									<p class="faq__slide-text">
+										<a
+											href="mailto:support@savepetsinukraine.com
+										"
+										>
+											support@savepetsinukraine.com
+										</a>
+									</p>
+								</div>
+							</div>
+
+							<img src="img/faq__img.png" alt="Dog" class="faq__img" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="footer section fp-auto-height-responsive">
+				<div class="flex-center">
+					<div class="container">
+						<div class="footer__flex-col">
+							<h2 class="footer__title">Join us</h2>
+							<p class="footer__subtitle">In social media</p>
+
+							<div class="footer__social">
+								<a
+									href="https://t.me/sobaken"
+									target="_blank"
+									class="footer__social-link"
+									title="Telegram"
+								>
+									<img src="img/icons/telegram.svg" alt="Telegram" />
+								</a>
+
+								<a
+									href="https://twitter.com/SavePetsUkraine"
+									target="_blank"
+									class="footer__social-link"
+									title="Twitter"
+								>
+									<img src="img/icons/twitter.svg" alt="Twitter" />
+								</a>
+
+								<a
+									href="https://discord.gg/g9dxTmqxxd"
+									target="_blank"
+									class="footer__social-link"
+									title="Discord"
+								>
+									<img src="img/icons/discord.svg" alt="Discord" />
+								</a>
+
+								<a
+									href="https://www.instagram.com/savepetsinukraine/"
+									target="_blank"
+									class="footer__social-link"
+									title="Instagram"
+								>
+									<img src="img/icons/inst.svg" alt="Instagram" />
+								</a>
+							</div>
+
+							<div class="footer__caption">Or contact us by</div>
+
+							<div class="footer__contacts">
+								<a
+									href="mailto:performance@sobaken.com"
+									target="_blank"
+									class="footer__contacts-item"
+								>
+									<img
+										src="img/icons/mail.png"
+										alt="Icon"
+										class="footer__contacts-icon"
+									/>
+									<p class="footer__contacts-caption">
+										<span class="_italic">Our email</span>
+										performance@sobaken.com
+									</p>
+								</a>
+
+								<a
+									href="https://t.me/sobaken"
+									target="_blank"
+									class="footer__contacts-item"
+								>
+									<img
+										src="img/icons/telegram-icon.png"
+										alt="Icon"
+										class="footer__contacts-icon"
+									/>
+									<p class="footer__contacts-caption">
+										<span class="_italic">Our telegram</span>
+										@sobaken
+									</p>
+								</a>
+							</div>
+
+							<div class="security__hashtag">
+								<div class="security__hashtag-item">#SavePetsUkraine</div>
+								<div class="security__hashtag-item">#StopWarInUkraine</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

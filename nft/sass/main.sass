@@ -1,0 +1,795 @@
+@import vars
+@import fonts
+
+
+// Общие стили для сайта
+body
+	font-size: 18px
+	min-width: 360px
+	position: relative
+	line-height: 1.5
+	font-family: $default-font
+	background-color: #F8FBFD
+	color: $black
+
+.body-wrapper
+	// overflow: hidden
+	position: relative
+
+.container
+	width: 100%
+	max-width: 1170px
+	margin: 0 auto
+	padding: 
+		right: 15px
+		left: 15px
+
+.flex-center
+	display: flex
+	flex-direction: column
+	justify-content: center
+	height: 100%
+	padding-top: 70px
+
+.title
+	font-size: 40px
+	line-height: 1.3
+	font-weight: 800
+// eof
+
+// Модификаторы
+._italic
+	font-style: italic
+// eof
+
+
+// Стилизация полей формы
+input, textarea
+	background: none
+	border: none
+	color: inherit
+
+::placeholder
+	color: #CAC8C8
+	font-size: 18px
+	font-family: $default-font
+// eof
+
+
+// Кнопка
+.button
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	position: relative
+	text-decoration: none
+	line-height: 1
+	outline: none
+	overflow: hidden
+	cursor: pointer
+	width: 100%
+	height: 64px
+	font-size: 20px
+	font-weight: 500
+	border-radius: 70px
+	background-color: $black
+	border: 2px solid $black
+	color: #fff
+	transition: .3s
+	&:focus, &:hover
+		text-decoration: none
+	&:hover
+		color: $black
+		background-color: transparent
+// eof
+
+
+
+// Микро-анимация элеменотов
+.underline-anime
+	position: relative
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		bottom: 0
+		left: 0
+		background-color: #fff
+		width: 0
+		height: 1px
+		transition: .3s
+	&:hover, &.active
+		&::before
+			width: 100%
+// eof
+
+
+
+// Шапка
+.header
+	padding: 10px 0
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	background-color: $blue
+	border-bottom: 1px solid #fff
+	color: #fff
+	z-index: 10
+	&__container
+		padding-left: 110px
+	&__flex-box
+		display: flex
+		align-items: center
+		&._space-between
+			justify-content: space-between
+	&__menu-item
+		font-size: 16px
+		line-height: 1.2
+		margin-right: 20px
+		display: inline-block
+		&:last-child
+			margin: 0
+	&__social
+		margin-right: 25px
+		&-link
+			margin-right: 15px
+			display: flex
+			transform: scale(1)
+			transition: .3s
+			&:last-child
+				margin: 0
+			&:hover
+				transform: scale(1.2)
+	&__button
+		width: 100px
+		height: 50px
+	&__hamburger
+		display: none
+		margin-left: 20px
+		&-plug
+			display: none
+// eof
+
+
+// Главный экран
+.main
+	background-color: $blue
+	color: #fff
+	&__container
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		height: 100%
+		padding-top: 70px
+		&-inner
+			width: 100%
+			max-width: 450px
+	&__decor
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 925px
+		height: 775px
+		background-image: url('../img/main__decor.svg')
+		background-size: contain
+		background-position: left bottom
+		background-repeat: no-repeat
+	&-inner
+		height: 100%
+	&__title
+		font-size: 52px
+		font-weight: 700
+		line-height: 1.3
+		margin-bottom: 25px
+	&__text
+		line-height: 1.8
+		margin-bottom: 30px
+		max-width: 425px
+	&__wrapper
+		display: flex
+		align-items: center
+	&__button
+		flex: 0 0 auto
+		width: 150px
+		color: #fff
+		background-color: $yellow
+		border-color: $yellow
+		margin-right: 25px
+		&:hover
+			color: $yellow
+	&__note
+		max-width: 190px
+		font-weight: 700
+		font-size: 20px
+	&__image
+		position: absolute
+		left: -200px
+		bottom: 0
+		max-width: none
+		max-height: none
+// eof
+
+
+// Приюты
+.shelters
+	&__top-line
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 60px
+	&__slide
+		width: auto
+		position: relative
+		width: 400px
+		display: flex
+		flex-direction: column
+		align-items: center
+		&-info
+			background-color: #fff
+			box-shadow: 0px 4px 34px rgba(130, 154, 172, 0.25)
+			border: 1px solid #DAE0E4
+			border-radius: 20px
+			display: flex
+			align-items: center
+			justify-content: space-between
+			padding: 25px 30px
+			position: absolute
+			top: 335px
+			left: 50%
+			transform: translate(-50%, 0)
+			width: 100%
+			&::after
+				content: ''
+				flex: 0 0 auto
+				width: 36px
+				height: 36px
+				background-image: url('../img/icons/website-icon.svg')
+				background-size: contain
+				background-position: center
+				background-repeat: no-repeat
+		&-wrapper
+			padding-right: 25px
+		&-heading
+			margin-bottom: 5px
+			font-weight: 700
+			font-size: 26px
+		&-link
+			color: $blue
+			font-weight: 500
+			text-decoration: underline
+			text-underline-position: under
+			&:hover
+				text-decoration: none
+				color: $blue
+	&__pagination
+		position: static
+		.swiper-pagination-bullet
+			position: relative
+			margin-right: 30px
+			background-color: $black
+			opacity: 0.3
+			width: 8px
+			height: 8px
+			border-radius: 50%
+			transition: .4s
+			&:last-child
+				margin-right: 0
+			&::before
+				content: ''
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				border: 1px solid $gray
+				width: 100%
+				height: 100%
+				border-radius: 50%
+				transition: .4s linear
+			&.swiper-pagination-bullet-active
+				opacity: 1
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.48)
+				&::before
+					width: calc(100% + 8px)
+					height: calc(100% + 8px)
+// eof
+
+
+// Надежность
+.security
+	background-color: $blue
+	color: #fff
+	background-image: url('../img/security__bg.svg')
+	background-size: cover
+	background-position: center
+	&__flex-col
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+	&__title
+		margin-bottom: 15px
+		span
+			display: block
+			font-size: 110px
+	&__subtitle
+		margin-bottom: 45px
+		line-height: 1.8
+		max-width: 500px
+		&-link
+			font-weight: 800
+			text-decoration: underline
+			text-underline-position: under
+			&:hover
+				text-decoration: none
+	&__hashtag
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-bottom: 40px
+		&-item
+			margin-right: 20px
+			background-color: $black
+			width: 255px
+			height: 55px
+			border-radius: 10px
+			display: flex
+			align-items: center
+			justify-content: center
+			font-size: 20px
+			font-weight: 700
+			&:last-child
+				margin: 0
+// eof
+
+
+// Коллекция
+.collection
+	background-color: $yellow
+	&__slider
+		transform: rotate(-5deg)
+		position: relative
+		left: 65%
+		bottom: 50px
+		&-mobile
+			display: none
+			.mobile-slide
+				margin: 0 6px
+			&._reverse
+				transform: rotate(180deg)
+				.mobile-slide
+					transform: rotate(180deg)
+	&__slide
+		width: auto
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 380px
+		&-img
+			width: 240px
+			height: 240px
+			transition: 1s
+		&.swiper-slide-active .collection__slide-img
+			width: 380px
+			height: 380px
+	&__bottom-line
+		margin-top: 80px
+		display: flex
+		align-items: center
+	&__button
+		width: 160px
+		flex: 0 0 auto
+		margin-right: 75px
+	&__decor
+		max-width: none
+// eof
+
+
+// Инфо
+.info
+	&__video
+		width: 100%
+		height: 480px
+		display: flex
+		background-image: url('../img/info__video-poster.png')
+		background-size: cover
+		background-position: center
+		border-radius: 20px
+		margin-bottom: 25px
+		position: relative
+		&::before
+			content: ''
+			display: flex
+			width: 48px
+			height: 48px
+			background-image: url('../img/icons/play.svg')
+			transition: transform .3s
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%) scale(1)
+			z-index: 2
+		&:hover::before
+			transform: translate(-50%, -50%) scale(2)
+	&__flex-box
+		display: flex
+		align-items: flex-start
+	&__title
+		width: 470px
+		padding-left: 25px
+		position: relative
+		flex: 0 0 auto
+		font-size: 24px
+		font-weight: 800
+		line-height: 1.3
+		margin-right: 70px
+		&::before
+			content: ''
+			width: 12px
+			height: 100%
+			background-image: url('../img/icons/flag.svg')
+			background-size: cover
+			background-position: center
+			position: absolute
+			left: 0
+	&__text
+		line-height: 1.8
+		span
+			display: block
+			font-weight: 700
+			margin-top: 8px
+	.security__hashtag
+		display: none
+		margin-bottom: 0
+// eof
+
+
+// Команда
+.team
+	background-image: url('../img/team__decor.svg')
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: right center
+	background-color: $black
+	color: #fff
+	&__title, &__subtitle
+		text-align: center
+	&__title
+		margin-bottom: 5px
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		margin-top: 65px
+	&__item
+		&-img
+			margin-bottom: 20px
+		&-wrapper
+			padding-left: 40px
+		&-title
+			margin-bottom: 5px
+			font-size: 26px
+			font-weight: 700
+		&-post
+			margin-bottom: 15px
+			font-weight: 300
+		&-link 
+			display: inline-flex
+			align-items: center
+			justify-content: center
+			transition: .3s
+			transform: scale(1)
+			&:hover
+				transform: scale(1.2)
+// eof
+
+
+// Покупка
+.buy
+	background-color: #1B1B27
+	color: #fff
+	background-image: url('../img/buy/decor.svg')
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: left bottom
+	&__container
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&-inner
+			margin-right: 50px
+	&__title
+		font-weight: 400
+		line-height: 1.2
+		span
+			font-size: 110px
+			display: inline-block
+			margin-right: 15px
+			font-weight: 800
+			text-transform: uppercase
+	&__subtitle
+		font-size: 25px
+		margin-bottom: 30px
+		font-weight: 700
+		color: $blue
+	&__amount
+		transform: rotate(5deg)
+		width: 200px
+		height: 60px
+		border-radius: 15px
+		text-align: center
+		display: flex
+		align-items: center
+		justify-content: center
+		color: $black
+		background-color: $yellow
+		font-size: 20px
+		font-weight: 700
+	&__info
+		width: 100%
+		max-width: 530px
+	&__img
+		display: flex
+		margin: 0 auto 30px
+	&__calc
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 15px
+		&-caption
+			font-weight: 300
+			margin-bottom: 5px
+		&-price, &-total
+			font-size: 40px
+			font-weight: 800
+			line-height: 1.1
+			width: auto
+		&-total
+			width: 85px
+		&-box
+			display: flex
+			align-items: center
+			justify-content: center
+		&-val
+			margin: 0 20px
+			width: 56px
+			height: 56px
+			text-align: center
+			font-size: 25px
+			font-weight: 700
+			background-color: $blue
+			border-radius: 15px
+	&__max
+		border-radius: 10px
+		background: rgba(255, 255, 255, 0.05)
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 15px 25px
+		margin-bottom: 15px
+		&-caption
+			font-weight: 300
+		&-number
+			font-size: 25px
+			font-weight: 700
+	&__button
+		background-color: $yellow
+		border-color: $yellow
+		color: $black
+		&:hover
+			color: $yellow
+	&__info
+		margin-top: 15px
+		font-weight: 300
+		&-link
+			display: inline-block
+			color: $yellow
+			margin-left: 15px
+			font-weight: 800
+			&::before
+				background-color: $yellow
+			&:hover
+				color: $yellow
+// eof
+
+
+// FAQ
+.faq
+	&__title
+		text-align: center
+		margin-bottom: 30px
+	&__captions
+		display: flex
+		align-items: center
+		justify-content: space-between
+		position: relative
+		margin-bottom: 50px
+		&::before
+			content: ''
+			width: 100%
+			height: 5px
+			background-color: #E6F0F8
+			display: block
+			position: absolute
+			top: 100%
+			left: 0
+			border-radius: 50px
+		&-item
+			margin-right: 20px
+			font-size: 16px
+			color: $gray
+			position: relative
+			cursor: pointer
+			padding-bottom: 10px
+			&::before
+				content: ''
+				width: 100%
+				height: 5px
+				background-color: $blue
+				border-radius: 50px
+				display: block
+				position: absolute
+				top: 100%
+				left: 0
+				opacity: 0
+			&:last-child
+				margin-right: 0
+			&.active
+				color: $black
+				&::before
+					opacity: 1
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__slider
+		max-width: 450px
+		min-height: 380px
+		width: 100%
+		position: relative
+		.slick-dots
+			display: flex
+			align-items: center
+			position: absolute
+			left: 0
+			bottom: 0
+			li
+				position: relative
+				margin-right: 30px
+				background-color: $black
+				opacity: 0.3
+				width: 8px
+				height: 8px
+				border-radius: 50%
+				font-size: 0
+				pointer-events: none
+				&:last-child
+					margin-right: 0
+				&::before
+					content: ''
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translate(-50%, -50%)
+					border: 1px solid $gray
+					width: 100%
+					height: 100%
+					border-radius: 50%
+				&.slick-active
+					opacity: 1
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.48)
+					&::before
+						width: calc(100% + 8px)
+						height: calc(100% + 8px)
+	&__slide
+		&-heading
+			margin-bottom: 15px
+			font-weight: 700
+			font-size: 40px
+			line-height: 1.2
+		&-text
+			line-height: 1.8
+			color: $gray
+			a
+				color: $blue
+				text-decoration: underline
+				text-underline-position: under
+				&:hover
+					color: $blue
+					text-decoration: none
+// eof
+
+
+// Footer
+.footer
+	background-color: $blue
+	color: #fff
+	background-image: url('../img/footer__decor.svg')
+	background-size: cover
+	background-position: center
+	&__flex-col
+		display: flex
+		flex-direction: column
+		align-items: center
+		max-width: 540px
+		width: 100%
+		margin: 0 auto
+	&__title
+		font-size: 115px
+		font-weight: 800
+		text-align: center
+		line-height: 1.3
+		text-transform: uppercase
+	&__subtitle
+		text-align: center
+		font-size: 40px
+		font-weight: 800
+		margin-bottom: 25px
+	&__social
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-bottom: 25px
+		&-link
+			margin-right: 15px
+			display: flex
+			transform: scale(1)
+			transition: .3s
+			&:hover
+				transform: scale(1.2)
+			&:last-child
+				margin-right: 0
+			img
+				width: 38px
+	&__caption
+		padding: 10px 0
+		font-size: 24px
+		font-weight: 500
+		line-height: 1.3
+		width: 100%
+		text-align: center
+		margin-bottom: 40px
+		border:
+			top: 1px solid rgba(255, 255, 255, 0.2)
+			bottom: 1px solid rgba(255, 255, 255, 0.2)
+	&__contacts
+		margin-bottom: 50px
+		display: flex
+		align-items: center
+		justify-content: center
+		padding-left: 40px
+		width: 100%
+		&-item
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			line-height: 1.2
+			margin-right: 40px
+			&:last-child
+				margin: 0
+		&-icon
+			flex: 0 0 auto
+			margin-right: 10px
+		&-caption
+			font-size: 20px
+			span
+				font-size: 16px
+				font-weight: 300
+				display: block
+	.security__hashtag
+		margin-bottom: 0
+// eof
+
+
+
+
+
+
+
+
+
+
+
+@import media
