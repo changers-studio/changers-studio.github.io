@@ -1,0 +1,546 @@
+@import vars
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1250px)
+
+
+	// Общие стили для сайта
+	.container
+		max-width: 960px
+	// eof
+
+	
+	// Шапка
+	.header
+		&__logo
+			width: 100px
+			margin-right: 20px
+		&__menu-item
+			font-size: 13px
+		&__button
+			font-size: 13px
+			width: 160px
+	// eof
+
+
+	// Главный экран
+	.main
+		&__box-inner
+			width: 420px
+			height: 360px
+			background-size: 50% auto
+		&__title
+			font-size: 46px
+			max-width: 400px
+	// eof
+
+
+	// Услуги
+	.services
+		&__box
+			min-height: 400px
+			&-image
+				max-width: 50%
+	// eof
+
+
+	// Тарифы
+	.tarifs
+		&__item-text
+			font-size: 16px
+		&__list
+			&._full-width
+				.tarifs
+					&__item
+						&-button 
+							min-width: auto
+						&-data
+							margin-right: 40px
+	// eof
+
+	// Операцион­ные системы
+	.os
+		&__item
+			&-inner
+				width: 160px
+				padding: 15px
+			&-logo
+				margin-bottom: 15px
+	// eof
+
+
+	// FAQ
+	.faq
+		&__image
+			right: -150px
+		&__wrapper
+			max-width: 600px
+	// eof
+
+
+/*  Small Devices, Tablets */
+@media only screen and (max-width : 992px)
+	
+	// Общие стили для сайта
+	body
+		font-size: 14px
+
+	.container
+		max-width: 480px
+
+	.title
+		font-size: 24px
+		span
+			font-size: 14px
+			margin-bottom: 10px
+
+	section
+		&._vertical-padding
+			padding:
+				top: 30px
+				bottom: 30px
+		&._before-footer
+			padding-bottom: 40px
+		&._grad
+			border-radius: 16px 16px 0 0
+	// eof
+
+	// Кнопка
+	.button
+		font-size: 15px
+		height: 52px
+		&._gray:hover
+			background-color: $gray-dark
+		&._accent:hover
+			box-shadow: 0px 4px 19px rgba(89, 60, 216, 0.42)
+	// eof
+
+
+	// Шапка
+	.header
+		height: 64px
+		transition: .3s
+		position: relative
+		z-index: 9
+		&::after
+			content: ''
+			width: 100%
+			height: 1px
+			background-color: $accent-light
+			position: absolute
+			left: 0
+			bottom: 0
+			opacity: 0
+			transition: .8s
+		&.bottom-line
+			&::after
+				opacity: 1
+		&__logo
+			display: none
+			&-mobile
+				display: flex
+		&__container
+			position: fixed
+			top: 64px
+			right: -280px
+			height: calc(100vh - 64px)
+			flex-direction: column
+			align-items: stretch
+			justify-content: center
+			width: 280px
+			background-color: $black
+			padding: 20px
+			overflow-y: auto
+			transition: .8s
+			z-index: 10
+			&.visible
+				right: 0
+			&-mobile
+				display: flex
+				justify-content: space-between
+				align-items: center
+				height: 100%
+			&-inner
+				flex-direction: column
+				align-items: flex-start
+			&-plug
+				position: fixed
+				background-color: rgba(19, 17, 31, 0.6)
+				left: 0
+				top: 64px
+				width: 100%
+				height: calc(100vh - 64px)
+				z-index: 4
+		&__hamburger
+			display: block
+		&__menu
+			flex-direction: column
+			align-items: flex-start
+			margin-bottom: 40px
+			&-item
+				font-size: 16px
+				margin: 
+					right: 0
+					bottom: 20px
+				&:hover
+					color: $gray
+		&__currency
+			width: 100%
+			margin:
+				right: 0
+				bottom: 30px
+			&-inner
+				width: 50%
+		&__button
+			width: 100%
+			font-size: 16px
+	// eof
+
+
+	// Подвал
+	.footer
+		&__container
+			flex-direction: column
+			align-items: flex-start
+			&-bottom
+				padding: 20px 0
+				&::before
+					height: 100%
+					background-color: #272532
+				& > *
+					position: relative
+					z-index: 2
+		&__logo
+			margin-bottom: 25px
+		&__menu
+			flex-direction: column
+			align-items: stretch
+			width: 100%
+			&-item
+				margin-left: 0
+				padding: 15px 0
+				border-bottom: 1px solid #70717D
+				&:hover
+					color: $gray
+		&__social
+			position: absolute
+			right: 0
+			top: 26px
+		&__copyrights
+			font-size: 12px
+		&__payment
+			&-logo
+				height: 22px
+				margin-right: 20px
+				&:first-child
+					height: 13px
+	// eof
+
+
+	// Главный экран
+	.main
+		padding: 40px 0 20px
+		height: auto
+		min-height: auto
+		&__container
+			flex-direction: column
+			align-items: stretch
+		&__title
+			font-size: 30px
+			margin-bottom: 15px
+			max-width: 300px
+		&__button
+			width: 220px
+		&__box
+			margin-top: 30px
+			width: 100%
+			&.aos-animate
+				.main__box-back
+					top: 30px
+					right: -75px
+					transform: scale(1.15) rotate(-16deg)
+			&-inner
+				width: 100%
+				height: 280px
+				padding: 35px 25px
+				background-size: 55% auto
+			&-heading
+				font-size: 18px
+				margin-bottom: 5px
+			&-text 
+				font-size: 14px
+				max-width: 135px
+				margin-bottom: 15px
+			&-button 
+				width: 190px
+				height: 46px
+	// eof
+
+
+	// Услуги
+	.services
+		.title
+			max-width: 300px
+		&__container
+			flex-direction: column
+			margin-top: 20px
+		&__box
+			margin-bottom: 15px
+			padding-bottom: 165px
+			width: 100%
+			min-height: auto
+			&-image
+				width: 200px
+				max-width: none
+			&-heading
+				margin-bottom: 5px
+				font-size: 18px
+			&-text 
+				max-width: 100%
+				margin-bottom: 15px
+				br
+					display: none
+			&-button 
+				width: 190px
+				height: 46px
+	// eof
+
+
+	// Преимущества
+	.benefits
+		background: none
+		border-radius: 0
+		&__container
+			flex-direction: column
+			margin-top: 20px
+		&__box
+			margin-bottom: 15px
+			width: 100%
+			padding: 20px 20px 25px
+			position: relative
+			&-icon
+				width: 40px
+				height: 40px
+				border-radius: 8px
+				position: absolute
+				img
+					width: 30px
+			&-heading
+				font-size: 16px
+				margin-left: 55px
+				max-width: 230px
+	// eof
+
+
+	// Заглавный блок
+	.heading
+		&__container
+			padding: 20px
+			margin: 30px 0
+			border-radius: 15px
+			min-height: auto
+		&__title
+			font-size: 30px
+			line-height: 1.2
+			margin-bottom: 10px
+		&__subtitle
+			font-size: 15px
+			margin-bottom: 15px
+		&__captions
+			flex-direction: column
+			width: 100%
+			&-item
+				font-size: 15px
+	// eof
+
+
+	// Тарифы
+	.tarifs
+		&__container
+			flex-direction: column
+		&__list
+			width: 100%
+			background: none
+			box-shadow: none
+			padding: 0
+			margin-bottom: 20px
+			&:last-child
+				margin-bottom: 0
+			&._accent-orange
+				.tarifs
+					&__item-button
+							&._main:hover
+								color: #fff
+								background-color: $orange
+							&._secondary:hover
+								background: rgba(255, 138, 72, 0.1)
+								color: $orange
+			&._full-width
+				.tarifs
+					&__list-container
+						overflow-x: scroll
+						box-shadow: none
+						background: none
+					&__item
+						border-radius: 20px
+						padding: 0 0 125px
+						&-top, &-bottom
+							width: 100%
+						&-top, &-bottom
+							padding: 15px 20px
+						&-top 
+							margin: 0
+						&-data
+							margin-right: 0
+						&-wrapper
+							top: auto
+							bottom: 20px
+							left: 20px
+							transform: none
+			&-container
+				display: flex
+				align-items: flex-start
+				overflow-x: scroll
+				padding: 0 20px 15px
+				width: calc(100% + 30px)
+				position: relative
+				left: 50%
+				transform: translateX(-50%)
+		&__item
+			flex-direction: column
+			margin:
+				right: 15px
+				bottom: 0
+			width: 230px
+			flex: 0 0 auto
+			position: relative
+			padding-bottom: 125px
+			&-top 
+				padding: 15px 20px
+			&-bottom
+				flex-direction: column
+				align-items: flex-start
+				padding: 15px 20px
+				border-bottom: 1px solid rgba(255, 255, 255, 0.05)
+			&-data
+				margin-bottom: 15px
+			&-wrapper
+				position: absolute
+				bottom: 20px
+				left: 20px
+				flex-direction: column
+				width: calc(100% - 40px)
+			&-button 
+				height: 40px
+				width: 100%
+				margin: 
+					right: 0
+					bottom: 10px
+				&._main:hover
+					color: #fff
+					background-color: $accent
+				&._secondary:hover
+					background-color: rgba(186, 170, 255, 0.1)
+					color: $accent-light
+	// eof
+
+
+	// Операцион­ные системы
+	.os
+		&__container
+			flex-wrap: wrap
+			align-items: stretch
+			margin-top: 10px
+		&__item
+			width: calc(50% - 5px)
+			margin-top: 10px
+			&-inner
+				width: 100%
+				height: 100%
+				padding: 30px 15px
+				background-color: #1f1c2a
+			&-logo
+				flex: 0 0 auto
+				width: 32px
+				height: auto
+				margin:
+					right: 15px
+					bottom: 0
+			&-wrapper
+				margin-bottom: 10px
+				display: flex
+				align-items: center
+			&-title
+				font-size: 18px
+	// eof
+
+
+	// FAQ
+	.faq
+		&__image
+			position: relative
+			top: 0
+			right: 0
+			transform: none
+			img
+				width: 100%
+				max-width: 480px
+				margin: 0 auto
+				display: flex
+		&__wrapper
+			margin-bottom: 20px
+		&__item
+			&-heading
+				padding: 15px 30px
+				font-size: 16px
+				&::after
+					margin-left: 40px
+			&-dropdown
+				padding: 0 30px 30px
+	// eof
+
+
+	// Политика конфиденциальности
+	.policy
+		&-heading
+			.heading__title
+				font-size: 22px
+		&__heading
+			font-size: 20px
+			margin-bottom: 10px
+			line-height: 1.3
+		&__caption
+			font-size: 16px
+		&__list-item
+			padding-left: 20px
+			&::before
+				width: 4px
+				height: 4px
+				left: 8px
+				top: 8px
+	// eof
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 360px)
+
+	// Подвал
+	.footer__copyrights
+		font-size: 10px
+	// eof
+
+	
+	// Преимущества
+	.benefits__box-heading
+		font-size: 15px
+	// eof
+
+	// Операцион­ные системы
+	.os__item
+		&-logo
+			width: 28px
+		&-title
+			font-size: 16px
+		&-subtitle
+			font-size: 13px
+	// eof
