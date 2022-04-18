@@ -1118,6 +1118,7 @@ input, textarea {
   -webkit-box-shadow: none;
           box-shadow: none;
   background: none;
+  padding: 0;
 }
 
 .tarifs__list._full-width .tarifs__list-container {
