@@ -103,6 +103,9 @@
 			padding-bottom: 40px
 		&._grad
 			border-radius: 16px 16px 0 0
+	
+	._chevron
+		justify-content: flex-start
 	// eof
 
 	// Кнопка
@@ -184,13 +187,29 @@
 					bottom: 20px
 				&:hover
 					color: $gray
+		&__dropdown
+			&-body
+				position: relative
+				left: 0
+				top: 0
+				transform: none
+				background: none
+				box-shadow: none
+				padding: 0
+				margin-top: 20px
+				border-radius: 0
+			&-item
+				margin-bottom: 20px
 		&__currency
-			width: 100%
+			z-index: 2
 			margin:
 				right: 0
 				bottom: 30px
 			&-inner
 				width: 50%
+			&-dropdown
+				width: 100%
+				margin-top: 10px
 		&__button
 			width: 100%
 			font-size: 16px
@@ -222,6 +241,29 @@
 				border-bottom: 1px solid #70717D
 				&:hover
 					color: $gray
+		&__dropdown
+			padding: 0
+			justify-content: flex-start
+			&-heading
+				width: 100%
+				border-bottom: 1px solid #70717D
+				padding: 15px 0
+			&-body
+				position: relative
+				background: none
+				left: 0
+				bottom: 0
+				padding: 0
+				border-radius: 0
+				box-shadow: none
+				transform: none
+			&-item
+				padding: 15px 0
+				border-bottom: 1px solid #70717D
+				&:hover
+					color: $gray
+				&:last-child
+					border-bottom: none
 		&__social
 			position: absolute
 			right: 0
@@ -313,6 +355,9 @@
 		&__container
 			flex-direction: column
 			margin-top: 20px
+			&.three-cols
+				.benefits__box
+					width: 100%
 		&__box
 			margin-bottom: 15px
 			width: 100%

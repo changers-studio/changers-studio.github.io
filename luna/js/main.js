@@ -40,3 +40,15 @@ $('.faq__item-heading').on('click', function () {
 	$('.faq__item-heading').not(this).removeClass('active').next().slideUp()
 })
 // eof
+
+// Подмегю "Услуги"
+$('.header__dropdown-heading, .footer__dropdown-heading').on('click', function () {
+	$(this).toggleClass('active').next().slideToggle()
+})
+// eof
+
+// Выпадающий блок языка и валюты
+$('.header__currency-heading').on('click', function () {
+	$(this).toggleClass('active').next().slideToggle()
+})
+// eof

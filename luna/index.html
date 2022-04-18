@@ -50,7 +50,22 @@
 							<nav class="header__menu">
 								<a href="index.html" class="header__menu-item">Главная страница</a>
 
-								<button class="header__menu-item _chevron">Услуги</button>
+								<div class="header__menu-item header__dropdown">
+									<button class="header__dropdown-heading _chevron">Услуги</button>
+
+									<div class="header__dropdown-body">
+										<a href="services-virtual-servers.html" class="header__dropdown-item">
+											Виртуальные серверы
+										</a>
+
+										<a
+											href="services-dedicated-servers.html"
+											class="header__dropdown-item"
+										>
+											Выделенные серверы
+										</a>
+									</div>
+								</div>
 
 								<a href="referral-program.html" class="header__menu-item">
 									Реферальная программа
@@ -60,18 +75,84 @@
 
 						<div class="header__container-inner">
 							<div class="header__currency">
-								<div class="header__currency-inner _left _chevron">
-									<img src="img/flags/ua.svg" alt="Flag" class="header__currency-icon" />
-									ua
+								<div class="header__currency-inner _left">
+									<div class="header__currency-heading _chevron">
+										<img
+											src="img/flags/ua.svg"
+											alt="Flag"
+											class="header__currency-icon"
+										/>
+										ua
+									</div>
+
+									<div class="header__currency-dropdown">
+										<a href="#" class="header__currency-item">
+											<img
+												src="img/flags/ua.svg"
+												alt="Flag"
+												class="header__currency-icon"
+											/>
+											ua
+										</a>
+
+										<a href="#" class="header__currency-item">
+											<img
+												src="img/flags/ua.svg"
+												alt="Flag"
+												class="header__currency-icon"
+											/>
+											ua
+										</a>
+
+										<a href="#" class="header__currency-item">
+											<img
+												src="img/flags/ua.svg"
+												alt="Flag"
+												class="header__currency-icon"
+											/>
+											ua
+										</a>
+									</div>
 								</div>
 
-								<div class="header__currency-inner _right _chevron">
-									<img
-										src="img/currency/uah.svg"
-										alt="Currency"
-										class="header__currency-icon"
-									/>
-									uah
+								<div class="header__currency-inner _right">
+									<div class="header__currency-heading _chevron">
+										<img
+											src="img/currency/uah.svg"
+											alt="Currency"
+											class="header__currency-icon"
+										/>
+										uah
+									</div>
+
+									<div class="header__currency-dropdown">
+										<div class="header__currency-item">
+											<img
+												src="img/currency/uah.svg"
+												alt="Currency"
+												class="header__currency-icon"
+											/>
+											uah
+										</div>
+
+										<div class="header__currency-item">
+											<img
+												src="img/currency/uah.svg"
+												alt="Currency"
+												class="header__currency-icon"
+											/>
+											uah
+										</div>
+
+										<div class="header__currency-item">
+											<img
+												src="img/currency/uah.svg"
+												alt="Currency"
+												class="header__currency-icon"
+											/>
+											uah
+										</div>
+									</div>
 								</div>
 							</div>
 
@@ -97,7 +178,9 @@
 					<div class="main__container-inner" data-aos="fade-left" data-aos-delay="1000">
 						<h1 class="main__title">Виртуальные серверы от 5€ или от 0.01€/час</h1>
 
-						<a href="#" class="main__button button _accent">Посмотреть тарифы</a>
+						<a href="services-virtual-servers.html" class="main__button button _accent">
+							Посмотреть тарифы
+						</a>
 					</div>
 
 					<div class="main__container-inner">
@@ -107,7 +190,12 @@
 							<div class="main__box-inner">
 								<p class="main__box-heading">Акция!</p>
 								<p class="main__box-text">Сервер за 3€ при пополнении от 10€</p>
-								<a href="#" class="main__box-button button _gray">Перейти к сервису</a>
+								<a
+									href="services-dedicated-servers.html"
+									class="main__box-button button _gray"
+								>
+									Перейти к сервису
+								</a>
 							</div>
 						</div>
 					</div>
@@ -129,7 +217,12 @@
 								<br />
 								AMD EPYC процессорах
 							</p>
-							<a href="#" class="services__box-button button _gray">Перейти к сервису</a>
+							<a
+								href="services-virtual-servers.html"
+								class="services__box-button button _gray"
+							>
+								Перейти к сервису
+							</a>
 
 							<img
 								src="img/services__image-1.png"
@@ -146,7 +239,12 @@
 								<br />
 								на любой выбор
 							</p>
-							<a href="#" class="services__box-button button _gray">Перейти к сервису</a>
+							<a
+								href="services-dedicated-servers.html"
+								class="services__box-button button _gray"
+							>
+								Перейти к сервису
+							</a>
 
 							<img
 								src="img/services__image-2.png"
@@ -222,14 +320,26 @@
 						<nav class="footer__menu">
 							<a href="index.html" class="footer__menu-item">Главная страница</a>
 
-							<a href="#" class="footer__menu-item">Услуги</a>
+							<div class="footer__menu-item footer__dropdown">
+								<button class="footer__dropdown-heading _chevron">Услуги</button>
+
+								<div class="footer__dropdown-body">
+									<a href="services-virtual-servers.html" class="footer__dropdown-item">
+										Виртуальные серверы
+									</a>
+
+									<a href="services-dedicated-servers.html" class="footer__dropdown-item">
+										Выделенные серверы
+									</a>
+								</div>
+							</div>
 
 							<a href="referral-program.html" class="footer__menu-item">
 								Реферальная программа
 							</a>
 						</nav>
 
-						<a href="#" class="footer__social" target="_blank">
+						<a href="https://t.me" class="footer__social" target="_blank">
 							Social
 							<span class="footer__social-icon">
 								<svg

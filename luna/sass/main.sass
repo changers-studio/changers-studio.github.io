@@ -46,6 +46,23 @@ section
 	&._grad
 		background: $grad
 		border-radius: 56px 56px 0 0
+
+._chevron
+	display: flex
+	align-items: center
+	justify-content: center
+	&::after
+		content: ''
+		width: 12px
+		height: 12px
+		background-image: url('../img/icons/chevron-down.svg')
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center
+		margin-left: 5px
+		transition: .3s
+	&.active::after
+		transform: rotate(180deg)
 // eof
 
 
@@ -107,23 +124,7 @@ input, textarea
 // Шапка
 .header
 	background-color: $black
-	z-index: 2
-	._chevron
-		display: flex
-		align-items: center
-		justify-content: center
-		&::after
-			content: ''
-			width: 12px
-			height: 12px
-			background-image: url('../img/icons/chevron-down.svg')
-			background-size: contain
-			background-repeat: no-repeat
-			background-position: center
-			margin-left: 5px
-			transition: .3s
-		&.active
-			transform: rotate(180deg)
+	z-index: 3
 	&__container
 		display: flex
 		align-items: center
@@ -153,13 +154,37 @@ input, textarea
 			transition: .2s
 			&:last-child
 				margin: 0
-			&:hover, &.active
+			&:hover
 				color: $accent-light
+	&__dropdown
+		position: relative
+		&-heading
+			&.active
+				color: $accent-light
+		&-body
+			display: none
+			position: absolute
+			top: 50px
+			left: 50%
+			transform: translate(-50%, 0)
+			background-color: $black
+			box-shadow: 0px 4px 79px #07080C
+			border-radius: 15px
+			padding: 20px
+		&-item
+			white-space: nowrap
+			color: $gray
+			margin-bottom: 10px
+			display: flex
+			transition: .2s
+			&:last-child
+				margin-bottom: 0
 	&__currency
-		display: flex
-		align-items: center
 		height: 44px
 		margin-right: 10px
+		position: relative
+		display: flex
+		align-items: center
 		&-inner
 			border: 1px solid #29253F
 			padding: 0 15px
@@ -169,6 +194,10 @@ input, textarea
 			font-size: 14px
 			text-transform: uppercase
 			cursor: pointer
+			display: flex
+			align-items: center
+			justify-content: center
+			position: relative
 			&._left
 				border-radius: 50px 0 0 50px
 				padding-left: 20px
@@ -179,6 +208,30 @@ input, textarea
 				left: -1px
 		&-icon
 			margin-right: 6px
+		&-heading
+			display: flex
+			align-items: center
+		&-dropdown
+			display: none
+			margin-top: 20px
+			position: absolute
+			top: 100%
+			left: 50%
+			transform: translate(-50%, 0)
+			background-color: $black
+			box-shadow: 0px 4px 79px #07080C
+			padding: 20px
+			border-radius: 15px
+			width: calc(100% - 4px)
+		&-item
+			width: 100%
+			display: flex
+			align-items: center
+			margin-bottom: 10px
+			&:last-child
+				margin-bottom: 0
+			img
+				flex: 0 0 auto
 	&__button
 		width: 200px
 		height: 44px
@@ -225,6 +278,29 @@ input, textarea
 			transition: .2s
 			&:hover, &.active
 				color: $accent-light
+	&__dropdown
+		position: relative
+		&-heading
+			&.active
+				color: $accent-light
+		&-body
+			display: none
+			position: absolute
+			bottom: 30px
+			left: 50%
+			transform: translate(-50%, 0)
+			background-color: $black
+			box-shadow: 0px 4px 79px #07080C
+			border-radius: 15px
+			padding: 20px
+		&-item
+			white-space: nowrap
+			color: $gray
+			margin-bottom: 10px
+			display: flex
+			transition: .2s
+			&:last-child
+				margin-bottom: 0
 	&__social
 		display: flex
 		align-items: center
@@ -406,6 +482,9 @@ input, textarea
 		margin-top: 30px
 		display: flex
 		justify-content: space-between
+		&.three-cols
+			.benefits__box
+				width: calc(33.3% - 20px)
 	&__box
 		width: calc(50% - 15px)
 		background-color: $dark

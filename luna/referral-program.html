@@ -50,7 +50,22 @@
 							<nav class="header__menu">
 								<a href="index.html" class="header__menu-item">Главная страница</a>
 
-								<button class="header__menu-item _chevron">Услуги</button>
+								<div class="header__menu-item header__dropdown">
+									<button class="header__dropdown-heading _chevron">Услуги</button>
+
+									<div class="header__dropdown-body">
+										<a href="services-virtual-servers.html" class="header__dropdown-item">
+											Виртуальные серверы
+										</a>
+
+										<a
+											href="services-dedicated-servers.html"
+											class="header__dropdown-item"
+										>
+											Выделенные серверы
+										</a>
+									</div>
+								</div>
 
 								<a href="referral-program.html" class="header__menu-item">
 									Реферальная программа
@@ -60,18 +75,84 @@
 
 						<div class="header__container-inner">
 							<div class="header__currency">
-								<div class="header__currency-inner _left _chevron">
-									<img src="img/flags/ua.svg" alt="Flag" class="header__currency-icon" />
-									ua
+								<div class="header__currency-inner _left">
+									<div class="header__currency-heading _chevron">
+										<img
+											src="img/flags/ua.svg"
+											alt="Flag"
+											class="header__currency-icon"
+										/>
+										ua
+									</div>
+
+									<div class="header__currency-dropdown">
+										<a href="#" class="header__currency-item">
+											<img
+												src="img/flags/ua.svg"
+												alt="Flag"
+												class="header__currency-icon"
+											/>
+											ua
+										</a>
+
+										<a href="#" class="header__currency-item">
+											<img
+												src="img/flags/ua.svg"
+												alt="Flag"
+												class="header__currency-icon"
+											/>
+											ua
+										</a>
+
+										<a href="#" class="header__currency-item">
+											<img
+												src="img/flags/ua.svg"
+												alt="Flag"
+												class="header__currency-icon"
+											/>
+											ua
+										</a>
+									</div>
 								</div>
 
-								<div class="header__currency-inner _right _chevron">
-									<img
-										src="img/currency/uah.svg"
-										alt="Currency"
-										class="header__currency-icon"
-									/>
-									uah
+								<div class="header__currency-inner _right">
+									<div class="header__currency-heading _chevron">
+										<img
+											src="img/currency/uah.svg"
+											alt="Currency"
+											class="header__currency-icon"
+										/>
+										uah
+									</div>
+
+									<div class="header__currency-dropdown">
+										<div class="header__currency-item">
+											<img
+												src="img/currency/uah.svg"
+												alt="Currency"
+												class="header__currency-icon"
+											/>
+											uah
+										</div>
+
+										<div class="header__currency-item">
+											<img
+												src="img/currency/uah.svg"
+												alt="Currency"
+												class="header__currency-icon"
+											/>
+											uah
+										</div>
+
+										<div class="header__currency-item">
+											<img
+												src="img/currency/uah.svg"
+												alt="Currency"
+												class="header__currency-icon"
+											/>
+											uah
+										</div>
+									</div>
 								</div>
 							</div>
 
@@ -109,7 +190,7 @@
 						Преимущества реферальной программы
 					</h2>
 
-					<div class="benefits__container">
+					<div class="benefits__container three-cols">
 						<div class="benefits__box" data-aos="zoom-out-up">
 							<div class="benefits__box-icon" data-aos="zoom-in">
 								<img
@@ -126,6 +207,24 @@
 
 							<p class="benefits__box-text">
 								Вы можете взять сервер на час для проведения любых тестов
+							</p>
+						</div>
+
+						<div class="benefits__box" data-aos="zoom-out-up" data-aos-delay="150">
+							<div class="benefits__box-icon" data-aos="zoom-in">
+								<img
+									src="img/icons/chat.svg"
+									alt="Icon"
+									data-aos="zoom-in"
+									data-aos-delay="1000"
+								/>
+							</div>
+
+							<p class="benefits__box-heading">Поддержка в удобных мессенеджерах</p>
+
+							<p class="benefits__box-text">
+								Поможем решим проблему в любом удобном мессенджере, Telegram / VK /
+								WhatsApp
 							</p>
 						</div>
 
@@ -299,14 +398,26 @@
 						<nav class="footer__menu">
 							<a href="index.html" class="footer__menu-item">Главная страница</a>
 
-							<a href="#" class="footer__menu-item">Услуги</a>
+							<div class="footer__menu-item footer__dropdown">
+								<button class="footer__dropdown-heading _chevron">Услуги</button>
+
+								<div class="footer__dropdown-body">
+									<a href="services-virtual-servers.html" class="footer__dropdown-item">
+										Виртуальные серверы
+									</a>
+
+									<a href="services-dedicated-servers.html" class="footer__dropdown-item">
+										Выделенные серверы
+									</a>
+								</div>
+							</div>
 
 							<a href="referral-program.html" class="footer__menu-item">
 								Реферальная программа
 							</a>
 						</nav>
 
-						<a href="#" class="footer__social" target="_blank">
+						<a href="https://t.me" class="footer__social" target="_blank">
 							Social
 							<span class="footer__social-icon">
 								<svg
