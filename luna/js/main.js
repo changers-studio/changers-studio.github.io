@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		duration: 1000,
 	})
 
+	window.addEventListener('scroll', function () {
+		AOS.refresh()
+	})
+
 	if ($(window).width() <= 992) {
 		$('*').removeAttr('data-aos-delay')
 	}
