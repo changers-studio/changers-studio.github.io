@@ -103,9 +103,6 @@
 			padding-bottom: 40px
 		&._grad
 			border-radius: 16px 16px 0 0
-	
-	._chevron
-		justify-content: flex-start
 	// eof
 
 	// Кнопка
@@ -201,6 +198,7 @@
 			&-item
 				margin-bottom: 20px
 		&__currency
+			width: 100%
 			z-index: 2
 			margin:
 				right: 0
@@ -243,11 +241,14 @@
 					color: $gray
 		&__dropdown
 			padding: 0
+			border-bottom: none
 			justify-content: flex-start
 			&-heading
 				width: 100%
 				border-bottom: 1px solid #70717D
 				padding: 15px 0
+				&._chevron
+					justify-content: flex-start
 			&-body
 				position: relative
 				background: none
@@ -262,8 +263,6 @@
 				border-bottom: 1px solid #70717D
 				&:hover
 					color: $gray
-				&:last-child
-					border-bottom: none
 		&__social
 			position: absolute
 			right: 0
