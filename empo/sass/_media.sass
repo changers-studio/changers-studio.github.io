@@ -1,0 +1,1370 @@
+@import vars
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px)
+
+	// Общие стили для сайта
+	body
+		font-size: 18px
+	// eof
+
+	// Текст
+	.title
+		font-size: 52px
+		._dot
+			transform: translateX(-5px)
+	// eof
+
+	// Главный экран
+	.main
+		&__wrapper
+			max-width: 440px
+		&__text
+			max-width: 400px
+		&__image
+			width: 700px
+			height: 600px
+			transform: translate(0, -50%)
+			&-girl
+				max-height: 100%
+			&-graph
+				width: 600px
+				top: 100px
+			&-hand
+				width: 320px
+				top: 180px
+			&-modal
+				width: 150px
+				top: 200px
+		&__statistic
+			margin-top: 50px
+			&-icon
+				width: 100px
+	// eof
+
+	// Акцентный блок
+	.accent-block
+		&__hand
+			top: 60%
+	// eof
+
+@media only screen and (max-width : 1440px)
+
+	// Общие стили для сайта
+	.container
+		max-width: 1160px
+	// eof
+
+	// Текст
+	.title
+		._dot
+			transform: translateX(-4px)
+
+	.heading
+		font-size: 40px
+	// eof
+
+	// Header
+	.header
+		&__logo
+			margin-right: 40px
+		&__menu
+			margin-right: 40px
+			&-item
+				margin-right: 20px
+		&__dropdown
+			&-inner
+				padding: 25px
+			&-item
+				padding: 15px
+			&-gift
+				padding: 15px
+				&-img
+					width: 120px
+	// eof
+
+	// Footer
+	.footer
+		&__container-inner
+			&._left
+				max-width: 460px
+			&._right
+				max-width: 560px
+		&__address
+			font-size: 14px
+			max-width: 235px
+		&__form-container
+			max-width: 260px
+		&__menu-col
+			margin-left: 90px
+		&__bottom-link
+			margin-left: 95px
+	// eof
+
+	// Главный экран
+	.main
+		min-height: 500px
+		&__image
+			transform: translate(70px, -50%)
+	// eof
+
+	// Акцентный блок
+	.accent-block
+		&__title
+			&._wider
+				font-size: 70px
+				max-width: 980px
+			&._less-margin
+				font-size: 86px
+		&__icon
+			bottom: 18px
+			&-1
+				width: 110px
+				img
+					height: 130px
+			&-2
+				width: 110px
+				margin-left: 10px
+				img
+					height: 130px
+			&-3
+				width: 80px
+				img
+					height: 110px
+		&__hand
+			top: 60%
+	// eof
+
+	// Инфо
+	.info
+		&__image
+			max-width: 540px
+			&._pos-absolute
+				max-width: 650px
+				transform: translateX(50px)
+	// eof
+
+	// Рекомендации
+	.recommends
+		&__container
+			justify-content: space-between
+		&__images
+			margin-right: 0
+			max-width: 650px
+		&__slider
+			max-width: 400px
+			&-item
+				height: 535px
+				padding-top: 80px
+		&__heading
+			font-size: 40px
+		&__subheading
+			font-size: 20px
+		&__text
+			font-size: 16px
+			margin-bottom: 30px
+	// eof
+
+	// Скидка
+	.discount
+		padding-top: 210px
+		&__overtitle
+			margin-bottom: 50px
+		&__text
+			margin-bottom: 70px
+	// eof
+
+	// Посты
+	.posts
+		&__title
+			margin-bottom: 60px
+		&__top-heading
+			font-size: 20px
+		.post
+			padding: 30px
+			&__title
+				font-size: 34px
+			&__text
+				font-size: 14px
+				margin-bottom: 35px
+			&__btn
+				width: 190px
+				margin-right: 30px
+			&__time
+				font-size: 14px
+	// eof
+
+	// Отзывы
+	.reviews
+		.review
+			height: 420px
+			&.active
+				width: 500px
+			&.more-text
+				height: 480px
+			&-front
+				padding: 20px
+				&__data-item
+					font-size: 16px
+					span
+						margin-right: 10px
+			&__container
+				padding: 30px
+			&__image
+				width: 60px
+				height: 60px
+				margin-right: 20px
+			&__data-item
+				font-size: 14px
+				span
+					margin-right: 10px
+			&__date
+				font-size: 14px
+				margin-bottom: 10px
+			&__rating-star
+				width: 12px
+			&__title
+				font-size: 18px
+			&__text
+				font-size: 14px
+				&-more
+					&::before, &::after
+						font-size: 14px
+	// eof
+
+	// Форма обратной связи
+	.feedback
+		&__title
+			margin-bottom: 45px
+		&__text
+			margin-bottom: 40px
+		&__social
+			margin-top: 100px
+		&__form
+			max-width: 460px
+			&-links
+				font-size: 10px
+				max-width: 225px
+			&-btn
+				width: 190px
+	// eof
+
+	// Страница курса
+	.p-course
+		// Главный экран
+		.main
+			&__image
+				max-width: 55%
+		// eof
+	// eof
+
+@media only screen and (max-width : 1400px)
+
+	// Общие стили для сайта
+	body
+		font-size: 16px
+	// eof
+
+	// Текст
+	.pre-heading
+		font-size: 12px
+		padding: 12px 25px
+
+	.title
+		font-size: 40px
+	// eof
+
+	// Главный экран
+	.main
+		&__title
+			max-width: 325px
+		&__text
+			margin-bottom: 30px
+			max-width: 380px
+		&__statistic
+			margin-top: 30px
+		&__image
+			width: 600px
+			height: 500px
+			&-girl
+				height: 100%
+			&-graph
+				width: 470px
+			&-hand
+				width: 280px
+				top: 155px
+			&-modal
+				width: 130px
+	// eof
+
+	// Акцентный блок
+	.accent-block
+		&__title._wider
+			font-size: 65px
+			max-width: 890px
+		&__hand
+			top: 62%
+	// eof
+
+	// Инфо
+	.info
+		&__text._max-width
+			max-width: 360px
+	// eof
+
+	// Скидка
+	.discount
+		padding-top: 160px
+		&__container
+			padding: 70px
+		&__image
+			right: -45px
+	// eof
+
+@media only screen and (max-width : 1200px)
+
+	// Общие стили для сайта
+	.container
+		max-width: 960px
+	// eof
+
+	// Текст
+	.pre-accent-text
+		font-size: 26px
+
+	.accent-text
+		font-size: 75px
+
+	.sub-accent-text
+		font-size: 20px
+	// eof
+
+	// Header
+	.header
+		&__container
+			padding-top: 25px
+			padding-bottom: 25px
+		&__logo
+			width: 170px
+			margin-right: 30px
+		&__menu
+			margin-right: 30px
+			&-item
+				margin-right: 15px
+				font-size: 15px
+		&__dropdown
+			&-btn
+				font-size: 15px
+			&-item
+				&-caption
+					font-size: 10px
+				&-heading
+					font-size: 14px
+				&-info
+					font-size: 10px
+			&-gift
+				&-caption
+					font-size: 10px
+				&-heading
+					font-size: 14px
+				&-img
+					width: 100px
+		&__btn
+			padding: 12px 20px
+			font-size: 14px
+			&-secondary
+				width: 38px
+	// eof
+
+	// Footer
+	.footer
+		._underline-animate::after
+			height: 1px
+		&__container-inner
+			&._left
+				max-width: 420px
+			&._right
+				max-width: 400px
+		&__form
+			padding: 15px 20px
+			&-container
+				max-width: 260px
+			&-img
+				width: 130px
+		&__menu
+			&-col
+				margin-left: 60px
+			&-caption
+				margin-bottom: 55px
+			&-item
+				font-size: 14px
+		&__scroll-top
+			display: none
+		&__copyrights
+			font-size: 12px
+		&__bottom-link
+			margin-left: 70px
+			font-size: 12px
+		&__social-item
+			margin-right: 5px
+			width: 20px
+	// eof
+
+	// Главный экран
+	.main
+		height: calc(100vh - 88px)
+		&__image
+			transform: translate(50px, -50%)
+	// eof
+
+	// Акцентный блок
+	.accent-block
+		&__title._less-margin
+			font-size: 74px
+		&__text
+			max-width: 400px
+		&__image-inner
+			width: 700px
+		&__hand
+			top: 60%
+			width: calc(50% - 220px)
+	// eof
+
+	// Инфо
+	.info
+		&__list-item
+			font-size: 14px
+		&__image
+			max-width: 450px
+			&._order-first
+				order: 1
+	// eof
+
+	// Рекомендации
+	.recommends
+		&__images
+			max-width: 600px
+		&__slider
+			max-width: 300px
+			&-item
+				height: 490px
+		&__heading
+			font-size: 28px
+			letter-spacing: -1px
+		&__subheading
+			font-size: 16px
+		&__text
+			font-size: 14px
+	// eof
+
+	// Скидка
+	.discount
+		padding-top: 90px
+	// eof
+
+	// Посты
+	.posts
+		.post
+			padding: 25px
+			&__title
+				font-size: 28px
+			&__btn
+				width: 155px
+				padding: 12px 0
+				margin-right: 20px
+				font-size: 12px
+			&__time
+				font-size: 12px
+				&-icon
+					width: 20px
+					margin-right: 7px
+	// eof
+
+	// Отзывы
+	.reviews
+		&__counter
+			font-size: 20px
+			margin: 0 20px
+		.review
+			height: 380px
+			&.active
+				width: 400px
+			&.more-text
+				height: 520px
+			&-front
+				padding: 15px
+				&__image
+					width: 100px
+					height: 100px
+				&__data-item
+					font-size: 14px
+					span
+						margin-right: 10px
+						font-size: 12px
+				&__date
+					font-size: 14px
+				&__rating-star
+					width: 12px
+			&__container
+				padding: 30px
+			&__top
+				align-items: flex-start
+			&__image
+				width: 40px
+				height: 40px
+				margin-right: 20px
+			&__data-item
+				font-size: 12px
+				margin-bottom: 8px
+				span
+					margin-right: 5px
+			&__date
+				font-size: 14px
+				margin-bottom: 5px
+			&__title
+				font-size: 16px
+	// eof
+
+	// Форма обратной связи
+	.feedback
+		&__title
+			margin-bottom: 50px
+		&__form
+			max-width: 320px
+			&-input
+				margin-bottom: 10px
+			&-checkbox
+				margin-top: 20px
+				&-text
+					font-size: 12px
+			&-links
+				font-size: 10px
+				max-width: 225px
+			&-bottom
+				flex-direction: column
+				align-items: flex-start
+			&-links
+				margin-top: 15px
+			&-btn
+				width: 100%
+				margin-left: 0
+				order: -1
+	// eof
+
+	// Страница курса
+	.p-course
+		// Главный экран
+		.main
+			&__container
+				padding: 50px
+			&__overtitle
+				margin-bottom: 15px
+			&__title
+				margin-bottom: 25px
+			&__subtitle
+				margin-bottom: 15px
+			&__text
+				font-size: 14px
+		// eof
+	// eof
+
+/*	Small Devices, Tablets */
+@media only screen and (max-width : 992px)
+
+	// Общие стили для сайта
+	.container
+		max-width: 520px
+
+	section
+		padding: 35px 0
+	// eof
+
+	// Стилизация полей формы
+	::placeholder
+		font-size: 12px
+	// eof
+
+	// Текст
+	.pre-heading
+		font-size: 12px
+		padding: 10px 20px
+		letter-spacing: 0.02em
+
+	.title
+		letter-spacing: -2px
+
+	.pre-accent-text
+		font-size: 20px
+
+	.accent-text
+		font-size: 38px
+		letter-spacing: -1.5px
+		line-height: 1.3
+
+	.sub-accent-text
+		letter-spacing: -0.01em
+		font-size: 14px
+
+	.caption
+		font-size: 16px
+		letter-spacing: normal
+	// eof
+
+	// Кнопка
+	.btn
+		&:hover
+			transform: translateY(0px)
+	// eof
+
+	// Header
+	.header
+		&._fixed
+			border-radius: 0 0 10px 10px
+			.header
+				&__logo
+					display: none
+				&__btns-mobile
+					display: flex
+				&__hamburger
+					width: 36px
+					height: 36px
+					&-inner
+						width: 20px
+						height: 3px
+		&__container
+			padding-top: 12px
+			padding-bottom: 12px
+			&-inner
+				width: 100%
+				justify-content: space-between
+		&__sidebar
+			overflow-y: auto
+			position: fixed
+			top: 0
+			right: -280px
+			width: 280px
+			height: 100vh
+			background-color: #fff
+			border-radius: 20px 0 0 20px
+			flex-direction: column
+			align-items: flex-start
+			padding: 20px 20px 20px 35px
+			transition: .8s
+			z-index: 10
+			&.visible
+				right: 0
+			&-top
+				display: flex
+				justify-content: space-between
+				align-items: center
+				width: 100%
+				margin-bottom: 50px
+			&-plug
+				position: fixed
+				left: 0
+				top: 0
+				right: 0
+				bottom: 0
+				background-color: $black
+				opacity: .9
+				z-index: 9
+		&__logo
+			width: 190px
+			margin-right: 0
+		&__hamburger
+			display: flex
+		&__menu
+			margin-right: 0
+			margin-bottom: 60px
+			flex-direction: column
+			align-items: flex-start
+			&-item
+				margin-right: 0
+				margin-bottom: 18px
+				font-size: 18px
+		&__dropdown-btn
+			display: none
+		&__btns
+			display: none
+		&__contacts, &__social
+			display: flex
+	// eof
+
+	// Footer
+	.footer
+		padding: 50px 0 20px
+		.container
+			position: relative
+		._underline-animate::after
+			display: none
+		&__menu
+			display: none
+		&__container
+			flex-direction: column
+			&._bottom
+				padding-top: 20px
+			&-inner
+				&._left
+					max-width: none
+		&__wrapper
+			flex-direction: column
+			margin-bottom: 40px
+		&__logo
+			margin-bottom: 20px
+		&__address
+			font-size: 12px
+			margin-bottom: 40px
+		&__contacts-item
+			margin-bottom: 20px
+		&__form
+			padding: 12px
+			&-container
+				width: 100%
+				max-width: 340px
+			&-title
+				font-size: 14px
+			&-subtitle
+				font-size: 10px
+			&-input
+				padding: 10px 15px
+				font-size: 12px
+			&-btn
+				width: 37px
+				&:hover
+					transform: none
+			&-img
+				width: 100px
+		&__social
+			position: absolute
+			bottom: 100px
+			&-item
+				width: 30px
+				margin-right: 10px
+				&:hover
+					transform: none
+		&__scroll-top
+			display: flex
+			position: absolute
+			right: 20px
+			bottom: 5px
+			width: 35px
+			height: 35px
+			img
+				width: 18px
+			&:hover
+				transform: none
+		&__copyrights
+			margin-bottom: 10px
+		&__bottom-link
+			margin-left: 20px
+	// eof
+
+	// Главный экран
+	.main
+		height: auto
+		min-height: auto
+		padding: 30px 0
+		margin-bottom: 0
+		&__container
+			flex-direction: column
+			align-items: flex-start
+		&__title
+			margin-bottom: 30px
+		&__text
+			margin-bottom: 50px
+		&__statistic
+			display: none
+		&__image
+			position: relative
+			top: 0
+			left: 50%
+			transform: translate(-50%, 0)
+			margin-top: 40px
+	// eof
+
+	// Бегущие строки (После главного экрана)
+	.marquee
+		display: none
+	// eof
+
+	// Акцентный блок
+	.accent-block
+		&._padding-top
+			padding-top: 40px
+		&__title
+			margin-bottom: 40px
+			&._wider
+				font-size: 32px
+			&._less-margin
+				font-size: 35px
+				margin-bottom: 30px
+		&__text
+			max-width: 260px
+			margin-bottom: 30px
+		&__image
+			&::before
+				border-radius: 10px
+			&.animate::before
+				height: 85%
+			&-inner
+				left: auto
+				width: 92%
+		&__icon
+			bottom: 5px
+			&-1
+				width: 50px
+				bottom: 10px
+				img
+					height: 70px
+			&-2
+				width: 50px
+				margin-left: 8px
+				img
+					height: 70px
+			&-3
+				width: 30px
+				img
+					height: 60px
+		&__hand
+			display: none
+	// eof
+
+	// Инфо
+	.info
+		&__container
+			flex-direction: column
+			&-inner
+				width: 100%
+				margin-bottom: 20px
+		&__overtitle
+			margin-bottom: 15px
+		&__title
+			margin-bottom: 30px
+		&__btn
+			margin-top: 20px
+			font-size: 16px
+			&-icon
+				margin-left: 10px
+				path
+					fill: $accent
+			&:hover
+				.info__btn-icon
+					left: 0
+		&__image
+			max-width: 100%
+			&._mobile-hidden
+				display: none
+			&-wrapper
+				transform: translateX(0px)
+				img
+					width: 100vw
+					max-width: calc(100% + 30px)
+		&__list
+			margin-top: 40px
+			&-container
+				max-height: none
+			&-item
+				margin-top: 15px
+				margin-right: 0
+				&:hover
+					color: $black
+			&-number
+				margin-right: 15px
+				width: 35px
+				height: 20px
+				background-color: $accent
+				font-size: 10px
+	// eof
+
+	// Рекомендации
+	.recommends
+		&__top
+			margin-bottom: 50px
+		&__link
+			display: none
+		&__images
+			display: none
+		&__slider
+			max-width: 100%
+			.slick-dots
+				li
+					width: 50px
+					height: 30px
+					font-size: 16px
+			&-item
+				height: auto
+		&__data-item
+			font-size: 12px
+		&__heading
+			margin-bottom: 20px
+		&__subheading
+			letter-spacing: -0.02em
+			margin-bottom: 18px
+			br
+				display: none
+		&__text
+			margin-bottom: 50px
+	// eof
+
+	// Скидка
+	.discount
+		padding-top: 35px
+		&__container
+			padding: 0
+			background: none
+			border: none
+		&__overtitle
+			margin-bottom: 30px
+		&__title
+			margin-bottom: 15px
+		&__text
+			max-width: 250px
+			margin-bottom: 30px
+		&__image
+			position: relative
+			right: auto
+			max-width: none
+			margin-bottom: 20px
+			&::before
+				content: ''
+				background-color: $gray-6
+				border: 1px solid $gray-5
+				border-radius: 10px
+				height: calc(100% - 20px)
+				width: 100%
+				position: absolute
+				bottom: 0
+			&-inner
+				position: relative
+				left: 20px
+				width: calc(100% - 10px)
+	// eof
+
+	// Посты
+	.posts
+		&__top-link
+			&-icon
+				margin-left: 10px
+				path
+					fill: $accent
+			&:hover
+				color: $gray-1
+				.posts__top-link-icon
+					left: 0
+		&__container
+			flex-direction: column
+		.post
+			max-width: 100%
+			margin-right: 0
+			margin-bottom: 10px
+			&__title
+				font-size: 32px
+				letter-spacing: -1.5px
+				margin-bottom: 10px
+			&__text
+				margin-bottom: 35px
+				font-size: 16px
+	// eof
+
+	// Отзывы
+	.reviews
+		&__title
+			margin-bottom: 35px
+		&__slider
+			display: none
+			&-mobile
+				display: block
+			&-item
+				height: auto
+				margin: 0 5px
+			&-btn
+				height: 30px
+				svg
+					width: 30px
+					height: 30px
+		&__nav
+			display: none
+			&-mobile
+				display: flex
+				justify-content: center
+				margin-top: 25px
+		.review
+			width: 100%
+			height: 100%
+			&.active
+				width: 100%
+			&__container
+				background-color: $accent
+				padding: 20px
+				border-radius: 10px
+				&-inner
+					opacity: 1
+			&__top
+				margin-bottom: 20px
+			&__image
+				width: 60px
+				height: 60px
+				margin-right: 20px
+			&__data-item
+				font-size: 12px
+				span
+					font-size: 10px
+					margin-right: 10px
+			&__title
+				font-size: 14px
+				margin-bottom: 10px
+			&__text
+				font-size: 12px
+				&._more
+					max-height: none
+				&-more
+					display: none
+			&__bottom
+				margin-top: 40px
+			&__social-link
+				font-size: 12px
+				&::before
+					width: 25px
+					height: 25px
+					margin-right: 10px
+			&__btn
+				font-size: 12px
+	// eof
+
+	// Форма обратной связи
+	.feedback
+		&__container
+			flex-direction: column
+			padding: 30px 20px
+		&__title
+			margin-bottom: 30px
+		&__text
+			margin-bottom: 20px
+		&__whatsapp
+			padding: 10px 18px
+			margin-bottom: 30px
+			max-width: 240px
+			width: 100%
+			&:hover
+				transform: none
+			&-icon
+				margin-right: 6px
+				margin-left: 10px
+				width: 15px
+				transform: translateY(0px)
+			span
+				font-size: 12px
+		&__social
+			display: none
+		&__form
+			max-width: 100%
+			&-input
+				margin-bottom: 10px
+			&-checkbox-text
+				font-size: 12px
+			&-links
+				font-size: 10px
+				max-width: 225px
+			&-bottom
+				flex-direction: column
+				align-items: flex-start
+			&-links
+				margin-top: 15px
+			&-btn
+				height: 45px
+	// eof
+
+	// Страница курса
+	.p-course
+		// Главный экран
+		.main
+			&__container
+				padding: 0 20px
+				flex-direction: column
+				background: none
+				border: none
+			&__overtitle
+				margin-bottom: 15px
+				background-color: $gray-6
+			&__text
+				font-size: 12px
+				margin-bottom: 0
+				&-inner
+					margin-bottom: 10px
+					&:last-child
+						font-size: 12px
+					span
+						margin-top: 5px
+			&__btns
+				position: fixed
+				bottom: 0
+				left: 0
+				width: 100vw
+				padding: 15px 20px
+				background-color: $gray-6
+				border: 1px solid $gray-5
+				border-radius: 10px 10px 0px 0px
+			&__btn
+				width: 100%
+				height: 45px
+				font-size: 16px
+			&__image
+				max-width: 100%
+				margin-top: 25px
+		// eof
+	// eof
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 520px)
+
+	// Общие стили для сайта
+	body
+		font-size: 14px
+
+	.container
+		max-width: 100%
+	// eof
+
+	// Текст
+	.pre-heading
+		font-size: 10px
+
+	.heading
+		font-size: 32px
+		letter-spacing: -2px
+
+	.title
+		font-size: 32px
+		span
+			transform: translateX(-2px)
+
+	.pre-accent-text
+		font-size: 14px
+
+	.accent-text
+		font-size: 24px
+		font-weight: 700
+		line-height: 1.3
+	// eof
+
+	// Стилизация полей формы
+	.input-wrapper
+		padding: 18px
+		input
+			top: 5px
+			font-size: 12px
+		span
+			font-size: 12px
+			left: 18px
+		&.active span
+			top: 10px
+			font-size: 9px
+	// eof
+
+	// Keyframes
+	@keyframes eye-clip
+		0%, 2%, 100%
+			height: 12px
+		1%
+			height: 0
+	// eof
+
+	// Кнопка
+	.btn
+		padding: 14px 25px
+		font-size: 12px
+		.eye-icon
+			width: 14px
+			svg
+				height: 100%
+	// eof
+
+	// Главный экран
+	.main
+		&__container-inner
+			width: 100%
+			position: static
+		&__title
+			max-width: 255px
+		&__text
+			max-width: 250px
+			margin-bottom: 0
+		&__btns
+			width: 100%
+		&__btn
+			width: calc(50% - 5px)
+			padding-right: 0
+			padding-left: 0
+		&__btns
+			position: absolute
+			bottom: 0
+			width: calc(100% - 40px)
+		&__image
+			width: 400px
+			height: 350px
+			margin: 30px 0 50px
+			&-hand
+				top: 90px
+				left: -15px
+				width: 200px
+			&-modal
+				top: 120px
+				right: 30px
+				width: 80px
+			&-graph
+				top: 55px
+				left: 40px
+				width: 340px
+		// &__image
+		// 	width: 450px
+		// 	height: 400px
+		// 	&-hand
+		// 		top: 110px
+		// 		left: -15px
+		// 		width: 220px
+		// 	&-modal
+		// 		top: 130px
+		// 		right: 30px
+		// 		width: 100px
+		// 	&-graph
+		// 		top: 65px
+		// 		left: 40px
+		// 		width: 380px
+	// eof
+
+	// Акцентный блок
+	.accent-block
+		&__overtitle
+			margin-bottom: 15px
+		&__title
+			margin-bottom: 30px
+			max-width: 280px
+			&._wider
+				max-width: 280px
+				font-size: 20px
+				margin-bottom: 20px
+			&._less-margin
+				font-size: 20px
+				margin-bottom: 15px
+		&__icon
+			bottom: 5px
+			&-1
+				width: 30px
+				bottom: 8px
+				img
+					height: 40px
+			&-2
+				width: 25px
+				margin-left: 5px
+				img
+					height: 38px
+			&-3
+				width: 20px
+				img
+					height: 30px
+		&__text
+			margin-bottom: 25px
+		&__btns
+			width: 100%
+			max-width: 280px
+			margin: 0 auto
+		&__btn
+			width: calc(50% - 5px)
+			padding-right: 0
+			padding-left: 0
+			&._mobile-style
+				background-color: $accent
+				max-width: 280px
+				width: 100%
+	// eof
+
+	// Инфо
+	.info
+		&__title._less-size
+			font-size: 28px
+		&__text._max-width
+			max-width: 270px
+	// eof
+
+	// Рекомендации
+	.recommends
+		&__title
+			margin-bottom: 15px
+		&__subtitle
+			font-size: 14px
+			max-width: 230px
+		&__data
+			width: 100%
+			&-item
+				&:first-child
+					width: calc(40% - 3px)
+				&:last-child
+					width: calc(60% - 3px)
+		&__btn
+			font-size: 14px
+			height: 45px
+			width: 100%
+	// eof
+
+	// Скидка
+	.discount
+		&__wrapper
+			justify-content: space-between
+		&__btn
+			width: calc(50% - 5px)
+			padding-right: 0
+			padding-left: 0
+			margin-right: 0
+		&__time
+			justify-content: center
+			width: calc(50% - 5px)
+			font-size: 14px
+			&-icon
+				width: 20px
+	// eof
+
+	// Посты
+	.posts
+		&__top-link
+			position: absolute
+			right: 20px
+			bottom: 0
+		&__container
+			padding-bottom: 35px
+		.post
+			padding: 20px
+			border-radius: 10px
+			&__caption
+				font-size: 12px
+			&__date
+				font-size: 12px
+			&__title
+				font-size: 28px
+			&__text
+				font-size: 14px
+			&__btn
+				width: 150px
+	// eof
+
+	// Отзывы
+	.reviews
+		.review
+			&__text._more
+				max-height: 110px
+	// eof
+
+	// Форма обратной связи
+	.feedback
+		&__container
+			flex-direction: column
+			padding: 30px 20px
+		&__title
+			margin-bottom: 20px
+			font-size: 23px
+		&__text
+			max-width: 230px
+			font-size: 12px
+			margin-bottom: 15px
+		&__form-checkbox
+			margin-bottom: 20px
+	// eof
