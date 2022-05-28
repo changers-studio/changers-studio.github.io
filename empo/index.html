@@ -12,15 +12,20 @@
 		<meta name="format-detection" content="telephone=no" />
 
 		<!-- favicon -->
-		<link rel="icon" type="image/x-icon" sizes="192x192" href="img/favicon.ico" />
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
 
 		<!-- reset css -->
 		<link rel="stylesheet" href="css/reset.css" />
 
 		<!-- libs css -->
 		<link rel="stylesheet" href="libs/aos/aos.css" />
+		<link rel="stylesheet" href="libs/mfp/magnific-popup.css" />
 		<link rel="stylesheet" href="libs/slick-carousel/slick.css" />
-		<link rel="stylesheet" href="libs/locomotive-scroll/locomotive-scroll.min.css" />
 
 		<!-- main css -->
 		<link rel="stylesheet" href="css/main.css" />
@@ -30,16 +35,16 @@
 
 		<!-- libs js -->
 		<script defer src="libs/aos/aos.js"></script>
+		<script defer src="libs/mfp/jquery.magnific-popup.min.js"></script>
 		<script defer src="libs/slick-carousel/slick.min.js"></script>
-		<script defer src="libs/locomotive-scroll/locomotive-scroll.min.js"></script>
-
+		<script defer src="libs/inputmask/jquery.inputmask.min.js"></script>
 		<!-- main js -->
 		<script defer src="js/main.js"></script>
 	</head>
 
 	<body class="ishome">
-		<div class="body-overflow-hidden" data-scroll-container>
-			<header class="header" data-aos="fade-down">
+		<div class="body-overflow-hidden">
+			<header class="header">
 				<div class="container header__container">
 					<div class="header__container-inner">
 						<a href="index.html" class="header__logo">
@@ -47,8 +52,15 @@
 						</a>
 
 						<div class="header__btns-mobile">
-							<a href="#" class="header__btn-mobile btn _accent">See courses</a>
-							<a href="#" class="header__btn-mobile btn _black">Contact us</a>
+							<a href="catalog.html" class="header__btn-mobile btn _accent">
+								See courses
+							</a>
+							<a
+								href=".popup-callback"
+								class="header__btn-mobile btn _black mfp"
+							>
+								Contact us
+							</a>
 						</div>
 
 						<button class="header__dropdown-btn header__dropdown-area">
@@ -64,7 +76,11 @@
 
 					<div class="header__sidebar">
 						<div class="header__sidebar-top">
-							<img src="img/logo-icon.svg" alt="Logo" class="header__sidebar-logo" />
+							<img
+								src="img/logo-icon.svg"
+								alt="Logo"
+								class="header__sidebar-logo"
+							/>
 
 							<button class="header__sidebar-close">
 								<img src="img/icons/close.svg" alt="X" />
@@ -73,14 +89,18 @@
 
 						<nav class="header__menu">
 							<a href="index.html" class="header__menu-item">Home</a>
-							<a href="#" class="header__menu-item button">About us</a>
-							<a href="#" class="header__menu-item">Courses</a>
-							<a href="#" class="header__menu-item">Gallery</a>
-							<a href="#" class="header__menu-item">For teachers</a>
+							<a href="about-us.html" class="header__menu-item">About us</a>
+							<a href="catalog.html" class="header__menu-item">Courses</a>
+							<a href="gallery.html" class="header__menu-item">Gallery</a>
+							<a href="for-teachers.html" class="header__menu-item">
+								For teachers
+							</a>
 						</nav>
 
 						<div class="header__btns">
-							<a href="#" class="header__btn btn _black">Contact Us</a>
+							<a href=".popup-callback" class="header__btn btn _black mfp">
+								Contact Us
+							</a>
 
 							<a href="#" class="header__btn-secondary">
 								<img src="img/icons/whatsApp.png" alt="WhatsApp" />
@@ -140,34 +160,51 @@
 				<div class="header__dropdown container header__dropdown-area">
 					<div class="header__dropdown-inner">
 						<div class="header__dropdown-container">
-							<a href="#" class="header__dropdown-item">
+							<a
+								href="course-app_prototyping.html"
+								class="header__dropdown-item"
+							>
 								<p class="header__dropdown-item-caption">Course</p>
 								<p class="header__dropdown-item-heading">App Prototyping</p>
 								<div class="header__dropdown-item-flexbox">
 									<div class="header__dropdown-item-info">4 weeks</div>
-									<div class="header__dropdown-item-info _dark">12-16 year olds</div>
+									<div class="header__dropdown-item-info _dark">
+										12-16 year olds
+									</div>
 								</div>
 							</a>
 
-							<a href="#" class="header__dropdown-item">
+							<a
+								href="course-data_analysis_excel.html"
+								class="header__dropdown-item"
+							>
 								<p class="header__dropdown-item-caption">Course</p>
-								<p class="header__dropdown-item-heading">Data Analysis in Excel</p>
+								<p class="header__dropdown-item-heading">
+									Data Analysis in Excel
+								</p>
 								<div class="header__dropdown-item-flexbox">
 									<div class="header__dropdown-item-info">4 weeks</div>
 									<div class="header__dropdown-item-info">11-14 year olds</div>
 								</div>
 							</a>
 
-							<a href="#" class="header__dropdown-item">
+							<a
+								href="course-data_driven_web_app.html"
+								class="header__dropdown-item"
+							>
 								<p class="header__dropdown-item-caption">Course</p>
-								<p class="header__dropdown-item-heading">Data Drive Web Application</p>
+								<p class="header__dropdown-item-heading">
+									Data Drive Web Application
+								</p>
 								<div class="header__dropdown-item-flexbox">
 									<div class="header__dropdown-item-info">4 weeks</div>
-									<div class="header__dropdown-item-info _dark">15-18 year olds</div>
+									<div class="header__dropdown-item-info _dark">
+										15-18 year olds
+									</div>
 								</div>
 							</a>
 
-							<a href="#" class="header__dropdown-item">
+							<a href="course-digital_media.html" class="header__dropdown-item">
 								<p class="header__dropdown-item-caption">Course</p>
 								<p class="header__dropdown-item-heading">Digital Media</p>
 								<div class="header__dropdown-item-flexbox">
@@ -176,7 +213,7 @@
 								</div>
 							</a>
 
-							<a href="#" class="header__dropdown-item">
+							<a href="course-game_dev.html" class="header__dropdown-item">
 								<p class="header__dropdown-item-caption">Course</p>
 								<p class="header__dropdown-item-heading">Game Development</p>
 								<div class="header__dropdown-item-flexbox">
@@ -185,27 +222,41 @@
 								</div>
 							</a>
 
-							<a href="#" class="header__dropdown-item">
+							<a
+								href="course-machine_learning.html"
+								class="header__dropdown-item"
+							>
 								<p class="header__dropdown-item-caption">Course</p>
 								<p class="header__dropdown-item-heading">Machine Learning</p>
 								<div class="header__dropdown-item-flexbox">
 									<div class="header__dropdown-item-info">4 weeks</div>
-									<div class="header__dropdown-item-info _dark">15-18 year olds</div>
+									<div class="header__dropdown-item-info _dark">
+										15-18 year olds
+									</div>
 								</div>
 							</a>
 						</div>
 
 						<div class="header__dropdown-gift">
 							<div class="header__dropdown-gift-wrapper">
-								<p class="header__dropdown-gift-caption">Take the quiz and get</p>
-								<p class="header__dropdown-gift-heading">10% off your first course</p>
+								<p class="header__dropdown-gift-caption">
+									Take the quiz and get
+								</p>
+								<p class="header__dropdown-gift-heading">
+									10% off your first course
+								</p>
 							</div>
 
 							<div class="header__dropdown-gift-img">
 								<img src="img/gift.png" alt="Gift" />
 							</div>
 
-							<a href="#" class="header__dropdown-gift-btn btn _black">Take the Quiz</a>
+							<a
+								href=".popup-quiz"
+								class="header__dropdown-gift-btn btn _black mfp"
+							>
+								Take the Quiz
+							</a>
 						</div>
 					</div>
 				</div>
@@ -221,20 +272,30 @@
 								premium experience for girls
 							</p>
 
-							<h1 class="main__title title" data-aos="fade-right" data-aos-delay="200">
+							<h1
+								class="main__title title"
+								data-aos="fade-right"
+								data-aos-delay="200"
+							>
 								An Ecosystem Full of Opportunities for Young Girls
 								<span class="_dot _c-gold">.</span>
 							</h1>
 
 							<p class="main__text" data-aos="fade-right" data-aos-delay="400">
-								Take the Quiz and get your ideal career matches, together with live
-								courses to explore a profession and develop new skills!
+								Take the Quiz and get your ideal career matches, together with
+								live courses to explore a profession and develop new skills!
 							</p>
 
-							<div class="main__btns" data-aos="fade-right" data-aos-delay="600">
-								<a href="#" class="main__btn btn _accent">Take the Quiz</a>
+							<div
+								class="main__btns"
+								data-aos="fade-right"
+								data-aos-delay="600"
+							>
+								<a href=".popup-quiz" class="main__btn btn _accent mfp">
+									Take the Quiz
+								</a>
 
-								<a href="#" class="main__btn btn _transparent">
+								<a href="catalog.html" class="main__btn btn _transparent">
 									<i class="eye-icon">
 										<svg
 											width="21"
@@ -362,7 +423,7 @@
 				</div>
 			</section>
 
-			<div class="marquee left-direction" data-scroll data-scroll-speed="1">
+			<div class="marquee left-direction">
 				<div class="marquee__box">UX Design</div>
 				<div class="marquee__box">Mobile App</div>
 				<div class="marquee__box">3D Modeling</div>
@@ -372,7 +433,7 @@
 				<div class="marquee__box">Virtual Reality</div>
 			</div>
 
-			<div class="marquee right-direction" data-scroll data-scroll-speed="1">
+			<div class="marquee right-direction">
 				<div class="marquee__box">Storytelling</div>
 				<div class="marquee__box">Data Analysis</div>
 				<div class="marquee__box">Photo Editing</div>
@@ -383,8 +444,8 @@
 				<div class="marquee__box">Excel</div>
 			</div>
 
-			<section class="accent-block _padding-top" data-scroll data-scroll-speed="1">
-				<div class="container">
+			<section class="accent-block _padding-top">
+				<div class="container" data-aos="zoom-out">
 					<p class="accent-block__overtitle pre-accent-text">Hi, I’m Empo!</p>
 
 					<h2 class="accent-block__title accent-text">
@@ -399,23 +460,23 @@
 						at!
 					</h2>
 
-					<div class="accent-block__image" data-scroll data-scroll-class="animate">
+					<div class="accent-block__image" -class="animate">
 						<img
 							src="img/main-page/accent-block__image.png"
 							alt="Image"
 							class="accent-block__image-inner"
-							data-scroll
-							data-scroll-class="aos-animate"
 							data-aos="fade-up"
 						/>
 					</div>
 				</div>
 			</section>
 
-			<section class="info" data-scroll data-scroll-speed="1">
+			<section class="info">
 				<div class="container info__container">
-					<div class="info__container-inner">
-						<p class="info__overtitle pre-heading">I am ready to help you match up!</p>
+					<div class="info__container-inner" data-aos="fade-right">
+						<p class="info__overtitle pre-heading">
+							I am ready to help you match up!
+						</p>
 
 						<h2 class="info__title title">
 							My
@@ -427,11 +488,11 @@
 						</h2>
 
 						<p class="info__text">
-							Your greatest strengths and matches you with career opportunities based on
-							your personality, style of life, and best interests.
+							Your greatest strengths and matches you with career opportunities
+							based on your personality, style of life, and best interests.
 						</p>
 
-						<a href="#" class="info__btn">
+						<a href=".popup-quiz" class="info__btn mfp">
 							Take the Quiz
 
 							<svg
@@ -454,16 +515,14 @@
 						<img
 							src="img/main-page/info__image-1.png"
 							alt="Image"
-							data-scroll
-							data-scroll-class="aos-animate"
 							data-aos="zoom-in"
 						/>
 					</div>
 				</div>
 			</section>
 
-			<section class="recommends" data-scroll data-scroll-speed="1">
-				<div class="container">
+			<section class="recommends">
+				<div class="container" data-aos="fade-up">
 					<h2 class="recommends__title heading">
 						Empo
 						<span class="_c-accent">recommends</span>
@@ -471,11 +530,11 @@
 
 					<div class="recommends__top">
 						<p class="recommends__subtitle">
-							I have taken a ton of courses now because I love to try new things! I have
-							tried out:
+							I have taken a ton of courses now because I love to try new
+							things! I have tried out:
 						</p>
 
-						<a href="#" class="recommends__link">
+						<a href="catalog.html" class="recommends__link">
 							All courses
 
 							<svg
@@ -575,14 +634,17 @@
 										</p>
 
 										<p class="recommends__text">
-											the art of storytelling, learn how to edit pictures using a photo
-											editor tool, and design a professional quality website using one of
-											the most popular website builders, WordPress, for a career worthy
-											achievement!
+											the art of storytelling, learn how to edit pictures using
+											a photo editor tool, and design a professional quality
+											website using one of the most popular website builders,
+											WordPress, for a career worthy achievement!
 										</p>
 									</div>
 
-									<a href="#" class="recommends__btn btn _accent">
+									<a
+										href="course-digital_media.html"
+										class="recommends__btn btn _accent"
+									>
 										<i class="eye-icon">
 											<svg
 												width="21"
@@ -600,7 +662,7 @@
 											</svg>
 										</i>
 
-										See Courses
+										See Course
 									</a>
 								</div>
 							</div>
@@ -622,13 +684,16 @@
 										</p>
 
 										<p class="recommends__text _less-width">
-											with a data analysis track, and combat climate change with our
-											scientific reports of quantitative research to protect the
-											environment!
+											with a data analysis track, and combat climate change with
+											our scientific reports of quantitative research to protect
+											the environment!
 										</p>
 									</div>
 
-									<a href="#" class="recommends__btn btn _accent">
+									<a
+										href="course-data_analysis_excel.html"
+										class="recommends__btn btn _accent"
+									>
 										<i class="eye-icon">
 											<svg
 												width="21"
@@ -646,7 +711,7 @@
 											</svg>
 										</i>
 
-										See Courses
+										See Course
 									</a>
 								</div>
 							</div>
@@ -662,18 +727,21 @@
 										<h3 class="recommends__heading">App Prototyping</h3>
 
 										<p class="recommends__subheading">
-											Pitch your own e-commerce mobile app without any coding experience
-											necessary!
+											Pitch your own e-commerce mobile app without any coding
+											experience necessary!
 										</p>
 
 										<p class="recommends__text">
-											Create mood boards, extensive yet simplistic logo designs, color
-											palettes and be able to engage thousands of users with your user
-											experience flow and interface.
+											Create mood boards, extensive yet simplistic logo designs,
+											color palettes and be able to engage thousands of users
+											with your user experience flow and interface.
 										</p>
 									</div>
 
-									<a href="#" class="recommends__btn btn _accent">
+									<a
+										href="course-app_prototyping.html"
+										class="recommends__btn btn _accent"
+									>
 										<i class="eye-icon">
 											<svg
 												width="21"
@@ -691,7 +759,7 @@
 											</svg>
 										</i>
 
-										See Courses
+										See Course
 									</a>
 								</div>
 							</div>
@@ -700,63 +768,54 @@
 				</div>
 			</section>
 
-			<section class="accent-block" data-scroll data-scroll-speed="1">
-				<div class="container">
+			<section class="accent-block">
+				<div class="container" data-aos="zoom-out">
 					<p class="accent-block__overtitle pre-accent-text">It's so cool!</p>
 
 					<h2 class="accent-block__title accent-text _wider">
 						It's like one of those
-						<div
-							class="accent-block__icon accent-block__icon-1"
-							data-aos="zoom-in"
-							data-scroll
-							data-scroll-class="aos-animate"
-						>
+						<div class="accent-block__icon accent-block__icon-1">
 							<img
 								class="accent-block__icon-inner"
 								src="img/main-page/accent-block__icon-1.png"
 								alt="Icon"
+								data-aos="zoom-in"
+								data-aos-delay="400"
 							/>
 						</div>
 						<span class="_c-accent">fun</span>
 						matching
-						<div
-							class="accent-block__icon accent-block__icon-2"
-							data-aos="zoom-in"
-							data-aos-delay="100"
-							data-scroll
-							data-scroll-class="aos-animate"
-						>
+						<div class="accent-block__icon accent-block__icon-2">
 							<img
 								class="accent-block__icon-inner"
 								src="img/main-page/accent-block__icon-2.png"
 								alt="Icon"
+								data-aos="zoom-in"
+								data-aos-delay="400"
 							/>
 						</div>
 						<span class="_c-accent">quizzes</span>
 						you used to do
 						<span class="_c-gold">when</span>
 						you were
-						<div
-							class="accent-block__icon accent-block__icon-3"
-							data-aos="zoom-in"
-							data-aos-delay="200"
-							data-scroll
-							data-scroll-class="aos-animate"
-						>
+						<div class="accent-block__icon accent-block__icon-3">
 							<img
 								class="accent-block__icon-inner"
 								src="img/main-page/accent-block__icon-3.png"
 								alt="Icon"
+								data-aos="zoom-in"
+								data-aos-delay="400"
 							/>
 						</div>
 						younger.
 					</h2>
 
 					<div class="accent-block__btns">
-						<a href="#" class="accent-block__btn btn _accent">Take the Quiz</a>
+						<a href=".popup-quiz" class="accent-block__btn btn _accent mfp">
+							Take the Quiz
+						</a>
 
-						<a href="#" class="accent-block__btn btn _transparent">
+						<a href="catalog.html" class="accent-block__btn btn _transparent">
 							<i class="eye-icon">
 								<svg
 									width="21"
@@ -780,9 +839,9 @@
 				</div>
 			</section>
 
-			<section class="info" data-scroll data-scroll-speed="1">
+			<section class="info">
 				<div class="container info__container">
-					<div class="info__container-inner">
+					<div class="info__container-inner" data-aos="fade-right">
 						<p class="info__overtitle pre-heading">Being your best self</p>
 
 						<h2 class="info__title title">
@@ -794,40 +853,46 @@
 						</h2>
 
 						<p class="info__text">
-							I am on my phone a lot. It's something I understand. And it's something I
-							want to incorporate into my career.
+							I am on my phone a lot. It's something I understand. And it's
+							something I want to incorporate into my career.
 						</p>
 
 						<div class="info__list">
 							<p class="info__list-heading">Empo has options for:</p>
 
 							<nav class="info__list-container">
-								<a href="#" class="info__list-item">
+								<a href="course-digital_media.html" class="info__list-item">
 									<span class="info__list-number">01</span>
 									Digital Media
 								</a>
 
-								<a href="#" class="info__list-item">
+								<a href="course-app_prototyping.html" class="info__list-item">
 									<span class="info__list-number">02</span>
 									App Prototyping
 								</a>
 
-								<a href="#" class="info__list-item">
+								<a href="course-game_dev.html" class="info__list-item">
 									<span class="info__list-number">03</span>
 									Game Development
 								</a>
 
-								<a href="#" class="info__list-item">
+								<a
+									href="course-data_analysis_excel.html"
+									class="info__list-item"
+								>
 									<span class="info__list-number">04</span>
 									Data Analysis in Excel
 								</a>
 
-								<a href="#" class="info__list-item">
+								<a
+									href="course-data_driven_web_app.html"
+									class="info__list-item"
+								>
 									<span class="info__list-number">05</span>
 									Data-Driven Web Application
 								</a>
 
-								<a href="#" class="info__list-item">
+								<a href="course-machine_learning.html" class="info__list-item">
 									<span class="info__list-number">06</span>
 									Machine Learning
 								</a>
@@ -839,17 +904,15 @@
 						<img
 							src="img/main-page/info__image-2.png"
 							alt="Image"
-							data-scroll
-							data-scroll-class="aos-animate"
 							data-aos="zoom-in"
 						/>
 					</div>
 				</div>
 			</section>
 
-			<section class="info" data-scroll data-scroll-speed="1">
+			<section class="info">
 				<div class="container info__container">
-					<div class="info__container-inner">
+					<div class="info__container-inner" data-aos="fade-right">
 						<p class="info__overtitle pre-heading">Only relevant topics</p>
 
 						<h2 class="info__title title _less-size">
@@ -861,12 +924,12 @@
 						</h2>
 
 						<p class="info__text _max-width">
-							All while being your best self and learning about relevant topics like
-							Social Science, Biology, Medicine, E-commerce, and even my favorite, Social
-							Media!
+							All while being your best self and learning about relevant topics
+							like Social Science, Biology, Medicine, E-commerce, and even my
+							favorite, Social Media!
 						</p>
 
-						<a href="#" class="info__btn">
+						<a href=".popup-quiz" class="info__btn mfp">
 							Take the Quiz
 
 							<svg
@@ -889,17 +952,15 @@
 						<img
 							src="img/main-page/info__image-3.png"
 							alt="Image"
-							data-scroll
-							data-scroll-class="aos-animate"
 							data-aos="zoom-in"
 						/>
 					</div>
 				</div>
 			</section>
 
-			<section class="info" data-scroll data-scroll-speed="1">
+			<section class="info">
 				<div class="container info__container">
-					<div class="info__container-inner">
+					<div class="info__container-inner" data-aos="fade-right">
 						<p class="info__overtitle pre-heading">Virtual classes</p>
 
 						<h2 class="info__title title">
@@ -911,12 +972,13 @@
 						</h2>
 
 						<p class="info__text _max-width">
-							Where you meet with experts in your chosen industry to learn more and truly
-							see if this is the right fit for you. Develop career skills, get to know
-							industry professionals, and connect on a deeper level.
+							Where you meet with experts in your chosen industry to learn more
+							and truly see if this is the right fit for you. Develop career
+							skills, get to know industry professionals, and connect on a
+							deeper level.
 						</p>
 
-						<a href="#" class="info__btn">
+						<a href="catalog.html" class="info__btn">
 							See Courses
 
 							<svg
@@ -935,13 +997,11 @@
 						</a>
 					</div>
 
-					<div class="info__image">
+					<div class="info__image _max-width">
 						<div class="info__image-wrapper">
 							<img
 								src="img/main-page/info__image-4.png"
 								alt="Image"
-								data-scroll
-								data-scroll-class="aos-animate"
 								data-aos="zoom-in"
 							/>
 						</div>
@@ -949,8 +1009,8 @@
 				</div>
 			</section>
 
-			<section class="accent-block" data-scroll data-scroll-speed="1">
-				<div class="container">
+			<section class="accent-block">
+				<div class="container" data-aos="zoom-out">
 					<p class="accent-block__overtitle pre-accent-text">Best part is</p>
 
 					<h2 class="accent-block__title accent-text _less-margin">
@@ -962,12 +1022,15 @@
 					</h2>
 
 					<p class="accent-block__text sub-accent-text">
-						I get to be creative, express my artistic side, and find a community of
-						like-minded online artsy people!
+						I get to be creative, express my artistic side, and find a community
+						of like-minded online artsy people!
 					</p>
 
 					<div class="accent-block__btns">
-						<a href="#" class="accent-block__btn btn _black _mobile-style">
+						<a
+							href="catalog.html"
+							class="accent-block__btn btn _black _mobile-style"
+						>
 							<i class="eye-icon">
 								<svg
 									width="21"
@@ -997,8 +1060,6 @@
 						class="accent-block__hand-img"
 						data-aos="fade-up-right"
 						data-aos-offset="500"
-						data-scroll
-						data-scroll-class="aos-animate"
 					/>
 				</div>
 
@@ -1010,13 +1071,11 @@
 						data-aos="fade-up-left"
 						data-aos-offset="500"
 						data-aos-delay="100"
-						data-scroll
-						data-scroll-class="aos-animate"
 					/>
 				</div>
 			</section>
 
-			<section class="discount" data-scroll data-scroll-speed="1">
+			<section class="discount">
 				<div class="container">
 					<div class="discount__container">
 						<p class="discount__overtitle pre-heading">
@@ -1041,16 +1100,20 @@
 								alt="Image"
 								data-aos="fade-left"
 								class="discount__image-inner"
-								data-scroll
-								data-scroll-class="aos-animate"
 							/>
 						</div>
 
 						<div class="discount__wrapper">
-							<a href="#" class="discount__btn btn _accent">Take the Quiz</a>
+							<a href=".popup-quiz" class="discount__btn btn _accent mfp">
+								Take the Quiz
+							</a>
 
 							<div class="discount__time">
-								<img class="discount__time-icon" src="img/icons/clock.svg" alt="Icon" />
+								<img
+									class="discount__time-icon"
+									src="img/icons/clock.svg"
+									alt="Icon"
+								/>
 								15 min.
 							</div>
 						</div>
@@ -1058,9 +1121,9 @@
 				</div>
 			</section>
 
-			<section class="posts" data-scroll data-scroll-speed="1">
+			<section class="posts">
 				<div class="container _pos-relative">
-					<h2 class="posts__title heading">
+					<h2 class="posts__title heading" data-aos="fade-right">
 						What
 						<span class="_c-accent">
 							others
@@ -1072,36 +1135,21 @@
 
 					<div class="posts__top">
 						<h3 class="posts__top-heading">
-							<span
-								data-aos="fade"
-								data-aos-delay="500"
-								data-scroll
-								data-scroll-class="aos-animate"
-							>
+							<span data-aos="fade">
 								Read
 								<span class="_c-accent">.</span>
 							</span>
-							<span
-								data-aos="fade"
-								data-aos-delay="1500"
-								data-scroll
-								data-scroll-class="aos-animate"
-							>
+							<span data-aos="fade" data-aos-delay="500">
 								Listen
 								<span class="_c-accent">.</span>
 							</span>
-							<span
-								data-aos="fade"
-								data-aos-delay="2500"
-								data-scroll
-								data-scroll-class="aos-animate"
-							>
+							<span data-aos="fade" data-aos-delay="1000">
 								Watch
 								<span class="_c-accent">.</span>
 							</span>
 						</h3>
 
-						<a href="#" class="posts__top-link">
+						<a href="about-us.html#s-posts" class="posts__top-link">
 							More about us
 
 							<svg
@@ -1121,7 +1169,7 @@
 					</div>
 
 					<div class="posts__container">
-						<article class="post">
+						<article class="post" data-aos="fade-up">
 							<div class="post__top">
 								<div class="post__top-inner">
 									<span class="post__number">01</span>
@@ -1142,7 +1190,13 @@
 							</p>
 
 							<div class="post__wrapper">
-								<a href="#" class="post__btn btn _black">Read article</a>
+								<a
+									href="https://www.campusbiotech.ch/en/node/1017"
+									target="_blank"
+									class="post__btn btn _black"
+								>
+									Read article
+								</a>
 
 								<div class="post__time">
 									<img
@@ -1155,7 +1209,7 @@
 							</div>
 						</article>
 
-						<article class="post">
+						<article class="post" data-aos="fade-up" data-aos-delay="500">
 							<div class="post__top">
 								<div class="post__top-inner">
 									<span class="post__number">02</span>
@@ -1171,12 +1225,18 @@
 							<h3 class="post__title">Instant Cactus</h3>
 
 							<p class="post__text">
-								For this new episode I am delighted to speak with Marija Musja, human
-								rights advocate & founder of Empowerment Lab.
+								For this new episode I am delighted to speak with Marija Musja,
+								human rights advocate & founder of Empowerment Lab.
 							</p>
 
 							<div class="post__wrapper">
-								<a href="#" class="post__btn btn _black">Listen podcust</a>
+								<a
+									href="https://instantcactus.com/2021/03/31/episode-40-marija-musja/"
+									target="_blank"
+									class="post__btn btn _black"
+								>
+									Listen podcust
+								</a>
 
 								<div class="post__time">
 									<img
@@ -1189,7 +1249,7 @@
 							</div>
 						</article>
 
-						<article class="post">
+						<article class="post" data-aos="fade-up" data-aos-delay="1000">
 							<div class="post__top">
 								<div class="post__top-inner">
 									<span class="post__number">03</span>
@@ -1205,12 +1265,18 @@
 							<h3 class="post__title">Play RTS</h3>
 
 							<p class="post__text">
-								Propositions of educational solutions to secure scientific & technological
-								materials. Invitée Silvia Conz.
+								Propositions of educational solutions to secure scientific &
+								technological materials. Invitée Silvia Conz.
 							</p>
 
 							<div class="post__wrapper">
-								<a href="#" class="post__btn btn _black">Watch interview</a>
+								<a
+									href="https://www.rts.ch/play/tv/12h45/video/reliefs-propositions-de-solutions-educatives-pour-feminiser-les-metiers-scientifiques-et-technologiques--invitee-silvia-conz-?urn=urn:rts:video:12213678&fbclid=IwAR2KkXZ_DGOvQXRwX-6UAQ70PRygzS6F2_paRvee0WRsRLepWIwLLzllA98"
+									target="_blank"
+									class="post__btn btn _black"
+								>
+									Watch interview
+								</a>
 
 								<div class="post__time">
 									<img
@@ -1226,8 +1292,8 @@
 				</div>
 			</section>
 
-			<section class="reviews" data-scroll data-scroll-speed="1">
-				<div class="container">
+			<section class="reviews">
+				<div class="container" data-aos="fade-up">
 					<h2 class="reviews__title heading">
 						Meet our
 						<span class="_c-accent">clients</span>
@@ -1353,7 +1419,9 @@
 												<div class="review__top-inner">
 													<div
 														class="review__image"
-														style="background-image: url('img/reviews/image-1.png')"
+														style="
+															background-image: url('img/reviews/image-1.png');
+														"
 													></div>
 
 													<div class="review__data">
@@ -1404,9 +1472,9 @@
 											<h1 class="review__title">The course was super cool!</h1>
 
 											<p class="review__text">
-												I am very happy to have been able to create my own site, on which
-												I can write about my canaris and tell their stories. Thanks again
-												to the Team!! 🙂​
+												I am very happy to have been able to create my own site,
+												on which I can write about my canaris and tell their
+												stories. Thanks again to the Team!! 🙂​
 											</p>
 										</div>
 
@@ -1419,9 +1487,15 @@
 												LinkedIn
 											</a>
 
-											<a href="#" class="review__btn btn">
+											<a
+												href="course-digital_media.html"
+												class="review__btn btn"
+											>
 												<i class="eye-icon">
-													<img src="img/icons/eye-accent_light.svg" alt="Icon" />
+													<img
+														src="img/icons/eye-accent_light.svg"
+														alt="Icon"
+													/>
 												</i>
 												See course
 											</a>
@@ -1487,7 +1561,9 @@
 												<div class="review__top-inner">
 													<div
 														class="review__image"
-														style="background-image: url('img/reviews/image-2.png')"
+														style="
+															background-image: url('img/reviews/image-2.png');
+														"
 													></div>
 
 													<div class="review__data">
@@ -1536,12 +1612,14 @@
 											</div>
 
 											<h1 class="review__title">
-												I am sitting with my daughter and she is having a lot of fun!
+												I am sitting with my daughter and she is having a lot of
+												fun!
 											</h1>
 
 											<p class="review__text">
-												She actively participates - the teacher is really encouraging and
-												makes sure everyone is involved. I am really impressed. Thank you!
+												She actively participates - the teacher is really
+												encouraging and makes sure everyone is involved. I am
+												really impressed. Thank you!
 											</p>
 										</div>
 
@@ -1554,9 +1632,15 @@
 												LinkedIn
 											</a>
 
-											<a href="#" class="review__btn btn">
+											<a
+												href="course-data_analysis_excel.html"
+												class="review__btn btn"
+											>
 												<i class="eye-icon">
-													<img src="img/icons/eye-accent_light.svg" alt="Icon" />
+													<img
+														src="img/icons/eye-accent_light.svg"
+														alt="Icon"
+													/>
 												</i>
 												See course
 											</a>
@@ -1622,7 +1706,9 @@
 												<div class="review__top-inner">
 													<div
 														class="review__image"
-														style="background-image: url('img/reviews/image-1.png')"
+														style="
+															background-image: url('img/reviews/image-1.png');
+														"
 													></div>
 
 													<div class="review__data">
@@ -1671,15 +1757,16 @@
 											</div>
 
 											<h1 class="review__title">
-												Not only is Empowerment Lab fighting against inequity and
-												injustice
+												Not only is Empowerment Lab fighting against inequity
+												and injustice
 											</h1>
 
 											<p class="review__text">
-												They are offering an amazingly interesting and fun course in
-												technology for teenage girls. I haven't heard of a course quite
-												like theirs, that offers the full concept-to-website flow,
-												including learning graphic design tools. Amazing job!
+												They are offering an amazingly interesting and fun
+												course in technology for teenage girls. I haven't heard
+												of a course quite like theirs, that offers the full
+												concept-to-website flow, including learning graphic
+												design tools. Amazing job!
 											</p>
 										</div>
 
@@ -1692,9 +1779,15 @@
 												LinkedIn
 											</a>
 
-											<a href="#" class="review__btn btn">
+											<a
+												href="course-digital_media.html"
+												class="review__btn btn"
+											>
 												<i class="eye-icon">
-													<img src="img/icons/eye-accent_light.svg" alt="Icon" />
+													<img
+														src="img/icons/eye-accent_light.svg"
+														alt="Icon"
+													/>
 												</i>
 												See course
 											</a>
@@ -1764,7 +1857,9 @@
 												<div class="review__top-inner">
 													<div
 														class="review__image"
-														style="background-image: url('img/reviews/image-4.png')"
+														style="
+															background-image: url('img/reviews/image-4.png');
+														"
 													></div>
 
 													<div class="review__data">
@@ -1813,14 +1908,15 @@
 											</div>
 
 											<h1 class="review__title">
-												Thanks to Marija Musja and Empowerment Lab for proposing Game
-												Development course!
+												Thanks to Marija Musja and Empowerment Lab for proposing
+												Game Development course!
 											</h1>
 
 											<p class="review__text">
-												Carolina is enjoying the learning experience and is happy to be
-												creating a video game. Patience and perseverance is key for such a
-												journey and I am excited to see the outcome 😃​
+												Carolina is enjoying the learning experience and is
+												happy to be creating a video game. Patience and
+												perseverance is key for such a journey and I am excited
+												to see the outcome 😃​
 											</p>
 										</div>
 
@@ -1833,9 +1929,12 @@
 												LinkedIn
 											</a>
 
-											<a href="#" class="review__btn btn">
+											<a href="course-game_dev.html" class="review__btn btn">
 												<i class="eye-icon">
-													<img src="img/icons/eye-accent_light.svg" alt="Icon" />
+													<img
+														src="img/icons/eye-accent_light.svg"
+														alt="Icon"
+													/>
 												</i>
 												See course
 											</a>
@@ -1901,7 +2000,9 @@
 												<div class="review__top-inner">
 													<div
 														class="review__image"
-														style="background-image: url('img/reviews/image-3.png')"
+														style="
+															background-image: url('img/reviews/image-3.png');
+														"
 													></div>
 
 													<div class="review__data">
@@ -1954,11 +2055,12 @@
 											</h1>
 
 											<p class="review__text _more">
-												and she proudly shared the website link with family and friends.
-												What was also very interesting, especially for teenage girls, was
-												how the lab taught that images are manipulated in media and on
-												social media. It is easier for girls to have a positive body image
-												when they understand that the images they see in the media every
+												and she proudly shared the website link with family and
+												friends. What was also very interesting, especially for
+												teenage girls, was how the lab taught that images are
+												manipulated in media and on social media. It is easier
+												for girls to have a positive body image when they
+												understand that the images they see in the media every
 												day are actually being manipulated. This lesson was well
 												reinforced by the girls who learned to manipulate photos
 												themselves with Photoshop.
@@ -1976,9 +2078,15 @@
 												LinkedIn
 											</a>
 
-											<a href="#" class="review__btn btn">
+											<a
+												href="course-digital_media.html"
+												class="review__btn btn"
+											>
 												<i class="eye-icon">
-													<img src="img/icons/eye-accent_light.svg" alt="Icon" />
+													<img
+														src="img/icons/eye-accent_light.svg"
+														alt="Icon"
+													/>
 												</i>
 												See course
 											</a>
@@ -2044,7 +2152,9 @@
 												<div class="review__top-inner">
 													<div
 														class="review__image"
-														style="background-image: url('img/reviews/image-1.png')"
+														style="
+															background-image: url('img/reviews/image-1.png');
+														"
 													></div>
 
 													<div class="review__data">
@@ -2095,18 +2205,26 @@
 											<h1 class="review__title">The course was super cool!</h1>
 
 											<p class="review__text">
-												I am very happy to have been able to create my own site, on which
-												I can write about my canaris and tell their stories. Thanks again
-												to the Team!! 🙂​
+												I am very happy to have been able to create my own site,
+												on which I can write about my canaris and tell their
+												stories. Thanks again to the Team!! 🙂​
 											</p>
 										</div>
 
 										<div class="review__bottom review__container-inner">
-											<a href="#" class="review__social-link" target="_blank">LinkedIn</a>
+											<a href="#" class="review__social-link" target="_blank">
+												LinkedIn
+											</a>
 
-											<a href="#" class="review__btn btn">
+											<a
+												href="course-digital_media.html"
+												class="review__btn btn"
+											>
 												<i class="eye-icon">
-													<img src="img/icons/eye-accent_light.svg" alt="Icon" />
+													<img
+														src="img/icons/eye-accent_light.svg"
+														alt="Icon"
+													/>
 												</i>
 												See course
 											</a>
@@ -2126,7 +2244,9 @@
 											<div class="review__top-inner">
 												<div
 													class="review__image"
-													style="background-image: url('img/reviews/image-1.png')"
+													style="
+														background-image: url('img/reviews/image-1.png');
+													"
 												></div>
 
 												<div class="review__data">
@@ -2145,9 +2265,9 @@
 										<h1 class="review__title">The course was super cool!</h1>
 
 										<p class="review__text">
-											I am very happy to have been able to create my own site, on which I
-											can write about my canaris and tell their stories. Thanks again to
-											the Team!! 🙂​
+											I am very happy to have been able to create my own site,
+											on which I can write about my canaris and tell their
+											stories. Thanks again to the Team!! 🙂​
 										</p>
 									</div>
 
@@ -2160,7 +2280,7 @@
 											LinkedIn
 										</a>
 
-										<a href="#" class="review__btn btn">
+										<a href="course-digital_media.html" class="review__btn btn">
 											<i class="eye-icon">
 												<img src="img/icons/eye-accent_light.svg" alt="Icon" />
 											</i>
@@ -2179,7 +2299,9 @@
 											<div class="review__top-inner">
 												<div
 													class="review__image"
-													style="background-image: url('img/reviews/image-2.png')"
+													style="
+														background-image: url('img/reviews/image-2.png');
+													"
 												></div>
 
 												<div class="review__data">
@@ -2196,12 +2318,14 @@
 										</div>
 
 										<h1 class="review__title">
-											I am sitting with my daughter and she is having a lot of fun!
+											I am sitting with my daughter and she is having a lot of
+											fun!
 										</h1>
 
 										<p class="review__text">
-											She actively participates - the teacher is really encouraging and
-											makes sure everyone is involved. I am really impressed. Thank you!
+											She actively participates - the teacher is really
+											encouraging and makes sure everyone is involved. I am
+											really impressed. Thank you!
 										</p>
 									</div>
 
@@ -2214,7 +2338,10 @@
 											LinkedIn
 										</a>
 
-										<a href="#" class="review__btn btn">
+										<a
+											href="course-data_analysis_excel.html"
+											class="review__btn btn"
+										>
 											<i class="eye-icon">
 												<img src="img/icons/eye-accent_light.svg" alt="Icon" />
 											</i>
@@ -2233,7 +2360,9 @@
 											<div class="review__top-inner">
 												<div
 													class="review__image"
-													style="background-image: url('img/reviews/image-1.png')"
+													style="
+														background-image: url('img/reviews/image-1.png');
+													"
 												></div>
 
 												<div class="review__data">
@@ -2250,14 +2379,16 @@
 										</div>
 
 										<h1 class="review__title">
-											Not only is Empowerment Lab fighting against inequity and injustice
+											Not only is Empowerment Lab fighting against inequity and
+											injustice
 										</h1>
 
 										<p class="review__text">
-											They are offering an amazingly interesting and fun course in
-											technology for teenage girls. I haven't heard of a course quite like
-											theirs, that offers the full concept-to-website flow, including
-											learning graphic design tools. Amazing job!
+											They are offering an amazingly interesting and fun course
+											in technology for teenage girls. I haven't heard of a
+											course quite like theirs, that offers the full
+											concept-to-website flow, including learning graphic design
+											tools. Amazing job!
 										</p>
 									</div>
 
@@ -2270,7 +2401,7 @@
 											LinkedIn
 										</a>
 
-										<a href="#" class="review__btn btn">
+										<a href="course-digital_media.html" class="review__btn btn">
 											<i class="eye-icon">
 												<img src="img/icons/eye-accent_light.svg" alt="Icon" />
 											</i>
@@ -2289,7 +2420,9 @@
 											<div class="review__top-inner">
 												<div
 													class="review__image"
-													style="background-image: url('img/reviews/image-4.png')"
+													style="
+														background-image: url('img/reviews/image-4.png');
+													"
 												></div>
 
 												<div class="review__data">
@@ -2306,14 +2439,15 @@
 										</div>
 
 										<h1 class="review__title">
-											Thanks to Marija Musja and Empowerment Lab for proposing Game
-											Development course!
+											Thanks to Marija Musja and Empowerment Lab for proposing
+											Game Development course!
 										</h1>
 
 										<p class="review__text">
-											Carolina is enjoying the learning experience and is happy to be
-											creating a video game. Patience and perseverance is key for such a
-											journey and I am excited to see the outcome 😃​
+											Carolina is enjoying the learning experience and is happy
+											to be creating a video game. Patience and perseverance is
+											key for such a journey and I am excited to see the outcome
+											😃​
 										</p>
 									</div>
 
@@ -2326,7 +2460,7 @@
 											LinkedIn
 										</a>
 
-										<a href="#" class="review__btn btn">
+										<a href="course-game_dev.html" class="review__btn btn">
 											<i class="eye-icon">
 												<img src="img/icons/eye-accent_light.svg" alt="Icon" />
 											</i>
@@ -2345,7 +2479,9 @@
 											<div class="review__top-inner">
 												<div
 													class="review__image"
-													style="background-image: url('img/reviews/image-3.png')"
+													style="
+														background-image: url('img/reviews/image-3.png');
+													"
 												></div>
 
 												<div class="review__data">
@@ -2366,14 +2502,15 @@
 										</h1>
 
 										<p class="review__text _more">
-											and she proudly shared the website link with family and friends.
-											What was also very interesting, especially for teenage girls, was
-											how the lab taught that images are manipulated in media and on
-											social media. It is easier for girls to have a positive body image
-											when they understand that the images they see in the media every day
-											are actually being manipulated. This lesson was well reinforced by
-											the girls who learned to manipulate photos themselves with
-											Photoshop.
+											and she proudly shared the website link with family and
+											friends. What was also very interesting, especially for
+											teenage girls, was how the lab taught that images are
+											manipulated in media and on social media. It is easier for
+											girls to have a positive body image when they understand
+											that the images they see in the media every day are
+											actually being manipulated. This lesson was well
+											reinforced by the girls who learned to manipulate photos
+											themselves with Photoshop.
 										</p>
 
 										<button class="review__text-more"></button>
@@ -2388,7 +2525,7 @@
 											LinkedIn
 										</a>
 
-										<a href="#" class="review__btn btn">
+										<a href="course-digital_media.html" class="review__btn btn">
 											<i class="eye-icon">
 												<img src="img/icons/eye-accent_light.svg" alt="Icon" />
 											</i>
@@ -2407,7 +2544,9 @@
 											<div class="review__top-inner">
 												<div
 													class="review__image"
-													style="background-image: url('img/reviews/image-1.png')"
+													style="
+														background-image: url('img/reviews/image-1.png');
+													"
 												></div>
 
 												<div class="review__data">
@@ -2426,16 +2565,18 @@
 										<h1 class="review__title">The course was super cool!</h1>
 
 										<p class="review__text">
-											I am very happy to have been able to create my own site, on which I
-											can write about my canaris and tell their stories. Thanks again to
-											the Team!! 🙂​
+											I am very happy to have been able to create my own site,
+											on which I can write about my canaris and tell their
+											stories. Thanks again to the Team!! 🙂​
 										</p>
 									</div>
 
 									<div class="review__bottom review__container-inner">
-										<a href="#" class="review__social-link" target="_blank">LinkedIn</a>
+										<a href="#" class="review__social-link" target="_blank">
+											LinkedIn
+										</a>
 
-										<a href="#" class="review__btn btn">
+										<a href="course-digital_media.html" class="review__btn btn">
 											<i class="eye-icon">
 												<img src="img/icons/eye-accent_light.svg" alt="Icon" />
 											</i>
@@ -2508,9 +2649,9 @@
 				</div>
 			</section>
 
-			<section class="feedback" data-scroll data-scroll-speed="1">
+			<section class="feedback">
 				<div class="container">
-					<div class="feedback__container">
+					<div class="feedback__container" data-aos="fade-up">
 						<div class="feedback__container-inner">
 							<h2 class="feedback__title heading">
 								<span class="_c-accent">Need help</span>
@@ -2520,8 +2661,8 @@
 							</h2>
 
 							<p class="feedback__text">
-								If you have any questions, leave your contacts and we will get back to you
-								as soon as possible.
+								If you have any questions, leave your contacts and we will get
+								back to you as soon as possible.
 							</p>
 
 							<a href="#" class="feedback__whatsapp">
@@ -2589,8 +2730,7 @@
 								<input
 									class="feedback__form-checkbox-input"
 									type="checkbox"
-									name="Checkbox"
-									required
+									name="EMPLAB news"
 								/>
 
 								<p class="feedback__form-checkbox-text">
@@ -2603,12 +2743,18 @@
 							<div class="feedback__form-bottom">
 								<p class="feedback__form-links">
 									By continuing, you acknowledge and agree to our
-									<a href="#" class="feedback__form-link">Terms & Conditions</a>
+									<a href="terms-conditions.html" class="feedback__form-link">
+										Terms & Conditions
+									</a>
 									and
-									<a href="#" class="feedback__form-link">Privacy Policy.</a>
+									<a href="privacy-policy.html" class="feedback__form-link">
+										Privacy Policy.
+									</a>
 								</p>
 
-								<button type="submit" class="feedback__form-btn btn _accent">Send</button>
+								<button type="submit" class="feedback__form-btn btn _accent">
+									Send
+								</button>
 							</div>
 						</form>
 					</div>
@@ -2655,7 +2801,9 @@
 										a thing!
 									</h3>
 
-									<p class="footer__form-subtitle">Sign up for our newsletter</p>
+									<p class="footer__form-subtitle">
+										Sign up for our newsletter
+									</p>
 
 									<div class="footer__form-wrapper">
 										<input
@@ -2672,7 +2820,11 @@
 									</div>
 								</div>
 
-								<img src="img/footer__image.png" alt="Image" class="footer__form-img" />
+								<img
+									src="img/footer__image.png"
+									alt="Image"
+									class="footer__form-img"
+								/>
 							</form>
 						</div>
 
@@ -2681,12 +2833,40 @@
 								<div class="footer__menu-col">
 									<h3 class="footer__menu-caption">Company</h3>
 
-									<a href="#" class="footer__menu-item _underline-animate">Home</a>
-									<a href="#" class="footer__menu-item _underline-animate">About us</a>
-									<a href="#" class="footer__menu-item _underline-animate">Partners</a>
-									<a href="#" class="footer__menu-item _underline-animate">Courses</a>
-									<a href="#" class="footer__menu-item _underline-animate">Gallery</a>
-									<a href="#" class="footer__menu-item _underline-animate">
+									<a
+										href="index.html"
+										class="footer__menu-item _underline-animate"
+									>
+										Home
+									</a>
+									<a
+										href="about-us.html"
+										class="footer__menu-item _underline-animate"
+									>
+										About us
+									</a>
+									<a
+										href="about-us.html#s-partners"
+										class="footer__menu-item _underline-animate"
+									>
+										Partners
+									</a>
+									<a
+										href="catalog.html"
+										class="footer__menu-item _underline-animate"
+									>
+										Courses
+									</a>
+									<a
+										href="gallery.html"
+										class="footer__menu-item _underline-animate"
+									>
+										Gallery
+									</a>
+									<a
+										href="for-teachers.html"
+										class="footer__menu-item _underline-animate"
+									>
 										For teachers
 									</a>
 								</div>
@@ -2694,22 +2874,40 @@
 								<div class="footer__menu-col">
 									<h3 class="footer__menu-caption">Courses</h3>
 
-									<a href="#" class="footer__menu-item _underline-animate">
+									<a
+										href="course-app_prototyping.html"
+										class="footer__menu-item _underline-animate"
+									>
 										App Prototyping
 									</a>
-									<a href="#" class="footer__menu-item _underline-animate">
+									<a
+										href="course-data_analysis_excel.html"
+										class="footer__menu-item _underline-animate"
+									>
 										Data Analysis in Excel
 									</a>
-									<a href="#" class="footer__menu-item _underline-animate">
+									<a
+										href="course-data_driven_web_app.html"
+										class="footer__menu-item _underline-animate"
+									>
 										Data-Driven Web Application
 									</a>
-									<a href="#" class="footer__menu-item _underline-animate">
+									<a
+										href="course-digital_media.html"
+										class="footer__menu-item _underline-animate"
+									>
 										Digital Media
 									</a>
-									<a href="#" class="footer__menu-item _underline-animate">
+									<a
+										href="course-game_dev.html"
+										class="footer__menu-item _underline-animate"
+									>
 										Game Development
 									</a>
-									<a href="#" class="footer__menu-item _underline-animate">
+									<a
+										href="course-machine_learning.html"
+										class="footer__menu-item _underline-animate"
+									>
 										Machine Learning
 									</a>
 								</div>
@@ -2728,11 +2926,11 @@
 
 						<div class="footer__container-inner _right">
 							<div class="footer__bottom-links">
-								<a href="#" class="footer__bottom-link _underline-animate">
+								<a href="privacy-policy.html" class="footer__bottom-link">
 									Privacy Policy
 								</a>
 
-								<a href="#" class="footer__bottom-link _underline-animate">
+								<a href="terms-conditions.html" class="footer__bottom-link">
 									Terms & Conditions
 								</a>
 							</div>
@@ -2775,5 +2973,196 @@
 				</div>
 			</footer>
 		</div>
+		<!-- Попап курс -->
+		<div class="popup popup-notice mfp-hide">
+			<h2 class="popup__title">
+				You want to attend the course but the
+				<span>timing doesn't fit</span>
+				your availability?
+			</h2>
+
+			<p class="popup__text">
+				<span>No problem!</span>
+				Contact us and let us know what time would work better for you, and we
+				will try to accommodate.
+			</p>
+
+			<form class="popup__form">
+				<label class="input-wrapper popup__form-input">
+					<span>Phone</span>
+					<input type="tel" name="Telephone number" required />
+				</label>
+
+				<label class="input-wrapper popup__form-input">
+					<span>E-mail</span>
+					<input type="email" name="E-mail" required />
+				</label>
+
+				<div class="popup__form-bottom">
+					<p class="popup__form-links">
+						By continuing, you acknowledge and agree to our
+						<a href="terms-conditions.html" class="popup__form-link">
+							Terms & Conditions
+						</a>
+						and
+						<a href="privacy-policy.html" class="popup__form-link">
+							Privacy Policy.
+						</a>
+					</p>
+
+					<button type="submit" class="popup__form-btn btn _black">Send</button>
+				</div>
+			</form>
+
+			<div class="popup__bottom">
+				<div class="popup__bottom-inner">
+					<img
+						src="img/icons/popup-pin.png"
+						alt="Icon"
+						class="popup__bottom-icon"
+					/>
+
+					<p class="popup__bottom-text">
+						Plus, we can organise a course for your group that is tailored
+						specifically to your needs.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- eof -->
+
+		<!-- Попап перезвон -->
+		<div class="popup popup-callback mfp-hide">
+			<h2 class="popup__title">
+				<span>Any</span>
+				questions?
+			</h2>
+
+			<p class="popup__text">
+				We would like to talk to you! Leave your phone number and we will call
+				you back.
+			</p>
+
+			<form class="popup__form form-contact">
+				<label class="input-wrapper popup__form-input">
+					<span>Phone</span>
+					<input type="tel" name="Telephone number" required />
+				</label>
+
+				<div class="popup__form-bottom">
+					<p class="popup__form-links">
+						By continuing, you acknowledge and agree to our
+						<a href="terms-conditions.html" class="popup__form-link">
+							Terms & Conditions
+						</a>
+						and
+						<a href="privacy-policy.html" class="popup__form-link">
+							Privacy Policy.
+						</a>
+					</p>
+
+					<button type="submit" class="popup__form-btn btn _accent">
+						Call me back
+					</button>
+				</div>
+			</form>
+		</div>
+		<!-- eof -->
+
+		<!-- Попап quiz -->
+		<div class="popup popup-quiz mfp-hide">
+			<h2 class="popup__title">
+				Take
+				<span>Empo</span>
+				Quiz
+			</h2>
+
+			<p class="popup__text">
+				Leave your email to receive the Quiz and we will send it to you shortly!
+			</p>
+
+			<form class="popup__form">
+				<label class="input-wrapper popup__form-input">
+					<span>E-mail</span>
+					<input type="tel" name="Email form empo quiz" required />
+				</label>
+
+				<label class="popup__form-checkbox">
+					<input
+						class="popup__form-checkbox-input"
+						type="checkbox"
+						name="EMPLAB news"
+					/>
+
+					<p class="popup__form-checkbox-text">
+						I'd like to receive creative opportunities, event invites, and
+						<span>EMPLAB news</span>
+						via email
+					</p>
+				</label>
+
+				<div class="popup__form-bottom">
+					<p class="popup__form-links">
+						By continuing, you acknowledge and agree to our
+						<a href="terms-conditions.html" class="popup__form-link">
+							Terms & Conditions
+						</a>
+						and
+						<a href="privacy-policy.html" class="popup__form-link">
+							Privacy Policy.
+						</a>
+					</p>
+
+					<button type="submit" class="popup__form-btn btn _accent">
+						Take the Quiz
+					</button>
+				</div>
+			</form>
+		</div>
+		<!-- eof -->
+
+		<!-- Попап успес -->
+		<div class="popup popup-success popup-success-default mfp-hide">
+			<h2 class="popup__title">
+				<span>Thank</span>
+				you!
+			</h2>
+
+			<p class="popup__text">
+				Thank you for your interest. We will be in touch shortly.
+			</p>
+
+			<img src="img/success-hand.png" alt="Image" class="popup__image" />
+		</div>
+		<!-- eof -->
+
+		<!-- Попап успес перезвон -->
+		<div class="popup popup-success popup-success-callback mfp-hide">
+			<h2 class="popup__title">
+				<span>Thank</span>
+				you!
+			</h2>
+
+			<p class="popup__text">
+				We will call you back within
+				<span>24 hours.</span>
+			</p>
+
+			<img src="img/success-clock.png" alt="Image" class="popup__image" />
+		</div>
+		<!-- eof -->
+
+		<!-- Попап quiz - успес -->
+		<div class="popup popup-success popup-success-quiz mfp-hide">
+			<h2 class="popup__title">
+				<span>Thank</span>
+				you!
+			</h2>
+
+			<p class="popup__text">It's on its way.</p>
+
+			<img src="img/success-hand.png" alt="Image" class="popup__image" />
+		</div>
+		<!-- eof -->
 	</body>
 </html>
