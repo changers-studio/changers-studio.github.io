@@ -1,0 +1,50 @@
+@import vars
+
+@media only screen and (max-width : 1340px)
+
+	// General
+	.container
+		max-width: 960px
+	// eof
+
+	// Header
+	.header
+		&__nav._right
+			.header__nav-item
+				margin-right: 20px
+	// eof
+
+	// Footer
+	.footer
+		&__logo
+			width: 150px
+		&__menu-item
+			padding: 0 10px
+			font-size: 14px
+		&__copyrights
+			font-size: 14px
+		&__social-caption
+			font-size: 14px
+	// eof
+
+	// Product
+	.product
+		&__container-inner
+			width: calc(100% - 180px)
+		&__sidebar
+			width: 180px
+		.gallery
+			width: 360px
+			&__captions
+				margin-right: 20px
+				&-item
+					width: 40px
+					height: 40px
+			&__content
+				width: calc(100% - 60px)
+				height: 300px
+		.data
+			width: 360px
+			&__capacity-box
+				width: calc(33.3% - 7px)
+	// eof

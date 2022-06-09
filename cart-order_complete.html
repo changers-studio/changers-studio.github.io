@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>SmartMart</title>
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+
+		<!-- favicon -->
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+
+		<!-- reset css -->
+		<link rel="stylesheet" href="css/reset.css" />
+
+		<!-- libs css -->
+		<link rel="stylesheet" href="libs/select2/select2.min.css" />
+
+		<!-- main css -->
+		<link rel="stylesheet" href="css/main.min.css" />
+
+		<!-- jQeury -->
+		<script defer src="libs/jquery.min.js"></script>
+
+		<!-- libs js -->
+		<script defer src="libs/select2/select2.min.js"></script>
+
+		<!-- main js -->
+		<script defer src="js/main.js"></script>
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container header__container-top">
+				<div class="header__location">
+					<div class="header__location-heading dropdown-toggle">
+						Choose Country
+					</div>
+
+					<div class="header__location-dropdown">
+						<a href="#" class="header__location-item">
+							<img
+								src="img/icons/flags/us.svg"
+								alt="Icon"
+								class="header__location-icon"
+							/>
+							United States
+						</a>
+
+						<a href="#" class="header__location-item">
+							<img
+								src="img/icons/flags/gb.svg"
+								alt="Icon"
+								class="header__location-icon"
+							/>
+							United Kingdom
+						</a>
+
+						<a href="#" class="header__location-item">
+							<img
+								src="img/icons/flags/ca.svg"
+								alt="Icon"
+								class="header__location-icon"
+							/>
+							Canada
+						</a>
+					</div>
+				</div>
+
+				<a href="#" class="header__logo">
+					<img src="img/logo.svg" alt="Logo" />
+				</a>
+
+				<nav class="header__links">
+					<a href="#" class="header__links-item">Order Status</a>
+					<a href="#" class="header__links-item">Smart Program</a>
+				</nav>
+			</div>
+
+			<div class="header__container-wrapper">
+				<div class="container header__container-bottom">
+					<nav class="header__nav _left">
+						<a href="#" class="header__nav-item">
+							<img
+								class="header__nav-icon"
+								src="img/icons/home.svg"
+								alt="Icon"
+							/>
+							Home
+						</a>
+
+						<a href="#" class="header__nav-item">
+							<img
+								class="header__nav-icon"
+								src="img/icons/info.svg"
+								alt="Icon"
+							/>
+							How it works
+						</a>
+					</nav>
+
+					<form class="header__search">
+						<input
+							type="text"
+							name="Search"
+							placeholder="Insert Amazon URL or ASIN"
+							class="header__search-input"
+							required
+						/>
+						<button type="submit" class="header__search-btn btn">Search</button>
+					</form>
+
+					<nav class="header__nav _right">
+						<a href="#" class="header__nav-item">
+							<img
+								class="header__nav-icon"
+								src="img/icons/wallet.svg"
+								alt="Icon"
+							/>
+							Wallet
+						</a>
+
+						<a href="#" class="header__nav-item">
+							<img
+								class="header__nav-icon"
+								src="img/icons/profile.svg"
+								alt="Icon"
+							/>
+							Log In
+						</a>
+
+						<a href="#" class="header__nav-item">
+							<img
+								class="header__nav-icon"
+								src="img/icons/cart.svg"
+								alt="Icon"
+							/>
+							Cart
+						</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="main">
+			<div class="main__image"></div>
+
+			<div class="container main__container">
+				<div class="sidebar">
+					<div class="sidebar__inner">
+						<div class="sidebar__top">
+							<div class="sidebar__title _large">Order Complete</div>
+
+							<button class="sidebar__close">
+								<img src="img/icons/close.svg" alt="Icon" />
+							</button>
+						</div>
+
+						<div class="checkout-info">
+							<p class="checkout-info__pre-title">
+								We will send an email to confirm your irder details.
+							</p>
+							<p class="checkout-info__title">Order Number SM71345</p>
+
+							<p class="checkout-info__data">Averi Lamberson</p>
+							<p class="checkout-info__data">6 Bates St, Trlr 1</p>
+							<p class="checkout-info__data">Lisbon Falls, ME 04252-1309</p>
+							<p class="checkout-info__data">United States</p>
+							<p class="checkout-info__data">(225)xxxxx56</p>
+						</div>
+
+						<div class="sidebar__products _vertical-margin">
+							<div class="product">
+								<div
+									class="product__image"
+									style="background-image: url('img/product.png')"
+								></div>
+
+								<div class="product__inner">
+									<p class="product__title">Apple iPad (6th Gen) 9,7”</p>
+									<div class="product__flexbox">
+										<div class="product__flexbox-inner">
+											<p class="product__price">$224.99</p>
+											<p class="product__info">Free shipping</p>
+										</div>
+
+										<div class="product__flexbox-inner">
+											<div class="product__select">
+												<select name="Amount" class="select2">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</div>
+
+											<button type="button" class="product__remove"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="product">
+								<div
+									class="product__image"
+									style="background-image: url('img/product.png')"
+								></div>
+
+								<div class="product__inner">
+									<p class="product__title">Apple iPad (6th Gen) 9,7”</p>
+									<div class="product__flexbox">
+										<div class="product__flexbox-inner">
+											<p class="product__price">$224.99</p>
+											<p class="product__info">Free shipping</p>
+										</div>
+
+										<div class="product__flexbox-inner">
+											<div class="product__select">
+												<select name="Amount" class="select2">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</div>
+
+											<button type="button" class="product__remove"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="cart">
+							<p class="cart__title">Summary</p>
+							<div class="cart__total">
+								<div class="cart__total-row">
+									<div class="cart__total-caption">Subtotal (1)</div>
+									<div class="cart__total-data">$224.99</div>
+								</div>
+
+								<div class="cart__total-row">
+									<div class="cart__total-caption">Shipping</div>
+									<div class="cart__total-data">Free</div>
+								</div>
+
+								<div class="cart__total-row">
+									<div class="cart__total-caption">
+										Cashback earned
+										<span>10%</span>
+									</div>
+									<div class="cart__total-data _green">$22.50</div>
+								</div>
+
+								<div class="cart__total-row">
+									<div class="cart__total-caption _bold">Order Total</div>
+									<div class="cart__total-data _large">$26.36</div>
+								</div>
+							</div>
+
+							<a href="#" class="sidebar__btn btn">Order list</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container footer__container">
+				<a href="#" class="footer__logo">
+					<img src="img/logo_white.svg" alt="Logo" />
+				</a>
+
+				<div class="footer__container-inner">
+					<nav class="footer__menu">
+						<a href="#" class="footer__menu-item">Terms of Use</a>
+						<a href="#" class="footer__menu-item">Privacy Policy</a>
+						<a href="#" class="footer__menu-item">Cookie Policy</a>
+						<a href="#" class="footer__menu-item">Whitepaper</a>
+						<a href="#" class="footer__menu-item">Roadmap</a>
+						<a href="#" class="footer__menu-item">Contact</a>
+					</nav>
+
+					<p class="footer__copyrights">
+						©2022 Smartart.ai Ecommerce Solutions, LTD
+					</p>
+				</div>
+
+				<div class="footer__social">
+					<p class="footer__social-caption">Find us on</p>
+
+					<a href="#" class="footer__social-link">
+						<img src="img/icons/twitter.svg" alt="Twitter" />
+					</a>
+					<a href="#" class="footer__social-link">
+						<img src="img/icons/telegram.svg" alt="Telegram" />
+					</a>
+					<a href="#" class="footer__social-link">
+						<img src="img/icons/medium.svg" alt="Medium" />
+					</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
