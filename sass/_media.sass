@@ -1,0 +1,451 @@
+@import vars
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px)
+
+	// General
+	.container
+		max-width: 1200px
+	// end
+
+	// Header
+	.header
+		&__logo
+			margin-right: 160px
+	// end
+
+	// Main screen
+	.main
+		&__title
+			font-size: 86px
+		&__btn
+			bottom: 28px
+	// end
+
+@media only screen and (max-width : 1200px)
+
+	// General
+	.container
+		max-width: 960px
+
+	.section-container
+		margin-top: 60px
+	// end
+
+	// Header
+	.header
+		&__logo
+			margin-right: 80px
+		&__langs
+			margin-right: 80px
+	// end
+
+	// Footer
+	.footer
+		&__container-inner
+			min-width: 540px
+		&__email-data
+			font-size: 46px
+	// end
+
+	// Main screen
+	.main
+		&__slider-nav
+			top: 13px
+		&__title
+			font-size: 60px
+			line-height: 1.2
+			&-part._offset
+				margin-left: 290px
+		&__image
+			width: 230px
+		&__btn
+			bottom: 25px
+	// end
+
+	// Blockquotes
+	.blockquotes
+		&__item
+			font-size: 38px
+			&-inner
+				max-width: 700px
+				&._max-w-custom
+					max-width: 450px
+	// end
+
+	// Solutions + Offices
+	.offset
+		margin-top: 20px
+		margin-bottom: 20px
+		&__item
+			width: 220px
+			&-image
+				height: 240px
+			&-heading
+				font-size: 11px
+	// end
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 992px)
+
+	// General
+	body.scroll_disabled
+		padding-right: 0
+
+	section
+		padding: 60px 0
+
+	.container
+		max-width: 700px
+
+	.section-container
+		margin-top: 50px
+	// end
+
+	// Header
+	.header
+		&__container
+			padding-top: 15px
+			padding-bottom: 15px
+		&__logo
+			margin-right: 40px
+		&__langs
+			margin-right: 40px
+			&-dropdown
+				top: calc(100% + 16px)
+		&__menu-item
+			margin-right: 25px
+	// end
+
+	// Footer
+	.footer
+		margin-top: 60px
+		&__container-inner
+			min-width: 288px
+		&__email
+			padding-right: 50px
+			&-data
+				font-size: 24px
+			&-icon
+				width: 24px
+				bottom: 5px
+	// end
+
+	// Main screen
+	.main
+		height: auto
+		min-height: auto
+		padding: 50px 0
+		&__slider-nav
+			display: none
+		&__title
+			font-size: 60px
+			line-height: 1.1
+			&-part._offset
+				margin-left: 0
+		&__image
+			width: 100%
+			position: static
+			transform: none
+			margin-top: 30px
+		&__btn
+			position: static
+			margin-top: 20px
+	// end
+
+	// Benefits
+	.benefits
+		&__item
+			width: calc(50% - 5px)
+			margin: 0 0 10px
+			&:first-child
+				display: none
+			&:last-child
+				margin-bottom: 0
+	// end
+
+	// Blockquotes
+	.blockquotes
+		&__item
+			font-size: 26px
+			padding: 50px 0
+			min-height: 300px
+			&::before
+				width: 30px
+				height: 28px
+			&._white::before
+				bottom: -20px
+				right: 60px
+			&._black::before
+				top: -20px
+				left: 60px
+			&-inner
+				max-width: 500px
+				&._max-w-custom
+					max-width: 350px
+	// end
+
+	// Roadmap
+	.roadmap
+		&__flexbox
+			flex-wrap: wrap
+		&__item
+			width: calc(50% - 10px)
+			margin-bottom: 30px
+		&__image
+			margin: 30px 0
+	// end
+
+	// Solutions + Offices
+	.offset
+		&__flexbox
+			flex-wrap: wrap
+		&__slider
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			.offset__item
+				margin: 10px 0
+		&__item
+			width: calc(50% - 5px)
+			margin: 10px 0
+			&:hover
+				.offset__item
+					&-image
+						background-size: cover
+					&-emblem
+						transform: none
+			&-image
+				background-size: cover
+				transition: none
+			&-emblem
+				transition: none
+				max-height: 100px
+			&-heading
+				font-size: 10px
+	// end
+
+	// Feedback
+	.feedback
+		&__field
+			padding: 20px 25px
+			&-caption
+				margin-bottom: 10px
+	// end	
+
+@media only screen and (max-width : 768px)
+
+	// General
+	body
+		font-size: 14px
+
+	section
+		padding: 40px 0
+
+	.container
+		max-width: 400px
+
+	.section-title
+		font-size: 24px
+		letter-spacing: normal
+	// end
+
+	// Form elements
+	input, textarea
+		font-size: 14px
+
+	::placeholder
+		font-size: 14px
+	// end
+
+	// Preloader
+	.preloader
+		&-logo
+			width: 64px
+			transform: translate(-50%, -50%) scale(4)
+	// end
+
+	// Header
+	.header
+		&__menu, &__btn
+			display: none
+		&__logo
+			width: 64px
+		&__container
+			padding-top: 15px
+			padding-bottom: 15px
+		&__logo
+			margin-right: 0
+		&__langs
+			margin-right: 55px
+		&__menu-item
+			margin-right: 25px
+		&__hamburger
+			display: flex
+	// end
+
+	// Footer
+	.footer
+		margin-top: 40px
+		&__logo
+			display: none
+		&__container
+			padding: 40px 0 20px
+			&-bottom
+				padding: 20px 60px 30px 0
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+			&-inner
+				min-width: auto
+				flex-direction: column
+				align-items: flex-start
+				width: 100%
+		&__email
+			padding-right: 40px
+			width: 100%
+			&-data
+				font-size: 24px
+			&-icon
+				width: 24px
+				bottom: 5px
+		&__copyrights
+			margin-bottom: 10px
+			font-size: 12px
+		&__privacy-policy
+			font-size: 12px
+		&__btn
+			position: absolute
+			right: 0
+			top: 50%
+			margin-top: -25px
+	// end
+
+	// Main screen
+	.main
+		padding: 30px 0 40px
+		&__title
+			font-size: 30px
+		&__image
+			img
+				width: 100%
+		&__btn
+			width: 100%
+	// end
+
+	// Benefits
+	.benefits
+		&__item
+			width: 100%
+			padding: 30px 20px
+			display: flex
+			align-items: flex-start
+			&-icon
+				flex: 0 0 auto
+				width: 43px
+				height: auto
+				margin-left: 0
+				margin-right: 15px
+				margin-bottom: 0
+			&-heading
+				font-size: 16px
+				margin-bottom: 5px
+	// end
+
+	// Blockquotes
+	.blockquotes
+		&__item
+			font-size: 18px
+			padding: 35px 15px
+			min-height: 185px
+			&._white::before
+				right: 25px
+			&._black::before
+				left: 25px
+			&-inner
+				max-width: 100%
+				&._max-w-custom
+					max-width: 230px
+	// end
+
+	// Roadmap
+	.roadmap
+		&__item
+			width: 100%
+			margin-bottom: 40px
+			&-caption
+				padding: 10px 25px
+				margin-bottom: 25px
+		&__image
+			display: none
+		&__btn
+			width: 100%
+	// end
+
+	// Solutions + Offices
+	.offset
+		&__flexbox
+			flex-direction: column
+		&__item
+			width: 100%
+			margin: 0 0 20px
+			&:nth-child(2n)
+				.offset__item-wrapper
+					order: 1
+					margin-top: 10px
+			&:last-child
+				margin: 0
+			&-image
+				height: 170px
+				background-size: cover
+				&-1
+					background-image: url('../img/solutions/image-1_mobile.jpg')
+				&-2
+					background-image: url('../img/solutions/image-2_mobile.jpg')
+				&-3
+					background-image: url('../img/solutions/image-3_mobile.jpg')
+				&-4
+					background-image: url('../img/solutions/image-4_mobile.jpg')
+
+			&-wrapper
+				margin: 10px 0
+			&-heading
+				font-size: 12px
+	// end
+
+	// Reviews
+	.reviews
+		&__item
+			margin-top: 25px
+			padding: 50px 20px 30px
+			&::before
+				width: 50px
+				height: 50px
+			&-text
+				margin-bottom: 30px
+			&-image
+				width: 100px
+				margin-bottom: 25px
+			&-name
+				font-size: 16px
+	// end
+
+	// Feedback
+	.feedback
+		&__field
+			padding: 15px
+			width: 100%
+			&-caption
+				margin-bottom: 10px
+				font-size: 14px
+			&-textarea
+				padding-top: 15px
+				textarea
+					padding: 0
+					height: 90px
+		&__line._mobile-hidden
+			display: none
+		&__submit
+			margin-top: 20px
+			width: 100%
+	// end
