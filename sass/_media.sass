@@ -63,20 +63,30 @@
 			bottom: 25px
 	// end
 
+	// Benefits
+	.benefits
+		&__item
+			padding: 30px
+	// end
+
 	// Blockquotes
 	.blockquotes
 		&__item
 			font-size: 38px
-			&-inner
-				max-width: 700px
-				&._max-w-custom
-					max-width: 450px
+	// end
+
+	// Roadmap
+	.roadmap
+		&__item-text
+			font-size: 14px
 	// end
 
 	// Solutions + Offices
 	.offset
 		margin-top: 20px
 		margin-bottom: 20px
+		&__slider-nav
+			margin-bottom: 60px
 		&__item
 			width: 220px
 			&-image
@@ -108,14 +118,13 @@
 			padding-top: 15px
 			padding-bottom: 15px
 		&__logo
-			margin-right: 20px
+			margin-right: 0
 		&__langs
-			margin-right: 20px
+			margin-right: 50px
 			&-dropdown
 				top: calc(100% + 16px)
-		&__menu-item
-			margin-right: 15px
-			font-size: 12px
+		&__menu
+			display: none
 	// end
 
 	// Footer
@@ -159,6 +168,7 @@
 		&__item
 			width: calc(50% - 5px)
 			margin: 0 0 10px
+			padding: 30px 40px
 			&:first-child
 				display: none
 			&:last-child
@@ -168,7 +178,7 @@
 	// Blockquotes
 	.blockquotes
 		&__item
-			font-size: 26px
+			font-size: 25px
 			padding: 50px 0
 			min-height: 300px
 			&::before
@@ -180,10 +190,6 @@
 			&._black::before
 				top: -20px
 				left: 60px
-			&-inner
-				max-width: 500px
-				&._max-w-custom
-					max-width: 350px
 	// end
 
 	// Roadmap
@@ -193,6 +199,8 @@
 		&__item
 			width: calc(50% - 10px)
 			margin-bottom: 30px
+			&-text
+				font-size: 16px
 		&__image
 			margin: 30px 0
 	// end
@@ -201,12 +209,15 @@
 	.offset
 		&__flexbox
 			flex-wrap: wrap
+			overflow: visible
 		&__slider
 			display: flex
 			justify-content: space-between
 			flex-wrap: wrap
 			.offset__item
 				margin: 10px 0
+			&-nav
+				display: none
 		&__item
 			width: calc(50% - 5px)
 			margin: 10px 0
@@ -251,6 +262,11 @@
 		letter-spacing: normal
 	// end
 
+	// Buttons
+	.btn
+		padding: 0 15px
+	// end
+
 	// Form elements
 	input, textarea
 		font-size: 14px
@@ -264,6 +280,16 @@
 		&-logo
 			width: 64px
 			transform: translate(-50%, -50%) scale(4)
+	// end
+
+	// Modals
+	.modal
+		padding: 70px 20px 20px
+		&-success
+			padding-top: 20px
+		.mfp-close
+			right: 20px
+			top: 20px
 	// end
 
 	// Header
@@ -365,8 +391,8 @@
 				left: 25px
 			&-inner
 				max-width: 100%
-				&._max-w-custom
-					max-width: 230px
+				br
+					display: none
 	// end
 
 	// Roadmap
@@ -381,6 +407,7 @@
 			display: none
 		&__btn
 			width: 100%
+			padding: 0 15px
 	// end
 
 	// Solutions + Offices

@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 	// Preloader
+	$(window).scrollTop(0)
+
 	$('.header__menu-item').removeClass('text-anime-apply')
 	setTimeout(() => {
 		$('.header__menu-item').addClass('text-anime-apply')
@@ -67,22 +69,22 @@ textReveal.forEach((item) => {
 		},
 	})
 })
+// end
 
 // Feedback lines
 let animateIn = gsap.timeline({
 	scrollTrigger: {
 		trigger: document.querySelector('.feedback__form'),
-		start: 'top bottom',
+		start: 'top center',
 		end: 'bottom center',
-		scrub: true,
 	},
 })
 
 animateIn.to(lines, {
 	width: '100%',
-	background: '#E6E6E6',
 	ease: 'power4',
 })
+// end
 
 // Footer line
 gsap.from($('.footer'), {
@@ -94,7 +96,7 @@ gsap.from($('.footer'), {
 		},
 	},
 })
-
+// end
 // GSAP END
 
 // Offices slider
@@ -104,12 +106,22 @@ $('.offset__slider').slick({
 	arrows: false,
 	speed: 1000,
 	touchMove: false,
+	arrowPrev: $('.offset__slider-prev'),
+	arrowNext: $('.offset__slider-next'),
 	responsive: [
 		{
 			breakpoint: 992,
 			settings: 'unslick',
 		},
 	],
+})
+
+$('.offset__slider-prev').on('click', function () {
+	$('.offset__slider').slick('slickPrev')
+})
+
+$('.offset__slider-next').on('click', function () {
+	$('.offset__slider').slick('slickNext')
 })
 // end
 
@@ -192,7 +204,7 @@ $(document).on('mouseup', (e) => {
 	const t = $('.header__langs')
 
 	if (!t.is(e.target) && t.has(e.target).length === 0) {
-		$('.header__langs-dropdown').slideUp()
+		$('.header__langs-dropdown').slideUp().prev().removeClass('active')
 	}
 })
 // end
@@ -205,10 +217,10 @@ $('.footer__btn').on('click', () => {
 
 // Move links
 $(
-	'.header__menu-item, .header__sidebar-menu-item, .header__btn, .header__sidebar-btn'
+	'.header__menu-item, .header__sidebar-menu-item, .header__btn, .header__sidebar-btn, .roadmap__btn'
 ).on('click', function (event) {
 	event.preventDefault()
-	var id = $(this).attr('href'),
+	let id = $(this).attr('href'),
 		top = $(id).offset().top
 	$('body,html').animate({ scrollTop: top }, 1500)
 })
@@ -220,12 +232,68 @@ const hamburger = $('.header__hamburger')
 const sidebar = $('.header__sidebar')
 const sidebarPlug = $('.header__sidebar-plug')
 const toggleSidebar = $(
-	'.header__hamburger, .header__sidebar-close, .header__sidebar-menu-item, .header__sidebar-btn'
+	'.header__hamburger, .header__sidebar-close, .header__sidebar-plug, .header__sidebar-menu-item, .header__sidebar-btn'
 )
 
 toggleSidebar.on('click', function () {
 	sidebar.toggleClass('visible')
 	sidebarPlug.fadeToggle()
 	body.toggleClass('scroll_disabled')
+})
+// end
+
+// Modals
+$('.mfp').magnificPopup({
+	removalDelay: 350,
+	mainClass: 'mfp-fade',
+	fixedContentPos: false,
+	callbacks: {
+		open: function () {
+			body.css('overflow-y', 'hidden')
+		},
+		close: function () {
+			body.css('overflow-y', 'auto')
+		},
+	},
+})
+//
+
+// Form submit
+$('.feedback__form').on('submit', function () {
+	const th = $(this)
+	$.ajax({
+		type: 'POST',
+		url: 'mail.php',
+		data: th.serialize(),
+	}).done(function () {
+		let a = document.createElement('a')
+
+		document.body.appendChild(a)
+
+		a.classList.add('mfp')
+		a.href = '.modal-success'
+
+		$('.mfp').magnificPopup({
+			removalDelay: 350,
+			mainClass: 'mfp-fade',
+			fixedContentPos: false,
+			callbacks: {
+				open: function () {
+					body.css('overflow-y', 'hidden')
+				},
+				close: function () {
+					body.css('overflow-y', 'auto')
+				},
+			},
+		})
+
+		a.click()
+		a.remove()
+
+		th.trigger('reset')
+		th.find('input').blur()
+	})
+
+	return false
 })
 // end
