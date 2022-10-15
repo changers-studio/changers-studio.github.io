@@ -8,10 +8,12 @@ $(window).on('load', function () {
 })
 
 // Hamburger menu
-$('.toggleMenu').on('click', function () {
-	$('.header__container').toggleClass('visible')
-	$('body').toggleClass('scroll_disabled')
-})
+if ($(window).width() <= 992) {
+	$('.toggleMenu, .trigger-move').on('click', function () {
+		$('.header__container').toggleClass('visible')
+		$('body').toggleClass('scroll_disabled')
+	})
+}
 // ----------
 
 // Swiper
