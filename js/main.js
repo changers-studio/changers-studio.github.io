@@ -73,3 +73,33 @@ $('body').on('click', '.trigger-move', function (event) {
 	$('body,html').animate({ scrollTop: top }, 1500)
 })
 // ----------
+
+// Tariffs terms
+$('.tariffs__item-terms-heading').on('click', function () {
+	$(this).toggleClass('active').next().slideToggle()
+
+	$('.tariffs__item-terms-heading')
+		.not(this)
+		.removeClass('active')
+		.next()
+		.slideUp()
+})
+
+$('.tariffs__item-terms-item').on('click', function () {
+	$(this)
+		.closest('.tariffs__item-terms-dropdown')
+		.slideUp()
+		.prev()
+		.removeClass('active')
+
+	$(this).parent().prev().html($(this).html())
+
+	$(this)
+		.closest('.tariffs__item')
+		.find('.tariffs__item-price')
+		.html(
+			`${$(this).data('value')} <sup class="tariffs__item-discount">
+			 ${$(this).data('discount')}</sup>`
+		)
+})
+// ----------
