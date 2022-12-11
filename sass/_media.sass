@@ -1,22 +1,159 @@
 @import vars
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
-
-
-/*  Small Devices, Tablets */
+/*	Small Devices, Tablets */
 @media only screen and (max-width : 992px)
-	/**/
 
+	// General
+	body
+		font-size: 16px
 
-@media only screen and (max-width : 768px)
-	/**/
+	section
+		padding: 45px 0
 
+	.container
+		max-width: 480px
+		padding-right: 20px
+		padding-left: 20px
 
-@media only screen and (max-width : 576px)
-	/**/
+	.title
+		margin-bottom: 40px
+		font-size: 36px
+	// ----------
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+	// Header
+	.header
+		&__container
+			justify-content: center
+			padding-top: 20px
+			padding-bottom: 20px
+		&__center-wrap, &__contacts
+			display: none
+		&__logo
+			width: 85px
+			height: auto
+			img
+				width: 100%
+	// ----------
+
+	// Footer
+	.footer
+		padding: 30px 0
+		&__container
+			display: none
+	// ----------
+
+	// Main screen
+	.main
+		padding-top: 30px
+		&__container
+			flex-direction: column
+		&__link
+			width: 100%
+			height: 200px
+			margin-top: 20px
+			padding: 20px
+			&::before
+				bottom: 50px
+				left: 20px
+				width: 44px
+				height: 44px
+			&:first-child
+				margin-top: 0
+			&-title
+				font-size: 36px
+			&-subtitle
+				font-size: 36px
+	// ----------
+
+	// About us
+	.about
+		&__title
+			margin-right: 0
+		&__text
+			&-container
+				max-width: 100%
+			&-p
+				margin-bottom: 30px
+				font-size: 16px
+	// ----------
+
+	// Reviews
+	.reviews
+		&__slider
+			width: 100%
+			&-item
+				padding: 30px
+				min-height: 200px
+		&__heading
+			margin-bottom: 15px
+			font-size: 20px
+	// ----------
+
+	// Feedback
+	.feedback
+		padding-bottom: 90px
+		&__container
+			flex-direction: column
+			&-inner
+				margin-bottom: 50px
+				max-width: 100%
+				width: 100%
+		&__title
+			margin-bottom: 5px
+			max-width: 300px
+		&__contacts
+			font-size: 16px
+		&__form
+			flex-direction: column
+			align-items: flex-start
+			&-wrapper
+				width: 100%
+			&-input
+				padding: 24px
+				margin-bottom: 20px
+				height: 70px
+				font-size: 16px
+				&::placeholder
+					font-size: 16px
+			&-btn
+				margin-top: 20px
+				margin-right: 0
+				width: 95px
+				height: 70px
+				font-size: 16px
+	// ----------
+
+	// Service page
+	.p_service
+
+		// Main screen
+		.main
+			&__image
+				min-height: auto
+				height: 250px
+			&__title
+				font-size: 36px
+				margin-bottom: 5px
+			&__subtitle
+				font-size: 24px
+		// ----------
+
+		// Gallery
+		.gallery
+			padding: 60px 0
+			&__slider
+				width: 100%
+				max-height: 250px
+				&-item
+					margin: 0 10px
+					height: 250px
+				.slick
+					&-dots
+						margin-top: 15px
+						li
+							width: 8px
+							height: 8px
+							margin-right: 8px
+		// ----------
+
+	// ----------
