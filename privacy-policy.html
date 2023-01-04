@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Google maps -->
+		<script
+			async
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBumKe9hBynJY3HP3BLuZbWximERNcqGZ0&libraries=places&callback=initMap"
+		></script>
 		<meta charset="utf-8" />
 
-		<title>Empowerment Lab | Privacy Policy</title>
+		<title>Hoo shop | Privacy policy</title>
 
 		<meta
 			name="viewport"
-			content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+			content="width=device-width, initial-scale=1.0"
 		/>
-		<meta name="format-detection" content="telephone=no" />
+		<meta
+			name="format-detection"
+			content="telephone=no"
+		/>
+		<meta
+			name="description"
+			content="Some description"
+		/>
 
 		<!-- favicon -->
 		<link
@@ -20,1634 +32,1132 @@
 		/>
 
 		<!-- reset css -->
-		<link rel="stylesheet" href="css/reset.css" />
-
-		<!-- preload files -->
-		<link rel="preload" href="css/preloader.min.css" as="style" />
-		<link rel="preload" href="css/cursor.min.css" as="style" />
+		<link
+			rel="stylesheet"
+			href="css/reset.css"
+		/>
 
 		<!-- libs css -->
-		<link rel="stylesheet" href="libs/aos/aos.css" />
-		<link rel="stylesheet" href="libs/mfp/magnific-popup.css" />
-		<link rel="stylesheet" href="libs/slick-carousel/slick.css" />
+		<link
+			rel="stylesheet"
+			href="libs/swiper/swiper-bundle.css"
+		/>
 
 		<!-- main css -->
-		<link rel="stylesheet" href="css/preloader.min.css" />
-		<link rel="stylesheet" href="css/cursor.min.css" />
-		<link rel="stylesheet" href="css/main.min.css" />
-
-		<!-- cursor -->
-		<script defer src="js/cursor.js"></script>
+		<link
+			rel="stylesheet"
+			href="css/main.css"
+		/>
 
 		<!-- jQeury -->
-		<script defer src="libs/jquery.min.js"></script>
+		<script
+			defer
+			src="libs/jquery.min.js"
+		></script>
 
 		<!-- libs js -->
-		<script defer src="libs/aos/aos.js"></script>
-		<script defer src="libs/mfp/jquery.magnific-popup.min.js"></script>
-		<script defer src="libs/slick-carousel/slick.min.js"></script>
-		<script defer src="libs/inputmask/jquery.inputmask.min.js"></script>
+		<script
+			defer
+			src="libs/jquery.validate.min.js"
+		></script>
+
+		<script
+			defer
+			src="libs/swiper/swiper-bundle.min.js"
+		></script>
 
 		<!-- main js -->
-		<script defer src="js/main.js"></script>
-
-		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-YF27M3VVT4"
+			defer
+			src="js/main.js"
 		></script>
-		<script>
-			window.dataLayer = window.dataLayer || []
-			function gtag() {
-				dataLayer.push(arguments)
-			}
-			gtag('js', new Date())
-
-			gtag('config', 'G-YF27M3VVT4')
-		</script>
+		<!-- search js -->
+		<script
+			defer
+			src="js/search.js"
+		></script>
 	</head>
 
-	<body class="isnohome">
-		<div class="preloader">
-			<div class="layers">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-
-			<div class="percentage">
-				<div id="percentage"></div>
-			</div>
-		</div>
-
-		<div class="page-transition">
-			<div class="layers">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		</div>
-
-		<div class="body-overflow-hidden">
-			<header class="header">
-				<div class="container header__container">
-					<div class="header__container-inner">
-						<a href="index.html" class="header__logo transition-link">
-							<img src="img/logo.svg" alt="Logo" />
-						</a>
-
-						<div class="header__btns-mobile">
-							<a
-								href="catalog.html"
-								class="header__btn-mobile btn _accent transition-link"
-							>
-								See courses
-							</a>
-							<a
-								href=".popup-callback"
-								class="header__btn-mobile btn _black mfp"
-							>
-								Contact us
-							</a>
-						</div>
-
-						<button class="header__dropdown-btn header__dropdown-area">
-							All Courses
-						</button>
-
-						<button class="header__hamburger">
-							<span class="header__hamburger-inner"></span>
-							<span class="header__hamburger-inner"></span>
-							<span class="header__hamburger-inner"></span>
-						</button>
-					</div>
-
-					<div class="header__sidebar">
-						<div class="header__sidebar-top">
-							<img
-								src="img/logo-icon.svg"
-								alt="Logo"
-								class="header__sidebar-logo"
+	<body class="isnohome p-info">
+		<header class="header">
+			<div class="container">
+				<div class="header__container">
+					<button
+						class="header__hamburger"
+						aria-label="Hamburger"
+					>
+						<svg
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M3.37501 14.6885C3.19434 14.6885 3.03801 14.6225 2.90601 14.4905C2.77401 14.3585 2.70801 14.2022 2.70801 14.0215C2.70801 13.8548 2.77401 13.7018 2.90601 13.5625C3.03801 13.4238 3.19434 13.3545 3.37501 13.3545H16.625C16.8057 13.3545 16.962 13.4238 17.094 13.5625C17.226 13.7018 17.292 13.8548 17.292 14.0215C17.292 14.2022 17.226 14.3585 17.094 14.4905C16.962 14.6225 16.8057 14.6885 16.625 14.6885H3.37501ZM3.37501 10.6675C3.19434 10.6675 3.03801 10.6015 2.90601 10.4695C2.77401 10.3375 2.70801 10.1812 2.70801 10.0005C2.70801 9.81983 2.77401 9.6635 2.90601 9.5315C3.03801 9.3995 3.19434 9.3335 3.37501 9.3335H16.625C16.8057 9.3335 16.962 9.3995 17.094 9.5315C17.226 9.6635 17.292 9.81983 17.292 10.0005C17.292 10.1812 17.226 10.3375 17.094 10.4695C16.962 10.6015 16.8057 10.6675 16.625 10.6675H3.37501ZM3.37501 6.6465C3.19434 6.6465 3.03801 6.57717 2.90601 6.4385C2.77401 6.29917 2.70801 6.14617 2.70801 5.9795C2.70801 5.79883 2.77401 5.6425 2.90601 5.5105C3.03801 5.3785 3.19434 5.3125 3.37501 5.3125H16.625C16.8057 5.3125 16.962 5.3785 17.094 5.5105C17.226 5.6425 17.292 5.79883 17.292 5.9795C17.292 6.14617 17.226 6.29917 17.094 6.4385C16.962 6.57717 16.8057 6.6465 16.625 6.6465H3.37501Z"
+								fill="white"
 							/>
+						</svg>
+					</button>
 
-							<button class="header__sidebar-close">
-								<img src="img/icons/close.svg" alt="X" />
+					<a
+						href="index.html"
+						class="header__logo"
+						aria-label="Go to main page"
+					>
+						<img
+							src="img/logo.svg"
+							alt="Logo"
+							class="header__logo-img _white"
+						/>
+
+						<img
+							src="img/logo_black.svg"
+							alt="Logo"
+							class="header__logo-img _black"
+						/>
+					</a>
+
+					<div class="header__hamburger-menu">
+						<button
+							class="header__hamburger-back"
+							aria-label="Back"
+						></button>
+
+						<button
+							class="header__hamburger-close"
+							aria-label="Close"
+						></button>
+
+						<ul class="header__menu">
+							<li class="header__menu-category">Hookahs</li>
+
+							<li class="header__menu-category">Bases</li>
+
+							<li class="header__menu-category">bowls</li>
+
+							<li class="header__menu-category">HMDs</li>
+
+							<li class="header__menu-category">Hoses</li>
+
+							<li class="header__menu-category">Shisha</li>
+
+							<li class="header__menu-category">Coals</li>
+
+							<li class="header__menu-category">Other accessories</li>
+
+							<li class="header__menu-category">Blog</li>
+
+							<li class="header__menu-category">Contacts</li>
+						</ul>
+
+						<div class="header__hamburger-btns">
+							<button
+								class="header__hamburger-btn header__hamburger-search"
+								aria-label="Search"
+							>
+								<img
+									src="img/icons/search.svg"
+									alt="Search"
+									class="header__hamburger-icon"
+								/>
+
+								<span>Search</span>
 							</button>
-						</div>
 
-						<nav class="header__menu">
-							<a href="index.html" class="header__menu-item transition-link">
-								Home
-							</a>
-							<a href="about-us.html" class="header__menu-item transition-link">
-								About us
-							</a>
-							<a href="catalog.html" class="header__menu-item transition-link">
-								Courses
-							</a>
-							<a href="gallery.html" class="header__menu-item transition-link">
-								Gallery
-							</a>
-							<a
-								href="for-teachers.html"
-								class="header__menu-item transition-link"
+							<button
+								class="header__hamburger-btn header__hamburger-lang"
+								aria-label="Choose language"
 							>
-								For teachers
-							</a>
-						</nav>
+								<span class="header__hamburger-icon">EN</span>
 
-						<div class="header__btns">
-							<a href=".popup-callback" class="header__btn btn _black mfp">
-								Contact Us
-							</a>
+								<span>Language</span>
+							</button>
 
 							<a
-								href="https://wa.me/410762673378"
-								class="header__btn-secondary"
-								target="_blank"
+								href="#"
+								class="header__hamburger-btn"
 							>
-								<img src="img/icons/whatsApp.png" alt="WhatsApp" />
-							</a>
-						</div>
+								<img
+									src="img/icons/user.svg"
+									alt="User"
+									class="header__hamburger-icon"
+								/>
 
-						<div class="header__contacts">
-							<p class="header__contacts-caption">Phone</p>
-							<a href="tel:+410762673378" class="header__contacts-item">
-								+41 076 267 3378
-							</a>
-
-							<p class="header__contacts-caption">Email</p>
-							<a href="mailto:info@emplab.org" class="header__contacts-item">
-								info@emplab.org
-							</a>
-						</div>
-
-						<div class="header__social">
-							<a
-								href="https://www.facebook.com/emplab.org"
-								target="_blank"
-								class="header__social-item"
-							>
-								<img src="img/icons/facebook.svg" alt="Facebook" />
-							</a>
-
-							<a
-								href="https://www.instagram.com/empowermentlab/?hl=en"
-								target="_blank"
-								class="header__social-item"
-							>
-								<img src="img/icons/instagram.svg" alt="Instagram" />
-							</a>
-
-							<a
-								href="https://www.linkedin.com/company/empowerment-lab-geneva/about/"
-								target="_blank"
-								class="header__social-item"
-							>
-								<img src="img/icons/linkedin.svg" alt="LinkedIn" />
-							</a>
-
-							<a
-								href="https://www.youtube.com/channel/UCuODYaVOHWEJNpdOkyP3TAQ"
-								target="_blank"
-								class="header__social-item"
-							>
-								<img src="img/icons/youtube.svg" alt="Youtube" />
+								<span>Account</span>
 							</a>
 						</div>
 					</div>
 
-					<div class="header__sidebar-plug"></div>
-				</div>
+					<div class="header__menu-dropdown">
+						<span class="header__hamburger-title">hookahs</span>
 
-				<div class="header__dropdown container header__dropdown-area">
-					<div class="header__dropdown-inner">
-						<div class="header__dropdown-container">
+						<div class="header__menu-container">
 							<a
-								href="course-app_prototyping.html"
-								class="header__dropdown-item transition-link"
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>All Hookahs</a
 							>
-								<p class="header__dropdown-item-caption">Course</p>
-								<p class="header__dropdown-item-heading">App Prototyping</p>
-								<div class="header__dropdown-item-flexbox">
-									<div class="header__dropdown-item-info">4 weeks</div>
-									<div class="header__dropdown-item-info _dark">
-										12-16 year olds
-									</div>
-								</div>
-							</a>
-
 							<a
-								href="course-data_analysis_excel.html"
-								class="header__dropdown-item transition-link"
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>Alpha Hookah</a
 							>
-								<p class="header__dropdown-item-caption">Course</p>
-								<p class="header__dropdown-item-heading">
-									Data Analysis in Excel
-								</p>
-								<div class="header__dropdown-item-flexbox">
-									<div class="header__dropdown-item-info">4 weeks</div>
-									<div class="header__dropdown-item-info">11-14 year olds</div>
-								</div>
-							</a>
-
 							<a
-								href="course-data_driven_web_app.html"
-								class="header__dropdown-item transition-link"
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>BigMaks</a
 							>
-								<p class="header__dropdown-item-caption">Course</p>
-								<p class="header__dropdown-item-heading">
-									Data Drive Web Application
-								</p>
-								<div class="header__dropdown-item-flexbox">
-									<div class="header__dropdown-item-info">4 weeks</div>
-									<div class="header__dropdown-item-info _dark">
-										15-18 year olds
-									</div>
-								</div>
-							</a>
-
 							<a
-								href="course-digital_media.html"
-								class="header__dropdown-item transition-link"
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>El Bomber</a
 							>
-								<p class="header__dropdown-item-caption">Course</p>
-								<p class="header__dropdown-item-heading">Digital Media</p>
-								<div class="header__dropdown-item-flexbox">
-									<div class="header__dropdown-item-info">4 weeks</div>
-									<div class="header__dropdown-item-info">11-14 year olds</div>
-								</div>
-							</a>
+							<a
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>Hoob</a
+							>
+							<a
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>Karma</a
+							>
+							<a
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>Maklaud</a
+							>
+							<a
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>Nube Unique</a
+							>
+							<a
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>Sky Hookah</a
+							>
 
 							<a
-								href="course-game_dev.html"
-								class="header__dropdown-item transition-link"
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>Totem</a
 							>
-								<p class="header__dropdown-item-caption">Course</p>
-								<p class="header__dropdown-item-heading">Game Development</p>
-								<div class="header__dropdown-item-flexbox">
-									<div class="header__dropdown-item-info">4 weeks</div>
-									<div class="header__dropdown-item-info">11-14 year olds</div>
-								</div>
-							</a>
-
 							<a
-								href="course-machine_learning.html"
-								class="header__dropdown-item transition-link"
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>Wookah</a
 							>
-								<p class="header__dropdown-item-caption">Course</p>
-								<p class="header__dropdown-item-heading">Machine Learning</p>
-								<div class="header__dropdown-item-flexbox">
-									<div class="header__dropdown-item-info">4 weeks</div>
-									<div class="header__dropdown-item-info _dark">
-										15-18 year olds
-									</div>
-								</div>
-							</a>
+							<a
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>Y.K.A.P.</a
+							>
+							<a
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>Хулиган</a
+							>
+							<a
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>Totem</a
+							>
+							<a
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>Wookah</a
+							>
+							<a
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>Y.K.A.P.</a
+							>
+							<a
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>Хулиган</a
+							>
+							<a
+								href="#"
+								class="header__menu-item"
+								aria-label="Menu link"
+								>Y.K.A.P.</a
+							>
 						</div>
+					</div>
 
-						<div class="header__dropdown-gift">
-							<div class="header__dropdown-gift-wrapper">
-								<p class="header__dropdown-gift-caption">
-									Take the quiz and get
-								</p>
-								<p class="header__dropdown-gift-heading">
-									10% off your first course
-								</p>
+					<nav class="header__btn-wrapper">
+						<form class="header__search">
+							<span class="header__hamburger-title">Search</span>
+
+							<div class="header__search-container">
+								<input
+									type="search"
+									name="Search"
+									class="header__search-input"
+									autocomplete="off"
+									placeholder="Search..."
+								/>
+
+								<button
+									type="button"
+									class="header__search-btn"
+									aria-label="Search"
+								>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M15.792 16.6885L11.083 12.0005C10.625 12.3618 10.1287 12.6292 9.59401 12.8025C9.05934 12.9758 8.52101 13.0625 7.97901 13.0625C6.54834 13.0625 5.33301 12.5695 4.33301 11.5835C3.33301 10.5975 2.83301 9.38917 2.83301 7.9585C2.83301 6.54183 3.33301 5.33017 4.33301 4.3235C5.33301 3.31617 6.54834 2.8125 7.97901 2.8125C9.39567 2.8125 10.597 3.3125 11.583 4.3125C12.569 5.3125 13.062 6.52783 13.062 7.9585C13.062 8.52783 12.9787 9.08017 12.812 9.6155C12.6453 10.1502 12.3817 10.6325 12.021 11.0625L16.729 15.7925C16.8543 15.9172 16.9133 16.0665 16.906 16.2405C16.8993 16.4138 16.8333 16.5632 16.708 16.6885C16.5693 16.8272 16.4133 16.8965 16.24 16.8965C16.066 16.8965 15.9167 16.8272 15.792 16.6885ZM7.97901 11.7295C9.02101 11.7295 9.90634 11.3615 10.635 10.6255C11.3643 9.8895 11.729 9.0005 11.729 7.9585C11.729 6.90317 11.368 6.00383 10.646 5.2605C9.92334 4.51783 9.03434 4.1465 7.97901 4.1465C6.90967 4.1465 6.00701 4.51783 5.27101 5.2605C4.53501 6.00383 4.16701 6.90317 4.16701 7.9585C4.16701 9.0145 4.53501 9.90683 5.27101 10.6355C6.00701 11.3648 6.90967 11.7295 7.97901 11.7295Z"
+											fill="white"
+										/>
+									</svg>
+								</button>
 							</div>
 
-							<div class="header__dropdown-gift-img">
-								<img src="img/gift.png" alt="Gift" />
-							</div>
-
-							<a
-								href="https://empowermentlab.involve.me/empo"
-								target="_blank"
-								class="header__dropdown-gift-btn btn _black"
-							>
-								Take the Quiz
-							</a>
-						</div>
-					</div>
-				</div>
-			</header>
-
-			<div class="header__dropdown-plug"></div>
-
-			<section class="s-text">
-				<div class="container">
-					<div class="s-text__top">
-						<h1 class="s-text__title title">
-							Empowerment Lab
-							<br />
-							<span class="_c-gold">Privacy</span>
-							Statement
-						</h1>
-
-						<p class="s-text__date">Last Updated: 01.03.2022</p>
-					</div>
-
-					<div class="s-text__container">
-						<div class="s-text__text">
-							<p class="s-text__text-inner">
-								Empowerment Lab is committed to protecting your privacy: it’s
-								the foundation for a safe and trusted community. Our Empowerment
-								Lab Privacy Statement describes our privacy practices when you
-								use our Empowerment Lab services or visit our public website.
-							</p>
-
-							<p class="s-text__inner">
-								Because Empowerment Lab is a learning environment for children,
-								we take additional measures to safeguard children’s privacy,
-								including for children under the age of 13. Please see
-								our Children's Privacy Notice below.
-							</p>
-						</div>
-
-						<h2 class="s-text__heading heading">Our Privacy Statement</h2>
-
-						<div class="s-text__text">
-							<p class="s-text__text-inner">
-								Empowerment Lab is a service that allows registered parents or
-								guardians (“Parents”) to enroll learners (“Learners”) in online
-								Courses, and for registered teachers (“Teachers”) to create,
-								publicize, and provide those courses (the “Services”). This
-								Privacy Statement describes what personal information
-								Empowerment Lab collects from registered Parents, Teachers, and
-								Learners of the Empowerment Lab, as well as how Empowerment Lab
-								collects and uses personal information from visitors to our
-								public website and our mobile app (collectively, “Sites”).
-								Learners who use the Empowerment Lab Services do so in a learner
-								mode called Learner Space which allows us to provide additional
-								protections, including for children under the age of 13, as
-								described in our Children's Privacy Notice.
-							</p>
-						</div>
-
-						<h2 class="s-text__heading heading">Information We Collect</h2>
-
-						<div class="s-text__text">
-							<p class="s-text__text-inner">
-								When you visit our Site, we may collect information about you
-								that, alone or in combination, could be used to identify you,
-								your device, or household (“Personal Data”), as further
-								described below:
-							</p>
-
-							<h3 class="s-text__caption caption">
-								Personal Data That You Provide Through the Site:
-							</h3>
-							<p class="s-text__text-inner">
-								We collect Personal Data from you when you directly provide it
-								to us, such as when you register for an Empowerment Lab account
-								to use the Services. For example, we may collect the following
-								Personal Data from you:
-							</p>
-							<ul class="s-text__list">
-								<h4 class="s-text__list-heading">Contact Information.</h4>
-
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">1.</span>
-									Name or publicly posted name from a Social Media account
-								</li>
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">2.</span>
-									Email address
-								</li>
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">3.</span>
-									Phone number
-								</li>
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">4.</span>
-									Postal and billing address
-								</li>
-							</ul>
-
-							<ul class="s-text__list">
-								<h4 class="s-text__list-heading">Payment Information.</h4>
-
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">1.</span>
-									Credit card or other payment information
-								</li>
-							</ul>
-							<h4 class="s-text__list-heading">Demographic Data.</h4>
-							<p class="s-text__text-inner">
-								We collect age, month and year of birth, gender, pronouns,
-								marital status, and similar demographic details, such as when
-								you voluntarily provide information in the “about me” section of
-								your profile or communicate with us.
-							</p>
-
-							<h4 class="s-text__list-heading">Sensitive Data.</h4>
-							<p class="s-text__text-inner">
-								Parents may voluntarily provide sensitive information such as
-								health or disability information included in forms or messages
-								sent to Teachers to aid with learning. Parents may also enroll
-								children in special courses offered for children with
-								disabilities. Teachers and Learners are otherwise not allowed to
-								have discussions that may elicit or result in sharing of
-								sensitive information.
-							</p>
-							<p class="s-text__text-inner">
-								If we suspect that a child is over 18, for safety of other
-								Learners, we may request that a Parent show us a copy of
-								age-identifying documentation, such as a Learner’s birth
-								certificate, passport, or driver’s license. This documentation
-								could show us sensitive data such as full date of birth, place
-								of birth, and government ID numbers. Other than month and year
-								of birth, we do not record this information.
-							</p>
-
-							<p class="s-text__text-inner">
-								We may also receive sensitive criminal history information about
-								Teachers when we receive background reports.
-							</p>
-
-							<ul class="s-text__list">
-								<h4 class="s-text__list-heading">Content and Files.</h4>
-
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">1.</span>
-									Courses for which you have enrolled
-								</li>
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">2.</span>
-									Video of your image and audio of your voice during courses
-									which are automatically recorded
-								</li>
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">3.</span>
-									Content and communications that you may include or upload like
-									your profile photo, and photos, documents, and messages you
-									share with the class or groups
-								</li>
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">4.</span>
-									Your voluntarily provided profile picture or your Facebook
-									picture linked to your account
-								</li>
-
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">5.</span>
-									Information voluntarily provided in the “about me” section of
-									your profile
-								</li>
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">6.</span>
-									Information voluntarily provided through reviews
-								</li>
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">7.</span>
-									Information Teachers provide to let us run background checks
-									and background check reports we receive from third parties
-								</li>
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">8.</span>
-									Notes you provide to Teachers about yourself or your Learner
-									when enrolling a Learner in a class.
-								</li>
-							</ul>
-
-							<h3 class="s-text__caption caption">Passively Collected Data:</h3>
-							<p class="s-text__text-inner">
-								When you use or interact with us through our Site, we and our
-								third-party partners may collect, receive, and store certain
-								data automatically. For example,
-							</p>
-							<h3 class="s-text__caption caption">Passively Collected Data:</h3>
-							<p class="s-text__text-inner">
-								When you use or interact with us through our Site, we and our
-								third-party partners may collect, receive, and store certain
-								data automatically. For example,
-							</p>
-
-							<h4 class="s-text__list-heading">Usage data.</h4>
-							<p class="s-text__text-inner">
-								We collect usage data (such as login times, search terms you
-								used, and pages you viewed), and other information about your
-								device and browser.
-							</p>
-							<h4 class="s-text__list-heading">
-								Identifiers and device information. 
-							</h4>
-							<p class="s-text__text-inner">
-								We collect IP Address, device identifiers such as cookie
-								identifiers and mobile device identifiers (see our Cookie
-								Policy, below), your device’s operating system type, and browser
-								type. We may use such information and pool it with other
-								information to track usage and device and system data, for
-								example, the total number of visitors to our Sites, the number
-								of visitors to each page of our website, and the domain names of
-								your Internet service providers. We and our partners may also
-								use this data for interest-based advertising.
-							</p>
-
-							<h3 class="s-text__caption caption">Inferred Data:</h3>
-							<p class="s-text__text-inner">
-								We may infer new information from other data we collect,
-								including using passive, automated means, to generate
-								information about your likely interests (“inferences”). For
-								example, we infer the course subjects your family may be
-								interested in from searches you may perform. We may also infer
-								your general geographic location (such as city, state, and
-								country) based on your IP address.
-							</p>
-
-							<h3 class="s-text__caption caption">
-								Aggregated Personal Data: 
-							</h3>
-							<p class="s-text__text-inner">
-								We may aggregate data, including Personal Data, and use such
-								aggregated data for any purpose. This aggregate information does
-								not identify you personally.
-							</p>
-
-							<h3 class="s-text__caption caption">Required Personal Data:</h3>
-							<p class="s-text__text-inner">
-								Some Personal Data is required such as credit card payment used
-								by Parents to purchase courses and for verified parental
-								consent. Teachers are also required to let us access Personal
-								Data relating to background checks. Teachers are also required
-								to have their cameras on while teaching a live course. Learners
-								are required, subject to authorized exceptions, to have their
-								video enabled at least at the start of course to verify their
-								identity to protect the safety of other Learners. You may
-								decline to provide certain Personal Data.
-							</p>
-							<h3 class="s-text__caption caption">Sources of Personal Data</h3>
-							<p class="s-text__text-inner">
-								You are the main source of Personal Data we have about you. We
-								may also obtain any of the above categories of information from
-								third parties. These third-party sources include, for example:
-							</p>
-
-							<ul class="s-text__list">
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">1.</span>
-									Third party partners. Third party applications and services,
-									including social networks you choose to connect with or
-									interact with through our services.
-								</li>
-
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">2.</span>
-									Co-Branding/Joint Partners. Partners with which we offer
-									co-branded services or engage in joint marketing activities.
-								</li>
-
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">3.</span>
-									Service providers. Third parties that collect or provide data
-									in connection with work they do on our behalf, for example
-									companies that determine your device’s location based on its
-									IP address.
-								</li>
-
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">4.</span>
-									Publicly available sources. Public sources of information such
-									as open government databases and background check services we
-									used for Teachers.
-								</li>
-							</ul>
-						</div>
-
-						<h2 class="s-text__heading heading">
-							Our Use of Your Personal Data
-						</h2>
-						<div class="s-text__text">
-							<p class="s-text__text-inner">
-								We may use any of the above categories of your Personal Data to:
-							</p>
-
-							<ul class="s-text__list">
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">1.</span>
-									provide and enhance the Empowerment Lab Sites, including
-									troubleshooting, maintaining, improving, and personalizing the
-									Sites;
-								</li>
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">2.</span>
-									business operations, such as processing your payment for the
-									Empowerment Lab Services, billing, accounting, improving our
-									internal operations, securing our systems, detecting
-									fraudulent or illegal activity, and meeting our legal
-									obligations;
-								</li>
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">3.</span>
-									send you emails or newsletters that you signed up for,
-									including messages about new and recommended ccourses, groups,
-									events, and other marketing content we may send to Parents and
-									Teachers;
-								</li>
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">4.</span>
-									communicate with you to confirm registration and send updates,
-									provide customers support and security alerts, and other
-									administrative messages;
-								</li>
-
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">6.</span>
-									conduct research and develop new services or features; analyze
-									website usage and usage of the Site features, content, and
-									pages;
-								</li>
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">7.</span>
-									conduct background checks if you are a Teacher.
-								</li>
-							</ul>
-							<p class="s-text__text-inner">
-								We combine data we collect from different sources to achieve
-								these purposes and to give you a more seamless, consistent, and
-								personalized experience.
-							</p>
-							<p class="s-text__text-inner">
-								Empowerment Lab Teachers may access recordings of their courses
-								and may use the recordings to improve their curriculum and
-								courses and may provide the recording to Parents and Learners to
-								view. Empowerment Lab may also use class recordings to provide
-								feedback to Teachers, for customer support, and for compliance
-								purposes.
-							</p>
-							<p class="s-text__text-inner">
-								If you are a Parent or Teacher, Empowerment Lab may use your
-								contact data for marketing and advertising purposes, including
-								to tell you about services and opportunities we believe will be
-								of interest to you. If we do so, each promotional email we send
-								you will contain instructions permitting you to "opt-out" of
-								receiving future promotional information. In addition, if at any
-								time you wish not to receive any future communications or you
-								wish to have your contact information included in our opt-out
-								lists, please contact us at info@emplab.org. Please note that we
-								will continue to contact you via email to respond to requests
-								and provide our services.
-							</p>
-						</div>
-
-						<h2 class="s-text__heading heading">
-							Storage and Transfer of Personal Data
-						</h2>
-						<div class="s-text__text">
-							<p class="s-text__text-inner">
-								Your information, including Personal Data, may be transferred to
-								— and maintained on — computers located outside of your state,
-								province, country, or other governmental jurisdiction where the
-								data protection laws may differ from those in your region. If
-								you are located outside the EU and choose to provide information
-								to us, please note that we transfer the data, including Personal
-								Data, to the EU and process it there.
-							</p>
-						</div>
-
-						<h2 class="s-text__heading heading">
-							Our Disclosure of Your Personal Data
-						</h2>
-						<div class="s-text__text">
-							<p class="s-text__text-inner">
-								We may share your Personal Data with certain third parties with
-								your consent or authorization and with whom you have
-								intentionally interacted. We may share your Personal Data as
-								necessary to complete your transactions and provide the services
-								you have requested or authorized. For example, we use third
-								parties to process credit card payments.
-							</p>
-
-							<p class="s-text__text-inner">
-								We may also share data as set forth below:
-							</p>
-
-							<h3 class="s-text__caption caption">
-								Teachers and Teacher Organizations:
-							</h3>
-							<p class="s-text__text-inner">
-								When Parents sign up they agree that Teachers may receive
-								certain Personal Data about the Parents and their Learners
-								including courses their Learner has taken. Teachers are not our
-								employees, agents, or service providers, but we do issue
-								guidance and restrictions on what they can do with Personal
-								Data.
-							</p>
-
-							<h3 class="s-text__caption caption">Business Transfers:</h3>
-							<p class="s-text__text-inner">
-								If we are involved in a merger, acquisition, financing due
-								diligence, reorganization, bankruptcy, receivership, sale of
-								company assets, or transition of service to another provider,
-								your information may be transferred to a successor or affiliate
-								alone or as part of that transaction along with other assets.
-							</p>
-							<h3 class="s-text__caption caption">Service Providers: </h3>
-							<p class="s-text__text-inner">
-								We engage third party service providers to perform certain
-								functions on our behalf (such as payment processing). These
-								third parties may have access to your Personal Data for the
-								purpose of helping us market, provide and/or improve the Sites.
-							</p>
-
-							<h3 class="s-text__caption caption">Legal Requirements:  </h3>
-							<p class="s-text__text-inner">
-								Empowerment Lab may disclose your Personal Data if required to
-								do so by law or when we believe that such action is necessary to
-								(i) comply with a legal obligation, (ii) protect and defend the
-								rights or property of Empowerment Lab, Teachers, Learners, and
-								Parents, (iii) operate and maintain the security of our Sites,
-								including to prevent or stop an attack on our computer systems
-								or networks, (iv) to protect the personal safety of users of the
-								Site or the public, or (v) protect against legal liability.
-								Teachers are required to report to Empowerment Lab any suspected
-								case of child abuse or neglect they become aware of during their
-								work with Learners. Teachers may also be required to report
-								suspected abuse or neglect to local authorities, and Empowerment
-								Lab expects all Teachers to comply with their individual
-								reporting responsibilities. Empowerment Lab itself may report
-								instances of suspected abuse or neglect.
-							</p>
-
-							<h3 class="s-text__caption caption">
-								Third Party Analytics and Advertising Companies:  
-							</h3>
-							<p class="s-text__text-inner">
-								Third party analytics and advertising vendors also collect
-								Personal Data through our Site including, general location data,
-								usage data, and inferences associated with identifiers and
-								device information (such as cookie IDs and IP address) as
-								described in the Cookies section of this statement. Except for
-								data collected from Learners on the Services in Learner Space,
-								these third-party vendors may combine this data across multiple
-								sites to improve analytics for their own purpose and others. For
-								example, we use Google Analytics on our Site to help us
-								understand how users interact with our Site; you can learn how
-								Google collects and uses information at 
-								<a
-									href="https://policies.google.com/technologies/partner-sites"
-									class="s-text__link"
-									target="_blank"
-								>
-									www.google.com/policies/privacy/partners.
-								</a>
-							</p>
-							<p class="s-text__text-inner">
-								Please note that our Site includes references or links to or
-								suggestions to engage with third parties whose privacy practices
-								differ from ours. Teachers may also suggest third party
-								resources for Parents and Learners. If you provide Personal Data
-								to any of those third parties, or allow us to share Personal
-								Data with them, that data is governed by their privacy
-								statements.
-							</p>
-						</div>
-
-						<h2 class="s-text__heading heading">Publicly Posted Information</h2>
-						<div class="s-text__text">
-							<p class="s-text__text-inner">
-								You may be able to share Personal Data, including
-								communications, with third parties, including with the general
-								public, through use of our Site. When you do so we ask that you
-								avoid sharing Personal Data and do not share sensitive Personal
-								Data.
-							</p>
-
-							<p class="s-text__text-inner">
-								We expect everyone to respect the privacy of others and follow
-								our community standards, and other guidelines and restrictions
-								on posting and sharing activities, such as sharing private
-								materials, communications, or information, or sharing other
-								Personal Data about others that may cause harm, embarrassment,
-								or conflict. You should not encourage your Learners or other
-								Learners to reveal any Personal Data about Learners or their
-								families.
-							</p>
-
-							<h3 class="s-text__caption caption">User Profile:</h3>
-							<p class="s-text__text-inner">
-								As a user of our Services, you will have a user profile that
-								will be publicly available to all users of the Services (the
-								“User Profile”). You are not required to include any Personal
-								Data on your User Profile. But you will have the option to
-								include a variety of types of Personal Data in your User
-								Profile, which may include your first name, last name,
-								biographical information, geographical location, and avatar or
-								personal photograph.
-							</p>
-
-							<p class="s-text__text-inner">
-								Any information published in your User Profile becomes available
-								to the public. After publishing, we have no control over how
-								such information is used or its further dissemination. We urge
-								you to think carefully about what, if any, Personal Data you
-								include in your User Profile.
-							</p>
-
-							<h3 class="s-text__caption caption">
-								Online Classrooms and Pages:
-							</h3>
-							<p class="s-text__text-inner">
-								If you are Teachers leading our online courses, you may publicly
-								display and share your video and photographic image, name and/or
-								username and certain other information, such as your profile,
-								demographic data, content and files, and general location data
-								(such as the city or state).
-							</p>
-							<h3 class="s-text__caption caption">Public Forums: </h3>
-							<p class="s-text__text-inner">
-								Our Services provide Teachers and Parents the opportunity to
-								share information on a variety of topics with other Empowerment
-								Lab Users through public forums (the “Public Forums”). Use of
-								the Public Forums is entirely voluntary. But please be aware
-								that any information you include in the Public Forums will
-								become available to all Empowerment Lab Users without
-								restriction.
-							</p>
-							<p class="s-text__text-inner">
-								We do not systematically monitor the content of information that
-								is published in the Public Forums. Any information published in
-								Public Forums becomes available to the public.
-							</p>
-
-							<h3 class="s-text__caption caption">Messages:  </h3>
-							<p class="s-text__text-inner">
-								Learners can message Teachers, Parents can message each other,
-								and Parents and Teachers can message each other using the
-								Service. Parents have access to messages between their Learners
-								and Teachers.
-							</p>
-							<p class="s-text__text-inner">
-								After publishing, posting, or messaging, we have no control over
-								how such information is used or its further dissemination. We
-								urge you to think carefully about what, if any, Personal Data
-								you share with others on our Service.
-							</p>
-						</div>
-
-						<h2 class="s-text__heading heading">Security</h2>
-						<div class="s-text__text">
-							<p class="s-text__text-inner">
-								We take reasonable steps to protect the Personal Data provided
-								via the Site from loss, misuse and unauthorized access,
-								disclosure, alteration, or destruction. However, the Internet
-								cannot be guaranteed to be fully secure, and we cannot ensure or
-								warrant the security of any content or information you provide
-								to us. You are also responsible for helping to protect the
-								security of your account credentials. For instance, never give
-								out your password, and safeguard your username, password and
-								personal credentials used to access the Services, so that other
-								people will not have access to your Personal Data. And do not
-								use the username and password you use on our Services with any
-								other services.
-							</p>
-						</div>
-
-						<h2 class="s-text__heading heading">Choice and Control</h2>
-						<div class="s-text__text">
-							<h3 class="s-text__caption caption">Browser Cookie Controls:</h3>
-							<p class="s-text__text-inner">
-								Most web browsers are set to accept cookies by default. If you
-								prefer, you can go to your browser settings to learn how to
-								delete or reject cookies. If you choose to delete or reject
-								cookies, this could affect certain features or services of our
-								website. If you choose to delete cookies, settings and
-								preferences controlled by those cookies, including advertising
-								preferences, may be deleted and may need to be recreated.
-							</p>
-							<h3 class="s-text__caption caption">
-								Mobile Identifier and Permission Controls: 
-							</h3>
-							<p class="s-text__text-inner">
-								iOS and Android operating systems provide privacy options in
-								your device settings. You can limit tracking and/or reset the
-								advertising identifiers and change permissions regarding push
-								notifications and access to your camera and photos.
-							</p>
-							<h3 class="s-text__caption caption">Email Web Beacons: </h3>
-							<p class="s-text__text-inner">
-								Most email clients have settings which allow you to prevent the
-								automatic downloading of images, including web beacons, which
-								prevents the automatic connection to the web servers that host
-								those images.
-							</p>
-							<h3 class="s-text__caption caption">Do Not Track: </h3>
-							<p class="s-text__text-inner">
-								Do Not Track is a preference you can set in your web browser to
-								inform websites that you do not want to be tracked. You can
-								enable or disable Do Not Track by visiting the Preferences or
-								Settings page of your web browser. While we do not currently
-								support Do Not Track signals, we treat the data of everyone who
-								comes to our site in accordance with this Privacy Statement,
-								whatever their Do Not Track setting.
-							</p>
-						</div>
-
-						<h2 class="s-text__heading heading">
-							European Data Protection Rights
-						</h2>
-						<div class="s-text__text">
-							<p class="s-text__text-inner">
-								If our processing of Personal Data is subject to European Union
-								data protection law, you have certain rights with respect to
-								that data:
-							</p>
-							<ul class="s-text__list">
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">1.</span>
-									You can request access to, and rectification or erasure of,
-									Personal Data;
-								</li>
-
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">2.</span>
-									If any automated processing of Personal Data is based on your
-									consent or a contract with you, you have a right to transfer
-									or receive a copy of the Personal Data in a usable and
-									portable format;
-								</li>
-
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">3.</span>
-									If the processing of Personal Data is based on your consent,
-									you can withdraw consent at any time for future processing;
-								</li>
-
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">4.</span>
-									You can to object to, or obtain a restriction of, the
-									processing of Personal Data under certain circumstances; and
-								</li>
-
-								<li class="s-text__list-item">
-									<span class="s-text__list-number">5.</span>
-									For residents of France, you can send us specific instructions
-									regarding the use of your data after your death.
-								</li>
-							</ul>
-						</div>
-
-						<h2 class="s-text__heading heading">Retention of Personal Data</h2>
-						<div class="s-text__text">
-							<p class="s-text__text-inner">
-								We retain Personal Data for as long as necessary to provide the
-								services and fulfill the transactions you have requested, comply
-								with our legal obligations, resolve disputes, enforce our
-								agreements, and other legitimate and lawful business purposes.
-								Because these needs can vary for different data types in the
-								context of different services, actual retention periods can vary
-								significantly based on criteria such as user expectations or
-								consent, the sensitivity of the data, the availability of
-								automated controls that enable users to delete data, and our
-								legal or contractual obligations. For example, we keep Course
-								Recordings for 90 days after the date of the applicable Course.
-							</p>
-						</div>
-
-						<h2 class="s-text__heading heading">Cookie Policy</h2>
-						<div class="s-text__text">
-							<h3 class="s-text__caption caption">What are cookies?</h3>
-							<p class="s-text__text-inner">
-								Cookies are small text files containing a string of characters
-								that can be placed on your computer or mobile device that
-								uniquely identify your browser or device. Cookies are used with
-								web beacons and similar technologies. Web beacons are electronic
-								images (also called single-pixel or clear GIFs) that are
-								contained within a website or email and can read cookies they
-								place on your device.
-							</p>
-							<h3 class="s-text__caption caption">
-								What are mobile device IDs?
-							</h3>
-							<p class="s-text__text-inner">
-								Mobile device identifiers are used to identify your device to
-								our app so we can collect data such as usage data, identifiers,
-								and device information to conduct mobile analytics and operate
-								our mobile apps.
-							</p>
-							<p class="s-text__text-inner">
-								Mobile device identifiers are generated by operating systems for
-								mobile devices (iOS and Android) and can be accessed and used by
-								apps in much the same way that websites access and use cookies.
-								Our apps contain software that enables us and our third-party
-								analytics partners to access these mobile identifiers.
-							</p>
-							<h3 class="s-text__caption caption">
-								What are cookies used for?
-							</h3>
-							<p class="s-text__text-inner">
-								Cookies, mobile device identifiers, and similar technologies
-								allow a site or service to know if your computer or device has
-								visited that site or service before. These technologies can then
-								be used to help understand how the site or service is being
-								used, help you navigate between pages efficiently, help remember
-								your preferences, and generally improve your browsing
-								experience. We and our analytics and advertising partners use
-								cookies and other identifiers, such as IP address, and
-								technologies on our Sites to collect Personal Data (such as the
-								pages you visit, the links you click on, and similar usage
-								information) when you use our Sites, including Personal Data
-								about your online activities over time and across different
-								websites or online services. We and our analytics and
-								advertising partners may use cookies and similar technologies to
-								provide targeted advertising.
-							</p>
-						</div>
-
-						<h2 class="s-text__heading heading">
-							Changes to Our Privacy Statement
-						</h2>
-						<div class="s-text__text">
-							<p class="s-text__text-inner">
-								We may change this Privacy Statement at any time. If we decide
-								to change this Privacy Statement in the future, we will post or
-								provide an appropriate notice. If we make material changes to
-								the statement, we will provide notice or obtain consent
-								regarding such changes as may be required by law. The date on
-								which the latest update was made is indicated at the top of this
-								document.
-							</p>
-						</div>
-
-						<h2 class="s-text__heading heading">Contact Us</h2>
-						<div class="s-text__text">
-							<p class="s-text__text-inner">
-								Please feel free to contact us if you have any questions about
-								Empowerment Lab’s Privacy Statement or the information practices
-								of our Sites.
-							</p>
-							<p class="s-text__text-inner">
-								You may contact us as follows: You may send an email to
-								<a href="mailto:info@emplab.org" class="s-text__link">
-									info@emplab.org
-								</a>
-								 or send mail to: Avenue de sécheron 15, 1202 Genève,
-								Switzerland.
-							</p>
-						</div>
-
-						<h2 class="s-text__heading heading">Children's Privacy Notice</h2>
-						<div class="s-text__text">
-							<p class="s-text__text-inner">
-								This section explains our information collection, disclosure,
-								parental consent practices and parental choice procedures with
-								respect to information provided by Learners including children
-								under the age of 13 (“Child” or “Children”). This policy is in
-								accordance with the U.S. Children’s Online Privacy Protection
-								Act (“COPPA”), and outlines our practices in the United States
-								regarding Children’s Personal Data. For more information about
-								COPPA and general tips about protecting Children’s online
-								privacy, please visit .
-								<a
-									href="https://consumer.ftc.gov/articles/protecting-your-childs-privacy-online"
-									class="s-text__link"
-								>
-									OnGuard Online
-								</a>
-								.
-							</p>
-							<h3 class="s-text__caption caption">Collection:</h3>
-							<p class="s-text__text-inner">
-								Empowerment Lab collects Personal Data about Children directly
-								from Parents and, when we have verified parental consent of
-								Parents.
-							</p>
-							<p class="s-text__text-inner">
-								Children can only attend Courses or if their Parents enroll
-								them. We keep a record of marked and enrolled Courses and may
-								infer your child’s interest in topics from these records to
-								inform recommendations and Course offerings. Parents provide us
-								with the Child’s name and age. Parents may additionally provide
-								us with descriptions of the type of schooling their Child
-								attends, local time zone, and additional notes for the Teacher.
-								In addition, Children may share information about themselves
-								during online courses. The Empowerment Lab Courses ake place
-								over online videos in which video images and audio of the
-								Children are recorded in our systems. We may collect other
-								Personal Data about Children in Learner Space, including
-								passively collected data, as described in our general Privacy
-								Notice, with the exception that we do not collect payment
-								information from Children or allow third parties to use Personal
-								Data collected through analytics or advertising cookies for
-								their own purposes. We also do not condition participation in
-								our Services for Children on the collection of more Personal
-								Data than is reasonably necessary. Children may also share
-								information about themselves during online courses and when
-								reporting emergency safety and compliance issues.
-							</p>
-							<h3 class="s-text__caption caption">Use and Disclosure: </h3>
-							<p class="s-text__text-inner">
-								Once we obtain verified parental consent, we may use and share
-								Personal Data collected from Children for many of the same
-								purposes described in the general Privacy Notice. We recommend
-								Courses and new features to Parents and Children based on
-								Childrens’ activities on our Site, such as when they mark
-								Courses and if they are using our mobile app or website. We may
-								send these messages to Children and Parents through push
-								notifications if Parents enable this feature in the mobile app.
-								We may also send emails to Parents about those recommendations
-								and surveys and informational emails to Parents and Children. We
-								do not, however, send promotional emails to Children or allow
-								third party analytics or advertising providers to collect
-								Personal Data for their own uses through Learner Space.
-							</p>
-
-							<p class="s-text__text-inner">
-								Empowerment Lab shares, or allows you to share, the name, age,
-								postal address, local time zone, and any notes Parents have
-								provided about their Child to the Class Teacher to allow the
-								Teacher to provide courses and deliver supplies to Children.
-								Children can also privately message Teachers of the Courses
-								they’re enrolled in. Parents will get notices of and copies of
-								these messages. Children’s video image and voice audio and
-								potentially background images of their home and family members
-								are shared with the Teacher and the rest of the course as they
-								participate in courses. Parents should consider using virtual
-								backgrounds for their Children if they have concerns about
-								posting images of their home and family members. Children may
-								also share information about themselves with the Teacher and the
-								rest of their classmates during the course session voluntarily,
-								including content, images, and videos they may upload and share
-								with their Teacher and classmates. While Empowerment Lab expects
-								Teachers and all other Users to abide by our standards of
-								conduct and we take reasonable steps to monitor certain
-								communications and posts, please note that we are not able to
-								control or monitor all Personal Data your Child may share with
-								Teachers or other classmates, nor what those third parties
-								ultimately do with that information.
-							</p>
-							<p class="s-text__text-inner">
-								We urge you to talk to your Children to to also think about
-								their own privacy and safety when choosing what to share with
-								others. In particular, Children should be encouraged to avoid
-								sharing Personal Data like their address or contact information
-								with other Children in Courses.
-							</p>
-							<p class="s-text__text-inner">
-								At times, we may allow Children and Parents to submit content,
-								including photos and artwork, along with other information about
-								the Child (like age, first name or initials and city, state, and
-								country) that you may allow us to display publicly. Parents
-								should review Children’s submissions and avoid uploading any
-								private information in the Content about the Children, family
-								members, or others. Empowerment Lav is not responsible for what
-								other third parties do with information you choose to share
-								publicly.
-							</p>
-							<p class="s-text__text-inner">
-								Some Teachers may ask Child Learners and their Parents to use
-								third-party sites and services. Parents should review the
-								privacy notices for those third party sites and services to
-								understand their privacy practices. These third parties are not
-								our service providers, and we are not responsible for and may
-								not have reviewed those third-party sites and services.
-							</p>
-
-							<h3 class="s-text__caption caption">Class Video Recordings:</h3>
-							<p class="s-text__text-inner">
-								As described above, Empowerment Lab records video of Children
-								and Teachers during Empowerment Lab courses (“Course
-								Recordings”). The Course Recordings are made available by
-								Empowerment Lab to the Teacher of the class and may be shared by
-								the Teacher for the entire class (and their Parents) to view
-								(the “Permitted Recipients”).
-							</p>
-
-							<p class="s-text__text-inner">
-								Please note that in some cases, courses are taught by a
-								“Teacher” that is actually an organization, group, or team of
-								instructors (“Teacher Organization”). In such cases, Course
-								Recordings may be accessed by the entire Teacher Organization,
-								and access would not necessarily be limited to a single
-								individual instructor. Empowerment Lab may share information
-								with, and use Class Recordings, to provide feedback to Teachers,
-								for customer support, and for compliance purposes.
-							</p>
-
-							<p class="s-text__text-inner">
-								Empowerment Lab will obtain additional parental consent before
-								we use any Class Recordings for promotional or other unexpected
-								purposes. We request that Teachers refrain from creating copies
-								of the Course Recordings or from sharing the Course Recordings
-								with anyone aside from Permitted Recipients, and also request
-								that Permitted Recipients not download or re-share the course
-								Recordings. While we expect Teachers and Permitted Recipients to
-								abide by our standards of conduct, please note that we cannot
-								control or monitor what such third parties ultimately do with
-								Course Recordings.
-							</p>
-
-							<h3 class="s-text__caption caption">Parental Consent:</h3>
-							<p class="s-text__text-inner">
-								Empowerment Lab sends a direct notice with these privacy
-								disclosures and obtains verifiable parental consent before
-								collecting, using, and sharing Personal Data from your Child as
-								described in this Notice. Empowerment Lab requires that you
-								provide your credit card information to verify you and to
-								register your Child for and pay for an Empowerment Lab Course.
-								If you do not consent or withdraw consent, then we will not
-								collect, use, or disclose any Personal Data about your Child,
-								except as needed for legal compliance and enforcement purpose,
-								and your Child will not be allowed to use the Services in any
-								way. If you do not provide consent within a reasonable time from
-								the date the direct notice was sent, and are not using our
-								services for any other purposes, such as for teen children, we
-								will also delete your online contact information from our
-								records.
-							</p>
-
-							<h3 class="s-text__caption caption">
-								Parental Choices and Controls:
-							</h3>
-							<p class="s-text__text-inner">
-								At any time, you can review and refuse to permit us to collect
-								further Personal Data from your Children in association with
-								your account. You can also request that we delete from our
-								records the Personal Data we have collected in connection with
-								that account. Please keep in mind that a request to delete
-								records may lead to a termination of an account, membership, or
-								other service. You can contact Empowerment Lab to request access
-								to, change, or delete your Child’s Personal Data, or revoke
-								consent for our collection, use, and sharing of Personal Data,
-								by sending an email to us at 
-								<a href="mailto:info@emplab.org" class="s-text__link">
-									info@emplab.org
-								</a>
-								A valid request to delete Personal Data will be accommodated
-								within a reasonable time. In addition to the foregoing, we will
-								exercise commercially reasonable efforts to delete Personal Data
-								collected from Children when it is no longer needed for the
-								purpose for which it was collected.
-							</p>
-
-							<p class="s-text__text-inner">
-								For users of our mobile app, Parents can choose permissions to
-								allow push notifications to, and camera and photo access by,
-								Children. Parents should consider enabling parental controls to
-								help prevent Children from changing permissions you have chosen.
-								Most devices provide ways to set these controls through device
-								settings.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<footer class="footer">
-				<div class="container">
-					<div class="footer__container _top">
-						<div class="footer__container-inner _left">
-							<div class="footer__wrapper">
-								<div class="footer__wrapper-inner">
-									<a href="index.html" class="footer__logo transition-link">
-										Empowerment Lab
-									</a>
-
-									<address class="footer__address">
-										Campus Biotech Innovation Park Avenue de Sécheron 15
-										<span>CH – 1202 Geneva – Switzerland</span>
-									</address>
-								</div>
-
-								<div class="footer__contacts">
-									<a href="tel:410762673378" class="footer__contacts-item">
-										<span class="footer__contacts-caption">Phone</span>
-										+ 41 076 267 3378
-									</a>
+							<div class="header__search-result">
+								<div class="header__search-section">
+									<p class="header__search-title">Manufacturer</p>
 
 									<a
-										href="mailto:info@emplab.org"
-										class="footer__contacts-item"
+										href="#"
+										class="header__search-item"
 									>
-										<span class="footer__contacts-caption">Email</span>
-										info@emplab.org
-									</a>
-								</div>
-							</div>
-
-							<form class="footer__form">
-								<!-- Hidden Required Fields -->
-								<input
-									type="hidden"
-									name="form_subject"
-									value="Sign up for newsletter"
-								/>
-								<!-- END Hidden Required Fields -->
-								<div class="footer__form-container">
-									<h3 class="footer__form-title">
-										<span>Don't miss</span>
-										a thing!
-									</h3>
-
-									<p class="footer__form-subtitle">
-										Sign up for our newsletter
-									</p>
-
-									<div class="footer__form-wrapper">
-										<input
-											class="footer__form-input"
-											type="email"
-											name="E-mail"
-											placeholder="E-mail"
-											required
+										<img
+											src="img/main/bose.png"
+											alt="Logo"
+											class="header__search-img"
 										/>
 
-										<button type="submit" class="footer__form-btn">
-											<img src="img/icons/send.svg" alt="Icon" />
-										</button>
+										<span>Bose</span>
+									</a>
+								</div>
+
+								<div class="header__search-section">
+									<p class="header__search-title">Categories</p>
+
+									<a
+										href="#"
+										class="header__search-item"
+									>
+										<span>Boseries</span>
+									</a>
+
+									<a
+										href="#"
+										class="header__search-item"
+									>
+										<span>Boseries</span>
+									</a>
+
+									<a
+										href="#"
+										class="header__search-item"
+									>
+										<span>Boseries</span>
+									</a>
+
+									<a
+										href="#"
+										class="header__search-item"
+									>
+										<span>Boseries</span>
+									</a>
+								</div>
+
+								<div class="header__search-section">
+									<p class="header__search-title">Products</p>
+
+									<a
+										href="#"
+										class="header__search-item"
+									>
+										<img
+											src="img/main/product-plug.png"
+											alt="Logo"
+											class="header__search-img"
+										/>
+
+										<span>Boserie 1 Pro</span>
+
+										<span class="_ml-auto">$199</span>
+									</a>
+
+									<a
+										href="#"
+										class="header__search-item"
+									>
+										<img
+											src="img/main/product-plug.png"
+											alt="Logo"
+											class="header__search-img"
+										/>
+
+										<span>Boserie 2 Standart</span>
+
+										<span class="_ml-auto">$199</span>
+									</a>
+
+									<a
+										href="#"
+										class="header__search-item"
+									>
+										<img
+											src="img/main/product-plug.png"
+											alt="Logo"
+											class="header__search-img"
+										/>
+
+										<span>Boserie 1 Pro</span>
+
+										<span class="_ml-auto">$199</span>
+									</a>
+								</div>
+
+								<div class="header__search-section">
+									<p class="header__search-title">Blog</p>
+
+									<a
+										href="#"
+										class="header__search-item"
+									>
+										<img
+											src="img/main/product-plug.png"
+											alt="Logo"
+											class="header__search-img"
+										/>
+
+										<span>Boseries new product line is a very optimistic</span>
+									</a>
+
+									<a
+										href="#"
+										class="header__search-item"
+									>
+										<img
+											src="img/main/product-plug.png"
+											alt="Logo"
+											class="header__search-img"
+										/>
+
+										<span>Boseries new product line is a very optimistic</span>
+									</a>
+								</div>
+							</div>
+						</form>
+
+						<div class="header__langs">
+							<span class="header__hamburger-title">Language</span>
+
+							<div
+								class="header__langs-heading header__btn header__trigger _mob-hidden"
+							>
+								en
+							</div>
+
+							<div class="header__langs-dropdown">
+								<a
+									href="#"
+									class="header__langs-item"
+									aria-label="Latvia"
+								>
+									<img
+										class="header__langs-flag"
+										src="img/main/flags/latvia.svg"
+										alt="Latvia"
+									/>
+
+									Latvian
+								</a>
+
+								<a
+									href="#"
+									class="header__langs-item"
+									aria-label="Russian"
+								>
+									<img
+										class="header__langs-flag"
+										src="img/main/flags/rus.svg"
+										alt="Russian"
+									/>
+
+									Russian
+								</a>
+
+								<a
+									href="#"
+									class="header__langs-item"
+									aria-label="Estonian"
+								>
+									<img
+										class="header__langs-flag"
+										src="img/main/flags/estonia.svg"
+										alt="Estonian"
+									/>
+
+									Estonian
+								</a>
+
+								<a
+									href="#"
+									class="header__langs-item"
+									aria-label="Lithuanian"
+								>
+									<img
+										class="header__langs-flag"
+										src="img/main/flags/lithuania.svg"
+										alt="Lithuanian"
+									/>
+
+									Lithuanian
+								</a>
+							</div>
+						</div>
+
+						<a
+							href="#"
+							class="header__account header__btn _mob-hidden"
+							aria-label="Account"
+						>
+							<svg
+								width="20"
+								height="20"
+								viewBox="0 0 20 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M9.99999 9.72948C9.16666 9.72948 8.47232 9.44815 7.91699 8.88548C7.36099 8.32348 7.08299 7.63248 7.08299 6.81248C7.08299 5.97915 7.36099 5.28482 7.91699 4.72948C8.47232 4.17415 9.16666 3.89648 9.99999 3.89648C10.8333 3.89648 11.5277 4.17415 12.083 4.72948C12.639 5.28482 12.917 5.97915 12.917 6.81248C12.917 7.63248 12.639 8.32348 12.083 8.88548C11.5277 9.44815 10.8333 9.72948 9.99999 9.72948ZM14.958 16.0835H5.04199C4.66665 16.0835 4.34699 15.9518 4.08299 15.6885C3.81966 15.4245 3.68799 15.1118 3.68799 14.7505V14.1675C3.68799 13.7508 3.80232 13.3722 4.03099 13.0315C4.26032 12.6915 4.55565 12.4312 4.91699 12.2505C5.73632 11.8758 6.57666 11.5875 7.43799 11.3855C8.29866 11.1842 9.15266 11.0835 9.99999 11.0835C10.8473 11.0835 11.705 11.1842 12.573 11.3855C13.441 11.5875 14.2707 11.8758 15.062 12.2505C15.4373 12.4312 15.7397 12.6915 15.969 13.0315C16.1977 13.3722 16.312 13.7508 16.312 14.1675V14.7505C16.312 15.1118 16.1803 15.4245 15.917 15.6885C15.653 15.9518 15.3333 16.0835 14.958 16.0835ZM5.02099 14.7505H14.979V14.1675C14.979 14.0008 14.934 13.8548 14.844 13.7295C14.7533 13.6048 14.6317 13.5145 14.479 13.4585C13.785 13.1392 13.0523 12.8858 12.281 12.6985C11.5103 12.5112 10.75 12.4175 9.99999 12.4175C9.24999 12.4175 8.48966 12.5145 7.71899 12.7085C6.94766 12.9032 6.21499 13.1532 5.52099 13.4585C5.36832 13.5278 5.24666 13.6218 5.15599 13.7405C5.06599 13.8585 5.02099 14.0008 5.02099 14.1675V14.7505ZM9.99999 8.39648C10.4587 8.39648 10.837 8.24715 11.135 7.94848C11.4337 7.64982 11.583 7.27115 11.583 6.81248C11.583 6.35448 11.4337 5.97615 11.135 5.67748C10.837 5.37882 10.4587 5.22948 9.99999 5.22948C9.54132 5.22948 9.16299 5.37882 8.86499 5.67748C8.56632 5.97615 8.41699 6.35448 8.41699 6.81248C8.41699 7.27115 8.56632 7.64982 8.86499 7.94848C9.16299 8.24715 9.54132 8.39648 9.99999 8.39648Z"
+									fill="white"
+								/>
+							</svg>
+						</a>
+
+						<div class="header__favorites-wrap">
+							<button
+								class="header__btn header__trigger"
+								aria-label="Favorites"
+							>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M8.93801 16.375L7.89601 15.417C6.32667 14.0143 4.96534 12.667 3.81201 11.375C2.65934 10.0837 2.08301 8.69467 2.08301 7.208C2.08301 6.028 2.48601 5.03167 3.29201 4.219C4.09734 3.40633 5.09734 3 6.29201 3C6.97201 3 7.63501 3.15633 8.28101 3.469C8.92701 3.78167 9.50001 4.25733 10 4.896C10.486 4.25733 11.052 3.78167 11.698 3.469C12.344 3.15633 13.0073 3 13.688 3C14.882 3 15.8853 3.40633 16.698 4.219C17.5107 5.03167 17.917 6.028 17.917 7.208C17.917 8.708 17.3163 10.1143 16.115 11.427C14.913 12.7397 13.5137 14.1253 11.917 15.584L11.062 16.354C10.7567 16.632 10.4027 16.7677 10 16.761C9.59734 16.7537 9.24334 16.625 8.93801 16.375ZM9.35401 6.188C9.07667 5.674 8.65667 5.23633 8.09401 4.875C7.53134 4.51433 6.93067 4.334 6.29201 4.334C5.45867 4.334 4.77101 4.60467 4.22901 5.146C3.68767 5.68733 3.41701 6.37467 3.41701 7.208C3.41701 7.87467 3.62867 8.56567 4.05201 9.281C4.47601 9.99633 5.01067 10.7047 5.65601 11.406C6.30201 12.1073 6.99667 12.7913 7.74001 13.458C8.48267 14.1247 9.18034 14.7637 9.83301 15.375C9.87501 15.417 9.93067 15.438 10 15.438C10.0693 15.438 10.125 15.417 10.167 15.375C10.8057 14.7917 11.5 14.1597 12.25 13.479C13 12.7983 13.6943 12.1007 14.333 11.386C14.9723 10.6707 15.5073 9.95867 15.938 9.25C16.368 8.542 16.583 7.86133 16.583 7.208C16.583 6.37467 16.3087 5.68733 15.76 5.146C15.212 4.60467 14.5213 4.334 13.688 4.334C13.0487 4.334 12.4583 4.51433 11.917 4.875C11.375 5.23633 10.9583 5.674 10.667 6.188C10.597 6.29867 10.4997 6.389 10.375 6.459C10.2503 6.52833 10.1253 6.563 10 6.563C9.88867 6.563 9.77067 6.52833 9.64601 6.459C9.52067 6.389 9.42334 6.29867 9.35401 6.188Z"
+										fill="white"
+									/>
+								</svg>
+							</button>
+
+							<div class="header__favorites header-dropdown">
+								<button
+									class="header-dropdown__close"
+									aria-label="Close"
+								></button>
+
+								<span class="header-dropdown__heading"
+									>You have 2 items in your favorites</span
+								>
+
+								<div class="header-dropdown__products">
+									<div class="header-dropdown__product">
+										<div
+											class="header-dropdown__product-image"
+											style="background-image: url('img/main/product-plug.png')"
+										></div>
+
+										<div class="header-dropdown__product-data">
+											<div class="header-dropdown__product-row">
+												<span class="header-dropdown__product-title"
+													>Beoplay A9</span
+												>
+												<span class="header-dropdown__product-price"
+													>$2,749</span
+												>
+											</div>
+
+											<div class="header-dropdown__product-row">
+												<span class="header-dropdown__product-amount"
+													>2 pcs</span
+												>
+												<span class="header-dropdown__product-total"
+													>$5,749</span
+												>
+											</div>
+										</div>
+
+										<button
+											class="header-dropdown__product-delete"
+											aria-label="Delete product"
+										></button>
+									</div>
+
+									<div class="header-dropdown__product">
+										<div
+											class="header-dropdown__product-image"
+											style="background-image: url('img/main/product-plug.png')"
+										></div>
+
+										<div class="header-dropdown__product-data">
+											<div class="header-dropdown__product-row">
+												<span class="header-dropdown__product-title"
+													>Beoplay A9</span
+												>
+												<span class="header-dropdown__product-price"
+													>$2,749</span
+												>
+											</div>
+
+											<div class="header-dropdown__product-row">
+												<span class="header-dropdown__product-amount"
+													>2 pcs</span
+												>
+												<span class="header-dropdown__product-total"
+													>$5,749</span
+												>
+											</div>
+										</div>
+
+										<button
+											class="header-dropdown__product-delete"
+											aria-label="Delete product"
+										></button>
+									</div>
+
+									<div class="header-dropdown__product">
+										<div
+											class="header-dropdown__product-image"
+											style="background-image: url('img/main/product-plug.png')"
+										></div>
+
+										<div class="header-dropdown__product-data">
+											<div class="header-dropdown__product-row">
+												<span class="header-dropdown__product-title"
+													>Beoplay A9</span
+												>
+												<span class="header-dropdown__product-price"
+													>$2,749</span
+												>
+											</div>
+
+											<div class="header-dropdown__product-row">
+												<span class="header-dropdown__product-amount"
+													>2 pcs</span
+												>
+												<span class="header-dropdown__product-total"
+													>$5,749</span
+												>
+											</div>
+										</div>
+
+										<button
+											class="header-dropdown__product-delete"
+											aria-label="Delete product"
+										></button>
+									</div>
+
+									<div class="header-dropdown__product">
+										<div
+											class="header-dropdown__product-image"
+											style="background-image: url('img/main/product-plug.png')"
+										></div>
+
+										<div class="header-dropdown__product-data">
+											<div class="header-dropdown__product-row">
+												<span class="header-dropdown__product-title"
+													>Beoplay A9</span
+												>
+												<span class="header-dropdown__product-price"
+													>$2,749</span
+												>
+											</div>
+
+											<div class="header-dropdown__product-row">
+												<span class="header-dropdown__product-amount"
+													>2 pcs</span
+												>
+												<span class="header-dropdown__product-total"
+													>$5,749</span
+												>
+											</div>
+										</div>
+
+										<button
+											class="header-dropdown__product-delete"
+											aria-label="Delete product"
+										></button>
 									</div>
 								</div>
 
-								<img
-									src="img/footer__image.png"
-									alt="Image"
-									class="footer__form-img"
-								/>
-							</form>
-						</div>
-
-						<div class="footer__container-inner _right">
-							<nav class="footer__menu">
-								<div class="footer__menu-col">
-									<h3 class="footer__menu-caption">Company</h3>
+								<div class="header-dropdown__bottom">
+									<div class="header-dropdown__total">
+										<span class="header-dropdown__total-caption"
+											>Order favorites</span
+										>
+										<span class="header-dropdown__total-price">$3,499</span>
+									</div>
 
 									<a
-										href="index.html"
-										class="footer__menu-item transition-link _underline-animate"
-									>
-										Home
-									</a>
-									<a
-										href="about-us.html"
-										class="footer__menu-item transition-link _underline-animate"
-									>
-										About us
-									</a>
-									<a
-										href="about-us.html#s-partners"
-										class="footer__menu-item transition-link _underline-animate"
-									>
-										Partners
-									</a>
-									<a
-										href="catalog.html"
-										class="footer__menu-item transition-link _underline-animate"
-									>
-										Courses
-									</a>
-									<a
-										href="gallery.html"
-										class="footer__menu-item transition-link _underline-animate"
-									>
-										Gallery
-									</a>
-									<a
-										href="for-teachers.html"
-										class="footer__menu-item transition-link _underline-animate"
-									>
-										For teachers
+										href="#"
+										class="header-dropdown__btn btn"
+										aria-label="Favorites"
+										>Go to favorites
 									</a>
 								</div>
+							</div>
+						</div>
 
-								<div class="footer__menu-col">
-									<h3 class="footer__menu-caption">Popular courses</h3>
+						<div class="header__cart-wrap">
+							<button
+								class="header__btn header__trigger has-product"
+								aria-label="Cart"
+							>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M6.81819 18C6.39554 18 6.03646 17.8551 5.74095 17.5653C5.44475 17.2748 5.29666 16.9223 5.29666 16.5077C5.29666 16.0932 5.44475 15.7411 5.74095 15.4512C6.03646 15.1607 6.39554 15.0155 6.81819 15.0155C7.24084 15.0155 7.59992 15.1607 7.89544 15.4512C8.19163 15.7411 8.33973 16.0932 8.33973 16.5077C8.33973 16.9223 8.19163 17.2748 7.89544 17.5653C7.59992 17.8551 7.24084 18 6.81819 18ZM14.9959 18C14.574 18 14.2149 17.8551 13.9187 17.5653C13.6225 17.2748 13.4744 16.9223 13.4744 16.5077C13.4744 16.0932 13.6225 15.7411 13.9187 15.4512C14.2149 15.1607 14.574 15.0155 14.9959 15.0155C15.4193 15.0155 15.7787 15.1607 16.0742 15.4512C16.3697 15.7411 16.5175 16.0932 16.5175 16.5077C16.5175 16.9223 16.3697 17.2748 16.0742 17.5653C15.7787 17.8551 15.4193 18 14.9959 18ZM5.93063 4.96363L8.00195 9.27526H13.8761L16.1584 5.19144C16.1868 5.1364 16.1868 5.08467 16.1584 5.03625C16.1307 4.98783 16.0884 4.96363 16.0316 4.96363H5.93063ZM6.79689 13.8963C6.23358 13.8963 5.80384 13.6512 5.50764 13.1611C5.21213 12.6703 5.20537 12.1832 5.48736 11.6997L6.6488 9.60654L3.60573 3.32612H2.65527C2.48621 3.32612 2.33474 3.26046 2.20084 3.12914C2.06695 2.99782 2 2.84263 2 2.66356C2 2.48382 2.06695 2.3283 2.20084 2.19698C2.33474 2.06566 2.49332 2 2.67658 2H3.96582C4.12068 2 4.26134 2.03814 4.38779 2.11441C4.51493 2.19001 4.61366 2.30376 4.68399 2.45564L5.27536 3.63751H17.0672C17.448 3.63751 17.7191 3.78607 17.8808 4.08319C18.0431 4.38032 18.0397 4.6738 17.8706 4.96363L15.1237 9.81347C14.9824 10.0622 14.792 10.2555 14.5527 10.3935C14.3133 10.5321 14.0526 10.6014 13.7706 10.6014H7.64185L6.734 12.2598C6.6914 12.3288 6.68768 12.3977 6.72284 12.4667C6.75801 12.5357 6.81785 12.5702 6.90238 12.5702H15.8632C16.0323 12.5702 16.1837 12.6391 16.3176 12.7771C16.4509 12.9157 16.5175 13.0679 16.5175 13.2337C16.5175 13.4135 16.4509 13.5687 16.3176 13.6993C16.1837 13.8306 16.0252 13.8963 15.8419 13.8963H6.79689ZM8.00195 9.27526H13.8761H8.00195Z"
+										fill="white"
+									/>
+								</svg>
+							</button>
+
+							<div class="header__cart header-dropdown">
+								<button
+									class="header-dropdown__close"
+									aria-label="Close"
+								></button>
+
+								<span class="header-dropdown__heading"
+									>You have 2 items in your cart</span
+								>
+
+								<div class="header-dropdown__products">
+									<div class="header-dropdown__product">
+										<div
+											class="header-dropdown__product-image"
+											style="background-image: url('img/main/product-plug.png')"
+										></div>
+
+										<div class="header-dropdown__product-data">
+											<div class="header-dropdown__product-row">
+												<span class="header-dropdown__product-title"
+													>Beoplay A9</span
+												>
+												<span class="header-dropdown__product-price"
+													>$2,749</span
+												>
+											</div>
+
+											<div class="header-dropdown__product-row">
+												<span class="header-dropdown__product-amount"
+													>2 pcs</span
+												>
+												<span class="header-dropdown__product-total"
+													>$5,749</span
+												>
+											</div>
+										</div>
+
+										<button
+											class="header-dropdown__product-delete"
+											aria-label="Delete product"
+										></button>
+									</div>
+
+									<div class="header-dropdown__product">
+										<div
+											class="header-dropdown__product-image"
+											style="background-image: url('img/main/product-plug.png')"
+										></div>
+
+										<div class="header-dropdown__product-data">
+											<div class="header-dropdown__product-row">
+												<span class="header-dropdown__product-title"
+													>Beoplay A9</span
+												>
+												<span class="header-dropdown__product-price"
+													>$2,749</span
+												>
+											</div>
+
+											<div class="header-dropdown__product-row">
+												<span class="header-dropdown__product-amount"
+													>2 pcs</span
+												>
+												<span class="header-dropdown__product-total"
+													>$5,749</span
+												>
+											</div>
+										</div>
+
+										<button
+											class="header-dropdown__product-delete"
+											aria-label="Delete product"
+										></button>
+									</div>
+
+									<div class="header-dropdown__product">
+										<div
+											class="header-dropdown__product-image"
+											style="background-image: url('img/main/product-plug.png')"
+										></div>
+
+										<div class="header-dropdown__product-data">
+											<div class="header-dropdown__product-row">
+												<span class="header-dropdown__product-title"
+													>Beoplay A9</span
+												>
+												<span class="header-dropdown__product-price"
+													>$2,749</span
+												>
+											</div>
+
+											<div class="header-dropdown__product-row">
+												<span class="header-dropdown__product-amount"
+													>2 pcs</span
+												>
+												<span class="header-dropdown__product-total"
+													>$5,749</span
+												>
+											</div>
+										</div>
+
+										<button
+											class="header-dropdown__product-delete"
+											aria-label="Delete product"
+										></button>
+									</div>
+
+									<div class="header-dropdown__product">
+										<div
+											class="header-dropdown__product-image"
+											style="background-image: url('img/main/product-plug.png')"
+										></div>
+
+										<div class="header-dropdown__product-data">
+											<div class="header-dropdown__product-row">
+												<span class="header-dropdown__product-title"
+													>Beoplay A9</span
+												>
+												<span class="header-dropdown__product-price"
+													>$2,749</span
+												>
+											</div>
+
+											<div class="header-dropdown__product-row">
+												<span class="header-dropdown__product-amount"
+													>2 pcs</span
+												>
+												<span class="header-dropdown__product-total"
+													>$5,749</span
+												>
+											</div>
+										</div>
+
+										<button
+											class="header-dropdown__product-delete"
+											aria-label="Delete product"
+										></button>
+									</div>
+								</div>
+
+								<div class="header-dropdown__bottom">
+									<div class="header-dropdown__total">
+										<span class="header-dropdown__total-caption"
+											>Order total</span
+										>
+										<span class="header-dropdown__total-price">$3,499</span>
+									</div>
 
 									<a
-										href="course-app_prototyping.html"
-										class="footer__menu-item transition-link _underline-animate"
-									>
-										App Prototyping
-									</a>
-									<a
-										href="course-data_analysis_excel.html"
-										class="footer__menu-item transition-link _underline-animate"
-									>
-										Data Analysis in Excel
-									</a>
-									<a
-										href="course-data_driven_web_app.html"
-										class="footer__menu-item transition-link _underline-animate"
-									>
-										Data-Driven Web Application
-									</a>
-									<a
-										href="course-digital_media.html"
-										class="footer__menu-item transition-link _underline-animate"
-									>
-										Digital Media
-									</a>
-									<a
-										href="course-game_dev.html"
-										class="footer__menu-item transition-link _underline-animate"
-									>
-										Game Development
-									</a>
-									<a
-										href="course-machine_learning.html"
-										class="footer__menu-item transition-link _underline-animate"
-									>
-										Machine Learning
+										href="#"
+										class="header-dropdown__btn btn"
+										aria-label="Cart"
+										>Go to cart
 									</a>
 								</div>
-							</nav>
-
-							<a href="#" class="footer__scroll-top">
-								<img src="img/icons/chevron-up.svg" alt="Icon" />
-							</a>
-						</div>
-					</div>
-
-					<div class="footer__container _bottom">
-						<div class="footer__container-inner _left">
-							<p class="footer__copyrights">© 2017-2022 All Rights Reserved</p>
-						</div>
-
-						<div class="footer__container-inner _right">
-							<div class="footer__bottom-links">
-								<a href="privacy-policy.html" class="footer__bottom-link">
-									Privacy Policy
-								</a>
-
-								<a href="terms-conditions.html" class="footer__bottom-link">
-									Terms & Conditions
-								</a>
-							</div>
-
-							<div class="footer__social">
-								<a
-									href="https://www.facebook.com/emplab.org"
-									target="_blank"
-									class="footer__social-item"
-								>
-									<img src="img/icons/facebook_gray.svg" alt="Facebook" />
-								</a>
-
-								<a
-									href="https://www.instagram.com/empowermentlab/?hl=en"
-									target="_blank"
-									class="footer__social-item"
-								>
-									<img src="img/icons/instagram_gray.svg" alt="Instagram" />
-								</a>
-
-								<a
-									href="https://www.linkedin.com/company/empowerment-lab-geneva/about/"
-									target="_blank"
-									class="footer__social-item"
-								>
-									<img src="img/icons/linkedin_gray.svg" alt="LinkedIn" />
-								</a>
-
-								<a
-									href="https://www.youtube.com/channel/UCuODYaVOHWEJNpdOkyP3TAQ"
-									target="_blank"
-									class="footer__social-item"
-								>
-									<img src="img/icons/youtube_gray.svg" alt="Youtube" />
-								</a>
 							</div>
 						</div>
-					</div>
+					</nav>
 				</div>
-			</footer>
-		</div>
-		<!-- Попап курс -->
-		<div class="popup popup-notice mfp-hide">
-			<h2 class="popup__title">
-				You want to attend the course but the
-				<span>timing doesn't fit</span>
-				your availability?
-			</h2>
+			</div>
+		</header>
 
-			<p class="popup__text">
-				<span>No problem!</span>
-				Contact us and let us know what time would work better for you, and we
-				will try to accommodate.
-			</p>
+		<nav class="breadcrumbs container">
+			<a
+				href="#"
+				class="breadcrumbs__item"
+				>Home</a
+			>
 
-			<form class="popup__form">
-				<!-- Hidden Required Fields -->
-				<input
-					type="hidden"
-					name="form_subject"
-					value="Wants to attend the course, but the timing doesn't fit"
-				/>
-				<!-- END Hidden Required Fields -->
+			<a
+				href="#"
+				class="breadcrumbs__item active"
+				>Privacy policy</a
+			>
+		</nav>
 
-				<label class="input-wrapper popup__form-input">
-					<span>Phone</span>
-					<input type="tel" name="Telephone number" required />
-				</label>
+		<section class="info">
+			<div class="container">
+				<h1 class="h1 info__title">Privatumo ir slapukų politika</h1>
 
-				<label class="input-wrapper popup__form-input">
-					<span>E-mail</span>
-					<input type="email" name="E-mail" required />
-				</label>
-
-				<div class="popup__form-bottom">
-					<p class="popup__form-links">
-						By continuing, you acknowledge and agree to our
-						<a href="terms-conditions.html" class="popup__form-link">
-							Terms & Conditions
-						</a>
-						and
-						<a href="privacy-policy.html" class="popup__form-link">
-							Privacy Policy.
-						</a>
+				<div class="info__wrapper">
+					<p class="info__text _bold">1. Bendrosios nuostatos</p>
+					<p class="info__text">
+						1.1. Privatumo politika reglamentuoja UAB „N33“ elektroninės
+						parduotuvės kliento pagrindinius asmens duomenų rinkimo, tvarkymo ir
+						saugojimo principus bei tvarką.
 					</p>
-
-					<button type="submit" class="popup__form-btn btn _black">Send</button>
+					<p class="info__text">
+						1.2. Tvarkydami kliento asmens duomenis, mes laikomės 2016 m.
+						balandžio 27 d. Europos Parlamento ir Tarybos reglamento (ES)
+						2016/679 dėl fizinių asmenų apsaugos tvarkant asmens duomenis ir dėl
+						laisvo tokių duomenų judėjimo ir kuriuo panaikinama Direktyva
+						95/46/EB (toliau – „Reglamentas“), Lietuvos Respublikos asmens
+						duomenų teisinės apsaugos įstatymo (toliau – „ADTAĮ“), Lietuvos
+						Respublikos elektroninių ryšių įstatymo (toliau – „ERĮ“) ir kitų
+						tiesiogiai taikomų teisės aktų, reglamentuojančių asmens duomenų
+						apsaugą, nuostatų, taip pat duomenų apsaugos priežiūros institucijų
+						(Lietuvoje – Valstybinės duomenų apsaugos inspekcijos) nurodymų.
+					</p>
+					<p class="info__text">
+						1.3. Elektroninėje parduotuvėje www.bongai.lt klientas, nurodydamas
+						savo asmens duomenis, sutinka, kad UAB „N33“ juos valdys ir tvarkys
+						šioje privatumo politikoje bei teisės aktuose numatytais tikslais,
+						priemonėmis ir tvarka.
+					</p>
 				</div>
-			</form>
 
-			<div class="popup__bottom">
-				<div class="popup__bottom-inner">
-					<img
-						src="img/icons/popup-pin.png"
-						alt="Icon"
-						class="popup__bottom-icon"
-					/>
+				<div class="info__wrapper">
+					<p class="info__text _bold">
+						2. Asmens duomenų rinkimas, tvarkymas, saugojimas
+					</p>
+					<p class="info__text">
+						2.1. UAB „N33“ asmens duomenis renka konkrečiai apibrėžtais ir
+						teisėtais tikslais, sąžiningai, konfidencialiai. Asmens duomenys
+						saugojami ne ilgiau, nei to reikalauja LR įstatymai.
+					</p>
+					<p class="info__text">
+						2.2. Kliento asmens duomenys (vardas, pavardė, adresas, telefono
+						numeris, elektroninio pašto adresas) renkami ir tvarkomi pateiktam
+						užsakymui įvykdyti (išrašyti sąskaitas faktūras; organizuoti prekių
+						pristatymą; vykdyti kitus užsakyme numatytus įsipareigojimus)
+					</p>
+				</div>
 
-					<p class="popup__bottom-text">
-						Plus, we can organise a course for your group that is tailored
-						specifically to your needs.
+				<div class="info__wrapper">
+					<p class="info__text _bold">
+						3. Asmens duomenų perdavimas trečiosioms šalims
+					</p>
+					<p class="info__text">
+						3.1.Pardavėjas turi teisę perduoti informaciją trečioms šalims, tik
+						punkto 2.2 tikslams pasiekti.
+					</p>
+				</div>
+
+				<div class="info__wrapper">
+					<p class="info__text _bold">
+						4. Asmens duomenų pakeitimas ar atnaujinimas
+					</p>
+					<p class="info__text">
+						4.1 Klientas turi teisę bet kada keisti ir/ar atnaujinti
+						registracijos formoje pateiktą informaciją pranešdamas apie tai
+						adresu info@bongai.lt arba telefonu +370 688 26512.
 					</p>
 				</div>
 			</div>
-		</div>
-		<!-- eof -->
+		</section>
 
-		<!-- Попап перезвон -->
-		<div class="popup popup-callback mfp-hide">
-			<h2 class="popup__title">
-				<span>Any</span>
-				questions?
-			</h2>
+		<footer class="footer">
+			<div class="container">
+				<a
+					href="#"
+					class="footer__logo"
+					aria-label="Go to main page"
+				>
+					<img
+						src="img/logo.svg"
+						alt="Logo"
+					/>
+				</a>
 
-			<p class="popup__text">
-				We would like to talk to you! Leave your phone number and we will call
-				you back.
-			</p>
+				<div class="footer__container">
+					<nav class="footer__menu">
+						<div class="footer__menu-col">
+							<a
+								href="#"
+								class="footer__menu-item"
+								aria-label="Menu link"
+								>About us</a
+							>
 
-			<form class="popup__form form-contact">
-				<!-- Hidden Required Fields -->
-				<input type="hidden" name="form_subject" value="Callback" />
-				<!-- END Hidden Required Fields -->
+							<a
+								href="#"
+								class="footer__menu-item"
+								aria-label="Menu link"
+								>Contacts</a
+							>
 
-				<label class="input-wrapper popup__form-input">
-					<span>Phone</span>
-					<input type="tel" name="Telephone number" required />
-				</label>
+							<a
+								href="#"
+								class="footer__menu-item"
+								aria-label="Menu link"
+								>FAQ</a
+							>
+						</div>
 
-				<div class="popup__form-bottom">
-					<p class="popup__form-links">
-						By continuing, you acknowledge and agree to our
-						<a href="terms-conditions.html" class="popup__form-link">
-							Terms & Conditions
+						<div class="footer__menu-col">
+							<a
+								href="#"
+								class="footer__menu-item"
+								aria-label="Menu link"
+								>About us</a
+							>
+
+							<a
+								href="#"
+								class="footer__menu-item"
+								aria-label="Menu link"
+								>Contacts</a
+							>
+
+							<a
+								href="#"
+								class="footer__menu-item"
+								aria-label="Menu link"
+								>FAQ</a
+							>
+						</div>
+
+						<div class="footer__menu-col">
+							<a
+								href="#"
+								class="footer__menu-item"
+								aria-label="Menu link"
+								>Order payment</a
+							>
+
+							<a
+								href="#"
+								class="footer__menu-item"
+								aria-label="Menu link"
+								>Delivery</a
+							>
+
+							<a
+								href="#"
+								class="footer__menu-item"
+								aria-label="Menu link"
+								>Returns</a
+							>
+
+							<a
+								href="#"
+								class="footer__menu-item"
+								aria-label="Menu link"
+								>Privacy Policy</a
+							>
+
+							<a
+								href="#"
+								class="footer__menu-item"
+								aria-label="Menu link"
+								>Cookie policy</a
+							>
+						</div>
+					</nav>
+
+					<div class="footer__social">
+						<a
+							href="#"
+							class="footer__social-link"
+							aria-label="Social link"
+						>
+							<img
+								src="img/icons/facebook.svg"
+								alt="Facebook"
+							/>
 						</a>
-						and
-						<a href="privacy-policy.html" class="popup__form-link">
-							Privacy Policy.
-						</a>
-					</p>
 
-					<button type="submit" class="popup__form-btn btn _accent">
-						Call me back
-					</button>
+						<a
+							href="#"
+							class="footer__social-link"
+							aria-label="Social link"
+						>
+							<img
+								src="img/icons/instagram.svg"
+								alt="Instagram"
+							/>
+						</a>
+
+						<a
+							href="#"
+							class="footer__social-link"
+							aria-label="Social link"
+						>
+							<img
+								src="img/icons/twitter.svg"
+								alt="Twitter"
+							/>
+						</a>
+
+						<a
+							href="#"
+							class="footer__social-link"
+							aria-label="Social link"
+						>
+							<img
+								src="img/icons/youtube.svg"
+								alt="Youtube"
+							/>
+						</a>
+
+						<a
+							href="#"
+							class="footer__social-link"
+							aria-label="Social link"
+						>
+							<img
+								src="img/icons/pinterest.svg"
+								alt="Pinterest"
+							/>
+						</a>
+					</div>
 				</div>
-			</form>
-		</div>
-		<!-- eof -->
 
-		<!-- Попап успес -->
-		<div class="popup popup-success popup-success-default mfp-hide">
-			<h2 class="popup__title">
-				<span>Thank</span>
-				you!
-			</h2>
-
-			<p class="popup__text">
-				Thank you for your interest. We will be in touch shortly.
-			</p>
-
-			<img src="img/success-hand.png" alt="Image" class="popup__image" />
-		</div>
-		<!-- eof -->
-
-		<!-- Попап успес перезвон -->
-		<div class="popup popup-success popup-success-callback mfp-hide">
-			<h2 class="popup__title">
-				<span>Thank</span>
-				you!
-			</h2>
-
-			<p class="popup__text">
-				We will call you back within
-				<span>24 hours.</span>
-			</p>
-
-			<img src="img/success-clock.png" alt="Image" class="popup__image" />
-		</div>
-		<!-- eof -->
+				<span class="footer__copyrights">© HOOkah SALE 2022</span>
+			</div>
+		</footer>
 	</body>
 </html>
