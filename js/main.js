@@ -58,6 +58,15 @@ function closeModal(space, elem) {
 		headerPosition()
 	})
 }
+
+if ($(window).width() >= 992) {
+	closeModal(headerBtnWrapper, langsDropdown)
+	closeModal(headerBtnWrapper, cart)
+	closeModal(headerBtnWrapper, favorites)
+	closeModal(catalogBtn, sort)
+	closeModal(catalogBtn, filter)
+	closeModal(headerMenu, menu)
+}
 // ----------
 
 // Header modals
@@ -77,10 +86,6 @@ $('.header__trigger').on('click', function () {
 	$('.header__trigger').not(this).removeClass('active').next().hide()
 })
 
-closeModal(headerBtnWrapper, langsDropdown)
-closeModal(headerBtnWrapper, cart)
-closeModal(headerBtnWrapper, favorites)
-
 $('.header__menu-category').on('click', function () {
 	$(this).addClass('active').siblings().removeClass('active')
 	langsDropdown.hide()
@@ -91,7 +96,7 @@ $('.header__menu-category').on('click', function () {
 
 	backBtnVisible()
 })
-closeModal(headerMenu, menu)
+
 // ----------
 
 // Header search
@@ -123,11 +128,13 @@ function backBtnVisible() {
 
 $('.header__hamburger').on('click', function () {
 	$('.header__hamburger-menu').addClass('active')
+	body.addClass('overflow-y_hidden')
 })
 
 $('.header__hamburger-close').on('click', function () {
 	$('.header__hamburger-menu').removeClass('active')
 	$('.header__hamburger-back').hide()
+	body.removeClass('overflow-y_hidden')
 
 	langs.hide()
 	cart.hide()
@@ -295,9 +302,6 @@ $('.catalog__filter-close').on('click', function () {
 	$('.catalog__btn-heading').removeClass('active')
 	$('.catalog__btn-dropdown').hide()
 })
-
-closeModal(catalogBtn, sort)
-closeModal(catalogBtn, filter)
 // ----------
 
 // Catalog text dropdown
