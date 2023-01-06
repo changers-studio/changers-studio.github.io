@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Google maps -->
-		<script
-			async
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBumKe9hBynJY3HP3BLuZbWximERNcqGZ0&libraries=places&callback=initMap"
-		></script>
 		<meta charset="utf-8" />
 
 		<title>Hoo shop | FAQ</title>
@@ -40,7 +35,7 @@
 		<!-- libs css -->
 		<link
 			rel="stylesheet"
-			href="libs/swiper/swiper-bundle.css"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 		/>
 
 		<!-- main css -->
@@ -63,7 +58,7 @@
 
 		<script
 			defer
-			src="libs/swiper/swiper-bundle.min.js"
+			src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
 		></script>
 
 		<!-- main js -->
@@ -79,2126 +74,2128 @@
 	</head>
 
 	<body class="isnohome p-faq">
-		<header class="header">
-			<div class="container">
-				<div class="header__container">
-					<button
-						class="header__hamburger"
-						aria-label="Hamburger"
-					>
-						<svg
-							width="20"
-							height="20"
-							viewBox="0 0 20 20"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M3.37501 14.6885C3.19434 14.6885 3.03801 14.6225 2.90601 14.4905C2.77401 14.3585 2.70801 14.2022 2.70801 14.0215C2.70801 13.8548 2.77401 13.7018 2.90601 13.5625C3.03801 13.4238 3.19434 13.3545 3.37501 13.3545H16.625C16.8057 13.3545 16.962 13.4238 17.094 13.5625C17.226 13.7018 17.292 13.8548 17.292 14.0215C17.292 14.2022 17.226 14.3585 17.094 14.4905C16.962 14.6225 16.8057 14.6885 16.625 14.6885H3.37501ZM3.37501 10.6675C3.19434 10.6675 3.03801 10.6015 2.90601 10.4695C2.77401 10.3375 2.70801 10.1812 2.70801 10.0005C2.70801 9.81983 2.77401 9.6635 2.90601 9.5315C3.03801 9.3995 3.19434 9.3335 3.37501 9.3335H16.625C16.8057 9.3335 16.962 9.3995 17.094 9.5315C17.226 9.6635 17.292 9.81983 17.292 10.0005C17.292 10.1812 17.226 10.3375 17.094 10.4695C16.962 10.6015 16.8057 10.6675 16.625 10.6675H3.37501ZM3.37501 6.6465C3.19434 6.6465 3.03801 6.57717 2.90601 6.4385C2.77401 6.29917 2.70801 6.14617 2.70801 5.9795C2.70801 5.79883 2.77401 5.6425 2.90601 5.5105C3.03801 5.3785 3.19434 5.3125 3.37501 5.3125H16.625C16.8057 5.3125 16.962 5.3785 17.094 5.5105C17.226 5.6425 17.292 5.79883 17.292 5.9795C17.292 6.14617 17.226 6.29917 17.094 6.4385C16.962 6.57717 16.8057 6.6465 16.625 6.6465H3.37501Z"
-								fill="white"
-							/>
-						</svg>
-					</button>
+		<div class="body-inner">
+			<header class="header">
+				<div class="container">
+					<div class="header__container">
+						<button
+							class="header__hamburger icon"
+							aria-label="Hamburger menu"
+						></button>
 
+						<a
+							href="index.html"
+							class="header__logo"
+							aria-label="Go to main page"
+						>
+							<img
+								src="img/logo.svg"
+								alt="Logo"
+								class="header__logo-img _white"
+							/>
+
+							<img
+								src="img/logo_black.svg"
+								alt="Logo"
+								class="header__logo-img _black"
+							/>
+						</a>
+
+						<div class="header__hamburger-menu">
+							<button
+								class="header__hamburger-back"
+								aria-label="Back"
+							></button>
+
+							<button
+								class="header__hamburger-close"
+								aria-label="Close"
+							></button>
+
+							<ul class="header__menu">
+								<li class="header__menu-category">Hookahs</li>
+
+								<li class="header__menu-category">Bases</li>
+
+								<li class="header__menu-category">bowls</li>
+
+								<li class="header__menu-category">HMDs</li>
+
+								<li class="header__menu-category">Hoses</li>
+
+								<li class="header__menu-category">Shisha</li>
+
+								<li class="header__menu-category">Coals</li>
+
+								<li class="header__menu-category">Other accessories</li>
+
+								<li class="header__menu-category">Blog</li>
+
+								<li class="header__menu-category">Contacts</li>
+							</ul>
+
+							<div class="header__hamburger-btns">
+								<button
+									class="header__hamburger-btn header__hamburger-search"
+									aria-label="Search"
+								>
+									<img
+										src="img/icons/search.svg"
+										alt="Search"
+										class="header__hamburger-icon"
+									/>
+
+									<span>Search</span>
+								</button>
+
+								<button
+									class="header__hamburger-btn header__hamburger-lang"
+									aria-label="Choose language"
+								>
+									<span class="header__hamburger-icon">EN</span>
+
+									<span>Language</span>
+								</button>
+
+								<a
+									href="#"
+									class="header__hamburger-btn"
+								>
+									<img
+										src="img/icons/user.svg"
+										alt="User"
+										class="header__hamburger-icon"
+									/>
+
+									<span>Account</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="header__menu-dropdown">
+							<span class="header__hamburger-title">hookahs</span>
+
+							<nav class="header__menu-container">
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>All Hookahs</a
+									>
+								</div>
+
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>Alpha Hookah</a
+									>
+								</div>
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>BigMaks</a
+									>
+								</div>
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>El Bomber</a
+									>
+								</div>
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>Hoob</a
+									>
+								</div>
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>Karma</a
+									>
+								</div>
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>Maklaud</a
+									>
+								</div>
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>Nube Unique</a
+									>
+								</div>
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>Sky Hookah</a
+									>
+								</div>
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>Totem</a
+									>
+								</div>
+
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>Wookah</a
+									>
+								</div>
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>Y.K.A.P.</a
+									>
+								</div>
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>Хулиган</a
+									>
+								</div>
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>Totem</a
+									>
+								</div>
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>Wookah</a
+									>
+								</div>
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>Y.K.A.P.</a
+									>
+								</div>
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>Хулиган</a
+									>
+								</div>
+								<div class="header__menu-item">
+									<a
+										class="header__menu-link"
+										href="#"
+										aria-label="Menu link"
+										>Y.K.A.P.</a
+									>
+								</div>
+							</nav>
+						</div>
+
+						<nav class="header__btn-wrapper">
+							<form class="header__search">
+								<span class="header__hamburger-title">Search</span>
+
+								<div class="header__search-container">
+									<input
+										type="text"
+										name="Search"
+										class="header__search-input"
+										autocomplete="off"
+										placeholder="Search..."
+									/>
+
+									<button
+										type="button"
+										class="header__search-btn header__btn"
+										aria-label="Search"
+									>
+										<span class="header__search-icon icon"></span>
+									</button>
+								</div>
+
+								<div class="header__search-result">
+									<div class="header__search-section">
+										<p class="header__search-title">Manufacturer</p>
+
+										<a
+											href="#"
+											class="header__search-item"
+										>
+											<img
+												src="img/main/bose.png"
+												alt="Logo"
+												class="header__search-img"
+											/>
+
+											<span>Bose</span>
+										</a>
+									</div>
+
+									<div class="header__search-section">
+										<p class="header__search-title">Categories</p>
+
+										<a
+											href="#"
+											class="header__search-item"
+										>
+											<span>Boseries</span>
+										</a>
+
+										<a
+											href="#"
+											class="header__search-item"
+										>
+											<span>Boseries</span>
+										</a>
+
+										<a
+											href="#"
+											class="header__search-item"
+										>
+											<span>Boseries</span>
+										</a>
+
+										<a
+											href="#"
+											class="header__search-item"
+										>
+											<span>Boseries</span>
+										</a>
+									</div>
+
+									<div class="header__search-section">
+										<p class="header__search-title">Products</p>
+
+										<a
+											href="#"
+											class="header__search-item"
+										>
+											<img
+												src="img/main/product-plug.png"
+												alt="Logo"
+												class="header__search-img"
+											/>
+
+											<span>Boserie 1 Pro</span>
+
+											<span class="_ml-auto">$199</span>
+										</a>
+
+										<a
+											href="#"
+											class="header__search-item"
+										>
+											<img
+												src="img/main/product-plug.png"
+												alt="Logo"
+												class="header__search-img"
+											/>
+
+											<span>Boserie 2 Standart</span>
+
+											<span class="_ml-auto">$199</span>
+										</a>
+
+										<a
+											href="#"
+											class="header__search-item"
+										>
+											<img
+												src="img/main/product-plug.png"
+												alt="Logo"
+												class="header__search-img"
+											/>
+
+											<span>Boserie 1 Pro</span>
+
+											<span class="_ml-auto">$199</span>
+										</a>
+									</div>
+
+									<div class="header__search-section">
+										<p class="header__search-title">Blog</p>
+
+										<a
+											href="#"
+											class="header__search-item"
+										>
+											<img
+												src="img/main/product-plug.png"
+												alt="Logo"
+												class="header__search-img"
+											/>
+
+											<span
+												>Boseries new product line is a very optimistic</span
+											>
+										</a>
+
+										<a
+											href="#"
+											class="header__search-item"
+										>
+											<img
+												src="img/main/product-plug.png"
+												alt="Logo"
+												class="header__search-img"
+											/>
+
+											<span
+												>Boseries new product line is a very optimistic</span
+											>
+										</a>
+									</div>
+								</div>
+							</form>
+
+							<div class="header__langs">
+								<span class="header__hamburger-title">Language</span>
+
+								<div
+									class="header__langs-heading header__btn header__trigger _mob-hidden"
+								>
+									en
+								</div>
+
+								<div class="header__langs-dropdown">
+									<a
+										href="#"
+										class="header__langs-item"
+										aria-label="Latvia"
+									>
+										<img
+											class="header__langs-flag"
+											src="img/main/flags/latvia.svg"
+											alt="Latvia"
+										/>
+
+										Latvian
+									</a>
+
+									<a
+										href="#"
+										class="header__langs-item"
+										aria-label="Russian"
+									>
+										<img
+											class="header__langs-flag"
+											src="img/main/flags/rus.svg"
+											alt="Russian"
+										/>
+
+										Russian
+									</a>
+
+									<a
+										href="#"
+										class="header__langs-item"
+										aria-label="Estonian"
+									>
+										<img
+											class="header__langs-flag"
+											src="img/main/flags/estonia.svg"
+											alt="Estonian"
+										/>
+
+										Estonian
+									</a>
+
+									<a
+										href="#"
+										class="header__langs-item"
+										aria-label="Lithuanian"
+									>
+										<img
+											class="header__langs-flag"
+											src="img/main/flags/lithuania.svg"
+											alt="Lithuanian"
+										/>
+
+										Lithuanian
+									</a>
+								</div>
+							</div>
+
+							<a
+								href="#"
+								class="header__account header__btn _mob-hidden"
+								aria-label="Account"
+							>
+								<span class="header__account-icon icon"></span>
+							</a>
+
+							<div class="header__favorites-wrap">
+								<button
+									class="header__btn header__trigger"
+									aria-label="Favorites"
+								>
+									<span class="header__favorites-icon icon"></span>
+								</button>
+
+								<div class="header__favorites header-dropdown">
+									<button
+										class="header-dropdown__close"
+										aria-label="Close"
+									></button>
+
+									<span class="header-dropdown__heading"
+										>You have 2 items in your favorites</span
+									>
+
+									<div class="header-dropdown__products">
+										<div class="header-dropdown__product">
+											<div
+												class="header-dropdown__product-image"
+												style="
+													background-image: url('img/main/product-plug.png');
+												"
+											></div>
+
+											<div class="header-dropdown__product-data">
+												<div class="header-dropdown__product-row">
+													<span class="header-dropdown__product-title"
+														>Beoplay A9</span
+													>
+													<span class="header-dropdown__product-price"
+														>$2,749</span
+													>
+												</div>
+
+												<div class="header-dropdown__product-row">
+													<span class="header-dropdown__product-amount"
+														>2 pcs</span
+													>
+													<span class="header-dropdown__product-total"
+														>$5,749</span
+													>
+												</div>
+											</div>
+
+											<button
+												class="header-dropdown__product-delete"
+												aria-label="Delete product"
+											></button>
+										</div>
+
+										<div class="header-dropdown__product">
+											<div
+												class="header-dropdown__product-image"
+												style="
+													background-image: url('img/main/product-plug.png');
+												"
+											></div>
+
+											<div class="header-dropdown__product-data">
+												<div class="header-dropdown__product-row">
+													<span class="header-dropdown__product-title"
+														>Beoplay A9</span
+													>
+													<span class="header-dropdown__product-price"
+														>$2,749</span
+													>
+												</div>
+
+												<div class="header-dropdown__product-row">
+													<span class="header-dropdown__product-amount"
+														>2 pcs</span
+													>
+													<span class="header-dropdown__product-total"
+														>$5,749</span
+													>
+												</div>
+											</div>
+
+											<button
+												class="header-dropdown__product-delete"
+												aria-label="Delete product"
+											></button>
+										</div>
+
+										<div class="header-dropdown__product">
+											<div
+												class="header-dropdown__product-image"
+												style="
+													background-image: url('img/main/product-plug.png');
+												"
+											></div>
+
+											<div class="header-dropdown__product-data">
+												<div class="header-dropdown__product-row">
+													<span class="header-dropdown__product-title"
+														>Beoplay A9</span
+													>
+													<span class="header-dropdown__product-price"
+														>$2,749</span
+													>
+												</div>
+
+												<div class="header-dropdown__product-row">
+													<span class="header-dropdown__product-amount"
+														>2 pcs</span
+													>
+													<span class="header-dropdown__product-total"
+														>$5,749</span
+													>
+												</div>
+											</div>
+
+											<button
+												class="header-dropdown__product-delete"
+												aria-label="Delete product"
+											></button>
+										</div>
+
+										<div class="header-dropdown__product">
+											<div
+												class="header-dropdown__product-image"
+												style="
+													background-image: url('img/main/product-plug.png');
+												"
+											></div>
+
+											<div class="header-dropdown__product-data">
+												<div class="header-dropdown__product-row">
+													<span class="header-dropdown__product-title"
+														>Beoplay A9</span
+													>
+													<span class="header-dropdown__product-price"
+														>$2,749</span
+													>
+												</div>
+
+												<div class="header-dropdown__product-row">
+													<span class="header-dropdown__product-amount"
+														>2 pcs</span
+													>
+													<span class="header-dropdown__product-total"
+														>$5,749</span
+													>
+												</div>
+											</div>
+
+											<button
+												class="header-dropdown__product-delete"
+												aria-label="Delete product"
+											></button>
+										</div>
+									</div>
+
+									<div class="header-dropdown__bottom">
+										<div class="header-dropdown__total">
+											<span class="header-dropdown__total-caption"
+												>Order favorites</span
+											>
+											<span class="header-dropdown__total-price">$3,499</span>
+										</div>
+
+										<a
+											href="#"
+											class="header-dropdown__btn btn"
+											aria-label="Favorites"
+											>Go to favorites
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="header__cart-wrap">
+								<button
+									class="header__btn header__trigger has-product"
+									aria-label="Cart"
+								>
+									<span class="header__cart-icon icon"></span>
+								</button>
+
+								<div class="header__cart header-dropdown">
+									<button
+										class="header-dropdown__close"
+										aria-label="Close"
+									></button>
+
+									<span class="header-dropdown__heading"
+										>You have 2 items in your cart</span
+									>
+
+									<div class="header-dropdown__products">
+										<div class="header-dropdown__product">
+											<div
+												class="header-dropdown__product-image"
+												style="
+													background-image: url('img/main/product-plug.png');
+												"
+											></div>
+
+											<div class="header-dropdown__product-data">
+												<div class="header-dropdown__product-row">
+													<span class="header-dropdown__product-title"
+														>Beoplay A9</span
+													>
+													<span class="header-dropdown__product-price"
+														>$2,749</span
+													>
+												</div>
+
+												<div class="header-dropdown__product-row">
+													<span class="header-dropdown__product-amount"
+														>2 pcs</span
+													>
+													<span class="header-dropdown__product-total"
+														>$5,749</span
+													>
+												</div>
+											</div>
+
+											<button
+												class="header-dropdown__product-delete"
+												aria-label="Delete product"
+											></button>
+										</div>
+
+										<div class="header-dropdown__product">
+											<div
+												class="header-dropdown__product-image"
+												style="
+													background-image: url('img/main/product-plug.png');
+												"
+											></div>
+
+											<div class="header-dropdown__product-data">
+												<div class="header-dropdown__product-row">
+													<span class="header-dropdown__product-title"
+														>Beoplay A9</span
+													>
+													<span class="header-dropdown__product-price"
+														>$2,749</span
+													>
+												</div>
+
+												<div class="header-dropdown__product-row">
+													<span class="header-dropdown__product-amount"
+														>2 pcs</span
+													>
+													<span class="header-dropdown__product-total"
+														>$5,749</span
+													>
+												</div>
+											</div>
+
+											<button
+												class="header-dropdown__product-delete"
+												aria-label="Delete product"
+											></button>
+										</div>
+
+										<div class="header-dropdown__product">
+											<div
+												class="header-dropdown__product-image"
+												style="
+													background-image: url('img/main/product-plug.png');
+												"
+											></div>
+
+											<div class="header-dropdown__product-data">
+												<div class="header-dropdown__product-row">
+													<span class="header-dropdown__product-title"
+														>Beoplay A9</span
+													>
+													<span class="header-dropdown__product-price"
+														>$2,749</span
+													>
+												</div>
+
+												<div class="header-dropdown__product-row">
+													<span class="header-dropdown__product-amount"
+														>2 pcs</span
+													>
+													<span class="header-dropdown__product-total"
+														>$5,749</span
+													>
+												</div>
+											</div>
+
+											<button
+												class="header-dropdown__product-delete"
+												aria-label="Delete product"
+											></button>
+										</div>
+
+										<div class="header-dropdown__product">
+											<div
+												class="header-dropdown__product-image"
+												style="
+													background-image: url('img/main/product-plug.png');
+												"
+											></div>
+
+											<div class="header-dropdown__product-data">
+												<div class="header-dropdown__product-row">
+													<span class="header-dropdown__product-title"
+														>Beoplay A9</span
+													>
+													<span class="header-dropdown__product-price"
+														>$2,749</span
+													>
+												</div>
+
+												<div class="header-dropdown__product-row">
+													<span class="header-dropdown__product-amount"
+														>2 pcs</span
+													>
+													<span class="header-dropdown__product-total"
+														>$5,749</span
+													>
+												</div>
+											</div>
+
+											<button
+												class="header-dropdown__product-delete"
+												aria-label="Delete product"
+											></button>
+										</div>
+									</div>
+
+									<div class="header-dropdown__bottom">
+										<div class="header-dropdown__total">
+											<span class="header-dropdown__total-caption"
+												>Order total</span
+											>
+											<span class="header-dropdown__total-price">$3,499</span>
+										</div>
+
+										<a
+											href="#"
+											class="header-dropdown__btn btn"
+											aria-label="Cart"
+											>Go to cart
+										</a>
+									</div>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<nav class="breadcrumbs container">
+				<a
+					href="#"
+					class="breadcrumbs__item"
+					>Home</a
+				>
+
+				<a
+					href="#"
+					class="breadcrumbs__item active"
+					>faq</a
+				>
+			</nav>
+
+			<section class="faq">
+				<div class="container">
+					<h1 class="h1 faq__title">FAQ topics</h1>
+
+					<div class="tabs">
+						<div class="tabs__captions scrollbar-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide tabs__captions-item active">
+									<p class="tabs__captions-heading">Topic 1</p>
+									<p class="tabs__captions-text">
+										Our new collaboration with Balenciaga, the Speaker Bag
+									</p>
+								</div>
+
+								<div class="swiper-slide tabs__captions-item">
+									<p class="tabs__captions-heading">Topic 1</p>
+									<p class="tabs__captions-text">
+										Our new collaboration with Balenciaga, the Speaker Bag
+									</p>
+								</div>
+
+								<div class="swiper-slide tabs__captions-item">
+									<p class="tabs__captions-heading">Topic 1</p>
+									<p class="tabs__captions-text">
+										Our new collaboration with Balenciaga, the Speaker Bag
+									</p>
+								</div>
+
+								<div class="swiper-slide tabs__captions-item">
+									<p class="tabs__captions-heading">Topic 1</p>
+									<p class="tabs__captions-text">
+										Our new collaboration with Balenciaga, the Speaker Bag
+									</p>
+								</div>
+
+								<div class="swiper-slide tabs__captions-item">
+									<p class="tabs__captions-heading">Topic 1</p>
+									<p class="tabs__captions-text">
+										Our new collaboration with Balenciaga, the Speaker Bag
+									</p>
+								</div>
+
+								<div class="swiper-slide tabs__captions-item">
+									<p class="tabs__captions-heading">Topic 1</p>
+									<p class="tabs__captions-text">
+										Our new collaboration with Balenciaga, the Speaker Bag
+									</p>
+								</div>
+
+								<div class="swiper-slide tabs__captions-item">
+									<p class="tabs__captions-heading">Topic 1</p>
+									<p class="tabs__captions-text">
+										Our new collaboration with Balenciaga, the Speaker Bag
+									</p>
+								</div>
+
+								<div class="swiper-slide tabs__captions-item">
+									<p class="tabs__captions-heading">Topic 1</p>
+									<p class="tabs__captions-text">
+										Our new collaboration with Balenciaga, the Speaker Bag
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-scrollbar"></div>
+						</div>
+
+						<div class="tabs__content active">
+							<h2 class="faq__heading">Topic 1</h2>
+
+							<div class="faq__dropdown">
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle active">
+										Sound
+									</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tabs__content">
+							<h2 class="faq__heading">Topic 1</h2>
+
+							<div class="faq__dropdown">
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tabs__content">
+							<h2 class="faq__heading">Topic 2</h2>
+
+							<div class="faq__dropdown">
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tabs__content">
+							<h2 class="faq__heading">Topic 3</h2>
+
+							<div class="faq__dropdown">
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tabs__content">
+							<h2 class="faq__heading">Topic 4</h2>
+
+							<div class="faq__dropdown">
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tabs__content">
+							<h2 class="faq__heading">Topic 5</h2>
+
+							<div class="faq__dropdown">
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tabs__content">
+							<h2 class="faq__heading">Topic 6</h2>
+
+							<div class="faq__dropdown">
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tabs__content">
+							<h2 class="faq__heading">Topic 7</h2>
+
+							<div class="faq__dropdown">
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<div class="dropdown__heading dropdown-toggle">Sound</div>
+
+									<div class="dropdown__body">
+										<p class="dropdown__text">
+											To start using Beolink Multiroom, you will need to:
+										</p>
+
+										<p class="dropdown__text">1. Plug in your speaker.</p>
+										<p class="dropdown__text">
+											2. In your smartphone or tablet, make sure you are
+											connected to your Wi-Fi network (please note that your
+											Bang & Olufsen products should be connected to the same
+											Wi-Fi network as your device).
+										</p>
+										<p class="dropdown__text">
+											3. Download the Bang & Olufsen App and follow the
+											instructions to create a profile.
+										</p>
+										<p class="dropdown__text">
+											4. In the App, add your speakers and follow the
+											instructions to add them to the network.
+										</p>
+										<p class="dropdown__text">
+											5. Then, go to the multiroom tab and push + to select the
+											speakers you want to play music on. Now you can start
+											playing music and more on your speakers.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<div class="container">
 					<a
-						href="index.html"
-						class="header__logo"
+						href="#"
+						class="footer__logo"
 						aria-label="Go to main page"
 					>
 						<img
 							src="img/logo.svg"
 							alt="Logo"
-							class="header__logo-img _white"
-						/>
-
-						<img
-							src="img/logo_black.svg"
-							alt="Logo"
-							class="header__logo-img _black"
 						/>
 					</a>
 
-					<div class="header__hamburger-menu">
-						<button
-							class="header__hamburger-back"
-							aria-label="Back"
-						></button>
+					<div class="footer__container">
+						<nav class="footer__menu">
+							<div class="footer__menu-col">
+								<a
+									href="#"
+									class="footer__menu-item"
+									aria-label="Menu link"
+									>About us</a
+								>
 
-						<button
-							class="header__hamburger-close"
-							aria-label="Close"
-						></button>
+								<a
+									href="#"
+									class="footer__menu-item"
+									aria-label="Menu link"
+									>Contacts</a
+								>
 
-						<ul class="header__menu">
-							<li class="header__menu-category">Hookahs</li>
+								<a
+									href="#"
+									class="footer__menu-item"
+									aria-label="Menu link"
+									>FAQ</a
+								>
+							</div>
 
-							<li class="header__menu-category">Bases</li>
+							<div class="footer__menu-col">
+								<a
+									href="#"
+									class="footer__menu-item"
+									aria-label="Menu link"
+									>About us</a
+								>
 
-							<li class="header__menu-category">bowls</li>
+								<a
+									href="#"
+									class="footer__menu-item"
+									aria-label="Menu link"
+									>Contacts</a
+								>
 
-							<li class="header__menu-category">HMDs</li>
+								<a
+									href="#"
+									class="footer__menu-item"
+									aria-label="Menu link"
+									>FAQ</a
+								>
+							</div>
 
-							<li class="header__menu-category">Hoses</li>
+							<div class="footer__menu-col">
+								<a
+									href="#"
+									class="footer__menu-item"
+									aria-label="Menu link"
+									>Order payment</a
+								>
 
-							<li class="header__menu-category">Shisha</li>
+								<a
+									href="#"
+									class="footer__menu-item"
+									aria-label="Menu link"
+									>Delivery</a
+								>
 
-							<li class="header__menu-category">Coals</li>
+								<a
+									href="#"
+									class="footer__menu-item"
+									aria-label="Menu link"
+									>Returns</a
+								>
 
-							<li class="header__menu-category">Other accessories</li>
+								<a
+									href="#"
+									class="footer__menu-item"
+									aria-label="Menu link"
+									>Privacy Policy</a
+								>
 
-							<li class="header__menu-category">Blog</li>
+								<a
+									href="#"
+									class="footer__menu-item"
+									aria-label="Menu link"
+									>Cookie policy</a
+								>
+							</div>
+						</nav>
 
-							<li class="header__menu-category">Contacts</li>
-						</ul>
-
-						<div class="header__hamburger-btns">
-							<button
-								class="header__hamburger-btn header__hamburger-search"
-								aria-label="Search"
+						<div class="footer__social">
+							<a
+								href="#"
+								class="footer__social-link"
+								aria-label="Social link"
 							>
 								<img
-									src="img/icons/search.svg"
-									alt="Search"
-									class="header__hamburger-icon"
+									src="img/icons/facebook.svg"
+									alt="Facebook"
 								/>
-
-								<span>Search</span>
-							</button>
-
-							<button
-								class="header__hamburger-btn header__hamburger-lang"
-								aria-label="Choose language"
-							>
-								<span class="header__hamburger-icon">EN</span>
-
-								<span>Language</span>
-							</button>
+							</a>
 
 							<a
 								href="#"
-								class="header__hamburger-btn"
+								class="footer__social-link"
+								aria-label="Social link"
 							>
 								<img
-									src="img/icons/user.svg"
-									alt="User"
-									class="header__hamburger-icon"
+									src="img/icons/instagram.svg"
+									alt="Instagram"
 								/>
+							</a>
 
-								<span>Account</span>
+							<a
+								href="#"
+								class="footer__social-link"
+								aria-label="Social link"
+							>
+								<img
+									src="img/icons/twitter.svg"
+									alt="Twitter"
+								/>
+							</a>
+
+							<a
+								href="#"
+								class="footer__social-link"
+								aria-label="Social link"
+							>
+								<img
+									src="img/icons/youtube.svg"
+									alt="Youtube"
+								/>
+							</a>
+
+							<a
+								href="#"
+								class="footer__social-link"
+								aria-label="Social link"
+							>
+								<img
+									src="img/icons/pinterest.svg"
+									alt="Pinterest"
+								/>
 							</a>
 						</div>
 					</div>
 
-					<div class="header__menu-dropdown">
-						<span class="header__hamburger-title">hookahs</span>
-
-						<div class="header__menu-container">
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>All Hookahs</a
-							>
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>Alpha Hookah</a
-							>
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>BigMaks</a
-							>
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>El Bomber</a
-							>
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>Hoob</a
-							>
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>Karma</a
-							>
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>Maklaud</a
-							>
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>Nube Unique</a
-							>
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>Sky Hookah</a
-							>
-
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>Totem</a
-							>
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>Wookah</a
-							>
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>Y.K.A.P.</a
-							>
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>Хулиган</a
-							>
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>Totem</a
-							>
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>Wookah</a
-							>
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>Y.K.A.P.</a
-							>
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>Хулиган</a
-							>
-							<a
-								href="#"
-								class="header__menu-item"
-								aria-label="Menu link"
-								>Y.K.A.P.</a
-							>
-						</div>
-					</div>
-
-					<nav class="header__btn-wrapper">
-						<form class="header__search">
-							<span class="header__hamburger-title">Search</span>
-
-							<div class="header__search-container">
-								<input
-									type="search"
-									name="Search"
-									class="header__search-input"
-									autocomplete="off"
-									placeholder="Search..."
-								/>
-
-								<button
-									type="button"
-									class="header__search-btn"
-									aria-label="Search"
-								>
-									<svg
-										width="20"
-										height="20"
-										viewBox="0 0 20 20"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M15.792 16.6885L11.083 12.0005C10.625 12.3618 10.1287 12.6292 9.59401 12.8025C9.05934 12.9758 8.52101 13.0625 7.97901 13.0625C6.54834 13.0625 5.33301 12.5695 4.33301 11.5835C3.33301 10.5975 2.83301 9.38917 2.83301 7.9585C2.83301 6.54183 3.33301 5.33017 4.33301 4.3235C5.33301 3.31617 6.54834 2.8125 7.97901 2.8125C9.39567 2.8125 10.597 3.3125 11.583 4.3125C12.569 5.3125 13.062 6.52783 13.062 7.9585C13.062 8.52783 12.9787 9.08017 12.812 9.6155C12.6453 10.1502 12.3817 10.6325 12.021 11.0625L16.729 15.7925C16.8543 15.9172 16.9133 16.0665 16.906 16.2405C16.8993 16.4138 16.8333 16.5632 16.708 16.6885C16.5693 16.8272 16.4133 16.8965 16.24 16.8965C16.066 16.8965 15.9167 16.8272 15.792 16.6885ZM7.97901 11.7295C9.02101 11.7295 9.90634 11.3615 10.635 10.6255C11.3643 9.8895 11.729 9.0005 11.729 7.9585C11.729 6.90317 11.368 6.00383 10.646 5.2605C9.92334 4.51783 9.03434 4.1465 7.97901 4.1465C6.90967 4.1465 6.00701 4.51783 5.27101 5.2605C4.53501 6.00383 4.16701 6.90317 4.16701 7.9585C4.16701 9.0145 4.53501 9.90683 5.27101 10.6355C6.00701 11.3648 6.90967 11.7295 7.97901 11.7295Z"
-											fill="white"
-										/>
-									</svg>
-								</button>
-							</div>
-
-							<div class="header__search-result">
-								<div class="header__search-section">
-									<p class="header__search-title">Manufacturer</p>
-
-									<a
-										href="#"
-										class="header__search-item"
-									>
-										<img
-											src="img/main/bose.png"
-											alt="Logo"
-											class="header__search-img"
-										/>
-
-										<span>Bose</span>
-									</a>
-								</div>
-
-								<div class="header__search-section">
-									<p class="header__search-title">Categories</p>
-
-									<a
-										href="#"
-										class="header__search-item"
-									>
-										<span>Boseries</span>
-									</a>
-
-									<a
-										href="#"
-										class="header__search-item"
-									>
-										<span>Boseries</span>
-									</a>
-
-									<a
-										href="#"
-										class="header__search-item"
-									>
-										<span>Boseries</span>
-									</a>
-
-									<a
-										href="#"
-										class="header__search-item"
-									>
-										<span>Boseries</span>
-									</a>
-								</div>
-
-								<div class="header__search-section">
-									<p class="header__search-title">Products</p>
-
-									<a
-										href="#"
-										class="header__search-item"
-									>
-										<img
-											src="img/main/product-plug.png"
-											alt="Logo"
-											class="header__search-img"
-										/>
-
-										<span>Boserie 1 Pro</span>
-
-										<span class="_ml-auto">$199</span>
-									</a>
-
-									<a
-										href="#"
-										class="header__search-item"
-									>
-										<img
-											src="img/main/product-plug.png"
-											alt="Logo"
-											class="header__search-img"
-										/>
-
-										<span>Boserie 2 Standart</span>
-
-										<span class="_ml-auto">$199</span>
-									</a>
-
-									<a
-										href="#"
-										class="header__search-item"
-									>
-										<img
-											src="img/main/product-plug.png"
-											alt="Logo"
-											class="header__search-img"
-										/>
-
-										<span>Boserie 1 Pro</span>
-
-										<span class="_ml-auto">$199</span>
-									</a>
-								</div>
-
-								<div class="header__search-section">
-									<p class="header__search-title">Blog</p>
-
-									<a
-										href="#"
-										class="header__search-item"
-									>
-										<img
-											src="img/main/product-plug.png"
-											alt="Logo"
-											class="header__search-img"
-										/>
-
-										<span>Boseries new product line is a very optimistic</span>
-									</a>
-
-									<a
-										href="#"
-										class="header__search-item"
-									>
-										<img
-											src="img/main/product-plug.png"
-											alt="Logo"
-											class="header__search-img"
-										/>
-
-										<span>Boseries new product line is a very optimistic</span>
-									</a>
-								</div>
-							</div>
-						</form>
-
-						<div class="header__langs">
-							<span class="header__hamburger-title">Language</span>
-
-							<div
-								class="header__langs-heading header__btn header__trigger _mob-hidden"
-							>
-								en
-							</div>
-
-							<div class="header__langs-dropdown">
-								<a
-									href="#"
-									class="header__langs-item"
-									aria-label="Latvia"
-								>
-									<img
-										class="header__langs-flag"
-										src="img/main/flags/latvia.svg"
-										alt="Latvia"
-									/>
-
-									Latvian
-								</a>
-
-								<a
-									href="#"
-									class="header__langs-item"
-									aria-label="Russian"
-								>
-									<img
-										class="header__langs-flag"
-										src="img/main/flags/rus.svg"
-										alt="Russian"
-									/>
-
-									Russian
-								</a>
-
-								<a
-									href="#"
-									class="header__langs-item"
-									aria-label="Estonian"
-								>
-									<img
-										class="header__langs-flag"
-										src="img/main/flags/estonia.svg"
-										alt="Estonian"
-									/>
-
-									Estonian
-								</a>
-
-								<a
-									href="#"
-									class="header__langs-item"
-									aria-label="Lithuanian"
-								>
-									<img
-										class="header__langs-flag"
-										src="img/main/flags/lithuania.svg"
-										alt="Lithuanian"
-									/>
-
-									Lithuanian
-								</a>
-							</div>
-						</div>
-
-						<a
-							href="#"
-							class="header__account header__btn _mob-hidden"
-							aria-label="Account"
-						>
-							<svg
-								width="20"
-								height="20"
-								viewBox="0 0 20 20"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M9.99999 9.72948C9.16666 9.72948 8.47232 9.44815 7.91699 8.88548C7.36099 8.32348 7.08299 7.63248 7.08299 6.81248C7.08299 5.97915 7.36099 5.28482 7.91699 4.72948C8.47232 4.17415 9.16666 3.89648 9.99999 3.89648C10.8333 3.89648 11.5277 4.17415 12.083 4.72948C12.639 5.28482 12.917 5.97915 12.917 6.81248C12.917 7.63248 12.639 8.32348 12.083 8.88548C11.5277 9.44815 10.8333 9.72948 9.99999 9.72948ZM14.958 16.0835H5.04199C4.66665 16.0835 4.34699 15.9518 4.08299 15.6885C3.81966 15.4245 3.68799 15.1118 3.68799 14.7505V14.1675C3.68799 13.7508 3.80232 13.3722 4.03099 13.0315C4.26032 12.6915 4.55565 12.4312 4.91699 12.2505C5.73632 11.8758 6.57666 11.5875 7.43799 11.3855C8.29866 11.1842 9.15266 11.0835 9.99999 11.0835C10.8473 11.0835 11.705 11.1842 12.573 11.3855C13.441 11.5875 14.2707 11.8758 15.062 12.2505C15.4373 12.4312 15.7397 12.6915 15.969 13.0315C16.1977 13.3722 16.312 13.7508 16.312 14.1675V14.7505C16.312 15.1118 16.1803 15.4245 15.917 15.6885C15.653 15.9518 15.3333 16.0835 14.958 16.0835ZM5.02099 14.7505H14.979V14.1675C14.979 14.0008 14.934 13.8548 14.844 13.7295C14.7533 13.6048 14.6317 13.5145 14.479 13.4585C13.785 13.1392 13.0523 12.8858 12.281 12.6985C11.5103 12.5112 10.75 12.4175 9.99999 12.4175C9.24999 12.4175 8.48966 12.5145 7.71899 12.7085C6.94766 12.9032 6.21499 13.1532 5.52099 13.4585C5.36832 13.5278 5.24666 13.6218 5.15599 13.7405C5.06599 13.8585 5.02099 14.0008 5.02099 14.1675V14.7505ZM9.99999 8.39648C10.4587 8.39648 10.837 8.24715 11.135 7.94848C11.4337 7.64982 11.583 7.27115 11.583 6.81248C11.583 6.35448 11.4337 5.97615 11.135 5.67748C10.837 5.37882 10.4587 5.22948 9.99999 5.22948C9.54132 5.22948 9.16299 5.37882 8.86499 5.67748C8.56632 5.97615 8.41699 6.35448 8.41699 6.81248C8.41699 7.27115 8.56632 7.64982 8.86499 7.94848C9.16299 8.24715 9.54132 8.39648 9.99999 8.39648Z"
-									fill="white"
-								/>
-							</svg>
-						</a>
-
-						<div class="header__favorites-wrap">
-							<button
-								class="header__btn header__trigger"
-								aria-label="Favorites"
-							>
-								<svg
-									width="20"
-									height="20"
-									viewBox="0 0 20 20"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M8.93801 16.375L7.89601 15.417C6.32667 14.0143 4.96534 12.667 3.81201 11.375C2.65934 10.0837 2.08301 8.69467 2.08301 7.208C2.08301 6.028 2.48601 5.03167 3.29201 4.219C4.09734 3.40633 5.09734 3 6.29201 3C6.97201 3 7.63501 3.15633 8.28101 3.469C8.92701 3.78167 9.50001 4.25733 10 4.896C10.486 4.25733 11.052 3.78167 11.698 3.469C12.344 3.15633 13.0073 3 13.688 3C14.882 3 15.8853 3.40633 16.698 4.219C17.5107 5.03167 17.917 6.028 17.917 7.208C17.917 8.708 17.3163 10.1143 16.115 11.427C14.913 12.7397 13.5137 14.1253 11.917 15.584L11.062 16.354C10.7567 16.632 10.4027 16.7677 10 16.761C9.59734 16.7537 9.24334 16.625 8.93801 16.375ZM9.35401 6.188C9.07667 5.674 8.65667 5.23633 8.09401 4.875C7.53134 4.51433 6.93067 4.334 6.29201 4.334C5.45867 4.334 4.77101 4.60467 4.22901 5.146C3.68767 5.68733 3.41701 6.37467 3.41701 7.208C3.41701 7.87467 3.62867 8.56567 4.05201 9.281C4.47601 9.99633 5.01067 10.7047 5.65601 11.406C6.30201 12.1073 6.99667 12.7913 7.74001 13.458C8.48267 14.1247 9.18034 14.7637 9.83301 15.375C9.87501 15.417 9.93067 15.438 10 15.438C10.0693 15.438 10.125 15.417 10.167 15.375C10.8057 14.7917 11.5 14.1597 12.25 13.479C13 12.7983 13.6943 12.1007 14.333 11.386C14.9723 10.6707 15.5073 9.95867 15.938 9.25C16.368 8.542 16.583 7.86133 16.583 7.208C16.583 6.37467 16.3087 5.68733 15.76 5.146C15.212 4.60467 14.5213 4.334 13.688 4.334C13.0487 4.334 12.4583 4.51433 11.917 4.875C11.375 5.23633 10.9583 5.674 10.667 6.188C10.597 6.29867 10.4997 6.389 10.375 6.459C10.2503 6.52833 10.1253 6.563 10 6.563C9.88867 6.563 9.77067 6.52833 9.64601 6.459C9.52067 6.389 9.42334 6.29867 9.35401 6.188Z"
-										fill="white"
-									/>
-								</svg>
-							</button>
-
-							<div class="header__favorites header-dropdown">
-								<button
-									class="header-dropdown__close"
-									aria-label="Close"
-								></button>
-
-								<span class="header-dropdown__heading"
-									>You have 2 items in your favorites</span
-								>
-
-								<div class="header-dropdown__products">
-									<div class="header-dropdown__product">
-										<div
-											class="header-dropdown__product-image"
-											style="background-image: url('img/main/product-plug.png')"
-										></div>
-
-										<div class="header-dropdown__product-data">
-											<div class="header-dropdown__product-row">
-												<span class="header-dropdown__product-title"
-													>Beoplay A9</span
-												>
-												<span class="header-dropdown__product-price"
-													>$2,749</span
-												>
-											</div>
-
-											<div class="header-dropdown__product-row">
-												<span class="header-dropdown__product-amount"
-													>2 pcs</span
-												>
-												<span class="header-dropdown__product-total"
-													>$5,749</span
-												>
-											</div>
-										</div>
-
-										<button
-											class="header-dropdown__product-delete"
-											aria-label="Delete product"
-										></button>
-									</div>
-
-									<div class="header-dropdown__product">
-										<div
-											class="header-dropdown__product-image"
-											style="background-image: url('img/main/product-plug.png')"
-										></div>
-
-										<div class="header-dropdown__product-data">
-											<div class="header-dropdown__product-row">
-												<span class="header-dropdown__product-title"
-													>Beoplay A9</span
-												>
-												<span class="header-dropdown__product-price"
-													>$2,749</span
-												>
-											</div>
-
-											<div class="header-dropdown__product-row">
-												<span class="header-dropdown__product-amount"
-													>2 pcs</span
-												>
-												<span class="header-dropdown__product-total"
-													>$5,749</span
-												>
-											</div>
-										</div>
-
-										<button
-											class="header-dropdown__product-delete"
-											aria-label="Delete product"
-										></button>
-									</div>
-
-									<div class="header-dropdown__product">
-										<div
-											class="header-dropdown__product-image"
-											style="background-image: url('img/main/product-plug.png')"
-										></div>
-
-										<div class="header-dropdown__product-data">
-											<div class="header-dropdown__product-row">
-												<span class="header-dropdown__product-title"
-													>Beoplay A9</span
-												>
-												<span class="header-dropdown__product-price"
-													>$2,749</span
-												>
-											</div>
-
-											<div class="header-dropdown__product-row">
-												<span class="header-dropdown__product-amount"
-													>2 pcs</span
-												>
-												<span class="header-dropdown__product-total"
-													>$5,749</span
-												>
-											</div>
-										</div>
-
-										<button
-											class="header-dropdown__product-delete"
-											aria-label="Delete product"
-										></button>
-									</div>
-
-									<div class="header-dropdown__product">
-										<div
-											class="header-dropdown__product-image"
-											style="background-image: url('img/main/product-plug.png')"
-										></div>
-
-										<div class="header-dropdown__product-data">
-											<div class="header-dropdown__product-row">
-												<span class="header-dropdown__product-title"
-													>Beoplay A9</span
-												>
-												<span class="header-dropdown__product-price"
-													>$2,749</span
-												>
-											</div>
-
-											<div class="header-dropdown__product-row">
-												<span class="header-dropdown__product-amount"
-													>2 pcs</span
-												>
-												<span class="header-dropdown__product-total"
-													>$5,749</span
-												>
-											</div>
-										</div>
-
-										<button
-											class="header-dropdown__product-delete"
-											aria-label="Delete product"
-										></button>
-									</div>
-								</div>
-
-								<div class="header-dropdown__bottom">
-									<div class="header-dropdown__total">
-										<span class="header-dropdown__total-caption"
-											>Order favorites</span
-										>
-										<span class="header-dropdown__total-price">$3,499</span>
-									</div>
-
-									<a
-										href="#"
-										class="header-dropdown__btn btn"
-										aria-label="Favorites"
-										>Go to favorites
-									</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="header__cart-wrap">
-							<button
-								class="header__btn header__trigger has-product"
-								aria-label="Cart"
-							>
-								<svg
-									width="20"
-									height="20"
-									viewBox="0 0 20 20"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M6.81819 18C6.39554 18 6.03646 17.8551 5.74095 17.5653C5.44475 17.2748 5.29666 16.9223 5.29666 16.5077C5.29666 16.0932 5.44475 15.7411 5.74095 15.4512C6.03646 15.1607 6.39554 15.0155 6.81819 15.0155C7.24084 15.0155 7.59992 15.1607 7.89544 15.4512C8.19163 15.7411 8.33973 16.0932 8.33973 16.5077C8.33973 16.9223 8.19163 17.2748 7.89544 17.5653C7.59992 17.8551 7.24084 18 6.81819 18ZM14.9959 18C14.574 18 14.2149 17.8551 13.9187 17.5653C13.6225 17.2748 13.4744 16.9223 13.4744 16.5077C13.4744 16.0932 13.6225 15.7411 13.9187 15.4512C14.2149 15.1607 14.574 15.0155 14.9959 15.0155C15.4193 15.0155 15.7787 15.1607 16.0742 15.4512C16.3697 15.7411 16.5175 16.0932 16.5175 16.5077C16.5175 16.9223 16.3697 17.2748 16.0742 17.5653C15.7787 17.8551 15.4193 18 14.9959 18ZM5.93063 4.96363L8.00195 9.27526H13.8761L16.1584 5.19144C16.1868 5.1364 16.1868 5.08467 16.1584 5.03625C16.1307 4.98783 16.0884 4.96363 16.0316 4.96363H5.93063ZM6.79689 13.8963C6.23358 13.8963 5.80384 13.6512 5.50764 13.1611C5.21213 12.6703 5.20537 12.1832 5.48736 11.6997L6.6488 9.60654L3.60573 3.32612H2.65527C2.48621 3.32612 2.33474 3.26046 2.20084 3.12914C2.06695 2.99782 2 2.84263 2 2.66356C2 2.48382 2.06695 2.3283 2.20084 2.19698C2.33474 2.06566 2.49332 2 2.67658 2H3.96582C4.12068 2 4.26134 2.03814 4.38779 2.11441C4.51493 2.19001 4.61366 2.30376 4.68399 2.45564L5.27536 3.63751H17.0672C17.448 3.63751 17.7191 3.78607 17.8808 4.08319C18.0431 4.38032 18.0397 4.6738 17.8706 4.96363L15.1237 9.81347C14.9824 10.0622 14.792 10.2555 14.5527 10.3935C14.3133 10.5321 14.0526 10.6014 13.7706 10.6014H7.64185L6.734 12.2598C6.6914 12.3288 6.68768 12.3977 6.72284 12.4667C6.75801 12.5357 6.81785 12.5702 6.90238 12.5702H15.8632C16.0323 12.5702 16.1837 12.6391 16.3176 12.7771C16.4509 12.9157 16.5175 13.0679 16.5175 13.2337C16.5175 13.4135 16.4509 13.5687 16.3176 13.6993C16.1837 13.8306 16.0252 13.8963 15.8419 13.8963H6.79689ZM8.00195 9.27526H13.8761H8.00195Z"
-										fill="white"
-									/>
-								</svg>
-							</button>
-
-							<div class="header__cart header-dropdown">
-								<button
-									class="header-dropdown__close"
-									aria-label="Close"
-								></button>
-
-								<span class="header-dropdown__heading"
-									>You have 2 items in your cart</span
-								>
-
-								<div class="header-dropdown__products">
-									<div class="header-dropdown__product">
-										<div
-											class="header-dropdown__product-image"
-											style="background-image: url('img/main/product-plug.png')"
-										></div>
-
-										<div class="header-dropdown__product-data">
-											<div class="header-dropdown__product-row">
-												<span class="header-dropdown__product-title"
-													>Beoplay A9</span
-												>
-												<span class="header-dropdown__product-price"
-													>$2,749</span
-												>
-											</div>
-
-											<div class="header-dropdown__product-row">
-												<span class="header-dropdown__product-amount"
-													>2 pcs</span
-												>
-												<span class="header-dropdown__product-total"
-													>$5,749</span
-												>
-											</div>
-										</div>
-
-										<button
-											class="header-dropdown__product-delete"
-											aria-label="Delete product"
-										></button>
-									</div>
-
-									<div class="header-dropdown__product">
-										<div
-											class="header-dropdown__product-image"
-											style="background-image: url('img/main/product-plug.png')"
-										></div>
-
-										<div class="header-dropdown__product-data">
-											<div class="header-dropdown__product-row">
-												<span class="header-dropdown__product-title"
-													>Beoplay A9</span
-												>
-												<span class="header-dropdown__product-price"
-													>$2,749</span
-												>
-											</div>
-
-											<div class="header-dropdown__product-row">
-												<span class="header-dropdown__product-amount"
-													>2 pcs</span
-												>
-												<span class="header-dropdown__product-total"
-													>$5,749</span
-												>
-											</div>
-										</div>
-
-										<button
-											class="header-dropdown__product-delete"
-											aria-label="Delete product"
-										></button>
-									</div>
-
-									<div class="header-dropdown__product">
-										<div
-											class="header-dropdown__product-image"
-											style="background-image: url('img/main/product-plug.png')"
-										></div>
-
-										<div class="header-dropdown__product-data">
-											<div class="header-dropdown__product-row">
-												<span class="header-dropdown__product-title"
-													>Beoplay A9</span
-												>
-												<span class="header-dropdown__product-price"
-													>$2,749</span
-												>
-											</div>
-
-											<div class="header-dropdown__product-row">
-												<span class="header-dropdown__product-amount"
-													>2 pcs</span
-												>
-												<span class="header-dropdown__product-total"
-													>$5,749</span
-												>
-											</div>
-										</div>
-
-										<button
-											class="header-dropdown__product-delete"
-											aria-label="Delete product"
-										></button>
-									</div>
-
-									<div class="header-dropdown__product">
-										<div
-											class="header-dropdown__product-image"
-											style="background-image: url('img/main/product-plug.png')"
-										></div>
-
-										<div class="header-dropdown__product-data">
-											<div class="header-dropdown__product-row">
-												<span class="header-dropdown__product-title"
-													>Beoplay A9</span
-												>
-												<span class="header-dropdown__product-price"
-													>$2,749</span
-												>
-											</div>
-
-											<div class="header-dropdown__product-row">
-												<span class="header-dropdown__product-amount"
-													>2 pcs</span
-												>
-												<span class="header-dropdown__product-total"
-													>$5,749</span
-												>
-											</div>
-										</div>
-
-										<button
-											class="header-dropdown__product-delete"
-											aria-label="Delete product"
-										></button>
-									</div>
-								</div>
-
-								<div class="header-dropdown__bottom">
-									<div class="header-dropdown__total">
-										<span class="header-dropdown__total-caption"
-											>Order total</span
-										>
-										<span class="header-dropdown__total-price">$3,499</span>
-									</div>
-
-									<a
-										href="#"
-										class="header-dropdown__btn btn"
-										aria-label="Cart"
-										>Go to cart
-									</a>
-								</div>
-							</div>
-						</div>
-					</nav>
+					<span class="footer__copyrights">© HOOkah SALE 2022</span>
 				</div>
-			</div>
-		</header>
-
-		<nav class="breadcrumbs container">
-			<a
-				href="#"
-				class="breadcrumbs__item"
-				>Home</a
-			>
-
-			<a
-				href="#"
-				class="breadcrumbs__item active"
-				>faq</a
-			>
-		</nav>
-
-		<section class="faq">
-			<div class="container">
-				<h1 class="h1 faq__title">FAQ topics</h1>
-
-				<div class="tabs">
-					<div class="tabs__captions scrollbar-slider">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide tabs__captions-item active">
-								<p class="tabs__captions-heading">Topic 1</p>
-								<p class="tabs__captions-text">
-									Our new collaboration with Balenciaga, the Speaker Bag
-								</p>
-							</div>
-
-							<div class="swiper-slide tabs__captions-item">
-								<p class="tabs__captions-heading">Topic 1</p>
-								<p class="tabs__captions-text">
-									Our new collaboration with Balenciaga, the Speaker Bag
-								</p>
-							</div>
-
-							<div class="swiper-slide tabs__captions-item">
-								<p class="tabs__captions-heading">Topic 1</p>
-								<p class="tabs__captions-text">
-									Our new collaboration with Balenciaga, the Speaker Bag
-								</p>
-							</div>
-
-							<div class="swiper-slide tabs__captions-item">
-								<p class="tabs__captions-heading">Topic 1</p>
-								<p class="tabs__captions-text">
-									Our new collaboration with Balenciaga, the Speaker Bag
-								</p>
-							</div>
-
-							<div class="swiper-slide tabs__captions-item">
-								<p class="tabs__captions-heading">Topic 1</p>
-								<p class="tabs__captions-text">
-									Our new collaboration with Balenciaga, the Speaker Bag
-								</p>
-							</div>
-
-							<div class="swiper-slide tabs__captions-item">
-								<p class="tabs__captions-heading">Topic 1</p>
-								<p class="tabs__captions-text">
-									Our new collaboration with Balenciaga, the Speaker Bag
-								</p>
-							</div>
-
-							<div class="swiper-slide tabs__captions-item">
-								<p class="tabs__captions-heading">Topic 1</p>
-								<p class="tabs__captions-text">
-									Our new collaboration with Balenciaga, the Speaker Bag
-								</p>
-							</div>
-
-							<div class="swiper-slide tabs__captions-item">
-								<p class="tabs__captions-heading">Topic 1</p>
-								<p class="tabs__captions-text">
-									Our new collaboration with Balenciaga, the Speaker Bag
-								</p>
-							</div>
-						</div>
-
-						<div class="swiper-scrollbar"></div>
-					</div>
-
-					<div class="tabs__content active">
-						<h2 class="faq__heading">Topic 1</h2>
-
-						<div class="faq__dropdown">
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle active">
-									Sound
-								</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="tabs__content">
-						<h2 class="faq__heading">Topic 1</h2>
-
-						<div class="faq__dropdown">
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="tabs__content">
-						<h2 class="faq__heading">Topic 2</h2>
-
-						<div class="faq__dropdown">
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="tabs__content">
-						<h2 class="faq__heading">Topic 3</h2>
-
-						<div class="faq__dropdown">
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="tabs__content">
-						<h2 class="faq__heading">Topic 4</h2>
-
-						<div class="faq__dropdown">
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="tabs__content">
-						<h2 class="faq__heading">Topic 5</h2>
-
-						<div class="faq__dropdown">
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="tabs__content">
-						<h2 class="faq__heading">Topic 6</h2>
-
-						<div class="faq__dropdown">
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="tabs__content">
-						<h2 class="faq__heading">Topic 7</h2>
-
-						<div class="faq__dropdown">
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-
-							<div class="dropdown">
-								<div class="dropdown__heading dropdown-toggle">Sound</div>
-
-								<div class="dropdown__body">
-									<p class="dropdown__text">
-										To start using Beolink Multiroom, you will need to:
-									</p>
-
-									<p class="dropdown__text">1. Plug in your speaker.</p>
-									<p class="dropdown__text">
-										2. In your smartphone or tablet, make sure you are connected
-										to your Wi-Fi network (please note that your Bang & Olufsen
-										products should be connected to the same Wi-Fi network as
-										your device).
-									</p>
-									<p class="dropdown__text">
-										3. Download the Bang & Olufsen App and follow the
-										instructions to create a profile.
-									</p>
-									<p class="dropdown__text">
-										4. In the App, add your speakers and follow the instructions
-										to add them to the network.
-									</p>
-									<p class="dropdown__text">
-										5. Then, go to the multiroom tab and push + to select the
-										speakers you want to play music on. Now you can start
-										playing music and more on your speakers.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<footer class="footer">
-			<div class="container">
-				<a
-					href="#"
-					class="footer__logo"
-					aria-label="Go to main page"
-				>
-					<img
-						src="img/logo.svg"
-						alt="Logo"
-					/>
-				</a>
-
-				<div class="footer__container">
-					<nav class="footer__menu">
-						<div class="footer__menu-col">
-							<a
-								href="#"
-								class="footer__menu-item"
-								aria-label="Menu link"
-								>About us</a
-							>
-
-							<a
-								href="#"
-								class="footer__menu-item"
-								aria-label="Menu link"
-								>Contacts</a
-							>
-
-							<a
-								href="#"
-								class="footer__menu-item"
-								aria-label="Menu link"
-								>FAQ</a
-							>
-						</div>
-
-						<div class="footer__menu-col">
-							<a
-								href="#"
-								class="footer__menu-item"
-								aria-label="Menu link"
-								>About us</a
-							>
-
-							<a
-								href="#"
-								class="footer__menu-item"
-								aria-label="Menu link"
-								>Contacts</a
-							>
-
-							<a
-								href="#"
-								class="footer__menu-item"
-								aria-label="Menu link"
-								>FAQ</a
-							>
-						</div>
-
-						<div class="footer__menu-col">
-							<a
-								href="#"
-								class="footer__menu-item"
-								aria-label="Menu link"
-								>Order payment</a
-							>
-
-							<a
-								href="#"
-								class="footer__menu-item"
-								aria-label="Menu link"
-								>Delivery</a
-							>
-
-							<a
-								href="#"
-								class="footer__menu-item"
-								aria-label="Menu link"
-								>Returns</a
-							>
-
-							<a
-								href="#"
-								class="footer__menu-item"
-								aria-label="Menu link"
-								>Privacy Policy</a
-							>
-
-							<a
-								href="#"
-								class="footer__menu-item"
-								aria-label="Menu link"
-								>Cookie policy</a
-							>
-						</div>
-					</nav>
-
-					<div class="footer__social">
-						<a
-							href="#"
-							class="footer__social-link"
-							aria-label="Social link"
-						>
-							<img
-								src="img/icons/facebook.svg"
-								alt="Facebook"
-							/>
-						</a>
-
-						<a
-							href="#"
-							class="footer__social-link"
-							aria-label="Social link"
-						>
-							<img
-								src="img/icons/instagram.svg"
-								alt="Instagram"
-							/>
-						</a>
-
-						<a
-							href="#"
-							class="footer__social-link"
-							aria-label="Social link"
-						>
-							<img
-								src="img/icons/twitter.svg"
-								alt="Twitter"
-							/>
-						</a>
-
-						<a
-							href="#"
-							class="footer__social-link"
-							aria-label="Social link"
-						>
-							<img
-								src="img/icons/youtube.svg"
-								alt="Youtube"
-							/>
-						</a>
-
-						<a
-							href="#"
-							class="footer__social-link"
-							aria-label="Social link"
-						>
-							<img
-								src="img/icons/pinterest.svg"
-								alt="Pinterest"
-							/>
-						</a>
-					</div>
-				</div>
-
-				<span class="footer__copyrights">© HOOkah SALE 2022</span>
-			</div>
-		</footer>
+			</footer>
+		</div>
 	</body>
 </html>

@@ -36,6 +36,27 @@ section
 	padding-right: 20px
 	padding-left: 20px
 
+.icon
+	width: 20px
+	height: 20px
+	position: relative
+	&::before, &::after
+		content: ''
+		width: 100%
+		height: 100%
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center
+		position: absolute
+		left: 0
+		top: 0
+		transition: .3s
+	&::before
+		opacity: 0
+	&::after
+		opacity: 1
+// ----------
+
 // Text styles
 .isnohome
 	padding-top: 80px
@@ -89,16 +110,21 @@ h2
 			transform: translateX(50%)
 		&:last-child::after
 			display: none
+		&::before
+			content: ''
+			width: 0
+			height: 1px
+			background-color: #000
+			position: absolute
+			bottom: 0
+			left: 0
+			transition: .3s
 		&.active
 			font-weight: 500
 			&::before
-				content: ''
 				width: 100%
-				height: 1px
-				background-color: #000
-				position: absolute
-				bottom: 0
-				left: 0
+		&:hover::before
+			width: 100%
 
 .page-nav
 	background-color: #fff
@@ -168,6 +194,7 @@ h2
 		width: 287px
 		display: block
 	.swiper-scrollbar
+		position: absolute
 		left: 50%
 		height: 4px
 		bottom: 0
@@ -367,8 +394,10 @@ input, textarea
 	&-container
 		z-index: 10
 		box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1)
-		order: 1px solid $gray
+		border: 1px solid $gray
 		border-radius: 0 0 4px 4px
+	&-item
+		border-color: $gray
 	&-icon
 		display: none
 	&-logo::after
@@ -411,6 +440,7 @@ input, textarea
 	&._transparent
 		background-color: transparent
 		color: #fff
+		box-shadow: none
 		.header
 			&__logo-img
 				&._black
@@ -429,6 +459,11 @@ input, textarea
 			&__hamburger, &__search
 				svg path
 					fill: #fff
+		.icon
+			&::before
+				opacity: 1
+			&::after
+				opacity: 0
 
 .header
 	position: fixed
@@ -438,9 +473,9 @@ input, textarea
 	z-index: 20
 	color: #000
 	background-color: #fff
-	box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1)
 	transition: .3s
 	&._squeeze
+		box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1)
 		.header__logo-img
 			height: 46px
 	&__container
@@ -449,9 +484,11 @@ input, textarea
 		justify-content: space-between
 		padding: 7px 0
 		position: relative
+		z-index: 2
 	&__logo
 		display: flex
 		position: relative
+		width: 138px
 		&-img
 			transition: .1s
 			height: 66px
@@ -510,14 +547,14 @@ input, textarea
 			display: flex
 			position: relative
 			z-index: 2
-			margin-left: 210px
+			margin-left: 230px
 			flex-direction: column
 			flex-wrap: wrap
 			align-content: flex-start
 			max-height: 400px
 		&-item
 			margin-bottom: 20px
-			margin-right: 40px
+			margin-right: 35px
 			max-width: 283px
 			width: 100%
 		&-link
@@ -552,11 +589,9 @@ input, textarea
 			left: 0
 			margin-top: 3px
 			transition: .3s
-		svg path
-			fill: #000
-			transition: .3s
-		&.active::before
-			width: 100%
+		&.active, &:hover
+			&::before
+				width: 100%
 		&-wrapper
 			display: flex
 			align-items: center
@@ -651,7 +686,7 @@ input, textarea
 	&__langs
 		&-heading
 			text-transform: uppercase
-			font-family: $second-font
+			font-family: $default-font
 			width: 20px
 			height: 20px
 			display: flex
@@ -697,13 +732,30 @@ input, textarea
 				&.has-product::after
 					width: 5px
 					height: 5px
+	&__cart
+		&-icon
+			&::before
+				background-image: url('../img/icons/cart_white.svg')
+			&::after
+				background-image: url('../img/icons/cart.svg')
+	&__favorites
+		&-icon
+			&::before
+				background-image: url('../img/icons/favorites_white.svg')
+			&::after
+				background-image: url('../img/icons/favorites.svg')
+	&__account
+		&-icon
+			&::before
+				background-image: url('../img/icons/user_white.svg')
+			&::after
+				background-image: url('../img/icons/user.svg')
 	&__hamburger
-		width: 20px
-		height: 20px
 		display: none
-		svg path
-			fill: #000
-			transition: .3s
+		&::before
+			background-image: url('../img/icons/hamburger.svg')
+		&::after
+			background-image: url('../img/icons/hamburger_black.svg')
 		&-btns
 			display: none
 		&-close, &-back
@@ -735,18 +787,27 @@ input, textarea
 			display: none
 	&__search
 		&.active
-			.header__search-input
-				width: 1020px
-				opacity: 1
-				padding-right: 40px
-				transition: .3s
+			.header__search
+				&-input
+					width: 945px
+					opacity: 1
+					padding-right: 40px
+					transition: .3s
+				&-btn::before
+					width: 0
 		&-btn
 			display: flex
 			position: relative
 			z-index: 1
+			margin-left: 0
 			svg path
 				transition: .3s
 				fill: #000
+		&-icon
+			&::before
+				background-image: url('../img/icons/search_white.svg')
+			&::after
+				background-image: url('../img/icons/search.svg')
 		&-container
 			position: relative
 		&-input
@@ -877,15 +938,21 @@ input, textarea
 		overflow: hidden
 		.swiper-pagination
 			bottom: 25px
+			display: flex
+			justify-content: center
+			align-items: center
 			&-bullet
 				border: 1.5px solid #FFFFFF
 				background-color: transparent
 				width: 8px
 				height: 8px
 				opacity: 1
+				margin-right: 12px
 				transition: .5s
 				&-active
 					background-color: #fff
+				&:last-child
+					margin-right: 0
 // ----------
 
 // Categories
@@ -953,7 +1020,7 @@ input, textarea
 		text-align: center
 		font-size: 12px
 		line-height: 1
-		font-family: $second-font
+		font-family: $default-font
 		min-width: 95px
 		text-transform: uppercase
 		margin-bottom: 10px
@@ -1033,6 +1100,9 @@ input, textarea
 		width: 390px
 
 .article
+	&:hover
+		.article__image
+			background-size: 120% 120%
 	&__image
 		display: block
 		height: 390px
@@ -1041,8 +1111,6 @@ input, textarea
 		background-size: 100% 100%
 		background-position: center
 		transition: 1s
-		&:hover
-			background-size: 120% 120%
 	&__flexbox
 		display: flex
 		justify-content: space-between
@@ -1056,7 +1124,7 @@ input, textarea
 		text-align: center
 		font-size: 12px
 		line-height: 1
-		font-family: $second-font
+		font-family: $default-font
 	&__date
 		font-size: 12px
 	&__title
@@ -1120,11 +1188,13 @@ input, textarea
 		color: #555555
 		margin-bottom: 3px
 		max-width: 700px
-		max-height: 24px
+		height: 22px
 		overflow: hidden
 		position: relative
+		transition: .3s
+		font-size: 14px
 		&.active
-			max-height: none
+			max-width: 100%
 	&__toggle
 		&-deactivator
 			display: none
@@ -1180,8 +1250,22 @@ input, textarea
 			margin-bottom: 12px
 			display: flex
 			align-items: center
+			position: relative
 			&:last-child
 				margin-bottom: 0
+			&::before
+				content: ''
+				width: 0
+				height: 2px
+				background-color: #000
+				position: absolute
+				top: 100%
+				left: 0
+				margin-top: 3px
+				transition: .3s
+			&.active, &:hover
+				&::before
+					width: 100%
 		&-icon
 			margin-right: 8px
 			flex: 0 0 auto
@@ -1322,7 +1406,7 @@ input, textarea
 			text-align: center
 			font-size: 12px
 			line-height: 1
-			font-family: $second-font
+			font-family: $default-font
 			min-width: 95px
 			text-transform: uppercase
 			margin-bottom: 20px
@@ -1843,27 +1927,25 @@ input, textarea
 	transition: border-color .3s
 	&.active
 		border-color: $gold
-		.order__top::after
+		.order__toggle
 			transform: rotate(180deg)
 	&__top
 		display: flex
 		align-items: center
 		margin-bottom: 40px
-		cursor: pointer
-		&::after
-			content: ''
-			width: 20px
-			height: 20px
-			background-image: url('../img/icons/arrow.svg')
-			background-size: cover
-			background-repeat: no-repeat
-			background-position: center
-			flex: 0 0 auto
-			margin-left: auto
-			transition: .3s
 		&-inner
 			display: flex
 			align-items: center
+	&__toggle
+		width: 20px
+		height: 20px
+		background-image: url('../img/icons/arrow.svg')
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+		flex: 0 0 auto
+		margin-left: auto
+		transition: .3s
 	&__title
 		text-transform: uppercase
 		font-size: 18px
@@ -1879,7 +1961,7 @@ input, textarea
 		text-align: center
 		font-size: 12px
 		line-height: 1
-		font-family: $second-font
+		font-family: $default-font
 		margin-left: 15px
 	&__data
 		margin-right: 10px
@@ -1909,6 +1991,8 @@ input, textarea
 	&__btn
 		padding: 10px 15px
 		width: auto
+		min-width: 148px
+		min-height: 46px
 		margin-right: 24px
 		flex: 0 0 auto
 		&:last-child
@@ -2086,16 +2170,21 @@ input, textarea
 			margin-bottom: 0
 	&__promocode
 		display: flex
+		align-items: flex-start
 		margin-bottom: 15px
 		&-input
 			width: 100%
+			height: 44px
 			&.active span
 				margin-bottom: 0
 				top: 0
 				bottom: auto
+			&.invalid
+				margin-bottom: 18px
 			span
 				font-size: 16px
 				line-height: 1
+				bottom: 40%
 			input
 				font-size: 16px
 		&-submit

@@ -13,9 +13,13 @@
 
 	// Header
 	.header
+		&._squeeze
+			.header__logo-img
+				height: 40px
 		&__logo
-			height: 40px
-			width: auto
+			width: 84px
+			&-img
+				height: 40px
 		&__menu
 			&-category
 				margin-right: 15px
@@ -24,6 +28,12 @@
 		&__langs
 			&-dropdown
 				right: 90px
+		&__search
+			&.active
+				.header__search-input
+					width: 670px
+			&-btn
+				margin-left: 0
 	// ----------
 
 	// Footer
@@ -213,7 +223,7 @@
 				text-transform: uppercase
 				text-align: center
 				font-size: 16px
-				font-family: $second-font
+				font-family: $default-font
 			&-close
 				display: flex
 			&-title
@@ -435,7 +445,6 @@
 			font-size: 24px
 			font-weight: 450
 		&__text
-			font-size: 12px
 			margin-bottom: 10px
 		&__link
 			font-size: 12px
@@ -795,6 +804,8 @@
 				margin-bottom: 10px
 			&-inner
 				margin-bottom: 10px
+		&__btn
+			min-width: auto
 		&__btns
 			.order__btn
 				width: calc(50% - 7px)

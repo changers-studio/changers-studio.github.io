@@ -1,4 +1,5 @@
 // Body padding-top
+const body = $('body')
 const headerHeights = $('.header').height()
 $(window).on('load', function () {
 	$('.isnohome').css('padding-top', headerHeights)
@@ -7,6 +8,8 @@ $(window).on('load', function () {
 
 // Header
 const header = $('.header')
+const headerBtnWrapper = $('.header__btn-wrapper')
+const headerMenu = $('.header__menu')
 const headerPosition = () => {
 	if ($(this).scrollTop() > 1) {
 		header.removeClass('_transparent').addClass('_squeeze')
@@ -30,7 +33,7 @@ header.on('mouseleave', function () {
 
 	search.removeClass('active')
 
-	$('.header__btn').removeClass('active')
+	$('.header__trigger, .header__menu-category').removeClass('active')
 })
 
 $(window).on('scroll', function () {
@@ -39,18 +42,17 @@ $(window).on('scroll', function () {
 // ----------
 
 // Close modal
-function closeModal(elem) {
-	$(document).on('mouseup', function (event) {
-		if (!header.is(event.target) && header.has(event.target).length === 0) {
-			elem.hide()
+function closeModal(space, elem) {
+	$('.body-inner').on('mouseup', function (event) {
+		if (
+			!space.is(event.target) &&
+			space.has(event.target).length === 0 &&
+			!elem.is(event.target) &&
+			elem.has(event.target).length === 0
+		) {
+			elem.hide().prev().removeClass('active')
 
-			if ($('*').is('.header__trigger')) {
-				$('.header__trigger').removeClass('active')
-			}
-
-			if ($('*').is('.catalog__btn')) {
-				$('.catalog__btn').removeClass('active')
-			}
+			$('.header__menu-category').removeClass('active')
 		}
 
 		headerPosition()
@@ -75,11 +77,12 @@ $('.header__trigger').on('click', function () {
 	$('.header__trigger').not(this).removeClass('active').next().hide()
 })
 
-closeModal(langsDropdown)
-closeModal(cart)
-closeModal(favorites)
+closeModal(headerBtnWrapper, langsDropdown)
+closeModal(headerBtnWrapper, cart)
+closeModal(headerBtnWrapper, favorites)
 
 $('.header__menu-category').on('click', function () {
+	$(this).addClass('active').siblings().removeClass('active')
 	langsDropdown.hide()
 	cart.hide()
 	favorites.hide()
@@ -88,6 +91,7 @@ $('.header__menu-category').on('click', function () {
 
 	backBtnVisible()
 })
+closeModal(headerMenu, menu)
 // ----------
 
 // Header search
@@ -273,18 +277,18 @@ $('.product__btn').on('click', function () {
 // ----------
 
 // Catalog sort/filter
+const catalogBtn = $('.catalog__btn')
 const sort = $('.catalog__sort-dropdown')
 const filter = $('.catalog__filter-dropdown')
 
 $('.catalog__btn-heading').on('click', function () {
-	$(this).addClass('active')
-	$(this).parent().find('.catalog__btn-dropdown').show()
-	$('.catalog__btn-heading')
-		.not(this)
-		.removeClass('active')
-		.parent()
-		.find('.catalog__btn-dropdown')
-		.hide()
+	$(this).toggleClass('active').next().toggle()
+	$('.catalog__btn-heading').not(this).removeClass('active').next().hide()
+})
+
+$('.catalog__sort-btn').on('click', function () {
+	$(this).addClass('active').siblings().removeClass('active')
+	$(this).parent().hide().prev().removeClass('active')
 })
 
 $('.catalog__filter-close').on('click', function () {
@@ -292,14 +296,39 @@ $('.catalog__filter-close').on('click', function () {
 	$('.catalog__btn-dropdown').hide()
 })
 
-closeModal(sort)
-// closeModal(filter)
+closeModal(catalogBtn, sort)
+closeModal(catalogBtn, filter)
 // ----------
 
 // Catalog text dropdown
-$('.catalog__toggle').on('click', function () {
-	$(this).toggleClass('active')
-	$('.catalog__text').toggleClass('active')
+$('.catalog__toggle-activator').on('click', function () {
+	$(this).parent().addClass('active')
+
+	$('.catalog__text').addClass('active')
+
+	if ($(window).width() <= 992) {
+		let catalogTextHeight = $('.catalog__text-inner').height()
+		$('.catalog__text').css('height', catalogTextHeight)
+	} else {
+		setTimeout(() => {
+			let catalogTextHeight = $('.catalog__text-inner').height()
+			$('.catalog__text').css('height', catalogTextHeight)
+		}, 300)
+	}
+	setTimeout(() => {
+		const catalogTextHeight = $('.catalog__text-inner').height()
+		$('.catalog__text').css('height', catalogTextHeight)
+	}, 300)
+})
+
+$('.catalog__toggle-deactivator').on('click', function () {
+	$(this).parent().removeClass('active')
+
+	$('.catalog__text').css('height', '24px')
+
+	setTimeout(() => {
+		$('.catalog__text').removeClass('active')
+	}, 300)
 })
 // ----------
 
@@ -393,26 +422,6 @@ $('.data__form-btn').on('click', function () {
 })
 // ----------
 
-// Form validation
-$('form').each(function () {
-	$(this).validate({
-		debug: true,
-		errorClass: 'input-error',
-		messages: {
-			'First name': {
-				required: 'First name required!',
-			},
-			'Last name': {
-				required: 'Last name required!',
-			},
-		},
-		highlight: function (element, errorClass, validClass) {
-			$(element).parents('.input-wrapper').addClass('invalid')
-		},
-	})
-})
-// ----------
-
 // Dropdown
 $('.dropdown-toggle').on('click', function () {
 	$(this).toggleClass('active').next().slideToggle()
@@ -421,6 +430,7 @@ $('.dropdown-toggle').on('click', function () {
 
 $('.payment__item-heading').on('click', function () {
 	$(this).next().show()
+	$('.payment__item-heading').not(this).next().hide()
 })
 // ----------
 
@@ -554,8 +564,12 @@ $('body').on('click', '.page-nav__item', function (event) {
 // ----------
 
 // Dropdown order
-$('.order').on('click', function () {
-	$(this).toggleClass('active').find('.order__dropdown').slideToggle()
+$('.order__toggle').on('click', function () {
+	$(this)
+		.closest('.order')
+		.toggleClass('active')
+		.find('.order__dropdown')
+		.slideToggle()
 })
 // ----------
 
@@ -575,6 +589,59 @@ if ($(window).width() <= 992 && $('*').is('.checkout__btns')) {
 }
 // ----------
 
+// Billing address
 $('.billing-address__btn').on('change', function () {
 	$('.billing-address__form').toggle()
 })
+// ----------
+
+// Input mask
+$('.input-phone').inputmask({
+	mask: '(999) 99 99 999',
+	showMaskOnHover: false,
+	placeholder: '',
+})
+
+$('.input-day').inputmask({
+	mask: '99',
+	showMaskOnHover: false,
+	placeholder: '',
+})
+
+$('.input-month').inputmask({
+	mask: '99',
+	showMaskOnHover: false,
+	placeholder: '',
+})
+$('.input-year').inputmask({
+	mask: '9999',
+	showMaskOnHover: false,
+	placeholder: '',
+})
+// ----------
+
+// Form validation
+$('form').each(function () {
+	$(this).validate({
+		debug: true,
+		errorClass: 'input-error',
+		messages: {
+			'First name': {
+				required: 'First name required!',
+			},
+			'Last name': {
+				required: 'Last name required!',
+			},
+			'Verification code': {
+				required: 'Verification code incorrect!',
+			},
+		},
+		highlight: function (element, errorClass, validClass) {
+			$(element).parents('.input-wrapper').addClass('invalid')
+		},
+		unhighlight: function (element, errorClass, validClass) {
+			$(element).parents('.input-wrapper').removeClass('invalid')
+		},
+	})
+})
+// ----------

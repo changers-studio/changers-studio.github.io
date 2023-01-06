@@ -8,9 +8,9 @@
 			height: auto
 			transition: .2s
 			&:hover
-				border-color: #000
+				border-color: $gray
 			&:active
-				border-color: #000
+				border-color: $gray
 			.select2-selection__placeholder
 				color: #000
 			.select2-selection__rendered
@@ -61,19 +61,19 @@
 				font-size: 15px
 				font-weight: 400
 				padding: 5px
-				position: relative
-				&::before
-					content: ''
-					width: 0
-					height: 1px
-					background-color: #000
-					position: absolute
-					bottom: 0
-					left: 0
-					transition: .3s
 				span
-					display: flex
+					display: inline-flex
 					align-items: center
+					position: relative
+					&::before
+						content: ''
+						width: 0
+						height: 1px
+						background-color: #000
+						position: absolute
+						bottom: 0
+						left: 0
+						transition: .3s
 					img
 						margin-right: 14px
 						position: relative
@@ -84,14 +84,14 @@
 					&.select2-results__option--selectable
 						background-color: #fff
 						color: #000
-					&:hover::before
+					&:hover span::before
 						width: 100%
 				&--selected
-					background-color: #f2f2f2 !important
+					background-color: #fff !important
 					color: #000 !important
-					&::before
+					span::before
 						width: 100%
-					&:hover
+					&:hover::before
 						background-color: #000
 						color: #fff
 
