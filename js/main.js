@@ -596,28 +596,35 @@ $('.billing-address__btn').on('change', function () {
 // ----------
 
 // Input mask
-$('.input-phone').inputmask({
-	mask: '(999) 99 99 999',
-	showMaskOnHover: false,
-	placeholder: '',
-})
+if (
+	$('*').is('.input-phone') ||
+	$('*').is('.input-day') ||
+	$('*').is('.input-month') ||
+	$('*').is('.input-year')
+) {
+	$('.input-phone').inputmask({
+		mask: '(999) 99 99 999',
+		showMaskOnHover: false,
+		placeholder: '',
+	})
 
-$('.input-day').inputmask({
-	mask: '99',
-	showMaskOnHover: false,
-	placeholder: '',
-})
+	$('.input-day').inputmask({
+		mask: '99',
+		showMaskOnHover: false,
+		placeholder: '',
+	})
 
-$('.input-month').inputmask({
-	mask: '99',
-	showMaskOnHover: false,
-	placeholder: '',
-})
-$('.input-year').inputmask({
-	mask: '9999',
-	showMaskOnHover: false,
-	placeholder: '',
-})
+	$('.input-month').inputmask({
+		mask: '99',
+		showMaskOnHover: false,
+		placeholder: '',
+	})
+	$('.input-year').inputmask({
+		mask: '9999',
+		showMaskOnHover: false,
+		placeholder: '',
+	})
+}
 // ----------
 
 // Form validation
