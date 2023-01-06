@@ -112,6 +112,16 @@
 		margin-bottom: 30px
 	// ----------
 
+	// Cookie
+	.cookie-modal
+		&__container
+			flex-direction: column
+			text-align: center
+		&__text
+			margin-bottom: 20px
+			font-size: 16px
+	// ----------
+
 	// Nav elements
 	.breadcrumbs
 		font-size: 12px
@@ -290,11 +300,14 @@
 			z-index: 21
 			display: none
 			padding: 0 24px
+			&.active
+				.header__search-input
+					width: 100%
 			&-input
 				display: block
 				width: 100%
-				border-width: 1px
 				position: static
+				opacity: 1
 			&-btn
 				margin-left: auto
 				position: absolute

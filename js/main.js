@@ -656,3 +656,9 @@ if ($(window).width() >= 992) {
 	closeModal(headerMenu, menu)
 }
 // ----------
+
+// Cookie
+$('.cookie-modal__btn').on('click', function () {
+	$('.cookie-modal').hide()
+})
+// ----------
