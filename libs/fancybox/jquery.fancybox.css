@@ -804,11 +804,13 @@ body.compensate-for-scrollbar {
 .fancybox-thumbs-x {
 	overflow-x: auto;
 	overflow-y: hidden;
+	white-space: nowrap;
 }
 
 .fancybox-show-thumbs .fancybox-thumbs {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .fancybox-thumbs__list {
@@ -822,7 +824,7 @@ body.compensate-for-scrollbar {
 	position: absolute;
 	position: relative;
 	white-space: nowrap;
-	width: 100%;
+	display: inline-block;
 }
 
 .fancybox-thumbs-x .fancybox-thumbs__list {
@@ -856,7 +858,6 @@ body.compensate-for-scrollbar {
 	width: 150px;
 	height: 150px;
 	margin: 0 12px;
-	max-width: calc(50% - 4px);
 	outline: none;
 	overflow: hidden;
 	padding: 0;
@@ -890,11 +891,19 @@ body.compensate-for-scrollbar {
 		padding: 12px 6px;
 	}
 
+	.fancybox-thumbs__list {
+		margin-left: 150px;
+	}
+
 	.fancybox-thumbs__list a {
 		margin: 0 6px;
 	}
 
 	.fancybox-show-thumbs .fancybox-stage {
 		height: calc(100% - 182px);
+	}
+
+	.fancybox-show-thumbs .fancybox-thumbs {
+		display: block;
 	}
 }

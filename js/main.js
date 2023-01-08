@@ -117,6 +117,8 @@ $('.header__hamburger-close').on('click', function () {
 	menu.hide()
 	search.hide()
 	searchResult.hide()
+
+	header.куьщмуClass('active')
 })
 
 $('.header__hamburger-back').on('click', function () {

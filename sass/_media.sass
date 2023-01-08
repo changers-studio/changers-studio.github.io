@@ -111,6 +111,11 @@
 		margin-bottom: 30px
 	// ----------
 
+	// Form elements
+	input, textarea
+		border-radius: 0
+	// ----------
+
 	// Cookie
 	.cookie-modal
 		&__container
@@ -265,7 +270,7 @@
 				margin-left: 0
 				flex-wrap: nowrap
 				overflow-y: auto
-				max-height: calc(100vh - 260px)
+				max-height: calc(100vh - 300px)
 			&-item
 				margin-bottom: 7px
 			&-link
@@ -307,6 +312,7 @@
 				width: 100%
 				position: static
 				opacity: 1
+				border-radius: 0
 			&-btn
 				margin-left: auto
 				position: absolute
@@ -467,6 +473,7 @@
 		&__sort-filter
 			top: 7px
 		&__filter
+			z-index: 30
 			&-dropdown
 				position: fixed
 				left: 50%
@@ -553,7 +560,9 @@
 				&-full
 					top: 0
 				&-view
-					bottom: 24px
+					position: absolute
+					left: 6px
+					top: 12px
 				.swiper-pagination
 					bottom: 0
 					bottom: auto
