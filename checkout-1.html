@@ -931,7 +931,7 @@
 					<h1 class="cart__title">Complete your order</h1>
 
 					<div class="cart__container checkout__container">
-						<form class="checkout cart__container-inner">
+						<div class="checkout cart__container-inner">
 							<div class="checkout__form _step-1">
 								<div class="checkout__steps">
 									<span class="checkout__steps-data _underline">1</span>
@@ -939,7 +939,7 @@
 									<span class="checkout__steps-data">3</span>
 								</div>
 
-								<div class="checkout__section">
+								<form class="checkout__section">
 									<p class="checkout__heading">Select delivery country</p>
 
 									<div class="data__select">
@@ -1135,9 +1135,9 @@
 											Billing address is the same as my delivery address
 										</span>
 									</label>
-								</div>
+								</form>
 
-								<div class="checkout__section billing-address__form">
+								<form class="checkout__section billing-address__form">
 									<p class="checkout__heading">Enter your billing address</p>
 
 									<label class="data__input input-wrapper">
@@ -1231,7 +1231,7 @@
 										<span>Search for address automatically</span>
 
 										<input
-											id="googlesearch-b"
+											id="googlesearchb"
 											type="text"
 											name="googlesearch-billing"
 											placeholder=""
@@ -1278,7 +1278,7 @@
 											required
 										/>
 									</label>
-								</div>
+								</form>
 							</div>
 
 							<div class="checkout__btns">
@@ -1289,7 +1289,7 @@
 									Next
 								</button>
 							</div>
-						</form>
+						</div>
 
 						<div class="cart__container-inner">
 							<form class="cart__promocode">
@@ -1594,7 +1594,7 @@
 
 		<!-- Google maps -->
 		<script
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initAutocomplete&libraries=places&v=weekly"
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUttyG-9e82-AdpAq9wE_nR_BZln-RAHc&callback=initAutocomplete&libraries=places&v=weekly"
 			defer
 		></script>
 	</body>

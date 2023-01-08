@@ -24,6 +24,7 @@ header.on('mouseover click', function () {
 
 header.on('mouseleave', function () {
 	headerPosition()
+	header.removeClass('active')
 
 	langsDropdown.hide()
 	cart.hide()
@@ -49,6 +50,7 @@ const favorites = $('.header__favorites')
 const menu = $('.header__menu-dropdown')
 
 $('.header__trigger').on('click', function () {
+	header.addClass('active')
 	menu.hide()
 	searchResult.hide()
 	search.removeClass('active')
@@ -65,10 +67,10 @@ $('.header__menu-category').on('click', function () {
 	favorites.hide()
 
 	menu.show()
+	header.addClass('active')
 
 	backBtnVisible()
 })
-
 // ----------
 
 // Header search
@@ -82,6 +84,7 @@ $('.header__search-btn').on('click', function () {
 	favorites.hide()
 	menu.hide()
 
+	header.addClass('active')
 	$('.header__search').addClass('active')
 	$('.header__search-input').focus()
 })
@@ -153,7 +156,6 @@ const mainSlider = new Swiper('.main__slider', {
 	loop: true,
 	spaceBetween: 30,
 	speed: 1000,
-	allowTouchMove: false,
 	effect: 'fade',
 	pagination: {
 		el: '.swiper-pagination',
@@ -180,7 +182,6 @@ const scrollbarSlider = new Swiper('.scrollbar-slider', {
 	breakpoints: {
 		992: {
 			spaceBetween: 25,
-			allowTouchMove: false,
 		},
 		0: {
 			spaceBetween: 12,
@@ -199,9 +200,9 @@ $('.scrollbar-slider').on('mouseleave', function () {
 const previewSlider = new Swiper('.product__slider', {
 	speed: 500,
 	effect: 'fade',
-	freeMode: true,
+
 	autoplay: {
-		delay: 1000,
+		delay: 2000,
 	},
 	fadeEffect: {
 		crossFade: true,
@@ -212,10 +213,10 @@ const previewSlider = new Swiper('.product__slider', {
 	},
 	breakpoints: {
 		992: {
-			allowTouchMove: false,
+			freeMode: true,
 		},
 		0: {
-			allowTouchMove: true,
+			freeMode: false,
 		},
 	},
 })
@@ -235,10 +236,9 @@ productSlider.on('mouseleave', function () {
 })
 
 const overviewSlider = new Swiper('.overview__slider', {
-	loop: true,
+	loop: false,
 	spaceBetween: 30,
 	speed: 500,
-	allowTouchMove: false,
 	autoplay: {
 		delay: 5000,
 	},
@@ -422,6 +422,22 @@ if ($('*').is('[data-fancybox="product"]')) {
 			autoStart: true,
 			axis: 'x',
 		},
+		onActivate: function (instance) {
+			const fullView = document.createElement('button')
+			fullView.classList.add('overview__slider-view')
+			$('.fancybox-thumbs').prepend(fullView)
+
+			$('.overview__slider-view').on('click', function () {
+				$.fancybox.open($('#overview360'), {
+					touch: false,
+				})
+
+				instance.close()
+			})
+
+			const observer = lozad()
+			observer.observe()
+		},
 	})
 }
 
@@ -429,18 +445,6 @@ $('.overview__slider-full').on('click', function () {
 	$('.overview__slider-item').first().trigger('click')
 })
 
-if ($('*').is('.overview__slider-view')) {
-	$('.overview__slider-view').on('click', function () {
-		$.fancybox.open($('#overview360'), {
-			touch: false,
-		})
-	})
-
-	// Lozad
-	const observer = lozad()
-	observer.observe()
-	// ----------
-}
 // ----------
 
 // FAQ tabs
@@ -458,37 +462,6 @@ $('.tabs__captions-item').on('click', function () {
 		.addClass('active')
 		.next()
 		.slideDown()
-})
-// ----------
-
-// Video
-$(window).on('load', function () {
-	function playPauseVideo() {
-		let videos = document.querySelectorAll('video')
-		videos.forEach((video) => {
-			video.muted = true
-			let playPromise = video.play()
-			if (playPromise !== undefined) {
-				playPromise.then((_) => {
-					let observer = new IntersectionObserver(
-						(entries) => {
-							entries.forEach((entry) => {
-								if (entry.intersectionRatio !== 1 && !video.paused) {
-									video.pause()
-								} else if (video.paused) {
-									video.play()
-								}
-							})
-						},
-						{ threshold: 0.2 }
-					)
-					observer.observe(video)
-				})
-			}
-		})
-	}
-
-	playPauseVideo()
 })
 // ----------
 
@@ -629,6 +602,34 @@ $('form').each(function () {
 })
 // ----------
 
+// Cookie
+$('.cookie-modal__btn').on('click', function () {
+	$('.cookie-modal').hide()
+})
+// ----------
+
+// Share product
+const share = $('.overview__share')
+const shareLinks = $('.overview__share-dropdown')
+
+share.on('click', function () {
+	$(this).toggleClass('active')
+})
+
+$('.body-inner').on('mouseup', function (event) {
+	if (
+		!share.is(event.target) &&
+		share.has(event.target).length === 0 &&
+		!shareLinks.is(event.target) &&
+		shareLinks.has(event.target).length === 0
+	) {
+		share.removeClass('active')
+	}
+
+	headerPosition()
+})
+// ----------
+
 // Close modal
 function closeModal(space, elem) {
 	$('.body-inner').on('mouseup', function (event) {
@@ -641,6 +642,8 @@ function closeModal(space, elem) {
 			elem.hide().prev().removeClass('active')
 
 			$('.header__menu-category').removeClass('active')
+			header.removeClass('active')
+			share.toggleClass('active')
 		}
 
 		headerPosition()
@@ -657,8 +660,13 @@ if ($(window).width() >= 992) {
 }
 // ----------
 
-// Cookie
-$('.cookie-modal__btn').on('click', function () {
-	$('.cookie-modal').hide()
+// Video
+const videoOptions = {
+	muted: true,
+	volume: 0,
+}
+
+const player = videojs('my-video', videoOptions, function onPlayerReady() {
+	this.play()
 })
 // ----------

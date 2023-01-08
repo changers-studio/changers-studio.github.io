@@ -96,18 +96,18 @@ h2
 	left: 0
 	right: 0
 	width: 100vw
-	background-color: #191817
+	background-color: #fff
 	z-index: 10
-	padding: 24px 0
+	padding: 10px 0
+	box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1)
 	&__container
 		display: flex
 		justify-content: space-between
 		align-items: center
-		max-width: 1150px
 	&__text
-		font-size: 24px
-		color: #fff
+		font-size: 18px
 		font-weight: 500
+		max-width: 890px
 	&__btn
 		margin-left: 20px
 		flex: 0 0 auto
@@ -489,6 +489,32 @@ input, textarea
 				opacity: 1
 			&::after
 				opacity: 0
+	&.active
+		background-color: #fff
+		color: #000
+		.header
+			&__logo-img
+				&._white
+					opacity: 0
+					position: absolute
+				&._black
+					opacity: 1
+					position: static
+			&__menu-category::before
+				background-color: #000
+			&__btn
+				svg path
+					fill: #000
+				&::before
+					background-color: #000
+			&__hamburger, &__search
+				svg path
+					fill: #000
+		.icon
+			&::before
+				opacity: 0
+			&::after
+				opacity: 1
 
 .header
 	position: fixed
@@ -1026,7 +1052,7 @@ input, textarea
 			transition: .3s
 			width: 100%
 			left: 0
-			height: 2px
+			height: 4px
 	&__preview
 		height: 287px
 		background-size: cover
@@ -1232,7 +1258,7 @@ input, textarea
 	&__sort-filter
 		position: absolute
 		right: 0
-		top: 0
+		top: 25px
 		display: flex
 		align-items: center
 	&__caption
@@ -1366,6 +1392,7 @@ input, textarea
 	// Overview
 	.overview
 		padding: 40px 0 30px
+		// display: none
 		&__container
 			display: flex
 			align-items: flex-start
@@ -1396,6 +1423,8 @@ input, textarea
 				overflow: hidden
 			&-item
 				display: flex
+			&-img
+				width: 100%
 			&-btn
 				position: absolute
 				right: 12px
@@ -1406,12 +1435,23 @@ input, textarea
 				background-position: center
 				z-index: 10
 				cursor: pointer
-			&-full
 				background-image: url('../img/icons/open-full.svg')
 				top: 12px
 			&-view
-				background-image: url('../img/icons/360-view.svg')
-				bottom: 12px
+				position: static
+				width: 150px
+				height: 150px
+				display: inline-flex
+				align-items: center
+				justify-content: center
+				&::before
+					content: ''
+					width: 48px
+					height: 48px
+					background-size: contain
+					background-repeat: no-repeat
+					background-position: center
+					background-image: url('../img/icons/360-view.svg')
 			.swiper-pagination
 				bottom: 8px
 				&-bullet
@@ -1468,8 +1508,78 @@ input, textarea
 				background-image: url('../img/icons/cart.svg')
 			&-favorites::before
 				background-image: url('../img/icons/favorites.svg')
-			&-share::before
-				background-image: url('../img/icons/share.svg')
+		&__share
+			position: relative
+			&.active
+				.overview__share
+					&-heading::after
+						width: 100%
+					&-dropdown
+						display: flex
+			&-close
+				width: 20px
+				height: 20px
+				background-size: contain
+				background-repeat: no-repeat
+				background-position: center
+				background-image: url('../img/icons/close.svg')
+				position: absolute
+				right: 4px
+				top: 4px
+				display: none
+			&-heading
+				display: flex
+				align-items: center
+				padding-bottom: 3px
+				&::after
+					content: ''
+					width: 0
+					height: 2px
+					background-color: #000
+					position: absolute
+					bottom: 0
+					left: 0
+					margin-top: 3px
+					transition: .3s
+				&::before
+					content: ''
+					width: 20px
+					height: 20px
+					background-size: contain
+					background-repeat: no-repeat
+					background-position: center
+					background-image: url('../img/icons/share.svg')
+					flex: 0 0 auto
+					margin-right: 10px
+			&-dropdown
+				position: absolute
+				right: 0
+				top: 100%
+				padding: 24px
+				box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1)
+				background-color: #fff
+				border-radius: 4px
+				width: 292px
+				display: none
+				align-items: center
+				z-index: 2
+			&-btn
+				flex: 0 0 auto
+				margin-right: 20px
+				position: relative
+				&:last-child
+					margin: 0
+				&::after
+					content: ''
+					width: 0
+					height: 2px
+					background-color: #000
+					position: absolute
+					top: 100%
+					left: 0
+					transition: .3s
+				&:hover::after
+					width: 100%
 	// ----------
 
 	// About product
@@ -1507,31 +1617,57 @@ input, textarea
 
 	// Video
 	.video
-		position: relative
+		// position: relative
 		padding: 0
 		&__frame
 			height: 90vh
 			width: 100%
-			background-size: cover
-			background-position: center
+	// ----------
+
+	.video-js
+		.vjs-tech
 			object-fit: cover
-			cursor: pointer
-		&__btn
-			display: none
-			position: absolute
-			left: 50%
-			top: 50%
-			transform: translate(-50%, -50%)
-			transform: translate(-50%, -50%)
+		.vjs-poster
+			background-size: cover
+		.vjs-control-bar
+			background: none
+			&::before
+				content: ''
+				height: 100px
+				width: 100%
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 0
+				background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.7) 100%)
+		.vjs-big-play-button
+			width: 57px
+			height: 57px
+			border: none
+			background: none
+			border-radius: 50%
+			background-image: url('../img/icons/play.svg')
+			background-size: contain
 			background-repeat: no-repeat
 			background-position: center
-			background-size: contain
-			position: absolute
-			transition: .3s
-			width: 72px
-			height: 72px
-			background-image: url('../img/icons/play.svg')
-	// ----------
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			.vjs-icon-placeholder
+				display: none
+		.vjs-picture-in-picture-control, .vjs-mute-control
+			display: none
+		.vjs-volume-panel
+			width: 0px
+			height: 0px
+		.vjs-slider
+			background: rgba(255, 255, 255, 0.2)
+		.vjs-load-progress
+			background: rgba(255, 255, 255, 0.3)
+		.vjs-play-progress
+			background: #FEC25F
+			&::before
+				color: #FEC25F
 // page end
 
 // Blog page
@@ -1751,6 +1887,46 @@ input, textarea
 				font-size: 14px
 				span
 					font-weight: 500
+
+	.contacts
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
+		&__heading
+			font-size: 24px
+			font-weight: 500
+			margin-bottom: 15px
+		&__data
+			&-inner
+				font-weight: 500
+			&-item
+			&._bold
+				font-weight: 500
+			&._uppercase
+				text-transform: uppercase
+		&__container
+			display: flex
+			justify-content: space-between
+			&-inner
+				padding: 24px
+				background-color: #fff
+				box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1)
+				border-radius: 4px
+				width: calc(50% - 12px)
+		&__btns
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			margin-top: 24px
+		&__btn
+			margin-right: 24px
+			padding: 8px 20px
+			max-width: calc(50% - 12px)
+			&:last-child
+				margin: 0
+			&-icon
+				flex: 0 0 auto
+				margin-right: 6px
 // page end
 
 // Sign Up / Log in
@@ -2164,6 +2340,8 @@ input, textarea
 			border-bottom: 1px solid #999
 		&-container
 			padding: 10px 0
+			&._bd-bottom
+				border-bottom: 1px solid #999
 		&-row
 			display: flex
 			justify-content: space-between
@@ -2188,6 +2366,8 @@ input, textarea
 				&-amount
 					margin: 0
 					font-size: 16px
+	&__btns
+		margin-top: 30px
 	&__btn
 		width: 100%
 		margin-bottom: 14px

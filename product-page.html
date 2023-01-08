@@ -40,6 +40,11 @@
 
 		<link
 			rel="stylesheet"
+			href="https://vjs.zencdn.net/7.20.3/video-js.css"
+		/>
+
+		<link
+			rel="stylesheet"
 			href="libs/fancybox/jquery.fancybox.css"
 		/>
 
@@ -69,6 +74,11 @@
 		<script
 			defer
 			src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+		></script>
+
+		<script
+			defer
+			src="https://vjs.zencdn.net/7.20.3/video.min.js"
 		></script>
 
 		<script
@@ -984,12 +994,12 @@
 
 								<div class="swiper-slide">
 									<a
-										href="img/product/product.jpg"
+										href="img/main/product1-plug.png"
 										class="overview__slider-item"
 										data-fancybox="product"
 									>
 										<img
-											src="img/product/product.jpg"
+											src="img/main/product1-plug.png"
 											alt="Product image"
 											class="overview__slider-img"
 										/>
@@ -998,12 +1008,12 @@
 
 								<div class="swiper-slide">
 									<a
-										href="img/product/product.jpg"
+										href="img/main/product2-plug.png"
 										class="overview__slider-item"
 										data-fancybox="product"
 									>
 										<img
-											src="img/product/product.jpg"
+											src="img/main/product2-plug.png"
 											alt="Product image"
 											class="overview__slider-img"
 										/>
@@ -1015,8 +1025,6 @@
 						</div>
 
 						<button class="overview__slider-btn overview__slider-full"></button>
-
-						<button class="overview__slider-btn overview__slider-view"></button>
 
 						<div
 							id="overview360"
@@ -1069,12 +1077,81 @@
 								Add to favorites
 							</button>
 
-							<button
-								class="overview__btn overview__btn-share"
-								aria-label="Share"
-							>
-								Share
-							</button>
+							<div class="overview__share">
+								<button
+									class="overview__share-heading"
+									aria-label="Share"
+								>
+									Share
+								</button>
+
+								<div class="overview__share-dropdown">
+									<button
+										class="overview__share-close"
+										aria-label="Close"
+									></button>
+
+									<button
+										class="overview__share-btn"
+										aria-label="Facebook"
+									>
+										<img
+											src="img/icons/fb.svg"
+											alt="Icon"
+										/>
+									</button>
+
+									<button
+										class="overview__share-btn"
+										aria-label="Facebook messanger"
+									>
+										<img
+											src="img/icons/f_messanger.svg"
+											alt="Icon"
+										/>
+									</button>
+
+									<button
+										class="overview__share-btn"
+										aria-label="Whatsapp"
+									>
+										<img
+											src="img/icons/whatsapp.svg"
+											alt="Icon"
+										/>
+									</button>
+
+									<button
+										class="overview__share-btn"
+										aria-label="Viber"
+									>
+										<img
+											src="img/icons/viber.svg"
+											alt="Icon"
+										/>
+									</button>
+
+									<button
+										class="overview__share-btn"
+										aria-label="Telegram"
+									>
+										<img
+											src="img/icons/tg.svg"
+											alt="Icon"
+										/>
+									</button>
+
+									<button
+										class="overview__share-btn"
+										aria-label="Copy link"
+									>
+										<img
+											src="img/icons/content_copy.svg"
+											alt="Icon"
+										/>
+									</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1085,18 +1162,26 @@
 				id="features"
 			>
 				<video
-					class="video__frame"
-					id="video"
+					class="video__frame video-js"
+					id="my-video"
 					controls
-					src="http://e14aaeb709f7cde1ae68-a1d0a134a31b545b257b15f8a8ba5726.r70.cf3.rackcdn.com/projects/31432/1427815464209-bf74131a7528d0ea5ce8c0710f530bb5/1280x720.mp4"
+					preload="auto"
 					poster="img/product/video.jpg"
-					type="video/mp4"
-				></video>
-
-				<button
-					type="button"
-					class="video__btn"
-				></button>
+				>
+					<source
+						src="http://e14aaeb709f7cde1ae68-a1d0a134a31b545b257b15f8a8ba5726.r70.cf3.rackcdn.com/projects/31432/1427815464209-bf74131a7528d0ea5ce8c0710f530bb5/1280x720.mp4"
+						type="video/mp4"
+					/>
+					<p class="vjs-no-js">
+						To view this video please enable JavaScript, and consider upgrading
+						to a web browser that
+						<a
+							href="https://videojs.com/html5-video-support/"
+							target="_blank"
+							>supports HTML5 video</a
+						>
+					</p>
+				</video>
 			</section>
 
 			<section

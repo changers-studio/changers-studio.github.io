@@ -807,7 +807,8 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-show-thumbs .fancybox-thumbs {
-	display: block;
+	display: flex;
+	justify-content: center;
 }
 
 .fancybox-thumbs__list {
@@ -821,7 +822,6 @@ body.compensate-for-scrollbar {
 	position: absolute;
 	position: relative;
 	white-space: nowrap;
-	margin: 0 auto;
 	width: 100%;
 }
 
