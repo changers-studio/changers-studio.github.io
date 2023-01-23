@@ -56,10 +56,6 @@
 		></script>
 
 		<!-- libs js -->
-		<script
-			defer
-			src="libs/jquery.validate.min.js"
-		></script>
 
 		<script
 			defer
@@ -377,7 +373,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Bose</span>
+											<span class="header__search-caption">Bose</span>
 										</a>
 									</div>
 
@@ -388,28 +384,28 @@
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 									</div>
 
@@ -426,7 +422,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 1 Pro</span>
+											<span class="header__search-caption">Boserie 1 Pro</span>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -441,7 +437,9 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 2 Standart</span>
+											<span class="header__search-caption"
+												>Boserie 2 Standart</span
+											>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -456,7 +454,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 1 Pro</span>
+											<span class="header__search-caption">Boserie 1 Pro</span>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -475,7 +473,7 @@
 												class="header__search-img"
 											/>
 
-											<span
+											<span class="header__search-caption"
 												>Boseries new product line is a very optimistic</span
 											>
 										</a>
@@ -490,7 +488,7 @@
 												class="header__search-img"
 											/>
 
-											<span
+											<span class="header__search-caption"
 												>Boseries new product line is a very optimistic</span
 											>
 										</a>
@@ -562,6 +560,20 @@
 										/>
 
 										Lithuanian
+									</a>
+
+									<a
+										href="#"
+										class="header__langs-item"
+										aria-label="USA"
+									>
+										<img
+											class="header__langs-flag"
+											src="img/main/flags/usa.svg"
+											alt="USA"
+										/>
+
+										English (US)
 									</a>
 								</div>
 							</div>
@@ -931,7 +943,7 @@
 					<h1 class="cart__title">Complete your order</h1>
 
 					<div class="cart__container checkout__container">
-						<div class="checkout cart__container-inner">
+						<form class="checkout cart__container-inner">
 							<div class="checkout__form _step-1">
 								<div class="checkout__steps">
 									<span class="checkout__steps-data _underline">1</span>
@@ -939,58 +951,17 @@
 									<span class="checkout__steps-data">3</span>
 								</div>
 
-								<form class="checkout__section">
-									<p class="checkout__heading">Select delivery country</p>
-
-									<div class="data__select">
-										<select
-											name="country"
-											class="select-country"
-											data-placeholder="Country"
-										>
-											<option></option>
-											<option
-												value="Uk"
-												data-image="img/main/flags/latvia.svg"
-											>
-												Uk
-											</option>
-											<option
-												value="Uk"
-												data-image="img/main/flags/latvia.svg"
-											>
-												Uk
-											</option>
-											<option
-												value="Uk"
-												data-image="img/main/flags/latvia.svg"
-											>
-												Uk
-											</option>
-											<option
-												value="Uk"
-												data-image="img/main/flags/latvia.svg"
-											>
-												Uk
-											</option>
-											<option
-												value="Uk"
-												data-image="img/main/flags/latvia.svg"
-											>
-												Uk
-											</option>
-										</select>
-									</div>
-
+								<div class="checkout__section">
 									<p class="checkout__heading">Enter your delivery address</p>
 
-									<label class="data__input input-wrapper">
+									<label class="data__input input-wrapper invalid">
 										<span>First Name*</span>
 										<input
 											type="text"
 											name="First name"
 											required
 										/>
+										<div class="input-error">Error Error Error!</div>
 									</label>
 
 									<label class="data__input input-wrapper">
@@ -1000,23 +971,39 @@
 											name="Last name"
 											required
 										/>
+										<div class="input-error">Error Error Error!</div>
 									</label>
 
 									<label class="data__input input-wrapper">
+										<span>Birthday*</span>
+										<input
+											type="text"
+											name="Birthday date"
+											required
+											class="input-date"
+										/>
+										<div class="input-error">Error Error Error!</div>
+									</label>
+
+									<label class="data__input input-wrapper _m-less">
 										<span>Company name</span>
 										<input
 											type="text"
 											name="Company name"
 											class="company-name"
+											required
 										/>
+										<div class="input-error">Error Error Error!</div>
 									</label>
 
-									<label class="data__input input-wrapper vat-code">
+									<label class="data__input input-wrapper vat-code _m-less">
 										<span>VAT code</span>
 										<input
 											type="text"
 											name="VAT code"
+											required
 										/>
+										<div class="input-error">Error Error Error!</div>
 									</label>
 
 									<div class="data__flex-row">
@@ -1028,34 +1015,24 @@
 											>
 												<option></option>
 												<option
-													value="+380"
-													data-image="img/main/flags/estonia.svg"
+													value="+370"
+													data-image="img/main/flags/lithuania.svg"
 												>
-													+380
+													+370
 												</option>
+
 												<option
-													value="+380"
-													data-image="img/main/flags/estonia.svg"
+													value="+371"
+													data-image="img/main/flags/latvia.svg"
 												>
-													+380
+													+371
 												</option>
+
 												<option
-													value="+380"
+													value="+372"
 													data-image="img/main/flags/estonia.svg"
 												>
-													+380
-												</option>
-												<option
-													value="+380"
-													data-image="img/main/flags/estonia.svg"
-												>
-													+380
-												</option>
-												<option
-													value="+380"
-													data-image="img/main/flags/estonia.svg"
-												>
-													+380
+													+372
 												</option>
 											</select>
 										</div>
@@ -1069,6 +1046,55 @@
 												required
 											/>
 										</label>
+
+										<button
+											type="button"
+											class="btn _transparent"
+										>
+											Send SMS
+										</button>
+
+										<div class="input-error">Error Error Error!</div>
+									</div>
+
+									<label class="data__input input-wrapper">
+										<span>Verification code</span>
+										<input
+											type="text"
+											name="Verification code"
+											required
+										/>
+										<div class="input-error">Error Error Error!</div>
+									</label>
+
+									<div class="data__select">
+										<select
+											name="country"
+											class="select-country"
+											data-placeholder="Country"
+										>
+											<option></option>
+											<option
+												value="Latvia"
+												data-image="img/main/flags/latvia.svg"
+											>
+												Latvia
+											</option>
+											<option
+												value="Lithuania"
+												data-image="img/main/flags/lithuania.svg"
+											>
+												Lithuania
+											</option>
+											<option
+												value="Estonia"
+												data-image="img/main/flags/estonia.svg"
+											>
+												Estonia
+											</option>
+										</select>
+
+										<div class="input-error">Error Error Error!</div>
 									</div>
 
 									<label class="data__input data__input-search input-wrapper">
@@ -1091,6 +1117,7 @@
 											id="address1"
 											required
 										/>
+										<div class="input-error">Error Error Error!</div>
 									</label>
 
 									<label class="data__input input-wrapper">
@@ -1101,16 +1128,7 @@
 											id="address2"
 											required
 										/>
-									</label>
-
-									<label class="data__input input-wrapper">
-										<span>ZIP code *</span>
-										<input
-											type="text"
-											name="postal_code"
-											id="postal_code"
-											required
-										/>
+										<div class="input-error">Error Error Error!</div>
 									</label>
 
 									<label class="data__input input-wrapper">
@@ -1121,6 +1139,18 @@
 											id="locality"
 											required
 										/>
+										<div class="input-error">Error Error Error!</div>
+									</label>
+
+									<label class="data__input input-wrapper">
+										<span>ZIP code *</span>
+										<input
+											type="text"
+											name="postal_code"
+											id="postal_code"
+											required
+										/>
+										<div class="input-error">Error Error Error!</div>
 									</label>
 
 									<label class="data__checkbox checkbox">
@@ -1135,9 +1165,9 @@
 											Billing address is the same as my delivery address
 										</span>
 									</label>
-								</form>
+								</div>
 
-								<form class="checkout__section billing-address__form">
+								<div class="checkout__section billing-address__form">
 									<p class="checkout__heading">Enter your billing address</p>
 
 									<label class="data__input input-wrapper">
@@ -1147,6 +1177,7 @@
 											name="First name"
 											required
 										/>
+										<div class="input-error">Error Error Error!</div>
 									</label>
 
 									<label class="data__input input-wrapper">
@@ -1156,6 +1187,7 @@
 											name="Last name"
 											required
 										/>
+										<div class="input-error">Error Error Error!</div>
 									</label>
 
 									<label class="data__input input-wrapper">
@@ -1164,7 +1196,9 @@
 											type="text"
 											name="Company name"
 											class="company-name"
+											required
 										/>
+										<div class="input-error">Error Error Error!</div>
 									</label>
 
 									<label class="data__input input-wrapper vat-code">
@@ -1172,7 +1206,9 @@
 										<input
 											type="text"
 											name="VAT code"
+											required
 										/>
+										<div class="input-error">Error Error Error!</div>
 									</label>
 
 									<div class="data__flex-row">
@@ -1184,34 +1220,24 @@
 											>
 												<option></option>
 												<option
-													value="+380"
-													data-image="img/main/flags/estonia.svg"
+													value="+370"
+													data-image="img/main/flags/lithuania.svg"
 												>
-													+380
+													+370
 												</option>
+
 												<option
-													value="+380"
-													data-image="img/main/flags/estonia.svg"
+													value="+371"
+													data-image="img/main/flags/latvia.svg"
 												>
-													+380
+													+371
 												</option>
+
 												<option
-													value="+380"
+													value="+372"
 													data-image="img/main/flags/estonia.svg"
 												>
-													+380
-												</option>
-												<option
-													value="+380"
-													data-image="img/main/flags/estonia.svg"
-												>
-													+380
-												</option>
-												<option
-													value="+380"
-													data-image="img/main/flags/estonia.svg"
-												>
-													+380
+													+372
 												</option>
 											</select>
 										</div>
@@ -1225,13 +1251,45 @@
 												required
 											/>
 										</label>
+
+										<div class="input-error">Error Error Error!</div>
+									</div>
+
+									<div class="data__select">
+										<select
+											name="country"
+											class="select-country"
+											data-placeholder="Country"
+										>
+											<option></option>
+											<option
+												value="Latvia"
+												data-image="img/main/flags/latvia.svg"
+											>
+												Latvia
+											</option>
+											<option
+												value="Lithuania"
+												data-image="img/main/flags/lithuania.svg"
+											>
+												Lithuania
+											</option>
+											<option
+												value="Estonia"
+												data-image="img/main/flags/estonia.svg"
+											>
+												Estonia
+											</option>
+										</select>
+
+										<div class="input-error">Error Error Error!</div>
 									</div>
 
 									<label class="data__input data__input-search input-wrapper">
 										<span>Search for address automatically</span>
 
 										<input
-											id="googlesearchb"
+											id="googlesearchSecond"
 											type="text"
 											name="googlesearch-billing"
 											placeholder=""
@@ -1244,9 +1302,10 @@
 										<input
 											type="text"
 											name="address1"
-											id="address1b"
+											id="addresssecond"
 											required
 										/>
+										<div class="input-error">Error Error Error!</div>
 									</label>
 
 									<label class="data__input input-wrapper">
@@ -1257,16 +1316,7 @@
 											id="address2b"
 											required
 										/>
-									</label>
-
-									<label class="data__input input-wrapper">
-										<span>ZIP code *</span>
-										<input
-											type="text"
-											name="postal_code"
-											id="postal_codeb"
-											required
-										/>
+										<div class="input-error">Error Error Error!</div>
 									</label>
 
 									<label class="data__input input-wrapper">
@@ -1277,8 +1327,20 @@
 											id="localityb"
 											required
 										/>
+										<div class="input-error">Error Error Error!</div>
 									</label>
-								</form>
+
+									<label class="data__input input-wrapper">
+										<span>ZIP code *</span>
+										<input
+											type="text"
+											name="postal_code"
+											id="postal_codeb"
+											required
+										/>
+										<div class="input-error">Error Error Error!</div>
+									</label>
+								</div>
 							</div>
 
 							<div class="checkout__btns">
@@ -1289,17 +1351,18 @@
 									Next
 								</button>
 							</div>
-						</div>
+						</form>
 
 						<div class="cart__container-inner">
 							<form class="cart__promocode">
-								<label class="cart__promocode-input input-wrapper">
+								<label class="cart__promocode-input input-wrapper invalid">
 									<span>Promo code</span>
 									<input
 										type="text"
 										name="Promo code"
 										required
 									/>
+									<div class="input-error">Error Error Error!</div>
 								</label>
 
 								<button
@@ -1558,30 +1621,8 @@
 								aria-label="Social link"
 							>
 								<img
-									src="img/icons/twitter.svg"
-									alt="Twitter"
-								/>
-							</a>
-
-							<a
-								href="#"
-								class="footer__social-link"
-								aria-label="Social link"
-							>
-								<img
 									src="img/icons/youtube.svg"
 									alt="Youtube"
-								/>
-							</a>
-
-							<a
-								href="#"
-								class="footer__social-link"
-								aria-label="Social link"
-							>
-								<img
-									src="img/icons/pinterest.svg"
-									alt="Pinterest"
 								/>
 							</a>
 						</div>
@@ -1591,7 +1632,6 @@
 				</div>
 			</footer>
 		</div>
-
 		<!-- Google maps -->
 		<script
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUttyG-9e82-AdpAq9wE_nR_BZln-RAHc&callback=initAutocomplete&libraries=places&v=weekly"

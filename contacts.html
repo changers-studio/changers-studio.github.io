@@ -56,10 +56,6 @@
 		></script>
 
 		<!-- libs js -->
-		<script
-			defer
-			src="libs/jquery.validate.min.js"
-		></script>
 
 		<script
 			defer
@@ -80,11 +76,6 @@
 		<script
 			defer
 			src="js/main.js"
-		></script>
-		<!-- search js -->
-		<script
-			defer
-			src="js/search.js"
 		></script>
 	</head>
 
@@ -376,7 +367,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Bose</span>
+											<span class="header__search-caption">Bose</span>
 										</a>
 									</div>
 
@@ -387,28 +378,28 @@
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 									</div>
 
@@ -425,7 +416,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 1 Pro</span>
+											<span class="header__search-caption">Boserie 1 Pro</span>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -440,7 +431,9 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 2 Standart</span>
+											<span class="header__search-caption"
+												>Boserie 2 Standart</span
+											>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -455,7 +448,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 1 Pro</span>
+											<span class="header__search-caption">Boserie 1 Pro</span>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -474,7 +467,7 @@
 												class="header__search-img"
 											/>
 
-											<span
+											<span class="header__search-caption"
 												>Boseries new product line is a very optimistic</span
 											>
 										</a>
@@ -489,7 +482,7 @@
 												class="header__search-img"
 											/>
 
-											<span
+											<span class="header__search-caption"
 												>Boseries new product line is a very optimistic</span
 											>
 										</a>
@@ -561,6 +554,20 @@
 										/>
 
 										Lithuanian
+									</a>
+
+									<a
+										href="#"
+										class="header__langs-item"
+										aria-label="USA"
+									>
+										<img
+											class="header__langs-flag"
+											src="img/main/flags/usa.svg"
+											alt="USA"
+										/>
+
+										English (US)
 									</a>
 								</div>
 							</div>
@@ -981,12 +988,15 @@
 								<h3 class="contacts__heading">Prekybos centras „Ermitažas“</h3>
 
 								<div class="contacts__wrapper">
-									<address class="contacts__data">
+									<a
+										href="#"
+										class="contacts__data"
+									>
 										<span>Adresas:</span>
 										<span class="contacts__data-inner"
 											>Krivių g. 5, 01204 Vilnius</span
 										>
-									</address>
+									</a>
 
 									<div class="contacts__data">
 										<span>Telefonas:</span>
@@ -1049,12 +1059,15 @@
 								<h3 class="contacts__heading">Prekybos centras „Ermitažas“</h3>
 
 								<div class="contacts__wrapper">
-									<address class="contacts__data">
+									<a
+										href="#"
+										class="contacts__data"
+									>
 										<span>Adresas:</span>
 										<span class="contacts__data-inner"
 											>Krivių g. 5, 01204 Vilnius</span
 										>
-									</address>
+									</a>
 
 									<div class="contacts__data">
 										<span>Telefonas:</span>
@@ -1130,13 +1143,32 @@
 							<span class="contacts__data-inner">LT____________</span>
 						</div>
 
-						<address class="contacts__data _bold">
-							Adresas: Krivių g. 5, 01204 Vilnius
-						</address>
+						<a
+							href="#"
+							class="contacts__data"
+						>
+							<span>Adresas:</span
+							><span class="contacts__data-inner">
+								Krivių g. 5, 01204 Vilnius
+							</span>
+						</a>
 
 						<div class="contacts__data">
 							<span>El. paštas:</span>
-							<span class="contacts__data-inner">hoo@hoo.lt</span>
+							<a
+								href="#"
+								class="contacts__data-inner"
+								>hoo@hoo.lt</a
+							>
+						</div>
+
+						<div class="contacts__data">
+							<span>Telefonas:</span>
+							<a
+								href="tel:37070008777"
+								class="contacts__data-inner"
+								>+370 (700) 08-777</a
+							>
 						</div>
 					</div>
 				</div>
@@ -1270,30 +1302,8 @@
 								aria-label="Social link"
 							>
 								<img
-									src="img/icons/twitter.svg"
-									alt="Twitter"
-								/>
-							</a>
-
-							<a
-								href="#"
-								class="footer__social-link"
-								aria-label="Social link"
-							>
-								<img
 									src="img/icons/youtube.svg"
 									alt="Youtube"
-								/>
-							</a>
-
-							<a
-								href="#"
-								class="footer__social-link"
-								aria-label="Social link"
-							>
-								<img
-									src="img/icons/pinterest.svg"
-									alt="Pinterest"
 								/>
 							</a>
 						</div>

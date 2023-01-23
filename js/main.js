@@ -78,20 +78,31 @@ const search = $('.header__search')
 const searchBtn = $('.header__search-btn')
 const searchResult = $('.header__search-result')
 
-$('.header__search-btn').on('click', function () {
+searchBtn.on('click', function () {
 	langsDropdown.hide()
 	cart.hide()
 	favorites.hide()
 	menu.hide()
 
+	$('.header__trigger').removeClass('active')
+
 	header.addClass('active')
-	$('.header__search').addClass('active')
+	search.toggleClass('active')
 	$('.header__search-input').focus()
 })
 
 $('.header__search-input').on('click', function () {
 	searchResult.show()
 })
+
+if ($(window).width() >= 992) {
+	$('body').on('mouseup', function (event) {
+		if (!search.is(event.target) && search.has(event.target).length === 0) {
+			search.removeClass('active')
+			searchResult.hide()
+		}
+	})
+}
 // ----------
 
 // Header hamburger
@@ -156,18 +167,13 @@ $('.header-dropdown__close').on('click', function () {
 // Sliders
 const mainSlider = new Swiper('.main__slider', {
 	loop: true,
-	spaceBetween: 30,
 	speed: 1000,
-	effect: 'fade',
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
 	},
 	autoplay: {
 		delay: 5000,
-	},
-	fadeEffect: {
-		crossFade: true,
 	},
 })
 
@@ -252,7 +258,7 @@ const overviewSlider = new Swiper('.overview__slider', {
 // ----------
 
 // Add to favorites/cart
-$('.product__btn').on('click', function () {
+$('.product__btn, .cart__item-btn').on('click', function () {
 	$(this).toggleClass('active')
 })
 // ----------
@@ -322,6 +328,17 @@ if ($('*').is('.select')) {
 	})
 }
 
+if ($('*').is('.select-search')) {
+	$('.select-search').select2({
+		templateResult: selectSpan,
+		templateSelection: selectSpan,
+		minimumResultsForSearch: -1,
+		width: '100%',
+		selectionCssClass: 'select__heading select__heading-search',
+		dropdownCssClass: 'select__dropdown select__dropdown-search',
+	})
+}
+
 if ($('*').is('.select-country')) {
 	$('.select-country').select2({
 		templateResult: selectIcons,
@@ -335,22 +352,27 @@ if ($('*').is('.select-country')) {
 
 function selectIcons(opt) {
 	if (!opt.id) {
-		return opt.text.toUpperCase()
+		return opt.text
 	}
 
 	let optimage = $(opt.element).attr('data-image')
 	if (!optimage) {
-		return opt.text.toUpperCase()
+		return opt.text
 	} else {
 		let $opt = $(
 			'<span><img src="' +
 				optimage +
 				'" width="24px" /> ' +
-				opt.text.toUpperCase() +
+				opt.text +
 				'</span>'
 		)
 		return $opt
 	}
+}
+
+function selectSpan(opt) {
+	let $opt = $(`<span>${opt.text}</span>`)
+	return $opt
 }
 // ----------
 
@@ -369,11 +391,13 @@ $('input, textarea').each(function () {
 	if ($(this).val() != '') $(this).parent('.input-wrapper').addClass('active')
 })
 
-$('input.company-name').on('change', function () {
-	if ($(this).val() !== '') {
+$('input.company-name').on('input', function () {
+	if ($(this).val().length !== 0) {
 		$(this).closest('form').find('.vat-code').addClass('visible')
+		$(this).parent().removeClass('_m-less')
 	} else {
 		$(this).closest('form').find('.vat-code').removeClass('visible')
+		$(this).parent().addClass('_m-less')
 	}
 })
 
@@ -388,15 +412,17 @@ $('.data__form-activator').on('click', function () {
 	$(this).closest('form').find('.data__form-btn').addClass('visible')
 })
 
-$('.data__form-btn').on('click', function () {
-	$(this)
-		.closest('form')
-		.removeClass('active')
-		.find('input, select, textarea')
-		.attr('disabled', 'disabled')
+$('.data__form').on('submit', function () {
+	if ($(this).valid()) {
+		$(this)
+			.closest('form')
+			.removeClass('active')
+			.find('input, select, textarea')
+			.attr('disabled', 'disabled')
 
-	$(this).closest('form').find('.data__form-activator').show()
-	$(this).closest('form').find('.data__form-btn').removeClass('visible')
+		$(this).closest('form').find('.data__form-activator').show()
+		$(this).closest('form').find('.data__form-btn').removeClass('visible')
+	}
 })
 // ----------
 
@@ -420,25 +446,10 @@ if ($('*').is('[data-fancybox="product"]')) {
 		infobar: false,
 		protect: true,
 		arrows: false,
+		touch: false,
 		thumbs: {
 			autoStart: true,
 			axis: 'x',
-		},
-		onActivate: function (instance) {
-			const fullView = document.createElement('button')
-			fullView.classList.add('overview__slider-view')
-			$('.fancybox-thumbs').prepend(fullView)
-
-			$('.overview__slider-view').on('click', function () {
-				$.fancybox.open($('#overview360'), {
-					touch: false,
-				})
-
-				instance.close()
-			})
-
-			const observer = lozad()
-			observer.observe()
 		},
 	})
 }
@@ -446,7 +457,6 @@ if ($('*').is('[data-fancybox="product"]')) {
 $('.overview__slider-full').on('click', function () {
 	$('.overview__slider-item').first().trigger('click')
 })
-
 // ----------
 
 // FAQ tabs
@@ -468,49 +478,30 @@ $('.tabs__captions-item').on('click', function () {
 // ----------
 
 // Page nav
-function isScrolledIntoView(elem) {
-	var docViewTop = $(window).scrollTop() + 50
-	var docViewBottom = docViewTop + $(window).height()
+$(window)
+	.on('scroll', function () {
+		var scrollDistance = $(window).scrollTop() + headerHeights
 
-	var elemTop = $(elem).offset().top
-	var elemBottom = elemTop + $(elem).height()
-
-	return elemBottom <= docViewBottom && elemTop >= docViewTop
-}
-
-function menuActive() {
-	$('.p-product section').each(function () {
-		if (isScrolledIntoView(this) === true) {
-			$('.page-nav__item')
-				.eq($(this).index() - 1)
-				.addClass('active')
-				.siblings()
-				.removeClass('active')
-		}
+		$('.p-product section').each(function (i) {
+			if ($(this).position().top <= scrollDistance) {
+				$('.p-product .page-nav__item.active').removeClass('active')
+				$('.p-product .page-nav__item').eq(i).addClass('active')
+			}
+		})
 	})
-}
-
-$('.page-nav__item').on('click', function () {
-	$(this)
-		.addClass('active')
-		.siblings()
-		.removeClass('active')
-		.addClass('remove-line')
-})
-
-$(window).on('load', function () {
-	menuActive()
-})
-
-$(window).on('scroll', function () {
-	menuActive()
-})
+	.scroll()
 
 $('body').on('click', '.page-nav__item', function (event) {
 	event.preventDefault()
+
 	var id = $(this).attr('href'),
 		top = $(id).offset().top
-	$('body,html').animate({ scrollTop: top - headerHeights }, 0)
+
+	if ($(window).width() > 1340) {
+		$('body,html').animate({ scrollTop: top - headerHeights + 20 }, 0)
+	} else {
+		$('body,html').animate({ scrollTop: top - headerHeights }, 0)
+	}
 })
 // ----------
 
@@ -549,9 +540,8 @@ $('.billing-address__btn').on('change', function () {
 // Input mask
 if (
 	$('*').is('.input-phone') ||
-	$('*').is('.input-day') ||
-	$('*').is('.input-month') ||
-	$('*').is('.input-year')
+	$('*').is('.input-card') ||
+	$('*').is('.input-cvv')
 ) {
 	$('.input-phone').inputmask({
 		mask: '(999) 99 99 999',
@@ -559,49 +549,23 @@ if (
 		placeholder: '',
 	})
 
-	$('.input-day').inputmask({
-		mask: '99',
+	$('.input-date').inputmask({
+		mask: '99/99/9999',
 		showMaskOnHover: false,
-		placeholder: '',
+		placeholder: 'DD/MM/YYYY',
 	})
 
-	$('.input-month').inputmask({
-		mask: '99',
+	$('.input-card').inputmask({
+		mask: '9999 9999 9999 9999',
 		showMaskOnHover: false,
 		placeholder: '',
 	})
-	$('.input-year').inputmask({
-		mask: '9999',
+	$('.input-cvv').inputmask({
+		mask: '999',
 		showMaskOnHover: false,
 		placeholder: '',
 	})
 }
-// ----------
-
-// Form validation
-$('form').each(function () {
-	$(this).validate({
-		debug: true,
-		errorClass: 'input-error',
-		messages: {
-			'First name': {
-				required: 'First name required!',
-			},
-			'Last name': {
-				required: 'Last name required!',
-			},
-			'Verification code': {
-				required: 'Verification code incorrect!',
-			},
-		},
-		highlight: function (element, errorClass, validClass) {
-			$(element).parents('.input-wrapper').addClass('invalid')
-		},
-		unhighlight: function (element, errorClass, validClass) {
-			$(element).parents('.input-wrapper').removeClass('invalid')
-		},
-	})
-})
 // ----------
 
 // Cookie
@@ -618,18 +582,20 @@ share.on('click', function () {
 	$(this).toggleClass('active')
 })
 
-$('.body-inner').on('mouseup', function (event) {
-	if (
-		!share.is(event.target) &&
-		share.has(event.target).length === 0 &&
-		!shareLinks.is(event.target) &&
-		shareLinks.has(event.target).length === 0
-	) {
-		share.removeClass('active')
-	}
+if ($(window).width() >= 992) {
+	$('body').on('mouseup', function (event) {
+		if (
+			!share.is(event.target) &&
+			share.has(event.target).length === 0 &&
+			!shareLinks.is(event.target) &&
+			shareLinks.has(event.target).length === 0
+		) {
+			share.removeClass('active')
+		}
 
-	headerPosition()
-})
+		headerPosition()
+	})
+}
 // ----------
 
 // Close modal
@@ -643,9 +609,8 @@ function closeModal(space, elem) {
 		) {
 			elem.hide().prev().removeClass('active')
 
-			$('.header__menu-category').removeClass('active')
 			header.removeClass('active')
-			share.toggleClass('active')
+			share.removeClass('active')
 		}
 
 		headerPosition()
@@ -658,17 +623,37 @@ if ($(window).width() >= 992) {
 	closeModal(headerBtnWrapper, favorites)
 	closeModal(catalogBtn, sort)
 	closeModal(catalogBtn, filter)
-	closeModal(headerMenu, menu)
+
+	$('body').on('mouseup', function (event) {
+		if (
+			!headerMenu.is(event.target) &&
+			headerMenu.has(event.target).length === 0 &&
+			!menu.is(event.target) &&
+			menu.has(event.target).length === 0
+		) {
+			menu.hide()
+			$('.header__menu-category').removeClass('active')
+		}
+	})
 }
 // ----------
 
 // Video
-const videoOptions = {
-	muted: true,
-	volume: 0,
-}
+if ($('*').is('.video__frame')) {
+	const videoOptions = {
+		muted: true,
+		volume: 0,
+		autoplay: true,
+	}
 
-const player = videojs('my-video', videoOptions, function onPlayerReady() {
-	this.play()
-})
+	const player = videojs('my-video', videoOptions)
+
+	$(window).on('scroll', function () {
+		if ($('.video__frame').is(':in-viewport')) {
+			player.play()
+		} else {
+			player.pause()
+		}
+	})
+}
 // ----------

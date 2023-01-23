@@ -56,10 +56,6 @@
 		></script>
 
 		<!-- libs js -->
-		<script
-			defer
-			src="libs/jquery.validate.min.js"
-		></script>
 
 		<script
 			defer
@@ -377,7 +373,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Bose</span>
+											<span class="header__search-caption">Bose</span>
 										</a>
 									</div>
 
@@ -388,28 +384,28 @@
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 									</div>
 
@@ -426,7 +422,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 1 Pro</span>
+											<span class="header__search-caption">Boserie 1 Pro</span>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -441,7 +437,9 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 2 Standart</span>
+											<span class="header__search-caption"
+												>Boserie 2 Standart</span
+											>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -456,7 +454,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 1 Pro</span>
+											<span class="header__search-caption">Boserie 1 Pro</span>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -475,7 +473,7 @@
 												class="header__search-img"
 											/>
 
-											<span
+											<span class="header__search-caption"
 												>Boseries new product line is a very optimistic</span
 											>
 										</a>
@@ -490,7 +488,7 @@
 												class="header__search-img"
 											/>
 
-											<span
+											<span class="header__search-caption"
 												>Boseries new product line is a very optimistic</span
 											>
 										</a>
@@ -562,6 +560,20 @@
 										/>
 
 										Lithuanian
+									</a>
+
+									<a
+										href="#"
+										class="header__langs-item"
+										aria-label="USA"
+									>
+										<img
+											class="header__langs-flag"
+											src="img/main/flags/usa.svg"
+											alt="USA"
+										/>
+
+										English (US)
 									</a>
 								</div>
 							</div>
@@ -966,22 +978,37 @@
 						</button>
 
 						<div class="data__inputs">
-							<label class="data__input input-wrapper">
+							<label class="data__input input-wrapper invalid">
 								<span>First Name</span>
 								<input
 									type="text"
 									name="First name"
 									disabled
+									required
 								/>
+								<div class="input-error">Error Error Error!</div>
 							</label>
 
-							<label class="data__input input-wrapper">
+							<label class="data__input input-wrapper invalid">
 								<span>Last Name</span>
 								<input
 									type="text"
 									name="Last name"
 									disabled
+									required
 								/>
+								<div class="input-error">Error Error Error!</div>
+							</label>
+
+							<label class="data__input input-wrapper _m-less">
+								<span>Birthday*</span>
+								<input
+									type="text"
+									name="Birthday date"
+									required
+									class="input-date"
+								/>
+								<div class="input-error">Error Error Error!</div>
 							</label>
 
 							<div class="data__flex-row">
@@ -994,81 +1021,58 @@
 									>
 										<option></option>
 										<option
-											value="+380"
-											data-image="img/main/flags/latvia.svg"
+											value="+370"
+											data-image="img/main/flags/lithuania.svg"
 										>
-											+380
+											+370
 										</option>
+
 										<option
-											value="+380"
+											value="+371"
 											data-image="img/main/flags/latvia.svg"
 										>
-											+380
+											+371
 										</option>
+
 										<option
-											value="+380"
-											data-image="img/main/flags/latvia.svg"
+											value="+372"
+											data-image="img/main/flags/estonia.svg"
 										>
-											+380
-										</option>
-										<option
-											value="+380"
-											data-image="img/main/flags/latvia.svg"
-										>
-											+380
-										</option>
-										<option
-											value="+380"
-											data-image="img/main/flags/latvia.svg"
-										>
-											+380
+											+372
 										</option>
 									</select>
 								</div>
 
-								<label class="data__input input-wrapper">
+								<label class="data__input input-wrapper invalid">
 									<span>Phone number</span>
 									<input
 										type="text"
 										name="Phone number"
 										class="input-phone"
+										required
 										disabled
 									/>
 								</label>
+
+								<button
+									type="button"
+									class="btn _transparent"
+								>
+									Send SMS
+								</button>
+
+								<div class="input-error">Error Error Error!</div>
 							</div>
 
-							<span class="data__caption">Birthday</span>
-							<div class="data__flexbox">
-								<label class="data__input input-wrapper">
-									<span>Day</span>
-									<input
-										type="text"
-										name="Day"
-										class="input-day"
-										disabled
-									/>
-								</label>
-
-								<label class="data__input input-wrapper">
-									<span>Month</span>
-									<input
-										type="text"
-										name="Month"
-										class="input-month"
-										disabled
-									/>
-								</label>
-
-								<label class="data__input input-wrapper">
-									<span>Year</span>
-									<input
-										type="text"
-										name="Year"
-										class="input-year"
-										disabled
-									/>
-								</label>
-							</div>
+							<label class="data__input input-wrapper invalid">
+								<span>Verification code</span>
+								<input
+									type="text"
+									name="Verification code"
+									required
+								/>
+								<div class="input-error">Error Error Error!</div>
+							</label>
 						</div>
 
 						<p class="data__note _fz-12">
@@ -1078,7 +1082,7 @@
 						</p>
 
 						<button
-							type="button"
+							type="submit"
 							class="data__btn data__form-btn btn _transparent"
 						>
 							Save Changes
@@ -1106,6 +1110,37 @@
 						</button>
 
 						<div class="data__inputs">
+							<div class="data__select">
+								<select
+									name="country"
+									class="select-country"
+									data-placeholder="Country"
+									id="country"
+									disabled
+								>
+									<option></option>
+									<option
+										value="Latvia"
+										data-image="img/main/flags/latvia.svg"
+									>
+										Latvia
+									</option>
+									<option
+										value="Lithuania"
+										data-image="img/main/flags/lithuania.svg"
+									>
+										Lithuania
+									</option>
+									<option
+										value="Estonia"
+										data-image="img/main/flags/estonia.svg"
+									>
+										Estonia
+									</option>
+								</select>
+								<div class="input-error">Error!</div>
+							</div>
+
 							<label class="data__input data__input-search input-wrapper">
 								<span>Search for address automatically</span>
 
@@ -1128,6 +1163,7 @@
 									required
 									disabled
 								/>
+								<div class="input-error">Error!</div>
 							</label>
 
 							<label class="data__input input-wrapper">
@@ -1139,6 +1175,7 @@
 									required
 									disabled
 								/>
+								<div class="input-error">Error!</div>
 							</label>
 
 							<label class="data__input input-wrapper">
@@ -1150,6 +1187,7 @@
 									required
 									disabled
 								/>
+								<div class="input-error">Error!</div>
 							</label>
 
 							<label class="data__input input-wrapper">
@@ -1158,67 +1196,15 @@
 									type="text"
 									name="locality"
 									id="locality"
+									required
 									disabled
 								/>
+								<div class="input-error">Error!</div>
 							</label>
-
-							<div class="data__select">
-								<select
-									name="country"
-									class="select-country"
-									data-placeholder="Country"
-									id="country"
-									disabled
-								>
-									<option></option>
-									<option
-										value="Ukraine"
-										data-image="img/main/flags/estonia.svg"
-									>
-										Ukraine
-									</option>
-									<option
-										value="Украина"
-										data-image="img/main/flags/estonia.svg"
-									>
-										Украина
-									</option>
-									<option
-										value="Ukraine"
-										data-image="img/main/flags/estonia.svg"
-									>
-										Ukraine
-									</option>
-									<option
-										value="Ukraine"
-										data-image="img/main/flags/estonia.svg"
-									>
-										Ukraine
-									</option>
-									<option
-										value="Ukraine"
-										data-image="img/main/flags/estonia.svg"
-									>
-										Ukraine
-									</option>
-									<option
-										value="Ukraine"
-										data-image="img/main/flags/estonia.svg"
-									>
-										Ukraine
-									</option>
-									<option
-										value="Ukraine"
-										data-image="img/main/flags/estonia.svg"
-									>
-										Ukraine
-									</option>
-								</select>
-							</div>
 						</div>
 
 						<button
-							type="button"
+							type="submit"
 							class="data__btn data__form-btn btn _transparent"
 						>
 							Save Changes
@@ -1288,7 +1274,7 @@
 						</p>
 
 						<button
-							type="button"
+							type="submit"
 							class="data__btn data__form-btn btn _transparent"
 						>
 							Save Changes
@@ -1434,30 +1420,8 @@
 								aria-label="Social link"
 							>
 								<img
-									src="img/icons/twitter.svg"
-									alt="Twitter"
-								/>
-							</a>
-
-							<a
-								href="#"
-								class="footer__social-link"
-								aria-label="Social link"
-							>
-								<img
 									src="img/icons/youtube.svg"
 									alt="Youtube"
-								/>
-							</a>
-
-							<a
-								href="#"
-								class="footer__social-link"
-								aria-label="Social link"
-							>
-								<img
-									src="img/icons/pinterest.svg"
-									alt="Pinterest"
 								/>
 							</a>
 						</div>

@@ -56,10 +56,6 @@
 		></script>
 
 		<!-- libs js -->
-		<script
-			defer
-			src="libs/jquery.validate.min.js"
-		></script>
 
 		<script
 			defer
@@ -80,11 +76,6 @@
 		<script
 			defer
 			src="js/main.js"
-		></script>
-		<!-- search js -->
-		<script
-			defer
-			src="js/search.js"
 		></script>
 	</head>
 
@@ -376,7 +367,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Bose</span>
+											<span class="header__search-caption">Bose</span>
 										</a>
 									</div>
 
@@ -387,28 +378,28 @@
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 									</div>
 
@@ -425,7 +416,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 1 Pro</span>
+											<span class="header__search-caption">Boserie 1 Pro</span>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -440,7 +431,9 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 2 Standart</span>
+											<span class="header__search-caption"
+												>Boserie 2 Standart</span
+											>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -455,7 +448,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 1 Pro</span>
+											<span class="header__search-caption">Boserie 1 Pro</span>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -474,7 +467,7 @@
 												class="header__search-img"
 											/>
 
-											<span
+											<span class="header__search-caption"
 												>Boseries new product line is a very optimistic</span
 											>
 										</a>
@@ -489,7 +482,7 @@
 												class="header__search-img"
 											/>
 
-											<span
+											<span class="header__search-caption"
 												>Boseries new product line is a very optimistic</span
 											>
 										</a>
@@ -561,6 +554,20 @@
 										/>
 
 										Lithuanian
+									</a>
+
+									<a
+										href="#"
+										class="header__langs-item"
+										aria-label="USA"
+									>
+										<img
+											class="header__langs-flag"
+											src="img/main/flags/usa.svg"
+											alt="USA"
+										/>
+
+										English (US)
 									</a>
 								</div>
 							</div>
@@ -1298,7 +1305,7 @@
 												<label class="catalog__filter-input input-wrapper">
 													<span>From</span>
 													<input
-														type="text"
+														type="number"
 														name="Price from"
 													/>
 												</label>
@@ -1306,7 +1313,7 @@
 												<label class="catalog__filter-input input-wrapper">
 													<span>To</span>
 													<input
-														type="text"
+														type="number"
 														name="Price to"
 													/>
 												</label>
@@ -1382,7 +1389,7 @@
 												<label class="catalog__filter-input input-wrapper">
 													<span>From</span>
 													<input
-														type="text"
+														type="number"
 														name="Height from"
 													/>
 												</label>
@@ -1390,7 +1397,7 @@
 												<label class="catalog__filter-input input-wrapper">
 													<span>To</span>
 													<input
-														type="text"
+														type="number"
 														name="Height to"
 													/>
 												</label>
@@ -1595,86 +1602,29 @@
 
 							<div class="product__flexbox">
 								<div class="product__flexbox-inner">
-									<a
-										href="#"
-										class="product__category"
-										>hot deal</a
-									>
-									<a
-										href="#"
-										class="product__title"
-										>Beosound explore</a
-									>
-									<span class="product__price">$199</span>
-								</div>
+									<div class="product__top-links">
+										<a
+											href="#"
+											class="product__category"
+											>hot deal</a
+										>
 
-								<div class="product__flexbox-inner">
-									<button
-										class="product__btn product__btn-favorite"
-										aria-label="Add to favorites"
-									></button>
+										<a
+											href="#"
+											class="product__category"
+										>
+											made in ua
+											<img
+												class="product__category-img"
+												src="img/product/ua-flag.svg"
+												alt="UA flag"
+											/>
 
-									<button
-										class="product__btn product__btn-cart"
-										aria-label="Add to cart"
-									></button>
-								</div>
-							</div>
-						</div>
-
-						<div class="product">
-							<div class="product__slider">
-								<a
-									href="#"
-									class="swiper-wrapper"
-								>
-									<span class="swiper-slide">
-										<span
-											class="product__preview"
-											style="
-												background-image: url('img/main/product1-plug.png');
-											"
-										></span>
-									</span>
-
-									<span class="swiper-slide">
-										<span
-											class="product__preview"
-											style="
-												background-image: url('img/main/product2-plug.png');
-											"
-										></span>
-									</span>
-
-									<span class="swiper-slide">
-										<span
-											class="product__preview"
-											style="
-												background-image: url('img/main/product1-plug.png');
-											"
-										></span>
-									</span>
-
-									<span class="swiper-slide">
-										<span
-											class="product__preview"
-											style="
-												background-image: url('img/main/product2-plug.png');
-											"
-										></span>
-									</span>
-								</a>
-
-								<span class="product__slider-scrollbar"></span>
-							</div>
-
-							<div class="product__flexbox">
-								<div class="product__flexbox-inner">
-									<a
-										href="#"
-										class="product__category"
-										>hot deal</a
-									>
+											<span class="product__category-hint">
+												Мы переводим 2% от продаж на поддержку ВСУ
+											</span>
+										</a>
+									</div>
 									<a
 										href="#"
 										class="product__title"
@@ -1745,86 +1695,13 @@
 
 							<div class="product__flexbox">
 								<div class="product__flexbox-inner">
-									<a
-										href="#"
-										class="product__category"
-										>hot deal</a
-									>
-									<a
-										href="#"
-										class="product__title"
-										>Beosound explore</a
-									>
-									<span class="product__price">$199</span>
-								</div>
-
-								<div class="product__flexbox-inner">
-									<button
-										class="product__btn product__btn-favorite"
-										aria-label="Add to favorites"
-									></button>
-
-									<button
-										class="product__btn product__btn-cart"
-										aria-label="Add to cart"
-									></button>
-								</div>
-							</div>
-						</div>
-
-						<div class="product">
-							<div class="product__slider">
-								<a
-									href="#"
-									class="swiper-wrapper"
-								>
-									<span class="swiper-slide">
-										<span
-											class="product__preview"
-											style="
-												background-image: url('img/main/product1-plug.png');
-											"
-										></span>
-									</span>
-
-									<span class="swiper-slide">
-										<span
-											class="product__preview"
-											style="
-												background-image: url('img/main/product2-plug.png');
-											"
-										></span>
-									</span>
-
-									<span class="swiper-slide">
-										<span
-											class="product__preview"
-											style="
-												background-image: url('img/main/product1-plug.png');
-											"
-										></span>
-									</span>
-
-									<span class="swiper-slide">
-										<span
-											class="product__preview"
-											style="
-												background-image: url('img/main/product2-plug.png');
-											"
-										></span>
-									</span>
-								</a>
-
-								<span class="product__slider-scrollbar"></span>
-							</div>
-
-							<div class="product__flexbox">
-								<div class="product__flexbox-inner">
-									<a
-										href="#"
-										class="product__category"
-										>hot deal</a
-									>
+									<div class="product__top-links">
+										<a
+											href="#"
+											class="product__category"
+											>hot deal</a
+										>
+									</div>
 									<a
 										href="#"
 										class="product__title"
@@ -1895,11 +1772,7 @@
 
 							<div class="product__flexbox">
 								<div class="product__flexbox-inner">
-									<a
-										href="#"
-										class="product__category"
-										>hot deal</a
-									>
+									<div class="product__top-links"></div>
 									<a
 										href="#"
 										class="product__title"
@@ -1970,86 +1843,29 @@
 
 							<div class="product__flexbox">
 								<div class="product__flexbox-inner">
-									<a
-										href="#"
-										class="product__category"
-										>hot deal</a
-									>
-									<a
-										href="#"
-										class="product__title"
-										>Beosound explore</a
-									>
-									<span class="product__price">$199</span>
-								</div>
+									<div class="product__top-links">
+										<a
+											href="#"
+											class="product__category"
+											>hot deal</a
+										>
 
-								<div class="product__flexbox-inner">
-									<button
-										class="product__btn product__btn-favorite"
-										aria-label="Add to favorites"
-									></button>
+										<a
+											href="#"
+											class="product__category"
+										>
+											made in ua
+											<img
+												class="product__category-img"
+												src="img/product/ua-flag.svg"
+												alt="UA flag"
+											/>
 
-									<button
-										class="product__btn product__btn-cart"
-										aria-label="Add to cart"
-									></button>
-								</div>
-							</div>
-						</div>
-
-						<div class="product">
-							<div class="product__slider">
-								<a
-									href="#"
-									class="swiper-wrapper"
-								>
-									<span class="swiper-slide">
-										<span
-											class="product__preview"
-											style="
-												background-image: url('img/main/product1-plug.png');
-											"
-										></span>
-									</span>
-
-									<span class="swiper-slide">
-										<span
-											class="product__preview"
-											style="
-												background-image: url('img/main/product2-plug.png');
-											"
-										></span>
-									</span>
-
-									<span class="swiper-slide">
-										<span
-											class="product__preview"
-											style="
-												background-image: url('img/main/product1-plug.png');
-											"
-										></span>
-									</span>
-
-									<span class="swiper-slide">
-										<span
-											class="product__preview"
-											style="
-												background-image: url('img/main/product2-plug.png');
-											"
-										></span>
-									</span>
-								</a>
-
-								<span class="product__slider-scrollbar"></span>
-							</div>
-
-							<div class="product__flexbox">
-								<div class="product__flexbox-inner">
-									<a
-										href="#"
-										class="product__category"
-										>hot deal</a
-									>
+											<span class="product__category-hint">
+												Мы переводим 2% от продаж на поддержку ВСУ
+											</span>
+										</a>
+									</div>
 									<a
 										href="#"
 										class="product__title"
@@ -2120,86 +1936,13 @@
 
 							<div class="product__flexbox">
 								<div class="product__flexbox-inner">
-									<a
-										href="#"
-										class="product__category"
-										>hot deal</a
-									>
-									<a
-										href="#"
-										class="product__title"
-										>Beosound explore</a
-									>
-									<span class="product__price">$199</span>
-								</div>
-
-								<div class="product__flexbox-inner">
-									<button
-										class="product__btn product__btn-favorite"
-										aria-label="Add to favorites"
-									></button>
-
-									<button
-										class="product__btn product__btn-cart"
-										aria-label="Add to cart"
-									></button>
-								</div>
-							</div>
-						</div>
-
-						<div class="product">
-							<div class="product__slider">
-								<a
-									href="#"
-									class="swiper-wrapper"
-								>
-									<span class="swiper-slide">
-										<span
-											class="product__preview"
-											style="
-												background-image: url('img/main/product1-plug.png');
-											"
-										></span>
-									</span>
-
-									<span class="swiper-slide">
-										<span
-											class="product__preview"
-											style="
-												background-image: url('img/main/product2-plug.png');
-											"
-										></span>
-									</span>
-
-									<span class="swiper-slide">
-										<span
-											class="product__preview"
-											style="
-												background-image: url('img/main/product1-plug.png');
-											"
-										></span>
-									</span>
-
-									<span class="swiper-slide">
-										<span
-											class="product__preview"
-											style="
-												background-image: url('img/main/product2-plug.png');
-											"
-										></span>
-									</span>
-								</a>
-
-								<span class="product__slider-scrollbar"></span>
-							</div>
-
-							<div class="product__flexbox">
-								<div class="product__flexbox-inner">
-									<a
-										href="#"
-										class="product__category"
-										>hot deal</a
-									>
+									<div class="product__top-links">
+										<a
+											href="#"
+											class="product__category"
+											>hot deal</a
+										>
+									</div>
 									<a
 										href="#"
 										class="product__title"
@@ -2270,11 +2013,13 @@
 
 							<div class="product__flexbox">
 								<div class="product__flexbox-inner">
-									<a
-										href="#"
-										class="product__category"
-										>hot deal</a
-									>
+									<div class="product__top-links">
+										<a
+											href="#"
+											class="product__category"
+											>hot deal</a
+										>
+									</div>
 									<a
 										href="#"
 										class="product__title"
@@ -2345,11 +2090,321 @@
 
 							<div class="product__flexbox">
 								<div class="product__flexbox-inner">
+									<div class="product__top-links">
+										<a
+											href="#"
+											class="product__category"
+											>hot deal</a
+										>
+									</div>
 									<a
 										href="#"
-										class="product__category"
-										>hot deal</a
+										class="product__title"
+										>Beosound explore</a
 									>
+									<span class="product__price">$199</span>
+								</div>
+
+								<div class="product__flexbox-inner">
+									<button
+										class="product__btn product__btn-favorite"
+										aria-label="Add to favorites"
+									></button>
+
+									<button
+										class="product__btn product__btn-cart"
+										aria-label="Add to cart"
+									></button>
+								</div>
+							</div>
+						</div>
+
+						<div class="product">
+							<div class="product__slider">
+								<a
+									href="#"
+									class="swiper-wrapper"
+								>
+									<span class="swiper-slide">
+										<span
+											class="product__preview"
+											style="
+												background-image: url('img/main/product1-plug.png');
+											"
+										></span>
+									</span>
+
+									<span class="swiper-slide">
+										<span
+											class="product__preview"
+											style="
+												background-image: url('img/main/product2-plug.png');
+											"
+										></span>
+									</span>
+
+									<span class="swiper-slide">
+										<span
+											class="product__preview"
+											style="
+												background-image: url('img/main/product1-plug.png');
+											"
+										></span>
+									</span>
+
+									<span class="swiper-slide">
+										<span
+											class="product__preview"
+											style="
+												background-image: url('img/main/product2-plug.png');
+											"
+										></span>
+									</span>
+								</a>
+
+								<span class="product__slider-scrollbar"></span>
+							</div>
+
+							<div class="product__flexbox">
+								<div class="product__flexbox-inner">
+									<div class="product__top-links">
+										<a
+											href="#"
+											class="product__category"
+											>hot deal</a
+										>
+									</div>
+									<a
+										href="#"
+										class="product__title"
+										>Beosound explore</a
+									>
+									<span class="product__price">$199</span>
+								</div>
+
+								<div class="product__flexbox-inner">
+									<button
+										class="product__btn product__btn-favorite"
+										aria-label="Add to favorites"
+									></button>
+
+									<button
+										class="product__btn product__btn-cart"
+										aria-label="Add to cart"
+									></button>
+								</div>
+							</div>
+						</div>
+
+						<div class="product">
+							<div class="product__slider">
+								<a
+									href="#"
+									class="swiper-wrapper"
+								>
+									<span class="swiper-slide">
+										<span
+											class="product__preview"
+											style="
+												background-image: url('img/main/product1-plug.png');
+											"
+										></span>
+									</span>
+
+									<span class="swiper-slide">
+										<span
+											class="product__preview"
+											style="
+												background-image: url('img/main/product2-plug.png');
+											"
+										></span>
+									</span>
+
+									<span class="swiper-slide">
+										<span
+											class="product__preview"
+											style="
+												background-image: url('img/main/product1-plug.png');
+											"
+										></span>
+									</span>
+
+									<span class="swiper-slide">
+										<span
+											class="product__preview"
+											style="
+												background-image: url('img/main/product2-plug.png');
+											"
+										></span>
+									</span>
+								</a>
+
+								<span class="product__slider-scrollbar"></span>
+							</div>
+
+							<div class="product__flexbox">
+								<div class="product__flexbox-inner">
+									<div class="product__top-links">
+										<a
+											href="#"
+											class="product__category"
+											>hot deal</a
+										>
+									</div>
+									<a
+										href="#"
+										class="product__title"
+										>Beosound explore</a
+									>
+									<span class="product__price">$199</span>
+								</div>
+
+								<div class="product__flexbox-inner">
+									<button
+										class="product__btn product__btn-favorite"
+										aria-label="Add to favorites"
+									></button>
+
+									<button
+										class="product__btn product__btn-cart"
+										aria-label="Add to cart"
+									></button>
+								</div>
+							</div>
+						</div>
+
+						<div class="product">
+							<div class="product__slider">
+								<a
+									href="#"
+									class="swiper-wrapper"
+								>
+									<span class="swiper-slide">
+										<span
+											class="product__preview"
+											style="
+												background-image: url('img/main/product1-plug.png');
+											"
+										></span>
+									</span>
+
+									<span class="swiper-slide">
+										<span
+											class="product__preview"
+											style="
+												background-image: url('img/main/product2-plug.png');
+											"
+										></span>
+									</span>
+
+									<span class="swiper-slide">
+										<span
+											class="product__preview"
+											style="
+												background-image: url('img/main/product1-plug.png');
+											"
+										></span>
+									</span>
+
+									<span class="swiper-slide">
+										<span
+											class="product__preview"
+											style="
+												background-image: url('img/main/product2-plug.png');
+											"
+										></span>
+									</span>
+								</a>
+
+								<span class="product__slider-scrollbar"></span>
+							</div>
+
+							<div class="product__flexbox">
+								<div class="product__flexbox-inner">
+									<div class="product__top-links">
+										<a
+											href="#"
+											class="product__category"
+											>hot deal</a
+										>
+									</div>
+									<a
+										href="#"
+										class="product__title"
+										>Beosound explore</a
+									>
+									<span class="product__price">$199</span>
+								</div>
+
+								<div class="product__flexbox-inner">
+									<button
+										class="product__btn product__btn-favorite"
+										aria-label="Add to favorites"
+									></button>
+
+									<button
+										class="product__btn product__btn-cart"
+										aria-label="Add to cart"
+									></button>
+								</div>
+							</div>
+						</div>
+
+						<div class="product">
+							<div class="product__slider">
+								<a
+									href="#"
+									class="swiper-wrapper"
+								>
+									<span class="swiper-slide">
+										<span
+											class="product__preview"
+											style="
+												background-image: url('img/main/product1-plug.png');
+											"
+										></span>
+									</span>
+
+									<span class="swiper-slide">
+										<span
+											class="product__preview"
+											style="
+												background-image: url('img/main/product2-plug.png');
+											"
+										></span>
+									</span>
+
+									<span class="swiper-slide">
+										<span
+											class="product__preview"
+											style="
+												background-image: url('img/main/product1-plug.png');
+											"
+										></span>
+									</span>
+
+									<span class="swiper-slide">
+										<span
+											class="product__preview"
+											style="
+												background-image: url('img/main/product2-plug.png');
+											"
+										></span>
+									</span>
+								</a>
+
+								<span class="product__slider-scrollbar"></span>
+							</div>
+
+							<div class="product__flexbox">
+								<div class="product__flexbox-inner">
+									<div class="product__top-links">
+										<a
+											href="#"
+											class="product__category"
+											>hot deal</a
+										>
+									</div>
 									<a
 										href="#"
 										class="product__title"
@@ -2503,30 +2558,8 @@
 								aria-label="Social link"
 							>
 								<img
-									src="img/icons/twitter.svg"
-									alt="Twitter"
-								/>
-							</a>
-
-							<a
-								href="#"
-								class="footer__social-link"
-								aria-label="Social link"
-							>
-								<img
 									src="img/icons/youtube.svg"
 									alt="Youtube"
-								/>
-							</a>
-
-							<a
-								href="#"
-								class="footer__social-link"
-								aria-label="Social link"
-							>
-								<img
-									src="img/icons/pinterest.svg"
-									alt="Pinterest"
 								/>
 							</a>
 						</div>

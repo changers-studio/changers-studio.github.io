@@ -113,6 +113,7 @@ body.compensate-for-scrollbar {
 	transform: translateZ(0);
 	height: 100%;
 	z-index: 99994;
+	background-color: #fff;
 }
 
 .fancybox-show-thumbs .fancybox-stage {
@@ -866,7 +867,7 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-thumbs__list a::before {
-	border: 2px solid #555;
+	border-bottom: 2px solid #555;
 	bottom: 0;
 	content: '';
 	left: 0;

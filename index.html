@@ -51,10 +51,6 @@
 		></script>
 
 		<!-- libs js -->
-		<script
-			defer
-			src="libs/jquery.validate.min.js"
-		></script>
 
 		<script
 			defer
@@ -70,11 +66,6 @@
 		<script
 			defer
 			src="js/main.js"
-		></script>
-		<!-- search js -->
-		<script
-			defer
-			src="js/search.js"
 		></script>
 	</head>
 
@@ -366,7 +357,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Bose</span>
+											<span class="header__search-caption">Bose</span>
 										</a>
 									</div>
 
@@ -377,28 +368,28 @@
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 									</div>
 
@@ -415,7 +406,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 1 Pro</span>
+											<span class="header__search-caption">Boserie 1 Pro</span>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -430,7 +421,9 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 2 Standart</span>
+											<span class="header__search-caption"
+												>Boserie 2 Standart</span
+											>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -445,7 +438,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 1 Pro</span>
+											<span class="header__search-caption">Boserie 1 Pro</span>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -464,7 +457,7 @@
 												class="header__search-img"
 											/>
 
-											<span
+											<span class="header__search-caption"
 												>Boseries new product line is a very optimistic</span
 											>
 										</a>
@@ -479,7 +472,7 @@
 												class="header__search-img"
 											/>
 
-											<span
+											<span class="header__search-caption"
 												>Boseries new product line is a very optimistic</span
 											>
 										</a>
@@ -551,6 +544,20 @@
 										/>
 
 										Lithuanian
+									</a>
+
+									<a
+										href="#"
+										class="header__langs-item"
+										aria-label="USA"
+									>
+										<img
+											class="header__langs-flag"
+											src="img/main/flags/usa.svg"
+											alt="USA"
+										/>
+
+										English (US)
 									</a>
 								</div>
 							</div>
@@ -915,14 +922,14 @@
 				</div>
 			</header>
 
-			<section
-				class="main"
-				style="background-image: url('img/main-image.jpg')"
-			>
-				<div class="container main__container">
-					<div class="main__slider">
-						<div class="swiper-wrapper">
-							<div class="main__slider-item swiper-slide">
+			<section class="main">
+				<div class="main__slider">
+					<div class="swiper-wrapper">
+						<div
+							class="main__slider-item swiper-slide"
+							style="background-image: url('img/main-image.jpg')"
+						>
+							<div class="container main__container">
 								<h1 class="main__title">The gift of zoning in</h1>
 
 								<p class="main__text">
@@ -937,8 +944,13 @@
 									>Shop now</a
 								>
 							</div>
+						</div>
 
-							<div class="main__slider-item swiper-slide">
+						<div
+							class="main__slider-item swiper-slide"
+							style="background-image: url('img/main-image.jpg')"
+						>
+							<div class="container main__container">
 								<h1 class="main__title">The gift of zoning in</h1>
 
 								<p class="main__text">
@@ -953,8 +965,13 @@
 									>Shop now</a
 								>
 							</div>
+						</div>
 
-							<div class="main__slider-item swiper-slide">
+						<div
+							class="main__slider-item swiper-slide"
+							style="background-image: url('img/main-image.jpg')"
+						>
+							<div class="container main__container">
 								<h1 class="main__title">The gift of zoning</h1>
 
 								<p class="main__text">
@@ -970,9 +987,9 @@
 								>
 							</div>
 						</div>
-
-						<div class="swiper-pagination"></div>
 					</div>
+
+					<div class="swiper-pagination"></div>
 				</div>
 			</section>
 
@@ -1093,11 +1110,11 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="product">
-									<a
-										href="#"
-										class="product__slider"
-									>
-										<span class="swiper-wrapper">
+									<div class="product__slider">
+										<a
+											href="#"
+											class="swiper-wrapper"
+										>
 											<span class="swiper-slide">
 												<span
 													class="product__preview"
@@ -1133,10 +1150,10 @@
 													"
 												></span>
 											</span>
-										</span>
+										</a>
 
 										<span class="product__slider-scrollbar"></span>
-									</a>
+									</div>
 
 									<div class="product__flexbox">
 										<div class="product__flexbox-inner">
@@ -1165,11 +1182,11 @@
 
 							<div class="swiper-slide">
 								<div class="product">
-									<a
-										href="#"
-										class="product__slider"
-									>
-										<span class="swiper-wrapper">
+									<div class="product__slider">
+										<a
+											href="#"
+											class="swiper-wrapper"
+										>
 											<span class="swiper-slide">
 												<span
 													class="product__preview"
@@ -1205,10 +1222,10 @@
 													"
 												></span>
 											</span>
-										</span>
+										</a>
 
 										<span class="product__slider-scrollbar"></span>
-									</a>
+									</div>
 
 									<div class="product__flexbox">
 										<div class="product__flexbox-inner">
@@ -1237,11 +1254,11 @@
 
 							<div class="swiper-slide">
 								<div class="product">
-									<a
-										href="#"
-										class="product__slider"
-									>
-										<span class="swiper-wrapper">
+									<div class="product__slider">
+										<a
+											href="#"
+											class="swiper-wrapper"
+										>
 											<span class="swiper-slide">
 												<span
 													class="product__preview"
@@ -1277,10 +1294,10 @@
 													"
 												></span>
 											</span>
-										</span>
+										</a>
 
 										<span class="product__slider-scrollbar"></span>
-									</a>
+									</div>
 
 									<div class="product__flexbox">
 										<div class="product__flexbox-inner">
@@ -1309,11 +1326,11 @@
 
 							<div class="swiper-slide">
 								<div class="product">
-									<a
-										href="#"
-										class="product__slider"
-									>
-										<span class="swiper-wrapper">
+									<div class="product__slider">
+										<a
+											href="#"
+											class="swiper-wrapper"
+										>
 											<span class="swiper-slide">
 												<span
 													class="product__preview"
@@ -1349,10 +1366,10 @@
 													"
 												></span>
 											</span>
-										</span>
+										</a>
 
 										<span class="product__slider-scrollbar"></span>
-									</a>
+									</div>
 
 									<div class="product__flexbox">
 										<div class="product__flexbox-inner">
@@ -1381,11 +1398,11 @@
 
 							<div class="swiper-slide">
 								<div class="product">
-									<a
-										href="#"
-										class="product__slider"
-									>
-										<span class="swiper-wrapper">
+									<div class="product__slider">
+										<a
+											href="#"
+											class="swiper-wrapper"
+										>
 											<span class="swiper-slide">
 												<span
 													class="product__preview"
@@ -1421,10 +1438,10 @@
 													"
 												></span>
 											</span>
-										</span>
+										</a>
 
 										<span class="product__slider-scrollbar"></span>
-									</a>
+									</div>
 
 									<div class="product__flexbox">
 										<div class="product__flexbox-inner">
@@ -1453,11 +1470,11 @@
 
 							<div class="swiper-slide">
 								<div class="product">
-									<a
-										href="#"
-										class="product__slider"
-									>
-										<span class="swiper-wrapper">
+									<div class="product__slider">
+										<a
+											href="#"
+											class="swiper-wrapper"
+										>
 											<span class="swiper-slide">
 												<span
 													class="product__preview"
@@ -1493,10 +1510,10 @@
 													"
 												></span>
 											</span>
-										</span>
+										</a>
 
 										<span class="product__slider-scrollbar"></span>
-									</a>
+									</div>
 
 									<div class="product__flexbox">
 										<div class="product__flexbox-inner">
@@ -1525,11 +1542,11 @@
 
 							<div class="swiper-slide">
 								<div class="product">
-									<a
-										href="#"
-										class="product__slider"
-									>
-										<span class="swiper-wrapper">
+									<div class="product__slider">
+										<a
+											href="#"
+											class="swiper-wrapper"
+										>
 											<span class="swiper-slide">
 												<span
 													class="product__preview"
@@ -1565,10 +1582,10 @@
 													"
 												></span>
 											</span>
-										</span>
+										</a>
 
 										<span class="product__slider-scrollbar"></span>
-									</a>
+									</div>
 
 									<div class="product__flexbox">
 										<div class="product__flexbox-inner">
@@ -1609,11 +1626,11 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="product">
-									<a
-										href="#"
-										class="product__slider"
-									>
-										<span class="swiper-wrapper">
+									<div class="product__slider">
+										<a
+											href="#"
+											class="swiper-wrapper"
+										>
 											<span class="swiper-slide">
 												<span
 													class="product__preview"
@@ -1649,10 +1666,10 @@
 													"
 												></span>
 											</span>
-										</span>
+										</a>
 
 										<span class="product__slider-scrollbar"></span>
-									</a>
+									</div>
 
 									<div class="product__flexbox">
 										<div class="product__flexbox-inner">
@@ -1681,11 +1698,11 @@
 
 							<div class="swiper-slide">
 								<div class="product">
-									<a
-										href="#"
-										class="product__slider"
-									>
-										<span class="swiper-wrapper">
+									<div class="product__slider">
+										<a
+											href="#"
+											class="swiper-wrapper"
+										>
 											<span class="swiper-slide">
 												<span
 													class="product__preview"
@@ -1721,10 +1738,10 @@
 													"
 												></span>
 											</span>
-										</span>
+										</a>
 
 										<span class="product__slider-scrollbar"></span>
-									</a>
+									</div>
 
 									<div class="product__flexbox">
 										<div class="product__flexbox-inner">
@@ -1753,11 +1770,11 @@
 
 							<div class="swiper-slide">
 								<div class="product">
-									<a
-										href="#"
-										class="product__slider"
-									>
-										<span class="swiper-wrapper">
+									<div class="product__slider">
+										<a
+											href="#"
+											class="swiper-wrapper"
+										>
 											<span class="swiper-slide">
 												<span
 													class="product__preview"
@@ -1793,10 +1810,10 @@
 													"
 												></span>
 											</span>
-										</span>
+										</a>
 
 										<span class="product__slider-scrollbar"></span>
-									</a>
+									</div>
 
 									<div class="product__flexbox">
 										<div class="product__flexbox-inner">
@@ -1825,11 +1842,11 @@
 
 							<div class="swiper-slide">
 								<div class="product">
-									<a
-										href="#"
-										class="product__slider"
-									>
-										<span class="swiper-wrapper">
+									<div class="product__slider">
+										<a
+											href="#"
+											class="swiper-wrapper"
+										>
 											<span class="swiper-slide">
 												<span
 													class="product__preview"
@@ -1865,10 +1882,10 @@
 													"
 												></span>
 											</span>
-										</span>
+										</a>
 
 										<span class="product__slider-scrollbar"></span>
-									</a>
+									</div>
 
 									<div class="product__flexbox">
 										<div class="product__flexbox-inner">
@@ -1897,11 +1914,11 @@
 
 							<div class="swiper-slide">
 								<div class="product">
-									<a
-										href="#"
-										class="product__slider"
-									>
-										<span class="swiper-wrapper">
+									<div class="product__slider">
+										<a
+											href="#"
+											class="swiper-wrapper"
+										>
 											<span class="swiper-slide">
 												<span
 													class="product__preview"
@@ -1937,10 +1954,10 @@
 													"
 												></span>
 											</span>
-										</span>
+										</a>
 
 										<span class="product__slider-scrollbar"></span>
-									</a>
+									</div>
 
 									<div class="product__flexbox">
 										<div class="product__flexbox-inner">
@@ -1969,11 +1986,11 @@
 
 							<div class="swiper-slide">
 								<div class="product">
-									<a
-										href="#"
-										class="product__slider"
-									>
-										<span class="swiper-wrapper">
+									<div class="product__slider">
+										<a
+											href="#"
+											class="swiper-wrapper"
+										>
 											<span class="swiper-slide">
 												<span
 													class="product__preview"
@@ -2009,10 +2026,10 @@
 													"
 												></span>
 											</span>
-										</span>
+										</a>
 
 										<span class="product__slider-scrollbar"></span>
-									</a>
+									</div>
 
 									<div class="product__flexbox">
 										<div class="product__flexbox-inner">
@@ -2041,11 +2058,11 @@
 
 							<div class="swiper-slide">
 								<div class="product">
-									<a
-										href="#"
-										class="product__slider"
-									>
-										<span class="swiper-wrapper">
+									<div class="product__slider">
+										<a
+											href="#"
+											class="swiper-wrapper"
+										>
 											<span class="swiper-slide">
 												<span
 													class="product__preview"
@@ -2081,10 +2098,10 @@
 													"
 												></span>
 											</span>
-										</span>
+										</a>
 
 										<span class="product__slider-scrollbar"></span>
-									</a>
+									</div>
 
 									<div class="product__flexbox">
 										<div class="product__flexbox-inner">
@@ -2124,103 +2141,133 @@
 					<div class="scrollbar-slider brands__slider">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<div class="brands__item">
+								<a
+									href="#"
+									class="brands__item"
+								>
 									<img
 										src="img/main/brand-plug.png"
 										alt="Brand"
 										class="brands__item-img"
 									/>
-								</div>
+								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<div class="brands__item">
+								<a
+									href="#"
+									class="brands__item"
+								>
 									<img
 										src="img/main/brand-plug.png"
 										alt="Brand"
 										class="brands__item-img"
 									/>
-								</div>
+								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<div class="brands__item">
+								<a
+									href="#"
+									class="brands__item"
+								>
 									<img
 										src="img/main/brand-plug.png"
 										alt="Brand"
 										class="brands__item-img"
 									/>
-								</div>
+								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<div class="brands__item">
+								<a
+									href="#"
+									class="brands__item"
+								>
 									<img
 										src="img/main/brand-plug.png"
 										alt="Brand"
 										class="brands__item-img"
 									/>
-								</div>
+								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<div class="brands__item">
+								<a
+									href="#"
+									class="brands__item"
+								>
 									<img
 										src="img/main/brand-plug.png"
 										alt="Brand"
 										class="brands__item-img"
 									/>
-								</div>
+								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<div class="brands__item">
+								<a
+									href="#"
+									class="brands__item"
+								>
 									<img
 										src="img/main/brand-plug.png"
 										alt="Brand"
 										class="brands__item-img"
 									/>
-								</div>
+								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<div class="brands__item">
+								<a
+									href="#"
+									class="brands__item"
+								>
 									<img
 										src="img/main/brand-plug.png"
 										alt="Brand"
 										class="brands__item-img"
 									/>
-								</div>
+								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<div class="brands__item">
+								<a
+									href="#"
+									class="brands__item"
+								>
 									<img
 										src="img/main/brand-plug.png"
 										alt="Brand"
 										class="brands__item-img"
 									/>
-								</div>
+								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<div class="brands__item">
+								<a
+									href="#"
+									class="brands__item"
+								>
 									<img
 										src="img/main/brand-plug.png"
 										alt="Brand"
 										class="brands__item-img"
 									/>
-								</div>
+								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<div class="brands__item">
+								<a
+									href="#"
+									class="brands__item"
+								>
 									<img
 										src="img/main/brand-plug.png"
 										alt="Brand"
 										class="brands__item-img"
 									/>
-								</div>
+								</a>
 							</div>
 						</div>
 
@@ -2659,30 +2706,8 @@
 								aria-label="Social link"
 							>
 								<img
-									src="img/icons/twitter.svg"
-									alt="Twitter"
-								/>
-							</a>
-
-							<a
-								href="#"
-								class="footer__social-link"
-								aria-label="Social link"
-							>
-								<img
 									src="img/icons/youtube.svg"
 									alt="Youtube"
-								/>
-							</a>
-
-							<a
-								href="#"
-								class="footer__social-link"
-								aria-label="Social link"
-							>
-								<img
-									src="img/icons/pinterest.svg"
-									alt="Pinterest"
 								/>
 							</a>
 						</div>

@@ -56,10 +56,6 @@
 		></script>
 
 		<!-- libs js -->
-		<script
-			defer
-			src="libs/jquery.validate.min.js"
-		></script>
 
 		<script
 			defer
@@ -80,11 +76,6 @@
 		<script
 			defer
 			src="js/main.js"
-		></script>
-		<!-- search js -->
-		<script
-			defer
-			src="js/search.js"
 		></script>
 	</head>
 
@@ -376,7 +367,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Bose</span>
+											<span class="header__search-caption">Bose</span>
 										</a>
 									</div>
 
@@ -387,28 +378,28 @@
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 									</div>
 
@@ -425,7 +416,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 1 Pro</span>
+											<span class="header__search-caption">Boserie 1 Pro</span>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -440,7 +431,9 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 2 Standart</span>
+											<span class="header__search-caption"
+												>Boserie 2 Standart</span
+											>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -455,7 +448,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 1 Pro</span>
+											<span class="header__search-caption">Boserie 1 Pro</span>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -474,7 +467,7 @@
 												class="header__search-img"
 											/>
 
-											<span
+											<span class="header__search-caption"
 												>Boseries new product line is a very optimistic</span
 											>
 										</a>
@@ -489,7 +482,7 @@
 												class="header__search-img"
 											/>
 
-											<span
+											<span class="header__search-caption"
 												>Boseries new product line is a very optimistic</span
 											>
 										</a>
@@ -561,6 +554,20 @@
 										/>
 
 										Lithuanian
+									</a>
+
+									<a
+										href="#"
+										class="header__langs-item"
+										aria-label="USA"
+									>
+										<img
+											class="header__langs-flag"
+											src="img/main/flags/usa.svg"
+											alt="USA"
+										/>
+
+										English (US)
 									</a>
 								</div>
 							</div>
@@ -947,7 +954,7 @@
 
 										<div class="cart__item-row">
 											<div class="cart__item-count">
-												<button class="cart__item-sub"></button>
+												<button class="cart__item-sub _disabled"></button>
 												<span class="cart__item-amount">2</span>
 												<button class="cart__item-add"></button>
 											</div>
@@ -966,14 +973,9 @@
 									</button>
 
 									<button
-										class="cart__item-btn"
+										class="cart__item-btn cart__item-favorites"
 										aria-label="Add to favorites"
-									>
-										<img
-											src="img/icons/favorites.svg"
-											alt="Favorites"
-										/>
-									</button>
+									></button>
 								</div>
 
 								<div class="cart__item-warn">
@@ -1015,7 +1017,7 @@
 											<div class="cart__item-count">
 												<button class="cart__item-sub"></button>
 												<span class="cart__item-amount">2</span>
-												<button class="cart__item-add"></button>
+												<button class="cart__item-add _disabled"></button>
 											</div>
 											<span class="cart__item-price _large">$5500</span>
 										</div>
@@ -1032,14 +1034,29 @@
 									</button>
 
 									<button
-										class="cart__item-btn"
+										class="cart__item-btn cart__item-favorites"
 										aria-label="Add to favorites"
+									></button>
+								</div>
+
+								<div class="cart__item-warn">
+									<span
+										>Attention, lorem ipsum dolor sit
+										<a
+											href="#"
+											class="link"
+											>amet ipsum</a
+										>
+										,
+										<a
+											href="#"
+											class="link"
+											>dolor ipsum</a
+										>
+										dolor ipsum dolor ipsum. By signing up to the House of Bang
+										& Olufsen you accept that Bang & Olufsen as well as Bang &
+										Olufsen branded shops can contact.</span
 									>
-										<img
-											src="img/icons/favorites.svg"
-											alt="Favorites"
-										/>
-									</button>
 								</div>
 							</div>
 
@@ -1059,7 +1076,7 @@
 
 										<div class="cart__item-row">
 											<div class="cart__item-count">
-												<button class="cart__item-sub"></button>
+												<button class="cart__item-sub _disabled"></button>
 												<span class="cart__item-amount">2</span>
 												<button class="cart__item-add"></button>
 											</div>
@@ -1078,14 +1095,29 @@
 									</button>
 
 									<button
-										class="cart__item-btn"
+										class="cart__item-btn cart__item-favorites"
 										aria-label="Add to favorites"
+									></button>
+								</div>
+
+								<div class="cart__item-warn">
+									<span
+										>Attention, lorem ipsum dolor sit
+										<a
+											href="#"
+											class="link"
+											>amet ipsum</a
+										>
+										,
+										<a
+											href="#"
+											class="link"
+											>dolor ipsum</a
+										>
+										dolor ipsum dolor ipsum. By signing up to the House of Bang
+										& Olufsen you accept that Bang & Olufsen as well as Bang &
+										Olufsen branded shops can contact.</span
 									>
-										<img
-											src="img/icons/favorites.svg"
-											alt="Favorites"
-										/>
-									</button>
 								</div>
 							</div>
 						</div>
@@ -1311,30 +1343,8 @@
 								aria-label="Social link"
 							>
 								<img
-									src="img/icons/twitter.svg"
-									alt="Twitter"
-								/>
-							</a>
-
-							<a
-								href="#"
-								class="footer__social-link"
-								aria-label="Social link"
-							>
-								<img
 									src="img/icons/youtube.svg"
 									alt="Youtube"
-								/>
-							</a>
-
-							<a
-								href="#"
-								class="footer__social-link"
-								aria-label="Social link"
-							>
-								<img
-									src="img/icons/pinterest.svg"
-									alt="Pinterest"
 								/>
 							</a>
 						</div>

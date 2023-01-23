@@ -56,10 +56,6 @@
 		></script>
 
 		<!-- libs js -->
-		<script
-			defer
-			src="libs/jquery.validate.min.js"
-		></script>
 
 		<script
 			defer
@@ -80,11 +76,6 @@
 		<script
 			defer
 			src="js/main.js"
-		></script>
-		<!-- search js -->
-		<script
-			defer
-			src="js/search.js"
 		></script>
 	</head>
 
@@ -376,7 +367,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Bose</span>
+											<span class="header__search-caption">Bose</span>
 										</a>
 									</div>
 
@@ -387,28 +378,28 @@
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 
 										<a
 											href="#"
 											class="header__search-item"
 										>
-											<span>Boseries</span>
+											<span class="header__search-caption">Boseries</span>
 										</a>
 									</div>
 
@@ -425,7 +416,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 1 Pro</span>
+											<span class="header__search-caption">Boserie 1 Pro</span>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -440,7 +431,9 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 2 Standart</span>
+											<span class="header__search-caption"
+												>Boserie 2 Standart</span
+											>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -455,7 +448,7 @@
 												class="header__search-img"
 											/>
 
-											<span>Boserie 1 Pro</span>
+											<span class="header__search-caption">Boserie 1 Pro</span>
 
 											<span class="_ml-auto">$199</span>
 										</a>
@@ -474,7 +467,7 @@
 												class="header__search-img"
 											/>
 
-											<span
+											<span class="header__search-caption"
 												>Boseries new product line is a very optimistic</span
 											>
 										</a>
@@ -489,7 +482,7 @@
 												class="header__search-img"
 											/>
 
-											<span
+											<span class="header__search-caption"
 												>Boseries new product line is a very optimistic</span
 											>
 										</a>
@@ -561,6 +554,20 @@
 										/>
 
 										Lithuanian
+									</a>
+
+									<a
+										href="#"
+										class="header__langs-item"
+										aria-label="USA"
+									>
+										<img
+											class="header__langs-flag"
+											src="img/main/flags/usa.svg"
+											alt="USA"
+										/>
+
+										English (US)
 									</a>
 								</div>
 							</div>
@@ -940,34 +947,24 @@
 									>
 										<option></option>
 										<option
-											value="+380"
-											data-image="img/main/flags/latvia.svg"
+											value="+370"
+											data-image="img/main/flags/lithuania.svg"
 										>
-											+380
+											+370
 										</option>
+
 										<option
-											value="+380"
+											value="+371"
 											data-image="img/main/flags/latvia.svg"
 										>
-											+380
+											+371
 										</option>
+
 										<option
-											value="+380"
-											data-image="img/main/flags/latvia.svg"
+											value="+372"
+											data-image="img/main/flags/estonia.svg"
 										>
-											+380
-										</option>
-										<option
-											value="+380"
-											data-image="img/main/flags/latvia.svg"
-										>
-											+380
-										</option>
-										<option
-											value="+380"
-											data-image="img/main/flags/latvia.svg"
-										>
-											+380
+											+372
 										</option>
 									</select>
 								</div>
@@ -977,17 +974,29 @@
 									<input
 										type="text"
 										name="Phone number"
+										class="input-phone"
+										required
 									/>
 								</label>
+
+								<button
+									type="button"
+									class="btn _transparent"
+								>
+									Send SMS
+								</button>
+
+								<div class="input-error">Error Error Error!</div>
 							</div>
 
-							<label class="data__input input-wrapper">
+							<label class="data__input input-wrapper invalid">
 								<span>Verification code</span>
 								<input
 									type="text"
 									name="Verification code"
 									required
 								/>
+								<div class="input-error">Error Error Error!</div>
 							</label>
 
 							<label class="data__checkbox checkbox">
@@ -1220,30 +1229,8 @@
 								aria-label="Social link"
 							>
 								<img
-									src="img/icons/twitter.svg"
-									alt="Twitter"
-								/>
-							</a>
-
-							<a
-								href="#"
-								class="footer__social-link"
-								aria-label="Social link"
-							>
-								<img
 									src="img/icons/youtube.svg"
 									alt="Youtube"
-								/>
-							</a>
-
-							<a
-								href="#"
-								class="footer__social-link"
-								aria-label="Social link"
-							>
-								<img
-									src="img/icons/pinterest.svg"
-									alt="Pinterest"
 								/>
 							</a>
 						</div>

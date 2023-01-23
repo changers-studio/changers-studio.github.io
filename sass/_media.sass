@@ -5,7 +5,7 @@
 
 	// General
 	.isnohome
-		padding-top: 54px
+		padding-top: 101px
 
 	.container
 		max-width: 960px
@@ -34,6 +34,9 @@
 					width: 670px
 			&-btn
 				margin-left: 0
+			&-result
+				right: 110px
+				width: 690px
 	// ----------
 
 	// Footer
@@ -62,10 +65,16 @@
 				flex-wrap: wrap
 			&__btn
 				width: calc(50% - 12px)
-				&-share
-					margin-top: 24px
-					margin-left: auto
-					width: auto
+			&__share
+				margin-top: 24px
+				margin-left: auto
+				width: auto
+		// ----------
+
+		// Video
+		.video
+			&__frame
+				height: calc(100vh - 101px)
 		// ----------
 	// page end
 
@@ -164,6 +173,8 @@
 				color: #555
 				&::before
 					width: 0
+			&.active::before
+				width: 100%
 	// ----------
 
 	// Slider styles
@@ -387,6 +398,7 @@
 		&__slider
 			&-item
 				text-align: center
+				justify-content: flex-end
 	// ----------
 
 	// Categories
@@ -407,6 +419,12 @@
 				width: 100%
 		&__preview
 			height: 135px
+		&__top-links
+			min-height: 22px
+		&__category
+			padding: 4px 5px
+			min-width: 64px
+			margin-right: 0
 		&__title
 			margin-bottom: 4px
 		&__price
@@ -615,12 +633,14 @@
 		// Video
 		.video
 			&__frame
-				height: 250px
+				height: 56vw
 
 		.video-js
 			.vjs-big-play-button
 				width: 36px
 				height: 36px
+			.vjs-tech
+				object-fit: contain
 		// ----------
 	// page end
 
@@ -780,6 +800,12 @@
 			margin-bottom: 30px
 		&__input, &__flex-row, &__flexbox
 			margin-bottom: 30px
+		&__input._m-less
+			margin-bottom: 12px
+		&__flex-row
+			.btn
+				padding: 10px 12px
+				font-size: 14px
 		&__checkbox
 			margin-bottom: 20px
 		&__btn
@@ -980,6 +1006,8 @@
 		&__checkbox
 			padding: 0 12px
 			margin-top: 24px
+			.input-error
+				left: 12px
 		&__flexbox
 			flex-wrap: wrap
 			&-item

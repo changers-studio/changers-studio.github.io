@@ -10,6 +10,15 @@ body
 	line-height: 1.5
 	font-family: $default-font
 	color: #000
+	scrollbar-width: 0px
+	scrollbar-color: $gray transparent
+	&::-webkit-scrollbar-track
+		background: #fff
+	&::-webkit-scrollbar-thumb
+		background-color: $gray
+		border-radius: 0px
+	&::-webkit-scrollbar
+		width: 0px
 	& *
 		scrollbar-width: 9px
 		scrollbar-color: $gray transparent
@@ -59,7 +68,7 @@ section
 
 // Text styles
 .isnohome
-	padding-top: 80px
+	padding-top: 133px
 	.h1
 		font-size: 48px
 		font-weight: 500
@@ -338,16 +347,17 @@ input, textarea
 			font-size: 12px
 		&.invalid
 			border-color: $red
-			.input-error
-				display: block
-				position: absolute
-				top: 100%
-				left: 0
-				margin-top: 3px
-				color: $red
-				font-weight: 400
-				font-size: 12px
-				display: none
+
+.input-error
+	display: block
+	position: absolute
+	top: 100%
+	left: 0
+	margin-top: 1px
+	color: $red
+	font-weight: 400
+	font-size: 12px
+	color: #E54646
 
 .checkbox
 	display: flex
@@ -422,7 +432,11 @@ input, textarea
 		border: 1px solid $gray
 		border-radius: 0 0 4px 4px
 	&-item
-		border-color: $gray
+		border: none
+		text-decoration: underline
+		text-underline-position: under
+		&:hover
+			background-color: #fff
 	&-icon
 		display: none
 	&-logo::after
@@ -442,7 +456,7 @@ input, textarea
 	overflow: hidden
 	cursor: pointer
 	width: 200px
-	padding: 13px 20px
+	padding: 12px 18px
 	font-size: 16px
 	font-weight: 500
 	border-radius: 25px
@@ -458,6 +472,10 @@ input, textarea
 	&._transparent
 		background-color: transparent
 		border: 1px solid #000
+		&._disabled
+			border-color: $gray
+			color: $gray
+			cursor: default
 // ----------
 
 // Header
@@ -872,12 +890,12 @@ input, textarea
 		&-result
 			position: absolute
 			top: 100%
-			left: 50%
-			transform: translateX(-50%)
+			right: 130px
 			background-color: #fff
+			color: #000
 			box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1)
 			border-radius: 0px 0px 4px 4px
-			width: 1050px
+			width: 970px
 			max-height: 560px
 			overflow-y: auto
 			padding: 0 14px
@@ -892,6 +910,9 @@ input, textarea
 			align-items: center
 			font-size: 14px
 			margin-bottom: 5px
+			&:hover
+				.header__search-caption::before
+					width: 100%
 			&:last-child
 				margin-bottom: 0
 			._ml-auto
@@ -900,6 +921,17 @@ input, textarea
 			font-size: 8px
 			text-transform: uppercase
 			margin-bottom: 4px
+		&-caption
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				top: 100%
+				left: 0
+				width: 0
+				height: 1px
+				background-color: #000
+				transition: .3s
 		&-img
 			border-radius: 4px
 			width: 50px
@@ -972,10 +1004,15 @@ input, textarea
 	background-size: cover
 	background-position: center
 	color: #fff
+	padding: 0
 	&__container
 		height: 100%
 		display: flex
-		align-items: center
+		flex-direction: column
+		justify-content: center
+		cursor: grab
+		&:active
+			cursor: grabbing
 	&__title
 		text-transform: uppercase
 		margin-bottom: 20px
@@ -987,6 +1024,12 @@ input, textarea
 		max-width: 530px
 	&__slider
 		overflow: hidden
+		&-item
+			height: 100vh
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			justify-content: center
 		.swiper-pagination
 			bottom: 25px
 			display: flex
@@ -1063,18 +1106,51 @@ input, textarea
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
+	&__top-links
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		gap: 5px
+		min-height: 18px
+		margin-bottom: 10px
 	&__category
 		padding: 2px 8px
 		border-radius: 4px
 		border: 1px solid #555555
-		display: inline-block
+		display: flex
+		justify-content: center
+		align-items: center
 		text-align: center
 		font-size: 12px
 		line-height: 1
 		font-family: $default-font
 		min-width: 95px
 		text-transform: uppercase
-		margin-bottom: 10px
+		margin-right: 8px
+		position: relative
+		&:hover
+			.product__category-hint
+				display: block
+		&:last-child
+			margin-right: 0
+		&-img
+			margin-left: 6px
+			flex: 0 0 auto
+		&-hint
+			position: absolute
+			left: 0
+			bottom: 100%
+			margin-bottom: 2px
+			background-color: #fff
+			box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1)
+			text-align: left
+			font-size: 14px
+			text-transform: none
+			width: 190px
+			padding: 10px
+			z-index: 5
+			display: none
+			border-radius: 0 0 4px 4px
 	&__title
 		margin-bottom: 6px
 		font-size: 12px
@@ -1119,11 +1195,6 @@ input, textarea
 .brands
 	.swiper-slide
 		width: 224px
-		&-active
-			.brands__item
-				border-color: #000
-				&-img
-					transform: scale(1.25)
 	&__item
 		width: 100%
 		height: 160px
@@ -1139,6 +1210,10 @@ input, textarea
 			max-height: calc(100% - 60px)
 			transform: scale(1)
 			transition: .5s
+		&:hover
+			border-color: #000
+			.brands__item-img
+				transform: scale(1.25)
 // ----------
 
 // Blog
@@ -1152,8 +1227,11 @@ input, textarea
 
 .article
 	&:hover
-		.article__image
-			background-size: 120% 120%
+		.article
+			&__image
+				background-size: 120% 120%
+			&__title::before
+				width: 100%
 	&__image
 		display: block
 		height: 390px
@@ -1391,8 +1469,10 @@ input, textarea
 
 	// Overview
 	.overview
-		padding: 40px 0 30px
-		// display: none
+		padding: 40px 0
+		min-height: calc(100vh - 133px)
+		display: flex
+		align-items: center
 		&__container
 			display: flex
 			align-items: flex-start
@@ -1406,10 +1486,13 @@ input, textarea
 			padding: 0
 			overflow: hidden
 			&-inner
+				height: 100%
 				position: relative
-				left: 50%
-				top: 50%
-				transform: translate(-50%, -50%)
+				.cloudimage-360-inner-box
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translate(-50%, -50%)
 			&-body
 				height: 100%
 				display: flex
@@ -1423,6 +1506,8 @@ input, textarea
 				overflow: hidden
 			&-item
 				display: flex
+				justify-content: center
+				align-items: center
 			&-img
 				width: 100%
 			&-btn
@@ -1618,10 +1703,9 @@ input, textarea
 
 	// Video
 	.video
-		// position: relative
 		padding: 0
 		&__frame
-			height: 90vh
+			height: calc(100vh - 113px)
 			width: 100%
 	// ----------
 
@@ -1656,7 +1740,7 @@ input, textarea
 			transform: translate(-50%, -50%)
 			.vjs-icon-placeholder
 				display: none
-		.vjs-picture-in-picture-control, .vjs-mute-control
+		.vjs-picture-in-picture-control, .vjs-mute-control, .vjs-fullscreen-control
 			display: none
 		.vjs-volume-panel
 			width: 0px
@@ -1984,6 +2068,8 @@ input, textarea
 		display: block
 	&__input
 		margin-bottom: 40px
+		&._m-less
+			margin-bottom: 20px
 		&:last-child
 			margin-bottom: 0
 		&-search
@@ -2003,6 +2089,7 @@ input, textarea
 				flex: 0 0 auto
 	&__select
 		margin-bottom: 40px
+		position: relative
 		&:last-child
 			margin-bottom: 0
 	&__inputs
@@ -2022,6 +2109,7 @@ input, textarea
 		display: flex
 		align-items: flex-end
 		margin-bottom: 40px
+		position: relative
 		.data
 			&__input
 				margin-bottom: 0
@@ -2033,6 +2121,9 @@ input, textarea
 				width: 90px
 				flex: 0 0 auto
 				margin-bottom: 0
+		.btn
+			flex: 0 0 auto
+			width: auto
 	&__checkbox
 		margin-bottom: 20px
 		.checkbox-caption
@@ -2054,7 +2145,7 @@ input, textarea
 		font-size: 14px
 		&._fz-12
 			font-size: 12px
-			margin-top: 15px
+			margin-top: 20px
 			line-height: 1.3
 	&__checkbox, &__note
 		.link
@@ -2167,6 +2258,7 @@ input, textarea
 		margin-left: 15px
 	&__data
 		margin-right: 10px
+		margin-top: 11px
 		&-inner
 			margin-bottom: 20px
 			display: flex
@@ -2299,6 +2391,8 @@ input, textarea
 			background-size: contain
 			background-repeat: no-repeat
 			background-position: center
+			&._disabled
+				opacity: 0.5
 		&-sub
 			background-image: url('../img/icons/sub.svg')
 		&-add
@@ -2311,6 +2405,23 @@ input, textarea
 			top: 10px
 		&-btn
 			bottom: 10px
+			transition: opacity .2s
+			flex: 0 0 auto
+			width: 20px
+			height: 20px
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center
+			&:last-child
+				margin: 0
+		&-favorites
+			background-image: url('../img/icons/favorites.svg')
+			&.active
+				background-image: url('../img/icons/favorites-added.svg')
+		&-cart
+			background-image: url('../img/icons/cart.svg')
+			&.active
+				background-image: url('../img/icons/cart-added.svg')
 		&-warn
 			padding: 5px 30px 5px 15px
 			background-color: $gold
@@ -2572,6 +2683,7 @@ input, textarea
 		color: #555
 	&__input, &__select
 		margin-bottom: 20px
+		position: relative
 	&__input
 		flex-direction: column
 		input
@@ -2582,6 +2694,7 @@ input, textarea
 		justify-content: space-between
 		&-item
 			width: calc(33.3% - 16px)
+			position: relative
 			.payment
 				&__input, &__select
 					margin-bottom: 0
@@ -2592,6 +2705,9 @@ input, textarea
 		max-width: 460px
 		padding: 20px 25px 0
 		line-height: 1.3
+		position: relative
+		.input-error
+			left: 25px
 // ----------
 
 // Advantages
