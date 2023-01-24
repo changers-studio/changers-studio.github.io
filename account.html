@@ -1011,7 +1011,7 @@
 								<div class="input-error">Error Error Error!</div>
 							</label>
 
-							<div class="data__flex-row">
+							<div class="data__flex-row _m-none">
 								<div class="data__select">
 									<select
 										name="phone code"
@@ -1043,7 +1043,7 @@
 									</select>
 								</div>
 
-								<label class="data__input input-wrapper invalid">
+								<label class="data__input input-wrapper phone-number invalid">
 									<span>Phone number</span>
 									<input
 										type="text"
@@ -1056,7 +1056,8 @@
 
 								<button
 									type="button"
-									class="btn _transparent"
+									class="btn _transparent sms-btn"
+									disabled
 								>
 									Send SMS
 								</button>
@@ -1064,7 +1065,9 @@
 								<div class="input-error">Error Error Error!</div>
 							</div>
 
-							<label class="data__input input-wrapper invalid">
+							<label
+								class="data__input input-wrapper invalid _hidden verification-code"
+							>
 								<span>Verification code</span>
 								<input
 									type="text"
@@ -1074,12 +1077,6 @@
 								<div class="input-error">Error Error Error!</div>
 							</label>
 						</div>
-
-						<p class="data__note _fz-12">
-							Age is only but a number, or is it? Either way, it is your special
-							day and we would like to celebrate it without. We promise not
-							mention any age or numbers.
-						</p>
 
 						<button
 							type="submit"

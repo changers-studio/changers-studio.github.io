@@ -406,10 +406,11 @@ $('.data__form-activator').on('click', function () {
 		.hide()
 		.closest('form')
 		.addClass('active')
-		.find('input, select, textarea')
+		.find('input, select, textarea, button')
 		.removeAttr('disabled')
 
 	$(this).closest('form').find('.data__form-btn').addClass('visible')
+	$(this).closest('form').find('._m-none').removeClass('_m-none')
 })
 
 $('.data__form').on('submit', function () {
@@ -423,6 +424,10 @@ $('.data__form').on('submit', function () {
 		$(this).closest('form').find('.data__form-activator').show()
 		$(this).closest('form').find('.data__form-btn').removeClass('visible')
 	}
+})
+
+$('.sms-btn').on('click', function () {
+	$('.verification-code').addClass('visible')
 })
 // ----------
 
@@ -576,10 +581,11 @@ $('.cookie-modal__btn').on('click', function () {
 
 // Share product
 const share = $('.overview__share')
+const shareHeading = $('.overview__share-heading')
 const shareLinks = $('.overview__share-dropdown')
 
-share.on('click', function () {
-	$(this).toggleClass('active')
+shareHeading.on('click', function () {
+	$(this).toggleClass('active').next().toggle()
 })
 
 if ($(window).width() >= 992) {
@@ -590,7 +596,7 @@ if ($(window).width() >= 992) {
 			!shareLinks.is(event.target) &&
 			shareLinks.has(event.target).length === 0
 		) {
-			share.removeClass('active')
+			shareHeading.removeClass('active').next().hide()
 		}
 
 		headerPosition()

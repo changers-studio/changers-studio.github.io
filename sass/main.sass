@@ -422,6 +422,11 @@ input, textarea
 	display: none
 	&.visible
 		display: flex
+
+.verification-code
+	display: none
+	&.visible
+		display: flex
 // ----------
 
 // Seletc google maps
@@ -435,8 +440,13 @@ input, textarea
 		border: none
 		text-decoration: underline
 		text-underline-position: under
+		color: #000
+		font-weight: normal
+		cursor: pointer
 		&:hover
 			background-color: #fff
+		.pac-matched
+			font-weight: normal
 	&-icon
 		display: none
 	&-logo::after
@@ -1001,8 +1011,6 @@ input, textarea
 // Main screen
 .main
 	height: 100vh
-	background-size: cover
-	background-position: center
 	color: #fff
 	padding: 0
 	&__container
@@ -1024,12 +1032,15 @@ input, textarea
 		max-width: 530px
 	&__slider
 		overflow: hidden
+		background-color: #000
 		&-item
 			height: 100vh
 			display: flex
 			flex-direction: column
 			align-items: flex-start
 			justify-content: center
+			background-size: cover
+			background-position: center
 		.swiper-pagination
 			bottom: 25px
 			display: flex
@@ -1596,12 +1607,6 @@ input, textarea
 				background-image: url('../img/icons/favorites.svg')
 		&__share
 			position: relative
-			&.active
-				.overview__share
-					&-heading::after
-						width: 100%
-					&-dropdown
-						display: flex
 			&-close
 				width: 20px
 				height: 20px
@@ -1617,6 +1622,9 @@ input, textarea
 				display: flex
 				align-items: center
 				padding-bottom: 3px
+				&.active
+					&::after
+						width: 100%
 				&::after
 					content: ''
 					width: 0
@@ -1645,7 +1653,7 @@ input, textarea
 				box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1)
 				background-color: #fff
 				border-radius: 4px
-				width: 292px
+				width: 311px
 				display: none
 				align-items: center
 				z-index: 2
@@ -1740,7 +1748,7 @@ input, textarea
 			transform: translate(-50%, -50%)
 			.vjs-icon-placeholder
 				display: none
-		.vjs-picture-in-picture-control, .vjs-mute-control, .vjs-fullscreen-control
+		.vjs-picture-in-picture-control, .vjs-mute-control
 			display: none
 		.vjs-volume-panel
 			width: 0px
@@ -2110,6 +2118,8 @@ input, textarea
 		align-items: flex-end
 		margin-bottom: 40px
 		position: relative
+		&._m-none
+			margin-bottom: 0
 		.data
 			&__input
 				margin-bottom: 0

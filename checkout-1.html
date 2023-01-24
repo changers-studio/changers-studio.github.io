@@ -943,7 +943,7 @@
 					<h1 class="cart__title">Complete your order</h1>
 
 					<div class="cart__container checkout__container">
-						<form class="checkout cart__container-inner">
+						<div class="checkout cart__container-inner">
 							<div class="checkout__form _step-1">
 								<div class="checkout__steps">
 									<span class="checkout__steps-data _underline">1</span>
@@ -951,7 +951,7 @@
 									<span class="checkout__steps-data">3</span>
 								</div>
 
-								<div class="checkout__section">
+								<form class="checkout__section">
 									<p class="checkout__heading">Enter your delivery address</p>
 
 									<label class="data__input input-wrapper invalid">
@@ -1049,7 +1049,7 @@
 
 										<button
 											type="button"
-											class="btn _transparent"
+											class="btn _transparent sms-btn"
 										>
 											Send SMS
 										</button>
@@ -1057,7 +1057,7 @@
 										<div class="input-error">Error Error Error!</div>
 									</div>
 
-									<label class="data__input input-wrapper">
+									<label class="data__input input-wrapper verification-code">
 										<span>Verification code</span>
 										<input
 											type="text"
@@ -1165,9 +1165,9 @@
 											Billing address is the same as my delivery address
 										</span>
 									</label>
-								</div>
+								</form>
 
-								<div class="checkout__section billing-address__form">
+								<form class="checkout__section billing-address__form">
 									<p class="checkout__heading">Enter your billing address</p>
 
 									<label class="data__input input-wrapper">
@@ -1196,16 +1196,6 @@
 											type="text"
 											name="Company name"
 											class="company-name"
-											required
-										/>
-										<div class="input-error">Error Error Error!</div>
-									</label>
-
-									<label class="data__input input-wrapper vat-code">
-										<span>VAT code</span>
-										<input
-											type="text"
-											name="VAT code"
 											required
 										/>
 										<div class="input-error">Error Error Error!</div>
@@ -1340,7 +1330,7 @@
 										/>
 										<div class="input-error">Error Error Error!</div>
 									</label>
-								</div>
+								</form>
 							</div>
 
 							<div class="checkout__btns">
@@ -1351,7 +1341,7 @@
 									Next
 								</button>
 							</div>
-						</form>
+						</div>
 
 						<div class="cart__container-inner">
 							<form class="cart__promocode">
