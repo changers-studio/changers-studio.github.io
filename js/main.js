@@ -393,7 +393,12 @@ $('input, textarea').each(function () {
 
 $('input.company-name').on('input', function () {
 	if ($(this).val().length !== 0) {
-		$(this).closest('form').find('.vat-code').addClass('visible')
+		$(this).closest('form').find('.vat-code').addClass('visible').animate(
+			{
+				top: '0',
+			},
+			200
+		)
 		$(this).parent().removeClass('_m-less')
 	} else {
 		$(this).closest('form').find('.vat-code').removeClass('visible')
@@ -427,7 +432,12 @@ $('.data__form').on('submit', function () {
 })
 
 $('.sms-btn').on('click', function () {
-	$('.verification-code').addClass('visible')
+	$('.verification-code').addClass('visible').animate(
+		{
+			top: '0',
+		},
+		200
+	)
 })
 // ----------
 

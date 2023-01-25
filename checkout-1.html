@@ -954,217 +954,219 @@
 								<form class="checkout__section">
 									<p class="checkout__heading">Enter your delivery address</p>
 
-									<label class="data__input input-wrapper invalid">
-										<span>First Name*</span>
-										<input
-											type="text"
-											name="First name"
-											required
-										/>
-										<div class="input-error">Error Error Error!</div>
-									</label>
+									<div class="data__inputs">
+										<label class="data__input input-wrapper invalid">
+											<span>First Name*</span>
+											<input
+												type="text"
+												name="First name"
+												required
+											/>
+											<div class="input-error">Error Error Error!</div>
+										</label>
 
-									<label class="data__input input-wrapper">
-										<span>Last Name*</span>
-										<input
-											type="text"
-											name="Last name"
-											required
-										/>
-										<div class="input-error">Error Error Error!</div>
-									</label>
+										<label class="data__input input-wrapper">
+											<span>Last Name*</span>
+											<input
+												type="text"
+												name="Last name"
+												required
+											/>
+											<div class="input-error">Error Error Error!</div>
+										</label>
 
-									<label class="data__input input-wrapper">
-										<span>Birthday*</span>
-										<input
-											type="text"
-											name="Birthday date"
-											required
-											class="input-date"
-										/>
-										<div class="input-error">Error Error Error!</div>
-									</label>
+										<label class="data__input input-wrapper">
+											<span>Birthday*</span>
+											<input
+												type="text"
+												name="Birthday date"
+												required
+												class="input-date"
+											/>
+											<div class="input-error">Error Error Error!</div>
+										</label>
 
-									<label class="data__input input-wrapper _m-less">
-										<span>Company name</span>
-										<input
-											type="text"
-											name="Company name"
-											class="company-name"
-											required
-										/>
-										<div class="input-error">Error Error Error!</div>
-									</label>
+										<label class="data__input input-wrapper _m-less">
+											<span>Company name</span>
+											<input
+												type="text"
+												name="Company name"
+												class="company-name"
+												required
+											/>
+											<div class="input-error">Error Error Error!</div>
+										</label>
 
-									<label class="data__input input-wrapper vat-code _m-less">
-										<span>VAT code</span>
-										<input
-											type="text"
-											name="VAT code"
-											required
-										/>
-										<div class="input-error">Error Error Error!</div>
-									</label>
+										<label class="data__input input-wrapper vat-code _m-less">
+											<span>VAT code</span>
+											<input
+												type="text"
+												name="VAT code"
+												required
+											/>
+											<div class="input-error">Error Error Error!</div>
+										</label>
 
-									<div class="data__flex-row">
+										<div class="data__flex-row">
+											<div class="data__select">
+												<select
+													name="phone code"
+													class="select-country"
+													data-placeholder=""
+												>
+													<option></option>
+													<option
+														value="+370"
+														data-image="img/main/flags/lithuania.svg"
+													>
+														+370
+													</option>
+
+													<option
+														value="+371"
+														data-image="img/main/flags/latvia.svg"
+													>
+														+371
+													</option>
+
+													<option
+														value="+372"
+														data-image="img/main/flags/estonia.svg"
+													>
+														+372
+													</option>
+												</select>
+											</div>
+
+											<label class="data__input input-wrapper">
+												<span>Phone number (for order info)*</span>
+												<input
+													type="text"
+													name="Phone number"
+													class="input-phone"
+													required
+												/>
+											</label>
+
+											<button
+												type="button"
+												class="btn _transparent sms-btn"
+											>
+												Send SMS
+											</button>
+
+											<div class="input-error">Error Error Error!</div>
+										</div>
+
+										<label class="data__input input-wrapper verification-code">
+											<span>Verification code</span>
+											<input
+												type="text"
+												name="Verification code"
+												required
+											/>
+											<div class="input-error">Error Error Error!</div>
+										</label>
+
 										<div class="data__select">
 											<select
-												name="phone code"
+												name="country"
 												class="select-country"
-												data-placeholder=""
+												data-placeholder="Country"
 											>
 												<option></option>
 												<option
-													value="+370"
-													data-image="img/main/flags/lithuania.svg"
-												>
-													+370
-												</option>
-
-												<option
-													value="+371"
+													value="Latvia"
 													data-image="img/main/flags/latvia.svg"
 												>
-													+371
+													Latvia
 												</option>
-
 												<option
-													value="+372"
+													value="Lithuania"
+													data-image="img/main/flags/lithuania.svg"
+												>
+													Lithuania
+												</option>
+												<option
+													value="Estonia"
 													data-image="img/main/flags/estonia.svg"
 												>
-													+372
+													Estonia
 												</option>
 											</select>
+
+											<div class="input-error">Error Error Error!</div>
 										</div>
 
-										<label class="data__input input-wrapper">
-											<span>Phone number (for order info)*</span>
+										<label class="data__input data__input-search input-wrapper">
+											<span>Search for address automatically</span>
+
 											<input
+												id="googlesearch"
 												type="text"
-												name="Phone number"
-												class="input-phone"
-												required
+												name="googlesearch"
+												placeholder=""
+												autocomplete="off"
 											/>
 										</label>
 
-										<button
-											type="button"
-											class="btn _transparent sms-btn"
-										>
-											Send SMS
-										</button>
+										<label class="data__input input-wrapper">
+											<span>Address line 1*</span>
+											<input
+												type="text"
+												name="address1"
+												id="address1"
+												required
+											/>
+											<div class="input-error">Error Error Error!</div>
+										</label>
 
-										<div class="input-error">Error Error Error!</div>
+										<label class="data__input input-wrapper">
+											<span>Address line 2*</span>
+											<input
+												type="text"
+												name="address2"
+												id="address2"
+												required
+											/>
+											<div class="input-error">Error Error Error!</div>
+										</label>
+
+										<label class="data__input input-wrapper">
+											<span>City *</span>
+											<input
+												type="text"
+												name="locality"
+												id="locality"
+												required
+											/>
+											<div class="input-error">Error Error Error!</div>
+										</label>
+
+										<label class="data__input input-wrapper">
+											<span>ZIP code *</span>
+											<input
+												type="text"
+												name="postal_code"
+												id="postal_code"
+												required
+											/>
+											<div class="input-error">Error Error Error!</div>
+										</label>
+
+										<label class="data__checkbox checkbox">
+											<input
+												class="checkbox-input billing-address__btn"
+												type="checkbox"
+												name="Checkbox name"
+												checked
+											/>
+
+											<span class="checkbox-caption">
+												Billing address is the same as my delivery address
+											</span>
+										</label>
 									</div>
-
-									<label class="data__input input-wrapper verification-code">
-										<span>Verification code</span>
-										<input
-											type="text"
-											name="Verification code"
-											required
-										/>
-										<div class="input-error">Error Error Error!</div>
-									</label>
-
-									<div class="data__select">
-										<select
-											name="country"
-											class="select-country"
-											data-placeholder="Country"
-										>
-											<option></option>
-											<option
-												value="Latvia"
-												data-image="img/main/flags/latvia.svg"
-											>
-												Latvia
-											</option>
-											<option
-												value="Lithuania"
-												data-image="img/main/flags/lithuania.svg"
-											>
-												Lithuania
-											</option>
-											<option
-												value="Estonia"
-												data-image="img/main/flags/estonia.svg"
-											>
-												Estonia
-											</option>
-										</select>
-
-										<div class="input-error">Error Error Error!</div>
-									</div>
-
-									<label class="data__input data__input-search input-wrapper">
-										<span>Search for address automatically</span>
-
-										<input
-											id="googlesearch"
-											type="text"
-											name="googlesearch"
-											placeholder=""
-											autocomplete="off"
-										/>
-									</label>
-
-									<label class="data__input input-wrapper">
-										<span>Address line 1*</span>
-										<input
-											type="text"
-											name="address1"
-											id="address1"
-											required
-										/>
-										<div class="input-error">Error Error Error!</div>
-									</label>
-
-									<label class="data__input input-wrapper">
-										<span>Address line 2*</span>
-										<input
-											type="text"
-											name="address2"
-											id="address2"
-											required
-										/>
-										<div class="input-error">Error Error Error!</div>
-									</label>
-
-									<label class="data__input input-wrapper">
-										<span>City *</span>
-										<input
-											type="text"
-											name="locality"
-											id="locality"
-											required
-										/>
-										<div class="input-error">Error Error Error!</div>
-									</label>
-
-									<label class="data__input input-wrapper">
-										<span>ZIP code *</span>
-										<input
-											type="text"
-											name="postal_code"
-											id="postal_code"
-											required
-										/>
-										<div class="input-error">Error Error Error!</div>
-									</label>
-
-									<label class="data__checkbox checkbox">
-										<input
-											class="checkbox-input billing-address__btn"
-											type="checkbox"
-											name="Checkbox name"
-											checked
-										/>
-
-										<span class="checkbox-caption">
-											Billing address is the same as my delivery address
-										</span>
-									</label>
 								</form>
 
 								<form class="checkout__section billing-address__form">

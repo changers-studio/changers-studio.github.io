@@ -417,16 +417,6 @@ input, textarea
 			background-image: url('../img/icons/radio-btn_filled.svg')
 	&-caption
 		font-size: 14px
-
-.vat-code
-	display: none
-	&.visible
-		display: flex
-
-.verification-code
-	display: none
-	&.visible
-		display: flex
 // ----------
 
 // Seletc google maps
@@ -483,9 +473,12 @@ input, textarea
 		background-color: transparent
 		border: 1px solid #000
 		&._disabled
+			background-color: transparent
 			border-color: $gray
 			color: $gray
 			cursor: default
+	&._disabled
+		background-color: #ECCE9C
 // ----------
 
 // Header
@@ -2076,8 +2069,21 @@ input, textarea
 		display: block
 	&__input
 		margin-bottom: 40px
+		top: 0
 		&._m-less
 			margin-bottom: 20px
+			transition: none
+		&.vat-code
+			display: none
+			top: -20px
+			&.visible
+				display: flex
+		&.verification-code
+			display: none
+			top: -20px
+			transition: none
+			&.visible
+				display: flex
 		&:last-child
 			margin-bottom: 0
 		&-search
@@ -2176,6 +2182,10 @@ input, textarea
 		left: 50%
 		transform: translateX(-50%)
 		font-size: 16px
+		&._disabled
+			color: $gray
+			&::before
+				background-color: $gray
 	&__container
 		display: flex
 		&-inner
