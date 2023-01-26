@@ -10,7 +10,7 @@ body
 	line-height: 1.5
 	font-family: $default-font
 	color: #000
-	scrollbar-width: 0px
+	scrollbar-width: none
 	scrollbar-color: $gray transparent
 	&::-webkit-scrollbar-track
 		background: #fff
@@ -783,6 +783,21 @@ input, textarea
 			align-items: center
 			text-transform: uppercase
 			width: 100%
+			position: relative
+			span
+				display: inline-block
+				position: relative
+				&::before
+					content: ''
+					width: 0
+					height: 2px
+					position: absolute
+					left: 0
+					top: 100%
+					background-color: #000
+					transition: width .3s
+			&:hover span::before
+				width: 100%
 			&:last-child
 				margin-bottom: 0
 		&-flag
@@ -2696,10 +2711,10 @@ input, textarea
 			padding: 24px 0 6px
 			display: none
 	&__caption
-		font-size: 14px
+		font-size: 12px
 		line-height: 1.2
 		width: 100%
-		margin-bottom: 4px
+		margin-bottom: 2px
 		color: #555
 	&__input, &__select
 		margin-bottom: 20px
@@ -2708,7 +2723,7 @@ input, textarea
 		flex-direction: column
 		input
 			min-height: 28px
-			font-size: 16px
+			font-size: 14px
 	&__flexbox
 		display: flex
 		justify-content: space-between

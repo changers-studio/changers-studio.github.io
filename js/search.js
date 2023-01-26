@@ -65,6 +65,10 @@ function fillInAddress() {
 	cityField.focus()
 	address1Field.focus()
 	postalField.focus()
+
+	cityField.blur()
+	address1Field.blur()
+	postalField.blur()
 }
 
 window.initAutocomplete = initAutocomplete

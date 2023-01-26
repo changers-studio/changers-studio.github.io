@@ -129,7 +129,7 @@ $('.header__hamburger-close').on('click', function () {
 	search.hide()
 	searchResult.hide()
 
-	header.куьщмуClass('active')
+	header.removeClass('active')
 })
 
 $('.header__hamburger-back').on('click', function () {
@@ -336,6 +336,17 @@ if ($('*').is('.select-search')) {
 		width: '100%',
 		selectionCssClass: 'select__heading select__heading-search',
 		dropdownCssClass: 'select__dropdown select__dropdown-search',
+	})
+}
+
+if ($('*').is('.select-payment')) {
+	$('.select-payment').select2({
+		templateResult: selectSpan,
+		templateSelection: selectSpan,
+		minimumResultsForSearch: -1,
+		width: '100%',
+		selectionCssClass: 'select__heading',
+		dropdownCssClass: 'select__dropdown',
 	})
 }
 
