@@ -55,9 +55,18 @@ $('.header__trigger').on('click', function () {
 	searchResult.hide()
 	search.removeClass('active')
 
+	$('.body-inner').addClass('active')
+
 	$(this).toggleClass('active').next().toggle()
 
 	$('.header__trigger').not(this).removeClass('active').next().hide()
+
+	if ($(window).width() <= 992) {
+		let num = $(window).innerHeight()
+		let elem = $(this).next()
+
+		elem.innerHeight(num)
+	}
 })
 
 $('.header__menu-category').on('click', function () {
@@ -161,6 +170,7 @@ $('.header__hamburger-search').on('click', function () {
 $('.header-dropdown__close').on('click', function () {
 	$(this).closest('.header-dropdown').hide()
 	$('.header__trigger').removeClass('active')
+	$('.body-inner').removeClass('active')
 })
 // ----------
 
@@ -278,8 +288,12 @@ $('.catalog__sort-btn').on('click', function () {
 	$(this).parent().hide().prev().removeClass('active')
 })
 
+$('.catalog__filter-heading').on('click', function () {
+	$(this).parent().toggleClass('active')
+})
+
 $('.catalog__filter-close').on('click', function () {
-	$('.catalog__btn-heading').removeClass('active')
+	$('.catalog__btn-heading, .catalog__filter').removeClass('active')
 	$('.catalog__btn-dropdown').hide()
 })
 // ----------
@@ -592,6 +606,13 @@ if (
 		placeholder: '',
 	})
 }
+
+if ($('*').is('.input-filter')) {
+	$('.input-filter').inputmask({
+		showMaskOnHover: false,
+		placeholder: '',
+	})
+}
 // ----------
 
 // Cookie
@@ -609,7 +630,7 @@ shareHeading.on('click', function () {
 	$(this).toggleClass('active').next().toggle()
 })
 
-if ($(window).width() >= 992) {
+if ($(window).width() > 992) {
 	$('body').on('mouseup', function (event) {
 		if (
 			!share.is(event.target) &&
@@ -644,7 +665,7 @@ function closeModal(space, elem) {
 	})
 }
 
-if ($(window).width() >= 992) {
+if ($(window).width() > 992) {
 	closeModal(headerBtnWrapper, langsDropdown)
 	closeModal(headerBtnWrapper, cart)
 	closeModal(headerBtnWrapper, favorites)
@@ -676,10 +697,12 @@ if ($('*').is('.video__frame')) {
 	const player = videojs('my-video', videoOptions)
 
 	$(window).on('scroll', function () {
-		if ($('.video__frame').is(':in-viewport')) {
-			player.play()
-		} else {
-			player.pause()
+		if ($(window).width() > 992) {
+			if ($('.video__frame').is(':in-viewport')) {
+				player.play()
+			} else {
+				player.pause()
+			}
 		}
 	})
 }

@@ -95,6 +95,22 @@
 	body
 		font-size: 14px
 
+	.body-inner
+		&::before
+			content: ''
+			background-color: #000
+			position: fixed
+			width: 0
+			height: 0
+			left: 0
+			top: 0
+			opacity: 0
+			z-index: 11
+		&.active::before
+			opacity: 0.5
+			width: 100vw
+			height: 100vh
+
 	section
 		padding: 20px 0
 		&._more-pt
@@ -133,6 +149,8 @@
 		&__text
 			margin-bottom: 20px
 			font-size: 16px
+		&__btn
+			margin-left: 0
 	// ----------
 
 	// Nav elements
@@ -352,9 +370,10 @@
 				padding-right: 32px
 			&__products
 				padding: 0 6px 0 0
-				max-height: calc(100vh - 209px)
+				max-height: calc(100% - 35px)
 			&__bottom
 				padding: 15px 12px 24px
+				background-color: #fff
 				position: absolute
 				bottom: 0
 				left: 0
@@ -411,8 +430,8 @@
 	// Product
 	.product
 		&__slider
-			margin-bottom: 6px
-			padding-bottom: 8px
+			margin-bottom: 10px
+			padding-bottom: 6px
 			.swiper-scrollbar
 				opacity: 1
 				transform: none
@@ -443,8 +462,8 @@
 		&__item
 			height: 105px
 			&-img
-				max-width: calc(100% - 20px)
-				max-height: calc(100% - 30px)
+				max-width: calc(100% - 40px)
+				max-height: calc(100% - 40px)
 	// ----------
 
 	// Blog
@@ -491,7 +510,8 @@
 		&__sort-filter
 			top: 7px
 		&__filter
-			z-index: 30
+			&.active
+				z-index: 30
 			&-dropdown
 				position: fixed
 				left: 50%
@@ -650,7 +670,7 @@
 		.blog
 			padding: 40px 0 120px
 			&__text
-				margin-top: 5px
+				display: none
 			.article
 				width: 100%
 				margin-bottom: 24px
@@ -680,6 +700,8 @@
 			&__container
 				flex-direction: column
 				margin-bottom: 48px
+				&._mb-less
+					margin-bottom: 36px
 			&__caption
 				margin-bottom: 12px
 				font-size: 18px
@@ -689,6 +711,7 @@
 				width: 100%
 				height: 250px
 				margin-left: 0
+				margin-bottom: 12px
 				&:first-child
 					margin-right: 0
 				&:last-child
@@ -735,18 +758,22 @@
 				margin-bottom: 5px
 				font-size: 18px
 			&__caption
-				margin-bottom: 5px
+				margin-bottom: 8px
 				font-size: 16px
 				font-weight: 450
 			&__headline
 				margin-bottom: 7px
+				&._mb-less
+					margin-bottom: 3px
 			&__wrapper
 				margin-bottom: 15px
+				&._mb-less
+					margin-bottom: 8px
 			&__text
 				font-size: 12px
 			&__select
 				max-width: 100%
-				margin-top: 10px
+				margin-top: 0
 			&__flexbox
 				flex-direction: column
 				&-inner
@@ -763,9 +790,12 @@
 					margin-right: 7px
 
 		.contacts
+			margin-bottom: 20px
 			&__heading
 				font-size: 18px
 				margin-bottom: 6px
+				&._mb-more
+					margin-bottom: 20px
 			&__container
 				flex-direction: column
 				margin-bottom: 40px
@@ -801,7 +831,7 @@
 		&__input, &__flex-row, &__flexbox
 			margin-bottom: 30px
 		&__input._m-less
-			margin-bottom: 12px
+			margin-bottom: 30px
 		&__flex-row
 			.btn
 				padding: 10px 12px
@@ -859,13 +889,14 @@
 			&-inner
 				margin-bottom: 10px
 		&__btn
+			width: calc(50% - 7px)
 			min-width: auto
+			padding: 7px 0
+			font-size: 16px
 		&__btns
+			width: 100%
 			.order__btn
-				width: calc(50% - 7px)
 				margin-right: 14px
-				padding: 7px 0
-				font-size: 14px
 				&:last-child
 					margin-right: 0
 		&__dropdown
@@ -925,8 +956,12 @@
 				bottom: 10px
 			&-warn
 				padding: 5px 12px
+		&__promocode
+			margin-bottom: 14px
 		&__total
 			margin-bottom: 0
+			&-heading
+				padding-bottom: 14px
 			&-caption
 				font-size: 14px
 			&-wrapper
@@ -999,10 +1034,24 @@
 				margin-bottom: 4px
 			&-price
 				margin-bottom: 0
+
+	.billing-address__form
+		margin-top: 34px
+		.checkout__heading
+			margin-bottom: 34px
 	// ----------
 
 	// Payment
 	.payment
+		&__item
+			&-heading
+				position: relative
+			&-icons
+				margin-left: 0
+				position: absolute
+				right: 0
+				top: 50%
+				transform: translateY(-50%)
 		&__checkbox
 			padding: 0 12px
 			margin-top: 24px
