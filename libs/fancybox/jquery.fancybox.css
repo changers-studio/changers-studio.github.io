@@ -892,10 +892,6 @@ body.compensate-for-scrollbar {
 		padding: 12px 6px;
 	}
 
-	.fancybox-thumbs__list {
-		margin-left: 150px;
-	}
-
 	.fancybox-thumbs__list a {
 		margin: 0 6px;
 	}

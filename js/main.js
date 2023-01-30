@@ -62,10 +62,13 @@ $('.header__trigger').on('click', function () {
 	$('.header__trigger').not(this).removeClass('active').next().hide()
 
 	if ($(window).width() <= 992) {
-		let num = $(window).innerHeight()
+		let windowHeight =
+			window.visualViewport !== void 0
+				? window.visualViewport.height
+				: window.innerHeight
 		let elem = $(this).next()
 
-		elem.innerHeight(num)
+		elem.innerHeight(windowHeight)
 	}
 })
 
@@ -628,6 +631,10 @@ const shareLinks = $('.overview__share-dropdown')
 
 shareHeading.on('click', function () {
 	$(this).toggleClass('active').next().toggle()
+})
+
+$('.overview__share-close').on('click', function () {
+	shareHeading.toggleClass('active').next().toggle()
 })
 
 if ($(window).width() > 992) {
