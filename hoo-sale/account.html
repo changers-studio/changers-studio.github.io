@@ -1094,7 +1094,7 @@
 					</form>
 
 					<form class="data__form _shadow _bd-top">
-						<h2 class="data__headline">Address</h2>
+						<h2 class="data__headline">Billing address</h2>
 
 						<button
 							type="button"
@@ -1198,6 +1198,118 @@
 								/>
 								<div class="input-error">Error!</div>
 							</label>
+
+							<label class="data__checkbox checkbox">
+								<input
+									class="checkbox-input billing-address__btn"
+									type="checkbox"
+									name="Checkbox name"
+									checked
+									disabled
+								/>
+
+								<span class="checkbox-caption">
+									Billing address is the same as my delivery address
+								</span>
+							</label>
+						</div>
+
+						<div class="billing-address__form">
+							<h2 class="data__headline">Delivery address</h2>
+
+							<div class="data__inputs">
+								<div class="data__select">
+									<select
+										name="country"
+										class="select-country"
+										data-placeholder="Country"
+										id="country2"
+										disabled
+									>
+										<option></option>
+										<option
+											value="Latvia"
+											data-image="img/main/flags/latvia.svg"
+										>
+											Latvia
+										</option>
+										<option
+											value="Lithuania"
+											data-image="img/main/flags/lithuania.svg"
+										>
+											Lithuania
+										</option>
+										<option
+											value="Estonia"
+											data-image="img/main/flags/estonia.svg"
+										>
+											Estonia
+										</option>
+									</select>
+									<div class="input-error">Error!</div>
+								</div>
+
+								<label class="data__input data__input-search input-wrapper">
+									<span>Search for address automatically</span>
+
+									<input
+										id="googlesearch-2"
+										type="text"
+										name="googlesearch"
+										placeholder=""
+										autocomplete="off"
+										disabled
+									/>
+								</label>
+
+								<label class="data__input input-wrapper">
+									<span>Address line 1*</span>
+									<input
+										type="text"
+										name="address1"
+										id="address1-2"
+										required
+										disabled
+									/>
+									<div class="input-error">Error!</div>
+								</label>
+
+								<label class="data__input input-wrapper">
+									<span>Address line 2*</span>
+									<input
+										type="text"
+										name="address2"
+										id="address2-2"
+										required
+										disabled
+									/>
+									<div class="input-error">Error!</div>
+								</label>
+
+								<label class="data__input input-wrapper">
+									<span>ZIP code / Post code *</span>
+									<input
+										type="text"
+										name="postal_code"
+										id="postal_code-2"
+										required
+										disabled
+									/>
+									<div class="input-error">Error!</div>
+								</label>
+
+								<label class="data__input input-wrapper">
+									<span>City</span>
+									<input
+										type="text"
+										name="locality"
+										id="locality-2"
+										required
+										disabled
+									/>
+									<div class="input-error">Error!</div>
+								</label>
+							</div>
 						</div>
 
 						<button

@@ -69,6 +69,8 @@ $('.header__trigger').on('click', function () {
 		let elem = $(this).next()
 
 		elem.innerHeight(windowHeight)
+
+		body.addClass('overflow-y_hidden')
 	}
 })
 
@@ -174,6 +176,7 @@ $('.header-dropdown__close').on('click', function () {
 	$(this).closest('.header-dropdown').hide()
 	$('.header__trigger').removeClass('active')
 	$('.body-inner').removeClass('active')
+	body.removeClass('overflow-y_hidden')
 })
 // ----------
 
@@ -293,11 +296,16 @@ $('.catalog__sort-btn').on('click', function () {
 
 $('.catalog__filter-heading').on('click', function () {
 	$(this).parent().toggleClass('active')
+	if ($(window).width() <= 922) {
+		body.addClass('overflow-y_hidden')
+	}
 })
 
 $('.catalog__filter-close').on('click', function () {
 	$('.catalog__btn-heading, .catalog__filter').removeClass('active')
 	$('.catalog__btn-dropdown').hide()
+
+	body.removeClass('overflow-y_hidden')
 })
 // ----------
 
@@ -389,10 +397,10 @@ function selectIcons(opt) {
 	} else {
 		let $opt = $(
 			'<span><img src="' +
-				optimage +
-				'" width="24px" /> ' +
-				opt.text +
-				'</span>'
+			optimage +
+			'" width="24px" /> ' +
+			opt.text +
+			'</span>'
 		)
 		return $opt
 	}
