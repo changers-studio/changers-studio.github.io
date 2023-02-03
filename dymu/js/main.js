@@ -86,3 +86,32 @@ $('.unique__btn-toggle').on('click', function () {
 	$('.unique__dropdown-slider').slick('setPosition')
 })
 //
+
+// Video
+if ($('*').is('video')) {
+	const videoOptions = {
+		muted: true,
+		volume: 0,
+		autoplay: true,
+		loop: true
+	}
+
+	const player1 = videojs('video1', videoOptions)
+	const player2 = videojs('video2', videoOptions)
+	const player3 = videojs('video3', videoOptions)
+	const player4 = videojs('video4', videoOptions)
+	const player5 = videojs('video5', videoOptions)
+	const player6 = videojs('video6', videoOptions)
+	const player7 = videojs('video7', videoOptions)
+
+	document.addEventListener('DOMContentLoaded', () => {
+		player1.play()
+		player2.play()
+		player3.play()
+		player4.play()
+		player5.play()
+		player6.play()
+		player7.play()
+	})
+}
+//
