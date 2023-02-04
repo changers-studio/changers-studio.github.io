@@ -1,0 +1,419 @@
+@import reset
+@import vars
+@import fonts
+
+// General
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.3
+	font-family: $default-font
+	color: $gray
+	&.scroll_disabled
+		overflow-y: hidden
+
+section
+	padding: 100px 0
+
+.overflow-hidden
+	overflow: hidden
+
+.container
+	width: 100%
+	max-width: 1200px
+	margin-right: auto
+	margin-left: auto
+	padding-right: 20px
+	padding-left: 20px
+
+.title
+	font-weight: 500
+	font-size: 68px
+
+._text-center
+	text-align: center
+//
+
+// Form elements
+input, textarea
+	background: none
+	border: none
+	color: inherit
+	font-size: 20px
+
+::placeholder
+	color: rgba(137, 137, 137, 0.9)
+	font-size: 20px
+	font-family: $default-font
+//
+
+// Buttons
+.btn
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	position: relative
+	text-decoration: none
+	line-height: 1
+	outline: none
+	overflow: hidden
+	cursor: pointer
+	font-size: 20px
+	border-radius: 40px
+	height: 80px
+	border: none
+	background-color: $accent
+	color: #fff
+	transition: .2s ease-in-out
+	&:focus, &:hover
+		text-decoration: none
+	&:hover
+		background-color: lighten($accent, 3%)
+		color: #fff
+//
+
+// Header
+.header
+	padding: 30px 0
+	z-index: 2
+	&__container
+		max-width: 1560px
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__logo
+		display: flex
+		width: 260px
+		&._desktop-hidden
+			display: none
+	&__menu
+		display: flex
+		align-items: center
+		justify-content: center
+		&-item
+			margin-right: 67px
+			position: relative
+			&:last-child
+				margin-right: 0
+			&::before
+				content: ''
+				background-color: $gray
+				position: absolute
+				top: 100%
+				left: 0
+				width: 0
+				height: 2px
+				transition: .2s
+			&:hover::before
+				width: 100%
+	&__contacts
+		display: flex
+		align-items: center
+		&-tel
+			margin-right: 28px
+			color: rgba(87, 87, 87, 0.9)
+		&-item
+			margin-right: 18px
+			transition: .2s
+			transform: scale(1)
+			&:last-child
+				margin-right: 0
+			&:hover
+				transform: scale(1.1)
+	&__hamburger
+		width: 24px
+		height: 24px
+		display: none
+		background-image: url('../img/icons/hamburger.png')
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center
+//
+
+// Footer
+.footer
+	color: #fff
+	background-color: $accent
+	&__container
+		padding-top: 80px
+		padding-bottom: 30px
+		display: flex
+		justify-content: space-between
+		&-inner
+			width: 540px
+	&__logo
+		display: flex
+		margin-bottom: 25px
+	&__text
+		font-weight: 300
+		margin-bottom: 40px
+		font-size: 15px
+	&__contacts
+		display: flex
+		align-items: center
+		margin-bottom: 40px
+		&-tel
+			margin-left: 20px
+		&-item
+			margin-left: 15px
+			transition: .2s
+			transform: scale(1)
+			&:first-child
+				margin-left: 0
+			&:hover
+				transform: scale(1.1)
+	&__privacy
+		height: 60px
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+		font-weight: 300
+		background-color: #664EFB
+	&__menu
+		width: 560px
+		display: flex
+		&-container
+			margin-right: 80px
+			&:last-child
+				margin: 0
+		&-heading
+			border-bottom: 1px solid #fff
+			padding-bottom: 15px
+			font-weight: 500
+			font-size: 24px
+		&-item
+			margin-top: 20px
+			font-weight: 300
+			position: relative
+			display: inline-block
+			padding-bottom: 3px
+			&::before
+				content: ''
+				background-color: #fff
+				position: absolute
+				top: 100%
+				left: 0
+				width: 0
+				height: 1px
+				transition: .2s
+			&:hover::before
+				width: 100%
+		&-flexbox
+			display: flex
+			justify-content: space-between
+			width: 380px
+			.footer__menu-col
+				width: calc(50% - 20px)
+		&-col
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+//
+
+// Main screen
+.main
+	padding: 0
+	&__container
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		max-width: 1560px
+		height: calc(100vh - 122px)
+		min-height: 780px
+		&-inner
+			width: 100%
+			max-width: 670px
+	&__image
+		height: 100%
+		min-height: 900px
+		width: 50%
+		background-size: cover
+		background-position: center
+		position: absolute
+		left: 0
+		top: 0
+	&__title
+		margin-bottom: 40px
+	&__text
+		margin-bottom: 40px
+		font-size: 20px
+	&__flexbox
+		display: flex
+		align-items: center
+		margin-bottom: 25px
+		&-item
+			margin-right: 12px
+			max-width: calc(33.3% - 8px)
+			&:last-child
+				margin-right: 0
+	&__wrapper
+		display: inline-block
+		padding: 25px
+		background-color: #fff
+		box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.05)
+		border-radius: 10px
+	&__btn
+		width: 100%
+//
+
+// Service
+.service
+	&__title
+		margin-bottom: 60px
+	&__container
+		display: flex
+		align-items: center
+		border-radius: 10px
+		background-color: $light
+		margin-bottom: 40px
+		&-inner
+			padding: 30px 40px
+	&__image
+		width: 640px
+		flex: 0 0 auto
+		min-height: 340px
+		border-radius: 10px
+		background-size: cover
+		background-position: center
+	&__flexbox
+		display: flex
+		justify-content: space-between
+		&-item
+			width: calc(50% - 20px)
+			padding: 30px 40px
+			border-radius: 10px
+			background-color: $light
+	&__heading
+		font-size: 48px
+		margin-bottom: 10px
+	&__text
+		margin-bottom: 24px
+		font-weight: 300
+	&__list
+		margin-bottom: 35px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&-item
+			width: calc(50% - 10px)
+			display: flex
+			align-items: center
+			margin-top: 20px
+			font-weight: 300
+			&::before
+				content: ''
+				width: 12px
+				height: 12px
+				border-radius: 50%
+				background-color: $accent
+				margin-right: 10px
+	&__btn
+		width: 300px
+		height: 65px
+		&._small
+			width: 200px
+			height: 50px
+//
+
+// Gallery
+//
+
+// Advantages
+.advantages
+	&__title
+		margin-bottom: 80px
+	&__flexbox
+		display: flex
+		justify-content: space-between
+		&-item
+			width: 250px
+			&._wide
+				width: 285px
+	&__img
+		margin-bottom: 15px
+	&__heading
+		margin-bottom: 10px
+		font-size: 24px
+		font-weight: 500
+	&__text
+		font-weight: 300
+//
+
+// Feedback
+.feedback
+	&__container
+		background-color: $light
+		border-radius: 10px
+		padding: 40px 50px
+	&__title
+		font-size: 48px
+		margin-bottom: 10px
+	&__subtitle
+		margin-bottom: 40px
+	&__form
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&-input
+			background-color: rgba(135, 135, 135, 0.2)
+			padding: 20px
+			text-align: center
+			margin-right: 15px
+			width: calc(33.3% - 10px)
+			border-radius: 40px
+		&-btn
+			width: calc(33.3% - 10px)
+			height: 65px
+	&__privacy
+		color: rgba(137, 137, 137, 0.9)
+		width: 100%
+		margin-top: 30px
+//
+
+// Contacts
+.contacts
+	padding-bottom: 200px
+	&__container
+		display: flex
+		&-inner
+			width: 100%
+	&__image
+		width: 650px
+		min-height: 680px
+		background-size: cover
+		background-position: center
+		border-radius: 20px
+		margin-right: 50px
+		flex: 0 0 auto
+	&__title
+		margin-bottom: 30px
+	&__info
+		margin-bottom: 55px
+	&__item
+		margin-bottom: 20px
+		background-color: $light
+		padding: 20px 30px
+		border-radius: 10px
+		display: flex
+		align-items: center
+		&:last-child
+			margin-bottom: 0
+		&-icon
+			margin-right: 20px
+			flex: 0 0 auto
+		&-title
+			margin-bottom: 5px
+			font-size: 24px
+		&-wrapper
+			display: flex
+			flex-direction: column
+	&__btn
+		width: 340px
+		height: 65px
+//
+
+@import media
