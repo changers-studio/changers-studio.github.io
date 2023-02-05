@@ -28,3 +28,30 @@ if ($("*").is('.input-phone')) {
 	})
 }
 //
+
+
+// Slider
+if ($('*').is('.portfolio__slider')) {
+	$('.portfolio__slider').slick({
+		infinite: false,
+		speed: 800,
+		variableWidth: true,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					centerMode: true
+				}
+			},
+		]
+	})
+}
+
+$('[data-fancybox]').fancybox({
+	infobar: false,
+	buttons: [
+		"close"
+	],
+})
+//
