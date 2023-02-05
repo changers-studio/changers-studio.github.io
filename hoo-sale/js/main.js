@@ -84,7 +84,20 @@ $('.header__menu-category').on('click', function () {
 	header.addClass('active')
 
 	backBtnVisible()
+
+	$('.menu-1').removeClass('hidden')
+	$('.menu-2').removeClass('active animate')
 })
+
+$('.header__menu-btn').on('click', function () {
+	$('.menu-1').addClass('hidden')
+	$('.menu-2').addClass('active')
+
+	setTimeout(() => {
+		$('.menu-2').addClass('animate')
+	}, 0)
+})
+
 // ----------
 
 // Header search
@@ -397,10 +410,10 @@ function selectIcons(opt) {
 	} else {
 		let $opt = $(
 			'<span><img src="' +
-			optimage +
-			'" width="24px" /> ' +
-			opt.text +
-			'</span>'
+				optimage +
+				'" width="24px" /> ' +
+				opt.text +
+				'</span>'
 		)
 		return $opt
 	}
