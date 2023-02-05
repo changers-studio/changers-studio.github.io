@@ -86,7 +86,12 @@ $('.header__menu-category').on('click', function () {
 	backBtnVisible()
 
 	$('.menu-1').removeClass('hidden')
-	$('.menu-2').removeClass('active animate')
+	$('.menu-2').removeClass('active')
+})
+
+$('.header__menu-back').on('click', function () {
+	$('.menu-1').removeClass('hidden')
+	$('.menu-2').removeClass('active')
 })
 
 $('.header__menu-btn').on('click', function () {
