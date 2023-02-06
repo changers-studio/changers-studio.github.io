@@ -48,6 +48,53 @@ input, textarea
 	font-family: $default-font
 //
 
+// Range input
+.popup
+	.irs-min,
+	.irs-from,
+	.irs-to,
+	.irs-max,
+	.irs-single
+		display: none
+
+	.irs-bar
+		background-color: rgba(112, 89, 255, 0.7)
+		height: 1px
+
+	.irs-line
+		background-color: rgba(112, 89, 255, 0.7)
+		height: 1px
+
+	.irs-handle
+		border: none
+		background-color: $accent !important
+		top: auto
+		bottom: -2px
+		width: 80px
+		height: 33px
+		border-radius: 10px
+		cursor: grab
+		&:active
+			cursor: grabbing
+
+.range
+	margin: 25px 0 50px
+	&__data
+		display: flex
+		justify-content: center
+		&-input
+			font-size: 32px
+			text-align: right
+			width: 75px
+		&-caption
+			font-size: 32px
+			margin-left: 3px
+			display: inline-block
+			sup
+				font-size: 20px
+				vertical-align: super
+//
+
 // Buttons
 .btn
 	display: inline-flex
@@ -392,7 +439,9 @@ input, textarea
 
 .gallery
 	display: none
+//
 
+// Fancybox portfolio
 .fancybox-navigation .fancybox-button
 	border-radius: 50%
 	padding: 0
@@ -472,6 +521,7 @@ input, textarea
 		background-color: $light
 		border-radius: 10px
 		padding: 40px 50px
+		position: relative
 	&__title
 		font-size: 48px
 		margin-bottom: 10px
@@ -495,6 +545,30 @@ input, textarea
 		color: rgba(137, 137, 137, 0.9)
 		width: 100%
 		margin-top: 30px
+	&__success
+		display: none
+		justify-content: center
+		align-items: center
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background-color: $light
+		border-radius: 10px
+		&.active
+			display: flex
+		&-icon
+			margin-right: 30px
+			width: 130px
+		&-wrapper
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			text-align: left
+		&-title
+			font-size: 48px
+			margin-bottom: 10px
 //
 
 // Contacts
@@ -579,7 +653,7 @@ input, textarea
 	&__image
 		width: 600px
 		max-width: 50%
-		min-height: 720px
+		min-height: 670px
 		border-radius: 10px
 		background-size: cover
 		background-position: center
@@ -607,6 +681,224 @@ input, textarea
 		width: 100%
 		max-width: 400px
 		margin-top: 50px
+//
+
+// Popup
+.popup
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	z-index: 100
+	background-color: #fff
+	border-radius: 10px
+	min-width: 800px
+	padding: 70px 40px 40px
+	&-calc
+		padding: 70px 40px
+	.mfp-close
+		width: 30px
+		height: 30px
+		font-size: 0
+		background-image: url('../img/icons/close.png')
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center
+		opacity: 1
+		right: 20px
+		top: 20px
+	&__wrapper
+		display: flex
+		flex-direction: column
+		margin: 0 auto
+		width: 500px
+		max-width: calc(100vw - 80px)
+		&._w-medium
+			width: 730px
+		&._w-full
+			width: 1100px
+		&._align-center
+			align-items: center
+	&__title
+		text-align: center
+		margin-bottom: 25px
+		font-size: 20px
+	&__radio
+		background-color: rgba(112, 89, 255, 0.1)
+		padding: 10px
+		border-radius: 30px
+		margin-bottom: 10px
+		width: 260px
+		max-width: 100%
+		display: flex
+		align-items: center
+		cursor: pointer
+		&:last-child
+			margin-bottom: 0
+		&-container
+			margin-bottom: 40px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+		&-input
+			appearance: none
+			width: 20px
+			height: 20px
+			position: relative
+			margin-right: 10px
+			&::before
+				content: ''
+				width: 20px
+				height: 20px
+				background-color: rgba(112, 89, 255, 0.1)
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				border-radius: 50%
+				transition: .3s
+			&:checked::before
+				background-color: $accent
+		&-caption
+			font-size: 16px
+	&__input
+		text-align: center
+		margin-bottom: 24px
+		background-color: rgba(112, 89, 255, 0.1)
+		padding: 20px
+		text-align: center
+		margin-right: 15px
+		width: calc(33.3% - 10px)
+		border-radius: 40px
+		width: 100%
+		height: 80px
+	&__btn
+		max-width: 500px
+		width: 100%
+		margin: 0 auto
+		&._disabled
+			opacity: 0.3
+	&__privacy
+		text-align: center
+		margin-top: 24px
+	&__section
+		display: none
+		&.active
+			display: block
+	&__boolean
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 25px 0 50px
+		&-btn
+			width: 136px
+			height: 82px
+			max-width: calc(50% - 7.5px)
+			background-color: #E3E3E3
+			font-size: 32px
+			display: flex
+			align-items: center
+			justify-content: center
+			border-radius: 10px
+			margin-right: 15px
+			cursor: pointer
+			transition: .2s
+			&:last-child
+				margin-right: 0
+			&:hover, &.active
+				background-color: $accent
+				color: #fff
+		&-input
+			appearance: none
+			width: 1px
+			height: 1px
+	&__gift
+		display: flex
+		justify-content: center
+		margin: 25px 0 50px
+		&-item
+			margin-right: 25px
+			border-radius: 10px
+			overflow: hidden
+			position: relative
+			display: flex
+			cursor: pointer
+			&:last-child
+				margin: 0
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+				background-color: $accent
+				opacity: 0
+				z-index: 1
+				transition: .2s
+			&:hover, &.active
+				.popup__gift
+					&-title, &-content
+						color: #fff
+				&::before
+					opacity: 0.7
+		&-wrapper
+			width: 100%
+			height: 100%
+			position: absolute
+			left: 0
+			top: 0
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			padding: 20px
+			z-index: 2
+		&-content
+			display: inline-flex
+			font-size: 40px
+			font-weight: 700
+			color: $accent
+		&-title, &-content
+			transition: .2s
+	&__success
+		text-align: center
+		display: none
+		&-icon
+			margin-bottom: 30px
+		&-title
+			font-size: 48px
+			margin-bottom: 10px
+		&-text
+			margin-bottom: 100px
+//
+
+// Mfp anime
+.mfp-fade
+	&.mfp-bg
+		opacity: 0
+		-webkit-transition: all 0.35s ease-out
+		-moz-transition: all 0.35s ease-out
+		transition: all 0.35s ease-out
+
+		&.mfp-ready
+			opacity: 0.8
+
+		&.mfp-removing
+			opacity: 0
+
+	&.mfp-wrap
+		.mfp-content
+			opacity: 0
+			-webkit-transition: all 0.35s ease-out
+			-moz-transition: all 0.35s ease-out
+			transition: all 0.35s ease-out
+
+		&.mfp-ready .mfp-content
+			opacity: 1
+
+		&.mfp-removing .mfp-content
+			opacity: 0
 //
 
 @import media

@@ -38,6 +38,11 @@
 			href="libs/slick-carousel/slick.css"
 		/>
 
+		<link
+			rel="stylesheet"
+			href="libs/magnific-popup/magnific-popup.css"
+		/>
+
 		<!-- main css -->
 		<link
 			rel="stylesheet"
@@ -69,6 +74,11 @@
 		<script
 			defer
 			src="libs/jquery.inputmask.min.js"
+		></script>
+
+		<script
+			defer
+			src="libs/magnific-popup/jquery.magnific-popup.min.js"
 		></script>
 
 		<!-- main js -->
@@ -110,22 +120,22 @@
 
 						<nav class="header__menu">
 							<a
-								href="#"
+								href="index.html#service"
 								class="header__menu-item toggleSidebar"
 								>Послуги</a
 							>
 							<a
-								href="#"
+								href="index.html#portfolio"
 								class="header__menu-item toggleSidebar"
 								>Наші роботи</a
 							>
 							<a
-								href="#"
+								href="index.html#contacts"
 								class="header__menu-item toggleSidebar"
 								>Контакти</a
 							>
 							<a
-								href="#"
+								href="index.html#advantages"
 								class="header__menu-item toggleSidebar"
 								>Про нас</a
 							>
@@ -139,7 +149,7 @@
 							>
 
 							<a
-								href="#"
+								href="viber://chat?number=380686944147"
 								class="header__contacts-item"
 								><img
 									src="img/icons/viber.png"
@@ -147,8 +157,9 @@
 							/></a>
 
 							<a
-								href="#"
+								href="https://telegram.me/Debosh_building"
 								class="header__contacts-item"
+								target="_blank"
 								><img
 									src="img/icons/telegram.png"
 									alt="Telegram"
@@ -209,8 +220,8 @@
 							</ul>
 
 							<a
-								href="#"
-								class="about__btn btn"
+								href=".popup-contact"
+								class="about__btn btn mfp"
 								>На консультацію</a
 							>
 						</div>
@@ -291,16 +302,18 @@
 
 						<div class="footer__contacts">
 							<a
-								href="#"
+								href="viber://chat?number=380686944147"
 								class="footer__contacts-item"
+								target="_blank"
 								><img
 									src="img/icons/viber.png"
 									alt="Viber"
 							/></a>
 
 							<a
-								href="#"
+								href="https://telegram.me/Debosh_building"
 								class="footer__contacts-item"
+								target="_blank"
 								><img
 									src="img/icons/telegram.png"
 									alt="Telegram"
@@ -314,7 +327,7 @@
 						</div>
 
 						<a
-							href="#"
+							href="privacy-policy.html"
 							class="footer__link"
 							>Політика конфіденційності</a
 						>
@@ -326,23 +339,23 @@
 
 							<div class="footer__menu-col">
 								<a
-									href="#"
-									class="footer__menu-item"
+									href="index.html#service"
+									class="footer__menu-item trigger-move"
 									>Послуги</a
 								>
 								<a
-									href="#"
-									class="footer__menu-item"
+									href="index.html#portfolio"
+									class="footer__menu-item trigger-move"
 									>Наші роботи</a
 								>
 								<a
-									href="#"
-									class="footer__menu-item"
+									href="index.html#contacts"
+									class="footer__menu-item trigger-move"
 									>Контакти</a
 								>
 								<a
-									href="#"
-									class="footer__menu-item"
+									href="index.html#advantages"
+									class="footer__menu-item trigger-move"
 									>Про нас</a
 								>
 							</div>
@@ -354,46 +367,46 @@
 							<div class="footer__menu-flexbox">
 								<div class="footer__menu-col">
 									<a
-										href="#"
-										class="footer__menu-item"
+										href=".popup-contact"
+										class="footer__menu-item mfp"
 										>Ремонт квартири</a
 									>
 									<a
-										href="#"
-										class="footer__menu-item"
+										href=".popup-contact"
+										class="footer__menu-item mfp"
 										>Ремонт дому</a
 									>
 									<a
-										href="#"
-										class="footer__menu-item"
+										href=".popup-contact"
+										class="footer__menu-item mfp"
 										>Ремонт офісу</a
 									>
 									<a
-										href="#"
-										class="footer__menu-item"
+										href=".popup-contact"
+										class="footer__menu-item mfp"
 										>Ремонт котеджу</a
 									>
 								</div>
 
 								<div class="footer__menu-col">
 									<a
-										href="#"
-										class="footer__menu-item"
+										href=".popup-contact"
+										class="footer__menu-item mfp"
 										>Будівництво дому</a
 									>
 									<a
-										href="#"
-										class="footer__menu-item"
+										href=".popup-contact"
+										class="footer__menu-item mfp"
 										>Будівництво парканів</a
 									>
 									<a
-										href="#"
-										class="footer__menu-item"
+										href=".popup-contact"
+										class="footer__menu-item mfp"
 										>Покрівельні роботи</a
 									>
 									<a
-										href="#"
-										class="footer__menu-item"
+										href=".popup-contact"
+										class="footer__menu-item mfp"
 										>Утеплення дому</a
 									>
 								</div>
@@ -405,5 +418,73 @@
 				<div class="footer__privacy">Debosh building 2015 - 2023</div>
 			</footer>
 		</div>
+
+		<form class="popup popup-contact mfp-hide">
+			<div class="popup__wrapper">
+				<p class="popup__title">Заповніть дані</p>
+
+				<div class="popup__radio-container">
+					<label class="popup__radio">
+						<input
+							type="radio"
+							name="contact"
+							class="popup__radio-input"
+							value="Напишіть мені в телеграм"
+						/>
+
+						<span class="popup__radio-caption">Напишіть мені в телеграм</span>
+					</label>
+
+					<label class="popup__radio">
+						<input
+							type="radio"
+							name="contact"
+							class="popup__radio-input"
+							value="Напишіть мені в вайбер"
+						/>
+
+						<span class="popup__radio-caption">Напишіть мені в вайбер</span>
+					</label>
+
+					<label class="popup__radio">
+						<input
+							type="radio"
+							name="contact"
+							class="popup__radio-input"
+							value="Зателефонуйте мені"
+						/>
+
+						<span class="popup__radio-caption">Зателефонуйте мені</span>
+					</label>
+				</div>
+
+				<input
+					type="text"
+					name="Iмя"
+					placeholder="Ваше імя"
+					class="popup__input"
+					autocomplete="off"
+				/>
+
+				<input
+					type="text"
+					name="Телефон"
+					placeholder="Ваш телефон"
+					class="popup__input input-phone"
+					autocomplete="off"
+				/>
+
+				<button
+					type="submit"
+					class="popup__btn btn"
+				>
+					Відправити
+				</button>
+
+				<p class="popup__privacy">
+					Напискаючи ”Відправити” ви даєте згоду на обробку персональних данних
+				</p>
+			</div>
+		</form>
 	</body>
 </html>

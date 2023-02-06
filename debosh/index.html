@@ -38,6 +38,16 @@
 			href="libs/slick-carousel/slick.css"
 		/>
 
+		<link
+			rel="stylesheet"
+			href="libs/magnific-popup/magnific-popup.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="libs/range/ion.rangeSlider.min.css"
+		/>
+
 		<!-- main css -->
 		<link
 			rel="stylesheet"
@@ -69,6 +79,16 @@
 		<script
 			defer
 			src="libs/jquery.inputmask.min.js"
+		></script>
+
+		<script
+			defer
+			src="libs/magnific-popup/jquery.magnific-popup.min.js"
+		></script>
+
+		<script
+			defer
+			src="libs/range/ion.rangeSlider.min.js"
 		></script>
 
 		<!-- main js -->
@@ -111,23 +131,23 @@
 
 							<nav class="header__menu">
 								<a
-									href="#"
-									class="header__menu-item toggleSidebar"
+									href="#service"
+									class="header__menu-item toggleSidebar trigger-move"
 									>Послуги</a
 								>
 								<a
-									href="#"
-									class="header__menu-item toggleSidebar"
+									href="#portfolio"
+									class="header__menu-item toggleSidebar trigger-move"
 									>Наші роботи</a
 								>
 								<a
-									href="#"
-									class="header__menu-item toggleSidebar"
+									href="#contacts"
+									class="header__menu-item toggleSidebar trigger-move"
 									>Контакти</a
 								>
 								<a
-									href="#"
-									class="header__menu-item toggleSidebar"
+									href="#advantages"
+									class="header__menu-item toggleSidebar trigger-move"
 									>Про нас</a
 								>
 							</nav>
@@ -140,7 +160,7 @@
 								>
 
 								<a
-									href="#"
+									href="viber://chat?number=380686944147"
 									class="header__contacts-item"
 									><img
 										src="img/icons/viber.png"
@@ -148,8 +168,9 @@
 								/></a>
 
 								<a
-									href="#"
+									href="https://telegram.me/Debosh_building"
 									class="header__contacts-item"
+									target="_blank"
 									><img
 										src="img/icons/telegram.png"
 										alt="Telegram"
@@ -198,8 +219,8 @@
 							</div>
 
 							<a
-								href="#"
-								class="main__btn btn magnific-popup"
+								href=".popup-calc"
+								class="main__btn btn mfp"
 								>Розрахувати вартість за 30 секунд</a
 							>
 						</div>
@@ -213,7 +234,10 @@
 				></div>
 			</section>
 
-			<section class="service">
+			<section
+				class="service"
+				id="service"
+			>
 				<div class="container">
 					<h2
 						class="service__title title _text-center"
@@ -242,7 +266,7 @@
 							</p>
 
 							<a
-								href="#"
+								href="service.html"
 								class="service__btn btn"
 								>Детальніше</a
 							>
@@ -274,8 +298,8 @@
 							</ul>
 
 							<a
-								href="#"
-								class="service__btn btn _small"
+								href=".popup-contact"
+								class="service__btn btn _small mfp"
 								>Замовити</a
 							>
 						</div>
@@ -304,8 +328,8 @@
 							</ul>
 
 							<a
-								href="#"
-								class="service__btn btn _small"
+								href=".popup-contact"
+								class="service__btn btn _small mfp"
 								>Замовити</a
 							>
 						</div>
@@ -313,7 +337,10 @@
 				</div>
 			</section>
 
-			<section class="portfolio">
+			<section
+				class="portfolio"
+				id="portfolio"
+			>
 				<div class="container">
 					<div
 						class="portfolio__top"
@@ -444,7 +471,10 @@
 				</div>
 			</section>
 
-			<section class="advantages">
+			<section
+				class="advantages"
+				id="advantages"
+			>
 				<div class="container advantages__container _text-center">
 					<h2
 						class="advantages__title title"
@@ -527,13 +557,13 @@
 					class="container"
 					data-aos="fade-up"
 				>
-					<div class="feedback__container _text-center">
+					<form class="feedback__container _text-center">
 						<h2 class="feedback__title">Є питання ?</h2>
 						<p class="feedback__subtitle">
 							Заповніть форму та ми звяжемося з вами протягом робочого дня
 						</p>
 
-						<form class="feedback__form">
+						<div class="feedback__form">
 							<input
 								type="text"
 								name="Iмя"
@@ -561,12 +591,31 @@
 								Напискаючи ”Відправити” ви даєте згоду на обробку персональних
 								данних
 							</p>
-						</form>
-					</div>
+						</div>
+
+						<div class="feedback__success">
+							<img
+								src="img/icons/done.png"
+								alt="Done"
+								class="feedback__success-icon"
+							/>
+
+							<div class="feedback__success-wrapper">
+								<p class="feedback__success-title">Дякуємо</p>
+								<p class="feedback__success-text">
+									Ми звяжемося з вами протягом <br />
+									робочого дня
+								</p>
+							</div>
+						</div>
+					</form>
 				</div>
 			</section>
 
-			<section class="contacts">
+			<section
+				class="contacts"
+				id="contacts"
+			>
 				<div class="container contacts__container">
 					<div
 						class="contacts__image"
@@ -616,7 +665,7 @@
 							</a>
 
 							<a
-								href="https://telegram.me/nik-name"
+								href="https://telegram.me/Debosh_building"
 								class="contacts__item"
 								target="_blank"
 							>
@@ -651,8 +700,8 @@
 						</div>
 
 						<a
-							href="#"
-							class="contacts__btn btn magnific-popup"
+							href=".popup-contact"
+							class="contacts__btn btn mfp"
 						>
 							Замовити дзвінок
 						</a>
@@ -681,16 +730,18 @@
 
 						<div class="footer__contacts">
 							<a
-								href="#"
+								href="viber://chat?number=380686944147"
 								class="footer__contacts-item"
+								target="_blank"
 								><img
 									src="img/icons/viber.png"
 									alt="Viber"
 							/></a>
 
 							<a
-								href="#"
+								href="https://telegram.me/Debosh_building"
 								class="footer__contacts-item"
+								target="_blank"
 								><img
 									src="img/icons/telegram.png"
 									alt="Telegram"
@@ -704,7 +755,7 @@
 						</div>
 
 						<a
-							href="#"
+							href="privacy-policy.html"
 							class="footer__link"
 							>Політика конфіденційності</a
 						>
@@ -716,23 +767,23 @@
 
 							<div class="footer__menu-col">
 								<a
-									href="#"
-									class="footer__menu-item"
+									href="#service"
+									class="footer__menu-item trigger-move"
 									>Послуги</a
 								>
 								<a
-									href="#"
-									class="footer__menu-item"
+									href="#portfolio"
+									class="footer__menu-item trigger-move"
 									>Наші роботи</a
 								>
 								<a
-									href="#"
-									class="footer__menu-item"
+									href="#contacts"
+									class="footer__menu-item trigger-move"
 									>Контакти</a
 								>
 								<a
-									href="#"
-									class="footer__menu-item"
+									href="#advantages"
+									class="footer__menu-item trigger-move"
 									>Про нас</a
 								>
 							</div>
@@ -744,46 +795,46 @@
 							<div class="footer__menu-flexbox">
 								<div class="footer__menu-col">
 									<a
-										href="#"
-										class="footer__menu-item"
+										href=".popup-contact"
+										class="footer__menu-item mfp"
 										>Ремонт квартири</a
 									>
 									<a
-										href="#"
-										class="footer__menu-item"
+										href=".popup-contact"
+										class="footer__menu-item mfp"
 										>Ремонт дому</a
 									>
 									<a
-										href="#"
-										class="footer__menu-item"
+										href=".popup-contact"
+										class="footer__menu-item mfp"
 										>Ремонт офісу</a
 									>
 									<a
-										href="#"
-										class="footer__menu-item"
+										href=".popup-contact"
+										class="footer__menu-item mfp"
 										>Ремонт котеджу</a
 									>
 								</div>
 
 								<div class="footer__menu-col">
 									<a
-										href="#"
-										class="footer__menu-item"
+										href=".popup-contact"
+										class="footer__menu-item mfp"
 										>Будівництво дому</a
 									>
 									<a
-										href="#"
-										class="footer__menu-item"
+										href=".popup-contact"
+										class="footer__menu-item mfp"
 										>Будівництво парканів</a
 									>
 									<a
-										href="#"
-										class="footer__menu-item"
+										href=".popup-contact"
+										class="footer__menu-item mfp"
 										>Покрівельні роботи</a
 									>
 									<a
-										href="#"
-										class="footer__menu-item"
+										href=".popup-contact"
+										class="footer__menu-item mfp"
 										>Утеплення дому</a
 									>
 								</div>
@@ -809,5 +860,329 @@
 				></a>
 			</div>
 		</div>
+
+		<form class="popup popup-contact mfp-hide">
+			<div class="popup__wrapper">
+				<p class="popup__title">Заповніть дані</p>
+
+				<div class="popup__radio-container">
+					<label class="popup__radio">
+						<input
+							type="radio"
+							name="contact"
+							class="popup__radio-input"
+							value="Напишіть мені в телеграм"
+						/>
+
+						<span class="popup__radio-caption">Напишіть мені в телеграм</span>
+					</label>
+
+					<label class="popup__radio">
+						<input
+							type="radio"
+							name="contact"
+							class="popup__radio-input"
+							value="Напишіть мені в вайбер"
+						/>
+
+						<span class="popup__radio-caption">Напишіть мені в вайбер</span>
+					</label>
+
+					<label class="popup__radio">
+						<input
+							type="radio"
+							name="contact"
+							class="popup__radio-input"
+							value="Зателефонуйте мені"
+						/>
+
+						<span class="popup__radio-caption">Зателефонуйте мені</span>
+					</label>
+				</div>
+
+				<input
+					type="text"
+					name="Iмя"
+					placeholder="Ваше імя"
+					class="popup__input"
+					autocomplete="off"
+				/>
+
+				<input
+					type="text"
+					name="Телефон"
+					placeholder="Ваш телефон"
+					class="popup__input input-phone"
+					autocomplete="off"
+				/>
+
+				<button
+					type="submit"
+					class="popup__btn btn"
+				>
+					Відправити
+				</button>
+
+				<p class="popup__privacy">
+					Напискаючи ”Відправити” ви даєте згоду на обробку персональних данних
+				</p>
+			</div>
+		</form>
+
+		<form class="popup popup-calc mfp-hide">
+			<div class="popup__section active">
+				<div class="popup__wrapper _w-medium">
+					<p class="popup__title">
+						Яка приблизна площа приміщення, в якому планується ремонт?
+					</p>
+
+					<div class="range">
+						<div class="range__data">
+							<input
+								type="number"
+								step="1"
+								class="range__data-input"
+								disabled
+							/>
+
+							<span class="range__data-caption">м<sup>2</sup></span>
+						</div>
+
+						<div class="range-slider">
+							<input
+								type="text"
+								class="range__slider"
+								value="0"
+							/>
+						</div>
+					</div>
+
+					<button
+						type="button"
+						class="popup__btn btn"
+					>
+						Далі
+					</button>
+				</div>
+			</div>
+
+			<div class="popup__section">
+				<div class="popup__wrapper _w-medium">
+					<p class="popup__title">Чи маєте ви дизайн-проект ?</p>
+
+					<div class="popup__boolean">
+						<label class="popup__boolean-btn">
+							<input
+								class="popup__boolean-input"
+								type="radio"
+								name="Чи маєте ви дизайн-проект"
+								readonly
+								value="Так"
+							/>
+
+							<span>Так</span>
+						</label>
+
+						<label class="popup__boolean-btn active">
+							<input
+								class="popup__boolean-input"
+								type="radio"
+								name="Чи маєте ви дизайн-проект"
+								readonly
+								value="Ні"
+								checked
+							/>
+
+							<span>Ні</span>
+						</label>
+					</div>
+
+					<button
+						type="button"
+						class="popup__btn btn"
+					>
+						Далі
+					</button>
+				</div>
+			</div>
+
+			<div class="popup__section">
+				<div class="popup__wrapper _w-full">
+					<p class="popup__title">Оберіть подарунок</p>
+
+					<div class="popup__gift">
+						<label class="popup__gift-item active">
+							<img
+								src="img/gift/image-1.jpg"
+								alt="Image"
+								class="popup__gift-image"
+							/>
+
+							<div class="popup__gift-wrapper">
+								<span class="popup__gift-title"
+									>Знижка 5% на <br />
+									Оздоблювальні роботи</span
+								>
+								<span class="popup__gift-content">-5%</span>
+							</div>
+
+							<input
+								class="popup__boolean-input"
+								type="radio"
+								name="Подарунок"
+								value="Знижка 5% на Оздоблювальні роботи"
+								checked
+							/>
+						</label>
+
+						<label class="popup__gift-item">
+							<img
+								src="img/gift/image-2.jpg"
+								alt="Image"
+								class="popup__gift-image"
+							/>
+
+							<div class="popup__gift-wrapper">
+								<span class="popup__gift-title"
+									>Безкоштовний <br />
+									клінінг</span
+								>
+								<span class="popup__gift-content">
+									<img
+										src="img/gift/free.png"
+										alt="Free"
+									/>
+								</span>
+							</div>
+
+							<input
+								class="popup__boolean-input"
+								type="radio"
+								name="Подарунок"
+								value="Безкоштовний клінінг"
+							/>
+						</label>
+
+						<label class="popup__gift-item">
+							<img
+								src="img/gift/image-3.jpg"
+								alt="Image"
+								class="popup__gift-image"
+							/>
+
+							<div class="popup__gift-wrapper">
+								<span class="popup__gift-title">Чорний Ящик</span>
+								<span class="popup__gift-content">?</span>
+							</div>
+
+							<input
+								class="popup__boolean-input"
+								type="radio"
+								name="Подарунок"
+								value="Чорний Ящик"
+							/>
+						</label>
+					</div>
+
+					<button
+						type="button"
+						class="popup__btn btn"
+					>
+						Далі
+					</button>
+				</div>
+			</div>
+
+			<div class="popup__section">
+				<div class="popup__wrapper">
+					<p class="popup__title">Заповніть дані</p>
+
+					<div class="popup__radio-container">
+						<label class="popup__radio">
+							<input
+								type="radio"
+								name="Як зв'язатися?"
+								class="popup__radio-input"
+								value="Напишіть мені в телеграм"
+							/>
+
+							<span class="popup__radio-caption">Напишіть мені в телеграм</span>
+						</label>
+
+						<label class="popup__radio">
+							<input
+								type="radio"
+								name="Як зв'язатися?"
+								class="popup__radio-input"
+								value="Напишіть мені в вайбер"
+							/>
+
+							<span class="popup__radio-caption">Напишіть мені в вайбер</span>
+						</label>
+
+						<label class="popup__radio">
+							<input
+								type="radio"
+								name="Як зв'язатися?"
+								class="popup__radio-input"
+								value="Зателефонуйте мені"
+							/>
+
+							<span class="popup__radio-caption">Зателефонуйте мені</span>
+						</label>
+					</div>
+
+					<input
+						type="text"
+						name="Iмя"
+						placeholder="Ваше імя"
+						class="popup__input"
+						autocomplete="off"
+					/>
+
+					<input
+						type="text"
+						name="Телефон"
+						placeholder="Ваш телефон"
+						class="popup__input input-phone"
+						autocomplete="off"
+					/>
+
+					<button
+						type="submit"
+						class="popup__btn btn"
+					>
+						Відправити
+					</button>
+
+					<p class="popup__privacy">
+						Напискаючи ”Відправити” ви даєте згоду на обробку персональних
+						данних
+					</p>
+				</div>
+			</div>
+
+			<div class="popup__success">
+				<div class="popup__wrapper _align-center">
+					<img
+						class="popup__success-icon"
+						src="img/icons/done.png"
+						alt="Done"
+					/>
+
+					<p class="popup__success-title">Дякуємо</p>
+					<p class="popup__success-text">
+						Ми звяжемося з вами протягом робочого дня
+					</p>
+
+					<button
+						type="button"
+						class="popup__btn btn"
+					>
+						На головну сторінку
+					</button>
+				</div>
+			</div>
+		</form>
 	</body>
 </html>
