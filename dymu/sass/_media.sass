@@ -8,6 +8,50 @@
 		max-width: 480px
 	//
 
+	// Header
+	.header
+		&__logo
+			display: none
+			&-mobile
+				display: flex
+				width: 70px
+		&__container
+			padding-top: 20px
+			padding-bottom: 20px
+			display: flex
+			justify-content: center
+			border-bottom: 1px solid #000
+			position: relative
+		&__nav
+			display: none
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			height: 100%
+			width: 100%
+			position: fixed
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			background-color: $milk
+			z-index: 5
+			&.active
+				display: flex
+			&-item
+				margin-bottom: 30px
+				&::before
+					display: none
+				&:last-child
+					margin-bottom: 0
+		&__hamburger
+			display: flex
+			position: absolute
+			top: 50%
+			right: 15px
+			transform: translateY(-50%)
+	//
+
 	// Footer
 	.footer
 		padding: 30px 0 80px
@@ -34,6 +78,38 @@
 				width: 65px
 		&__info
 			font-size: 15px
+	//
+
+	// Main
+	.main
+		&__container
+			height: auto
+			padding: 30px 0
+		&__logo
+			width: 240px
+			margin-bottom: 15px
+		&__title
+			margin-bottom: 15px
+			font-size: 15px
+		&__text
+			font-size: 15px
+			max-width: 150px
+		&__preloader
+			display: none
+		&__image
+			margin-top: 30px
+			&-face, &-dialog
+				display: none
+			&-mobile
+				display: flex
+		&__decor
+			max-width: none
+			top: 10%
+			transform: none
+			img
+				display: none
+				&._mobile
+					display: flex
 	//
 
 	// Portfolio

@@ -1,3 +1,6 @@
+// Preloader
+//
+
 // AOS
 AOS.init({
 	once: true,
@@ -7,6 +10,15 @@ AOS.init({
 $(window).on('scroll', function () {
 	AOS.refresh()
 })
+//
+
+// Hamburger
+if ($(window).width() <= 992) {
+	$('.toggleSidebar').on('click', function () {
+		$('.header__nav').toggleClass('active')
+		$('body').toggleClass('scroll_disabled')
+	})
+}
 //
 
 // Portfolio show more
@@ -55,10 +67,10 @@ if ($('*').is('.unique__dropdown-slider')) {
 			{
 				breakpoint: 1200,
 				settings: {
-					arrows: false
-				}
+					arrows: false,
+				},
 			},
-		]
+		],
 	})
 }
 //
@@ -88,30 +100,30 @@ $('.unique__btn-toggle').on('click', function () {
 //
 
 // Video
-if ($('*').is('video')) {
-	const videoOptions = {
-		muted: true,
-		volume: 0,
-		autoplay: true,
-		loop: true
-	}
+// if ($('*').is('video')) {
+// 	const videoOptions = {
+// 		muted: true,
+// 		volume: 0,
+// 		autoplay: true,
+// 		loop: true,
+// 	}
 
-	const player1 = videojs('video1', videoOptions)
-	const player2 = videojs('video2', videoOptions)
-	const player3 = videojs('video3', videoOptions)
-	const player4 = videojs('video4', videoOptions)
-	const player5 = videojs('video5', videoOptions)
-	const player6 = videojs('video6', videoOptions)
-	const player7 = videojs('video7', videoOptions)
+// 	const player1 = videojs('video1', videoOptions)
+// 	const player2 = videojs('video2', videoOptions)
+// 	const player3 = videojs('video3', videoOptions)
+// 	const player4 = videojs('video4', videoOptions)
+// 	const player5 = videojs('video5', videoOptions)
+// 	const player6 = videojs('video6', videoOptions)
+// 	const player7 = videojs('video7', videoOptions)
 
-	document.addEventListener('DOMContentLoaded', () => {
-		player1.play()
-		player2.play()
-		player3.play()
-		player4.play()
-		player5.play()
-		player6.play()
-		player7.play()
-	})
-}
+// 	document.addEventListener('DOMContentLoaded', () => {
+// 		player1.play()
+// 		player2.play()
+// 		player3.play()
+// 		player4.play()
+// 		player5.play()
+// 		player6.play()
+// 		player7.play()
+// 	})
+// }
 //
