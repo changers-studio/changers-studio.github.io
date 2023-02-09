@@ -1,0 +1,592 @@
+@import vars
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1500px)
+
+	._mac-wider
+		width: 70vw
+
+@media only screen and (max-width : 1200px)
+
+	// General
+	.container
+		max-width: 480px
+	//
+
+	// Header
+	.header
+		&__logo
+			display: none
+			&-mobile
+				display: flex
+				width: 70px
+		&__container
+			padding-top: 20px
+			padding-bottom: 20px
+			display: flex
+			justify-content: center
+			border-bottom: 1px solid #000
+			position: relative
+		&__nav
+			display: none
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			height: 100%
+			width: 100%
+			position: fixed
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			background-color: $milk
+			z-index: 5
+			&.active
+				display: flex
+			&-item
+				margin-bottom: 30px
+				&::before
+					display: none
+				&:last-child
+					margin-bottom: 0
+		&__hamburger
+			display: flex
+			position: absolute
+			top: 50%
+			right: 15px
+			transform: translateY(-50%)
+
+	.isnohome
+		.header
+			&__container
+				padding: 10px
+			&__logo
+				display: flex
+				width: 70px
+	//
+
+	// Footer
+	.footer
+		padding: 30px 0 80px
+		position: relative
+		&__decor
+			position: absolute
+			top: auto
+			bottom: 10px
+			display: none
+			&._mobile
+				display: inline-flex
+		&__container
+			max-width: 300px
+		&__logo
+			width: 40px
+			margin-bottom: 15px
+		&__text
+			font-size: 15px
+			margin-bottom: 30px
+		&__title
+			margin-bottom: 60px
+			font-size: 42px
+			&-img
+				width: 65px
+		&__info
+			font-size: 15px
+	//
+
+	// Main
+	.main
+		&__container
+			min-height: auto
+			padding: 30px 0
+		&__logo
+			width: 240px
+			margin-bottom: 15px
+		&__title
+			margin-bottom: 15px
+			font-size: 15px
+		&__text
+			font-size: 15px
+			max-width: 150px
+		&__preloader
+			display: none
+		&__image
+			margin-top: 30px
+			&-face, &-dialog
+				display: none
+			&-mobile
+				display: flex
+		&__decor
+			max-width: none
+			top: 10%
+			transform: none
+			img
+				display: none
+				&._mobile
+					display: flex
+	//
+
+	// Portfolio
+	.portfolio
+		&__container
+			flex-direction: column
+			margin-top: 30px
+			&-col
+				width: 100%
+				&._hidden-mobile
+					display: none
+		&__item
+			margin-bottom: 30px
+			&:last-child
+				margin-bottom: 30px
+			&:hover
+				.portfolio__item-img::before
+					transform: scale(1)
+			&-img
+				margin-bottom: 10px
+				&::before
+					transform: scale(1)
+					width: 60px
+					height: 60px
+					right: -10px
+					bottom: -10px
+					top: auto
+		&__btn
+			display: flex
+	//
+
+	// Service
+	.service
+		padding: 50px 0 30px
+		&__decor
+			position: absolute
+			top: 50px
+			display: none
+			&._mobile
+				display: inline-flex
+		&__container
+			flex-direction: column
+		&__item
+			width: 100%
+			margin-top: 20px
+			&-btn
+				right: -15px
+				bottom: -10px
+				top: auto
+				transform: none
+				width: 56px
+				height: 124px
+				background-image: url('../img/decorations/service__item-arrow.svg')
+				font-size: 0
+				border: none
+				background-color: transparent
+				border-radius: 0
+				&:hover
+					transform: none
+	//
+
+	// Unique service
+	.unique
+		padding: 30px 0 85px
+		&__container
+			padding: 20px 20px 140px
+			&:last-child
+				margin-top: 40px
+			&-flex
+				flex-direction: column
+			&::before
+				top: -2px
+				right: 30px
+				width: 21px
+				height: 33px
+			&-img
+				width: 100%
+				img
+					width: 100%
+		&__text-p
+			margin-bottom: 10px
+		&__flexbox
+			flex-direction: column
+			margin-top: 30px
+		&__item
+			width: 100%
+			margin-bottom: 30px
+			&:last-child
+				margin-bottom: 0
+			&-img img
+				width: 100%
+		&__btn
+			top: 100%
+			right: 50%
+			transform: translate(50%, -50%)
+			&-toggle
+				width: 100%
+		&__dropdown-slider
+			width: calc(100% + 40px)
+
+	.liquid-slider
+		&__container
+			margin-top: 140px
+			position: relative
+			left: 50%
+			transform: translateX(-50%)
+			width: 100vw
+	//
+
+	// Clients
+	.clients
+		padding: 30px 0
+		&__container
+			padding-bottom: 60px
+			border-width: 2px
+		&__title
+			margin-bottom: 30px
+		&__flexbox
+			display: none
+			&-mobile
+				display: flex
+		&__item
+			width: 50%
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-bottom: 40px
+			&:last-child
+				width: 100%
+				margin-bottom: 0
+				.clients__image
+					width: 90%
+					max-width: none
+		&__image
+			max-width: 80%
+	//
+
+	// Portfolio page
+	.isnohome
+		.main
+			padding: 20px
+			&__gif
+				height: 400px
+		.title
+			font-size: 16px
+			&._bg-gray
+				padding: 20px 15px 30px
+				._stroke
+					padding: 10px 0
+		.number
+			width: 30px
+			height: 30px
+			font-size: 15px
+		.video
+			height: 360px
+		.hands
+			height: 300px
+			&-inner
+				transform: translate(-50%, -30%)
+		.gif
+			&-wrapper
+				max-width: calc(100% - 60px)
+				&::before
+					width: 38px
+					height: 38px
+					top: -20px
+		._mb-more
+			margin-bottom: 30px
+		.image-decor
+			&__item
+				display: none
+		.content
+			&__top
+				&-decor
+					display: none
+				&._mobile-pb-more
+					padding-bottom: 70px
+			&__black
+				&._bottom-offset
+					padding-bottom: 230px
+					margin-bottom: 31px
+				&-row
+					max-width: none
+					width: auto
+					height: 20px
+				&-image
+					&-3
+						width: 480px
+						max-width: calc(100vw + 40px)
+						bottom: -36px
+			&__middle._pos-relative
+				padding: 70px 0 30px
+			&__sushi-decor
+				&-1
+					left: 5vw
+					width: 124px
+					height: 124px
+				&-2
+					top: -70px
+					img
+						width: 100%
+				&-3
+					right: 5vw
+					width: 50px
+					bottom: 20px
+
+		.portfolio
+			&__btn
+				display: none
+				&-circle
+					display: flex
+					width: 100%
+					height: 46px
+					border-radius: 70px
+					opacity: 1
+					border-width: 2px
+					&:hover
+						transform: scale(1)
+	//
+
+	// Popup
+	.popup
+		&__decor
+			display: none
+		&__close
+			right: 10px
+			top: 10px
+		&__form
+			padding: 30px 20px
+			padding: 30px 20px
+			width: calc(100% - 20px)
+			max-width: 400px
+		&__title
+			font-size: 30px
+			font-size: 20px
+		&__form
+			&-input
+				font-size: 18px
+				margin-top: 15px
+				&::placeholder
+					font-size: 18px
+			&-btn
+				height: 50px
+				font-size: 18px
+				margin-top: 30px
+	//
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+
+	// General
+	body
+		font-size: 15px
+
+	.title
+		font-size: 15px
+	//
+
+	// Portfolio
+	.portfolio
+		padding: 50px 0
+		&__item
+			&-title
+				margin-bottom: 5px
+				font-size: 15px
+			&-subtitle
+				font-size: 17px
+	//
+
+	// Service
+	.service
+		&__item
+			&-title
+				font-size: 18px
+				margin-bottom: 10px
+	//
+
+	// Unique service
+	.unique
+		&__container
+			padding: 20px 20px 90px
+			&:last-child
+				margin-top: 40px
+			&-flex
+				position: relative
+				padding-bottom: 66px
+		&__title
+			font-size: 18px
+			max-width: 260px
+		&__text
+			margin-bottom: 0
+		&__item
+			&-title
+				font-size: 18px
+			&-btn
+				right: -32px
+				transform: translateY(-50%)
+				font-size: 12px
+				width: 90px
+				height: 90px
+				&:hover
+					transform: translateY(-50%)
+		&__btn
+			width: 120px
+			height: 120px
+			font-size: 12px
+			&-toggle
+				width: 100%
+				font-size: 15px
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 100%
+		&__dropdown
+			padding: 10px 20px 20px
+		.tabs
+			&__captions
+				flex-wrap: wrap
+				justify-content: center
+				&-item
+					width: 25%
+					margin-top: 10px
+
+	.liquid-slider
+		&._rtl
+			transform: rotate(-3.46deg) translateY(-20%) scale(-1, -1)
+		&__container
+			margin-top: 90px
+			top: auto
+	//
+
+	// Portfolio page
+	.isnohome
+		.main__gif
+			height: 150px
+		.overtitle
+			font-size: 15px
+		.heading
+			font-size: 20px
+			&__image
+				transform: translateY(-80%)
+		.title
+			margin-bottom: 15px
+		.text
+			margin-bottom: 20px
+		.gif
+			height: 150px
+			width: 100%
+		.video
+			height: 150px
+			border-radius: 12px
+			margin-bottom: 20px
+			&._mb-mobile
+				margin-bottom: 40px
+		.flexbox
+			&._max-more
+				width: 500px
+				position: relative
+				left: 50%
+				transform: translateX(-50%)
+			&__item
+				margin-right: 10px
+			&._col-mobile
+				flex-direction: column
+				.flexbox__item
+					margin-bottom: 10px
+					margin-right: 0
+					&:last-child
+						margin-bottom: 0
+		.stats
+			flex-direction: column
+			align-items: center
+			margin-top: 0
+			.heading
+				margin-bottom: 10px
+				position: static
+				font-size: 30px
+				&::before
+					content: ''
+					display: inline-block
+					height: 30px
+					width: 2px
+					background-color: #000
+					position: absolute
+					top: 100%
+					left: 50%
+					transform: translate(-50%, 10px)
+					margin-left: 0
+			.text br
+				display: none
+			&__item
+				margin-bottom: 50px
+				position: relative
+				&:last-child
+					margin-bottom: 0
+		.hands
+			height: auto
+			margin: 30px 0
+			&-inner
+				position: static
+				transform: none
+		._mb
+			margin-bottom: 30px
+		._mobile
+			display: inline-flex
+			max-width: none
+			width: calc(100% + 30px)
+			position: relative
+			left: -15px
+			&-visible
+				display: inline-flex
+		._wide
+			max-width: none
+			position: relative
+			left: 50%
+			transform: translateX(-50%)
+			width: 800px
+			&._w-less
+				width: 400px
+		._desktop
+			display: none
+	//
+
+	// Portfolio content
+	.content
+		padding-bottom: 50px
+		&__top
+			padding: 30px 0
+			margin-bottom: 0
+		&__black
+			margin-top: 0
+			padding-bottom: 80px
+			margin-bottom: 30px
+			&._bottom-plug
+				margin-bottom: 0
+				&::after
+					height: 95px
+				&-less
+					margin-bottom: 0
+					&::after
+						height: 60px
+				&-none
+					padding-bottom: 50px
+			&::before
+				height: 75px
+			&-image
+				display: none
+				img
+					width: 100%
+				&._pos-absolute
+					position: absolute
+					width: 100%
+					max-height: 480px
+					transform: none
+					left: 0
+					bottom: -40px
+				&-2
+					width: 140px
+		&__middle
+			padding-top: 50px
+			&-img
+				display: none
+				&._mobile
+					display: inline-flex
+					margin-right: auto
+					margin-left: auto
+	//

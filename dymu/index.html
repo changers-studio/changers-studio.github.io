@@ -38,6 +38,11 @@
 			href="https://vjs.zencdn.net/7.20.3/video-js.css"
 		/>
 
+		<link
+			rel="stylesheet"
+			href="libs/magnific-popup/magnific-popup.css"
+		/>
+
 		<!-- main css -->
 		<link
 			rel="stylesheet"
@@ -66,6 +71,16 @@
 			src="https://vjs.zencdn.net/7.20.3/video.min.js"
 		></script>
 
+		<script
+			defer
+			src="libs/jquery.inputmask.min.js"
+		></script>
+
+		<script
+			defer
+			src="libs/magnific-popup/jquery.magnific-popup.min.js"
+		></script>
+
 		<!-- main js -->
 		<script
 			defer
@@ -89,14 +104,14 @@
 
 					<nav class="header__nav">
 						<a
-							href="#"
-							class="header__nav-item toggleSidebar"
+							href="#portfolio"
+							class="header__nav-item toggleSidebar trigger-move"
 							>Наші думи</a
 						>
 
 						<a
-							href="#"
-							class="header__nav-item toggleSidebar"
+							href="#service"
+							class="header__nav-item toggleSidebar trigger-move"
 							>Послуги</a
 						>
 
@@ -111,14 +126,14 @@
 						</a>
 
 						<a
-							href="#"
-							class="header__nav-item toggleSidebar"
+							href="#clients"
+							class="header__nav-item toggleSidebar trigger-move"
 							>Клієнти</a
 						>
 
 						<a
-							href="#"
-							class="header__nav-item toggleSidebar"
+							href="#footer"
+							class="header__nav-item toggleSidebar trigger-move"
 							>Контакти</a
 						>
 					</nav>
@@ -173,15 +188,15 @@
 					<div class="main__container">
 						<img
 							src="img/logo.svg"
-							alt=""
+							alt="Logo"
 							class="main__logo"
 							data-aos="zoom-in"
-							data-aos-delay="2200"
+							data-aos-delay="2000"
 						/>
 						<p
 							class="main__title"
 							data-aos="zoom-in"
-							data-aos-delay="2300"
+							data-aos-delay="2000"
 						>
 							creative studio
 						</p>
@@ -189,7 +204,7 @@
 						<p
 							class="main__text"
 							data-aos="zoom-in"
-							data-aos-delay="2400"
+							data-aos-delay="2500"
 						>
 							надумаємо магію для вашого бренду
 						</p>
@@ -199,6 +214,7 @@
 								src="img/main/face.svg"
 								alt="Face"
 								class="main__image-face"
+								data-aos="zoom-in"
 							/>
 
 							<img
@@ -235,7 +251,10 @@
 				</div>
 			</section>
 
-			<section class="portfolio _bg-black">
+			<section
+				class="portfolio _bg-black"
+				id="portfolio"
+			>
 				<div class="container">
 					<h2
 						class="title _text-center"
@@ -247,7 +266,7 @@
 					<div class="portfolio__container">
 						<div class="portfolio__container-col">
 							<a
-								href="#"
+								href="portfolio-1.html"
 								class="portfolio__item"
 								data-aos="fade-up"
 							>
@@ -271,7 +290,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-3.html"
 								class="portfolio__item"
 								data-aos="fade-up"
 							>
@@ -293,7 +312,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-4.html"
 								class="portfolio__item"
 								data-aos="fade-up"
 							>
@@ -317,7 +336,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-8.html"
 								class="portfolio__item"
 								data-aos="fade-up"
 							>
@@ -339,7 +358,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-10.html"
 								class="portfolio__item"
 								data-aos="fade-up"
 							>
@@ -357,7 +376,7 @@
 
 						<div class="portfolio__container-col _hidden-mobile">
 							<a
-								href="#"
+								href="portfolio-2.html"
 								class="portfolio__item"
 								data-aos="fade-up"
 							>
@@ -382,7 +401,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-5.html"
 								class="portfolio__item"
 								data-aos="fade-up"
 							>
@@ -404,7 +423,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-6.html"
 								class="portfolio__item"
 								data-aos="fade-up"
 							>
@@ -426,7 +445,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-7.html"
 								class="portfolio__item"
 								data-aos="fade-up"
 							>
@@ -446,7 +465,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-9.html"
 								class="portfolio__item"
 								data-aos="fade-up"
 							>
@@ -462,7 +481,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-11.html"
 								class="portfolio__item"
 								data-aos="fade-up"
 							>
@@ -483,7 +502,10 @@
 				</div>
 			</section>
 
-			<section class="service">
+			<section
+				class="service"
+				id="service"
+			>
 				<img
 					class="service__decor"
 					data-aos="zoom-out"
@@ -525,8 +547,8 @@
 							</p>
 
 							<a
-								href="#"
-								class="service__item-btn"
+								href=".popup"
+								class="service__item-btn mfp"
 							>
 								Звернутись
 							</a>
@@ -543,8 +565,8 @@
 							</p>
 
 							<a
-								href="#"
-								class="service__item-btn"
+								href=".popup"
+								class="service__item-btn mfp"
 							>
 								Звернутись
 							</a>
@@ -559,8 +581,8 @@
 							</p>
 
 							<a
-								href="#"
-								class="service__item-btn"
+								href=".popup"
+								class="service__item-btn mfp"
 							>
 								Звернутись
 							</a>
@@ -577,8 +599,8 @@
 							</p>
 
 							<a
-								href="#"
-								class="service__item-btn"
+								href=".popup"
+								class="service__item-btn mfp"
 							>
 								Звернутись
 							</a>
@@ -620,8 +642,9 @@
 									/>
 
 									<a
-										href="#"
+										href="https://readymag.com/u91995340/3729364/"
 										class="unique__item-btn"
+										target="_blank"
 										>медіакіт</a
 									>
 								</div>
@@ -637,8 +660,9 @@
 									/>
 
 									<a
-										href="#"
+										href="https://readymag.com/u91995340/2679836/"
 										class="unique__item-btn"
+										target="_blank"
 										>медіакіт</a
 									>
 								</div>
@@ -659,8 +683,8 @@
 						</div>
 
 						<a
-							href="#"
-							class="unique__btn"
+							href=".popup"
+							class="unique__btn mfp"
 						>
 							<img
 								src="img/service/rotate-button.svg"
@@ -1027,21 +1051,21 @@
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-1.png"
+												src="img/brands/kingston/image-4.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-2.png"
+												src="img/brands/kingston/image-5.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-3.png"
+												src="img/brands/kingston/image-6.png"
 												alt="Image"
 											/>
 										</div>
@@ -1066,42 +1090,42 @@
 									<div class="unique__dropdown-slider">
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-1.png"
+												src="img/brands/acer/image-1.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-2.png"
+												src="img/brands/acer/image-2.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-3.png"
+												src="img/brands/acer/image-4.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-1.png"
+												src="img/brands/acer/image-4.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-2.png"
+												src="img/brands/acer/image-5.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-3.png"
+												src="img/brands/acer/image-6.png"
 												alt="Image"
 											/>
 										</div>
@@ -1126,42 +1150,42 @@
 									<div class="unique__dropdown-slider">
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-1.png"
+												src="img/brands/chipsters/image-1.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-2.png"
+												src="img/brands/chipsters/image-2.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-3.png"
+												src="img/brands/chipsters/image-3.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-1.png"
+												src="img/brands/chipsters/image-4.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-2.png"
+												src="img/brands/chipsters/image-5.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-3.png"
+												src="img/brands/chipsters/image-6.png"
 												alt="Image"
 											/>
 										</div>
@@ -1176,7 +1200,7 @@
 									/>
 
 									<p class="unique__dropdown-heading">
-										Персонаж для бренда Chipsters
+										Персонаж для бренда Flint
 									</p>
 									<p class="unique__dropdown-text">
 										Використовується в соціальних мережах бренда для створення
@@ -1186,42 +1210,42 @@
 									<div class="unique__dropdown-slider">
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-1.png"
+												src="img/brands/flint/image-1.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-2.png"
+												src="img/brands/flint/image-2.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-3.png"
+												src="img/brands/flint/image-3.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-1.png"
+												src="img/brands/flint/image-4.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-2.png"
+												src="img/brands/flint/image-5.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-3.png"
+												src="img/brands/flint/image-6.png"
 												alt="Image"
 											/>
 										</div>
@@ -1247,42 +1271,42 @@
 									<div class="unique__dropdown-slider">
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-1.png"
+												src="img/brands/aviasales/image-1.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-2.png"
+												src="img/brands/aviasales/image-2.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-3.png"
+												src="img/brands/aviasales/image-3.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-1.png"
+												src="img/brands/aviasales/image-4.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-2.png"
+												src="img/brands/aviasales/image-5.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-3.png"
+												src="img/brands/aviasales/image-6.png"
 												alt="Image"
 											/>
 										</div>
@@ -1308,42 +1332,42 @@
 									<div class="unique__dropdown-slider">
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-1.png"
+												src="img/brands/omg/image-1.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-2.png"
+												src="img/brands/omg/image-2.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-3.png"
+												src="img/brands/omg/image-3.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-1.png"
+												src="img/brands/omg/image-4.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-2.png"
+												src="img/brands/omg/image-5.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-3.png"
+												src="img/brands/omg/image-6.png"
 												alt="Image"
 											/>
 										</div>
@@ -1351,7 +1375,11 @@
 								</div>
 
 								<div class="tabs__content">
-									<p class="unique__dropdown-title">«Солов’їну треба знати»</p>
+									<img
+										src="img/brands/logo-7.png"
+										alt="Logo"
+										class="unique__dropdown-logo"
+									/>
 
 									<p class="unique__dropdown-heading">
 										Персонаж для проєкту «Солов’їну треба знати»
@@ -1365,42 +1393,42 @@
 									<div class="unique__dropdown-slider">
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-1.png"
+												src="img/brands/soloviyna/image-1.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-2.png"
+												src="img/brands/soloviyna/image-2.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-3.png"
+												src="img/brands/soloviyna/image-3.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-1.png"
+												src="img/brands/soloviyna/image-4.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-2.png"
+												src="img/brands/soloviyna/image-5.png"
 												alt="Image"
 											/>
 										</div>
 
 										<div class="unique__dropdown-slide">
 											<img
-												src="img/brands/kingston/image-3.png"
+												src="img/brands/soloviyna/image-6.png"
 												alt="Image"
 											/>
 										</div>
@@ -1410,8 +1438,8 @@
 						</div>
 
 						<a
-							href="#"
-							class="unique__btn"
+							href=".popup"
+							class="unique__btn mfp"
 						>
 							<img
 								src="img/service/rotate-button.svg"
@@ -1425,7 +1453,10 @@
 				</div>
 			</section>
 
-			<section class="clients">
+			<section
+				class="clients"
+				id="clients"
+			>
 				<div class="container clients__container">
 					<h2
 						class="clients__title title _text-center"
@@ -1645,7 +1676,10 @@
 				</div>
 			</section>
 
-			<footer class="footer">
+			<footer
+				class="footer"
+				id="footer"
+			>
 				<img
 					class="footer__decor"
 					data-aos="zoom-out"
@@ -1708,6 +1742,80 @@
 					</div>
 				</div>
 			</footer>
+
+			<div class="popup mfp-hide">
+				<img
+					src="img/main/clouds-left.svg"
+					alt="Clouds"
+					class="popup__decor popup__decor-left"
+				/>
+
+				<img
+					src="img/main/clouds-right.svg"
+					alt="Clouds"
+					class="popup__decor popup__decor-right"
+				/>
+
+				<form class="popup__form">
+					<button
+						type="button"
+						class="popup__close"
+					></button>
+
+					<p class="popup__title">
+						Заповніть форму, <br />
+						або пишіть нам на <span>e-mail</span>
+					</p>
+
+					<input
+						type="text"
+						class="popup__form-input"
+						name="Ім’я"
+						placeholder="Ім’я"
+						autocomplete="off"
+					/>
+
+					<input
+						type="email"
+						class="popup__form-input"
+						name="E-mail"
+						placeholder="E-mail"
+						autocomplete="off"
+					/>
+
+					<input
+						type="text"
+						class="popup__form-input input-phone"
+						name="Телефон"
+						placeholder="Телефон"
+						autocomplete="off"
+					/>
+
+					<input
+						type="text"
+						class="popup__form-input"
+						name="Про проєкт"
+						placeholder="Про проєкт"
+						autocomplete="off"
+					/>
+
+					<button
+						type="submit"
+						class="popup__form-btn"
+					>
+						Відправити
+					</button>
+
+					<div class="popup__form-success">
+						<div class="popup__success">
+							<p class="popup__success-title">Дякуємо за заявку!</p>
+							<p class="popup__success-text">
+								Наш співробітник зв'яжеться з вами
+							</p>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
 	</body>
 </html>

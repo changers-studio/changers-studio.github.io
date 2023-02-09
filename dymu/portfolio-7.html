@@ -33,6 +33,11 @@
 			href="libs/slick-carousel/slick.css"
 		/>
 
+		<link
+			rel="stylesheet"
+			href="https://vjs.zencdn.net/7.20.3/video-js.css"
+		/>
+
 		<!-- main css -->
 		<link
 			rel="stylesheet"
@@ -56,6 +61,11 @@
 			src="libs/slick-carousel/slick.min.js"
 		></script>
 
+		<script
+			defer
+			src="https://vjs.zencdn.net/7.20.3/video.min.js"
+		></script>
+
 		<!-- main js -->
 		<script
 			defer
@@ -65,15 +75,28 @@
 
 	<body class="isnohome">
 		<div class="overflow-hidden">
+			<header class="header">
+				<div class="container header__container">
+					<a
+						href="index.html"
+						class="header__logo"
+					>
+						<img
+							src="img/logo.svg"
+							alt="Logo"
+						/>
+					</a>
+				</div>
+			</header>
+
 			<section
 				class="main"
 				data-aos="fade-up"
 			>
 				<video
-					src="img/portfolio/work-1.mp4"
+					src="img/portfolio/work-3.mp4"
 					class="main__gif"
-					autoplay
-					loop
+					id="mainVideo"
 				></video>
 			</section>
 
@@ -90,8 +113,8 @@
 							class="heading _mb"
 							data-aos="zoom-in"
 						>
-							alyona alyona і <br />
-							aviasales
+							alyona alyona <br />
+							і aviasales
 						</p>
 
 						<p
@@ -202,7 +225,7 @@
 					<div class="portfolio__container">
 						<div class="portfolio__container-col">
 							<a
-								href="#"
+								href="portfolio-1.html"
 								class="portfolio__item"
 								data-aos="fade-up"
 							>
@@ -211,6 +234,12 @@
 										src="img/portfolio/work-1.jpg"
 										alt="Work"
 									/>
+
+									<video
+										src="img/portfolio/work-1.mp4"
+										class="portfolio__item-video"
+										id="video1"
+									></video>
 								</span>
 
 								<span class="portfolio__item-title">Flint</span>
@@ -220,7 +249,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-3.html"
 								class="portfolio__item"
 								data-aos="fade-up"
 							>
@@ -229,6 +258,12 @@
 										src="img/portfolio/work-2.jpg"
 										alt="Work"
 									/>
+
+									<video
+										src="img/portfolio/work-2.mp4"
+										class="portfolio__item-video"
+										id="video2"
+									></video>
 								</span>
 
 								<span class="portfolio__item-title">Flint</span>
@@ -236,7 +271,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-4.html"
 								class="portfolio__item _hidden"
 								data-aos="fade-up"
 							>
@@ -245,6 +280,12 @@
 										src="img/portfolio/work-3.jpg"
 										alt="Work"
 									/>
+
+									<video
+										src="img/portfolio/work-3.mp4"
+										class="portfolio__item-video"
+										id="video3"
+									></video>
 								</span>
 
 								<span class="portfolio__item-title">Flint</span>
@@ -254,7 +295,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-8.html"
 								class="portfolio__item _hidden"
 								data-aos="fade-up"
 							>
@@ -263,6 +304,12 @@
 										src="img/portfolio/work-4.jpg"
 										alt="Work"
 									/>
+
+									<video
+										src="img/portfolio/work-12.mp4"
+										class="portfolio__item-video"
+										id="video4"
+									></video>
 								</span>
 
 								<span class="portfolio__item-title">Flint</span>
@@ -270,7 +317,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-10.html"
 								class="portfolio__item _hidden"
 								data-aos="fade-up"
 							>
@@ -286,9 +333,9 @@
 							</a>
 						</div>
 
-						<div class="portfolio__container-col">
+						<div class="portfolio__container-col _hidden-mobile">
 							<a
-								href="#"
+								href="portfolio-2.html"
 								class="portfolio__item"
 								data-aos="fade-up"
 							>
@@ -297,6 +344,12 @@
 										src="img/portfolio/work-6.jpg"
 										alt="Work"
 									/>
+
+									<video
+										src="img/portfolio/work-6.mp4"
+										class="portfolio__item-video"
+										id="video5"
+									></video>
 								</span>
 
 								<span class="portfolio__item-title">Flint</span>
@@ -307,7 +360,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-5.html"
 								class="portfolio__item"
 								data-aos="fade-up"
 							>
@@ -316,6 +369,12 @@
 										src="img/portfolio/work-7.jpg"
 										alt="Work"
 									/>
+
+									<video
+										src="img/portfolio/work-7.mp4"
+										class="portfolio__item-video"
+										id="video6"
+									></video>
 								</span>
 
 								<span class="portfolio__item-title">Хуторок</span>
@@ -323,7 +382,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-6.html"
 								class="portfolio__item _hidden"
 								data-aos="fade-up"
 							>
@@ -332,6 +391,12 @@
 										src="img/portfolio/work-8.jpg"
 										alt="Work"
 									/>
+
+									<video
+										src="img/portfolio/work-8.mp4"
+										class="portfolio__item-video"
+										id="video7"
+									></video>
 								</span>
 
 								<span class="portfolio__item-title">Аviasales</span>
@@ -339,7 +404,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-7.html"
 								class="portfolio__item _hidden"
 								data-aos="fade-up"
 							>
@@ -359,7 +424,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-9.html"
 								class="portfolio__item _hidden"
 								data-aos="fade-up"
 							>
@@ -375,7 +440,7 @@
 							</a>
 
 							<a
-								href="#"
+								href="portfolio-11.html"
 								class="portfolio__item _hidden"
 								data-aos="fade-up"
 							>
