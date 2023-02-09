@@ -84,23 +84,15 @@ $('.header__menu-category').on('click', function () {
 	header.addClass('active')
 
 	backBtnVisible()
-
-	$('.menu-1').removeClass('hidden')
-	$('.menu-2').removeClass('active')
 })
 
-$('.header__menu-back').on('click', function () {
-	$('.menu-1').removeClass('hidden')
-	$('.menu-2').removeClass('active')
+$('.header__menu-btn').on('mouseover', function () {
+	$(this).toggleClass('active').next().show()
+	$('.header__menu-btn').not(this).removeClass('active').next().hide()
 })
 
-$('.header__menu-btn').on('click', function () {
-	$('.menu-1').addClass('hidden')
-	$('.menu-2').addClass('active')
-
-	setTimeout(() => {
-		$('.menu-2').addClass('animate')
-	}, 0)
+$('.header__menu-trigger').on('mouseleave', function () {
+	$(this).find('.header__menu-btn').removeClass('active').next().hide()
 })
 
 // ----------

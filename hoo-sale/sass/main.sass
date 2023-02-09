@@ -624,23 +624,45 @@ input, textarea
 			flex-wrap: wrap
 			align-content: flex-start
 			max-height: 400px
-			&.menu-2
-				display: none
-				opacity: 0
-				// left: -50px
-				transition: .3s
-				&.active
-					display: flex
-				&.animate
-					left: 0
-					opacity: 1
-			&.hidden
-				display: none
 		&-item
 			margin-bottom: 20px
 			margin-right: 25px
 			max-width: 283px
 			width: 100%
+			position: relative
+		&-btn
+			display: flex
+			align-items: center
+			position: relative
+			&::after
+				content: ''
+				width: 20px
+				height: 20px
+				background-image: url('../img/icons/select-arrow.svg')
+				background-size: contain
+				background-repeat: no-repeat
+				background-position: center
+				transition: .3s
+			&.active::after
+				transform: rotate(180deg)
+		&-links
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			padding-left: 45px
+			padding-top: 20px
+			margin-top: 2px
+			background-color: #fff
+			&-dropdown
+				position: absolute
+				top: 100%
+				left: 0
+				display: none
+				z-index: 2
+			.header__menu-link
+				margin-bottom: 15px
+				&:hover
+					padding-left: 0
 		&-link
 			font-weight: 450
 			position: relative
@@ -654,10 +676,13 @@ input, textarea
 				top: 100%
 				background-color: #000
 				transition: .3s
-			&:hover
-				padding-left: 35px
+			&:hover, &.active
 				&::before
 					width: 100%
+			&:hover
+				padding-left: 35px
+			&.active:hover
+				padding-left: 0
 	&__btn
 		margin-left: 15px
 		display: flex
