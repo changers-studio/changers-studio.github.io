@@ -1,6 +1,3 @@
-// Preloader
-//
-
 // AOS
 AOS.init({
 	once: true,
@@ -55,7 +52,9 @@ if ($('*').is('.liquid-slider')) {
 //
 
 if ($('*').is('.unique__dropdown-slider')) {
-	$('.unique__dropdown-slider').slick({
+	const slider = $('.unique__dropdown-slider')
+
+	slider.slick({
 		infinite: false,
 		initialSlide: 1,
 		centerMode: true,
@@ -71,6 +70,16 @@ if ($('*').is('.unique__dropdown-slider')) {
 				},
 			},
 		],
+	})
+
+	slider.on('wheel', function (e) {
+		e.preventDefault()
+
+		if (e.originalEvent.deltaY < 0) {
+			$(this).slick('slickPrev')
+		} else {
+			$(this).slick('slickNext')
+		}
 	})
 }
 //
