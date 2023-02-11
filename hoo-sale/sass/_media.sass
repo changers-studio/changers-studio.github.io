@@ -306,6 +306,26 @@
 			&-item
 				margin-bottom: 7px
 				margin-right: 0
+			&-links
+				padding: 0
+				width: 100vw
+				margin-top: 0
+				max-height: calc(100vh - 200px)
+				height: 100vh
+				overflow-y: auto
+				position: relative
+				.header__menu-link
+					margin-bottom: 7px
+				&-dropdown
+					padding: 0 12px
+					position: fixed
+					left: 0
+					right: 0
+					top: 64px
+					background-color: #fff
+					z-index: 2
+					.header__hamburger-back
+						z-index: 31
 			&-link
 				font-size: 14px
 				font-weight: 400

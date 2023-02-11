@@ -877,15 +877,17 @@ input, textarea
 			width: 20px
 			height: 20px
 			position: absolute
-			top: 20px
 			background-size: contain
 			background-repeat: no-repeat
 			background-position: center
 			z-index: 30
 		&-close
+			top: 20px
 			right: 12px
 			background-image: url('../img/icons/close.svg')
+			z-index: 5
 		&-back
+			bottom: calc(100% + 24px)
 			left: 12px
 			background-image: url('../img/icons/back.svg')
 		&-title
@@ -897,8 +899,11 @@ input, textarea
 			bottom: 100%
 			left: 50%
 			transform: translateX(-50%)
-			margin-bottom: 25px
+			margin-bottom: 20px
 			display: none
+			z-index: 1
+			background-color: #fff
+			padding: 5px
 	&__search
 		&.active
 			.header__search
