@@ -76,13 +76,16 @@ $('.header__trigger').on('click', function () {
 })
 
 $('.header__menu-category').on('click', function () {
-	$(this).addClass('active').siblings().removeClass('active')
+	$(this).toggleClass('active').siblings().removeClass('active')
 	langsDropdown.hide()
 	cart.hide()
 	favorites.hide()
 
-	menu.show()
+	menu.hide()
+	menu.eq($(this).index()).show()
+
 	header.addClass('active')
+	$('.header__menu-btn').removeClass('active').next().hide()
 
 	backBtnVisible()
 })
@@ -99,7 +102,6 @@ $('.header__menu-btn').on('click', function () {
 		$('.header__menu-btn').not(this).removeClass('active').next().slideUp()
 	}
 })
-
 // ----------
 
 // Header search
@@ -117,6 +119,7 @@ searchBtn.on('click', function () {
 
 	header.addClass('active')
 	search.toggleClass('active')
+	searchResult.hide()
 	$('.header__search-input').focus()
 })
 
@@ -124,7 +127,7 @@ $('.header__search-input').on('click', function () {
 	searchResult.show()
 })
 
-if ($(window).width() >= 992) {
+if ($(window).width() > 992) {
 	$('body').on('mouseup', function (event) {
 		if (!search.is(event.target) && search.has(event.target).length === 0) {
 			search.removeClass('active')
@@ -236,13 +239,15 @@ const scrollbarSlider = new Swiper('.scrollbar-slider', {
 	},
 })
 
-$('.scrollbar-slider').on('mouseover', function () {
-	$('body').addClass('overflow-y_hidden')
-})
+if ($(window).width() > 992) {
+	$('.scrollbar-slider').on('mouseover', function () {
+		$('body').addClass('overflow-y_hidden')
+	})
 
-$('.scrollbar-slider').on('mouseleave', function () {
-	$('body').removeClass('overflow-y_hidden')
-})
+	$('.scrollbar-slider').on('mouseleave', function () {
+		$('body').removeClass('overflow-y_hidden')
+	})
+}
 
 const previewSlider = new Swiper('.product__slider', {
 	speed: 500,
@@ -595,6 +600,24 @@ $('.checkout__delivery').on('click', function () {
 
 	$('.checkout__delivery').not(this).removeClass('active')
 })
+
+const postInput = $('.data__post-input')
+const postResult = $('.data__post-result')
+
+postInput.on('click', function () {
+	postResult.show()
+})
+
+if ($(window).width() > 992) {
+	$('body').on('mouseup', function (event) {
+		if (
+			!postResult.is(event.target) &&
+			postResult.has(event.target).length === 0
+		) {
+			postResult.hide()
+		}
+	})
+}
 // ----------
 
 // Body padding-bottom on mobile

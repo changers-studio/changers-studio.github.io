@@ -80,6 +80,22 @@ h2
 .s-title
 	margin-bottom: 60px
 
+.title-link
+	position: relative
+	display: inline-block
+	&::before
+		content: ''
+		width: 0
+		height: 2px
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		transition: .3s
+		background-color: #000
+	&:hover::before
+		width: 100%
+
 .link
 	position: relative
 	font-weight: 450
@@ -574,6 +590,12 @@ input, textarea
 		display: flex
 		align-items: center
 		position: relative
+		&-wrap
+			position: absolute
+			top: 100%
+			left: 0
+			right: 0
+			width: 100%
 		&-category
 			margin-right: 20px
 			font-size: 12px
@@ -661,6 +683,7 @@ input, textarea
 			font-weight: 450
 			position: relative
 			transition: .3s
+			cursor: pointer
 			&::before
 				content: ''
 				width: 0
@@ -1531,6 +1554,7 @@ input, textarea
 			justify-content: space-between
 			&-inner
 				width: calc(50% - 12px)
+				padding-bottom: 24px
 		&__360
 			display: none
 			width: 100%
@@ -1591,7 +1615,7 @@ input, textarea
 					background-position: center
 					background-image: url('../img/icons/360-view.svg')
 			.swiper-pagination
-				bottom: 8px
+				bottom: auto
 				&-bullet
 					border: 1.5px solid #000
 					background-color: transparent
@@ -1700,6 +1724,7 @@ input, textarea
 				display: none
 				z-index: 2
 			&-btn
+				display: flex
 				flex: 0 0 auto
 				margin-left: 20px
 				position: relative
@@ -2275,6 +2300,43 @@ input, textarea
 			margin-right: 24px
 			&:last-child
 				margin-right: 0
+	&__post
+		position: relative
+		&-result
+			display: none
+			position: absolute
+			background-color: #fff
+			border: 1px solid #999
+			border-top: none
+			left: 0
+			top: 100%
+			z-index: 2
+			width: 100%
+			border-radius: 0 0 4px 4px
+			overflow: hidden
+		&-items
+			max-height: 200px
+			overflow-y: auto
+			border-radius: 4px
+		&-item
+			cursor: pointer
+			padding: 5px
+			font-size: 14px
+			span
+				display: inline-flex
+				align-items: center
+				position: relative
+				&::before
+					content: ''
+					width: 0
+					height: 1px
+					background-color: #000
+					position: absolute
+					bottom: 0
+					left: 0
+					transition: .3s
+			&:hover span::before
+				width: 100%
 // ----------
 
 // Orders

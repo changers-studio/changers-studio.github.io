@@ -277,6 +277,8 @@
 		&__menu
 			flex-direction: column
 			align-items: flex-start
+			overflow-y: auto
+			max-height: calc(100vh - 250px)
 			&-category
 				margin-bottom: 10px
 				margin-right: 0
@@ -302,7 +304,7 @@
 				margin-left: 0
 				flex-wrap: nowrap
 				overflow-y: auto
-				max-height: calc(100vh - 200px)
+				max-height: calc(100vh - 250px)
 			&-item
 				margin-bottom: 7px
 				margin-right: 0
@@ -312,7 +314,7 @@
 				padding: 0
 				width: 100vw
 				margin-top: 0
-				max-height: calc(100vh - 200px)
+				max-height: calc(100vh - 250px)
 				height: 100vh
 				overflow-y: auto
 				position: relative
@@ -455,6 +457,10 @@
 		&__slider
 			margin-bottom: 10px
 			padding-bottom: 6px
+			&-scrollbar
+				opacity: 1
+				transform: none
+				width: 100%
 			.swiper-scrollbar
 				opacity: 1
 				transform: none
@@ -606,12 +612,11 @@
 
 		// Overview
 		.overview
-			padding: 60px 0 40px
+			padding: 12px 0 40px
 			&__container
 				flex-direction: column
 				&-inner
 					width: 100%
-					padding-bottom: 24px
 					margin-bottom: 24px
 					&:last-child
 						margin-bottom: 0
@@ -625,8 +630,6 @@
 					left: 6px
 					top: 12px
 				.swiper-pagination
-					bottom: 0
-					bottom: auto
 					z-index: 2
 			&__category
 				margin-bottom: 5px
@@ -665,10 +668,11 @@
 					margin-bottom: 13px
 					top: auto
 					bottom: 100%
-					padding: 32px 24px 16px
+					padding: 21px 20px
 					right: -18px
 					width: 355px
 					max-width: calc(100vw - 24px)
+					border-radius: 4px
 				&-close
 					display: inline-flex
 				&-btn
