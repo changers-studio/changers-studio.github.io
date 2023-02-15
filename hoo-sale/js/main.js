@@ -77,12 +77,12 @@ $('.header__trigger').on('click', function () {
 
 $('.header__menu-category').on('click', function () {
 	$(this).toggleClass('active').siblings().removeClass('active')
+
 	langsDropdown.hide()
 	cart.hide()
 	favorites.hide()
 
-	menu.hide()
-	menu.eq($(this).index()).show()
+	menu.eq($(this).index()).toggle().siblings().hide()
 
 	header.addClass('active')
 	$('.header__menu-btn').removeClass('active').next().hide()
