@@ -372,8 +372,7 @@
 			&-icon
 				&::before
 					background-image: url('../img/icons/search.svg')
-				&::after
-					display: none
+					opacity: 1!important
 			&-btn
 				margin-left: auto
 				position: absolute
@@ -382,6 +381,8 @@
 				z-index: 2
 				svg path
 					fill: #000!important
+				&::before
+					display: none
 			&-result
 				top: 30px
 				width: 100%

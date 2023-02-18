@@ -107,6 +107,7 @@ $('.header__menu-btn').on('click', function () {
 // Header search
 const search = $('.header__search')
 const searchBtn = $('.header__search-btn')
+const searchInput = $('.header__search-input')
 const searchResult = $('.header__search-result')
 
 searchBtn.on('click', function () {
@@ -128,7 +129,14 @@ $('.header__search-input').on('click', function () {
 })
 
 $('body').on('click', function (event) {
-	if (!search.is(event.target) && search.has(event.target).length === 0) {
+	if (
+		!searchInput.is(event.target) &&
+		searchInput.has(event.target).length === 0 &&
+		!searchResult.is(event.target) &&
+		searchResult.has(event.target).length === 0 &&
+		!searchBtn.is(event.target) &&
+		searchBtn.has(event.target).length === 0
+	) {
 		search.removeClass('active')
 		searchResult.hide()
 	}
