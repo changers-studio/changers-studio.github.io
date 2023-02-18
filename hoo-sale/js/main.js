@@ -127,14 +127,12 @@ $('.header__search-input').on('click', function () {
 	searchResult.show()
 })
 
-if ($(window).width() > 992) {
-	$('body').on('click', function (event) {
-		if (!search.is(event.target) && search.has(event.target).length === 0) {
-			search.removeClass('active')
-			searchResult.hide()
-		}
-	})
-}
+$('body').on('click', function (event) {
+	if (!search.is(event.target) && search.has(event.target).length === 0) {
+		search.removeClass('active')
+		searchResult.hide()
+	}
+})
 // ----------
 
 // Header hamburger
