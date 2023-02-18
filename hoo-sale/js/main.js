@@ -727,7 +727,6 @@ function closeModal(space, elem) {
 		) {
 			elem.hide().prev().removeClass('active')
 
-			header.removeClass('active')
 			share.removeClass('active')
 		}
 
