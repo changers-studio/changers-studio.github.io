@@ -1,0 +1,130 @@
+@import reset
+@import vars
+@import fonts
+
+// General
+body
+	font-size: 16px
+	min-width: 375px
+	position: relative
+	line-height: 1.5
+	font-family: $default-font
+	color: #000
+
+.container
+	max-width: 1400px
+	width: 100%
+	padding-right: 20px
+	padding-left: 20px
+	margin-right: auto
+	margin-left: auto
+//
+
+// Form elements
+input, textarea
+	background: none
+	border: none
+	color: inherit
+
+::placeholder
+	color: #CAC8C8
+	font-size: 16px
+	font-family: $default-font
+//
+
+// Buttons
+.btn
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	position: relative
+	text-decoration: none
+	line-height: 1
+	outline: none
+	overflow: hidden
+	cursor: pointer
+	font-weight: 800
+	font-size: 16px
+	border: none
+	background-color: transparent
+	color: #000
+	transition: .2s ease-in-out
+	&:focus, &:hover
+		text-decoration: none
+	&:hover
+		transform: translateY(-3px)
+		color: #000
+	&__inner
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		display: flex
+		justify-content: center
+		align-items: center
+		white-space: nowrap
+	&__icon
+		margin-left: 10px
+		flex: 0 0 auto
+//
+
+// Header
+.header
+	padding: 30px 0
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&-inner
+			display: flex
+			align-items: center
+	&__link
+		margin-right: 60px
+		color: #fff
+		&:hover
+			color: #fff
+//
+
+// Main screen
+.main
+	background-image: url('../img/main-image.png')
+	background-color: #0B0B0B
+	color: #fff
+	background-size: cover
+	background-position: right bottom
+	height: 100vh
+	min-height: 600px
+	&__container
+		display: flex
+		align-items: center
+		height: calc(100% - 126px)
+		&-inner
+			max-width: 800px
+	&__title
+		max-width: 730px
+		width: 100%
+		font-family: $second-font
+		font-size: 50px
+		text-transform: uppercase
+		line-height: 1.4
+		margin-bottom: 30px
+	&__text
+		max-width: 580px
+		width: 100%
+		font-size: 20px
+		margin-bottom: 50px
+	&__wrapper
+		display: flex
+		align-items: center
+	&__social
+		margin-left: 50px
+		display: flex
+		align-items: center
+		&-item
+			margin-right: 30px
+			&:last-child
+				margin: 0
+//
+
+@import media
