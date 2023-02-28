@@ -278,7 +278,7 @@
 			flex-direction: column
 			align-items: flex-start
 			overflow-y: auto
-			max-height: 300px
+			max-height: calc(100vh - 350px)
 			&-category
 				margin-bottom: 10px
 				margin-right: 0
@@ -304,7 +304,7 @@
 				margin-left: 0
 				flex-wrap: nowrap
 				overflow-y: auto
-				max-height: 300px
+				max-height: calc(100vh - 350px)
 			&-item
 				margin-bottom: 10px
 				margin-right: 0
@@ -314,7 +314,7 @@
 				padding: 0
 				width: 100vw
 				margin-top: 0
-				max-height: 300px
+				max-height: calc(100vh - 350px)
 				height: 100vh
 				overflow-y: auto
 				position: relative
@@ -539,6 +539,7 @@
 			font-weight: 450
 		&__text
 			margin-bottom: 10px
+			height: 44px
 		&__link
 			font-size: 12px
 		&__container
@@ -726,11 +727,6 @@
 		// Blog
 		.blog
 			padding: 40px 0 120px
-			.catalog
-				&__toggle
-					display: flex
-				&__text
-					height: 44px
 			.article
 				width: 100%
 				margin-bottom: 24px
