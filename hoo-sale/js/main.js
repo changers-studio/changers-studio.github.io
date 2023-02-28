@@ -367,7 +367,7 @@ $('.catalog__toggle-activator').on('click', function () {
 $('.catalog__toggle-deactivator').on('click', function () {
 	$(this).parent().removeClass('active')
 
-	$('.catalog__text').css('height', '24px')
+	$('.catalog__text').css('height', '44px')
 
 	setTimeout(() => {
 		$('.catalog__text').removeClass('active')
