@@ -158,6 +158,7 @@ $('.header__hamburger').on('click', function () {
 $('.header__hamburger-close').on('click', function () {
 	$('.header__hamburger-menu').removeClass('active')
 	$('.header__hamburger-back').hide()
+	$('.header__hamburger-heading').hide()
 	$('.header__menu-links-dropdown').slideUp()
 	body.removeClass('overflow-y_hidden')
 
@@ -180,6 +181,7 @@ $('.header__menu-close').on('click', function () {
 	menu.hide()
 	search.hide()
 	searchResult.hide()
+	$('.header__hamburger-heading').hide()
 })
 
 $('.header__menu-back').on('click', function () {
@@ -187,6 +189,7 @@ $('.header__menu-back').on('click', function () {
 
 	$('.header__menu-links-dropdown').hide()
 	$('.header__menu-close').show()
+	$('.header__hamburger-heading').hide()
 })
 
 $('.header__hamburger-lang').on('click', function () {
@@ -209,6 +212,16 @@ $('.header-dropdown__close').on('click', function () {
 	$('.header__trigger').removeClass('active')
 	$('.body-inner').removeClass('active')
 	body.removeClass('overflow-y_hidden')
+})
+
+$('.header__menu-btn').on('click', function () {
+	let txt = $(this).html()
+
+	$(this)
+		.closest('.header__menu-dropdown')
+		.find('.header__hamburger-heading')
+		.html(txt)
+		.show()
 })
 // ----------
 

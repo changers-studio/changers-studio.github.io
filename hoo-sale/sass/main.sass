@@ -913,7 +913,7 @@ input, textarea
 			bottom: calc(100% + 24px)
 			left: 12px
 			background-image: url('../img/icons/back.svg')
-		&-title
+		&-title, &-heading
 			text-transform: uppercase
 			text-decoration: underline
 			font-size: 12px
@@ -926,6 +926,10 @@ input, textarea
 			display: none
 			background-color: #fff
 			padding: 5px
+		&-heading
+			z-index: 10
+			width: 200px
+			text-align: center
 	&__search
 		&.active
 			.header__search
