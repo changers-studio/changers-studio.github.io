@@ -110,9 +110,6 @@ h2
 		background-color: #000
 	&:hover::before
 		width: 0
-
-._c-gray
-	color: #555
 // ----------
 
 // Cookie
@@ -365,7 +362,7 @@ input, textarea
 		&.invalid
 			border-color: $red
 
-.input-error
+.input-error, .input-notification
 	display: block
 	position: absolute
 	top: 100%
@@ -374,7 +371,12 @@ input, textarea
 	color: $red
 	font-weight: 400
 	font-size: 12px
+
+.input-error
 	color: #E54646
+
+.input-notification
+	color: #555
 
 .checkbox
 	display: flex
