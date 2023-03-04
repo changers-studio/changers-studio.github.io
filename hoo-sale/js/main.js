@@ -358,33 +358,15 @@ $('.catalog__filter-close').on('click', function () {
 
 // Catalog text dropdown
 $('.catalog__toggle-activator').on('click', function () {
+	let catalogTextHeight = $('.catalog__text-inner').height()
+
 	$(this).parent().addClass('active')
-
-	$('.catalog__text').addClass('active')
-
-	if ($(window).width() <= 992) {
-		let catalogTextHeight = $('.catalog__text-inner').height()
-		$('.catalog__text').css('height', catalogTextHeight)
-	} else {
-		setTimeout(() => {
-			let catalogTextHeight = $('.catalog__text-inner').height()
-			$('.catalog__text').css('height', catalogTextHeight)
-		}, 300)
-	}
-	setTimeout(() => {
-		const catalogTextHeight = $('.catalog__text-inner').height()
-		$('.catalog__text').css('height', catalogTextHeight)
-	}, 300)
+	$('.catalog__text').addClass('active').css('height', catalogTextHeight)
 })
 
 $('.catalog__toggle-deactivator').on('click', function () {
 	$(this).parent().removeClass('active')
-
-	$('.catalog__text').css('height', '44px')
-
-	setTimeout(() => {
-		$('.catalog__text').removeClass('active')
-	}, 300)
+	$('.catalog__text').css('height', '44px').removeClass('active')
 })
 // ----------
 
