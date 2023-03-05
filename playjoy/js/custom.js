@@ -258,8 +258,6 @@ $('form input').on('change invalid', function () {
 	}
 })
 
-$('.review__slider').slick('reinit')
-
 $('.blog__caption-heading').on('click', function () {
 	$(this).toggleClass('active').next().slideToggle()
 })
