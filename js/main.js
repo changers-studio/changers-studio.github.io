@@ -6,18 +6,19 @@ var myFullpage = new fullpage('#fullpage', {
 	easing: 'easeInOutCubic',
 	easingcss3: 'ease',
 
+	anchors: ['main', 'product1', 'product2', 'gifts'],
 	fixedElements: '#header',
 	sectionSelector: '.section',
 	scrollOverflow: true,
 	onLeave: function (origin, destination, direction, trigger) {
 		var numSections = document.querySelectorAll('.fp-section').length
 
-		if (origin.index == 1 && direction == 'up') {
-			$('.header').removeClass('_min-size')
+		if ((origin.index == 1 && direction == 'up') || destination.index === 0) {
+			$('.header').removeClass('_min-size _white-text')
 		}
 
-		if (origin.index == 0 && direction == 'down') {
-			$('.header').addClass('_min-size')
+		if ((origin.index == 0 && direction == 'down') || destination.index === 1) {
+			$('.header').addClass('_min-size').removeClass('_white-text')
 		}
 
 		if ($(window).width() > 1200) {
