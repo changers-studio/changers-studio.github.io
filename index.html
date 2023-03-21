@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Хуторок</title>
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<meta
+			name="format-detection"
+			content="telephone=no"
+		/>
+
+		<!-- favicon -->
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+
+		<!-- libs css -->
+		<link
+			rel="stylesheet"
+			href="libs/fullpage/fullpage.min.css"
+		/>
+
+		<!-- main css -->
+		<link
+			rel="stylesheet"
+			href="css/main.css"
+		/>
+
+		<!-- jQeury -->
+		<script
+			defer
+			src="libs/jquery.min.js"
+		></script>
+
+		<!-- libs js -->
+		<script
+			defer
+			src="libs/slick.min.js"
+		></script>
+
+		<script
+			defer
+			src="libs/fullpage/fullpage.min.js"
+		></script>
+
+		<!-- main js -->
+		<script
+			defer
+			src="js/main.js"
+		></script>
+	</head>
+
+	<body>
+		<div id="fullpage">
+			<header
+				class="header"
+				id="header"
+			>
+				<div class="container header__container">
+					<nav class="header__menu">
+						<button
+							type="button"
+							class="header__menu-close toggleSidebar"
+						>
+							<img
+								src="img/icons/close.svg"
+								alt="Close"
+							/>
+						</button>
+
+						<a
+							href="#main"
+							class="header__menu-item toggleSidebar"
+							>Про проект</a
+						>
+
+						<a
+							href="#product1"
+							class="header__menu-item toggleSidebar"
+							>Борошно</a
+						>
+
+						<a
+							href="#product2"
+							class="header__menu-item toggleSidebar"
+							>Макарони</a
+						>
+
+						<a
+							href="#gifts"
+							class="header__menu-item toggleSidebar"
+							>Подарунки</a
+						>
+					</nav>
+
+					<a
+						href="index.html"
+						class="header__logo"
+					>
+						<img
+							src="img/logo.png"
+							alt="Logo"
+						/>
+					</a>
+
+					<div class="header__btns">
+						<a
+							href="#"
+							class="header__btn btn _yellow"
+						>
+							<img
+								class="btn__icon"
+								src="img/icons/insta.svg"
+								alt="Icon"
+							/>
+
+							<span>Підписатися</span>
+						</a>
+
+						<a
+							href="#"
+							class="header__btn btn _blue"
+						>
+							<img
+								class="btn__icon"
+								src="img/icons/basket-shopping.svg"
+								alt="Icon"
+							/>
+
+							<span>Купуй онлайн</span>
+						</a>
+					</div>
+
+					<button
+						type="button"
+						class="header__hamburger btn _blue toggleSidebar"
+					>
+						<img
+							class="btn__icon"
+							src="img/icons/hamburger.svg"
+							alt="Icon"
+						/>
+
+						<span>Навігація</span>
+					</button>
+				</div>
+			</header>
+
+			<section
+				class="main section"
+				style="background-image: url('img/main__image.jpg')"
+			>
+				<div class="container main__container">
+					<h1 class="main__title">
+						Проект <br />
+						«Українська спадщина»
+					</h1>
+
+					<p class="main__text">
+						До свого ювілею ТМ "Хуторок" презентує проект «Українська спадщина»
+						та перетворює похід до магазину на незабутню подорож до музею.
+						Придбавши продукцію с картинами Тараса Шевченка на упаковці, ви
+						принесете додому частинку історії української культури та
+						насолодитесь не тільки якістю продукції, а й творчістю видатного
+						діяча України. Хуторок не підведе!
+					</p>
+
+					<a
+						href="#"
+						class="main__btn btn _yellow"
+					>
+						<span>Детальніше</span>
+					</a>
+				</div>
+			</section>
+
+			<section
+				class="product section"
+				id="product1"
+				style="background-image: url('img/product-bg__image-1.jpg')"
+			>
+				<div class="container _flex-center">
+					<p class="product__overtitle">
+						ТМ "Хуторок" до свого 20-річчя презентує проект "Українська
+						спадщина"
+					</p>
+					<h2 class="product__title">
+						Зустрічай картини Шевченка на упаковці з борошном
+					</h2>
+
+					<div class="product__image">
+						<img
+							src="img/product__pic-1.png"
+							alt="Picture"
+						/>
+
+						<p class="product__image-caption">В Решитилівці, 1845 р.</p>
+					</div>
+
+					<div class="product__slider">
+						<div class="product__item">
+							<div class="product__item-inner">
+								<img
+									class="product__item-image"
+									src="img/product-flour.png"
+									alt="Product"
+								/>
+
+								<p class="product__item-caption">Борошно Пшеничне, 5 кг.</p>
+
+								<a
+									href="#"
+									class="product__item-btn btn _yellow"
+								>
+									<img
+										class="btn__icon"
+										src="img/icons/basket-shopping.svg"
+										alt="Icon"
+									/>
+
+									<span>Купуй онлайн</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="product__item">
+							<div class="product__item-inner">
+								<img
+									class="product__item-image"
+									src="img/product-flour.png"
+									alt="Product"
+								/>
+
+								<p class="product__item-caption">Борошно Пшеничне, 10 кг.</p>
+
+								<a
+									href="#"
+									class="product__item-btn btn _yellow"
+								>
+									<img
+										class="btn__icon"
+										src="img/icons/basket-shopping.svg"
+										alt="Icon"
+									/>
+
+									<span>Купуй онлайн</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="product__item">
+							<div class="product__item-inner">
+								<img
+									class="product__item-image"
+									src="img/product-flour.png"
+									alt="Product"
+								/>
+
+								<p class="product__item-caption">Борошно Пшеничне, 15 кг.</p>
+
+								<a
+									href="#"
+									class="product__item-btn btn _yellow"
+								>
+									<img
+										class="btn__icon"
+										src="img/icons/basket-shopping.svg"
+										alt="Icon"
+									/>
+
+									<span>Купуй онлайн</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="product__item">
+							<div class="product__item-inner">
+								<img
+									class="product__item-image"
+									src="img/product-flour.png"
+									alt="Product"
+								/>
+
+								<p class="product__item-caption">Борошно Пшеничне, 20 кг.</p>
+
+								<a
+									href="#"
+									class="product__item-btn btn _yellow"
+								>
+									<img
+										class="btn__icon"
+										src="img/icons/basket-shopping.svg"
+										alt="Icon"
+									/>
+
+									<span>Купуй онлайн</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				class="product section"
+				id="product2"
+				style="background-image: url('img/product-bg__image-2.jpg')"
+			>
+				<div class="container _flex-center">
+					<p class="product__overtitle">
+						ТМ "Хуторок" до свого 20-річчя презентує проект "Українська
+						спадщина"
+					</p>
+					<h2 class="product__title">
+						Зустрічай картини Шевченка на упаковці з макаронами
+					</h2>
+
+					<div class="product__image">
+						<img
+							src="img/product__pic-2.png"
+							alt="Picture"
+						/>
+
+						<p class="product__image-caption">В Яготині, 1845 р.</p>
+					</div>
+
+					<div class="product__slider">
+						<div class="product__item">
+							<div class="product__item-inner">
+								<img
+									class="product__item-image"
+									src="img/product-pasta.png"
+									alt="Product"
+								/>
+
+								<p class="product__item-caption">
+									Макаронні вироби "Пера", 400/800 г
+								</p>
+
+								<a
+									href="#"
+									class="product__item-btn btn _blue"
+								>
+									<img
+										class="btn__icon"
+										src="img/icons/basket-shopping.svg"
+										alt="Icon"
+									/>
+
+									<span>Купуй онлайн</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="product__item">
+							<div class="product__item-inner">
+								<img
+									class="product__item-image"
+									src="img/product-pasta.png"
+									alt="Product"
+								/>
+
+								<p class="product__item-caption">
+									Макаронні вироби "Пера" 2, 400/800 г
+								</p>
+
+								<a
+									href="#"
+									class="product__item-btn btn _blue"
+								>
+									<img
+										class="btn__icon"
+										src="img/icons/basket-shopping.svg"
+										alt="Icon"
+									/>
+
+									<span>Купуй онлайн</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="product__item">
+							<div class="product__item-inner">
+								<img
+									class="product__item-image"
+									src="img/product-pasta.png"
+									alt="Product"
+								/>
+
+								<p class="product__item-caption">
+									Макаронні вироби "Пера" 3, 400/800 г
+								</p>
+
+								<a
+									href="#"
+									class="product__item-btn btn _blue"
+								>
+									<img
+										class="btn__icon"
+										src="img/icons/basket-shopping.svg"
+										alt="Icon"
+									/>
+
+									<span>Купуй онлайн</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="product__item">
+							<div class="product__item-inner">
+								<img
+									class="product__item-image"
+									src="img/product-pasta.png"
+									alt="Product"
+								/>
+
+								<p class="product__item-caption">
+									Макаронні вироби "Пера" 4, 400/800 г
+								</p>
+
+								<a
+									href="#"
+									class="product__item-btn btn _blue"
+								>
+									<img
+										class="btn__icon"
+										src="img/icons/basket-shopping.svg"
+										alt="Icon"
+									/>
+
+									<span>Купуй онлайн</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				class="gifts section"
+				id="gifts"
+				style="background-image: url('img/gifts__image.jpg')"
+			>
+				<div class="container _flex-center">
+					<h2 class="gifts__title">20-річчя бренду "Хуторок"</h2>
+					<p class="gifts__text">
+						Підписуйся на сторінку бренду в Instagram та отримай можливість
+						виграти лімітовані призи!
+					</p>
+
+					<div class="gifts__flexbox">
+						<div class="gifts__item">
+							<img
+								src="img/gifts/item-1.png"
+								alt="Image"
+								class="gifts__item-image"
+							/>
+
+							<p class="gifts__item-caption">Чашка</p>
+						</div>
+
+						<div class="gifts__item">
+							<img
+								src="img/gifts/item-2.png"
+								alt="Image"
+								class="gifts__item-image"
+							/>
+
+							<p class="gifts__item-caption">Термопляшка</p>
+						</div>
+
+						<div class="gifts__item">
+							<img
+								src="img/gifts/item-3.png"
+								alt="Image"
+								class="gifts__item-image"
+							/>
+
+							<p class="gifts__item-caption">Худі</p>
+						</div>
+
+						<div class="gifts__item">
+							<img
+								src="img/gifts/item-4.png"
+								alt="Image"
+								class="gifts__item-image"
+							/>
+
+							<p class="gifts__item-caption">
+								<span>Головний приз</span>
+								Кобзар
+							</p>
+						</div>
+					</div>
+
+					<div class="gifts__social">
+						<a
+							href="#"
+							class="gifts__social-btn btn _yellow"
+						>
+							<img
+								class="btn__icon"
+								src="img/icons/insta.svg"
+								alt="Icon"
+							/>
+
+							<span>Підписатися</span>
+						</a>
+
+						<p class="gifts__social-caption">
+							Щомісячний розіграш подарунків триватиме до кінця травня 2023
+							року. Розіграш головного подарунку відбудеться в квітні 2023 року
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
