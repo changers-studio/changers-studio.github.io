@@ -101,6 +101,27 @@
 	&-next
 		background-image: url('../img/icons/slider-next.svg')
 		right: 290px
+	&-dots
+		position: absolute
+		bottom: 10px
+		left: 50%
+		transform: translateX(-50%)
+		display: flex
+		align-items: center
+		justify-content: center
+		li
+			font-size: 0
+			width: 8px
+			height: 8px
+			margin-right: 8px
+			border: 2px solid rgba(17, 21, 87, 0.3)
+			border-radius: 50%
+			transition: .5s
+			&:last-child
+				margin-right: 0
+			&.slick-active
+				background-color: $dark
+				border-color: $dark
 
 @media only screen and (max-width : 1200px)
 

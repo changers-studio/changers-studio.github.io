@@ -54,6 +54,7 @@ $('.product__slider').slick({
 	centerMode: true,
 	touchMove: false,
 	asNavFor: '.product__bg, .product__pictures',
+	dots: true,
 	responsive: [
 		{
 			breakpoint: 1200,

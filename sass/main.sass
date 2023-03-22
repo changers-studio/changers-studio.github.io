@@ -19,7 +19,7 @@ body
 	&::-webkit-scrollbar-thumb
 		background-color: transparent
 	&::-webkit-scrollbar
-		width: 0
+		width: 0px
 
 .container
 	max-width: 1140px
@@ -91,7 +91,7 @@ input, textarea
 		text-decoration: none
 	&:hover
 		color: $dark
-		animation: button-anime 1s
+		animation: button-anime .4s
 	&::before
 		content: ''
 		display: inline-block
@@ -249,11 +249,11 @@ input, textarea
 		font-family: $second-font
 		font-weight: 800
 		line-height: 1.1
-		margin-bottom: 40px
+		margin-bottom: 30px
 	&__pictures
 		max-width: 100%
 	&__image
-		margin-bottom: 40px
+		margin-bottom: 30px
 		&-wrapper
 			position: relative
 			display: inline-flex
@@ -293,6 +293,7 @@ input, textarea
 	&__slider
 		width: 100%
 		position: relative
+		padding-bottom: 20px
 	&__item
 		transform: scale(0.5)
 		transition: transform 0.5s
