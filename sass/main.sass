@@ -76,11 +76,12 @@ input, textarea
 	background-position: center
 	background-image: url('../img/btn.svg')
 	color: $dark
-	transition: 1s
+	transition: color 1s, transform .3s
 	&:focus, &:hover
 		text-decoration: none
 	&:hover
 		color: $dark
+		transform: scale(1.1)
 	&::before
 		content: ''
 		display: inline-block
@@ -277,6 +278,7 @@ input, textarea
 			align-items: center
 			justify-content: center
 			width: 100%
+			padding: 10px 0
 		&-image
 			margin-bottom: 10px
 		&-caption
