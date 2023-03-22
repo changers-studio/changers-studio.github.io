@@ -44,9 +44,11 @@ if ($(window).width() <= 1200)
 
 // Product slider
 $('.product__slider').slick({
+	infinite: true,
 	slidesToShow: 3,
 	centerMode: true,
 	touchMove: false,
+	asNavFor: '.product__bg, .product__pictures',
 	responsive: [
 		{
 			breakpoint: 1200,
@@ -55,5 +57,24 @@ $('.product__slider').slick({
 			},
 		},
 	],
+})
+//
+
+// Background slider
+$('.product__bg').slick({
+	slidesToShow: 1,
+	touchMove: false,
+	arrows: false,
+	asNavFor: '.product__slider, .product__pictures',
+	fade: true,
+})
+//
+
+// Pictures slider
+$('.product__pictures').slick({
+	slidesToShow: 1,
+	touchMove: false,
+	arrows: false,
+	asNavFor: '.product__slider, .product__bg',
 })
 //
