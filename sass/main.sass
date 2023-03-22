@@ -145,7 +145,7 @@ input, textarea
 			cursor: pointer
 			&:last-child
 				margin: 0
-			&:hover
+			&.active
 				font-weight: 700
 		&-close
 			display: none
@@ -192,7 +192,7 @@ input, textarea
 	0%
 		transform: translate(-50%, -50%) rotate(0deg)
 	100%
-		transform: translate(-50%, -50%) rotate(360deg)
+		transform: translate(-50%, -50%) rotate(-360deg)
 
 .product
 	&__bg
@@ -233,7 +233,7 @@ input, textarea
 			display: inline-flex
 			&:hover
 				&::before, &::after, .product__image-text
-					opacity: 0
+					opacity: 1
 			&::before, &::after
 				content: ''
 				position: absolute
@@ -241,6 +241,7 @@ input, textarea
 				left: 50%
 				transform: translate(-50%, -50%)
 				transition: .3s
+				opacity: 0
 			&::before
 				background-color: rgba(255, 255, 255, 0.8)
 				width: calc(100% - 40px)
@@ -259,6 +260,7 @@ input, textarea
 			transform: translate(-50%, -50%)
 			animation: text-round 15s linear infinite
 			transition: .3s
+			opacity: 0
 		&-caption
 			margin-top: 5px
 			font-size: 12px

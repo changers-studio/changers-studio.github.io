@@ -30,6 +30,11 @@ var myFullpage = new fullpage('#fullpage', {
 				$('.header').removeClass('_white-text')
 			}
 		}
+
+		$('.header__menu-item')
+			.removeClass('active')
+			.eq(destination.index)
+			.addClass('active')
 	},
 })
 //
