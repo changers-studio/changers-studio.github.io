@@ -86,7 +86,7 @@ input, textarea
 	background-position: center
 	background-image: url('../img/btn.svg')
 	color: $dark
-	transition: color 1s, transform .3s
+	transition: color 1s, transform .3s, opacity .5s
 	&:focus, &:hover
 		text-decoration: none
 	&:hover
@@ -132,6 +132,8 @@ input, textarea
 	&._white-text
 		.header__menu-item
 			color: #fff
+			&::before
+				background-color: #fff
 	&__container
 		display: flex
 		align-items: center
@@ -295,6 +297,9 @@ input, textarea
 		transform: scale(0.5)
 		transition: transform 0.5s
 		margin: 0 60px
+		&.slick-center
+			.product__item-btn
+				opacity: 1
 		&-inner
 			display: flex
 			flex-direction: column
@@ -311,6 +316,7 @@ input, textarea
 			width: 140px
 			height: 48px
 			font-size: 12px
+			opacity: 0
 //
 
 // Gifts
