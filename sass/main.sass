@@ -144,8 +144,9 @@
 
 	// Main screen
 	.main
-		height: 100vh
+		height: calc(100vh - 85px)
 		min-height: 700px
+		margin-top: 85px
 		&__container
 			display: flex
 			align-items: center
@@ -173,7 +174,7 @@
 			max-width: 40%
 		&__wrapper
 			position: absolute
-			left: 820px
+			left: 800px
 			bottom: 100%
 			display: flex
 			align-items: center
@@ -181,13 +182,15 @@
 				width: 220px
 				margin-left: 80px
 		&__video
-			width: 160px
-			height: 160px
+			width: 120px
+			height: 120px
 			background-color: #fff
 			display: flex
 			align-items: center
 			justify-content: center
 			border-radius: 50%
+			&-icon
+				width: calc(100% - 30px)
 	//
 
 	// Info for buyers
