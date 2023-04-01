@@ -19,8 +19,11 @@ if ($(window).width() <= 992) {
 // Move links
 $('body').on('click', '.trigger-move', function (event) {
 	event.preventDefault()
+
 	var id = $(this).attr('href'),
-		top = $(id).offset().top
-	$('body,html').animate({ scrollTop: top }, 1500)
+		top = $(id).offset().top,
+		headerHeight = $('.header').innerHeight()
+
+	$('body,html').animate({ scrollTop: top - headerHeight }, 1000)
 })
 //
