@@ -1,13 +1,34 @@
 @import vars
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1400px)
+@media only screen and (max-width : 1600px)
 
 	.p-webinar
 		// General
 		.title
-			font-size: 70px
+			font-size: 55px
 
+		.container
+			max-width: 1200px
+		//
+
+		// Header
+		.header
+			.container
+				max-width: 1400px
+			&__menu
+				&-item
+					margin-right: 20px
+		//
+
+		// Main screen
+		.main
+		//
+
+@media only screen and (max-width : 1300px)
+
+	.p-webinar
+		// General
 		.container
 			max-width: 960px
 		//
@@ -26,14 +47,12 @@
 		// Main screen
 		.main
 			&__title
-				font-size: 50px
+				font-size: 40px
+			&__wrapper-inner
+				transform: translateX(-20px)
 			&__video
 				width: 100px
 				height: 100px
-			&__wrapper
-				left: 500px
-				&-text
-					margin-left: 30px
 		//
 
 		// Offer
@@ -106,10 +125,13 @@
 		.header
 			&.active
 				background-color: $green
+			.container
+				max-width: 480px
 			&__container
 				&-inner
-					order: 1
-					margin-top: 15px
+					&._mobile-last
+						order: 1
+						margin-top: 15px
 			&__wrapper
 				&-icon
 					width: 20px
@@ -147,7 +169,7 @@
 
 		// Main screen
 		.main
-			margin-top: 115px
+			margin-top: 30px
 			min-height: auto
 			height: auto
 			padding: 45px 0 0
@@ -156,15 +178,15 @@
 			&__container
 				margin-bottom: 30px
 			&__title
-				font-size: 20px
+				font-size: 26px
 				margin-bottom: 10px
 				line-height: 1.4
 				&-highlight
 					padding: 5px
 			&__text
 				margin-bottom: 20px
-				text-transform: uppercase
 				font-weight: 400
+				font-size: 13px
 			&__btn
 				width: 190px
 			&__video
@@ -177,40 +199,53 @@
 				align-self: flex-end
 				max-width: 100%
 			&__wrapper
-				top: 100%
+				position: relative
+				left: 50%
 				bottom: auto
-				left: 0
-				transform: translateY(60px)
-				flex-direction: column
-				align-items: flex-start
+				transform: translateX(-45%)
+				width: 340px
+				height: 340px
+				&-inner
+					flex-direction: column
+					top: 15px
+					left: 15px
+					transform: none
 				&-text
 					margin-left: 30px
-					margin-top: 60px
-					color: #fff
-					text-shadow: 0px 4px 9px rgba(0, 0, 0, 0.4)
+					margin-top: 70px
 					width: 180px
+					font-size: 12px
 		//
 
 		// Info for buyers
 		.info
-			padding: 30px 0
+			padding: 30px 0 0
 			&::before
-				height: calc(100% - 160px)
-				background-position: right center
+				display: none
 			&__top
-				flex-direction: column
-				margin-bottom: 40px
+				margin-bottom: 30px
+				align-items: center
+			&__btn
+				width: 140px
+				font-size: 10px
+				margin-top: 0
+				flex: 0 0 auto
+				margin-left: 10px
 			&__title
-				margin-bottom: 10px
 				font-size: 20px
 			&__container
+				background-image: url('../img/info__bg.jpg')
+				background-size: cover
+				background-position: center
+				padding-top: 15px
+				padding-bottom: 15px
+			&__flexbox
 				flex-direction: column
 				gap: 10px
 			&__item
 				width: 100%
 				min-height: auto
 				padding: 15px
-				align-items: start
 				&-number
 					width: 40px
 					height: 40px

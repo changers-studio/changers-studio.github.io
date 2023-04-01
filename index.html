@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="utf-8" />
 
@@ -20,6 +20,9 @@
 			href="img/favicon.ico"
 		/>
 
+		<!-- libs css -->
+		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+
 		<!-- main css -->
 		<link rel="stylesheet" href="css/main.css" />
 
@@ -28,6 +31,7 @@
 
 		<!-- libs js -->
 		<script defer src="libs/jquery.inputmask.min.js"></script>
+		<script defer src="libs/fancybox/jquery.fancybox.min.js"></script>
 
 		<!-- main js -->
 		<script defer src="js/main.js"></script>
@@ -37,7 +41,7 @@
 		<header class="header">
 			<div class="container">
 				<div class="header__container">
-					<div class="header__container-inner">
+					<div class="header__container-inner _mobile-last">
 						<div class="header__wrapper">
 							<img
 								src="img/icons/calendar.png"
@@ -65,22 +69,24 @@
 						</div>
 					</div>
 
-					<div class="header__wrapper">
-						<img
-							src="img/icons/price.png"
-							alt="Icon"
-							class="header__wrapper-icon"
-						/>
+					<div class="header__container-inner">
+						<div class="header__wrapper">
+							<img
+								src="img/icons/price.png"
+								alt="Icon"
+								class="header__wrapper-icon"
+							/>
 
-						<span class="header__wrapper-text"
-							>Стоимость: <br />
-							БЕСПЛАТНО</span
+							<span class="header__wrapper-text"
+								>Стоимость: <br />
+								БЕСПЛАТНО</span
+							>
+						</div>
+
+						<a href="#feedback" class="header__btn btn trigger-move"
+							>Участвовать</a
 						>
 					</div>
-
-					<a href="#feedback" class="header__btn btn trigger-move"
-						>Участвовать</a
-					>
 
 					<button
 						type="button"
@@ -127,97 +133,104 @@
 					<a href="#feedback" class="main__btn btn trigger-move"
 						>Зарегистрироваться</a
 					>
-
-					<div class="main__wrapper">
-						<a href="#" class="main__video" data-fancybox>
-							<img
-								class="main__video-icon"
-								src="img/icons/play.png"
-								alt="Play"
-							/>
-						</a>
-
-						<span class="main__wrapper-text"
-							>Стив Цветок - Основатель и Ипотечный брокер компании AUE Lending
-						</span>
-					</div>
 				</div>
 			</div>
 
-			<img src="img/main__image.png" alt="Image" class="main__image" />
+			<div class="main__wrapper">
+				<div class="main__wrapper-inner">
+					<a href="#" class="main__video" data-fancybox>
+						<img class="main__video-icon" src="img/icons/play.png" alt="Play" />
+					</a>
+
+					<span class="main__wrapper-text"
+						>Стив Цветок - Основатель и Ипотечный брокер компании AUE Lending
+					</span>
+				</div>
+
+				<picture class="main__image">
+					<source
+						media="(max-width: 992px)"
+						srcset="img/main__image-mobile.png"
+					/>
+
+					<img src="img/main__image.png" alt="Image" />
+				</picture>
+			</div>
 		</section>
 
 		<section class="info" id="info">
-			<div class="container">
-				<div class="info__top">
-					<h2 class="info__title title">
-						Для кого это <br />
-						будет полезно?
-					</h2>
+			<div class="info__top container">
+				<h2 class="info__title title">
+					Для кого это <br />
+					будет полезно?
+				</h2>
 
-					<a href="#feedback" class="btn info__btn trigger-move"
-						>Зарегистрироваться</a
-					>
-				</div>
+				<a href="#feedback" class="btn info__btn trigger-move"
+					>Зарегистрироваться</a
+				>
+			</div>
 
-				<div class="info__container">
-					<div class="info__item">
-						<span class="info__item-number">1</span>
-						<p class="info__item-text">
-							Люди, которые хотят приобрести свой первый дом в США, но не знают,
-							с чего начать.
-						</p>
-					</div>
-					<div class="info__item">
-						<span class="info__item-number">2</span>
-						<p class="info__item-text">
-							Те, кто ищет информацию о том, как получить ипотечный кредит в США
-							и какие условия для этого нужно выполнить.
-						</p>
-					</div>
-					<div class="info__item">
-						<span class="info__item-number">3</span>
-						<p class="info__item-text">
-							Для тех, кто интересуются текущим рынком недвижимости в США и
-							хотят понимать его тенденции и перспективы.
-						</p>
-					</div>
-					<div class="info__item">
-						<span class="info__item-number">4</span>
-						<p class="info__item-text">
-							Люди, которые хотят узнать о различных типах ипотечных кредитов в
-							США и выбрать наиболее подходящий для своей ситуации.
-						</p>
-					</div>
-					<div class="info__item">
-						<span class="info__item-number">5</span>
-						<p class="info__item-text">
-							Те, кто хотят понимать, какие факторы влияют на процентную ставку
-							по ипотечному кредиту и как их можно улучшить.
-						</p>
-					</div>
-					<div class="info__item">
-						<span class="info__item-number">6</span>
-						<p class="info__item-text">
-							Кто интересуются возможными программами помощи для покупки
-							недвижимости в США и как их можно использовать.
-						</p>
-					</div>
-					<div class="info__item">
-						<span class="info__item-number">7</span>
-						<p class="info__item-text">
-							Любой, кто хочет получить полезные советы и рекомендации от
-							опытного ипотечного брокера, чтобы сэкономить время и деньги при
-							покупке своего первого дома в США.
-						</p>
-					</div>
-					<div class="info__item">
-						<span class="info__item-number">8</span>
-						<p class="info__item-text">
-							А так же, инвестора рассматривают недвижимость, как инвестицию с
-							целью приумножения своего капитала, либо же получение ежемесячного
-							пассивного дохода.
-						</p>
+			<div class="info__container">
+				<div class="container">
+					<div class="info__flexbox">
+						<div class="info__item">
+							<span class="info__item-number">1</span>
+							<p class="info__item-text">
+								Люди, которые хотят приобрести свой первый дом в США, но не
+								знают, с чего начать.
+							</p>
+						</div>
+						<div class="info__item">
+							<span class="info__item-number">2</span>
+							<p class="info__item-text">
+								Те, кто ищет информацию о том, как получить ипотечный кредит в
+								США и какие условия для этого нужно выполнить.
+							</p>
+						</div>
+						<div class="info__item">
+							<span class="info__item-number">3</span>
+							<p class="info__item-text">
+								Для тех, кто интересуются текущим рынком недвижимости в США и
+								хотят понимать его тенденции и перспективы.
+							</p>
+						</div>
+						<div class="info__item">
+							<span class="info__item-number">4</span>
+							<p class="info__item-text">
+								Люди, которые хотят узнать о различных типах ипотечных кредитов
+								в США и выбрать наиболее подходящий для своей ситуации.
+							</p>
+						</div>
+						<div class="info__item">
+							<span class="info__item-number">5</span>
+							<p class="info__item-text">
+								Те, кто хотят понимать, какие факторы влияют на процентную
+								ставку по ипотечному кредиту и как их можно улучшить.
+							</p>
+						</div>
+						<div class="info__item">
+							<span class="info__item-number">6</span>
+							<p class="info__item-text">
+								Кто интересуются возможными программами помощи для покупки
+								недвижимости в США и как их можно использовать.
+							</p>
+						</div>
+						<div class="info__item">
+							<span class="info__item-number">7</span>
+							<p class="info__item-text">
+								Любой, кто хочет получить полезные советы и рекомендации от
+								опытного ипотечного брокера, чтобы сэкономить время и деньги при
+								покупке своего первого дома в США.
+							</p>
+						</div>
+						<div class="info__item">
+							<span class="info__item-number">8</span>
+							<p class="info__item-text">
+								А так же, инвестора рассматривают недвижимость, как инвестицию с
+								целью приумножения своего капитала, либо же получение
+								ежемесячного пассивного дохода.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -234,7 +247,7 @@
 					<p class="organizer__text">
 						<span class="_bold">Стив Цветков</span> - ипотечный брокер и
 						основатель компании AUE Lending  За 8-ми летний опыт помог больше
-						1000+ клиентам, приобрести дом своей мечты в 50 различных городах
+						1000+ клиентам приобрести дом своей мечты в 50 различных городах
 						Соединенных Штатов Америки.  Помимо этого, имеет в собственности 2
 						дома, поэтому знает весь процесс не только со стороны консультанта,
 						но и со стороны клиента.  Имеет лицензию в четырех штатах:
@@ -347,7 +360,7 @@
 							</button>
 
 							<span class="feedback__privacy"
-								>Нажимая кнопку “Зарегистрироваться” вы соглашаетесь в
+								>Нажимая кнопку “Зарегистрироваться” вы соглашаетесь с
 								<a href="#" class="_accent"
 									>политикой конфиденциальности</a
 								></span
@@ -364,26 +377,60 @@
 			</p>
 
 			<div class="social__container">
-				<a href="#" class="social__item"
+				<a
+					href="https://www.instagram.com/tsvetkovsteve/"
+					class="social__item"
+					target="_blank"
 					><img src="img/social/instagram.png" alt="Icon"
 				/></a>
-				<a href="#" class="social__item"
+
+				<a
+					href="https://www.facebook.com/stevetsvetkov"
+					class="social__item"
+					target="_blank"
 					><img src="img/social/facebook.png" alt="Icon"
 				/></a>
-				<a href="#" class="social__item"
+
+				<a
+					href="https://www.linkedin.com/in/stevetsvetkov/"
+					class="social__item"
+					target="_blank"
 					><img src="img/social/linkedin.png" alt="Icon"
 				/></a>
-				<a href="#" class="social__item"
+
+				<a
+					href="https://www.youtube.com/@stevetsvetkov"
+					class="social__item"
+					target="_blank"
 					><img src="img/social/youtube.png" alt="Icon"
 				/></a>
-				<a href="#" class="social__item"
+
+				<a
+					href="https://t.me/tsvetkovsteve"
+					class="social__item"
+					target="_blank"
 					><img src="img/social/telegram.png" alt="Icon"
 				/></a>
-				<a href="#" class="social__item"
+
+				<a
+					href="https://www.tiktok.com/@tsvetkovsteve"
+					class="social__item"
+					target="_blank"
 					><img src="img/social/tik-tok.png" alt="Icon"
 				/></a>
-				<a href="#" class="social__item"
+
+				<a
+					href="https://stevetsvetkov.com/"
+					class="social__item"
+					target="_blank"
 					><img src="img/social/browser.png" alt="Icon"
+				/></a>
+
+				<a
+					href="https://twitter.com/stevetsvetkov"
+					class="social__item"
+					target="_blank"
+					><img src="img/social/twitter.png" alt="Icon"
 				/></a>
 			</div>
 		</footer>
