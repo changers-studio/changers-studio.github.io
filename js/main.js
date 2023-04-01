@@ -1,7 +1,7 @@
 // Input mask
 if ($('*').is('.input-phone')) {
 	$('.input-phone').inputmask({
-		mask: '(999) 99 99 999',
+		mask: '(999) 999 9999',
 		showMaskOnHover: false,
 		placeholder: '',
 	})
