@@ -4,6 +4,9 @@
 @media only screen and (max-width : 1430px)
 
 	// General
+	body
+		// padding-top: 162px
+
 	.container
 		max-width: 1000px
 	//
@@ -76,6 +79,11 @@
 /*	Small Devices, Tablets */
 @media only screen and (max-width : 1000px)
 
+	// General
+	body
+		padding-top: 204px
+	//
+
 	// Mods
 	._mobile-hidden
 		display: none
@@ -86,6 +94,10 @@
 
 	// Header
 	.header
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
 		padding: 15px 0
 		background-color: $black
 		&-desktop
@@ -97,6 +109,7 @@
 			right: 0
 			height: 100vh
 			max-height: calc(100vh - 203px)
+			background-color: #fff
 			border-top: 1px solid #fff
 			overflow-y: auto
 			&.active
@@ -287,7 +300,136 @@
 		&__sidebar
 			display: none
 		&__filter
+			position: fixed
+			top: 110px
+			left: 0
+			right: 0
+			background-color: #fff
+			box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15)
+			border-radius: 30px 30px 0 0
+			height: calc(100% - 110px)
+			overflow-y: auto
+			z-index: 6
 			display: none
+			flex-direction: column
+			flex-wrap: nowrap
+			align-items: flex-start
+			padding-top: 180px
+			padding-bottom: 152px
+			gap: 0
+			&.active
+				display: flex
+			&-top
+				display: flex
+				justify-content: space-between
+				align-items: center
+				position: fixed
+				top: 110px
+				left: 0
+				right: 0
+				padding: 30px 40px
+				width: 100%
+				font-size: 40px
+				background-color: #fff
+				box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15)
+				border-radius: 30px 30px 0 0
+				z-index: 8
+			&-wrap
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				padding: 40px
+			&-wrapper
+				width: 100%
+				margin-bottom: 30px
+				padding: 0 40px
+				&:last-child
+					margin-bottom: 0
+				&.filter-sort
+					width: 0
+					height: 0
+					margin: 0
+					overflow: hidden
+			&-heading
+				font-size: 30px
+				border: none
+				padding: 0
+				&.active
+					background: none
+					color: $dark
+				&::after
+					display: none
+			&-dropdown
+				padding: 0
+				position: fixed
+				top: 249px
+				left: 0
+				right: 0
+				transform: none
+				height: calc(100% - 350px)
+				max-height: calc(100% - 350px)
+				overflow-y: auto
+				margin: 0
+				box-shadow: none
+				z-index: 7
+			&-item
+				margin-bottom: 40px
+				width: 100%
+				justify-content: space-between
+				font-size: 30px
+				.checkbox, .radio
+					width: 30px
+					height: 30px
+					margin-left: 10px
+					margin-right: 0
+					order: 1
+				.radio:checked::before
+					border-width: 10px
+			&-nav, &-bottom
+				position: fixed
+				bottom: 0
+				right: 0
+				left: 0
+				padding: 30px 40px
+				display: flex
+				justify-content: center
+				align-items: center
+				gap: 30px
+				background-color: #fff
+				box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15)
+				border: none
+			&-btn, &-navButton
+				padding: 15px 30px
+				width: 320px
+				max-width: calc(50% - 15px)
+				display: flex
+				align-items: center
+				justify-content: center
+				border-radius: 5px
+				background-color: $black
+				font-size: 20px
+				margin: 0
+				color: #fff
+			&-show
+				background-color: $accent
+			&-btn
+				background-color: $accent
+				&.btn-reset
+					display: flex
+			.filter-price
+				flex-direction: row
+				&__label
+					margin-right: 60px
+					font-size: 30px
+				&__input
+					width: 130px
+					padding: 10px 20px
+					font-size: 30px
+					&::placeholder
+						font-size: 30px
+				&__container
+					display: flex
+					flex-direction: column
 		&__mobile
 			display: flex
 			justify-content: space-between
@@ -317,11 +459,22 @@
 					border-radius: 50%
 		&__pagination
 			margin-top: 40px
+			&-container
+				display: none
+		&__show-more
+			display: flex
 	//
 
 	// Product
 	.product
 		width: calc(33.3% - 14px)
+		&:hover
+			transform: none
+			box-shadow: none
+		&__bottom
+			display: block
+			position: static
+			box-shadow: none
 	//
 
 	// Description
@@ -339,8 +492,66 @@
 		width: calc(50% - 10px)
 	//
 
+	// Catalog
+	.catalog
+		&__filter
+			border-radius: 20px 20px 0 0
+			height: calc(100% - 110px)
+			padding-top: 100px
+			padding-bottom: 110px
+			&-top
+				padding: 15px 20px
+				font-size: 20px
+				border-radius: 20px 20px 0 0
+			&-close
+				width: 30px
+				height: 30px
+			&-wrap
+				padding: 40px 20px 20px
+			&-wrapper
+				margin-bottom: 20px
+				padding: 0 20px
+			&-heading
+				font-size: 18px
+			&-dropdown
+				top: 170px
+				height: calc(100% - 264px)
+				max-height: calc(100% - 264px)
+			&-item
+				margin-bottom: 20px
+				font-size: 18px
+				.checkbox, .radio
+					width: 20px
+					height: 20px
+				.radio:checked::before
+					border-width: 5px
+			&-nav, &-bottom
+				padding: 20px
+				gap: 20px
+			&-btn, &-navButton
+				min-width: auto
+				width: calc(50% - 15px)
+				font-size: 18px
+			.filter-price
+				&__label
+					font-size: 18px
+				&__input
+					width: 130px
+					font-size: 18px
+					&::placeholder
+						font-size: 18px
+				&__item
+					font-size: 18px
+					margin-bottom: 30px
+	//
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+
+	// General
+	body
+		padding-top: 145px
+	//
 
 	// Header
 	.header
@@ -405,8 +616,8 @@
 			&-text
 				font-size: 12px
 		&__slider
-			width: 100%
-			margin-top: 30px
+			&-container
+				margin-top: 30px
 			&-item
 				width: 100px
 			&-image
@@ -422,6 +633,43 @@
 	.catalog
 		&__products-container
 			gap: 10px
+		&__filter
+			top: 80px
+			border-radius: 10px 10px 0 0
+			height: calc(100% - 110px)
+			padding-bottom: 96px
+			border-radius: 10px 10px 0 0
+			&-top
+				top: 80px
+				border-radius: 10px 10px 0 0
+			&-heading
+				font-size: 16px
+			&-dropdown
+				top: 140px
+				height: calc(100% - 216px)
+				max-height: calc(100% - 216px)
+			&-item
+				font-size: 14px
+				.checkbox, .radio
+					width: 14px
+					height: 14px
+			&-btn, &-navButton
+				font-size: 14px
+				padding: 10px 15px
+			.filter-price
+				flex-direction: column
+				&__label
+					margin-right: 0
+					margin-bottom: 20px
+					font-size: 14px
+				&__input
+					width: 100px
+					font-size: 14px
+					&::placeholder
+						font-size: 14px
+				&__item
+					font-size: 14px
+					margin-bottom: 20px
 		&__mobile
 			margin: 20px 0
 			&-btn
@@ -448,8 +696,50 @@
 	// Product
 	.product
 		width: 100%
-		padding: 20px
-		background-color: #fff
 		box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.15)
 		border-radius: 5px
+		display: flex
+		&:hover
+			box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.15)
+		&__inner
+			width: 100%
+			padding: 10px
+			display: flex
+		&__slider
+			width: 100px
+			max-height: 140px
+			display: block
+			flex: 0 0 auto
+			.slick-dots
+				display: none
+			&-item
+				height: 140px
+				width: 100px
+		&__data
+			width: 100%
+			padding-top: 5px
+			padding-right: 30px
+			padding-bottom: 35px
+			margin-left: 10px
+		&__title
+			order: -1
+		&__labels
+			position: static
+		&__bottom
+			padding: 0
+		&__size
+			display: none
+		&__btns
+			justify-content: flex-end
+			position: absolute
+			right: 10px
+			bottom: 10px
+			margin: 0
+			z-index: 2
+		&__btn
+			margin-right: 20px
+			&-basket
+				order: 1
+				margin-right: 0
+				margin-left: 20px
 	//
