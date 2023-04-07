@@ -13,6 +13,7 @@ $(window).bind('resize', mobileDropdown()).trigger('resize')
 $('.header__hamburger').on('click', function () {
 	$('.header-desktop').toggleClass('active')
 	$('body').toggleClass('scroll-disabled')
+	$('.catalog__filter, .catalog__filter-dropdown').removeClass('active')
 })
 //
 
