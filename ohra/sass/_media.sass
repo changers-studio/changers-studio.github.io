@@ -1,6 +1,11 @@
 @import vars
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1480px)
+
+	.container
+		max-width: 1400px
+
 @media only screen and (max-width : 1430px)
 
 	// General
@@ -354,11 +359,26 @@
 				font-size: 30px
 				border: none
 				padding: 0
+				color: #696D74
 				&.active
 					background: none
 					color: $dark
 				&::after
 					display: none
+				&.close
+					background: none
+					color: #696D74
+			&-box
+				gap: 20px
+			&-choose
+				font-size: 22px
+				font-weight: 100
+			&-remove
+				font-size: 20px
+				color: $accent
+				background: none
+				width: auto
+				height: auto
 			&-dropdown
 				padding: 0
 				position: fixed
@@ -471,10 +491,50 @@
 		&:hover
 			transform: none
 			box-shadow: none
+			.product__labels-item:first-child
+				padding-left: 8px
+		&__labels
+			left: 0
+			top: 0
+			bottom: auto
+		&__data
+			padding-top: 25px
+			padding-right: 60px
+			padding-left: 0
+		&__title
+			font-size: 15px
+		&__price
+			margin-bottom: 0
 		&__bottom
 			display: block
 			position: static
 			box-shadow: none
+			padding: 0
+		&__size
+			display: none
+		&__btns
+			margin: 0
+		&__btn
+			position: absolute
+			margin: 0
+			z-index: 2
+			&-icon
+				width: 100%
+			&-search
+				display: none
+			&-basket, &-mail
+				right: 15px
+				bottom: 15px
+				width: 30px
+				height: 30px
+			&-compare
+				top: 10px
+				right: 50px
+				width: 25px
+				height: 25px
+				opacity: 0.1
+				&.active
+					opacity: 1
 	//
 
 	// Description
@@ -513,6 +573,14 @@
 				padding: 0 20px
 			&-heading
 				font-size: 18px
+			&-box
+				gap: 10px
+				line-height: 1.1
+			&-choose
+				font-size: 15px
+			&-remove
+				font-size: 15px
+				margin-left: 15px
 			&-dropdown
 				top: 170px
 				height: calc(100% - 264px)
@@ -629,7 +697,7 @@
 				font-size: 10px
 	//
 
-		// Catalog
+	// Catalog
 	.catalog
 		&__products-container
 			gap: 10px
@@ -718,28 +786,52 @@
 		&__data
 			width: 100%
 			padding-top: 5px
-			padding-right: 30px
+			padding-right: 70px
 			padding-bottom: 35px
 			margin-left: 10px
 		&__title
 			order: -1
+			margin-bottom: 10px
+		&__price
+			margin-bottom: 10px
 		&__labels
 			position: static
-		&__bottom
-			padding: 0
-		&__size
-			display: none
-		&__btns
-			justify-content: flex-end
-			position: absolute
-			right: 10px
-			bottom: 10px
-			margin: 0
-			z-index: 2
+		&__favorites
+			width: 20px
+			height: 20px
+			right: 20px
 		&__btn
-			margin-right: 20px
-			&-basket
-				order: 1
-				margin-right: 0
-				margin-left: 20px
+			&-basket, &-mail
+				right: 20px
+				bottom: 20px
+				width: 25px
+				height: 25px
+			&-compare
+				width: 20px
+				height: 20px
+	//
+
+@media only screen and (max-width : 350px)
+
+	// Catalog
+	.catalog
+		&__filter-remove
+			font-size: 14px
+	//
+
+	// Product
+	.product
+		&__slider
+			width: 80px
+			&-item
+				width: 80px
+		&__data
+			padding-right: 60px
+		&__title
+			font-size: 11px
+		&__price
+			&-old, &-current
+				font-size: 14px
+		&__label-item
+			font-size: 8px
 	//

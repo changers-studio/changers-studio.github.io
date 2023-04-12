@@ -113,8 +113,8 @@ if ($('*').is('.product__slider')) {
 }
 //
 
-// Add to basket
-$('.product__btn-basket').on('click', function () {
+// Product buttons
+$('.product__btn').on('click', function () {
 	$(this).toggleClass('active')
 })
 //
