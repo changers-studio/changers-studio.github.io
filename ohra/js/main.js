@@ -67,9 +67,15 @@ $('.categories__slider').slick({
 		{
 			breakpoint: 1000,
 			settings: {
+				slidesToShow: 3,
+				arrows: false,
+			},
+		},
+		{
+			breakpoint: 767,
+			settings: {
 				slidesToShow: 1,
 				variableWidth: true,
-				arrows: false,
 			},
 		},
 	],
@@ -149,11 +155,17 @@ $('.catalog__mobile-filter').on('click', function () {
 	$('.catalog__filter').addClass('active')
 })
 
-$('.catalog__filter-close').on('click', function () {
-	$('.catalog__filter, .catalog__filter-dropdown').removeClass('active')
-})
-
 $('.catalog__mobile-sort').on('click', function () {
 	$('.catalog__filter, .filter-sort__dropdown').addClass('active')
+})
+
+$('.arrow-append').on('click', function () {
+	$('.catalog__filter-top').addClass('active')
+})
+
+$('.catalog__filter-close').on('click', function () {
+	$('.catalog__filter, .catalog__filter-dropdown, .catalog__filter-top').removeClass(
+		'active'
+	)
 })
 //
