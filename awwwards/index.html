@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Title</title>
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+
+		<!-- preload file -->
+		<link rel="preload" href="js/preloader.js" as="script" />
+
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" sizes="192x192" href="img/favicon.ico" />
+
+		<!-- libs css -->
+		<link rel="stylesheet" href="libs/fullpage/fullpage.min.css" />
+		<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+
+		<!-- main css -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- preloader -->
+		<script defer src="js/preloader.js"></script>
+
+		<!-- jQeury -->
+		<script defer src="libs/jquery.min.js"></script>
+
+		<!-- libs js -->
+		<script defer src="libs/fullpage/fullpage.min.js"></script>
+		<script defer src="libs/swiper/swiper-bundle.min.js"></script>
+
+		<!-- main js -->
+		<script defer src="js/main.js"></script>
+	</head>
+
+	<body>
+		<div class="overlay flex cac vac">
+			<div>
+				<div class="loader preloader flex vac">
+					<svg width="200" height="200">
+						<circle
+							class="background"
+							cx="90"
+							cy="90"
+							r="80"
+							transform="rotate(-90, 100, 90)"
+						/>
+						<circle
+							class="outer"
+							cx="90"
+							cy="90"
+							r="80"
+							transform="rotate(-90, 100, 90)"
+						/>
+					</svg>
+
+					<span class="circle-background"></span>
+					<span class="logo animated fade-in">
+						<img src="img/logo.svg" alt="Logo" />
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="overflow-hidden">
+			<div id="fullpage">
+				<section class="section">
+					<header class="header">
+						<div class="container header__container">
+							<nav class="header__menu">
+								<a href="#" class="header__menu-item">About us</a>
+								<a href="#" class="header__menu-item">Blog</a>
+							</nav>
+
+							<a href="index.html" class="header__logo">
+								<img src="img/logo.svg" alt="Logo" />
+							</a>
+
+							<div class="header__btns">
+								<a href="#" class="header__btn header__btn-link">Log in</a>
+								<a href="#" class="header__btn btn">
+									Register
+									<svg
+										class="btn__icon"
+										width="11"
+										height="11"
+										viewBox="0 0 11 11"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M6.143 9.5L10.143 5.5M10.143 5.5L6.143 1.5M10.143 5.5H1"
+											stroke="white"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</header>
+
+					<div class="main">
+						<div class="container main__container">
+							<h1 class="main__title">A new era for investigations</h1>
+
+							<div class="main__slider-container">
+								<div class="main__slider-pagination"></div>
+
+								<div class="main__slider-arrows">
+									<div class="main__slider-arrow main__slider-prev"></div>
+									<div class="main__slider-arrow main__slider-next"></div>
+								</div>
+
+								<div class="main__slider-caption">
+									New <span class="_mobile-hidden">publication</span>
+								</div>
+
+								<div class="main__slider">
+									<div class="swiper-wrapper">
+										<div class="main__slider-item swiper-slide">
+											<div class="main__slider-inner">
+												<span class="main__slider-date">26 July 2022</span>
+												<span class="main__slider-text">
+													Turkey has grappled with the aftermath of a devastating 7.8
+													magnitude today so event...
+												</span>
+											</div>
+										</div>
+
+										<div class="main__slider-item swiper-slide">
+											<div class="main__slider-inner">
+												<span class="main__slider-date">27 July 2022</span>
+												<span class="main__slider-text">
+													Turkey has grappled with the aftermath of a devastating 7.8
+													magnitude today so event...
+												</span>
+											</div>
+										</div>
+
+										<div class="main__slider-item swiper-slide">
+											<div class="main__slider-inner">
+												<span class="main__slider-date">28 July 2022</span>
+												<span class="main__slider-text">
+													Turkey has grappled with the aftermath of a devastating 7.8
+													magnitude today so event...
+												</span>
+											</div>
+										</div>
+
+										<div class="main__slider-item swiper-slide">
+											<div class="main__slider-inner">
+												<span class="main__slider-date">26 July 2022</span>
+												<span class="main__slider-text">
+													Turkey has grappled with the aftermath of a devastating 7.8
+													magnitude today so event...
+												</span>
+											</div>
+										</div>
+
+										<div class="main__slider-item swiper-slide">
+											<div class="main__slider-inner">
+												<span class="main__slider-date">27 July 2022</span>
+												<span class="main__slider-text">
+													Turkey has grappled with the aftermath of a devastating 7.8
+													magnitude today so event...
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="main__video">
+							<img class="main__video-inner" src="img/bg.gif" alt="Video" />
+						</div>
+					</div>
+				</section>
+
+				<section class="about section">
+					<div
+						class="about__bg"
+						style="background-image: url('img/about__image-1.jpg')"
+					></div>
+
+					<div class="container about__container">
+						<h2 class="about__title title">Synchronize efforts</h2>
+						<p class="about__text">
+							Collaborate with your team to streamline your investigations and publish
+							insights faster. Minimize the feedback loop.
+						</p>
+					</div>
+				</section>
+
+				<section class="about section">
+					<div
+						class="about__bg"
+						style="background-image: url('img/about__image-2.jpg')"
+					></div>
+
+					<div class="container about__container">
+						<h2 class="about__title title">Connect with your audience</h2>
+						<p class="about__text">
+							Share your work with your community and build up a following.
+						</p>
+					</div>
+				</section>
+
+				<section class="about section">
+					<div
+						class="about__bg"
+						style="background-image: url('img/about__image-3.jpg')"
+					></div>
+
+					<div class="container about__container">
+						<h2 class="about__title title">
+							Monetize <br />
+							your work
+						</h2>
+						<p class="about__text">Get paid for the insights that you uncover.</p>
+					</div>
+				</section>
+
+				<section class="about section">
+					<div
+						class="about__bg"
+						style="background-image: url('img/about__image-4.jpg')"
+					></div>
+
+					<div class="container about__container">
+						<h2 class="about__title title">
+							Daily <br />
+							briefings
+						</h2>
+						<p class="about__text">
+							Stay up to date with events that matter to you the most
+						</p>
+					</div>
+				</section>
+
+				<section class="about section">
+					<div
+						class="about__bg"
+						style="background-image: url('img/about__image-5.jpg')"
+					></div>
+
+					<div class="container about__container">
+						<h2 class="about__title title">Discover insights</h2>
+						<p class="about__text">
+							Uncover new information about topics relevant to you.
+						</p>
+					</div>
+				</section>
+
+				<section class="about section">
+					<div
+						class="about__bg"
+						style="background-image: url('img/about__image-6.jpg')"
+					></div>
+
+					<div class="container about__container">
+						<h2 class="about__title title">Rally your favorite analysis</h2>
+						<p class="about__text">Support impactful work from your favorite analysts</p>
+					</div>
+				</section>
+
+				<section class="about section">
+					<div
+						class="about__bg"
+						style="background-image: url('img/about__image-7.jpg')"
+					></div>
+
+					<div class="container about__container">
+						<h2 class="about__title title">
+							Create awareness <br />
+							for issue that matter you
+						</h2>
+						<p class="about__text">Get the word out on topics worth sharing</p>
+					</div>
+				</section>
+
+				<div class="section">
+					<section class="blog">
+						<img src="img/blog-bg.svg" alt="Background" class="blog__bg" />
+
+						<div class="container blog__container">
+							<div class="blog__top">
+								<h2 class="blog__title title">See latest updates</h2>
+
+								<a href="#" class="blog__btn btn">
+									See all posts
+
+									<svg
+										class="btn__icon"
+										width="11"
+										height="11"
+										viewBox="0 0 11 11"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M6.143 9.5L10.143 5.5M10.143 5.5L6.143 1.5M10.143 5.5H1"
+											stroke="white"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</a>
+							</div>
+
+							<div class="blog__slider">
+								<div class="blog__slider-wrapper swiper-wrapper">
+									<a href="#" class="article swiper-slide">
+										<span
+											class="article__image"
+											style="background-image: url('img/article-image.jpg')"
+										></span>
+
+										<span class="article__date">26 July 2022</span>
+										<span class="article__version">Ver 2.09</span>
+										<span class="article__text"
+											>Turkey has grappled with the aftermath of a devastating 7.8
+											mag...</span
+										>
+									</a>
+
+									<a href="#" class="article swiper-slide">
+										<span
+											class="article__image"
+											style="background-image: url('img/article-image.jpg')"
+										></span>
+
+										<span class="article__date">26 July 2022</span>
+										<span class="article__version">Ver 2.09</span>
+										<span class="article__text"
+											>Turkey has grappled with the aftermath of a devastating 7.8
+											mag...</span
+										>
+									</a>
+
+									<a href="#" class="article swiper-slide">
+										<span
+											class="article__image"
+											style="background-image: url('img/article-image.jpg')"
+										></span>
+
+										<span class="article__date">26 July 2022</span>
+										<span class="article__version">Ver 2.09</span>
+										<span class="article__text"
+											>Turkey has grappled with the aftermath of a devastating 7.8
+											mag...</span
+										>
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<footer class="footer">
+						<div class="footer__video">
+							<img class="footer__video-inner" src="img/bg.gif" alt="Video" />
+						</div>
+
+						<div class="container">
+							<div class="footer__top">
+								<h2 class="footer__title title">Scale your investigations</h2>
+
+								<a href="#" class="footer__btn btn">
+									Get started
+
+									<svg
+										class="btn__icon"
+										width="11"
+										height="11"
+										viewBox="0 0 11 11"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M6.143 9.5L10.143 5.5M10.143 5.5L6.143 1.5M10.143 5.5H1"
+											stroke="white"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</a>
+							</div>
+
+							<div class="footer__email">
+								<p class="footer__email-caption">Subscribe to newsletter</p>
+								<a
+									href="mailto:your@email.com"
+									class="footer__email-link"
+									target="_blank"
+								>
+									<span class="footer__email-data">your@email.com</span>
+
+									<span class="footer__email-icon">
+										<svg
+											width="22"
+											height="19"
+											viewBox="0 0 22 19"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M12.2217 17.1L19.8217 9.5M19.8217 9.5L12.2217 1.9M19.8217 9.5H2.45001"
+												stroke="white"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</span>
+								</a>
+							</div>
+
+							<div class="footer__bottom">
+								<span class="footer__copyrights">2023 © Copyright Newrali</span>
+
+								<div class="footer__nav">
+									<a href="#" class="footer__nav-item">Privacy Policy</a>
+									<a href="#" class="footer__nav-item">Terms & Conditions</a>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
