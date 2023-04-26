@@ -1,0 +1,451 @@
+@import reset
+@import utils
+@import preloader
+
+// General
+body
+	font-size: 16px
+	min-width: 375px
+	position: relative
+	line-height: 1.5
+	font-family: $default-font
+	color: #fff
+	background-color: #000
+
+.overflow-hidden
+	overflow: hidden
+
+.container
+	max-width: 1200px
+	width: calc(100% - 60px)
+	margin: 0 auto
+
+.title
+	font-weight: 500
+	font-size: 100px
+	line-height: 1
+//
+
+// Form elements
+input, textarea
+	background: none
+	border: none
+	color: inherit
+
+::placeholder
+	color: #CAC8C8
+	font-size: 16px
+	font-family: $default-font
+//
+
+// Buttons
+.btn
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	position: relative
+	text-decoration: none
+	line-height: 1
+	outline: none
+	overflow: hidden
+	cursor: pointer
+	padding: 15px 30px
+	font-size: 16px
+	border-radius: 40px
+	border: none
+	background-color: rgba(255, 255, 255, 0.1)
+	color: #fff
+	transition: .2s ease-in-out
+	&__icon
+		margin-left: 10px
+		transition: .2s ease-in-out
+	&:focus, &:hover
+		text-decoration: none
+	&:hover
+		background-color: #fff
+		color: #000
+		.btn__icon
+			transform: translateX(5px)
+			path
+				stroke: #000
+//
+
+// Fullpage styles
+.fp-watermark a
+	display: none
+//
+
+// Header
+.header
+	padding: 40px 0
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__logo
+		display: flex
+	&__menu
+		display: flex
+		align-items: center
+		&-item
+			margin-right: 50px
+			position: relative
+			&:last-child
+				margin: 0
+			&::before
+				content: ''
+				display: block
+				width: 0
+				height: 1px
+				background-color: #fff
+				position: absolute
+				top: 100%
+				left: 0
+				transition: .2s
+			&:hover::before
+				width: 100%
+	&__btns
+		display: flex
+		align-items: center
+	&__btn
+		margin-right: 40px
+		&:last-child
+			margin: 0
+		&-link
+			position: relative
+			&::before
+				content: ''
+				display: block
+				width: 0
+				height: 1px
+				background-color: #fff
+				position: absolute
+				top: 100%
+				left: 0
+				transition: .2s
+			&:hover::before
+				width: 100%
+//
+
+// Main
+.main
+	height: calc(100vh - 126px)
+	min-height: 500px
+	display: flex
+	align-items: center
+	&__container
+		transform: translateY(-120px)
+	&__title
+		font-size: 120px
+		font-weight: 500
+		line-height: 1
+		margin-bottom: 40px
+	&__slider
+		background-color: rgba(255, 255, 255, 0.1)
+		backdrop-filter: blur(1.5px)
+		border-radius: 46px
+		height: 61px
+		overflow: hidden
+		&-container
+			position: relative
+			padding-top: 60px
+			max-width: 900px
+			width: 100%
+		&-pagination
+			background-color: rgba(255, 255, 255, 0.35)
+			width: 100%
+			height: 2px
+			position: absolute
+			top: 0
+			left: 0
+			.swiper-pagination-progressbar-fill
+				background-color: #fff
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+				transform: scale(0)
+				transform-origin: left top
+		&-item
+			padding-left: 160px
+			opacity: 0
+			transition: .3s
+			&.swiper-slide-active
+				opacity: 1
+		&-inner
+			font-size: 14px
+			display: flex
+			align-items: center
+			padding: 20px 40px
+		&-arrows
+			position: absolute
+			left: 100%
+			top: 0
+			transform: translate(50px, -50%)
+			display: flex
+			align-items: center
+			justify-content: center
+			gap: 2px
+		&-arrow
+			width: 38px
+			height: 38px
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center
+			cursor: pointer
+		&-prev
+			background-image: url('../img/icons/slider-prev.svg')
+		&-next
+			background-image: url('../img/icons/slider-next.svg')
+		&-caption
+			background-color: #fff
+			color: #000
+			font-size: 14px
+			height: 61px
+			width: 170px
+			border-radius: 46px
+			position: absolute
+			bottom: 0
+			left: 0
+			display: flex
+			align-items: center
+			justify-content: center
+			z-index: 2
+		&-date
+			margin-right: 35px
+			white-space: nowrap
+		&-text
+			max-width: 545px
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+	&__video
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: -1
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 100%
+		height: 100%
+		&::before
+			content: ''
+			background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%)
+			transform: matrix(1, 0, 0, -1, 0, 0)
+			width: 100%
+			height: 60%
+			position: absolute
+			bottom: 0
+			left: 0
+			z-index: 2
+		&-inner
+			transform: scale(1.5)
+			object-fit: cover
+			object-position: center
+			width: 100%
+			height: 100%
+//
+
+// About
+.about
+	background-color: #000
+	&.fp-is-overflow > .fp-overflow
+		overflow-y: hidden!important
+	&.active
+		.about
+			&__bg, &__container
+				opacity: 1
+				transform: translateY(0px)
+				transition: 1s
+				transition-delay: 1s
+	&__bg, &__container
+		opacity: 0
+		transform: translateY(50px)
+		transition: .2s
+	&__bg
+		background-size: cover
+		background-position: center
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		top: 0
+		z-index: 1
+	&__container
+		padding-top: 90px
+		height: 100vh
+		position: relative
+		z-index: 2
+	&__title
+		max-width: 700px
+		margin-bottom: 25px
+	&__text
+		font-size: 18px
+		max-width: 510px
+//
+
+// Blog
+.blog
+	padding: 90px 0 100px
+	&__bg
+		width: 100%
+		position: absolute
+		left: 0
+		top: 0
+	&__container
+		position: relative
+		z-index: 2
+	&__top
+		display: flex
+		align-items: flex-end
+		justify-content: space-between
+		max-width: 1030px
+		margin: 0 auto 75px
+	&__title
+		max-width: 670px
+	&__btn
+		flex: 0 0 auto
+	&__slider-wrapper
+		justify-content: space-between
+	.article
+		width: 380px
+		background: rgba(255, 255, 255, 0.03)
+		border: 1px solid rgba(255, 255, 255, 0.16)
+		backdrop-filter: blur(20px)
+		border-radius: 30px
+		padding: 35px
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		&__image
+			background-size: cover
+			background-position: center
+			margin-bottom: 35px
+			width: 100%
+			height: 208px
+			border-radius: 18px
+		&__date
+			margin-bottom: 25px
+			font-size: 16px
+			display: flex
+			align-items: center
+			color: #5BC1B6
+			&::before
+				content: ''
+				background-color: #5BC1B6
+				margin-right: 12px
+				width: 10px
+				height: 10px
+				border-radius: 2px
+		&__version
+			margin-bottom: 20px
+			background-color: rgba(255, 255, 255, 0.12)
+			padding: 12px 18px
+			border-radius: 10px
+			font-size: 14px
+		&__text
+			font-size: 27px
+			line-height: 1.1
+//
+
+// Footer
+.footer
+	padding: 150px 0 90px
+	&__top
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		margin-bottom: 100px
+	&__title
+		font-size: 85px
+		max-width: 600px
+	&__btn
+		flex: 0 0 auto
+	&__email
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+		padding-bottom: 40px
+		margin-bottom: 120px
+		&-caption
+			margin-bottom: 30px
+		&-link
+			display: flex
+			align-items: center
+			justify-content: space-between
+			&:hover
+				.footer__email
+					&-data
+						color: #fff
+					&-icon
+						background-color: #fff
+						svg path
+							stroke: #000
+		&-data
+			font-size: 54px
+			line-height: 1.1
+			color: rgba(255, 255, 255, 0.5)
+			transition: .3s
+		&-icon
+			transition: .3s
+			width: 60px
+			height: 60px
+			display: flex
+			align-items: center
+			justify-content: center
+			background-color: rgba(255, 255, 255, 0.1)
+			border-radius: 50%
+			svg path
+				transition: .3s
+	&__bottom
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__copyrights
+		color: rgba(255, 255, 255, 0.5)
+	&__nav
+		display: flex
+		align-items: center
+		&-item
+			margin-right: 40px
+			position: relative
+			&::before
+				content: ''
+				display: block
+				width: 0
+				height: 1px
+				background-color: #fff
+				position: absolute
+				top: 100%
+				left: 0
+				transition: .2s
+			&:hover::before
+				width: 100%
+			&:last-child
+				margin-right: 0
+	&__video
+		position: absolute
+		left: 0
+		bottom: 0
+		z-index: -1
+		overflow: hidden
+		width: 100%
+		height: 100%
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			background-image: url('../img/footer-bg.svg')
+			background-size: cover
+			z-index: 2
+		&-inner
+			transform: translate(25%, 25%) scale(2)
+			object-fit: cover
+//
+
+@import media
