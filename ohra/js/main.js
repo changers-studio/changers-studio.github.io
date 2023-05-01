@@ -57,15 +57,16 @@ $('.categories__slider').slick({
 	infinite: true,
 	touchMove: false,
 	slidesToShow: 6,
+	variableWidth: true,
 	responsive: [
 		{
-			breakpoint: 1430,
+			breakpoint: 1480,
 			settings: {
 				slidesToShow: 4,
 			},
 		},
 		{
-			breakpoint: 1000,
+			breakpoint: 1001,
 			settings: {
 				slidesToShow: 3,
 				arrows: false,
@@ -75,7 +76,6 @@ $('.categories__slider').slick({
 			breakpoint: 767,
 			settings: {
 				slidesToShow: 1,
-				variableWidth: true,
 			},
 		},
 	],
