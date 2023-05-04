@@ -1,13 +1,33 @@
 // Add classes to footer dropdown heading
-const mobileDropdown = () => {
-	if ($(this).width() <= 1000) {
-		$('.footer__heading').addClass('dropdown-heading')
-	} else {
-		$('.footer__heading').removeClass('dropdown-heading')
+function footerDropdown() {
+	$(this).toggleClass('active').next().slideToggle()
+	$('.footer__heading').not(this).removeClass('active').next().slideUp()
+}
+
+$(window).on('load', function () {
+	if ($(window).width() <= 1000) {
+		$('.footer__heading').on('click', function () {
+			$(this).toggleClass('active').next().slideToggle()
+			$('.footer__heading').not(this).removeClass('active').next().slideUp()
+		})
+	}
+})
+
+let resizeId
+window.addEventListener('resize', function () {
+	clearTimeout(resizeId)
+	resizeId = setTimeout(doneResizing, 500)
+})
+
+function doneResizing() {
+	if ($(window).width() > 1000) {
+		$('.footer__heading')
+			.off('click', footerDropdown)
+			.removeClass('active')
+			.next()
+			.slideDown()
 	}
 }
-$(window).bind('resize', mobileDropdown()).trigger('resize')
-//
 
 // Hamburger
 $('.header__hamburger').on('click', function () {
@@ -168,4 +188,27 @@ $('.catalog__filter-close').on('click', function () {
 		'active'
 	)
 })
+//
+
+// Show more products
+$('.catalog__show-more').on('click', function () {
+	$('.product.hidden').removeClass('hidden').find('.product__slider').slick('refresh')
+})
+//
+
+// Product touch event
+$('.product').on('touchstart', function () {
+	$(this).css('box-shadow', '0px 10px 50px rgba(0, 0, 0, 0.4)')
+})
+
+if ($(window).width() <= 768) {
+	$('.product').on('touchend', function () {
+		$(this).css('box-shadow', '0px 0px 11px rgba(0, 0, 0, 0.15)')
+	})
+} else {
+	$('.product').on('touchend', function () {
+		$(this).css('box-shadow', '0px 0px 11px rgba(0, 0, 0, 0)')
+	})
+}
+
 //

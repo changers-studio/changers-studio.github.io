@@ -14,6 +14,9 @@ body
 	&.scroll-disabled
 		overflow-y: hidden
 
+.overflow-hidden
+	overflow: hidden
+
 .container
 	max-width: 1480px
 	width: 100%
@@ -228,6 +231,7 @@ input, textarea
 			margin-right: 30px
 			display: flex
 			align-items: center
+			font-size: 13px
 			&:last-child
 				margin-right: 0
 		&-icon
@@ -240,7 +244,7 @@ input, textarea
 		display: flex
 		align-items: center
 		&-item
-			font-size: 14px
+			font-size: 13px
 			padding: 10px
 			display: inline-block
 			text-transform: uppercase
@@ -368,7 +372,7 @@ input, textarea
 		justify-content: space-between
 		gap: 20px
 	&__col
-		width: 250px
+		width: 260px
 		display: flex
 		flex-direction: column
 	&__heading
@@ -487,19 +491,31 @@ input, textarea
 		border-radius: 15px
 		overflow: hidden
 		white-space: normal
+		&:hover
+			.categories__item-image
+				background-size: 120% 120%
 		&-image
 			height: 240px
-			background-size: cover
+			background-size: 100% 100%
 			background-position: center
+			transition: 1.5s
+			display: block
 		&-wrapper
 			padding: 15px 30px
 			background-color: #fff
+			display: block
 		&-heading
 			margin-bottom: 5px
 			font-size: 20px
 			color: $accent
+			display: block
+			white-space: nowrap
+			text-overflow: ellipsis
+			overflow: hidden
 		&-text
 			font-size: 14px
+			display: block
+			color: #757576
 	&__slider
 		width: 100%
 		.slick
@@ -775,7 +791,7 @@ input, textarea
 			display: flex
 			align-items: flex-start
 			flex-wrap: wrap
-			gap: 30px
+			gap: 30px 48px
 	&__mobile
 		display: none
 	&__pagination
@@ -912,6 +928,8 @@ input, textarea
 				&-icon
 					filter: grayscale(1)
 					opacity: 0.5
+	&.hidden
+		display: none
 	&__inner
 		padding-bottom: 5px
 		background-color: #fff

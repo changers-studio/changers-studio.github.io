@@ -230,20 +230,37 @@
 			&-link
 				margin-top: 15px
 		&__heading
-			font-size: 22px
+			font-size: 24px
 			padding: 12px 20px
 			font-weight: 400
 			margin-bottom: 0
 			background-color: #fff
 			box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1)
 			border-radius: 5px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			cursor: pointer
+			&::after
+				content: ''
+				width: 35px
+				height: 35px
+				background-image: url('../img/icons/dropdown-arrow.svg')
+				background-size: contain
+				background-repeat: no-repeat
+				background-position: center
+				flex: 0 0 auto
+				transition: .3s
+				margin-left: 10px
+			&.active::after
+				transform: rotate(180deg)
 		&__dropdown
 			display: none
-			padding: 20px
+			padding: 40px
 		&__col
 			width: 100%
-		&__logo
-			width: 200px
+			&._mobile-last .footer__dropdown
+				padding-bottom: 10px
 		&__info-icon
 			margin-right: 15px
 			width: 60px
@@ -268,10 +285,32 @@
 				margin: 0
 		&__copyrights
 			border: none
+		&__contacts
+			margin-bottom: 45px
+			&-item
+				font-size: 20px
+				margin-bottom: 20px
+			&-icon
+				width: 45px
+				margin-right: 20px
+		&__menu
+			&._desktop-hidden
+				display: flex
+			&-item
+				font-size: 20px
+				margin-bottom: 25px
+		&__schedule
+			font-size: 20px
+			max-width: 310px
+			&-heading
+				margin-bottom: 20px
+			&-table
+				margin-bottom: 20px
 	//
 
 	// Categories
 	.categories
+		overflow: hidden
 		&__container
 			padding-bottom: 10px
 			overflow-x: auto
@@ -292,6 +331,8 @@
 			&-item
 				width: 180px
 				margin-right: 78px
+			&-caption
+				font-size: 19px
 	//
 
 	// Catalog
@@ -318,6 +359,7 @@
 				transform: translateY(calc(-50% - 10px))
 			&-title
 				font-weight: 400
+				font-size: 25px
 			&-amount
 				margin: 10px 0 0
 				font-size: 15px
@@ -473,7 +515,7 @@
 				&__caption
 					margin-right: 15px
 				&__input
-					width: 130px
+					width: 150px
 					padding: 10px 20px
 					font-size: 30px
 					border: none
@@ -523,6 +565,8 @@
 	// Product
 	.product
 		width: calc(33.3% - 14px)
+		border-radius: 3px
+		transition: .5s
 		&:hover
 			transform: none
 			box-shadow: none
@@ -530,15 +574,13 @@
 				left: 0
 				width: 5px
 		&__labels
-			left: 0
+			left: 10px
 			top: 0
 			bottom: auto
 		&__empty
 			display: none
 		&__data
-			padding-top: 25px
-			padding-right: 60px
-			padding-left: 0
+			padding: 25px 60px 5px 10px
 		&__title
 			font-size: 15px
 		&__price
@@ -588,6 +630,12 @@
 
 @media only screen and (max-width : 768px)
 
+	// Footer
+	.footer
+		&__dropdown
+			padding: 50px 20px
+	//
+
 	// Product
 	.product
 		width: calc(50% - 10px)
@@ -602,67 +650,6 @@
 
 	// Catalog
 	.catalog
-		&__filter
-			border-radius: 20px 20px 0 0
-			height: calc(100% - 110px)
-			padding-top: 100px
-			padding-bottom: 110px
-			&-top
-				padding: 15px 20px
-				font-size: 20px
-				border-radius: 20px 20px 0 0
-				&.active::before
-					content: ''
-					width: 30px
-					height: 30px
-			&-close
-				width: 30px
-				height: 30px
-			&-wrap
-				padding: 40px 20px 20px
-			&-wrapper
-				margin-bottom: 20px
-				padding: 0 20px
-			&-heading
-				font-size: 18px
-			&-box
-				gap: 10px
-				line-height: 1.1
-			&-choose
-				font-size: 15px
-			&-remove
-				font-size: 15px
-				margin-left: 15px
-			&-dropdown
-				top: 170px
-				height: calc(100% - 264px)
-				max-height: calc(100% - 264px)
-			&-item
-				margin-bottom: 20px
-				font-size: 18px
-				.checkbox, .radio
-					width: 20px
-					height: 20px
-				.radio:checked::before
-					border-width: 5px
-			&-nav, &-bottom
-				padding: 20px
-				gap: 20px
-			&-btn, &-navButton
-				min-width: auto
-				width: calc(50% - 15px)
-				font-size: 18px
-			.filter-price
-				&__label
-					font-size: 18px
-				&__input
-					width: 130px
-					font-size: 18px
-					&::placeholder
-						font-size: 18px
-				&__item
-					font-size: 18px
-					margin-bottom: 30px
 		&__mobile-btn
 			font-size: 20px
 	//
@@ -718,6 +705,19 @@
 	.footer
 		&__heading
 			font-size: 18px
+		&__dropdown
+			padding: 30px
+		&__menu-item
+			font-size: 14px
+			margin-bottom: 20px
+		&__contacts-item
+			font-size: 14px
+			margin-bottom: 20px
+		&__schedule
+			font-size: 14px
+			max-width: 220px
+			&-table
+				width: 185px
 	//
 
 	// Categories
@@ -750,7 +750,7 @@
 				width: 150px
 				height: 150px
 			&-caption
-				font-size: 10px
+				font-size: 16px
 	//
 
 	// Catalog
@@ -761,11 +761,54 @@
 			top: 80px
 			border-radius: 10px 10px 0 0
 			height: calc(100% - 110px)
+			padding-top: 100px
 			padding-bottom: 96px
 			border-radius: 10px 10px 0 0
 			&-top
 				top: 80px
 				border-radius: 10px 10px 0 0
+				padding: 15px 20px
+				font-size: 20px
+				border-radius: 20px 20px 0 0
+				&.active::before
+					content: ''
+					width: 30px
+					height: 30px
+			&-close
+				width: 30px
+				height: 30px
+			&-wrap
+				padding: 40px 20px 20px
+			&-wrapper
+				margin-bottom: 20px
+				padding: 0 20px
+			&-box
+				gap: 10px
+				line-height: 1.1
+			&-choose
+				font-size: 15px
+			&-remove
+				font-size: 15px
+				margin-left: 15px
+			&-dropdown
+				top: 170px
+				height: calc(100% - 264px)
+				max-height: calc(100% - 264px)
+			&-item
+				margin-bottom: 20px
+				font-size: 18px
+				.checkbox, .radio
+					width: 20px
+					height: 20px
+				.radio:checked::before
+					border-width: 5px
+			&-nav, &-bottom
+				padding: 20px
+				gap: 20px
+			&-btn, &-navButton
+				min-width: auto
+				width: calc(50% - 15px)
+				font-size: 18px
 			&-heading
 				font-size: 16px
 			&-dropdown
@@ -784,16 +827,18 @@
 				flex-direction: column
 				&__label
 					margin-right: 0
-					margin-bottom: 20px
-					font-size: 14px
+					margin-bottom: 30px
+					font-size: 17px
 				&__input
-					width: 100px
-					font-size: 14px
+					width: 130px
+					font-size: 17px
 					&::placeholder
-						font-size: 14px
+						font-size: 17px
+				&__container
+					margin-top: 30px
 				&__item
-					font-size: 14px
-					margin-bottom: 20px
+					font-size: 17px
+					margin-bottom: 30px
 		&__mobile
 			margin: 20px 0
 			&-btn
@@ -815,6 +860,8 @@
 				width: 30px
 				&::before, &::after
 					margin: 0
+		&__show-more
+			font-size: 18px
 	//
 
 	// Product
@@ -823,8 +870,6 @@
 		box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.15)
 		border-radius: 5px
 		display: flex
-		&:hover
-			box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.15)
 		&__inner
 			width: 100%
 			padding: 20px
@@ -845,6 +890,7 @@
 			padding-top: 10px
 			padding-right: 75px
 			padding-bottom: 10px
+			padding-left: 0
 			margin-left: 10px
 		&__title
 			order: -1
@@ -906,6 +952,16 @@
 					height: 25px
 	//
 
+	// Footer
+	.footer
+		&__dropdown
+			padding: 30px 20px
+		&__contacts-caption
+			display: block
+			.street
+				display: block
+	//
+
 	// Categories
 	.categories
 		&__slider
@@ -914,6 +970,8 @@
 			&-image
 				width: 100px
 				height: 100px
+			&-caption
+				font-size: 11px
 	//
 
 	// Catalog
@@ -921,12 +979,28 @@
 		&__products-container
 			gap: 5px
 		&__top
+			&::before
+				width: 30px
+				height: 30px
 			&-title
-				font-size: 20px
+				font-size: 15px
 			&-amount
 				font-size: 10px
-		&__filter-remove
-			font-size: 14px
+		&__filter
+			&-remove
+				font-size: 14px
+			.filter-price
+				&__label
+					margin-right: 0
+					margin-bottom: 20px
+					font-size: 14px
+				&__input
+					width: 120px
+					font-size: 14px
+					&::placeholder
+						font-size: 14px
+				&__item
+					font-size: 14px
 	//
 
 	// Product
