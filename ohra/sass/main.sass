@@ -18,7 +18,7 @@ body
 	overflow: hidden
 
 .container
-	max-width: 1480px
+	max-width: 1485px
 	width: 100%
 	margin-right: auto
 	margin-left: auto
@@ -372,7 +372,7 @@ input, textarea
 		justify-content: space-between
 		gap: 20px
 	&__col
-		width: 260px
+		width: 275px
 		display: flex
 		flex-direction: column
 	&__heading
@@ -791,7 +791,7 @@ input, textarea
 			display: flex
 			align-items: flex-start
 			flex-wrap: wrap
-			gap: 30px 48px
+			gap: 30px
 	&__mobile
 		display: none
 	&__pagination
@@ -896,14 +896,26 @@ input, textarea
 // Product
 .product
 	position: relative
-	width: 260px
+	width: 275px
 	border-radius: 3px 3px 0 0
 	background-color: #fff
 	transition: .2s
-	&:hover
+	&::before
+		content: ''
+		background-color: #fff
 		box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.4)
-		transform: scale(1.1)
+		position: absolute
+		top: -10px
+		left: 50%
+		transform: translateX(-50%)
+		width: calc(100% + 30px)
+		height: calc(100% + 80px)
+		border-radius: 3px
+		display: none
+	&:hover
 		z-index: 3
+		&::before
+			display: block
 		.product
 			&__bottom
 				display: block
@@ -941,7 +953,7 @@ input, textarea
 		right: 10px
 		top: 10px
 		width: 25px
-		height: 25px
+		height: 23px
 		background-image: url('../img/icons/favorites-inactive.svg')
 		background-size: contain
 		background-repeat: no-repeat
@@ -961,14 +973,14 @@ input, textarea
 			background-position: center
 		.slick-dots
 			position: absolute
-			top: 0
+			top: -10px
 			left: 50%
 			transform: translateX(-50%)
 			display: flex
 			gap: 3px
 			font-size: 0
 			padding: 0 3px
-			width: 100%
+			width: calc(100% + 30px)
 			opacity: 0
 			transition: opacity .2s
 			li
@@ -981,12 +993,12 @@ input, textarea
 					background-color: #888888
 	&__data
 		position: relative
-		padding: 15px 15px 0
+		padding-top: 15px
 		display: flex
 		flex-direction: column
 	&__labels
 		position: absolute
-		left: 15px
+		left: 0
 		bottom: 100%
 		display: flex
 		flex-wrap: wrap
@@ -1000,6 +1012,7 @@ input, textarea
 			align-items: center
 			position: relative
 			background-size: cover
+			background-repeat: no-repeat
 			background-position: right bottom
 			transition: .2s
 			&::before
@@ -1063,8 +1076,7 @@ input, textarea
 		left: 0
 		right: 0
 		background-color: #fff
-		box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.4)
-		padding: 0 15px 15px
+		padding-bottom: 15px
 		border-radius: 0 0 3px 3px
 	&__size
 		display: flex
@@ -1103,6 +1115,8 @@ input, textarea
 				background-image: url('../img/icons/added-basket.svg')
 		&-mail
 			background-image: url('../img/icons/product-mail.svg')
+		&-compare
+			opacity: 0.3
 //
 
 // Description
