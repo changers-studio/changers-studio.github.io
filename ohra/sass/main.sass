@@ -492,14 +492,17 @@ input, textarea
 		overflow: hidden
 		white-space: normal
 		&:hover
-			.categories__item-image
-				background-size: 120% 120%
+			.categories__item-img
+				transform: scale(1.1)
 		&-image
 			height: 240px
-			background-size: 100% 100%
-			background-position: center
-			transition: 1.5s
 			display: block
+			overflow: hidden
+		&-img
+			object-fit: cover
+			width: 100%
+			transition: 1s
+			object-position: center
 		&-wrapper
 			padding: 15px 30px
 			background-color: #fff
@@ -1013,7 +1016,7 @@ input, textarea
 			position: relative
 			background-size: cover
 			background-repeat: no-repeat
-			background-position: right bottom
+			background-position: center
 			transition: .2s
 			&::before
 				content: ''
@@ -1023,8 +1026,9 @@ input, textarea
 				bottom: 0
 				transition: .2s
 				background-color: transparent
-				width: 5px
-				height: 100%
+				width: 30px
+				height: 16px
+				z-index: -1
 			&:hover
 				color: #fff
 			&:nth-child(1)
