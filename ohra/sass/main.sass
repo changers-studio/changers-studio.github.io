@@ -385,6 +385,8 @@ input, textarea
 		display: flex
 		flex-direction: column
 		align-items: flex-start
+		&._desktop-hidden
+			display: none
 		&-item
 			line-height: 1.3
 			margin-bottom: 20px
@@ -437,6 +439,8 @@ input, textarea
 			flex: 0 0 auto
 			margin-right: 5px
 	&__schedule
+		max-width: 201px
+		width: 100%
 		&-heading
 			margin-bottom: 10px
 		&-table
@@ -617,6 +621,14 @@ input, textarea
 				color: #fff
 				&::after
 					opacity: 1
+			&.selected
+				&::after
+					background-image: none
+					background-color: #002C39
+					width: 4px
+					height: 4px
+					border-radius: 50%
+					opacity: 1
 		&-dropdown
 			display: none
 			&.active
@@ -628,7 +640,7 @@ input, textarea
 			border-radius: 2px
 			font-size: 12px
 			transition: .2s
-			&:hover
+			&:hover, &.active
 				background-color: $accent
 				color: #fff
 	&__filter
@@ -767,8 +779,7 @@ input, textarea
 			&__input
 				padding: 3px 5px
 				background-color: transparent
-				border: 1px solid $gray
-				border-radius: 3px
+				border: 1px solid #DCDCDC
 				line-height: 1
 				width: 70px
 				text-align: center
@@ -944,7 +955,16 @@ input, textarea
 				&-icon
 					filter: grayscale(1)
 					opacity: 0.5
+			&__btn
+				&-compare
+					background-image: url('../img/icons/product-compare-gray.svg')
+					&.active
+						background-image: url('../img/icons/product-compare.svg')
+				&-search
+					background-image: url('../img/icons/product-search-gray.svg')
 	&.hidden
+		display: none
+	&.add
 		display: none
 	&__inner
 		padding-bottom: 5px
@@ -1106,14 +1126,16 @@ input, textarea
 	&__btn
 		margin-right: 40px
 		display: flex
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center
+		width: 20px
+		height: 20px
 		&:last-child
 			margin-right: 0
 		&-basket, &-mail
-			width: 22px
-			height: 22px
-			background-size: contain
-			background-repeat: no-repeat
-			background-position: center
+			width: 24px
+			height: 24px
 		&-basket
 			background-image: url('../img/icons/product-basket.svg')
 			&.active
@@ -1121,7 +1143,9 @@ input, textarea
 		&-mail
 			background-image: url('../img/icons/product-mail.svg')
 		&-compare
-			opacity: 0.3
+			background-image: url('../img/icons/product-compare.svg')
+		&-search
+			background-image: url('../img/icons/product-search.svg')
 //
 
 // Description

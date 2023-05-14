@@ -11,11 +11,6 @@
 		max-width: 1000px
 	//
 
-	// Breadcrumbs
-	.breadcrumbs
-		display: none
-	//
-
 	// Header
 	.header
 		&__contacts
@@ -77,6 +72,8 @@
 	// Product
 	.product
 		width: 235px
+		&.add
+			display: block
 	//
 
 /*	Small Devices, Tablets */
@@ -93,6 +90,11 @@
 
 	._desktop-hidden
 		display: block
+	//
+
+	// Breadcrumbs
+	.breadcrumbs
+		display: none
 	//
 
 	// Header
@@ -231,8 +233,8 @@
 				margin-top: 15px
 		&__heading
 			font-size: 24px
+			font-weight: 300
 			padding: 12px 20px
-			font-weight: 400
 			margin-bottom: 0
 			background-color: #fff
 			box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1)
@@ -618,8 +620,9 @@
 				right: 50px
 				width: 25px
 				height: 25px
+				background-image: url('../img/icons/product-compare-gray.svg')
 				&.active
-					opacity: 1
+					background-image: url('../img/icons/product-compare.svg')
 	//
 
 	// Description
@@ -873,6 +876,8 @@
 		box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.15)
 		border-radius: 5px
 		display: flex
+		&.add
+			display: flex
 		&__inner
 			width: 100%
 			padding: 20px
@@ -909,22 +914,26 @@
 			position: static
 		&__favorites
 			width: 25px
-			height: 25px
-			right: 20px
+			height: 22px
+			top: 25px
+			right: 25px
 		&__btn
 			display: flex
 			justify-content: center
 			align-items: center
+			&-search
+				display: none
 			&-basket, &-mail
-				right: 20px
+				right: 25px
 				bottom: 20px
 				width: 30px
 				height: 30px
 				display: flex
 			&-compare
 				width: 25px
-				height: 25px
-				right: 60px
+				height: 22px
+				top: 25px
+				right: 65px
 	//
 
 	// Description
@@ -1030,13 +1039,17 @@
 			font-size: 8px
 		&__favorites
 			width: 20px
-			height: 20px
+			height: 18px
+			right: 20px
+			top: 10px
 		&__btn
 			&-basket, &-mail
 				width: 25px
 				height: 25px
+				right: 20px
 			&-compare
 				width: 20px
-				height: 20px
+				height: 18px
+				top: 10px
 				right: 50px
 	//
