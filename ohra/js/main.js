@@ -198,16 +198,25 @@ $('.catalog__show-more').on('click', function () {
 
 // Product touch event
 $('.product').on('touchstart', function () {
-	$(this).css('box-shadow', '0px 10px 50px rgba(0, 0, 0, 0.4)')
+	$(this).css({
+		'box-shadow': '0px 10px 50px rgba(0, 0, 0, 0.4)',
+		'z-index': '3',
+	})
 })
 
 if ($(window).width() <= 768) {
 	$('.product').on('touchend', function () {
-		$(this).css('box-shadow', '0px 0px 11px rgba(0, 0, 0, 0.15)')
+		$(this).css({
+			'box-shadow': '0px 0px 11px rgba(0, 0, 0, 0.15)',
+			'z-index': '1',
+		})
 	})
 } else {
 	$('.product').on('touchend', function () {
-		$(this).css('box-shadow', '0px 0px 11px rgba(0, 0, 0, 0)')
+		$(this).css({
+			'box-shadow': '0px 0px 11px rgba(0, 0, 0, 0)',
+			'z-index': '1',
+		})
 	})
 }
 

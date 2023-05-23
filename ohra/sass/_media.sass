@@ -74,6 +74,9 @@
 		width: 235px
 		&.add
 			display: block
+		&:hover
+			.product__labels-item::before
+				left: -16px
 	//
 
 /*	Small Devices, Tablets */
@@ -580,9 +583,6 @@
 		&:hover
 			transform: none
 			box-shadow: none
-			.product__labels-item:first-child::before
-				left: 0
-				width: 5px
 			&::before
 				display: none
 		&__inner
@@ -590,9 +590,16 @@
 		&__slider
 			margin: 0
 		&__labels
-			left: 10px
 			top: 0
+			left: 10px
 			bottom: auto
+			width: 100%
+			overflow: hidden
+			&-item
+				height: 18px
+				min-width: 42px
+				span
+					font-size: 13px
 		&__empty
 			display: none
 		&__data
@@ -921,6 +928,11 @@
 			align-items: flex-end
 		&__labels
 			position: static
+			&-item
+				height: 15px
+				min-width: 35px
+				span
+					font-size: 10px
 		&__favorites
 			width: 25px
 			height: 22px
