@@ -121,7 +121,7 @@ if ($('*').is('.product__slider')) {
 		dots: true,
 		responsive: [
 			{
-				breakpoint: 1000,
+				breakpoint: 1001,
 				settings: {
 					dots: false,
 				},
