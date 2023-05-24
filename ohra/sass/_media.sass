@@ -967,6 +967,10 @@
 	// General
 	body
 		padding-top: 147px
+
+	.container
+		padding-right: 10px
+		padding-left: 10px
 	//
 
 	// Header
@@ -1003,8 +1007,13 @@
 
 	// Categories
 	.categories
-		&__item-image
-			height: 145px
+		&__item
+			&-wrap
+				width: calc(100% + 20px)
+				min-width: calc(100% + 20px)
+				padding-right: 20px
+			&-image
+				height: 145px
 		&__slider
 			&-item
 				width: 100px
