@@ -1,0 +1,169 @@
+@media only screen and (max-width : 1750px)
+	// General
+	body
+		font-size: 18px
+
+	.container
+		max-width: 1350px
+
+	.title
+		font-size: 36px
+	//
+
+	.header
+		&__menu
+			font-size: 14px
+			gap: 30px
+
+	.footer
+		&__container-inner
+			justify-content: flex-end
+		&__form
+			max-width: 500px
+			&-title
+				font-size: 20px
+		&__copyrights
+			font-size: 14px
+
+@media only screen and (max-width : 1350px)
+	// General
+	body
+		font-size: 16px
+
+	.container
+		max-width: 960px
+
+	.title
+		font-size: 30px
+		margin-bottom: 40px
+	//
+
+	.header
+		&__logo
+			width: 200px
+		&__menu
+			position: static
+			transform: none
+			&-item
+				font-size: 16px
+
+	.section
+		padding: 60px 0
+		&__list-item::before
+			width: 30px
+			height: 30px
+			margin-right: 15px
+
+	.footer
+		padding-top: 50px
+		&__container
+			padding-bottom: 100px
+		&__form
+			max-width: 400px
+			&-title
+				font-size: 16px
+
+@media only screen and (max-width : 992px)
+
+	// General
+	body
+		font-size: 14px
+		&.scroll_disabled
+			overflow: hidden
+
+	.container
+		max-width: 480px
+
+	.title
+		font-size: 26px
+	//
+
+	// Form elements
+	input, textarea
+		font-size: 14px
+
+	::placeholder
+		font-size: 14px
+	//
+
+	.header
+		&__logo
+			display: none
+		&__hamburger
+			display: flex
+		&__menu
+			display: none
+			flex-direction: column
+			align-items: flex-start
+			justify-content: flex-start
+			font-size: 16px
+			gap: 30px
+			height: 100vh
+			width: 100%
+			position: fixed
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			background-color: #fff
+			z-index: 10
+			padding: 60px 15px
+			&.active
+				display: flex
+			&-close
+				display: flex
+				position: absolute
+				top: 20px
+				right: 15px
+
+	.main
+		max-height: 540px
+		min-height: 320px
+		padding-bottom: 30px
+		&__blockquote
+			font-size: 14px
+			margin-bottom: 70px
+			&-author
+				margin-top: 10px
+
+	.section
+		&__list
+			gap: 30px
+			flex-direction: column
+			&-item
+				width: 100%
+				&::before
+					width: 20px
+					height: 20px
+					margin-right: 12px
+
+	.partners
+		flex-direction: column
+		gap: 40px
+
+	.footer
+		&__container
+			flex-direction: column
+			&-inner
+				max-width: 100%
+		&__contacts
+			max-width: 100%
+			margin-bottom: 60px
+			align-items: center
+			text-align: center
+			&-item
+				font-size: 18px
+		&__form
+			max-width: 100%
+			&-title
+				font-size: 14px
+				margin-bottom: 30px
+			&-inputs
+				gap: 15px
+				flex-direction: column
+			&-input
+				width: 100%
+			&-submit
+				margin-top: 40px
+		&__copyrights
+			font-size: 12px
