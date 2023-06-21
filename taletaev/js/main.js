@@ -2,6 +2,43 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin)
 //
 
+// Preloader
+document.body.classList.add('scroll-disabled')
+
+window.addEventListener('load', () => {
+	function number_to(id, from, to, duration) {
+		var element = document.getElementById(id)
+		var start = new Date().getTime()
+		setTimeout(function () {
+			var now = new Date().getTime() - start
+			var progress = now / duration
+			var result = Math.floor((to - from) * progress + from)
+			element.innerHTML = progress < 1 ? result : to
+			if (progress < 1) setTimeout(arguments.callee, 10)
+		}, 20)
+	}
+	number_to('prelodaer-count', 0, 100, 1000)
+
+	gsap.to('.preloader__counter', {
+		duration: 1,
+		opacity: 0,
+		delay: 1.2,
+		ease: 'power4.in',
+	})
+
+	gsap.to('.preloader', {
+		duration: 1,
+		yPercent: -100,
+		delay: 2,
+		ease: 'power4.in',
+	})
+
+	setTimeout(() => {
+		document.body.classList.remove('scroll-disabled')
+	}, 3000)
+})
+//
+
 // Smooth scroll
 const smoother = ScrollSmoother.create({
 	smooth: 3,
@@ -30,6 +67,13 @@ elemsRevealWrap.forEach((target) => {
 			delay: 0.2,
 			ease: 'power4.out',
 		})
+})
+
+gsap.to('.main__title-inner', {
+	duration: 1.5,
+	yPercent: -100,
+	delay: 3,
+	ease: 'power4.out',
 })
 //
 
@@ -93,9 +137,6 @@ if (window.innerWidth > 1024) {
 			nextEl: '.clients__slider-next',
 			prevEl: '.clients__slider-prev',
 		},
-		autoplay: {
-			delay: 5000,
-		},
 	})
 } else {
 	const showMore = document.querySelector('.clients__show')
@@ -145,8 +186,72 @@ toTop.addEventListener('click', () => {
 scrollElem.forEach((elem) => {
 	elem.addEventListener('click', () => {
 		let section = elem.dataset.scrollTo
-		console.log(section)
 		gsap.to(window, { duration: 1, scrollTo: `#${section}` })
 	})
 })
+//
+
+// Fancybox
+const showModal = document.querySelectorAll('.show-modal')
+
+if (showModal.length) {
+	showModal.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			Fancybox.show([
+				{
+					src: '#modal',
+					type: 'inline',
+				},
+			])
+		})
+	})
+}
+//
+
+// Form
+const forms = document.querySelectorAll('.feedback__form')
+
+forms.forEach((form) => {
+	form.addEventListener('submit', async (e) => {
+		e.preventDefault()
+
+		let targetForm = e.currentTarget
+		let url = 'mail.php'
+
+		try {
+			let formFields = new FormData(targetForm)
+			let responseData = await postFormFieldsAsJson({ url, formFields })
+		} catch (error) {
+			console.error(`An has occured ${error}`)
+		}
+	})
+})
+
+async function postFormFieldsAsJson({ url, formData }) {
+	let formDataObject = Object.fromEntries(formData.entries())
+	let formDataJsonString = JSON.stringify(formDataObject)
+
+	let fetchOptions = {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+			Accept: 'application/json',
+		},
+		body: formDataJsonString,
+	}
+
+	let res = await fetch(url, fetchOptions)
+
+	if (res.ok) {
+		let error = await res.text()
+		throw new Error(error)
+	} else {
+		Fancybox.show([
+			{
+				src: '#modal-thx',
+				type: 'inline',
+			},
+		])
+	}
+}
 //
