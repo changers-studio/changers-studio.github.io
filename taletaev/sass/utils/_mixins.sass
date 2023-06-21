@@ -1,0 +1,23 @@
+@mixin adaptiv($property, $startSizeDesktop, $minSizeDesktop, $startSizeMobile, $minSizeMobile)
+
+	// Desktop
+	$maxWidthDesktop: 1920
+	$minWidthDesktop: 1025
+	$maxWidthConainerDesktop: 1800
+
+	// Mobile
+	$maxWidthMobile: 1024
+	$minWidthMobile: 375
+	$maxWidthConainerMobile: 920
+
+	@media only screen and (min-width : 1024px)
+
+		$addSizeDesktop: $startSizeDesktop - $minSizeDesktop
+
+		#{$property}: calc(#{$minSizeDesktop + px} + #{$addSizeDesktop} * ((100vw - #{$minWidthDesktop + px}) / #{$maxWidthDesktop - $minWidthDesktop}))
+
+	@media only screen and (max-width : 1024px)
+
+		$addSizeMobile: $startSizeMobile - $minSizeMobile
+
+		#{$property}: calc(#{$minSizeMobile + px} + #{$addSizeMobile} * ((100vw - #{$minWidthMobile + px}) / #{$maxWidthMobile - $minWidthMobile}))

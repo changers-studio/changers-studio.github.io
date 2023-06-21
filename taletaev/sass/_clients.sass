@@ -1,0 +1,116 @@
+.clients
+	&__top
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		@include adaptiv('margin-bottom', 100, 50, 165, 60)
+	&__slider
+		overflow: hidden
+		&-nav
+			display: flex
+			justify-content: center
+			align-items: center
+			@include adaptiv('gap', 20, 10, 0, 0)
+		&-btn
+			@include adaptiv('width', 127, 68, 0, 0)
+			@include adaptiv('height', 127, 68, 0, 0)
+			border: 3px solid $gray-4
+			background-color: $gray-4
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 50%
+			transition: background-color .2s
+			&.swiper-button-disabled
+				background-color: #fff
+				&::before
+					filter: invert(100%)
+			&::before
+				content: ''
+				@include adaptiv('width', 24, 16, 0, 0)
+				@include adaptiv('height', 24, 16, 0, 0)
+				background-size: contain
+				background-repeat: no-repeat
+				background-position: center
+				background-image: url('../img/icons/arrow.svg')
+				transition: filter .2s
+		&-prev::before
+			transform: rotate(-90deg)
+		&-next::before
+			transform: rotate(90deg)
+		&-wrapper
+			position: relative
+			width: 100%
+			height: 100%
+			z-index: 1
+			display: flex
+			transition-property: transform
+			transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial)
+			box-sizing: content-box
+		&-number
+			position: absolute
+			top: 0
+			left: 0
+			letter-spacing: 0.02em
+			text-transform: uppercase
+			color: $gray-7
+		&-item
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 50%
+			border: 1px solid $gray-8
+			@include adaptiv('width', 340, 185, 280, 100)
+			@include adaptiv('height', 340, 185, 156, 60)
+			@include adaptiv('margin-right', 20, 10, 0, 0)
+			transition: .5s
+			&:last-child
+				margin-right: 0
+		&-logo
+			@include adaptiv('max-width', 190, 100, 273, 100)
+			@include adaptiv('max-height', 100, 53, 156, 55)
+			width: 280px
+	&__show
+		@include adaptiv('width', 0, 0, 440, 160)
+		@include adaptiv('height', 0, 0, 440, 160)
+		@include adaptiv('max-height', 0, 0, 440, 160)
+		@include adaptiv('font-size', 0, 0, 38, 14)
+		@include adaptiv('margin-top', 0, 0, 25, 10)
+		letter-spacing: -0.02em
+		font-weight: 600
+		text-align: center
+		display: flex
+		align-items: center
+		justify-content: center
+		border: 1px solid $gray-10
+		color: $gray-11
+		margin-right: auto
+		margin-left: auto
+		border-radius: 50%
+		overflow: hidden
+		transition: .5s
+		&._hidden
+			max-height: 0
+			border-color: transparent
+			color: transparent
+
+@media only screen and (max-width : 1024px)
+	.clients
+		&__slider
+			&-nav, &-number
+				display: none
+			&-wrapper
+				flex-wrap: wrap
+				justify-content: space-between
+			&-item
+				width: calc(50% - 10px)
+				border: none
+				@include adaptiv('margin-bottom', 0, 0, 166, 60)
+				@include adaptiv('max-height', 340, 185, 156, 60)
+				overflow: hidden
+				transition: .5s
+				&:nth-last-child(-n+2)
+					margin-bottom: 0
+				&._mobile-hidden
+					max-height: 0
+					margin-bottom: 0
