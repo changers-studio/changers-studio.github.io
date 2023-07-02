@@ -1,0 +1,140 @@
+.footer
+	background-color: $black
+	color: #fff
+	@include adaptive('padding-top', 110, 55, 'desktop')
+	&__top
+		@include adaptive('padding-bottom', 74, 37, 'desktop')
+		@include adaptive('gap', 10, 5, 'desktop')
+		display: flex
+		align-items: stretch
+		&-flexbox
+			display: flex
+			align-items: flex-start
+			justify-content: space-between
+	&__logo
+		display: flex
+		@include adaptive('margin-bottom', 40, 20, 'desktop')
+		&-img
+			@include adaptive('width', 100, 50, 'desktop')
+	&__text
+		color: $gray-2
+		line-height: 1.3
+	&__menu
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		@include adaptive('gap', 12, 6, 'desktop')
+		&-item
+			@include adaptive('font-size', 22, 11, 'desktop')
+	&__contacts
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: flex-start
+		height: 100%
+		&-item
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			line-height: 1.3
+		&-caption
+			@include adaptive('font-size', 22, 11, 'desktop')
+			color: $gray-3
+			@include adaptive('margin-bottom', 10, 5, 'desktop')
+		&-data
+			@include adaptive('font-size', 24, 12, 'desktop')
+	&__scroll-top
+		@include adaptive('width', 60, 30, 'desktop')
+		@include adaptive('height', 60, 30, 'desktop')
+		background-image: url('/img/icons/scroll-top.svg')
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center
+	&__bottom
+		border-top: 1px solid $line-2
+		@include adaptive('padding-top', 36, 18, 'desktop')
+		@include adaptive('padding-bottom', 36, 18, 'desktop')
+		@include adaptive('gap', 10, 5, 'desktop')
+		display: flex
+		align-items: center
+		&-flexbox
+			display: flex
+			align-items: center
+			justify-content: space-between
+	&__copyrights
+		line-height: 1.1
+	&__link
+		color: $gray-3
+		@include adaptive('font-size', 14, 7, 'desktop')
+		&:hover
+			color: #fff
+	&__social
+		display: flex
+		@include adaptive('gap', 5, 2.5, 'desktop')
+		&-item
+			@include adaptive('width', 50, 25, 'desktop')
+		&-icon
+			width: 100%
+
+@media only screen and (max-width : 1024px)
+	.footer
+		@include adaptive('padding-top', 175, 64, 'mobile')
+		._half-w
+			@include adaptive('width', 380, 140, 'mobile')
+		&__top
+			@include adaptive('padding-bottom', 160, 60, 'mobile')
+			position: relative
+			justify-content: space-between
+			flex-wrap: wrap
+		&__logo
+			@include adaptive('margin-bottom', 70, 26, 'mobile')
+			&-img
+				@include adaptive('width', 205, 76, 'mobile')
+		&__text
+			@include adaptive('margin-bottom', 160, 60, 'mobile')
+			@include adaptive('font-size', 38, 14, 'mobile')
+		&__menu
+			@include adaptive('gap', 40, 15, 'mobile')
+			&-item
+				@include adaptive('font-size', 43, 16, 'mobile')
+		&__contacts
+			&-caption
+				@include adaptive('font-size', 43, 16, 'mobile')
+				@include adaptive('margin-bottom', 40, 15, 'mobile')
+			&-data
+				@include adaptive('font-size', 43, 16, 'mobile')
+		&__scroll-top
+			@include adaptive('width', 122, 45, 'mobile')
+			@include adaptive('height', 122, 45, 'mobile')
+			position: absolute
+			top: 0
+			right: 0
+		&__bottom
+			border: none
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: center
+		&__copyrights
+			border-top: 1px solid $line-2
+			display: block
+			@include adaptive('font-size', 38, 14, 'mobile')
+			@include adaptive('padding-top', 50, 20, 'mobile')
+			@include adaptive('padding-bottom', 67, 25, 'mobile')
+			@include adaptive('margin-top', 55, 20, 'mobile')
+			&-wrap
+				order: 2
+		&__links
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			@include adaptive('gap', 15, 5, 'mobile')
+			order: 1
+		&__link
+			@include adaptive('font-size', 38, 14, 'mobile')
+			&:hover
+				color: $gray-3
+		&__social
+			@include adaptive('gap', 14, 5, 'mobile')
+			&-item
+				@include adaptive('width', 110, 40, 'mobile')
+				display: flex

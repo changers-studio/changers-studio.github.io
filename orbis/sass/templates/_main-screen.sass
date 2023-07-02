@@ -1,0 +1,138 @@
+.main
+	padding: 0
+	height: 100vh
+	color: #fff
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	&__slider
+		height: 100vh
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		z-index: -1
+		overflow: hidden
+		&-item
+			position: relative
+			&.swiper-slide-active .main__slider-image
+				transform: scale(1)
+			&::before
+				content: ''
+				position: absolute
+				right: 0
+				left: 0
+				top: 0
+				bottom: 0
+				background-color: rgba(0, 0, 0, 0.4)
+				z-index: 2
+		&-image
+			height: 100%
+			transform: scale(1.2)
+			background-position: center
+			transition: 4s ease-out
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			object-fit: cover
+			object-position: center
+
+	&__flexbox
+		@include adaptive('padding-top', 30, 15, 'desktop')
+		@include adaptive('padding-bottom', 30, 15, 'desktop')
+		@include adaptive('margin-top', 20, 10, 'desktop')
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border-top: 1px solid rgba(255, 255, 255, 0.35)
+		letter-spacing: -0.03em
+	&__video
+		@include adaptive('font-size', 76, 38, 'desktop')
+		letter-spacing: -0.03em
+		display: inline-flex
+		align-items: center
+		justify-content: flex-start
+		&-icon
+			@include adaptive('width', 110, 55, 'desktop')
+			@include adaptive('height', 110, 55, 'desktop')
+			@include adaptive('margin-left', 34, 17, 'desktop')
+			display: flex
+			align-items: center
+			justify-content: center
+			border-radius: 50%
+			background-color: #fff
+			position: relative
+			overflow: hidden
+			&::before
+				content: ''
+				@include adaptive('width', 38, 19, 'desktop')
+				@include adaptive('height', 38, 19, 'desktop')
+				background-image: url('/img/icons/play.svg')
+				background-size: contain
+				background-repeat: no-repeat
+				background-position: center
+				transition: .7s
+				z-index: 2
+			&::after
+				content: ''
+				background-color: $accent
+				position: absolute
+				top: 0
+				left: 0
+				display: block
+				width: 100%
+				height: 100%
+				opacity: 0
+				border-radius: 100%
+				transform: translate(0, 100%)
+				transition: opacity .7s cubic-bezier(0.215, 0.61, 0.355, 1),border-radius 0s .7s,transform 0s .7s
+		&:hover
+			color: #fff
+			.main__video-icon
+				&::after
+					opacity: 1
+					border-radius: 0
+					transform: translate(0)
+					transition: border-radius .7s cubic-bezier(0.215, 0.61, 0.355, 1),transform .7s cubic-bezier(0.215, 0.61, 0.355, 1)
+				&::before
+					filter: invert(100%)
+	&__quote
+		@include adaptive('font-size', 44, 22, 'desktop')
+		&-author
+			@include adaptive('font-size', 48, 24, 'desktop')
+
+@media only screen and (max-width : 1024px)
+	.main
+		&__flexbox
+			@include adaptive('padding-top', 40, 15, 'mobile')
+			@include adaptive('padding-bottom', 50, 18, 'mobile')
+			@include adaptive('margin-top', 40, 15, 'mobile')
+			flex-direction: column
+			align-items: flex-start
+		&__video
+			@include adaptive('font-size', 132, 48, 'mobile')
+			letter-spacing: -0.03em
+			line-height: 1.1
+			display: flex
+			justify-content: space-between
+			&-icon
+				@include adaptive('width', 150, 55, 'mobile')
+				@include adaptive('height', 150, 55, 'mobile')
+				&::before
+					content: ''
+					@include adaptive('width', 52, 19, 'mobile')
+					@include adaptive('height', 52, 19, 'mobile')
+				&::after
+					display: none
+			&:hover .main__video-icon::before
+				filter: none
+		&__quote
+			@include adaptive('font-size', 50, 18, 'mobile')
+			letter-spacing: -0.03em
+			line-height: 1.2
+			&-author
+				@include adaptive('font-size', 50, 18, 'mobile')
+				@include adaptive('margin-top', 8, 2, 'mobile')
+				align-self: flex-end

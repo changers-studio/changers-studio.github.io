@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Orbis | Contact</title>
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" sizes="192x192" href="img/favicon.ico" />
+
+		<!-- libs css -->
+		<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="libs/fancybox/fancybox.min.css" />
+
+		<!-- main css -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- gsap -->
+		<script defer src="libs/gsap/gsap.min.js"></script>
+		<script defer src="libs/gsap/ScrollTrigger.min.js"></script>
+		<script defer src="libs/gsap/ScrollSmoother.min.js"></script>
+		<script defer src="libs/gsap/ScrollToPlugin.min.js"></script>
+
+		<!-- libs js -->
+		<script defer src="libs/swiper/swiper-bundle.min.js"></script>
+
+		<script defer src="libs/fancybox/fancybox.min.js"></script>
+		<script defer src="libs/inputmask.min.js"></script>
+		<script defer src="libs/dynamicAdapt.js"></script>
+
+		<!-- main js -->
+		<script defer src="js/main.js"></script>
+	</head>
+
+	<body class="isnohome contact-page">
+		<div id="smooth-wrapper">
+			<div id="smooth-content">
+				<header class="header">
+					<div class="header__container container">
+						<a href="index.html" class="header__logo">
+							<img src="img/logo-black.svg" alt="Logo" class="header__logo-img" />
+						</a>
+
+						<div class="header__menu-wrap">
+							<nav class="header__menu">
+								<a href="who-we-are.html" class="header__menu-item btn">
+									<span class="btn__inner">Who We Are</span>
+								</a>
+								<a href="what-we-do.html" class="header__menu-item btn">
+									<span class="btn__inner">What We Do</span>
+								</a>
+								<a href="portfolio.html" class="header__menu-item btn">
+									<span class="btn__inner">Portfolio</span>
+								</a>
+								<a href="contact.html" class="header__menu-item btn">
+									<span class="btn__inner">Contact</span>
+								</a>
+							</nav>
+
+							<div class="header__social">
+								<a
+									href="https://www.facebook.com/orbisgroupinc/"
+									class="header__social-item"
+									target="_blank"
+								>
+									<img src="img/icons/facebook_gray.svg" alt="Facebook" />
+								</a>
+
+								<a
+									href="https://www.instagram.com/orbisgroupinc/"
+									class="header__social-item"
+									target="_blank"
+								>
+									<img src="img/icons/linkedin_gray.svg" alt="LinkedIn" />
+								</a>
+
+								<a
+									href="https://www.linkedin.com/company/orbisgroupinc/about/"
+									class="header__social-item"
+									target="_blank"
+								>
+									<img src="img/icons/instagram_gray.svg" alt="Instagram" />
+								</a>
+							</div>
+						</div>
+
+						<button
+							type="button"
+							class="header__menu-btn btn"
+							aria-label="Hamburger menu"
+						>
+							Menu
+						</button>
+					</div>
+				</header>
+
+				<section class="template contact">
+					<div class="container">
+						<div class="template__top">
+							<h1 class="template__title reveal-text _c-accent">Contact</h1>
+
+							<div class="contact__social">
+								<a
+									href="https://www.facebook.com/orbisgroupinc/"
+									target="_blank"
+									class="contact__social-item btn"
+								>
+									<span class="btn__inner">Facebook</span>
+								</a>
+
+								<a
+									href="https://www.instagram.com/orbisgroupinc/"
+									target="_blank"
+									class="contact__social-item btn"
+								>
+									<span class="btn__inner">Instagram</span>
+								</a>
+
+								<a
+									href="https://www.linkedin.com/company/orbisgroupinc/about/"
+									target="_blank"
+									class="contact__social-item btn"
+								>
+									<span class="btn__inner">LinkedIn</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="contact__container">
+							<h2 class="contact__heading">Contact us</h2>
+
+							<div class="template__container contact__flexbox">
+								<div class="col contact__data">
+									<a href="tel:+17789577787" class="contact__data-item">
+										<span class="contact__data-heading">Phone:</span>
+										<span class="contact__data-text">+1 778-957-7787</span>
+									</a>
+
+									<a href="mailto:info@orbisgroup.ca" class="contact__data-item">
+										<span class="contact__data-heading">E-mail:</span>
+										<span class="contact__data-text">info@orbisgroup.ca</span>
+									</a>
+
+									<address class="contact__data-item">
+										<span class="contact__data-heading">Address:</span>
+										<span class="contact__data-text">
+											Orbis Group, <br />
+											1585 Cliveden Ave Unit #8, <br />
+											Canada
+										</span>
+									</address>
+								</div>
+
+								<form class="col contact__form">
+									<label class="contact__form-item">
+										<span class="contact__form-caption">Name *</span>
+
+										<input
+											type="text"
+											class="contact__form-input"
+											name="Name"
+											placeholder="John Smith"
+											required
+										/>
+									</label>
+
+									<label class="contact__form-item">
+										<span class="contact__form-caption">E-mail *</span>
+
+										<input
+											type="email"
+											class="contact__form-input"
+											name="E-mail"
+											placeholder="example@gmail.com"
+											required
+										/>
+									</label>
+
+									<label class="contact__form-item">
+										<span class="contact__form-caption">Phone</span>
+
+										<input
+											type="text"
+											class="contact__form-input input-phone"
+											name="Phone number"
+											placeholder="+ _ ___-___-____"
+										/>
+									</label>
+
+									<label class="contact__form-item">
+										<span class="contact__form-caption">Message</span>
+
+										<textarea
+											class="contact__form-input contact__form-textarea"
+											name="Message"
+											placeholder="Write your message"
+										></textarea>
+									</label>
+
+									<button type="submit" class="contact__form-submit btn">
+										<span class="btn__inner">Send</span>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<footer class="footer">
+					<div class="container">
+						<div class="footer__top">
+							<div class="col">
+								<a href="index.html" class="footer__logo">
+									<img src="img/logo.svg" alt="Logo" class="footer__logo-img" />
+								</a>
+
+								<p class="footer__text">
+									Orbis Group, <br />
+									1585 Cliveden Ave Unit #8, <br />
+									Canada
+								</p>
+							</div>
+
+							<div class="col _half-w">
+								<nav class="footer__menu">
+									<a href="index.html" class="footer__menu-item _underline-hover">Home</a>
+									<a href="who-we-are.html" class="footer__menu-item _underline-hover">
+										About us
+									</a>
+									<a href="what-we-do.html" class="footer__menu-item _underline-hover">
+										Solutions
+									</a>
+									<a href="portfolio.html" class="footer__menu-item _underline-hover">
+										Portfolio
+									</a>
+									<a href="contact.html" class="footer__menu-item _underline-hover">
+										Contact
+									</a>
+								</nav>
+							</div>
+
+							<div class="col footer__top-flexbox _half-w">
+								<div class="footer__contacts">
+									<a href="mailto:info@orbisgroup.ca" class="footer__contacts-item">
+										<span class="footer__contacts-caption">E-mail:</span>
+										<span class="footer__contacts-data">info@orbisgroup.ca</span>
+									</a>
+
+									<a href="tel:+1778-819-9999" class="footer__contacts-item">
+										<span class="footer__contacts-caption">Phone:</span>
+										<span class="footer__contacts-data">+1778-819-9999</span>
+									</a>
+								</div>
+
+								<button
+									type="button"
+									class="footer__scroll-top"
+									aria-label="Scroll to top"
+								></button>
+							</div>
+						</div>
+
+						<div class="footer__bottom">
+							<div class="col footer__copyrights-wrap">
+								<span class="footer__copyrights">© Orbis group 2007-2023</span>
+							</div>
+							<div class="col footer__links _half-w">
+								<a href="privacy-policy.html" class="footer__link _underline-hover"
+									>Privacy Policy</a
+								>
+							</div>
+							<div class="col footer__bottom-flexbox _half-w">
+								<a
+									href="terms-conditions.html"
+									class="footer__link _underline-hover"
+									data-da=".footer__links, 1024, 1"
+								>
+									Terms & Conditions
+								</a>
+
+								<div class="footer__social">
+									<a
+										href="https://www.facebook.com/orbisgroupinc/"
+										class="footer__social-item"
+										target="_blank"
+									>
+										<img
+											class="footer__social-icon"
+											src="img/icons/facebook.svg"
+											alt="Facebook"
+										/>
+									</a>
+
+									<a
+										href="https://www.instagram.com/orbisgroupinc/"
+										class="footer__social-item"
+										target="_blank"
+									>
+										<img
+											class="footer__social-icon"
+											src="img/icons/linkedin.svg"
+											alt="LinkedIn"
+										/>
+									</a>
+
+									<a
+										href="https://www.linkedin.com/company/orbisgroupinc/about/"
+										class="footer__social-item"
+										target="_blank"
+									>
+										<img
+											class="footer__social-icon"
+											src="img/icons/instagram.svg"
+											alt="Instagram"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
