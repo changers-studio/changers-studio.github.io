@@ -74,44 +74,46 @@ elemsRevealWrap.forEach((target) => {
 
 // Text change
 if (document.querySelector('.values__title')) {
-	const valuesTitle = document.querySelector('.values__title')
-	let valuesTitleHtml = valuesTitle.innerHTML
-	let newvaluesTitleHtml = `<span class='values__title-container'>${valuesTitleHtml}</span>`
-	valuesTitle.innerHTML = newvaluesTitleHtml
+	window.addEventListener('load', () => {
+		const valuesTitle = document.querySelector('.values__title')
+		let valuesTitleHtml = valuesTitle.innerHTML
+		let newvaluesTitleHtml = `<span class='values__title-container'>${valuesTitleHtml}</span>`
+		valuesTitle.innerHTML = newvaluesTitleHtml
 
-	const valuesTitleWrap = document.querySelector('.values__title-container')
-	gsap
-		.timeline({
-			paused: true,
-			scrollTrigger: { trigger: valuesTitle },
+		const valuesTitleWrap = document.querySelector('.values__title-container')
+		gsap
+			.timeline({
+				paused: true,
+				scrollTrigger: { trigger: valuesTitle },
+			})
+			.to(valuesTitleWrap, {
+				duration: 1.5,
+				yPercent: -100,
+				delay: 0.2,
+				ease: 'power4.out',
+			})
+
+		let targets = gsap.utils.toArray('.values__title-items .change')
+		let dur = 0.5
+		let hold = 3
+
+		targets.forEach((obj, i) => {
+			let tl = gsap.timeline({
+				delay: dur * i + hold * i - 0.5,
+				repeat: -1,
+				repeatDelay: (targets.length - 1) * (dur + hold) - dur + 0.5,
+				defaults: {
+					ease: 'none',
+					duration: dur,
+					opacity: 1,
+				},
+				paused: true,
+				scrollTrigger: { trigger: obj },
+			})
+
+			tl.from(obj, { yPercent: 30, opacity: 0 })
+			tl.to(obj, { yPercent: -30, opacity: 0 }, '+=' + (hold - 0.5))
 		})
-		.to(valuesTitleWrap, {
-			duration: 1.5,
-			yPercent: -100,
-			delay: 0.2,
-			ease: 'power4.out',
-		})
-
-	let targets = gsap.utils.toArray('.values__title-items .change')
-	gsap.set(targets, { autoAlpha: 1 })
-	let dur = 0.5
-	let hold = 3
-
-	targets.forEach((obj, i) => {
-		let tl = gsap.timeline({
-			delay: dur * i + hold * i - 0.5,
-			repeat: -1,
-			repeatDelay: (targets.length - 1) * (dur + hold) - dur + 0.5,
-			defaults: {
-				ease: 'none',
-				duration: dur,
-			},
-			paused: true,
-			scrollTrigger: { trigger: obj },
-		})
-
-		tl.from(obj, { yPercent: 30, opacity: 0 })
-		tl.to(obj, { yPercent: -30, opacity: 0 }, '+=' + (hold - 0.5))
 	})
 }
 //
