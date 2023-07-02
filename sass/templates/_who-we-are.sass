@@ -1,0 +1,87 @@
+.story
+	&__image
+		overflow: hidden
+		@include adaptive('margin-top', 180, 90, 'desktop')
+		&-caption
+			@include adaptive('font-size', 132, 70, 'desktop')
+			@include adaptive('margin-bottom', 16, 8, 'desktop')
+			line-height: 0.9
+			text-align: right
+			letter-spacing: -0.05em
+		&-inner
+			width: 100%
+			@include adaptive('height', 888, 475, 'desktop')
+			object-fit: cover
+			object-position: center
+
+.team
+	&__main
+		display: flex
+		@include adaptive('gap', 10, 5, 'desktop')
+		@include adaptive('padding-top', 30, 15, 'desktop')
+		@include adaptive('margin-top', 160, 80, 'desktop')
+		border-top: 1px solid $line-3
+		.team__item
+			width: 50%
+			margin-top: 0
+			&-data
+				@include adaptive('padding-top', 20, 10, 'desktop')
+			&-title
+				@include adaptive('font-size', 24, 12, 'desktop')
+	&__container
+		@include adaptive('margin-top', 100, 50, 'desktop')
+	&__row
+		display: flex
+		justify-content: space-between
+		@include adaptive('gap', 10, 5, 'desktop')
+	&__item
+		@include adaptive('width', 290, 140, 'desktop')
+		@include adaptive('margin-top', 100, 50, 'desktop')
+		&-img
+			@include adaptive('margin-bottom', 16, 8, 'desktop')
+			display: flex
+			overflow: hidden
+			img
+				width: 100%
+		&-data
+			@include adaptive('padding-top', 16, 8, 'desktop')
+			border-top: 1px solid $line-3
+			line-height: 1.05
+		&-title
+			@include adaptive('font-size', 20, 10, 'desktop')
+			@include adaptive('margin-bottom', 4, 2, 'desktop')
+			font-weight: 500
+		&-subtitle
+			color: $gray-4
+
+@media only screen and (max-width : 1024px)
+	.story
+		@include adaptive('padding-top', 190, 70, 'mobile')
+		&__image
+			@include adaptive('margin-top', 160, 60, 'mobile')
+			&-caption
+				@include adaptive('font-size', 98, 36, 'mobile')
+				@include adaptive('margin-bottom', 25, 10, 'mobile')
+			&-inner
+				@include adaptive('height', 456, 168, 'mobile')
+
+	.team
+		&__main
+			@include adaptive('gap', 24, 9, 'mobile')
+			@include adaptive('padding-top', 20, 10, 'mobile')
+			@include adaptive('margin-top', 160, 60, 'mobile')
+		&__row
+			flex-wrap: wrap
+			@include adaptive('gap', 24, 9, 'mobile')
+		&__item
+			@include adaptive('width', 445, 163, 'mobile')
+			@include adaptive('margin-top', 70, 25, 'mobile')
+			&-img
+				@include adaptive('margin-bottom', 27, 10, 'mobile')
+			&-data
+				@include adaptive('padding-top', 27, 9, 'mobile')
+			&-title
+				@include adaptive('font-size', 43, 16, 'mobile')
+				@include adaptive('margin-bottom', 13, 5, 'mobile')
+			&-subtitle
+				@include adaptive('font-size', 38, 14, 'mobile')
