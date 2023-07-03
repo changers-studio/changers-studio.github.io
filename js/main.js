@@ -72,6 +72,30 @@ elemsRevealWrap.forEach((target) => {
 })
 //
 
+// Text reveal
+const titleReveal = document.querySelectorAll('.reveal-title')
+titleReveal.forEach((elem) => {
+	let htmlTitle = elem.innerHTML
+	let newHtmlTitle = `<span class='reveal-title__container'>${htmlTitle}</span>`
+	elem.innerHTML = newHtmlTitle
+})
+
+const titleRevealWrap = document.querySelectorAll('.reveal-title__container')
+titleRevealWrap.forEach((target) => {
+	gsap
+		.timeline({
+			paused: true,
+			scrollTrigger: { trigger: target },
+		})
+		.to(target, {
+			duration: 1.5,
+			yPercent: -125,
+			delay: 0.2,
+			ease: 'power4.out',
+		})
+})
+//
+
 // Text change
 if (document.querySelector('.values__title')) {
 	window.addEventListener('load', () => {
