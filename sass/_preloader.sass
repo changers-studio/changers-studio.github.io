@@ -6,13 +6,14 @@
 	left: 0
 	background-color: $black
 	color: $accent
-	z-index: 10
+	z-index: 20
 	@include adaptive('font-size', 200, 120, 'desktop')
 	font-weight: 500
+	line-height: 1
 	text-align: right
 	&__counter
 		@include adaptive('right', 200, 120, 'desktop')
-		@include adaptive('bottom', 100, 60, 'desktop')
+		@include adaptive('bottom', 50, 30, 'desktop')
 		position: absolute
 
 @media only screen and (max-width : 1024px)
