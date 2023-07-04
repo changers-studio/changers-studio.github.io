@@ -43,7 +43,7 @@ if (document.querySelector('.preloader')) {
 
 // Smooth scroll
 const smoother = ScrollSmoother.create({
-	smooth: 3,
+	smooth: 2,
 	effects: true,
 })
 //
@@ -72,7 +72,7 @@ elemsRevealWrap.forEach((target) => {
 })
 //
 
-// Text reveal
+// Titles reveal
 const titleReveal = document.querySelectorAll('.reveal-title')
 titleReveal.forEach((elem) => {
 	let htmlTitle = elem.innerHTML
@@ -85,7 +85,10 @@ titleRevealWrap.forEach((target) => {
 	gsap
 		.timeline({
 			paused: true,
-			scrollTrigger: { trigger: target },
+			scrollTrigger: {
+				trigger: target,
+				start: '-30%, bottom',
+			},
 		})
 		.to(target, {
 			duration: 1.5,
@@ -250,3 +253,16 @@ toTop.addEventListener('click', () => {
 // Fancybox
 Fancybox.bind('[data-fancybox]')
 //
+
+window.onload = (event) => {
+	let urlHash = window.location.href.split('#')[1]
+	let scrollElem = document.querySelector('#' + urlHash)
+
+	if (urlHash && scrollElem) {
+		gsap.to(smoother, {
+			scrollTop: smoother.offset(scrollElem, 'top top'),
+			duration: 1,
+			delay: 0.5,
+		})
+	}
+}
