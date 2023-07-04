@@ -61,7 +61,10 @@ elemsRevealWrap.forEach((target) => {
 	gsap
 		.timeline({
 			paused: true,
-			scrollTrigger: { trigger: target },
+			scrollTrigger: {
+				trigger: target,
+				start: '-30%, bottom',
+			},
 		})
 		.to(target, {
 			duration: 1.5,
@@ -110,8 +113,10 @@ if (document.querySelector('.values__title')) {
 		const valuesTitleWrap = document.querySelector('.values__title-container')
 		gsap
 			.timeline({
-				paused: true,
-				scrollTrigger: { trigger: valuesTitle },
+				scrollTrigger: {
+					trigger: valuesTitle,
+					start: '-30%, bottom',
+				},
 			})
 			.to(valuesTitleWrap, {
 				duration: 1.5,
