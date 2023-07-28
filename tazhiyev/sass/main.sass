@@ -1,0 +1,49 @@
+@import ./modules/reset
+@import ./modules/fonts
+@import ./modules/vars
+@import ./modules/mixin
+
+@import grid
+@import mods
+@import button
+
+@import templates/section-template
+@import templates/header
+@import templates/footer
+@import templates/main-screen
+@import templates/about
+@import templates/services
+@import templates/advantages
+@import templates/reviews
+@import templates/feedback
+@import templates/activity
+
+body
+	@include adaptive('font-size', 16, 8, 'desktop')
+	@include adaptive('font-size', 43, 16, 'mobile')
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	font-family: $default-font
+	background-color: #fff
+	color: $black
+	&::-webkit-scrollbar
+		width: 0px
+
+input, textarea
+	@include adaptive('font-size', 16, 8, 'desktop')
+	@include adaptive('font-size', 43, 16, 'mobile')
+	line-height: 1.2
+	font-weight: 500
+	color: $black
+	background: none
+	border: none
+	color: inherit
+	width: 100%
+
+::placeholder
+	@include adaptive('font-size', 16, 8, 'desktop')
+	@include adaptive('font-size', 43, 16, 'mobile')
+	color: $input
+	font-family: $default-font
+	font-weight: 500

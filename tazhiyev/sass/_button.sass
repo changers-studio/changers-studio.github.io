@@ -1,0 +1,78 @@
+.btn
+	@include adaptive('font-size', 18, 9, 'desktop')
+	@include adaptive('border-radius', 100, 50, 'desktop')
+	@include adaptive('padding-top', 16, 8, 'desktop')
+	@include adaptive('padding-bottom', 16, 8, 'desktop')
+	@include adaptive('padding-right', 35, 17, 'desktop')
+	@include adaptive('padding-left', 35, 17, 'desktop')
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	position: relative
+	text-decoration: none
+	outline: none
+	overflow: hidden
+	cursor: pointer
+	border: none
+	background-color: $accent
+	color: #fff
+	font-weight: 500
+	line-height: 1.1
+	transition: .3s
+	&:focus, &:hover
+		text-decoration: none
+	&::after
+		content: ''
+		background-color: $black
+		position: absolute
+		top: 0
+		left: 0
+		display: block
+		width: 100%
+		height: 100%
+		opacity: 0
+		border-radius: 100%
+		transform: translate(0, 100%)
+		transition: opacity .65s cubic-bezier(0.215, 0.61, 0.355, 1),border-radius 0s .65s,transform 0s .65s
+	&:hover
+		color: #fff
+		&::after
+			opacity: 1
+			border-radius: 0
+			transform: translate(0)
+			transition: border-radius .65s cubic-bezier(0.215, 0.61, 0.355, 1),transform .65s cubic-bezier(0.215, 0.61, 0.355, 1)
+	&._circle-shape
+		@include adaptive('font-size', 16, 8, 'desktop')
+		@include adaptive('width', 260, 130, 'desktop')
+		@include adaptive('height', 260, 130, 'desktop')
+		padding: 0
+		border-radius: 50%
+		text-transform: uppercase
+		font-weight: 600
+	&._bg-black
+		background-color: $black
+		border: 1px solid $black
+		&::after
+			background-color: #fff
+		&:hover
+			color: $black
+	&__inner
+		position: relative
+		z-index: 2
+
+@media only screen and (max-width : 960px)
+	.btn
+		@include adaptive('font-size', 43, 16, 'mobile')
+		@include adaptive('border-radius', 270, 100, 'mobile')
+		@include adaptive('padding-top', 43, 16, 'mobile')
+		@include adaptive('padding-bottom', 43, 16, 'mobile')
+		@include adaptive('padding-right', 43, 16, 'mobile')
+		@include adaptive('padding-left', 43, 16, 'mobile')
+		width: 100%
+		&._circle-shape
+			@include adaptive('font-size', 49, 18, 'mobile')
+			@include adaptive('width', 655, 240, 'mobile')
+			@include adaptive('height', 655, 240, 'mobile')
+			margin-left: auto
+			margin-right: auto

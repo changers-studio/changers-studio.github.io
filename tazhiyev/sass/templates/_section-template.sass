@@ -1,0 +1,27 @@
+.section
+	@include adaptive('padding-top', 120, 60, 'desktop')
+	@include adaptive('padding-bottom', 120, 60, 'desktop')
+	background-color: #fff
+	&._bg-gray
+		background-color: $bg
+	&__container
+		margin-left: auto
+	&__title
+		@include adaptive('font-size', 56, 28, 'desktop')
+		line-height: 1
+		letter-spacing: -0.04em
+		text-transform: uppercase
+	&__subtitle
+		color: $gray
+		line-height: 1
+		etter-spacing: -0.01em
+
+@media only screen and (max-width : 960px)
+	.section
+		@include adaptive('padding-top', 136, 50, 'mobile')
+		@include adaptive('padding-bottom', 136, 50, 'mobile')
+		&._bd-radius
+			@include adaptive('border-top-left-radius', 55, 20, 'mobile')
+			@include adaptive('border-top-right-radius', 55, 20, 'mobile')
+		&__title
+			@include adaptive('font-size', 76, 28, 'mobile')
