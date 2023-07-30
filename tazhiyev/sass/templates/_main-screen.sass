@@ -1,7 +1,7 @@
 .main
 	background-color: $accent
 	color: #fff
-	min-height: 100vh
+	height: 100vh
 	display: flex
 	justify-content: space-between
 	flex-direction: column
@@ -12,7 +12,7 @@
 			position: relative
 			z-index: 2
 	&__title
-		@include adaptive('font-size', 114, 61, 'desktop')
+		@include adaptive('font-size', 123, 61.5, 'desktop')
 		letter-spacing: -0.04em
 		text-transform: uppercase
 		line-height: 1
@@ -34,10 +34,13 @@
 		left: 0
 		&::after
 			background-color: #fff
-		&-icon path
-			transition: .65s
+		&-icon
+			@include adaptive('width', 24, 12, 'desktop')
+			@include adaptive('height', 24, 12, 'desktop')
+			path
+				transition: .65s
 		&:hover
-			.main__btn-icon path
+			.main__btn-icon	path
 				stroke: $black
 	&__image
 		@include adaptive('left', 330, 165, 'desktop')
@@ -90,6 +93,37 @@
 			bottom: 0
 			right: 0
 			display: flex
+	&-services
+		background: none
+		&__bg
+			background-image: url('/img/services__bg.png')
+			background-size: 100% 110vh
+			background-repeat: no-repeat
+			background-position: top center
+			background-color: #000
+		&__btn
+			border-color: rgba(129, 129, 136, 0.70)
+			&-icon path
+				stroke: rgba(129, 129, 136, 0.70)
+			&:hover
+				border-color: #fff
+		&__text
+			@include adaptive('width', 260, 130, 'desktop')
+			@include adaptive('margin-left', 184, 92, 'desktop')
+			@include adaptive('margin-bottom', 30, 15, 'desktop')
+			@include adaptive('font-size', 18, 9, 'desktop')
+			line-height: 1
+			font-weight: 500
+		&__quality
+			@include adaptive('width', 792, 396, 'desktop')
+			@include adaptive('bottom', 190, 95, 'desktop')
+			position: absolute
+			right: 0
+			max-width: none
+			max-height: none
+			display: flex
+			&-mobile
+				display: none
 
 @media only screen and (max-width : 960px)
 	.main
@@ -131,3 +165,24 @@
 				@include adaptive('width', 830, 305, 'mobile')
 				position: relative
 				align-self: center
+		&-services
+			.header__btn
+				display: none
+			.main__title
+				&-center
+					@include adaptive('margin-left', 255, 95, 'mobile')
+					text-align: left
+				&-bottom
+					text-align: right
+			&__bg
+				background-image: url('/img/services__bg-mobile.png')
+				background-size: contain
+			&__text
+				@include adaptive('width', 575, 210, 'mobile')
+				@include adaptive('margin-bottom', 27, 10, 'mobile')
+				@include adaptive('font-size', 38, 14, 'mobile')
+				line-height: 1.05
+			&__quality
+				display: none
+				&-mobile
+					display: flex

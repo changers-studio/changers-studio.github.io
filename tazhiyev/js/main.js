@@ -26,16 +26,19 @@ for (let i = 0; i < reviews.length; i++) {
 //
 
 // Scroll to
-const toTop = document.querySelector('.footer__btn')
 const toSecondSection = document.querySelector('.main__btn')
+const toTop = document.querySelector('.footer__btn')
 
 toTop.addEventListener('click', () => {
 	gsap.to(window, { duration: 2, scrollTo: 0 })
 })
 
-toSecondSection.addEventListener('click', () => {
-	gsap.to(window, { duration: 1, scrollTo: '#second-section' })
-})
+if (toSecondSection) {
+	toSecondSection.addEventListener('click', () => {
+		gsap.to(window, { duration: 1, scrollTo: '#second-section' })
+	})
+}
+
 //
 
 // Phone mask
@@ -65,38 +68,42 @@ if (window.innerWidth <= 960) {
 
 // Main screen anime
 const imageRevealMain = document.querySelector('.image-reveal-main')
-const titleRevealMain = document.querySelector('.title-reveal-main')
+const textRevealMain = document.querySelectorAll('.text-reveal-main')
 
-let titleRevealSplitMain = new SplitText(titleRevealMain, { type: 'words, chars' })
-let titleRevealCharsMain = titleRevealSplitMain.chars
+textRevealMain.forEach((text) => {
+	let textRevealSplitMain = new SplitText(text, { type: 'words, chars' })
+	let textRevealCharsMain = textRevealSplitMain.chars
 
-gsap.set(titleRevealCharsMain, {
-	'will-change': 'opacity, transform',
-	opacity: 0,
-	rotationX: -90,
-	yPercent: 50,
-})
-gsap.to(titleRevealCharsMain, {
-	ease: 'power1.inOut',
-	opacity: 1,
-	rotationX: 0,
-	yPercent: 0,
-	stagger: {
-		each: 0.03,
-		from: 0,
-	},
+	gsap.set(textRevealCharsMain, {
+		'will-change': 'opacity, transform',
+		opacity: 0,
+		rotationX: -90,
+		yPercent: 50,
+	})
+	gsap.to(textRevealCharsMain, {
+		ease: 'power1.inOut',
+		opacity: 1,
+		rotationX: 0,
+		yPercent: 0,
+		stagger: {
+			each: 0.03,
+			from: 0,
+		},
+	})
 })
 
-gsap.set(imageRevealMain, {
-	opacity: 0,
-	xPercent: 40,
-})
-gsap.to(imageRevealMain, {
-	ease: 'power4.out',
-	duration: 2,
-	opacity: 1,
-	xPercent: 0,
-})
+if (imageRevealMain) {
+	gsap.set(imageRevealMain, {
+		opacity: 0,
+		xPercent: 40,
+	})
+	gsap.to(imageRevealMain, {
+		ease: 'power4.out',
+		duration: 2,
+		opacity: 1,
+		xPercent: 0,
+	})
+}
 //
 
 // Header anime
@@ -139,7 +146,7 @@ textReveal.forEach((text) => {
 		scrollTrigger: {
 			trigger: text,
 			start: 'top bottom',
-			end: 'bottom center',
+			end: 'bottom 65%',
 			scrub: 0.9,
 		},
 	})
@@ -147,11 +154,11 @@ textReveal.forEach((text) => {
 //
 
 // Circles size change
-const circles = document.querySelectorAll('.about__data-circle')
+const circles = document.querySelectorAll('.about__data-item')
 
 circles.forEach((circle) => {
 	gsap.set(circle, {
-		scale: 0.7,
+		scale: 0.6,
 	})
 
 	gsap.to(circle, {
@@ -160,7 +167,7 @@ circles.forEach((circle) => {
 		scrollTrigger: {
 			trigger: circle,
 			start: 'top bottom',
-			end: 'bottom 25%',
+			end: 'bottom 30%',
 			scrub: 1,
 		},
 	})
@@ -168,35 +175,37 @@ circles.forEach((circle) => {
 //
 
 // Horizontal scroll
+const xScroll = document.querySelector('.x-scroll')
 let xScrollMedia = gsap.matchMedia()
 
-xScrollMedia.add('(min-width: 961px)', () => {
-	gsap.to('.x-scroll__container', {
-		xPercent: -100,
-		x: () => innerWidth,
-		ease: 'none',
-		scrollTrigger: {
-			trigger: '.x-scroll',
-			start: 'top top',
-			end: () => innerWidth * 3,
-			scrub: true,
-			pin: true,
-			invalidateOnRefresh: true,
-			anticipatePin: 1,
-		},
-	})
+if (xScroll) {
+	xScrollMedia.add('(min-width: 961px)', () => {
+		gsap.to('.x-scroll__container', {
+			xPercent: -100,
+			x: () => innerWidth,
+			ease: 'none',
+			scrollTrigger: {
+				trigger: xScroll,
+				start: 'top top',
+				end: () => innerWidth * 3,
+				scrub: true,
+				pin: true,
+				invalidateOnRefresh: true,
+				anticipatePin: 1,
+			},
+		})
 
-	gsap.to('.x-scroll__pagination', {
-		width: '100%',
-		scrollTrigger: {
-			trigger: '.x-scroll',
-			start: 'top top',
-			end: () => innerWidth * 3,
-			scrub: true,
-		},
+		gsap.to('.x-scroll__pagination', {
+			width: '100%',
+			scrollTrigger: {
+				trigger: xScroll,
+				start: 'top top',
+				end: () => innerWidth * 3,
+				scrub: true,
+			},
+		})
 	})
-})
-
+}
 //
 
 // const cards = document.querySelectorAll('.card')

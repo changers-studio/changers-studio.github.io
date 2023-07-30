@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Даурен Тажиев | Главная</title>
+		<title>Даурен Тажиев | Услуги</title>
 
 		<meta
 			name="viewport"
-			content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
 		/>
 		<meta name="format-detection" content="telephone=no" />
 
@@ -29,24 +29,15 @@
 		<!-- libs js -->
 		<script defer src="libs/inputmask.min.js"></script>
 
-		<!-- preloader -->
-		<!-- <script defer src="js/preloader.js"></script> -->
-
 		<!-- main js -->
 		<script defer src="js/main.js"></script>
 	</head>
 
 	<body>
-		<!-- <div class="preloader">
-			<p class="preloader__title">TAZHIYEV</p>
-
-			<div class="preloader__counter"><span id="prelodaer-count">0</span>%</div>
-		</div> -->
-
 		<div id="smooth-wrapper">
 			<div id="smooth-content">
-				<div class="_bg-accent">
-					<div class="main">
+				<div class="main-services__bg">
+					<div class="main main-services">
 						<header class="header">
 							<div class="container header__container">
 								<div class="col-1">
@@ -110,17 +101,37 @@
 							</div>
 						</header>
 
-						<div class="container main__container">
+						<img
+							class="main-services__quality-mobile"
+							src="img/services__quality-mobile.svg"
+							alt="Качества"
+						/>
+
+						<div class="container main__container main-services__container">
 							<div class="main__container-inner">
+								<img
+									class="main-services__quality"
+									src="img/services__quality.svg"
+									alt="Качества"
+								/>
+
+								<p class="main-services__text text-reveal-main">
+									Своевременная и качественная юридическая поддержка бизнеса
+								</p>
+
 								<h1 class="main__title text-reveal-main">
-									Юридическая <span class="main__title-center">консультация</span>
-									<span class="main__title-bottom">Тажиева Даурена</span>
+									Юридические <span class="main__title-center">услуги</span>
+									<span class="main__title-bottom">для бизнеса</span>
 								</h1>
 
-								<button class="main__btn btn" type="button" aria-label="Листить вниз">
+								<button
+									class="main__btn main-services__btn btn"
+									type="button"
+									aria-label="Листить вниз"
+								>
 									<span class="btn__inner">
 										<svg
-											class="main__btn-icon"
+											class="main__btn-icon main-services__btn-icon"
 											width="23"
 											height="25"
 											viewBox="0 0 23 25"
@@ -136,42 +147,69 @@
 									</span>
 								</button>
 							</div>
-
-							<img
-								src="img/main__photo.png"
-								alt="Фото Тажиева Даурена"
-								class="main__image image-reveal-main"
-							/>
 						</div>
 					</div>
 
 					<section class="about section _bd-radius" id="second-section">
 						<div class="container">
 							<div class="section__container col-4">
-								<blockquote class="about__blockquote text-reveal">
-									«Каждый имеет право на признание его правосубъектности и вправе защищать
-									свои права и свободы всеми не противоречащими закону способами,
-									включая необходимую оборону»
+								<blockquote class="about__blockquote _uppercase text-reveal">
+									Вы можете воспользоваться услугами по комплексному юридическому
+									обслуживанию бизнеса (юридических лиц и индивидуальных предпринимателей)
+									в Казахстане.
 								</blockquote>
 
-								<div class="about__blockquote-info">
-									<div class="text-reveal">
-										статья 13 Конституции <br />
-										Республики Казахстан
+								<div class="about__services">
+									<h3 class="about__services-heading text-reveal">
+										В чем заключаются юридические услуги для бизнеса:
+									</h3>
+
+									<div class="about__services-container">
+										<div class="about__services-item">
+											<div class="about__services-number col-1 text-reveal">01</div>
+											<p class="about__services-text text-reveal">
+												Предоставление письменных и устных консультаций по правовым
+												вопросам;
+											</p>
+										</div>
+
+										<div class="about__services-item">
+											<div class="about__services-number col-1 text-reveal">02</div>
+											<p class="about__services-text text-reveal">
+												Подготовка юридических документов (договоров, внутренних, <br />
+												кадровых, процессуальных документов и т.п.);
+											</p>
+										</div>
+
+										<div class="about__services-item">
+											<div class="about__services-number col-1 text-reveal">03</div>
+											<p class="about__services-text text-reveal">
+												Представительство интересов в судах и государственных органах;
+											</p>
+										</div>
+
+										<div class="about__services-item">
+											<div class="about__services-number col-1 text-reveal">04</div>
+											<p class="about__services-text text-reveal">
+												Решение других юридических вопросов.
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
 
-							<h2 class="about__title text-reveal">
-								Профессиональный
-								<span class="about__title-center col-4 _c-accent">юрист и бухгалтер</span>
-								<span class="about__title-bottom">республики казахстан</span>
+							<h2 class="about__title about-services__title text-reveal">
+								Онлайн <span class="_c-accent">сервис</span>
+								<span class="about-services__title-center">который предоставляет </span>
+								<span class="about-services__title-bottom"
+									><span class="_c-accent">юридические</span> услуги
+								</span>
 							</h2>
 
 							<div class="about__data">
 								<div class="about__data-item _offset-top">
 									<div class="about__data-circle"></div>
-									<div class="about__data-inner">
+									<div class="about__data-inner _offset">
 										<p class="about__data-number">17</p>
 										<p class="about__data-caption">
 											лет опыта в <br />
@@ -183,10 +221,10 @@
 								<div class="about__data-item _position-absolute">
 									<div class="about__data-circle"></div>
 									<div class="about__data-inner">
-										<p class="about__data-number">7</p>
-										<p class="about__data-caption">
-											лет опыта в <br />
-											бухгалтерии
+										<p class="about__data-number _has-icon">7000</p>
+										<p class="about__data-caption _offset">
+											предоставленных <br />
+											онлайн консультаций
 										</p>
 									</div>
 								</div>
@@ -194,10 +232,10 @@
 								<div class="about__data-item _offset-bottom">
 									<div class="about__data-circle"></div>
 									<div class="about__data-inner">
-										<p class="about__data-number _has-icon">1000</p>
-										<p class="about__data-caption _transform-none">
-											довольных <br />
-											клиентов
+										<p class="about__data-number _has-icon">100</p>
+										<p class="about__data-caption _offset">
+											завершенных <br />
+											проектов
 										</p>
 									</div>
 								</div>
@@ -206,92 +244,12 @@
 					</section>
 				</div>
 
-				<section class="services section _bd-radius _bg-gray">
-					<div class="container">
-						<h2 class="services__title section__title text-reveal">
-							Категории <br />
-							услуг
-						</h2>
-
-						<p class="section__subtitle text-reveal">
-							Задайте вопрос по любой <br />
-							из интерсующих вас тем
-						</p>
-
-						<div class="services__container">
-							<a href="#" class="services__btn btn _circle-shape">
-								<span class="btn__inner">
-									Задать вопрос <br />
-									юристу
-								</span>
-							</a>
-
-							<div class="section__container col-4">
-								<div class="services__flexbox">
-									<div class="services__col">
-										<h3 class="services__heading text-reveal">
-											Для <span class="_c-accent">частных</span> лиц
-										</h3>
-
-										<ul class="services__list">
-											<li class="services__list-item text-reveal">Гражданское право</li>
-											<li class="services__list-item text-reveal">
-												Гражданское процессуальное право
-											</li>
-											<li class="services__list-item text-reveal">Налоговое право</li>
-											<li class="services__list-item text-reveal">Трудовое право</li>
-											<li class="services__list-item text-reveal">Финансовое право</li>
-											<li class="services__list-item text-reveal">Жилищное право</li>
-											<li class="services__list-item text-reveal">Семейное право</li>
-											<li class="services__list-item text-reveal">Миграционное право</li>
-											<li class="services__list-item text-reveal">
-												Пенсионное и социальное обеспечение
-											</li>
-											<li class="services__list-item text-reveal">
-												Исполнительное производство
-											</li>
-										</ul>
-									</div>
-
-									<div class="services__col">
-										<h3 class="services__heading text-reveal">
-											Для <span class="_c-accent">бизнеса</span>
-										</h3>
-
-										<ul class="services__list">
-											<li class="services__list-item text-reveal">Гражданское право</li>
-											<li class="services__list-item text-reveal">
-												Гражданское процессуальное право
-											</li>
-											<li class="services__list-item text-reveal">Налоговое право</li>
-											<li class="services__list-item text-reveal">Трудовое право</li>
-											<li class="services__list-item text-reveal">Финансовое право</li>
-											<li class="services__list-item text-reveal">
-												Предпринимательское право
-											</li>
-											<li class="services__list-item text-reveal">Корпоративное право</li>
-											<li class="services__list-item text-reveal">
-												Интеллектуальная собственность
-											</li>
-											<li class="services__list-item text-reveal">
-												Разрешения и лицензии
-											</li>
-											<li class="services__list-item text-reveal">
-												Исполнительное производство
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="advantages section _bd-radius x-scroll">
+				<section class="advantages section x-scroll">
 					<div class="container">
 						<h2 class="section__title text-reveal">
-							Мои <br />
-							преимущества
+							Преимущества <br />
+							юридических услуг <br />
+							для бизнеса
 						</h2>
 
 						<div class="advantages__container x-scroll__container">
@@ -362,96 +320,6 @@
 
 						<div class="advantages__pagination">
 							<div class="advantages__pagination-inner x-scroll__pagination"></div>
-						</div>
-					</div>
-				</section>
-
-				<section class="reviews section">
-					<div class="container">
-						<h2 class="reviews__title section__title text-reveal">
-							Отзывы <br />
-							клиентов
-						</h2>
-
-						<div class="reviews__container">
-							<div class="reviews__item active">
-								<div class="reviews__item-date col-1">22.03.2023</div>
-
-								<div class="reviews__item-data col-3">
-									<h3 class="reviews__item-title">Имя Фамилия</h3>
-
-									<p class="reviews__item-text">
-										Выражаю Вам слова искренней благодарности за взаимное сотрудничество,
-										оказанную юридическую помощь, за высокое качество и оперативность
-										оказанных услуг. Выражаю Вам слова искренней благодарности за взаимное
-										сотрудничество, оказанную юридическую помощь, за высокое качество и
-										оперативность оказанных услуг.
-									</p>
-								</div>
-
-								<div class="col-2">
-									<div class="reviews__item-toggle">
-										<i class="reviews__item-icon"></i> Прочитать
-									</div>
-								</div>
-							</div>
-
-							<div class="reviews__item">
-								<div class="reviews__item-date col-1">22.03.2023</div>
-
-								<div class="reviews__item-data col-3">
-									<h3 class="reviews__item-title">Имя Фамилия</h3>
-
-									<p class="reviews__item-text">
-										Выражаю Вам слова искренней благодарности за взаимное сотрудничество,
-										оказанную юридическую помощь, за высокое качество и оперативность
-										оказанных услуг. Выражаю Вам слова искренней благодарности за взаимное
-										сотрудничество, оказанную юридическую помощь, за высокое качество и
-										оперативность оказанных услуг.
-									</p>
-								</div>
-
-								<div class="col-2">
-									<div class="reviews__item-toggle">
-										<i class="reviews__item-icon"></i> Прочитать
-									</div>
-								</div>
-							</div>
-
-							<div class="reviews__item">
-								<div class="reviews__item-date col-1">22.03.2023</div>
-
-								<div class="reviews__item-data col-3">
-									<h3 class="reviews__item-title">Имя Фамилия</h3>
-
-									<p class="reviews__item-text">
-										Выражаю Вам слова искренней благодарности за взаимное сотрудничество,
-										оказанную юридическую помощь, за высокое качество и оперативность
-										оказанных услуг. Выражаю Вам слова искренней благодарности за взаимное
-										сотрудничество, оказанную юридическую помощь, за высокое качество и
-										оперативность оказанных услуг.
-									</p>
-								</div>
-
-								<div class="col-2">
-									<div class="reviews__item-toggle">
-										<i class="reviews__item-icon"></i> Прочитать
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="reviews__btns">
-							<button type="button" class="reviews__btn btn _bg-black">
-								<span class="btn__inner">Больше отзывов</span>
-							</button>
-
-							<button type="button" class="reviews__btn btn">
-								<span class="btn__inner reviews__btn-inner">
-									Оставить отзыв
-									<i class="reviews__btn-icon"></i>
-								</span>
-							</button>
 						</div>
 					</div>
 				</section>

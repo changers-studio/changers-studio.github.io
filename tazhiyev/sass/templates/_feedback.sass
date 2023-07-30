@@ -1,6 +1,8 @@
 .feedback
 	@include adaptive('margin-top', 120, 60, 'desktop')
 	@include adaptive('padding-top', 100, 50, 'desktop')
+	&._mt-none
+		margin-top: 0
 	&__top
 		@include adaptive('margin-bottom', 100, 50, 'desktop')
 		display: flex
@@ -71,10 +73,10 @@
 				@include adaptive('padding-top', 68, 25, 'mobile')
 				@include adaptive('padding-bottom', 68, 25, 'mobile')
 			&-number
-				@include adaptive('font-size', 43, 16, 'mobile')
+				@include adaptive('font-size', 40, 16, 'mobile')
 				@include adaptive('margin-right', 142, 52, 'mobile')
 			&-caption
 				@include adaptive('margin-bottom', 41, 15, 'mobile')
-				@include adaptive('font-size', 43, 16, 'mobile')
+				@include adaptive('font-size', 40, 16, 'mobile')
 			&-input
-				@include adaptive('font-size', 43, 16, 'mobile')
+				@include adaptive('font-size', 40, 16, 'mobile')

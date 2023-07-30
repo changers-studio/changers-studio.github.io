@@ -11,7 +11,8 @@
 	&__container
 		@include adaptive('margin-top', 120, 60, 'desktop')
 		@include adaptive('gap', 10, 5, 'desktop')
-		display: flex
+		@include adaptive('padding-right', 120, 60, 'desktop')
+		display: inline-flex
 	&__item
 		@include adaptive('padding-top', 76, 38, 'desktop')
 		@include adaptive('padding-bottom', 76, 38, 'desktop')

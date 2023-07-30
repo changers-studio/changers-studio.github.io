@@ -63,6 +63,9 @@
 		&-item
 			font-weight: 300
 			letter-spacing: -0.02em
+			transition: .3s
+			&:hover
+				color: $accent
 		&-tel
 			@include adaptive('font-size', 86, 43, 'desktop')
 		&-email
@@ -125,7 +128,7 @@
 				width: 50%
 			&-item
 				@include adaptive('margin-bottom', 25, 10, 'mobile')
-				@include adaptive('font-size', 43, 16, 'mobile')
+				@include adaptive('font-size', 40, 16, 'mobile')
 				letter-spacing: -0.02em
 		&__social
 			gap: 6px
@@ -133,7 +136,7 @@
 			&-item
 				@include adaptive('border-radius', 120, 60, 'mobile')
 				@include adaptive('height', 170, 62, 'mobile')
-				@include adaptive('font-size', 43, 16, 'mobile')
+				@include adaptive('font-size', 40, 16, 'mobile')
 				width: calc(50% - 3px)
 			&-icon
 				@include adaptive('margin-right', 40, 15, 'mobile')
@@ -145,7 +148,7 @@
 			@include adaptive('padding-bottom', 68, 25, 'mobile')
 			flex-direction: column
 			&-item
-				@include adaptive('font-size', 101, 37, 'mobile')
+				@include adaptive('font-size', 100, 38, 'mobile')
 		&__bottom
 			@include adaptive('padding-top', 54, 20, 'mobile')
 			@include adaptive('padding-bottom', 54, 20, 'mobile')

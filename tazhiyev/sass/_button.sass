@@ -15,7 +15,7 @@
 	overflow: hidden
 	cursor: pointer
 	border: none
-	background-color: $accent
+	background-color: transparent
 	color: #fff
 	font-weight: 500
 	line-height: 1.1
@@ -54,21 +54,19 @@
 		background-color: $black
 		border: 1px solid $black
 		&::after
-			background-color: #fff
-		&:hover
-			color: $black
+			background-color: $accent
 	&__inner
 		position: relative
 		z-index: 2
 
 @media only screen and (max-width : 960px)
 	.btn
-		@include adaptive('font-size', 43, 16, 'mobile')
+		@include adaptive('font-size', 40, 16, 'mobile')
 		@include adaptive('border-radius', 270, 100, 'mobile')
-		@include adaptive('padding-top', 43, 16, 'mobile')
-		@include adaptive('padding-bottom', 43, 16, 'mobile')
-		@include adaptive('padding-right', 43, 16, 'mobile')
-		@include adaptive('padding-left', 43, 16, 'mobile')
+		@include adaptive('padding-top', 40, 16, 'mobile')
+		@include adaptive('padding-bottom', 40, 16, 'mobile')
+		@include adaptive('padding-right', 40, 16, 'mobile')
+		@include adaptive('padding-left', 40, 16, 'mobile')
 		width: 100%
 		&._circle-shape
 			@include adaptive('font-size', 49, 18, 'mobile')

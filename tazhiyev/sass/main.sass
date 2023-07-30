@@ -6,6 +6,7 @@
 @import grid
 @import mods
 @import button
+@import preloader
 
 @import templates/section-template
 @import templates/header
@@ -17,10 +18,14 @@
 @import templates/reviews
 @import templates/feedback
 @import templates/activity
+@import templates/contacts
+@import templates/blog
+@import templates/article
+@import templates/questions
 
 body
 	@include adaptive('font-size', 16, 8, 'desktop')
-	@include adaptive('font-size', 43, 16, 'mobile')
+	@include adaptive('font-size', 40, 16, 'mobile')
 	min-width: 320px
 	position: relative
 	line-height: 1.5
@@ -29,10 +34,12 @@ body
 	color: $black
 	&::-webkit-scrollbar
 		width: 0px
+	&.scroll-disabled
+		overflow: hidden
 
 input, textarea
 	@include adaptive('font-size', 16, 8, 'desktop')
-	@include adaptive('font-size', 43, 16, 'mobile')
+	@include adaptive('font-size', 40, 16, 'mobile')
 	line-height: 1.2
 	font-weight: 500
 	color: $black
@@ -43,7 +50,7 @@ input, textarea
 
 ::placeholder
 	@include adaptive('font-size', 16, 8, 'desktop')
-	@include adaptive('font-size', 43, 16, 'mobile')
+	@include adaptive('font-size', 40, 16, 'mobile')
 	color: $input
 	font-family: $default-font
 	font-weight: 500

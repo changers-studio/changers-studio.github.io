@@ -1,6 +1,31 @@
 .header
 	@include adaptive('padding-top', 20, 10, 'desktop')
 	@include adaptive('padding-bottom', 20, 10, 'desktop')
+	&._black
+		color: $black
+		._hover-underline
+			&::before
+				background-color: $black
+			&:hover
+				color: $black
+		.header
+			&__btn
+				color: #fff
+				background-color: $black
+				border-color: $black
+				&::after
+					background-color: #fff
+				&:hover
+					color: $black
+			&__menu
+				background-color: rgba(0, 0, 0, 0.03)
+			&__account-btn
+				border-color: $black
+				color: $black
+				&::after
+					background-color: $black
+				&:hover
+					color: #fff
 	&__container
 		@include adaptive('gap', 10, 5, 'desktop')
 		display: flex
@@ -64,7 +89,6 @@
 		display: flex
 		justify-content: flex-end
 		align-items: center
-		line-height: 1
 		&-btn
 			@include adaptive('margin-left', 40, 20, 'desktop')
 			@include adaptive('font-size', 16, 8, 'desktop')
@@ -81,6 +105,17 @@
 		@include adaptive('padding-top', 68, 25, 'mobile')
 		@include adaptive('padding-bottom', 68, 25, 'mobile')
 		position: static
+		&._black
+			.header
+				&__wrapper
+					background-color: #F7F7F7
+				&__account-btn
+					color: #fff
+					border-color: $accent
+					&:hover
+						border-color: transparent
+				&__menu
+					background-color: #fff
 		&__container
 			@include adaptive('gap', 40, 15, 'mobile')
 			flex-direction: column
@@ -148,8 +183,8 @@
 			@include adaptive('padding-right', 27, 10, 'mobile')
 			@include adaptive('padding-left', 82, 30, 'mobile')
 			@include adaptive('border-radius', 164, 60, 'mobile')
-			background-color: rgba(255, 255, 255, 0.20)
-			backdrop-filter: blur(10px)
+			background-color: #fff
+			color: $black
 			display: flex
 			justify-content: space-between
 			align-items: center
@@ -157,13 +192,13 @@
 			@include adaptive('font-size', 38, 14, 'mobile')
 			font-weight: 600
 			&-btn
-				@include adaptive('padding-top', 43, 16, 'mobile')
-				@include adaptive('padding-bottom', 43, 16, 'mobile')
+				@include adaptive('padding-top', 40, 16, 'mobile')
+				@include adaptive('padding-bottom', 40, 16, 'mobile')
 				@include adaptive('padding-right', 54, 20, 'mobile')
 				@include adaptive('padding-left', 54, 20, 'mobile')
 				@include adaptive('margin-left', 40, 20, 'mobile')
-				color: $accent
-				background-color: #fff
+				background-color: $accent
+				color: #fff
 				font-weight: 600
 				&:hover
 					color: $accent

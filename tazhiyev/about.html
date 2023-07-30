@@ -23,6 +23,7 @@
 		<script defer src="libs/gsap/gsap.min.js"></script>
 		<script defer src="libs/gsap/ScrollTrigger.min.js"></script>
 		<script defer src="libs/gsap/ScrollSmoother.min.js"></script>
+		<script defer src="libs/gsap/SplitText.min.js"></script>
 		<script defer src="libs/gsap/ScrollToPlugin.min.js"></script>
 
 		<!-- libs js -->
@@ -35,182 +36,198 @@
 	<body>
 		<div id="smooth-wrapper">
 			<div id="smooth-content">
-				<div class="main main-about">
-					<header class="header">
-						<div class="container header__container">
-							<div class="col-1">
-								<a href="index.html" class="header__logo">
-									<img class="header__logo-img" src="img/logo.svg" alt="Логотип" />
-								</a>
-							</div>
-
-							<div class="col-1">
-								<button type="button" class="header__btn btn" aria-label="Консультация">
-									<span class="btn__inner">Консультация</span>
-								</button>
-							</div>
-
-							<div class="header__menu col-2">
-								<button
-									type="button"
-									class="header__menu-close"
-									aria-label="Закрыть меню"
-								></button>
-
-								<nav class="header__menu-container">
-									<a href="#" class="header__menu-item _hover-underline">Обо мне</a>
-									<a href="#" class="header__menu-item _hover-underline">Вопросы</a>
-									<a href="#" class="header__menu-item _hover-underline">Для бизнеса</a>
-									<a href="#" class="header__menu-item _hover-underline">Блог</a>
-									<a href="#" class="header__menu-item _hover-underline">Контакты</a>
-								</nav>
-
-								<div class="header__menu-btns">
-									<a href="#" class="header__menu-btn _fill">Регистрация</a>
-									<a href="#" class="header__menu-btn">Войти</a>
-								</div>
-							</div>
-
-							<div class="header__wrapper col-2">
-								<button
-									type="button"
-									class="header__hamburger"
-									aria-label="Гамбургер меню"
-								></button>
-
-								<div class="header__account">
-									<a href="#" class="_hover-underline">Войти</a>
-
-									<a href="#" class="header__account-btn btn">
-										<span class="btn__inner">Регистрация</span>
+				<div class="_bg-accent">
+					<div class="main main-about">
+						<header class="header">
+							<div class="container header__container">
+								<div class="col-1">
+									<a href="index.html" class="header__logo">
+										<img class="header__logo-img" src="img/logo.svg" alt="Логотип" />
 									</a>
 								</div>
-							</div>
-						</div>
-					</header>
 
-					<div class="container main-about__container">
-						<div class="main-about__container-inner">
-							<h1 class="main-about__title main__title">
-								Тажиев <span class="main-about__title-center">Даурен</span>
-								<span class="main-about__title-bottom">Онгарбекович</span>
-							</h1>
+								<div class="col-1">
+									<button type="button" class="header__btn btn" aria-label="Консультация">
+										<span class="btn__inner">Консультация</span>
+									</button>
+								</div>
 
-							<p class="main-about__text col-2">
-								Родился <span class="_semi-bold">8 августа 1981 года</span> <br />
-								в городе Ленинск Кзыл-Ординской области Казахской ССР (ныне г. Байконур
-								Кызылординской области Республики Казахстан).
-							</p>
+								<div class="header__menu col-2">
+									<button
+										type="button"
+										class="header__menu-close"
+										aria-label="Закрыть меню"
+									></button>
 
-							<div class="main-about__info col-2">
-								<button
-									type="button"
-									class="main__btn main-about__btn btn"
-									aria-label="Листить вниз"
-								>
-									<div class="btn__inner">
-										<svg
-											class="main__btn-icon"
-											width="23"
-											height="25"
-											viewBox="0 0 23 25"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
+									<nav class="header__menu-container">
+										<a href="about.html" class="header__menu-item _hover-underline"
+											>Обо мне</a
 										>
-											<path
-												d="M12.0006 0.498665L12.0002 23.5018M12.0002 23.5018L21.987 13.5149M12.0002 23.5018L1.48375 12.9854"
-												stroke="white"
-												stroke-width="2"
-											/>
-										</svg>
-									</div>
-								</button>
+										<a href="questions.html" class="header__menu-item _hover-underline"
+											>Вопросы</a
+										>
+										<a href="services.html" class="header__menu-item _hover-underline"
+											>Для бизнеса</a
+										>
+										<a href="blog.html" class="header__menu-item _hover-underline"
+											>Блог</a
+										>
+										<a href="contacts.html" class="header__menu-item _hover-underline"
+											>Контакты</a
+										>
+									</nav>
 
-								<div class="main-about__info-box">
-									<p class="main-about__info-heading">Семейное положение:</p>
-									<p class="main-about__info-text">женат, трое детей.</p>
+									<div class="header__menu-btns">
+										<a href="#" class="header__menu-btn _fill">Регистрация</a>
+										<a href="#" class="header__menu-btn">Войти</a>
+									</div>
+								</div>
+
+								<div class="header__wrapper col-2">
+									<button
+										type="button"
+										class="header__hamburger"
+										aria-label="Гамбургер меню"
+									></button>
+
+									<div class="header__account">
+										<a href="#" class="_hover-underline">Войти</a>
+
+										<a href="#" class="header__account-btn btn">
+											<span class="btn__inner">Регистрация</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</header>
+
+						<div class="container main-about__container">
+							<div class="main-about__container-inner">
+								<h1 class="main-about__title main__title text-reveal-main">
+									Тажиев <span class="main-about__title-center">Даурен</span>
+									<span class="main-about__title-bottom">Онгарбекович</span>
+								</h1>
+
+								<p class="main-about__text col-2 text-reveal-main">
+									Родился <span class="_semi-bold">8 августа 1981 года</span> <br />
+									в городе Ленинск Кзыл-Ординской области Казахской ССР (ныне г. Байконур
+									Кызылординской области Республики Казахстан).
+								</p>
+
+								<div class="main-about__info col-2">
+									<button
+										type="button"
+										class="main__btn main-about__btn btn"
+										aria-label="Листить вниз"
+									>
+										<span class="btn__inner">
+											<svg
+												class="main__btn-icon"
+												width="23"
+												height="25"
+												viewBox="0 0 23 25"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M12.0006 0.498665L12.0002 23.5018M12.0002 23.5018L21.987 13.5149M12.0002 23.5018L1.48375 12.9854"
+													stroke="white"
+													stroke-width="2"
+												/>
+											</svg>
+										</span>
+									</button>
+
+									<div class="main-about__info-box">
+										<p class="main-about__info-heading text-reveal-main">
+											Семейное положение:
+										</p>
+										<p class="main-about__info-text text-reveal-main">
+											женат, трое детей.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<picture class="main-about__image image-reveal-main">
+								<source srcset="img/about__photo-mobile.png" media="(max-width: 960px)" />
+
+								<img src="img/about__photo.png" alt="Фото Тажиева Даурена" />
+							</picture>
+						</div>
+					</div>
+
+					<section class="about section _bd-radius" id="second-section">
+						<div class="container">
+							<div class="section__container col-4">
+								<blockquote class="about__blockquote _uppercase text-reveal">
+									Профессиональный бухгалтер в соответствии с Законом РК «О бухгалтерском
+									учете и финансовой отчетности»
+								</blockquote>
+
+								<div class="about__blockquote-info _br-none-mobile text-reveal">
+									<div class="text-reveal">
+										(сертификат профессионального бухгалтера <br />
+										№ПБ000264 от 26.11.2013 года, действительный член <br />
+										Палаты Профессиональных Бухгалтеров РК с 24.12.2013)
+									</div>
+								</div>
+							</div>
+
+							<div class="about__info _pt-more">
+								<h2 class="about__info-title section__title _mb-none-desktop text-reveal">
+									Образование
+								</h2>
+
+								<div class="about__info-container col-4">
+									<div class="about__info-item">
+										<span class="about__info-caption text-reveal">1998</span>
+
+										<p class="about__info-text col-2 text-reveal">
+											В 1998 году по окончании средней школы, <br />
+											поступил в
+											<span class="_bold">Юридический колледж.</span>
+										</p>
+									</div>
+
+									<div class="about__info-item">
+										<span class="about__info-caption text-reveal">2000</span>
+
+										<p class="about__info-text col-2 text-reveal">
+											в 2000 году (г. Алматы) окончил колледж с получением диплома с
+											отличием о среднем профессиональном образовании
+											<span class="_bold">(средний бал – 4,95)</span>, с присвоением
+											квалификации «Юрист» по специальности «Правоведение», по окончании
+											юридического колледжа продолжил обучение в Академии юриспруденции -
+											<span class="_bold">Высшей школе права «Әділет».</span>
+										</p>
+									</div>
+
+									<div class="about__info-item">
+										<span class="about__info-caption text-reveal">2003</span>
+
+										<p class="about__info-text col-2 text-reveal">
+											в 2003 году (г. Алматы) окончил академию с получением диплома с
+											отличием о высшем специальном образовании
+											<span class="_bold">(средний бал – 5,0)</span>, с присвоением
+											<span class="_bold">квалификации «Юрист»</span> по специальности
+											«Юриспруденция».
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
-
-						<picture class="main-about__image">
-							<source srcset="img/about__photo-mobile.png" media="(max-width: 960px)" />
-
-							<img src="img/about__photo.png" alt="Фото Тажиева Даурена" />
-						</picture>
-					</div>
+					</section>
 				</div>
 
-				<section class="about section _bd-radius" id="second-section">
+				<section class="activity section _bd-radius _bg-gray x-scroll">
 					<div class="container">
-						<div class="section__container col-4">
-							<blockquote class="about__blockquote _uppercase">
-								Профессиональный бухгалтер в соответствии с Законом РК «О бухгалтерском
-								учете и финансовой отчетности»
-							</blockquote>
-
-							<div class="about__blockquote-info _br-none-mobile">
-								<div class="text-reveal">
-									(сертификат профессионального бухгалтера <br />
-									№ПБ000264 от 26.11.2013 года, действительный член <br />
-									Палаты Профессиональных Бухгалтеров РК с 24.12.2013)
-								</div>
-							</div>
-						</div>
-
-						<div class="about__info _pt-more">
-							<h2 class="about__info-title section__title _mb-none-desktop">
-								Образование
-							</h2>
-
-							<div class="about__info-container col-4">
-								<div class="about__info-item">
-									<span class="about__info-caption">1998</span>
-
-									<p class="about__info-text col-2">
-										В 1998 году по окончании средней школы, <br />
-										поступил в
-										<span class="_bold">Юридический колледж.</span>
-									</p>
-								</div>
-
-								<div class="about__info-item">
-									<span class="about__info-caption">2000</span>
-
-									<p class="about__info-text col-2">
-										в 2000 году (г. Алматы) окончил колледж с получением диплома с
-										отличием о среднем профессиональном образовании
-										<span class="_bold">(средний бал – 4,95)</span>, с присвоением
-										квалификации «Юрист» по специальности «Правоведение», по окончании
-										юридического колледжа продолжил обучение в Академии юриспруденции -
-										<span class="_bold">Высшей школе права «Әділет».</span>
-									</p>
-								</div>
-
-								<div class="about__info-item">
-									<span class="about__info-caption">2003</span>
-
-									<p class="about__info-text col-2">
-										в 2003 году (г. Алматы) окончил академию с получением диплома с
-										отличием о высшем специальном образовании
-										<span class="_bold">(средний бал – 5,0)</span>, с присвоением
-										<span class="_bold">квалификации «Юрист»</span> по специальности
-										«Юриспруденция».
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="activity section _bd-radius _bg-gray">
-					<div class="container">
-						<h2 class="activity__title">
+						<h2 class="activity__title text-reveal">
 							<span class="_c-accent">Профессиональная</span>
 							<span class="activity__title-bottom">деятельность</span>
 						</h2>
 
-						<div class="activity__container">
+						<div class="activity__container x-scroll__container">
 							<div class="activity__item col-2">
 								<span class="activity__item-date">2003-2005</span>
 
@@ -282,10 +299,10 @@
 						</div>
 
 						<div class="activity__pagination">
-							<div class="activity__pagination-inner"></div>
+							<div class="activity__pagination-inner x-scroll__pagination"></div>
 						</div>
 
-						<p class="activity__note">
+						<p class="activity__note text-reveal">
 							*примечание: профессиональная деятельность раскрывается не <br />
 							полностью, указаны наиболее важные участки трудовой деятельности.
 						</p>
@@ -295,16 +312,16 @@
 				<section class="about section">
 					<div class="container">
 						<div class="about__info">
-							<h2 class="about__info-title section__title">
+							<h2 class="about__info-title section__title text-reveal">
 								социально-правовая <br />
 								активность
 							</h2>
 
 							<div class="about__info-container col-4">
 								<div class="about__info-item">
-									<span class="about__info-caption">2010</span>
+									<span class="about__info-caption text-reveal">2010</span>
 
-									<p class="about__info-text col-2">
+									<p class="about__info-text col-2 text-reveal">
 										С 2010 года по завершение проекта являлся официальным консультантом по
 										семейному праву (брачно-семейному законодательству Республики
 										Казахстан) на форуме <span class="_bold">Детки.kz</span> и в журнале
@@ -313,9 +330,9 @@
 								</div>
 
 								<div class="about__info-item">
-									<span class="about__info-caption">2014</span>
+									<span class="about__info-caption text-reveal">2014</span>
 
-									<p class="about__info-text col-2">
+									<p class="about__info-text col-2 text-reveal">
 										С сентября 2014 года по сегодняшний день предоставляет официальные
 										консультации по различным правовым вопросам на Казахстанской правовой
 										бирже <span class="_bold">Freelawyer.kz</span>.
@@ -325,13 +342,15 @@
 						</div>
 
 						<div class="about__info">
-							<h2 class="about__info-title section__title">Воинская служба</h2>
+							<h2 class="about__info-title section__title text-reveal">
+								Воинская служба
+							</h2>
 
 							<div class="about__info-container col-4">
 								<div class="about__info-item">
-									<span class="about__info-caption">2003</span>
+									<span class="about__info-caption text-reveal">2003</span>
 
-									<p class="about__info-text col-2">
+									<p class="about__info-text col-2 text-reveal">
 										После окончания академии, проработав около полугода, в ноябре 2003
 										года
 										<span class="_bold">был призван на срочную воинскую</span> службу
@@ -341,9 +360,9 @@
 								</div>
 
 								<div class="about__info-item">
-									<span class="about__info-caption">2004</span>
+									<span class="about__info-caption text-reveal">2004</span>
 
-									<p class="about__info-text col-2">
+									<p class="about__info-text col-2 text-reveal">
 										В октябре 2004 года, в
 										<span class="_bold">должности разведчика</span>, был <br />
 										уволен в запас по окончании срока службы.
@@ -356,10 +375,10 @@
 
 				<section class="about section _bg-gray _bd-radius">
 					<div class="container">
-						<h2 class="about__title-full">Публикации</h2>
+						<h2 class="about__title-full text-reveal">Публикации</h2>
 
 						<div class="section__container col-4">
-							<blockquote class="about__blockquote _uppercase _c-gray">
+							<blockquote class="about__blockquote _uppercase _c-gray text-reveal">
 								Имеет десятки публикаций по различным правовым вопросам в журналах
 								«Предприниматель и Право», «Клуб родителей Детки.kz», «Де-Юре. Журнал
 								юриста и нотариуса», «Кадры Труд Управление в организациях» и в других
@@ -370,9 +389,9 @@
 						<div class="about__info">
 							<div class="about__info-container col-4">
 								<div class="about__info-item">
-									<span class="about__info-caption">&gt;1000</span>
+									<span class="about__info-caption text-reveal">&gt;1000</span>
 
-									<p class="about__info-text col-2">
+									<p class="about__info-text col-2 text-reveal">
 										консультаций по вопросам брачно-семейного <br />
 										законодательства на интернет
 										<span class="_bold">форуме Детки.kz</span>
@@ -380,9 +399,9 @@
 								</div>
 
 								<div class="about__info-item">
-									<span class="about__info-caption">&gt;7000</span>
+									<span class="about__info-caption text-reveal">&gt;7000</span>
 
-									<p class="about__info-text col-2">
+									<p class="about__info-text col-2 text-reveal">
 										консультаций на Казахстанской <br />
 										правовой <span class="_bold">бирже Freelawyer.kz.</span>
 									</p>
@@ -403,15 +422,25 @@
 
 							<nav class="footer__menu col-2">
 								<div class="footer__menu-col col-1">
-									<a href="#" class="footer__menu-item _hover-underline">Главная</a>
-									<a href="#" class="footer__menu-item _hover-underline">Обо мне</a>
-									<a href="#" class="footer__menu-item _hover-underline">Вопросы</a>
+									<a href="index.html" class="footer__menu-item _hover-underline"
+										>Главная</a
+									>
+									<a href="about.html" class="footer__menu-item _hover-underline"
+										>Обо мне</a
+									>
+									<a href="questions.html" class="footer__menu-item _hover-underline"
+										>Вопросы</a
+									>
 								</div>
 
 								<div class="footer__menu-col col-1">
-									<a href="#" class="footer__menu-item _hover-underline">Для бизнеса</a>
-									<a href="#" class="footer__menu-item _hover-underline">Блог</a>
-									<a href="#" class="footer__menu-item _hover-underline">Контакты</a>
+									<a href="services.html" class="footer__menu-item _hover-underline"
+										>Для бизнеса</a
+									>
+									<a href="blog.html" class="footer__menu-item _hover-underline">Блог</a>
+									<a href="contacts.html" class="footer__menu-item _hover-underline"
+										>Контакты</a
+									>
 								</div>
 							</nav>
 
@@ -514,7 +543,7 @@
 									class="footer__btn btn"
 									aria-label="Прокрутка в начало страницы"
 								>
-									<div class="btn__inner">
+									<span class="btn__inner">
 										<svg
 											class="footer__btn-icon"
 											width="12"
@@ -529,7 +558,7 @@
 												stroke-width="1.5"
 											/>
 										</svg>
-									</div>
+									</span>
 								</button>
 							</div>
 						</div>
