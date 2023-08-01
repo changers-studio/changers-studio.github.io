@@ -1,0 +1,101 @@
+.questions
+	&__container
+		display: flex
+		justify-content: space-between
+		&-inner
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			justify-content: space-between
+	&__title
+		@include adaptiv('margin-bottom', 40, 20, 80, 30)
+		@include adaptiv('font-size', 70, 35, 87, 32)
+	&__text
+		@include adaptiv('margin-bottom', 100, 50, 140, 50)
+		@include adaptiv('max-width', 260, 140, 600, 230)
+		width: 100%
+		color: $gray-12
+	&__btn
+		@include adaptiv('width', 260, 140, 0, 0)
+		@include adaptiv('height', 260, 140, 0, 0)
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		color: #fff
+		font-weight: 600
+		text-align: center
+		background-color: $accent
+	&__item
+		display: flex
+		align-items: center
+		justify-content: space-between
+		position: relative
+		@include adaptiv('padding-top', 35, 20, 110, 40)
+		@include adaptiv('padding-bottom', 35, 20, 30, 10)
+		@include adaptiv('padding-left', 180, 95, 0, 0)
+		@include adaptiv('min-height', 120, 65, 0, 0)
+		border-bottom: 1px solid $gray-4
+		&:first-child
+			border-top: 1px solid $gray-4
+		&-number
+			text-transform: uppercase
+			color: $gray-13
+			font-weight: 500
+			position: absolute
+			left: 0
+			@include adaptiv('top', 10, 5, 10, 5)
+			@include adaptiv('font-size', 18, 10, 38, 14)
+		&-text
+			@include adaptiv('max-width', 740, 400, 0, 0)
+			font-weight: 500
+			color: $gray-2
+			._bold
+				color: #fff
+		&-link
+			@include adaptiv('width', 60, 30, 135, 50)
+			@include adaptiv('height', 60, 30, 135, 50)
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: $black-2
+			border-radius: 50%
+			transition: background-color .2s
+			cursor: pointer
+			&::before
+				content: ''
+				@include adaptiv('width', 18, 10, 38, 14)
+				@include adaptiv('height', 18, 10, 38, 14)
+				background-size: contain
+				background-repeat: no-repeat
+				background-position: center
+				background-image: url('../img/icons/arrow.svg')
+				transform: rotate(45deg)
+				transition: filter, transform .2s
+				position: relative
+				z-index: 2
+			&:hover
+				&::before
+					filter: invert(100%)
+					transform: rotate(90deg)
+
+@media only screen and (max-width : 1024px)
+	.questions
+		&__container
+			flex-direction: column
+		&__btn
+			display: none
+		&__item
+			flex-direction: column
+			align-items: flex-start
+			&-text
+				max-width: none
+				@include adaptiv('padding-right', 0, 0, 30, 10)
+				br
+					display: none
+			&-link
+				align-self: flex-end
+				@include adaptiv('margin-top', 0, 0, 30, 10)
+				&:hover::before
+					filter: invert(0%)
+					transform: rotate(45deg)

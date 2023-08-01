@@ -1,0 +1,101 @@
+.feedback
+	@include adaptiv('padding-top', 100, 60, 150, 60)
+	@include adaptiv('padding-bottom', 100, 60, 150, 60)
+	&__container
+		display: flex
+		justify-content: space-between
+		&-inner
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			justify-content: space-between
+	&__title
+		@include adaptiv('margin-bottom', 40, 20, 80, 30)
+		@include adaptiv('font-size', 47, 25, 60, 22)
+		line-height: 1.1
+		font-weight: 700
+	&__text
+		max-width: 490px
+		@include adaptiv('margin-bottom', 0, 0, 100, 35)
+		@include adaptiv('max-width', 500, 250, 0, 0)
+		color: $gray-1
+		font-weight: 500
+	&__social
+		display: flex
+		align-items: center
+		&-item
+			@include adaptiv('padding-top', 35, 18, 0, 0)
+			@include adaptiv('padding-bottom', 35, 18, 0, 0)
+			@include adaptiv('padding-right', 60, 30, 0, 0)
+			@include adaptiv('padding-left', 60, 30, 0, 0)
+			@include adaptiv('border-radius', 115, 60, 0, 0)
+			color: $black
+			border: 1px solid #000
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-right: 5px
+			font-weight: 600
+			&:last-child
+				margin: 0
+			&::after
+				background-color: #000
+			&:hover
+				color: #fff
+	&__form
+		display: flex
+		flex-direction: column
+	&__input
+		width: 100%
+		position: relative
+		border-bottom: 1px solid $gray-5
+		@include adaptiv('margin-bottom', 25, 15, 70, 25)
+		&.focus
+			.feedback__input-heading
+				transform: translateY(-200%)
+				@include adaptiv('font-size', 14, 7, 36, 12)
+		&-heading
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+			color: $gray-4
+			font-weight: 500
+			@include adaptiv('font-size', 16, 9, 42, 16)
+			transition: .3s
+		&-field
+			color: $black
+			font-weight: 500
+			@include adaptiv('padding-top', 25, 15, 42, 15)
+			@include adaptiv('padding-bottom', 25, 15, 42, 15)
+			width: 100%
+	&__submit
+		@include adaptiv('margin-top', 15, 5, 10, 5)
+		width: 100%
+		@include adaptiv('height', 90, 48, 190, 70)
+		@include adaptiv('border-radius', 115, 60, 163, 60)
+		@include adaptiv('padding', 30, 15, 65, 25)
+		background-color: $accent
+		color: #fff
+		font-weight: 700
+		&::after
+			background-color: $black
+		&:hover
+			color: #fff
+	&__privacy
+		@include adaptiv('margin-top', 20, 10, 42, 15)
+		color: $gray-6
+		@include adaptiv('font-size', 14, 7.5, 32, 12)
+		@include adaptiv('padding-right', 30, 10, 0, 0)
+
+@media only screen and (max-width : 1024px)
+	.feedback
+		background-color: $gray-9
+		&__container
+			flex-direction: column
+		&__text
+			max-width: 100%
+		&__social
+			display: none
+		&__privacy
+			letter-spacing: -0.01em

@@ -1,0 +1,200 @@
+.header
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		@include adaptiv('padding-top', 20, 10, 50, 15)
+		@include adaptiv('padding-bottom', 20, 10, 50, 15)
+	&__flexbox
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__logo
+		@include adaptiv('width', 156, 84, 290, 105)
+		max-width: none
+	&__lang
+		text-transform: uppercase
+		font-weight: 600
+		@include adaptiv('font-size', 16, 9, 43, 16)
+		position: relative
+		&-heading
+			display: flex
+			align-items: center
+			cursor: pointer
+			&::after
+				content: ''
+				@include adaptiv('width', 11, 7, 22, 10)
+				@include adaptiv('height', 11, 7, 22, 10)
+				background-image: url('../img/icons/dropdown-arrow.svg')
+				background-size: contain
+				background-repeat: no-repeat
+				background-position: center
+				margin-left: 5px
+				transition: .3s
+			&.active::after
+				transform: rotate(180deg)
+		&-dropdown
+			position: absolute
+			left: 0
+			top: 100%
+			@include adaptiv('margin-top', 15, 8, 0, 0)
+			&._hidden
+				max-height: 0
+				overflow: hidden
+		&-item
+			cursor: pointer
+	&__menu
+		@include adaptiv('padding-left', 186, 93, 0, 0)
+		@include adaptiv('gap', 45, 22, 50, 20)
+		display: flex
+		align-items: center
+		&-item
+			font-weight: 500
+			letter-spacing: -0.04em
+			@include adaptiv('font-size', 16, 9, 100, 46)
+			position: relative
+			cursor: pointer
+			&::before
+				content: ''
+				width: 0
+				height: 1px
+				background-color: #fff
+				position: absolute
+				top: 100%
+				margin-top: 2px
+				left: 0
+				transition: .2s
+			&:hover::before
+				width: 100%
+	&__btn
+		display: flex
+		justify-content: center
+		align-items: center
+		text-align: center
+		position: relative
+		text-decoration: none
+		line-height: 1
+		outline: none
+		overflow: hidden
+		cursor: pointer
+		@include adaptiv('padding-top', 18, 10, 0, 0)
+		@include adaptiv('padding-bottom', 18, 10, 0, 0)
+		@include adaptiv('padding-left', 40, 20, 0, 0)
+		@include adaptiv('padding-right', 40, 20, 0, 0)
+		@include adaptiv('border-radius', 60, 32, 0, 0)
+		@include adaptiv('font-size', 16, 9, 0, 0)
+		font-weight: 600
+		border: 1px solid #fff
+		background: none
+		color: #fff
+		transition: .2s
+	&__hamburger
+		display: none
+		&-wrapper
+			display: none
+			width: 100%
+	&__social
+		display: flex
+		justify-content: space-between
+		&-item
+			@include adaptiv('padding-top', 0, 0, 80, 29)
+			@include adaptiv('padding-bottom', 0, 0, 80, 29)
+			@include adaptiv('padding-right', 0, 0, 126, 45)
+			@include adaptiv('padding-left', 0, 0, 126, 45)
+			@include adaptiv('border-radius', 0, 0, 266, 97)
+			@include adaptiv('font-size', 0, 0, 43, 16)
+			background-color: #000
+			border: 1px solid #fff
+			display: flex
+			align-items: center
+			justify-content: center
+			font-weight: 600
+
+@media only screen and (max-width : 1024px)
+	.header
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		z-index: 3
+		background-color: #000
+		background-image: url('../img/bg-dots.png')
+		background-repeat: no-repeat
+		background-position: center
+		._z-index
+			z-index: 5
+		&__flexbox
+			width: 100%
+		&__lang
+			@include adaptiv('margin-left', 0, 0, 180, 60)
+			&-heading
+				filter: invert(50%)
+		&__btn
+			display: none
+		&__menu
+			flex-direction: column
+			align-items: flex-start
+			@include adaptiv('padding-top', 0, 0, 220, 150)
+			&-item
+				text-transform: uppercase
+				line-height: 0.9
+				&::before
+					display: none
+		&__hamburger
+			@include adaptiv('margin-left', 0, 0, 260, 95)
+			@include adaptiv('gap', 0, 0, 18, 7)
+			@include adaptiv('width', 0, 0, 80, 30)
+			@include adaptiv('height', 0, 0, 30, 12)
+			display: flex
+			flex-direction: column
+			justify-content: center
+			flex: 0 0 auto
+			position: relative
+			z-index: 5
+			&::before, &::after
+				content: ''
+				width: 100%
+				@include adaptiv('height', 0, 0, 6, 2)
+				background-color: #fff
+			&.active
+				&::before, &::after
+					background-color: $accent
+					position: absolute
+					left: 50%
+					top: 50%
+				&::before
+					transform: translate(-50%, -50%) rotate(45deg)
+				&::after
+					transform: translate(-50%, -50%) rotate(-45deg)
+			&-menu
+				@include adaptiv('padding-right', 0, 0, 55, 20)
+				@include adaptiv('padding-left', 0, 0, 55, 20)
+				align-items: flex-start
+				flex-direction: column
+				overflow: hidden
+				background-color: #000
+				max-height: 0
+				height: 100vh
+				position: fixed
+				top: 0
+				left: 0
+				right: 0
+				z-index: 4
+				transition: .5s
+				&.active
+					max-height: 100vh
+					@include adaptiv('padding-bottom', 0, 0, 200, 100)
+			&-wrapper
+				display: block
+			&-btn
+				background-color: $accent
+				color: #fff
+				display: flex
+				align-items: center
+				justify-content: center
+				font-weight: 600
+				width: 100%
+				@include adaptiv('margin-bottom', 0, 0, 30, 10)
+				@include adaptiv('padding-top', 0, 0, 80, 29)
+				@include adaptiv('padding-bottom', 0, 0, 80, 29)
+				@include adaptiv('border-radius', 0, 0, 266, 97)

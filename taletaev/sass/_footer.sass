@@ -1,0 +1,54 @@
+.footer
+	background-color: $black
+	@include adaptiv('padding-top', 35, 20, 60, 25)
+	@include adaptiv('padding-bottom', 35, 20, 60, 25)
+	&__container, &__flexbox
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__logo
+		display: flex
+		@include adaptiv('width', 157, 84, 290, 105)
+	&__text
+		color: $gray-3
+		font-weight: 500
+		@include adaptiv('font-size', 14, 8, 38, 14)
+	&__btn
+		@include adaptiv('width', 50, 25, 120, 45)
+		@include adaptiv('height', 50, 25, 120, 45)
+		background-color: $accent
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		transition: background-color .2s
+		margin-left: auto
+		&::before
+			content: ''
+			@include adaptiv('width', 18, 9, 40, 16)
+			@include adaptiv('height', 18, 9, 40, 16)
+			background-image: url('../img/icons/arrow.svg')
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center
+			transition: filter .2s
+			position: relative
+		&:hover::before
+			filter: invert(100%)
+			z-index: 2
+
+@media only screen and (max-width : 1024px)
+	.footer
+		&__container, &__flexbox
+			flex-direction: column
+			align-items: flex-start
+		&__container
+			position: relative
+		&__logo
+			@include adaptiv('margin-bottom', 0, 0, 70, 25)
+		&__btn
+			position: absolute
+			@include adaptiv('right', 0, 0, 55, 20)
+			bottom: 0
+			&:hover::before
+				filter: invert(0%)

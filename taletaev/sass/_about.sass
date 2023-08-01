@@ -1,0 +1,243 @@
+.about
+	&__title
+		@include adaptiv('margin-bottom', 20, 10, 26, 10)
+		letter-spacing: -0.05em
+	&__container
+		border-top: 1px solid rgba(16, 16, 16, 0.15)
+		position: relative
+		@include adaptiv('padding-top', 74, 37, 110, 40)
+		&-inner
+			width: 100%
+			@include adaptiv('max-width', 980, 523, 0, 0)
+	&__name
+		@include adaptiv('margin-bottom', 40, 20, 50, 20)
+		@include adaptiv('font-size', 42, 21, 46, 18)
+		text-transform: uppercase
+		font-weight: 500
+		letter-spacing: -0.02em
+	&__heading
+		@include adaptiv('margin-bottom', 20, 10, 62, 24)
+		@include adaptiv('font-size', 58, 30, 65, 24)
+		letter-spacing: -0.025em
+		font-weight: 500
+		line-height: 0.95
+		text-transform: uppercase
+		._offset::before
+			content: ''
+			display: inline-block
+			@include adaptiv('width', 100, 50, 0, 0)
+	&__subheading
+		@include adaptiv('margin-bottom', 80, 40, 110, 40)
+		@include adaptiv('font-size', 36, 20, 54, 20)
+		@include adaptiv('max-width', 890, 500, 0, 0)
+		line-height: 1.1
+		letter-spacing: -0.03em
+		text-transform: uppercase
+		color: $gray-1
+	&__description
+		@include adaptiv('margin-top', 58, 29, 110, 40)
+		&-title
+			@include adaptiv('font-size', 28, 15, 54, 20)
+			font-weight: 600
+			line-height: 1.1
+			letter-spacing: -0.02em
+			color: $accent
+		&-heading
+			@include adaptiv('font-size', 20, 10, 48, 18)
+			@include adaptiv('margin-bottom', 20, 10, 28, 10)
+			font-weight: 600
+			line-height: 1.2
+			letter-spacing: -0.02em
+		&-flexbox
+			@include adaptiv('margin-top', 35, 20, 80, 30)
+			@include adaptiv('padding-top', 45, 23, 0, 0)
+			@include adaptiv('gap', 84, 42, 80, 30)
+			border-top: 1px solid $gray-14
+			display: flex
+			flex-wrap: wrap
+		&-box
+			@include adaptiv('width', 400, 200, 0, 0)
+			&._full-width
+				width: 100%
+		&-text
+			@include adaptiv('font-size', 20, 11, 43, 16)
+			line-height: 1.2
+			color: $gray-1
+			letter-spacing: -0.02em
+	&__decor
+		position: relative
+		@include adaptiv('right', 60, 30, 0, 0)
+		@include adaptiv('width', 1060, 523, 0, 0)
+	&__image
+		position: absolute
+		right: 0
+		top: 0
+		@include adaptiv('width', 768, 410, 0, 0)
+		max-height: none
+		transform: translateX(100%)
+		&-inner
+			width: 100%
+	&__mission
+		@include adaptiv('padding-top', 220, 110, 190, 70)
+		&-top
+			position: relative
+		&-title
+			@include adaptiv('font-size', 256, 138, 130, 48)
+			letter-spacing: -0.06em
+			font-weight: 500
+			line-height: 1
+			text-transform: uppercase
+			border-bottom: 1px solid rgba(16, 16, 16, 0.3)
+			@include adaptiv('margin-bottom', 50, 25, 110, 40)
+		&-btn
+			@include adaptiv('width', 208, 110, 440, 160)
+			@include adaptiv('height', 208, 110, 440, 160)
+			@include adaptiv('font-size', 14, 8, 38, 14)
+			border-radius: 50%
+			display: flex
+			justify-content: center
+			align-items: center
+			color: #fff
+			font-weight: 600
+			line-height: 1.1
+			letter-spacing: normal
+			text-transform: none
+			text-align: center
+			background-color: $accent
+			position: absolute
+			top: 50%
+			@include adaptiv('left', 228, 125, 0, 0)
+			transform: translateY(-50%)
+			&:hover
+				color: #fff
+				&::after
+					background-color: $black
+			&._right-side
+				left: auto
+				right: 0
+		&-subtitle
+			letter-spacing: -0.02em
+			line-height: 1.1
+			text-transform: uppercase
+			font-weight: 500
+			color: #000
+			@include adaptiv('font-size', 47, 25, 53, 18)
+			@include adaptiv('margin-bottom', 100, 50, 80, 30)
+			._text-right
+				display: inline-block
+				text-align: right
+				width: 100%
+		&-container
+			display: flex
+			justify-content: flex-end
+		&-text
+			@include adaptiv('padding-left', 50, 25, 68, 25)
+			@include adaptiv('font-size', 24, 12, 44, 16)
+			@include adaptiv('max-width', 550, 290, 830, 300)
+			@include adaptiv('margin-bottom', 0, 0, 570, 210)
+			border-left: 4px solid $accent
+			color: $gray-1
+			letter-spacing: -0.01em
+			line-height: 1.1
+			font-weight: 600
+			._bold
+				display: block
+				color: $black
+				@include adaptiv('margin-top', 24, 12, 44, 16)
+	&__advantages
+		@include adaptiv('margin-top', 220, 110, 190, 70)
+		@include adaptiv('padding-top', 190, 95, 190, 70)
+		@include adaptiv('padding-bottom', 190, 95, 190, 70)
+		&-container
+			display: flex
+			justify-content: space-between
+			align-items: flex-start
+		&-title
+			@include adaptiv('width', 910, 455, 0, 0)
+			@include adaptiv('font-size', 54, 27, 65, 24)
+			@include adaptiv('margin-bottom', 0, 0, 110, 40)
+			letter-spacing: -0.02em
+			line-height: 1.15
+			font-weight: 500
+		&-text
+			@include adaptiv('margin-bottom', 20, 10, 54, 20)
+			@include adaptiv('font-size', 18, 9, 43, 16)
+			letter-spacing: -0.02em
+			line-height: 1.15
+			color: $gray-2
+			&._mb-more
+				@include adaptiv('margin-bottom', 40, 20, 80, 30)
+			._semi-bold
+				color: #fff
+		&-btn
+			@include adaptiv('font-size', 18, 9, 49, 18)
+			@include adaptiv('margin-top', 60, 30, 100, 38)
+			margin-left: auto
+			display: flex
+			align-items: center
+			color: $accent
+			font-weight: 700
+			transition: color .2s
+			&::after
+				content: ''
+				@include adaptiv('margin-left', 10, 5, 27, 10)
+				@include adaptiv('width', 24, 12, 65, 24)
+				@include adaptiv('height', 24, 12, 65, 24)
+				background-image: url('../img/icons/eye.svg')
+				background-size: contain
+				background-repeat: no-repeat
+				background-position: center
+				flex: 0 0 auto
+
+@media only screen and (max-width : 1024px)
+	.about
+		&__container-inner
+			max-width: none
+		&__heading::before, &__decor
+			display: none
+		&__subheading
+			max-width: none
+		&__description
+			&-title
+				text-transform: none
+				font-weight: 700
+			&-flexbox
+				flex-direction: column
+				border: none
+			&-box
+				width: 100%
+			&-text br
+				display: none
+		&__image
+			width: 100%
+			position: static
+		&__mission
+			position: relative
+			&-top
+				position: static
+			&-title
+				position: static
+				line-height: 1.2
+			&-subtitle
+				&::before
+					display: none
+				._text-right
+					text-align: left
+			&-container
+				justify-content: flex-start
+			&-btn
+				top: auto
+				bottom: 0
+				left: 50%
+				transform: translateX(-50%)
+				&._right-side
+					left: 50%
+					right: auto
+		&__advantages
+			&-container
+				flex-direction: column
+				align-items: stretch
+			&-title
+				width: 100%
+			&-btn
+				margin-left: 0

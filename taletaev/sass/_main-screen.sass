@@ -1,0 +1,115 @@
+.main
+	padding-top: 0
+	@include adaptiv('padding-bottom', 55, 30, 190, 70)
+	height: 100vh
+	color: #fff
+	background-color: #000
+	background-image: url('../img/bg-dots.png')
+	display: flex
+	flex-direction: column
+	&__container
+		position: relative
+		height: 100%
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+	&__title
+		font-weight: 500
+		display: flex
+		flex-direction: column
+		justify-content: center
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		&-inner
+			display: block
+			transform: translateY(100%)
+		&-top
+			line-height: 1
+			letter-spacing: -0.04em
+			text-transform: uppercase
+			@include adaptiv('font-size', 52, 28, 70, 26)
+			@include adaptiv('margin-bottom', 45, 25, 85, 30)
+		&-center
+			margin-left: auto
+			line-height: 0.9
+			@include adaptiv('font-size', 40, 20, 50, 18)
+			@include adaptiv('padding-left', 35, 20, 50, 20)
+			@include adaptiv('margin-bottom', 45, 25, 38, 14)
+			@include adaptiv('margin-left', 400, 222, 0, 0)
+			border-left: 4px solid $accent
+			color: $gray-15
+		&-bottom
+			line-height: 0.9
+			letter-spacing: -0.03em
+			text-transform: uppercase
+			text-align: center
+			@include adaptiv('font-size', 130, 65, 90, 33)
+			._c-accent
+				@include adaptiv('font-size', 102, 51, 90, 33)
+		._text-right
+			text-align: right
+			display: block
+	&__bottom
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+	&__link
+		@include adaptiv('width', 60, 30, 0, 0)
+		@include adaptiv('height', 60, 30, 0, 0)
+		display: flex
+		justify-content: center
+		align-items: center
+		background-color: $black-2
+		border-radius: 50%
+		cursor: pointer
+		&::before
+			content: ''
+			@include adaptiv('width', 18, 10, 38, 14)
+			@include adaptiv('height', 18, 10, 38, 14)
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center
+			background-image: url('../img/icons/arrow.svg')
+			transform: rotate(180deg)
+			transition: filter .2s
+			z-index: 2
+		&::after
+			background-color: #fff
+		&:hover::before
+			filter: invert(100%)
+	&__btn
+		@include adaptiv('width', 260, 140, 440, 160)
+		@include adaptiv('height', 260, 140, 440, 160)
+		@include adaptiv('font-size', 18, 10, 40, 16)
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		color: #fff
+		font-weight: 600
+		line-height: 1
+		text-align: center
+		background-color: $accent
+
+@media only screen and (max-width : 1024px)
+	.main
+		height: auto
+		min-height: 100vh
+		&__container
+			@include adaptiv('padding-top', 0, 0, 350, 130)
+		&__title
+			position: static
+			transform: none
+			@include adaptiv('margin-bottom', 0, 0, 170, 60)
+			&-bottom
+				text-align: left
+				line-height: 1
+			._text-right
+				text-align: left
+		&__bottom
+			justify-content: center
+		&__link
+			display: none

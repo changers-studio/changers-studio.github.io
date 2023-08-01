@@ -1,0 +1,151 @@
+@import ./utils/reset
+@import ./utils/fonts
+@import ./utils/vars
+@import ./utils/mixins
+
+// General
+body
+	@include adaptiv('font-size', 18, 10, 43, 16)
+	min-width: 320px
+	position: relative
+	line-height: 1.3
+	font-family: $default-font
+	color: $black
+	scrollbar-width: 0px
+	scrollbar-color: transparent transparent
+	&.scroll-disabled
+		overflow: hidden
+	&::-webkit-scrollbar-track
+		background: none
+	&::-webkit-scrollbar-thumb
+		background-color: transparent
+	&::-webkit-scrollbar
+		width: 0px
+
+section
+	@include adaptiv('padding-top', 220, 115, 190, 70)
+	@include adaptiv('padding-bottom', 220, 115, 190, 70)
+	overflow: hidden
+
+.title
+	@include adaptiv('font-size', 100, 53, 100, 36)
+	font-weight: 500
+	line-height: 0.9
+	letter-spacing: -0.03em
+	text-transform: uppercase
+
+.reveal-anime
+	overflow: hidden
+	&__container
+		transform: translateY(100%)
+
+.btn
+	color: #fff
+	overflow: hidden
+	transition: .3s
+	position: relative
+	cursor: pointer
+	&::after
+		content: ''
+		background-color: #fff
+		position: absolute
+		top: 0
+		left: 0
+		display: block
+		width: 100%
+		height: 100%
+		opacity: 0
+		border-radius: 100%
+		transform: translate(0, 100%)
+		transition: opacity .45s cubic-bezier(0.215, 0.61, 0.355, 1),border-radius 0s .45s,transform 0s .45s
+	&:hover
+		color: $black
+		&::after
+			opacity: 1
+			border-radius: 0
+			transform: translate(0)
+			transition: border-radius .45s cubic-bezier(0.215, 0.61, 0.355, 1),transform .45s cubic-bezier(0.215, 0.61, 0.355, 1)
+	&__inner
+		position: relative
+		z-index: 2
+
+@media only screen and (max-width : 1024px)
+	.btn
+		&::after
+			display: none
+		&:hover
+			color: #fff
+//
+
+// Form elements
+input, textarea
+	background: none
+	border: none
+	color: inherit
+	@include adaptiv('font-size', 16, 9, 43, 16)
+
+::placeholder
+	color: $gray-4
+	font-family: $default-font
+	@include adaptiv('font-size', 16, 9, 43, 16)
+//
+
+// Grid
+.container
+	width: 100%
+	@include adaptiv('padding-right', 60, 30, 55, 20)
+	@include adaptiv('padding-left', 60, 30, 55, 20)
+
+.col
+	width: 100%
+	@include adaptiv('max-width', 345, 185, 0, 0)
+	&-2
+		width: 100%
+		@include adaptiv('max-width', 710, 380, 0, 0)
+	&-3
+		width: 100%
+		@include adaptiv('max-width', 1060, 580, 0, 0)
+
+@media only screen and (max-width : 1024px)
+	.col, .col-2, .col-3
+		max-width: none
+//
+
+// Mods
+._c-accent
+	color: $accent
+
+._semi-bold
+	font-weight: 600
+
+._bold
+	font-weight: 700
+
+._overflow-hidden
+	overflow: hidden
+
+._bg-black
+	background-color: $black
+	color: #fff
+	background-image: url('../img/bg-dots.png')
+	background-size: cover
+	background-position: center
+
+._hidden
+	display: none
+
+@media only screen and (max-width : 1024px)
+	._bg-black
+		background-image: none
+//
+
+@import preloader
+@import header
+@import main-screen
+@import questions
+@import about
+@import services
+@import clients
+@import feedback
+@import footer
+@import modal
