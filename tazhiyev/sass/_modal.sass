@@ -1,0 +1,122 @@
+.modal
+	@include adaptive('width', 530, 265, 'desktop')
+	@include adaptive('border-radius', 15, 8, 'desktop')
+	@include adaptive('padding-top', 80, 40, 'desktop')
+	@include adaptive('padding-bottom', 70, 35, 'desktop')
+	@include adaptive('padding-left', 60, 30, 'desktop')
+	@include adaptive('padding-right', 60, 30, 'desktop')
+	background-color: #fff
+	&._hidden
+		display: none
+	&__top
+		@include adaptive('margin-bottom', 60, 30, 'desktop')
+	&__title
+		@include adaptive('font-size', 56, 28, 'desktop')
+		@include adaptive('margin-bottom', 30, 15, 'desktop')
+		line-height: 0.95
+		letter-spacing: -0.06em
+		&:last-child
+			margin-bottom: 0
+	&__subtitle
+		@include adaptive('width', 340, 170, 'desktop')
+		@include adaptive('font-size', 18, 9, 'desktop')
+		font-weight: 300
+		color: $gray
+		line-height: 1
+		letter-spacing: -0.04em
+	&__form-submit
+		@include adaptive('padding-top', 22, 11, 'desktop')
+		@include adaptive('padding-bottom', 22, 11, 'desktop')
+		@include adaptive('margin-top', 20, 10, 'desktop')
+		background-color: $accent
+		width: 100%
+		font-weight: 600
+		line-height: 1.3
+	&__field
+		@include adaptive('margin-top', 20, 10, 'desktop')
+		display: block
+		&:first-child
+			margin-top: 0
+		&-caption
+			@include adaptive('margin-bottom', 10, 5, 'desktop')
+			line-height: 1.35
+			font-weight: 500
+			letter-spacing: -0.02em
+			display: block
+		&-input
+			@include adaptive('padding-top', 18, 9, 'desktop')
+			@include adaptive('padding-bottom', 18, 9, 'desktop')
+			@include adaptive('padding-left', 20, 10, 'desktop')
+			@include adaptive('padding-right', 20, 10, 'desktop')
+			@include adaptive('border-radius', 5, 3, 'desktop')
+			display: block
+			background-color: $gray-10
+			border: 1px solid $gray-12
+	&-thx
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		&__title
+			@include adaptive('margin-bottom', 40, 20, 'desktop')
+		&__subtitle
+			@include adaptive('font-size', 24, 12, 'desktop')
+			width: auto
+		&__img
+			@include adaptive('margin-left', 20, 10, 'desktop')
+			@include adaptive('width', 100, 50, 'desktop')
+			flex: 0 0 auto
+	.f-button.is-close-btn
+		@include adaptive('width', 30, 15, 'desktop')
+		@include adaptive('height', 30, 15, 'desktop')
+		@include adaptive('right', 30, 15, 'desktop')
+		@include adaptive('top', 30, 15, 'desktop')
+		background-image: url('/img/icons/close.svg')
+		background-size: contain
+		background-position: center
+		background-repeat: no-repeat
+		opacity: 1
+		svg
+			display: none
+
+@media only screen and (max-width : 960px)
+	.modal
+		@include adaptive('width', 838, 335, 'mobile')
+		@include adaptive('border-radius', 38, 15, 'mobile')
+		@include adaptive('padding-top', 150, 60, 'mobile')
+		@include adaptive('padding-bottom', 75, 30, 'mobile')
+		@include adaptive('padding-left', 75, 30, 'mobile')
+		@include adaptive('padding-right', 75, 30, 'mobile')
+		&__top
+			@include adaptive('margin-bottom', 75, 30, 'mobile')
+		&__title
+			@include adaptive('font-size', 90, 36, 'mobile')
+			@include adaptive('margin-bottom', 75, 30, 'mobile')
+		&__subtitle
+			@include adaptive('font-size', 38, 15, 'mobile')
+		&__form-submit
+			@include adaptive('padding-top', 55, 22, 'mobile')
+			@include adaptive('padding-bottom', 55, 22, 'mobile')
+			@include adaptive('padding-left', 55, 22, 'mobile')
+			@include adaptive('padding-right', 55, 22, 'mobile')
+			@include adaptive('margin-top', 25, 10, 'mobile')
+		&__field
+			@include adaptive('margin-top', 60, 20, 'mobile')
+			&-caption
+				@include adaptive('margin-bottom', 25, 10, 'mobile')
+			&-input
+				@include adaptive('padding-top', 45, 18, 'mobile')
+				@include adaptive('padding-bottom', 45, 18, 'mobile')
+				@include adaptive('padding-left', 60, 20, 'mobile')
+				@include adaptive('padding-right', 60, 20, 'mobile')
+				@include adaptive('border-radius', 13, 5, 'mobile')
+				@include adaptive('font-size', 35, 14, 'mobile')
+				&::placeholder
+					@include adaptive('font-size', 35, 14, 'mobile')
+		&-thx
+			&__title
+				@include adaptive('margin-bottom', 75, 30, 'mobile')
+			&__subtitle
+				@include adaptive('font-size', 40, 16, 'mobile')
+			&__img
+				@include adaptive('margin-left', 25, 10, 'mobile')
+				@include adaptive('width', 150, 60, 'mobile')

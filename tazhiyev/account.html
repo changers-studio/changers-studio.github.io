@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Даурен Тажиев | Восстановление пароля</title>
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" sizes="192x192" href="img/favicon.ico" />
+
+		<!-- libs css -->
+
+		<!-- main css -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- gsap -->
+		<script defer src="libs/gsap/gsap.min.js"></script>
+		<script defer src="libs/gsap/ScrollTrigger.min.js"></script>
+		<script defer src="libs/gsap/ScrollSmoother.min.js"></script>
+		<script defer src="libs/gsap/SplitText.min.js"></script>
+		<script defer src="libs/gsap/ScrollToPlugin.min.js"></script>
+
+		<!-- libs js -->
+		<script defer src="libs/inputmask.min.js"></script>
+
+		<!-- main js -->
+		<script defer src="js/main.js"></script>
+	</head>
+
+	<body>
+		<div class="account">
+			<header class="account-header header">
+				<div class="container header__container">
+					<a href="index.html" class="header__logo">
+						<img src="img/logo-account.svg" alt="Логотип" class="header__logo-img" />
+					</a>
+
+					<a href="#" class="account-header__btn-secondary btn">
+						<span class="btn__inner">Выйти</span>
+					</a>
+				</div>
+			</header>
+
+			<div class="container">
+				<div class="account-main">
+					<div class="account-sidebar">
+						<div class="account-sidebar__inner">
+							<div class="account-sidebar__top">
+								<div class="account-sidebar__top-inner">
+									<p class="account-sidebar__overtitle">Для частных лиц</p>
+									<h1 class="account-sidebar__title">Имя Фамилия</h1>
+								</div>
+
+								<button
+									type="button"
+									class="account-sidebar__notification"
+									aria-label="Уведомления"
+								>
+									<span class="account-sidebar__notification-amount">2</span>
+
+									<img
+										class="account-sidebar__notification-icon"
+										src="img/icons/bell.svg"
+										alt="Колокол"
+									/>
+								</button>
+							</div>
+
+							<ul class="account-sidebar__nav">
+								<li class="account-sidebar__nav-item btn">
+									<span class="btn__inner">Мои вопросы</span>
+								</li>
+								<li class="account-sidebar__nav-item btn">
+									<span class="btn__inner">Мои отзывы</span>
+								</li>
+								<li class="account-sidebar__nav-item btn">
+									<span class="btn__inner">Настройки профиля</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="account-sidebar__bottom">
+							<button
+								type="button"
+								class="account-sidebar__btn btn"
+								aria-label="Задать вопрос"
+							>
+								<span class="btn__inner">
+									<svg
+										class="account-sidebar__btn-icon"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M7 2C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2H7ZM10.1008 9.58368C10.2553 9.46479 10.3564 9.28646 10.4039 9.0487C10.5109 8.48994 10.7011 8.0679 10.9746 7.78258C11.248 7.48536 11.5868 7.33676 11.991 7.33676C12.4547 7.33676 12.8173 7.50915 13.0788 7.85391C13.3522 8.18679 13.489 8.63855 13.489 9.20919C13.489 9.73228 13.3641 10.1722 13.1145 10.5288C12.8648 10.8736 12.4784 11.1054 11.9554 11.2243C11.6344 11.2956 11.3966 11.4085 11.2421 11.5631C11.0994 11.7177 11.0281 11.9316 11.0281 12.2051V14.0775C11.0281 14.3509 11.1172 14.5649 11.2955 14.7195C11.4739 14.8621 11.6819 14.9335 11.9197 14.9335C12.1456 14.9335 12.3417 14.8621 12.5082 14.7195C12.6865 14.5649 12.7757 14.3509 12.7757 14.0775V12.6331C13.6197 12.431 14.2736 12.0089 14.7373 11.3669C15.2128 10.725 15.4506 9.94033 15.4506 9.01303C15.4506 7.95496 15.1355 7.10494 14.5054 6.46296C13.8753 5.82099 13.0491 5.5 12.0267 5.5C11.1588 5.5 10.4277 5.76749 9.83327 6.30247C9.23884 6.82556 8.82275 7.56859 8.58498 8.53155C8.56121 8.65044 8.54932 8.73365 8.54932 8.78121C8.54932 9.06653 8.65631 9.30429 8.8703 9.49451C9.0843 9.67284 9.32207 9.762 9.58362 9.762C9.78572 9.762 9.9581 9.70256 10.1008 9.58368ZM11.1351 18.179C11.349 18.393 11.6046 18.5 11.9019 18.5C12.211 18.5 12.4666 18.393 12.6687 18.179C12.8827 17.965 12.9896 17.7095 12.9896 17.4122C12.9896 17.115 12.8827 16.8653 12.6687 16.6632C12.4547 16.4492 12.1991 16.3422 11.9019 16.3422C11.6046 16.3422 11.349 16.4492 11.1351 16.6632C10.9211 16.8653 10.8141 17.115 10.8141 17.4122C10.8141 17.7095 10.9211 17.965 11.1351 18.179Z"
+											fill="white"
+										/>
+									</svg>
+									<span>Задать вопрос</span>
+								</span>
+							</button>
+
+							<button
+								type="button"
+								class="account-sidebar__btn btn"
+								aria-label="Написать отзыв"
+							>
+								<span class="btn__inner">
+									<svg
+										class="account-sidebar__btn-icon"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M16.6653 2.01034C18.1038 1.92043 19.5224 2.41991 20.5913 3.3989C21.5703 4.46779 22.0697 5.88633 21.9898 7.33483V16.6652C22.0797 18.1137 21.5703 19.5322 20.6013 20.6011C19.5323 21.5801 18.1038 22.0796 16.6653 21.9897H7.33487C5.88636 22.0796 4.46781 21.5801 3.39891 20.6011C2.41991 19.5322 1.92043 18.1137 2.01034 16.6652V7.33483C1.92043 5.88633 2.41991 4.46779 3.39891 3.3989C4.46781 2.41991 5.88636 1.92043 7.33487 2.01034H16.6653ZM10.9811 16.845L17.7042 10.102C18.3136 9.4826 18.3136 8.48364 17.7042 7.87427L16.4056 6.57561C15.7862 5.95625 14.7872 5.95625 14.1679 6.57561L13.4985 7.25491C13.3986 7.35481 13.3986 7.52463 13.4985 7.62453C13.4985 7.62453 15.0869 9.20289 15.1169 9.24285C15.2268 9.36273 15.2967 9.52256 15.2967 9.70238C15.2967 10.062 15.007 10.3617 14.6374 10.3617C14.4675 10.3617 14.3077 10.2918 14.1978 10.1819L12.5295 8.5236C12.4496 8.44368 12.3098 8.44368 12.2298 8.5236L7.46474 13.2887C7.13507 13.6183 6.94527 14.0579 6.93528 14.5274L6.87534 16.8949C6.87534 17.0248 6.9153 17.1447 7.00521 17.2346C7.09512 17.3245 7.21499 17.3744 7.34486 17.3744H9.69245C10.172 17.3744 10.6315 17.1846 10.9811 16.845Z"
+											fill="white"
+										/>
+									</svg>
+									<span>Написать отзыв</span>
+								</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="account-main__container">
+						<div class="account-main__top">
+							<h2 class="account-main__top-title">Задать вопрос юристу</h2>
+
+							<p class="account-main__top-text">
+								Ответ будет готов <span class="_semi-bold">в течение 1-3 дней</span>. Мы
+								отправим вам письмо на почту.
+							</p>
+						</div>
+
+						<form class="account__form-body">
+							<label class="account__field">
+								<span class="account__field-caption">Тема вашего вопроса *</span>
+
+								<input
+									type="text"
+									name="Тема вопроса"
+									placeholder="Напишите тему вопроса"
+									class="account__field-input"
+									autocomplete="off"
+									required
+								/>
+							</label>
+
+							<label class="account__field">
+								<span class="account__field-caption"
+									>Приложите документы (если необходимо)</span
+								>
+
+								<span class="account__field-input account__file">
+									<span class="account__file-text">Прикрепить документ</span>
+
+									<img
+										src="img/icons/add-file.svg"
+										alt="Файл"
+										class="account__file-icon"
+									/>
+								</span>
+
+								<input class="account__file-input" type="file" name="Документ" />
+							</label>
+
+							<label class="account__field">
+								<span class="account__field-caption">Опишите ваш вопрос *</span>
+
+								<textarea
+									class="account__field-textarea"
+									name="Вопрос"
+									placeholder="Текст вашего вопроса"
+									required
+								></textarea>
+							</label>
+
+							<button type="submit" class="account__form-btn account__form-submit btn">
+								<span class="btn__inner">Задать вопрос юристу</span>
+							</button>
+						</form>
+					</div>
+
+					<div class="account-main__container">
+						<div class="account-main__top">
+							<h2 class="account-main__top-title">Мои вопросы</h2>
+						</div>
+
+						<div class="account-data">
+							<ul class="account-data__captions">
+								<li class="account-data__captions-item btn active">
+									<span class="btn__inner">
+										Заданных вопросов:
+										<span class="account-data__counter">1</span>
+									</span>
+								</li>
+								<li class="account-data__captions-item btn">
+									<span class="btn__inner">
+										Вопросы ожидающие ответа:
+										<span class="account-data__counter">0</span>
+									</span>
+								</li>
+								<li class="account-data__captions-item btn">
+									<span class="btn__inner">
+										Полученных ответов:
+										<span class="account-data__counter">1</span>
+									</span>
+								</li>
+							</ul>
+
+							<div class="account-data__container active">
+								<div class="account-data__item">
+									<div class="account-data__item-box">
+										<p class="account-data__item-number">01</p>
+
+										<h3 class="account-data__item-title _c-blue">Тема вопроса</h3>
+
+										<p class="account-data__item-text">
+											Здравствуйте! Моя внучка сейчас живет у меня и находится на полном
+											моем обеспечении, воспитанием внучки тоже занимаюсь сама. Дочь
+											уехала на заработки в другой город уже больше года назад. Что
+											необходимо мне чтобы оформить опеку над внучкой, без лишения матери
+											родительских прав?
+										</p>
+									</div>
+
+									<div class="account-data__item-box">
+										<h3 class="account-data__item-title">Ответ юриста</h3>
+
+										<p class="account-data__item-subtitle">Даурен Тажиев</p>
+
+										<p class="account-data__item-text">
+											Добрый день! Согласно статьям 121 и 122 Кодекса РК «О браке
+											(супружестве) и семье...Здравствуйте! Моя внучка сейчас живет у меня
+											и находится на полном моем обеспечении, воспитанием внучки тоже
+											занимаюсь сама. Дочь уехала на заработки в другой город уже больше
+											...
+										</p>
+
+										<p class="account-data__item-date">02.09.2020</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="account-data__container">
+								<div class="account-data__empty">
+									<p class="account-data__empty-text">У вас еще нет заданных вопросов</p>
+
+									<button class="account-data__empty-btn btn">
+										<span class="btn__inner">Задать вопрос</span>
+									</button>
+								</div>
+							</div>
+
+							<div class="account-data__container">
+								<div class="account-data__item">
+									<div class="account-data__item-box">
+										<p class="account-data__item-number">01</p>
+
+										<h3 class="account-data__item-title _c-blue">Тема вопроса</h3>
+
+										<p class="account-data__item-text">
+											Здравствуйте! Моя внучка сейчас живет у меня и находится на полном
+											моем обеспечении, воспитанием внучки тоже занимаюсь сама. Дочь
+											уехала на заработки в другой город уже больше года назад. Что
+											необходимо мне чтобы оформить опеку над внучкой, без лишения матери
+											родительских прав?
+										</p>
+									</div>
+
+									<div class="account-data__item-box">
+										<h3 class="account-data__item-title">Ответ юриста</h3>
+
+										<div class="account__wait">
+											<div class="account__wait-box">
+												<span>Ваш вопрос ожидает ответа</span>
+												<img
+													src="img/icons/clock.svg"
+													alt="Часы"
+													class="account__wait-icon"
+												/>
+											</div>
+											<span class="account__wait-text">
+												Мы уведомим вас на указанную вами почту о готовности ответа!
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Отзывы	 -->
+					<div class="account-main__container">
+						<div class="account-main__top">
+							<h2 class="account-main__top-title">Написать ваш отзыв</h2>
+
+							<p class="account-main__top-text">
+								Ваш отзыв будет проверен и опубликован
+								<span class="_semi-bold">в течение 1-5 дней.</span>
+							</p>
+						</div>
+
+						<form class="account__form-body">
+							<label class="account__field">
+								<span class="account__field-caption">Напишите ваш отзыв *</span>
+
+								<textarea
+									class="account__field-textarea"
+									name="Отзыв"
+									placeholder="Текст вашего отзыва"
+									required
+								></textarea>
+							</label>
+
+							<button type="submit" class="account__form-btn account__form-submit btn">
+								<span class="btn__inner">Опубликовать отзыв</span>
+							</button>
+						</form>
+					</div>
+
+					<div class="account-main__container">
+						<div class="account-main__top">
+							<h2 class="account-main__top-title">Мои отзывы</h2>
+						</div>
+
+						<div class="account-data__item">
+							<div class="account-data__item-box">
+								<p class="account-data__item-number">01</p>
+
+								<h3 class="account-data__item-title _c-blue">Ваш отзыв</h3>
+
+								<p class="account-data__item-text">
+									Здравствуйте! Моя внучка сейчас живет у меня и находится на полном моем
+									обеспечении, воспитанием внучки тоже занимаюсь сама. Дочь уехала на
+									заработки в другой город уже больше года назад. Что необходимо мне чтобы
+									оформить опеку над внучкой, без лишения матери родительских прав?
+								</p>
+							</div>
+						</div>
+
+						<div class="account-data__item">
+							<div class="account-data__item-box">
+								<p class="account-data__item-number">02</p>
+
+								<h3 class="account-data__item-title _c-blue">Ваш отзыв</h3>
+
+								<p class="account-data__item-text">
+									Здравствуйте! Моя внучка сейчас живет у меня и находится на полном моем
+									обеспечении, воспитанием внучки тоже занимаюсь сама. Дочь уехала на
+									заработки в другой город уже больше года назад. Что необходимо мне чтобы
+									оформить опеку над внучкой, без лишения матери родительских прав?
+								</p>
+							</div>
+						</div>
+
+						<div class="account-data__item">
+							<div class="account-data__item-box">
+								<p class="account-data__item-number">03</p>
+
+								<h3 class="account-data__item-title _c-blue">Ваш отзыв</h3>
+
+								<p class="account-data__item-text">
+									Здравствуйте! Моя внучка сейчас живет у меня и находится на полном моем
+									обеспечении, воспитанием внучки тоже занимаюсь сама. Дочь уехала на
+									заработки в другой город уже больше года назад. Что необходимо мне чтобы
+									оформить опеку над внучкой, без лишения матери родительских прав?
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="account-main__container">
+						<div class="account-main__top">
+							<h2 class="account-main__top-title">Мои отзывы</h2>
+						</div>
+
+						<div class="account-data__empty">
+							<p class="account-data__empty-text">У вас еще нет оставленных отзывов</p>
+
+							<button class="account-data__empty-btn btn">
+								<span class="btn__inner">Написать отзыв</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="account-main__container">
+						<div class="account-main__top">
+							<h2 class="account-main__top-title">Мои отзывы</h2>
+						</div>
+
+						<div class="account-data__item">
+							<div class="account-data__item-box">
+								<p class="account-data__item-number">01</p>
+
+								<h3 class="account-data__item-title _c-blue">Ваш отзыв</h3>
+
+								<p class="account-data__item-text">
+									Здравствуйте! Моя внучка сейчас живет у меня и находится на полном моем
+									обеспечении, воспитанием внучки тоже занимаюсь сама. Дочь уехала на
+									заработки в другой город уже больше года назад. Что необходимо мне чтобы
+									оформить опеку над внучкой, без лишения матери родительских прав?
+								</p>
+							</div>
+
+							<div class="account-data__item-box">
+								<div class="account-data__wait">
+									<div class="account-data__wait-box">
+										<span>Ваш отзыв ожидает проверки</span>
+										<img
+											src="img/icons/clock.svg"
+											alt="Часы"
+											class="account-data__wait-icon"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Отзывы	 -->
+
+					<!-- Уведомления -->
+					<div class="account-main__container">
+						<div class="account-main__top">
+							<h2 class="account-main__top-title">Мои уведомления</h2>
+
+							<p class="account-main__top-text">2 новых уведомления</p>
+						</div>
+
+						<div class="account-data__notification">
+							<div class="account-data__notification-item">
+								<span class="account-data__notification-caption">
+									Получен ответ на ваш вопрос
+								</span>
+
+								<button class="account-data__notification-btn btn">
+									<span class="btn__inner">Посмотреть ответ</span>
+								</button>
+							</div>
+
+							<div class="account-data__notification-item">
+								<span class="account-data__notification-caption">
+									Ваш отзыв одобрен и опубликован
+								</span>
+
+								<button class="account-data__notification-btn btn">
+									<span class="btn__inner">Посмотреть отзыв</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<!-- Уведомления -->
+
+					<!-- Настройка профиля -->
+					<div class="account-main__container active">
+						<div class="account-main__top">
+							<h2 class="account-main__top-title">Настройки профиля</h2>
+						</div>
+
+						<form class="account__form-body account-data__settings">
+							<div class="account__field">
+								<span class="account__field-caption">Имя Фамилия</span>
+
+								<span class="account__field-inner">
+									<input
+										type="text"
+										name="Имя Фамилия"
+										placeholder="Имя Фамилия"
+										class="account__field-input"
+										autocomplete="off"
+									/>
+
+									<button
+										type="button"
+										class="account__field-edit"
+										aria-label="Редактировать"
+									></button>
+								</span>
+							</div>
+
+							<div class="account__field">
+								<span class="account__field-caption">Ваша почта</span>
+
+								<input
+									type="email"
+									name="email"
+									placeholder="example@gmail.com"
+									class="account__field-input"
+								/>
+							</div>
+
+							<div class="account__field">
+								<span class="account__field-caption">Номер телефона</span>
+
+								<span class="account__field-inner">
+									<input
+										type="text"
+										name="Номер телефона"
+										placeholder="+"
+										class="account__field-input input-phone"
+									/>
+
+									<button
+										type="button"
+										class="account__field-edit"
+										aria-label="Редактировать"
+									></button>
+								</span>
+							</div>
+
+							<div class="account__field">
+								<span class="account__field-caption">Пароль</span>
+
+								<span class="account__field-inner">
+									<input
+										type="password"
+										name="Пароль"
+										placeholder="**************"
+										class="account__field-input"
+										autocomplete="off"
+									/>
+
+									<button
+										type="button"
+										class="account__field-toggle"
+										aria-label="Показать/скрыть пароль"
+									></button>
+
+									<button
+										type="button"
+										class="account__field-edit"
+										aria-label="Редактировать"
+									></button>
+								</span>
+							</div>
+
+							<button
+								type="submit"
+								class="account__form-btn account__form-submit btn"
+								disabled
+							>
+								<span class="btn__inner">Сохранить изменения</span>
+							</button>
+						</form>
+					</div>
+					<!-- Настройка профиля -->
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,82 @@
+.feedback
+	@include adaptive('margin-top', 120, 60, 'desktop')
+	@include adaptive('padding-top', 100, 50, 'desktop')
+	&._mt-none
+		margin-top: 0
+	&__top
+		@include adaptive('margin-bottom', 100, 50, 'desktop')
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__heading
+		@include adaptive('width', 900, 450, 'desktop')
+		@include adaptive('font-size', 98, 49, 'desktop')
+		text-transform: uppercase
+		line-height: 1
+		letter-spacing: -0.02em
+	&__image
+		@include adaptive('width', 186, 93, 'desktop')
+	&__form
+		display: flex
+		flex-direction: column
+		align-items: center
+		&-container
+			@include adaptive('column-gap', 10, 5, 'desktop')
+			@include adaptive('height', 225, 115, 'desktop')
+			@include adaptive('margin-bottom', 60, 30, 'desktop')
+			display: flex
+			flex-direction: column
+			flex-wrap: wrap
+			width: 100%
+		&-inner
+			width: 100%
+		&-item
+			@include adaptive('padding-top', 25, 13, 'desktop')
+			@include adaptive('padding-bottom', 25, 13, 'desktop')
+			@include adaptive('width', 595, 298, 'desktop')
+			display: flex
+			align-items: flex-start
+			border-bottom: 1px solid $gray-7
+			line-height: 1.2
+			font-weight: 600
+			&._bd-top
+				border-top: 1px solid $gray-7
+		&-number
+			@include adaptive('font-size', 18, 9, 'desktop')
+			@include adaptive('margin-right', 52, 26, 'desktop')
+			color: $gray-4
+			flex: 0 0 auto
+		&-caption
+			@include adaptive('margin-bottom', 15, 8, 'desktop')
+			@include adaptive('font-size', 18, 9, 'desktop')
+		&-input
+			@include adaptive('font-size', 18, 9, 'desktop')
+
+@media only screen and (max-width : 960px)
+	.feedback
+		@include adaptive('margin-top', 136, 50, 'mobile')
+		@include adaptive('padding-top', 136, 50, 'mobile')
+		&__title
+			@include adaptive('margin-bottom', 110, 40, 'mobile')
+		&__top
+			@include adaptive('margin-bottom', 82, 30, 'mobile')
+		&__heading
+			@include adaptive('width', 560, 205, 'mobile')
+			@include adaptive('font-size', 60, 22, 'mobile')
+			letter-spacing: normal
+		&__image
+			@include adaptive('width', 273, 100, 'mobile')
+		&__form
+			&-container
+				@include adaptive('margin-bottom', 110, 40, 'mobile')
+			&-item
+				@include adaptive('padding-top', 68, 25, 'mobile')
+				@include adaptive('padding-bottom', 68, 25, 'mobile')
+			&-number
+				@include adaptive('font-size', 40, 16, 'mobile')
+				@include adaptive('margin-right', 142, 52, 'mobile')
+			&-caption
+				@include adaptive('margin-bottom', 41, 15, 'mobile')
+				@include adaptive('font-size', 40, 16, 'mobile')
+			&-input
+				@include adaptive('font-size', 40, 16, 'mobile')

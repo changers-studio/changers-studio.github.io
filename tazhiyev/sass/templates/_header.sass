@@ -1,0 +1,212 @@
+.header
+	@include adaptive('padding-top', 20, 10, 'desktop')
+	@include adaptive('padding-bottom', 20, 10, 'desktop')
+	&._black
+		color: $black
+		._hover-underline
+			&::before
+				background-color: $black
+			&:hover
+				color: $black
+		.header
+			&__btn
+				color: #fff
+				background-color: $black
+				border-color: $black
+				&::after
+					background-color: #fff
+				&:hover
+					color: $black
+			&__menu
+				background-color: rgba(0, 0, 0, 0.03)
+			&__account-btn
+				border-color: $black
+				color: $black
+				&::after
+					background-color: $black
+				&:hover
+					color: #fff
+	&__container
+		@include adaptive('gap', 10, 5, 'desktop')
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__logo
+		display: flex
+		&-img
+			@include adaptive('width', 194, 97, 'desktop')
+	&__btn
+		background-color: #fff
+		color: $black
+		border: 1px solid #fff
+		&::after
+			background-color: $accent
+		&:hover
+			color: #fff
+	&__menu
+		@include adaptive('border-radius', 100, 50, 'desktop')
+		background-color: rgba(255, 255, 255, 0.06)
+		display: flex
+		justify-content: center
+		&-container
+			@include adaptive('padding-top', 16, 8, 'desktop')
+			@include adaptive('padding-bottom', 16, 8, 'desktop')
+			@include adaptive('padding-right', 46, 23, 'desktop')
+			@include adaptive('padding-left', 46, 23, 'desktop')
+			@include adaptive('gap', 36, 18, 'desktop')
+			display: flex
+			align-items: center
+			justify-content: center
+		&-item
+			font-weight: 500
+			white-space: nowrap
+		&-btns
+			@include adaptive('gap', 13, 5, 'mobile')
+			display: none
+			flex-direction: column
+			width: 100%
+		&-btn
+			@include adaptive('padding-top', 54, 20, 'mobile')
+			@include adaptive('padding-bottom', 54, 20, 'mobile')
+			@include adaptive('padding-right', 68, 25, 'mobile')
+			@include adaptive('padding-left', 68, 25, 'mobile')
+			@include adaptive('border-radius', 164, 60, 'mobile')
+			@include adaptive('border-width', 3, 1, 'mobile')
+			display: flex
+			justify-content: center
+			align-items: center
+			font-weight: 600
+			letter-spacing: -0.02em
+			border-color: #8F939C
+			border-style: solid
+			&._fill
+				background-color: $accent
+				color: #fff
+				border: none
+		&-close
+			display: none
+	&__account
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		&-btn
+			@include adaptive('margin-left', 40, 20, 'desktop')
+			@include adaptive('font-size', 16, 8, 'desktop')
+			border: 1px solid #fff
+			&::after
+				background-color: #fff
+			&:hover
+				color: $black
+	&__hamburger
+		display: none
+
+@media only screen and (max-width : 960px)
+	.header
+		@include adaptive('padding-top', 68, 25, 'mobile')
+		@include adaptive('padding-bottom', 68, 25, 'mobile')
+		position: static
+		&._black
+			.header
+				&__wrapper
+					background-color: #F7F7F7
+				&__account-btn
+					color: #fff
+					border-color: $accent
+					&:hover
+						border-color: transparent
+				&__menu
+					background-color: #fff
+		&__container
+			@include adaptive('gap', 40, 15, 'mobile')
+			flex-direction: column
+		&__logo
+			justify-content: center
+			&-img
+				@include adaptive('width', 530, 194, 'mobile')
+		&__btn
+			@include adaptive('padding-right', 96, 35, 'mobile')
+			@include adaptive('padding-left', 96, 35, 'mobile')
+			@include adaptive('bottom', 42, 15, 'mobile')
+			@include adaptive('left', 54, 20, 'mobile')
+			@include adaptive('font-size', 38, 14, 'mobile')
+			position: absolute
+			width: auto
+			z-index: 3
+		&__menu
+			@include adaptive('width', 970, 355, 'mobile')
+			@include adaptive('padding-top', 200, 74, 'mobile')
+			@include adaptive('padding-bottom', 70, 26, 'mobile')
+			@include adaptive('padding-right', 54, 20, 'mobile')
+			@include adaptive('padding-left', 122, 45, 'mobile')
+			@include adaptive('border-top-left-radius', 41, 15, 'mobile')
+			@include adaptive('border-bottom-left-radius', 41, 15, 'mobile')
+			flex-direction: column
+			align-items: flex-start
+			justify-content: space-between
+			background-color: #fff
+			color: $black
+			position: fixed
+			right: 0
+			top: 0
+			bottom: 0
+			transform: translateX(100%)
+			transition: .7s
+			z-index: 10
+			&.active
+				transform: translateX(0)
+			&-container
+				@include adaptive('gap', 27, 10, 'mobile')
+				flex-direction: column
+				align-items: flex-start
+			&-item
+				@include adaptive('font-size', 65, 24, 'mobile')
+				letter-spacing: -0.03em
+				text-transform: uppercase
+				&:hover
+					color: $black
+			&-btns
+				display: flex
+			&-close
+				@include adaptive('width', 68, 25, 'mobile')
+				@include adaptive('height', 68, 25, 'mobile')
+				@include adaptive('top', 60, 22, 'mobile')
+				@include adaptive('right', 54, 20, 'mobile')
+				position: absolute
+				background-image: url('/img/icons/close.svg')
+				background-size: contain
+				background-repeat: no-repeat
+				background-position: center
+				display: flex
+		&__wrapper
+			@include adaptive('padding-top', 27, 10, 'mobile')
+			@include adaptive('padding-bottom', 27, 10, 'mobile')
+			@include adaptive('padding-right', 27, 10, 'mobile')
+			@include adaptive('padding-left', 82, 30, 'mobile')
+			@include adaptive('border-radius', 164, 60, 'mobile')
+			background-color: #fff
+			color: $black
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&__account
+			@include adaptive('font-size', 38, 14, 'mobile')
+			font-weight: 600
+			&-btn
+				@include adaptive('padding-top', 40, 16, 'mobile')
+				@include adaptive('padding-bottom', 40, 16, 'mobile')
+				@include adaptive('padding-right', 54, 20, 'mobile')
+				@include adaptive('padding-left', 54, 20, 'mobile')
+				@include adaptive('margin-left', 40, 20, 'mobile')
+				background-color: $accent
+				color: #fff
+				font-weight: 600
+				&:hover
+					color: $accent
+		&__hamburger
+			@include adaptive('width', 65, 24, 'mobile')
+			@include adaptive('height', 65, 24, 'mobile')
+			background-image: url('/img/icons/hamburger.svg')
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center
+			display: flex

@@ -1,0 +1,181 @@
+.blog
+	@include adaptive('padding-top', 180, 90, 'desktop')
+	@include adaptive('padding-bottom', 240, 120, 'desktop')
+	&__title
+		@include adaptive('margin-bottom', 100, 50, 'desktop')
+		@include adaptive('font-size', 128, 64, 'desktop')
+		text-transform: uppercase
+		letter-spacing: -0.05em
+		line-height: 0.9
+	&__heading
+		@include adaptive('margin-bottom', 80, 40, 'desktop')
+		@include adaptive('font-size', 64, 32, 'desktop')
+		text-transform: uppercase
+		letter-spacing: -0.06em
+		line-height: 0.9
+	&__container
+		@include adaptive('row-gap', 80, 40, 'desktop')
+		@include adaptive('column-gap', 10, 5, 'desktop')
+		display: flex
+		flex-wrap: wrap
+	&__item
+		@include adaptive('border-radius', 15, 8, 'desktop')
+		@include adaptive('gap', 50, 25, 'desktop')
+		overflow: hidden
+		background-color: $bg
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		&-image
+			@include adaptive('border-radius', 15, 8, 'desktop')
+			@include adaptive('height', 410, 205, 'desktop')
+			@include adaptive('margin-bottom', 30, 15, 'desktop')
+			@include adaptive('padding-right', 26, 13, 'desktop')
+			@include adaptive('padding-left', 26, 13, 'desktop')
+			@include adaptive('padding-top', 26, 13, 'desktop')
+			width: 100%
+			background-size: cover
+			background-position: center
+		&-title, &-text
+			@include adaptive('padding-right', 35, 18, 'desktop')
+			@include adaptive('padding-left', 35, 18, 'desktop')
+		&-title
+			@include adaptive('margin-bottom', 15, 8, 'desktop')
+			@include adaptive('font-size', 22, 11, 'desktop')
+			font-weight: 600
+			line-height: 1.1
+		&-text
+			line-height: 1.2
+			color: $gray
+			&::after
+				content: '...'
+				display: inline-block
+		&-bottom
+			@include adaptive('padding-right', 35, 18, 'desktop')
+			@include adaptive('padding-left', 35, 18, 'desktop')
+			@include adaptive('padding-bottom', 30, 15, 'desktop')
+			display: flex
+			justify-content: space-between
+			align-items: flex-end
+		&-btn
+			color: $accent
+			border: 1px solid $accent
+			&::after
+				background-color: $accent
+		&-date
+			@include adaptive('font-size', 14, 7, 'desktop')
+			color: $gray-11
+			font-weight: 500
+	&__themes
+		@include adaptive('gap', 5, 2.5, 'desktop')
+		display: flex
+		flex-wrap: wrap
+		&-item
+			@include adaptive('padding-right', 20, 10, 'desktop')
+			@include adaptive('padding-left', 20, 10, 'desktop')
+			@include adaptive('padding-bottom', 12, 6, 'desktop')
+			@include adaptive('padding-top', 12, 6, 'desktop')
+			@include adaptive('border-radius', 60, 30, 'desktop')
+			@include adaptive('font-size', 14, 7, 'desktop')
+			font-weight: 500
+			background-color: $bg
+			display: flex
+			align-items: center
+			justify-content: center
+	&__pagination
+		@include adaptive('margin-top', 40, 20, 'desktop')
+		display: flex
+		justify-content: center
+		align-items: center
+		&-btn
+			display: flex
+			justify-content: center
+			align-items: center
+			&.disabled .blog__pagination-icon path
+				fill: $gray-8
+		&-icon
+			@include adaptive('width', 35, 18, 'desktop')
+			@include adaptive('height', 35, 18, 'desktop')
+		&-container
+			@include adaptive('margin-right', 20, 10, 'desktop')
+			@include adaptive('margin-left', 20, 10, 'desktop')
+			@include adaptive('gap', 10, 5, 'desktop')
+			display: flex
+			justify-content: center
+			align-items: center
+		&-item
+			@include adaptive('font-size', 18, 9, 'desktop')
+			color: $gray
+			font-weight: 500
+			line-height: 1.1
+			transition: .3s
+			&::before
+				background-color: $black
+			&.active
+				color: $black
+			&:hover
+				color: $black
+		&-separator
+			@include adaptive('font-size', 18, 9, 'desktop')
+
+@media only screen and (max-width : 960px)
+	.blog
+		@include adaptive('padding-top', 100, 40, 'mobile')
+		@include adaptive('padding-bottom', 205, 80, 'mobile')
+		&__title
+			@include adaptive('margin-bottom', 100, 40, 'mobile')
+			@include adaptive('font-size', 92, 36, 'mobile')
+			letter-spacing: -0.04em
+			line-height: 1
+		&__heading
+			@include adaptive('margin-bottom', 80, 40, 'mobile')
+			@include adaptive('font-size', 92, 36, 'mobile')
+			letter-spacing: -0.04em
+		&__container
+			@include adaptive('gap', 25, 10, 'mobile')
+		&__item
+			@include adaptive('border-radius', 38, 15, 'mobile')
+			&-image
+				@include adaptive('border-radius', 38, 15, 'mobile')
+				@include adaptive('height', 860, 230, 'mobile')
+				@include adaptive('margin-bottom', 76, 30, 'mobile')
+				@include adaptive('padding-right', 40, 15, 'mobile')
+				@include adaptive('padding-left', 40, 15, 'mobile')
+				@include adaptive('padding-top', 40, 15, 'mobile')
+			&-title, &-text
+				@include adaptive('padding-right', 90, 35, 'mobile')
+				@include adaptive('padding-left', 90, 35, 'mobile')
+			&-title
+				@include adaptive('margin-bottom', 38, 15, 'mobile')
+				@include adaptive('font-size', 46, 18, 'mobile')
+			&-bottom
+				@include adaptive('margin-top', 64, 25, 'mobile')
+				@include adaptive('padding-right', 90, 35, 'mobile')
+				@include adaptive('padding-left', 90, 35, 'mobile')
+				@include adaptive('padding-bottom', 76, 30, 'mobile')
+				flex-direction: column
+			&-date
+				@include adaptive('margin-top', 50, 20, 'mobile')
+				@include adaptive('font-size', 35, 14, 'mobile')
+		&__themes
+			@include adaptive('gap', 10, 5, 'mobile')
+			&-item
+				@include adaptive('padding-right', 50, 20, 'mobile')
+				@include adaptive('padding-left', 50, 20, 'mobile')
+				@include adaptive('padding-bottom', 30, 10, 'mobile')
+				@include adaptive('padding-top', 30, 10, 'mobile')
+				@include adaptive('border-radius', 150, 60, 'mobile')
+				@include adaptive('font-size', 35, 15, 'mobile')
+		&__pagination
+			@include adaptive('margin-top', 76, 30, 'mobile')
+			&-icon
+				@include adaptive('width', 115, 45, 'mobile')
+				@include adaptive('height', 115, 45, 'mobile')
+			&-container
+				@include adaptive('margin-right', 50, 20, 'mobile')
+				@include adaptive('margin-left', 50, 20, 'mobile')
+				@include adaptive('gap', 13, 5, 'mobile')
+			&-item
+				@include adaptive('font-size', 46, 18, 'mobile')
+			&-separator
+				@include adaptive('font-size', 46, 18, 'mobile')

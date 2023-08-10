@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Даурен Тажиев | Вход в аккаунт</title>
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" sizes="192x192" href="img/favicon.ico" />
+
+		<!-- libs css -->
+
+		<!-- main css -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- gsap -->
+		<script defer src="libs/gsap/gsap.min.js"></script>
+		<script defer src="libs/gsap/ScrollTrigger.min.js"></script>
+		<script defer src="libs/gsap/ScrollSmoother.min.js"></script>
+		<script defer src="libs/gsap/SplitText.min.js"></script>
+		<script defer src="libs/gsap/ScrollToPlugin.min.js"></script>
+
+		<!-- libs js -->
+		<script defer src="libs/inputmask.min.js"></script>
+
+		<!-- main js -->
+		<script defer src="js/main.js"></script>
+	</head>
+
+	<body>
+		<div class="account">
+			<div class="account__container">
+				<div class="account__container-inner account__entry">
+					<a href="index.html" class="account__logo">
+						<img class="account__logo-img" src="img/logo.svg" alt="Логотип" />
+					</a>
+
+					<div class="account__entry-bottom">
+						<img
+							src="img/account-photo.png"
+							alt="Фото Даурена Тажиева"
+							class="account__entry-img"
+						/>
+
+						<p class="account__entry-text">
+							Войдите в аккаунт чтобы задать вопрос юристу, получить ответ или оставить
+							отзыв
+						</p>
+					</div>
+				</div>
+
+				<div class="account__container-inner account__form">
+					<div class="account__form-inner">
+						<h1 class="account__title">Вход в аккаунт</h1>
+
+						<form class="account__form-body">
+							<label class="account__field">
+								<span class="account__field-caption">Ваша почта *</span>
+
+								<input
+									type="email"
+									name="email"
+									placeholder="example@gmail.com"
+									class="account__field-input"
+									required
+								/>
+							</label>
+
+							<label class="account__field">
+								<span class="account__field-caption">Пароль *</span>
+
+								<span class="account__field-inner">
+									<input
+										type="password"
+										name="Пароль"
+										placeholder="**************"
+										class="account__field-input"
+										autocomplete="off"
+										required
+									/>
+
+									<button
+										type="button"
+										class="account__field-toggle"
+										aria-label="Показать/скрыть пароль"
+									></button>
+								</span>
+							</label>
+
+							<div class="account__passreset _hover-underline">
+								<a href="#" class="account__passreset-link _hover-underline"
+									>Забыли пароль?</a
+								>
+							</div>
+
+							<button class="account__form-btn account__form-submit btn">
+								<span class="btn__inner">Войти</span>
+							</button>
+						</form>
+					</div>
+
+					<div class="account__flexbox">
+						<div class="account__link-wrapper">
+							Еще не зарегистрированы?
+							<a href="#" class="account__link _hover-underline">Регистрация</a>
+						</div>
+
+						<a href="#" class="account__help _hover-underline">Нужна помощь?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

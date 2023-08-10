@@ -1,0 +1,253 @@
+.about
+	&__blockquote
+		@include adaptive('font-size', 43, 21, 'desktop')
+		line-height: 1.05
+		letter-spacing: -0.02em
+		&::before
+			@include adaptive('width', 302, 151, 'desktop')
+			content: ''
+			display: inline-block
+		&-info
+			@include adaptive('margin-top', 70, 35, 'desktop')
+			@include adaptive('padding-top', 10, 5, 'desktop')
+			color: $gray
+			line-height: 1.1
+			border-top: 1px solid $gray-7
+			display: flex
+			justify-content: flex-end
+	&__title
+		@include adaptive('margin-top', 240, 120, 'desktop')
+		@include adaptive('margin-bottom', 230, 115, 'desktop')
+		@include adaptive('font-size', 116, 58, 'desktop')
+		letter-spacing: -0.04em
+		text-transform: uppercase
+		line-height: 0.9
+		&-center
+			margin-left: auto
+			display: block
+		&-bottom
+			text-align: right
+			display: block
+		&-full
+			@include adaptive('font-size', 300, 150, 'desktop')
+			@include adaptive('margin-bottom', 80, 40, 'desktop')
+			text-transform: uppercase
+			letter-spacing: -0.06em
+			font-weight: 300
+			line-height: 1
+	&-services__title
+		&-center
+			display: block
+			text-align: right
+		&-bottom
+			display: block
+	&__data
+		@include adaptive('padding-bottom', 70, 35, 'desktop')
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: relative
+		&-item
+			@include adaptive('width', 630, 315, 'desktop')
+			@include adaptive('height', 630, 315, 'desktop')
+			position: relative
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			line-height: 1
+			&._offset
+				&-top
+					@include adaptive('bottom', 70, 35, 'desktop')
+				&-bottom
+					@include adaptive('top', 70, 35, 'desktop')
+			&._position-absolute
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+		&-circle
+			border-radius: 50%
+			border: 1px solid $gray-7
+			position: absolute
+			left: 0
+			top: 0
+			right: 0
+			bottom: 0
+		&-inner
+			display: flex
+			flex-direction: column
+			align-items: center
+		&-number
+			@include adaptive('font-size', 164, 82, 'desktop')
+			letter-spacing: -0.08em
+			color: $accent
+			text-align: center
+			position: relative
+			&._has-icon::before
+				content: '>'
+				position: absolute
+				right: 100%
+				top: 50%
+				transform: translateY(-50%)
+		&-caption
+			@include adaptive('font-size', 22, 11, 'desktop')
+			font-weight: 500
+			transform: translateX(50%)
+			align-self: flex-end
+			&._transform-none
+				transform: none
+			&._offset
+				transform: translateX(20%)
+	&__info
+		@include adaptive('padding-top', 120, 60, 'desktop')
+		@include adaptive('padding-bottom', 120, 60, 'desktop')
+		&._pt-more
+			@include adaptive('padding-top', 170, 85, 'desktop')
+		&-title
+			@include adaptive('margin-bottom', 120, 60, 'desktop')
+			&._mb-none-desktop
+				margin-bottom: 0
+		&-container
+			margin-left: auto
+		&-item
+			@include adaptive('padding-top', 60, 30, 'desktop')
+			@include adaptive('padding-bottom', 60, 30, 'desktop')
+			border-bottom: 1px solid $gray-7
+			display: flex
+			align-items: flex-start
+			justify-content: space-between
+			&:first-child
+				border-top: 1px solid $gray-7
+		&-caption
+			@include adaptive('font-size', 140, 70, 'desktop')
+			color: $accent
+			letter-spacing: -0.08em
+			line-height: 1
+		&-text
+			color: $gray
+			line-height: 1.2
+			font-weight: 500
+	&__services
+		@include adaptive('margin-top', 160, 80, 'desktop')
+		&-heading
+			@include adaptive('font-size', 24, 12, 'desktop')
+			@include adaptive('margin-bottom', 40, 20, 'desktop')
+			text-transform: uppercase
+			color: $gray
+			font-weight: 500
+			letter-spacing: -0.02em
+		&-item
+			@include adaptive('padding-top', 25, 13, 'desktop')
+			@include adaptive('padding-bottom', 25, 13, 'desktop')
+			@include adaptive('gap', 10, 5, 'desktop')
+			border-bottom: 1px solid $gray-7
+			display: flex
+			align-items: center
+			&:first-child
+				border-top: 1px solid $gray-7
+		&-number
+			@include adaptive('font-size', 90, 45, 'desktop')
+			color: $accent
+			font-weight: 300
+			letter-spacing: -0.06em
+			line-height: 1
+			flex: 0 0 auto
+		&-text
+			@include adaptive('font-size', 18, 9, 'desktop')
+			line-height: 1.1
+			font-weight: 600
+			color: $gray
+
+@media only screen and (max-width : 960px)
+	.about
+		&__blockquote
+			@include adaptive('font-size', 41, 15, 'mobile')
+			letter-spacing: -0.02em
+			&::before
+				@include adaptive('width', 265, 95, 'mobile')
+			&-info
+				@include adaptive('margin-top', 54, 20, 'mobile')
+				@include adaptive('padding-top', 13, 5, 'mobile')
+				@include adaptive('font-size', 36, 13, 'mobile')
+				text-align: right
+				&._br-none-mobile br
+					display: none
+		&__title
+			@include adaptive('margin-top', 165, 60, 'mobile')
+			@include adaptive('margin-bottom', 94, 34, 'mobile')
+			@include adaptive('font-size', 71, 26, 'mobile')
+			letter-spacing: -0.02em
+			line-height: 1
+			&-center
+				text-align: right
+			&-bottom
+				text-align: left
+			&-full
+				@include adaptive('font-size', 139, 51, 'mobile')
+				@include adaptive('margin-bottom', 110, 40, 'mobile')
+				letter-spacing: -0.04em
+		&-services__title
+			@include adaptive('font-size', 71, 24, 'mobile')
+			&-center
+				text-align: left
+		&__data
+			@include adaptive('padding-bottom', 58, 21, 'mobile')
+			@include adaptive('width', 1200, 440, 'mobile')
+			left: 50%
+			transform: translateX(-50%)
+			&-item
+				@include adaptive('width', 490, 180, 'mobile')
+				@include adaptive('height', 490, 180, 'mobile')
+				&._offset
+					&-top
+						@include adaptive('bottom', 58, 21, 'mobile')
+					&-bottom
+						@include adaptive('top', 58, 21, 'mobile')
+			&-inner._offset
+				@include adaptive('right', 58, 21, 'mobile')
+				position: relative
+			&-number
+				@include adaptive('font-size', 87, 32, 'mobile')
+				@include adaptive('margin-bottom', 13, 5, 'desktop')
+			&-caption
+				@include adaptive('font-size', 22, 11, 'mobile')
+				transform: translateX(40%)
+				&._offset
+					transform: translateX(10%)
+		&__info
+			@include adaptive('padding-top', 82, 30, 'mobile')
+			@include adaptive('padding-bottom', 82, 30, 'mobile')
+			&._pt-more
+				@include adaptive('padding-top', 139, 51, 'mobile')
+			&-title
+				@include adaptive('margin-bottom', 110, 40, 'mobile')
+				&._mb-none-desktop
+					@include adaptive('margin-bottom', 110, 40, 'mobile')
+			&-item
+				@include adaptive('padding-top', 70, 25, 'mobile')
+				@include adaptive('padding-bottom', 70, 25, 'mobile')
+				flex-direction: column
+			&-caption
+				@include adaptive('font-size', 131, 48, 'mobile')
+				@include adaptive('margin-bottom', 40, 15, 'mobile')
+		&__services
+			@include adaptive('margin-top', 160, 60, 'mobile')
+			&-heading
+				@include adaptive('font-size', 49, 18, 'mobile')
+				@include adaptive('margin-bottom', 54, 20, 'mobile')
+				font-weight: 400
+				letter-spacing: -0.04em
+			&-item
+				@include adaptive('padding-top', 68, 25, 'mobile')
+				@include adaptive('padding-bottom', 68, 25, 'mobile')
+				@include adaptive('gap', 40, 15, 'mobile')
+				flex-direction: column
+				align-items: flex-start
+			&-number
+				@include adaptive('font-size', 130, 48, 'mobile')
+				font-weight: 400
+				letter-spacing: -0.08em
+			&-text
+				font-weight: 500
+				line-height: 1.2

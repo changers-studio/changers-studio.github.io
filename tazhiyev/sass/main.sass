@@ -1,0 +1,73 @@
+@import ./modules/reset
+@import ./modules/fonts
+@import ./modules/vars
+@import ./modules/mixin
+
+@import grid
+@import mods
+@import button
+@import preloader
+@import modal
+
+@import templates/section-template
+@import templates/header
+@import templates/footer
+@import templates/main-screen
+@import templates/about
+@import templates/services
+@import templates/advantages
+@import templates/reviews
+@import templates/feedback
+@import templates/activity
+@import templates/contacts
+@import templates/blog
+@import templates/article
+@import templates/questions
+@import templates/account
+
+body
+	@include adaptive('font-size', 16, 8, 'desktop')
+	@include adaptive('font-size', 40, 16, 'mobile')
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	font-family: $default-font
+	background-color: #fff
+	color: $black
+	&::-webkit-scrollbar
+		width: 0px
+	&.scroll-disabled
+		overflow: hidden
+
+// *
+// 	scrollbar-width: 5px
+// 	scrollbar-color: $accent transparent
+// 	&::-webkit-scrollbar-track
+// 		background: none
+// 	&::-webkit-scrollbar-thumb
+// 		background-color: $accent
+// 	&::-webkit-scrollbar
+// 		width: 5px
+
+input, textarea
+	@include adaptive('font-size', 16, 8, 'desktop')
+	@include adaptive('font-size', 40, 16, 'mobile')
+	line-height: 1.2
+	font-weight: 500
+	color: $black
+	background: none
+	border: none
+	color: inherit
+	width: 100%
+
+textarea
+	resize: none
+	&::-webkit-scrollbar
+		width: 0px
+
+::placeholder
+	@include adaptive('font-size', 16, 8, 'desktop')
+	@include adaptive('font-size', 40, 16, 'mobile')
+	color: $gray-11
+	font-family: $default-font
+	font-weight: 500
