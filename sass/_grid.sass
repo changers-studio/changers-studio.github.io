@@ -1,0 +1,22 @@
+.container
+	@include adaptive('padding-right', 60, 30, 'desktop')
+	@include adaptive('padding-left', 60, 30, 'desktop')
+	width: 100%
+
+.col
+	&-1
+		@include adaptive('width', 283, 141.5, 'desktop')
+	&-2
+		@include adaptive('width', 587, 293.5, 'desktop')
+	&-3
+		@include adaptive('width', 890, 445, 'desktop')
+	&-4
+		@include adaptive('width', 1200, 600, 'desktop')
+
+@media only screen and (max-width : 960px)
+	.container
+		@include adaptive('padding-right', 50, 20, 'mobile')
+		@include adaptive('padding-left', 50, 20, 'mobile')
+
+	.col-1, .col-2, .col-3, .col-4
+		width: 100%

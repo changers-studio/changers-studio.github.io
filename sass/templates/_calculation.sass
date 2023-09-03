@@ -1,0 +1,236 @@
+.calc
+	&__title
+		@include adaptive('margin-bottom', 78, 39, 'desktop')
+		&-row
+			display: block
+	&-container
+		margin-left: auto
+		margin-right: auto
+		position: relative
+		&__decor
+			position: absolute
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center
+			z-index: 1
+			&-right
+				@include adaptive('right', -100, -50, 'desktop')
+				@include adaptive('top', -140, -70, 'desktop')
+				@include adaptive('width', 270, 135, 'desktop')
+				@include adaptive('height', 270, 135, 'desktop')
+				background-image: url('/img/calc__decor-right.png')
+			&-left
+				@include adaptive('left', -256, -128, 'desktop')
+				@include adaptive('bottom', 50, 25, 'desktop')
+				@include adaptive('width', 438, 219, 'desktop')
+				@include adaptive('height', 438, 219, 'desktop')
+				background-image: url('/img/calc__decor-left.png')
+		&__caption
+			font-weight: 500
+			line-height: 1
+			color: #7D818A
+		&__inner
+			@include adaptive('border-radius', 30, 15, 'desktop')
+			@include adaptive('padding-top', 50, 25, 'desktop')
+			@include adaptive('padding-left', 50, 25, 'desktop')
+			@include adaptive('padding-right', 50, 25, 'desktop')
+			@include adaptive('padding-bottom', 60, 30, 'desktop')
+			border: 1px solid #FFF
+			background: rgba(255, 255, 255, 0.25)
+			backdrop-filter: blur(20px)
+			position: relative
+			z-index: 2
+		&__top
+			@include adaptive('margin-bottom', 60, 30, 'desktop')
+			display: flex
+			align-items: center
+			justify-content: space-between
+			&-info
+				@include adaptive('border-radius', 100, 50, 'desktop')
+				@include adaptive('padding-top', 16, 8, 'desktop')
+				@include adaptive('padding-bottom', 16, 8, 'desktop')
+				@include adaptive('padding-left', 45, 22, 'desktop')
+				@include adaptive('padding-right', 45, 22, 'desktop')
+				@include adaptive('font-size', 24, 12, 'desktop')
+				background-color: $accent
+				display: flex
+				align-items: center
+				justify-content: center
+				color: #fff
+				font-family: $machina
+				font-weight: 700
+				line-height: 1
+				text-transform: uppercase
+			&-amount
+				@include adaptive('font-size', 46, 23, 'desktop')
+				@include adaptive('margin-top', 10, 5, 'desktop')
+				font-weight: 500
+				letter-spacing: -0.05em
+				line-height: 1.1
+				border-bottom: 1px solid #DEDEDE
+		&__range
+			@include adaptive('margin-bottom', 90, 45, 'desktop')
+		&__options
+			@include adaptive('margin-bottom', 64, 32, 'desktop')
+			&-container
+				@include adaptive('margin-top', 15, 8, 'desktop')
+				display: flex
+				justify-content: space-between
+			&-item
+				@include adaptive('border-radius', 10, 5, 'desktop')
+				@include adaptive('padding-top', 18, 9, 'desktop')
+				@include adaptive('padding-bottom', 18, 9, 'desktop')
+				@include adaptive('padding-left', 45, 22, 'desktop')
+				@include adaptive('padding-right', 45, 22, 'desktop')
+				@include adaptive('font-size', 20, 10, 'desktop')
+				font-weight: 600
+				background-color: #fff
+				display: flex
+				justify-content: center
+				align-items: center
+				letter-spacing: -0.02em
+				cursor: pointer
+				&.active
+					color: #fff
+					&.seeds
+						background-color: #87C7AB
+					&.vega
+						background-color: #67B793
+					&.canna-hold
+						background-color: #6F7DD7
+					&.bloom
+						background-color: #489B6D
+					&.harvest
+						background-color: #367755
+					&.shareholder
+						background-color: #26543D
+		&__data
+			@include adaptive('margin-bottom', 46, 23, 'desktop')
+			display: flex
+			justify-content: space-between
+			align-items: flex-start
+			&-info
+				@include adaptive('margin-top', 6, 3, 'desktop')
+				@include adaptive('font-size', 28, 14, 'desktop')
+				font-weight: 500
+				line-height: 1
+				letter-spacing: -0.05em
+
+.irs--round
+	height: auto
+	.irs
+		&-bar
+			border: 1px solid #EBEFF4
+		&-bar, &-line
+			@include adaptive('height', 36, 18, 'desktop')
+			@include adaptive('border-radius', 5, 3, 'desktop')
+			cursor: pointer
+		&-line
+			background-color: #FAFAFB
+			top: 0
+		&-bar
+			background-color: $accent
+			top: 0
+		&-handle
+			@include adaptive('width', 14, 7, 'desktop')
+			@include adaptive('height', 46, 23, 'desktop')
+			@include adaptive('top', -5, -2.5, 'desktop')
+			@include adaptive('border-radius', 6, 3, 'desktop')
+			background-color: $accent
+			box-shadow: none
+			border: none
+			cursor: pointer
+			&:hover, &.state_hover
+				background-color: $accent
+		&-single, &-from, &-to
+			display: none
+		&-min, &-max
+			@include adaptive('margin-top', 10, 5, 'desktop')
+			@include adaptive('font-size', 18, 9, 'desktop')
+			top: 100%
+			color: #7D818A
+			background: none
+			font-weight: 500
+			line-height: 1
+			font-family: $default-font
+			letter-spacing: -0.05em
+			visibility: visible!important
+
+@media only screen and (max-width : 960px)
+	.calc
+		&__title
+			@include adaptive('margin-bottom', 88, 35, 'mobile')
+			&-row:last-child
+				@include adaptive('margin-left', 100, 40, 'mobile')
+				text-align: left
+		&-container
+			&__decor
+				&-right
+					@include adaptive('right', -95, -38, 'mobile')
+					@include adaptive('top', -120, -48, 'mobile')
+					@include adaptive('width', 250, 100, 'mobile')
+					@include adaptive('height', 250, 100, 'mobile')
+				&-left
+					@include adaptive('left', -215, -86, 'mobile')
+					@include adaptive('bottom', 450, 180, 'mobile')
+					@include adaptive('width', 425, 170, 'mobile')
+					@include adaptive('height', 425, 170, 'mobile')
+			&__caption
+				@include adaptive('font-size', 35, 14, 'mobile')
+			&__inner
+				@include adaptive('border-radius', 38, 15, 'mobile')
+				@include adaptive('padding-top', 88, 35, 'mobile')
+				@include adaptive('padding-bottom', 88, 35, 'mobile')
+				@include adaptive('padding-left', 75, 30, 'mobile')
+				@include adaptive('padding-right', 75, 30, 'mobile')
+				backdrop-filter: blur(5px)
+			&__top
+				@include adaptive('margin-bottom', 88, 35, 'mobile')
+				flex-direction: column
+				align-items: flex-start
+				&-info
+					display: none
+				&-amount
+					@include adaptive('font-size', 80, 32, 'mobile')
+					@include adaptive('margin-top', 12, 5, 'mobile')
+			&__range
+				@include adaptive('margin-bottom', 150, 60, 'mobile')
+			&__options
+				@include adaptive('margin-bottom', 75, 30, 'mobile')
+				&-container
+					@include adaptive('margin-top', 38, 15, 'mobile')
+					@include adaptive('gap', 25, 10, 'mobile')
+					justify-content: flex-start
+					flex-wrap: wrap
+				&-item
+					@include adaptive('border-radius', 25, 10, 'mobile')
+					@include adaptive('padding-top', 38, 15, 'mobile')
+					@include adaptive('padding-bottom', 38, 15, 'mobile')
+					@include adaptive('padding-left', 50, 20, 'mobile')
+					@include adaptive('padding-right', 50, 20, 'mobile')
+					@include adaptive('font-size', 40, 16, 'mobile')
+			&__data
+				@include adaptive('margin-bottom', 50, 20, 'mobile')
+				justify-content: flex-start
+				flex-direction: column
+				&-item
+					@include adaptive('margin-bottom', 50, 20, 'mobile')
+					&:last-child
+						margin-bottom: 0
+				&-info
+					@include adaptive('margin-top', 12, 5, 'mobile')
+					@include adaptive('font-size', 55, 22, 'mobile')
+
+	.irs--round
+		.irs
+			&-bar, &-line
+				@include adaptive('height', 50, 20, 'mobile')
+				@include adaptive('border-radius', 12, 5, 'mobile')
+			&-handle
+				@include adaptive('width', 38, 15, 'mobile')
+				@include adaptive('height', 75, 30, 'mobile')
+				@include adaptive('top', -12, -5, 'mobile')
+				@include adaptive('border-radius', 12, 5, 'mobile')
+			&-min, &-max
+				@include adaptive('margin-top', 25, 10, 'mobile')
+				@include adaptive('font-size', 35, 14, 'mobile')

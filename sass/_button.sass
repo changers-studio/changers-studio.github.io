@@ -1,0 +1,57 @@
+.btn
+	@include adaptive('font-size', 24, 12, 'desktop')
+	@include adaptive('border-radius', 10, 5, 'desktop')
+	@include adaptive('padding-top', 30, 15, 'desktop')
+	@include adaptive('padding-bottom', 30, 15, 'desktop')
+	@include adaptive('padding-right', 40, 20, 'desktop')
+	@include adaptive('padding-left', 40, 20, 'desktop')
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	position: relative
+	text-decoration: none
+	outline: none
+	overflow: hidden
+	cursor: pointer
+	border: none
+	background-color: #fff
+	color: $black
+	font-weight: 600
+	line-height: 1.1
+	transition: .3s
+	&:focus, &:hover
+		text-decoration: none
+	&::after
+		content: ''
+		background-color: $black
+		position: absolute
+		top: 0
+		left: 0
+		display: block
+		width: 100%
+		height: 100%
+		opacity: 0
+		border-radius: 100%
+		transform: translate(0, 100%)
+		transition: opacity .65s cubic-bezier(0.215, 0.61, 0.355, 1),border-radius 0s .65s,transform 0s .65s
+	&:hover
+		color: #fff
+		&::after
+			opacity: 1
+			border-radius: 0
+			transform: translate(0)
+			transition: border-radius .65s cubic-bezier(0.215, 0.61, 0.355, 1),transform .65s cubic-bezier(0.215, 0.61, 0.355, 1)
+	&__inner
+		position: relative
+		z-index: 2
+	&._bg-accent
+		background-color: $accent
+		color: #fff
+
+@media only screen and (max-width : 960px)
+	.btn
+		@include adaptive('font-size', 40, 16, 'mobile')
+		@include adaptive('border-radius', 12, 5, 'mobile')
+		@include adaptive('padding', 50, 20, 'mobile')
+		width: 100%

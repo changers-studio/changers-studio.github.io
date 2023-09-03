@@ -1,0 +1,118 @@
+.main-screen
+	background-color: $accent
+	color: #fff
+	position: relative
+	overflow: hidden
+	&__container
+		height: 100vh
+		display: flex
+		flex-direction: column
+		justify-content: center
+		position: relative
+		z-index: 2
+	&__title
+		@include adaptive('font-size', 140, 70, 'desktop')
+		@include adaptive('margin-bottom', 50, 25, 'desktop')
+		line-height: 0.9
+		text-transform: uppercase
+		text-align: center
+		font-weight: 500
+		font-family: $machina
+	&__btn
+		margin: 0 auto
+	&__slider
+		&-inner
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+		&-counter
+			@include adaptive('font-size', 36, 18, 'desktop')
+			font-family: $machina
+			font-weight: 400
+			line-height: 1
+			text-transform: uppercase
+			color: #fff
+			._opacity
+				color: #B9DCC9
+		&-nav
+			@include adaptive('gap', 10, 5, 'desktop')
+			display: flex
+		&-arrow
+			@include adaptive('width', 65, 32, 'desktop')
+			@include adaptive('height', 65, 32, 'desktop')
+			cursor: pointer
+			svg
+				width: 100%
+				height: 100%
+	&__bottom
+		@include adaptive('right', 60, 30, 'desktop')
+		@include adaptive('left', 60, 30, 'desktop')
+		position: absolute
+		bottom: 0
+		&-flexbox
+			display: flex
+			justify-content: space-between
+			align-items: flex-end
+		&-text
+			@include adaptive('margin-top', 30, 15, 'desktop')
+			@include adaptive('padding-top', 30, 15, 'desktop')
+			@include adaptive('padding-bottom', 30, 15, 'desktop')
+			@include adaptive('font-size', 24, 12, 'desktop')
+			font-weight: 500
+			font-family: $machina
+			color: rgba(255, 255, 255, 0.42)
+			border-top: 1px solid rgba(255, 255, 255, 0.25)
+			display: flex
+			justify-content: space-between
+			align-items: center
+			text-transform: uppercase
+			.word
+				@include adaptive('gap', 75, 37, 'desktop')
+				display: flex!important
+	&__bg
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		right: 0
+		z-index: 1
+
+@media only screen and (max-width : 960px)
+	.main-screen
+		background-image: url('/img/main-bg-mobile.jpg')
+		background-size: cover
+		background-position: center
+		&__container
+			min-height: 100vh
+		&__title
+			@include adaptive('font-size', 85, 34, 'mobile')
+			@include adaptive('margin-bottom', 75, 30, 'mobile')
+			br
+				display: none
+		&__btn
+			margin: 0 auto
+		&__slider
+			&-counter
+				@include adaptive('font-size', 60, 24, 'mobile')
+				font-weight: 500
+			&-nav
+				@include adaptive('gap', 12, 5, 'mobile')
+			&-arrow
+				@include adaptive('width', 112, 45, 'mobile')
+				@include adaptive('height', 112, 45, 'mobile')
+		&__bottom
+			@include adaptive('right', 50, 20, 'mobile')
+			@include adaptive('left', 50, 20, 'mobile')
+			&-text
+				@include adaptive('margin-top', 38, 15, 'mobile')
+				@include adaptive('padding-top', 25, 10, 'mobile')
+				@include adaptive('padding-bottom', 38, 15, 'mobile')
+				@include adaptive('font-size', 35, 14, 'mobile')
+				color: rgba(255, 255, 255, 0.5)
+				border-top: 1px solid rgba(255, 255, 255, 0.3)
+				letter-spacing: -0.04em
+				.word
+					@include adaptive('gap', 12, 5, 'mobile')
+		&__bg
+			display: none
