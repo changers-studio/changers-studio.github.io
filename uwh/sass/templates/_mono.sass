@@ -1,0 +1,128 @@
+.mono
+	&__container
+		width: 100%
+		max-width: 1500px
+		background-color: $blue
+		padding: 100px 120px
+		border-radius: 24px
+		margin: 0 auto
+		position: relative
+	&__flexbox
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		&-inner
+			color: #fff
+			width: 730px
+	&__title
+		margin-bottom: 30px
+	&__text
+		font-weight: 300
+	&-calc
+		background-color: #fff
+		border-radius: 12px
+		padding: 30px
+		width: 400px
+		position: relative
+		&__heading
+			margin-bottom: 25px
+			font-weight: 500
+		&__total
+			margin-bottom: 24px
+			padding: 16px 24px
+			border-radius: 6px
+			background-color: #F8F2FB
+			display: flex
+			justify-content: space-between
+			align-items: center
+			&-input
+				width: 100%
+				font-size: 44px
+				font-weight: 700
+			&-currency
+				opacity: 0.4
+				font-size: 32px
+				color: $black
+				margin-left: 24px
+				flex: 0 0 auto
+		&__btns
+			display: flex
+			gap: 8px
+		&__btn
+			padding: 12px
+			border-radius: 6px
+			background-color: #F8F2FB
+			font-weight: 500
+			width: 25%
+		&__link
+			margin-top: 25px
+	&__decor
+		position: absolute
+		&-1
+			top: -120px
+			left: 60px
+			z-index: -1
+		&-2
+			left: -20px
+			top: 15px
+		&-3
+			right: 0
+			top: -55px
+		&-4
+			right: -130px
+			bottom: -145px
+
+@media only screen and (max-width : 1300px)
+	.mono
+		&__container
+			width: 100%
+			padding: 40px 0
+			border-radius: 12px
+		&__flexbox
+			flex-direction: column
+			align-items: stretch
+			&-inner
+				width: 100%
+				margin-bottom: 30px
+		&__title
+			margin-bottom: 25px
+		&__text
+			font-size: 14px
+		&-calc
+			width: 100%
+			&__heading
+				margin-bottom: 15px
+			&__total
+				margin-bottom: 15px
+				&-input
+					font-size: 24px
+				&-currency
+					font-size: 16px
+			&__btns
+				gap: 3px
+			&__btn
+				font-size: 12px
+				padding: 12px 6px
+			&__link
+				margin-top: 25px
+				.btn__icon
+					display: none
+		&__decor
+			&-1
+				left: auto
+				top: -50px
+				right: -5px
+				width: 50px
+				z-index: 1
+				transform: rotate(30deg)
+			&-2
+				left: -10px
+				top: -40px
+				width: 55px
+			&-3
+				display: none
+			&-4
+				width: 140px
+				right: -40px
+				bottom: -52px
+				z-index: 3

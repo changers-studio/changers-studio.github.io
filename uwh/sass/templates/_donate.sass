@@ -1,0 +1,79 @@
+.donate
+	padding-bottom: 160px
+	&__container
+		align-items: center
+	&__heading
+		background-color: $accent
+		border-radius: 24px
+		padding: 45px 55px
+		font-size: 26px
+		font-weight: 700
+		font-family: $second-font
+		position: relative
+		width: 510px
+	&__decor
+		position: absolute
+		right: -80px
+		top: -100px
+	&__text
+		font-size: 18px
+		letter-spacing: -0.02em
+		margin-bottom: 20px
+		color: $gray
+		&:last-child
+			margin-bottom: 0
+		&._bold
+			font-size: 20px
+			color: $black
+	&-btn
+		width: 154px
+		height: 154px
+		background-color: $accent
+		border: 1px solid rgba(255, 255, 255, 0.5)
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		text-align: center
+		position: fixed
+		right: 30px
+		bottom: 30px
+		z-index: 100
+		border-radius: 50%
+		font-family: $second-font
+		gap: 5px
+		font-size: 14px
+		font-weight: 700
+		transition: .3s
+		&:hover
+			transform: scale(1.1)
+
+@media only screen and (max-width : 1300px)
+	.donate
+		padding-bottom: 70px
+		&__container
+			align-items: stretch
+		&__heading
+			width: 100%
+			padding: 30px
+			border-radius: 12px
+			font-size: 16px
+			margin-bottom: 30px
+		&__decor
+			display: none
+		&__text
+			margin-bottom: 20px
+			font-size: 14px
+			&._bold
+				font-size: 16px
+		&-btn
+			width: 70px
+			height: 70px
+			gap: 3px
+			font-size: 7px
+			right: 10px
+			bottom: 40px
+			&__icon
+				width: 15px
+			&:hover
+				transform: none

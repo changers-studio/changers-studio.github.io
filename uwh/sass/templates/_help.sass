@@ -1,0 +1,153 @@
+.help
+	&__top
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		margin-bottom: 80px
+		&-title
+			margin-bottom: 0
+	&__container
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		margin-bottom: 30px
+	&__item
+		width: 290px
+		height: 290px
+		background-color: #fff
+		border-radius: 12px
+	&-top
+		margin-bottom: 100px
+		&__heading
+			padding: 45px 55px
+			border: 2px solid rgba(0, 0, 0, 0.07)
+			border-radius: 24px
+			font-family: $second-font
+			font-size: 22px
+			font-weight: 500
+			width: 510px
+		&__text
+			&-p
+				margin-bottom: 20px
+				color: $gray
+				&:last-child
+					margin-bottom: 0
+				&._black
+					font-size: 18px
+					font-weight: 500
+					color: $black
+	&-center
+		position: relative
+		margin-bottom: 40px
+		&__item
+			background-color: #fff
+			border-radius: 24px
+			padding: 40px 60px
+			display: flex
+			align-items: center
+			justify-content: space-between
+			&-inner
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+			&-btn
+				margin-top: 35px
+		&__img
+			border-radius: 12px
+			flex: 0 0 auto
+	&-bottom
+		background-color: #fff
+		border-radius: 24px
+		position: relative
+		&__inner
+			padding: 40px 60px
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+		&__btn
+			margin-top: 35px
+		&__social
+			margin-top: 30px
+			display: flex
+			align-items: center
+			gap: 15px
+	&__decor
+		position: absolute
+		&-1
+			top: -36px
+			left: -126px
+		&-2
+			bottom: -50px
+			right: -70px
+
+@media only screen and (max-width : 1300px)
+	.help
+		&__top
+			flex-direction: column
+			align-items: stretch
+			margin-bottom: 40px
+			&-title
+				margin-bottom: 30px
+		&__container
+			margin-bottom: 40px
+		&__item
+			width: 100%
+			height: 330px
+			margin-bottom: 10px
+			&:last-child
+				margin-bottom: 0
+		&-top
+			margin-bottom: 40px
+			&__heading
+				padding: 20px 25px
+				border-radius: 12px
+				font-size: 16px
+				width: 100%
+				margin-bottom: 30px
+			&__text
+				&-p
+					font-size: 14px
+					&._black
+						font-size: 14px
+		&-center
+			margin-bottom: 10px
+			&__item
+				border-radius: 12px
+				padding: 40px 30px
+				margin-bottom: 10px
+				&:last-child
+					margin-bottom: 0
+				&-inner
+					width: 100%
+					align-items: stretch
+				&-btn
+					margin-top: 20px
+			&__img
+				display: none
+		&-bottom
+			border-radius: 12px
+			padding: 40px 30px
+			&__inner
+				padding: 0
+				align-items: stretch
+				margin-bottom: 40px
+				&:last-child
+					margin-bottom: 0
+			&__btn
+				margin-top: 20px
+			&__social
+				margin-top: 20px
+				justify-content: space-between
+				gap: 0
+				width: 100%
+				max-width: 300px
+		&__decor
+			&-1
+				top: -22px
+				left: auto
+				right: 0
+				width: 94px
+			&-2
+				bottom: -85px
+				right: -5px
+				width: 125px
