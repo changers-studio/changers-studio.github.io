@@ -1,0 +1,126 @@
+.header
+	padding: 20px 0
+	position: relative
+	z-index: 5
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__logo
+		display: flex
+	&__menu
+		display: flex
+		align-items: center
+		justify-content: center
+		gap: 40px
+		padding-left: 80px
+		&-item
+			font-size: 20px
+			font-weight: 500
+			position: relative
+			transition: .2s
+			&::before
+				content: ''
+				width: 0
+				height: 1px
+				background-color: #fff
+				position: absolute
+				top: 100%
+				left: 0
+				transition: .2s
+			&:hover::before
+				width: 100%
+			&.active
+				color: $accent
+				&::before
+					width: 100%
+					background-color: $accent
+	&__btn
+		font-size: 16px
+		&-container
+			display: flex
+			gap: 10px
+	&__hamburger
+		display: none
+		&-btn, &-plug
+			display: none
+
+@media only screen and (max-width : 1400px)
+	.header
+		&__menu
+			gap: 30px
+			&-item
+				font-size: 18px
+
+@media only screen and (max-width : 1024px)
+	.header
+		padding: 15px 0
+		&__container
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&__logo
+			width: 110px
+		&__menu
+			flex-direction: column
+			align-items: flex-start
+			justify-content: flex-start
+			gap: 12px
+			padding-left: 0
+			&-item
+				font-size: 30px
+				&:hover::before
+					width: 0
+				&.active
+					color: $accent
+					&::before
+						width: 100%
+						background-color: $accent
+		&__btn
+			width: 50%
+			padding: 20px
+			&-container
+				gap: 5px
+		&__hamburger
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			width: 360px
+			height: 100vh
+			position: absolute
+			top: 0
+			right: 0
+			background-color: $bg
+			border: 1px solid $bd
+			border-radius: 5px 0 0 5px
+			padding: 50px 20px 60px 30px
+			transition: .5s
+			transform: translateX(100%)
+			z-index: 10
+			&::before
+				content: ''
+				width: 400px
+				height: 400px
+				position: absolute
+				right: 0
+				top: 40%
+				transform: translate(50%, -50%)
+				background: radial-gradient(50% 50% at 50% 50%, #8655FF 0%, rgba(10, 22, 40, 0.00) 96.88%)
+				filter: blur(90px)
+			&.active
+				transform: translateX(0%)
+			&-plug
+				width: 100vw
+				height: 100vh
+				position: fixed
+				left: 0
+				top: 0
+				background-color: #0a1628
+				opacity: .9
+				z-index: 9
+			&-btn
+				display: flex
+			&-close
+				position: absolute
+				top: 15px
+				right: 20px
