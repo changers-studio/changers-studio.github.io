@@ -97,7 +97,7 @@ if ($('*').is('.range-input')) {
 		postfix: ' $',
 		onStart: updateInputs,
 		onChange: updateInputs,
-		onFinish: updateInputs,
+		onFinish: updateVal,
 	})
 	instance = $range.data('ionRangeSlider')
 
@@ -105,31 +105,29 @@ if ($('*').is('.range-input')) {
 		$inputFrom.val(data.from)
 	}
 
-	$inputFrom.on('change', function () {
-		var val = $(this).val()
-
-		if (val < min) {
-			val = min
-		} else if (val > to) {
-			val = to
-		}
+	function updateVal() {
+		var val = $inputFrom.val()
 
 		instance.update({
 			from: val,
 		})
 
-		$(this).val(val)
-	})
-}
-//
+		$inputFrom.val(val)
 
-// Calc mask
-if ($('*').is('.calc__deposit-num')) {
-	Inputmask({
-		mask: '99999',
-		showMaskOnHover: false,
-		placeholder: ' ',
-	}).mask('.calc__deposit-num')
+		if (50 <= val && val <= 50000) {
+			$('.calc__result-daily').html(Math.floor(val * 0.17))
+			$('.calc__result-total').html(Math.floor(val * 1.19))
+			$('.calc__error').removeClass('active')
+		} else {
+			$('.calc__error').addClass('active')
+			$('.calc__result-daily').html('-')
+			$('.calc__result-total').html('-')
+		}
+	}
+
+	$inputFrom.on('input', function () {
+		updateVal()
+	})
 }
 //
 

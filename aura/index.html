@@ -35,7 +35,6 @@
 		<script defer src="libs/slick-carousel/slick.min.js"></script>
 		<script defer src="libs/range/ion.rangeSlider.min.js"></script>
 		<script defer src="libs/select2/select2.min.js"></script>
-		<script defer src="libs/jquery.inputmask.min.js"></script>
 
 		<!-- main js -->
 		<script defer src="js/main.js"></script>
@@ -137,23 +136,37 @@
 				<div class="container">
 					<div class="calc__container" data-aos="fade-up">
 						<div class="calc__top">
+							<div class="calc__error">
+								Please enter an amount from <span class="_c-acid">50$</span> to
+								<span class="_c-acid">50000$</span>
+							</div>
+
 							<div class="calc__col">
 								<h4 class="calc__caption">Your deposit</h4>
 								<div class="calc__deposit">
 									$
-									<input class="calc__deposit-num" type="text" value="3000" />
+									<input
+										class="calc__deposit-num"
+										type="text"
+										value="3000"
+										maxlength="5"
+									/>
 								</div>
 							</div>
 
 							<div class="calc__top-inner" data-da=".calc__container, 1024, 2">
 								<div class="calc__col">
 									<h4 class="calc__caption">Daily accrual</h4>
-									<div class="calc__result">$ 170</div>
+									<div class="calc__result">
+										$ <span class="calc__result-daily">170</span>
+									</div>
 								</div>
 
 								<div class="calc__col">
 									<h4 class="calc__caption">Total accrual</h4>
-									<div class="calc__result">$ 1190</div>
+									<div class="calc__result">
+										$ <span class="calc__result-total">1190</span>
+									</div>
 								</div>
 							</div>
 						</div>
