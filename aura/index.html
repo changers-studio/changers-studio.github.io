@@ -120,12 +120,15 @@
 						<video
 							data-aos="zoom-in"
 							data-aos-delay="2500"
-							src="img/main-screen/video.webm"
 							class="main__video"
 							muted
 							autoplay
+							playsinline
 							loop
-						></video>
+						>
+							<source src="img/main-screen/video.webm" type="video/webm" />
+							<source src="img/main-screen/video.mp4" type="video/mp4" />
+						</video>
 					</div>
 				</div>
 			</section>
@@ -546,13 +549,16 @@
 
 				<div class="container program__container">
 					<video
-						src="img/program/video.webm"
 						class="program__video"
 						muted
 						autoplay
 						loop
+						playsinline
 						data-aos="zoom-in"
-					></video>
+					>
+						<source src="img/program/video.webm" type="video/webm" />
+						<source src="img/program/video.mp4" type="video/mp4" />
+					</video>
 
 					<div class="program__container-inner" data-aos="fade-right">
 						<h2 class="program__title title">

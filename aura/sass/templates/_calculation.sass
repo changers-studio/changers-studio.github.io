@@ -117,12 +117,7 @@
 @media only screen and (max-width : 1024px)
 	.calc
 		.blur
-			right: auto
-			left: -50%
-			width: 90vw
-			height: 90vw
-			filter: blur(100px)
-			animation: none
+			display: none
 		&__container
 			padding: 35px 30px
 		&__top
@@ -139,7 +134,7 @@
 			font-size: 14px
 		&__deposit
 			font-size: 32px
-			width: 110px
+			width: 122px
 			&::before
 				content: ''
 				left: 0
@@ -148,12 +143,17 @@
 				height: 1px
 				background-color: $accent
 				position: absolute
+			&-num
+				font-size: 32px
+				width: 100px
 		&__result
 			font-size: 22px
 		&__btn
-			height: 60px
+			height: 50px
 			font-size: 18px
 			margin-top: 20px
+		&__error
+			font-size: 14px
 
 	.irs--round
 		.irs

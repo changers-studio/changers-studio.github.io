@@ -153,7 +153,7 @@ if ($('*').is('.select-countries')) {
 
 // Remove aos delay on mobile
 if ($(window).width() <= 1024) {
-	$('.stats__item').removeAttr('data-aos-delay')
+	$('.stats__item, .main__video').removeAttr('data-aos-delay')
 	$('.header').removeAttr('data-aos')
 }
 //
