@@ -72,6 +72,13 @@
 		right: 0
 		bottom: 0
 		width: 530px
+	&__slider
+		position: relative
+		left: 50%
+		transform: translateX(-50%)
+		width: 100vw
+		max-width: 480px
+		display: none
 
 @media only screen and (max-width : 1400px)
 	.manual
@@ -109,11 +116,8 @@
 				&.active
 					background-color: $accent
 					color: #fff
-		&__tabs
-			position: relative
-			left: 50%
-			transform: translateX(-50%)
-			width: 100vw
+		&__slider
+			display: block
 			.slick-dots
 				display: flex
 				justify-content: center
@@ -130,6 +134,8 @@
 					&.slick-active
 						width: 12px
 						height: 12px
+		&__tabs
+			display: none
 		&__tab
 			padding: 0
 			margin: 28px 15px 0
@@ -141,7 +147,7 @@
 		&__heading
 			font-size: 24px
 		&__text
-			font-size: 14px
+			font-size: 16px
 		&__image
 			width: calc(100% - 30px)
 			position: relative

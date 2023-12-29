@@ -70,8 +70,8 @@ $('ul.faq__captions').on('click', 'li:not(.active)', function () {
 //
 
 // Manual slider
-if ($('*').is('.manual__tabs') && $(window).width() <= 1024) {
-	$('.manual__tabs').slick({
+if ($('*').is('.manual__slider')) {
+	$('.manual__slider').slick({
 		infinite: true,
 		arrows: false,
 		speed: 500,
@@ -85,12 +85,14 @@ if ($('*').is('.manual__tabs') && $(window).width() <= 1024) {
 if ($('*').is('.range-input')) {
 	var $range = $('.range-input')
 	var $inputFrom = $('.calc__deposit-num')
+	var min = 50
+	var to = 50000
 	var instance
 
 	$range.ionRangeSlider({
 		skin: 'round',
-		min: 50,
-		max: 50000,
+		min: min,
+		max: to,
 		from: 3000,
 		postfix: ' $',
 		onStart: updateInputs,
@@ -100,13 +102,12 @@ if ($('*').is('.range-input')) {
 	instance = $range.data('ionRangeSlider')
 
 	function updateInputs(data) {
-		$inputFrom.html(data.from)
+		$inputFrom.val(data.from)
 	}
 
 	$inputFrom.on('change', function () {
-		var val = $(this).html()
+		var val = $(this).val()
 
-		// validate
 		if (val < min) {
 			val = min
 		} else if (val > to) {
@@ -117,8 +118,18 @@ if ($('*').is('.range-input')) {
 			from: val,
 		})
 
-		$(this).html(val)
+		$(this).val(val)
 	})
+}
+//
+
+// Calc mask
+if ($('*').is('.calc__deposit-num')) {
+	Inputmask({
+		mask: '99999',
+		showMaskOnHover: false,
+		placeholder: ' ',
+	}).mask('.calc__deposit-num')
 }
 //
 
@@ -144,7 +155,8 @@ if ($('*').is('.select-countries')) {
 
 // Remove aos delay on mobile
 if ($(window).width() <= 1024) {
-	$('.stats__item, .main__video').removeAttr('data-aos-delay')
+	$('.stats__item').removeAttr('data-aos-delay')
+	$('.header').removeAttr('data-aos')
 }
 //
 
