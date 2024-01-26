@@ -1,0 +1,89 @@
+.manual
+	&__title
+		text-align: center
+		margin-bottom: 60px
+		display: inline-block
+		&-wrapper
+			display: flex
+			justify-content: center
+	&__container
+		display: flex
+		justify-content: space-between
+		gap: 20px
+	&__item
+		background-color: #fff
+		box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.07)
+		border-radius: 5px
+		padding: 30px 20px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		text-align: center
+		width: 25%
+		transition: .5s
+		&.active
+			background-color: $accent
+			color: #fff
+			box-shadow: none
+			.manual__item-number
+				background-color: #fff
+				color: $accent
+		&-number
+			width: 60px
+			height: 60px
+			border-radius: 50%
+			background-color: $accent
+			color: #fff
+			display: flex
+			justify-content: center
+			align-items: center
+			font-size: 24px
+			font-weight: 700
+			margin-bottom: 15px
+			transition: .5s
+		&-heading
+			margin-bottom: 5px
+			font-size: 24px
+			line-height: 1.2
+			font-weight: 700
+		&-text
+			font-size: 18px
+		&-box
+			margin-top: 20px
+			display: flex
+			justify-content: center
+			align-items: center
+
+@media only screen and (max-width : 1400px)
+	.manual
+		&__container
+			gap: 10px
+		&__item
+			&-text
+				font-size: 16px
+			&-box
+				height: 190px
+			&-image
+				width: 150px
+
+@media only screen and (max-width : 1024px)
+	.manual
+		&__title
+			margin-bottom: 30px
+		&__container
+			flex-direction: column
+		&__item
+			width: 100%
+			background-color: $accent
+			color: #fff
+			box-shadow: none
+			.manual__item-number
+				background-color: #fff
+				color: $accent
+			&-text
+				font-size: 18px
+			&-box
+				height: auto
+			&-image
+				width: 180px

@@ -1,0 +1,134 @@
+input, textarea
+	background: none
+	border: none
+	color: inherit
+	font-size: 16px
+	line-height: 1.3
+	color: $black
+
+::placeholder
+	color: #7D7D9C
+	font-size: 16px
+	font-family: $default-font
+	line-height: 1.3
+
+.form
+	&__title
+		margin-bottom: 40px
+	&__label
+		margin-bottom: 20px
+		display: flex
+		flex-direction: column
+	&__caption
+		font-size: 16px
+		font-weight: 500
+		margin-bottom: 10px
+	&__input, &__textarea
+		padding: 18px 20px
+		border: 1px solid $bd
+		background-color: $bg
+		border-radius: 5px
+	&__textarea
+		height: 180px
+		resize: none
+	&__submit
+		padding: 22px 25px
+		width: 100%
+		margin-top: 20px
+		font-size: 22px
+	&__wrapper
+		display: flex
+		flex-direction: column
+		margin-top: 40px
+		gap: 15px
+		.form__submit
+			margin-top: 0
+	&__reset-pass
+		align-self: flex-end
+		font-size: 18px
+		font-weight: 600
+		color: $accent
+		position: relative
+		&::before
+			content: ''
+			width: 100%
+			height: 1px
+			background-color: $accent
+			position: absolute
+			top: 100%
+			left: 0
+			transition: .2s
+		&:hover::before
+			width: 0%
+	&__back._stroke
+		border-color: $black
+		color: $black
+	&__flexbox
+		display: flex
+		gap: 10px
+		margin-top: 40px
+		.btn
+			width: 50%
+			margin-top: 0
+			padding: 22px 25px
+			font-size: 22px
+	&__bottom
+		margin-top: 40px
+		.btn
+			margin: 0
+	&__policy
+		margin-bottom: 20px
+		font-weight: 500
+		font-size: 16px
+		line-height: 1.3
+		&-link
+			position: relative
+			display: inline-block
+			&::before
+				content: ''
+				width: 100%
+				height: 1px
+				background-color: $accent
+				position: absolute
+				bottom: 0
+				left: 0
+				display: inline-block
+				transition: .2s
+			&:hover::before
+				width: 0
+
+@media only screen and (max-width : 1024px)
+	.form
+		&__title
+			margin-bottom: 30px
+		&__submit
+			padding: 14px 24px
+			font-size: 18px
+		&__wrapper
+			gap: 10px
+			.form__submit
+				margin-top: 0
+		&__reset-pass
+			align-self: stretch
+			color: $black
+			padding: 14px 24px
+			border: 1px solid $black
+			background-color: transparent
+			border-radius: 5px
+			display: flex
+			align-items: center
+			justify-content: center
+			font-size: 18px
+			order: 1
+			&::before
+				display: none
+		&__back
+			order: 1
+		&__flexbox
+			flex-direction: column
+			.btn
+				width: 100%
+				padding: 14px 24px
+				font-size: 18px
+		&__policy
+			font-size: 14px

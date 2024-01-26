@@ -1,0 +1,96 @@
+.program
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: relative
+		z-index: 2
+		&-inner
+			width: 565px
+			flex: 0 0 auto
+	&__image
+		width: 540px
+	&__title
+		margin-bottom: 40px
+	&__text
+		margin-bottom: 80px
+	&__flexbox
+		display: inline-flex
+		gap: 35px
+		position: relative
+		&::before
+			content: ''
+			height: 6px
+			width: 90%
+			background-color: $turq
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+	&__item
+		background-color: #fff
+		border-radius: 5px
+		width: 130px
+		height: 130px
+		display: flex
+		flex-direction: column
+		gap: 10px
+		justify-content: center
+		align-items: center
+		text-align: center
+		line-height: 1
+		position: relative
+		z-index: 2
+		&-heading
+			font-size: 46px
+			font-weight: 700
+			color: $accent
+			span
+				font-size: 34px
+		&-caption
+			font-size: 18px
+			font-weight: 600
+			color: $black
+
+@media only screen and (max-width : 1400px)
+	.program
+		&__container-inner
+			width: 460px
+		&__image
+			width: 400px
+
+@media only screen and (max-width : 1024px)
+	.program
+		&__container
+			flex-direction: column
+			align-items: stretch
+			&-inner
+				width: 100%
+				order: -1
+		&__image
+			width: 300px
+			margin: 40px auto 0
+		&__title
+			margin-bottom: 30px
+		&__text
+			margin-bottom: 30px
+		&__flexbox
+			justify-content: space-between
+			width: 345px
+			max-width: 100%
+			gap: 0
+			left: 50%
+			transform: translateX(-50%)
+		&__item
+			width: 100px
+			height: 100px
+			&-heading
+				font-size: 32px
+				span
+					font-size: 24px
+			&-separator
+				margin-bottom: 8px
+				transform: translateX(7%)
+				width: 68px
+			&-caption
+				font-size: 14px
