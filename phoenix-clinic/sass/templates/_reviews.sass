@@ -8,8 +8,10 @@
 		text-align: left
 		margin-bottom: 0
 	&__slider
+		@include adaptive('max-height', 600, 'desktop')
 		position: relative
 		width: calc(100% + 10px)
+		overflow: hidden
 		&-nav
 			@include adaptive('gap', 10, 'desktop')
 			display: flex

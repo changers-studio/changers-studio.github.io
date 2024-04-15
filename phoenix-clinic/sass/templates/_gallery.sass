@@ -1,0 +1,19 @@
+.gallery
+	&__container
+		@include adaptive('column-gap', 10, 'desktop')
+		@include adaptive('row-gap', 100, 'desktop')
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+	&__item
+		@include adaptive('width', 586, 'desktop')
+		@include adaptive('border-radius', 10, 'desktop')
+
+@media only screen and (max-width : 960px)
+	.gallery
+		&__container
+			@include adaptive('gap', 10, 'mobile')
+			flex-direction: column
+		&__item
+			@include adaptive('border-radius', 5, 'mobile')
+			width: 100%

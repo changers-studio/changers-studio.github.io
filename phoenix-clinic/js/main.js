@@ -1,20 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {})
 
-// AOS refresh
-// $(window).on('load', function () {
-// 	AOS.refresh()
-// })
+// AOS
+AOS.init({
+	duration: 1000,
+	once: true,
+})
 
-// $(window).on('scroll', function () {
-// 	AOS.refresh()
-// })
+$(window).on('load scroll', function () {
+	AOS.refresh()
+})
 //
 
-// AOS
-// AOS.init({
-// 	duration: 800,
-// 	once: true,
-// })
+// Remove aos delay on mobile
+if ($(window).width() <= 960) {
+	$('[data-aos-delay]').removeAttr('data-aos-delay')
+}
 //
 
 // Mfp
@@ -117,23 +117,18 @@ $('.reviews__slider').slick({
 //
 
 // Team about
-$('.team-item__btn').on('click', function () {
-	$(this).toggleClass('active')
-	$(this).parent().find('.team-item__about').fadeToggle()
+$('.team-item__image').on('click', function () {
+	$(this).closest('.team-item').find('.team-item__btn').toggleClass('active')
 	$(this).closest('.team-item').siblings().find('.team-item__btn').removeClass('active')
+
+	$(this).parent().find('.team-item__about').fadeToggle()
 	$(this).closest('.team-item').siblings().find('.team-item__about').fadeOut()
 })
 
 $(document).on('click', (e) => {
-	const aboutBox = $('.team-item__about')
-	const aboutBtn = $('.team-item__btn')
+	const aboutBox = $('.team-item__image')
 
-	if (
-		!aboutBox.is(e.target) &&
-		aboutBox.has(e.target).length === 0 &&
-		!aboutBtn.is(e.target) &&
-		aboutBtn.has(e.target).length === 0
-	) {
+	if (!aboutBox.is(e.target) && aboutBox.has(e.target).length === 0) {
 		$('.team-item__btn').removeClass('active')
 		$('.team-item__about').fadeOut()
 	}
