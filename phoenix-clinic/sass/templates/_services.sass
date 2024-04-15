@@ -57,18 +57,19 @@
 			@include adaptive('height', 410, 'mobile')
 			@include adaptive('border-radius', 5, 'mobile')
 		&__item
-			@include adaptive('padding', 30, 'mobile')
+			@include adaptive('padding', 15, 'mobile')
 			@include adaptive('border-radius', 5, 'mobile')
 			border: 1px solid $accent
 			flex-direction: column
 			align-items: stretch
 			&-box
-				@include adaptive('margin-bottom', 25, 'mobile')
+				@include adaptive('margin-bottom', 15, 'mobile')
 				display: flex
 				align-items: center
 				justify-content: space-between
 			&-number
 				@include adaptive('font-size', 16, 'mobile')
+				order: 1
 			&-heading
 				@include adaptive('font-size', 22, 'mobile')
 				text-align: right

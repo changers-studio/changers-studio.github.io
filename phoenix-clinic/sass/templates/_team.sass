@@ -203,9 +203,18 @@
 				@include adaptive('font-size', 18, 'mobile')
 		&__container
 			@include adaptive('margin-top', 40, 'mobile')
-			@include adaptive('gap', 20, 'mobile')
-			flex-direction: column
+			@include adaptive('padding-left', 30, 'mobile')
+			@include adaptive('padding-right', 30, 'mobile')
+			@include adaptive('padding-bottom', 15, 'mobile')
+			@include adaptive('left', -30, 'mobile')
+			@include adaptive('gap', 10, 'mobile')
+			overflow-x: auto
+			flex-wrap: nowrap
+			position: relative
+			width: 100vw
 		&-item
+			@include adaptive('width', 315, 'mobile')
+			flex: 0 0 auto
 			&__image
 				@include adaptive('height', 380, 'mobile')
 				@include adaptive('border-radius', 5, 'mobile')

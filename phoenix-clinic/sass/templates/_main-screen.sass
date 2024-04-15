@@ -8,6 +8,7 @@
 	flex-direction: column
 	background-size: cover
 	background-position: center
+	position: relative
 	&__container
 		margin-top: 48vh
 		display: flex
@@ -34,7 +35,7 @@
 		bottom: 0
 		display: flex
 		justify-content: space-between
-		z-index: 11
+		z-index: 3
 
 @media only screen and (max-width : 960px)
 	.main
@@ -50,6 +51,7 @@
 			@include adaptive('padding-right', 30, 'mobile')
 			@include adaptive('padding-left', 30, 'mobile')
 			@include adaptive('padding-bottom', 30, 'mobile')
+			position: absolute
 		&__btn
 			@include adaptive('font-size', 18, 'mobile')
 			width: 100%

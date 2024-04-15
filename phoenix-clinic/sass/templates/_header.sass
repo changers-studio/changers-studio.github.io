@@ -96,6 +96,11 @@
 
 @media only screen and (max-width : 960px)
 	.header
+		&.active
+			.header
+				&__container, &__hamburger-top
+					@include adaptive('padding-top', 10, 'mobile')
+					@include adaptive('padding-bottom', 10, 'mobile')
 		&__container
 			@include adaptive('padding-top', 20, 'mobile')
 			@include adaptive('padding-bottom', 20, 'mobile')
