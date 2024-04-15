@@ -1,0 +1,68 @@
+.video
+	@include adaptive('height', 870, 'desktop')
+	width: 100%
+	object-fit: cover
+	object-position: center
+	&__container
+		position: relative
+	&__btn
+		@include adaptive('font-size', 100, 'desktop')
+		@include adaptive('bottom', 60, 'desktop')
+		letter-spacing: -0.04em
+		font-weight: 300
+		line-height: 0.95
+		text-transform: uppercase
+		position: absolute
+		color: #fff
+		&-icon
+			@include adaptive('width', 100, 'desktop')
+			@include adaptive('height', 100, 'desktop')
+			border-radius: 50%
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: #fff
+			transition: .3s
+			svg
+				@include adaptive('width', 23, 'desktop')
+				path, rect
+					transition: .3s
+		&-inner
+			@include adaptive('gap', 40, 'desktop')
+			display: flex
+			align-items: center
+		&:hover
+			.video__btn-icon
+				background-color: $accent
+				svg
+					path, rect
+						fill: #fff
+		&-pause
+			@include adaptive('right', 70, 'desktop')
+			display: none
+		&-play
+			@include adaptive('left', 70, 'desktop')
+
+@media only screen and (max-width : 960px)
+	.video
+		@include adaptive('height', 245, 'mobile')
+		&__btn
+			@include adaptive('bottom', 12, 'mobile')
+			@include adaptive('font-size', 22, 'mobile')
+			&-inner
+				@include adaptive('gap', 8, 'mobile')
+			&-icon
+				@include adaptive('width', 22, 'mobile')
+				@include adaptive('height', 22, 'mobile')
+				svg
+					@include adaptive('width', 5, 'mobile')
+			&:hover
+				.video__btn-icon
+					background-color: #fff
+					svg
+						path, rect
+							fill: $accent
+			&-pause
+				@include adaptive('right', 30, 'mobile')
+			&-play
+				@include adaptive('left', 30, 'mobile')

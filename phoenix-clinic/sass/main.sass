@@ -1,0 +1,84 @@
+@import ./modules/reset
+@import ./modules/fonts
+@import ./modules/vars
+@import ./modules/mixin
+
+// General
+body
+	@include adaptive('font-size', 18, 'desktop')
+	min-width: 320px
+	position: relative
+	line-height: 1.2
+	letter-spacing: -0.02em
+	font-family: $default-font
+	color: $black
+	background-color: #fff
+	scrollbar-width: 0px
+	&::-webkit-scrollbar-track
+		background: #fff
+	&::-webkit-scrollbar
+		width: 0px
+	&.scroll-disabled
+		overflow: hidden
+
+section
+	@include adaptive('padding-top', 100, 'desktop')
+	@include adaptive('padding-bottom', 100, 'desktop')
+
+.overflow-hidden
+	overflow: hidden
+
+.title
+	@include adaptive('margin-bottom', 100, 'desktop')
+	@include adaptive('font-size', 100, 'desktop')
+	color: $accent
+	text-align: center
+	font-weight: 500
+	line-height: 0.95
+	text-transform: uppercase
+	letter-spacing: -0.05em
+	span
+		color: $black
+
+@media only screen and (max-width : 960px)
+	body
+		@include adaptive('font-size', 14, 'mobile')
+
+	section
+		@include adaptive('padding-top', 40, 'mobile')
+		@include adaptive('padding-bottom', 40, 'mobile')
+
+	.title
+		@include adaptive('margin-bottom', 40, 'mobile')
+		@include adaptive('font-size', 28, 'mobile')
+//
+
+// Form elements
+input, textarea
+	background: none
+	border: none
+	color: inherit
+
+::placeholder
+	color: #CAC8C8
+	font-family: $default-font
+//
+
+@import grid
+@import mods
+@import button
+
+@import templates/header
+@import templates/footer
+@import templates/main-screen
+@import templates/about
+@import templates/services
+@import templates/advantages
+@import templates/video
+@import templates/team
+@import templates/docs
+@import templates/reviews
+@import templates/faq
+
+@import templates/info
+@import templates/plan

@@ -1,0 +1,176 @@
+.footer
+	@include adaptive('margin-top', 100, 'desktop')
+	@include adaptive('padding-top', 100, 'desktop')
+	background-color: $accent
+	color: #fff
+	&__container
+		@include adaptive('padding-bottom', 100, 'desktop')
+		@include adaptive('width', 880, 'desktop')
+		display: flex
+		flex-direction: column
+		align-items: stretch
+		justify-content: center
+		text-align: center
+		margin: 0 auto
+	&__title
+		color: #fff
+	&__contacts
+		@include adaptive('padding-bottom', 20, 'desktop')
+		@include adaptive('margin-bottom', 60, 'desktop')
+		display: flex
+		justify-content: space-between
+		border-bottom: 1px solid $bd-white
+		&-item
+			@include adaptive('gap', 10, 'desktop')
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+		&-caption
+			font-weight: 300
+		&-link
+			@include adaptive('font-size', 30, 'desktop')
+	&__social
+		@include adaptive('gap', 20, 'desktop')
+		@include adaptive('margin-bottom', 60, 'desktop')
+		display: flex
+		&-item
+			@include adaptive('width', 280, 'desktop')
+			@include adaptive('padding', 30, 'desktop')
+			@include adaptive('border-radius', 5, 'desktop')
+			@include adaptive('gap', 15, 'desktop')
+			@include adaptive('font-size', 24, 'desktop')
+			border: 1px solid #fff
+			background-color: #fff
+			color: $accent
+			display: flex
+			justify-content: center
+			align-items: center
+			transition: .3s
+			&:hover
+				background-color: $accent
+				color: #fff
+				svg
+					path
+						fill: #fff
+		&-icon
+			@include adaptive('width', 20, 'desktop')
+			@include adaptive('height', 20, 'desktop')
+			path
+				transition: .3s
+	&__address
+		&-caption
+			@include adaptive('margin-bottom', 10, 'desktop')
+			font-weight: 300
+		&-data
+			@include adaptive('font-size', 28, 'desktop')
+	&__bottom
+		@include adaptive('padding-top', 20, 'desktop')
+		@include adaptive('padding-bottom', 20, 'desktop')
+		border-top: 1px solid $bd-white
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: relative
+	&__policy
+		@include adaptive('font-size', 14, 'desktop')
+	&__copyrights
+		@include adaptive('font-size', 14, 'desktop')
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+	&__scroll-top
+		@include adaptive('width', 40, 'desktop')
+		@include adaptive('height', 40, 'desktop')
+		@include adaptive('border-radius', 5, 'desktop')
+		border: 1px solid #fff
+		transition: .3s
+		display: flex
+		align-items: center
+		justify-content: center
+		svg
+			@include adaptive('width', 14, 'desktop')
+			@include adaptive('height', 15, 'desktop')
+			path
+				transition: .3s
+		&:hover
+			background-color: #fff
+			svg
+				path
+					stroke: $accent
+
+@media only screen and (max-width : 960px)
+	.footer
+		@include adaptive('margin-top', 40, 'mobile')
+		@include adaptive('padding-top', 30, 'mobile')
+		@include adaptive('padding-bottom', 30, 'mobile')
+		&__container
+			@include adaptive('padding-bottom', 30, 'mobile')
+			align-items: stretch
+			margin: 0
+		&__title
+			color: #fff
+		&__contacts
+			@include adaptive('padding-bottom', 10, 'mobile')
+			@include adaptive('margin-bottom', 20, 'mobile')
+			flex-direction: column
+			align-items: flex-start
+			&-item
+				@include adaptive('gap', 5, 'mobile')
+			&-link
+				@include adaptive('font-size', 16, 'mobile')
+		&__social
+			@include adaptive('gap', 5, 'mobile')
+			@include adaptive('margin-bottom', 20, 'mobile')
+			display: flex
+			flex-direction: column
+			&-item
+				@include adaptive('padding', 20, 'mobile')
+				@include adaptive('border-radius', 5, 'mobile')
+				@include adaptive('gap', 10, 'mobile')
+				@include adaptive('font-size', 16, 'mobile')
+				width: 100%
+				font-weight: 500
+				&:hover
+					background-color: #fff
+					color: $accent
+					svg
+						path
+							fill: $accent
+			&-icon
+				@include adaptive('width', 15, 'mobile')
+				@include adaptive('height', 15, 'mobile')
+		&__address
+			text-align: left
+			&-caption
+				@include adaptive('margin-bottom', 5, 'mobile')
+			&-data
+				@include adaptive('font-size', 16, 'mobile')
+		&__bottom
+			@include adaptive('padding-top', 20, 'mobile')
+			@include adaptive('padding-bottom', 20, 'mobile')
+			@include adaptive('gap', 5, 'mobile')
+			flex-direction: column
+			align-items: flex-start
+		&__policy
+			@include adaptive('font-size', 14, 'mobile')
+		&__copyrights
+			@include adaptive('font-size', 14, 'mobile')
+			position: static
+			transform: none
+		&__scroll-top
+			@include adaptive('width', 40, 'mobile')
+			@include adaptive('height', 40, 'mobile')
+			@include adaptive('border-radius', 5, 'mobile')
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+			svg
+				@include adaptive('width', 14, 'mobile')
+				@include adaptive('height', 15, 'mobile')
+			&:hover
+				background-color: $accent
+				svg
+					path
+						stroke: #fff

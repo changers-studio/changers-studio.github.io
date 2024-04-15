@@ -1,0 +1,99 @@
+.info
+	&__container
+		@include adaptive('gap', 10, 'desktop')
+		display: flex
+		flex-wrap: wrap
+	&__item
+		@include adaptive('border-radius', 10, 'desktop')
+		@include adaptive('border-width', 2, 'desktop')
+		@include adaptive('width', 586, 'desktop')
+		@include adaptive('padding', 30, 'desktop')
+		border-color: $accent
+		border-style: solid
+		background-color: $second
+		color: $accent
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		&._bg-accent
+			background-color: $accent
+			color: #fff
+			.info__item
+				&-number
+					color: #fff
+				&-list-item::before
+					background-color: #fff
+				&-line
+					background-color: $bd-white
+		&-top
+			@include adaptive('margin-bottom', 20, 'desktop')
+			display: flex
+			justify-content: space-between
+			align-items: flex-start
+		&-heading
+			@include adaptive('font-size', 36, 'desktop')
+			line-height: 0.9
+		&-number
+			@include adaptive('font-size', 24, 'desktop')
+			color: $gray
+		&-text, &-list
+			@include adaptive('padding-top', 30, 'desktop')
+			@include adaptive('padding-bottom', 30, 'desktop')
+			line-height: 1.1
+		&-list
+			@include adaptive('gap', 5, 'desktop')
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			&-item
+				@include adaptive('gap', 10, 'desktop')
+				display: flex
+				align-items: center
+				&::before
+					@include adaptive('width', 5, 'desktop')
+					@include adaptive('height', 5, 'desktop')
+					content: ''
+					border-radius: 50%
+					background-color: $accent
+					flex: 0 0 auto
+		&-line
+			@include adaptive('margin-top', 20, 'desktop')
+			height: 1px
+			background-color: $bd-black
+	&__image
+		@include adaptive('margin-top', 40, 'desktop')
+		width: 100%
+		display: flex
+		img
+			@include adaptive('border-radius', 10, 'desktop')
+			width: 100%
+
+@media only screen and (max-width : 960px)
+	.info
+		&__container
+			@include adaptive('gap', 10, 'mobile')
+			flex-direction: column
+		&__item
+			@include adaptive('border-radius', 5, 'mobile')
+			@include adaptive('border-width', 1, 'mobile')
+			@include adaptive('padding', 30, 'mobile')
+			width: 100%
+			&-top
+				@include adaptive('margin-bottom', 20, 'mobile')
+			&-heading
+				@include adaptive('font-size', 24, 'mobile')
+			&-number
+				@include adaptive('font-size', 18, 'mobile')
+			&-list
+				@include adaptive('gap', 5, 'mobile')
+				&-item
+					@include adaptive('gap', 10, 'mobile')
+					&::before
+						@include adaptive('width', 5, 'mobile')
+						@include adaptive('height', 5, 'mobile')
+			&-line
+				@include adaptive('margin-top', 20, 'mobile')
+		&__image
+			@include adaptive('margin-top', 10, 'mobile')
+			img
+				@include adaptive('border-radius', 5, 'mobile')

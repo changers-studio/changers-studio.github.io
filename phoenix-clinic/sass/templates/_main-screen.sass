@@ -1,0 +1,57 @@
+.main
+	@include adaptive('margin-bottom', 100, 'desktop')
+	height: 100vh
+	background-size: cover
+	background-position: center
+	color: #fff
+	display: flex
+	flex-direction: column
+	background-size: cover
+	background-position: center
+	&__container
+		margin-top: 48vh
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	&__overtitle
+		@include adaptive('margin-bottom', 40, 'desktop')
+		@include adaptive('width', 130, 'desktop')
+	&__title
+		@include adaptive('max-width', 970, 'desktop')
+		@include adaptive('font-size', 80, 'desktop')
+		font-weight: 300
+		line-height: 0.9
+		text-align: center
+		letter-spacing: -0.05em
+	&__btns
+		@include adaptive('padding-right', 70, 'desktop')
+		@include adaptive('padding-left', 70, 'desktop')
+		@include adaptive('padding-bottom', 50, 'desktop')
+		position: fixed
+		right: 0
+		left: 0
+		bottom: 0
+		display: flex
+		justify-content: space-between
+		z-index: 11
+
+@media only screen and (max-width : 960px)
+	.main
+		@include adaptive('margin-bottom', 40, 'mobile')
+		&__container
+			@include adaptive('margin-bottom', 200, 'mobile')
+		&__overtitle
+			@include adaptive('margin-bottom', 40, 'mobile')
+			@include adaptive('width', 130, 'mobile')
+		&__title
+			@include adaptive('font-size', 32, 'mobile')
+		&__btns
+			@include adaptive('padding-right', 30, 'mobile')
+			@include adaptive('padding-left', 30, 'mobile')
+			@include adaptive('padding-bottom', 30, 'mobile')
+		&__btn
+			@include adaptive('font-size', 18, 'mobile')
+			width: 100%
+			&-tel
+				display: none

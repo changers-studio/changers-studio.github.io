@@ -1,0 +1,99 @@
+.docs
+	&__container
+		@include adaptive('gap', 10, 'desktop')
+		display: flex
+		justify-content: space-between
+	&__item
+		@include adaptive('padding', 20, 'desktop')
+		@include adaptive('border-radius', 10, 'desktop')
+		width: 25%
+		position: relative
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		background-color: $accent
+		&-top, &-bottom
+			display: flex
+			justify-content: space-between
+			align-items: flex-end
+		&-top
+			@include adaptive('padding-bottom', 8, 'desktop')
+			@include adaptive('margin-bottom', 12, 'desktop')
+			border-bottom: 1px solid $bd-white
+		&-number
+			@include adaptive('top', 20, 'desktop')
+			@include adaptive('left', 20, 'desktop')
+			@include adaptive('font-size', 38, 'desktop')
+			position: absolute
+			color: $gray
+			letter-spacing: -0.05em
+			font-weight: 400
+			line-height: 1
+		&-caption
+			@include adaptive('font-size', 16, 'desktop')
+			color: rgba(255, 255, 255, 0.70)
+		&-image
+			@include adaptive('width', 140, 'desktop')
+			@include adaptive('border-width', 2, 'desktop')
+			@include adaptive('border-radius', 5, 'desktop')
+			border-style: solid
+			border-color: #fff
+		&-heading
+			@include adaptive('font-size', 30, 'desktop')
+			color: #fff
+			line-height: 0.85
+			font-weight: 300
+		&-btn
+			@include adaptive('width', 140, 'desktop')
+			@include adaptive('height', 40, 'desktop')
+			@include adaptive('font-size', 14, 'desktop')
+			padding: 0
+			background-color: #fff
+			color: $accent
+			border: 1px solid #fff
+			font-weight: 500
+			&:hover
+				background-color: $accent
+				color: #fff
+
+@media only screen and (max-width : 960px)
+	.docs
+		&__container
+			@include adaptive('gap', 5, 'mobile')
+			flex-direction: column
+		&__item
+			@include adaptive('padding', 30, 'mobile')
+			@include adaptive('border-radius', 5, 'mobile')
+			width: 100%
+			&-top, &-bottom
+				flex-direction: column
+			&-top
+				@include adaptive('padding-bottom', 6, 'mobile')
+				@include adaptive('margin-bottom', 12, 'mobile')
+				@include adaptive('margin-top', 5, 'mobile')
+			&-bottom
+				align-items: flex-start
+			&-number
+				@include adaptive('top', 30, 'mobile')
+				@include adaptive('left', 30, 'mobile')
+				@include adaptive('font-size', 24, 'mobile')
+			&-caption
+				@include adaptive('font-size', 16, 'mobile')
+				@include adaptive('margin-bottom', 10, 'mobile')
+			&-image
+				@include adaptive('border-width', 2, 'mobile')
+				@include adaptive('border-radius', 5, 'mobile')
+				width: 100%
+			&-heading
+				@include adaptive('font-size', 22, 'mobile')
+				@include adaptive('margin-bottom', 20, 'mobile')
+				font-weight: 300
+				br
+					display: none
+			&-btn
+				@include adaptive('padding', 15, 'mobile')
+				@include adaptive('font-size', 14, 'mobile')
+				width: 100%
+				&:hover
+					background-color: #fff
+					color: $accent
