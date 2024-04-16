@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Phoenix | Главная</title>
+		<title>Phoenix | Невроз</title>
 
 		<meta
 			name="viewport"
@@ -38,13 +38,13 @@
 		<script defer src="js/main.js"></script>
 	</head>
 
-	<body class="ishome">
+	<body class="isnohome">
 		<div class="overflow-hidden">
-			<div class="main">
+			<div class="main" style="background-image: url(img/services-page/neurosis.png)">
 				<header class="header">
 					<div class="container">
 						<div class="header__container">
-							<a href="index.html" class="header__logo">
+							<a href="index_ukr.html" class="header__logo">
 								<img src="img/logo.svg" alt="Logo" class="header__logo-img" />
 							</a>
 
@@ -62,8 +62,12 @@
 									<div class="header__lang-heading dropdown-heading">Руc</div>
 									<nav class="header__lang-dropdown">
 										<div class="header__lang-items">
-											<a href="index.html" class="header__lang-item _hul">Руc</a>
-											<a href="index_ukr.html" class="header__lang-item _hul">Укр</a>
+											<a href="service-neurosis.html" class="header__lang-item _hul"
+												>Руc</a
+											>
+											<a href="service-neurosis_ukr.html" class="header__lang-item _hul"
+												>Укр</a
+											>
 										</div>
 									</nav>
 								</div>
@@ -114,9 +118,13 @@
 						data-aos="zoom-in"
 					/>
 
-					<h1 class="main__title" data-aos="zoom-in">
-						Cпециализируемся на оказании помощи в области ментального здоровья
-					</h1>
+					<h1 class="main__title" data-aos="zoom-in">Невроз</h1>
+
+					<div class="aos-wrapper" data-aos="zoom-in">
+						<a href="contacts.html" class="main__btn btn">
+							Получить бесплатную консультацию
+						</a>
+					</div>
 				</div>
 
 				<div class="main__btns">
@@ -125,54 +133,26 @@
 					>
 					<a href="contacts.html" class="main__btn btn mfp">Бесплатная консультация</a>
 				</div>
-
-				<video
-					src="img/main-page/video-main.mp4"
-					class="main__video"
-					autoplay
-					loop
-				></video>
 			</div>
 
 			<section class="about">
 				<div class="container">
-					<h2 class="title" data-aos="zoom-in">О нас</h2>
+					<h2 class="title" data-aos="zoom-in">
+						<span>Что такое</span> <br />
+						Невроз?
+					</h2>
 
 					<div class="about__container">
-						<div class="about__item" data-aos="fade-up">
-							<div
-								class="about__item-image"
-								style="background-image: url(img/about/image-1.png)"
-							></div>
-
-							<p class="about__item-text">
-								В современном мире, полном стрессу и информационной перегрузке, ментальное
-								благополучие становится центральным элементом здоровой и счастливой жизни.
-							</p>
-						</div>
-
-						<div
-							class="about__item about__bg-image"
-							style="background-image: url(img/about/image-2.png)"
-							data-aos="fade-up"
-							data-aos-delay="200"
-						>
-							<p class="about__item-text">
-								В Phoenix Mental Mansion мы понимаем, как трудно бороться с эмоциональным
-								выгоранием, тревогой, депрессией и другими психосоматическими
-								расстройствами.
-							</p>
-						</div>
-
 						<div
 							class="about__item about__bg-image"
 							style="background-image: url(img/about/image-3.png)"
 							data-aos="fade-up"
 						>
 							<p class="about__item-text">
-								Отличительная особенность нашего подхода – эффективность: недели,
-								проведенные у нас, могут заменить годы традиционной терапии, такой как
-								психоанализ.
+								Невроз - это психическое расстройство, характеризующееся функциональными
+								нарушениями нервной системы без органических изменений в мозге. Невроз
+								может проявляться различными симптомами, такими как тревога, депрессия,
+								фобии, истерия, нарушения сна и т. д.
 							</p>
 						</div>
 
@@ -183,398 +163,534 @@
 							></div>
 
 							<p class="about__item-text">
-								Помните, вы не одиноки в своем путешествии. Phoenix Mental Mansion – это
-								место, где ваше ментальное здоровье становится нашим главным приоритетом,
-								а ваше восстановление нашей общей целью.
+								Обычно неврозы возникают в результате стрессовых ситуаций или
+								психологических травм и могут проявляться периодически или длительное
+								время. Хотя неврозы могут быть довольно неприятными, они обычно не
+								приводят к серьезным ущербам здоровью и обычно поддаются лечению
+								психотерапией или медикаментозной терапией.
 							</p>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="services" id="services">
+			<section class="info">
 				<div class="container">
-					<h2 class="title" data-aos="zoom-in">
-						Направления <br />
-						<span>лечения</span>
+					<h2 class="title" data-aos="zoom-in">Симптомы</h2>
+
+					<div class="info__container">
+						<div class="info__item" data-aos="fade-up">
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Тревожность</h3>
+								<span class="info__item-number">01</span>
+							</div>
+
+							<p class="info__item-text">
+								Постоянное чувство беспокойства, напряженности и неопределенного страха
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div class="info__item" data-aos="fade-up" data-aos-delay="100">
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Депрессия</h3>
+								<span class="info__item-number">02</span>
+							</div>
+
+							<p class="info__item-text">
+								Настроение понижено, чувство отчаяния, пессимизм, апатия
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div class="info__item" data-aos="fade-up" data-aos-delay="200">
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Физические симптомы</h3>
+								<span class="info__item-number">03</span>
+							</div>
+
+							<p class="info__item-text">
+								Головные боли, боли в животе, груди, мышцах; расстройства сна; изменения
+								аппетита.
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div class="info__item" data-aos="fade-up">
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Фобии и панические атаки</h3>
+								<span class="info__item-number">04</span>
+							</div>
+
+							<p class="info__item-text">
+								Чрезмерный страх перед определенными объектами, ситуациями или явлениями,
+								сопровождающийся физиологическими симптомами (повышенное сердцебиение,
+								потливость, дрожь, одышка)
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div class="info__item" data-aos="fade-up" data-aos-delay="100">
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Истерические реакции</h3>
+								<span class="info__item-number">05</span>
+							</div>
+
+							<p class="info__item-text">
+								Неадекватные реакции на стрессовые ситуации, истерия, психосоматические
+								симптомы. Снижение самооценки и утрата интереса к жизни
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div class="info__item" data-aos="fade-up" data-aos-delay="100">
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Повышенная раздражительность</h3>
+								<span class="info__item-number">06</span>
+							</div>
+
+							<p class="info__item-text">быстрая потеря терпения, вспышки гнева</p>
+
+							<div class="info__item-line"></div>
+						</div>
+					</div>
+
+					<picture class="info__image" data-aos="fade-up">
+						<source
+							srcset="img/treatment-page/info-image.png"
+							media="(min-width: 961px)"
+						/>
+						<img src="img/treatment-page/info-image-mobile.png" alt="Image" />
+					</picture>
+				</div>
+			</section>
+
+			<section class="info">
+				<div class="container">
+					<h2 class="title info__title" data-aos="zoom-in">
+						факторы <br />
+						невроза
 					</h2>
 
-					<div class="services__container">
-						<div class="services__container-inner" data-aos="fade-right">
-							<div class="services__item">
-								<div class="services__item-box">
-									<span class="services__item-number">01</span>
-									<p class="services__item-heading">Депрессия</p>
-								</div>
-								<a href="service-depression.html" class="services__item-btn btn"
-									>Ознакомиться</a
-								>
+					<p class="info__subtitle" data-aos="zoom-in">
+						Развитие невроза обычно является многофакторным процессом, включающим как
+						биологические, так и психологические аспекты. Вот несколько ключевых моментов,
+						которые могут способствовать развитию невроза:
+					</p>
+
+					<div class="info__container info__x-scroll">
+						<div class="info__item _half-width _bg-accent" data-aos="fade-up">
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Генетическая предрасположенность</h3>
+								<span class="info__item-number">01</span>
 							</div>
 
-							<div class="services__item">
-								<div class="services__item-box">
-									<span class="services__item-number">02</span>
-									<p class="services__item-heading">Невроз</p>
-								</div>
-								<a href="service-neurosis.html" class="services__item-btn btn"
-									>Ознакомиться</a
-								>
-							</div>
+							<p class="info__item-text">
+								Наследственность может играть роль в развитии некоторых форм неврозов.
+								Если у человека в семье были случаи психических расстройств, он может быть
+								более подвержен развитию невротических состояний
+							</p>
 
-							<div class="services__item">
-								<div class="services__item-box">
-									<span class="services__item-number">03</span>
-									<p class="services__item-heading">Выгорание</p>
-								</div>
-								<a href="service-burnout.html" class="services__item-btn btn"
-									>Ознакомиться</a
-								>
-							</div>
-
-							<div class="services__item">
-								<div class="services__item-box">
-									<span class="services__item-number">04</span>
-									<p class="services__item-heading">Панические атаки</p>
-								</div>
-								<a href="service-attack.html" class="services__item-btn btn"
-									>Ознакомиться</a
-								>
-							</div>
-
-							<div class="services__item">
-								<div class="services__item-box">
-									<span class="services__item-number">05</span>
-									<p class="services__item-heading">Стресс</p>
-								</div>
-								<a href="service-stress.html" class="services__item-btn btn"
-									>Ознакомиться</a
-								>
-							</div>
-
-							<div class="services__item">
-								<div class="services__item-box">
-									<span class="services__item-number">06</span>
-									<p class="services__item-heading">ОКР</p>
-								</div>
-								<a href="service-okr.html" class="services__item-btn btn">Ознакомиться</a>
-							</div>
-
-							<div class="services__item">
-								<div class="services__item-box">
-									<span class="services__item-number">07</span>
-									<p class="services__item-heading">Тревожное расстройство</p>
-								</div>
-								<a href="service-anxiety.html" class="services__item-btn btn"
-									>Ознакомиться</a
-								>
-							</div>
-
-							<div class="services__item">
-								<div class="services__item-box">
-									<span class="services__item-number">08</span>
-									<p class="services__item-heading">Анорексия</p>
-								</div>
-								<a href="service-anorexia.html" class="services__item-btn btn"
-									>Ознакомиться</a
-								>
-							</div>
-
-							<div class="services__item">
-								<div class="services__item-box">
-									<span class="services__item-number">09</span>
-									<p class="services__item-heading">Булимия</p>
-								</div>
-								<a href="service-bulimia.html" class="services__item-btn btn"
-									>Ознакомиться</a
-								>
-							</div>
+							<div class="info__item-line"></div>
 						</div>
 
-						<div class="services__container-inner" data-aos="fade-left">
-							<div
-								class="services__image"
-								style="background-image: url('img/main-page/services-image.png')"
-							></div>
+						<div
+							class="info__item _half-width _bg-accent"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Стресс</h3>
+								<span class="info__item-number">02</span>
+							</div>
 
-							<a href="contacts.html" class="services__btn btn mfp">Связаться с нами</a>
+							<p class="info__item-text">
+								Переживание сильных стрессовых ситуаций, какими могут быть потеря близкого
+								человека, развод, финансовые проблемы, травматические события и другие
+								жизненные вызовы, может привести к развитию неврозов
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div
+							class="info__item _half-width _bg-accent"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Личностные особенности</h3>
+								<span class="info__item-number">03</span>
+							</div>
+
+							<p class="info__item-text">
+								Некоторые личностные черты могут делать человека более уязвимым к
+								неврозам. Например, сильная склонность к перфекционизму, низкая
+								самооценка, неспособность эффективно справляться со стрессом и конфликтами
+								могут способствовать возникновению невротических состояний
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div class="info__item _bg-accent _half-width" data-aos="fade-up">
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Личностные особенности</h3>
+								<span class="info__item-number">04</span>
+							</div>
+
+							<p class="info__item-text">
+								Некоторые личностные черты могут делать человека более уязвимым к
+								неврозам. Например, сильная склонность к перфекционизму, низкая
+								самооценка, неспособность эффективно справляться со стрессом и конфликтами
+								могут способствовать возникновению невротических состояний
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div
+							class="info__item _bg-accent _half-width"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Культурные и социальные факторы</h3>
+								<span class="info__item-number">05</span>
+							</div>
+
+							<p class="info__item-text">
+								Стандарты красоты, успеха и поведения, навязываемые обществом, могут
+								создавать дополнительное давление на людей и способствовать развитию
+								невротических симптомов
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div
+							class="info__item _bg-accent _half-width"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Биохимические факторы</h3>
+								<span class="info__item-number">06</span>
+							</div>
+
+							<p class="info__item-text">
+								Некоторые неврозы могут быть связаны с изменениями в биохимии мозга,
+								такими как дисбаланс нейромедиаторов (например, серотонина или
+								норадреналина), что влияет на настроение и эмоциональное состояние
+								человека
+							</p>
+
+							<div class="info__item-line"></div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="advantages">
+			<section class="info">
 				<div class="container">
 					<h2 class="title" data-aos="zoom-in">
-						Преимущества <br />
-						<span>нашей клиники</span>
+						Причины <br />
+						развития
 					</h2>
 
-					<div class="advantages__container">
-						<div class="advantages__item" data-aos="zoom-in">
-							<img
-								src="img/advantages/icon-1.svg"
-								alt="Icon"
-								class="advantages__item-icon"
-							/>
-							<h3 class="advantages__item-heading">
-								Экспертная <br />
-								оценка
-							</h3>
-							<p class="advantages__item-text">
-								Консилиум «Второе мнение» с участием профессорского состава и штатных
-								научных сотрудников
+					<div class="info__container">
+						<div class="info__item" data-aos="fade-up">
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Психологические механизмы</h3>
+								<span class="info__item-number">01</span>
+							</div>
+
+							<p class="info__item-text">
+								В основе развития невроза лежат психологические процессы, такие как
+								подавленные или неосознанные конфликты, недостаточные стратегии справления
+								со стрессом, а также искаженные системы убеждений и восприятия. Например,
+								индивидуум может испытывать внутреннее противоречие между своими желаниями
+								и социальными ожиданиями, что приводит к напряжению и дистрессу
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div class="info__item" data-aos="fade-up" data-aos-delay="100">
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Психосоматические реакции</h3>
+								<span class="info__item-number">02</span>
+							</div>
+
+							<p class="info__item-text">
+								Невроз может проявляться через физические симптомы, такие как головные
+								боли, боли в области живота, нарушения сна, а также другие соматические
+								проявления. Эти симптомы могут быть связаны с психическим дискомфортом и
+								стрессом
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div class="info__item" data-aos="fade-up" data-aos-delay="200">
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Обучение и моделирование</h3>
+								<span class="info__item-number">03</span>
+							</div>
+
+							<p class="info__item-text">
+								Человек может приобретать невротические реакции через наблюдение за
+								другими людьми, особенно в раннем возрасте. Например, если родители или
+								близкие лица проявляют определенные невротические поведенческие схемы, это
+								может быть перенято и воспроизведено
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div class="info__item _half-width" data-aos="fade-up">
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Условные рефлексы</h3>
+								<span class="info__item-number">04</span>
+							</div>
+
+							<p class="info__item-text">
+								Невроз может быть связан с формированием условных рефлексов на
+								определенные ситуации или объекты, которые ассоциируются с негативными
+								эмоциональными состояниями. Например, человек может развить невроз в ответ
+								на определенные стрессовые ситуации или триггеры, что приводит к
+								повторяющимся негативным реакциям
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div class="info__item _half-width" data-aos="fade-up" data-aos-delay="100">
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Биологические факторы</h3>
+								<span class="info__item-number">05</span>
+							</div>
+
+							<p class="info__item-text">
+								Некоторые формы невроза могут быть связаны с биологическими аномалиями или
+								изменениями в работе нервной системы, включая гормональные дисбалансы,
+								изменения в мозговой активности и дефекты в работе нейромедиаторов
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="info">
+				<div class="container">
+					<h2 class="title info__title" data-aos="zoom-in">
+						Последствия <br />
+						невроза
+					</h2>
+
+					<p class="info__subtitle" data-aos="zoom-in">
+						Невроз, если не лечить его, может привести к ряду серьезных последствий,
+						которые могут значительно ухудшить качество жизни и влиять на общее здоровье
+						человека. Вот некоторые из потенциальных последствий невроза при отсутствии
+						лечения:
+					</p>
+
+					<div class="info__container info__x-scroll">
+						<div class="info__item _half-width _bg-accent" data-aos="fade-up">
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Усиление симптомов</h3>
+								<span class="info__item-number">01</span>
+							</div>
+
+							<p class="info__item-text">
+								Невротические симптомы могут стать более интенсивными и частыми при
+								отсутствии лечения. Чем дольше невроз остается без внимания, тем тяжелее
+								становится управление его проявлениями
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div
+							class="info__item _half-width _bg-accent"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Ухудшение физического здоровья</h3>
+								<span class="info__item-number">02</span>
+							</div>
+
+							<p class="info__item-text">
+								Некоторые формы невроза могут вызывать физические симптомы, такие как боли
+								в области живота, головные боли, нарушения сна и другие. Длительное
+								воздействие стресса на организм может привести к серьезным проблемам со
+								здоровьем
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div
+							class="info__item _half-width _bg-accent"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
+							<div class="info__item-top">
+								<h3 class="info__item-heading">
+									Потеря профессиональной и социальной функции
+								</h3>
+								<span class="info__item-number">03</span>
+							</div>
+
+							<p class="info__item-text">
+								Невротические симптомы могут мешать человеку в работе, обучении и общении
+								с окружающими. Это может привести к ухудшению профессиональной карьеры,
+								проблемам в отношениях и социальной изоляции
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div class="info__item _bg-accent _half-width" data-aos="fade-up">
+							<div class="info__item-top">
+								<h3 class="info__item-heading">
+									Риск развития других психических расстройств
+								</h3>
+								<span class="info__item-number">04</span>
+							</div>
+
+							<p class="info__item-text">
+								Невроз может быть предвестником более серьезных психических расстройств,
+								таких как депрессия, тревожные расстройства, а также поведенческие и
+								личностные расстройства
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div
+							class="info__item _bg-accent _half-width"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
+							<div class="info__item-top">
+								<h3 class="info__item-heading">Суицидальные мысли и попытки</h3>
+								<span class="info__item-number">05</span>
+							</div>
+
+							<p class="info__item-text">
+								В случае сильного дистресса и беспомощности, которые могут сопровождать
+								невротические состояния, у человека может возникнуть риск суицидальных
+								мыслей и действий
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+
+						<div
+							class="info__item _bg-accent _half-width"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
+							<div class="info__item-top">
+								<h3 class="info__item-heading">
+									Ухудшение качества жизни и общего благополучия
+								</h3>
+								<span class="info__item-number">06</span>
+							</div>
+
+							<p class="info__item-text">
+								Невроз может значительно ограничивать способности человека к полноценной
+								жизни, принося физический и эмоциональный дискомфорт, а также создавая
+								препятствия на пути к достижению личных и профессиональных целей
+							</p>
+
+							<div class="info__item-line"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cure">
+				<div class="container">
+					<h2 class="title" data-aos="zoom-in">Лечение</h2>
+
+					<div class="cure__container">
+						<div class="cure__item" data-aos="zoom-in">
+							<div class="cure__item-number">01</div>
+							<h3 class="cure__item-heading">Психотерапия</h3>
+							<p class="cure__item-text">
+								Когнитивно-поведенческая терапия (КПТ), психоанализ, гештальт-терапия и
+								другие формы психотерапии могут быть эффективными при лечении невроза.
+								Цель психотерапии заключается в том, чтобы помочь пациенту понять и
+								изменить негативные мысли, поведение и реакции на стресс
 							</p>
 						</div>
 
-						<div class="advantages__item" data-aos="zoom-in">
-							<img
-								src="img/advantages/icon-2.svg"
-								alt="Icon"
-								class="advantages__item-icon"
-							/>
-							<h3 class="advantages__item-heading">Авторская программа</h3>
-							<p class="advantages__item-text">
-								Авторская программа немедикаметозной нейрореабилитации
+						<div class="cure__item" data-aos="zoom-in">
+							<div class="cure__item-number">02</div>
+							<h3 class="cure__item-heading">Медикаментозное лечение</h3>
+							<p class="cure__item-text">
+								В некоторых случаях могут быть назначены препараты, такие как
+								антидепрессанты, противоангстенинные средства или снотворные, для
+								уменьшения симптомов невроза и облегчения дистресса. Точный выбор лекарств
+								и их дозировка зависят от конкретных симптомов и индивидуальных
+								особенностей пациента
 							</p>
 						</div>
 
-						<div class="advantages__item" data-aos="zoom-in">
-							<img
-								src="img/advantages/icon-3.svg"
-								alt="Icon"
-								class="advantages__item-icon"
-							/>
-							<h3 class="advantages__item-heading">
-								Ментальный <br />
-								чек-ап
-							</h3>
-							<p class="advantages__item-text">
-								Авторская запатентованная программа диагностики "ментальный чек-ап" 12+ и
-								18+
+						<div class="cure__item" data-aos="zoom-in">
+							<div class="cure__item-number">03</div>
+							<h3 class="cure__item-heading">Стресс-управление и релаксация</h3>
+							<p class="cure__item-text">
+								Техники релаксации, такие как глубокое дыхание, медитация, йога и
+								прогрессивная мышечная релаксация, могут помочь снизить уровень стресса и
+								тревожности, что является важным компонентом лечения невроза
 							</p>
 						</div>
 
-						<div class="advantages__item" data-aos="zoom-in">
-							<img
-								src="img/advantages/icon-4.svg"
-								alt="Icon"
-								class="advantages__item-icon"
-							/>
-							<h3 class="advantages__item-heading">
-								Варианты <br />
-								терапии
-							</h3>
-							<p class="advantages__item-text">
-								Индивидуальная <br />
-								и групповая терапия
+						<div class="cure__item" data-aos="zoom-in">
+							<div class="cure__item-number">04</div>
+							<h3 class="cure__item-heading">Изменение образа жизни</h3>
+							<p class="cure__item-text">
+								Регулярная физическая активность, здоровое питание, достаточный сон и
+								избегание вредных привычек, таких как употребление алкоголя и курение,
+								могут способствовать улучшению самочувствия и общего здоровья, что также
+								важно при лечении невроза
 							</p>
 						</div>
 
-						<div class="advantages__item" data-aos="zoom-in">
-							<img
-								src="img/advantages/icon-5.svg"
-								alt="Icon"
-								class="advantages__item-icon"
-							/>
-							<h3 class="advantages__item-heading">
-								160 <br />
-								методов
-							</h3>
-							<p class="advantages__item-text">
-								психофизиологической <br />
-								диагностики
-							</p>
-						</div>
-
-						<div class="advantages__item" data-aos="zoom-in">
-							<img
-								src="img/advantages/icon-6.svg"
-								alt="Icon"
-								class="advantages__item-icon"
-							/>
-							<h3 class="advantages__item-heading">
-								20 <br />
-								специалистов
-							</h3>
-							<p class="advantages__item-text">
-								мультидисциплинарной бригады в рамках программы одного пациента
-							</p>
-						</div>
-
-						<div class="advantages__item" data-aos="zoom-in">
-							<img
-								src="img/advantages/icon-7.svg"
-								alt="Icon"
-								class="advantages__item-icon"
-							/>
-							<h3 class="advantages__item-heading">
-								Оригинальные <br />
-								препараты
-							</h3>
-							<p class="advantages__item-text">
-								Рациональная психофармакотерапия, собственное хранилище оригинальных
-								фармпрепаратов
-							</p>
-						</div>
-
-						<div class="advantages__item" data-aos="zoom-in">
-							<img
-								src="img/advantages/icon-8.svg"
-								alt="Icon"
-								class="advantages__item-icon"
-							/>
-							<h3 class="advantages__item-heading">
-								Полная <br />
-								анонимность
-							</h3>
-							<p class="advantages__item-text">
-								Полная конфиденциальность <br />
-								и безопасность
+						<div class="cure__item" data-aos="zoom-in">
+							<div class="cure__item-number">05</div>
+							<h3 class="cure__item-heading">Поддержка окружения</h3>
+							<p class="cure__item-text">
+								Поддержка со стороны близких, друзей и специалистов играет важную роль в
+								лечении невроза. Поддержка и понимание окружающих помогают пациенту
+								чувствовать себя менее изолированным и более способным справляться с
+								невротическими симптомами
 							</p>
 						</div>
 					</div>
 
-					<a href="contacts.html" class="advantages__btn btn mfp"
-						>Получить бесплатную консультацию</a
-					>
-				</div>
-			</section>
-
-			<section class="video-section">
-				<div class="video__container">
-					<video
-						src="img/main-page/video-about.mp4"
-						poster="img/main-page/video-plug.jpg"
-						class="video"
-					></video>
-
-					<button class="video__btn video__btn-play" aria-label="Cмотреть">
-						<span class="video__btn-inner">
-							Cмотреть
-							<span class="video__btn-icon"
-								><svg
-									width="23"
-									height="28"
-									viewBox="0 0 23 28"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M21.5744 15.9261C23.2194 14.898 23.2194 12.5022 21.5744 11.4741L4.14125 0.578367C2.39287 -0.514368 0.125 0.742596 0.125 2.80436V24.5958C0.125 26.6576 2.39287 27.9146 4.14125 26.8218L21.5744 15.9261Z"
-										fill="#4A4D9C"
-									/>
-								</svg>
-							</span>
-						</span>
-					</button>
-
-					<button class="video__btn video__btn-pause" aria-label="Пауза">
-						<span class="video__btn-inner">
-							<span class="video__btn-icon"
-								><svg
-									width="23"
-									height="26"
-									viewBox="0 0 23 26"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<rect
-										x="0.5"
-										y="0.5"
-										width="8.4375"
-										height="25.3125"
-										rx="2.5"
-										fill="#4A4D9C"
-									/>
-									<rect
-										x="14.5625"
-										y="0.5"
-										width="8.4375"
-										height="25.3125"
-										rx="2.5"
-										fill="#4A4D9C"
-									/>
-								</svg>
-							</span>
-							Пауза
-						</span>
-					</button>
+					<a href="contacts.html" class="cure__btn btn mfp">Записаться на прием</a>
 				</div>
 			</section>
 
 			<section class="team">
 				<div class="container">
 					<h2 class="title" data-aos="zoom-in">
-						<span>Команда</span> <br />
-						врачей
+						<span>Ведущие</span> <br />
+						специалисты <br />
+						<span>направления</span>
 					</h2>
-
-					<div class="team-main">
-						<div
-							class="team-main__image"
-							style="background-image: url('img/team/kalinchuk.png')"
-							data-aos="fade-right"
-						></div>
-
-						<div class="team-main__container">
-							<div class="team-main__box team-main__about" data-aos="zoom-in">
-								<div class="team-main__top">
-									<h3 class="team-main__title">Сергей Калинчук</h3>
-									<span class="team-main__post">Руководитель клиники</span>
-								</div>
-
-								<div class="team-main__wrapper">
-									<p class="team-main__text">
-										Окончил Одесский национальный медицинский университет специальностью
-										<span class="_c-accent">"Хирургия"</span>.
-									</p>
-									<p class="team-main__text">
-										Окончил
-										<span class="_c-accent"
-											>Национальную академию государственного управления</span
-										>
-										при Президенте Украины, магистр управления.
-									</p>
-									<p class="team-main__text">
-										<span class="_c-accent">Доцент кафедры</span> медсестринства и
-										экстренной медицины Волынского медицинского института. Кандидат
-										медицинских наук.
-									</p>
-								</div>
-							</div>
-
-							<div class="team-main__box team-main__special" data-aos="zoom-in">
-								<h4 class="team-main__heading">Получил специализацию:</h4>
-
-								<ul class="team-main__list">
-									<li class="team-main__list-item">Гастроэнтерология</li>
-									<li class="team-main__list-item">Семейная медицина</li>
-									<li class="team-main__list-item">Эндокринология</li>
-								</ul>
-							</div>
-
-							<div class="team-main__box team-main__posts" data-aos="zoom-in">
-								<h4 class="team-main__heading">Управлял:</h4>
-
-								<ul class="team-main__list">
-									<li class="team-main__list-item">Одесской областной больницей</li>
-									<li class="team-main__list-item">Клиникой "Одрекс"</li>
-									<li class="team-main__list-item">
-										Одесским городским управлением здравоохранения
-									</li>
-									<li class="team-main__list-item">Медицинским холдингом "Добробут"</li>
-								</ul>
-							</div>
-
-							<div class="team-main__box team-main__quote" data-aos="zoom-in">
-								<blockquote class="team-main__blockquote">
-									«Я выбрал профессию врача в раннем детстве. Еще в восьмом классе решил,
-									что я хочу быть доктором. Для меня медицина – это профессия номер один.
-									Это настоящее служение людям»
-								</blockquote>
-							</div>
-						</div>
-					</div>
 
 					<div class="team__container">
 						<div class="team-item" data-aos="fade-up">
@@ -733,85 +849,6 @@
 							<h3 class="team-item__title">Ярослав Милевский</h3>
 
 							<p class="team-item__subtitle">Психолог</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="docs">
-				<div class="container">
-					<h2 class="title" data-aos="zoom-in">
-						<span>Наши</span> <br />
-						документы
-					</h2>
-
-					<div class="docs__container">
-						<div class="docs__item" data-aos="fade-up">
-							<span class="docs__item-number">01</span>
-							<div class="docs__item-top">
-								<span class="docs__item-caption">Документ</span
-								><img src="img/docs/image-1.png" alt="Image" class="docs__item-image" />
-							</div>
-							<div class="docs__item-bottom">
-								<h3 class="docs__item-heading">
-									Научная <br />
-									степень
-								</h3>
-								<a href="img/docs/image-1.png" class="docs__item-btn btn" data-fancybox
-									>Посмотреть</a
-								>
-							</div>
-						</div>
-
-						<div class="docs__item" data-aos="fade-up" data-aos-delay="100">
-							<span class="docs__item-number">02</span>
-							<div class="docs__item-top">
-								<span class="docs__item-caption">Сертификат</span
-								><img src="img/docs/image-2.png" alt="Image" class="docs__item-image" />
-							</div>
-							<div class="docs__item-bottom">
-								<h3 class="docs__item-heading">
-									Обучающая <br />
-									программа
-								</h3>
-								<a href="img/docs/image-2.png" class="docs__item-btn btn" data-fancybox
-									>Посмотреть</a
-								>
-							</div>
-						</div>
-
-						<div class="docs__item" data-aos="fade-up" data-aos-delay="200">
-							<span class="docs__item-number">03</span>
-							<div class="docs__item-top">
-								<span class="docs__item-caption">Документ</span
-								><img src="img/docs/image-3.png" alt="Image" class="docs__item-image" />
-							</div>
-							<div class="docs__item-bottom">
-								<h3 class="docs__item-heading">
-									Диплом <br />
-									кандидата наук
-								</h3>
-								<a href="img/docs/image-3.png" class="docs__item-btn btn" data-fancybox
-									>Посмотреть</a
-								>
-							</div>
-						</div>
-
-						<div class="docs__item" data-aos="fade-up" data-aos-delay="300">
-							<span class="docs__item-number">04</span>
-							<div class="docs__item-top">
-								<span class="docs__item-caption">Сертификат</span
-								><img src="img/docs/image-4.png" alt="Image" class="docs__item-image" />
-							</div>
-							<div class="docs__item-bottom">
-								<h3 class="docs__item-heading">
-									Обучающая <br />
-									программа
-								</h3>
-								<a href="img/docs/image-4.png" class="docs__item-btn btn" data-fancybox
-									>Посмотреть</a
-								>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -1146,10 +1183,9 @@
 					<h2 class="title" data-aos="zoom-in">
 						<span
 							>Часто <br />
-							задаються</span
-						>
-						<br />
-						питання
+							задаваемые</span
+						>  <br />
+						вопросы
 					</h2>
 
 					<div class="faq__container" data-aos="fade-up">
@@ -1158,17 +1194,17 @@
 								<div class="faq__item-box">
 									<span class="faq__item-number">01</span>
 									<h3 class="faq__item-title">
-										Чи є <br />
-										гарантії?
+										Есть ли <br />
+										гарантии?
 									</h3>
 								</div>
 							</div>
 
 							<div class="faq__item-dropdown">
 								<p class="faq__item-text">
-									Гарантійна політика Фенікс поширюється на всіх пацієнтів, які пройшли
-									рекомендований крус лікування. Гарантійний термін 2 роки. Уточнити
-									більше про гарантію на лікування +38 099 40 44 777
+									Гарантийная политика Феникс распространяется на всех пациентов, которые
+									прошли рекомендованный крус лечения. Гарантийный срок составляет 2 года.
+									Уточнить больше о гарантии на лечение +38 099 40 44 777
 								</p>
 							</div>
 						</div>
@@ -1178,16 +1214,17 @@
 								<div class="faq__item-box">
 									<span class="faq__item-number">02</span>
 									<h3 class="faq__item-title">
-										Чи анонімне лікування <br />
-										і чи ставите ви на облік?
+										Анонимно ли лечение <br />
+										и ставите ли вы на учёт?
 									</h3>
 								</div>
 							</div>
 
 							<div class="faq__item-dropdown">
 								<p class="faq__item-text">
-									Лікування у клініці Фенікс повністю анонімне. Відомостей для постановки
-									на облік клініка не надає. Конфіденційність та безпека гарантується.
+									Лечение в клинике Феникс полностью анонимно. Сведений для постановки на
+									учёт клиника не предоставляет. Конфиденциальность и безопасность
+									гарантируется.
 								</p>
 							</div>
 						</div>
@@ -1197,17 +1234,17 @@
 								<div class="faq__item-box">
 									<span class="faq__item-number">03</span>
 									<h3 class="faq__item-title">
-										Чи є медична <br />
-										ліцензія?
+										Есть ли медицинская <br />
+										лицензия?
 									</h3>
 								</div>
 							</div>
 
 							<div class="faq__item-dropdown">
 								<p class="faq__item-text">
-									Клініка Фенікс – ліцензована клініка. Стандарти роботи Фенікс
-									відповідають вимогам МОЗ та міжнародним протоколам діагностики,
-									лікування та реабілітації.
+									Клиника Феникс – лицензированная клиника. Стандарты работы Феникс
+									соответствуют требованиям Минздрава и международным протоколам
+									диагностики, лечения и реабилитации.
 								</p>
 							</div>
 						</div>
@@ -1217,24 +1254,24 @@
 								<div class="faq__item-box">
 									<span class="faq__item-number">04</span>
 									<h3 class="faq__item-title">
-										Як змусити близького <br />
-										лікуватися якщо він не хоче?
+										Как заставить близкого <br />
+										лечиться если он не хочет?
 									</h3>
 								</div>
 							</div>
 
 							<div class="faq__item-dropdown">
 								<p class="faq__item-text">
-									Перші кроки для близьких: <br />
+									Первые шаги для близких: <br />
 
-									Варіант №1: телефонна консультація з фахівцем з метою попереднього
-									підбору варіантів допомоги, отримання консультації з оптимальній
-									поведінці з пацієнтом, що сприяє його мотивації на лікування Варіант №2:
-									телефонний запит на надання екстреної лікарської допомоги пацієнту, у
-									тому числі вдома: огляд, детоксикація, демотивація на лікування,
-									супровід на програму з будь-якої точки світу Варіант №3: запис на
-									проходження сімейної спільної мотиваційної сесії зі спеціалістом (також
-									доступне онлайн)
+									Вариант №1: телефонная консультация со специалистом с целью
+									предварительного подбора вариантов помощи, получения консультации по
+									оптимальному поведению с пациентом, способствующему его мотивации на
+									лечение Вариант№2: телефонный запрос на оказание экстренной врачебной
+									помощи пациенту, в том числе на дому: осмотр, детоксикация, демотивация
+									на лечение, сопровождение на программу из любой точки мира Вариант №3:
+									запись на прохождение семейной совместной мотивационной сессии со
+									специалистом (также доступно онлайн)
 								</p>
 							</div>
 						</div>
@@ -1244,18 +1281,19 @@
 								<div class="faq__item-box">
 									<span class="faq__item-number">05</span>
 									<h3 class="faq__item-title">
-										Чи є доплати <br />
-										чи приховані платежі?
+										Есть ли доплаты <br />
+										или скрытые платежи?
 									</h3>
 								</div>
 							</div>
 
 							<div class="faq__item-dropdown">
 								<p class="faq__item-text">
-									Вартість програм у клініці Фенікс – фіксована, без доплат. Фінальна
-									вартість програми визначається при первинній консультації та залежить
-									від тривалості та від категорії номера проживання. Вибрана вартість
-									програми фіксується у Договорі надання послуг та не підлягає зміни
+									Стоимость программ в клинике Феникс – фиксированная, без доплат.
+									Финальная стоимость программы определяется при первичной консультации и
+									зависит от длительности и от категории номера проживания. Выбранная
+									стоимость программы фиксируется в Договоре оказания услуг и не подлежит
+									изменению
 								</p>
 							</div>
 						</div>
@@ -1265,21 +1303,21 @@
 								<div class="faq__item-box">
 									<span class="faq__item-number">06</span>
 									<h3 class="faq__item-title">
-										Які ліки <br />
-										ви використовуєте?
+										Какие лекарства <br />
+										вы используете?
 									</h3>
 								</div>
 							</div>
 
 							<div class="faq__item-dropdown">
 								<p class="faq__item-text">
-									Клініка Фенікс – ліцензована клініка з правом закупівлі, зберігання та
-									застосування лікарських засобів повного спектру, у тому числі
-									рецептурних фармакопрепаратів Основний напрямок терапії Фенікс -
-									когнітивно-поведінкова полімодальна терапія, яка є елементом доказової
-									медицини і не має на увазі пригнічення когнітивних функцій. Ми не
-									використовуємо психофармакотерапію без свідчень та без необхідності. Ми
-									також не використовуємо дженерики.
+									Клиника Феникс – лицензированная клиника с правом закупки, хранения и
+									применения лекарственных средств полного спектра, в том числе
+									рецептурных фармакопрепаратов. Основное направление в терапии Феникс -
+									когнитивно-поведенческая полимодальная терапия, которая является
+									элементом доказательной медицины и не подразумевает угнетения
+									когнитивных функций. Мы не используем психофармакотерапию без показаний
+									и без необходимости. Мы также не используем дженерики.
 								</p>
 							</div>
 						</div>

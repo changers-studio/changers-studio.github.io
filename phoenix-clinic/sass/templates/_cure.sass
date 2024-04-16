@@ -1,0 +1,60 @@
+.cure
+	&__container
+		@include adaptive('column-gap', 10, 'desktop')
+		@include adaptive('row-gap', 30, 'desktop')
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+	&__item
+		@include adaptive('width', 586, 'desktop')
+		@include adaptive('padding', 40, 'desktop')
+		display: flex
+		align-items: center
+		flex-direction: column
+		color: $accent
+		text-align: center
+		&-number
+			@include adaptive('width', 60, 'desktop')
+			@include adaptive('height', 60, 'desktop')
+			@include adaptive('margin-bottom', 40, 'desktop')
+			@include adaptive('font-size', 26, 'desktop')
+			@include adaptive('border-radius', 5, 'desktop')
+			background-color: $accent
+			color: #fff
+			font-weight: 700
+			display: flex
+			justify-content: center
+			align-items: center
+		&-heading
+			@include adaptive('font-size', 36, 'desktop')
+			@include adaptive('margin-bottom', 40, 'desktop')
+			line-height: 0.9
+			font-weight: 500
+		&-text
+			line-height: 1.05
+	&__btn
+		@include adaptive('margin-top', 70, 'desktop')
+		display: inline-flex
+		position: relative
+		left: 50%
+		transform: translateX(-50%)
+
+@media only screen and (max-width : 960px)
+	.cure
+		&__container
+			flex-direction: column
+		&__item
+			@include adaptive('margin-bottom', 50, 'mobile')
+			&-number
+				@include adaptive('width', 35, 'mobile')
+				@include adaptive('height', 35, 'mobile')
+				@include adaptive('margin-bottom', 20, 'mobile')
+				@include adaptive('font-size', 16, 'desktop')
+			&-heading
+				@include adaptive('font-size', 24, 'mobile')
+				@include adaptive('margin-bottom', 15, 'mobile')
+		&__btn
+			@include adaptive('padding', 18, 'mobile')
+			width: 100%
+			left: auto
+			transform: none

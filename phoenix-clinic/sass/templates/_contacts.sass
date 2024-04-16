@@ -1,0 +1,140 @@
+.contacts
+	@include adaptive('margin-top', 200, 'desktop')
+	@include adaptive('padding-bottom', 200, 'desktop')
+	&__top
+		@include adaptive('padding-bottom', 40, 'desktop')
+		@include adaptive('margin-bottom', 100, 'desktop')
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		border-bottom: 1px solid $bd-black
+	&__title
+		text-align: left
+		margin-bottom: 0
+	&__social
+		@include adaptive('gap', 10, 'desktop')
+		display: flex
+		&-item
+			@include adaptive('width', 288, 'desktop')
+			@include adaptive('padding', 30, 'desktop')
+			@include adaptive('border-radius', 5, 'desktop')
+			@include adaptive('gap', 15, 'desktop')
+			@include adaptive('font-size', 24, 'desktop')
+			border: 1px solid $accent
+			background-color: $accent
+			color: #fff
+			display: flex
+			justify-content: center
+			align-items: center
+			transition: .3s
+			&:hover
+				background-color: #fff
+				color: $accent
+				svg
+					path
+						fill: $accent
+		&-icon
+			@include adaptive('width', 20, 'desktop')
+			@include adaptive('height', 20, 'desktop')
+			path
+				transition: .3s
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+	&__info
+		@include adaptive('gap', 30, 'desktop')
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		&-item
+			@include adaptive('gap', 10, 'desktop')
+			font-weight: 500
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+		&-caption
+			@include adaptive('font-size', 16, 'desktop')
+			color: $accent
+		&-data
+			@include adaptive('font-size', 20, 'desktop')
+	&__form
+		@include adaptive('width', 884, 'desktop')
+		display: flex
+		flex-direction: column
+		&-item
+			@include adaptive('margin-bottom', 15, 'desktop')
+			@include adaptive('gap', 5, 'desktop')
+			display: flex
+			flex-direction: column
+		&-heading
+			@include adaptive('font-size', 16, 'desktop')
+			font-weight: 500
+		&-input
+			@include adaptive('padding', 30, 'desktop')
+			@include adaptive('border-radius', 5, 'desktop')
+			@include adaptive('border-width', 2, 'desktop')
+			@include adaptive('font-size', 16, 'desktop')
+			width: 100%
+			border-style: solid
+			border-color: $accent
+		&-submit
+			@include adaptive('padding', 28, 'desktop')
+			@include adaptive('font-size', 28, 'desktop')
+			@include adaptive('margin-top', 35, 'desktop')
+
+@media only screen and (max-width : 960px)
+	.contacts
+		@include adaptive('margin-top', 140, 'mobile')
+		&__top
+			@include adaptive('margin-bottom', 40, 'mobile')
+			justify-content: center
+			border-bottom: none
+		&__title
+			text-align: center
+		&__social
+			@include adaptive('margin-bottom', 30, 'mobile')
+			@include adaptive('gap', 5, 'mobile')
+			flex-direction: column
+			&-item
+				@include adaptive('padding', 20, 'mobile')
+				@include adaptive('border-radius', 5, 'mobile')
+				@include adaptive('gap', 10, 'mobile')
+				@include adaptive('font-size', 16, 'mobile')
+				&:hover
+					background-color: $accent
+					color: #fff
+					svg
+						path
+							fill: #fff
+			&-icon
+				@include adaptive('width', 15, 'mobile')
+				@include adaptive('height', 15, 'mobile')
+				path
+					transition: .3s
+		&__container
+			flex-direction: column
+			align-items: stretch
+		&__info
+			@include adaptive('gap', 15, 'mobile')
+			&-item
+				@include adaptive('gap', 5, 'mobile')
+			&-caption
+				@include adaptive('font-size', 14, 'mobile')
+			&-data
+				@include adaptive('font-size', 16, 'mobile')
+		&__form
+			@include adaptive('margin-bottom', 40, 'mobile')
+			order: -1
+			&-item
+				@include adaptive('margin-bottom', 15, 'mobile')
+				@include adaptive('gap', 5, 'mobile')
+			&-heading
+				@include adaptive('font-size', 16, 'mobile')
+			&-input
+				@include adaptive('padding', 20, 'mobile')
+				@include adaptive('border-radius', 5, 'mobile')
+				@include adaptive('border-width', 1, 'mobile')
+				@include adaptive('font-size', 16, 'mobile')
+			&-submit
+				@include adaptive('margin-top', 5, 'mobile')

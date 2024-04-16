@@ -54,14 +54,17 @@ section
 //
 
 // Form elements
+::placeholder
+	@include adaptive('font-size', 16, 'desktop')
+	color: $accent
+	font-family: $default-font
+
 input, textarea
+	color: $black
 	background: none
 	border: none
 	color: inherit
-
-::placeholder
-	color: #CAC8C8
-	font-family: $default-font
+	font-weight: 500
 //
 
 @import grid
@@ -84,3 +87,8 @@ input, textarea
 @import templates/plan
 
 @import templates/gallery
+
+@import templates/contacts
+
+@import templates/cure
+@import templates/prevent

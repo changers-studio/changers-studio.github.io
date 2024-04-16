@@ -13,6 +13,10 @@
 				@include adaptive('padding-bottom', 10, 'desktop')
 			&__hamburger-open
 				border-color: #fff
+	&-contacts
+		background-color: $accent
+		.header__hamburger-open
+			border-color: #fff
 	&__container
 		@include adaptive('padding-top', 20, 'desktop')
 		@include adaptive('padding-bottom', 20, 'desktop')
@@ -39,6 +43,8 @@
 		transform: translate(-50%, -50%)
 		&-item
 			color: #fff
+			&:hover
+				color: #fff
 	&__lang
 		@include adaptive('font-size', 18, 'desktop')
 		letter-spacing: -0.03em

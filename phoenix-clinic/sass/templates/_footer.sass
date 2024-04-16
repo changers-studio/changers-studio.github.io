@@ -1,9 +1,9 @@
 .footer
 	@include adaptive('margin-top', 100, 'desktop')
-	@include adaptive('padding-top', 100, 'desktop')
 	background-color: $accent
 	color: #fff
 	&__container
+		@include adaptive('padding-top', 100, 'desktop')
 		@include adaptive('padding-bottom', 100, 'desktop')
 		@include adaptive('width', 880, 'desktop')
 		display: flex
@@ -102,9 +102,8 @@
 @media only screen and (max-width : 960px)
 	.footer
 		@include adaptive('margin-top', 40, 'mobile')
-		@include adaptive('padding-top', 30, 'mobile')
-		@include adaptive('padding-bottom', 30, 'mobile')
 		&__container
+			@include adaptive('padding-top', 30, 'mobile')
 			@include adaptive('padding-bottom', 30, 'mobile')
 			align-items: stretch
 			margin: 0
@@ -148,8 +147,8 @@
 			&-data
 				@include adaptive('font-size', 16, 'mobile')
 		&__bottom
-			@include adaptive('padding-top', 20, 'mobile')
-			@include adaptive('padding-bottom', 20, 'mobile')
+			@include adaptive('padding-top', 30, 'mobile')
+			@include adaptive('padding-bottom', 30, 'mobile')
 			@include adaptive('gap', 5, 'mobile')
 			flex-direction: column
 			align-items: flex-start

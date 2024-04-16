@@ -34,12 +34,12 @@ if ($(window).width() <= 960) {
 //
 
 // Phone musk
-// if ($('*').is('input[type="tel"]')) {
-// 	$('input[type=tel]').inputmask({
-// 		mask: '+99 (999) 999 99 99',
-// 		showMaskOnHover: false,
-// 	})
-// }
+if ($('*').is('input[type="tel"]')) {
+	$('input[type=tel]').inputmask({
+		mask: '+99 (999) 999 99 99',
+		showMaskOnHover: false,
+	})
+}
 //
 
 // Dropdown

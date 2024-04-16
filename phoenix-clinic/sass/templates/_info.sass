@@ -1,4 +1,13 @@
 .info
+	&__title
+		@include adaptive('margin-bottom', 40, 'desktop')
+	&__subtitle
+		@include adaptive('margin-bottom', 100, 'desktop')
+		@include adaptive('max-width', 380, 'desktop')
+		font-weight: 500
+		text-align: center
+		margin-left: auto
+		margin-right: auto
 	&__container
 		@include adaptive('gap', 10, 'desktop')
 		display: flex
@@ -15,6 +24,8 @@
 		display: flex
 		flex-direction: column
 		justify-content: space-between
+		&._half-width
+			@include adaptive('width', 885, 'desktop')
 		&._bg-accent
 			background-color: $accent
 			color: #fff
@@ -35,7 +46,9 @@
 			line-height: 0.9
 		&-number
 			@include adaptive('font-size', 24, 'desktop')
+			@include adaptive('margin-left', 20, 'desktop')
 			color: $gray
+			flex: 0 0 auto
 		&-text, &-list
 			@include adaptive('padding-top', 30, 'desktop')
 			@include adaptive('padding-bottom', 30, 'desktop')
@@ -70,9 +83,26 @@
 
 @media only screen and (max-width : 960px)
 	.info
+		&__title
+			@include adaptive('margin-bottom', 15, 'mobile')
+		&__subtitle
+			@include adaptive('margin-bottom', 40, 'mobile')
 		&__container
 			@include adaptive('gap', 10, 'mobile')
 			flex-direction: column
+		&__x-scroll
+			@include adaptive('padding-left', 30, 'mobile')
+			@include adaptive('padding-right', 30, 'mobile')
+			@include adaptive('padding-bottom', 15, 'mobile')
+			@include adaptive('left', -30, 'mobile')
+			flex-direction: row
+			overflow-x: auto
+			flex-wrap: nowrap
+			position: relative
+			width: 100vw
+			.info__item
+				@include adaptive('width', 315, 'mobile')
+				flex: 0 0 auto
 		&__item
 			@include adaptive('border-radius', 5, 'mobile')
 			@include adaptive('border-width', 1, 'mobile')
@@ -81,9 +111,10 @@
 			&-top
 				@include adaptive('margin-bottom', 20, 'mobile')
 			&-heading
-				@include adaptive('font-size', 24, 'mobile')
+				@include adaptive('font-size', 20, 'mobile')
 			&-number
 				@include adaptive('font-size', 18, 'mobile')
+				@include adaptive('margin-left', 20, 'mobile')
 			&-list
 				@include adaptive('gap', 5, 'mobile')
 				&-item

@@ -41,11 +41,14 @@
 		@include adaptive('width', 130, 'desktop')
 	&__title
 		@include adaptive('max-width', 970, 'desktop')
+		@include adaptive('margin-bottom', 80, 'desktop')
 		@include adaptive('font-size', 80, 'desktop')
 		font-weight: 300
 		line-height: 0.9
 		text-align: center
 		letter-spacing: -0.05em
+		&:last-child
+			margin-bottom: 0
 	&__btns
 		@include adaptive('padding-right', 70, 'desktop')
 		@include adaptive('padding-left', 70, 'desktop')
@@ -59,10 +62,19 @@
 		z-index: 3
 
 @media only screen and (max-width : 960px)
+	.ishome .main
+		background-image: url('../img/main-page/main-image.jpg')
+		background-size: cover
+		background-position: center
+
 	.main
 		@include adaptive('margin-bottom', 40, 'mobile')
+		&__video
+			display: none
 		&__container
 			@include adaptive('margin-bottom', 200, 'mobile')
+			.main__btn
+				display: none
 		&__overtitle
 			@include adaptive('margin-bottom', 40, 'mobile')
 			@include adaptive('width', 130, 'mobile')
