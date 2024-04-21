@@ -1,0 +1,52 @@
+.about
+	&__container
+		@include adaptive('margin-bottom', 230, 'desktop')
+		@include adaptive('padding-bottom', 120, 'desktop')
+		display: flex
+		position: relative
+		&:last-child
+			margin-bottom: 0
+		&-right .about__container-inner
+			@include adaptive('margin-left', 790, 'desktop')
+		&-inner
+			@include adaptive('max-width', 770, 'desktop')
+			@include adaptive('margin-left', 150, 'desktop')
+	&__image
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		max-height: none
+		max-width: none
+		img
+			width: 100%
+	&__title
+		@include adaptive('margin-bottom', 45, 'desktop')
+		@include adaptive('left', -33, 'desktop')
+		position: relative
+	&__text
+		@include adaptive('margin-bottom', 35, 'desktop')
+		@include adaptive('font-size', 24, 'desktop')
+		position: relative
+		z-index: 2
+		&:last-child
+			margin-bottom: 0
+		&._white
+			@include adaptive('margin-top', 130, 'desktop')
+			color: #fff
+
+@media only screen and (max-width : 960px)
+	.about
+		&__container
+			@include adaptive('margin-bottom', 80, 'mobile')
+			flex-direction: column
+		&__image
+			@include adaptive('margin-top', 20, 'mobile')
+			position: static
+		&__title
+			@include adaptive('margin-bottom', 25, 'mobile')
+		&__text
+			@include adaptive('margin-bottom', 20, 'mobile')
+			@include adaptive('font-size', 16, 'mobile')
+			&._white
+				color: $black

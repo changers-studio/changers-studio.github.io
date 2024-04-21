@@ -1,0 +1,50 @@
+// ._c
+// 	&-blue
+// 		color: $blue
+// 	&-gray
+// 		color: $gray
+
+._text-center
+	text-align: center
+
+// ._bg
+// 	&-accent
+// 		background-color: $accent
+// 	&-gray
+// 		background-color: $bg
+// 	&-black
+// 		background-color: $black
+
+// ._bd-radius
+// 	@include adaptive('border-top-left-radius', 60, 30, 'desktop')
+// 	@include adaptive('border-top-right-radius', 60, 30, 'desktop')
+
+// ._semi-bold
+// 	font-weight: 600
+
+// ._bold
+// 	font-weight: 600
+
+// ._uppercase
+// 	text-transform: uppercase
+
+._hul
+	display: inline-block
+	position: relative
+	&::before
+		content: ''
+		width: 0
+		height: 1px
+		background-color: $accent
+		position: absolute
+		top: 100%
+		left: 0
+		transition: .3s
+	&:hover::before
+		width: 100%
+
+@media only screen and (max-width : 960px)
+
+	._hul
+		&::before
+			display: none

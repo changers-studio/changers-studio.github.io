@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Прання | Кавомашин</title>
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" sizes="192x192" href="img/favicon.ico" />
+
+		<!-- libs css -->
+		<link rel="stylesheet" href="libs/slick-carousel/slick.css" />
+		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css" />
+		<link rel="stylesheet" href="libs/mfp/magnific-popup.css" />
+
+		<!-- main css -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- jQeury -->
+		<script defer src="libs/jquery.min.js"></script>
+
+		<!-- libs js -->
+		<script defer src="libs/dynamic-adapt.js"></script>
+		<script defer src="libs/slick-carousel/slick.min.js"></script>
+		<script defer src="libs/fancybox/jquery.fancybox.min.js"></script>
+		<script defer src="libs/mfp/jquery.magnific-popup.min.js"></script>
+
+		<!-- main js -->
+		<script defer src="js/main.js"></script>
+	</head>
+
+	<body class="isnohome">
+		<div class="overflow-hidden">
+			<header class="header">
+				<div class="header__container">
+					<a href="index.html" class="header__logo">
+						<img src="img/logo.svg" alt="Logo" class="header__logo-img" />
+					</a>
+
+					<div class="header__container-inner">
+						<a href="#modal" class="header__btn btn mfp">Contact us</a>
+
+						<div class="header__lang" data-da=".header__hamburger, 960, 1">
+							<div class="header__lang-heading dropdown-heading">
+								UA
+
+								<picture class="header__lang-icon">
+									<source srcset="img/icons/lang-arrow.svg" media="(min-width: 961px)" />
+									<img src="img/icons/lang-arrow_mobile.svg" alt="Arrow" />
+								</picture>
+							</div>
+
+							<div class="header__lang-dropdown">
+								<a href="#" class="header__lang-item _hul">UA</a>
+								<a href="#" class="header__lang-item _hul">RU</a>
+							</div>
+						</div>
+					</div>
+
+					<button
+						type="button"
+						class="header__hamburger-open toggleSidebar"
+						aria-label="Show hamburger"
+					>
+						<img
+							src="img/icons/hamburger.svg"
+							alt=""
+							class="header__hamberger-open-icon"
+						/>
+					</button>
+				</div>
+
+				<div class="header__hamburger">
+					<button type="button" class="header__hamburger-close toggleSidebar">
+						<img src="img/icons/close.svg" alt="Close" class="modal__close-icon" />
+					</button>
+
+					<div class="container footer__container">
+						<div class="footer__container-inner">
+							<h3 class="footer__heading">Напишіть <span>нам</span></h3>
+
+							<a href="#modal" class="footer__btn btn mfp">Зв’язатися з нами</a>
+						</div>
+
+						<div class="footer__container-inner">
+							<a href="index.html" class="footer__logo">
+								<img src="img/logo-white.svg" alt="Logo" class="footer__logo-img" />
+							</a>
+
+							<div class="footer__contacts">
+								<a href="tel:+380676306368" class="footer__contacts-item"
+									>+38 067 630 63 68</a
+								>
+								<a href="mailto:sales@start.eu.com" class="footer__contacts-item"
+									>sales@start.eu.com</a
+								>
+							</div>
+
+							<address class="footer__address">
+								208B Bohdana Khmelnytskoho Ave, Dnipro, Ukraine
+							</address>
+							<div class="footer__codes">
+								<span class="footer__codes-item">EDRPOU 40863700</span>
+								<span class="footer__codes-item">INN 40863700462449000</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="main">
+				<div class="container">
+					<div
+						class="main__box"
+						style="background-image: url('img/services/image-5.png')"
+					>
+						<div class="main__box-inner">
+							<p class="main__overheading">Продукція для</p>
+							<h1 class="main__heading">Кавомашин</h1>
+
+							<div class="main__text" data-da=".main .container, 960, 1">
+								<p class="main__text-p">
+									Забезпечте своїм інструментам і обладнанню чистоту і продовжуйте термін
+									служби з чистими засобами від Aquawheel.
+								</p>
+
+								<p class="main__text-p">
+									Наші продукти не тільки ефективно видаляють будь-які забруднення і
+									забезпечують наліт, але і бережний вплив, зберігаючи вашу техніку в
+									ідеальному стані. З Aquawheel ви отримуєте гарантію відмінного
+									результату, підтримку довголіття і постійну працездатність вашого
+									обладнання без ризику для його механізмів, деталей і поверхонь.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="catalog">
+				<div class="container">
+					<div class="filter">
+						<div class="filter__items">
+							<div class="filter__item _bg-blue disabled">
+								<img
+									src="img/brands/image-1.png"
+									alt="Image"
+									class="filter__item-img filter__item-img-1"
+								/>
+								<span class="filter__item-inner">
+									<span class="filter__item-overtitle">Продукція</span>
+									<span class="filter__item-title">Start</span>
+								</span>
+							</div>
+
+							<div class="filter__item _bg-orange">
+								<img
+									src="img/brands/image-2.png"
+									alt="Image"
+									class="filter__item-img filter__item-img-2"
+								/>
+								<span class="filter__item-inner">
+									<span class="filter__item-overtitle">Продукція</span>
+									<span class="filter__item-title">Brix</span>
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog__container">
+						<div class="catalog__item">
+							<img
+								src="img/products/image-1.png"
+								alt="Product"
+								class="catalog__item-img"
+							/>
+
+							<p class="catalog__item-title">Powercaps Universal</p>
+							<p class="catalog__item-subtitle">Washing capsules</p>
+
+							<div class="catalog__item-icons">
+								<img
+									src="img/icons/clothes-36.png"
+									alt="Icon"
+									class="catalog__item-icon"
+								/>
+								<img
+									src="img/icons/weight-230.svg"
+									alt="Icon"
+									class="catalog__item-icon"
+								/>
+							</div>
+						</div>
+
+						<div class="catalog__item">
+							<img
+								src="img/products/image-2.png"
+								alt="Product"
+								class="catalog__item-img"
+							/>
+
+							<p class="catalog__item-title">Powercaps Baby</p>
+							<p class="catalog__item-subtitle">Washing capsules</p>
+
+							<div class="catalog__item-icons">
+								<img
+									src="img/icons/clothes-36.png"
+									alt="Icon"
+									class="catalog__item-icon"
+								/>
+								<img
+									src="img/icons/weight-230.svg"
+									alt="Icon"
+									class="catalog__item-icon"
+								/>
+							</div>
+						</div>
+
+						<div class="catalog__item">
+							<img
+								src="img/products/image-3.png"
+								alt="Product"
+								class="catalog__item-img"
+							/>
+
+							<p class="catalog__item-title">Powercaps Color</p>
+							<p class="catalog__item-subtitle">Washing capsules</p>
+
+							<div class="catalog__item-icons">
+								<img
+									src="img/icons/clothes-36.png"
+									alt="Icon"
+									class="catalog__item-icon"
+								/>
+								<img
+									src="img/icons/weight-230.svg"
+									alt="Icon"
+									class="catalog__item-icon"
+								/>
+							</div>
+						</div>
+
+						<div class="catalog__item">
+							<img
+								src="img/products/image-4.png"
+								alt="Product"
+								class="catalog__item-img"
+							/>
+
+							<p class="catalog__item-title">Powercaps Universal</p>
+							<p class="catalog__item-subtitle">Washing capsules</p>
+
+							<div class="catalog__item-icons">
+								<img
+									src="img/icons/clothes-12.png"
+									alt="Icon"
+									class="catalog__item-icon"
+								/>
+								<img
+									src="img/icons/weight-115.svg"
+									alt="Icon"
+									class="catalog__item-icon"
+								/>
+							</div>
+						</div>
+
+						<div class="catalog__item">
+							<img
+								src="img/products/image-5.png"
+								alt="Product"
+								class="catalog__item-img"
+							/>
+
+							<p class="catalog__item-title">Powercaps Baby</p>
+							<p class="catalog__item-subtitle">Washing capsules</p>
+
+							<div class="catalog__item-icons">
+								<img
+									src="img/icons/clothes-12.png"
+									alt="Icon"
+									class="catalog__item-icon"
+								/>
+								<img
+									src="img/icons/weight-115.svg"
+									alt="Icon"
+									class="catalog__item-icon"
+								/>
+							</div>
+						</div>
+
+						<div class="catalog__item">
+							<img
+								src="img/products/image-6.png"
+								alt="Product"
+								class="catalog__item-img"
+							/>
+
+							<p class="catalog__item-title">Powercaps Color</p>
+							<p class="catalog__item-subtitle">Washing capsules</p>
+
+							<div class="catalog__item-icons">
+								<img
+									src="img/icons/clothes-12.png"
+									alt="Icon"
+									class="catalog__item-icon"
+								/>
+								<img
+									src="img/icons/weight-115.svg"
+									alt="Icon"
+									class="catalog__item-icon"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog-category__container container">
+					<a href="#" class="catalog-category__item catalog-category__item-1">
+						<span class="catalog-category__item-overtitle">Для</span>
+						<span class="catalog-category__item-title">Посуду</span>
+
+						<img
+							src="img/categories/image-1.png"
+							alt="Image"
+							class="catalog-category__item-img catalog-category__item-img-1"
+						/>
+					</a>
+
+					<a href="#" class="catalog-category__item catalog-category__item-2">
+						<span class="catalog-category__item-overtitle">Для</span>
+						<span class="catalog-category__item-title">Прання</span>
+
+						<img
+							src="img/categories/image-2.png"
+							alt="Image"
+							class="catalog-category__item-img catalog-category__item-img-2"
+						/>
+					</a>
+
+					<a href="#" class="catalog-category__item catalog-category__item-3">
+						<span class="catalog-category__item-overtitle">Для</span>
+						<span class="catalog-category__item-title">Дому</span>
+
+						<img
+							src="img/categories/image-3.png"
+							alt="Image"
+							class="catalog-category__item-img catalog-category__item-img-3"
+						/>
+					</a>
+
+					<a href="#" class="catalog-category__item catalog-category__item-4">
+						<span class="catalog-category__item-overtitle">Для</span>
+						<span class="catalog-category__item-title">Кавомашин</span>
+
+						<img
+							src="img/categories/image-4.png"
+							alt="Image"
+							class="catalog-category__item-img catalog-category__item-img-4"
+						/>
+					</a>
+
+					<a href="#" class="catalog-category__item catalog-category__item-5 active">
+						<span class="catalog-category__item-title">Pro</span>
+
+						<img
+							src="img/categories/image-5.png"
+							alt="Image"
+							class="catalog-category__item-img catalog-category__item-img-5"
+						/>
+					</a>
+				</div>
+			</section>
+
+			<section class="partners">
+				<div class="partners__slider ticker">
+					<div class="partners__slider-item">
+						<img src="img/partners/logo-1.svg" alt="Logo" class="partners__logo" />
+					</div>
+					<div class="partners__slider-item">
+						<img src="img/partners/logo-2.svg" alt="Logo" class="partners__logo" />
+					</div>
+					<div class="partners__slider-item">
+						<img src="img/partners/logo-1.svg" alt="Logo" class="partners__logo" />
+					</div>
+					<div class="partners__slider-item">
+						<img src="img/partners/logo-2.svg" alt="Logo" class="partners__logo" />
+					</div>
+					<div class="partners__slider-item">
+						<img src="img/partners/logo-1.svg" alt="Logo" class="partners__logo" />
+					</div>
+					<div class="partners__slider-item">
+						<img src="img/partners/logo-2.svg" alt="Logo" class="partners__logo" />
+					</div>
+					<div class="partners__slider-item">
+						<img src="img/partners/logo-1.svg" alt="Logo" class="partners__logo" />
+					</div>
+					<div class="partners__slider-item">
+						<img src="img/partners/logo-2.svg" alt="Logo" class="partners__logo" />
+					</div>
+				</div>
+			</section>
+
+			<section class="gallery">
+				<div class="gallery__slider ticker">
+					<div class="gallery__slider-item">
+						<img src="img/gallery/image-1.png" alt="Logo" class="gallery__image" />
+					</div>
+					<div class="gallery__slider-item">
+						<img src="img/gallery/image-2.png" alt="Logo" class="gallery__image" />
+					</div>
+					<div class="gallery__slider-item">
+						<img src="img/gallery/image-3.png" alt="Logo" class="gallery__image" />
+					</div>
+					<div class="gallery__slider-item">
+						<img src="img/gallery/image-4.png" alt="Logo" class="gallery__image" />
+					</div>
+					<div class="gallery__slider-item">
+						<img src="img/gallery/image-5.png" alt="Logo" class="gallery__image" />
+					</div>
+					<div class="gallery__slider-item">
+						<img src="img/gallery/image-1.png" alt="Logo" class="gallery__image" />
+					</div>
+					<div class="gallery__slider-item">
+						<img src="img/gallery/image-2.png" alt="Logo" class="gallery__image" />
+					</div>
+					<div class="gallery__slider-item">
+						<img src="img/gallery/image-3.png" alt="Logo" class="gallery__image" />
+					</div>
+					<div class="gallery__slider-item">
+						<img src="img/gallery/image-4.png" alt="Logo" class="gallery__image" />
+					</div>
+					<div class="gallery__slider-item">
+						<img src="img/gallery/image-5.png" alt="Logo" class="gallery__image" />
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<picture class="footer__bg">
+					<source srcset="img/footer-bg.svg" media="(min-width: 961px)" />
+					<img class="footer__bg-img" src="img/footer-bg_mobile.svg" alt="Image" />
+				</picture>
+
+				<div class="container footer__container">
+					<div class="footer__container-inner _desktop-hidden">
+						<h3 class="footer__heading">Напишіть <span>нам</span></h3>
+
+						<a href="#modal" class="footer__btn btn mfp">Зв’язатися з нами</a>
+					</div>
+
+					<div class="footer__container-inner">
+						<a href="index.html" class="footer__logo">
+							<img src="img/logo-white.svg" alt="Logo" class="footer__logo-img" />
+						</a>
+
+						<div class="footer__contacts">
+							<a href="tel:+380676306368" class="footer__contacts-item"
+								>+38 067 630 63 68</a
+							>
+							<a href="mailto:sales@start.eu.com" class="footer__contacts-item"
+								>sales@start.eu.com</a
+							>
+						</div>
+
+						<address class="footer__address">
+							208B Bohdana Khmelnytskoho Ave, Dnipro, Ukraine
+						</address>
+						<div class="footer__codes">
+							<span class="footer__codes-item">EDRPOU 40863700</span>
+							<span class="footer__codes-item">INN 40863700462449000</span>
+						</div>
+					</div>
+
+					<form class="footer__form">
+						<h3 class="footer__form-title">Напишіть <span>нам</span></h3>
+
+						<div class="footer__form-row">
+							<input
+								type="text"
+								class="footer__form-input"
+								name="Name"
+								placeholder="Ваше ім’я*"
+								required
+							/>
+							<input
+								type="text"
+								class="footer__form-input"
+								name="Company name"
+								placeholder="Назва компанії*"
+								required
+							/>
+						</div>
+
+						<div class="footer__form-row">
+							<input
+								type="tel"
+								class="footer__form-input"
+								name="Telephone number"
+								placeholder="Номер телефону*"
+								required
+							/>
+							<input
+								type="email"
+								class="footer__form-input"
+								name="Email"
+								placeholder="E-mail*"
+								required
+							/>
+						</div>
+
+						<input
+							type="text"
+							class="footer__form-input _full-w"
+							name="Comment"
+							placeholder="Коментар"
+						/>
+
+						<button type="submit" class="footer__form-submit btn">
+							Зв’язатися з нами
+						</button>
+					</form>
+				</div>
+
+				<div class="container footer__bottom">
+					<span class="footer__copyrights">©Aquavil LLC</span>
+					<span class="footer__privacy"
+						>All Rights Reserved
+						<a href="#" class="footer__privacy-link _hul">privacy policy</a></span
+					>
+				</div>
+			</footer>
+
+			<div class="modal mfp-hide" id="modal">
+				<button type="button" class="modal__close">
+					<img src="img/icons/close.svg" alt="Close" class="modal__close-icon" />
+				</button>
+
+				<div class="container modal__container">
+					<div class="modal__container-inner">
+						<a href="index.html" class="modal__logo">
+							<img src="img/logo-white.svg" alt="Logo" class="modal__logo-img" />
+						</a>
+
+						<div class="modal__contacts">
+							<a href="tel:+380676306368" class="modal__contacts-item"
+								>+38 067 630 63 68</a
+							>
+							<a href="mailto:sales@start.eu.com" class="modal__contacts-item"
+								>sales@start.eu.com</a
+							>
+						</div>
+
+						<address class="modal__address">
+							208B Bohdana Khmelnytskoho Ave, Dnipro, Ukraine
+						</address>
+						<div class="modal__codes">
+							<span class="modal__codes-item">EDRPOU 40863700</span>
+							<span class="modal__codes-item">INN 40863700462449000</span>
+						</div>
+					</div>
+
+					<form class="modal__form">
+						<h3 class="modal__form-title">Напишіть <span>нам</span></h3>
+
+						<div class="modal__form-row">
+							<input
+								type="text"
+								class="modal__form-input"
+								name="Name"
+								placeholder="Ваше ім’я*"
+								required
+							/>
+							<input
+								type="text"
+								class="modal__form-input"
+								name="Company name"
+								placeholder="Назва компанії*"
+								required
+							/>
+						</div>
+
+						<div class="modal__form-row">
+							<input
+								type="tel"
+								class="modal__form-input"
+								name="Telephone number"
+								placeholder="Номер телефону*"
+								required
+							/>
+							<input
+								type="email"
+								class="modal__form-input"
+								name="Email"
+								placeholder="E-mail*"
+								required
+							/>
+						</div>
+
+						<input
+							type="text"
+							class="modal__form-input _full-w"
+							name="Comment"
+							placeholder="Коментар"
+						/>
+
+						<button type="submit" class="modal__form-submit btn">
+							Зв’язатися з нами
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

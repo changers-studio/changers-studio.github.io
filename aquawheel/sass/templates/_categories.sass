@@ -1,0 +1,88 @@
+.categories
+	&__title
+		@include adaptive('margin-bottom', 55, 'desktop')
+	&__container
+		@include adaptive('gap', 40, 'desktop')
+		flex-wrap: wrap
+		display: flex
+	&__item
+		@include adaptive('width', 420, 'desktop')
+		@include adaptive('height', 330, 'desktop')
+		@include adaptive('border-radius', 30, 'desktop')
+		@include adaptive('padding-top', 45, 'desktop')
+		@include adaptive('padding-bottom', 45, 'desktop')
+		@include adaptive('padding-left', 40, 'desktop')
+		@include adaptive('padding-right', 40, 'desktop')
+		position: relative
+		box-shadow: 2.63px 2.63px 5.26px 0px rgba(0, 0, 0, 0.15) inset
+		text-transform: uppercase
+		background: radial-gradient(113.33% 114.68% at 78.43% 91.02%, #FFF 0%, #E9E9E9 100%)
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: flex-end
+		&._bg-accent
+			background: linear-gradient(232deg, #88D2F6 5.65%, #43ACDF 93.17%)
+			color: #fff
+			justify-content: flex-start
+		&._w
+			&-big
+				@include adaptive('width', 800, 'desktop')
+			&-medium
+				@include adaptive('width', 720, 'desktop')
+		&-overtitle
+			@include adaptive('font-size', 18, 'desktop')
+			font-weight: 600
+		&-title
+			@include adaptive('font-size', 60, 'desktop')
+			font-weight: 700
+		&-img
+			position: absolute
+			right: 0
+			bottom: 0
+			max-height: none
+			max-width: none
+			&-1
+				@include adaptive('width', 320, 'desktop')
+			&-2
+				@include adaptive('width', 380, 'desktop')
+			&-3
+				@include adaptive('width', 320, 'desktop')
+			&-4
+				@include adaptive('width', 545, 'desktop')
+			&-5
+				@include adaptive('width', 327, 'desktop')
+
+@media only screen and (max-width : 960px)
+	.categories
+		&__title
+			@include adaptive('margin-bottom', 25, 'mobile')
+		&__container
+			@include adaptive('gap', 12, 'mobile')
+			flex-direction: column
+			display: flex
+		&__item
+			@include adaptive('height', 120, 'mobile')
+			@include adaptive('border-radius', 12, 'mobile')
+			@include adaptive('padding-top', 5, 'mobile')
+			@include adaptive('padding-bottom', 5, 'mobile')
+			@include adaptive('padding-left', 20, 'mobile')
+			@include adaptive('padding-right', 20, 'mobile')
+			width: 100%
+			&._bg-accent
+				justify-content: flex-end
+			&-overtitle
+				@include adaptive('font-size', 10, 'mobile')
+			&-title
+				@include adaptive('font-size', 30, 'mobile')
+			&-img
+				&-1
+					@include adaptive('width', 120, 'mobile')
+				&-2
+					@include adaptive('width', 130, 'mobile')
+				&-3
+					@include adaptive('width', 115, 'mobile')
+				&-4
+					@include adaptive('width', 190, 'mobile')
+				&-5
+					@include adaptive('width', 120, 'mobile')
