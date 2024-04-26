@@ -24,6 +24,8 @@ $('.main__slider').slick({
 	infinite: false,
 	speed: 1000,
 	fade: true,
+	autoplay: true,
+	autoplaySpeed: 3000,
 	prevArrow: $('.main__nav-prev'),
 	nextArrow: $('.main__nav-next'),
 })
@@ -33,6 +35,20 @@ $('.main__slider').slick({
 $('.ticker').slick({
 	infinite: true,
 	arrows: false,
+	initialSlide: 2,
+	cssEase: 'linear',
+	speed: 6000,
+	centerMode: true,
+	autoplay: true,
+	autoplaySpeed: 0,
+	variableWidth: true,
+	draggable: true,
+})
+
+$('.ticker-rtl').slick({
+	infinite: true,
+	arrows: false,
+	rtl: true,
 	initialSlide: 2,
 	cssEase: 'linear',
 	speed: 6000,
@@ -58,20 +74,15 @@ $('.ticker').slick({
 // })
 
 // Modal
-$('.mfp').magnificPopup({
-	fixedContentPos: false,
-	callbacks: {
-		open: function () {
-			$('body').css('overflow-y', 'hidden')
-		},
-		close: function () {
-			$('body').css('overflow-y', 'auto')
-		},
-	},
+$('.mfp').on('click', function () {
+	let modal = $(this).attr('href')
+	$(modal).addClass('active')
+	$('body').addClass('scroll-disabled')
 })
 
 $('.modal__close').click(function () {
-	$.magnificPopup.close()
+	$('.modal').removeClass('active')
+	$('body').removeClass('scroll-disabled')
 })
 //
 
@@ -82,6 +93,7 @@ $('.toggleSidebar').on('click', function () {
 })
 //
 
+// Fancybox
 $('[data-fancybox]').fancybox({
 	infobar: false,
 	buttons: ['close'],
@@ -102,3 +114,20 @@ $('[data-fancybox]').fancybox({
 			'</button>',
 	},
 })
+//
+
+// Tabs
+$('.tabs__caption').on('click', function () {
+	if (!$(this).hasClass('disabled')) {
+		$(this)
+			.addClass('active')
+			.siblings()
+			.removeClass('active')
+			.closest('.tabs')
+			.find('.tabs__content')
+			.removeClass('active')
+			.eq($(this).index())
+			.addClass('active')
+	}
+})
+//

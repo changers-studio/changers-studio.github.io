@@ -17,7 +17,6 @@
 		<!-- libs css -->
 		<link rel="stylesheet" href="libs/slick-carousel/slick.css" />
 		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css" />
-		<link rel="stylesheet" href="libs/mfp/magnific-popup.css" />
 
 		<!-- main css -->
 		<link rel="stylesheet" href="css/main.css" />
@@ -29,7 +28,6 @@
 		<script defer src="libs/dynamic-adapt.js"></script>
 		<script defer src="libs/slick-carousel/slick.min.js"></script>
 		<script defer src="libs/fancybox/jquery.fancybox.min.js"></script>
-		<script defer src="libs/mfp/jquery.magnific-popup.min.js"></script>
 
 		<!-- main js -->
 		<script defer src="js/main.js"></script>
@@ -44,7 +42,9 @@
 					</a>
 
 					<div class="header__container-inner">
-						<a href="#modal" class="header__btn btn mfp">Contact us</a>
+						<a href="#modal" class="header__btn btn mfp"
+							><span class="btn__inner">Contact us</span></a
+						>
 
 						<div class="header__lang" data-da=".header__hamburger, 960, 1">
 							<div class="header__lang-heading dropdown-heading">
@@ -58,7 +58,7 @@
 
 							<div class="header__lang-dropdown">
 								<a href="#" class="header__lang-item _hul">UA</a>
-								<a href="#" class="header__lang-item _hul">RU</a>
+								<a href="#" class="header__lang-item _hul">EN</a>
 							</div>
 						</div>
 					</div>
@@ -70,7 +70,7 @@
 					>
 						<img
 							src="img/icons/hamburger.svg"
-							alt=""
+							alt="Hamburger"
 							class="header__hamberger-open-icon"
 						/>
 					</button>
@@ -164,46 +164,48 @@
 					<form class="footer__form">
 						<h3 class="footer__form-title">Напишіть <span>нам</span></h3>
 
-						<div class="footer__form-row">
+						<div class="footer__form-container">
+							<div class="footer__form-row">
+								<input
+									type="text"
+									class="footer__form-input"
+									name="Name"
+									placeholder="Ваше ім’я*"
+									required
+								/>
+								<input
+									type="text"
+									class="footer__form-input"
+									name="Company name"
+									placeholder="Назва компанії*"
+									required
+								/>
+							</div>
+
+							<div class="footer__form-row">
+								<input
+									type="tel"
+									class="footer__form-input"
+									name="Telephone number"
+									placeholder="Номер телефону*"
+									required
+								/>
+								<input
+									type="email"
+									class="footer__form-input"
+									name="Email"
+									placeholder="E-mail*"
+									required
+								/>
+							</div>
+
 							<input
 								type="text"
-								class="footer__form-input"
-								name="Name"
-								placeholder="Ваше ім’я*"
-								required
-							/>
-							<input
-								type="text"
-								class="footer__form-input"
-								name="Company name"
-								placeholder="Назва компанії*"
-								required
+								class="footer__form-input _full-w"
+								name="Comment"
+								placeholder="Коментар"
 							/>
 						</div>
-
-						<div class="footer__form-row">
-							<input
-								type="tel"
-								class="footer__form-input"
-								name="Telephone number"
-								placeholder="Номер телефону*"
-								required
-							/>
-							<input
-								type="email"
-								class="footer__form-input"
-								name="Email"
-								placeholder="E-mail*"
-								required
-							/>
-						</div>
-
-						<input
-							type="text"
-							class="footer__form-input _full-w"
-							name="Comment"
-							placeholder="Коментар"
-						/>
 
 						<button type="submit" class="footer__form-submit btn">
 							Зв’язатися з нами
@@ -220,7 +222,7 @@
 				</div>
 			</footer>
 
-			<div class="modal mfp-hide" id="modal">
+			<div class="modal" id="modal">
 				<button type="button" class="modal__close">
 					<img src="img/icons/close.svg" alt="Close" class="modal__close-icon" />
 				</button>

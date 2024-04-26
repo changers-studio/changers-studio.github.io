@@ -1,12 +1,11 @@
 .footer
 	@include adaptive('margin-top', 140, 'desktop')
-	@include adaptive('padding-top', 200, 'desktop')
+	@include adaptive('padding-top', 195, 'desktop')
 	@include adaptive('padding-bottom', 20, 'desktop')
 	background-size: cover
 	background-position: top center
 	color: #fff
 	&__bg
-		width: 100%
 		height: 100%
 		position: absolute
 		left: 0
@@ -14,9 +13,11 @@
 		bottom: 0
 		top: 0
 		z-index: 1
+		max-width: none
+		max-height: none
 		&-img
 			width: 100%
-			height: 100%
+			height: 101%
 			max-width: none
 			max-height: none
 			object-fit: cover
@@ -32,38 +33,42 @@
 		&-inner._desktop-hidden
 			display: none
 	&__logo
-		@include adaptive('margin-bottom', 60, 'desktop')
+		@include adaptive('margin-bottom', 50, 'desktop')
 		display: flex
 		&-img
 			@include adaptive('width', 360, 'desktop')
 	&__contacts
 		@include adaptive('margin-bottom', 60, 'desktop')
+		@include adaptive('gap', 5, 'desktop')
 		display: flex
 		flex-direction: column
 		align-items: flex-start
 		&-item
-			@include adaptive('font-size', 42, 'desktop')
+			@include adaptive('font-size', 43, 'desktop')
 			font-weight: 600
-	&__address, &__code
-		@include adaptive('font-size', 20, 'desktop')
+	&__address, &__codes
+		@include adaptive('font-size', 21, 'desktop')
 	&__address
-		@include adaptive('margin-bottom', 10, 'desktop')
-	&__code
+		@include adaptive('margin-bottom', 9, 'desktop')
+	&__codes
 		@include adaptive('gap', 15, 'desktop')
 		display: flex
 	&__form
-		@include adaptive('gap', 55, 'desktop')
+		@include adaptive('gap', 70, 'desktop')
 		display: flex
 		flex-direction: column
 		align-items: flex-start
 		&-title
-			@include adaptive('margin-bottom', 60, 'desktop')
 			@include adaptive('font-size', 80, 'desktop')
 			text-transform: uppercase
 			line-height: 1
-			font-weight: 600
+			font-weight: 700
 			span
 				font-weight: 400
+		&-container
+			@include adaptive('gap', 54, 'desktop')
+			display: flex
+			flex-direction: column
 		&-row
 			@include adaptive('gap', 50, 'desktop')
 			display: flex
@@ -78,8 +83,9 @@
 			&._full-w
 				width: 100%
 		&-submit
-			@include adaptive('padding-left', 56, 'desktop')
-			@include adaptive('padding-right', 56, 'desktop')
+			@include adaptive('font-size', 30, 'desktop')
+			@include adaptive('padding-right', 55, 'desktop')
+			@include adaptive('padding-left', 55, 'desktop')
 	&__bottom
 		@include adaptive('gap', 80, 'desktop')
 		@include adaptive('font-size', 15, 'desktop')
@@ -135,11 +141,11 @@
 			@include adaptive('margin-bottom', 30, 'mobile')
 			&-item
 				@include adaptive('font-size', 25, 'mobile')
-		&__address, &__code
+		&__address, &__codes
 			@include adaptive('font-size', 16, 'mobile')
 		&__address
 			@include adaptive('margin-bottom', 5, 'mobile')
-		&__code
+		&__codes
 			@include adaptive('gap', 5, 'mobile')
 			flex-direction: column
 		&__form

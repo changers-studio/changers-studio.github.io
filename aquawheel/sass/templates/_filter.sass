@@ -39,10 +39,12 @@
 			&-2
 				@include adaptive('width', 195, 'desktop')
 		&-inner
+			@include adaptive('top', 4, 'desktop')
 			display: flex
 			flex-direction: column
 			align-items: center
 			text-align: center
+			position: relative
 		&-overtitle
 			@include adaptive('font-size', 12, 'desktop')
 			font-weight: 600

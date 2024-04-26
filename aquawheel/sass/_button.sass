@@ -1,9 +1,9 @@
 .btn
 	@include adaptive('padding-top', 20, 'desktop')
 	@include adaptive('padding-bottom', 20, 'desktop')
-	@include adaptive('padding-left', 32, 'desktop')
-	@include adaptive('padding-right', 32, 'desktop')
-	@include adaptive('border-radius', 50, 'desktop')
+	@include adaptive('padding-left', 62, 'desktop')
+	@include adaptive('padding-right', 62, 'desktop')
+	@include adaptive('border-radius', 65, 'desktop')
 	display: flex
 	justify-content: center
 	align-items: center
@@ -16,7 +16,7 @@
 	border: none
 	border-style: solid
 	text-transform: uppercase
-	background-color: #fff
+	background: $white-grad
 	color: $accent
 	line-height: 1
 	font-weight: 600
@@ -29,6 +29,9 @@
 	&:active
 		color: #0081C0
 		box-shadow: 1px 1px 3.6px 0px rgba(0, 0, 0, 0.54) inset
+	&__inner
+		display: inline-block
+		transform: translateY(0.08em)
 
 @media only screen and (max-width : 960px)
 	.btn
@@ -37,7 +40,6 @@
 		@include adaptive('padding-bottom', 20, 'mobile')
 		@include adaptive('padding-left', 32, 'mobile')
 		@include adaptive('padding-right', 32, 'mobile')
-		@include adaptive('font-size', 24, 'mobile')
 		@include adaptive('border-radius', 100, 'mobile')
 		width: 100%
 		&:hover

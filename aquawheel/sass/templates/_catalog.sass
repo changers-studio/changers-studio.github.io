@@ -29,10 +29,40 @@
 		&-icons
 			@include adaptive('gap', 10, 'desktop')
 			display: flex
-			align-items: center
+			align-items: flex-end
 			justify-content: center
 		&-icon
-			@include adaptive('width', 45, 'desktop')
+			@include adaptive('font-size', 18, 'desktop')
+			position: relative
+			font-weight: 600
+			color: $accent
+			display: flex
+			&-img
+				@include adaptive('width', 60, 'desktop')
+		&-clothes-caption
+			@include adaptive('bottom', 8, 'desktop')
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+		&-dishes-caption
+			@include adaptive('bottom', 12, 'desktop')
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+		&-weight
+			@include adaptive('bottom', 3, 'desktop')
+			&:first-child
+				@include adaptive('margin-top', 15, 'desktop')
+			&._wide .catalog__item-icon-img
+				@include adaptive('width', 71, 'desktop')
+			&-caption
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				span
+					@include adaptive('font-size', 13, 'desktop')
+					font-weight: 700
 	&-category
 		&__container
 			@include adaptive('margin-top', 140, 'desktop')
@@ -56,6 +86,10 @@
 			flex-direction: column
 			align-items: flex-start
 			justify-content: flex-end
+			overflow: hidden
+			transition: .3s
+			&:hover
+				box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 2px 2px 4px 0px rgba(0, 0, 0, 0.15)
 			&-1
 				@include adaptive('width', 260, 'desktop')
 			&-2
@@ -69,7 +103,7 @@
 				color: #fff
 			&-overtitle
 				@include adaptive('font-size', 12, 'desktop')
-				font-weight: 600
+				font-weight: 400
 			&-title
 				@include adaptive('font-size', 35, 'desktop')
 				font-weight: 700
@@ -79,6 +113,8 @@
 				bottom: 0
 				max-height: none
 				max-width: none
+				&._bw
+					filter: grayscale(100%)
 				&-1
 					@include adaptive('width', 100, 'desktop')
 				&-2
@@ -88,7 +124,7 @@
 				&-4
 					@include adaptive('width', 180, 'desktop')
 				&-5
-					@include adaptive('width', 103, 'desktop')
+					@include adaptive('width', 110, 'desktop')
 	&__items-photo
 		display: none
 
