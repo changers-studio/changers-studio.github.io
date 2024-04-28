@@ -20,6 +20,30 @@
 			@include adaptive('gap', 10, 'desktop')
 			display: flex
 			flex-direction: column
+		&-input, &-textarea
+			@include adaptive('font-size', 18, 'desktop')
+			@include adaptive('font-size', 16, 'mobile')
+
+			@include adaptive('padding-top', 30, 'desktop')
+			@include adaptive('padding-bottom', 30, 'desktop')
+			@include adaptive('padding-left', 40, 'desktop')
+			@include adaptive('padding-right', 40, 'desktop')
+
+			@include adaptive('padding-top', 20, 'mobile')
+			@include adaptive('padding-bottom', 20, 'mobile')
+			@include adaptive('padding-left', 30, 'mobile')
+			@include adaptive('padding-right', 30, 'mobile')
+
+			@include adaptive('border-radius', 10, 'desktop')
+			@include adaptive('border-radius', 5, 'mobile')
+
+			@include adaptive('border-width', 1, 'desktop')
+			@include adaptive('border-width', 1, 'mobile')
+			font-weight: 500
+			&::placeholder
+				@include adaptive('font-size', 18, 'desktop')
+				@include adaptive('font-size', 16, 'mobile')
+				font-weight: 500
 		&-textarea
 			@include adaptive('height', 200, 'desktop')
 		&-submit

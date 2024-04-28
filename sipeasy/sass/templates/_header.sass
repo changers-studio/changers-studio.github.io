@@ -6,6 +6,33 @@
 	left: 0
 	right: 0
 	z-index: 10
+	&._pos-static
+		position: static
+	&-account
+		@include adaptive('padding-top', 30, 'desktop')
+		@include adaptive('padding-bottom', 30, 'desktop')
+		&__container
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&__logo
+			display: flex
+			&-img
+				@include adaptive('width', 140, 'desktop')
+		&__wrapper
+			@include adaptive('gap', 15, 'desktop')
+			display: flex
+		&__btn
+			@include adaptive('padding-top', 20, 'desktop')
+			@include adaptive('padding-bottom', 20, 'desktop')
+			@include adaptive('padding-right', 35, 'desktop')
+			@include adaptive('padding-left', 35, 'desktop')
+			@include adaptive('border-radius', 5, 'desktop')
+			@include adaptive('font-size', 16, 'desktop')
+			background-color: $black
+			color: #fff
+			&::after
+				background-color: $accent
 	&__container
 		@include adaptive('padding-top', 30, 'desktop')
 		@include adaptive('padding-bottom', 30, 'desktop')
@@ -17,6 +44,7 @@
 		justify-content: space-between
 		align-items: center
 		width: 100%
+		position: relative
 	&__logo
 		display: flex
 		&-img
@@ -43,6 +71,20 @@
 		@include adaptive('padding-bottom', 22, 'desktop')
 		@include adaptive('padding-left', 40, 'desktop')
 		@include adaptive('padding-right', 40, 'desktop')
+	&__balance
+		@include adaptive('padding-top', 22, 'desktop')
+		@include adaptive('padding-bottom', 22, 'desktop')
+		@include adaptive('padding-left', 40, 'desktop')
+		@include adaptive('padding-right', 40, 'desktop')
+		@include adaptive('gap', 15, 'desktop')
+		@include adaptive('border-radius', 5, 'desktop')
+		background-color: $accent
+		color: #fff
+		display: flex
+		justify-content: center
+		align-items: center
+		&-value
+			font-weight: 600
 	&__hamburger
 		display: none
 
@@ -50,6 +92,22 @@
 	.header
 		@include adaptive('padding-top', 20, 'mobile')
 		@include adaptive('padding-bottom', 30, 'mobile')
+		&-account
+			@include adaptive('padding-top', 20, 'mobile')
+			@include adaptive('padding-bottom', 20, 'mobile')
+			&__logo-img
+				@include adaptive('width', 72, 'mobile')
+			&__wrapper
+				@include adaptive('gap', 5, 'mobile')
+			&__btn
+				@include adaptive('padding-top', 18, 'mobile')
+				@include adaptive('padding-bottom', 18, 'mobile')
+				@include adaptive('padding-right', 35, 'mobile')
+				@include adaptive('padding-left', 35, 'mobile')
+				@include adaptive('border-radius', 5, 'mobile')
+				@include adaptive('font-size', 16, 'mobile')
+				&:hover
+					color: #fff
 		&__container
 			flex-direction: column
 			align-items: stretch
@@ -89,6 +147,7 @@
 				background-color: #fff
 				z-index: 9
 				display: none
+				transform: none
 			&-item
 				@include adaptive('font-size', 24, 'mobile')
 				letter-spacing: -0.02em
@@ -107,6 +166,12 @@
 			@include adaptive('padding-bottom', 15, 'mobile')
 			&:hover
 				color: #fff
+		&__balance
+			@include adaptive('width', 155, 'mobile')
+			@include adaptive('padding', 12, 'mobile')
+			@include adaptive('gap', 5, 'mobile')
+			@include adaptive('border-radius', 5, 'mobile')
+			@include adaptive('font-size', 14, 'mobile')
 		&__hamburger
 			@include adaptive('width', 30, 'mobile')
 			@include adaptive('height', 30, 'mobile')
