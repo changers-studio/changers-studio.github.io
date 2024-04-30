@@ -16,6 +16,7 @@
 
 		<!-- libs css -->
 		<link rel="stylesheet" href="libs/slick-carousel/slick.css" />
+		<link rel="stylesheet" href="libs/aos/aos.css" />
 		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css" />
 
 		<!-- main css -->
@@ -26,6 +27,7 @@
 
 		<!-- libs js -->
 		<script defer src="libs/dynamic-adapt.js"></script>
+		<script defer src="libs/aos/aos.js"></script>
 		<script defer src="libs/slick-carousel/slick.min.js"></script>
 		<script defer src="libs/fancybox/jquery.fancybox.min.js"></script>
 
@@ -114,7 +116,7 @@
 				</div>
 			</header>
 
-			<div class="main">
+			<div class="main" data-aos="fade-up">
 				<div class="container">
 					<div
 						class="main__box"
@@ -143,7 +145,7 @@
 
 			<section class="catalog">
 				<div class="container tabs">
-					<div class="filter">
+					<div class="filter" data-aos="fade-up">
 						<div class="filter__items">
 							<div class="filter__item tabs__caption _bg-blue active">
 								<img
@@ -171,455 +173,457 @@
 						</div>
 					</div>
 
-					<div class="tabs__content active">
-						<div class="catalog__container">
-							<a
-								href="img/products/image-1.webp"
-								data-fancybox="product-1"
-								class="catalog__item"
-							>
-								<img
-									src="img/products/image-1.webp"
-									alt="Product"
-									class="catalog__item-img"
-								/>
+					<div class="catalog__wrapper" data-aos="fade-up">
+						<div class="tabs__content active">
+							<div class="catalog__container">
+								<a
+									href="img/products/image-1.webp"
+									data-fancybox="product-1"
+									class="catalog__item"
+								>
+									<img
+										src="img/products/image-1.webp"
+										alt="Product"
+										class="catalog__item-img"
+									/>
 
-								<p class="catalog__item-title">Powercaps Universal</p>
-								<p class="catalog__item-subtitle">Washing capsules</p>
+									<p class="catalog__item-title">Powercaps Universal</p>
+									<p class="catalog__item-subtitle">Washing capsules</p>
 
-								<div class="catalog__item-icons">
-									<div class="catalog__item-icon catalog__item-clothes">
-										<img
-											src="img/icons/clothes.webp"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
+									<div class="catalog__item-icons">
+										<div class="catalog__item-icon catalog__item-clothes">
+											<img
+												src="img/icons/clothes.webp"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
 
-										<span class="catalog__item-clothes-caption">36</span>
+											<span class="catalog__item-clothes-caption">36</span>
+										</div>
+
+										<div class="catalog__item-icon catalog__item-weight">
+											<img
+												src="img/icons/weight.svg"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-weight-caption">230<span>г</span></span>
+										</div>
 									</div>
+								</a>
 
-									<div class="catalog__item-icon catalog__item-weight">
-										<img
-											src="img/icons/weight.svg"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
+								<a
+									href="img/products/image-1.webp"
+									data-fancybox="product-1"
+									class="catalog__item"
+								>
+									<img
+										src="img/products/image-1.webp"
+										alt="Product"
+										class="catalog__item-img"
+									/>
 
-										<span class="catalog__item-weight-caption">230<span>г</span></span>
+									<p class="catalog__item-title">Powercaps Universal</p>
+									<p class="catalog__item-subtitle">Washing capsules</p>
+
+									<div class="catalog__item-icons">
+										<div class="catalog__item-icon catalog__item-clothes">
+											<img
+												src="img/icons/clothes.webp"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-clothes-caption">36</span>
+										</div>
+
+										<div class="catalog__item-icon catalog__item-weight">
+											<img
+												src="img/icons/weight.svg"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-weight-caption">230<span>г</span></span>
+										</div>
 									</div>
-								</div>
-							</a>
+								</a>
 
-							<a
-								href="img/products/image-1.webp"
-								data-fancybox="product-1"
-								class="catalog__item"
-							>
-								<img
-									src="img/products/image-1.webp"
-									alt="Product"
-									class="catalog__item-img"
-								/>
+								<a
+									href="img/products/image-1.webp"
+									data-fancybox="product-1"
+									class="catalog__item"
+								>
+									<img
+										src="img/products/image-1.webp"
+										alt="Product"
+										class="catalog__item-img"
+									/>
 
-								<p class="catalog__item-title">Powercaps Universal</p>
-								<p class="catalog__item-subtitle">Washing capsules</p>
+									<p class="catalog__item-title">Powercaps Universal</p>
+									<p class="catalog__item-subtitle">Washing capsules</p>
 
-								<div class="catalog__item-icons">
-									<div class="catalog__item-icon catalog__item-clothes">
-										<img
-											src="img/icons/clothes.webp"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
+									<div class="catalog__item-icons">
+										<div class="catalog__item-icon catalog__item-clothes">
+											<img
+												src="img/icons/clothes.webp"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
 
-										<span class="catalog__item-clothes-caption">36</span>
+											<span class="catalog__item-clothes-caption">36</span>
+										</div>
+
+										<div class="catalog__item-icon catalog__item-weight">
+											<img
+												src="img/icons/weight.svg"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-weight-caption">230<span>г</span></span>
+										</div>
 									</div>
+								</a>
 
-									<div class="catalog__item-icon catalog__item-weight">
-										<img
-											src="img/icons/weight.svg"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
+								<a
+									href="img/products/image-1.webp"
+									data-fancybox="product-1"
+									class="catalog__item"
+								>
+									<img
+										src="img/products/image-1.webp"
+										alt="Product"
+										class="catalog__item-img"
+									/>
 
-										<span class="catalog__item-weight-caption">230<span>г</span></span>
+									<p class="catalog__item-title">Powercaps Universal</p>
+									<p class="catalog__item-subtitle">Washing capsules</p>
+
+									<div class="catalog__item-icons">
+										<div class="catalog__item-icon catalog__item-clothes">
+											<img
+												src="img/icons/clothes.webp"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-clothes-caption">12</span>
+										</div>
+
+										<div class="catalog__item-icon catalog__item-weight">
+											<img
+												src="img/icons/weight.svg"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-weight-caption">230<span>г</span></span>
+										</div>
 									</div>
-								</div>
-							</a>
+								</a>
 
-							<a
-								href="img/products/image-1.webp"
-								data-fancybox="product-1"
-								class="catalog__item"
-							>
-								<img
-									src="img/products/image-1.webp"
-									alt="Product"
-									class="catalog__item-img"
-								/>
+								<a
+									href="img/products/image-1.webp"
+									data-fancybox="product-1"
+									class="catalog__item"
+								>
+									<img
+										src="img/products/image-1.webp"
+										alt="Product"
+										class="catalog__item-img"
+									/>
 
-								<p class="catalog__item-title">Powercaps Universal</p>
-								<p class="catalog__item-subtitle">Washing capsules</p>
+									<p class="catalog__item-title">Powercaps Universal</p>
+									<p class="catalog__item-subtitle">Washing capsules</p>
 
-								<div class="catalog__item-icons">
-									<div class="catalog__item-icon catalog__item-clothes">
-										<img
-											src="img/icons/clothes.webp"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
+									<div class="catalog__item-icons">
+										<div class="catalog__item-icon catalog__item-clothes">
+											<img
+												src="img/icons/clothes.webp"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
 
-										<span class="catalog__item-clothes-caption">36</span>
+											<span class="catalog__item-clothes-caption">12</span>
+										</div>
+
+										<div class="catalog__item-icon catalog__item-weight">
+											<img
+												src="img/icons/weight.svg"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-weight-caption">230<span>г</span></span>
+										</div>
 									</div>
+								</a>
 
-									<div class="catalog__item-icon catalog__item-weight">
-										<img
-											src="img/icons/weight.svg"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
+								<a
+									href="img/products/image-1.webp"
+									data-fancybox="product-1"
+									class="catalog__item"
+								>
+									<img
+										src="img/products/image-1.webp"
+										alt="Product"
+										class="catalog__item-img"
+									/>
 
-										<span class="catalog__item-weight-caption">230<span>г</span></span>
+									<p class="catalog__item-title">Powercaps Universal</p>
+									<p class="catalog__item-subtitle">Washing capsules</p>
+
+									<div class="catalog__item-icons">
+										<div class="catalog__item-icon catalog__item-clothes">
+											<img
+												src="img/icons/clothes.webp"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-clothes-caption">12</span>
+										</div>
+
+										<div class="catalog__item-icon catalog__item-weight">
+											<img
+												src="img/icons/weight.svg"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-weight-caption">230<span>г</span></span>
+										</div>
 									</div>
-								</div>
-							</a>
-
-							<a
-								href="img/products/image-1.webp"
-								data-fancybox="product-1"
-								class="catalog__item"
-							>
-								<img
-									src="img/products/image-1.webp"
-									alt="Product"
-									class="catalog__item-img"
-								/>
-
-								<p class="catalog__item-title">Powercaps Universal</p>
-								<p class="catalog__item-subtitle">Washing capsules</p>
-
-								<div class="catalog__item-icons">
-									<div class="catalog__item-icon catalog__item-clothes">
-										<img
-											src="img/icons/clothes.webp"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
-
-										<span class="catalog__item-clothes-caption">12</span>
-									</div>
-
-									<div class="catalog__item-icon catalog__item-weight">
-										<img
-											src="img/icons/weight.svg"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
-
-										<span class="catalog__item-weight-caption">230<span>г</span></span>
-									</div>
-								</div>
-							</a>
-
-							<a
-								href="img/products/image-1.webp"
-								data-fancybox="product-1"
-								class="catalog__item"
-							>
-								<img
-									src="img/products/image-1.webp"
-									alt="Product"
-									class="catalog__item-img"
-								/>
-
-								<p class="catalog__item-title">Powercaps Universal</p>
-								<p class="catalog__item-subtitle">Washing capsules</p>
-
-								<div class="catalog__item-icons">
-									<div class="catalog__item-icon catalog__item-clothes">
-										<img
-											src="img/icons/clothes.webp"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
-
-										<span class="catalog__item-clothes-caption">12</span>
-									</div>
-
-									<div class="catalog__item-icon catalog__item-weight">
-										<img
-											src="img/icons/weight.svg"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
-
-										<span class="catalog__item-weight-caption">230<span>г</span></span>
-									</div>
-								</div>
-							</a>
-
-							<a
-								href="img/products/image-1.webp"
-								data-fancybox="product-1"
-								class="catalog__item"
-							>
-								<img
-									src="img/products/image-1.webp"
-									alt="Product"
-									class="catalog__item-img"
-								/>
-
-								<p class="catalog__item-title">Powercaps Universal</p>
-								<p class="catalog__item-subtitle">Washing capsules</p>
-
-								<div class="catalog__item-icons">
-									<div class="catalog__item-icon catalog__item-clothes">
-										<img
-											src="img/icons/clothes.webp"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
-
-										<span class="catalog__item-clothes-caption">12</span>
-									</div>
-
-									<div class="catalog__item-icon catalog__item-weight">
-										<img
-											src="img/icons/weight.svg"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
-
-										<span class="catalog__item-weight-caption">230<span>г</span></span>
-									</div>
-								</div>
-							</a>
+								</a>
+							</div>
 						</div>
-					</div>
 
-					<div class="tabs__content">
-						<div class="catalog__container">
-							<a
-								href="img/products/image-1.webp"
-								data-fancybox="product-1"
-								class="catalog__item"
-							>
-								<img
-									src="img/products/image-1.webp"
-									alt="Product"
-									class="catalog__item-img"
-								/>
+						<div class="tabs__content">
+							<div class="catalog__container">
+								<a
+									href="img/products/image-1.webp"
+									data-fancybox="product-1"
+									class="catalog__item"
+								>
+									<img
+										src="img/products/image-1.webp"
+										alt="Product"
+										class="catalog__item-img"
+									/>
 
-								<p class="catalog__item-title">Powercaps Universal</p>
-								<p class="catalog__item-subtitle">Washing capsules</p>
+									<p class="catalog__item-title">Powercaps Universal</p>
+									<p class="catalog__item-subtitle">Washing capsules</p>
 
-								<div class="catalog__item-icons">
-									<div class="catalog__item-icon catalog__item-clothes">
-										<img
-											src="img/icons/clothes.webp"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
+									<div class="catalog__item-icons">
+										<div class="catalog__item-icon catalog__item-clothes">
+											<img
+												src="img/icons/clothes.webp"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
 
-										<span class="catalog__item-clothes-caption">36</span>
+											<span class="catalog__item-clothes-caption">36</span>
+										</div>
+
+										<div class="catalog__item-icon catalog__item-weight">
+											<img
+												src="img/icons/weight.svg"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-weight-caption">230<span>г</span></span>
+										</div>
 									</div>
+								</a>
 
-									<div class="catalog__item-icon catalog__item-weight">
-										<img
-											src="img/icons/weight.svg"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
+								<a
+									href="img/products/image-1.webp"
+									data-fancybox="product-1"
+									class="catalog__item"
+								>
+									<img
+										src="img/products/image-2.webp"
+										alt="Product"
+										class="catalog__item-img"
+									/>
 
-										<span class="catalog__item-weight-caption">230<span>г</span></span>
+									<p class="catalog__item-title">Powercaps Universal</p>
+									<p class="catalog__item-subtitle">Washing capsules</p>
+
+									<div class="catalog__item-icons">
+										<div class="catalog__item-icon catalog__item-clothes">
+											<img
+												src="img/icons/clothes.webp"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-clothes-caption">36</span>
+										</div>
+
+										<div class="catalog__item-icon catalog__item-weight">
+											<img
+												src="img/icons/weight.svg"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-weight-caption">230<span>г</span></span>
+										</div>
 									</div>
-								</div>
-							</a>
+								</a>
 
-							<a
-								href="img/products/image-1.webp"
-								data-fancybox="product-1"
-								class="catalog__item"
-							>
-								<img
-									src="img/products/image-2.webp"
-									alt="Product"
-									class="catalog__item-img"
-								/>
+								<a
+									href="img/products/image-1.webp"
+									data-fancybox="product-1"
+									class="catalog__item"
+								>
+									<img
+										src="img/products/image-1.webp"
+										alt="Product"
+										class="catalog__item-img"
+									/>
 
-								<p class="catalog__item-title">Powercaps Universal</p>
-								<p class="catalog__item-subtitle">Washing capsules</p>
+									<p class="catalog__item-title">Powercaps Universal</p>
+									<p class="catalog__item-subtitle">Washing capsules</p>
 
-								<div class="catalog__item-icons">
-									<div class="catalog__item-icon catalog__item-clothes">
-										<img
-											src="img/icons/clothes.webp"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
+									<div class="catalog__item-icons">
+										<div class="catalog__item-icon catalog__item-clothes">
+											<img
+												src="img/icons/clothes.webp"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
 
-										<span class="catalog__item-clothes-caption">36</span>
+											<span class="catalog__item-clothes-caption">36</span>
+										</div>
+
+										<div class="catalog__item-icon catalog__item-weight">
+											<img
+												src="img/icons/weight.svg"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-weight-caption">230<span>г</span></span>
+										</div>
 									</div>
+								</a>
 
-									<div class="catalog__item-icon catalog__item-weight">
-										<img
-											src="img/icons/weight.svg"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
+								<a
+									href="img/products/image-1.webp"
+									data-fancybox="product-1"
+									class="catalog__item"
+								>
+									<img
+										src="img/products/image-1.webp"
+										alt="Product"
+										class="catalog__item-img"
+									/>
 
-										<span class="catalog__item-weight-caption">230<span>г</span></span>
+									<p class="catalog__item-title">Powercaps Universal</p>
+									<p class="catalog__item-subtitle">Washing capsules</p>
+
+									<div class="catalog__item-icons">
+										<div class="catalog__item-icon catalog__item-clothes">
+											<img
+												src="img/icons/clothes.webp"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-clothes-caption">36</span>
+										</div>
+
+										<div class="catalog__item-icon catalog__item-weight">
+											<img
+												src="img/icons/weight.svg"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-weight-caption">230<span>г</span></span>
+										</div>
 									</div>
-								</div>
-							</a>
+								</a>
 
-							<a
-								href="img/products/image-1.webp"
-								data-fancybox="product-1"
-								class="catalog__item"
-							>
-								<img
-									src="img/products/image-1.webp"
-									alt="Product"
-									class="catalog__item-img"
-								/>
+								<a
+									href="img/products/image-1.webp"
+									data-fancybox="product-1"
+									class="catalog__item"
+								>
+									<img
+										src="img/products/image-1.webp"
+										alt="Product"
+										class="catalog__item-img"
+									/>
 
-								<p class="catalog__item-title">Powercaps Universal</p>
-								<p class="catalog__item-subtitle">Washing capsules</p>
+									<p class="catalog__item-title">Powercaps Universal</p>
+									<p class="catalog__item-subtitle">Washing capsules</p>
 
-								<div class="catalog__item-icons">
-									<div class="catalog__item-icon catalog__item-clothes">
-										<img
-											src="img/icons/clothes.webp"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
+									<div class="catalog__item-icons">
+										<div class="catalog__item-icon catalog__item-clothes">
+											<img
+												src="img/icons/clothes.webp"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
 
-										<span class="catalog__item-clothes-caption">36</span>
+											<span class="catalog__item-clothes-caption">36</span>
+										</div>
+
+										<div class="catalog__item-icon catalog__item-weight">
+											<img
+												src="img/icons/weight.svg"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-weight-caption">230<span>г</span></span>
+										</div>
 									</div>
+								</a>
 
-									<div class="catalog__item-icon catalog__item-weight">
-										<img
-											src="img/icons/weight.svg"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
+								<a
+									href="img/products/image-1.webp"
+									data-fancybox="product-1"
+									class="catalog__item"
+								>
+									<img
+										src="img/products/image-1.webp"
+										alt="Product"
+										class="catalog__item-img"
+									/>
 
-										<span class="catalog__item-weight-caption">230<span>г</span></span>
+									<p class="catalog__item-title">Powercaps Universal</p>
+									<p class="catalog__item-subtitle">Washing capsules</p>
+
+									<div class="catalog__item-icons">
+										<div class="catalog__item-icon catalog__item-clothes">
+											<img
+												src="img/icons/clothes.webp"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-clothes-caption">36</span>
+										</div>
+
+										<div class="catalog__item-icon catalog__item-weight">
+											<img
+												src="img/icons/weight.svg"
+												alt="Icon"
+												class="catalog__item-icon-img"
+											/>
+
+											<span class="catalog__item-weight-caption">230<span>г</span></span>
+										</div>
 									</div>
-								</div>
-							</a>
-
-							<a
-								href="img/products/image-1.webp"
-								data-fancybox="product-1"
-								class="catalog__item"
-							>
-								<img
-									src="img/products/image-1.webp"
-									alt="Product"
-									class="catalog__item-img"
-								/>
-
-								<p class="catalog__item-title">Powercaps Universal</p>
-								<p class="catalog__item-subtitle">Washing capsules</p>
-
-								<div class="catalog__item-icons">
-									<div class="catalog__item-icon catalog__item-clothes">
-										<img
-											src="img/icons/clothes.webp"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
-
-										<span class="catalog__item-clothes-caption">36</span>
-									</div>
-
-									<div class="catalog__item-icon catalog__item-weight">
-										<img
-											src="img/icons/weight.svg"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
-
-										<span class="catalog__item-weight-caption">230<span>г</span></span>
-									</div>
-								</div>
-							</a>
-
-							<a
-								href="img/products/image-1.webp"
-								data-fancybox="product-1"
-								class="catalog__item"
-							>
-								<img
-									src="img/products/image-1.webp"
-									alt="Product"
-									class="catalog__item-img"
-								/>
-
-								<p class="catalog__item-title">Powercaps Universal</p>
-								<p class="catalog__item-subtitle">Washing capsules</p>
-
-								<div class="catalog__item-icons">
-									<div class="catalog__item-icon catalog__item-clothes">
-										<img
-											src="img/icons/clothes.webp"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
-
-										<span class="catalog__item-clothes-caption">36</span>
-									</div>
-
-									<div class="catalog__item-icon catalog__item-weight">
-										<img
-											src="img/icons/weight.svg"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
-
-										<span class="catalog__item-weight-caption">230<span>г</span></span>
-									</div>
-								</div>
-							</a>
-
-							<a
-								href="img/products/image-1.webp"
-								data-fancybox="product-1"
-								class="catalog__item"
-							>
-								<img
-									src="img/products/image-1.webp"
-									alt="Product"
-									class="catalog__item-img"
-								/>
-
-								<p class="catalog__item-title">Powercaps Universal</p>
-								<p class="catalog__item-subtitle">Washing capsules</p>
-
-								<div class="catalog__item-icons">
-									<div class="catalog__item-icon catalog__item-clothes">
-										<img
-											src="img/icons/clothes.webp"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
-
-										<span class="catalog__item-clothes-caption">36</span>
-									</div>
-
-									<div class="catalog__item-icon catalog__item-weight">
-										<img
-											src="img/icons/weight.svg"
-											alt="Icon"
-											class="catalog__item-icon-img"
-										/>
-
-										<span class="catalog__item-weight-caption">230<span>г</span></span>
-									</div>
-								</div>
-							</a>
+								</a>
+							</div>
 						</div>
 					</div>
 
@@ -637,7 +641,7 @@
 					</div>
 				</div>
 
-				<div class="catalog-category__container container">
+				<div class="catalog-category__container container" data-aos="fade-up">
 					<a href="#" class="catalog-category__item catalog-category__item-1">
 						<span class="catalog-category__item-overtitle">Для</span>
 						<span class="catalog-category__item-title">Посуду</span>
@@ -694,7 +698,7 @@
 				</div>
 			</section>
 
-			<section class="partners">
+			<section class="partners" data-aos="fade-up">
 				<div class="partners__slider ticker">
 					<div class="partners__slider-item">
 						<img src="img/partners/logo-1.svg" alt="Logo" class="partners__logo" />
@@ -723,7 +727,7 @@
 				</div>
 			</section>
 
-			<section class="gallery">
+			<section class="gallery" data-aos="fade-up">
 				<div class="gallery__slider ticker-rtl" dir="rtl">
 					<div class="gallery__slider-item">
 						<img src="img/gallery/image-1.webp" alt="Logo" class="gallery__image" />

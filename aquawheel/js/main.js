@@ -1,3 +1,14 @@
+// AOS
+AOS.init({
+	duration: 1000,
+	once: true,
+})
+
+$(window).on('load scroll', function () {
+	AOS.refresh()
+})
+//
+
 // Dropdown
 $('.dropdown-heading').on('click', function () {
 	$(this).toggleClass('active').next().slideToggle()
