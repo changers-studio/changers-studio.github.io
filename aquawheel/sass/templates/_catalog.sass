@@ -104,9 +104,11 @@
 			&-overtitle
 				@include adaptive('font-size', 12, 'desktop')
 				font-weight: 400
+				line-height: 1
 			&-title
 				@include adaptive('font-size', 35, 'desktop')
 				font-weight: 700
+				line-height: 1
 			&-img
 				position: absolute
 				right: 0
@@ -138,7 +140,7 @@
 				@include adaptive('margin-bottom', 15, 'mobile')
 				@include adaptive('width', 115, 'mobile')
 				&._large-size
-					@include adaptive('width', 440, 'mobile')
+					@include adaptive('width', 200, 'mobile')
 			&-title
 				@include adaptive('font-size', 14, 'mobile')
 				@include adaptive('margin-bottom', 2, 'mobile')
@@ -148,7 +150,24 @@
 			&-icons
 				@include adaptive('gap', 5, 'mobile')
 			&-icon
-				@include adaptive('width', 28, 'mobile')
+				@include adaptive('font-size', 8, 'mobile')
+				&-img
+					@include adaptive('width', 27, 'mobile')
+			&-clothes-caption
+				@include adaptive('bottom', 4, 'mobile')
+			&-dishes-caption
+				@include adaptive('bottom', 5, 'mobile')
+			&-weight
+				@include adaptive('bottom', 3, 'mobile')
+				line-height: 0.9
+				&:first-child
+					@include adaptive('margin-top', 7, 'mobile')
+				&._wide .catalog__item-icon-img
+					@include adaptive('width', 34, 'mobile')
+				&-caption
+					@include adaptive('margin-top', 1, 'mobile')
+					span
+						@include adaptive('font-size', 6, 'mobile')
 		&-category
 			&__container
 				@include adaptive('margin-top', 40, 'mobile')
@@ -157,6 +176,9 @@
 				display: flex
 				justify-content: flex-start
 				overflow-y: auto
+				&:first-child
+					@include adaptive('margin-bottom', 40, 'mobile')
+					margin-top: 0
 			&__item
 				@include adaptive('height', 60, 'mobile')
 				@include adaptive('border-radius', 8, 'mobile')

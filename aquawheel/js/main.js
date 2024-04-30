@@ -28,6 +28,15 @@ $('.main__slider').slick({
 	autoplaySpeed: 3000,
 	prevArrow: $('.main__nav-prev'),
 	nextArrow: $('.main__nav-next'),
+	responsive: [
+		{
+			breakpoint: 960,
+			settings: {
+				infinite: true,
+				dots: true,
+			},
+		},
+	],
 })
 //
 
@@ -60,19 +69,6 @@ $('.ticker-rtl').slick({
 })
 //
 
-// new Swiper('.partners__slider', {
-// 	loop: true,
-// 	initialSlide: 4,
-// 	slidesPerView: 'auto',
-// 	spaceBetween: 90,
-// 	centeredSlides: true,
-// 	speed: 6000,
-// 	autoplay: {
-// 		delay: 0,
-// 		disableOnInteraction: false,
-// 	},
-// })
-
 // Modal
 $('.mfp').on('click', function () {
 	let modal = $(this).attr('href')
@@ -97,6 +93,7 @@ $('.toggleSidebar').on('click', function () {
 $('[data-fancybox]').fancybox({
 	infobar: false,
 	buttons: ['close'],
+	animationEffect: false,
 	btnTpl: {
 		close:
 			'<button data-fancybox-close class="fancybox-button fancybox-button--close" title="{{CLOSE}}">' +
@@ -118,16 +115,14 @@ $('[data-fancybox]').fancybox({
 
 // Tabs
 $('.tabs__caption').on('click', function () {
-	if (!$(this).hasClass('disabled')) {
-		$(this)
-			.addClass('active')
-			.siblings()
-			.removeClass('active')
-			.closest('.tabs')
-			.find('.tabs__content')
-			.removeClass('active')
-			.eq($(this).index())
-			.addClass('active')
-	}
+	$(this)
+		.addClass('active')
+		.siblings()
+		.removeClass('active')
+		.closest('.tabs')
+		.find('.tabs__content')
+		.removeClass('active')
+		.eq($(this).index())
+		.addClass('active')
 })
 //

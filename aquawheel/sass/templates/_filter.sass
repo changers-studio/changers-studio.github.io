@@ -21,17 +21,18 @@
 			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 2px 2px 4px 0px rgba(0, 0, 0, 0.15)
 		&._bg
 			&-blue
-				background: radial-gradient(91.7% 107.54% at 39.61% 56.25%, #55CCED 0%, #003DA5 100%)
+				background: radial-gradient(91.7% 107.54% at 39.61% 56.25%, rgba(85, 204, 237, 0.23) 0%, rgba(0, 61, 165, 0.23) 100%)
+				color: rgba(0, 61, 165, 0.35)
 			&-orange
-				background: radial-gradient(91.7% 107.54% at 39.61% 56.25%, #FFB254 0%, #FF4A00 82.66%)
-		&.disabled
+				background: radial-gradient(91.7% 107.54% at 39.61% 56.25%, rgba(255, 178, 84, 0.23) 0%, rgba(255, 74, 0, 0.23) 82.66%)
+				color: rgba(255, 74, 0, 0.35)
+		&.active
+			color: #fff
 			&._bg
 				&-blue
-					background: radial-gradient(91.7% 107.54% at 39.61% 56.25%, rgba(85, 204, 237, 0.23) 0%, rgba(0, 61, 165, 0.23) 100%)
-					color: rgba(0, 61, 165, 0.35)
+					background: radial-gradient(91.7% 107.54% at 39.61% 56.25%, #55CCED 0%, #003DA5 100%)
 				&-orange
-					background: radial-gradient(91.7% 107.54% at 39.61% 56.25%, rgba(255, 178, 84, 0.23) 0%, rgba(255, 74, 0, 0.23) 82.66%)
-					color: rgba(255, 74, 0, 0.35)
+					background: radial-gradient(91.7% 107.54% at 39.61% 56.25%, #FFB254 0%, #FF4A00 82.66%)
 		&-img
 			@include adaptive('left', 30, 'desktop')
 			position: absolute
@@ -50,7 +51,7 @@
 			position: relative
 		&-overtitle
 			@include adaptive('font-size', 12, 'desktop')
-			font-weight: 600
+			font-weight: 400
 		&-title
 			@include adaptive('font-size', 35, 'desktop')
 			font-weight: 700

@@ -70,6 +70,12 @@
 			flex-direction: column
 		&__title
 			@include adaptive('margin-bottom', 70, 'mobile')
+			@include adaptive('padding-left', 13, 'mobile')
+			br
+				display: none
+			&::before
+				@include adaptive('height', 32, 'mobile')
+				@include adaptive('width', 1, 'mobile')
 		&__items
 			@include adaptive('gap', 25, 'mobile')
 			flex-direction: column
@@ -78,6 +84,8 @@
 			@include adaptive('border-radius', 12, 'mobile')
 			@include adaptive('height', 105, 'mobile')
 			@include adaptive('padding-right', 40, 'mobile')
+			&._bg-orange
+				@include adaptive('padding-right', 56, 'mobile')
 			&-img
 				&-1
 					@include adaptive('width', 128, 'mobile')
@@ -86,6 +94,8 @@
 					@include adaptive('width', 185, 'mobile')
 					@include adaptive('left', 15, 'mobile')
 			&-inner
+				@include adaptive('top', 4, 'mobile')
+				position: relative
 			&-overtitle
 				@include adaptive('font-size', 10, 'mobile')
 			&-title

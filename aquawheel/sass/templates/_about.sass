@@ -45,6 +45,8 @@
 		&._white
 			@include adaptive('margin-top', 105, 'desktop')
 			color: #fff
+		.br-mobile
+			display: none
 
 @media only screen and (max-width : 960px)
 	.about
@@ -61,3 +63,7 @@
 			@include adaptive('font-size', 16, 'mobile')
 			&._white
 				color: $black
+			.br-mobile
+				display: inline
+			br.mobile-hidden
+				display: none

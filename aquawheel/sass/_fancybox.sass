@@ -17,6 +17,17 @@
 			@include adaptive('stroke-width', 2.63014, 'desktop')
 			stroke: #fff
 
+.fancybox-image, .fancybox-spaceball
+	@include adaptive('width', 580, 'desktop')
+	@include adaptive('width', 230, 'mobile')
+	object-fit: cover
+	object-position: center
+	height: auto
+	position: absolute
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+
 .fancybox-toolbar
 	opacity: 1
 	visibility: visible
