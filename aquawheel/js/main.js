@@ -52,32 +52,28 @@ $('.main__slider').slick({
 //
 
 // Ticker slider
-$('.ticker').slick({
-	infinite: true,
-	arrows: false,
-	initialSlide: 2,
-	cssEase: 'linear',
-	speed: 6000,
-	centerMode: true,
-	autoplay: true,
-	autoplaySpeed: 0,
-	variableWidth: true,
-	draggable: true,
+new Swiper('.ticker', {
+	slidesPerView: 'auto',
+	loop: !0,
+	autoplay: {
+		delay: 0,
+		stopOnLastSlide: !1,
+		disableOnInteraction: !0,
+	},
+	speed: 3200,
 })
 
-$('.ticker-rtl').slick({
-	infinite: true,
-	arrows: false,
-	rtl: true,
-	initialSlide: 2,
-	cssEase: 'linear',
-	speed: 6000,
-	centerMode: true,
-	autoplay: true,
-	autoplaySpeed: 0,
-	variableWidth: true,
-	draggable: true,
-})
+new Swiper('.ticker-rtl', {
+	slidesPerView: 'auto',
+	loop: !0,
+	dir: 'rtl',
+	autoplay: {
+		delay: 0,
+		stopOnLastSlide: !1,
+		disableOnInteraction: !0,
+	},
+	speed: 3200,
+}).changeLanguageDirection('rtl')
 //
 
 // Modal
