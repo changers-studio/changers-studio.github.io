@@ -23,7 +23,10 @@
 .fancybox-image, .fancybox-spaceball
 	@include adaptive('width', 580, 'desktop')
 	@include adaptive('width', 230, 'mobile')
-	object-fit: cover
+
+	@include adaptive('max-height', 600, 'desktop')
+	@include adaptive('max-height', 300, 'mobile')
+	object-fit: contain
 	object-position: center
 	height: auto
 	position: absolute
