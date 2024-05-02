@@ -1,0 +1,79 @@
+.filter
+	&__items
+		@include adaptive('gap', 45, 'desktop')
+		@include adaptive('margin-bottom', 170, 'desktop')
+		display: flex
+		justify-content: center
+	&__item
+		@include adaptive('border-radius', 15, 'desktop')
+		@include adaptive('width', 370, 'desktop')
+		@include adaptive('height', 105, 'desktop')
+		@include adaptive('padding-right', 45, 'desktop')
+		position: relative
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		text-transform: uppercase
+		color: #fff
+		box-shadow: 2.63px 2.63px 5.26px 0px rgba(0, 0, 0, 0.35) inset
+		&:hover
+			color: #fff
+			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 2px 2px 4px 0px rgba(0, 0, 0, 0.15)
+		&._bg
+			&-blue
+				background: radial-gradient(91.7% 107.54% at 39.61% 56.25%, rgba(85, 204, 237, 0.23) 0%, rgba(0, 61, 165, 0.23) 100%)
+				color: rgba(0, 61, 165, 0.35)
+			&-orange
+				background: radial-gradient(91.7% 107.54% at 39.61% 56.25%, rgba(255, 178, 84, 0.23) 0%, rgba(255, 74, 0, 0.23) 82.66%)
+				color: rgba(255, 74, 0, 0.35)
+		&.active
+			color: #fff
+			&._bg
+				&-blue
+					background: radial-gradient(91.7% 107.54% at 39.61% 56.25%, #55CCED 0%, #003DA5 100%)
+				&-orange
+					background: radial-gradient(91.7% 107.54% at 39.61% 56.25%, #FFB254 0%, #FF4A00 82.66%)
+		&-img
+			@include adaptive('left', 30, 'desktop')
+			position: absolute
+			bottom: 0
+			max-height: none
+			&-1
+				@include adaptive('width', 145, 'desktop')
+			&-2
+				@include adaptive('width', 195, 'desktop')
+		&-inner
+			@include adaptive('top', 4, 'desktop')
+			display: flex
+			flex-direction: column
+			align-items: center
+			text-align: center
+			position: relative
+		&-overtitle
+			@include adaptive('font-size', 12, 'desktop')
+			font-weight: 400
+		&-title
+			@include adaptive('font-size', 35, 'desktop')
+			font-weight: 700
+
+@media only screen and (max-width : 960px)
+	.filter
+		&__items
+			@include adaptive('gap', 15, 'mobile')
+			@include adaptive('margin-bottom', 70, 'mobile')
+		&__item
+			@include adaptive('border-radius', 12, 'mobile')
+			@include adaptive('width', 170, 'mobile')
+			@include adaptive('height', 50, 'mobile')
+			@include adaptive('padding-right', 15, 'mobile')
+			&-img
+				@include adaptive('left', 10, 'mobile')
+				&-1
+					@include adaptive('width', 70, 'mobile')
+				&-2
+					@include adaptive('width', 95, 'mobile')
+			&-overtitle
+				@include adaptive('font-size', 7, 'mobile')
+			&-title
+				@include adaptive('font-size', 22, 'mobile')
+				line-height: 1

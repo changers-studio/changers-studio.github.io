@@ -1,0 +1,155 @@
+.footer
+	@include adaptive('margin-top', 140, 'desktop')
+	@include adaptive('padding-top', 195, 'desktop')
+	@include adaptive('padding-bottom', 20, 'desktop')
+	background-size: cover
+	background-position: top center
+	color: #fff
+	&__bg
+		height: 100%
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		top: 0
+		z-index: 1
+		max-width: none
+		max-height: none
+		&-img
+			width: 100%
+			height: 101%
+			max-width: none
+			max-height: none
+			object-fit: cover
+			object-position: top center
+	&__container
+		@include adaptive('max-width', 1500, 'desktop')
+		@include adaptive('margin-bottom', 150, 'desktop')
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: relative
+		z-index: 2
+		&-inner._desktop-hidden
+			display: none
+	&__logo
+		@include adaptive('margin-bottom', 50, 'desktop')
+		display: flex
+		&-img
+			@include adaptive('width', 360, 'desktop')
+	&__contacts
+		@include adaptive('margin-bottom', 60, 'desktop')
+		@include adaptive('gap', 5, 'desktop')
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		&-item
+			@include adaptive('font-size', 43, 'desktop')
+			font-weight: 600
+	&__address, &__codes
+		@include adaptive('font-size', 21, 'desktop')
+	&__address
+		@include adaptive('margin-bottom', 9, 'desktop')
+	&__codes
+		@include adaptive('gap', 15, 'desktop')
+		display: flex
+	&__form
+		@include adaptive('gap', 70, 'desktop')
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		&-title
+			@include adaptive('font-size', 80, 'desktop')
+			text-transform: uppercase
+			line-height: 1
+			font-weight: 700
+			span
+				font-weight: 400
+		&-container
+			@include adaptive('gap', 54, 'desktop')
+			display: flex
+			flex-direction: column
+		&-row
+			@include adaptive('gap', 50, 'desktop')
+			display: flex
+		&-input
+			@include adaptive('font-size', 20, 'desktop')
+			@include adaptive('padding-top', 8, 'desktop')
+			@include adaptive('padding-bottom', 8, 'desktop')
+			@include adaptive('border-bottom-width', 1.5, 'desktop')
+			@include adaptive('width', 295, 'desktop')
+			border-style: solid
+			border-color: #fff
+			&._full-w
+				width: 100%
+		&-submit
+			@include adaptive('font-size', 30, 'desktop')
+			@include adaptive('padding-right', 55, 'desktop')
+			@include adaptive('padding-left', 55, 'desktop')
+	&__bottom
+		@include adaptive('gap', 80, 'desktop')
+		@include adaptive('font-size', 15, 'desktop')
+		display: flex
+		align-items: center
+		justify-content: center
+		color: rgba(255, 255, 255, 0.50)
+		position: relative
+		z-index: 2
+	&__privacy-link
+		transition: .3s
+		&:hover
+			color: #fff
+			&::before
+				background-color: #fff
+
+@media only screen and (max-width : 960px)
+	.footer
+		@include adaptive('margin-top', 40, 'mobile')
+		@include adaptive('padding-top', 110, 'mobile')
+		@include adaptive('padding-bottom', 15, 'mobile')
+		&__container
+			@include adaptive('margin-bottom', 50, 'mobile')
+			@include adaptive('padding-right', 30, 'mobile')
+			@include adaptive('padding-left', 30, 'mobile')
+			align-items: stretch
+			flex-direction: column
+			&-inner._desktop-hidden
+				@include adaptive('margin-bottom', 70, 'mobile')
+				display: block
+		&__heading
+			@include adaptive('margin-bottom', 30, 'mobile')
+			@include adaptive('font-size', 38, 'mobile')
+			text-transform: uppercase
+			line-height: 1
+			font-weight: 600
+			span
+				font-weight: 400
+		&__btn
+			@include adaptive('padding-bottom', 10, 'mobile')
+			@include adaptive('padding-top', 10, 'mobile')
+			@include adaptive('padding-right', 30, 'mobile')
+			@include adaptive('padding-left', 30, 'mobile')
+			@include adaptive('font-size', 16, 'mobile')
+			display: inline-flex
+			width: auto
+			border: none
+		&__logo
+			@include adaptive('margin-bottom', 30, 'mobile')
+			&-img
+				@include adaptive('width', 200, 'mobile')
+		&__contacts
+			@include adaptive('margin-bottom', 30, 'mobile')
+			&-item
+				@include adaptive('font-size', 25, 'mobile')
+		&__address, &__codes
+			@include adaptive('font-size', 16, 'mobile')
+		&__address
+			@include adaptive('margin-bottom', 5, 'mobile')
+		&__codes
+			@include adaptive('gap', 5, 'mobile')
+			flex-direction: column
+		&__form
+			display: none
+		&__bottom
+			@include adaptive('gap', 45, 'mobile')
+			@include adaptive('font-size', 8, 'mobile')

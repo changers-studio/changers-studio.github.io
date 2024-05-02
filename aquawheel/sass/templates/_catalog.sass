@@ -1,0 +1,210 @@
+.catalog
+	&__container
+		@include adaptive('gap', 100, 'desktop')
+		@include adaptive('width', 1400, 'desktop')
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		margin: 0 auto
+	&__item
+		@include adaptive('width', 400, 'desktop')
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+		&-img
+			@include adaptive('margin-bottom', 35, 'desktop')
+			@include adaptive('width', 300, 'desktop')
+			max-width: none
+			&._large-size
+				@include adaptive('width', 440, 'desktop')
+		&-title
+			@include adaptive('font-size', 32, 'desktop')
+			@include adaptive('margin-bottom', 5, 'desktop')
+			font-weight: 700
+		&-subtitle
+			@include adaptive('font-size', 26, 'desktop')
+			@include adaptive('margin-bottom', 5, 'desktop')
+			font-weight: 300
+		&-icons
+			@include adaptive('gap', 10, 'desktop')
+			display: flex
+			align-items: flex-end
+			justify-content: center
+		&-icon
+			@include adaptive('font-size', 18, 'desktop')
+			position: relative
+			font-weight: 600
+			color: $accent
+			display: flex
+			&-img
+				@include adaptive('width', 60, 'desktop')
+		&-clothes-caption
+			@include adaptive('bottom', 8, 'desktop')
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+		&-dishes-caption
+			@include adaptive('bottom', 12, 'desktop')
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+		&-weight
+			@include adaptive('bottom', 3, 'desktop')
+			&:first-child
+				@include adaptive('margin-top', 20, 'desktop')
+			&._wide .catalog__item-icon-img
+				@include adaptive('width', 71, 'desktop')
+			&-caption
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				span
+					@include adaptive('font-size', 13, 'desktop')
+					font-weight: 700
+	&-category
+		&__container
+			@include adaptive('margin-top', 140, 'desktop')
+			@include adaptive('gap', 45, 'desktop')
+			display: flex
+			justify-content: center
+			&:first-child
+				@include adaptive('margin-bottom', 140, 'desktop')
+				margin-top: 0
+		&__item
+			@include adaptive('height', 110, 'desktop')
+			@include adaptive('border-radius', 15, 'desktop')
+			@include adaptive('padding-top', 5, 'desktop')
+			@include adaptive('padding-left', 15, 'desktop')
+			@include adaptive('padding-right', 15, 'desktop')
+			position: relative
+			box-shadow: 2.63px 2.63px 5.26px 0px rgba(0, 0, 0, 0.15) inset
+			text-transform: uppercase
+			background: radial-gradient(113.33% 114.68% at 78.43% 91.02%, #FFF 0%, #E9E9E9 100%)
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			justify-content: flex-end
+			overflow: hidden
+			transition: .3s
+			&:hover
+				box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 2px 2px 4px 0px rgba(0, 0, 0, 0.15)
+			&-1
+				@include adaptive('width', 260, 'desktop')
+			&-2
+				@include adaptive('width', 275, 'desktop')
+			&-3, &-5
+				@include adaptive('width', 205, 'desktop')
+			&-4
+				@include adaptive('width', 290, 'desktop')
+			&.active
+				background: linear-gradient(232deg, #88D2F6 5.65%, #43ACDF 93.17%)
+				color: #fff
+			&-overtitle
+				@include adaptive('font-size', 12, 'desktop')
+				font-weight: 400
+				line-height: 1
+			&-title
+				@include adaptive('font-size', 35, 'desktop')
+				font-weight: 700
+				line-height: 1
+			&-img
+				position: absolute
+				right: 0
+				bottom: 0
+				max-height: none
+				max-width: none
+				&._bw
+					filter: grayscale(100%)
+				&-1
+					@include adaptive('width', 100, 'desktop')
+				&-2
+					@include adaptive('width', 106, 'desktop')
+				&-3
+					@include adaptive('width', 95, 'desktop')
+				&-4
+					@include adaptive('width', 180, 'desktop')
+				&-5
+					@include adaptive('width', 110, 'desktop')
+	&__items-photo
+		display: none
+
+@media only screen and (max-width : 960px)
+	.catalog
+		&__container
+			@include adaptive('gap', 30, 'mobile')
+		&__item
+			@include adaptive('width', 140, 'mobile')
+			&-img
+				@include adaptive('margin-bottom', 15, 'mobile')
+				@include adaptive('width', 115, 'mobile')
+				&._large-size
+					@include adaptive('width', 200, 'mobile')
+			&-title
+				@include adaptive('font-size', 14, 'mobile')
+				@include adaptive('margin-bottom', 2, 'mobile')
+			&-subtitle
+				@include adaptive('font-size', 10, 'mobile')
+				@include adaptive('margin-bottom', 2, 'mobile')
+			&-icons
+				@include adaptive('gap', 5, 'mobile')
+			&-icon
+				@include adaptive('font-size', 8, 'mobile')
+				&-img
+					@include adaptive('width', 27, 'mobile')
+			&-clothes-caption
+				@include adaptive('bottom', 4, 'mobile')
+			&-dishes-caption
+				@include adaptive('bottom', 5, 'mobile')
+			&-weight
+				@include adaptive('bottom', 3, 'mobile')
+				line-height: 0.9
+				&:first-child
+					@include adaptive('margin-top', 9, 'mobile')
+				&._wide .catalog__item-icon-img
+					@include adaptive('width', 34, 'mobile')
+				&-caption
+					@include adaptive('margin-top', 1, 'mobile')
+					span
+						@include adaptive('font-size', 6, 'mobile')
+		&-category
+			&__container
+				@include adaptive('margin-top', 40, 'mobile')
+				@include adaptive('padding-bottom', 10, 'mobile')
+				@include adaptive('gap', 12, 'mobile')
+				display: flex
+				justify-content: flex-start
+				overflow-y: auto
+				&:first-child
+					@include adaptive('margin-bottom', 40, 'mobile')
+					margin-top: 0
+			&__item
+				@include adaptive('height', 60, 'mobile')
+				@include adaptive('border-radius', 8, 'mobile')
+				@include adaptive('padding-left', 10, 'mobile')
+				@include adaptive('padding-right', 10, 'mobile')
+				flex: 0 0 auto
+				&-1
+					@include adaptive('width', 146, 'mobile')
+				&-2
+					@include adaptive('width', 153, 'mobile')
+				&-3, &-5
+					@include adaptive('width', 115, 'mobile')
+				&-4
+					@include adaptive('width', 162, 'mobile')
+				&-overtitle
+					@include adaptive('font-size', 6, 'mobile')
+				&-title
+					@include adaptive('font-size', 20, 'mobile')
+				&-img
+					&-1
+						@include adaptive('width', 47, 'mobile')
+					&-2
+						@include adaptive('width', 60, 'mobile')
+					&-3
+						@include adaptive('width', 53, 'mobile')
+					&-4
+						@include adaptive('width', 95, 'mobile')
+					&-5
+						@include adaptive('width', 58, 'mobile')
