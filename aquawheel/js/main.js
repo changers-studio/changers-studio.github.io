@@ -45,6 +45,7 @@ $('.main__slider').slick({
 			settings: {
 				infinite: true,
 				dots: true,
+				autoplaySpeed: 6000,
 			},
 		},
 	],
@@ -131,5 +132,12 @@ $('.tabs__caption').on('click', function () {
 		.removeClass('active')
 		.eq($(this).index())
 		.addClass('active')
+})
+//
+
+// Toggle text mobile
+$('.main__toggle').on('click', function () {
+	$(this).toggleClass('active')
+	$('.main__text').toggleClass('active')
 })
 //

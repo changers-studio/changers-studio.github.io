@@ -107,6 +107,8 @@
 		@include adaptive('font-size', 21, 'desktop')
 		display: flex
 		flex-direction: column
+	&__toggle
+		display: none
 
 @media only screen and (max-width : 960px)
 	.main
@@ -128,27 +130,31 @@
 			@include adaptive('font-size', 16, 'mobile')
 			@include adaptive('padding-left', 20, 'mobile')
 			@include adaptive('padding-right', 20, 'mobile')
+			@include adaptive('height', 53, 'mobile')
+			overflow: hidden
 			font-weight: 400
+			align-items: flex-start
+			&.active
+				height: auto
 			br
 				display: none
 		&__slider
 			&-inner
-				@include adaptive('height', 450, 'mobile')
+				@include adaptive('height', 545, 'mobile')
 				@include adaptive('border-radius', 12, 'mobile')
 				display: flex
-				align-items: flex-start
 				justify-content: center
 			&-btn
-				@include adaptive('margin-top', 165, 'mobile')
-				@include adaptive('font-size', 12, 'mobile')
-				@include adaptive('padding-top', 8, 'mobile')
-				@include adaptive('padding-bottom', 8, 'mobile')
-				@include adaptive('padding-left', 25, 'mobile')
-				@include adaptive('padding-right', 25, 'mobile')
+				@include adaptive('margin-bottom', 20, 'mobile')
+				@include adaptive('font-size', 16, 'mobile')
+				@include adaptive('padding-top', 12, 'mobile')
+				@include adaptive('padding-bottom', 12, 'mobile')
+				@include adaptive('padding-left', 35, 'mobile')
+				@include adaptive('padding-right', 35, 'mobile')
 				display: inline-flex
 				width: auto
 			.slick-dots
-				@include adaptive('bottom', 12, 'mobile')
+				@include adaptive('bottom', 10, 'mobile')
 				@include adaptive('gap', 8, 'mobile')
 				position: absolute
 				left: 50%
@@ -162,8 +168,40 @@
 					@include adaptive('height', 4, 'mobile')
 					border-radius: 50%
 					background-color: rgba(255, 255, 255, 0.43)
+					font-size: 0
 					transition: .3s
 					&.slick-active
 						background-color: #fff
 		&__nav
 			display: none
+		&__toggle
+			@include adaptive('margin-top', 10, 'mobile')
+			@include adaptive('margin-left', 20, 'mobile')
+			@include adaptive('font-size', 10, 'mobile')
+			@include adaptive('gap', 4, 'mobile')
+			@include adaptive('border-bottom-width', 1, 'mobile')
+			display: inline-flex
+			align-items: center
+			border-style: solid
+			border-color: rgba(0, 0, 0, 0.4)
+			color: #000
+			opacity: 0.4
+			.text
+				&-show
+					display: inline-block
+				&-close
+					display: none
+			&-icon
+				@include adaptive('width', 7, 'mobile')
+				flex: 0 0 auto
+				max-width: none
+				max-height: none
+				transition: .3s
+			&.active
+				.text
+					&-show
+						display: none
+					&-close
+						display: inline-block
+				.main__toggle-icon
+					transform: rotate(180deg)

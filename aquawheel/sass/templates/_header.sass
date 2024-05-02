@@ -11,7 +11,7 @@
 		justify-content: space-between
 		align-items: center
 		&-inner
-			@include adaptive('gap', 70, 'desktop')
+			@include adaptive('gap', 30, 'desktop')
 			display: flex
 			align-items: center
 	&__logo
@@ -19,12 +19,12 @@
 		&-img
 			@include adaptive('width', 210, 'desktop')
 	&__btn
-		@include adaptive('padding-top', 10, 'desktop')
-		@include adaptive('padding-bottom', 10, 'desktop')
-		@include adaptive('padding-right', 28, 'desktop')
-		@include adaptive('padding-left', 28, 'desktop')
+		@include adaptive('padding-top', 8, 'desktop')
+		@include adaptive('padding-bottom', 8, 'desktop')
+		@include adaptive('padding-right', 23, 'desktop')
+		@include adaptive('padding-left', 23, 'desktop')
 		@include adaptive('border-width', 1, 'desktop')
-		@include adaptive('font-size', 26, 'desktop')
+		@include adaptive('font-size', 21, 'desktop')
 		font-weight: 700
 		background: none
 		&:hover
@@ -37,8 +37,8 @@
 	&__lang
 		position: relative
 		&-heading
-			@include adaptive('font-size', 34, 'desktop')
-			@include adaptive('padding-right', 6, 'desktop')
+			@include adaptive('font-size', 28, 'desktop')
+			@include adaptive('padding-right', 5, 'desktop')
 			color: $accent
 			font-weight: 700
 			display: flex
