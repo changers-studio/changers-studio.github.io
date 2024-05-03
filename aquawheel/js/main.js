@@ -2,6 +2,7 @@
 AOS.init({
 	duration: 1000,
 	once: true,
+	offset: 50,
 })
 
 $(window).on('load scroll', function () {
