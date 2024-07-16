@@ -1,0 +1,65 @@
+.faq
+	padding: 120px 0
+	background-color: $white
+	color: #000
+	background-image: url('../img/faq/bg.svg')
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: top right
+	&__title
+		margin-bottom: 40px
+	&__container
+		background-color: $dark
+		color: #fff
+		border-radius: 24px
+	&__item
+		border-bottom: 1px solid $gray
+		cursor: pointer
+		&:last-child
+			border: none
+		&-heading
+			padding: 26px 44px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			color: $gray
+			font-size: 18px
+			font-weight: 600
+			transition: .3s
+			&.active
+				color: #fff
+				.faq__item-icon
+					transform: rotate(180deg)
+		&-icon
+			transition: .3s
+		&-dropdown
+			padding: 0 44px 26px
+			display: none
+
+@media only screen and (max-width : 960px)
+	.faq
+		@include adaptive('padding-top', 50, 'mobile')
+		@include adaptive('padding-bottom', 50, 'mobile')
+		background-image: none
+		&__title
+			@include adaptive('margin-bottom', 20, 'mobile')
+		&__container
+			@include adaptive('border-radius', 24, 'mobile')
+			padding-left: 0
+			padding-right: 0
+		&__item
+			@include adaptive('border-bottom-width', 1, 'mobile')
+			&-heading
+				@include adaptive('padding-top', 15, 'mobile')
+				@include adaptive('padding-bottom', 15, 'mobile')
+				@include adaptive('padding-left', 20, 'mobile')
+				@include adaptive('padding-right', 20, 'mobile')
+				@include adaptive('font-size', 14, 'mobile')
+			&-icon
+				@include adaptive('width', 9, 'mobile')
+			&-dropdown
+				@include adaptive('padding-bottom', 15, 'mobile')
+				@include adaptive('padding-left', 20, 'mobile')
+				@include adaptive('padding-right', 20, 'mobile')
+				@include adaptive('font-size', 13, 'mobile')
+				@include adaptive('width', 300, 'mobile')

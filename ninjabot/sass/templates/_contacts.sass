@@ -1,0 +1,63 @@
+.contacts
+	padding: 120px 0
+	&__container
+		display: flex
+		align-items: center
+		justify-content: space-between
+		position: relative
+		&-inner
+			width: 505px
+	&__title
+		margin-bottom: 20px
+	&__text
+		font-size: 18px
+		font-weight: 300
+	&__btn
+		gap: 10px
+		width: 250px
+		border-radius: 100px
+		&-icon path
+			transition: .3s
+		&:hover
+			path
+				fill: $accent
+	&__arrow
+		position: absolute
+		top: 30px
+		left: 615px
+		max-width: none
+		max-height: none
+		&.mobile
+			display: none
+
+@media only screen and (max-width : 960px)
+	.contacts
+		@include adaptive('padding-top', 50, 'mobile')
+		@include adaptive('padding-bottom', 50, 'mobile')
+		&__container
+			@include adaptive('gap', 40, 'mobile')
+			flex-direction: column
+			align-items: stretch
+			&-inner
+				@include adaptive('width', 260, 'mobile')
+		&__title
+			@include adaptive('margin-bottom', 10, 'mobile')
+		&__text
+			@include adaptive('font-size', 14, 'mobile')
+		&__btn
+			@include adaptive('gap', 8, 'mobile')
+			@include adaptive('border-radius', 100, 'mobile')
+			@include adaptive('height', 42, 'mobile')
+			width: 100%
+			&-icon
+				@include adaptive('width', 15, 'mobile')
+			&:hover path
+				fill: #fff
+		&__arrow
+			@include adaptive('right', -20, 'mobile')
+			@include adaptive('width', 120, 'mobile')
+			top: 0
+			left: auto
+			display: none
+			&.mobile
+				display: block
