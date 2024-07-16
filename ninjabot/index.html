@@ -7,7 +7,7 @@
 
 		<meta
 			name="viewport"
-			content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1"
 		/>
 		<meta name="format-detection" content="telephone=no" />
 
@@ -65,7 +65,7 @@
 
 				<div class="container main__container">
 					<div class="main__container-inner">
-						<img src="img/main-screen/blur.png" alt="Blur" class="main__blur" />
+						<!-- <img src="img/main-screen/blur.png" alt="Blur" class="main__blur" /> -->
 
 						<div class="main__container-wrapper">
 							<div class="main__overtitle">
@@ -100,7 +100,18 @@
 						</div>
 					</div>
 
-					<img src="img/main-screen/image.png" alt="Image" class="main__image" />
+					<picture class="main__image">
+						<source
+							srcset="img/main-screen/image-mobile.png"
+							media="(max-width: 960px)"
+						/>
+
+						<img
+							class="main__image-inner"
+							src="img/main-screen/image.png"
+							alt="Bg-image"
+						/>
+					</picture>
 				</div>
 			</section>
 
@@ -407,14 +418,40 @@
 							<div class="reviews__slide-inner">
 								<div class="reviews__slide-wrapper">
 									<div class="reviews__stars">
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
 										<img
 											src="img/reviews/star.svg"
 											alt="Star"
 											class="reviews__star disabled"
+											width="17"
+											height="17"
 										/>
 									</div>
 
@@ -435,11 +472,41 @@
 							<div class="reviews__slide-inner">
 								<div class="reviews__slide-wrapper">
 									<div class="reviews__stars">
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
 									</div>
 
 									<h3 class="reviews__heading">Anton Verba</h3>
@@ -459,11 +526,41 @@
 							<div class="reviews__slide-inner">
 								<div class="reviews__slide-wrapper">
 									<div class="reviews__stars">
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
 									</div>
 
 									<h3 class="reviews__heading">Anton Verba</h3>
@@ -483,11 +580,41 @@
 							<div class="reviews__slide-inner">
 								<div class="reviews__slide-wrapper">
 									<div class="reviews__stars">
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
 									</div>
 
 									<h3 class="reviews__heading">Anton Verba</h3>
@@ -507,11 +634,41 @@
 							<div class="reviews__slide-inner">
 								<div class="reviews__slide-wrapper">
 									<div class="reviews__stars">
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
-										<img src="img/reviews/star.svg" alt="Star" class="reviews__star" />
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
+										<img
+											src="img/reviews/star.svg"
+											alt="Star"
+											class="reviews__star"
+											width="17"
+											height="17"
+										/>
 									</div>
 
 									<h3 class="reviews__heading">Anton Verba</h3>
@@ -777,7 +934,13 @@
 						<div class="faq__item-heading">
 							How does NinjaBot work?
 
-							<img src="img/faq/arrow.svg" alt="Arrow" class="faq__item-icon" />
+							<img
+								src="img/faq/arrow.svg"
+								alt="Arrow"
+								class="faq__item-icon"
+								width="13"
+								height="11"
+							/>
 						</div>
 
 						<div class="faq__item-dropdown">
@@ -792,7 +955,13 @@
 						<div class="faq__item-heading">
 							How to start using NinjaBot?
 
-							<img src="img/faq/arrow.svg" alt="Arrow" class="faq__item-icon" />
+							<img
+								src="img/faq/arrow.svg"
+								alt="Arrow"
+								class="faq__item-icon"
+								width="13"
+								height="11"
+							/>
 						</div>
 
 						<div class="faq__item-dropdown">
@@ -807,7 +976,13 @@
 						<div class="faq__item-heading">
 							What is the minimum deposit?
 
-							<img src="img/faq/arrow.svg" alt="Arrow" class="faq__item-icon" />
+							<img
+								src="img/faq/arrow.svg"
+								alt="Arrow"
+								class="faq__item-icon"
+								width="13"
+								height="11"
+							/>
 						</div>
 
 						<div class="faq__item-dropdown">
@@ -822,7 +997,13 @@
 						<div class="faq__item-heading">
 							What markets does NinjaBot support?
 
-							<img src="img/faq/arrow.svg" alt="Arrow" class="faq__item-icon" />
+							<img
+								src="img/faq/arrow.svg"
+								alt="Arrow"
+								class="faq__item-icon"
+								width="13"
+								height="11"
+							/>
 						</div>
 
 						<div class="faq__item-dropdown">
@@ -837,7 +1018,13 @@
 						<div class="faq__item-heading">
 							How much does NinjaBot cost?
 
-							<img src="img/faq/arrow.svg" alt="Arrow" class="faq__item-icon" />
+							<img
+								src="img/faq/arrow.svg"
+								alt="Arrow"
+								class="faq__item-icon"
+								width="13"
+								height="11"
+							/>
 						</div>
 
 						<div class="faq__item-dropdown">
@@ -852,7 +1039,13 @@
 						<div class="faq__item-heading">
 							What payment methods are accepted?
 
-							<img src="img/faq/arrow.svg" alt="Arrow" class="faq__item-icon" />
+							<img
+								src="img/faq/arrow.svg"
+								alt="Arrow"
+								class="faq__item-icon"
+								width="13"
+								height="11"
+							/>
 						</div>
 
 						<div class="faq__item-dropdown">
@@ -867,7 +1060,13 @@
 						<div class="faq__item-heading">
 							How safe is my data?
 
-							<img src="img/faq/arrow.svg" alt="Arrow" class="faq__item-icon" />
+							<img
+								src="img/faq/arrow.svg"
+								alt="Arrow"
+								class="faq__item-icon"
+								width="13"
+								height="11"
+							/>
 						</div>
 
 						<div class="faq__item-dropdown">
@@ -882,7 +1081,13 @@
 						<div class="faq__item-heading">
 							How does NinjaBot protect data?
 
-							<img src="img/faq/arrow.svg" alt="Arrow" class="faq__item-icon" />
+							<img
+								src="img/faq/arrow.svg"
+								alt="Arrow"
+								class="faq__item-icon"
+								width="13"
+								height="11"
+							/>
 						</div>
 
 						<div class="faq__item-dropdown">
@@ -897,7 +1102,13 @@
 						<div class="faq__item-heading">
 							Can I set a stop-loss?
 
-							<img src="img/faq/arrow.svg" alt="Arrow" class="faq__item-icon" />
+							<img
+								src="img/faq/arrow.svg"
+								alt="Arrow"
+								class="faq__item-icon"
+								width="13"
+								height="11"
+							/>
 						</div>
 
 						<div class="faq__item-dropdown">
@@ -912,7 +1123,13 @@
 						<div class="faq__item-heading">
 							How often can I withdraw?
 
-							<img src="img/faq/arrow.svg" alt="Arrow" class="faq__item-icon" />
+							<img
+								src="img/faq/arrow.svg"
+								alt="Arrow"
+								class="faq__item-icon"
+								width="13"
+								height="11"
+							/>
 						</div>
 
 						<div class="faq__item-dropdown">
@@ -927,7 +1144,13 @@
 						<div class="faq__item-heading">
 							What are the return guarantees?
 
-							<img src="img/faq/arrow.svg" alt="Arrow" class="faq__item-icon" />
+							<img
+								src="img/faq/arrow.svg"
+								alt="Arrow"
+								class="faq__item-icon"
+								width="13"
+								height="11"
+							/>
 						</div>
 
 						<div class="faq__item-dropdown">
@@ -942,7 +1165,13 @@
 						<div class="faq__item-heading">
 							What strategies does NinjaBot use?
 
-							<img src="img/faq/arrow.svg" alt="Arrow" class="faq__item-icon" />
+							<img
+								src="img/faq/arrow.svg"
+								alt="Arrow"
+								class="faq__item-icon"
+								width="13"
+								height="11"
+							/>
 						</div>
 
 						<div class="faq__item-dropdown">
@@ -957,7 +1186,13 @@
 						<div class="faq__item-heading">
 							How quickly does NinjaBot react?
 
-							<img src="img/faq/arrow.svg" alt="Arrow" class="faq__item-icon" />
+							<img
+								src="img/faq/arrow.svg"
+								alt="Arrow"
+								class="faq__item-icon"
+								width="13"
+								height="11"
+							/>
 						</div>
 
 						<div class="faq__item-dropdown">
@@ -972,7 +1207,13 @@
 						<div class="faq__item-heading">
 							Do you have a referral system?
 
-							<img src="img/faq/arrow.svg" alt="Arrow" class="faq__item-icon" />
+							<img
+								src="img/faq/arrow.svg"
+								alt="Arrow"
+								class="faq__item-icon"
+								width="13"
+								height="11"
+							/>
 						</div>
 
 						<div class="faq__item-dropdown">
