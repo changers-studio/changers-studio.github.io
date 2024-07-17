@@ -40,7 +40,6 @@
 		&-text, &-sep
 			@include adaptive('font-size', 20, 'desktop')
 			color: $gray
-			font-weight: 300
 		&-arrow
 			@include adaptive('margin-right', 25, 'desktop')
 			@include adaptive('width', 25, 'desktop')
@@ -63,10 +62,13 @@
 		max-width: none
 		max-height: none
 		z-index: 1
-	&__image
+	&__video
 		@include adaptive('width', 750, 'desktop')
-		&-inner
-			width: 100%
+		@include adaptive('height', 735, 'desktop')
+		object-fit: cover
+		object-position: center
+	&__image
+		display: none
 
 @media only screen and (max-width : 960px)
 	.main
@@ -103,5 +105,8 @@
 		&__blur
 			@include adaptive('width', 380, 'mobile')
 			@include adaptive('height', 230, 'mobile')
+		&__video
+			display: none
 		&__image
 			@include adaptive('width', 250, 'mobile')
+			display: flex

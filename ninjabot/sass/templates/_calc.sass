@@ -7,7 +7,7 @@
 		max-width: 850px
 		margin-bottom: 20px
 	&__text
-		font-weight: 300
+		font-weight: 400
 		font-size: 18px
 		margin-bottom: 40px
 	&__container
@@ -169,15 +169,18 @@
 		&__result
 			@include adaptive('margin-top', 20, 'mobile')
 			@include adaptive('margin-bottom', 15, 'mobile')
+			position: relative
 			&-inner
 				@include adaptive('gap', 20, 'mobile')
 			&-heading
 				@include adaptive('font-size', 20, 'mobile')
 			&-sep
-				// @include adaptive('width', 40, 'mobile')
-				// @include adaptive('height', 1, 'mobile')
-				// object-fit: cover
-				display: none
+				@include adaptive('left', 170, 'mobile')
+				@include adaptive('width', 40, 'mobile')
+				@include adaptive('height', 1, 'mobile')
+				@include adaptive('bottom', 2, 'mobile')
+				object-fit: cover
+				position: absolute
 			&-data
 				@include adaptive('font-size', 20, 'mobile')
 		&__bottom

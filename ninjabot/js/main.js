@@ -105,7 +105,7 @@ $depositVal.on('input', function () {
 $('.reviews__slider').slick({
 	speed: 1000,
 	variableWidth: true,
-	infinite: false,
+	infinite: true,
 	autoplay: true,
 	autoplaySpeed: 3000,
 	prevArrow: $('.reviews__slider-prev'),
