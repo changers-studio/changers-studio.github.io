@@ -1,0 +1,135 @@
+.about
+	padding: 100px 0
+	background-color: $dark
+	background-image: url('../img/about/bg.svg')
+	background-size: cover
+	background-position: bottom right
+	&__top
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		margin-bottom: 75px
+		&-inner
+			max-width: 595px
+	&__text
+		font-weight: 300
+		color: $gray
+		font-size: 18px
+		padding-bottom: 28px
+		max-width: 470px
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+	&__heading
+		font-weight: 600
+		margin-bottom: 26px
+		text-transform: uppercase
+		letter-spacing: 0.17em
+	&__info
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		gap: 16px
+		&-box
+			background-color: $gray-dark
+			border-radius: 24px
+			border-left: 2px solid $accent
+			padding: 20px 30px
+			&-1
+				width: 400px
+			&-2
+				width: 435px
+			&-3
+				width: 465px
+		&-heading
+			margin-bottom: 10px
+			font-weight: 700
+		&-text
+			font-weight: 300
+			color: $gray
+	&__stages
+		width: 470px
+		display: flex
+		flex-direction: column
+		align-items: center
+		gap: 15px
+		&-item
+			width: 280px
+			display: flex
+			flex-direction: column
+			align-items: center
+		&-caption
+			font-weight: 700
+			min-height: 58px
+			width: 100%
+			background-color: $gray-dark
+			border-radius: 10px
+			display: flex
+			align-items: center
+			justify-content: center
+			text-align: center
+		&-btn
+			min-height: 58px
+			width: 280px
+			font-weight: 700
+
+@media only screen and (max-width : 960px)
+	.about
+		@include adaptive('padding-top', 50, 'mobile')
+		@include adaptive('padding-bottom', 50, 'mobile')
+		background-image: none
+		&__top
+			@include adaptive('margin-bottom', 25, 'mobile')
+			flex-direction: column
+			align-items: stretch
+			&-inner
+				max-width: 100%
+		&__title
+			@include adaptive('max-width', 290, 'mobile')
+		&__text
+			@include adaptive('font-size', 14, 'mobile')
+			padding-bottom: 0
+			max-width: 100%
+			color: #fff
+		&__container
+			@include adaptive('gap', 40, 'mobile')
+			flex-direction: column
+			align-items: stretch
+		&__heading
+			@include adaptive('font-size', 16, 'mobile')
+			@include adaptive('margin-bottom', 12, 'mobile')
+		&__info
+			@include adaptive('gap', 15, 'mobile')
+			align-items: stretch
+			&-box
+				@include adaptive('padding-top', 16, 'mobile')
+				@include adaptive('padding-bottom', 16, 'mobile')
+				@include adaptive('padding-left', 20, 'mobile')
+				@include adaptive('padding-right', 20, 'mobile')
+				@include adaptive('border-radius', 24, 'mobile')
+				@include adaptive('border-left-width', 2, 'mobile')
+				&-1, &-2, &-3
+					width: 100%
+			&-heading
+				@include adaptive('margin-bottom', 10, 'mobile')
+				@include adaptive('font-size', 14, 'mobile')
+			&-text
+				@include adaptive('font-size', 13, 'mobile')
+		&__stages
+			@include adaptive('gap', 10, 'mobile')
+			width: 100%
+			order: -1
+			&-item
+				width: 100%
+			&-caption
+				@include adaptive('border-radius', 10, 'mobile')
+				@include adaptive('min-height', 50, 'mobile')
+				@include adaptive('font-size', 14, 'mobile')
+			&-arrow
+				@include adaptive('width', 25, 'mobile')
+			&-btn
+				@include adaptive('min-height', 50, 'mobile')
+				@include adaptive('font-size', 14, 'mobile')
+				@include adaptive('border-radius', 10, 'mobile')
+				width: 100%

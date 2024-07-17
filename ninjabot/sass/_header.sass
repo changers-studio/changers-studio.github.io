@@ -1,0 +1,93 @@
+.header
+	@include adaptive('padding-top', 30, 'desktop')
+	@include adaptive('padding-bottom', 30, 'desktop')
+	position: absolute
+	top: 0
+	width: 100%
+	z-index: 3
+	&__menu
+		@include adaptive('gap', 35, 'desktop')
+		@include adaptive('font-size', 16, 'desktop')
+		display: flex
+		align-items: center
+		&-item
+			color: $gray
+			&:hover
+				color: #fff
+		&-btn
+			display: none
+	&__hamuberger
+		display: none
+
+@media only screen and (max-width : 960px)
+	.header
+		@include adaptive('padding-top', 15, 'mobile')
+		@include adaptive('padding-bottom', 15, 'mobile')
+		position: relative
+		&__container
+			display: flex
+			justify-content: flex-end
+		&__menu
+			@include adaptive('gap', 20, 'mobile')
+			@include adaptive('padding-top', 70, 'mobile')
+			@include adaptive('padding-bottom', 35, 'mobile')
+			@include adaptive('padding-left', 20, 'mobile')
+			@include adaptive('padding-right', 20, 'mobile')
+			@include adaptive('font-size', 14, 'mobile')
+			@include adaptive('border-bottom-left-radius', 25, 'mobile')
+			@include adaptive('border-bottom-right-radius', 25, 'mobile')
+			display: flex
+			flex-direction: column
+			align-items: center
+			text-align: center
+			background-color: $dark
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			transform: translateY(-110%)
+			transition: .7s
+			&::before
+				content: ''
+				position: fixed
+				top: 0
+				left: 0
+				width: 100vw
+				height: 100vh
+				background-color: #000
+				opacity: 0
+				backdrop-filter: blur(1.7px)
+				transform: translateY(-110%)
+				transition: opacity .7s
+			&.active
+				transform: translateY(0%)
+				&::before
+					transform: translateY(0%)
+					opacity: 0.8
+			&-item
+				color: $gray
+				&:hover
+					color: $gray
+			&-btn
+				@include adaptive('margin-top', 10, 'mobile')
+				@include adaptive('height', 42, 'mobile')
+				@include adaptive('border-radius', 90, 'mobile')
+				display: flex
+		&__hamburger
+			@include adaptive('border-radius', 10, 'mobile')
+			@include adaptive('width', 38, 'mobile')
+			@include adaptive('height', 38, 'mobile')
+			@include adaptive('gap', 3.5, 'mobile')
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: $gray-dark
+			z-index: 5
+			&.active .header__hamburger-dot
+				background-color: $accent
+			&-dot
+				@include adaptive('width', 3.5, 'mobile')
+				@include adaptive('height', 3.5, 'mobile')
+				border-radius: 50%
+				background-color: #fff
+				transition: .3s

@@ -1,0 +1,9 @@
+.container
+	width: 100%
+	margin: 0 auto
+	max-width: 1120px
+
+@media only screen and (max-width : 960px)
+	.container
+		@include adaptive('padding-left', 20, 'mobile')
+		@include adaptive('padding-right', 20, 'mobile')

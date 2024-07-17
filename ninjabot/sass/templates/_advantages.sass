@@ -1,0 +1,59 @@
+.advantages
+	padding-top: 120px
+	background-color: $white
+	color: #000
+	&__title
+		max-width: 850px
+		margin-bottom: 20px
+	&__text
+		max-width: 570px
+		font-size: 18px
+		font-weight: 300
+	&__wrapper
+		margin-top: 40px
+		padding: 60px 0
+		background-color: $dark
+		color: #fff
+	&__container
+		display: flex
+		justify-content: space-between
+	&__item
+		width: 305px
+		&-img
+			margin-bottom: 15px
+		&-heading
+			font-weight: 700
+			margin-bottom: 18px
+			font-size: 21px
+		&-text
+			color: $gray
+
+@media only screen and (max-width : 960px)
+	.advantages
+		@include adaptive('padding-top', 50, 'mobile')
+		&__title
+			max-width: 100%
+		&__text
+			@include adaptive('font-size', 14, 'mobile')
+			max-width: 100%
+		&__wrapper
+			@include adaptive('padding-top', 25, 'mobile')
+			@include adaptive('padding-bottom', 25, 'mobile')
+			@include adaptive('margin-top', 25, 'mobile')
+		&__container
+			@include adaptive('gap', 45, 'mobile')
+			flex-direction: column
+		&__item
+			@include adaptive('gap', 20, 'mobile')
+			width: 100%
+			display: flex
+			align-items: center
+			&-img
+				@include adaptive('width', 46, 'mobile')
+				margin-bottom: 0
+				flex: 0 0 auto
+			&-heading
+				@include adaptive('margin-bottom', 5, 'mobile')
+				@include adaptive('font-size', 16, 'mobile')
+			&-text
+				@include adaptive('font-size', 13, 'mobile')
