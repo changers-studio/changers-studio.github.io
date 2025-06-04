@@ -1,0 +1,174 @@
+.advantages
+	&__title, &__subtitle
+		text-align: center
+	&__subtitle
+		width: 400rem
+		margin: 20rem auto 0
+		font-size: 24rem
+		color: #fff
+		font-weight: 500
+	&__container
+		margin-top: 60rem
+		display: flex
+		justify-content: space-between
+		border-right: 1rem solid #1C1F29
+	&__corner
+		width: 11rem
+		height: 11rem
+		background-color: #3A509C
+		position: absolute
+		transform: rotate(45deg)
+		z-index: 2
+		&-1
+			top: -6rem
+			left: -6rem
+		&-2
+			top: -6rem
+			right: -6rem
+		&-3
+			right: -6rem
+			bottom: -6rem
+		&-4
+			left: -6rem
+			bottom: -6rem
+	&__col
+		width: 584rem
+		display: flex
+		flex-direction: column
+		border-left: 1rem solid #1C1F29
+		padding-bottom: 290rem
+		position: relative
+	&__item
+		width: 100%
+		position: relative
+		z-index: 2
+		&._large .advantages__item-inner
+			min-height: 930rem
+		&-2
+			margin-top: 930rem
+			z-index: 4
+		&-3
+			margin-top: 932rem
+			z-index: 3
+		&-4
+			margin-top: 554rem
+		&-5
+			margin-top: 377rem
+		&-6
+			margin-top: 930rem
+		&-inner
+			background-color: #070C16
+			box-shadow: inset 0px -5.33333px 9.33333px rgba(49, 49, 49, 0.32), inset 0px 5.33333px 9.33333px rgba(22, 22, 22, 0.32)
+			border: 1rem solid #171B2B
+			padding: 380rem 45rem 45rem
+			min-height: 554rem
+			width: 100%
+			position: relative
+			display: flex
+			align-items: flex-end
+			overflow: hidden
+		&-wrapper
+			display: flex
+			flex-direction: column
+			gap: 24rem
+			position: relative
+			z-index: 2
+		&-heading
+			font-size: 32rem
+		&-text
+			color: rgba(255, 255, 255, 0.7)
+			font-weight: 500
+	&__video
+		position: absolute
+		top: 0
+		left: 0
+		max-width: 100%
+		max-height: 100%
+		object-fit: cover
+		object-position: center
+		&._centered
+			left: 50%
+			transform: translateX(-50%)
+		&-1
+			width: 100%
+			height: 770rem
+			object-position: bottom
+		&-2
+			top: 15rem
+			width: 340rem
+		&-3
+			top: -30rem
+		&-4
+			width: 100%
+			max-width: none
+			top: 80rem
+		&-5
+			left: 50rem
+			height: 400rem
+		&-6
+			width: 480rem
+
+@media only screen and (max-width: 960px)
+	.advantages
+		padding: 100rem 0
+		&__title
+			width: 280rem
+			margin: 0 auto
+		&__subtitle
+			width: 262rem
+			margin-top: 16rem
+			font-size: 16rem
+		&__container
+			margin-top: 32rem
+			display: flex
+			flex-direction: column
+			gap: 12rem
+			border: none
+		&__corner, &__col
+			display: none
+		&__item
+			width: 100%
+			z-index: 1
+			margin-top: 0
+			&._large .advantages__item-inner
+				min-height: auto
+			&-inner
+				border-radius: 10rem
+				padding: 0
+				min-width: auto
+				min-height: auto
+				flex-direction: column
+				justify-content: space-between
+				align-items: stretch
+				height: 600rem
+			&-wrapper
+				gap: 18rem
+				padding: 32rem 16rem 16rem
+			&-heading
+				font-size: 24rem
+			&-text
+				font-size: 16rem
+		&__video
+			position: relative
+			width: 100%
+			height: 410rem
+			object-fit: cover
+			object-position: center
+			&-1
+				object-position: bottom
+			&-2
+				left: 0
+				top: 0
+				transform: none
+			&-3
+				width: 100%
+			&-4
+				width: calc(100% + 60rem)
+				top: 0
+				left: 0
+			&-5
+				left: 0
+				object-position: top
+			&-6
+				height: 340rem
+				margin-top: 50rem

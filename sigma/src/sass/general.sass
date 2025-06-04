@@ -1,0 +1,52 @@
+body
+	min-width: 320px
+	position: relative
+	font-size: 18rem
+	line-height: 1.2
+	font-family: $default-font
+	color: #fff
+	background-color: #030712
+	scrollbar-width: 0px
+	&::-webkit-scrollbar-track
+		background: #030712
+	&::-webkit-scrollbar
+		width: 0px
+	&.scroll-disabled
+		overflow: hidden
+
+section
+	padding: 100rem 0
+
+.section-inner
+	padding: 0 24rem
+
+picture img
+	width: 100%
+
+.overflow-hidden
+	overflow: hidden
+
+.title
+	font-size: 69rem
+	font-weight: 500
+	&._grad
+		background: linear-gradient(94.32deg, #FFFFFF 41.18%, #48589D 69.23%)
+		background-clip: text
+		-webkit-text-fill-color: transparent
+
+.fade-up
+	opacity: 0
+	transform: translateY(10rem)
+
+@media only screen and (max-width: 960px)
+	body
+		font-size: 16rem
+
+	section
+		padding: 50rem 0
+
+	.title
+		font-size: 32rem
+
+	.section-inner
+		padding: 0

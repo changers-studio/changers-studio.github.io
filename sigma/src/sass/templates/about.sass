@@ -1,0 +1,99 @@
+.about
+	z-index: 2
+	&__container
+		padding-top: 100rem
+		display: flex
+		flex-direction: column
+		align-items: center
+		height: 100vh
+		min-height: 1100rem
+		position: relative
+		&-inner
+			position: relative
+			z-index: 2
+	&__title, &__subtitle
+		text-align: center
+	&__title
+		margin-bottom: 16rem
+	&__subtitle
+		width: 360rem
+		font-weight: 500
+		margin: 0 auto 35rem
+	&__btns
+		display: flex
+		justify-content: center
+		gap: 10rem
+	&__video
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, 50%)
+		width: 100%
+		height: 100%
+		object-fit: cover
+		object-position: center
+		&-mobile
+			display: none
+	&__items
+		display: none
+
+@media only screen and (max-width: 960px)
+	.about
+		padding-top: 20rem
+		background-image: url('../img/about/bg-mobile.png')
+		background-size: cover
+		background-position: center
+		&__container
+			padding: 50rem 16rem 0
+			height: auto
+			min-height: auto
+		&__subtitle
+			width: 100%
+			margin-bottom: 24rem
+		&__btns
+			gap: 8rem
+		&__video
+			display: none
+			&-mobile
+				display: flex
+				width: 232rem
+				height: 474rem
+				object-fit: contain
+				margin-top: 40rem
+				border-radius: 35rem
+		&__items
+			display: block
+			margin-top: 20rem
+		&__item
+			padding: 16rem 20rem
+			width: 100%
+			display: flex
+			justify-content: space-between
+			align-content: inherit
+			border-bottom: 1rem solid rgba(255, 255, 255, 0.1)
+			&:last-child
+				border: none
+			&-inner
+				display: flex
+				align-items: center
+				gap: 12rem
+			&-wrapper
+				width: 36rem
+				height: 36rem
+				border-radius: 50%
+				background: linear-gradient(104.2deg, rgba(255, 255, 255, 0.021) -43.53%, rgba(255, 255, 255, 0.042) 137.98%)
+				box-shadow: inset 0px -3.6px 6.3px rgba(255, 255, 255, 0.1), inset 0px 3.6px 6.3px rgba(255, 255, 255, 0.1)
+				display: flex
+				align-items: center
+				justify-content: center
+			&-icon
+				width: 16rem
+			&-heading
+				font-size: 14rem
+				max-width: 175rem
+			&-number
+				font-size: 48rem
+				line-height: 1.2
+				background: linear-gradient(111.4deg, #FFFFFF -0.71%, rgba(255, 255, 255, 0) 98.52%)
+				-webkit-text-fill-color: transparent
+				background-clip: text

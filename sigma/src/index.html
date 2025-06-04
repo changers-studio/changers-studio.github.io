@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Sigma</title>
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" sizes="192x192" href="img/favicon.ico" />
+	</head>
+
+	<body class="home">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__container-inner">
+					<a href="index.html" class="header__logo">
+						<img src="img/logo.svg" alt="Logo" class="header__logo-img" />
+					</a>
+
+					<div class="header__menu">
+						<button type="button" class="header__menu-btn" aria-label="Open menu">
+							<span class="open">Menu</span>
+							<span class="close">Close</span>
+						</button>
+
+						<nav class="header__menu-container" data-da=".header, 960, 0">
+							<button
+								type="button"
+								class="header__menu-close"
+								aria-label="Close menu"
+							></button>
+
+							<div class="header__menu-items">
+								<button
+									type="button"
+									class="header__menu-item scroll-to"
+									aria-label="Scroll to section"
+									data-scroll-to="hero"
+								>
+									<span class="header__menu-inner">
+										<span class="header__menu-number">01</span>
+										<span class="header__menu-caption">Home</span>
+									</span>
+								</button>
+
+								<button
+									type="button"
+									class="header__menu-item scroll-to"
+									aria-label="Scroll to section"
+									data-scroll-to="features"
+								>
+									<span class="header__menu-inner">
+										<span class="header__menu-number">02</span>
+										<span class="header__menu-caption">Features</span>
+									</span>
+								</button>
+
+								<a
+									href="https://t.me/SigmaBotPortal"
+									type="button"
+									class="header__menu-item"
+									target="_blank"
+								>
+									<span class="header__menu-inner">
+										<span class="header__menu-number">03</span>
+										<span class="header__menu-caption">Telegram Support</span>
+									</span>
+								</a>
+
+								<a
+									href="https://docs.sigma.win/getting-started/setup-guide"
+									type="button"
+									class="header__menu-item"
+									target="_blank"
+								>
+									<span class="header__menu-inner">
+										<span class="header__menu-number">04</span>
+										<span class="header__menu-caption">Docs</span>
+									</span>
+								</a>
+
+								<button
+									type="button"
+									class="header__menu-item scroll-to"
+									aria-label="Scroll to section"
+									data-scroll-to="faq"
+								>
+									<span class="header__menu-inner">
+										<span class="header__menu-number">05</span>
+										<span class="header__menu-caption">FAQ</span>
+									</span>
+								</button>
+							</div>
+
+							<div class="header__menu-bottom">
+								<div class="header__social">
+									<a
+										href="https://x.com/SigmaTradingBot"
+										class="header__social-item"
+										target="_blank"
+									>
+										<svg
+											class="header__social-icon"
+											width="19"
+											height="18"
+											viewBox="0 0 19 18"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M15.0787 0H17.8378L11.7798 7.63838L18.8574 18H13.3033L8.95472 11.7033L3.97638 18H1.2173L7.63516 9.83026L0.857422 0H6.54952L10.4782 5.75203L15.0787 0ZM14.113 16.2066H15.6425L5.74579 1.72694H4.10234L14.113 16.2066Z"
+												fill="#4C4F57"
+											/>
+										</svg>
+									</a>
+
+									<a
+										href="https://t.me/SigmaBotPortal"
+										class="header__social-item"
+										target="_blank"
+									>
+										<svg
+											class="header__social-icon"
+											width="18"
+											height="18"
+											viewBox="0 0 18 18"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M1.4723 8.9042L5.09504 10.1346L13.6959 4.87644C13.8205 4.80019 13.9483 4.96952 13.8407 5.06849L7.32928 11.062L7.08714 14.4174C7.0687 14.6727 7.37618 14.8148 7.55866 14.6354L9.56353 12.6639L13.2286 15.4384C13.6237 15.7375 14.1957 15.5267 14.3023 15.0428L16.8543 3.45529C16.9999 2.79426 16.3521 2.23646 15.72 2.47854L1.45387 7.94142C1.00634 8.11281 1.01853 8.75011 1.4723 8.9042Z"
+												fill="#4C4F57"
+											/>
+										</svg>
+									</a>
+								</div>
+
+								<a
+									href="https://app.sigma.win/"
+									class="header__menu-link _dark"
+									target="_blank"
+									>Web App</a
+								>
+								<a
+									href="https://t.me/Sigma_buyBot"
+									class="header__menu-link"
+									target="_blank"
+									>Telegram Bot</a
+								>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="header__container-inner _hidden-mobile">
+					<div class="header__btns">
+						<a
+							href="https://t.me/SigmaBotPortal"
+							class="header__btns-item"
+							target="_blank"
+						>
+							<img
+								src="img/icons/telegram.svg"
+								alt="Telegram"
+								class="header__btns-icon"
+							/>
+							<span>Support</span>
+						</a>
+
+						<a
+							href="https://docs.sigma.win/getting-started/setup-guide"
+							class="header__btns-item"
+							target="_blank"
+						>
+							<img src="img/icons/docs.svg" alt="Docs" class="header__btns-icon" />
+							<span>Docs</span>
+						</a>
+
+						<a
+							href="https://x.com/SigmaTradingBot"
+							class="header__btns-item"
+							target="_blank"
+						>
+							<img src="img/icons/x.svg" alt="X" class="header__social-icon" />
+							<span>Twitter</span>
+						</a>
+
+						<a
+							href="https://app.sigma.win/"
+							class="header__btns-item header__app"
+							target="_blank"
+						>
+							<svg
+								class="header__app-icon"
+								width="11"
+								height="13"
+								viewBox="0 0 11 13"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M10 5.17831C10.8889 5.69151 10.8889 6.97451 10 7.48771L2 12.1065C1.11111 12.6197 -5.96451e-07 11.9782 -5.51585e-07 10.9518L-1.47797e-07 1.7142C-1.02931e-07 0.687804 1.11111 0.0463045 2 0.559505L10 5.17831Z"
+									fill="#ECA53A"
+								/>
+							</svg>
+
+							<span>Webapp</span>
+						</a>
+					</div>
+
+					<a href="https://t.me/Sigma_buyBot" class="header__btn btn" target="_blank">
+						<span class="btn__inner header__btn-inner">
+							<img src="img/icons/telegram.svg" alt="Telegram" class="header__btn-icon" />
+							<span>Start Trading</span>
+						</span>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<div id="smooth-wrapper">
+			<div id="smooth-content">
+				<div class="overflow-hidden">
+					<div class="hero" id="hero">
+						<div class="section-inner">
+							<div class="hero__wrapper">
+								<section class="hero__content">
+									<img src="img/hero/logo.svg" alt="Logo" class="hero__logo" />
+
+									<h1 class="hero__title">The Ultimate Trading Companion</h1>
+
+									<div class="hero__btns">
+										<a href="https://t.me/Sigma_buyBot" class="hero__btn" target="_blank">
+											<span class="hero__btn-bg"></span>
+
+											<span class="hero__btn-inner">
+												<span class="hero__btn-container">
+													<img
+														src="img/icons/telegram.svg"
+														alt="Telegram"
+														class="hero__btn-icon"
+													/>
+													<span class="hero__btn-caption">Trade on Telegram</span>
+												</span>
+												<span class="hero__btn-info">
+													Fast. Convenient. Tap to get started
+												</span>
+											</span>
+										</a>
+
+										<a
+											href="https://docs.sigma.win/getting-started/setup-guide"
+											class="hero__btn"
+											target="_blank"
+										>
+											<span class="hero__btn-bg"></span>
+
+											<span class="hero__btn-inner">
+												<span class="hero__btn-container">
+													<img
+														src="img/icons/docs.svg"
+														alt="Docs"
+														class="hero__btn-icon"
+													/>
+													<span class="hero__btn-caption">Tutorials</span>
+												</span>
+												<span class="hero__btn-info">Become a pro in 5 minutes</span>
+											</span>
+										</a>
+
+										<a href="https://app.sigma.win/" class="hero__btn" target="_blank">
+											<span class="hero__btn-bg"></span>
+
+											<span class="hero__btn-inner">
+												<span class="hero__btn-container">
+													<img
+														src="img/icons/play.svg"
+														alt="Play"
+														class="hero__btn-icon"
+													/>
+													<span class="hero__btn-caption">Trade on Web App</span>
+												</span>
+												<span class="hero__btn-info"
+													>Now live: our sleek new terminal</span
+												>
+											</span>
+										</a>
+									</div>
+								</section>
+							</div>
+
+							<div class="stats">
+								<div class="stats__container">
+									<div class="stats__container-inner">
+										<div class="stats__item fade-left">
+											<div class="stats__item-top">
+												<div class="stats__item-wrap">
+													<img
+														src="img/icons/trading.svg"
+														alt="Icon"
+														class="stats__item-icon"
+													/>
+												</div>
+												<p class="stats__item-text">
+													Trading volumes executed through Sigma
+												</p>
+											</div>
+											<p class="stats__item-data">
+												$<span class="number" data-num="4">0</span>B+
+											</p>
+										</div>
+
+										<div class="stats__item fade-left">
+											<div class="stats__item-top">
+												<div class="stats__item-wrap">
+													<img
+														src="img/icons/rocket.svg"
+														alt="Icon"
+														class="stats__item-icon"
+													/>
+												</div>
+												<p class="stats__item-text">Supported chains</p>
+											</div>
+											<p class="stats__item-data">
+												<span class="number" data-num="6">0</span>
+											</p>
+										</div>
+
+										<div class="stats__item fade-right">
+											<div class="stats__item-top">
+												<div class="stats__item-wrap">
+													<img
+														src="img/icons/users.svg"
+														alt="Icon"
+														class="stats__item-icon"
+													/>
+												</div>
+												<p class="stats__item-text">Users trust Sigma</p>
+											</div>
+											<p class="stats__item-data">
+												<span class="number" data-num="200">0</span>,000+
+											</p>
+										</div>
+
+										<div class="stats__item fade-right">
+											<div class="stats__item-top">
+												<div class="stats__item-wrap">
+													<img
+														src="img/icons/winner.svg"
+														alt="Icon"
+														class="stats__item-icon"
+													/>
+												</div>
+												<p class="stats__item-text">Faster Than Manual Wallet Swaps</p>
+											</div>
+											<p class="stats__item-data">
+												<span class="number" data-num="12">0</span>x
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<section class="advantages">
+						<div class="container">
+							<h2 class="advantages__title title _grad">The Ultimate Trading Edge</h2>
+							<p class="advantages__subtitle">
+								Why DeFi traders at Every Level Make Sigma Their Platform of Choice
+							</p>
+
+							<div class="advantages__container">
+								<div class="advantages__container-inner"></div>
+
+								<div class="advantages__col">
+									<div
+										class="advantages__item advantages__item-1 _large"
+										data-da=".advantages__container, 960, 0"
+									>
+										<span class="advantages__corner advantages__corner-1"></span>
+										<span class="advantages__corner advantages__corner-2"></span>
+										<span class="advantages__corner advantages__corner-3"></span>
+										<span class="advantages__corner advantages__corner-4"></span>
+
+										<div class="advantages__item-inner">
+											<video
+												src="img/advantages/1.mp4"
+												class="advantages__video advantages__video-1"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+
+											<div class="advantages__item-wrapper">
+												<h3 class="advantages__item-heading">MeV Protection</h3>
+
+												<p class="advantages__item-text">
+													Safeguard your trades with Sigma’s Advanced order routing,
+													ensuring robust MeV protection and preventing failed
+													transactions
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div
+										class="advantages__item advantages__item-2"
+										data-da=".advantages__container, 960, 2"
+									>
+										<span class="advantages__corner advantages__corner-1"></span>
+										<span class="advantages__corner advantages__corner-2"></span>
+										<span class="advantages__corner advantages__corner-3"></span>
+										<span class="advantages__corner advantages__corner-4"></span>
+
+										<div class="advantages__item-inner">
+											<video
+												src="img/advantages/3.mp4"
+												class="advantages__video advantages__video-3 _centered"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+
+											<div class="advantages__item-wrapper">
+												<h3 class="advantages__item-heading">Up-to 10 Wallets</h3>
+
+												<p class="advantages__item-text">
+													Enjoy flexibility in managing your crypto holdings with support
+													for up to 10 wallets, streamlining your portfolio management.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="advantages__col">
+									<div
+										class="advantages__item advantages__item-3 _large"
+										data-da=".advantages__container, 960, 3"
+									>
+										<span class="advantages__corner advantages__corner-1"></span>
+										<span class="advantages__corner advantages__corner-2"></span>
+										<span class="advantages__corner advantages__corner-3"></span>
+
+										<div class="advantages__item-inner">
+											<video
+												src="img/advantages/4.mp4"
+												class="advantages__video advantages__video-4 _centered"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+
+											<div class="advantages__item-wrapper">
+												<h3 class="advantages__item-heading">
+													Earn with Referral Program
+												</h3>
+
+												<p class="advantages__item-text">
+													Boost your earnings by participating in Sigma's Referral
+													Program. Refer others to earn commissions on their trades,
+													turning connections into valuable opportunities.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div
+										class="advantages__item advantages__item-4"
+										data-da=".advantages__container, 960, 2"
+									>
+										<span class="advantages__corner advantages__corner-2"></span>
+										<span class="advantages__corner advantages__corner-3"></span>
+										<span class="advantages__corner advantages__corner-4"></span>
+
+										<div class="advantages__item-inner">
+											<video
+												src="img/advantages/2.mp4"
+												class="advantages__video advantages__video-2 _centered"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+
+											<div class="advantages__item-wrapper">
+												<h3 class="advantages__item-heading">Multiple Chain Support</h3>
+
+												<p class="advantages__item-text">
+													Trade seamlessly on Ethereum, Base, Avalanche, BNB, UniChain &
+													BeraChain, with built-in bridging and automatic chain selecrion.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="advantages__col">
+									<div
+										class="advantages__item advantages__item-5"
+										data-da=".advantages__container, 960, 5"
+									>
+										<span class="advantages__corner advantages__corner-1"></span>
+										<span class="advantages__corner advantages__corner-3"></span>
+
+										<div class="advantages__item-inner">
+											<video
+												src="img/advantages/6.mp4"
+												class="advantages__video advantages__video-6 _centered"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+
+											<div class="advantages__item-wrapper">
+												<h3 class="advantages__item-heading">Web App Integration</h3>
+
+												<p class="advantages__item-text">
+													Access all the power of our Telegram bot through a sleek and
+													intuitive web interface. Monitor trades, manage wallets, and
+													adjust settings with ease.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div
+										class="advantages__item advantages__item-6"
+										data-da=".advantages__container, 960, 4"
+									>
+										<span class="advantages__corner advantages__corner-2"></span>
+										<span class="advantages__corner advantages__corner-4"></span>
+
+										<div class="advantages__item-inner">
+											<video
+												src="img/advantages/5.mp4"
+												class="advantages__video advantages__video-5"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+
+											<div class="advantages__item-wrapper">
+												<h3 class="advantages__item-heading">Streamlined Telegram UI</h3>
+
+												<p class="advantages__item-text">
+													Take charge of your trades effortlessly through Telegram
+													integration, offering a straightforward interface for monitoring
+													and executing transactions.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<span class="advantages__corner advantages__corner-1"></span>
+									<span class="advantages__corner advantages__corner-2"></span>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="about">
+						<div class="about__container">
+							<div class="about__container-inner">
+								<h2 class="about__title title fade-up">
+									Trade Faster with Our Frictionless Interface
+								</h2>
+								<p class="about__subtitle fade-up">
+									The Telegram bot that scales with you, from learning mode to
+									lightning-fast sniper orders.
+								</p>
+
+								<div class="about__btns">
+									<a
+										href="https://t.me/Sigma_buyBot"
+										class="about__btn btn"
+										target="_blank"
+									>
+										<span class="btn__inner">Trade Now</span>
+									</a>
+									<a
+										href="https://docs.sigma.win/getting-started/setup-guide"
+										class="about__btn btn btn-secondary"
+										target="_blank"
+									>
+										<span class="btn__inner">Tutorials</span>
+									</a>
+								</div>
+							</div>
+
+							<video
+								src="img/about/video.mp4"
+								class="about__video"
+								muted
+								autoplay
+								webkit-playsinline
+								playsinline
+								loop
+								preload="none"
+							></video>
+
+							<video
+								src="img/about/video-mobile.mp4"
+								class="about__video-mobile"
+								muted
+								autoplay
+								webkit-playsinline
+								playsinline
+								loop
+								preload="none"
+							></video>
+						</div>
+
+						<div class="about__items">
+							<div class="about__item">
+								<div class="about__item-inner">
+									<div class="about__item-wrapper">
+										<img src="img/icons/puzzle.svg" alt="Icon" class="about__item-icon" />
+									</div>
+
+									<h3 class="about__item-heading">Strategy customization options</h3>
+								</div>
+
+								<div class="about__item-number">
+									<span class="number" data-num="50">0</span>+
+								</div>
+							</div>
+
+							<div class="about__item">
+								<div class="about__item-inner">
+									<div class="about__item-wrapper">
+										<img
+											src="img/icons/cryptocurrency.svg"
+											alt="Icon"
+											class="about__item-icon"
+										/>
+									</div>
+
+									<h3 class="about__item-heading">Simultaneous positions management</h3>
+								</div>
+
+								<div class="about__item-number">
+									<span class="number" data-num="100">0</span>+
+								</div>
+							</div>
+
+							<div class="about__item">
+								<div class="about__item-inner">
+									<div class="about__item-wrapper">
+										<img
+											src="img/icons/rocket-gray.svg"
+											alt="Icon"
+											class="about__item-icon"
+										/>
+									</div>
+
+									<h3 class="about__item-heading">
+										Features: copy trading, bridging, analytics & more
+									</h3>
+								</div>
+
+								<div class="about__item-number">
+									<span class="number" data-num="20">0</span>+
+								</div>
+							</div>
+
+							<div class="about__item">
+								<div class="about__item-inner">
+									<div class="about__item-wrapper">
+										<img src="img/icons/scales.svg" alt="Icon" class="about__item-icon" />
+									</div>
+
+									<h3 class="about__item-heading">Failed transactions</h3>
+								</div>
+
+								<div class="about__item-number">
+									<span class="number" data-num="0">3</span>%
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="tokens">
+						<div class="container">
+							<h2 class="tokens__title title fade-up">
+								Trading and sniping <br />
+								tokens on the <span class="grad">Ethereum</span>, <br />
+								<span class="grad">Avalanche</span>,
+								<span class="grad">Binance Smart</span> <br />
+								<span class="grad">Chain</span>, <span class="grad">Base Chain</span>,
+								<span class="grad">Unichain</span> <br />
+								and <span class="grad">Berachain</span> networks
+							</h2>
+
+							<div class="tokens__items tokens__items-1">
+								<svg
+									class="tokens__items-path"
+									width="362"
+									height="725"
+									viewBox="0 0 362 725"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1 1L361 296.5V436L1 724"
+										stroke="white"
+										stroke-opacity="0"
+										id="motionPathLeft"
+									/>
+								</svg>
+
+								<img src="img/tokens/1.png" alt="Token" class="tokens__item" />
+								<img src="img/tokens/2.png" alt="Token" class="tokens__item" />
+								<img src="img/tokens/3.png" alt="Token" class="tokens__item" />
+								<img src="img/tokens/4.png" alt="Token" class="tokens__item" />
+								<img src="img/tokens/5.png" alt="Token" class="tokens__item" />
+								<img src="img/tokens/6.png" alt="Token" class="tokens__item" />
+								<img src="img/tokens/1.png" alt="Token" class="tokens__item" />
+								<img src="img/tokens/2.png" alt="Token" class="tokens__item" />
+								<img src="img/tokens/3.png" alt="Token" class="tokens__item" />
+							</div>
+
+							<div class="tokens__items tokens__items-2">
+								<svg
+									class="tokens__items-path"
+									width="362"
+									height="725"
+									viewBox="0 0 362 725"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M361 1L1 296.5V436L361 724"
+										stroke="white"
+										stroke-opacity="0"
+										id="motionPathRight"
+									/>
+								</svg>
+
+								<img src="img/tokens/3.png" alt="Token" class="tokens__item" />
+								<img src="img/tokens/4.png" alt="Token" class="tokens__item" />
+								<img src="img/tokens/5.png" alt="Token" class="tokens__item" />
+								<img src="img/tokens/6.png" alt="Token" class="tokens__item" />
+								<img src="img/tokens/1.png" alt="Token" class="tokens__item" />
+								<img src="img/tokens/2.png" alt="Token" class="tokens__item" />
+								<img src="img/tokens/3.png" alt="Token" class="tokens__item" />
+								<img src="img/tokens/4.png" alt="Token" class="tokens__item" />
+								<img src="img/tokens/5.png" alt="Token" class="tokens__item" />
+							</div>
+						</div>
+					</section>
+
+					<section class="features" id="features">
+						<div class="section-inner">
+							<div class="features__container">
+								<div class="features__row">
+									<div class="features__head">
+										<h2 class="features__title title _grad fade-up">
+											Sigma <br />
+											Features
+										</h2>
+
+										<p class="features__text fade-up">
+											Discover Sigma's feature-rich platform, designed for a seamless and
+											secure crypto trading experience.
+										</p>
+									</div>
+
+									<div class="features__item">
+										<div class="features__item-inner">
+											<video
+												src="img/features/Multiple-Wallets.mp4"
+												class="features__item-animation features__item-animation-3"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+
+											<p class="features__item-caption fade-up">Available Now</p>
+											<h3 class="features__item-heading fade-up">Multiple Wallets</h3>
+										</div>
+									</div>
+
+									<div class="features__item">
+										<div class="features__item-inner">
+											<video
+												src="img/features/AVAX-BSC-Arbitrum.mp4"
+												class="features__item-animation"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+
+											<p class="features__item-caption fade-up">Available Now</p>
+											<h3 class="features__item-heading fade-up">
+												AVAX, BSC, Arbitrum, Base, Blast
+											</h3>
+										</div>
+									</div>
+
+									<div class="features__item">
+										<div class="features__item-inner">
+											<video
+												src="img/features/Copy-Trading.mp4"
+												class="features__item-animation"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+
+											<p class="features__item-caption fade-up">Available Now</p>
+											<h3 class="features__item-heading fade-up">Copy Trading</h3>
+										</div>
+									</div>
+								</div>
+
+								<div class="features__row">
+									<div class="features__item">
+										<div class="features__item-inner">
+											<video
+												src="img/features/Smart-Transfers.mp4"
+												class="features__item-animation"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+
+											<p class="features__item-caption fade-up">Available Now</p>
+											<h3 class="features__item-heading fade-up">Smart Transfers</h3>
+										</div>
+									</div>
+
+									<div class="features__item">
+										<div class="features__item-inner">
+											<video
+												src="img/features/Bridge.mp4"
+												class="features__item-animation"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+											<p class="features__item-caption fade-up">Available Now</p>
+											<h3 class="features__item-heading fade-up">Bridge</h3>
+										</div>
+									</div>
+
+									<div class="features__item">
+										<div class="features__item-inner">
+											<video
+												src="img/features/Rewards-Points.mp4"
+												class="features__item-animation"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+
+											<p class="features__item-caption fade-up">Available Now</p>
+											<h3 class="features__item-heading fade-up">Rewards Points</h3>
+										</div>
+									</div>
+
+									<div class="features__item">
+										<div class="features__item-inner">
+											<video
+												src="img/features/Auto-Buy.mp4"
+												class="features__item-animation"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+											<p class="features__item-caption fade-up">Available Now</p>
+											<h3 class="features__item-heading fade-up">Auto Buy</h3>
+										</div>
+									</div>
+								</div>
+
+								<div class="features__row">
+									<div class="features__item">
+										<div class="features__item-inner">
+											<video
+												src="img/features/Telegram-Scaraper.mp4"
+												class="features__item-animation"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+
+											<p class="features__item-caption fade-up _coming-soon">
+												Coming Soon
+											</p>
+											<h3 class="features__item-heading fade-up">Telegram Scraper</h3>
+										</div>
+									</div>
+
+									<div class="features__item">
+										<div class="features__item-inner">
+											<video
+												src="img/features/Solana-Support.mp4"
+												class="features__item-animation"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+
+											<p class="features__item-caption fade-up _coming-soon">
+												Coming Soon
+											</p>
+											<h3 class="features__item-heading fade-up">Solana Support</h3>
+										</div>
+									</div>
+
+									<div class="features__item">
+										<div class="features__item-inner">
+											<video
+												src="img/features/Web-APP.mp4"
+												class="features__item-animation features__item-animation-8"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+
+											<p class="features__item-caption fade-up">Available Now</p>
+											<h3 class="features__item-heading fade-up">Web APP</h3>
+										</div>
+									</div>
+
+									<div class="features__item">
+										<div class="features__item-inner">
+											<video
+												src="img/features/Backup-Bots.mp4"
+												class="features__item-animation"
+												muted
+												autoplay
+												webkit-playsinline
+												playsinline
+												loop
+												preload="none"
+											></video>
+
+											<p class="features__item-caption fade-up">Available Now</p>
+											<h3 class="features__item-heading fade-up">Backup Bots</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="faq" id="faq">
+						<div class="container">
+							<div class="faq__top">
+								<h2 class="faq__title title _grad fade-up">
+									Find answers to your questions here
+								</h2>
+
+								<p class="faq__text fade-up">
+									This is the place where you can find the most common questions quickly
+									answered, if for some reason your question is not here, feel free to <a
+										href="https://t.me/SigmaBotPortal"
+										class="_underline"
+										target="_blank"
+										>contact us</a
+									>
+								</p>
+							</div>
+
+							<div class="faq__container">
+								<div class="faq__dropdown fade-up">
+									<div class="faq__dropdown-heading">
+										I have sent some ETH to my Sigma wallet, but I can’t see it on my
+										balance!
+									</div>
+									<div class="faq__dropdown-content">
+										Please do the /chains command in the bot and make sure you are on the
+										correct chain. If you still can't see your balance after that, make
+										sure the transactions were sent on the blockchain.
+									</div>
+								</div>
+
+								<div class="faq__dropdown fade-up">
+									<div class="faq__dropdown-heading">
+										How can i see my existing tokens (that were not bought with Sigma) in
+										the bot?
+									</div>
+									<div class="faq__dropdown-content">
+										Please do the /chains command in the bot and make sure you are on the
+										correct chain. If you still can't see your balance after that, make
+										sure the transactions were sent on the blockchain.
+									</div>
+								</div>
+
+								<div class="faq__dropdown fade-up">
+									<div class="faq__dropdown-heading">What does Alpha mode mean?</div>
+									<div class="faq__dropdown-content">
+										Please do the /chains command in the bot and make sure you are on the
+										correct chain. If you still can't see your balance after that, make
+										sure the transactions were sent on the blockchain.
+									</div>
+								</div>
+
+								<div class="faq__dropdown fade-up">
+									<div class="faq__dropdown-heading">What does FoF mean?</div>
+									<div class="faq__dropdown-content">
+										Please do the /chains command in the bot and make sure you are on the
+										correct chain. If you still can't see your balance after that, make
+										sure the transactions were sent on the blockchain.
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="join">
+						<div class="container">
+							<div class="join__container">
+								<h2 class="join__title title _grad fade-up">
+									Join the trading community
+								</h2>
+
+								<p class="join__text fade-up">
+									Join the official Sigma telegram group to ask any questions you might
+									have before starting trading!
+								</p>
+
+								<a
+									href="https://t.me/SigmaBotPortal"
+									class="join__btn btn"
+									target="_blank"
+								>
+									<span class="btn__inner">Join the Telegram Group</span>
+								</a>
+							</div>
+						</div>
+
+						<video
+							src="img/join/video.mp4"
+							class="join__animation"
+							muted
+							autoplay
+							webkit-playsinline
+							playsinline
+							loop
+							preload="none"
+						></video>
+					</section>
+
+					<footer class="footer">
+						<div class="container">
+							<div class="footer__container">
+								<div class="footer__container-wrapper">
+									<p class="footer__title">Trade now</p>
+
+									<a
+										href="https://t.me/Sigma_buyBot"
+										class="footer__btn btn btn-grad-text"
+										target="_blank"
+									>
+										<span class="btn__inner">Try the Telegram Bot</span>
+									</a>
+								</div>
+
+								<div class="footer__container-inner">
+									<div class="footer__col">
+										<h3 class="footer__heading">Menu</h3>
+
+										<nav class="footer__menu">
+											<button
+												type="button"
+												class="footer__menu-item scroll-to"
+												aria-label="Scroll to top of page"
+												data-scroll-to="hero"
+											>
+												Home
+											</button>
+											<a
+												href="https://docs.sigma.win/getting-started/setup-guide"
+												class="footer__menu-item"
+												target="_blank"
+												>Docs</a
+											>
+											<a
+												href="https://t.me/Sigma_buyBot"
+												class="footer__menu-item"
+												target="_blank"
+												>Telegram Bot</a
+											>
+											<a
+												href="https://t.me/SigmaBotPortal"
+												class="footer__menu-item"
+												target="_blank"
+												>Telegram Community</a
+											>
+										</nav>
+									</div>
+
+									<div class="footer__col">
+										<h3 class="footer__heading">Contact</h3>
+
+										<div class="footer__col-inner">
+											<div class="footer__social">
+												<a
+													href="https://x.com/SigmaTradingBot"
+													class="footer__social-item"
+													target="_blank"
+												>
+													<svg
+														class="footer__social-icon"
+														width="24"
+														height="25"
+														viewBox="0 0 24 25"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M18.968 0.859375H22.648L14.568 10.9573L24.008 24.6553H16.6L10.8 16.3311L4.16 24.6553H0.48L9.04 13.8549L0 0.859375H7.592L12.832 8.46353L18.968 0.859375ZM17.68 22.2845H19.72L6.52 3.14238H4.328L17.68 22.2845Z"
+															fill="#4C4F57"
+														/>
+													</svg>
+												</a>
+
+												<a
+													href="https://t.me/SigmaBotPortal"
+													class="footer__social-item"
+													target="_blank"
+												>
+													<svg
+														class="footer__social-icon"
+														width="24"
+														height="25"
+														viewBox="0 0 24 25"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															d="M1.96307 12.2069L6.79339 13.8474L18.2611 6.83655C18.4274 6.73488 18.5977 6.96066 18.4543 7.09263L9.77238 15.0839L9.44952 19.5578C9.42493 19.8982 9.83491 20.0877 10.0782 19.8484L12.7514 17.2198L17.6381 20.9191C18.1649 21.3179 18.9276 21.0369 19.0697 20.3917L22.4724 4.94169C22.6665 4.06031 21.8029 3.31658 20.96 3.63935L1.93849 10.9232C1.34179 11.1517 1.35804 12.0015 1.96307 12.2069Z"
+															fill="#4C4F57"
+														/>
+													</svg>
+												</a>
+											</div>
+
+											<a
+												href="mailto:business@sigma.win"
+												class="footer__email"
+												target="_blank"
+											>
+												business@sigma.win
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer__bottom container">
+							<span class="footer__copyrights">@2025 Sigma All rights reserved.</span>
+
+							<div class="footer__bottom-inner">
+								<div class="footer__bottom-col">
+									<a href="privacy-policy.html" class="footer__bottom-link"
+										>Privacy policy</a
+									>
+								</div>
+
+								<div class="footer__bottom-col">
+									<a href="terms-conditions.html" class="footer__bottom-link">
+										Terms & Conditions</a
+									>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

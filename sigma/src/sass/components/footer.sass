@@ -1,0 +1,176 @@
+.footer
+	&__container
+		display: flex
+		justify-content: space-between
+		&-wrapper
+			padding-top: 50rem
+		&-inner
+			display: flex
+	&__col
+		position: relative
+		width: 450rem
+		padding: 50rem 32rem
+		&::before
+			content: ''
+			height: 100%
+			width: 1rem
+			position: absolute
+			left: 0
+			bottom: 0
+			background: linear-gradient(92.36deg, rgba(101, 101, 101, 0) -5.24%, rgba(101, 101, 101, 0.6) 99.24%, rgba(101, 101, 101, 0) 101.96%)
+	&__title
+		margin-bottom: 32rem
+		font-size: 32rem
+	&__btn
+		display: inline-flex
+	&__heading
+		font-size: 26rem
+		margin-bottom: 74rem
+	&__menu
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		gap: 24rem
+		&-item
+			font-size: 21rem
+			color: #666666
+			transition: .3s
+			&:hover
+				color: #fff
+	&__social
+		display: flex
+		gap: 16rem
+		&-item
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 64rem
+			height: 64rem
+			border-radius: 50%
+			background: linear-gradient(104.2deg, rgba(25, 29, 40, 0.18) -43.53%, rgba(25, 29, 40, 0.24) 137.98%)
+			box-shadow: inset 0px -5.33333px 9.33333px rgba(49, 49, 49, 0.32), inset 0px 5.33333px 9.33333px rgba(22, 22, 22, 0.32)
+			border: 1rem solid rgba(53, 57, 92, 0.3)
+			position: relative
+			overflow: hidden
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				background: linear-gradient(104.2deg, rgba(135, 144, 169, 0.18) -43.53%, rgba(157, 172, 213, 0.24) 137.98%)
+				opacity: 0
+				transition: .3s
+			svg
+				width: 24rem
+				height: 24rem
+				path
+					transition: .3s
+			&:hover
+				path
+					fill: #4C4F57
+				&::before
+					opacity: 1
+			&:active
+				background: linear-gradient(104.2deg, rgba(19, 68, 205, 0.18) -43.53%, rgba(0, 66, 246, 0.24) 137.98%)
+				path
+					fill: rgba(255, 255, 255, 0.5)
+					transition: none
+				&::before
+					display: none
+	&__email
+		margin-top: 42rem
+		font-size: 21rem
+		display: inline-block
+	&__bottom
+		padding-top: 32rem
+		padding-bottom: 32rem
+		border-top: 1rem solid #2A2A2A
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&-inner
+			display: flex
+		&-col
+			position: relative
+			width: 450rem
+			padding: 0 32rem
+		&-link
+			font-size: 18rem
+			color: #666666
+			transition: .3s
+			&:hover
+				color: #fff
+	&__copyrights
+		color: #3B3B3B
+		font-size: 21rem
+
+@media only screen and (max-width: 960px)
+	.footer
+		padding-top: 40rem
+		&__container
+			flex-direction: column
+			position: relative
+			margin-bottom: 32rem
+			&-wrapper
+				padding-top: 0
+				position: absolute
+				right: 0
+				top: 0
+				display: flex
+				flex-direction: column
+				align-items: flex-end
+			&-inner
+				flex-direction: column
+				gap: 56rem
+		&__col
+			width: 100%
+			padding: 0
+			&::before
+				display: none
+			&-inner
+				display: flex
+				align-items: center
+				justify-content: space-between
+		&__title
+			margin-bottom: 24rem
+			font-size: 20rem
+		&__heading
+			font-size: 20rem
+			margin-bottom: 24rem
+		&__menu
+			gap: 16rem
+			&-item
+				font-size: 16rem
+				&:hover
+					color: #666666
+		&__social
+			gap: 12rem
+			&-item
+				width: 48rem
+				height: 48rem
+				svg
+					width: 18rem
+					height: 18rem
+		&__email
+			margin-top: 0
+			font-size: 16rem
+		&__bottom
+			padding-top: 16rem
+			padding-bottom: 16rem
+			flex-direction: column
+			align-items: stretch
+			&-inner
+				gap: 16rem
+				order: -1
+			&-col
+				width: auto
+				padding: 0
+			&-link
+				font-size: 14rem
+				&:hover
+					color: #666666
+		&__copyrights
+			font-size: 14rem
+			margin-top: 15rem
