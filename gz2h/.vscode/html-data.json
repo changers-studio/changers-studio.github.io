@@ -1,0 +1,34 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "svg",
+      "description": "Scalable Vector Graphics root element.",
+      "attributes": [
+        { "name": "width", "description": "CSS-compatible width." },
+        { "name": "height", "description": "CSS-compatible height." },
+        { "name": "viewBox", "description": "ViewBox in the form min-x min-y width height." },
+        { "name": "fill", "description": "Default fill color." },
+        { "name": "stroke", "description": "Default stroke color." },
+        { "name": "stroke-width", "description": "Default stroke width." },
+        { "name": "role", "description": "ARIA role such as img or presentation." },
+        { "name": "aria-hidden", "description": "Whether the graphic is hidden from assistive tech." },
+        { "name": "focusable", "description": "Controls keyboard focus in SVG." },
+        { "name": "xmlns", "description": "SVG namespace URI." },
+        { "name": "xmlns:xlink", "description": "XLink namespace URI." }
+      ]
+    },
+    {
+      "name": "use",
+      "description": "Reuses an existing element from a <symbol> or <svg> sprite.",
+      "attributes": [
+        { "name": "href", "description": "Reference to the target id (preferred attribute)." },
+        { "name": "xlink:href", "description": "Legacy reference attribute." },
+        { "name": "width", "description": "Render width of the reused element." },
+        { "name": "height", "description": "Render height of the reused element." },
+        { "name": "x", "description": "Horizontal position within the parent SVG." },
+        { "name": "y", "description": "Vertical position within the parent SVG." }
+      ]
+    }
+  ]
+}

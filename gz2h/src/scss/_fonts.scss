@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: BasisGrotesquePro;
+	src: url(../fonts/BasisGrotesquePro-Regular.eot);
+	src:
+		url(../fonts/BasisGrotesquePro-Regular.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/BasisGrotesquePro-Regular.woff) format('woff'),
+		url(../fonts/BasisGrotesquePro-Regular.woff2) format('woff2'),
+		url(../fonts/BasisGrotesquePro-Regular.ttf) format('truetype');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: MabryPro;
+	src: url(../fonts/MabryProBold.eot);
+	src:
+		url(../fonts/MabryProBold.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/MabryProBold.woff) format('woff'),
+		url(../fonts/MabryProBold.woff2) format('woff2'),
+		url(../fonts/MabryProBold.ttf) format('truetype');
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: MabryPro;
+	src: url(../fonts/MabryProMedium.eot);
+	src:
+		url(../fonts/MabryProMedium.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/MabryProMedium.woff) format('woff'),
+		url(../fonts/MabryProMedium.woff2) format('woff2'),
+		url(../fonts/MabryProMedium.ttf) format('truetype');
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: MabryPro;
+	src: url(../fonts/MabryPro.eot);
+	src:
+		url(../fonts/MabryPro.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/MabryPro.woff) format('woff'),
+		url(../fonts/MabryPro.woff2) format('woff2'),
+		url(../fonts/MabryPro.ttf) format('truetype');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}

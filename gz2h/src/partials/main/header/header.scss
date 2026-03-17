@@ -1,0 +1,42 @@
+@use '../../../scss/vars' as *;
+@use '../../../scss/fonts';
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20rem 0;
+
+	&__container {
+		width: 1650rem;
+		height: 95rem;
+		background-color: $white;
+		box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+		border-radius: 45rem;
+		position: relative;
+		padding: 20rem 24rem 20rem 40rem;
+		min-height: 94rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		display: flex;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+
+		&-img {
+			width: 325rem;
+		}
+	}
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 30rem;
+	}
+}

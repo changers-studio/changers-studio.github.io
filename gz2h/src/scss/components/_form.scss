@@ -1,0 +1,29 @@
+@use '../vars' as *;
+@use '../fonts';
+
+.input {
+	font-size: 18rem;
+	color: $black;
+	padding: 13rem 24rem;
+	background-color: $cream;
+	border: 2rem solid $input-border;
+	box-shadow: $input-shadow;
+	border-radius: 26rem;
+	transition: 0.3s;
+
+	&:focus {
+		border-color: $input-active-border;
+		box-shadow: $input-active-shadow;
+	}
+
+	&::placeholder {
+		color: $input-placeholder;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.input {
+		font-size: 17rem;
+		border-radius: 24rem;
+	}
+}

@@ -1,0 +1,204 @@
+@use '../vars' as *;
+@use '../fonts';
+
+@keyframes btn-arrow-right {
+	0% {
+		transform: translateX(0%);
+	}
+
+	100% {
+		transform: translateX(calc(100% + 40rem));
+	}
+}
+
+@keyframes btn-arrow-right_reverse {
+	0% {
+		transform: translateX(calc(100% + 40rem));
+	}
+
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes btn-arrow-left {
+	0% {
+		transform: translateX(0%);
+	}
+
+	100% {
+		transform: translateX(calc(5% + 44rem));
+	}
+}
+
+@keyframes btn-arrow-left_reverse {
+	0% {
+		transform: translateX(calc(5% + 44rem));
+	}
+
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes btn-text-offset {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(28rem);
+	}
+}
+
+@keyframes btn-text-offset_reverse {
+	0% {
+		transform: translateX(28rem);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	text-decoration: none;
+	outline: none;
+	overflow: hidden;
+	cursor: pointer;
+	font-family: $default-font;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1.2;
+	font-size: 15rem;
+	height: 52rem;
+	background-color: $red;
+	border: 1rem solid $maroon;
+	box-shadow: 4rem 4rem 0rem $maroon;
+	border-radius: 26rem;
+	color: $white;
+	transition: 0.3s;
+
+	&__inner {
+		width: 100%;
+		height: 100%;
+		padding: 0 30rem;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		&-text {
+			position: relative;
+			display: inline-block;
+			span {
+				display: inline-block;
+				transform: translateY(0%) rotate(0.001deg);
+				transition:
+					transform 0.4s cubic-bezier(0.35, 1.5, 0.6, 1),
+					-webkit-transform 0.4s cubic-bezier(0.35, 1.5, 0.6, 1);
+
+				&::after {
+					content: attr(data-text);
+					position: absolute;
+					left: 0;
+					top: 0;
+					transform: translateY(200%) rotate(0.001deg);
+					transition: transform 0.3s ease;
+				}
+			}
+		}
+	}
+
+	&._has-arrow {
+		.btn__inner {
+			gap: 12rem;
+
+			&-text {
+				animation: btn-text-offset_reverse 0.2s 0.2s both;
+			}
+
+			&::before,
+			&::after {
+				content: '';
+				background-image: url('/img/icons/arrow_white.svg');
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+				width: 16rem;
+				height: 12rem;
+			}
+
+			&::before {
+				position: absolute;
+				right: 100%;
+				animation: btn-arrow-left_reverse 0.2s both;
+			}
+
+			&::after {
+				animation: btn-arrow-right_reverse 0.2s 0.2s both;
+				position: relative;
+				bottom: 1rem;
+			}
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				.btn__inner {
+					&-text {
+						animation: btn-text-offset 0.2s 0.2s both;
+					}
+
+					&::after {
+						animation: btn-arrow-right 0.2s both;
+					}
+
+					&::before {
+						animation: btn-arrow-left 0.2s 0.2s both;
+					}
+				}
+			}
+		}
+	}
+
+	&:focus,
+	&:hover {
+		text-decoration: none;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			transform: translate(4rem, 4rem);
+			box-shadow: 0rem 0rem 0rem $maroon;
+			color: $white;
+
+			.btn__inner-text span {
+				transform: translateY(-200%) rotate(0.001deg);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.btn {
+		width: 100%;
+		height: 48rem;
+		font-size: 14rem;
+		&._has-arrow {
+			.btn__inner {
+				gap: 10rem;
+
+				&-text,
+				&::before,
+				&::after {
+					animation: none;
+				}
+			}
+		}
+	}
+}

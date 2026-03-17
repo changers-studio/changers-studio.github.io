@@ -1,0 +1,27 @@
+image: node:18
+
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  environment:
+    name: production
+  before_script:
+    - apt-get update && apt-get install -y rsync openssh-client
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | ssh-add -
+    - mkdir -p ~/.ssh
+    - ssh-keyscan -H $SERVER_IP >> ~/.ssh/known_hosts
+  script:
+    - export FOLDER_NAME=${DEPLOY_FOLDER_NAME:-$CI_PROJECT_NAME}
+    - |
+      if [ ! -f ./app/robots.txt ]; then
+        echo "User-agent: *" > ./app/robots.txt
+        echo "Disallow: /" >> ./app/robots.txt
+      fi
+    - ssh $SERVER_USER@$SERVER_IP "sudo chown -R deployer:www-data /opt/bitnami/apache/htdocs/$FOLDER_NAME 2>/dev/null || true"
+    - rsync -avz --delete ./app/ $SERVER_USER@$SERVER_IP:/opt/bitnami/apache/htdocs/$FOLDER_NAME/
+    - ssh $SERVER_USER@$SERVER_IP "sudo chown -R daemon:daemon /opt/bitnami/apache/htdocs/$FOLDER_NAME && sudo chmod -R 755 /opt/bitnami/apache/htdocs/$FOLDER_NAME"
+  only:
+    - main
